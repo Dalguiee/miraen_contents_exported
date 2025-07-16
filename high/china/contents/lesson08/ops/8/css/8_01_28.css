@@ -1,0 +1,107 @@
+.china_wrap .full_content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 24px;
+}
+
+.full_content .content {
+  width: 100%;
+  height: 100%;
+}
+.full_content .content .content_bg {
+  display: block;
+  width: 769px;
+  height: 357px;
+  margin: 32px auto 0 auto;
+}
+.full_content .content .answer {
+  position: absolute;
+  top: 340px;
+  left: 117px;
+  display: flex;
+  width: 750px;
+  height: 118px;
+  /* background: rgba(0, 0, 0, 0.2); */
+}
+.full_content .content .answer .col {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.full_content .content .answer .col:nth-child(1) {
+  width: 100px;
+  height: 120px;
+}
+.full_content .content .answer .col:nth-child(2) {
+  width: 337px;
+  height: 64px;
+}
+.full_content .content .answer .col:nth-child(3) {
+  width: 324px;
+  height: 64px;
+}
+
+/* 참고 팝업 */
+.popup.popup4 .popup_content {
+  width: 100%;
+  height: 100%;
+  padding: 59px 34px 8px 45px;
+  position: relative;
+}
+.popup.popup4 .popup_content .content {
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+}
+.popup.popup4 .popup_content .content .title {
+  line-height: 48px;
+  font-size: 40px;
+}
+.popup.popup4 .popup_content .content .title .suit {
+  font-weight: 800;
+}
+.popup.popup4 .popup_content .content .title .FZKai {
+  font-weight: 400;
+}
+
+.popup.popup4 .content .table {
+  width: fit-content;
+  height: auto;
+  border: 2px solid #b0d9eb;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.popup.popup4 .content .table .row {
+  display: flex;
+  width: fit-content;
+  height: auto;
+  border-bottom: 2px solid #b0d9eb;
+}
+.popup.popup4 .content .table .row:last-child {
+  border-bottom: none;
+}
+.popup.popup4 .content .table .row .col {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  border-left: 2px solid #b0d9eb;
+  padding: 12px 20px;
+}
+.popup.popup4 .content .table .row .col:nth-child(1) {
+  border-left: none;
+  background: #eefffe;
+  width: 160px;
+}
+.popup.popup4 .content .table .row .col:nth-child(2) {
+  justify-content: flex-start;
+  padding-left: 20px;
+  width: 700px;
+}
+.popup.popup4 .content .table .border-b {
+  border-bottom: 2px solid #b0d9eb;
+}

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>미래엔 중국어</title>
+    <script src="./../common/lib/jquery-3.7.1.min.js"></script>
+    <!-- SUIT Variable 폰트 -->
+    <link
+      href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/variable/woff2/SUIT-Variable.css"
+      rel="stylesheet"
+    />
+    <link href="../common/css/comm.css" rel="stylesheet" />
+    <link href="./css/3_01_28.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div id="wrap" class="china_wrap content_wrap">
+      <div class="title_box title_box4 dp_flex">
+        <div class="ex_active_tag">
+          <span><span class="highlight yellow">체험</span> 활동</span>
+        </div>
+        <div class="text_box">
+          <span style="font-size: 30px"
+            >중국의 눈 보호 체조를 따라 해 봅시다.</span
+          >
+        </div>
+      </div>
+
+      <div class="btn_box dp_flex">
+        <button class="btn popup_btn purple" data-index="1">영상 보기</button>
+        <button class="btn popup_btn blue" data-index="2">참고</button>
+      </div>
+
+      <div class="full_content dp_flex dp_flex_column">
+        <div class="content" data-tab="1">
+          <img src="./images/3_01_28/img0.svg" alt="눈보호 체조 이미지 1" class="" />
+        </div>
+        <div class="content" data-tab="2" style="display: none">
+          <img src="./images/3_01_28/img1.svg" alt="눈보호 체조 이미지 2" class=""/>
+        </div>
+        <div class="content" data-tab="3" style="display: none">
+          <img src="./images/3_01_28/img2.svg" alt="눈보호 체조 이미지 3" class=""/>
+        </div>
+      </div>
+
+      <div class="popup_bg" style="display: none"></div>
+      <!-- 애니메이션 -->
+      <div class="popup ani" data-popup="1" style="display: none">
+        <div class="contentsArea videoParent">
+          <!-- <div
+                  id="video-controller-container-1"
+                  class="video-controller-container"
+                ></div> -->
+        </div>
+        <button class="close_btn2 popupclose_btn">
+          <span>닫기</span>
+        </button>
+      </div>
+
+      <!-- 참고 -->
+      <div class="popup popup1" data-popup="2" style="display: none">
+        <div class="tag bmjua dp_flex">참고</div>
+        <button class="close_btn"></button>
+        <div class="popup_content">
+          <div class="title suit">눈 보호 체조</div>
+          <div class="text suit">
+            눈을 보호하는 건강 체조인 <span class="gRegula" data-audio="050-04.mp3"><span class="FZKai" style="font-weight: 400">眼保健操</span>(<span class="gRegula">yânbâo jiàncão)</span></span>는<br>
+            중국의 초등학교를 중심으로 많은 학교에서 정식 교육 활동<br>
+            으로 실시하고 있는 눈 건강 체조이다.<br>보통 오전
+            수업 중간(통상 3교시 후)에 따로 5분 가량 시간을<br>아예
+            따로 시간표에 편성해 두고 실시한다. 눈 주위 혈자리를<br>
+            자극하여 눈과 얼굴의 혈액순환을 촉진하고 피로를 풀기 위한<br>
+            목적이 있다.
+          </div>
+        </div>
+      </div>
+
+      <div4 class="pagination dp_flex" style="margin-bottom: 12px">
+        <span class="active dot" data-index="1"></span>
+        <span class="dot" data-index="2"></span>
+        <span class="dot" data-index="3"></span>
+      </div4>
+    </div>
+  </body>
+  <script type="text/javascript">
+    const page = {
+      //컨텐츠에 정답 확인이 존재하는지 여부
+      isAnswer: false,
+      // 단어장 노출 여부 판단.
+      isVocabulary: false,
+      //정답 보기
+      showAnswer: () => {},
+      //정답 숨기기
+      hideAnswer: () => {},
+      // 단어장 보기
+      showVocabulary: () => {},
+    };
+  </script>
+  <script crossorigin src="../common/lib/libBundle.js"></script>
+  <script src="../common/js/script.js"></script>
+  <script type="text/javascript">
+    // 애니메이션 팝업 초기화
+    $(".popup.ani .close_btn2").on("click", function () {
+      $(".contentsArea.videoParent").empty();
+      createVideo();
+    });
+    $(document).ready(function () {
+      createVideo();
+    });
+    // 비디오 생성
+    const createVideo = () => {
+      $(".contentsArea.videoParent").html(`<div
+            id="video-controller-container-1"
+            class="video-controller-container"
+          ></div>`);
+      var mediaManager = libBundle.MediaManager.getInstance();
+      // 내부자막 X, 외부자막 X
+      var videoController1 = mediaManager.createVideoController({
+        id: "video-controller-1",
+        query: "#video-controller-container-1",
+        // poster: "./media/mp4/4chi_bon_1.png",
+        src: "./media/mp4/3chi_H_eye.mp4",
+        // volumeVisible: true,
+        // // thumbnail: { startPath: 'media/video/thumbnail/thumbnail_', startIndex: 1000, ext: 'png' },
+        // overlay: true,
+        // // autoplay: true
+        // jsonSubtitlePath: "./media/subtitle/7_0_05.json",
+        volumeSetting: {
+          visible: true,
+          vertical: false,
+        },
+        callback: {},
+      });
+    };
+  </script>
+</html>

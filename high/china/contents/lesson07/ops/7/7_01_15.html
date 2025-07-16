@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>미래엔 중국어</title>
+    <script src="./../common/lib/jquery-3.7.1.min.js"></script>
+    <!-- SUIT Variable 폰트 -->
+    <link href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/variable/woff2/SUIT-Variable.css" rel="stylesheet" />
+    <link href="../common/css/comm.css" rel="stylesheet" />
+    <link href="./css/7_01_15.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div id="wrap" class="china_wrap content2_wrap">
+      <div class="title_box dp_flex">
+        <div class="title"><img class="titleLogo" src="./images/7_01_15/logo.svg" alt=""><span class="titleText suit">중국 음식 이름의 비밀</span></div>
+      </div>
+
+      <div class="btn_box dp_flex">
+        <button class="btn popup_btn blue" data-index="3">해석</button>
+        <button class="btn popup_btn blue" data-index="4">활동 설명</button>
+        <button class="btn popup_btn blue" data-index="5">추가 활동</button>
+        <button class="btn3 answer_btn" data-index="0" data-tab="2" style="display: none;">예시 답안</button>
+        <button class="btn3 reset_btn" data-index="0" style="display: none">다시 하기</button>
+      </div>
+      <div class="full_content">
+        <div class="title">
+          <span class="suit">메뉴판을 참고하여 먹고 싶은 중국 음식의 이름을 쓰고, 이름에서 알 수 있는 내용을<br>찾아 써 봅시다.</span>
+        </div>
+        <div class="content_sec">
+          <div class="content content1" data-tab="1">
+            <img class="tip" src="./images/7_01_15/tip_full.svg" alt="">
+            <img class="content_img" src="./images/7_01_15/content1.svg" alt="">
+            <div class="hint hint1" data-audio="088-01.mp3">
+              <span class="simhei">烤<span class="blue">鸭</span></span>
+              <span class="gRegula">kâo<span class="blue">yã</span></span>
+            </div>
+            <div class="hint hint2" data-audio="088-02.mp3">
+              <span class="simhei">鱼香<span class="blue">茄子</span></span>
+              <span class="gRegula">yúxiãng<span class="blue" style="margin-left: 5px;">qiézi</span></span>
+            </div>
+            <div class="hint hint3" data-audio="088-03.mp3">
+              <span class="simhei">麻辣<span class="blue">豆腐</span></span>
+              <span class="gRegula">málà<span class="blue" style="margin-left: 5px;">dòufu</span></span>
+            </div>
+            <div class="hint hint4" data-audio="088-04.mp3">
+              <span class="simhei">炒<span class="blue">饭</span></span>
+              <span class="gRegula">châo<span class="blue">fàn</span></span>
+            </div>
+            <div class="hint hint5" data-audio="088-05.mp3">
+              <span class="simhei"><span class="blue">西红柿</span>炒<span class="green">鸡蛋</span></span>
+              <span class="gRegula"><span class="blue" style="margin-right: 5px;">xåhóngshì</span>châo<span class="green" style="margin-left: 5px;">jådàn</span></span>
+            </div>
+            <div class="hint hint6" data-audio="088-06.mp3">
+              <span class="simhei">酸辣<span class="blue">汤</span></span>
+              <span class="gRegula">suãnlà<span class="blue">tãng</span></span>
+            </div>
+          </div>
+
+          <div class="content content2" data-tab="2" style="display: none;">
+            <img class="tip" src="./images/7_01_15/tip_full.svg" alt="">
+            <img class="content_img" src="./images/7_01_15/content2.svg" alt="">
+            <div class="hint hint1">
+              <div class="index">
+                <span class="suit">예</span>
+              </div>
+              <span class="simhei" data-audio="088-07.mp3" data-audio-combo="088-07">牛肉面</span>
+              <span class="gRegula" data-audio="088-07.mp3" data-audio-combo="088-07">niúròumiàn</span>
+            </div>
+            <div class="hint hint2">
+              <div class="line line1">
+                <img src="./images/7_01_15/cat1.svg" alt=""><span class="suit">소고기</span><span class="suit">(</span><span class="simhei" data-audio="088-08.mp3">牛肉<span class="gRegula"> niúròu</span></span><span class="suit">)</span>
+              </div>
+              <div class="line line2">
+                <img src="./images/7_01_15/cat2.svg" alt=""><span class="suit">면</span><span class="suit">(</span><span class="simhei" data-audio="088-09.mp3">面<span class="gRegula"> miàn</span></span><span class="suit">)</span>
+              </div>
+            </div>
+            <div class="answer answer1" data-audio="088-01.mp3" style="display: none;">
+              <span class="simhei">烤鸭</span>
+              <span class="gRegula">kâoyã</span>
+            </div>
+            <div class="answer answer2" style="display: none;">
+              <span class="suit">조리법: 굽다(<span class="simhei" data-audio="088-10.mp3">烤<span class="gRegula"> kâo</span></span>)</span>
+              <span class="suit">재료: 오리(<span class="simhei" data-audio="088-11.mp3">鸭<span class="gRegula"> yã</span></span>)</span>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
+      <div class="pagination dp_flex" style="margin-bottom: 0px; bottom: 15px;">
+        <span class="active dot" data-index="1"></span>
+        <span class="dot" data-index="2"></span>
+      </div>
+
+      <!-- 팝업 -->
+      <div class="popup_bg" style="display: none"></div>
+
+      <!-- 해석 -->
+      <div class="popup popup1" data-popup="3" style="display: none">
+        <div class="tag bmjua dp_flex">해석</div>
+        <button class="close_btn"></button>
+        <div class="popup_content">
+          <div class="content">
+
+            <div class="text_sec text_sec1">
+              <div class="line line1">
+                <div class="upper_sec">
+                  <span class="simhei">烤鸭 </span>
+                  <span class="suit">오리구이</span>                
+                </div>
+                <span class="gRegula">kâoyã</span>
+              </div>
+              <div class="line line2">
+                <div class="upper_sec">
+                  <span class="simhei">麻辣豆腐 </span>
+                  <span class="suit">마라두부</span>                
+                </div>
+                <span class="gRegula">málà dòufu</span>
+              </div>
+              <div class="line line3">
+                <div class="upper_sec">
+                  <span class="simhei">西红柿炒鸡蛋 </span>
+                  <span class="suit">토마토 달걀 볶음</span>                
+                </div>
+                <span class="gRegula">xåhóngshì châo jådàn</span>
+              </div>
+            </div>
+
+            <div class="text_sec text_sec1">
+              <div class="line line1">
+                <div class="upper_sec">
+                  <span class="simhei">鱼香茄子 </span>
+                  <span class="suit">어향가지</span>                
+                </div>
+                <span class="gRegula">yúxiãng qiézi</span>
+              </div>
+              <div class="line line2">
+                <div class="upper_sec">
+                  <span class="simhei">炒饭 </span>
+                  <span class="suit">볶음밥</span>                
+                </div>
+                <span class="gRegula">châofàn</span>
+              </div>
+              <div class="line line3">
+                <div class="upper_sec">
+                  <span class="simhei">酸辣汤 </span>
+                  <span class="suit">쏸라탕</span>                
+                </div>
+                <span class="gRegula">suãnlàtãng</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- 활동 설명 -->
+      <div class="popup popup2" data-popup="4" style="display: none">
+        <div class="tag bmjua dp_flex">활동 설명</div>
+        <button class="close_btn"></button>
+        <div class="popup_content">
+          <div class="title">
+            <span class="suit">중국 음식의 이름을 보고 조리법과 재료, 맛 등을 추측할 수 있다.</span>
+          </div>
+          <div class="content">
+            <div class="line line1">
+              <div class="index">
+                <span class="suit">•</span>
+              </div>
+              <div class="text">
+                <span class="simhei" data-audio="088-01.mp3">烤鸭<span class="suit">(</span><span class="gRegula">kâoyã</span><span class="suit">)</span></span>
+                <span class="context">
+                  <span class="suit">조리법: </span><span class="simhei" data-audio="088-10.mp3">烤</span><span class="suit">(굽다)</span><span class="suit"> / </span><span class="suit">재료: </span><span class="simhei" data-audio="088-11.mp3">鸭</span><span class="suit">(오리)</span>
+                </span>
+              </div>
+            </div>
+            <div class="line line2">
+              <div class="index">
+                <span class="suit">•</span>
+              </div>
+              <div class="text">
+                <span class="simhei" data-audio="088-02.mp3">鱼香茄子<span class="suit">(</span><span class="gRegula">yúxiãng qiézi</span><span class="suit">)</span></span>
+                <span class="context">
+                  <span class="suit">맛: </span><span class="simhei" data-audio="088-12.mp3">鱼香</span><span class="suit">(위샹 소스)</span><span class="suit"> / </span><span class="suit">재료: </span><span class="simhei" data-audio="088-13.mp3">茄子</span><span class="suit">(가지)</span>
+                </span>
+              </div>
+            </div>
+            <div class="line line3">
+              <div class="index">
+                <span class="suit">•</span>
+              </div>
+              <div class="text">
+                <span class="simhei" data-audio="088-03.mp3">麻辣豆腐<span class="suit">(</span><span class="gRegula">málà dòufu</span><span class="suit">)</span></span>
+                <span class="context">
+                  <span class="suit">맛: </span><span class="simhei" data-audio="088-14.mp3">麻辣</span><span class="suit">(얼얼하게 맵다)</span><span class="suit"> / </span><span class="suit">재료: </span><span class="simhei" data-audio="088-15.mp3">豆腐</span><span class="suit">(두부)</span>
+                </span>
+              </div>
+            </div>
+            <div class="line line4">
+              <div class="index">
+                <span class="suit">•</span>
+              </div>
+              <div class="text">
+                <span class="simhei" data-audio="088-04.mp3">炒饭<span class="suit">(</span><span class="gRegula">châofàn</span><span class="suit">)</span></span>
+                <span class="context">
+                  <span class="suit">조리법: </span><span class="simhei" data-audio="088-16.mp3">炒</span><span class="suit">(볶다)</span><span class="suit"> / </span><span class="suit">종류: </span><span class="simhei" data-audio="088-17.mp3">饭</span><span class="suit">(밥)</span>
+                </span>
+              </div>
+            </div>
+            <div class="line line5">
+              <div class="index">
+                <span class="suit">•</span>
+              </div>
+              <div class="text">
+                <span class="simhei" data-audio="088-05.mp3">西红柿炒鸡蛋<span class="suit">(</span><span class="gRegula">xåhóngshì châo jådàn</span><span class="suit">)</span></span>
+                <span class="context">
+                  <span class="suit">재료: </span><span class="simhei" data-audio="088-18.mp3">西红柿</span><span class="suit">(토마토), </span><span class="simhei" data-audio="088-19.mp3">鸡蛋</span><span class="suit">(계란)</span><span class="suit"> / </span><span class="suit">조리법: </span><span class="simhei" data-audio="088-16.mp3">炒</span><span class="suit">(볶다)</span>
+                </span>
+              </div>
+            </div>
+            <div class="line line6">
+              <div class="index">
+                <span class="suit">•</span>
+              </div>
+              <div class="text">
+                <span class="simhei" data-audio="088-06.mp3">酸辣汤<span class="suit">(</span><span class="gRegula">suãnlàtãng</span><span class="suit">)</span></span>
+                <span class="context">
+                  <span class="suit">맛: </span><span class="simhei" data-audio="088-20.mp3">酸辣</span><span class="suit">(시고 맵다)</span><span class="suit"> / </span><span class="suit">종류: </span><span class="simhei" data-audio="088-21.mp3">汤</span><span class="suit">(탕, 국)</span>
+                </span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- 추가 활동 -->
+      <div class="popup popup3" data-popup="5" style="display: none">
+        <div class="tag bmjua dp_flex">추가 활동</div>
+        <button class="close_btn"></button>
+        <div class="popup_content">
+          <div class="title">
+            <span class="suit title_main">내가 만든 중식 day</span>
+            <span class="suit title_sub">내가 먹고 싶은 중국 음식과 간식을 디지털 매체에서 찾아보고,<br>사진이나 그림과 함께 급식판을 꾸며 봅시다.</span>
+          </div>
+          <div class="content">
+            <!-- <div class="content_title">
+              <span class="suit">예 <내가 만든 중식 day, 맛있 day></span>
+            </div> -->
+            <div class="content_under">
+              <div class="index">
+                <span class="suit">예</span>
+              </div>
+              <div class="img_box">
+                <img src="./images/7_01_15/popup3_content1.png" alt="">
+              </div>
+              <div class="content_under_text">
+                <span class="simhei" data-audio="087-28.mp3">炒饭<span class="suit">(</span><span class="gRegula">châofàn</span><span class="suit">)</span></span>
+                <span class="simhei" data-audio="087-31.mp3">麻辣烫<span class="suit">(</span><span class="gRegula">málàtàng</span><span class="suit">)</span></span>
+                <span class="simhei" data-audio="087-30.mp3">锅包肉<span class="suit">(</span><span class="gRegula">guõbãoròu</span><span class="suit">)</span></span>
+                <span class="simhei" data-audio="M096-16.mp3">西红柿炒鸡蛋<span class="suit">(</span><span class="gRegula">xåhóngshì châo jådàn</span><span class="suit">)</span></span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      
+      <!-- 단어장 -->
+      <div class="popup vocabularyBook" data-popup="1" style="display: none">
+        <div class="tag bmjua dp_flex">단어장</div>
+        <button class="close_btn"></button>
+        <div class="popup_content dp_flex">
+          <div class="word_list_box dp_flex dp_flex_column">
+            <div class="word_content">
+              <div class="list dp_flex voca_popup_btn active" data-audio="077-32.mp3">
+                <span class="gRegula">fàn</span>
+              </div>
+              <div class="list dp_flex voca_popup_btn" data-audio="077-33.mp3">
+                <span class="gRegula">qîngkè</span>
+              </div>
+
+            </div>
+          </div>
+          <div class="show_word_box dp_flex dp_flex_column">
+            <div class="china_box dp_flex">
+              <div class="voca_popup_tab">
+                <span class="FZKai">酸</span>
+                <span class="gRegula">fàn</span>
+              </div>
+              <div class="voca_popup_tab" style="display: none">
+                <span class="FZKai">甜</span>
+                <span class="gRegula">qîngkè</span>
+              </div>
+
+            </div>
+            <div class="korea_box dp_flex">
+              <div class="voca_warp">
+                <span class="suit">밥, 식사</span>
+                <span class="suit" style="display: none">한턱내다</span>
+              </div>
+            </div>
+            <div class="show_btn-warp">
+              <button class="btn3 show_pinyin_btn" style="display: none">
+                병음 보기
+              </button>
+              <button class="btn3 hide_pinyin_btn">병음 가리기</button>
+              <button class="btn3 show_btn" style="display: none">
+                뜻 보기
+              </button>
+              <button class="btn3 hide_btn">뜻 감추기</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </body>
+  <script type="text/javascript">
+    const page = {
+      //컨텐츠에 정답 확인이 존재하는지 여부
+      isAnswer: false,
+      // 단어장 노출 여부 판단.
+      isVocabulary: false,
+      //정답 보기
+      showAnswer: () => {},
+      //정답 숨기기
+      hideAnswer: () => {},
+      // 단어장 보기
+      showVocabulary: () => {
+        setPopup(1);
+      },
+    };
+  </script>
+  <script type="text/javascript">
+    // 설명 팝업
+    $(".explan_popup_btn").on("click", function () {
+      let index = $(".explan_popup_btn").index(this);
+      $(".explan_popup_bg").show();
+      $(".popup.explan").hide();
+      $(".popup.explan").eq(index).show();
+      try {
+        setRoleStop();
+      } catch (error) {}
+      audioStop();
+    });
+    // 설명팝업 있는상태에서 다른 팝업 클릭시 팝업 닫기
+    $(".popup_btn").on("click", function () {
+      $(".popup.explan").css("display","none");
+    })
+  </script>
+  <script type="text/javascript">
+    // 정답 버튼 앞에 경로를 따로 따서 팝업정답 스크립트 분리지정 가능
+    $(".answer_btn").on("click", function () {
+      // let index = $(".answer_btn").index(this);
+      let index = $(this).data("index");
+      $(this).hide();
+      $(`.reset_btn[data-index=${index}]`).show();
+      
+      // $(`.answer`).show();
+      $(`.answer`).show();
+    });
+    // 다시 하기 버튼
+    $(".reset_btn").on("click", function () {
+      // let index = $(".reset_btn").index(this);
+      let index = $(this).data("index");
+      $(this).hide();
+      $(`.answer_btn[data-index=${index}]`).show();
+      
+      // $(".answer").hide();
+      $(`.answer`).hide();
+    });
+  </script>
+  <script src="../common/js/script.js"></script>
+  <script src="../common/js/vocabularyBook.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      // setPopup(2);
+    });
+    // 교체 문장
+    $(".tab_btn").on("click", function () {
+      setActive($(this), "tab_btn");
+    });
+  </script>
+</html>

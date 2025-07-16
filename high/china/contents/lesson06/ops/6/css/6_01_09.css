@@ -1,0 +1,230 @@
+/* 전역 */
+
+
+/* 타이틀 헤더 */
+.title_box .text_box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.title_box .text_box .suit{
+  font-size: 40px !important;
+  color: #3E7175 !important;
+  font-weight: 700 !important;
+}
+.title_box .text_box .logoImg{
+  margin-right: 10px;
+}
+.btn_box{
+  padding-top: 9px !important;
+}
+.title_box{
+  left: 0 !important;
+  top: 9px !important;
+}
+
+
+/* 컨텐츠 */
+.full_content{
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  padding-top: 73px;
+}
+.full_content .contentFig{
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.full_content .contentFig .contentImg{
+  width: 100%;
+}
+.full_content .contentFig .contextSec{
+  width: 951px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 94px;
+  padding-left: 156px;
+  margin-top: 33px;
+}
+
+.full_content .contentFig .contextSec .context{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+}
+.full_content .contentFig .contextSec .context1{
+  left: 159px;
+  bottom: 80px;
+}
+.full_content .contentFig .contextSec .context2{
+  left: 369px;
+  bottom: 80px;
+}
+.full_content .contentFig .contextSec .context3{
+  left: 579px;
+  bottom: 80px;
+}
+.full_content .contentFig .contextSec .context4{
+  left: 803px;
+  bottom: 80px;
+}
+
+.full_content .contentFig .contextSec .context .simhei{
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 30px;
+}
+.full_content .contentFig .contextSec .context .gRegula{
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 45px;
+  margin-bottom: 10px;
+}
+.full_content .contentFig .contextSec .context .suit{
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: center;
+}
+
+
+
+
+
+/* 팝업전역 */
+.popup{
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  padding: 56px 40px 20px 40px;
+}
+.popup .popup_content{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  padding: 0 !important;
+  gap: 0 !important;
+}
+/* 설명 */
+.popup.explan{
+  /* width: 650px !important; */
+  padding: 46px 24px 10px 24px;
+}
+.popup.explan .popup_content{
+  padding: 0 !important;
+}
+.popup.explan .popup_content .simhei{
+  font-size: 32px !important;
+  line-height: 50px !important;
+  font-weight: 400 !important;
+}
+.popup.explan .popup_content .gRegula{
+  font-size: 32px !important;
+  line-height: 50px !important;
+  font-weight: 400 !important;
+}
+.popup.explan .popup_content .suit{
+  font-size: 32px !important;
+  line-height: 50px !important;
+  font-weight: 600 !important;
+}
+/* 단어게임 */
+.popup.game .popup_content .game_box{
+  margin: 0 !important;
+}
+/* 단어장 */
+.popup.vocabularyBook{
+  padding: 0 !important;
+}
+.popup.vocabularyBook .popup_content{
+  flex-direction: unset !important;
+  padding: 56px 44px 0 44px !important;
+  gap: 40px !important;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+
+/* 보충 */
+.expPopup .popup_content{
+  overflow-y: scroll;
+  padding-left: 15px !important;
+}
+
+.expPopup .popup_content .popupTitle{
+  font-size: 40px;
+  font-weight: 600;
+  margin-bottom: 18px;
+}
+.expPopup .popup_content .popupTitle .suit{
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 48px;
+}
+
+.expPopup .popup_content .context{
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.expPopup .popup_content .context .contextTitle{
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  height: 100%;
+  margin-top: 6px;
+}
+
+.expPopup .popup_content .context .contextTitle .title{
+  font-size: 15px;
+  font-weight: 600;
+  margin-top: 10px;
+  margin-right: 20px;
+}
+
+.expPopup .popup_content .context .contextTitle .FZKai{
+  font-size: 36px;
+  font-weight: 400;
+}
+.expPopup .popup_content .context .contextTitle .gRegula{
+  font-size: 36px;
+  font-weight: 400;
+}
+
+.expPopup .popup_content .context .contextSec{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  margin-left: 10px;
+}
+
+.expPopup .popup_content .context .contextSec .FZKai{
+  font-size: 32px;
+  font-weight: 400;
+}
+
+.expPopup .popup_content .context .contextSec .suit{
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 43px;
+}
+.expPopup .popup_content .context .contextSec .gRegula{
+  color: #727171;
+  font-size: 32px;
+  font-weight: 400;
+}

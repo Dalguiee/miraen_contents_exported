@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>미래엔 중국어</title>
+		<script src="./../common/lib/jquery-3.7.1.min.js"></script>
+		<!-- SUIT Variable 폰트 -->
+		<link href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/variable/woff2/SUIT-Variable.css" rel="stylesheet" />
+		<link href="../common/css/comm.css" rel="stylesheet" />
+		<link href="./css/5_01_13.css" rel="stylesheet" />
+	</head>
+
+	<body>
+		<div id="wrap" class="china_wrap content2_wrap">
+			<div class="title_box dp_flex">
+				<div class="num_box tmoney">
+					<span>1</span>
+				</div>
+				<div class="text_box">
+					<span>능력 말하기</span>
+				</div>
+			</div>
+			<div class="btn_box dp_flex">
+				<button class="btn hanja_btn">한자</button>
+				<button class="btn pinyin_btn" style="display: none">병음</button>
+				<button class="btn combo_btn">한자+병음</button>
+				<button class="btn popup_btn blue" data-index="2">해석</button>
+				<button class="btn explan_popup_btn blue">설명</button>
+				<button class="btn popup_btn blue" data-index="4">보충</button>
+				<!-- <div class="tempBttns">
+					<button onclick="page.showVocabulary()" data-index="1" class="tempBttn">단어장</button>
+				</div> -->
+			</div>
+			<div class="full_content">
+				<div class="top_box dp_flex dp_flex_column">
+					<div class="tab1" data-tab="1" data-audio="067-02.mp3">
+						<!-- 병음 -->
+						<div class="type type1 dp_flex dp_flex_column" data-view="pinyin">
+							<span class="txt txt2 gRegula"> Wô huì <span class="highlight pink">dâ pångpãngqiú</span>.</span>
+						</div>
+						<!-- 한자 -->
+						<div class="type type1 dp_flex dp_flex_column" data-view="hanja" style="display: none">
+							<span class="txt txt1 FZKai"> 我会<span class="highlight pink">打乒乓球</span>。</span>
+						</div>
+						<!-- 한자 + 병음 -->
+						<div class="type type3 dp_flex dp_flex_column" data-view="combo" style="display: none">
+							<span class="txt txt1 FZKai"> 我会<span class="highlight pink">打乒乓球</span>。</span>
+							<span class="txt txt2 gRegula"> Wô huì <span class="highlight pink">dâ pångpãngqiú</span>.</span>
+						</div>
+					</div>
+					<div class="tab1" data-tab="2" data-audio="067-03.mp3" style="display: none">
+						<!-- 병음 -->
+						<div class="type type1 dp_flex dp_flex_column" data-view="pinyin">
+							<span class="txt txt2 gRegula">Wô huì <span class="highlight pink">dâ lánqiú</span>.</span>
+						</div>
+						<!-- 한자 -->
+						<div class="type type1 dp_flex dp_flex_column" data-view="hanja" style="display: none">
+							<span class="txt txt1 FZKai">我会<span class="highlight pink">打篮球</span>。</span>
+						</div>
+						<!-- 한자 + 병음 -->
+						<div class="type type3 dp_flex dp_flex_column" data-view="combo" style="display: none">
+							<span class="txt txt1 FZKai">我会<span class="highlight pink">打篮球</span>。</span>
+							<span class="txt txt2 gRegula">Wô huì <span class="highlight pink">dâ lánqiú</span>.</span>
+						</div>
+					</div>
+					<div class="tab2" data-tab="3" data-audio="067-04.mp3" style="display: none">
+						<!-- 병음 -->
+						<div class="type type3 dp_flex dp_flex_column" data-view="pinyin">
+							<span class="txt txt2 gRegula"> Wô huì <span class="highlight pink">dâ tàijíquán</span>.</span>
+						</div>
+						<!-- 한자 -->
+						<div class="type type3 dp_flex dp_flex_column" data-view="hanja" style="display: none">
+							<span class="txt txt1 FZKai"> 我会<span class="highlight pink">打太极拳</span>。</span>
+						</div>
+						<!-- 한자 + 병음 -->
+						<div class="type type3 dp_flex dp_flex_column" data-view="combo" style="display: none">
+							<span class="txt txt1 FZKai"> 我会<span class="highlight pink">打太极拳</span>。</span>
+							<span class="txt txt2 gRegula"> Wô huì <span class="highlight pink">dâ tàijíquán</span>.</span>
+						</div>
+					</div>
+					<div class="tab3" data-tab="4" data-audio="067-05.mp3" style="display: none">
+						<!-- 병음 -->
+						<div class="type type4 dp_flex dp_flex_column" data-view="pinyin">
+							<span class="txt txt2 gRegula"> Wô huì <span class="highlight pink">tå zúqiú</span>.</span>
+						</div>
+						<!-- 한자 -->
+						<div class="type type4 dp_flex dp_flex_column" data-view="hanja" style="display: none">
+							<span class="txt txt1 FZKai"> 我会<span class="highlight pink">踢足球</span>。</span>
+						</div>
+						<!-- 병음 + 한자 -->
+						<div class="type type4 dp_flex dp_flex_column" data-view="combo" style="display: none">
+							<span class="txt txt1 FZKai"> 我会<span class="highlight pink">踢足球</span>。</span>
+							<span class="txt txt2 gRegula"> Wô huì <span class="highlight pink">tå zúqiú</span>.</span>
+						</div>
+					</div>
+					<button class="btn3 basic_btn tab_btn active" data-index="1">기본 문장</button>
+				</div>
+				<div class="bottom_box dp_flex dp_flex_column" data-view-info="pinyin" data-tab-info="1">
+					<div class="step step1 dp_flex">
+						<div class="img_box">
+							<img src="../5/images/5_01_13/icon1.svg" class="img img1" />
+							<div class="line"></div>
+						</div>
+						<div class="text_box dp_flex dp_flex_column" data-audio="067-06.mp3">
+							<!-- 병음 -->
+							<span class="txt txt2 gRegula" data-view="pinyin">dâ lánqiú</span>
+							<!-- 한자 -->
+							<span class="txt txt1 FZKai" style="display: none" data-view="hanja">打篮球</span>
+							<!-- 한자 + 병음 -->
+							<span class="txt txt1 FZKai" style="display: none" data-view="combo">打篮球</span>
+							<span class="txt txt2 gRegula" style="display: none" data-view="combo">dâ lánqiú</span>
+						</div>
+						<button class="btn3 tab_btn" data-index="2">교체 문장</button>
+					</div>
+					<div class="step step2 dp_flex">
+						<div class="img_box">
+							<img src="../5/images/5_01_13/icon2.svg" class="img img1" />
+							<div class="line"></div>
+						</div>
+						<div class="text_box dp_flex dp_flex_column" data-audio="067-07.mp3">
+							<!-- 병음 -->
+							<span class="txt txt2 gRegula" data-view="pinyin">dâ tàijíquán</span>
+							<!-- 한자 -->
+							<span class="txt txt1 FZKai" style="display: none" data-view="hanja">打太极拳</span>
+							<!-- 한자 + 병음 -->
+							<span class="txt txt1 FZKai" style="display: none" data-view="combo">打太极拳</span>
+							<span class="txt txt2 gRegula" style="display: none" data-view="combo">dâ tàijíquán</span>
+						</div>
+						<button class="btn3 tab_btn" data-index="3">교체 문장</button>
+					</div>
+					<div class="step step3 dp_flex">
+						<div class="img_box">
+							<img src="../5/images/5_01_13/icon3.svg" class="img img1" />
+							<div class="line"></div>
+						</div>
+						<div class="text_box dp_flex dp_flex_column" data-audio="067-08.mp3">
+							<!-- 병음 -->
+							<span class="txt txt2 gRegula" data-view="pinyin">tå zúqiú</span>
+							<!-- 한자 -->
+							<span class="txt txt1 FZKai" style="display: none" data-view="hanja">踢足球</span>
+							<!-- 한자 + 병음 -->
+							<span class="txt txt1 FZKai" style="display: none" data-view="combo">踢足球</span>
+							<span class="txt txt2 gRegula" style="display: none" data-view="combo">tå zúqiú</span>
+						</div>
+						<button class="btn3 tab_btn" data-index="4">교체 문장</button>
+					</div>
+				</div>
+				<div class="btn_box btn_box2 dp_flex">
+					<button class="btn popup_btn blue" data-index="5">참고</button>
+					<button class="btn popup_btn yellow" data-index="6">자기소개 프로젝트</button>
+				</div>
+			</div>
+
+			<div class="popup_bg" style="display: none"></div>
+			<!-- 단어장 -->
+			<div class="popup vocabularyBook" data-popup="1" style="display: none">
+				<div class="tag bmjua dp_flex">단어장</div>
+				<button class="close_btn"></button>
+				<div class="popup_content dp_flex">
+					<div class="word_list_box dp_flex dp_flex_column">
+						<div class="word_content">
+							<div class="list dp_flex voca_popup_btn active" data-audio="067-09.mp3">
+								<span class="gRegula">lánqiú</span>
+							</div>
+							<div class="list dp_flex voca_popup_btn" data-audio="067-10.mp3">
+								<span class="gRegula">tàijíquán</span>
+							</div>
+							<div class="list dp_flex voca_popup_btn" data-audio="067-11.mp3">
+								<span class="gRegula">tå</span>
+							</div>
+							<div class="list dp_flex voca_popup_btn" data-audio="067-12.mp3">
+								<span class="gRegula">zúqiú</span>
+							</div>
+						</div>
+					</div>
+					<div class="show_word_box dp_flex dp_flex_column">
+						<div class="china_box dp_flex">
+							<div class="voca_popup_tab" data-audio="067-09.mp3">
+								<span class="FZKai">篮球</span>
+								<span class="gRegula">lánqiú</span>
+							</div>
+							<div class="voca_popup_tab" data-audio="067-10.mp3" style="display: none">
+								<span class="FZKai">太极拳</span>
+								<span class="gRegula">tàijíquán</span>
+							</div>
+							<div class="voca_popup_tab" data-audio="067-11.mp3" style="display: none">
+								<span class="FZKai">踢</span>
+								<span class="gRegula">tå</span>
+							</div>
+							<div class="voca_popup_tab" data-audio="067-12.mp3" style="display: none">
+								<span class="FZKai">足球</span>
+								<span class="gRegula">zúqiú</span>
+							</div>
+						</div>
+						<div class="korea_box dp_flex">
+							<div class="voca_warp">
+								<span class="suit">농구</span>
+								<span class="suit" style="display: none">태극권</span>
+								<span class="suit" style="display: none">차다</span>
+								<span class="suit" style="display: none">축구</span>
+							</div>
+						</div>
+						<div class="show_btn-warp">
+							<button class="btn3 show_pinyin_btn" style="display: none">병음 보기</button>
+							<button class="btn3 hide_pinyin_btn">병음 가리기</button>
+							<button class="btn3 show_btn" style="display: none">뜻 보기</button>
+							<button class="btn3 hide_btn">뜻 감추기</button>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- 해석 -->
+			<div class="popup popup2" data-popup="2" style="display: none">
+				<div class="tag bmjua dp_flex">해석</div>
+				<button class="close_btn"></button>
+				<div class="popup_content">
+					<ul class="list">
+						<li class="item">
+							<div class="item_text">
+								<div class="flex">
+									<span class="FZKai">我会打乒乓球。</span>
+									<span class="suit">나는 탁구를 칠 줄 알아.</span>
+								</div>
+								<span class="gRegula">Wô huì dâ pångpãngqiú.</span>
+							</div>
+						</li>
+						<li class="item">
+							<div class="item_text">
+								<div class="flex">
+									<span class="FZKai">我会打篮球。</span>
+									<span class="suit">나는 농구할 줄 알아.</span>
+								</div>
+								<span class="gRegula">Wô huì dâ lánqiú.</span>
+							</div>
+						</li>
+						<li class="item">
+							<div class="item_text">
+								<div class="flex">
+									<span class="FZKai">我会打太极拳。</span>
+									<span class="suit">나는 태극권할 줄 알아.</span>
+								</div>
+								<span class="gRegula">Wô huì dâ tàijíquán.</span>
+							</div>
+						</li>
+						<li class="item">
+							<div class="item_text">
+								<div class="flex">
+									<span class="FZKai">我会踢足球。</span>
+									<span class="suit">나는 축구할 줄 알아.</span>
+								</div>
+								<span class="gRegula">Wô huì tå zúqiú.</span>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<!-- 설명 -->
+			<div class="popup explan index1" style="display: none">
+				<div class="tag bmjua dp_flex">설명</div>
+				<button class="close_btn">
+					<span class="sr-only">닫기</span>
+				</button>
+				<div class="popup_content dp_flex dp_flex_column">
+					<span class="suit">
+						배워서 할 줄 아는 것을 <span class="FZKai" data-audio="066-16.mp3" data-audio-combo="066-16">会</span><span class="gRegula" data-audio="066-16.mp3" data-audio-combo="066-16"><span class="suit">(</span>huì<span class="suit">)</span></span>로 표현한다. 그리고 운동 중에서 손이나 기구를 사용할 때는
+						<span class="FZKai" data-audio="066-22.mp3" data-audio-combo="066-22">打</span><span class="gRegula" data-audio="066-22.mp3" data-audio-combo="066-22"><span class="suit">(</span>dâ<span class="suit">)</span></span>, 발로 찰 때는 <span class="FZKai" data-audio="067-01.mp3" data-audio-combo="067-01">踢</span><span class="gRegula" data-audio="067-01.mp3" data-audio-combo="067-01"><span class="suit">(</span>tå<span class="suit">)</span></span>를 동사로 쓴다.
+					</span>
+				</div>
+			</div>
+
+			<!-- 보충 -->
+			<div class="popup popup4" data-popup="4" style="display: none">
+				<div class="tag bmjua dp_flex">보충</div>
+				<button class="close_btn"></button>
+				<div class="popup_content">
+					<div class="popup_scroll">
+						<div class="title"><span class="FZKai" data-audio="066-22.mp3">打</span><span class="suit">와 </span><span class="FZKai" data-audio="067-01.mp3"> 踢 </span></div>
+						<div class="content">
+							<ul class="list">
+								<li class="list-item suit">
+									<span class="FZKai" data-audio="066-22.mp3">打<span class="suit bracket">(<span class="gRegula">dâ</span>)</span></span>는 <span class="FZKai" data-audio="067-14.mp3">手</span>(손 수)가 부수로, 주로 손을 이용하는 운동
+									<br />
+									(농구, 배구, 야구, 배드민턴, 테니스 등)에 쓰인다.
+								</li>
+								<li class="list-item suit"><span class="FZKai" data-audio="067-01.mp3">踢<span class="suit bracket">(<span class="gRegula">tå</span>)</span></span>는 <span class="FZKai" data-audio="067-15.mp3">足</span>(발 족)이 부수로, 발로 하는 운동(축구, 제기 등)에 쓰인다.</li>
+							</ul>
+
+							<div class="table-warp">
+								<div class="table-border">
+									<table class="table">
+										<colgroup>
+											<col style="width: 234px" />
+											<col style="width: 234px" />
+											<col />
+										</colgroup>
+										<thead>
+											<tr>
+												<th scope="col" colspan="2">
+													<div data-audio="066-22.mp3">
+														<span class="FZKai">打</span>
+														<span class="gRegula">dâ</span>
+													</div>
+												</th>
+												<th scope="col">
+													<div data-audio="067-01.mp3">
+														<span class="FZKai">踢</span>
+														<span class="gRegula">tå</span>
+													</div>
+												</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td colspan="2" class="ta-center">
+													<span class="suit">손과 관련된 단어</span>
+												</td>
+												<td class="ta-center">
+													<span class="suit">발과 관련된 단어</span>
+												</td>
+											</tr>
+											<tr>
+												<td class="ta-center py-25">
+													<span data-audio="067-16.mp3">
+														<span class="FZKai">棒球</span><br>
+														<span class="gRegula">bàngqiú</span>
+													</span>
+												</td>
+												<td class="ta-center py-25">
+													<span data-audio="067-17.mp3">
+														<span class="FZKai">羽毛球</span><br>
+														<span class="gRegula">yûmáoqiú</span>
+													</span>
+												</td>
+												<td class="ta-center py-25">
+													<span data-audio="067-18.mp3">
+														<span class="FZKai">足球</span><br>
+														<span class="gRegula">zúqiú</span>
+													</span>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- 참고 -->
+			<div class="popup popup5" data-popup="5" style="display: none">
+				<div class="tag bmjua dp_flex">참고</div>
+				<button class="close_btn"></button>
+				<div class="popup_content">
+					<div class="popup-scroll">
+						<div class="title">
+							<span class="suit">다양한 운동 종목 표현</span>
+						</div>
+						<div class="list-warp">
+							<ul class="popup_content_list">
+								<li class="item">
+									<span class="FZKai" data-audio="067-19.mp3" data-audio-combo="067-19">排球</span>
+									<span class="gRegula" data-audio="067-19.mp3" data-audio-combo="067-19">páiqiú</span>
+									<span class="suit">배구</span>
+								</li>
+								<li class="item">
+									<span class="FZKai" data-audio="067-21.mp3" data-audio-combo="067-21">射箭</span>
+									<span class="gRegula" data-audio="067-21.mp3" data-audio-combo="067-21">shèjiàn</span>
+									<span class="suit">양궁</span>
+								</li>
+								<li class="item">
+									<span class="FZKai" data-audio="067-23.mp3" data-audio-combo="067-23">体操</span>
+									<span class="gRegula" data-audio="067-23.mp3" data-audio-combo="067-23">tîcão</span>
+									<span class="suit">체조</span>
+								</li>
+								<li class="item">
+									<span class="FZKai" data-audio="067-25.mp3" data-audio-combo="067-25">台球</span>
+									<span class="gRegula" data-audio="067-25.mp3" data-audio-combo="067-25">táiqiú</span>
+									<span class="suit">당구</span>
+								</li>
+								<li class="item">
+									<span class="FZKai" data-audio="067-27.mp3" data-audio-combo="067-27">手球</span>
+									<span class="gRegula" data-audio="067-27.mp3" data-audio-combo="067-27">shôuqiú</span>
+									<span class="suit">핸드볼</span>
+								</li>
+								<li class="item">
+									<span class="FZKai" data-audio="067-29.mp3" data-audio-combo="067-29">跳水</span>
+									<span class="gRegula" data-audio="067-29.mp3" data-audio-combo="067-29">tiàoshuî</span>
+									<span class="suit">다이빙</span>
+								</li>
+								<li class="item">
+									<span class="FZKai" data-audio="067-31.mp3" data-audio-combo="067-31">滑雪</span>
+									<span class="gRegula" data-audio="067-31.mp3" data-audio-combo="067-31">huáxuê</span>
+									<span class="suit">스키</span>
+								</li>
+								<li class="item">
+									<span class="FZKai" data-audio="067-33.mp3" data-audio-combo="067-33">保龄球</span>
+									<span class="gRegula" data-audio="067-33.mp3" data-audio-combo="067-33">bâolíngqiú</span>
+									<span class="suit">볼링</span>
+								</li>
+								<li class="item">
+									<span class="FZKai" data-audio="067-35.mp3" data-audio-combo="067-35">橄榄球</span>
+									<span class="gRegula" data-audio="067-35.mp3" data-audio-combo="067-35">gânlânqiú</span>
+									<span class="suit">럭비</span>
+								</li>
+								<li class="item">
+									<span class="FZKai" data-audio="067-36.mp3" data-audio-combo="067-36">马拉松</span>
+									<span class="gRegula" data-audio="067-36.mp3" data-audio-combo="067-36">mâlãsõng</span>
+									<span class="suit">마라톤</span>
+								</li>
+								<li class="item">
+									<span class="FZKai" data-audio="067-39.mp3" data-audio-combo="067-39">普拉提</span>
+									<span class="gRegula" data-audio="067-39.mp3" data-audio-combo="067-39">pûlãtí</span>
+									<span class="suit">필라테스</span>
+								</li>
+							</ul>
+							<ul class="popup_content_list">
+								<li class="item">
+									<span class="FZKai" data-audio="067-20.mp3" data-audio-combo="067-20">瑜伽</span>
+									<span class="gRegula" data-audio="067-20.mp3" data-audio-combo="067-20">yújiã</span>
+									<span class="suit">요가</span>
+								</li>
+								<li class="item">
+									<span class="FZKai" data-audio="067-22.mp3" data-audio-combo="067-22">击剑</span>
+									<span class="gRegula" data-audio="067-22.mp3" data-audio-combo="067-22">jåjiàn</span>
+									<span class="suit">펜싱</span>
+								</li>
+								<li class="item">
+									<span class="FZKai" data-audio="067-24.mp3" data-audio-combo="067-24">举重</span>
+									<span class="gRegula" data-audio="067-24.mp3" data-audio-combo="067-24">jûzhòng</span>
+									<span class="suit">역도</span>
+								</li>
+								<li class="item">
+									<span class="FZKai" data-audio="067-26.mp3" data-audio-combo="067-26">拳击</span>
+									<span class="gRegula" data-audio="067-26.mp3" data-audio-combo="067-26">quánjå</span>
+									<span class="suit">권투</span>
+								</li>
+								<li class="item">
+									<span class="FZKai" data-audio="067-28.mp3" data-audio-combo="067-28">网球</span>
+									<span class="gRegula" data-audio="067-28.mp3" data-audio-combo="067-28">wângqiú</span>
+									<span class="suit">테니스</span>
+								</li>
+								<li class="item">
+									<span class="FZKai" data-audio="067-30.mp3" data-audio-combo="067-30">游泳</span>
+									<span class="gRegula" data-audio="067-30.mp3" data-audio-combo="067-30">yóuyông</span>
+									<span class="suit">수영</span>
+								</li>
+								<li class="item">
+									<span class="FZKai" data-audio="067-32.mp3" data-audio-combo="067-32">滑冰</span>
+									<span class="gRegula" data-audio="067-32.mp3" data-audio-combo="067-32">huábång</span>
+									<span class="suit">스케이트</span>
+								</li>
+								<li class="item">
+									<span class="FZKai" data-audio="067-34.mp3" data-audio-combo="067-34">乒乓球</span>
+									<span class="gRegula" data-audio="067-34.mp3" data-audio-combo="067-34">pångpãngqiú</span>
+									<span class="suit">탁구</span>
+								</li>
+								<li class="item">
+									<span class="FZKai" data-audio="067-37.mp3" data-audio-combo="067-37">跆拳道</span>
+									<span class="gRegula" data-audio="067-37.mp3" data-audio-combo="067-37">táiquándào</span>
+									<span class="suit">태권도</span>
+								</li>
+								<li class="item">
+									<span class="FZKai" data-audio="067-38.mp3" data-audio-combo="067-38">羽毛球</span>
+									<span class="gRegula" data-audio="067-38.mp3" data-audio-combo="067-38">yûmáoqiú</span>
+									<span class="suit">배드민턴</span>
+								</li>
+								<li class="item">
+									<span class="FZKai" data-audio="067-40.mp3" data-audio-combo="067-40">高尔夫球</span>
+									<span class="gRegula" data-audio="067-40.mp3" data-audio-combo="067-40">gão’êrfñqiú</span>
+									<span class="suit">골프</span>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- 자기소개 프로젝트 -->
+			<div class="popup popup6" data-popup="6" style="display: none">
+				<div class="tag bmjua dp_flex">자기소개 프로젝트</div>
+				<button class="close_btn"></button>
+
+				<div class="popup_content">
+					<div class="popupTitle">
+						<span class="titleText titleText1 suit">내가 할 수 있는 것을 써 봅시다.</span>
+					</div>
+
+					<div class="line_wrap line1">
+						<div class="line notYet" data-audio="067-13.mp3">
+							<span class="gRegula quesText">Wô huì</span>
+							<span class="gRegula reset reset0"></span>
+							<span class="gRegula answer answer0 highlight pink" style="display: none">yóuyông</span>
+							<span class="gRegula">.</span>
+						</div>
+						<div class="line line_type2">
+							<span class="suit answer answer0" style="display: none">나는 <span class="highlight pink">수영</span>할 줄 알아.</span>
+						</div>
+					</div>
+
+					<div class="bttns">
+						<button class="btn3 answer_btn">예시 답안</button>
+						<button class="btn3 reset_btn" style="display: none">다시 하기</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript">
+		const page = {
+			//컨텐츠에 정답 확인이 존재하는지 여부
+			isAnswer: false,
+			// 단어장 노출 여부 판단.
+			isVocabulary: true,
+			//정답 보기
+			showAnswer: () => {},
+			//정답 숨기기
+			hideAnswer: () => {},
+			// 단어장 보기
+			showVocabulary: () => {
+				setPopup(1);
+			},
+		};
+		$(document).ready(function () {
+			// setPopup(1);
+		});
+	</script>
+	<script src="../common/js/script.js"></script>
+	<script src="../common/js/vocabularyBook.js"></script>
+	<script type="text/javascript">
+		// 교체 문장
+		$('.tab_btn').on('click', function () {
+			setActive($(this), 'tab_btn');
+		});
+
+		// popup - 설명
+		$('.explan_popup_btn').on('click', function () {
+			let index = $('.explan_popup_btn').index(this);
+			$('.explan_popup_bg').show();
+			$('.popup.explan').hide();
+			$('.popup.explan').eq(index).show();
+			try {
+				setRoleStop();
+			} catch (error) {}
+			audioStop();
+		});
+
+		// popup - 자기소개 프로젝트 - 정답
+		$('.answer_btn').on('click', function () {
+			let index = $('.answer_btn').index(this);
+			$(this).hide();
+			$('.reset_btn').eq(index).show();
+			$(`.answer${index}`).show();
+			$(`.reset${index}`).hide();
+			$(".notYet").removeClass("notYet");
+		});
+
+		// popup - 자기소개 프로젝트 - 다시 하기
+		$('.reset_btn').on('click', function () {
+			let index = $('.reset_btn').index(this);
+			$(this).hide();
+			$('.answer_btn').eq(index).show();
+			$(`.answer${index}`).hide();
+			$(`.reset${index}`).show();
+			$(".popup.popup6 .line1 .line").addClass("notYet");
+		});
+	</script>
+</html>

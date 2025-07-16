@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>미래엔 중국어</title>
+    <script src="./../common/lib/jquery-3.7.1.min.js"></script>
+    <!-- SUIT Variable 폰트 -->
+    <link
+      href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/variable/woff2/SUIT-Variable.css"
+      rel="stylesheet"
+    />
+    <link href="../common/css/comm.css" rel="stylesheet" />
+    <link href="./css/1_01_16.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div id="wrap" class="china_wrap">
+      <!-- <div class="title_box">
+        <div class="title">
+          <img src="./images/1_01_13/logo.svg" alt="">
+        </div>
+      </div> -->
+
+      <div class="btn_box dp_flex">
+        <button class="btn popup_btn blue" data-index="3">보충</button>
+      </div>
+
+      <div class="full_content">
+        <div class="content">
+          <div class="content_text">
+            <div class="index">
+              <span class="bmjua">#</span>
+            </div>
+            <div class="text">
+              <span class="bmjua title">세계 유산 보유 2위</span>
+              <span class="suit main_text">세계 유산 56건,<br>아시아 국가 중 최다 보유</span>
+              <span class="gRegula annotation"><span class="suit">[</span>UNESCO(2023)<span class="suit">]</span></span>
+            </div>
+          </div>
+          <div class="content_img_box">
+            <img src="./images/1_01_16/content.svg" alt="">
+          </div>
+        </div>
+      </div>
+
+      <!-- 팝업 -->
+      <div class="popup_bg" style="display: none"></div>
+    
+
+      <!-- 설명 1 -->
+      <div class="popup explan explan1" style="display: none">
+        <div class="tag bmjua dp_flex">설명</div>
+        <button class="close_btn"></button>
+        <div class="popup_content">
+          <span class="suit">
+            “지금 나는 중국에서 매일 수레를 보면서<br>
+            깜짝 놀라고 기뻐하고 있다. 그리고 수천 년<br>
+            이래 성인들이 무엇을 고심했던가를 비로소<br>
+            조금 알 수 있다.”
+          </span>
+        </div>
+      </div>
+
+      <!-- 설명 2 -->
+      <div class="popup explan explan2" style="display: none">
+        <div class="tag bmjua dp_flex">설명</div>
+        <button class="close_btn"></button>
+        <div class="popup_content">
+          <span class="suit">
+            “귀는 구름을 드리운 듯하고, 눈은 초승달<br>
+            같으며, 두 개의 어금니 크기는 두 아름이나 되<br>
+            고, 키는 한 장 남짓이나 되었다. 코는 어금니<br>
+            보다 길어서 자벌레처럼 구부렸다 폈다 하며<br>
+            굼벵이처럼 구부러지기도 한다.”
+          </span>
+        </div>
+      </div>
+
+      <!-- 설명 3 -->
+      <div class="popup explan explan3" style="display: none">
+        <div class="tag bmjua dp_flex">설명</div>
+        <button class="close_btn"></button>
+        <div class="popup_content">
+          <span class="suit">
+            “대저 벽돌로 말하면, 한 개의 네모진 틀에서 박아 내면<br>
+            만 개의 벽돌이 똑같을지니, 다시 깎고 다듬는 공력을<br>
+            허비하지 않을 것이요, 아궁이 하나만 구워 놓으면 만 개의<br>
+            벽돌을 제자리에서 얻을 수 있으니, 일부러 사람을 모아서<br>
+            나르고 어쩌고 할 이유가 없고…….”
+          </span>
+        </div>
+      </div>
+
+      <!-- 보충 -->
+      <div class="popup popup3" data-popup="3" style="display: none">
+        <div class="tag bmjua dp_flex">보충</div>
+        <button class="close_btn"></button>
+        <div class="popup_content">
+          <div class="title">
+            <span class="suit">세계 유산 보유 세계 2위</span>
+          </div>
+          <div class="content">
+            <div class="line">
+              <span class="suit">
+                중국은 이탈리아에 이어 세계 문화유산이 가장 많은 나라이다.<br>
+                중국의 자금성(고궁), 만리장성, 청더 피서산장, 진시황 병마용갱,<br>
+                둔황 막고굴, 취푸 공자묘, 라싸 포탈라궁, 리장 고성, 핑야오 고성,<br>
+                쑤저우 고전 원림, 베이징 이화원, 베이징 천단, 충칭 대족석각,<br>
+                명청 황실능침, 주구점 원시 유적지, 황산, 태산 등이 세계 문화유산<br>
+                으로 등재되어 있다. 2024년 7월 톈안먼 광장을 포함한 베이징<br>
+                증축선이 추가로 등재되었다.
+              </span>
+            </div>
+          </div>
+          <!-- <div class="annotation">
+            <div class="index">
+              <span class="notoSans">•</span>
+            </div>
+            <div class="text">
+              <div class="title">
+                <span class="suit">세계 인구 순위 <span class="suit sub_text">[통계청(2022)]</span></span>
+              </div>
+              <div class="text_content">
+                <div class="text_sec text_sec_left">
+                  <span class="suit">1위 인도(약 14억 4,100만 명)</span>
+                  <span class="suit">3위 미국(약 3억 4,100만 명)</span>
+                </div>
+                <div class="text_sec text_sec_right">
+                  <span class="suit">2위 중국(약 14억 2,500만 명)</span>
+                  <span class="suit">4위 인도네시아(약 2억 7,900만 명)</span>
+                </div>
+              </div>
+            </div>
+          </div> -->
+        </div>
+      </div>
+
+      <!-- 참고 -->
+      <div class="popup popup4" data-popup="4" style="display: none">
+        <div class="tag bmjua dp_flex">참고</div>
+        <button class="close_btn"></button>
+        <div class="popup_content">
+          <div class="title">
+            <span class="suit">연행록(<span class="simhei">燕行录</span>)인 《열하일기》</span>
+          </div>
+          <div class="content">
+            <div class="line line1">
+              <!-- <div class="index">
+                <span class="suit">1.</span>
+              </div> -->
+              <div class="text">
+                <span class="suit">
+                  조선 시대에 명나라 및 청나라의 수도인 연경으로 외교 사절을<br>
+                  1,000번 이상 파견한 것으로 추산된다. 이 외교 사절들은 각자<br>
+                  자신이 보고 듣고 느낀 것을 개인 여행기로 남겼는데, 이를 통틀어<br>
+                  ‘연행록’이라고 한다. 연행록은 중국과의 교류를 통하여 조선에<br>
+                  새로운 지식이 형성되고 문명이 발전하는 과정을 담고 있으며,<br>
+                  또한 동아시아의 외교·교역·문화 교류의 실상을 생생하게 보여<br>
+                  준다는 점에서 그 의의가 매우 크다. 
+                </span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- 크게 보기 -->
+      <div class="popup popup5" data-popup="5" style="display: none">
+        <div class="tag bmjua dp_flex">크게 보기</div>
+        <button class="close_btn"></button>
+        <div class="popup_content">
+          <!-- <div class="title">
+            <span class="suit">의역의 종류</span>
+          </div> -->
+          <div class="content">
+            <div class="img_box">
+              <img src="./images/1_01_19/map_detail.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+      
+
+
+    </div>
+  </body>
+  <script type="text/javascript">
+    const page = {
+      //컨텐츠에 정답 확인이 존재하는지 여부
+      isAnswer: false,
+      // 단어장 노출 여부 판단.
+      isVocabulary: false,
+      //정답 보기
+      showAnswer: () => {},
+      //정답 숨기기
+      hideAnswer: () => {},
+      // 단어장 보기
+      showVocabulary: () => {},
+    };
+    $(document).ready(function () {});
+  </script>
+  <script type="text/javascript">
+    // 정답 버튼 앞에 경로를 따로 따서 팝업정답 스크립트 분리지정 가능
+    $(".answer_btn").on("click", function () {
+      // let index = $(".answer_btn").index(this);
+      let index = $(this).data("index");
+      $(this).hide();
+      $(`.reset_btn[data-index=${index}]`).show();
+      
+      $(`.answer`).addClass("active");
+      // $(`.answer${index}`).show();
+      // $(`.reset${index}`).hide();
+    });
+    // 다시 하기 버튼
+    $(".reset_btn").on("click", function () {
+      // let index = $(".reset_btn").index(this);
+      let index = $(this).data("index");
+      $(this).hide();
+      $(`.answer_btn[data-index=${index}]`).show();
+      
+      $(`.answer`).removeClass("active");
+      // $(`.answer${index}`).hide();
+      // $(`.reset${index}`).show();
+    });
+  </script>
+  <script src="../common/js/script.js"></script>
+  <script type="text/javascript"></script>
+</html>

@@ -1,0 +1,303 @@
+#wrap > .title_box3 {
+  gap: 20px;
+}
+#wrap > .title_box .text_box {
+  padding-bottom: 0;
+}
+#wrap > .title_box3 .num_box {
+  /* color: rgba(193, 128, 44, 1); */
+}
+
+.china_wrap .full_content .num_box span {
+  font-size: 30px;
+  line-height: 30px;
+  color: rgba(35, 24, 21, 1);
+  font-weight: 700;
+  font-family: "SUIT Variable", sans-serif;
+}
+.full_content .content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.full_content .content .content_bg {
+  position: absolute;
+  top: 42px;
+  left: 210px;
+  width: 537px;
+  height: 378px;
+}
+
+/* 선잇기 */
+.full_content .content .canvas {
+  position: absolute;
+  top: 34px;
+  left: 302px;
+}
+.full_content .content .line-content-wrap {
+  position: absolute;
+  pointer-events: none;
+  top: 34px;
+  left: 302px;
+  width: 480px;
+  height: 400px;
+  /* background: rgba(0, 0, 0, 0.2); */
+}
+.full_content .content .line-content-wrap .start-wrap,
+.full_content .content .line-content-wrap .end-wrap {
+  position: absolute;
+  top: 0;
+  width: 1px;
+  height: 100%;
+  /* background: blue; */
+}
+.full_content .content .line-content-wrap .start-wrap {
+  left: 38px;
+}
+.full_content .content .line-content-wrap .end-wrap {
+  right: 40px;
+}
+.full_content .content .start-wrap .start_dot,
+.full_content .content .end-wrap .end_dot {
+  position: absolute;
+  left: 50%;
+  width: 10px;
+  height: 10px;
+  transform: translateX(-50%) translateY(-50%);
+  /* background: rgba(255, 0, 0, 0.5); */
+  /* background: #498f63; */
+  border-radius: 50%;
+}
+/* 시작점 */
+.full_content .content .start-wrap .start_dot:nth-child(1) {
+  top: 53px;
+  left: 4px;
+}
+.full_content .content .start-wrap .start_dot:nth-child(2) {
+  top: 197px;
+}
+.full_content .content .start-wrap .start_dot:nth-child(3) {
+  left: -0.5px;
+  top: 341px;
+}
+/* 끝점 */
+.full_content .content .end-wrap .end_dot:nth-child(1) {
+  top: 53px;
+}
+.full_content .content .end-wrap .end_dot:nth-child(2) {
+  top: 197px;
+}
+.full_content .content .end-wrap .end_dot:nth-child(3) {
+  top: 341px;
+}
+
+/* 완료 점, 라인 */
+.full_content .content .line-answer-warp {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.full_content .content .line-answer .dot {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #498f63;
+}
+.full_content .content .line-answer .line {
+  position: absolute;
+  width: 100px;
+  height: 5px;
+  background: #e22f61;
+}
+/* 완료 점 1번 */
+.full_content .content .line-answer:nth-child(1) .dot.index1 {
+  top: 48px;
+  left: 37px;
+}
+.full_content .content .line-answer:nth-child(1) .dot.index2 {
+  top: 192px;
+  left: 435px;
+}
+.full_content .content .line-answer:nth-child(1) .line {
+  width: 427.5px;
+  top: 123.4px;
+  left: 28px;
+  transform: rotate(19.9deg);
+}
+/* 완료 점 2번 */
+.full_content .content .line-answer:nth-child(2) .dot.index1 {
+  top: 192px;
+  left: 34px;
+}
+.full_content .content .line-answer:nth-child(2) .dot.index2 {
+  top: 48px;
+  left: 435px;
+}
+.full_content .content .line-answer:nth-child(2) .line {
+  width: 427.5px;
+  top: 122.4px;
+  left: 28px;
+  transform: rotate(-19.8deg);
+}
+/* 완료 점 3번 */
+.full_content .content .line-answer:nth-child(3) .dot.index1 {
+  top: 336px;
+  left: 33px;
+}
+.full_content .content .line-answer:nth-child(3) .dot.index2 {
+  top: 336px;
+  left: 435px;
+}
+.full_content .content .line-answer:nth-child(3) .line {
+  width: 401px;
+  top: 338.4px;
+  left: 38px;
+}
+/* 중복 선잇기 방지 */
+.full_content .dot-block-wrap {
+  position: absolute;
+  top: 34px;
+  left: 302px;
+  width: 0;
+  height: 0;
+}
+.full_content .dot-block-wrap .answer {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  /* background-color: rgba(0, 0, 0, 0.4); */
+}
+.full_content .dot-block-wrap .answer.index1 {
+  top: 42px;
+  left: 32px;
+}
+.full_content .dot-block-wrap .answer.index2 {
+  top: 187px;
+  left: 430px;
+}
+.full_content .dot-block-wrap .answer.index3 {
+  top: 187px;
+  left: 29px;
+}
+.full_content .dot-block-wrap .answer.index4 {
+  top: 43px;
+  left: 430px;
+}
+.full_content .dot-block-wrap .answer.index5 {
+  top: 331px;
+  left: 28px;
+}
+.full_content .dot-block-wrap .answer.index6 {
+  top: 331px;
+  left: 430px;
+}
+
+.answer-group,
+.text-group {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  white-space: nowrap;
+  width: 10px;
+}
+.text-group {
+  align-items: center;
+}
+.answer-group.index1 {
+  top: 52px;
+  left: 171px;
+}
+.answer-group.index2 {
+  top: 197px;
+  left: 171px;
+}
+.answer-group.index3 {
+  top: 341px;
+  left: 171px;
+}
+
+.text-group .index {
+  position: absolute;
+  font-size: 32px;
+  left: -68px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.text-group.index1 {
+  top: 52px;
+  left: 841px;
+}
+.text-group.index2 {
+  top: 195px;
+  left: 841px;
+}
+.text-group.index3 {
+  top: 339px;
+  left: 841px;
+}
+
+/* 페이지 */
+.number-page {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  bottom: 12px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  font-family: "SUIT Variable", sans-serif;
+  font-weight: 800;
+  font-size: 26px;
+  color: #d9d9d9;
+}
+.number-page .item {
+  display: flex;
+}
+.number-page .item:after {
+  content: "";
+  width: 24px;
+  height: 24px;
+  background: url(./../../common/images/page_arrow.svg) no-repeat center;
+  margin: 0 6px 0 6px;
+}
+.number-page .item:last-of-type:after {
+  display: none;
+}
+.number-page .item.active {
+  color: #231815;
+}
+/* 해석 */
+.popup.popup3 .popup_content {
+  width: 100%;
+  height: 100%;
+  padding: 46px 34px 8px 55px;
+  position: relative;
+}
+.popup.popup3 .popup_content .content {
+  width: 100%;
+  height: 100%;
+  padding-top: 14px;
+  overflow-y: auto;
+}
+.popup.popup3 .content .line {
+  display: flex;
+  height: 50px;
+}
+.popup.popup3 .content .line .index {
+  margin-right: 10px;
+}
+
+.popup.popup3 .subtext {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  transform: translateY(100%);
+  white-space: nowrap;
+}

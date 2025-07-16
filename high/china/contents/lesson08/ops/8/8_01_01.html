@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>미래엔 중국어</title>
+  <script src="./../common/lib/jquery-3.7.1.min.js"></script>
+  <!-- SUIT Variable 폰트 -->
+  <link href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/variable/woff2/SUIT-Variable.css"
+    rel="stylesheet" />
+  <link href="../common/css/comm.css" rel="stylesheet" />
+  <link href="./css/8_01_01.css" rel="stylesheet" />
+</head>
+
+<body>
+  <div id="wrap" class="china_wrap content_wrap">
+    <div class="btn_box dp_flex">
+      <button class="btn popup_btn blue" data-index="2">해석</button>
+      <!-- <div class="tempBttns">
+        <button onclick="page.showAnswer(event)" data-index="1" class="tempBttn answer_btn">임시정답</button>
+        <button onclick="page.hideAnswer(event)" data-index="1" class="tempBttn reset_btn"
+          style="display: none">다시하기</button>
+      </div> -->
+    </div>
+
+    <div class="full_content">
+      <div class="content">
+        <div class="unit_box flex">
+          <div class="sub-title">
+            <span data-audio="093-01.mp3"><span class="FZKai mr-10">第八课</span><span class="gRegula">Dì bã
+                kè</span></span>
+          </div>
+        </div>
+        <div class="title mb-6">
+          <div class="flex items-center justify-center flex-col" data-audio="093-02.mp3">
+            <span class="FZKai">我要买一双鞋。</span><span class="gRegula c-gray"><span class="mr-24">Wô</span><span class="mr-24">yào</span><span class="mr-24">mâi</span><span class="mr-24">yì</span><span class="mr-24">shuãng</span><span>xié.</span></span>
+          </div>
+          <button class="btn popup_btn purple" data-index="1">
+            제목 찬트
+          </button>
+        </div>
+        <div class="answer_box">
+          <div class="answer_reset">
+            <div class="box" style="width: 100px"></div>
+            <div class="box" style="width: 100px"></div>
+            <div class="box" style="width: 100px"></div>
+            <div class="box" style="width: 64px"></div>
+            <div class="box" style="width: 244px"></div>
+            <div class="box" style="width: 100px"></div>
+          </div>
+          <div class="answer" style="display: none">
+            <span class="suit c-red"><span class="underline mr-18">나</span><span class="underline mr-18">~하려고 하다</span><span class="underline mr-16">사다</span><span class="underline mr-50">1, 하나</span><span class="underline" style="margin-right: 70px">켤레, 쌍</span><span class="underline">신발</span></span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="popup_bg" style="display: none"></div>
+    <!-- 제목 찬트 -->
+    <div class="popup popup1" data-popup="1" style="display: none">
+      <div class="tag bmjua dp_flex">제목 찬트</div>
+      <button class="close_btn"></button>
+      <div class="popup_content">
+        <div class="content">
+          <div class="line">
+            <span class="suit">신발 <span class="FZKai">鞋</span>(<span class="gRegula">xié</span>), 신발 <span class="FZKai">鞋</span>(<span class="gRegula">xié</span>)</span>
+          </div>
+          <div class="line">
+            <span class="suit">켤레, 쌍 <span class="FZKai">双</span>(<span class="gRegula">shuãng</span>) <span class="FZKai">双</span>(<span class="gRegula">shuãng</span>)</span>
+          </div>
+          <div class="line">
+            <span class="suit"><span class="mr-16">신발을 세는 단위</span><span class="FZKai">双</span>(<span class="gRegula">shuãng</span>)</span>
+          </div>
+          <div class="line">
+            <span class="suit"><span class="mr-16">신발 한 켤레</span><span class="FZKai">一双鞋</span>(<span class="gRegula">yì shuãng xié</span>)</span>
+          </div>
+          <div class="line">
+            <span class="suit"><span class="mr-16">사다</span><span class="FZKai">买</span>(<span class="gRegula">mâi</span>)<span class="mr-16">,</span><span class="mr-16">사려고 해요</span><span class="FZKai">要买</span>(<span class="gRegula">yào mâi</span>)</span>
+          </div>
+          <div class="line">
+            <span class="suit">신발 한 켤레를 사려고 해요.<br><span class="FZKai" style="margin-right: -22px;">我要买一双鞋。</span><span class="suit">(<span class="gRegula">Wô yào mâi yì shuãng xié.</span>)</span></span>
+          </div>
+        </div>
+        <button class="btn btn3 listen_btn chantPlay" data-audio="093-03.mp3">찬트 듣기</button>
+        <button class="btn btn3 listen_btn chantStop" style="display: none">찬트 정지</button>
+      </div>
+    </div>
+    <!-- 해석 팝업-->
+    <div class="popup popup2" data-popup="2" style="display: none">
+      <div class="tag bmjua dp_flex">해석</div>
+      <button class="close_btn"></button>
+      <div class="popup_content">
+        <div class="title">
+          <span class="FZKai mb-6">我要买一双鞋。</span><span class="gRegula mb-40"><span class="mr-24">Wô</span><span
+              class="mr-24">yào</span><span class="mr-24">mâi</span><span class="mr-24">yì</span><span
+              class="mr-24">shuãng</span><span>xié.</span></span>
+          <span class="suit c-blue">저는 신발 한 켤레를 사려고 해요.</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+<script type="text/javascript">
+  const page = {
+    //컨텐츠에 정답 확인이 존재하는지 여부
+    isAnswer: true,
+    // 단어장 노출 여부 판단.
+    isVocabulary: false,
+    //정답 보기
+    showAnswer: () => {
+      $(".tempBttn.answer_btn").hide();
+      $(".tempBttn.reset_btn").show();
+
+      $(".answer_reset").hide();
+      $(".answer").show();
+    },
+    //정답 숨기기
+    hideAnswer: () => {
+      $(".tempBttn.answer_btn").show();
+      $(".tempBttn.reset_btn").hide();
+
+      $(".answer_reset").show();
+      $(".answer").hide();
+    },
+    // 단어장 보기
+    showVocabulary: () => { },
+  };
+  $(document).ready(function () {
+    // page.showAnswer();
+    // page.hideAnswer();
+    // setPopup(1);
+  });
+</script>
+<script src="../common/js/script.js"></script>
+<script type="text/javascript">
+  // 찬트 듣기
+  $(".chantPlay").on("click", function () {
+    $(this).hide();
+    $(".chantStop").show();
+  });
+  // 찬트 정지
+  $(".chantStop").on("click", function () {
+    audioStop();
+    $(this).hide();
+    $(".chantPlay").show();
+  });
+</script>
+
+</html>

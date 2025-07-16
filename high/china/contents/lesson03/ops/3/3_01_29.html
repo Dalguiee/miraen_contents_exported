@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>미래엔 중국어</title>
+  <script src="./../common/lib/jquery-3.7.1.min.js"></script>
+  <!-- SUIT Variable 폰트 -->
+  <link href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/variable/woff2/SUIT-Variable.css"
+    rel="stylesheet" />
+  <link href="../common/css/comm.css" rel="stylesheet" />
+  <link href="./css/3_01_29.css" rel="stylesheet" />
+</head>
+
+<body>
+  <div id="wrap" class="china_wrap content_wrap">
+    <div class="title_box title_box4 dp_flex">
+      <img src="../3/images/3_01_29/title.svg" alt="" class="" />
+      <div class="text_box">
+        <span style="font-size: 30px">한국과 중국의 대학 입학시험을 비교해 봅시다.</span>
+      </div>
+    </div>
+
+    <div class="btn_box dp_flex">
+      <button class="btn3 ex_btn">예시 답안</button>
+      <button class="btn3 ex_reset_btn" style="display: none">
+        다시 풀기
+      </button>
+      <button class="btn popup_btn blue" data-index="1">보충</button>
+    </div>
+
+    <div class="full_content">
+      <img src="../3/images/3_01_29/img1.png" alt="" class="img1" />
+      <div class="text suit">시험 시기, 시험 과목, 선물, 응원 풍경</div>
+      <div class="text-warp">
+        <span class="suit explan" style="display: none">우리나라는 일반적으로 11월 셋째 주에 시험을 보는 반면 중국은 6월
+          7~8일로 날짜가 고정되어 있습니다. 국어, 영어, 수학 과목을 보는 것은
+          동일하지만 필수 과목과 선택<br />과목의 약간의 차이가 있습니다.
+          우리나라는 붙으라는 뜻으로 엿과 찹쌀떡을 선물하며, 중국은 합격하라는
+          기원의 의미로 <span class="simhei" data-audio="050-05.mp3">粽子<span class="gRegula"><span
+                class="suit">(</span>zòngzi<span class="suit">)</span></span></span>를 선물합니다.
+        </span>
+      </div>
+    </div>
+
+    <div class="popup_bg" style="display: none"></div>
+    <!-- 보충 -->
+    <div class="popup popup1" data-popup="1" style="display: none">
+      <div class="tag bmjua dp_flex">보충</div>
+      <button class="close_btn"></button>
+      <div class="popup_content dp_flex dp_flex_column">
+        <div class="title_box suit">중국과 한국의 대입 시험 비교</div>
+        <div class="table_box">
+          <div class="head row">
+            <div class="item"></div>
+            <div class="item">
+              <span class="suit">한국</span>
+            </div>
+            <div class="item">
+              <span class="suit">중국</span>
+            </div>
+          </div>
+          <div class="body row">
+            <div class="item"><span class="suit">시험 시기</span></div>
+            <div class="item">
+              <span class="suit">11월 셋째 주 목요일</span>
+            </div>
+            <div class="item">
+              <span class="suit">6월 7~8일(날짜 고정, 요일 무관)</span>
+            </div>
+          </div>
+          <div class="body row">
+            <div class="item"><span class="suit">시험 과목</span></div>
+            <div class="item">
+              <span class="suit">국어, 수학, 영어, 한국사, 탐구<br />
+                (사탐, 과탐, 직탐), 제2외국어/한문</span>
+            </div>
+            <div class="item">
+              <span class="suit">국어(어문), 수학, 영어(외국어),<br />
+                선택 과목(문과 종합, 이과 종합)</span>
+            </div>
+          </div>
+          <div class="body row">
+            <div class="item"><span class="suit">만점</span></div>
+            <div class="item">
+              <span class="suit">450점</span>
+            </div>
+            <div class="item">
+              <span class="suit">750점</span>
+            </div>
+          </div>
+          <div class="body row">
+            <div class="item">
+              <span class="suit">합격 기원<br />
+                선물</span>
+            </div>
+            <div class="item">
+              <span class="suit">엿, 찹쌀떡<br />
+                (붙으라는 의미)</span>
+            </div>
+            <div class="item">
+              <span class="suit">쭝쯔<br />(<span class="FZKai" data-audio="051-01.mp3">粽子</span>:
+                합격하다라는 뜻의
+                <span class="FZKai" data-audio="051-02.mp3">中</span>과
+                해음)</span>
+            </div>
+          </div>
+          <div class="body row">
+            <div class="item">
+              <span class="suit">응원<br />
+                풍경</span>
+            </div>
+            <div class="item">
+              <span class="suit">선후배들이 피켓을 들고 응원</span>
+            </div>
+            <div class="item">
+              <span class="suit">치파오(시작하자마자 승리라는 뜻의<br />
+                <span class="FZKai" data-audio="050-06.mp3">旗开得胜</span>과
+                해음)를 입고 응원
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<script type="text/javascript">
+  const page = {
+    //컨텐츠에 정답 확인이 존재하는지 여부
+    isAnswer: false,
+    // 단어장 노출 여부 판단.
+    isVocabulary: false,
+    //정답 보기
+    showAnswer: () => { },
+    //정답 숨기기
+    hideAnswer: () => { },
+    // 단어장 보기
+    showVocabulary: () => { },
+  };
+</script>
+<script src="../common/js/script.js"></script>
+<script type="text/javascript">
+  $(document).ready(function () {
+    // setPopup(1);
+  });
+
+  //예시 답안
+  $(".ex_btn").on("click", function () {
+    $(this).hide();
+    $(this).next().show();
+    $(".explan").show();
+  });
+  //다시 풀기
+  $(".ex_reset_btn").on("click", function () {
+    $(this).hide();
+    $(this).prev().show();
+    $(".explan").hide();
+  });
+</script>
+
+</html>

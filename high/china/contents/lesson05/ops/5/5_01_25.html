@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>미래엔 중국어</title>
+		<script src="./../common/lib/jquery-3.7.1.min.js"></script>
+		<!-- SUIT Variable 폰트 -->
+		<link href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/variable/woff2/SUIT-Variable.css" rel="stylesheet" />
+		<link href="../common/css/comm.css" rel="stylesheet" />
+		<link href="./css/5_01_25.css" rel="stylesheet" />
+	</head>
+
+	<body>
+		<div id="wrap" class="china_wrap content_wrap">
+			<div class="title_box title_box5 dp_flex">
+				<div class="img_box">
+					<img src="../common/images/culture_icon.svg" alt="문화" class="img img1" />
+				</div>
+				<div class="text_box">
+					<span class="suit">중국의 <span class="highlight purple">전통 공연 예술</span></span>
+				</div>
+			</div>
+
+			<div class="btn_box dp_flex">
+				<button class="btn popup_btn blue" data-index="1">보충</button>
+			</div>
+
+			<div class="full_content dp_flex">
+				<div class="content">
+					<div class="content-title">
+						<span class="suit">변검</span>
+						<span class="dp_flex" data-audio="070-03.mp3">
+							<span class="simhei">变脸</span>
+							<span class="gRegula">biànliân</span>
+						</span>
+					</div>
+					<p class="content-text suit">
+						<span class="notoSans">‘</span>얼굴을 바꾼다<span class="notoSans">’</span>는 뜻의 변검은 쓰촨(<span class="simhei" data-audio="070-04.mp3">四川</span>) 지역 전통극의 연기<br>
+						기법입니다. 얼굴에 손을 대지 않고 순식간에 가면을 바꾸어<br>인물의 감정을 다양하게 표현합니다.
+					</p>
+				</div>
+			</div>
+
+			<!-- 참고 -->
+			<div class="popup_bg" style="display: none"></div>
+			<div class="popup popup1" data-popup="1" style="display: none">
+				<div class="tag bmjua dp_flex">보충</div>
+				<button class="close_btn"></button>
+				<div class="popup_content">
+					<div class="popup-scroll">
+						<div class="title suit">변검(<span class="simhei" data-audio="070-03.mp3">变脸</span>)</div>
+						<div class="text suit">
+							중국 4대 지방극 중 하나인 천극은 쓰촨 지역 문화의 정수라<br>
+							할 수 있다. 변검은 천극 연출의 독특한 기술 중 하나로, 배우가<br>
+							얼굴에 있는 검보(<span class="simhei" data-audio="070-13.mp3">脸谱<span class="gRegula"> liânpû</span></span>)를 극의 분위기에 따라<br>
+							순식간에 바꾸어 관중의 탄성을 자아내는 연출 기법이다.<br>
+							등장인물의 감정 변화와 생각 및 개성을 가면으로 표현하는<br>
+							변검은 부채와 현란한 손기술로 극적인 변화를 주어 관중을<br>
+							극에 몰입시킨다.
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript">
+		const page = {
+			//컨텐츠에 정답 확인이 존재하는지 여부
+			isAnswer: false,
+			// 단어장 노출 여부 판단.
+			isVocabulary: false,
+			//정답 보기
+			showAnswer: () => {},
+			//정답 숨기기
+			hideAnswer: () => {},
+			// 단어장 보기
+			showVocabulary: () => {},
+		};
+		$(document).ready(function () {});
+	</script>
+	<script src="../common/js/script.js"></script>
+</html>

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>미래엔 중국어</title>
+    <script src="./../common/lib/jquery-3.7.1.min.js"></script>
+    <!-- SUIT Variable 폰트 -->
+    <link
+      href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/variable/woff2/SUIT-Variable.css"
+      rel="stylesheet"
+    />
+    <link href="../common/css/comm.css" rel="stylesheet" />
+    <link href="./css/1_01_19.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div id="wrap" class="china_wrap">
+      <div class="title_box">
+        <div class="title">
+          <img class="title_logo" src="./images/1_01_19/logo.svg" alt="">
+          <span class="title_text suit">조선 시대의 중국 여행기 <span class="green">《열하일기》</span></span>
+        </div>
+      </div>
+
+      <div class="btn_box dp_flex">
+        <button class="btn popup_btn blue" data-index="3">보충</button>
+        <button class="btn popup_btn blue" data-index="4">참고</button>
+      </div>
+
+      <div class="full_content">
+        <div class="title">
+          <span class="bmjua">열하일기의 여정</span>
+        </div>
+        <div class="content">
+          <div class="context">
+            <span class="suit">
+              《열하일기(<span class="simhei" data-audio="107-01.mp3">熱河日記</span>)》는 연암 박지원이 1780년(정조 4년)에 청나라<br>
+              건륭제의 70세 생일잔치 축하 사절로 청나라에 다녀온 일을 적은 여행기입니다.<br>
+              조선 사신단은 압록강 국경을 건너 지금의 베이징인 연경(<span class="simhei" data-audio="107-02.mp3">燕京</span>)에 도착했는데<br>
+              당시 건륭제가 피서 산장에 있다고 하여 지금의 청더(<span class="simhei" data-audio="107-03.mp3">承德</span>)인 열하(<span class="simhei" data-audio="107-04.mp3">熱河</span>)에<br>
+              가게 되었습니다.
+            </span>
+          </div>
+        </div>
+        <div class="content_img_box">
+          <img src="./images/1_01_19/content.png" alt="">
+          <button class="popup_btn" data-index="5"><img src="./images/1_01_16/detail_btn.png" alt=""></button>
+        </div>
+      </div>
+
+      <!-- 팝업 -->
+      <div class="popup_bg" style="display: none"></div>
+
+      <!-- 보충 -->
+      <div class="popup popup3" data-popup="3" style="display: none">
+        <div class="tag bmjua dp_flex">보충</div>
+        <button class="close_btn"></button>
+        <div class="popup_content">
+          <!-- <div class="title">
+            <span class="suit">대한민국 임시 정부 수립</span>
+          </div> -->
+          <div class="content">
+            <div class="line line1">
+              <span class="suit">
+                《열하일기》는 청나라의 정치·경제·사회·문화 등 현실에 대한<br>
+                풍부한 견문과 박지원의 실학사상을 기본으로 한다. 청나라의<br>
+                발전상을 다각도로 보여 주면서 조선의 낙후된 현실을 개혁할<br>
+                구체적 방안을 제시하고 있다. 《열하일기》는 기존의 연행록과<br>
+                달리 여러 방면에 걸쳐 당시의 사회 문제를 신랄하게 풍자한 조선<br>
+                후기 문학을 대표하는 걸작으로 평가 받고 있다.
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 참고 -->
+      <div class="popup popup4" data-popup="4" style="display: none">
+        <div class="tag bmjua dp_flex">참고</div>
+        <button class="close_btn"></button>
+        <div class="popup_content">
+          <div class="title">
+            <span class="suit">연행록(<span class="simhei" data-audio="107-05.mp3">燕行录</span>)인 《열하일기》</span>
+          </div>
+          <div class="content">
+            <div class="line line1">
+              <!-- <div class="index">
+                <span class="suit">1.</span>
+              </div> -->
+              <div class="text">
+                <span class="suit">
+                  조선 시대에 명나라 및 청나라의 수도인 연경으로 외교 사절을<br>
+                  1,000번 이상 파견한 것으로 추산된다. 이 외교 사절들은 각자<br>
+                  자신이 보고 듣고 느낀 것을 개인 여행기로 남겼는데, 이를 통틀어<br>
+                  ‘연행록’이라고 한다. 연행록은 중국과의 교류를 통하여 조선에<br>
+                  새로운 지식이 형성되고 문명이 발전하는 과정을 담고 있으며,<br>
+                  또한 동아시아의 외교·교역·문화 교류의 실상을 생생하게 보여<br>
+                  준다는 점에서 그 의의가 매우 크다. 
+                </span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- 크게 보기 -->
+      <div class="popup popup5" data-popup="5" style="display: none">
+        <button class="close_btn"></button>
+        <div class="popup_content">
+          <!-- <div class="title">
+            <span class="suit">의역의 종류</span>
+          </div> -->
+          <div class="content">
+            <div class="img_box">
+              <img src="./images/1_01_19/map_detail.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+      
+
+
+    </div>
+  </body>
+  <script type="text/javascript">
+    const page = {
+      //컨텐츠에 정답 확인이 존재하는지 여부
+      isAnswer: false,
+      // 단어장 노출 여부 판단.
+      isVocabulary: false,
+      //정답 보기
+      showAnswer: () => {},
+      //정답 숨기기
+      hideAnswer: () => {},
+      // 단어장 보기
+      showVocabulary: () => {},
+    };
+    $(document).ready(function () {});
+  </script>
+  <script type="text/javascript">
+    // 정답 버튼 앞에 경로를 따로 따서 팝업정답 스크립트 분리지정 가능
+    $(".answer_btn").on("click", function () {
+      // let index = $(".answer_btn").index(this);
+      let index = $(this).data("index");
+      $(this).hide();
+      $(`.reset_btn[data-index=${index}]`).show();
+      
+      // $(`.answer`).show();
+      $(`.answer${index}`).show();
+      $(`.reset${index}`).hide();
+    });
+    // 다시 하기 버튼
+    $(".reset_btn").on("click", function () {
+      // let index = $(".reset_btn").index(this);
+      let index = $(this).data("index");
+      $(this).hide();
+      $(`.answer_btn[data-index=${index}]`).show();
+      
+      // $(".answer").hide();
+      $(`.answer${index}`).hide();
+      $(`.reset${index}`).show();
+    });
+  </script>
+  <script src="../common/js/script.js"></script>
+  <script type="text/javascript"></script>
+</html>

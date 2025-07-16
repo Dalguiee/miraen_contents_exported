@@ -1,0 +1,270 @@
+/* 헤더 */
+.btn_box{
+  padding-top: 9px !important;
+}
+.title_box{
+  left: 0 !important;
+  top: 5px !important;
+}
+.title_box .title{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.title_box .title{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  width: 100%;
+}
+.title_box .title .title_logo{
+  margin-right: 7px;
+}
+.title_box .title .title_num{
+  margin-right: 7px;
+  color: #498F63;
+  font-size: 36px;
+  font-weight: normal;
+}
+.title_box .title .title_text{
+  font-size: 28px;
+  font-weight: 800;
+  line-height: 36px;
+}
+.title_box .title .title_text .gold{
+  color: #B9975B;
+}
+
+
+/* 컨텐츠 */
+.china_wrap .full_content {
+  width: 100%;
+  height: 100%;
+  padding-top: 20px;
+}
+.china_wrap .full_content .content{
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+}
+
+.china_wrap .full_content .content .title{
+  width: 850px;
+  padding-left: 10px;
+  margin-bottom: 20px;
+}
+.china_wrap .full_content .content .title .bmjua{
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 43px;
+  color: #B9975B;
+}
+
+.full_content .content .context {
+  width: 860px;
+  height: 313.52px;
+  position: relative;
+  padding: 21px 0 0 200px;
+  background-image: url(../images/1_01_08/content_bg.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+.full_content .content .context .text_sec{
+  width: 598px;
+  position: relative;
+}
+.full_content .content .context .text_sec .text_sec_upper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 94px;
+  gap: 30px;
+}
+
+.full_content .content .context .text_sec .text_sec_upper .text_box {
+  width: 192px;
+  text-align: center;
+  background-color: #EFEFEF;
+  border-radius: 10px;
+  padding: 10px 20px;
+}
+
+.full_content .content .context .text_sec .text_sec_upper .text_box .simhei{
+  font-size: 42px;
+  font-weight: 400;
+  line-height: 45px;
+}
+.full_content .content .context .text_sec .text_sec_upper .text_box .gRegula{
+  font-size: 37px;
+  font-weight: 400;
+  line-height: 45px;
+}
+
+.full_content .content .context .text_sec .text_sec_under {
+  text-align: start;
+  margin-top: 20px;
+  /* text-align: justify; */
+}
+.full_content .content .context .text_sec .text_sec_under .suit{
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 40px;
+}
+.full_content .content .context .text_sec .text_sec_under .simhei{
+  font-size: 32px;
+  font-weight: 400;
+}
+.full_content .content .context .text_sec .text_sec_under .gRegula{
+  font-size: 32px;
+  font-weight: 400;
+}
+
+
+/* 팝업 */
+.popup{
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  padding: 56px 40px 20px 40px;
+}
+.popup .popup_content{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  padding: 0 !important;
+  gap: 0 !important;
+}
+/* 설명 */
+.popup.explan{
+  width: fit-content !important;
+  padding: 46px 24px 10px 24px;
+}
+.popup.explan1{
+  top: 100px !important;
+  right: 100px !important;
+}
+.popup.explan .popup_content{
+  padding: 0 !important;
+}
+.popup.explan .popup_content .simhei{
+  font-size: 32px !important;
+  line-height: 50px !important;
+  font-weight: 400 !important;
+}
+.popup.explan .popup_content .FZKai{
+  font-size: 32px !important;
+  line-height: 50px !important;
+  font-weight: 400 !important;
+}
+.popup.explan .popup_content .notoSans{
+  font-size: 32px !important;
+  line-height: 50px !important;
+  font-weight: 400 !important;
+}
+.popup.explan .popup_content .gRegula{
+  font-size: 32px !important;
+  line-height: 50px !important;
+  font-weight: 400 !important;
+}
+.popup.explan .popup_content .suit{
+  font-size: 32px !important;
+  line-height: 50px !important;
+  font-weight: 600 !important;
+}
+/* 단어게임 */
+.popup.game .popup_content .game_box{
+  margin: 0 !important;
+}
+/* 단어장 */
+.popup.vocabularyBook{
+  padding: 0 !important;
+}
+.popup.vocabularyBook .popup_content{
+  flex-direction: unset !important;
+  padding: 56px 44px 0 44px !important;
+  gap: 40px !important;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+
+/* 참고 */
+.popup1 .popup_content {
+  padding-left: 15px !important;
+  overflow-y: scroll;
+}
+.popup1 .popup_content .title{
+  margin-bottom: 20px;
+}
+.popup1 .popup_content .title .suit{
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 60px;
+}
+
+.popup1 .popup_content .table_box .table_border table {
+  border-collapse: collapse;
+}
+.popup1 .popup_content .table_box .table_border {
+  border: 2px solid #B0D9EB;
+  border-radius: 11px;
+  overflow: hidden;
+}
+
+.popup1 .popup_content .table_box .table_border table tbody tr {}
+
+.popup1 .popup_content .table_box .table_border table thead tr th {
+  background-color: #EEFFFE;
+  border-bottom: 2px solid #B0D9EB;
+  border-right: 2px solid #B0D9EB;
+}
+.popup1 .popup_content .table_box .table_border table tbody tr td {
+  background-color: white;
+  border-bottom: 2px solid #B0D9EB;
+  border-right: 2px solid #B0D9EB;
+}
+.popup1 .popup_content .table_box .table_border table tbody tr:nth-last-of-type(1) th {
+  border-bottom: 0;
+}
+.popup1 .popup_content .table_box .table_border table tbody tr:nth-last-of-type(1) td {
+  border-bottom: 0;
+}
+.popup1 .popup_content .table_box .table_border table thead tr th:nth-last-of-type(1),
+.popup1 .popup_content .table_box .table_border table tbody tr td:nth-last-of-type(1) {
+  border-right: 0;
+}
+
+.popup1 .popup_content .table_box .table_border table tbody tr td{
+  padding: 10px 0;
+}
+.popup1 .popup_content .table_box .table_border table thead tr th{
+  padding: 10px 0;
+}
+
+
+.popup1 .popup_content .table_box .table_border table tbody tr td div{
+  text-align: center;
+}
+
+.popup1 .popup_content .table_box .table_border table tbody tr td .simhei{
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 34px;
+}
+.popup1 .popup_content .table_box .table_border table tbody tr td .gRegula{
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 34px;
+}
+.popup1 .popup_content .table_box .table_border table thead tr th .suit,
+.popup1 .popup_content .table_box .table_border table tbody tr td .suit{
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 34px;
+}

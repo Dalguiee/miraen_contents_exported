@@ -1,0 +1,152 @@
+#wrap > .title_box3 .num_box {
+  color: rgba(193, 128, 44, 1);
+}
+
+.china_wrap .full_content {
+  padding-top: 35px;
+  align-items: flex-start;
+  gap: 30px;
+}
+
+.china_wrap .full_content .num_box span {
+  font-size: 30px;
+  color: rgba(35, 24, 21, 1);
+  font-weight: 700;
+  font-family: "SUIT Variable", sans-serif;
+}
+
+.china_wrap .full_content .table_box {
+  margin-top: 20px;
+}
+
+.china_wrap .full_content .table_box .tr2 .td > div {
+  margin-top: 40px;
+}
+
+.china_wrap .full_content .table_box .index_box {
+  min-width: 100px;
+  height: 60px;
+  padding: 0 7.5px;
+  background-color: rgba(255, 249, 226, 1);
+  border-radius: 10px;
+}
+
+.china_wrap .full_content .table_box .index_box span {
+  font-size: 30px;
+  color: rgba(35, 24, 21, 1);
+  font-weight: 700;
+  font-family: "SUIT Variable", sans-serif;
+}
+
+.china_wrap .full_content .table_box .arrow_td {
+  padding: 0 12px;
+}
+
+.china_wrap .full_content .table_box .arrow {
+  width: 31px;
+  aspect-ratio: 28/18;
+  background-image: url(../images/3_01_19/arrow.svg);
+  background-repeat: no-repeat;
+}
+
+.china_wrap .full_content .table_box .text_box {
+  width: 80px;
+  height: 60px;
+  background-color: rgba(230, 230, 230, 1);
+  border-radius: 10px;
+}
+
+.china_wrap .full_content .table_box .text_box span {
+  font-size: 30px;
+  color: rgba(35, 24, 21, 1);
+  font-weight: 400;
+}
+
+.china_wrap .full_content .table_box .text_box.no_text_box {
+  background-color: transparent;
+}
+
+.china_wrap .full_content .table_box .answer_box {
+  width: 160px;
+  aspect-ratio: 1/1;
+  margin: 0 10px;
+  border: 3px solid rgba(230, 230, 230, 1);
+  border-radius: 10px;
+  position: relative;
+}
+
+.china_wrap .full_content .table_box .answer_box span {
+  font-size: 40px;
+  font-weight: 400;
+}
+
+.china_wrap .full_content .table_box .answer_box .btn_box {
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translate(-50%, 100%);
+  gap: 8px;
+}
+
+.number-page {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  bottom: 12px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  font-family: "SUIT Variable", sans-serif;
+  font-weight: 800;
+  font-size: 26px;
+  color: #d9d9d9;
+}
+.number-page .item {
+  display: flex;
+}
+.number-page .item:after {
+  content: "";
+  width: 24px;
+  height: 24px;
+  background: url(./../../common/images/page_arrow.svg) no-repeat center;
+  margin: 0 6px 0 6px;
+}
+.number-page .item:last-of-type:after {
+  display: none;
+}
+.number-page .item.active {
+  color: #231815;
+}
+
+.popup1 .popup_content {
+  padding: 56px 50px 20px 50px;
+}
+
+.popup1 .popup_content .list .item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 24px;
+}
+.popup1 .popup_content .list .item .index {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 12px;
+}
+.popup1 .popup_content .list .item .index .suit{
+  font-size: 40px;
+  font-weight: 600;
+  color: #231815;
+}
+
+.popup1 .popup_content .list .item .gRegula {
+  font-size: 40px;
+  line-height: 52px;
+  width: 210px;
+}
+.popup1 .popup_content .list .item .suit {
+  font-size: 40px;
+  color: #3d5591;
+  line-height: 52px;
+  font-weight: 500;
+}

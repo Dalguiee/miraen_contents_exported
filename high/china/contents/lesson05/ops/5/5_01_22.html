@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>미래엔 중국어</title>
+		<script src="./../common/lib/jquery-3.7.1.min.js"></script>
+		<!-- SUIT Variable 폰트 -->
+		<link href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/variable/woff2/SUIT-Variable.css" rel="stylesheet" />
+		<link href="../common/css/comm.css" rel="stylesheet" />
+		<link href="./css/5_01_22.css" rel="stylesheet" />
+	</head>
+
+	<body>
+		<div id="wrap" class="china_wrap content_wrap">
+			<!-- <div class="title_box title_box3 dp_flex">
+				<div class="num_box">
+					<span class="bmjua">5</span>
+				</div>
+				<div class="text_box">
+					<span class="suit">대화를 읽고 빈칸을 채워 봅시다.</span>
+				</div>
+			</div> -->
+
+			<div class="title_box dp_flex">
+        <div class="title">
+          <span class="title_num bmjua">5</span>
+          <span class="title_text suit">문장을 읽고 일치하는 것을 골라 봅시다.</span>
+        </div>
+        <!-- <div class="suit play_box">
+          <div class="icon_box">
+            <img src="./images/5_01_18/icon1.svg" alt="재생" />
+          </div>
+          <span class="suit">083</span>
+        </div> -->
+      </div>
+
+			<div class="btn_box dp_flex">
+				<button class="btn popup_btn blue" data-index="1">해석</button>
+				<!-- <div class="tempBttns">
+					<button onclick="page.showAnswer(event)" data-index="1" class="tempBttn answer_btn">임시정답</button>
+					<button onclick="page.hideAnswer(event)" data-index="1" class="tempBttn reset_btn" style="display: none">다시하기</button>
+				</div> -->
+			</div>
+
+			<div class="full_content">
+				<div class="box-example">
+					<ul class="list">
+						<li class="list-item" data-audio="069-15.mp3">
+							<span class="simhei">我喜欢看电影。</span>
+							<span class="gRegula">Wô xîhuan kàn diànyîng.</span>
+						</li>
+						<li class="list-item" data-audio="069-16.mp3">
+							<span class="simhei">我想当网红。</span>
+							<span class="gRegula">Wô xiâng dãng wânghóng.</span>
+						</li>
+					</ul>
+				</div>
+
+				<div class="box-text">
+					<div class="suit">
+						<span>나는 (</span>
+						<span class="reset style-radio" style="display: none">영화 보는 것</span>
+						<span class="answer style-radio">영화 보는 것</span>
+						<span class="style-radio">음악 듣는 것</span>
+						<span>)을 좋아하고,</span>
+					</div>
+					<div class="suit">
+						<span>(</span>
+						<span class="style-radio">가수</span>
+						<span class="reset style-radio" style="display: none">인터넷 스타</span>
+						<span class="answer style-radio">인터넷 스타</span>
+						<span>)가 되고 싶다.</span>
+					</div>
+				</div>
+			</div>
+
+			<div class="number-page">
+				<div class="item">01</div>
+				<div class="item">02</div>
+				<div class="item">03</div>
+				<div class="item">04</div>
+				<div class="item active">05</div>
+				<div class="item">06</div>
+			</div>
+
+			<div class="popup_bg" style="display: none"></div>
+			<!-- 해석 -->
+			<div class="popup popup1" data-popup="1" style="display: none">
+				<div class="tag bmjua dp_flex">해석</div>
+				<button class="close_btn"></button>
+				<div class="popup_content">
+					<ul class="list">
+						<li class="item">
+							<div class="item_text">
+								<div class="flex">
+									<span class="FZKai">我喜欢看电影。</span>
+									<span class="suit">나는 영화 보는 것을 좋아한다.</span>
+								</div>
+								<span class="gRegula">Wô xîhuan kàn diànyîng.</span>
+							</div>
+						</li>
+						<li class="item">
+							<div class="item_text">
+								<div class="flex">
+									<span class="FZKai">我想当网红。</span>
+									<span class="suit">나는 인터넷 스타가 되고 싶다.</span>
+								</div>
+								<span class="gRegula">Wô xiâng dãng wânghóng.</span>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript">
+		const page = {
+			//컨텐츠에 정답 확인이 존재하는지 여부
+			isAnswer: true,
+			// 단어장 노출 여부 판단.
+			isVocabulary: false,
+			//정답 보기
+			showAnswer: () => {
+				$('.tempBttn.answer_btn').hide();
+				$('.tempBttn.reset_btn').show();
+
+				$('.answer').addClass("style-radio-checked");
+			},
+			//정답 숨기기
+			hideAnswer: () => {
+				$('.tempBttn.answer_btn').show();
+				$('.tempBttn.reset_btn').hide();
+
+				$('.answer').removeClass("style-radio-checked");
+			},
+			// 단어장 보기
+			showVocabulary: () => {},
+		};
+		$(document).ready(function () {
+			// setPopup(1);
+		});
+	</script>
+	<script src="../common/js/script.js"></script>
+</html>

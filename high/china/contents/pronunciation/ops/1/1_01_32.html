@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>미래엔 중국어</title>
+    <script src="./../common/lib/jquery-3.7.1.min.js"></script>
+    <script src="./../common/lib/howler-2.1.3.min.js"></script>
+    <!-- SUIT Variable 폰트 -->
+    <link
+      href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/variable/woff2/SUIT-Variable.css"
+      rel="stylesheet"
+    />
+    <link href="../common/css/comm.css" rel="stylesheet" />
+    <link href="./css/1_01_32.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div id="wrap" class="china_wrap">
+      <div class="top-title">
+        <img src="./images/1_01_32/title1.svg" class="mr-8" /><span
+          class="suit fs-26 fw-8 line-32"
+          >문제 풀며 발음 확인하기</span
+        >
+      </div>
+      <!-- bttns -->
+
+      <!-- contents -->
+      <div class="full_content">
+        <div class="content">
+          <div class="game_warp">
+            <iframe
+              src="https://pubvw-cms.mirae-n.com/web_document/457953/2/word-fruit/index.html?lang=cn&set=1#main"
+              frameborder="0"
+              class="game"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+      <div class="popup_bg" style="display: none"></div>
+    </div>
+  </body>
+  <script type="text/javascript">
+    const page = {
+      //컨텐츠에 정답 확인이 존재하는지 여부
+      isAnswer: false,
+      // 단어장 노출 여부 판단. 이벤트 호출하지 않으면 노출하지 않음.
+      isVocabulary: false,
+      //정답 보기
+      showAnswer: () => {},
+      //정답 숨기기
+      hideAnswer: () => {},
+      // 단어장 보기
+      showVocabulary: () => {},
+    };
+  </script>
+  <script src="../common/js/script.js"></script>
+
+  <script type="text/javascript">
+    $(document).ready(function () {
+      // setPopup(1);
+    });
+    $(".answer_btn").on("click", function () {
+      $(this).hide();
+      $(this).next().show();
+      $(".answer").show();
+    });
+    $(".reset_btn").on("click", function () {
+      $(this).hide();
+      $(this).prev().show();
+      $(".answer").hide();
+    });
+  </script>
+</html>

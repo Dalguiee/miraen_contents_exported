@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>미래엔 중국어</title>
+  <script src="./../common/lib/jquery-3.7.1.min.js"></script>
+  <!-- SUIT Variable 폰트 -->
+  <link href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/variable/woff2/SUIT-Variable.css"
+    rel="stylesheet" />
+  <link href="../common/css/comm.css" rel="stylesheet" />
+  <link href="./css/8_01_26.css" rel="stylesheet" />
+</head>
+
+<body>
+  <div id="wrap" class="china_wrap content_wrap">
+    <div class="title_box title_box5 dp_flex">
+      <div class="img_box">
+        <img src="../common/images/check_tag.svg" alt="" class="" />
+      </div>
+      <!-- <div class="text_box suit fs-30">OX 문제</div> -->
+    </div>
+
+    <div class="btn_box dp_flex" style="height: 38px"></div>
+
+    <div class="full_content">
+      <div class="content">
+        <!-- 1 -->
+        <div class="line">
+          <div class="index bmjua">1</div>
+          <span class="suit fs-36 fw-6 mr-10">중국 화폐는
+            <span data-audio="093-07.mp3"><span class="simhei">人民币</span>(<span
+                class="gRegula">rénmínbì</span>)</span>라고 부른다.</span>
+          <div class="ox_box">
+            <button class="check_box btn_o correct" data-index="1"></button><button class="check_box btn_x"
+              data-index="1"></button>
+            <div class="answer_btn_wrap">
+              <button class="answer_btn btn btn3" data-index="1">정답</button><button class="reset_btn btn btn3"
+                data-index="1" style="display: none">
+                다시 하기
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- 2 -->
+        <div class="line mb-10">
+          <div class="index bmjua">2</div>
+          <span class="suit fs-36 fw-6 mr-10">중국 지폐 앞면에는 중국의 명소가 그려져 있다.</span>
+          <div class="ox_box">
+            <button class="check_box btn_o" data-index="2"></button><button class="check_box btn_x correct"
+              data-index="2"></button>
+            <div class="answer_btn_wrap">
+              <button class="answer_btn btn btn3" data-index="2">정답</button><button class="reset_btn btn btn3"
+                data-index="2" style="display: none">
+                다시 하기</button><button class="btn btn3 ml-8 explan_popup_btn" data-index="2" style="display: none">
+                설명
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 설명 팝업 -->
+    <div class="popup explan" style="display: none">
+      <div class="tag bmjua dp_flex">설명</div>
+      <button class="close_btn"></button>
+      <div class="popup_content">
+        <div class="content">
+          <span class="suit">중국 지폐 앞면에는 마오쩌둥의 초상이 있고,<br />지폐 뒷면에
+            중국의 명소가 그려져 있다.</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<script type="text/javascript">
+  const page = {
+    //컨텐츠에 정답 확인이 존재하는지 여부
+    isAnswer: false,
+    // 단어장 노출 여부 판단.
+    isVocabulary: false,
+    //정답 보기
+    showAnswer: () => {
+      $(".answer_btn").hide();
+      $(".reset_btn").show();
+      $(`.check_box`).removeClass("active");
+      $(`.correct`).addClass("active");
+      $(`.explan_popup_btn[data-index="2"]`).show();
+    },
+    //정답 숨기기
+    hideAnswer: () => {
+      $(".answer_btn").show();
+      $(".reset_btn").hide();
+      $(`.check_box`).removeClass("active");
+      $(`.explan_popup_btn[data-index="2"]`).hide();
+    },
+    // 단어장 보기
+    showVocabulary: () => { },
+  };
+  $(document).ready(function () {
+    // setPopup(2);
+  });
+</script>
+<script src="../common/js/script.js"></script>
+<script type="text/javascript">
+  // 정답 버튼
+  $(".answer_btn").on("click", function () {
+    const index = $(this).data("index");
+    $(this).hide();
+    $(this).next().show();
+    $(`.check_box[data-index="${index}"]`).removeClass("active");
+    $(`.correct[data-index="${index}"]`).addClass("active");
+    $(`.explan_popup_btn[data-index="${index}"]`).show();
+  });
+  // 다시 하기 버튼
+  $(".reset_btn").on("click", function () {
+    const index = $(this).data("index");
+    $(this).hide();
+    $(this).prev().show();
+    $(`.check_box[data-index="${index}"]`).removeClass("active");
+    $(`.explan_popup_btn[data-index="${index}"]`).hide();
+  });
+
+  // 체크박스 클릭
+  // $(".check_box").on("click", function () {
+  //   const index = $(this).data("index");
+  //   $(`.check_box[data-index="${index}"]`).removeClass("active");
+  //   $(this).addClass("active");
+  //   if ($(this).hasClass("correct")) {
+  //     $(`.answer_btn[data-index="${index}"]`).hide();
+  //     $(`.reset_btn[data-index="${index}"]`).show();
+  //     $(`.explan_popup_btn[data-index="${index}"]`).show();
+  //   } else {
+  //     $(`.answer_btn[data-index="${index}"]`).show();
+  //     $(`.reset_btn[data-index="${index}"]`).hide();
+  //     $(`.explan_popup_btn[data-index="${index}"]`).hide();
+  //   }
+  // });
+</script>
+
+</html>

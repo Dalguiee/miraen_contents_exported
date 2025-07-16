@@ -1,0 +1,376 @@
+/* 헤더 */
+.btn_box{
+  padding-top: 9px !important;
+}
+.title_box{
+  left: 0 !important;
+  top: 10px !important;
+}
+.title_box .title{
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  width: 100%;
+}
+.title_box .title .title_logo{
+  margin-right: 7px;
+}
+.title_box .title .title_num{
+  width: 40px;
+  height: 40px;
+  background-color: #B7CA00;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+  margin-top: 5px;
+}
+.title_box .title .title_num .suit{
+  font-size: 32px;
+  font-weight: 900;
+  line-height: 48px;
+  color: white;
+}
+.title_box .title .title_text{
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 48px;
+}
+
+
+/* 컨텐츠 */
+.full_content {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  padding-top: 45px;
+  padding-left: 70px;
+  position: relative;
+}
+
+.full_content .content > .content_text {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+}
+
+.full_content .content > .content_text .index{
+  margin-right: 10px;
+}
+.full_content .content > .content_text .index .bmjua{
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 48px;
+}
+.full_content .content > .content_text .text{
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+}
+.full_content .content > .content_text .text .title{
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 48px;
+  margin-bottom: 20px;
+}
+.full_content .content > .content_text .text .main_text{
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 37px;
+  margin-bottom: 10px;
+}
+.full_content .content > .content_text .text .annotation{
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 25px;
+  color: #727171;
+}
+.full_content .content > .content_text .text .suit{
+  font-weight: 600;
+}
+
+
+.full_content .content > .content_img_box{
+  width: 430px;
+  height: 418px;
+  position: absolute;
+  right: 34px;
+  bottom: 37px;
+  z-index: -1;
+}
+
+.full_content .content > .content_img_box > img{
+  width: 100%;
+  object-fit: cover;
+}
+
+
+
+
+
+
+/* 팝업 */
+.popup{
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  padding: 56px 40px 20px 40px;
+}
+.popup .popup_content{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  padding: 0 !important;
+  gap: 0 !important;
+}
+/* 설명 */
+.popup.explan{
+  width: fit-content !important;
+  padding: 46px 24px 10px 24px;
+}
+.popup.explan1{
+  top: 170px !important;
+  right: 380px !important;
+}
+.popup.explan2{
+  top: 190px !important;
+  right: 200px !important;
+}
+.popup.explan3{
+  top: 100px !important;
+  right: 20px !important;
+}
+
+.popup.explan .popup_content{
+  padding: 0 !important;
+}
+.popup.explan .popup_content .simhei{
+  font-size: 32px !important;
+  line-height: 50px !important;
+  font-weight: 400 !important;
+}
+.popup.explan .popup_content .FZKai{
+  font-size: 32px !important;
+  line-height: 50px !important;
+  font-weight: 400 !important;
+}
+.popup.explan .popup_content .notoSans{
+  font-size: 32px !important;
+  line-height: 50px !important;
+  font-weight: 400 !important;
+}
+.popup.explan .popup_content .gRegula{
+  font-size: 32px !important;
+  line-height: 50px !important;
+  font-weight: 400 !important;
+}
+.popup.explan .popup_content .suit{
+  font-size: 32px !important;
+  line-height: 50px !important;
+  font-weight: 600 !important;
+}
+/* 단어게임 */
+.popup.game .popup_content .game_box{
+  margin: 0 !important;
+}
+/* 단어장 */
+.popup.vocabularyBook{
+  padding: 0 !important;
+}
+.popup.vocabularyBook .popup_content{
+  flex-direction: unset !important;
+  padding: 56px 44px 0 44px !important;
+  gap: 40px !important;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+
+/* 보충 */
+.popup3 .popup_content{
+  padding-left: 15px !important;
+}
+
+.popup3 .popup_content > .title{
+  margin-bottom: 10px;
+}
+.popup3 .popup_content > .title .suit{
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 50px;
+}
+.popup3 .popup_content .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: 20px;
+}
+.popup3 .popup_content .content .line{
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+}
+
+.popup3 .popup_content .content .line .simhei{
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 39px;
+}
+.popup3 .popup_content .content .line .gRegula{
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 39px;
+}
+.popup3 .popup_content .content .line .suit{
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 39px;
+}
+
+.popup3 .popup_content .annotation {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  margin-top: 10px;
+}
+
+.popup3 .popup_content .annotation .index{
+  margin-right: 10px;
+}
+.popup3 .popup_content .annotation .index .notoSans{
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+
+.popup3 .popup_content .annotation .text .text_content{
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  gap: 50px;
+}
+.popup3 .popup_content .annotation .text .text_content .text_sec{
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+}
+
+.popup3 .popup_content .annotation .text > .title{
+  margin-bottom: 5px;
+}
+.popup3 .popup_content .annotation .text > .title .suit{
+  font-size: 30px;
+  font-weight: 800;
+  line-height: 40px;
+}
+.popup3 .popup_content .annotation .text > .title .suit .sub_text{
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 29px;
+  color: #727171;
+}
+.popup3 .popup_content .annotation .text > .title .suit .sub_text .suit{
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 29px;
+  color: #727171;
+}
+
+.popup3 .popup_content .annotation .text .text_content .text_sec .suit{
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 40px;
+}
+.popup3 .popup_content .annotation .text .text_content .text_sec .gRegula{}
+.popup3 .popup_content .annotation .text .text_content .text_sec .simhei{}
+
+
+
+/* 참고 */
+.popup4 .popup_content{
+  padding-left: 15px !important;
+}
+
+.popup4 .popup_content > .title{
+  margin-bottom: 20px;
+}
+.popup4 .popup_content > .title .suit{
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 60px;
+}
+.popup4 .popup_content .content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-self: center;
+  gap: 20px;
+}
+.popup4 .popup_content .content .line{
+  display: flex;
+  justify-content: start;
+  align-items: start;
+}
+.popup4 .popup_content .content .line .text{
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+}
+
+.popup4 .popup_content .content .line .index{
+  margin-right: 20px;
+}
+.popup4 .popup_content .content .line .index .suit{
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 44px;
+}
+
+.popup4 .popup_content .content .line .text .suit.title{
+  font-weight: 800;
+  margin-bottom: 5px;
+}
+.popup4 .popup_content .content .line .text .simhei{
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 44px;
+}
+.popup4 .popup_content .content .line .text .gRegula{
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 44px;
+}
+.popup4 .popup_content .content .line .text .suit{
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 44px;
+}
+
+
+/* 크게 보기 */
+.popup5 .popup_content{
+  align-items: center;
+  padding-top: 30px !important;
+}
+.popup5 .popup_content .content .img_box{
+  width: 800px;
+}
+.popup5 .popup_content .content .img_box img{
+  width: 100%;
+  object-fit: cover;
+}
+
+

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>미래엔 중국어</title>
+    <script src="./../common/lib/jquery-3.7.1.min.js"></script>
+    <script src="./../common/lib/howler-2.1.3.min.js"></script>
+    <!-- SUIT Variable 폰트 -->
+    <link
+      href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/variable/woff2/SUIT-Variable.css"
+      rel="stylesheet"
+    />
+    <link href="../common/css/comm.css" rel="stylesheet" />
+    <link href="./css/1_01_24.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div id="wrap" class="china_wrap content_wrap">
+      <div class="title_box">
+        <div class="title">
+          <span class="mainCon suit"
+            ><img
+              class="titleLogo"
+              src="./images/1_01_24/logo.svg"
+            />중국인의<span class="purple">인사 문화</span></span
+          >
+        </div>
+      </div>
+
+      <div class="btn_box dp_flex">
+        <div class="bttns">
+          <button class="btn popup_btn blue" data-index="3">보충</button>
+        </div>
+      </div>
+
+      <div class="full_content">
+        <div class="content dp_flex dp_flex_column">
+          <figure class="context context1" data-tab="1">
+            <img src="./images/1_01_24/content1.png" />
+          </figure>
+          <figure class="context context2" data-tab="2" style="display: none">
+            <img src="./images/1_01_24/content2.svg" />
+            <span class="tab2context tab2context1 suit">
+              <span class="notoSans">‘</span>두 손을 맞잡다<span
+                class="notoSans"
+                >’</span
+              >라는 뜻의
+              <span class="simhei" data-audio="030-01.mp3"
+                >拱手<span class="suit"
+                  >(<span class="gRegula">gôngshôu</span>)</span
+                ></span
+              >는 축복이나 존경 등을 표시하는 중국의 전통 인사법
+            </span>
+            <span class="tab2context tab2context2 suit">
+              입니다. 한 손은 주먹을 쥐고, 다른 한 손은 주먹 쥔 손을 감싼 채
+              가볍게 흔들어 인사<br />
+              합니다. 무술 경기나 공연 등에서는<br />
+              <span class="simhei" data-audio="030-02.mp3"
+                >抱拳<span class="suit"
+                  >(<span class="gRegula">bàoquán</span>)</span
+                ></span
+              >으로 인사하기도<br />합니다.
+            </span>
+          </figure>
+        </div>
+      </div>
+
+      <div class="popup_bg" style="display: none"></div>
+      <div class="popup expPopup" data-popup="3" style="display: none">
+        <div class="tag bmjua dp_flex">보충</div>
+        <div class="popup_content">
+          <div class="line line1">
+            <span class="suit"
+              ><span class="simhei" data-audio="030-01.mp3"
+                >拱手<span class="suit"
+                  >(<span class="gRegula">gôngshôu</span>)</span
+                ></span
+              >: 두 손을 마주 잡아 공경의 뜻을 나타낸다.<br />남자는 왼손으로
+              주먹 쥔 오른손을 감싸고, 여자는 오른손으로<br />왼손을 감싸 쥔다.
+              마주 잡은 두 손을 가슴 높이에 두고 가볍게<br />흔들며 인사한다.
+              요즘에는 주로 신년이나 축하 인사를 할 때
+              <span class="notoSans">‘</span
+              ><span class="simhei" data-audio="030-03.mp3">恭喜恭喜</span><span class="suit">(축하합니다)!</span><span class="notoSans">’</span>라는 표현과 함께 쓴다.</span
+            >
+          </div>
+          <div class="line line2">
+            <span class="suit"
+              ><span class="simhei" data-audio="030-02.mp3"
+                >抱拳<span class="suit"
+                  >(<span class="gRegula">bàoquán</span>)</span
+                ></span
+              >: 3,000년 이상의 역사를 자랑하는 오랜<br />전통을 가진
+              인사법으로, 공수와 함께 일상적인 인사였지만<br />지금은 주로 무술
+              대련에서 사용한다. 오른손 주먹 위에 왼손<br />손바닥을 펼쳐
+              올린다.</span
+            >
+          </div>
+          <!-- <div class="popupAnnotation">
+            <span class="suit">[EBS 뉴스 군사 훈련 받는 中 고등학생2021. 04. 26 / 최영택 수정 인용]</span>
+          </div> -->
+        </div>
+        <button class="close_btn"></button>
+      </div>
+
+      <div class="pagination dp_flex" style="margin-bottom: 0px">
+        <span class="active dot" data-index="1"></span>
+        <span class="dot" data-index="2"></span>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript">
+    const page = {
+      //컨텐츠에 정답 확인이 존재하는지 여부
+      isAnswer: false,
+      // 단어장 노출 여부 판단. 이벤트 호출하지 않으면 노출하지 않음.
+      isVocabulary: false,
+      //정답 보기
+      showAnswer: () => {
+        $(".answer_btn").hide();
+        $(".reset_btn").show();
+        $(".answer").show();
+      },
+      //정답 숨기기
+      hideAnswer: () => {
+        $(".answer_btn").show();
+        $(".reset_btn").hide();
+        $(".answer").hide();
+      },
+      // 단어장 보기
+      showVocabulary: () => {
+        setPopup(7);
+      },
+    };
+  </script>
+  <script type="text/javascript">
+    // 정답 버튼
+    $(".answer_btn").on("click", function () {
+      let index = $(".answer_btn").index(this);
+      $(this).hide();
+      $(".reset_btn").eq(index).show();
+      $(".answer").eq(index).show();
+      $(".reset").eq(index).hide();
+    });
+    // 다시 하기 버튼
+    $(".reset_btn").on("click", function () {
+      let index = $(".reset_btn").index(this);
+      $(this).hide();
+      $(".answer_btn").eq(index).show();
+      $(".answer").eq(index).hide();
+      $(".reset").eq(index).show();
+    });
+  </script>
+  <script crossorigin src="../common/lib/libBundle.js"></script>
+  <script src="../common/js/script.js"></script>
+  <script src="../common/js/rolePlayerCh.js"></script>
+  <script src="../common/js/vocabularyBook.js"></script>
+</html>

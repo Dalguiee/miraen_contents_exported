@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>미래엔 중국어</title>
+    <script src="./../common/lib/jquery-3.7.1.min.js"></script>
+    <script src="./../common/lib/howler-2.1.3.min.js"></script>
+    <!-- SUIT Variable 폰트 -->
+    <link
+      href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/variable/woff2/SUIT-Variable.css"
+      rel="stylesheet"
+    />
+    <link href="../common/css/comm.css" rel="stylesheet" />
+    <link href="./css/7_01_19.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div id="wrap" class="china_wrap content_wrap">
+      <div class="title_box">
+        <div class="title">
+          <span class="title_num bmjua">3</span
+          ><span class="title_text suit"
+            >주문한 음식의 개수와 양사를 한자로 써 봅시다.</span
+          >
+        </div>
+      </div>
+
+      <div class="btn_box dp_flex">
+        <div class="bttns">
+          <button class="btn popup_btn blue" data-index="3">해석</button>
+        </div>
+      </div>
+
+      <div class="full_content">
+        <div class="content">
+          <div class="context">
+            <div class="img_box">
+              <img src="./images/7_01_19/content.svg" alt="" />
+              <span class="simhei" data-audio="089-06.mp3"
+                >来十个包子，四杯可乐。</span
+              >
+            </div>
+          </div>
+          <div class="ques_box">
+            <div class="line line1">
+              <div class="ques_icon_box">
+                <img src="./images/7_01_19/icon1.svg" alt="" />
+              </div>
+              <div class="ques_text">
+                <div class="reset reset0 ques_line"></div>
+                <span
+                  class="answer answer0 simhei"
+                  data-audio="089-07.mp3"
+                  style="display: none"
+                  >十个</span
+                >
+                <div class="bttns">
+                  <button class="btn3 answer_btn" data-index="0">정답</button>
+                  <button
+                    class="btn3 reset_btn"
+                    data-index="0"
+                    style="display: none"
+                  >
+                    다시 하기
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="line line2">
+              <div class="ques_icon_box">
+                <img src="./images/7_01_19/icon2.svg" alt="" />
+              </div>
+              <div class="ques_text">
+                <div class="reset reset1 ques_line"></div>
+                <span
+                  class="answer answer1 simhei"
+                  data-audio="089-08.mp3"
+                  style="display: none"
+                  >四杯</span
+                >
+                <div class="bttns">
+                  <button class="btn3 answer_btn" data-index="1">정답</button>
+                  <button
+                    class="btn3 reset_btn"
+                    data-index="1"
+                    style="display: none"
+                  >
+                    다시 하기
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="number-page">
+          <div class="item">01</div>
+          <div class="item">02</div>
+          <div class="item active">03</div>
+          <div class="item">04</div>
+          <div class="item">05</div>
+          <div class="item">06</div>
+        </div>
+      </div>
+
+      <!-- 팝업 -->
+      <div class="popup_bg" style="display: none"></div>
+      <!-- 해석 -->
+      <div class="popup popup1 translate" data-popup="3" style="display: none">
+        <div class="tag bmjua dp_flex">해석</div>
+        <button class="close_btn"></button>
+        <div class="popup_content">
+          <div class="content">
+            <div class="line line1">
+              <div class="line_upper">
+                <span class="FZKai">来十个包子，四杯可乐。</span>
+                <span class="suit">바오쯔 10개, 콜라 4잔 주세요.</span>
+              </div>
+              <span class="gRegula">Lái shí ge bãozi, sì bçi kêlè.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript">
+    const page = {
+      //컨텐츠에 정답 확인이 존재하는지 여부
+      isAnswer: false,
+      // 단어장 노출 여부 판단. 이벤트 호출하지 않으면 노출하지 않음.
+      isVocabulary: false,
+      //정답 보기
+      showAnswer: () => {
+        $(".answer_btn").hide();
+        $(".reset_btn").show();
+        $(".answer").show();
+      },
+      //정답 숨기기
+      hideAnswer: () => {
+        $(".answer_btn").show();
+        $(".reset_btn").hide();
+        $(".answer").hide();
+      },
+      // 단어장 보기
+      showVocabulary: () => {
+        setPopup(7);
+      },
+    };
+  </script>
+  <script type="text/javascript">
+    // 정답 버튼
+    $(".answer_btn").on("click", function () {
+      let index = $(this).data("index");
+      $(this).hide();
+      $(`.reset_btn[data-index=${index}]`).show();
+
+      $(`.answer${index}`).show();
+      $(`.reset${index}`).hide();
+    });
+    // 다시 하기 버튼
+    $(".reset_btn").on("click", function () {
+      let index = $(this).data("index");
+      $(this).hide();
+      $(`.answer_btn[data-index=${index}]`).show();
+
+      $(`.answer${index}`).hide();
+      $(`.reset${index}`).show();
+    });
+  </script>
+  <script crossorigin src="../common/lib/libBundle.js"></script>
+  <script src="../common/js/script.js"></script>
+  <script src="../common/js/rolePlayerCh.js"></script>
+  <script src="../common/js/vocabularyBook.js"></script>
+
+  <!-- 여기서부터 챔니스 캔버스 함수가 시작됨요 -->
+  <script src="../common/js/DotToDotLCM.js"></script>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>미래엔 중국어</title>
+  <script src="./../common/lib/jquery-3.7.1.min.js"></script>
+  <script src="./../common/lib/howler-2.1.3.min.js"></script>
+  <!-- SUIT Variable 폰트 -->
+  <link href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/variable/woff2/SUIT-Variable.css"
+    rel="stylesheet" />
+  <link href="../common/css/comm.css" rel="stylesheet" />
+  <link href="./css/1_01_15.css" rel="stylesheet" />
+</head>
+
+<body>
+  <div id="wrap" class="china_wrap">
+    <div class="top-title"></div>
+    <!-- bttns -->
+    <div class="btn_box flex absolute">
+      <button class="btn popup_btn blue" data-index="1">해석</button>
+    </div>
+
+    <!-- contents -->
+    <div class="full_content">
+      <div class="content">
+        <div class="text-box mb-42 mt-12">
+          <div class="label"></div>
+          <span class="suit fs-30 line-40 fw-6">녹음을 듣고, 알맞은 성모를 써 봅시다.</span>
+        </div>
+        <div class="content_box">
+          <div class="answer gRegula c-red fs-50" data-audio="016-22.mp3" data-audio-combo="016-22" data-index="1" style="display: none">j</div>
+          <div class="answer gRegula c-red fs-50" data-audio="016-23.mp3" data-audio-combo="016-23" data-index="2" style="display: none">ch</div>
+          <div class="answer gRegula c-red fs-50" data-audio="016-24.mp3" data-audio-combo="016-24" data-index="3" style="display: none">s</div>
+          <div class="hint gRegula fs-50" data-audio="016-22.mp3" data-audio-combo="016-22" data-index="1" style="pointer-events: none;">å</div>
+          <div class="hint gRegula fs-50" data-audio="016-23.mp3" data-audio-combo="016-23" data-index="2" style="pointer-events: none;">á</div>
+          <div class="hint gRegula fs-50" data-audio="016-24.mp3" data-audio-combo="016-24" data-index="3" style="pointer-events: none;">ì</div>
+          <div class="btn-box index1">
+            <button class="btn btn3 mr-10" data-audio="016-22.mp3" data-audio-combo="016-22">
+              음원</button><button class="btn btn3 answer_btn" data-index="1">정답</button><button
+              class="btn btn3 reset_btn" data-index="1" style="display: none">
+              다시 풀기
+            </button>
+          </div>
+          <div class="btn-box index2">
+            <button class="btn btn3 mr-10" data-audio="016-23.mp3" data-audio-combo="016-23">
+              음원</button><button class="btn btn3 answer_btn" data-index="2">정답</button><button
+              class="btn btn3 reset_btn" data-index="2" style="display: none">
+              다시 풀기
+            </button>
+          </div>
+          <div class="btn-box index3">
+            <button class="btn btn3 mr-10" data-audio="016-24.mp3" data-audio-combo="016-24">
+              음원</button><button class="btn btn3 answer_btn" data-index="3">정답</button><button
+              class="btn btn3 reset_btn" data-index="3" style="display: none">
+              다시 풀기
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="popup_bg" style="display: none"></div>
+    <!-- 해석 팝업 -->
+    <div class="popup popup3" data-popup="1" style="display: none">
+      <div class="tag bmjua dp_flex">해석</div>
+      <button class="close_btn"></button>
+      <div class="popup_content">
+        <div class="content">
+          <div class="flex mt-6">
+            <div class="flex flex-col mr-60">
+              <span class="suit fs-40 line-56 fw-6">(1) <span class="gRegula">jå</span></span>
+              <div class="suit fs-36 line-42 c-dblue fw-5 ml-58">닭</div>
+            </div>
+            <div class="flex flex-col mr-60">
+              <span class="suit fs-40 line-56 fw-6">(2) <span class="gRegula">chá</span></span>
+              <div class="suit fs-36 line-42 c-dblue fw-5 ml-58">차</div>
+            </div>
+            <div class="flex flex-col mr-60">
+              <span class="suit fs-40 line-56 fw-6">(3) <span class="gRegula">sì</span></span>
+              <div class="suit fs-36 line-42 c-dblue fw-5 ml-58">4, 넷</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<script type="text/javascript">
+  const page = {
+    //컨텐츠에 정답 확인이 존재하는지 여부
+    isAnswer: false,
+    // 단어장 노출 여부 판단. 이벤트 호출하지 않으면 노출하지 않음.
+    isVocabulary: false,
+    //정답 보기
+    showAnswer: () => { },
+    //정답 숨기기
+    hideAnswer: () => { },
+    // 단어장 보기
+    showVocabulary: () => { },
+  };
+</script>
+<script src="../common/js/script.js"></script>
+
+<script type="text/javascript">
+  $(".answer_btn").on("click", function () {
+    const index = $(this).data("index");
+    $(this).hide();
+    $(`.reset_btn[data-index="${index}"]`).show();
+    $(`.answer[data-index="${index}"]`).show();
+    $(`.hint[data-index="${index}"]`).css("pointer-events", "auto");
+  });
+  $(".reset_btn").on("click", function () {
+    const index = $(this).data("index");
+    $(this).hide();
+    $(`.answer_btn[data-index="${index}"]`).show();
+    $(`.answer[data-index="${index}"]`).hide();
+    $(`.hint[data-index="${index}"]`).css("pointer-events", "none");
+  });
+</script>
+
+</html>

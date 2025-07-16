@@ -1,0 +1,301 @@
+/* 헤더 */
+#wrap > .title_box3 {
+  gap: 20px;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+}
+#wrap > .title_box .text_box {
+  padding-bottom: 0;
+}
+#wrap > .title_box3 .num_box {
+  color: #498F63;
+}
+
+/* 헤더 */
+.btn_box{
+  padding-top: 9px !important;
+}
+.title_box{
+  left: 0 !important;
+  top: 9px !important;
+}
+.title_box .title{
+  /* display: flex;
+  justify-content: start;
+  align-items: start; */
+}
+.title_box .title .title_num{
+  margin-right: 20px;
+  color: #498F63;
+  font-size: 36px;
+  line-height: 36px;
+}
+.title_box .title .title_text{
+  font-size: 30px;
+  font-weight: 800;
+  line-height: 30px;
+}
+
+
+/* 푸터 */
+/* 넘버 페이지 */
+.number-page {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  bottom: 12px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  font-family: "SUIT Variable", sans-serif;
+  font-weight: 800;
+  font-size: 26px;
+  color: #d9d9d9;
+}
+.number-page .item {
+  display: flex;
+}
+.number-page .item:after {
+  content: "";
+  width: 24px;
+  height: 24px;
+  background: url(./../../common/images/page_arrow.svg) no-repeat center;
+  margin: 0 6px 0 6px;
+}
+.number-page .item:last-of-type:after {
+  display: none;
+}
+.number-page .item.active {
+  color: #231815;
+}
+
+/* 컨텐츠 */
+.full_content {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  padding-top: 30px;
+}
+.full_content .content .context{
+  width: 568px;
+  height: 200px;
+  border: 5px solid #FFE899;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 30px;
+  padding-left: 100px;
+}
+.full_content .content .context .line {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+}
+
+.full_content .content .context .line .suit.index{
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 43px;
+  color: #498F63;
+  width: 40px;
+  display: inline-block;
+  text-align: center;
+  margin-right: 10px;
+}
+
+.full_content .content .context .line .simhei{
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 43px;
+}
+.full_content .content .context .line .ans_line{
+  display: inline-block;
+  width: 213px;
+  height: 42px;
+  border-bottom: 2px solid black;
+  margin: 0 5px;
+}
+
+.full_content .content .ans_sec {
+  margin-top: 45px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 30px;
+}
+
+.full_content .content .ans_sec .line{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.full_content .content .ans_sec .line .suit.index{
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 40px;
+}
+.full_content .content .ans_sec .line .ans_line{
+  display: inline-block;
+  width: 455px;
+  height: 42px;
+  border-bottom: 2px solid black;
+  text-align: center;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 43px;
+  margin: 0 5px;
+}
+.full_content .content .ans_sec .line .answer{
+  color: #E22F61;
+}
+
+
+/* 팝업 */
+.popup{
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  padding: 56px 40px 20px 40px;
+}
+.popup .popup_content{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  padding: 0 !important;
+  gap: 0 !important;
+}
+/* 설명 */
+.popup.explan{
+  width: fit-content !important;
+  padding: 46px 24px 10px 24px;
+}
+.popup.explan1{
+  top: 100px !important;
+  right: 100px !important;
+}
+.popup.explan .popup_content{
+  padding: 0 !important;
+}
+.popup.explan .popup_content .simhei{
+  font-size: 32px !important;
+  line-height: 50px !important;
+  font-weight: 400 !important;
+}
+.popup.explan .popup_content .FZKai{
+  font-size: 32px !important;
+  line-height: 50px !important;
+  font-weight: 400 !important;
+}
+.popup.explan .popup_content .notoSans{
+  font-size: 32px !important;
+  line-height: 50px !important;
+  font-weight: 400 !important;
+}
+.popup.explan .popup_content .gRegula{
+  font-size: 32px !important;
+  line-height: 50px !important;
+  font-weight: 400 !important;
+}
+.popup.explan .popup_content .suit{
+  font-size: 32px !important;
+  line-height: 50px !important;
+  font-weight: 600 !important;
+}
+/* 단어게임 */
+.popup.game .popup_content .game_box{
+  margin: 0 !important;
+}
+/* 단어장 */
+.popup.vocabularyBook{
+  padding: 0 !important;
+}
+.popup.vocabularyBook .popup_content{
+  flex-direction: unset !important;
+  padding: 56px 44px 0 44px !important;
+  gap: 40px !important;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+
+/* 해석 */
+.popup1 {
+  padding-right: 0 !important;
+}
+.popup1 .popup_content {}
+.popup1 .popup_content .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 20px;
+}
+.popup1 .popup_content .content .section {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+}
+.popup1 .popup_content .content .section .index_section {
+  margin-right: 10px;
+}
+
+.popup1 .popup_content .content .section .index_section .suit{
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 44px;
+  color: #231815;
+}
+.popup1 .popup_content .content .section .line_sec {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: 20px;
+}
+
+.popup1 .popup_content .content .section .line_sec .line {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+}
+.popup1 .popup_content .content .section .line_sec .line .index_line {
+  margin-right: 10px;
+}
+
+.popup1 .popup_content .content .section .line_sec .line .index_line .suit{
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 44px;
+  color: #231815;
+}
+
+.popup1 .popup_content .content .section .line_sec .line .simhei{
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 43px;
+}
+
+.popup1 .popup_content .content .section .line_sec .line .gRegula{
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 43px;
+}
+.popup1 .popup_content .content .section .line_sec .line .suit{
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 43px;
+}
+.popup1 .popup_content .content .section .line_sec .line .suit.text{
+  margin-left: 20px;
+}
+.popup1 .popup_content .content .section .line_sec .line .suit.blue{
+  color: #3D5591;
+}

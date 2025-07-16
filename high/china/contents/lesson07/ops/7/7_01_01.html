@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>미래엔 중국어</title>
+    <script src="./../common/lib/jquery-3.7.1.min.js"></script>
+    <!-- SUIT Variable 폰트 -->
+    <link
+      href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/variable/woff2/SUIT-Variable.css"
+      rel="stylesheet" />
+    <link href="../common/css/comm.css" rel="stylesheet" />
+    <link href="./css/7_01_01.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div id="wrap" class="china_wrap content_wrap">
+      <div class="btn_box dp_flex">
+        <button class="btn popup_btn blue" data-index="2">해석</button>
+        <!-- <div class="tempBttns">
+          <button onclick="page.showAnswer(event)" data-index="1" class="tempBttn answer_btn">임시정답</button>
+          <button onclick="page.hideAnswer(event)" data-index="1" class="tempBttn reset_btn" style="display: none">다시하기</button>
+        </div> -->
+      </div>
+
+      <div class="full_content dp_flex dp_flex_column">
+        <div class="unit_box dp_flex">
+          <!-- <div class="number bmjua">7</div> -->
+          <div class="text_box dp_flex" data-audio="083-01.mp3">
+            <div class="title FZKai">第七课</div>
+            <div class="sub_title gRegula">Dì qå kè</div>
+          </div>
+        </div>
+
+        <div class="content_box dp_flex dp_flex_column relative">
+          <button class="btn popup_btn purple" data-index="1">제목 찬트</button>
+          <div class="dp_flex dp_flex_column" data-audio="083-02.mp3">
+            <div class="question FZKai">
+              <span class="FZKai">您要点什么<span style="font-family: serif;">?</span></span>
+            </div>
+            <div class="pron">
+              <span class="gRegula" style="width: 115px">Nín</span>
+              <span class="gRegula" style="width: 119px">yào</span>
+              <span class="gRegula" style="width: 141px">diân</span>
+              <span class="gRegula" style="width: 305px">shénme?</span>
+            </div>
+          </div>
+          <div class="answer_box">
+            <div class="ex_box dp_flex">
+              <div class="answer answer1"></div>
+              <div class="answer answer2"></div>
+              <div class="answer answer3"></div>
+              <div class="answer answer4" style="margin-right: 16px;"></div>
+            </div>
+            <div class="correct_box dp_flex" style="display: none">
+              <div class="answer answer1 suit" style="margin-right: 20px">
+                당신
+              </div>
+              <div class="answer answer2 suit" style="margin-right: 19px">
+                ~하려고 하다
+              </div>
+              <div class="answer answer3 suit" style="margin-right: 120px">
+                주문하다
+              </div>
+              <div class="answer answer4 suit" style="margin-right: 153px;">무엇</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="popup_bg" style="display: none"></div>
+      <div class="popup popup1 dp_none" data-popup="1">
+        <div class="tag bmjua dp_flex">제목 찬트</div>
+        <button class="btn btn3 listen_btn chantPlay" data-audio="083-03.mp3">찬트 듣기</button>
+        <button class="btn btn3 listen_btn chantStop" style="display: none">찬트 정지</button>
+        <button class="close_btn"></button>
+        <div class="popup_content">
+          <div class="row">
+            <span class="suit">~하려고 하다</span>&nbsp;
+            <span class="FZKai">要</span>
+            <span class="suit">(</span>
+            <span class="gRegula">yào</span>
+            <span class="suit">)</span>&nbsp;
+            <span class="FZKai">要</span>
+            <span class="suit">(</span>
+            <span class="gRegula">yào</span>
+            <span class="suit">)</span>
+          </div>
+          <div class="row">
+            <span class="suit">주문하다</span>&nbsp;
+            <span class="FZKai">点</span>
+            <span class="suit">(</span>
+            <span class="gRegula">diân</span>
+            <span class="suit">), 주문해요</span>&nbsp;
+            <span class="FZKai">点</span>
+            <span class="suit">(</span>
+            <span class="gRegula">diân</span>
+            <span class="suit">)</span>
+          </div>
+          <div class="row">
+            <span class="suit">뭐 주문하니?&nbsp;&nbsp;</span>
+            <span class="FZKai">点什么<span class="suit">?</span></span>
+            <span class="suit">(</span>
+            <span class="gRegula">Diân shénme?</span>
+            <span class="suit">)</span>
+          </div>
+          <div class="row">
+            <span class="suit">뭘 주문하실래요?&nbsp;&nbsp;</span>
+            <span class="FZKai">要点什么<span class="suit">?</span></span>
+            <span class="suit">(</span>
+            <span class="gRegula">Yào diân shénme?</span>
+            <span class="suit">)</span>
+          </div>
+          <div class="row">
+            <span class="suit">손님에게 물어봐요.</span>
+          </div>
+          <div class="row">
+            <span class="FZKai">您要点什么<span class="suit">?</span></span>
+            <span class="suit">(</span>
+            <span class="gRegula">Nín yào diân shénme?</span>
+            <span class="suit">)</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="popup popup2 dp_none" data-popup="2">
+        <div class="tag bmjua dp_flex">해석</div>
+        <button class="close_btn"></button>
+        <div class="popup_content dp_flex dp_flex_column">
+          <div class="question FZKai">您要点什么?</div>
+          <div class="pron gRegula">Nín yào diân shénme?</div>
+          <div class="answer suit">무엇을 주문하시겠습니까?</div> 
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <script type="text/javascript">
+    const page = {
+      //컨텐츠에 정답 확인이 존재하는지 여부
+      isAnswer: true,
+      // 단어장 노출 여부 판단.
+      isVocabulary: false,
+      //정답 보기
+      showAnswer: (e) => {
+        $(".tempBttn.answer_btn").hide();
+        $(".tempBttn.reset_btn").show();
+
+        $(".ex_box").hide();
+        $(".correct_box").show();
+      },
+      //정답 숨기기
+      hideAnswer: (e) => {
+        $(".tempBttn.answer_btn").show();
+        $(".tempBttn.reset_btn").hide();
+
+        $(".ex_box").show();
+        $(".correct_box").hide();
+      },
+      // 단어장 보기
+      showVocabulary: () => {},
+    };
+    $(document).ready(function () {
+      // page.showAnswer();
+    });
+  </script>
+  <script src="../common/js/script.js"></script>
+  <script type="text/javascript">
+    // 찬트 듣기
+    $(".chantPlay").on("click", function () {
+      $(this).hide();
+      $(".chantStop").show();
+    });
+    // 찬트 정지
+    $(".chantStop").on("click", function () {
+      audioStop();
+      $(this).hide();
+      $(".chantPlay").show();
+    });
+  </script>
+</html>

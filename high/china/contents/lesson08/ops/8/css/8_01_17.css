@@ -1,0 +1,96 @@
+.china_wrap .full_content {
+  height: calc(100% - 50px) !important;
+  padding-top: 30px;
+}
+
+.china_wrap .full_content > .title_box {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.china_wrap.express_wrap .full_content > .title_box {
+  padding-top: 4px;
+  gap: 0;
+}
+.china_wrap .full_content > .title_box .text_box {
+  transform: translateY(-4px);
+  margin-left: 8px;
+}
+.china_wrap .full_content > .title_box .text_box span {
+  font-size: 26px;
+  color: rgba(75, 117, 208, 1);
+  font-weight: 800;
+}
+.full_content .content {
+  width: 100%;
+  height: 100%;
+}
+.full_content .content[data-tab="1"] .table {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end;
+  width: 920px;
+  height: 180.5px;
+  margin: 52px auto 0 auto;
+  background: url(./../images/8_01_17/img1.jpg) no-repeat center;
+  background-size: cover;
+}
+.full_content .content[data-tab="1"] .table .row {
+  display: flex;
+  width: fit-content;
+}
+.full_content .content[data-tab="1"] .table .row .col {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 105px;
+  height: 61px;
+  padding-top: 6px;
+}
+.full_content .content[data-tab="1"] .table .row .col .line {
+  width: 55px;
+  height: 26px;
+  border-bottom: 1px solid #c9caca;
+  margin-right: 6px;
+}
+.full_content .content .tip {
+  width: 436px;
+  height: 59px;
+}
+
+.full_content .content[data-tab="2"] .content_bg {
+  position: absolute;
+  bottom: 30px;
+  right: 0;
+  pointer-events: none;
+  width: 400px;
+  height: 306px;
+  z-index: -1;
+}
+
+/* 심화 활동 */
+.popup.popup3 .popup_content {
+  width: 100%;
+  height: 100%;
+  padding: 46px 34px 8px 55px;
+  position: relative;
+}
+.popup.popup3 .popup_content .content {
+  /* background: rgba(0, 0, 0, 0.2); */
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+}
+
+.popup3 .popup_content .content .text-box{
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  gap: 150px;
+  padding-left: 20px;
+}
+
+.popup3 .popup_content .content .text-box span:nth-of-type(1){
+  width: 210px;
+}

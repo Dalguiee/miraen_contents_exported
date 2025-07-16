@@ -1,0 +1,234 @@
+/* 전역 */
+.chLDot{
+  margin-left: -20px;
+}
+.chRDot{
+  margin-right: -20px;
+}
+
+.btn-audio{
+  position: absolute;
+  font-size: 32px;
+}
+
+/* 타이틀 헤더 */
+.title_box{
+  top: 0 !important;
+  left: 0 !important;
+}
+.btn_box{
+  padding-top: 9px !important;
+}
+
+.title_box .title{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* .btn_box .title .titleText{
+  font-size: 38px;
+  color: #B25C7B;
+} */
+
+.title_box .title .mainCon{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  width: 100%;
+  font-size: 30px;
+  margin-right: 20px;
+  font-weight: bold;
+}
+
+.title_box .title .mainCon .titleLogo{
+  margin-right: 20px;
+}
+.title_box .title .mainCon .purple{
+  margin-left: 8px;
+  color: #764A8A;
+}
+
+
+
+/* 컨텐츠 */
+.full_content{
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  padding-top: 50px;
+}
+
+.content{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.full_content .content .context{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+.full_content .content .context1{
+  width: 960px;
+}
+.full_content .content .context1 img{
+  width: 100%;
+  object-fit: cover;
+}
+
+.full_content .content .context .suit{
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 41px;
+}
+.full_content .content .context .simhei{
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 41px;
+}
+.full_content .content .context .gRegula{
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 41px;
+}
+
+.full_content .content .context .tab2context{
+  position: absolute;
+}
+.full_content .content .context .tab2context1{
+  top: 47px;
+  left: 287px;
+  width: 610px;
+  text-align: right;
+}
+.full_content .content .context .tab2context2{
+  top: 130px;
+  left: 380px;
+  width: 532px;
+  height: 194px;
+}
+
+.full_content .btn3{
+  position: absolute;
+  top: 0;
+  right: -100px;
+}
+
+
+
+
+
+
+
+
+/* 팝업 */
+.popup{
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  padding: 56px 40px 20px 40px;
+}
+.popup .popup_content{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  padding: 0 !important;
+  gap: 0 !important;
+}
+/* 설명 */
+.popup.explan{
+  /* width: 650px !important; */
+  padding: 46px 24px 10px 24px;
+}
+.popup.explan .popup_content{
+  padding: 0 !important;
+}
+.popup.explan .popup_content .simhei{
+  font-size: 32px !important;
+  line-height: 50px !important;
+  font-weight: 400 !important;
+}
+.popup.explan .popup_content .gRegula{
+  font-size: 32px !important;
+  line-height: 50px !important;
+  font-weight: 400 !important;
+}
+.popup.explan .popup_content .suit{
+  font-size: 32px !important;
+  line-height: 50px !important;
+  font-weight: 600 !important;
+}
+/* 단어게임 */
+.popup.game .popup_content .game_box{
+  margin: 0 !important;
+}
+/* 단어장 */
+.popup.vocabularyBook{
+  padding: 0 !important;
+}
+.popup.vocabularyBook .popup_content{
+  flex-direction: unset !important;
+  padding: 56px 44px 0 44px !important;
+  gap: 40px !important;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+/* 보충 */
+.expPopup .popup_content{
+  overflow-y: scroll;
+  overflow-x: visible;
+  padding: 0 56px 0 15px !important;
+}
+
+.expPopup .popup_content .line{
+  font-size: 40px;
+  padding-left: 20px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+.expPopup .popup_content .line::before{
+  content: "•";
+  position: absolute;
+  top: 9px;
+  left: -10px;
+
+}
+
+.expPopup .popup_content .line .simhei{
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 48px;
+  font-family: "gRegula";
+}
+.expPopup .popup_content .line .gRegula{
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 48px;
+}
+.expPopup .popup_content .line .suit{
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 48px;
+}
+
+.expPopup .popup_content .popupAnnotation{
+  margin-top: 20px;
+}
+.expPopup .popup_content .popupAnnotation .suit{
+  font-size: 28px;
+  font-weight: 600;
+}

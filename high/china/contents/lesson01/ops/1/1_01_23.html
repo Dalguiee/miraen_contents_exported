@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>미래엔 중국어</title>
+    <script src="./../common/lib/jquery-3.7.1.min.js"></script>
+    <script src="./../common/lib/howler-2.1.3.min.js"></script>
+    <!-- SUIT Variable 폰트 -->
+    <link href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/variable/woff2/SUIT-Variable.css" rel="stylesheet" />
+    <link href="../common/css/comm.css" rel="stylesheet" />
+    <link href="./css/1_01_23.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div id="wrap" class="china_wrap content_wrap">
+      <div class="title_box">
+        <div class="title">
+          <span class="mainCon suit"><span class="titleNum bmjua">6</span>알맞은 대답을 완성하고 대화해 봅시다.</sp>
+        </div>
+      </div>
+      
+      <div class="btn_box dp_flex">
+        <div class="bttns">
+          <button class="btn popup_btn blue" data-index="1">해석</button>
+          <!-- <div class="tempBttns">
+            <button onclick="page.showAnswer()" class="tempBttn answer_btn">임시정답</button>
+            <button onclick="page.hideAnswer()" class="tempBttn reset_btn" style="display: none">다시하기</button>
+          </div> -->
+        </div>
+      </div>
+
+      <div class="full_content">
+        <div class="content dp_flex dp_flex_column">
+          <figure class="bgFig">
+            <img class="bgImg" src="./images/1_01_23/content.png" />
+          </figure>
+          <span data-audio="029-10.mp3" class="context gRegula">Duìbuqî.</span>
+          <div class="contextBox">
+            <div class="quesContext reset">
+              <span class="gRegula">M</span>
+              <span class="hint context2-1 gRegula"></span>
+              <span class="hint context2-2 gRegula"></span>
+              <span class="context2-3 gRegula">.</span>
+            </div>
+            <div data-audio="029-11.mp3" class="quesContext answer" style="display: none;">
+              <span class="gRegula">M</span>
+              <span class="hint context2-1 gRegula">éi</span>
+              <span class="hint context2-2 gRegula">guãnxi</span>
+              <span class="context2-3 gRegula">.</span>
+            </div>
+          </div>
+        </div>
+
+        <figure class="numberingBox">
+          <img src="./images/1_01_23/numbering.png" alt="">
+        </figure>
+  
+      </div>
+
+      <div class="popup_bg" style="display: none"></div>
+      <div class="popup expPopup" data-popup="3" style="display: none">
+        <div class="tag bmjua dp_flex">추가활동</div>
+        <div class="popup-con">
+          <div class="line line1">
+              <span class="suit">학생들의 수준에 따라 단어를 한어병음이나 한자로 써서 진행할 수 있다. </span>
+          </div>
+          <div class="line line2">
+          </div>
+        </div>
+        <button class="close_btn"></button>
+      </div>
+
+      <div class="popup translate" data-popup="1" style="display: none">
+        <div class="tag bmjua dp_flex">해석</div>
+        <button class="close_btn"></button>
+        <div class="popup_content">
+          <ul class="left">
+            <li class="item">
+              <div class="item_text">
+                <span class="gRegula">Duìbuqî.</span>
+                <span class="suit">미안해.</span>
+              </div>
+            </li>
+            <li class="item">
+              <div class="item_text">
+                  <span class="gRegula">Méi guãnxi.</span>
+                  <span class="suit">괜찮아.</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+    
+  </body>
+  <script type="text/javascript">
+    const page = {
+      //컨텐츠에 정답 확인이 존재하는지 여부
+      isAnswer: true,
+      // 단어장 노출 여부 판단. 이벤트 호출하지 않으면 노출하지 않음.
+      isVocabulary: false,
+      //정답 보기
+      showAnswer: () => {
+        $(".tempBttn.answer_btn").hide();
+        $(".tempBttn.reset_btn").show();
+        $(".answer").show();
+        $(".reset").hide();
+      },
+      //정답 숨기기
+      hideAnswer: () => {
+        $(".tempBttn.answer_btn").show();
+        $(".tempBttn.reset_btn").hide();
+        $(".answer").hide();
+        $(".reset").show();
+      },      
+      // 단어장 보기
+      showVocabulary: () => {
+        setPopup(7);
+      },
+    };
+  </script>
+  <!-- <script type="text/javascript">
+    // 정답 버튼
+    $(".answer_btn").on("click", function () {
+      let index = $(".answer_btn").index(this);
+      $(this).hide();
+      $(".reset_btn").eq(index).show();
+      $(".answer").eq(index).show();
+      $(".reset").eq(index).hide();
+    });
+    // 다시 하기 버튼
+    $(".reset_btn").on("click", function () {
+      let index = $(".reset_btn").index(this);
+      $(this).hide();
+      $(".answer_btn").eq(index).show();
+      $(".answer").eq(index).hide();
+      $(".reset").eq(index).show();
+    });
+  </script> -->
+  <script crossorigin src="../common/lib/libBundle.js"></script>
+  <script src="../common/js/script.js"></script>
+  <script src="../common/js/rolePlayerCh.js"></script>
+  <script src="../common/js/vocabularyBook.js"></script>
+</html>

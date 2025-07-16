@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>미래엔 중국어</title>
+    <script src="./../common/lib/jquery-3.7.1.min.js"></script>
+    <!-- SUIT Variable 폰트 -->
+    <link
+      href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/variable/woff2/SUIT-Variable.css"
+      rel="stylesheet"
+    />
+    <link href="../common/css/comm.css" rel="stylesheet" />
+    <link href="./css/8_01_28.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div id="wrap" class="china_wrap content_wrap">
+      <div class="title_box title_box4 dp_flex">
+        <img src="../8/images/8_01_28/title.svg" alt="" class="" />
+        <div class="text_box">
+          <span style="font-size: 28px"
+            >한국과 중국의 단위를 찾아 비교해 봅시다.</span
+          >
+        </div>
+      </div>
+
+      <div class="btn_box dp_flex">
+        <button class="btn popup_btn blue" data-index="1">참고</button>
+        <button class="btn3 ex_btn">예시 답안</button>
+        <button class="btn3 ex_reset_btn" style="display: none">
+          다시 풀기
+        </button>
+      </div>
+
+      <div class="full_content">
+        <div class="content">
+          <img src="./images/8_01_28/img1.svg" class="content_bg" />
+          <div class="answer" style="display: none">
+            <div class="col">
+              <span class="suit c-red fs-20 line-26 fw-6"
+                >신발<br />사이즈</span
+              >
+            </div>
+            <div class="col">
+              <span class="suit fs-26 line-38 fw-6 c-red">240mm</span>
+            </div>
+            <div class="col">
+              <span class="suit fs-26 line-38 fw-6 c-red"
+                >38<span class="simhei">号</span></span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="popup_bg" style="display: none"></div>
+      <!-- 참고 -->
+      <div class="popup popup4" data-popup="1" style="display: none">
+        <div class="tag bmjua dp_flex">참고</div>
+        <button class="close_btn"></button>
+        <div class="popup_content">
+          <div class="content">
+            <div class="title mb-20">
+              <span class="suit">중국의 도량형</span>
+            </div>
+            <div class="table mb-20">
+              <div class="row">
+                <div class="col">
+                  <span class="suit fs-28 fw-6">키</span>
+                </div>
+                <div class="col">
+                  <span class="suit line-28 fs-28 fw-6"><span data-audio="101-13.mp3"><span class="FZKai">米</span>(<span
+                        class="gRegula">mî</span>)</span>: m<span data-audio="101-14.mp3"><span
+                        class="FZKai ml-70" style="margin-left: 210px !important;">厘米</span>(<span class="gRegula">límî</span>)</span>: cm</span>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <span class="suit fs-28 fw-6">몸무게</span>
+                </div>
+                <div class="col">
+                  <span class="suit line-28 fs-28 fw-6"><span data-audio="101-12.mp3"><span class="FZKai">斤</span>(<span
+                        class="gRegula">jån</span>)</span>: 1<span class="simhei">斤</span>=500g<span data-audio="101-15.mp3"><span
+                        class="FZKai ml-87" style="margin-left: 111px;">公斤</span>(<span class="gRegula">gõngjån</span>)</span>: 1<span class="simhei">公斤</span>=1kg</span>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <span class="suit fs-28 fw-6">허리 둘레</span>
+                </div>
+                <div class="col">
+                  <span class="suit line-28 fs-28 fw-6"><span data-audio="101-16.mp3"><span class="FZKai">尺</span>(<span class="gRegula">chî</span>)</span>: 1<span class="FZKai">尺</span>=약 33.33cm<span data-audio="101-17.mp3"><span class="FZKai ml-30">寸</span>(<span class="gRegula">cùn</span>)</span>: 1<span class="FZKai">寸</span>=약 3.3cm</span>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <span class="suit fs-28 fw-6">발 치수</span>
+                </div>
+                <div class="col">
+                  <span class="suit line-28 fs-28 fw-6"><span data-audio="101-18.mp3"><span class="FZKai">号</span>(<span
+                        class="gRegula">hào</span>)</span>: 42<span class="FZKai">号</span>=260mm</span>
+                </div>
+              </div>
+            </div>
+            <div class="text-box mb-10 fs-32 fw-6 flex">
+              <div class="shrink-0 mr-20">
+                <span class="suit line-42">•</span>
+              </div>
+              <div>
+                <span class="suit line-42">우리나라의 한 근은 육류 600g, 채소류는 400g이지만,<br>중국의 한
+                  근은 종류에 상관 없이 500g이 기준이다.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </body>
+  <script type="text/javascript">
+    const page = {
+      //컨텐츠에 정답 확인이 존재하는지 여부
+      isAnswer: false,
+      // 단어장 노출 여부 판단.
+      isVocabulary: false,
+      //정답 보기
+      showAnswer: () => {},
+      //정답 숨기기
+      hideAnswer: () => {},
+      // 단어장 보기
+      showVocabulary: () => {},
+    };
+  </script>
+  <script src="../common/js/script.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      // setPopup(1);
+    });
+
+    //예시 답안
+    $(".ex_btn").on("click", function () {
+      $(this).hide();
+      $(this).next().show();
+      $(".answer").show();
+    });
+    //다시 풀기
+    $(".ex_reset_btn").on("click", function () {
+      $(this).hide();
+      $(this).prev().show();
+      $(".answer").hide();
+    });
+  </script>
+</html>

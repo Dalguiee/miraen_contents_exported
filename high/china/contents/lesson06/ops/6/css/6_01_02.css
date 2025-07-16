@@ -1,0 +1,134 @@
+/* 전역 */
+.trLft{
+  transform: translateX(-20px);
+}
+
+
+/* 헤더 */
+.btn_box{
+  padding-top: 9px !important;
+}
+.title_box{
+  left: 0 !important;
+  top: 5px !important;
+}
+
+
+/* 컨텐츠 */
+.full_content{
+  padding: 0 0 0 40px !important;
+}
+
+.full_content .express_box{
+  /* text-wrap: nowrap; */
+}
+
+.full_content .express_box .text_box_combo .line .title{
+  /* font-size: 33px !important; */
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; */
+}
+.china_wrap.index_wrap .full_content .target_box .text_box span {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 45px;
+}
+.china_wrap.index_wrap .full_content .culture_box .text_box span{
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 45px;
+}
+.china_wrap.index_wrap .full_content .express_box .text_box .index{
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 48px;
+}
+.china_wrap.index_wrap .full_content .express_box .text_box .title.FZKai{
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 54px;
+  margin-right: -29px;
+}
+.china_wrap.index_wrap .full_content .express_box .text_box .title.gRegula{
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 54px;
+}
+
+/* 팝업 */
+.popup_content{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 0 0 120px;
+}
+.popup_content .line{
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+/* 팝업 스타일 */
+.index_wrap .popup.popup1 .popup_content .layout {
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.index_wrap .popup.popup1 .popup_content .index_box {
+  width: 80px;
+  height: 109px;
+  background-color: rgba(253, 255, 245, 1);
+  border-radius: 20px;
+  font-size: 30px;
+  color: rgba(35, 24, 21, 1);
+  font-weight: 700;
+  line-height: 1.5;
+  font-family: "SUIT Variable", sans-serif;
+}
+.popup1 .text_box{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.popup1 .text_box .FZKai.chDot{
+  margin-right: -20px;
+}
+.popup1 .text_box .suit{}
+.popup1 .textSec{
+  margin-left: 30px;
+}
+.index_wrap .popup.popup1 .popup_content .text_box1 .suit {
+  font-size: 40px;
+  color: rgba(35, 24, 21, 1);
+  font-weight: 400;
+  line-height: 1.5;
+}
+.index_wrap .popup.popup1 .popup_content .text_box1 .FZKai {
+  font-size: 36px;
+  color: rgba(35, 24, 21, 1);
+  font-weight: 400;
+  line-height: 1.5;
+}
+.index_wrap .popup.popup1 .popup_content .text_box2 .gRegula {
+  font-size: 36px;
+  /* color: rgba(114, 113, 113, 1); */
+}
+.index_wrap .popup.popup1 .popup_content .text_box2{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.index_wrap .popup.popup1 .popup_content .text_box1 .suit {
+  position: relative;
+  font-size: 36px;
+  color: rgba(61, 85, 145, 1);
+  font-weight: 500;
+  line-height: 1.5;
+  font-family: "SUIT Variable", sans-serif;
+  margin-left: 20px;
+}

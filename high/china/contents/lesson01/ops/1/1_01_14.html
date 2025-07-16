@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>미래엔 중국어</title>
+    <script src="./../common/lib/jquery-3.7.1.min.js"></script>
+    <script src="./../common/lib/howler-2.1.3.min.js"></script>
+    <!-- SUIT Variable 폰트 -->
+    <link
+      href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/variable/woff2/SUIT-Variable.css"
+      rel="stylesheet"
+    />
+    <link href="../common/css/comm.css" rel="stylesheet" />
+    <link href="./css/1_01_14.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div id="wrap" class="china_wrap content_wrap">
+      <div class="title_box dp_flex">
+        <div class="num_box tmoney">
+          <span>2</span>
+        </div>
+        <div class="text_box">
+          <span class="suit">사과 표현</span>
+        </div>
+      </div>
+
+      <div class="btn_box btn_box1 dp_flex">
+        <div class="sub">
+          <button class="btn hanja_btn">한자</button>
+          <button class="btn pinyin_btn" style="display: none">병음</button>
+          <button class="btn combo_btn">한자+병음</button>
+          <button class="btn popup_btn blue" data-index="1">해석</button>
+          <!-- <button class="btn popup_btn blue" data-index="3">설명</button> -->
+          <button class="explan_popup_btn btn blue"><span>설명</span></button>
+          <button class="btn popup_btn blue" data-index="4">보충</button>
+        </div>
+        <!-- <div class="tempBttns">
+          <button onclick="page.showVocabulary()" class="tempBttn">단어장</button>
+        </div>   -->
+      </div>
+
+      <div class="full_content dp_flex dp_flex_column">
+        <figure class="bgImgFig">
+          <img class="bgImg" src="./images/1_01_14/bg.png" />
+
+          <div class="btnText btnText1">
+            <div class="innerBtnText innerBtnText1" data-view="pinyin">
+              <span class="gRegula" data-audio="027-11.mp3">Bù hâoyìsi.</span>
+            </div>
+            <div
+              class="innerBtnText innerBtnText2"
+              data-view="hanja"
+              style="display: none"
+            >
+              <span class="FZKai trRht" data-audio="027-11.mp3"
+                >不好意思。</span
+              >
+            </div>
+            <div
+              class="innerBtnText innerBtnText3"
+              data-view="combo"
+              data-audio="027-11.mp3"
+              style="display: none"
+            >
+              <span class="FZKai trRht">不好意思。</span>
+              <span class="gRegula">Bù hâoyìsi.</span>
+            </div>
+          </div>
+
+          <div class="btnText btnText2">
+            <div class="innerBtnText innerBtnText1" data-view="pinyin">
+              <span class="gRegula" data-audio="027-12.mp3">Duìbuqî.</span>
+            </div>
+            <div
+              class="innerBtnText innerBtnText2"
+              data-view="hanja"
+              style="display: none"
+            >
+              <span class="FZKai trRht" data-audio="027-12.mp3">对不起。</span>
+            </div>
+            <div
+              class="innerBtnText innerBtnText3"
+              data-view="combo"
+              data-audio="027-12.mp3"
+              style="display: none"
+            >
+              <span class="FZKai trRht">对不起。</span>
+              <span class="gRegula">Duìbuqî.</span>
+            </div>
+          </div>
+        </figure>
+      </div>
+
+      <div class="popup_bg" style="display: none"></div>
+
+      <div class="popup vocabularyBook" data-popup="7" style="display: none">
+        <div class="tag bmjua dp_flex">단어장</div>
+        <button class="close_btn"></button>
+        <div class="popup_content dp_flex">
+          <div class="word_list_box dp_flex dp_flex_column">
+            <div class="word_content">
+              <div
+                class="list dp_flex voca_popup_btn active"
+                data-audio="027-15.mp3"
+              >
+                <span class="gRegula">duìbuqî</span>
+              </div>
+            </div>
+          </div>
+          <div class="show_word_box dp_flex dp_flex_column">
+            <div class="china_box dp_flex">
+              <div class="voca_popup_tab" data-audio="027-15.mp3">
+                <span class="FZKai">对不起</span>
+                <span class="gRegula">duìbuqî</span>
+              </div>
+            </div>
+            <div class="korea_box dp_flex">
+              <div class="voca_warp">
+                <span class="suit">미안합니다</span>
+              </div>
+            </div>
+            <div class="show_btn-warp">
+              <button class="btn3 show_pinyin_btn" style="display: none">
+                병음 보기
+              </button>
+              <button class="btn3 hide_pinyin_btn">병음 가리기</button>
+              <button class="btn3 show_btn" style="display: none">
+                뜻 보기
+              </button>
+              <button class="btn3 hide_btn">뜻 감추기</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="popup popup1 translate" data-popup="1" style="display: none">
+        <div class="tag bmjua dp_flex">해석</div>
+        <button class="close_btn"></button>
+        <div class="popup_content">
+          <ul class="left">
+            <li class="item">
+              <div class="item_text">
+                <div class="chBox">
+                  <span class="simhei">不好意思。</span>
+                  <span class="gRegula tempGR">Bù hâoyìsi.</span>
+                </div>
+                <span class="suit">미안해.</span>
+              </div>
+            </li>
+            <li class="item">
+              <div class="item_text">
+                <div class="chBox">
+                  <span class="simhei">对不起。</span>
+                  <span class="gRegula tempGR">Duìbuqî.</span>
+                </div>
+                <span class="suit">(정말) 미안해.</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="popup popup2" data-popup="4" style="display: none">
+        <div class="tag bmjua dp_flex">보충</div>
+        <button class="close_btn"></button>
+        <div class="popup_content">
+          <span class="context suit">
+            <span class="simhei" data-audio="027-11.mp3"
+              >不好意思<span class="suit"
+                >(<span class="gRegula">bù hâoyìsi</span>)</span
+              ></span
+            >는 작은 실수로 인해 미안한 마음을<br />
+            표현하는 비교적 정도가 가벼운 사과 표현이다.
+            <span class="simhei" data-audio="027-12.mp3"
+              >对不起<span class="suit"
+                >(<span class="gRegula">duìbuqî</span>)</span
+              ></span
+            >는 상대방에게 명확하게 피해를 주는 일을 했을 때<br />
+            하는 비교적 무거운 느낌의 사과 표현이다. 중국인들은 보통<br />
+            상대방에게 큰 잘못이 아니면
+            <span class="simhei" data-audio="027-12_1.mp3"
+              >对不起<span class="suit"
+                >(<span class="gRegula">duìbuqî</span>)</span
+              ></span
+            >라고 말하지<br />
+            않는데, 체면을 중시하는 중국이들의 특성이 반영된 것으로<br />
+            볼 수 있다.
+          </span>
+        </div>
+      </div>
+
+      <div class="popup explan" style="display: none">
+        <div class="tag bmjua dp_flex">설명</div>
+        <button class="close_btn">
+          <span class="sr-only">닫기</span>
+        </button>
+        <div class="popup_content dp_flex dp_flex_column">
+          <span class="suit">
+            <span class="simhei" data-audio="027-11.mp3"
+              >不好意思<span class="gRegula" data-audio="/"
+                >(bù hâoyìsi)</span
+              ></span
+            >는
+            <span class="simhei" data-audio="027-12.mp3"
+              >对不起<span class="gRegula">(duìbuqî)</span></span
+            >보다<br />
+            비교적 정도가 가벼운 사과 표현이다.
+          </span>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript">
+    const page = {
+      //컨텐츠에 정답 확인이 존재하는지 여부
+      isAnswer: false,
+      // 단어장 노출 여부 판단. 이벤트 호출하지 않으면 노출하지 않음.
+      isVocabulary: true,
+      //정답 보기
+      showAnswer: () => {
+        $(".wrong").hide();
+        $(".correct").show();
+      },
+      //정답 숨기기
+      hideAnswer: () => {
+        $(".correct").hide();
+        $(".wrong").show();
+      },
+      // 단어장 보기
+      showVocabulary: () => {
+        setPopup(7);
+      },
+    };
+  </script>
+  <script crossorigin src="../common/lib/libBundle.js"></script>
+  <script src="../common/js/script.js"></script>
+  <script src="../common/js/rolePlayerCh.js"></script>
+  <script src="../common/js/vocabularyBook.js"></script>
+  <script type="text/javascript">
+    // 설명 팝업
+    $(".explan_popup_btn").on("click", function () {
+      let index = $(".explan_popup_btn").index(this);
+      $(".explan_popup_bg").show();
+      $(".popup.explan").hide();
+      $(".popup.explan").eq(index).show();
+      try {
+        setRoleStop();
+      } catch (error) {}
+      audioStop();
+    });
+    // 설명팝업 있는상태에서 다른 팝업 클릭시 팝업 닫기
+    $(".popup_btn").on("click", function () {
+      $(".popup.explan").css("display", "none");
+    });
+  </script>
+</html>

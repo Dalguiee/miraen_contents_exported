@@ -1,0 +1,211 @@
+.rolePlayer {
+  position: absolute;
+  display: flex;
+  align-items: center;
+}
+.rolePlayer_player {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 306px;
+  height: 40px;
+  background: #eeeeee;
+  border: 1px solid #dadada;
+  border-radius: 10px;
+  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.25);
+  padding: 0 12px;
+  margin-right: 12px;
+}
+.rolePlayer_play-btn {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
+  background: white;
+  margin-right: 6px;
+}
+.rolePlayer_play-btn:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url(./../images/pause_btn.svg) no-repeat center;
+  border-radius: 50%;
+  background-size: cover;
+  opacity: 0;
+}
+.rolePlayer_play-btn.play {
+  background: url(./../images/play_btn.svg) no-repeat center;
+  background-size: cover;
+}
+.rolePlayer_play-btn.pause:after {
+  opacity: 1;
+}
+.rolePlayer_stop-btn {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.23);
+  background: url(./../images/stop_btn.svg) no-repeat center;
+  margin-right: 12px;
+}
+
+.rolePlayer_duration {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 114px;
+  height: 7px;
+  margin-right: 14px;
+}
+.rolePlayer_duration_range {
+  width: 100%;
+  opacity: 0;
+  cursor: pointer;
+}
+.rolePlayer_duration_range-ui {
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background: #d5d5d5;
+  pointer-events: none;
+  border-radius: 4px;
+}
+.rolePlayer_duration_range-ui_bar {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  border-radius: 4px;
+  height: 100%;
+  background: rgb(95, 158, 233);
+  background: -moz-linear-gradient(
+    135deg,
+    rgba(95, 158, 233, 1) 0%,
+    rgba(64, 135, 218, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    135deg,
+    rgba(95, 158, 233, 1) 0%,
+    rgba(64, 135, 218, 1) 100%
+  );
+  background: linear-gradient(
+    135deg,
+    rgba(95, 158, 233, 1) 0%,
+    rgba(64, 135, 218, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#5f9ee9",endColorstr="#4087da",GradientType=1);
+}
+
+.rolePlayer_duration_range-ui_bar:after {
+  content: "";
+  position: absolute;
+  transform: translateX(50%);
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  border: 1px solid white;
+  background: #5f9ee9;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
+}
+
+.rolePlayer_duration_text {
+  position: absolute;
+  font-size: 7px;
+  color: #7b7b7b;
+  font-weight: 700;
+  line-height: 1;
+  font-family: "SUIT Variable", sans-serif;
+  pointer-events: none;
+}
+.rolePlayer_duration_text.seek {
+  left: 0;
+  top: 8px;
+}
+.rolePlayer_duration_text.duration {
+  right: 0;
+  top: 8px;
+}
+
+.rolePlayer_sound1,
+.rolePlayer_sound2 {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 46px;
+  height: 20px;
+  color: #5f9ee9;
+  font-family: "SUIT Variable", sans-serif;
+  font-size: 9px;
+  letter-spacing: -2%;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
+  background: white;
+  border-radius: 50px;
+  font-weight: 800;
+  margin-right: 4px;
+}
+.rolePlayer_sound2 {
+  margin-right: 10px;
+}
+
+.rolePlayer_sound1.active::after,
+.rolePlayer_sound2.active::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: 2px solid #5f9ee9;
+  border-radius: 50px;
+}
+.rolePlayer_role {
+  display: flex;
+}
+.rolePlayer_role_btn {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: white;
+  border: 1px solid #dadada;
+  margin-right: 6px;
+}
+.rolePlayer_role_btn.active:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 2px solid #5f9ee9;
+}
+.rolePlayer_role_btn:last-of-type {
+  margin-right: 0;
+}
+.rolePlayer_role_img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.rolePlayer_role_img img {
+  width: 100%;
+  height: 100%;
+}
+
+/* .mute {
+  width: 69px;
+  height: 39px;
+  background-color: rgba(134, 171, 188, 1);
+  border-radius: 48px;
+  box-shadow: 0px 2px 0px 0px rgba(62, 83, 93, 1);
+  position: absolute;
+  right: 20px;
+  bottom: 6px;
+} */

@@ -1,0 +1,93 @@
+/* 타이틀 헤더 */
+#wrap.china_wrap .title_box {
+  top: 8px;
+  left: 0;
+}
+#wrap.china_wrap .title_box .text_box {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0;
+}
+#wrap.china_wrap .title_box .text_box .logoImg {
+  display: block;
+  margin-right: 11px;
+  width: 82px;
+  height: 42px;
+  object-fit: cover;
+}
+#wrap.china_wrap .title_box .text_box .suit {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 50px;
+  color: #3e7175;
+}
+
+/* 컨텐츠 */
+#wrap.china_wrap .full_content {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 22px 0 0;
+}
+#wrap.china_wrap .full_content .content {
+  display: flex;
+  align-items: center;
+}
+#wrap.china_wrap .full_content .content .text_box {
+  font-size: 38px;
+  line-height: 53px;
+  margin-right: 6px;
+  text-indent: 15px;
+}
+#wrap.china_wrap .full_content .content .text_box .suit {
+  font-weight: 600;
+}
+#wrap.china_wrap .full_content .content .img {
+  width: 430px;
+  height: 270.5px;
+}
+
+/* 보충 */
+#wrap.china_wrap .popup2 .popup_content {
+  padding: 50px 28px 0 53px;
+}
+#wrap.china_wrap .popup2 .popup_content .popupTitle {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+#wrap.china_wrap .popup2 .popup_content .popupTitle .suit {
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 48px;
+  color: #231815;
+}
+#wrap.china_wrap .popup2 .popup_content .textSec {
+  margin-top: 20px;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+}
+#wrap.china_wrap .popup2 .popup_content .textSec .index{
+  margin-right: 10px;
+}
+#wrap.china_wrap .popup2 .popup_content .textSec .index .suit{
+  font-size: 34px;
+  line-height: 48px;
+}
+#wrap.china_wrap .popup2 .popup_content .textSec .text {}
+
+#wrap.china_wrap .popup2 .popup_content .textSec .text .suit {
+  font-size: 34px;
+  font-weight: 600;
+  line-height: 46px;
+  color: #231815;
+}
+#wrap.china_wrap .popup2 .popup_content .textSec .text .simhei {
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 46px;
+  color: #231815;
+}

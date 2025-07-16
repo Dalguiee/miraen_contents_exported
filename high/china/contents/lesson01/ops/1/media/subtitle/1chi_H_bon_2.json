@@ -1,0 +1,9 @@
+{
+  "lang": ["한자", "병음"],
+  "subtitlelist": [
+    { "start": 5.0, "end": 6.7, "value": ["Xièxie!", "谢谢!"] },
+    { "start": 8, "end": 10, "value": ["Bú kèqi!", "不客气!"] },
+    { "start": 20, "end": 22, "value": ["Bù hâoyìsi.", "不好意思。"] },
+    { "start": 24, "end": 26, "value": ["Méi guãnxi.", "没关系。"] }
+  ]
+}

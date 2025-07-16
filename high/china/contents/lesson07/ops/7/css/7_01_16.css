@@ -1,0 +1,242 @@
+/* 전역 */
+.highlight.green{
+  color: #337955;
+}
+
+/* 헤더 */
+.btn_box{
+  padding-top: 9px !important;
+}
+.title_box{
+  left: 0 !important;
+  top: 5px !important;
+}
+.title_box .title{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.title_box .title .titleLogo{
+  margin-right: 7px;
+}
+.title_box .title .titleNum{
+  margin-right: 7px;
+  color: #498F63;
+  font-size: 36px;
+  font-weight: normal;
+}
+.title_box .title .titleText{
+  font-size: 26px;
+  font-weight: 800;
+  line-height: 31px;
+  color: #4B75D0;
+}
+
+
+/* 컨텐츠 */
+.full_content{
+  padding-top: 60px;
+}
+
+.full_content .content{
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.full_content .content .title{
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  padding-left: 20px;
+}
+.full_content .content .title .index {
+  margin-right: 10px;
+  padding-top: 2px;
+}
+
+.full_content .content .title .index .bmjua{
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 52px;
+  color: #4064AE;
+}
+.full_content .content .title .text .suit{
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 52px;
+}
+.full_content .content .context{
+  position: relative;
+}
+
+
+.full_content .content1 .context {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.full_content .content1 .context .img_box{
+  width: 622px;
+  position: relative;
+}
+.full_content .content1 .context .img_box img{
+  width: 100%;
+  object-fit: cover;
+}
+.full_content .content1 .context .img_box .hint{
+  position: absolute;
+}
+.full_content .content1 .context .img_box .hint .gRegula{
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 23px;
+}
+.full_content .content1 .context .img_box .hint .point{
+  color: #727171;
+}
+
+.full_content .content1 .context .img_box .hint1{
+  top: 122px;
+  left: 86px;
+}
+.full_content .content1 .context .img_box .hint2{
+  top: 122px;
+  left: 259px;
+}
+.full_content .content1 .context .img_box .hint3{
+  top: 122px;
+  left: 413px;
+}
+.full_content .content1 .context .img_box .hint4{
+  top: 259px;
+  left: 86px;
+}
+.full_content .content1 .context .img_box .hint5{
+  top: 259px;
+  left: 279px;
+}
+.full_content .content1 .context .img_box .hint6{
+  top: 259px;
+  left: 447px;
+}
+
+.full_content .content1 .tip_box{
+  display: flex;
+  position: absolute;
+  bottom: 37px;
+  left: 30px;
+}
+
+.full_content .content1 .tip_box .hint{
+  position: absolute;
+  left: 0;
+  top: 36px;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+
+.full_content .content2 .context{
+  display: flex;
+  justify-content: center;
+}
+
+.full_content .content2 .img_box{
+  width: 670px;
+  position: relative;
+}
+.full_content .content2 .img_box img{
+  width: 100%;
+  object-fit: cover;
+}
+.full_content .content2 .img_box .hint{
+  position: absolute;
+}
+.full_content .content2 .img_box .hint1{
+  bottom: 161px;
+  right: 202px;
+}
+.full_content .content2 .img_box .hint2{
+  bottom: 99px;
+  right: 9px;
+}
+
+.full_content .content2 .img_box .hint .gRegula{
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 28px;
+}
+
+
+/* 팝업전역 */
+.popup{
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  padding: 56px 40px 20px 40px;
+}
+.popup .popup_content{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  padding: 0 !important;
+  gap: 0 !important;
+}
+/* 설명 */
+.popup.explan{
+  width: fit-content !important;
+  padding: 46px 24px 10px 24px;
+}
+.popup.explan .popup_content{
+  padding: 0 !important;
+}
+.popup.explan .popup_content .simhei{
+  font-size: 32px !important;
+  line-height: 50px !important;
+  font-weight: 400 !important;
+}
+.popup.explan .popup_content .FZKai{
+  font-size: 32px !important;
+  line-height: 50px !important;
+  font-weight: 400 !important;
+}
+.popup.explan .popup_content .notoSans{
+  font-size: 32px !important;
+  line-height: 50px !important;
+  font-weight: 400 !important;
+}
+.popup.explan .popup_content .gRegula{
+  font-size: 32px !important;
+  line-height: 50px !important;
+  font-weight: 400 !important;
+}
+.popup.explan .popup_content .suit{
+  font-size: 32px !important;
+  line-height: 50px !important;
+  font-weight: 600 !important;
+}
+/* 단어게임 */
+.popup.game .popup_content .game_box{
+  margin: 0 !important;
+}
+/* 단어장 */
+.popup.vocabularyBook{
+  padding: 0 !important;
+}
+.popup.vocabularyBook .popup_content{
+  flex-direction: unset !important;
+  padding: 56px 44px 0 44px !important;
+  gap: 40px !important;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+
+
+
+

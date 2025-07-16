@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>미래엔 중국어</title>
+    <script src="./../common/lib/jquery-3.7.1.min.js"></script>
+    <script src="./../common/lib/howler-2.1.3.min.js"></script>
+    <!-- SUIT Variable 폰트 -->
+    <link
+      href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/variable/woff2/SUIT-Variable.css"
+      rel="stylesheet"
+    />
+    <link href="../common/css/comm.css" rel="stylesheet" />
+    <link href="./css/1_01_14.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div id="wrap" class="china_wrap">
+      <div class="top-title"></div>
+      <!-- bttns -->
+      <div class="btn_box flex absolute">
+        <button class="btn popup_btn blue" data-index="1">참고</button>
+      </div>
+
+      <!-- contents -->
+      <div class="full_content">
+        <div class="content">
+          <div class="text-box mb-20 mt-12">
+            <div class="label suit">활동</div>
+            <span class="suit fs-30 line-40 fw-6"
+              >선생님의 발음을 듣고 해당하는 성모 카드를 찾아봅시다.</span
+            >
+          </div>
+          <img src="./images/1_01_14/img1.svg" class="content_box" />
+        </div>
+      </div>
+
+      <div class="popup_bg" style="display: none"></div>
+      <!-- 참고 팝업 -->
+      <div class="popup popup3" data-popup="1" style="display: none">
+        <div class="tag bmjua dp_flex">참고</div>
+        <button class="close_btn"></button>
+        <div class="popup_content">
+          <div class="content">
+            <div class="title mt-10 mb-20">
+              <span class="suit">주의해야 할 발음</span>
+            </div>
+            <div class="text-box">
+              <div class="line-38 suit fs-32 fw-6 mb-10">
+                • <span class="gRegula"><span data-audio="M018-03.mp3">m</span>,</span>
+                <span class="gRegula" data-audio="M018-11.mp3">n</span>은 비음이므로 공기를 코로 내뿜으며
+                발음한다.
+              </div>
+              <div class="line-38 suit fs-32 fw-6 mb-10">
+                • <span class="gRegula" data-audio="M018-04.mp3">f</span>는 영어의
+                <span class="gRegula" data-audio="M018-04.mp3">f</span> 발음과 비슷하며
+                <span class="gRegula" data-audio="M018-02.mp3">p</span> 발음과 구별하여 발음한다.
+              </div>
+              <div class="line-38 suit fs-32 fw-6 mb-10">
+                • <span class="gRegula" data-audio="M018-12.mp3">l</span>은 [랄] 발음의 혀 위치와
+                비슷하므로 <span class="gRegula" data-audio="M018-29.mp3">r</span> 발음과 구별한다.
+              </div>
+              <div class="line-38 suit fs-32 fw-6 mb-10">
+                • <span class="gRegula"><span data-audio="M018-26.mp3">zh</span>, <span data-audio="M018-27.mp3">ch</span>, <span data-audio="M018-28.mp3">sh</span>, <span data-audio="M018-29.mp3">r</span>,</span>
+                <span class="gRegula"><span data-audio="M018-30.mp3">z</span>, <span data-audio="M018-31.mp3">c</span>, <span data-audio="M018-32.mp3">s</span></span>와 결합되는 운모
+                <span class="gRegula">i</span>는 [으]처럼 발음한다.
+              </div>
+              <div class="line-38 suit fs-32 fw-6 mb-10">
+                • <span class="gRegula"><span data-audio="M018-26.mp3">zh</span>, <span data-audio="M018-27.mp3">ch</span>, <span data-audio="M018-28.mp3">sh</span></span>는 두 개의 로마자가
+                하나의 소리로 발음된다.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript">
+    const page = {
+      //컨텐츠에 정답 확인이 존재하는지 여부
+      isAnswer: false,
+      // 단어장 노출 여부 판단. 이벤트 호출하지 않으면 노출하지 않음.
+      isVocabulary: false,
+      //정답 보기
+      showAnswer: () => {},
+      //정답 숨기기
+      hideAnswer: () => {},
+      // 단어장 보기
+      showVocabulary: () => {},
+    };
+  </script>
+  <script src="../common/js/script.js"></script>
+
+  <script type="text/javascript"></script>
+</html>

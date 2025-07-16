@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>미래엔 중국어</title>
+  <script src="./../common/lib/jquery-3.7.1.min.js"></script>
+  <script src="./../common/lib/howler-2.1.3.min.js"></script>
+  <!-- SUIT Variable 폰트 -->
+  <link href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/variable/woff2/SUIT-Variable.css"
+    rel="stylesheet" />
+  <link href="../common/css/comm.css" rel="stylesheet" />
+  <link href="./css/1_01_03.css" rel="stylesheet" />
+</head>
+
+<body>
+  <div id="wrap" class="china_wrap">
+    <!-- bttns -->
+    <div class="btn_box flex absolute">
+      <button class="btn hanja_btn">한자</button>
+      <button class="btn pinyin_btn" style="display: none">병음</button>
+      <button class="btn combo_btn">한자+병음</button>
+      <button class="btn btn3 answer_btn">정답</button>
+      <button class="btn btn3 reset_btn" style="display: none">
+        다시 풀기
+      </button>
+      <button class="btn popup_btn blue" data-index="1">보충</button>
+    </div>
+    <div class="top-title mt-12">
+      <span class="line-30 suit fw-8 fs-30">단어를 듣고 뜻을 추측하여 써 봅시다.</span>
+    </div>
+
+    <!-- contents --> 
+    <div class="full_content">
+      <div class="content">
+        <img src="./images/1_01_03/img1.jpg" class="content_bg" />
+        <!-- ====== 1 ====== -->
+        <div class="item index1">
+          <div class="index suit">1</div>
+          <div class="text-box">
+            <div class="audio fs-26" data-audio="012-02.mp3">
+              <!-- ----------------한자 + 병음---------------- -->
+              <span class="combo_box text-center" data-view="combo">
+                <span class="line-30 gRegula">kã fçi</span><br /><span class="line-30 simhei">咖啡</span>
+              </span>
+              <!-- ----------------병음---------------- -->
+              <span class="line-30 gRegula" data-view="pinyin" style="display: none">kã fçi</span>
+              <!-- ----------------한자---------------- -->
+              <span class="line-30 simhei" data-view="hanja" style="display: none">咖啡</span>
+            </div>
+            <!-- ----------------정답---------------- -->
+            <div class="answer">
+              <span class="line-32 fs-26 c-red suit fw-7 v_hidden">커피</span>
+            </div>
+          </div>
+        </div>
+        <!-- ====== 2 ====== -->
+        <div class="item index2">
+          <div class="index suit">2</div>
+          <div class="text-box">
+            <div class="audio fs-26" data-audio="012-03.mp3">
+              <!-- ----------------한자 + 병음---------------- -->
+              <span class="combo_box text-center" data-view="combo">
+                <span class="line-30 gRegula">shãn</span><br /><span class="line-30 simhei">山</span>
+              </span>
+              <!-- ----------------병음---------------- -->
+              <span class="line-30 gRegula" data-view="pinyin" style="display: none">shãn</span>
+              <!-- ----------------한자---------------- -->
+              <span class="line-30 simhei" data-view="hanja" style="display: none">山</span>
+            </div>
+            <!-- ----------------정답---------------- -->
+            <div class="answer" style="margin: 0 auto;">
+              <span class="line-32 fs-26 c-red suit fw-7 v_hidden">산</span>
+            </div>
+          </div>
+        </div>
+        <!-- ====== 3 ====== -->
+        <div class="item index3">
+          <div class="index suit">3</div>
+          <div class="text-box">
+            <div class="audio fs-26" data-audio="012-04.mp3">
+              <!-- ----------------한자 + 병음---------------- -->
+              <span class="combo_box" data-view="combo">
+                <span class="line-30 gRegula">tài yáng</span><br /><span class="line-30 simhei">太阳</span>
+              </span>
+              <!-- ----------------병음---------------- -->
+              <span class="line-30 gRegula" data-view="pinyin" style="display: none">tài yáng</span>
+              <!-- ----------------한자---------------- -->
+              <span class="line-30 simhei" data-view="hanja" style="display: none">太阳</span>
+            </div>
+            <!-- ----------------정답---------------- -->
+            <div class="answer">
+              <span class="line-32 fs-26 c-red suit fw-7 v_hidden">태양</span>
+            </div>
+          </div>
+        </div>
+        <!-- ====== 4 ====== -->
+        <div class="item index4">
+          <div class="index suit">4</div>
+          <div class="text-box flex-row">
+            <div class="audio fs-26" data-audio="012-05.mp3">
+              <!-- ----------------한자 + 병음---------------- -->
+              <span class="combo_box text-center" data-view="combo">
+                <span class="line-30 gRegula">chá</span><br /><span class="line-30 simhei">茶</span>
+              </span>
+              <!-- ----------------병음---------------- -->
+              <span class="line-30 gRegula" data-view="pinyin" style="display: none">chá</span>
+              <!-- ----------------한자---------------- -->
+              <span class="line-30 simhei" data-view="hanja" style="display: none">茶</span>
+            </div>
+            <!-- ----------------정답---------------- -->
+            <div class="answer ml-4">
+              <span class="line-32 fs-26 c-red suit fw-7 v_hidden">차</span>
+            </div>
+          </div>
+        </div>
+        <!-- ====== 5 ====== -->
+        <div class="item index5">
+          <div class="index suit">5</div>
+          <div class="text-box">
+            <div class="audio fs-26" data-audio="012-06.mp3">
+              <!-- ----------------한자 + 병음---------------- -->
+              <span class="combo_box text-center" data-view="combo">
+                <span class="line-30 gRegula">mén</span><br /><span class="line-30 simhei">门</span>
+              </span>
+              <!-- ----------------병음---------------- -->
+              <span class="line-30 gRegula" data-view="pinyin" style="display: none">mén</span>
+              <!-- ----------------한자---------------- -->
+              <span class="line-30 simhei" data-view="hanja" style="display: none">门</span>
+            </div>
+            <!-- ----------------정답---------------- -->
+            <div class="answer" style="margin: 0 auto;">
+              <span class="line-32 fs-26 c-red suit fw-7 v_hidden">문</span>
+            </div>
+          </div>
+        </div>
+        <!-- ====== 6 ====== -->
+        <div class="item index6">
+          <div class="index suit">6</div>
+          <div class="text-box">
+            <div class="audio fs-26" data-audio="012-07.mp3">
+              <!-- ----------------한자 + 병음---------------- -->
+              <span class="combo_box" data-view="combo">
+                <span class="line-30 gRegula">zhá jiàng miàn</span><br /><span class="line-30 simhei">炸酱面</span>
+              </span>
+              <!-- ----------------병음---------------- -->
+              <span class="line-30 gRegula" data-view="pinyin" style="display: none">zhá jiàng miàn</span>
+              <!-- ----------------한자---------------- -->
+              <span class="line-30 simhei" data-view="hanja" style="display: none">炸酱面</span>
+            </div>
+            <!-- ----------------정답---------------- -->
+            <div class="answer">
+              <span class="line-32 fs-26 c-red suit fw-7 v_hidden">짜장면</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="popup_bg" style="display: none"></div>
+    <!-- 보충 팝업 -->
+    <div class="popup popup1" data-popup="1" style="display: none">
+      <div class="tag bmjua dp_flex">보충</div>
+      <button class="close_btn"></button>
+      <div class="popup_content">
+        <div class="content">
+          <div class="title mb-20">
+            <span class="suit">한국어 발음과 비슷한 중국어</span>
+          </div>
+          <div class="table mb-30">
+            <div class="td">
+              <div class="col bg-blue">
+                <span class="fs-24 simhei line-28">韩</span>
+              </div>
+              <div class="col">
+                <span class="suit fs-24 fw-6 line-28">남(<span class="simhei fw-4">南</span>)</span>
+              </div>
+              <div class="col">
+                <span class="suit fs-28 fw-6">
+                  <span class="suit fs-24 fw-6 line-28">반(<span class="simhei fw-4">班</span>)</span></span>
+              </div>
+              <div class="col">
+                <span class="suit fs-28 fw-6">
+                  <span class="suit fs-24 fw-6 line-28">차(<span class="simhei fw-4">車</span>)</span></span>
+              </div>
+              <div class="col">
+                <span class="suit fs-28 fw-6">
+                  <span class="suit fs-24 fw-6 line-28">약(<span class="simhei fw-4">藥</span>)</span></span>
+              </div>
+            </div>
+            <div class="td">
+              <div class="col bg-blue">
+                <span class="fs-24 simhei line-28">中</span>
+              </div>
+              <div class="col">
+                <span class="fs-24 line-28" data-audio="012-12.mp3"><span class="simhei mr-6">南</span><span class="gRegula">nán</span></span>
+              </div>
+              <div class="col">
+                <span class="fs-24 line-28" data-audio="012-13.mp3"><span class="simhei mr-6">班</span><span class="gRegula">bãn</span></span>
+              </div>
+              <div class="col">
+                <span class="fs-24 line-28" data-audio="012-14.mp3"><span class="simhei mr-6">车</span><span class="gRegula">chç</span></span>
+              </div>
+              <div class="col">
+                <span class="fs-24 line-28" data-audio="012-15.mp3"><span class="simhei mr-6">药</span><span class="gRegula">yào</span></span>
+              </div>
+            </div>
+            <div class="td" style="height: 4px">
+              <div class="col bg-blue" style="padding: 0"></div>
+            </div>
+            <div class="td">
+              <div class="col bg-blue">
+                <span class="fs-24 simhei line-28">韩</span>
+              </div>
+              <div class="col">
+                <span class="suit fs-24 fw-6 line-28">관광(<span class="simhei fw-4">觀光</span>)</span>
+              </div>
+              <div class="col">
+                <span class="suit fs-28 fw-6">
+                  <span class="suit fs-24 fw-6 line-28">내용(<span class="simhei fw-4">內容</span>)</span></span>
+              </div>
+              <div class="col">
+                <span class="suit fs-28 fw-6">
+                  <span class="suit fs-24 fw-6 line-28">한류(<span class="simhei fw-4">韓流</span>)</span></span>
+              </div>
+              <div class="col">
+                <span class="suit fs-28 fw-6">
+                  <span class="suit fs-24 fw-6 line-28">냉면(<span class="simhei fw-4">冷麵</span>)</span></span>
+              </div>
+            </div>
+            <div class="td">
+              <div class="col bg-blue">
+                <span class="fs-24 simhei line-28">中</span>
+              </div>
+              <div class="col">
+                <span class="fs-24 line-28 text-center" data-audio="012-16.mp3"><span class="simhei mr-6">观光</span><br /><span
+                    class="gRegula">guãnguãng</span></span>
+              </div>
+              <div class="col">
+                <span class="fs-24 line-28 text-center" data-audio="012-17.mp3"><span class="simhei mr-6">容内</span><br /><span
+                    class="gRegula">nèiróng</span></span>
+              </div>
+              <div class="col">
+                <span class="fs-24 line-28 text-center" data-audio="012-18.mp3"><span class="simhei mr-6">韩流</span><br /><span
+                    class="gRegula">Hánliú</span></span>
+              </div>
+              <div class="col">
+                <span class="fs-24 line-28 text-center" data-audio="012-19.mp3"><span class="simhei mr-6">冷面</span><br /><span
+                    class="gRegula">lêngmiàn</span></span>
+              </div>
+            </div>
+            <div class="td" style="height: 4px">
+              <div class="col bg-blue" style="padding: 0"></div>
+            </div>
+            <div class="td">
+              <div class="col bg-blue">
+                <span class="fs-24 simhei line-28">韩</span>
+              </div>
+              <div class="col">
+                <span class="suit fs-24 fw-6 line-28 text-center">도서관<br />(<span class="simhei fw-4">圖書館</span>)</span>
+              </div>
+              <div class="col">
+                <span class="suit fs-28 fw-6">
+                  <span class="suit fs-24 fw-6 line-28 text-center">운동장<br />(<span
+                      class="simhei fw-4">運動場</span>)</span></span>
+              </div>
+              <div class="col">
+                <span class="suit fs-28 fw-6">
+                  <span class="suit fs-24 fw-6 line-28 text-center">동대문<br />(<span
+                      class="simhei fw-4">東大門</span>)</span></span>
+              </div>
+              <div class="col">
+                <span class="suit fs-28 fw-6">
+                  <span class="suit fs-24 fw-6 line-28 text-center">화장품<br />(<span
+                      class="simhei fw-4">化粧品</span>)</span></span>
+              </div>
+            </div>
+            <div class="td">
+              <div class="col bg-blue">
+                <span class="fs-24 simhei line-28">中</span>
+              </div>
+              <div class="col">
+                <span class="fs-24 line-28 text-center" data-audio="012-20.mp3"><span class="simhei mr-6">图书馆</span><br /><span
+                    class="gRegula">túshñguân</span></span>
+              </div>
+              <div class="col">
+                <span class="fs-24 line-28 text-center" data-audio="012-21.mp3"><span class="simhei mr-6">运动场</span><br /><span
+                    class="gRegula">yùndòngchâng</span></span>
+              </div>
+              <div class="col">
+                <span class="fs-24 line-28 text-center" data-audio="012-22.mp3"><span class="simhei mr-6">东大门</span><br /><span
+                    class="gRegula">Dõngdàmén</span></span>
+              </div>
+              <div class="col">
+                <span class="fs-24 line-28 text-center" data-audio="012-23.mp3"><span class="simhei mr-6">化妆品</span><br /><span
+                    class="gRegula">huàzhuãngpîn</span></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<script type="text/javascript">
+  const page = {
+    //컨텐츠에 정답 확인이 존재하는지 여부
+    isAnswer: false,
+    // 단어장 노출 여부 판단. 이벤트 호출하지 않으면 노출하지 않음.
+    isVocabulary: false,
+    //정답 보기
+    showAnswer: () => { },
+    //정답 숨기기
+    hideAnswer: () => { },
+    // 단어장 보기
+    showVocabulary: () => { },
+  };
+</script>
+<script src="../common/js/script.js"></script>
+
+<script type="text/javascript">
+  // 정답
+  $(".answer_btn").on("click", function () {
+    $(this).hide();
+    $(".reset_btn").show();
+    $(".answer").children().removeClass("v_hidden");
+  });
+  // 다시 풀기
+  $(".reset_btn").on("click", function () {
+    $(this).hide();
+    $(".answer_btn").show();
+    $(".answer").children().addClass("v_hidden");
+  });
+</script>
+
+</html>

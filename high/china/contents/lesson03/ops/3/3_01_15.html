@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>미래엔 중국어</title>
+  <script src="./../common/lib/jquery-3.7.1.min.js"></script>
+  <!-- SUIT Variable 폰트 -->
+  <link href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/variable/woff2/SUIT-Variable.css"
+    rel="stylesheet" />
+  <link href="../common/css/comm.css" rel="stylesheet" />
+  <link href="./css/3_01_15.css" rel="stylesheet" />
+</head>
+
+<body>
+  <div id="wrap" class="china_wrap express_wrap">
+    <div class="btn_box dp_flex">
+      <button class="btn popup_btn blue" data-index="2">보충</button>
+      <!-- <div class="tempBttns">
+        <button onclick="page.showVocabulary()" data-index="1" class="tempBttn">단어장</button>
+      </div> -->
+    </div>
+
+    <div class="full_content">
+      <div class="title_box dp_flex">
+        <div class="express_tag">
+          <span>표현</span>
+          <div class="plus"></div>
+        </div>
+
+        <div class="text_box">
+          <span class="suit"> 외동아들・외동딸 </span>
+        </div>
+      </div>
+
+      <div class="content_box dp_flex dp_flex_column">
+        <div class="text_box text_box1">
+          <span class="suit">
+            너희는 <br />
+            형제자매가 <br />
+            있니?
+          </span>
+        </div>
+        <div class="text_box text_box2">
+          <span data-audio="047-43.mp3">
+            <span class="simhei">我是独生子。</span> <br />
+            <span class="gRegula">Wô shì dúshçngzî.</span> <br />
+          </span>
+          <span class="suit">나는 외동아들이야.</span>
+        </div>
+        <div class="text_box text_box3">
+          <span data-audio="047-44.mp3">
+            <span class="simhei">我是独生女。</span> <br />
+            <span class="gRegula">Wô shì dúshçngnÚ.</span> <br />
+          </span>
+          <span class="suit">나는 외동딸이야.</span>
+        </div>
+        <div class="img_box">
+          <img src="../3/images/3_01_15/img01.png" alt="외동아들 외동딸 이미지" class="img img1" />
+        </div>
+      </div>
+    </div>
+
+    <div class="popup_bg" style="display: none"></div>
+
+    <!-- 단어장 -->
+    <div class="popup vocabularyBook" data-popup="7" style="display: none">
+      <div class="tag bmjua dp_flex">단어장</div>
+      <button class="close_btn"></button>
+      <div class="popup_content dp_flex">
+        <div class="word_list_box dp_flex dp_flex_column">
+          <div class="word_content">
+            <div class="list dp_flex voca_popup_btn active" data-audio="047-45.mp3">
+              <span class="gRegula">dúshçngzî</span>
+            </div>
+            <div class="list dp_flex voca_popup_btn" data-audio="047-46.mp3">
+              <span class="gRegula">dúshçngnÚ</span>
+            </div>
+          </div>
+        </div>
+        <div class="show_word_box dp_flex dp_flex_column">
+          <div class="china_box dp_flex">
+            <div class="voca_popup_tab" data-audio="047-45.mp3">
+              <span class="FZKai">独生子</span>
+              <span class="gRegula">dúshçngzî</span>
+            </div>
+            <div class="voca_popup_tab" data-audio="047-46.mp3" style="display: none">
+              <span class="FZKai">独生女</span>
+              <span class="gRegula">dúshçngnÚ</span>
+            </div>
+          </div>
+          <div class="korea_box dp_flex">
+            <div class="voca_warp">
+              <span class="suit">외동아들</span>
+              <span class="suit" style="display: none">외동딸</span>
+            </div>
+          </div>
+          <div class="show_btn-warp">
+            <button class="btn3 show_pinyin_btn" style="display: none">
+              병음 보기
+            </button>
+            <button class="btn3 hide_pinyin_btn">병음 가리기</button>
+            <button class="btn3 show_btn" style="display: none">
+              뜻 보기
+            </button>
+            <button class="btn3 hide_btn">뜻 감추기</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 보충 -->
+    <div class="popup voca2" data-popup="2" style="display: none">
+      <div class="tag bmjua dp_flex">보충</div>
+      <button class="close_btn"></button>
+      <div class="popup_content">
+        <div class="popup-scroll">
+          <div class="title suit">형제자매 관련 표현</div>
+          <div class="list-warp">
+            <ul class="popup_content_list">
+              <li class="item">
+                <div class="suit_box">
+                  <span class="suit">첫째</span>
+                </div>
+                <div class="item_audio" data-audio="047-47.mp3">
+                  <span class="FZKai">老大</span>
+                  <span class="gRegula">lâodà</span>
+                </div>
+              </li>
+              <li class="item">
+                <div class="suit_box"><span class="suit">둘째</span></div>
+                <div class="item_audio" data-audio="047-48.mp3">
+                  <span class="FZKai">老二</span>
+                  <span class="gRegula">lâo’èr</span>
+                </div>
+              </li>
+              <li class="item">
+                <div class="suit_box"><span class="suit">막내</span></div>
+                <div class="item_audio" data-audio="047-49.mp3">
+                  <span class="FZKai">老幺</span>
+                  <span class="gRegula">lâoyão</span>
+                </div>
+              </li>
+              <li class="item">
+                <div class="suit_box"><span class="suit">큰아들,</span><span class="suit">장남</span></div>
+                <div class="item_audio" data-audio="047-50.mp3">
+                  <span class="FZKai">大儿子</span>
+                  <span class="gRegula">dà’érzi</span>
+                </div>
+              </li>
+              <li class="item">
+                <div class="suit_box"><span class="suit">차남,</span>
+                  <span class="suit">둘째 아들</span>
+                </div>
+                <div class="item_audio" data-audio="047-51.mp3">
+                  <span class="FZKai">二儿子</span>
+                  <span class="gRegula">èr’érzi</span>
+                </div>
+              </li>
+            </ul>
+            <ul class="popup_content_list">
+              <li class="item" style="height: 90px">
+                <div class="suit_box"><span class="suit">막내아들</span></div>
+                <div class="item_audio" data-audio="047-52.mp3">
+                  <span class="FZKai">小儿子</span>
+                  <span class="gRegula">xiâo’érzi</span>
+                </div>
+              </li>
+              <li class="item">
+                <div class="suit_box"><span class="suit">큰딸,</span><span class="suit" style="margin-left: 35px;">장녀</span></div>
+                <div class="item_audio" data-audio="047-53.mp3">
+                  <span class="FZKai">大女儿</span>
+                  <span class="gRegula">dànÚ’ér</span>
+                </div>
+              </li>
+              <li class="item">
+                <div class="suit_box"><span class="suit">차녀,</span>
+                  <span class="suit">둘째 딸</span>
+                </div>
+                <div class="item_audio" data-audio="047-54.mp3">
+                  <span class="FZKai">二女儿</span>
+                  <span class="gRegula">èrnÚ’ér</span>
+                </div>
+              </li>
+              <li class="item" style="height: 90px">
+                <div class="suit_box"><span class="suit">막내딸</span></div>
+                <div class="item_audio" data-audio="047-55.mp3">
+                  <span class="FZKai">小女儿</span>
+                  <span class="gRegula">xiâonÚ’ér</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<script type="text/javascript">
+  const page = {
+    //컨텐츠에 정답 확인이 존재하는지 여부
+    isAnswer: false,
+    // 단어장 노출 여부 판단.
+    isVocabulary: true,
+    //정답 보기
+    showAnswer: () => { },
+    //정답 숨기기
+    hideAnswer: () => { },
+    // 단어장 보기
+    showVocabulary: () => {
+      setPopup(7);
+    },
+  };
+  $(document).ready(function () {
+    // setPopup(1);
+  });
+</script>
+<script src="../common/js/script.js"></script>
+<script src="../common/js/vocabularyBook.js"></script>
+
+</html>

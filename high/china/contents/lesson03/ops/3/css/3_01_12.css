@@ -1,0 +1,210 @@
+.china_wrap.express_wrap .full_content .express_tag {
+  background: #a1d9ca;
+}
+.china_wrap.express_wrap .full_content .express_tag span {
+  color: #2e938d;
+}
+.china_wrap.express_wrap .full_content .title_box {
+  margin-bottom: 10px;
+}
+.china_wrap.express_wrap .full_content .title_box .btn {
+  position: absolute;
+  top: 4px;
+  right: 0;
+}
+.china_wrap.express_wrap .full_content .top_title span {
+  font-size: 40px;
+  font-weight: 800;
+}
+.china_wrap.express_wrap .full_content .top_title span.gRegula {
+  font-weight: 400;
+}
+.china_wrap.express_wrap .full_content > .title_box span {
+  color: #2e938d;
+}
+.china_wrap.express_wrap .full_content .title_box span:nth-of-type(1) {
+  margin-right: 12px;
+}
+.china_wrap.express_wrap .full_content .title_box span.simhei {
+  font-weight: 400;
+}
+
+
+
+
+
+
+
+.full_content {
+  padding: 0;
+}
+
+.full_content .content_box{
+  padding-top: 10px;
+  padding-left: 30px;
+  background-color: #ecf7f5;
+  border-radius: 8px;
+  height: 440px;
+}
+.content1 {
+  width: 100%;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center; */
+  margin: 10px auto 12px;
+}
+.content1 span {
+  font-size: 36px;
+  line-height: 46px;
+}
+.content1 span.simhei {
+  font-weight: 400;
+}
+.content1 span.suit {
+  font-weight: 600;
+}
+.content2 {
+  display: flex;
+  justify-content: space-between;
+  width: 796px;
+  margin: 0 auto 36px;
+}
+.content2 .box {
+  width: 100%;
+  height: 140px;
+  background: #ecf7f5;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 22px;
+}
+.content2 .box .item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 184px;
+  height: 105px;
+  background: #a1d9ca;
+  border-radius: 8px;
+}
+.content2 .box .item > .simhei {
+  color: #231815;
+  font-weight: 400;
+  font-size: 36px;
+}
+.content2 .box .item .info {
+  position: absolute;
+  bottom: -114px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.content2 .box .item .info .gRegula {
+  font-size: 36px;
+  margin-bottom: 30px;
+  font-weight: 400;
+}
+.content2 .box .item .info .suit {
+  font-weight: 600;
+  font-size: 36px;
+}
+
+.content2 .box .plus {
+  position: relative;
+  width: 22px;
+  height: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.content2 .box .plus:after,
+.content2 .box .plus::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background: #6e6e70;
+}
+.content2 .box .plus:after {
+  transform: rotate(90deg);
+}
+.font-red {
+  color: #e22f61;
+}
+.popup1 .popup_content {
+  padding: 60px 50px 0 50px;
+}
+.popup1 .popup_content .content1{
+  align-items: start;
+  padding-left: 0px;
+}
+
+.popup1 .popup_content .title {
+  font-weight: 800;
+  margin-bottom: 14px;
+  display: flex;
+}
+.popup1 .popup_content .title .suit {
+  font-size: 40px;
+  font-weight: 800;
+}
+
+.popup1 .popup_content .title .FZKai {
+  font-weight: 800;
+  font-size: 36px;
+}
+.popup1 .popup_content .title .gRegula {
+  font-size: 40px;
+  font-weight: 400;
+}
+.popup1 .popup_content .title .font-400 {
+  font-weight: 400;
+}
+.popup1 .popup_content .content1 {
+  width: 100%;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 46px;
+  word-break: keep-all;
+}
+.popup1 .popup_content .content2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  padding-left: 24px;
+  margin-top: 20px;
+}
+
+.popup1 .popup_content .content2 .item {
+  margin-bottom: 8px;
+}
+.popup1 .popup_content .content2 .item:last-of-type {
+  margin-bottom: 0;
+}
+.popup1 .popup_content .content2 .FZKai {
+  font-weight: 400;
+  font-size: 36px;
+  color: #231815;
+}
+.popup1 .popup_content .content2 .gRegula {
+  font-weight: 400;
+  font-size: 36px;
+}
+.popup1 .popup_content .content2 .suit {
+  font-weight: 600;
+  font-size: 36px;
+  color: #231815;
+}
+.popup1 .popup_content .content2 .mr-6 {
+  margin-right: 6px;
+}
+
+.mr-0 {
+  margin-right: 0 !important;
+}

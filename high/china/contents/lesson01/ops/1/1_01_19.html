@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>미래엔 중국어</title>
+  <script src="./../common/lib/jquery-3.7.1.min.js"></script>
+  <script src="./../common/lib/howler-2.1.3.min.js"></script>
+  <!-- SUIT Variable 폰트 -->
+  <link href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/variable/woff2/SUIT-Variable.css"
+    rel="stylesheet" />
+  <link href="../common/css/comm.css" rel="stylesheet" />
+  <link href="./css/1_01_19.css" rel="stylesheet" />
+</head>
+
+<body>
+  <div id="wrap" class="china_wrap content_wrap">
+    <div class="title_box">
+      <div class="title">
+        <span class="titleText suit"><span class="index">2</span> 빈칸에 들어갈 알맞은 말을 골라
+          봅시다.</span>
+      </div>
+    </div>
+
+    <div class="btn_box dp_flex">
+      <div class="bttns">
+        <button class="btn popup_btn blue" data-index="3">해석</button>
+        <!-- <div class="tempBttns">
+          <button class="tempBttn answer_btn" data-index="1" onclick="page.showAnswer(event)">
+            임시정답
+          </button>
+          <button class="tempBttn reset_btn" data-index="1" onclick="page.hideAnswer(event)" style="display: none">
+            다시하기
+          </button>
+        </div> -->
+      </div>
+    </div>
+
+    <div class="full_content">
+      <div class="content content1">
+        <div class="line line1">
+          <figure class="leftSide">
+            <img src="./images/1_01_19/content.png" />
+            <span class="hint hint1 gRegula" data-audio="029-03.mp3">Zàijiàn!</span>
+            <span class="hint hint2 gRegula exception" data-audio="029-04.mp3">jiàn!</span>
+            <span class="answer ansText ansText1 gRegula red" data-audio="029-04.mp3"
+              style="display: none">Zhõumò</span>
+          </figure>
+        </div>
+        <div class="ansList">
+          <span data-audio="029-05.mp3" class="ans ans1 gRegula"><span class="black_fix">①</span> Nîmen</span>
+          <span data-audio="029-06.mp3" class="ans ans2 gRegula"><span class="black_fix">②</span> Dàjiã</span>
+          <span data-audio="029-07.mp3" class="ans ans3 gRegula"><span class="black_fix">③</span> Zhõumò</span>
+        </div>
+      </div>
+      <figure class="numberingBox">
+        <img src="./images/1_01_19/numbering.png" alt="" />
+      </figure>
+    </div>
+
+    <div class="popup_bg" style="display: none"></div>
+    <div class="popup expPopup" data-popup="3" style="display: none">
+      <div class="tag bmjua dp_flex">해석</div>
+      <div class="popup-con">
+        <span class="popupContext popupContext1 gRegula">Zàijiàn!<span class="suit popupKr">잘 가!</span></span>
+        <span class="popupContext popupContext2 gRegula">Zhõumò jiàn!<span class="suit popupKr">주말에 봐!</span></span>
+        <div class="under_text">
+          <span class="suit">① 너희</span>
+          <span class="suit">② 여러분</span>
+          <span class="suit">③ 주말</span>
+        </div>
+      </div>
+      <button class="close_btn"></button>
+    </div>
+  </div>
+</body>
+<script type="text/javascript">
+  const page = {
+    //컨텐츠에 정답 확인이 존재하는지 여부
+    isAnswer: true,
+    // 단어장 노출 여부 판단. 이벤트 호출하지 않으면 노출하지 않음.
+    isVocabulary: false,
+    //정답 보기
+    showAnswer: () => {
+      $(`.tempBttn.answer_btn`).hide();
+      $(`.tempBttn.reset_btn`).show();
+
+      $(".answer").show();
+      $(".ans3").addClass("red");
+      $(".ans3").addClass("correct");
+      $(".hint2").removeClass("exception");
+    },
+    //정답 숨기기
+    hideAnswer: () => {
+      $(`.tempBttn.answer_btn`).show();
+      $(`.tempBttn.reset_btn`).hide();
+
+      $(".answer").hide();
+      $(".ans3").removeClass("red");
+      $(".ans3").removeClass("correct");
+      $(".hint2").addClass("exception");
+    },
+    // 단어장 보기
+    showVocabulary: () => {
+      setPopup(7);
+    },
+  };
+</script>
+<script crossorigin src="../common/lib/libBundle.js"></script>
+<script src="../common/js/script.js"></script>
+<script src="../common/js/rolePlayerCh.js"></script>
+<script src="../common/js/vocabularyBook.js"></script>
+
+</html>

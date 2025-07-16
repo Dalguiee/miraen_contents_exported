@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>미래엔 중국어</title>
+    <script src="./../common/lib/jquery-3.7.1.min.js"></script>
+    <script src="./../common/lib/howler-2.1.3.min.js"></script>
+    <!-- SUIT Variable 폰트 -->
+    <link
+      href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/variable/woff2/SUIT-Variable.css"
+      rel="stylesheet"
+    />
+    <link href="../common/css/comm.css" rel="stylesheet" />
+    <link href="./css/4_01_30.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div id="wrap" class="china_wrap content_wrap">
+      <div class="title_box">
+        <div class="title">
+          <span class="titleText suit">
+            <img src="./images/4_01_30/logo.svg" alt="" />
+            <span class="index"></span>중국의 전통 종이 공예인<span
+              class="FZKai"
+              data-audio="061-01.mp3"
+              >剪纸<span class="suit textBucket">(</span
+              ><span class="gRegula">jiânzhî</span
+              ><span class="suit textBucket">)</span></span
+            >를 만들어 봅시다</span
+          >
+        </div>
+      </div>
+
+      <div class="btn_box dp_flex">
+        <div class="bttns">
+          <button class="btn popup_btn blue" data-index="3">보충</button>
+        </div>
+      </div>
+
+      <div class="full_content">
+        <div class="content content1" data-tab="1">
+          <figure class="bgFig">
+            <div class="context">
+              <span class="line line1 suit">
+                <span class="FZKai" data-audio="061-01.mp3"
+                  >剪纸<span class="gRegula">(jiânzhî)</span></span
+                >는 종이를 오려 다양한 모양을 만드는 중국의 전통 종이
+                공예입니다.<br />
+                붉은색 종이를 많이 사용하며, 명절이나 기념일에 집 안팎을
+                <span class="FZKai" data-audio="061-01.mp3">剪纸</span>로
+                장식합니다.
+              </span>
+            </div>
+            <div class="imgBox">
+              <img class="bgImg" src="./images/4_01_30/bg.svg" alt="" />
+            </div>
+          </figure>
+        </div>
+      </div>
+
+      <div class="popup_bg" style="display: none"></div>
+
+      <!-- 보충 -->
+      <div class="popup popup2 expPopup" data-popup="3" style="display: none">
+        <div class="tag bmjua dp_flex">보충</div>
+        <button class="close_btn"></button>
+        <div class="popup_content">
+          <div class="popupTitle">
+            <span class="suit"
+              ><span class="FZKai" data-audio="061-06.mp3"
+                >春<span class="gRegula"
+                  ><span class="suit">(</span>chñn<span class="suit"
+                    >)</span
+                  ></span
+                ></span
+              >자</span
+            >
+          </div>
+
+          <div class="lineBox">
+            <div class="line line1 dp_flex">
+              <span class="txt suit">
+                <span class="FZKai" data-audio="061-06.mp3"
+                  >春<span class="gRegula">(chñn)</span></span
+                >이라는 한자는 <span class="notoSans">‘</span>봄<span
+                  class="notoSans"
+                  >’</span
+                >을 뜻하는
+                <span class="FZKai" data-audio="061-07.mp3"
+                  >春天<span class="gRegula">(chñntiãn)</span></span
+                >을 나타내는 말로, 중국인들은
+                <span class="notoSans">‘</span>봄볕이 내리쬐면 만물이
+                번영한다<span class="notoSans">’</span>는 의미가 있다고 생각하여
+                <span class="FZKai" data-audio="061-06.mp3"
+                  >春<span class="gRegula">(chñn)</span></span
+                >자를 젠즈의 소재로 많이 사용한다. 또한 봄은 1년의 첫 번째
+                계절이라고 생각하여 새로움과 시작을 상징한다.
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript">
+    const page = {
+      //컨텐츠에 정답 확인이 존재하는지 여부
+      isAnswer: false,
+      // 단어장 노출 여부 판단. 이벤트 호출하지 않으면 노출하지 않음.
+      isVocabulary: false,
+      //정답 보기
+      showAnswer: () => {
+        $(".answer_btn").hide();
+        $(".reset_btn").show();
+        $(".answer").show();
+        $(".reset").hide();
+      },
+      //정답 숨기기
+      hideAnswer: () => {
+        $(".answer_btn").show();
+        $(".reset_btn").hide();
+        $(".answer").hide();
+        $(".reset").show();
+      },
+      // 단어장 보기
+      showVocabulary: () => {
+        setPopup(7);
+      },
+    };
+  </script>
+  <script type="text/javascript">
+    // 정답 버튼
+    $(".answer_btn").on("click", function () {
+      let index = $(".answer_btn").index(this);
+      $(this).hide();
+      $(".reset_btn").eq(index).show();
+      $(".answer").eq(index).show();
+      $(".answer .qLine").eq(index).addClass("speak");
+      $(".reset").eq(index).hide();
+    });
+    // 다시 하기 버튼
+    $(".reset_btn").on("click", function () {
+      let index = $(".reset_btn").index(this);
+      $(this).hide();
+      $(".answer_btn").eq(index).show();
+      $(".answer").eq(index).hide();
+      $(".answer .qLine").eq(index).removeClass("speak");
+      $(".reset").eq(index).show();
+    });
+  </script>
+  <script crossorigin src="../common/lib/libBundle.js"></script>
+  <script src="../common/js/script.js"></script>
+  <script src="../common/js/rolePlayerCh.js"></script>
+  <script src="../common/js/vocabularyBook.js"></script>
+</html>

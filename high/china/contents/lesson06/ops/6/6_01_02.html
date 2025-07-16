@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>미래엔 중국어</title>
+  <script src="./../common/lib/jquery-3.7.1.min.js"></script>
+  <!-- SUIT Variable 폰트 -->
+  <link href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/variable/woff2/SUIT-Variable.css"
+    rel="stylesheet" />
+  <link href="../common/css/comm.css" rel="stylesheet" />
+  <link href="./css/6_01_02.css" rel="stylesheet" />
+</head>
+
+<body>
+  <div id="wrap" class="china_wrap index_wrap">
+    <div class="btn_box dp_flex">
+      <button class="btn hanja_btn">한자</button>
+      <button class="btn pinyin_btn" style="display: none">병음</button>
+      <button class="btn combo_btn">한자+병음</button>
+      <button class="btn popup_btn blue" data-index="1">해석</button>
+    </div>
+
+    <div class="full_content dp_flex dp_flex_column">
+      <div class="target_box dp_flex">
+        <div class="tag">학습 목표</div>
+        <div class="text_box">
+          <span class="suit">
+            길을 묻고 방향을 말할 수 있다.<br />건강 관련 표현을 말할 수 있다.<br>장소와 교통수단을 묻고 답할 수 있다.
+          </span>
+        </div>
+      </div>
+      <div class="express_box dp_flex">
+        <div class="tag">기본 표현</div>
+        <!-- 병음 -->
+        <div class="text_box dp_flex dp_flex_column" data-view="pinyin">
+          <div class="line line1 dp_flex">
+            <span class="index">교통</span>
+            <span class="title gRegula" data-audio="073-04.mp3">Wô zuò dìtiê qù.</span>
+          </div>
+          <div class="line line2 dp_flex">
+            <span class="index">건강</span>
+            <span class="title gRegula" data-audio="073-05.mp3">Wô yôudiânr tóuténg.</span>
+          </div>
+          <div class="line line3 dp_flex">
+            <span class="index">장소</span>
+            <span class="title gRegula" data-audio="073-06.mp3">Yåyuàn zài nâr?</span>
+          </div>
+        </div>
+        <!-- 한자 -->
+        <div class="text_box dp_flex dp_flex_column" data-view="hanja" style="display: none;">
+          <div class="line line1 dp_flex">
+            <span class="index">교통</span>
+            <span class="title FZKai" data-audio="073-04.mp3">我坐地铁去。</span>
+          </div>
+          <div class="line line2 dp_flex">
+            <span class="index">건강</span>
+            <span class="title FZKai" data-audio="073-05.mp3">我有点儿头疼。</span>
+          </div>
+          <div class="line line3 dp_flex">
+            <span class="index">장소</span>
+            <span class="title FZKai" data-audio="073-06.mp3">医院在哪儿？</span>
+          </div>
+        </div>
+        <!-- 한자 + 병음 -->
+        <div class="text_box text_box_combo dp_flex dp_flex_column" data-view="combo" style="display: none;">
+          <div class="line line1 dp_flex">
+            <span class="index">교통</span>
+            <span class="title FZKai" data-audio="073-04.mp3" data-audio-combo="073-04">我坐地铁去。</span>
+            <span class="title gRegula" data-audio="073-04.mp3" data-audio-combo="073-04">Wô zuò dìtiê qù.</span>
+          </div>
+          <div class="line line2 dp_flex">
+            <span class="index">건강</span>
+            <span class="title FZKai" data-audio="073-05.mp3" data-audio-combo="073-05">我有点儿头疼。</span>
+            <span class="title gRegula" data-audio="073-05.mp3" data-audio-combo="073-05">Wô yôudiânr tóuténg.</span>
+          </div>
+          <div class="line line3 dp_flex">
+            <span class="index">장소</span>
+            <span class="title FZKai" data-audio="073-06.mp3" data-audio-combo="073-06">医院在哪儿？</span>
+            <span class="title gRegula" data-audio="073-06.mp3" data-audio-combo="073-06">Yåyuàn zài nâr?</span>
+          </div>
+        </div>
+      </div>
+      <div class="culture_box dp_flex">
+        <div class="tag">중국 문화</div>
+        <div class="text_box">
+          <span class="suit"> 중국의 명소 </span>
+        </div>
+      </div>
+    </div>
+
+    <div class="popup_bg" style="display: none"></div>
+    <div class="popup popup1" data-popup="1" style="display: none">
+      <div class="tag bmjua dp_flex">해석</div>
+      <button class="close_btn"></button>
+      <div class="popup_content dp_flex">
+
+        <div class="line line1 dp_flex">
+          <div class="index_box dp_flex">교통</div>
+          <div class="textSec">
+            <div class="text_box text_box1">
+              <span class="txt txt1 FZKai chDot">我坐地铁去。</span>
+              <span class="suit">나는 지하철 타고 가.</span>
+            </div>
+            <div class="text_box text_box2">
+              <span class="txt gRegula">Wô zuò dìtiê qù.</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="line line2 dp_flex">
+          <div class="index_box dp_flex">건강</div>
+          <div class="textSec">
+            <div class="text_box text_box1">
+              <span class="txt FZKai chDot">我有点儿头疼。</span>
+              <span class="suit">나 머리가 좀 아파.</span>
+            </div>
+            <div class="text_box text_box2">
+              <span class="txt gRegula">Wô yôudiânr tóuténg.</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="line line3 dp_flex">
+          <div class="index_box dp_flex">장소</div>
+          <div class="textSec">
+            <div class="text_box text_box1">
+              <span class="txt FZKai">医院在哪儿?</span>
+              <span class="suit">병원은 어디에 있어?</span>
+            </div>
+            <div class="text_box text_box2">
+              <span class="txt gRegula">Yåyuàn zài nâr?</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</body>
+<script type="text/javascript">
+  const page = {
+    //컨텐츠에 정답 확인이 존재하는지 여부
+    isAnswer: false,
+    // 단어장 노출 여부 판단. 이벤트 호출하지 않으면 노출하지 않음.
+    isVocabulary: false,
+    //정답 보기
+    showAnswer: () => { },
+    //정답 숨기기
+    hideAnswer: () => { },
+    // 단어장 보기
+    showVocabulary: () => { },
+  };
+</script>
+<script src="../common/js/script.js"></script>
+<script type="text/javascript">
+  $(document).ready(function () {
+    // setPopup(1);
+  });
+</script>
+
+</html>

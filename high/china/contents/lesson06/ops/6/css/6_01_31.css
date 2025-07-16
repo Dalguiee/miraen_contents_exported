@@ -1,0 +1,185 @@
+/* 전역 */
+.red{
+  color: #E22F61;
+}
+
+/* 헤더타이틀 */
+.title_box{
+  top: 13px !important;
+  left: 0 !important;
+}
+.btn_box{
+  padding-top: 0 !important;
+}
+.title_box .titleLogo{}
+
+.title_box .title{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.align-center .titleText{
+  font-size: 38px;
+  color: #B25C7B;
+}
+
+.title_box .mainCon{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  width: 100%;
+  font-size: 30px;
+  line-height: 30px;
+  margin-right: 20px;
+  font-weight: 800;
+}
+
+.title_box .titleNum{
+  margin-right: 20px;
+  color: #498F63;
+  font-size: 36px;
+  font-weight: normal;
+}
+
+
+/* 컨텐츠 */
+.full_content{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 120px;
+}
+.full_content .content{
+  width: 940px;
+  height: 500px;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  position: relative;
+  padding-left: 3px;
+  margin-top: 100px;
+}
+.full_content .content .contextTitle{
+  font-size: 34px;
+  font-weight: 600;
+  line-height: 38px;
+  text-wrap: nowrap;
+}
+.full_content .content .contextTitle .simhei{
+  font-size: 34px;
+  font-weight: 400;
+  line-height: 38px;
+}
+.full_content .content .context{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  gap: 30px;
+}
+.full_content .content .context2{
+  margin-top: 80px;
+}
+.full_content .content .context .index{
+  font-size: 36px;
+  color: #BB97C5;
+}
+.full_content .content .context2 .index{
+  padding-top: 13px;
+}
+
+.full_content .content .context .innerContext .contextTitle .selectSec{
+  color: #7A7A7A;
+  width: 150px;
+  height: 47px;
+  display: inline-block;
+  position: relative;
+  margin-left: 10px;
+}
+.full_content .content .context .innerContext .contextTitle .selectSec img{
+  position: absolute;
+  top: 8px;
+}
+.full_content .content .context .innerContext .ansBttns{
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.full_content .content .context .innerContext .ansBttns .btn3{
+  position: absolute;
+}
+.full_content .content .context1 .innerContext .ansBttns{
+  width: 200px
+}
+.full_content .content .context2 .innerContext .ansBttns{
+  width: 111px
+}
+.full_content .content .context .innerContext .ansBttns .reset_btn{
+  left: 0;
+}
+.full_content .content .context .innerContext .ansBttns .descPop{
+  right: 10px;
+}
+.full_content .content .context1 .innerContext .ansBttns{
+  top: 113px;
+  left: 27px;
+}
+.full_content .content .context2 .innerContext .ansBttns{
+  top: 75px;
+  left: 755px;
+}
+
+
+
+/* 팝업 */
+.popup{
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+}
+
+.popup .popup_content{
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  padding: 0 30px;
+  gap: 0px !important;
+  height: 90% !important;
+}
+
+/* 설명 */
+.popup.explan1{
+  top: 150px !important;
+  right: 250px !important;
+}
+.popup.explan{
+  width: fit-content !important;
+  padding: 46px 24px 10px 24px;
+}
+.popup.explan .popup_content{
+  padding: 0 !important;
+}
+.popup.explan .popup_content .simhei{
+  font-size: 32px !important;
+  line-height: 50px !important;
+  font-weight: 400 !important;
+}
+.popup.explan .popup_content .FZKai{
+  font-size: 32px !important;
+  line-height: 50px !important;
+  font-weight: 400 !important;
+}
+.popup.explan .popup_content .gRegula{
+  font-size: 32px !important;
+  line-height: 50px !important;
+  font-weight: 400 !important;
+}
+.popup.explan .popup_content .suit{
+  font-size: 32px !important;
+  line-height: 50px !important;
+  font-weight: 600 !important;
+}

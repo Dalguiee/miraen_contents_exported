@@ -1,0 +1,492 @@
+.china_wrap.speak_wrap .full_content .content .line .btn3[data-view-info="hanja"][data-tab-info="1"]{
+	top: 8px;
+	right: -100px;
+}
+.china_wrap.speak_wrap .full_content .content .line .btn3[data-view-info="hanja"][data-tab-info="2"]{
+	top: 8px;
+	right: -76px;
+}
+.china_wrap.speak_wrap .full_content .content .line .btn3[data-view-info="hanja"][data-tab-info="3"]{
+	top: 8px;
+	right: -80px;
+}
+.china_wrap.speak_wrap .full_content .content .line .btn3[data-view-info="hanja"][data-tab-info="4"]{
+	top: 8px;
+	right: -80px;
+}
+
+.china_wrap.speak_wrap .full_content .content .line .btn3[data-view-info="pinyin"][data-tab-info="1"]{
+	top: 3px;
+	right: -100px;
+}
+.china_wrap.speak_wrap .full_content .content .line .btn3[data-view-info="pinyin"][data-tab-info="2"]{
+	top: 3px;
+	right: -100px;
+}
+.china_wrap.speak_wrap .full_content .content .line .btn3[data-view-info="pinyin"][data-tab-info="3"]{
+	top: 3px;
+	right: -100px;
+}
+.china_wrap.speak_wrap .full_content .content .line .btn3[data-view-info="pinyin"][data-tab-info="4"]{
+	top: 3px;
+	right: -100px;
+}
+
+.china_wrap.speak_wrap .full_content .content .line .btn3[data-view-info="combo"][data-tab-info="1"]{
+	top: 5px;
+	right: -100px;
+}
+.china_wrap.speak_wrap .full_content .content .line .btn3[data-view-info="combo"][data-tab-info="2"]{
+	top: 5px;
+	right: -79px;
+}
+.china_wrap.speak_wrap .full_content .content .line .btn3[data-view-info="combo"][data-tab-info="3"]{
+	top: 5px;
+	right: -84px;
+}
+.china_wrap.speak_wrap .full_content .content .line .btn3[data-view-info="combo"][data-tab-info="4"]{
+	top: 5px;
+	right: -83px;
+}
+
+
+
+#wrap > .btn_box .listen_box {
+	margin-right: 10px;
+}
+.rolePlayer {
+	top: 4px;
+	left: 0px;
+}
+.btn3{
+	padding: 4px 13px;
+}
+.china_wrap.speak_wrap .full_content {
+	position: relative;
+}
+.china_wrap.speak_wrap .full_content .btn_box {
+	position: absolute;
+	bottom: 7px;
+	right: 0;
+	z-index: 20;
+}
+
+/* 팝업 스타일 */
+.china_wrap .popup > .popup_content {
+	padding: 60px;
+	justify-content: flex-start;
+	align-items: flex-start;
+}
+.china_wrap .popup > .popup_content span {
+	font-size: 30px;
+	font-weight: 500;
+	line-height: 1.5;
+}
+
+.txt.txt2.gRegula {
+	color: #727171;
+}
+
+.china_wrap.speak_wrap .full_content .content .line:nth-child(2n + 1) .index_box {
+	border: 4px solid #5cc9c8;
+	color: #5cc9c8;
+}
+
+/* 단어장 */
+.china_wrap .popup.vocabularyBook .popup_content_list .item {
+	margin-bottom: 8px;
+}
+
+.china_wrap.speak_wrap .full_content .content .line:nth-child(2n) .index_box {
+	border: 4px solid #fc9697;
+	color: #fc9697;
+}
+.china_wrap .popup.translate .popup_content .left .item:nth-of-type(odd) .item_name {
+	border: 3px solid #5cc9c8;
+	color: #5cc9c8;
+}
+.china_wrap .popup.translate .popup_content .left .item:nth-of-type(even) .item_name {
+	border: 3px solid #fc9697;
+	color: #fc9697;
+}
+
+.china_wrap .popup .popup_content {
+	gap: 14px;
+}
+.china_wrap .popup .popup_content .text1 .FZKai,
+.china_wrap .popup .popup_content .text1 .gRegula {
+	font-weight: 400;
+	font-size: 30px;
+}
+.china_wrap .popup .popup_content .text1 .FZKai {
+	line-height: 1;
+}
+.china_wrap .popup .popup_content .text1 {
+	padding-top: 6px;
+	padding-left: 24px;
+}
+.china_wrap .popup .popup_content .text1 .suit {
+	font-weight: 600;
+}
+.fs-24 {
+	font-size: 24px !important;
+}
+.china_wrap .popup .popup_content {
+	gap: 0;
+}
+.popup.popup2 > .popup_content .anwer_box .btn-audio {
+	margin-right: 16px;
+}
+button:disabled {
+	cursor: default;
+	color: #ccc !important;
+	border-color: #ccc;
+	box-shadow: 0px 2px 0px 0px #8a8779;
+}
+*[data-audio]:disabled {
+	color: #ccc !important;
+}
+
+/* TEMP */
+.china_wrap.speak_wrap .full_content .content .line .btn3 {
+	right: -117px;
+	top: 5px;
+}
+.china_wrap.speak_wrap .full_content .img_box {
+	bottom: 45px;
+	width: 465px;
+	height: 242px;
+}
+.china_wrap.speak_wrap .full_content .content .line .text_box {
+	line-height: 47px;
+	margin: 0 0 37px 30px;
+}
+.china_wrap.speak_wrap .full_content .content .line .text_box .txt.txt2 {
+	bottom: -28px;
+	line-height: 39px;
+}
+.china_wrap.speak_wrap .full_content .content .line .text_box .txt.FZKai {
+	color: rgba(35, 24, 21, 1);
+}
+.china_wrap.speak_wrap .full_content .content .line .text_box .txt.txt1.gRegula {
+	font-size: 40px;
+	line-height: 44px;
+}
+.china_wrap.speak_wrap .full_content .content .line.line-dot > .text_box {
+	position: relative;
+}
+.china_wrap.speak_wrap .full_content .content .line.line-dot > .text_box::after {
+	position: absolute;
+	content: '';
+	bottom: -32px;
+	right: 160px;
+	width: 4px;
+	height: 21px;
+	background: url('../images/5_01_10/dot_img.png');
+	background-repeat: no-repeat repeat;
+	background-size: contain;
+}
+/* .china_wrap.speak_wrap .full_content .content .line.line-dot > .text_box > .txt:last-of-type::before {
+	position: absolute;
+	content: '';
+	bottom: -8px;
+	left: -13px;
+	width: calc(100% + 58px);
+	height: 17px;
+	border-bottom-left-radius: 10px;
+	border-bottom: 1px dotted #bebebe;
+	border-left: 1px dotted #bebebe;
+} */
+/* .china_wrap.speak_wrap .full_content .content .line.line-dot > .text_box > .txt:last-of-type::after {
+	position: absolute;
+	content: '';
+	bottom: -10px;
+	right: -46px;
+	width: 5px;
+	height: 5px;
+	border-radius: 50%;
+	background-color: #bebebe;
+} */
+.china_wrap.speak_wrap .full_content .content .line.line-dot > .text_box[data-view='hanja'] > .txt:last-of-type::before {
+	bottom: -21px;
+	left: -5px;
+	width: calc(100% - 9px);
+}
+.china_wrap.speak_wrap .full_content .content .line.line-dot > .text_box[data-view='pinyin'] > .txt:last-of-type::before {
+	bottom: -21px;
+	left: -5px;
+	width: calc(100% + 23px);
+}
+.china_wrap.speak_wrap .full_content .content .line.line-dot > .text_box[data-view='hanja'] > .txt:last-of-type::after {
+	bottom: -23px;
+	right: 14px;
+}
+.china_wrap.speak_wrap .full_content .content .line.line-dot > .text_box[data-view='pinyin'] > .txt:last-of-type::after {
+	bottom: -23px;
+	right: -18px;
+}
+.china_wrap.speak_wrap .full_content .content .line.line-dot > .text_box[data-view='hanja']::after {
+	bottom: -35px;
+	right: 111px;
+}
+.china_wrap.speak_wrap .full_content .content .line.line-dot > .text_box[data-view='pinyin']::after {
+	bottom: -30px;
+	right: 161px;
+}
+.china_wrap.speak_wrap .full_content .content .line.line-dot > .text_box[data-view='combo']::after {
+	bottom: -57px;
+	z-index: 101;
+}
+.china_wrap.speak_wrap .full_content .content .line.line-dot > .text_box[data-view='combo'] {
+	margin-bottom: 47px;
+}
+
+/* 설명 */
+.china_wrap.speak_wrap .popup.explan {
+	width: fit-content;
+}
+
+.china_wrap.speak_wrap .popup.explan .popup_content {
+	padding: 46px 24px 10px 24px;
+}
+.china_wrap.speak_wrap .popup.explan .popup_content span {
+	margin: 0;
+	padding: 0;
+	font-size: 32px;
+	line-height: 50px;
+	color: rgba(35, 24, 21, 1);
+}
+.china_wrap.speak_wrap .popup.explan .popup_content .FZKai,
+.china_wrap.speak_wrap .popup.explan .popup_content .gRegula {
+	font-weight: 400;
+}
+.china_wrap.speak_wrap .popup.explan .popup_content .notoSans {
+	font-weight: 500;
+}
+.china_wrap.speak_wrap .popup.explan .popup_content .suit {
+	font-weight: 600;
+}
+.china_wrap.speak_wrap .popup.explan.index1 {
+	top: 156px;
+}
+.china_wrap.speak_wrap .popup.explan.index2 {
+	top: 216px;
+}
+.china_wrap.speak_wrap .popup.explan.index2 .popup_content {
+	padding: 46px 36px 11px;
+}
+.china_wrap.speak_wrap .popup.explan.explan3 {
+	top: 134px;
+}
+.china_wrap.speak_wrap .popup.explan.explan4 {
+	top: 270px;
+	right: 49px;
+}
+.china_wrap.speak_wrap .popup.explan.explan4 .popup_content {
+	padding: 46px 32px 11px;
+	word-break: keep-all;
+}
+
+/* 해석 */
+.china_wrap .popup.translate .popup_content .left .item .item_text span.FZKai{
+	font-size: 36px;
+}
+.china_wrap .popup.translate .popup_content {
+	padding: 56px 40px 0;
+}
+
+/* 본문 확인 */
+.popup.popup1 .popup_content {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.popup.popup1 > .popup_content .box {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+}
+.popup.popup1 > .popup_content .box .bmjua {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 36px;
+	font-size: 32px;
+	color: white;
+	background: #8a8779;
+	border-radius: 100px;
+	padding: 4px 14px 0 14px;
+	margin-bottom: 20px;
+}
+.popup.popup1 > .popup_content .anwer_box {
+	display: flex;
+}
+.popup.popup1 > .popup_content .anwer_box span {
+	font-size: 36px;
+	font-weight: 700;
+}
+.popup.popup1 > .popup_content .anwer_box .line {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	width: 160px;
+	height: 50px;
+	border-bottom: 2px solid black;
+}
+.popup.popup1 > .popup_content .anwer_box .line div {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+.popup.popup1 > .popup_content .anwer_box .line div .under {
+	position: absolute;
+	top: 100%;
+	left: 8px;
+	display: inline-block;
+	font-weight: 400;
+	font-size: 40px;
+	line-height: 46px;
+	width: 100%;
+}
+.popup.popup1 > .popup_content .anwer_box .line span {
+	display: inline-block;
+	margin-right: -16px;
+	color: #e22f61;
+	font-weight: 500;
+}
+.popup1 .answer_btn,
+.popup1 .reset_btn {
+	position: absolute;
+	right: 28px;
+	bottom: 28px;
+}
+.popup1 .popup_content {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.popup.popup1 > .popup_content .box {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+}
+.popup.popup1 > .popup_content .box .bmjua {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 36px;
+	font-size: 32px;
+	color: white;
+	background: #8a8779;
+	border-radius: 100px;
+	padding: 4px 14px 0 14px;
+	margin-bottom: 20px;
+}
+
+/* 받아쓰기 */
+.popup.popup2 > .popup_content .anwer_box {
+	display: flex;
+	align-items: center;
+	position: relative;
+	width: 100%;
+	height: 72px;
+	display: flex;
+	margin-bottom: 59px;
+}
+.popup.popup2 > .popup_content .anwer_box .notYet1,
+.popup.popup2 > .popup_content .anwer_box .notYet2,
+.popup.popup2 > .popup_content .anwer_box .notYet3{
+	pointer-events: none;
+}
+
+.popup.popup2 > .popup_content .anwer_box .index {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 40px;
+	height: 40px;
+	background: #3a6d36;
+	border-radius: 50%;
+	margin-right: 12px;
+}
+.popup.popup2 > .popup_content .anwer_box .index .suit{
+	color: white;
+	font-size: 34px;
+	font-weight: 800;
+}
+
+.popup.popup2 > .popup_content .anwer_box:last-of-type {
+	margin-bottom: 0;
+}
+.popup.popup2 > .popup_content .anwer_box span {
+	display: flex;
+	align-items: center;
+	font-size: 48px;
+	line-height: 58px;
+}
+.popup.popup2 > .popup_content .anwer_box .line {
+	display: flex;
+	align-items: flex-end;
+	justify-content: center;
+	position: relative;
+	width: 85px;
+	height: 64px;
+	padding-bottom: 6px;
+	border-bottom: 2px solid black;
+	margin: 0 16px;
+}
+.popup.popup2 > .popup_content .anwer_box .line div {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+.popup.popup2 > .popup_content .anwer_box .answer {
+	color: #e22f61;
+	font-weight: 400;
+}
+.popup.popup2 .btn_warp {
+	position: absolute;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 0;
+}
+.popup.popup2 .btn_warp.index1 {
+	left: 248px;
+	bottom: -30px;
+}
+.popup.popup2 .btn_warp.index3 {
+	left: 694px;
+	bottom: -30px;
+}
+.popup.popup2 .btn_warp.index2 {
+	left: 414px;
+	bottom: -30px;
+}
+.popup.popup2 .btn_warp .btn3 {
+	position: absolute;
+	white-space: nowrap;
+}
+.popup.popup2 > .popup_content .anwer_box .line.index2 {
+	width: 159px;
+}
+
+/* 단어게임 */
+.popup.game{
+	padding: 45px 43px 10px 43px;
+}
+.popup.game .popup_content .game_box{
+  margin: 0 !important;
+  width: 100%;
+  height: 100%;
+}

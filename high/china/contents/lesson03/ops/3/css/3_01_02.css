@@ -1,0 +1,45 @@
+/* 팝업 스타일 */
+.index_wrap .popup.popup1 .popup_content .layout {
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.index_wrap .popup.popup1 .popup_content .index_box {
+  width: 80px;
+  height: 109px;
+  background-color: rgba(253, 255, 245, 1);
+  border-radius: 20px;
+  font-size: 30px;
+  color: rgba(35, 24, 21, 1);
+  font-weight: 700;
+  line-height: 1.5;
+  font-family: "SUIT Variable", sans-serif;
+}
+
+.index_wrap .popup.popup1 .popup_content .text_box1 {
+  width: 330px;
+  margin-left: 30px;
+  position: relative;
+}
+
+.index_wrap .popup.popup1 .popup_content .text_box1 .FZKai {
+  font-size: 36px;
+  color: rgba(35, 24, 21, 1);
+  font-weight: 400;
+  line-height: 50px;
+}
+
+.index_wrap .popup.popup1 .popup_content .text_box1 .gRegula {
+  font-size: 36px;
+  line-height: 40px;
+}
+
+.index_wrap .popup.popup1 .popup_content .text_box2 .suit {
+  position: relative;
+  top: -22px;
+  left: -86px;
+  font-size: 36px;
+  color: rgba(61, 85, 145, 1);
+  font-weight: 500;
+  line-height: 50px;
+}

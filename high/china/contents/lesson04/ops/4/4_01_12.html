@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>미래엔 중국어</title>
+  <script src="./../common/lib/jquery-3.7.1.min.js"></script>
+  <!-- SUIT Variable 폰트 -->
+  <link href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/variable/woff2/SUIT-Variable.css"
+    rel="stylesheet" />
+  <link href="../common/css/comm.css" rel="stylesheet" />
+  <link href="./css/4_01_12.css" rel="stylesheet" />
+</head>
+
+<body>
+  <div id="wrap" class="china_wrap content2_wrap">
+    <div class="title_box dp_flex">
+      <div class="num_box tmoney">
+        <span>1</span>
+      </div>
+      <div class="text_box">
+        <span class="suit">시각 말하기</span>
+      </div>
+    </div>
+
+    <div class="btn_box dp_flex">
+      <button class="btn hanja_btn">한자</button>
+      <button class="btn pinyin_btn" style="display: none">병음</button>
+      <button class="btn combo_btn">한자+병음</button>
+      <button class="btn popup_btn blue" data-index="3">해석</button>
+      <button class="explan_popup_btn btn blue"><span>설명</span></button>
+      <button class="btn popup_btn blue" data-index="2">참고</button>
+      <!-- <div class="tempBttns">
+        <button onclick="page.showVocabulary()" data-index="1" class="tempBttn">단어장</button>
+      </div> -->
+    </div>
+
+    <div class="full_content">
+      <div class="tip">
+        <span class="index1 suit" data-audio="057-16.mp3"><span class="simhei">差</span>(<span class="gRegula">chà</span>)</span>
+        <span class="index2" data-audio="057-17.mp3"><span class="simhei">差十分八点</span><br /><span class="gRegula">chà shí fçn bã diân</span></span>
+      </div>
+
+      <!-- <div class="tip">
+        <span class="suit" >
+          우리말의 ‘◯시 분 전은 부족<br>
+          하다’라는 뜻의 <span class="simhei">差(<span class="gRegla">chà</span>)</span>를 써서<br>
+          표현할 수 있어요.
+        </span>
+        <span class="index2" data-audio="057-17.mp3"><span class="simhei">差十分八点</span><br /><span class="gRegula">chà shí fçn bã diân</span></span>
+      </div> -->
+
+      <!-- 윗구역 -->
+      <div class="top_box dp_flex dp_flex_column">
+        <!-- 기본문장 -->
+        <div class="tab1" data-tab="1" data-audio="057-01.mp3">
+          <!-- 병음 -->
+          <div class="type type1 dp_flex dp_flex_column" data-view="pinyin">
+            <span class="txt txt2 gRegula">Qå diân <span class="highlight pink">shí fçn</span>.</span>
+          </div>
+          <!-- 한자 -->
+          <div class="type type1 dp_flex dp_flex_column -mr-16" data-view="hanja" style="display: none">
+            <span class="txt txt1 FZKai">七点<span class="highlight pink">十分</span>。</span>
+          </div>
+          <!-- 한자 + 병음 -->
+          <div class="type type3 dp_flex dp_flex_column" data-view="combo" style="display: none">
+            <span class="txt txt1 FZKai">七点<span class="highlight pink">十分</span>。</span>
+            <span class="txt txt2 gRegula">Qå diân <span class="highlight pink">shí fçn</span>.</span>
+          </div>
+        </div>
+        <!-- 첫번째 교체문장 -->
+        <div class="tab1" data-tab="2" style="display: none">
+          <!-- 병음 -->
+          <div class="type type1 flex items-center" data-view="pinyin">
+            <span class="txt txt2 gRegula" data-audio="057-02.mp3">Qå diân <span class="highlight pink">shíwû
+                fçn</span>.</span>
+            <span class="FZKai fs-40 mr-26 ml-26">=</span><span class="txt txt2 gRegula" data-audio="057-03.mp3">Qå diân
+              <span class="highlight pink">yí kè</span>.</span>
+          </div>
+          <!-- 한자 -->
+          <div class="type type1 flex items-center" data-view="hanja" style="display: none">
+            <span class="txt txt1 FZKai" data-audio="057-02.mp3">七点<span class="highlight pink">十五分</span>。</span>
+            <span class="FZKai fs-40 mr-26">=</span><span class="txt txt1 FZKai" data-audio="057-03.mp3">七点<span
+                class="highlight pink">一刻</span>。</span>
+          </div>
+          <!-- 한자 + 병음 -->
+          <div class="type type3 flex items-center" data-view="combo" style="display: none">
+            <div class="flex flex-col items-center" data-audio="057-02.mp3">
+              <span class="txt txt1 FZKai">七点<span class="highlight pink">十五分</span>。</span>
+              <span class="txt txt2 gRegula">Qå diân <span class="highlight pink">shíwû fçn</span>.</span>
+            </div>
+            <span class="FZKai fs-40 mr-26 ml-26">=</span>
+            <div class="flex flex-col items-center" data-audio="057-03.mp3">
+              <span class="txt txt1 FZKai">七点<span class="highlight pink">一刻</span>。</span>
+              <span class="txt txt2 gRegula">Qå diân <span class="highlight pink">yí kè</span>.</span>
+            </div>
+          </div>
+        </div>
+        <!-- 둘쨰 교체문장 -->
+        <div class="tab2" data-tab="3" style="display: none">
+          <!-- 병음 -->
+          <div class="type type3 flex items-center" data-view="pinyin">
+            <span class="txt txt2 gRegula" data-audio="057-04.mp3">Qå diân <span class="highlight pink">sãnshí
+                fçn</span>.</span><span class="FZKai fs-40 mr-26 ml-26">=</span><span class="txt txt2 gRegula"
+              data-audio="057-05.mp3">Qå diân <span class="highlight pink">bàn</span>.</span>
+          </div>
+          <!-- 한자 -->
+          <div class="type type3 flex items-center" data-view="hanja" style="display: none">
+            <span class="txt txt1 FZKai" data-audio="057-04.mp3">七点<span class="highlight pink">三十分</span>。</span><span
+              class="FZKai fs-40 mr-26">=</span><span class="txt txt1 FZKai" data-audio="057-05.mp3">七点<span
+                class="highlight pink">半</span>。</span>
+          </div>
+          <!-- 한자 + 병음 -->
+          <div class="type type3 flex items-center" data-view="combo" style="display: none">
+            <div class="flex flex-col items-center" data-audio="057-04.mp3">
+              <span class="txt txt1 FZKai">七点<span class="highlight pink">三十分</span>。</span>
+              <span class="txt txt2 gRegula">Qå diân <span class="highlight pink">sãnshí fçn</span>.</span>
+            </div>
+            <span class="FZKai fs-40 mr-26 ml-26">=</span>
+            <div class="flex flex-col items-center" data-audio="057-05.mp3">
+              <span class="txt txt1 FZKai">七点<span class="highlight pink">半</span>。</span>
+              <span class="txt txt2 gRegula">Qå diân <span class="highlight pink">bàn</span>.</span>
+            </div>
+          </div>
+        </div>
+        <!-- 셋째 교체문장 -->
+        <div class="tab3" data-tab="4" style="display: none">
+          <!-- 병음 -->
+          <div class="type type4 flex items-center" data-view="pinyin">
+            <span class="txt txt2 gRegula" data-audio="057-06.mp3">Qå diân <span class="highlight pink">sìshíwû
+                fçn</span>.</span><span class="FZKai fs-40 mr-26">=</span><span class="txt txt2 gRegula"
+              data-audio="057-07.mp3">Qå diân <span class="highlight pink">sãn kè</span>.</span>
+          </div>
+          <!-- 한자 -->
+          <div class="type type4 flex items-center" data-view="hanja" style="display: none">
+            <span class="txt txt1 FZKai" data-audio="057-06.mp3">七点<span class="highlight pink">四十五分</span>。</span><span
+              class="FZKai fs-40 mr-26">=</span><span class="txt txt1 FZKai" data-audio="057-07.mp3">七点<span
+                class="highlight pink">三刻</span>。</span>
+          </div>
+          <!-- 병음 + 한자 -->
+          <div class="type type3 flex items-center" data-view="combo"
+            style="display: none; transform: translateX(-30px)">
+            <div class="flex flex-col items-center" data-audio="057-06.mp3">
+              <span class="txt txt1 FZKai">七点<span class="highlight pink">四十五分</span>。</span>
+              <span class="txt txt2 gRegula">Qå diân
+                <span class="highlight pink">sìshíwû fçn</span>.</span>
+            </div>
+            <span class="FZKai fs-40 mr-26 ml-26">=</span>
+            <div class="flex flex-col items-center" data-audio="057-07.mp3">
+              <span class="txt txt1 FZKai">七点<span class="highlight pink">三刻</span>。</span>
+              <span class="txt txt2 gRegula">Qå diân <span class="highlight pink">sãn kè</span>.</span>
+            </div>
+          </div>
+        </div>
+        <!-- 기본으로 교체 -->
+        <button class="btn3 basic_btn tab_btn active" data-index="1">
+          기본 문장
+        </button>
+      </div>
+
+      <!-- 아래구역 -->
+      <div class="bottom_box">
+        <!-- 첫째줄 -->
+        <div class="step step1">
+          <div class="img_box img_box1">
+            <img src="./images/4_01_12/icon1.png" class="img img1" />
+            <div class="line"></div>
+          </div>
+          <div class="text_box text_box1" data-view-info="pinyin">
+            <!-- 병음 -->
+            <span class="txt txt2 gRegula" data-view="pinyin">
+              <span class="gRegula" data-audio="057-08.mp3">shíwû fçn</span>
+              <span class="FZKai">=</span>
+              <span class="gRegula" data-audio="057-09.mp3">yí kè</span>
+            </span>
+            <!-- 한자 -->
+            <span class="txt txt1 FZKai" style="display: none" data-view="hanja"><span
+                data-audio="057-08.mp3">十五分</span> =
+              <span data-audio="057-09.mp3">一刻</span></span>
+            <!-- 한자 + 병음 -->
+            <span class="txt txt1 FZKai" style="display: none" data-view="combo"><span data-audio="057-08.mp3"
+                data-audio-combo="057-08">十五分</span>
+              =
+              <span data-audio="057-09.mp3" data-audio-combo="057-09">一刻</span></span>
+            <span class="txt txt2 gRegula" style="display: none" data-view="combo">
+              <span data-audio="057-08.mp3" data-audio-combo="057-08">shíwû fçn</span>&nbsp;<span data-audio="057-09.mp3" data-audio-combo="057-09">yí kè</span>
+            </span>
+          </div>
+          <button class="btn3 tab_btn" data-index="2">교체 문장</button>
+        </div>
+
+        <!-- 둘째줄 -->
+        <div class="step step2">
+          <div class="img_box img_box1">
+            <img src="./images/4_01_12/icon2.png" class="img img1" />
+            <div class="line"></div>
+          </div>
+          <div class="text_box text_box1" data-view-info="pinyin">
+            <!-- 병음 -->
+            <span class="txt txt2 gRegula" data-view="pinyin">
+              <span class="gRegula" data-audio="057-10.mp3">sãnshí fçn</span>
+              <span class="FZKai">=</span>
+              <span class="gRegula" data-audio="057-11.mp3">bàn</span>
+            </span>
+            <!-- 한자 -->
+            <span class="txt txt1 FZKai" style="display: none" data-view="hanja"><span
+                data-audio="057-10.mp3">三十分</span> =
+              <span data-audio="057-11.mp3">半</span></span>
+            <!-- 한자 + 병음 -->
+            <span class="txt txt1 FZKai" style="display: none" data-view="combo"><span data-audio="057-10.mp3"
+                data-audio-combo="057-10">三十分</span>
+              =
+              <span data-audio="057-11.mp3" data-audio-combo="057-11">半</span></span>
+            <span class="txt txt2 gRegula" style="display: none" data-view="combo"><span data-audio="057-10.mp3"
+                data-audio-combo="057-10">sãnshí fçn</span>&nbsp;<span data-audio="057-11.mp3" data-audio-combo="057-11">bàn</span></span>
+          </div>
+          <button class="btn3 tab_btn" data-index="3">교체 문장</button>
+        </div>
+
+        <!-- 셋째줄 -->
+        <div class="step step3">
+          <div class="img_box img_box1">
+            <img src="./images/4_01_12/icon3.png" class="img img1" />
+            <div class="line"></div>
+          </div>
+          <div class="text_box text_box1" data-view-info="pinyin">
+            <!-- 병음 -->
+            <span class="txt txt2 gRegula" data-view="pinyin">
+              <span class="gRegula" data-audio="057-12.mp3">sìshíwû fçn</span>
+              <span class="FZKai">=</span>
+              <span class="gRegula" data-audio="057-13.mp3">sãn kè</span>
+            </span>
+            <!-- 한자 -->
+            <span class="txt txt1 FZKai" style="display: none" data-view="hanja"><span
+                data-audio="057-12.mp3">四十五分</span> =
+              <span data-audio="057-13.mp3">三刻</span></span>
+            <!-- 한자 + 병음 -->
+            <span class="txt txt1 FZKai" style="display: none" data-view="combo"><span data-audio="057-12.mp3"
+                data-audio-combo="057-12">四十五分</span>
+              =
+              <span data-audio="057-13.mp3" data-audio-combo="057-13">三刻</span></span>
+            <span class="txt txt2 gRegula" style="display: none" data-view="combo">
+              <span data-audio="057-12.mp3" data-audio-combo="057-12">sìshíwû fçn</span>&nbsp;<span
+                data-audio="057-13.mp3" data-audio-combo="057-13">sãn kè</span>
+            </span>
+          </div>
+          <button class="btn3 tab_btn" data-index="4">교체 문장</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="popup_bg" style="display: none"></div>
+    <!-- 단어장 -->
+    <div class="popup vocabularyBook" data-popup="1" style="display: none">
+      <div class="tag bmjua dp_flex">단어장</div>
+      <button class="close_btn"></button>
+      <div class="popup_content dp_flex">
+        <div class="word_list_box dp_flex dp_flex_column">
+          <div class="word_content">
+            <div class="list dp_flex voca_popup_btn active" data-audio="057-14.mp3">
+              <span class="gRegula">kè</span>
+            </div>
+          </div>
+        </div>
+        <div class="show_word_box dp_flex dp_flex_column">
+          <div class="china_box dp_flex">
+            <div class="voca_popup_tab" data-audio="057-14.mp3">
+              <span class="FZKai">刻</span>
+              <span class="gRegula">kè</span>
+            </div>
+          </div>
+          <div class="korea_box dp_flex">
+            <div class="voca_warp">
+              <span class="suit">15분[단위]</span>
+            </div>
+          </div>
+          <div class="show_btn-warp">
+            <button class="btn3 show_pinyin_btn" style="display: none">
+              병음 보기
+            </button>
+            <button class="btn3 hide_pinyin_btn">병음 가리기</button>
+            <button class="btn3 show_btn" style="display: none">
+              뜻 보기
+            </button>
+            <button class="btn3 hide_btn">뜻 감추기</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 해석 -->
+    <div class="popup translate" data-popup="3" style="display: none">
+      <div class="tag bmjua dp_flex">해석</div>
+      <button class="close_btn"></button>
+      <div class="popup_content">
+        <div class="popup-scroll">
+          <div class="line">
+            <div class="item" style="margin-right: 20px;">
+              <span class="FZKai line-60 fs-40">七点十分。</span><span class="gRegula fs-30 line-30">Qå diân shí fçn.</span>
+            </div>
+            <span class="suit c-dblue fs-36 fw-6">7시 10분이다.</span>
+          </div>
+          <div class="line">
+            <div class="item" style="margin-right: 44px;">
+              <span class="FZKai line-60 fs-40">七点十五分。</span><span class="gRegula fs-30 line-30">Qå diân shíwû
+                fçn.</span>
+            </div>
+            <div class="item" style="margin-right: 20px;">
+              <span class="FZKai line-60 fs-40">七点一刻。</span><span class="gRegula fs-30 line-30">Qå diân yí kè.</span>
+            </div>
+            <span class="suit c-dblue fs-36 fw-6">7시 15분이다.</span>
+          </div>
+          <div class="line">
+            <div class="item" style="margin-right: 36px;">
+              <span class="FZKai line-60 fs-40">七点三十分。</span><span class="gRegula fs-30 line-30">Qå diân sãnshí
+                fçn.</span>
+            </div>
+            <div class="item" style="margin-right: 57px;">
+              <span class="FZKai line-60 fs-40">七点半。</span><span class="gRegula fs-30 line-30">Qå diân bàn.</span>
+            </div>
+            <span class="suit c-dblue fs-36 fw-6">7시 30분이다.</span>
+          </div>
+          <div class="line">
+            <div class="item" style="margin-right: 6px;">
+              <span class="FZKai line-60 fs-40">七点四十五分。</span><span class="gRegula fs-30 line-30">Qå diân sìshíwû
+                fçn.</span>
+            </div>
+            <div class="item" style="margin-right: 20px;">
+              <span class="FZKai line-60 fs-40">七点三刻。</span><span class="gRegula fs-30 line-30">Qå diân sãn kè.</span>
+            </div>
+            <span class="suit c-dblue fs-36 fw-6">7시 45분이다.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 설명 -->
+    <div class="popup explan" style="display: none">
+      <div class="tag bmjua dp_flex">설명</div>
+      <button class="close_btn">
+        <span class="sr-only">닫기</span>
+      </button>
+      <div class="popup_content dp_flex dp_flex_column">
+        <span class="suit">
+          시간의 <span class="notoSans">‘</span>분<span class="notoSans">’</span>은
+          <span data-audio="056-20.mp3"><span class="FZKai">分</span>(<span class="gRegula">fçn</span>)</span>
+          외에도
+          <span data-audio="057-15.mp3"><span class="FZKai">刻</span>(<span class="gRegula">kè</span>)</span>와
+          <span data-audio="056-15.mp3"><span class="FZKai">半</span>(<span class="gRegula">bàn</span>)</span><br>
+          으로 표현할 수 있다.
+        </span>
+      </div>
+    </div>
+
+    <!-- 참고 -->
+    <div class="popup popup2 voca2" data-popup="2" style="display: none">
+      <div class="tag bmjua dp_flex">참고</div>
+      <button class="close_btn"></button>
+      <div class="popup_content">
+        <div class="popup-scroll">
+          <div class="table-wrap">
+            <table class="table">
+              <colgroup>
+                <col style="width: 50px" />
+                <col style="width: 300px" />
+                <col />
+              </colgroup>
+              <thead>
+                <tr>
+                  <th></th>
+                  <th>
+                    <span class="suit"> 시각(어느 한 시점) </span>
+                  </th>
+                  <th>
+                    <span class="suit"> 소요 시간(시간의 길이) </span>
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th rowspan="2">
+                    <span class="suit">시</span>
+                  </th>
+                  <td>
+                    <span class="suit" data-audio="056-19.mp3">
+                      <span class="FZKai">点</span><span class="suit">(</span><span class="gRegula">diân</span><span
+                        class="suit">)</span>
+                    </span>
+                  </td>
+                  <td>
+                    <span class="suit">
+                      <span data-audio="057-18.mp3"><span class="FZKai">小时</span><span class="suit">(</span><span
+                          class="gRegula">xiâoshí</span><span class="suit">)</span></span><span
+                        class="notoSans">,</span><span data-audio="057-19.mp3"><span class="FZKai"> 钟头</span><span
+                          class="suit">(</span><span class="gRegula">zhõngtóu</span><span class="suit">)</span>
+                      </span>
+                    </span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="table-data-content">
+                      <div class="image-wrap">
+                        <img src="./images/4_01_12/icon4.png" alt="" />
+                      </div>
+                      <div class="text-wrap">
+                        <span class="suit"><span class="FZKai" data-audio="056-21.mp3"
+                            data-audio-combo="056-21">两点</span>2시</span>
+                        <span class="gRegula" data-audio="056-21.mp3" data-audio-combo="056-21">liâng diân</span>
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="table-data-content">
+                      <div class="image-wrap">
+                        <img src="./images/4_01_12/icon5.svg" alt="" />
+                      </div>
+                      <div class="text-wrap">
+                        <span class="suit"><span class="FZKai" data-audio="057-20.mp3"
+                            data-audio-combo="057-20">两个小时</span>2시간</span>
+                        <span class="gRegula" data-audio="057-20.mp3" data-audio-combo="057-20">liâng ge xiâoshí</span>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <th class="border-b-0" rowspan="2">
+                    <span class="suit">분</span>
+                  </th>
+                  <td>
+                    <span class="suit" data-audio="056-20.mp3"><span class="FZKai">分</span><span
+                        class="suit">(</span><span class="gRegula">fçn</span><span class="suit">)</span></span>
+                  </td>
+                  <td>
+                    <span class="suit" data-audio="057-21.mp3"><span class="FZKai">分钟</span><span
+                        class="suit">(</span><span class="gRegula">fçnzhõng</span><span class="suit">)</span></span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="table-data-content">
+                      <div class="image-wrap">
+                        <img src="./images/4_01_12/icon6.png" alt="" />
+                      </div>
+                      <div class="text-wrap">
+                        <span class="suit"><span class="FZKai" data-audio="057-22.mp3"
+                            data-audio-combo="057-22">二十分</span>20분</span>
+                        <span class="gRegula" data-audio="057-22.mp3" data-audio-combo="057-22">èrshí fçn</span>
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="table-data-content">
+                      <div class="image-wrap">
+                        <img src="./images/4_01_12/icon7.png" alt="" />
+                      </div>
+                      <div class="text-wrap">
+                        <span class="suit"><span class="FZKai" data-audio="057-23.mp3"
+                            data-audio-combo="057-23">二十分钟</span>20분</span>
+                        <span class="gRegula" data-audio="057-23.mp3" data-audio-combo="057-23">èrshí fçnzhõng</span>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<script type="text/javascript">
+  const page = {
+    //컨텐츠에 정답 확인이 존재하는지 여부
+    isAnswer: false,
+    // 단어장 노출 여부 판단.
+    isVocabulary: true,
+    //정답 보기
+    showAnswer: () => { },
+    //정답 숨기기
+    hideAnswer: () => { },
+    // 단어장 보기
+    showVocabulary: () => {
+      setPopup(1);
+    },
+  };
+</script>
+<script type="text/javascript">
+  // 설명 팝업
+  $(".explan_popup_btn").on("click", function () {
+    let index = $(".explan_popup_btn").index(this);
+    $(".explan_popup_bg").show();
+    $(".popup.explan").hide();
+    $(".popup.explan").eq(index).show();
+    try {
+      setRoleStop();
+    } catch (error) { }
+    audioStop();
+  });
+  // 설명팝업 있는상태에서 다른 팝업 클릭시 팝업 닫기
+  $(".popup_btn").on("click", function () {
+    $(".popup.explan").css("display", "none");
+  });
+</script>
+<script src="../common/js/script.js"></script>
+<script src="../common/js/vocabularyBook.js"></script>
+<script type="text/javascript">
+  $(document).ready(function () {
+    // setPopup(1);
+  });
+  // 교체 문장
+  $(".tab_btn").on("click", function () {
+    setActive($(this), "tab_btn");
+  });
+</script>
+
+</html>

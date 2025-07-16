@@ -1,0 +1,111 @@
+/* 전역 */
+.p_ignore{
+  pointer-events: none;
+}
+
+#wrap > .title_box3 {
+  gap: 20px;
+}
+#wrap > .title_box .text_box {
+  padding-bottom: 0;
+}
+#wrap > .title_box3 .num_box {
+  /* color: rgba(193, 128, 44, 1); */
+}
+
+.china_wrap .full_content .num_box span {
+  font-size: 30px;
+  line-height: 30px;
+  color: rgba(35, 24, 21, 1);
+  font-weight: 700;
+  font-family: "SUIT Variable", sans-serif;
+}
+.full_content .content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.full_content .content .content_bg {
+  width: 693px;
+  height: 359px;
+  margin: 52px auto 0 auto;
+  display: block;
+}
+
+.full_content .content .index1 {
+  position: absolute;
+  top: 60px;
+  left: 171px;
+}
+.full_content .content .index2 {
+  position: absolute;
+  top: 23px;
+  left: 445px;
+}
+
+.full_content .content .line {
+  display: flex;
+  height: 43px;
+  line-height: 38px;
+  font-size: 38px;
+}
+.full_content .content .line .answer-line {
+  height: 43px;
+  line-height: 38px;
+  border-bottom: 2px solid #c9caca;
+  padding: 0 12px;
+  margin: 0 5px;
+}
+
+/* 페이지 */
+.number-page {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  bottom: 12px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  font-family: "SUIT Variable", sans-serif;
+  font-weight: 800;
+  font-size: 26px;
+  color: #d9d9d9;
+}
+.number-page .item {
+  display: flex;
+}
+.number-page .item:after {
+  content: "";
+  width: 24px;
+  height: 24px;
+  background: url(./../../common/images/page_arrow.svg) no-repeat center;
+  margin: 0 6px 0 6px;
+}
+.number-page .item:last-of-type:after {
+  display: none;
+}
+.number-page .item.active {
+  color: #231815;
+}
+
+/* 해석 */
+.popup.popup3 .popup_content {
+  width: 100%;
+  height: 100%;
+  padding: 46px 34px 8px 55px;
+  position: relative;
+}
+.popup.popup3 .popup_content .content {
+  width: 100%;
+  height: 100%;
+  padding-top: 14px;
+  overflow-y: auto;
+}
+.popup.popup3 .content .line {
+  display: flex;
+  flex-direction: column;
+}
+.popup.popup3 .content .line .index {
+  margin-right: 10px;
+}

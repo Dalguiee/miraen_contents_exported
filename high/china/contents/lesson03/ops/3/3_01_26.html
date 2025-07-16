@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>미래엔 중국어</title>
+    <script src="./../common/lib/jquery-3.7.1.min.js"></script>
+    <!-- SUIT Variable 폰트 -->
+    <link
+      href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/variable/woff2/SUIT-Variable.css"
+      rel="stylesheet"
+    />
+    <link href="../common/css/comm.css" rel="stylesheet" />
+    <link href="./css/3_01_26.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div id="wrap" class="china_wrap content_wrap">
+      <div class="title_box title_box5 dp_flex">
+        <div class="img_box">
+          <img
+            src="../common/images/culture_icon.svg"
+            alt="문화 아이콘"
+            class="img img1"
+          />
+        </div>
+        <div class="text_box">
+          <span>중국의 <span class="highlight purple">학교생활</span></span>
+        </div>
+      </div>
+
+      <div class="btn_box dp_flex">
+        <button class="btn popup_btn blue" style="visibility: hidden">
+          참고
+        </button>
+      </div>
+
+      <div class="full_content dp_flex">
+        <div class="content">
+          <div class="text2 suit">낮잠 시간, 눈 보호 체조</div>
+          <div class="text3 suit">
+            중국의 많은 학교들은 점심 식사 후에<br />낮잠 시간이 있습니다. 또한
+            수업<br />시간 사이에 운동장에서 간단한 체조를<br />하거나 교실에서
+            눈 보호 체조를<br />합니다. 이를 통해 공부하며 쌓인<br />피로를
+            풀며, 건강을 관리하고<br />학습 능률을 높입니다.
+          </div>
+          <button class="detail_button_box popup_btn" data-index="2">
+            <img class="detail_button" src="./images/3_01_24/detail_button.png" alt="">
+          </button>
+        </div>
+      </div>
+
+
+      <!-- 팝업 -->
+      <div class="popup_bg" style="display: none"></div>
+      <!-- 크게 보기 -->
+      <div class="popup detail_popup" data-popup="2" style="display: none">
+        <button class="close_btn"></button>
+        <div class="popup_content">
+          <div class="content">
+            <div class="img_box">
+              <img src="./images/3_01_26/detail_content.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </body>
+  <script type="text/javascript">
+    const page = {
+      //컨텐츠에 정답 확인이 존재하는지 여부
+      isAnswer: false,
+      // 단어장 노출 여부 판단.
+      isVocabulary: false,
+      //정답 보기
+      showAnswer: () => {},
+      //정답 숨기기
+      hideAnswer: () => {},
+      // 단어장 보기
+      showVocabulary: () => {},
+    };
+    $(document).ready(function () {});
+  </script>
+  <script src="../common/js/script.js"></script>
+</html>

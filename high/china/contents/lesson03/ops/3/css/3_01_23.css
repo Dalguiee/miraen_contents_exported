@@ -1,0 +1,164 @@
+.china_wrap .full_content {
+  align-items: flex-end;
+  padding-bottom: 80px;
+}
+
+.china_wrap .full_content .content {
+  position: relative;
+}
+
+.china_wrap .full_content .content .img_box {
+  width: 600px;
+  aspect-ratio: 600/320.05;
+}
+
+.china_wrap .full_content .content .img_box img {
+  width: 100%;
+}
+
+.china_wrap .full_content .content .bubble_box {
+  padding: 18px 26px;
+  background-color: rgba(255, 255, 255, 1);
+  border: 1px solid rgba(179, 158, 79, 1);
+  border-radius: 38px;
+  text-align: center;
+  font-size: 20px;
+  color: rgba(35, 24, 21, 1);
+  line-height: 1.5;
+  font-weight: 600;
+  font-family: "SUIT Variable", sans-serif;
+  white-space: nowrap;
+  position: absolute;
+  gap: 2px;
+}
+
+.china_wrap .full_content .content .bubble_box1 {
+  top: -31px;
+  left: 0;
+  gap: 0;
+}
+
+.china_wrap .full_content .content .bubble_box2 {
+  top: -31px;
+  right: -93px;
+}
+
+.china_wrap .full_content .content .bubble_box::before {
+  content: "";
+  width: 14px;
+  height: 5px;
+  background-color: rgba(255, 255, 255, 1);
+  background-repeat: repeat-x;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%, 50%);
+  z-index: 10;
+}
+
+.china_wrap .full_content .content .bubble_box::after {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 13px;
+  background-color: rgba(179, 158, 79, 1);
+  position: absolute;
+  left: 50%;
+  bottom: -3px;
+  transform: translate(-50%, 50%) rotate(30deg);
+  z-index: 20;
+}
+
+.china_wrap .full_content .content .bubble_box > div {
+  margin-left: 10px;
+  gap: 10px;
+}
+
+.china_wrap .full_content .content .bubble_box .txt + .quiz_box {
+  margin-left: 10px;
+}
+
+.china_wrap .full_content .content .bubble_box .quiz_box .blank {
+  height: 40px;
+  border-bottom: 2px solid #c9caca;
+}
+.china_wrap .full_content .content .bubble_box .quiz_box .blank1{
+  width: 66.73px;
+}
+.china_wrap .full_content .content .bubble_box .quiz_box .blank2{
+  width: 44.48px;
+}
+
+.china_wrap .full_content .content .bubble_box .gRegula {
+  font-size: 40px;
+  color: #231815;
+  font-weight: 400;
+}
+
+.china_wrap .full_content .content .bubble_box .answer_box .gRegula {
+  color: rgba(210, 71, 110, 1);
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px;
+  text-decoration-color: #c9caca;
+}
+
+.number-page {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  bottom: 12px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  font-family: "SUIT Variable", sans-serif;
+  font-weight: 800;
+  font-size: 26px;
+  color: #d9d9d9;
+}
+.number-page .item {
+  display: flex;
+}
+.number-page .item:after {
+  content: "";
+  width: 24px;
+  height: 24px;
+  background: url(./../../common/images/page_arrow.svg) no-repeat center;
+  margin: 0 6px 0 6px;
+}
+.number-page .item:last-of-type:after {
+  display: none;
+}
+.number-page .item.active {
+  color: #231815;
+}
+
+.popup1 .popup_content {
+  padding: 54px 12px 12px 48px;
+}
+.popup1 .popup_content .item .FZKai {
+  font-size: 44px;
+  width: 120px;
+  font-weight: 400;
+}
+.popup1 .popup_content .item {
+  display: flex;
+  align-items: center;
+}
+.popup1 .popup_content .item {
+  margin-bottom: 24px;
+}
+.popup1 .popup_content .item_audio {
+  display: flex;
+  align-items: center;
+}
+.popup1 .popup_content .item .gRegula {
+  font-size: 40px;
+  font-weight: 400;
+  margin-right: 40px;
+}
+.popup1 .popup_content .item .suit {
+  font-size: 40px;
+  color: #3d5591;
+  font-weight: 500;
+}

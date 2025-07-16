@@ -1,0 +1,344 @@
+/* 전역 */
+.btn3{
+  position: absolute;
+  top: 0;
+  right: -100px;
+}
+
+.btn-audio{
+  position: absolute;
+  font-size: 32px;
+}
+.chDotAfter{
+  margin: 0 15px 0 -10px !important;
+}
+.chDot{
+  margin-right: -20px;
+}
+
+/* 타이틀 헤더 */
+.btn_box{
+  padding-top: 9px !important;
+}
+.title_box{
+  top: 9px !important;
+  left: 0 !important;
+}
+.title_box .title{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.title_box .title .mainCon{
+  color: #3A958E;
+  font-weight: bold;
+  font-size: 40px;
+}
+.title_box .title .mainCon{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  width: 100%;
+  font-size: 30px;
+  margin-right: 20px;
+  font-weight: bold;
+}
+.title_box .title .mainCon .titleLogo{
+  margin-right: 20px;
+}
+.title_box .title .mainCon .titleNum{
+  font-size: 36px;
+  font-weight: 800;
+}
+.title_box .title .mainCon .FZKai{
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 43px;
+  margin-right: 3px;
+}
+.title_box .title .mainCon .simhei{
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 43px;
+  margin-right: 3px;
+}
+
+.title_box .title .mainCon .gRegula{
+  margin: 0 5px;
+}
+.title_box .mainCon .suit{
+  font-size: 40px;
+  font-weight: 800;
+}
+
+.title_box .title .titleText{
+  font-size: 38px;
+  color: #B25C7B;
+}
+
+.title_box .title .titleNum{
+  margin-right: 20px;
+  color: #3A958E;
+  font-size: 36px;
+  font-weight: normal;
+}
+
+
+/* 컨텐츠 */
+.full_content{
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  padding-top: 10px;
+}
+.full_content .content{
+  width: 100%;
+  height: 400px;
+  border-radius: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.full_content .content .contentTextSec{
+  width: 100%;
+  height: 390px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  background-color: #ECF7F5;
+  border-radius: 11px;
+  padding: 0 0 0 102px;
+}
+.full_content .content .contentTextSec .contentTitle{
+  font-size: 36px;
+  font-weight: 600;
+  margin: 0 160px 30px 0;
+}
+.full_content .content .contentTextSec .contentTitle .FZKai{
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 39px;
+}
+.full_content .content .contentTextSec .contentTitle .simhei{
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 39px;
+}
+
+.full_content .content .contentTextSec .contentText {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px 0 30px 0;
+  padding-left: 31px;
+}
+.full_content .content .contentTextSec .contentText2 {
+  position: relative;
+}
+.full_content .content .contentTextSec .contentText2::before {
+  position: absolute;
+  content: "";
+  background-image: url(../images/2_01_11/arrow.png);
+  left: 8px;
+  top: 15px;
+  width: 18px;
+  height: 13px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.full_content .content .contentTextSec .contentIndex{
+  font-size: 36px;
+}
+.full_content .content .contentTextSec .contentText .textBox .upper{
+  /* margin-bottom: 10px; */
+}
+.full_content .content .contentTextSec .contentText .textBox .FZKai{
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 43px;
+}
+.full_content .content .contentTextSec .contentText .textBox .simhei{
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 43px;
+}
+
+.full_content .content .contentTextSec .contentText .textBox .gRegula{
+  font-size: 32px;
+  line-height: 37px;
+}
+.full_content .content .contentTextSec .contentText .textBox .suit{
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 40px;
+  color: #727171;
+  margin-left: 20px;
+}
+
+
+
+
+
+
+
+
+
+/* 팝업 */
+.popup{
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  padding: 62px 40px 20px 40px;
+}
+.popup .popup-con{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  padding: 0 !important;
+  gap: 0 !important;
+}
+/* 설명 */
+.popup.explan{
+  padding: 46px 20px 13px 20px;
+}
+.popup.explan .popup_content span{
+  line-height: 50px;
+  font-weight: 600;
+}
+/* 단어게임 */
+.popup.game .popup_content .game_box{
+  margin: 0 !important;
+}
+/* 단어장 */
+.popup.vocabularyBook .popup_content{
+  flex-direction: unset !important;
+  padding: 56px 44px 0 44px !important;
+  gap: 40px !important;
+}
+
+
+.popup1 .popup-con{
+  overflow-y: scroll;
+  padding: 0px 20px 0 15px !important;
+}
+
+.popup1 .popup-con .popupTitle{
+  margin: 0px 0 10px 0;
+}
+.popup1 .popup-con .popupTitle .suit{
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 48px;
+}
+.popup1 .popup-con .popupTitle .simhei{
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 48px;
+}
+
+.popup1 .popup-con .context{
+  /* margin-left: 80px; */
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  margin: 15px 0;
+}
+.popup1 .popup-con .context .contextSec{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+
+.popup1 .popup-con .context .title{
+  margin-bottom: 10px;
+}
+.popup1 .popup-con .context .title .suit{
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 41px;
+}
+.popup1 .popup-con .context .title .suit .simhei{
+  font-size: 32px;
+  line-height: 41px;
+  font-weight: 400;
+}
+
+.popup1 .popup-con .context .contextSec .desc{
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 41px;
+}
+.popup1 .popup-con .context .contextSec .desc .space{
+  padding-left: 46px;
+}
+.popup1 .popup-con .context .contextSec .desc .space2{
+  margin: 0;
+}
+.popup1 .popup-con .context .contextSec .desc .space3{
+  margin-left: 12px;
+}
+
+
+.popup1 .popup-con .context .contextSec .desc .FZKai{
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 41px;
+}
+.popup1 .popup-con .context .contextSec .desc .FZKai.spaceUnder{
+  line-height: 71px;
+}
+
+.popup1 .popup-con .context .contextSec .desc .gRegula{
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 41px;
+}
+.popup1 .popup-con .context .contextSec .desc .arrow{
+  margin-right: 7px;
+}
+
+
+.popup1 .popup-con .context .contextSec > span{
+  margin: 7px 0;
+}
+.popup1 .popup-con .context .suit .gRegula {
+  margin: 0 15px;
+}
+.popup1 .popup-con .context .suit .gRegula.end {
+  margin: 0;
+}
+
+.popup1 .popup-con .context .contextIndex{
+  margin-right: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.popup1 .popup-con .context .contextIndex span{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 42px;
+}
+
+.popup1 .mrR10{
+  margin-right: 44px;
+}
+.popup1 .mrR31{
+  margin-right: 31px;
+}

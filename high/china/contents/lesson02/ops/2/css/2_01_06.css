@@ -1,0 +1,314 @@
+/* 전역 */
+.btn-audio {
+  position: absolute;
+  font-size: 32px;
+}
+
+/* 타이틀헤더 */
+.btn_box{
+  padding-top: 9px !important;
+}
+.title_box{
+  top: 9px !important;
+  left: 0 !important;
+}
+.title_box .title .mainCon .titleLogo {
+  margin-right: 20px;
+}
+.title_box .title .mainCon .simhei{
+  font-size: 36px;
+  font-weight: 400;
+}
+.title_box .title .mainCon .gRegula{
+  margin-left: 10px;
+}
+
+.title_box .title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title_box .title .mainCon .titleText {
+  font-size: 38px;
+  color: #B25C7B;
+}
+
+.title_box .title .mainCon {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  width: 100%;
+  font-size: 40px;
+  margin-right: 20px;
+  font-weight: bold;
+  color: #C76744;
+}
+
+.title_box .title .mainCon .titleNum {
+  margin-right: 20px;
+  color: #C76744;
+  font-size: 36px;
+  font-weight: 800;
+}
+
+
+
+/* 컨텐츠 */
+.full_content {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  padding-top: 13px;
+}
+
+.full_content .content {
+  width: 100%;
+  height: 390px;
+  background-color: #FFF7F1;
+  border-radius: 11px;
+  padding-left: 50px;
+  display: flex;
+  justify-content: start;
+  padding-top: 30px;
+  align-items: start;
+  position: relative;
+}
+
+.full_content .content .contentTitle {
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 50px;
+  line-height: 44px;
+}
+.full_content .content .contentTitle .simhei{
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 43px;
+}
+
+.full_content .content .contextSec .context {
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  margin-bottom: 50px;
+  padding-left: 42px;
+  /* margin-top: 50px; */
+}
+.full_content .content .contextSec .context .contextTitle {
+  color: #C76744;
+  font-size: 40px;
+  font-weight: 800;
+  margin-right: 20px;
+}
+.full_content .content .contextSec .context2 .textBox .upper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.full_content .content .contextSec .context .textBox .suit {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 40px;
+}
+.full_content .content .contextSec .context .textBox .gRegula {
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 37px;
+}
+.full_content .content .contextSec .context .textBox .simhei {
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 43px;
+}
+
+.full_content .content .contextSec .context .gRegula {
+}
+
+.full_content .content .contextSec .context .line {
+  margin: 0;
+  width: 302px;
+  height: 342px;
+  background-color: rgb(207, 253, 255);
+  border-radius: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.full_content .content .contextSec .context .line .contentImgFig {
+  margin: 0;
+  width: 100%;
+  border: 10px solid rgb(246, 252, 255);
+  border-radius: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.full_content .content .contextSec .context .textBox .upper .suit.text{
+  margin-left: 20px;
+}
+
+
+
+
+
+/* 팝업 */
+.popup{
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  padding: 56px 55px 20px 55px;
+}
+.popup .popup-con{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  padding: 0 !important;
+  gap: 0 !important;
+}
+/* 설명 */
+.popup.explan{
+  padding: 46px 20px 13px 20px;
+}
+.popup.explan .popup-con span{
+  line-height: 50px;
+  font-weight: 600;
+}
+/* 단어게임 */
+.popup.game .popup-con .game_box{
+  margin: 0 !important;
+}
+/* 단어장 */
+.popup.vocabularyBook .popup-con{
+  flex-direction: unset !important;
+  padding: 56px 44px 0 44px !important;
+  gap: 40px !important;
+}
+
+.popup .popup-con .popupTitle {
+  font-size: 40px;
+  margin-bottom: 30px;
+  font-weight: bolder;
+}
+.popup .popup-con .line {
+  /* margin-left: 80px; */
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+.popup .popup-con .line .suit {
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 46px;
+}
+.popup .popup-con .line .gRegula {
+  font-size: 36px;
+  font-weight: 400;
+}
+.popup .popup-con .line .simhei {
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 52px;
+}
+
+
+
+
+
+
+
+
+/* 단어장?? */
+.popup.voca2 .title {
+  font-weight: 800;
+  color: #231815;
+  font-size: 30px;
+  margin-bottom: 14px;
+  padding-left: 32px;
+}
+
+.popup.voca2 .popup_content {
+  padding: 48px 0 10px 0;
+}
+
+.popup.voca2 .popup_content .popup-scroll {
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+}
+
+.popup.voca2 .popup_content .list-warp {
+  padding: 0 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.popup.voca2 .popup_content .list-warp .popup_content_list {
+  width: calc((100% - 8px) / 2);
+  height: fit-content;
+  border: 2px solid #b0d9eb;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.popup.voca2 .popup_content .list-warp .popup_content_list .item {
+  display: flex;
+  width: 100%;
+  border-bottom: 2px solid #b0d9eb;
+}
+
+.popup.voca2 .popup_content .list-warp .popup_content_list .item:last-of-type {
+  border-bottom: 0;
+}
+
+.popup.voca2 .popup_content .list-warp .popup_content_list .item .item_audio {
+  display: flex;
+  width: 100%;
+}
+
+.popup.voca2 .popup_content .list-warp .popup_content_list .item .suit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #eefffe;
+  width: 100%;
+  color: #231815;
+  font-size: 25px;
+  font-weight: 600;
+  padding: 13px 0;
+  border-right: 2px solid #b0d9eb;
+}
+
+.popup.voca2 .popup_content .list-warp .popup_content_list .item .FZKai {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  font-size: 34px;
+  font-weight: 400;
+  background: white;
+  padding: 13px 0;
+  border-right: 2px solid #b0d9eb;
+}
+
+.popup.voca2 .popup_content .list-warp .popup_content_list .item .gRegula {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  font-size: 25px;
+  color: #727171;
+  background: white;
+  padding: 13px 0;
+  text-align: center;
+}

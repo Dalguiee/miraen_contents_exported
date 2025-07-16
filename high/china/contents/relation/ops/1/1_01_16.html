@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>미래엔 중국어</title>
+    <script src="./../common/lib/jquery-3.7.1.min.js"></script>
+    <!-- SUIT Variable 폰트 -->
+    <link
+      href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/variable/woff2/SUIT-Variable.css"
+      rel="stylesheet"
+    />
+    <link href="../common/css/comm.css" rel="stylesheet" />
+    <link href="./css/1_01_16.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div id="wrap" class="china_wrap">
+      <div class="title_box">
+        <div class="title">
+          <img class="title_logo" src="./images/1_01_16/logo.svg" alt="">
+          <span class="title_text suit">중국에서 만난 <span class="brown">대한민국 독립운동</span></span>
+        </div>
+      </div>
+
+      <div class="btn_box dp_flex">
+        <button class="btn popup_btn blue" data-index="3">보충</button>
+        <button class="btn popup_btn blue" data-index="4">참고</button>
+      </div>
+
+      <div class="full_content">
+        <div class="title">
+          <span class="bmjua">대한민국 임시 정부</span>
+        </div>
+        <div class="content">
+          <div class="context">
+            <span class="suit">
+              대한민국 임시 정부는 1919년 4월 중국 상하이(<span class="simhei" data-audio="078-25.mp3">上海</span>)에서 수립되었습니다.
+              윤봉길 의사의 의거 이후 일제의 탄압을 피해 상하이를 떠나 1932년<br>
+              항저우(<span class="simhei" data-audio="106-02.mp3">杭州</span>)에서 1940년 충칭(<span class="simhei" data-audio="078-27.mp3">重庆</span>)까지 8년여 동안 무려<br>
+              약 5,200km를 이동하며 중국을 떠돌았습니다. 대한민국<br>
+              임시 정부는 상하이 시기, 임시 정부 이동 시기, 충칭 시기를<br>
+              합쳐 27년간 중국에서 항일 투쟁을 하다가 충칭에서 광복을<br>
+              맞이했습니다.
+            </span>
+          </div>
+        </div>
+        <div class="content_img_box">
+          <img src="./images/1_01_16/content.svg" alt="">
+          <button class="popup_btn" data-index="5"><img src="./images/1_01_16/detail_btn.png" alt=""></button>
+        </div>
+        <div class="content_2_img_box">
+          <img src="./images/1_01_16/content_2.svg" alt="">
+        </div>
+      </div>
+
+      <!-- 팝업 -->
+      <div class="popup_bg" style="display: none"></div>
+
+      <!-- 보충 -->
+      <div class="popup popup3" data-popup="3" style="display: none">
+        <div class="tag bmjua dp_flex">보충</div>
+        <button class="close_btn"></button>
+        <div class="popup_content">
+          <div class="title">
+            <span class="suit">대한민국 임시 정부 수립</span>
+          </div>
+          <div class="content">
+            <div class="line line1">
+              <span class="suit">
+                3·1운동이 일제의 탄압으로 민족의 독립으로 연결되지는 못했으나,<br>
+                독립에 대한 우리 민족의 열망과 의지는 더욱 굳건해졌다.<br>
+                그리고 보다 조직적으로 독립운동을 추진하기 위하여 정부를 수립<br>
+                하려는 움직임이 일어나서 여러 곳에 임시 정부가 수립되었는데,<br>
+                임시 정부들은 1919년 상하이의 대한민국 임시 정부로 통합되었다.
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 참고 -->
+      <div class="popup popup4" data-popup="4" style="display: none">
+        <div class="tag bmjua dp_flex">참고</div>
+        <button class="close_btn"></button>
+        <div class="popup_content">
+          <div class="title">
+            <span class="suit">상하이 대한민국 임시 정부</span>
+          </div>
+          <div class="content">
+            <div class="line line1">
+              <!-- <div class="index">
+                <span class="suit">1.</span>
+              </div> -->
+              <div class="text">
+                <span class="suit">
+                  중국 상하이는 교통이 편리하고 쑨원이 이끄는 중화혁명당의 지원도<br>
+                  받을 수 있었기 때문에 많은 독립지사가 집결해 있었다.<br>
+                  상하이의 독립운동가들은 1919년 4월 10~11일, 13도 대표로 임시<br>
+                  의정원을 구성하고, 4월 13일 대한민국 임시 정부를 수립·선포했다.<br>
+                  국호를 대한민국으로 정하고 민주공화제를 골간으로 한 임시 헌장을<br>
+                  채택했으며, 임시 정부의 행정부인 국무원을 구성했다.
+                </span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- 크게 보기 -->
+      <div class="popup popup5" data-popup="5" style="display: none">
+        <button class="close_btn"></button>
+        <div class="popup_content">
+          <!-- <div class="title">
+            <span class="suit">의역의 종류</span>
+          </div> -->
+          <div class="content">
+            <div class="img_box">
+              <img src="./images/1_01_16/map_detail.svg" alt="">
+              <span class="hint hint1 suit">상하이(<span class="simhei" data-audio="078-25.mp3">上海</span>)</span>
+              <span class="hint hint2 suit">항저우(<span class="simhei" data-audio="106-02.mp3">杭州</span>)</span>
+              <span class="hint hint3 suit">전장(<span class="simhei" data-audio="106-01.mp3">镇江</span>)</span>
+              <span class="hint hint4 suit">창사(<span class="simhei" data-audio="106-04.mp3">长沙</span>)</span>
+              <span class="hint hint5 suit">광저우(<span class="simhei" data-audio="106-03.mp3">廣州</span>)</span>
+              <span class="hint hint6 suit">류저우(<span class="simhei" data-audio="106-06.mp3">柳州</span>)</span>
+              <span class="hint hint7 suit">치장(<span class="simhei" data-audio="106-07.mp3">綦江</span>)</span>
+              <span class="hint hint8 suit">충칭(<span class="simhei" data-audio="078-27.mp3">重庆</span>)</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+
+
+    </div>
+  </body>
+  <script type="text/javascript">
+    const page = {
+      //컨텐츠에 정답 확인이 존재하는지 여부
+      isAnswer: false,
+      // 단어장 노출 여부 판단.
+      isVocabulary: false,
+      //정답 보기
+      showAnswer: () => {},
+      //정답 숨기기
+      hideAnswer: () => {},
+      // 단어장 보기
+      showVocabulary: () => {},
+    };
+    $(document).ready(function () {});
+  </script>
+  <script type="text/javascript">
+    // 정답 버튼 앞에 경로를 따로 따서 팝업정답 스크립트 분리지정 가능
+    $(".answer_btn").on("click", function () {
+      // let index = $(".answer_btn").index(this);
+      let index = $(this).data("index");
+      $(this).hide();
+      $(`.reset_btn[data-index=${index}]`).show();
+      
+      // $(`.answer`).show();
+      $(`.answer${index}`).show();
+      $(`.reset${index}`).hide();
+    });
+    // 다시 하기 버튼
+    $(".reset_btn").on("click", function () {
+      // let index = $(".reset_btn").index(this);
+      let index = $(this).data("index");
+      $(this).hide();
+      $(`.answer_btn[data-index=${index}]`).show();
+      
+      // $(".answer").hide();
+      $(`.answer${index}`).hide();
+      $(`.reset${index}`).show();
+    });
+  </script>
+  <script src="../common/js/script.js"></script>
+  <script type="text/javascript"></script>
+</html>

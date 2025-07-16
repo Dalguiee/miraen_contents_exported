@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>미래엔 중국어</title>
+  <script src="./../common/lib/jquery-3.7.1.min.js"></script>
+  <script src="./../common/lib/howler-2.1.3.min.js"></script>
+  <!-- SUIT Variable 폰트 -->
+  <link href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/variable/woff2/SUIT-Variable.css"
+    rel="stylesheet" />
+  <link href="../common/css/comm.css" rel="stylesheet" />
+  <link href="./css/6_01_04.css" rel="stylesheet" />
+</head>
+
+<body>
+  <div id="wrap" class="china_wrap speak_wrap">
+    <!-- bttns -->
+    <div class="btn_box btn_box1 dp_flex">
+      <div class="rolePlayer">
+        <div class="rolePlayer_player">
+          <button type="button" class="rolePlayer_sound1 role-audio-set_btn active" data-index="1">
+            전체 듣기
+          </button>
+          <button type="button" class="rolePlayer_sound2 role-audio-set_btn" data-index="2">
+            따라 읽기
+          </button>
+          <button type="button" class="rolePlayer_play-btn play"></button>
+          <button type="button" class="rolePlayer_stop-btn"></button>
+          <div class="rolePlayer_duration">
+            <input type="range" class="rolePlayer_duration_range" min="0" max="100" value="0" step="1" />
+            <div class="rolePlayer_duration_range-ui">
+              <div class="rolePlayer_duration_range-ui_bar" style="width: 0"></div>
+            </div>
+            <span class="rolePlayer_duration_text seek">00:00</span>
+            <span class="rolePlayer_duration_text duration">00:00</span>
+          </div>
+        </div>
+        <div class="rolePlayer_role">
+          <button type="button" class="rolePlayer_role_btn role-audio-set_btn" data-index="3">
+            <div class="rolePlayer_role_img">
+              <img src="./images/6_01_04/role1.svg" alt="역할1 이미지" />
+            </div>
+          </button>
+          <button type="button" class="rolePlayer_role_btn role-audio-set_btn" data-index="4">
+            <div class="rolePlayer_role_img">
+              <img src="./images/6_01_04/role2.svg" alt="역할2 이미지" />
+            </div>
+          </button>
+        </div>
+      </div>
+      <button class="btn hanja_btn">한자</button>
+      <button class="btn pinyin_btn" style="display: none">병음</button>
+      <button class="btn combo_btn">한자+병음</button>
+      <button class="btn popup_btn blue" data-index="8">해석</button>
+      <!-- <div class="tempBttns">
+        <button onclick="page.showVocabulary()" data-index="1" class="tempBttn">단어장</button>
+      </div> -->
+    </div>
+
+    <!-- contents -->
+    <div class="full_content">
+      <div class="content">
+        <!------------ 1 ------------>
+        <figure class="bgImg">
+          <img src="./images/6_01_04/bg.png" />
+        </figure>
+        <div class="line dp_flex">
+          <div class="text_box text_box1">
+            <div class="item_name item_name1">태양</div>
+            <div class="switchBox">
+              <span class="txt txt1 FZKai" data-audio="074-16.mp3" data-view="hanja"
+                style="display: none">你怎么去天安门?</span>
+              <span class="txt txt2 gRegula" data-audio="074-16.mp3" data-view="pinyin" style="display: none">Nî zênme
+                qù Tiãn’ãn Mén?</span>
+              <span class="txt txt1 FZKai fs-36" data-audio="074-16.mp3" data-audio-combo="074-16"
+                data-view="combo">你怎么去天安门?</span>
+              <span class="txt txt2 gRegula fs-30" data-audio="074-16.mp3" data-audio-combo="074-16"
+                data-view="combo">Nî zênme qù Tiãn’ãn Mén?</span>
+            </div>
+            <button class="explan_popup_btn explan_popup_btn1 btn3" data-view-info="combo" data-tab-info="1">
+              <span>설명 1</span>
+            </button>
+          </div>
+
+          <div class="text_box text_box2">
+            <div class="item_name item_name2">메이리</div>
+            <div class="switchBox">
+              <span class="txt txt1 FZKai" data-audio="074-17.mp3" data-view="hanja" style="display: none">我坐地铁去。</span>
+              <span class="txt txt2 gRegula" data-audio="074-17.mp3" data-view="pinyin" style="display: none">Wô zuò
+                dìtiê qù.</span>
+              <span class="txt txt1 FZKai fs-36" data-audio="074-17.mp3" data-audio-combo="074-17"
+                data-view="combo">我坐地铁去。</span>
+              <span class="txt txt2 gRegula fs-30" data-audio="074-17.mp3" data-audio-combo="074-17"
+                data-view="combo">Wô zuò dìtiê qù.</span>
+            </div>
+            <button class="explan_popup_btn explan_popup_btn2 btn3" data-view-info="combo" data-tab-info="2">
+              <span>설명 2</span>
+            </button>
+          </div>
+
+          <div class="text_box text_box3">
+            <div class="item_name item_name3">태양</div>
+            <div class="switchBox">
+              <span class="txt txt1 FZKai" data-audio="074-18.mp3" data-view="hanja" style="display: none">地铁站远吗?</span>
+              <span class="txt txt2 gRegula" data-audio="074-18.mp3" data-view="pinyin" style="display: none">Dìtiê zhàn
+                yuân ma?</span>
+              <span class="txt txt1 FZKai fs-36" data-audio="074-18.mp3" data-audio-combo="074-18"
+                data-view="combo">地铁站远吗?</span>
+              <span class="txt txt2 gRegula fs-30" data-audio="074-18.mp3" data-audio-combo="074-18"
+                data-view="combo">Dìtiê zhàn yuân ma?</span>
+            </div>
+            <button class="explan_popup_btn explan_popup_btn3 btn3" data-view-info="combo" data-tab-info="3">
+              <span>설명 3</span>
+            </button>
+          </div>
+
+          <div class="text_box text_box4">
+            <div class="item_name item_name4">메이리</div>
+            <div class="switchBox">
+              <span class="txt txt1 FZKai" data-audio="074-19.mp3" data-view="hanja"
+                style="display: none">不远，往前走就到了。</span>
+              <span class="txt txt2 gRegula" data-audio="074-19.mp3" data-view="pinyin" style="display: none">Bù yuân,
+                wâng qián zôu jiù dào le.</span>
+              <span class="txt txt1 FZKai fs-36" data-audio="074-19.mp3" data-audio-combo="074-19"
+                data-view="combo">不远，往前走就到了。</span>
+              <span class="txt txt2 gRegula fs-30" data-audio="074-19.mp3" data-audio-combo="074-19"
+                data-view="combo">Bù yuân, wâng qián zôu jiù dào le.</span>
+            </div>
+            <button class="explan_popup_btn explan_popup_btn4 btn3" data-view-info="combo" data-tab-info="4">
+              <span>설명 4</span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="btn_box btn_box2">
+        <button class="btn popup_btn ani purple" data-index="5">
+          애니메이션
+        </button>
+        <button class="btn popup_btn purple" data-index="6">단어 게임</button>
+        <button class="btn popup_btn purple" data-index="10">받아쓰기</button>
+        <button class="btn popup_btn purple" data-index="9">본문 확인</button>
+      </div>
+    </div>
+
+    <!-- popups -->
+    <!-- 설명 1 -->
+    <div class="popup explan explan1" style="display: none">
+      <div class="tag bmjua dp_flex">설명 1</div>
+      <button class="close_btn">
+        <span class="sr-only">닫기</span>
+      </button>
+      <div class="popup_content dp_flex dp_flex_column">
+        <span class="suit">
+          <span class="FZKai" data-audio="073-08.mp3">天安门<span class="gRegula">(Tiãn’ãn Mén)</span></span>은 <span class="gRegula" data-audio="074-20.mp3">Tiãn</span>과
+          <span class="gRegula" data-audio="074-21.mp3">ãn</span>을<br />살짝
+          띄어 구별하여 발음한다. <span class="gRegula">a</span>,
+          <span class="gRegula">o</span>,
+          <span class="gRegula">e</span>로<br />
+          시작하는 음절이 다른 음절의 뒤에 오면,<br />음절 사이의 경계를
+          명확하게 구분하기 위해<br />격음 부호(’)를 사용한다.
+        </span>
+      </div>
+    </div>
+    <!-- 설명 2 -->
+    <div class="popup explan explan2" style="display: none">
+      <div class="tag bmjua dp_flex">설명 2</div>
+      <button class="close_btn">
+        <span class="sr-only">닫기</span>
+      </button>
+      <div class="popup_content dp_flex">
+        <span class="suit">
+          동일한 하나의 주어에 두 개 이상의 동사(구)가<br />
+          술어가 된 구문으로 수단, 방식을 나타낸다.
+        </span>
+      </div>
+    </div>
+    <!-- 설명 3 -->
+    <div class="popup explan explan3" style="display: none">
+      <div class="tag bmjua dp_flex">설명 3</div>
+      <button class="close_btn">
+        <span class="sr-only">닫기</span>
+      </button>
+      <div class="popup_content dp_flex dp_flex_column">
+        <span class="suit line line1">
+          ‘<span class="FZKai" data-audio="074-22.mp3">地铁站离这儿远吗?<span class="gRegula">
+              (Dìtiê zhàn lí zhèr yuân ma?)</span></span>’<br>
+          표현을 사용하여 두 지점 사이의 거리를 나타낼 수 있다.
+        </span>
+      </div>
+    </div>
+    <!-- 설명4 -->
+    <div class="popup explan explan4" style="display: none">
+      <div class="tag bmjua dp_flex">설명 4</div>
+      <button class="close_btn">
+        <span class="sr-only">닫기</span>
+      </button>
+      <div class="popup_content dp_flex dp_flex_column">
+        <span class="suit line line1">
+          <span class="notoSans">‘</span><span class="FZKai" data-audio="074-23.mp3">就<span class="suit">~</span>了<span
+              class="gRegula"><span class="suit">(</span>jiù <span class="suit">~</span> le<span
+                class="suit">)</span></span></span><span class="notoSans"><span class="notoSans">’</span></span>는
+          <span class="notoSans">‘</span>바로 ~하다<span class="notoSans">’</span>, <span
+            class="notoSans">‘</span>머지않아<br />
+          <span class="suit">~</span>하다<span class="notoSans">’</span>라는 의미로,
+          <span class="FZKai" data-audio="074-24.mp3">就<span class="gRegula"><span class="suit">(</span>jiù<span
+                class="suit">)</span></span></span> 뒤에 가까운 미래에<br />
+          발생할 사건이 온다.
+        </span>
+      </div>
+    </div>
+
+    <div class="popup_bg" style="display: none"></div>
+    <!-- 애니메이션 -->
+    <div class="popup ani" data-popup="5" style="display: none">
+      <div class="contentsArea videoParent">
+        <!-- <div id="video-controller-container-1" class="video-controller-container"></div> -->
+      </div>
+
+      <button class="close_btn2 popupclose_btn">
+        <span>닫기</span>
+      </button>
+    </div>
+
+    <!-- 단어게임 -->
+    <div class="popup game" data-popup="6" style="display: none">
+      <div class="tag bmjua dp_flex">단어 게임</div>
+      <button class="close_btn game_close">
+        <span class="sr-only">닫기</span>
+      </button>
+      <div class="popup_content dp_flex dp_flex_column">
+        <div class="game_box">
+          <iframe src="https://pubvw-cms.mirae-n.com/web_document/457953/2/word-fruit/index.html?lang=cn&set=12#main"
+            title="단어게임" width="100%" height="100%"></iframe>
+        </div>
+      </div>
+    </div>
+
+    <!-- 해석 -->
+    <div class="popup translate" data-popup="8" style="display: none">
+      <div class="tag bmjua dp_flex">해석</div>
+      <button class="close_btn"></button>
+      <div class="popup_content">
+        <div class="line line1 talkBox dp_flex">
+          <div class="text_box text_box1">
+            <div class="item_name item_name1">태양</div>
+            <div class="switchBox">
+              <span class="upper">
+                <span class="txt txt1 FZKai fs-36">你怎么去天安门?</span>
+                <span class="suit">너는 톈안먼에 어떻게 가니?</span>
+              </span>
+              <span class="txt txt2 gRegula fs-30">Nî zênme qù Tiãn’ãn Mén?</span>
+            </div>
+          </div>
+
+          <div class="text_box text_box2">
+            <div class="item_name item_name2">메이리</div>
+            <div class="switchBox">
+              <div class="upper">
+                <span class="txt txt1 FZKai fs-36 chDot">我坐地铁去。</span>
+                <span class="suit">나는 지하철 타고 가.</span>
+              </div>
+              <span class="txt txt2 gRegula fs-30">Wô zuò dìtiê qù.</span>
+            </div>
+          </div>
+
+          <div class="text_box text_box3">
+            <div class="item_name item_name3">태양</div>
+            <div class="switchBox">
+              <div class="upper">
+                <span class="txt txt1 FZKai fs-36">地铁站远吗?</span>
+                <span class="suit">지하철역은 멀어?</span>
+              </div>
+              <span class="txt txt2 gRegula fs-30">Dìtiê zhàn yuân ma?</span>
+            </div>
+          </div>
+
+          <div class="text_box text_box4">
+            <div class="item_name item_name4">메이리</div>
+            <div class="swtichBox">
+              <div class="upper">
+                <span class="txt txt1 FZKai fs-36 chDot">不远，往前走就到了。</span>
+                <span class="suit">안 멀어, 앞으로 걸어가면 바로 도착해.</span>
+              </div>
+              <span class="txt txt2 gRegula fs-30">Bù yuân, wâng qián zôu jiù dào le.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 본문 확인 -->
+    <div class="popup popup1" data-popup="9" style="display: none">
+      <div class="tag bmjua dp_flex">본문 확인</div>
+      <button class="close_btn"></button>
+      <div class="popup_content">
+        <div class="dp_flex w-full h-full">
+          <div class="box">
+            <span class="bmjua">중국어로 쓰기</span>
+            <div class="anwer_box">
+              <span class="suit">메이리는</span>
+              <div class="reset line line1 suit"></div>
+              <span class="answer answer1 FZKai" data-audio="074-27.mp3" style="display: none">地铁<span
+                  class="gRegula under under1">dìtiê</span></span>
+              <span class="suit">를 타고,</span>
+              <div class="reset line line2 suit"></div>
+              <span class="answer answer2 FZKai" data-audio="073-08.mp3" style="display: none">天安门<span
+                  class="gRegula under under2" style="top: 54px;">Tiãn’ãn Mén</span></span>
+              <span class="suit">에 간다.</span>
+            </div>
+          </div>
+        </div>
+        <div class="btn3 answer_btn">정답</div>
+        <div class="btn3 reset_btn" style="display: none">다시 하기</div>
+      </div>
+    </div>
+
+    <!-- 받아쓰기 -->
+    <div class="popup popup2" data-popup="10" style="display: none">
+      <div class="tag bmjua dp_flex">받아쓰기</div>
+      <button class="close_btn"></button>
+      <div class="popup_content">
+        <div class="box">
+          <div class="anwer_box anwer_box1">
+            <button class="btn3 btn-audio index1" data-audio="074-25.mp3">
+              음원
+            </button>
+            <div class="index">1</div>
+            <div class="dp_flex reset index1">
+              <span class="gRegula">Wô</span>
+              <div class="line line1 gRegula"></div>
+              <span class="gRegula">dìtiê</span>
+              <div class="line line2 gRegula"></div>
+              <span class="gRegula">.</span>
+            </div>
+            <div class="dp_flex answer index1" data-audio="074-25.mp3" style="display: none">
+              <span class="gRegula">Wô</span>
+              <div class="line line1 gRegula">zuò</div>
+              <span class="gRegula">dìtiê</span>
+              <div class="line line2 gRegula">qù</div>
+              <span class="gRegula">.</span>
+            </div>
+            <div class="btn_warp index1">
+              <div class="btn3 answer_btn" data-index="1">정답</div>
+              <div class="btn3 reset_btn" data-index="1" style="display: none">
+                다시 하기
+              </div>
+            </div>
+          </div>
+
+          <div class="anwer_box anwer_box2">
+            <button class="btn3 btn-audio index1" data-audio="074-26.mp3">
+              음원
+            </button>
+            <div class="index">2</div>
+            <div class="dp_flex reset index2">
+              <span class="gRegula">Wâng</span>
+              <div class="line line1 gRegula"></div>
+              <span class="gRegula">zôu jiù</span>
+              <div class="line line2 gRegula"></div>
+              <span class="gRegula">le</span>
+              <span class="gRegula">.</span>
+            </div>
+            <div class="dp_flex answer index2" data-audio="074-26.mp3" style="display: none">
+              <span class="gRegula">Wâng</span>
+              <div class="line line1 gRegula">qián</div>
+              <span class="gRegula">zôu jiù</span>
+              <div class="line line2 gRegula">dào</div>
+              <span class="gRegula">le</span>
+              <span class="gRegula">.</span>
+            </div>
+            <div class="btn_warp index2">
+              <div class="btn3 answer_btn" data-index="2">정답</div>
+              <div class="btn3 reset_btn" data-index="2" style="display: none">
+                다시 하기
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 단어장 -->
+    <div class="popup popup3 vocabularyBook" data-popup="7" style="display: none">
+      <div class="tag bmjua dp_flex">단어장</div>
+      <button class="close_btn"></button>
+      <div class="popup_content dp_flex">
+        <div class="word_list_box dp_flex dp_flex_column">
+          <div class="word_content">
+            <div class="list dp_flex voca_popup_btn active" data-audio="074-01.mp3">
+              <span class="gRegula">zênme</span>
+            </div>
+            <div class="list dp_flex voca_popup_btn" data-audio="074-02.mp3">
+              <span class="gRegula">qù</span>
+            </div>
+            <div class="list dp_flex voca_popup_btn" data-audio="074-03.mp3">
+              <span class="gRegula">Tiãn’ãn Mén</span>
+            </div>
+            <div class="list dp_flex voca_popup_btn" data-audio="074-04.mp3">
+              <span class="gRegula">zuò</span>
+            </div>
+            <div class="list dp_flex voca_popup_btn" data-audio="074-05.mp3">
+              <span class="gRegula">dìtiê</span>
+            </div>
+            <div class="list dp_flex voca_popup_btn" data-audio="074-06.mp3">
+              <span class="gRegula">zhàn</span>
+            </div>
+            <div class="list dp_flex voca_popup_btn" data-audio="074-07.mp3">
+              <span class="gRegula">yuân</span>
+            </div>
+            <div class="list dp_flex voca_popup_btn" data-audio="074-08.mp3">
+              <span class="gRegula">wâng</span>
+            </div>
+            <div class="list dp_flex voca_popup_btn" data-audio="074-09.mp3">
+              <span class="gRegula">qián</span>
+            </div>
+            <div class="list dp_flex voca_popup_btn" data-audio="074-10.mp3">
+              <span class="gRegula">zôu</span>
+            </div>
+            <div class="list dp_flex voca_popup_btn" data-audio="074-11.mp3">
+              <span class="gRegula">jiù</span>
+            </div>
+            <div class="list dp_flex voca_popup_btn" data-audio="074-12.mp3">
+              <span class="gRegula">dào</span>
+            </div>
+            <div class="list dp_flex voca_popup_btn" data-audio="074-13.mp3">
+              <span class="gRegula">le</span>
+            </div>
+          </div>
+        </div>
+        <div class="show_word_box dp_flex dp_flex_column">
+          <div class="china_box dp_flex">
+            <div class="voca_popup_tab" data-audio="074-01.mp3">
+              <span class="FZKai">怎么</span>
+              <span class="gRegula">zênme</span>
+            </div>
+            <div class="voca_popup_tab" data-audio="074-02.mp3" style="display: none">
+              <span class="FZKai">去</span>
+              <span class="gRegula">qù</span>
+            </div>
+            <div class="voca_popup_tab" data-audio="074-03.mp3" style="display: none">
+              <span class="FZKai">天安门</span>
+              <span class="gRegula">Tiãn’ãn Mén</span>
+            </div>
+            <div class="voca_popup_tab" data-audio="074-04.mp3" style="display: none">
+              <span class="FZKai">坐</span>
+              <span class="gRegula">zuò</span>
+            </div>
+            <div class="voca_popup_tab" data-audio="074-05.mp3" style="display: none">
+              <span class="FZKai">地铁</span>
+              <span class="gRegula">dìtiê</span>
+            </div>
+            <div class="voca_popup_tab" data-audio="074-06.mp3" style="display: none">
+              <span class="FZKai">站</span>
+              <span class="gRegula">zhàn</span>
+            </div>
+            <div class="voca_popup_tab" data-audio="074-07.mp3" style="display: none">
+              <span class="FZKai">远</span>
+              <span class="gRegula">yuân</span>
+            </div>
+            <div class="voca_popup_tab" data-audio="074-08.mp3" style="display: none">
+              <span class="FZKai">往</span>
+              <span class="gRegula">wâng</span>
+            </div>
+            <div class="voca_popup_tab" data-audio="074-09.mp3" style="display: none">
+              <span class="FZKai">前</span>
+              <span class="gRegula">qián</span>
+            </div>
+            <div class="voca_popup_tab" data-audio="074-10.mp3" style="display: none">
+              <span class="FZKai">走</span>
+              <span class="gRegula">zôu</span>
+            </div>
+            <div class="voca_popup_tab" data-audio="074-11.mp3" style="display: none">
+              <span class="FZKai">就</span>
+              <span class="gRegula">jiù</span>
+            </div>
+            <div class="voca_popup_tab" data-audio="074-12.mp3" style="display: none">
+              <span class="FZKai">到</span>
+              <span class="gRegula">dào</span>
+            </div>
+            <div class="voca_popup_tab" data-audio="074-13.mp3" style="display: none">
+              <span class="FZKai">了</span>
+              <span class="gRegula">le</span>
+            </div>
+          </div>
+          <div class="korea_box dp_flex">
+            <div class="voca_warp">
+              <span class="suit">어떻게</span>
+              <span class="suit" style="display: none">가다</span>
+              <span class="suit" style="display: none">톈안먼</span>
+              <span class="suit" style="display: none">타다, 앉다</span>
+              <span class="suit" style="display: none">지하철</span>
+              <span class="suit" style="display: none">역</span>
+              <span class="suit" style="display: none">멀다</span>
+              <span class="suit" style="display: none">~을 향해</span>
+              <span class="suit" style="display: none">앞</span>
+              <span class="suit" style="display: none">걷다, (걸어)가다</span>
+              <span class="suit" style="display: none">바로, 곧</span>
+              <span class="suit" style="display: none">도착하다</span>
+              <span class="suit center" style="display: none">했다, 되다<br />[완료나 변화를 나타냄]</span>
+            </div>
+          </div>
+          <div class="show_btn-warp">
+            <button class="btn3 show_pinyin_btn" style="display: none">
+              병음 보기
+            </button>
+            <button class="btn3 hide_pinyin_btn">병음 가리기</button>
+            <button class="btn3 show_btn" style="display: none">
+              뜻 보기
+            </button>
+            <button class="btn3 hide_btn">뜻 감추기</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<script type="text/javascript">
+  const page = {
+    //컨텐츠에 정답 확인이 존재하는지 여부
+    isAnswer: false,
+    // 단어장 노출 여부 판단. 이벤트 호출하지 않으면 노출하지 않음.
+    isVocabulary: true,
+    //정답 보기
+    showAnswer: () => { },
+    //정답 숨기기
+    hideAnswer: () => { },
+    // 단어장 보기
+    showVocabulary: () => {
+      setPopup(7);
+    },
+  };
+
+  //역할 텍스트 active 시간
+  const normalSpeed = [
+    { start: 0.3, end: 3, value: "074-16.mp3" },
+    { start: 3, end: 5.5, value: "074-17.mp3" },
+    { start: 5.5, end: 7.5, value: "074-18.mp3" },
+    { start: 7.5, end: 11, value: "074-19.mp3" },
+  ];
+  const slowSpeed = [
+    { start: 0.3, end: 8.5, value: "074-16.mp3" },
+    { start: 8.5, end: 15, value: "074-17.mp3" },
+    { start: 15, end: 22, value: "074-18.mp3" },
+    { start: 22, end: 31, value: "074-19.mp3" },
+  ];
+  const optionSpeed1 = [
+    { start: 0.3, end: 4.5, value: "074-16.mp3" },
+    { start: 4.5, end: 7, value: "074-17.mp3" },
+    { start: 7, end: 10, value: "074-18.mp3" },
+    { start: 10, end: 13.5, value: "074-19.mp3" },
+  ];
+  const optionSpeed2 = [
+    { start: 0.3, end: 3.5, value: "074-16.mp3" },
+    { start: 3.5, end: 7, value: "074-17.mp3" },
+    { start: 7, end: 9, value: "074-18.mp3" },
+    { start: 9, end: 13.5, value: "074-19.mp3" },
+  ];
+
+
+  //역할 연습 음원
+  const rolePlayerAudio = [
+    // 전체 듣기
+    {
+      audio: "074-14.mp3",
+      data: normalSpeed,
+    },
+    // 따라 읽기
+    {
+      audio: "074-15.mp3",
+      data: slowSpeed,
+    },
+    // 첫째사람
+    {
+      audio: "074-14-1.mp3",
+      data: optionSpeed1,
+    },
+    // 둘쨰사람
+    {
+      audio: "074-14-2.mp3",
+      data: optionSpeed2,
+    },
+    // 셋째사람
+  ];
+</script>
+<script crossorigin src="../common/lib/libBundle.js"></script>
+<script src="../common/js/script.js"></script>
+<script src="../common/js/rolePlayerCh.js"></script>
+<script src="../common/js/vocabularyBook.js"></script>
+
+<script type="text/javascript">
+  // 애니메이션 팝업 초기화
+  $(".popup.ani .close_btn2").on("click", function () {
+    $(".contentsArea.videoParent").empty();
+    createVideo();
+  });
+  $(document).ready(function () {
+    createVideo();
+    // setPopup(7);
+  });
+  // 비디오 생성
+  const createVideo = () => {
+    $(".contentsArea.videoParent").html(
+      `<div id="video-controller-container-1" class="video-controller-container"></div>`
+    );
+    var mediaManager = libBundle.MediaManager.getInstance();
+    // 내부자막 X, 외부자막 X
+    var videoController1 = mediaManager.createVideoController({
+      id: "video-controller-1",
+      query: "#video-controller-container-1",
+      // poster: "./media/mp4/4chi_bon_1.png",
+      src: "./media/mp4/6chi_H_bon_1.mp4",
+      // volumeVisible: true,
+      // // thumbnail: { startPath: 'media/video/thumbnail/thumbnail_', startIndex: 1000, ext: 'png' },
+      // overlay: true,
+      // // autoplay: true
+      jsonSubtitlePath: "./media/subtitle/6chi_H_bon_1.json",
+      volumeSetting: {
+        visible: true,
+        vertical: false,
+      },
+      callback: {},
+    });
+  };
+
+  //게임 팝업 닫기
+  $(".game_close").on("click", function () {
+    $(".game_box").empty();
+    createGame();
+  });
+
+  // 단어 게임 생성
+  const createGame = () => {
+    $(".game_box").html(`
+        <iframe src="https://pubvw-cms.mirae-n.com/web_document/457953/2/word-fruit/index.html?lang=cn&set=12#main" title="단어게임" width="100%" height="100%"></iframe>
+      `);
+  };
+
+  //설명 팝업
+  $(".explan_popup_btn").on("click", function () {
+    let index = $(".explan_popup_btn").index(this);
+    $(".explan_popup_bg").show();
+    $(".popup.explan").hide();
+    $(".popup.explan").eq(index).show();
+    try {
+      setRoleStop();
+    } catch (error) { }
+    audioStop();
+  });
+
+  // 설명팝업 있는상태에서 다른 팝업 클릭시 팝업 닫기
+  $(".popup_btn").on("click", function () {
+    $(".popup.explan").css("display", "none");
+  });
+
+  // 본문 확인 정답버튼
+  $(".popup1 .answer_btn").on("click", function () {
+    $(this).hide();
+    $(this).next().show();
+    $(".popup1 .answer").show();
+    $(".popup1 .reset").hide();
+  });
+  // 본문 확인 다시 하기
+  $(".popup1 .reset_btn").on("click", function () {
+    $(this).hide();
+    $(this).prev().show();
+    $(".popup1 .answer").hide();
+    $(".popup1 .reset").show();
+  });
+
+  // 받아쓰기 정답
+  $(".popup2 .answer_btn").on("click", function () {
+    $(this).hide();
+    $(this).next().show();
+    $(`.popup2 .answer.index${$(this).data("index")}`).show();
+    $(`.popup2 .reset.index${$(this).data("index")}`).hide();
+  });
+  // 받아쓰기 다시 하기
+  $(".popup2 .reset_btn").on("click", function () {
+    $(this).hide();
+    $(this).prev().show();
+    $(`.popup2 .answer.index${$(this).data("index")}`).hide();
+    $(`.popup2 .reset.index${$(this).data("index")}`).show();
+  });
+</script>
+
+</html>

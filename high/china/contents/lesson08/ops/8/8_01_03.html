@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>미래엔 중국어</title>
+  <script src="./../common/lib/jquery-3.7.1.min.js"></script>
+  <!-- SUIT Variable 폰트 -->
+  <link href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/variable/woff2/SUIT-Variable.css"
+    rel="stylesheet" />
+  <link href="../common/css/comm.css" rel="stylesheet" />
+  <link href="./css/8_01_03.css" rel="stylesheet" />
+</head>
+
+<body>
+  <div id="wrap" class="china_wrap">
+    <div class="full_content">
+      <div class="content">
+        <div class="left_box">
+          <div class="text-box mb-44">
+            <span class="suit">
+              중국은 현금보다 모바일 페이 결제가<br />보편화되고 있습니다.
+              온라인 쇼핑 구매나<br />교통 요금은 물론 상점, 식당,
+              노점상에서도<br />모바일 페이로 결제합니다.</span>
+          </div>
+          <div class="ex_box">
+            <div class="title mb-20">
+              <img src="./images/8_01_03/img2.svg" class="img mr-10" /><span class="suit">오늘의 환율을 알아봅시다.</span>
+            </div>
+            <div class="line mb-10">
+              <img src="./images/8_01_03/img3.jpg" class="mr-14 img" /><span class="suit mr-24">1위안(<span class="simhei" data-audio="093-10.mp3">元</span>)</span><span class="suit mr-30">=</span><img src="./images/8_01_03/img4.jpg" class="mr-14 img" />
+              <div class="asnwer_box mr-6">
+                <span class="answer suit c-red" style="display: none">193.54</span>
+              </div>
+              <span class="suit">원</span>
+            </div>
+            <div class="line">
+              <img src="./images/8_01_03/img4.jpg" class="mr-14 img" /><span class="suit mr-20">10,000원</span><span
+                class="suit mr-30">=</span><img src="./images/8_01_03/img3.jpg" class="mr-14 img" />
+              <div class="asnwer_box mr-6">
+                <span class="answer suit c-red" style="display: none"><span class="relative">51.67<span
+                      class="suit small-text">(2024. 11. 1. 기준)</span></span></span>
+              </div>
+              <span class="suit">위안(<span class="simhei" data-audio="093-10.mp3">元</span>)</span>
+            </div>
+          </div>
+        </div>
+        <img src="./../8/images/8_01_03/img1.png" class="content_bg" />
+      </div>
+      <div class="btn_box">
+        <button class="btn explan_popup_btn purple" data-index="1">
+          설명
+        </button>
+        <button class="btn popup_btn purple" data-index="2">참고</button>
+        <button class="btn popup_btn purple" data-index="3">보충</button>
+        <button class="btn btn3 answer_btn">예시 답안</button>
+        <button class="btn btn3 reset_btn" style="display: none">다시 풀기</button>
+      </div>
+    </div>
+
+    <div class="popup_bg" style="display: none"></div>
+    <!-- 설명 -->
+    <div class="popup explan" style="display: none">
+      <div class="tag bmjua dp_flex">설명</div>
+      <button class="close_btn"></button>
+      <div class="popup_content">
+        <div class="content">
+          <span class="suit">포털 사이트 검색창에 <span class="notoSans">‘</span>환율<span class="notoSans">’</span>을 입력한 후,<br />
+            <span class="notoSans">‘</span>환율 계산<span class="notoSans">’</span> 부분에 원하는 두 나라를 선택하고<br />
+            금액을 넣으면 자동으로 계산이 된다.
+          </span>
+        </div>
+      </div>
+    </div>
+    <!-- 보충 팝업 -->
+    <div class="popup popup3" data-popup="3" style="display: none">
+      <div class="tag bmjua dp_flex">보충</div>
+      <button class="close_btn"></button>
+      <div class="popup_content">
+        <div class="content">
+          <div class="title mt-10 mb-20">
+            <span class="suit">중국의 화폐, 런민비(<span class="FZKai" data-audio="093-07.mp3">人民币</span>)</span>
+          </div>
+          <div class="text-box">
+            <span class="suit">중국의 화폐는<span data-audio="093-07.mp3"><span class="FZKai">人民币</span>(<span class="gRegula">rénmínbì</span>)</span>라고 부르며, 중국의 중앙은행에<br />
+              해당하는 인민은행(<span class="FZKai" data-audio="093-08.mp3">人民银行</span>)에서 발행한다. 기호는 <span class="FZKai">元</span>, ¥,<br />
+              RMB, CNY 등으로 표기한다. 기본 단위에는 <span data-audio="093-10.mp3"><span class="FZKai">元</span>(<span class="gRegula">yuán</span>)</span>, <span data-audio="093-11.mp3"><span class="FZKai">角</span>(<span class="gRegula">jiâo</span>)</span>,<br />
+              <span data-audio="093-12.mp3"><span class="FZKai">分</span>(<span class="gRegula">fçn</span>)</span>이 있는데 일상생활에서 말할 때 <span class="FZKai" data-audio="093-10.mp3">元</span>은 <span data-audio="093-09.mp3"><span class="FZKai">块</span>(<span class="gRegula">kuài</span>)</span>라고 하고,<br />
+              <span class="FZKai" data-audio="093-11.mp3">角</span>는 <span data-audio="093-13.mp3"><span class="FZKai">毛</span>(<span class="gRegula">máo</span>)</span>라고 한다. 가장 큰돈의 단위는 100<span class="FZKai" data-audio="093-10.mp3">元</span> 지폐이고,<br />
+              가장 작은 단위는 1<span class="FZKai" data-audio="093-12.mp3">分</span> 동전이다. 10<span class="FZKai" data-audio="093-12.mp3">分</span>은 1<span class="FZKai" data-audio="093-13.mp3">毛</span>와 같고, 10<span class="FZKai" data-audio="093-13.mp3">毛</span>는 1<span class="FZKai" data-audio="093-10.mp3">元</span>과<br>같다.
+              <span class="FZKai" data-audio="093-12.mp3">分</span>은 최근에 거의 사용하지 않지만 가격표, 영수증 등에는<br />
+              <span class="FZKai" data-audio="093-12.mp3">分</span> 단위까지 표기된다.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 참고 팝업 -->
+    <div class="popup popup3" data-popup="2" style="display: none">
+      <div class="tag bmjua dp_flex">참고</div>
+      <button class="close_btn"></button>
+      <div class="popup_content">
+        <div class="content">
+          <div class="title mt-10 mb-20">
+            <span class="suit">중국의 대표적인 모바일 페이</span>
+          </div>
+          <div class="text-box mb-20 flex">
+            <div class="shrink-0 mr-20">
+              <span class="suit line-42">•</span>
+            </div>
+            <div>
+              <span class="suit line-42"><span data-audio="093-14.mp3"><span class="FZKai">微信支付</span>(<span
+                    class="gRegula">Wçixìn zhåfù</span>)</span>: 텐센트의 모바일 메신저 위챗이<br />2013년 출시한 모바일
+                결제 시스템으로, <span class="notoSans">‘</span>위챗페이<span class="notoSans">’</span>라고 불린다.<br />대중교통과 식당은
+                물론 노점에서도 모바일 결제가 가능하다.</span>
+            </div>
+          </div>
+          <div class="text-box mb-20 flex">
+            <div class="shrink-0 mr-20">
+              <span class="suit line-42">•</span>
+            </div>
+            <div>
+              <span class="suit line-42"><span data-audio="093-15.mp3"><span class="FZKai">支付宝</span>(<span
+                    class="gRegula">Zhåfùbâo</span>)</span>: 중국 최대 온라인 쇼핑몰 알리바바가<br />2004년 내놓은
+                모바일 결제 시스템으로 <span class="notoSans">‘</span>알리페이<span class="notoSans">’</span>라고<br />불린다. 오프라인과
+                온라인에서 물건을 사거나 인터넷 뱅킹<br />등에서 유용하게
+                사용된다.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<script type="text/javascript">
+  const page = {
+    //컨텐츠에 정답 확인이 존재하는지 여부
+    isAnswer: false,
+    // 단어장 노출 여부 판단.
+    isVocabulary: false,
+    //정답 보기
+    showAnswer: () => { },
+    //정답 숨기기
+    hideAnswer: () => { },
+    // 단어장 보기
+    showVocabulary: () => { },
+  };
+  $(document).ready(function () { });
+</script>
+<script src="../common/js/script.js"></script>
+<script>
+  // 예시답안
+  $(".answer_btn").on("click", function () {
+    $(this).hide();
+    $(this).next().show();
+    $(".answer").show();
+  });
+  //다시 풀기
+  $(".reset_btn").on("click", function () {
+    $(this).hide();
+    $(this).prev().show();
+    $(".answer").hide();
+  });
+</script>
+
+</html>

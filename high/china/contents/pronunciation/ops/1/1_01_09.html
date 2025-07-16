@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>미래엔 중국어</title>
+  <script src="./../common/lib/jquery-3.7.1.min.js"></script>
+  <script src="./../common/lib/howler-2.1.3.min.js"></script>
+  <!-- SUIT Variable 폰트 -->
+  <link href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/variable/woff2/SUIT-Variable.css"
+    rel="stylesheet" />
+  <link href="../common/css/comm.css" rel="stylesheet" />
+  <link href="./css/1_01_09.css" rel="stylesheet" />
+</head>
+
+<body>
+  <div id="wrap" class="china_wrap">
+    <div class="top-title"></div>
+    <!-- bttns -->
+    <div class="btn_box flex absolute">
+      <button class="btn popup_btn blue" data-index="1">해석</button>
+      <button class="btn popup_btn blue" data-index="2">연습</button>
+    </div>
+
+    <!-- contents -->
+    <div class="full_content">
+      <div class="content">
+        <div class="text-box mb-32 mt-4">
+          <span class="suit fs-30 line-40 fw-6">성모와 운모가 같아도 성조에 따라 뜻이 달라집니다.</span>
+        </div>
+        <div class="content_box">
+          <div class="item index1">
+            <img src="./images/1_01_09/img5.svg" class="v_hidden" />
+            <button class="btn btn3 explan_popup_btn ">표기1</button>
+          </div>
+          <div class="item index2">
+            <img src="./images/1_01_09/img6.svg" class="v_hidden" />
+            <button class="btn btn3 explan_popup_btn ">표기2</button>
+          </div>
+          <div class="item index3">
+            <img src="./images/1_01_09/img7.svg" class="v_hidden" />
+            <button class="btn btn3 explan_popup_btn ">표기3</button>
+          </div>
+          <div class="item index4">
+            <img src="./images/1_01_09/img8.svg" class="v_hidden" />
+            <button class="btn btn3 explan_popup_btn ">표기4</button>
+          </div>
+          <div class="audio-box index1" data-audio="M017-05.mp3"></div>
+          <div class="audio-box index2" data-audio="M017-06.mp3"></div>
+          <div class="audio-box index3" data-audio="M017-07.mp3"></div>
+          <div class="audio-box index4" data-audio="M017-08.mp3"></div>
+        </div>
+        <div class="tip"></div>
+      </div>
+    </div>
+
+    <div class="popup_bg" style="display: none"></div>
+
+    <div class="popup explan explan1" style="display: none">
+      <div class="tag bmjua dp_flex">제1성</div>
+      <button class="close_btn"></button>
+      <div class="popup_content">
+        <img class="pop_text_img" data-pop-index="1" src="./images/1_01_09/pop_text_1.svg" alt="">
+        <div class="pop_point_img_box" data-pop-index="1"></div>
+      </div>
+    </div>
+    <div class="popup explan explan2" style="display: none">
+      <div class="tag bmjua dp_flex">제2성</div>
+      <button class="close_btn"></button>
+      <div class="popup_content">
+        <img class="pop_text_img" data-pop-index="2" src="./images/1_01_09/pop_text_2.svg" alt="">
+        <div class="pop_point_img_box" data-pop-index="2"></div>
+      </div>
+    </div>
+    <div class="popup explan explan3" style="display: none">
+      <div class="tag bmjua dp_flex">제3성</div>
+      <button class="close_btn"></button>
+      <div class="popup_content">
+        <img class="pop_text_img" data-pop-index="3" src="./images/1_01_09/pop_text_3.svg" alt="">
+        <div class="pop_point_img_box" data-pop-index="3"></div>
+      </div>
+    </div>
+    <div class="popup explan explan4" style="display: none">
+      <div class="tag bmjua dp_flex">제4성</div>
+      <button class="close_btn"></button>
+      <div class="popup_content">
+        <img class="pop_text_img" data-pop-index="4" src="./images/1_01_09/pop_text_4.svg" alt="">
+        <div class="pop_point_img_box" data-pop-index="4"></div>
+      </div>
+    </div>
+
+    <!-- 해석 팝업 -->
+    <div class="popup popup3" data-popup="1" style="display: none">
+      <div class="tag bmjua dp_flex">해석</div>
+      <button class="close_btn"></button>
+      <div class="popup_content">
+        <div class="content">
+          <div class="flex mt-6">
+            <div class="flex flex-col mr-60">
+              <div class="gRegula fs-48 line-56">mã</div>
+              <div class="suit fs-36 line-42 c-dblue fw-5">엄마</div>
+            </div>
+            <div class="flex flex-col mr-60">
+              <div class="gRegula fs-48 line-56">má</div>
+              <div class="suit fs-36 line-42 c-dblue fw-5">저리다</div>
+            </div>
+            <div class="flex flex-col mr-60">
+              <div class="gRegula fs-48 line-56">mâ</div>
+              <div class="suit fs-36 line-42 c-dblue fw-5">말</div>
+            </div>
+            <div class="flex flex-col">
+              <div class="gRegula fs-48 line-56">mà</div>
+              <div class="suit fs-36 line-42 c-dblue fw-5">꾸짖다</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 연습 팝업 -->
+    <div class="popup popup3" data-popup="2" style="display: none">
+      <div class="tag bmjua dp_flex">연습</div>
+      <button class="close_btn"></button>
+      <div class="popup_content">
+        <div class="content">
+          <div class="title mt-10 mb-10">
+            <span class="suit">성조 단어 연습</span>
+          </div>
+          <div class="list">
+            <div class="item">
+              <div class="item_title">
+                <span class="suit fw-7 fs-28">제1성</span>
+              </div>
+              <span class="suit fw-7 line-42 fs-32 mb-4" data-audio="M017-09.mp3"><span
+                  class="gRegula fw-4">tãng</span>(<span class="simhei fw-4">汤</span>)</span><span
+                class="suit fw-7 line-42 fs-32 mb-26">국, 탕</span>
+              <span data-audio="M017-13.mp3" class="suit fw-7 line-42 fs-32 mb-4"><span
+                  class="gRegula fw-4">bã</span>(<span class="simhei fw-4">八</span>)</span><span
+                class="suit fw-7 line-42 fs-32 mb-26">8, 여덟</span>
+            </div>
+            <div class="item">
+              <div class="item_title green">
+                <span class="suit fw-7 fs-28">제2성</span>
+              </div>
+              <span class="suit fw-7 line-42 fs-32 mb-4" data-audio="M017-10.mp3"><span
+                  class="gRegula fw-4">táng</span>(<span class="simhei fw-4">糖</span>)</span><span
+                class="suit fw-7 line-42 fs-32 mb-26">사탕</span>
+              <span data-audio="M017-14.mp3" class="suit fw-7 line-42 fs-32 mb-4"><span
+                  class="gRegula fw-4">bá</span>(<span class="simhei fw-4">拔</span>)</span><span
+                class="suit fw-7 line-42 fs-32 mb-26">뽑다</span>
+            </div>
+            <div class="item">
+              <div class="item_title">
+                <span class="suit fw-7 fs-28">제3성</span>
+              </div>
+              <span class="suit fw-7 line-42 fs-32 mb-4" data-audio="M017-11.mp3"><span
+                  class="gRegula fw-4">tâng</span>(<span class="simhei fw-4">躺</span>)</span><span
+                class="suit fw-7 line-42 fs-32 mb-26">눕다</span>
+              <span data-audio="M017-15.mp3" class="suit fw-7 line-42 fs-32 mb-4"><span
+                  class="gRegula fw-4">bâ</span>(<span class="simhei fw-4">靶</span>)</span><span
+                class="suit fw-7 line-42 fs-32 mb-26">과녁</span>
+            </div>
+            <div class="item">
+              <div class="item_title green">
+                <span class="suit fw-7 fs-28">제4성</span>
+              </div>
+              <span class="suit fw-7 line-42 fs-32 mb-4" data-audio="M017-12.mp3"><span
+                  class="gRegula fw-4">tàng</span>(<span class="simhei fw-4">烫</span>)</span><span
+                class="suit fw-7 line-42 fs-32 mb-26">뜨겁다</span>
+              <span data-audio="M017-16.mp3" class="suit fw-7 line-42 fs-32 mb-4"><span
+                  class="gRegula fw-4">bà</span>(<span class="simhei fw-4">爸</span>)</span><span
+                class="suit fw-7 line-42 fs-32 mb-26">아빠</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<script type="text/javascript">
+  const page = {
+    //컨텐츠에 정답 확인이 존재하는지 여부
+    isAnswer: false,
+    // 단어장 노출 여부 판단. 이벤트 호출하지 않으면 노출하지 않음.
+    isVocabulary: false,
+    //정답 보기
+    showAnswer: () => { },
+    //정답 숨기기
+    hideAnswer: () => { },
+    // 단어장 보기
+    showVocabulary: () => { },
+  };
+</script>
+<script src="../common/js/script.js"></script>
+
+<script type="text/javascript">
+  // 정답
+  $(".popup.explan .pop_text_img").on("click", function () {
+    let index = $(this).data("popIndex");
+    $(`.popup.explan .pop_point_img_box[data-pop-index=${index}]`).addClass("active");
+  });
+
+  $(".popup.explan .close_btn").on("click", function () {
+    $(".popup.explan .pop_point_img_box").removeClass("active");
+  });
+</script>
+
+</html>

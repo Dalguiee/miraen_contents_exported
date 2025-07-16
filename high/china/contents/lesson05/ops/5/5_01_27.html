@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>미래엔 중국어</title>
+		<script src="./../common/lib/jquery-3.7.1.min.js"></script>
+		<!-- SUIT Variable 폰트 -->
+		<link href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/variable/woff2/SUIT-Variable.css" rel="stylesheet" />
+		<link href="../common/css/comm.css" rel="stylesheet" />
+		<link href="./css/5_01_27.css" rel="stylesheet" />
+	</head>
+
+	<body>
+		<div id="wrap" class="china_wrap content_wrap">
+			<div class="title_box title_box5 dp_flex">
+				<div class="img_box">
+					<img src="../common/images/culture_icon.svg" alt="문화" class="img img1" />
+				</div>
+				<div class="text_box">
+					<span class="suit">중국의 <span style="color: #764A8A;">전통 공연 예술</span></span>
+				</div>
+			</div>
+
+			<div class="btn_box dp_flex">
+				<button class="btn popup_btn blue" data-index="1">보충</button>
+			</div>
+
+			<div class="full_content dp_flex">
+				<div class="content">
+					<div class="content-title">
+						<span class="suit">그림자극</span>
+						<span class="dp_flex" data-audio="070-05.mp3">
+							<span class="simhei">皮影戏</span>
+							<span class="gRegula">píyîngxì</span>
+						</span>
+					</div>
+					<p class="content-text suit">
+						그림자극은 가죽이나 종이를 오려 만든<br />인형의 그림자를 이용하여 이야기를<br />전달하는 민속 연극입니다. 흰색의 커튼<br />뒤에서 빛을 비추고 인형을 움직이며,<br />타악기와
+						현악기 연주를 곁들입니다.
+					</p>
+				</div>
+			</div>
+
+			<!-- 보충 -->
+			<div class="popup_bg" style="display: none"></div>
+			<div class="popup popup1" data-popup="1" style="display: none">
+				<div class="tag bmjua dp_flex">보충</div>
+				<button class="close_btn"></button>
+				<div class="popup_content">
+					<div class="popup-scroll">
+						<div class="title suit">그림자극(<span class="FZKai" data-audio="070-05.mp3">皮影戏</span>)</div>
+						<div class="text suit">
+							<span class="FZKai" data-audio="070-05.mp3">皮影戏<span class="suit" style="font-weight: 600;">(<span class="gRegula">píyîngxì</span>)</span></span>는 가죽이나 종이로 만든 인형으로 하는 그림자극으로, 연주와 노래가 곁들여진다. 인형극 공연자는 인형에 연결된
+							막대기로 움직임을 미세하게 조종하며 음악에 맞춰 공연한다. 인형 뒤에서 조명을 비추면 반투명한 천에 비쳐진 형상을 볼 수 있다. 공연자는 직접 인형도 제작하고, 노래와
+							입담, 여러 인형을 동시에 조종하는 기술, 악기를 연주하는 등의 다양한 기술을 가지고 있다.
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript">
+		const page = {
+			//컨텐츠에 정답 확인이 존재하는지 여부
+			isAnswer: false,
+			// 단어장 노출 여부 판단.
+			isVocabulary: false,
+			//정답 보기
+			showAnswer: () => {},
+			//정답 숨기기
+			hideAnswer: () => {},
+			// 단어장 보기
+			showVocabulary: () => {},
+		};
+		$(document).ready(function () {});
+	</script>
+	<script src="../common/js/script.js"></script>
+</html>

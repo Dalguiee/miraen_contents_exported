@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>미래엔 중국어</title>
+    <script src="./../common/lib/jquery-3.7.1.min.js"></script>
+    <!-- SUIT Variable 폰트 -->
+    <link
+      href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/variable/woff2/SUIT-Variable.css"
+      rel="stylesheet"
+    />
+    <link href="../common/css/comm.css" rel="stylesheet" />
+    <link href="./css/3_01_21.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div id="wrap" class="china_wrap content_wrap">
+      <div class="title_box title_box3 dp_flex">
+        <div class="num_box">
+          <span style="color: #c1802c">4</span>
+        </div>
+        <div class="text_box">
+          <span>중국어 어순에 맞게 문장을 완성해 봅시다.</span>
+        </div>
+      </div>
+      <div class="full_content">
+        <div class="con1" data-tab="1">
+          <div class="index suit">(1)</div>
+          <div class="text_box-warp">
+            <div class="text_box gRegula" data-audio="049-18.mp3">mèimei</div>
+            <div class="text_box gRegula" data-audio="049-19.mp3">nî</div>
+            <div class="text_box gRegula" data-audio="049-20.mp3">ma</div>
+            <div class="text_box gRegula" data-audio="049-21.mp3">yôu</div>
+          </div>
+          <span class="suit">너는 여동생이 있니?</span>
+        </div>
+        <div class="con2" data-tab="1">
+          <span
+            class="gRegula answer"
+            data-audio="049-22.mp3"
+            style="display: none"
+            >Nî yôu mèimei ma</span
+          >
+          <div class="text">?</div>
+          <button class="btn3 answer_btn">정답</button>
+          <button class="btn3 reset_btn" style="display: none">
+            다시 하기
+          </button>
+        </div>
+        <div class="con1" data-tab="2" style="display: none">
+          <div class="index suit">(2)</div>
+          <div class="text_box-warp">
+            <div class="text_box gRegula" data-audio="049-23.mp3">yí ge</div>
+            <div class="text_box gRegula" data-audio="049-24.mp3">yôu</div>
+            <div class="text_box gRegula" data-audio="049-25.mp3">dìdi</div>
+            <div class="text_box gRegula" data-audio="049-26.mp3">wô</div>
+          </div>
+          <span class="suit">나는 남동생 한 명이 있어.</span>
+        </div>
+        <div class="con2" data-tab="2" style="display: none">
+          <span
+            class="gRegula answer"
+            data-audio="049-27.mp3"
+            style="display: none"
+            >Wô yôu yí ge dìdi</span
+          >
+          <div class="text">.</div>
+          <button class="btn3 answer_btn">정답</button>
+          <button class="btn3 reset_btn" style="display: none">
+            다시 하기
+          </button>
+        </div>
+      </div>
+      <div class="pagination dp_flex" style="margin-bottom: 36px">
+        <span class="active dot" data-index="1"></span>
+        <span class="dot" data-index="2"></span>
+      </div>
+      <div class="number-page">
+        <div class="item">01</div>
+        <div class="item">02</div>
+        <div class="item">03</div>
+        <div class="item active">04</div>
+        <div class="item">05</div>
+        <div class="item">06</div>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript">
+    const page = {
+      //컨텐츠에 정답 확인이 존재하는지 여부
+      isAnswer: false,
+      // 단어장 노출 여부 판단.
+      isVocabulary: false,
+      //정답 보기
+      showAnswer: () => {
+        $(".answer_btn").hide();
+        $(".reset_btn").show();
+        $(".reset").hide();
+        $(".answer").show();
+      },
+      //정답 숨기기
+      hideAnswer: () => {
+        $(".reset_btn").hide();
+        $(".answer_btn").show();
+        $(".reset").show();
+        $(".answer").hide();
+      },
+      // 단어장 보기
+      showVocabulary: () => {},
+    };
+    $(document).ready(function () {
+      // setPopup(1);
+    });
+  </script>
+  <script src="../common/js/script.js"></script>
+  <script type="text/javascript">
+    //개별정답 버튼
+    $(".answer_btn").on("click", function () {
+      let index = $(".answer_btn").index(this);
+      $(this).hide();
+      $(this).next().show();
+      $(".reset").eq(index).hide();
+      $(".answer").eq(index).show();
+    });
+    //다시풀기 버튼
+    $(".reset_btn").on("click", function () {
+      let index = $(".reset_btn").index(this);
+      $(this).hide();
+      $(this).prev().show();
+      $(".answer").eq(index).hide();
+      $(".reset").eq(index).show();
+    });
+  </script>
+</html>

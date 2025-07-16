@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>미래엔 중국어</title>
+  <script src="./../common/lib/jquery-3.7.1.min.js"></script>
+  <script src="./../common/lib/howler-2.1.3.min.js"></script>
+  <!-- SUIT Variable 폰트 -->
+  <link href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/variable/woff2/SUIT-Variable.css"
+    rel="stylesheet" />
+  <link href="../common/css/comm.css" rel="stylesheet" />
+  <link href="./css/1_01_01.css" rel="stylesheet" />
+</head>
+
+<body>
+  <div id="wrap" class="china_wrap content_wrap">
+    <div class="btn_box dp_flex">
+      <button class="btn popup_btn blue" data-index="2">해석</button>
+      <!-- <div class="tempBttns">
+        <button onclick="page.showAnswer(event)" data-index="1" class="tempBttn answer_btn">
+          임시정답
+        </button>
+        <button onclick="page.hideAnswer(event)" data-index="1" class="tempBttn reset_btn" style="display: none">
+          다시하기
+        </button>
+      </div> -->
+    </div>
+
+    <div class="full_content dp_flex dp_flex_column">
+      <div class="unit_box dp_flex">
+        <!-- <div class="number">1</div> -->
+        <div class="text_box dp_flex" data-audio="023-01.mp3">
+          <div class="title FZKai">第一课</div>
+          <div class="sub_title gRegula">Dì yå kè</div>
+        </div>
+      </div>
+      <div class="content_box dp_flex dp_flex_column relative">
+        <button class="btn popup_btn purple" data-index="1">제목 찬트</button>
+        <div class="dp_flex dp_flex_column" data-audio="023-02.mp3">
+          <div class="question FZKai">
+            <span class="FZKai">你好!</span>
+          </div>
+          <div class="pron">
+            <span class="gRegula">Nî</span>
+            <span class="gRegula">hâo!</span>
+          </div>
+        </div>
+        <div class="answer_box">
+          <div class="ex_box default dp_flex">
+            <div class="answer answer1"></div>
+            <div class="answer answer2"></div>
+          </div>
+          <div class="correct_box correct dp_flex" style="display: none">
+            <div class="answer answer1 suit" style="margin-right: 53px">
+              너
+            </div>
+            <div class="answer answer2 suit" style="margin-right: 20px">
+              안녕하다, 좋다
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 팝업 -->
+    <div class="popup_bg" style="display: none"></div>
+    <!-- 찬트 -->
+    <div class="popup popup1" data-popup="1" style="display: none">
+      <div class="tag bmjua dp_flex">제목 찬트</div>
+      <button class="btn btn3 listen_btn chantPlay" data-audio="023-03.mp3">
+        찬트 듣기
+      </button>
+      <button class="btn btn3 listen_btn chantStop" style="display: none">
+        찬트 정지
+      </button>
+      <button class="close_btn"></button>
+      <div class="popup_content">
+        <div class="line line1">
+          <span class="suit">너 </span><span class="simhei">你<span class="gRegula"><span class="suit">(</span>nî<span class="suit">)</span></span></span>, <span
+            class="suit">너는 </span><span class="simhei">你<span class="gRegula"><span class="suit">(</span>nî<span class="suit">)</span></span></span>
+        </div>
+        <div class="line line2">
+          <span class="suit">안녕하다 </span><span class="simhei">好<span class="gRegula"><span class="suit">(</span>hâo<span class="suit">)</span></span></span>, <span
+            class="suit">좋다 </span><span class="simhei">好<span class="gRegula"><span class="suit">(</span>hâo<span class="suit">)</span></span></span>
+        </div>
+        <div class="line line3">
+          <span class="suit">만났을 때 하는 인사,
+            <span class="simhei">你好!<span class="gRegula"><span class="suit">(</span>Nî hâo!<span class="suit">)</span></span></span></span>
+        </div>
+        <div class="line line5">
+          <span class="suit">안녕! 안녕!</span>
+          <span class="simhei">你好!<span class="gRegula"><span class="suit">(</span>Nî hâo!<span class="suit">)</span></span></span>
+        </div>
+        <div class="line line6">
+          <span class="suit"> 친구들과 인사해요.</span>
+          <span class="simhei">你好!<span class="gRegula"><span class="suit">(</span>Nî hâo!<span class="suit">)</span></span></span>
+        </div>
+        <div class="line line7">
+          <span class="suit">안녕! 안녕! </span><span class="simhei">你好!<span class="gRegula"><span class="suit">(</span>Nî hâo!<span class="suit">)</span></span></span>
+        </div>
+      </div>
+    </div>
+
+    <div class="popup popup2" data-popup="2" style="display: none">
+      <div class="tag bmjua dp_flex">해석</div>
+      <button class="close_btn"></button>
+      <div class="popup_content dp_flex dp_flex_column">
+        <div class="question FZKai">你好!</div>
+        <div class="pron gRegula">Nî hâo!</div>
+        <div class="answer suit">안녕하세요!</div>
+      </div>
+    </div>
+  </div>
+</body>
+
+<script type="text/javascript">
+  const page = {
+    //컨텐츠에 정답 확인이 존재하는지 여부
+    isAnswer: true,
+    // 단어장 노출 여부 판단. 이벤트 호출하지 않으면 노출하지 않음.
+    isVocabulary: false,
+    //정답 보기
+    showAnswer: () => {
+      $(".tempBttn.answer_btn").hide();
+      $(".tempBttn.reset_btn").show();
+
+      $(".default").hide();
+      $(".correct").show();
+    },
+    //정답 숨기기
+    hideAnswer: () => {
+      $(".tempBttn.reset_btn").hide();
+      $(".tempBttn.answer_btn").show();
+
+      $(".correct").hide();
+      $(".default").show();
+    },
+    // 단어장 보기
+    showVocabulary: () => {
+      setPopup(7);
+    },
+  };
+</script>
+<script crossorigin src="../common/lib/libBundle.js"></script>
+<script src="../common/js/script.js"></script>
+<script src="../common/js/rolePlayerCh.js"></script>
+<script src="../common/js/vocabularyBook.js"></script>
+<script type="text/javascript">
+  // 찬트 듣기
+  $(".chantPlay").on("click", function () {
+    $(this).hide();
+    $(".chantStop").show();
+  });
+  // 찬트 정지
+  $(".chantStop").on("click", function () {
+    audioStop();
+    $(this).hide();
+    $(".chantPlay").show();
+  });
+</script>
+
+</html>

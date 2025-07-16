@@ -1,0 +1,17 @@
+{
+  "lang": ["한자", "병음"],
+  "subtitlelist": [
+    { "start": 6.7, "end": 8.5, "value": ["Zhè shì shéi?", "这是谁?"] },
+    {
+      "start": 9.2,
+      "end": 11.4,
+      "value": ["Zhè shì wô gçge.", "这是我哥哥。"]
+    },
+    {
+      "start": 12.3,
+      "end": 14.4,
+      "value": ["Tã jånnián duõ dà?", "他今年多大?"]
+    },
+    { "start": 15.1, "end": 17.2, "value": ["Ñrshí suì.", "二十岁。"] }
+  ]
+}

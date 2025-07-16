@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>미래엔 중국어</title>
+		<script src="./../common/lib/jquery-3.7.1.min.js"></script>
+		<!-- SUIT Variable 폰트 -->
+		<link href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/variable/woff2/SUIT-Variable.css" rel="stylesheet" />
+		<link href="../common/css/comm.css" rel="stylesheet" />
+		<link href="./css/5_01_15.css" rel="stylesheet" />
+	</head>
+
+	<body>
+		<div id="wrap" class="china_wrap express_wrap">
+			<div class="btn_box dp_flex">
+				<button class="btn popup_btn blue" data-index="2">보충</button>
+				<!-- <div class="tempBttns">
+					<button onclick="page.showVocabulary()" data-index="1" class="tempBttn">단어장</button>
+				</div> -->
+			</div>
+
+			<div class="full_content">
+				<div class="title_box dp_flex">
+					<div class="express_tag">
+						<span>표현</span>
+						<div class="plus"></div>
+					</div>
+					<div class="text_box">
+						<span class="suit">칭찬 표현</span>
+					</div>
+				</div>
+
+				<div class="content_box dp_flex dp_flex_column">
+					<div class="text_box text_box1">
+						<span data-audio="067-57.mp3">
+							<span class="simhei" style="line-height: 33px;">真棒!</span> <br />
+							<span class="gRegula">Zhçn bàng!</span> <br />
+						</span>
+						<span class="suit">정말 훌륭해!</span>
+					</div>
+					<div class="text_box text_box2">
+						<span data-audio="067-58.mp3">
+							<span class="simhei">好极<span class="chSpace" style="margin-left: -6px;">了!</span></span> <br />
+							<span class="gRegula">Hâojí le!</span> <br />
+						</span>
+						<span class="suit">아주 좋아!</span>
+					</div>
+					<div class="text_box text_box3">
+						<span data-audio="067-59.mp3">
+							<span class="simhei">很厉害!</span> <br />
+							<span class="gRegula">Hên lìhai!</span> <br />
+						</span>
+						<span class="suit">매우 대단해!</span>
+					</div>
+					<div class="img_box">
+						<img src="../5/images/5_01_15/img01.png" alt="" class="img img1" />
+					</div>
+				</div>
+			</div>
+
+			<div class="popup_bg" style="display: none"></div>
+			<!-- 단어장 -->
+			<div class="popup vocabularyBook" data-popup="1" style="display: none">
+				<div class="tag bmjua dp_flex">단어장</div>
+				<button class="close_btn"></button>
+				<div class="popup_content dp_flex">
+					<div class="word_list_box dp_flex dp_flex_column">
+						<div class="word_content">
+							<div class="list dp_flex voca_popup_btn active" data-audio="067-60.mp3">
+								<span class="gRegula">zhçn</span>
+							</div>
+							<div class="list dp_flex voca_popup_btn" data-audio="067-61.mp3">
+								<span class="gRegula">bàng</span>
+							</div>
+							<div class="list dp_flex voca_popup_btn" data-audio="067-62.mp3">
+								<span class="gRegula">jí</span>
+							</div>
+							<div class="list dp_flex voca_popup_btn" data-audio="067-63.mp3">
+								<span class="gRegula">lìhai</span>
+							</div>
+						</div>
+					</div>
+					<div class="show_word_box dp_flex dp_flex_column">
+						<div class="china_box dp_flex">
+							<div class="voca_popup_tab" data-audio="067-60.mp3">
+								<span class="FZKai">真</span>
+								<span class="gRegula">zhçn</span>
+							</div>
+							<div class="voca_popup_tab" data-audio="067-61.mp3" style="display: none">
+								<span class="FZKai">棒</span>
+								<span class="gRegula">bàng</span>
+							</div>
+							<div class="voca_popup_tab" data-audio="067-62.mp3" style="display: none">
+								<span class="FZKai">极</span>
+								<span class="gRegula">jí</span>
+							</div>
+							<div class="voca_popup_tab" data-audio="067-63.mp3" style="display: none">
+								<span class="FZKai">厉害</span>
+								<span class="gRegula">lìhai</span>
+							</div>
+						</div>
+						<div class="korea_box dp_flex">
+							<div class="voca_warp">
+								<span class="suit">정말</span>
+								<span class="suit" style="display: none">뛰어나다</span>
+								<span class="suit" style="display: none">아주, 극히</span>
+								<span class="suit" style="display: none">대단하다</span>
+							</div>
+						</div>
+						<div class="show_btn-warp">
+							<button class="btn3 show_pinyin_btn" style="display: none">병음 보기</button>
+							<button class="btn3 hide_pinyin_btn">병음 가리기</button>
+							<button class="btn3 show_btn" style="display: none">뜻 보기</button>
+							<button class="btn3 hide_btn">뜻 감추기</button>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- 보충 -->
+			<div class="popup popup2" data-popup="2" style="display: none">
+				<div class="tag bmjua dp_flex">보충</div>
+				<button class="close_btn"></button>
+				<div class="popup_content">
+					<div class="popup_scroll">
+						<div class="title"><span class="suit">칭찬과 겸손 표현</span></div>
+						<div class="content">
+							<ul class="list">
+								<li class="list-item suit">
+									<span class="suit">칭찬 표현</span>
+									<ul class="sub-list">
+										<li class="sub-list-item">
+											<span data-audio="067-64.mp3">
+												<span class="FZKai">好酷!</span>
+												<span class="gRegula ml-10">Hâo kù!</span>
+											</span>
+											<span class="suit ml-10">멋지다!</span>
+										</li>
+										<li class="sub-list-item">
+											<span data-audio="067-65.mp3">
+												<span class="FZKai">真厉害!</span>
+												<span class="gRegula ml-10">Zhçn lìhai!</span>
+											</span>
+											<span class="suit ml-10">정말 대단해!</span>
+										</li>
+										<li class="sub-list-item">
+											<span data-audio="067-66.mp3">
+												<span class="FZKai">真地道!</span>
+												<span class="gRegula ml-10">Zhçn dìdao!</span>
+											</span>
+											<span class="suit ml-10">정말 뛰어나다!</span>
+										</li>
+										<li class="sub-list-item">
+											<span data-audio="067-67.mp3">
+												<span class="FZKai">了不起!</span>
+												<span class="gRegula ml-10">Liâobuqî!</span>
+											</span>
+											<span class="suit ml-10">대단하다!</span>
+										</li>
+										<li class="sub-list-item">
+											<span data-audio="067-68.mp3">
+												<span class="FZKai">做得好!</span>
+												<span class="gRegula ml-10">Zuò de hâo!</span>
+											</span>
+											<span class="suit ml-10">잘한다!</span>
+										</li>
+									</ul>
+								</li>
+								<li class="list-item suit">
+									<span class="suit">겸손 표현</span>
+									<ul class="sub-list">
+										<li class="sub-list-item">
+											<span data-audio="067-69.mp3">
+												<span class="FZKai chDot">哪里哪里。</span>
+												<span class="gRegula ml-10">Nâlî nâlî.</span>
+											</span>
+											<span class="suit ml-10">천만에요.</span>
+										</li>
+										<li class="sub-list-item">
+											<span data-audio="067-70.mp3">
+												<span class="FZKai chDot">哪儿的话。</span>
+												<span class="gRegula ml-10">Nâr de huà.</span>
+											</span>
+											<span class="suit ml-10">별말씀을요.</span>
+										</li>
+										<li class="sub-list-item">
+											<span data-audio="067-71.mp3">
+												<span class="FZKai">过奖了!</span>
+												<span class="gRegula ml-10">Guòjiâng le!</span>
+											</span>
+											<span class="suit ml-10">과찬이십니다!</span>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript">
+		const page = {
+			//컨텐츠에 정답 확인이 존재하는지 여부
+			isAnswer: false,
+			// 단어장 노출 여부 판단.
+			isVocabulary: true,
+			//정답 보기
+			showAnswer: () => {},
+			//정답 숨기기
+			hideAnswer: () => {},
+			// 단어장 보기
+			showVocabulary: () => {
+				setPopup(1);
+			},
+		};
+		$(document).ready(function () {
+			// setPopup(1);
+		});
+	</script>
+	<script src="../common/js/script.js"></script>
+	<script src="../common/js/vocabularyBook.js"></script>
+</html>

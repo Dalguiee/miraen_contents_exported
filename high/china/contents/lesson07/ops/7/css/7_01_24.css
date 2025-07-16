@@ -1,0 +1,165 @@
+/* 헤더 */
+#wrap > .title_box3 {
+  top: 0;
+  gap: 20px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+#wrap > .title_box .text_box {
+  padding-bottom: 0;
+}
+#wrap > .title_box .text_box .suit{
+  font-size: 30px;
+  font-weight: 800;
+  line-height: 36px;
+}
+#wrap > .title_box .text_box .suit .purple{
+  color: #764A8A;
+}
+
+#wrap > .title_box3 .num_box {
+  color: rgba(193, 128, 44, 1);
+}
+
+/* 푸터 */
+
+/* 컨텐츠 */
+.full_content {
+  padding-top: 75px;
+}
+
+.full_content .content{
+  width: 1001px;
+  height: 300px;
+  background-image: url(../images/7_01_24/content_bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding-left: 360px;
+  padding-bottom: 20px;
+}
+.full_content .content .suit{
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 50px;
+  display: inline-block;
+  text-align: start;
+  text-indent: 30px;
+}
+
+
+/* 팝업 */
+.popup{
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  padding: 56px 40px 20px 40px;
+}
+.popup .popup_content{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  padding: 0 !important;
+  gap: 0 !important;
+}
+/* 설명 */
+.popup.explan{
+  width: fit-content !important;
+  padding: 46px 24px 10px 24px;
+}
+.popup.explan1{
+  top: 100px !important;
+  right: 100px !important;
+}
+.popup.explan .popup_content{
+  padding: 0 !important;
+}
+.popup.explan .popup_content .simhei{
+  font-size: 32px !important;
+  line-height: 50px !important;
+  font-weight: 400 !important;
+}
+.popup.explan .popup_content .FZKai{
+  font-size: 32px !important;
+  line-height: 50px !important;
+  font-weight: 400 !important;
+}
+.popup.explan .popup_content .notoSans{
+  font-size: 32px !important;
+  line-height: 50px !important;
+  font-weight: 400 !important;
+}
+.popup.explan .popup_content .gRegula{
+  font-size: 32px !important;
+  line-height: 50px !important;
+  font-weight: 400 !important;
+}
+.popup.explan .popup_content .suit{
+  font-size: 32px !important;
+  line-height: 50px !important;
+  font-weight: 600 !important;
+}
+/* 단어게임 */
+.popup.game .popup_content .game_box{
+  margin: 0 !important;
+}
+/* 단어장 */
+.popup.vocabularyBook{
+  padding: 0 !important;
+}
+.popup.vocabularyBook .popup_content{
+  flex-direction: unset !important;
+  padding: 56px 44px 0 44px !important;
+  gap: 40px !important;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+
+/* 해석 */
+.popup1 .popup_content {
+  padding-left: 15px !important;
+}
+
+.popup1 .popup_content .content .context .suit{
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 47px;
+}
+.popup1 .popup_content .content .grammers {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  margin-top: 20px;
+  gap: 40px;
+}
+.popup1 .popup_content .content .grammers .line{
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  gap: 10px;
+}
+.popup1 .popup_content .content .grammers .line .simhei{
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 47px;
+}
+.popup1 .popup_content .content .grammers .line .gRegula{
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 47px;
+}
+.popup1 .popup_content .content .grammers .line .suit{
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 47px;
+
+}

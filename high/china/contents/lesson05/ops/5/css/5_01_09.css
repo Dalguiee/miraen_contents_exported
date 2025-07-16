@@ -1,0 +1,195 @@
+/* express_tag */
+.china_wrap.express_wrap .express_tag {
+	display: inline-block;
+	padding: 11px 22px 2px 9px;
+	background-color: rgba(215, 223, 150, 1);
+	border-radius: 12px;
+	position: relative;
+}
+.china_wrap.express_wrap .express_tag::after {
+	content: '';
+	border-top: 10px solid rgba(255, 255, 255, 1);
+	border-left: 12px solid transparent;
+	border-bottom: 12px solid transparent;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+.china_wrap.express_wrap .express_tag span {
+	font-size: 32px;
+	color: rgba(83, 141, 109, 1);
+	font-weight: 400;
+	font-family: 'BMJUA', sans-serif;
+}
+.china_wrap.express_wrap .express_tag .plus {
+	width: 10px;
+	aspect-ratio: 1/1;
+	position: absolute;
+	top: 8px;
+	right: 11px;
+}
+.china_wrap.express_wrap .express_tag .plus::before,
+.china_wrap.express_wrap .express_tag .plus::after {
+	content: '';
+	width: 2.4px;
+	height: 10px;
+	background-color: rgba(255, 241, 0, 1);
+	border-radius: 99px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.china_wrap.express_wrap .express_tag .plus::after {
+	transform-origin: 0% 0%;
+	transform: rotate(90deg) translate(-50%, -50%);
+}
+
+/* title_box */
+#wrap.china_wrap.express_wrap > .title_box {
+	top: 4px;
+	left: 0;
+}
+.china_wrap.express_wrap .title_box .text_box {
+	margin-left: 11px;
+	font-size: 40px;
+	font-weight: 700;
+	line-height: 50px;
+	color: rgba(62, 113, 117, 1);
+}
+
+/* context_box */
+.china_wrap.express_wrap .content_box {
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+	margin: 53px 0 0;
+	padding: 0 20px;
+}
+.china_wrap.express_wrap .content_box .img_box {
+	flex: 0 0 277px;
+	margin: 0 20px;
+}
+.china_wrap.express_wrap .content_box .img_box > img{
+	width: 100%;
+	object-fit: cover;
+}
+
+.china_wrap.express_wrap .content_box .box_wrap {
+	position: relative;
+}
+.china_wrap.express_wrap .content_box .box_wrap.left {
+	flex: 0 0 315px;
+}
+.china_wrap.express_wrap .content_box .box_wrap.right {
+	flex: 0 0 289px;
+}
+.china_wrap.express_wrap .content_box .box_wrap.left .box {
+	top: 16px;
+	right: -3px;
+}
+.china_wrap.express_wrap .content_box .box_wrap.right .box {
+	top: 16px;
+	left: -7px;
+	padding-left: 10px;
+}
+.china_wrap.express_wrap .content_box .box_wrap.right .box .box_content {
+	margin-right: -28px;
+	text-indent: 15px;
+}
+.china_wrap.express_wrap .content_box .box {
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+.china_wrap.express_wrap .content_box .box .box_title {
+	position: relative;
+	display: inline-block;
+	padding: 8px 36px;
+	margin: 0 0 22px;
+	font-weight: 700;
+	font-size: 32px;
+	line-height: 40px;
+	color: rgba(35, 24, 21, 1);
+	background-color: rgba(251, 224, 219, 1);
+	border-radius: 16px;
+}
+.china_wrap.express_wrap .content_box .box .box_title::after {
+	position: absolute;
+	display: block;
+	content: '';
+	right: 0;
+	bottom: -19px;
+	width: 0;
+	height: 0;
+	border-top: 16px solid rgba(251, 224, 219, 1);
+	border-right: 19px solid rgba(251, 224, 219, 1);
+	border-bottom: 16px solid transparent;
+	border-left: 19px solid transparent;
+}
+.china_wrap.express_wrap .content_box .box_wrap.right .box .box_title::after {
+	right: unset;
+	bottom: -19px;
+	left: 0;
+	width: 0;
+	height: 0;
+	border-top: 16px solid rgba(251, 224, 219, 1);
+	border-right: 19px solid transparent;
+	border-bottom: 16px solid transparent;
+	border-left: 19px solid rgba(251, 224, 219, 1);
+}
+.china_wrap.express_wrap .content_box .box .box_content {
+	display: block;
+	font-weight: 600;
+	font-size: 28px;
+	line-height: 36px;
+}
+.china_wrap.express_wrap .content_box .box_wrap.left .box .box_title {
+	align-self: flex-end;
+}
+.china_wrap.express_wrap .content_box .box_wrap.left .box .box_content {
+	word-break: keep-all;
+	text-indent: 15px;
+}
+.china_wrap.express_wrap .content_box .box_wrap.right .box .box_title {
+	position: relative;
+	align-self: flex-start;
+}
+
+/** popup **/
+/* 보충 */
+.china_wrap .popup.popup1 .popup_content {
+	padding: 52px 56px 20px 56px;
+}
+.china_wrap .popup.popup1 .popup_content .title {
+	font-weight: 800;
+	font-size: 40px;
+	line-height: 48px;
+	color: rgba(35, 24, 21, 1);
+}
+.china_wrap .popup.popup1 .popup_content .list {
+	margin-top: 18px;
+}
+.china_wrap .popup.popup1 .popup_content .item {
+	position: relative;
+	margin-top: 12px;
+	padding-left: 28px;
+}
+.china_wrap .popup.popup1 .popup_content .item::after {
+	position: absolute;
+	content: '';
+	top: 17px;
+	left: 2px;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background-color: rgba(35, 24, 21, 1);
+}
+.china_wrap .popup.popup1 .popup_content .item_text span {
+	font-weight: 600;
+	font-size: 34px;
+	line-height: 44px;
+	color: rgba(35, 24, 21, 1);
+	word-break: keep-all;
+}

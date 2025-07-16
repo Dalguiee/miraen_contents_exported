@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>미래엔 중국어</title>
+  <script src="./../common/lib/jquery-3.7.1.min.js"></script>
+  <script src="./../common/lib/howler-2.1.3.min.js"></script>
+  <!-- SUIT Variable 폰트 -->
+  <link href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/variable/woff2/SUIT-Variable.css"
+    rel="stylesheet" />
+  <link href="../common/css/comm.css" rel="stylesheet" />
+  <link href="./css/1_01_23.css" rel="stylesheet" />
+</head>
+
+<body>
+  <div id="wrap" class="china_wrap">
+    <div class="top-title"></div>
+    <!-- bttns -->
+    <div class="btn_box flex absolute">
+      <button class="btn blue explan_popup_btn">대본</button>
+    </div>
+
+    <!-- contents -->
+    <div class="full_content">
+      <div class="content">
+        <div class="text-box mb-42 mt-12">
+          <div class="label"></div>
+          <span class="suit fs-30 line-40 fw-6">녹음을 듣고, 해당하는 운모를 골라 봅시다.</span>
+        </div>
+        <div class="content_box">
+          <div class="item index1">
+            <div class="index suit fw-6 fs-40 line-40 mr-24">(1)</div>
+            <div class="radio_box gRegula fs-40 mr-50 answer" data-index="1" data-a-index="1">
+              <span class="suit mr-6">①</span> <span data-audio="M019-12.mp3">ou</span>
+            </div>
+            <div class="radio_box gRegula fs-40" data-a-index="1">
+              <span class="suit mr-6">②</span> <span data-audio="M019-47.mp3">uo</span>
+            </div>
+            <div class="btn_box">
+              <button class="btn btn3 mr-10" data-audio="017-36.mp3">
+                음원</button><button class="btn btn3 answer_btn" data-index="1">정답</button><button
+                class="btn btn3 reset_btn" data-index="1" style="display: none">
+                다시 풀기
+              </button>
+            </div>
+          </div>
+          <div class="item index2">
+            <div class="index suit fw-6 fs-40 line-40 mr-24">(2)</div>
+            <div class="radio_box gRegula fs-40 mr-50" data-a-index="2">
+              <span class="suit mr-6">①</span> <span data-audio="M019-27.mp3">ie</span>
+            </div>
+            <div class="radio_box gRegula fs-40 answer" data-index="2" data-a-index="2">
+              <span class="suit mr-6">②</span>
+              <span data-audio="M019-64.mp3"><span class="relative">u<span class="two-dot small"></span></span>e</span>
+            </div>
+            <div class="btn_box">
+              <button class="btn btn3 mr-10" data-audio="017-37.mp3">
+                음원</button><button class="btn btn3 answer_btn" data-index="2">정답</button><button
+                class="btn btn3 reset_btn" data-index="2" style="display: none">
+                다시 풀기
+              </button>
+            </div>
+          </div>
+          <div class="item index3">
+            <div class="index suit fw-6 fs-40 line-40 mr-24">(3)</div>
+            <div class="radio_box gRegula fs-40 mr-50" data-a-index="3">
+              <span class="suit mr-6">①</span> <span data-audio="M019-04.mp3">an</span>
+            </div>
+            <div class="radio_box gRegula fs-40 answer" data-index="3" data-a-index="3">
+              <span class="suit mr-6">②</span> <span data-audio="M019-19.mp3">en</span>
+            </div>
+            <div class="btn_box">
+              <button class="btn btn3 mr-10" data-audio="017-38.mp3">
+                음원</button><button class="btn btn3 answer_btn" data-index="3">정답</button><button
+                class="btn btn3 reset_btn" data-index="3" style="display: none">
+                다시 풀기
+              </button>
+            </div>
+          </div>
+          <div class="item index4">
+            <div class="index suit fw-6 fs-40 line-40 mr-24">(4)</div>
+            <div class="radio_box gRegula fs-40 mr-50 answer" data-index="4" data-a-index="4">
+              <span class="suit mr-6">①</span> <span data-audio="M019-30.mp3">ian</span>
+            </div>
+            <div class="radio_box gRegula fs-40" data-a-index="4">
+              <span class="suit mr-6">②</span> <span data-audio="M019-50.mp3">uan</span>
+            </div>
+            <div class="btn_box">
+              <button class="btn btn3 mr-10" data-audio="017-39.mp3">
+                음원</button><button class="btn btn3 answer_btn" data-index="4">정답</button><button
+                class="btn btn3 reset_btn" data-index="4" style="display: none">
+                다시 풀기
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="popup_bg" style="display: none"></div>
+    <!-- 대본 -->
+    <div class="popup explan" style="display: none">
+      <div class="tag bmjua dp_flex">대본</div>
+      <button class="close_btn"></button>
+      <div class="popup_content">
+        <div class="content">
+          <span class="suit">(1) <span class="gRegula">ou</span>&nbsp; (2)
+            <span class="gRegula"><span class="relative">u<span class="two-dot small"
+                  style="top: 7px"></span></span>e</span>&nbsp; (3) <span class="gRegula">en</span>&nbsp; (4)
+            <span class="gRegula">ian</span></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<script type="text/javascript">
+  const page = {
+    //컨텐츠에 정답 확인이 존재하는지 여부
+    isAnswer: false,
+    // 단어장 노출 여부 판단. 이벤트 호출하지 않으면 노출하지 않음.
+    isVocabulary: false,
+    //정답 보기
+    showAnswer: () => { },
+    //정답 숨기기
+    hideAnswer: () => { },
+    // 단어장 보기
+    showVocabulary: () => { },
+  };
+</script>
+<script src="../common/js/script.js"></script>
+
+<script type="text/javascript">
+  $(".answer_btn").on("click", function () {
+    const index = $(this).data("index");
+    $(this).hide();
+    $(`.reset_btn[data-index="${index}"]`).show();
+    $(`.answer[data-index="${index}"]`).addClass("active");
+    $(`.radio_box[data-a-index="${index}"]`).css("pointer-events", "unset");
+  });
+  $(".reset_btn").on("click", function () {
+    const index = $(this).data("index");
+    $(this).hide();
+    $(`.answer_btn[data-index="${index}"]`).show();
+    $(`.answer[data-index="${index}"]`).removeClass("active");
+    $(`.radio_box[data-a-index="${index}"]`).css("pointer-events", "none");
+  });
+</script>
+
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>미래엔 중국어</title>
+    <script src="./../common/lib/jquery-3.7.1.min.js"></script>
+    <script src="./../common/lib/howler-2.1.3.min.js"></script>
+    <!-- SUIT Variable 폰트 -->
+    <link
+      href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/variable/woff2/SUIT-Variable.css"
+      rel="stylesheet"
+    />
+    <link href="../common/css/comm.css" rel="stylesheet" />
+    <link href="./css/4_01_25.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div id="wrap" class="china_wrap content_wrap">
+      <div class="title_box">
+        <div class="title">
+          <span class="titleText suit"
+            ><img src="./images/4_01_24/logo.svg" alt="" /><span
+              class="index"
+            ></span
+          ></span>
+        </div>
+      </div>
+
+      <div class="btn_box dp_flex">
+        <button class="btn popup_btn blue" data-index="3">보충</button>
+      </div>
+
+      <div class="full_content">
+        <div class="content">
+          <img src="./images/4_01_25/content_bg.png" class="content_bg" />
+          <img src="./images/4_01_25/img1.png" class="img1" />
+          <div class="item">
+            <div class="title suit">중국의 명절</div>
+            <div class="sub-title mb-4" data-audio="060-16.mp3">
+              <span class="simhei line-56">中秋节</span>
+              <span class="gRegula line-42">Zhõngqiñjié</span>
+            </div>
+            <div class="line line-40 mb-20">
+              <span class="suit fs-32">음력 8월 15일</span>
+            </div>
+            <div class="line" style="text-indent: 40px">
+              <span class="suit"
+                >한국의 추석에 해당하는 명절인
+                <span class="simhei" data-audio="060-16.mp3">中秋节</span>에는
+                보름달처럼<br />둥근
+                <span data-audio="060-17.mp3"
+                  ><span class="simhei">月饼</span>(<span class="gRegula"
+                    >yuèbing</span
+                  >)</span
+                >을 먹고, 달구경을 하며<br />가족 간의 화합과 행복을
+                기원합니다.</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="popup_bg" style="display: none"></div>
+      <!-- 보충 -->
+      <div class="popup popup2 expPopup" data-popup="3" style="display: none">
+        <div class="tag bmjua dp_flex">보충</div>
+        <button class="close_btn"></button>
+        <div class="popup_content">
+          <div class="popupTitle">
+            <span class="suit"
+              >중추제(<span class="simhei" data-audio="060-16.mp3">中秋节</span
+              >)와 월병(<span class="simhei" data-audio="060-17.mp3">月饼</span
+              >)</span
+            >
+          </div>
+
+          <div class="lineBox">
+            <div class="line line1 dp_flex">
+              <span class="txt suit">
+                중추제(<span class="FZKai" data-audio="060-16.mp3">中秋节</span>)는
+                <span class="notoSans">‘</span>음력 8월 15일이 가을의 중간에 
+                있다.<span class="notoSans">’</span>는 의미로 붙여진 이름이다.
+                보름달을 감상하고 월병을 먹는데, 월병은 팥, 밤, 대추, 호박,
+                해바라기씨, 땅콩, 살구 등을 조린 소를 넣어 둥글게 구운
+                과자이다. 둥근 모양은 가족의 단결과 원만함을 상징한다.
+                원(<span class="simhei" data-audio="060-18.mp3">元</span>)
+                나라의 폭정을 견디지 못한 주원장(<span
+                  class="simhei"
+                  data-audio="060-19.mp3"
+                  >朱元璋</span
+                >)이 이끄는 의병들이 감시를 피해 무장 봉기일을 적은 쪽지를
+                월병 안에 넣어 돌린 데서 풍습이 유래되었다.
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript">
+    const page = {
+      //컨텐츠에 정답 확인이 존재하는지 여부
+      isAnswer: false,
+      // 단어장 노출 여부 판단. 이벤트 호출하지 않으면 노출하지 않음.
+      isVocabulary: false,
+      //정답 보기
+      showAnswer: () => {
+        $(".answer_btn").hide();
+        $(".reset_btn").show();
+        $(".answer").show();
+        $(".reset").hide();
+      },
+      //정답 숨기기
+      hideAnswer: () => {
+        $(".answer_btn").show();
+        $(".reset_btn").hide();
+        $(".answer").hide();
+        $(".reset").show();
+      },
+      // 단어장 보기
+      showVocabulary: () => {
+        setPopup(7);
+      },
+    };
+  </script>
+  <script type="text/javascript"></script>
+  <script crossorigin src="../common/lib/libBundle.js"></script>
+  <script src="../common/js/script.js"></script>
+  <script src="../common/js/rolePlayerCh.js"></script>
+  <script src="../common/js/vocabularyBook.js"></script>
+</html>

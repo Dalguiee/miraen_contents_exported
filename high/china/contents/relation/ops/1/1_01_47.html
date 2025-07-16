@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>미래엔 중국어</title>
+    <script src="./../common/lib/jquery-3.7.1.min.js"></script>
+    <!-- SUIT Variable 폰트 -->
+    <link
+      href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/variable/woff2/SUIT-Variable.css"
+      rel="stylesheet"
+    />
+    <link href="../common/css/comm.css" rel="stylesheet" />
+    <link href="./css/1_01_47.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div id="wrap" class="china_wrap">
+      <div class="title_box">
+        <div class="title">
+          <img class="title_logo" src="./images/1_01_47/logo.svg" alt="">
+          <span class="title_text suit">중국 한시를 더 찾아보고 마음을 움직인 구절을 발표해 봅시다.</span>
+        </div>
+      </div>
+
+      <div class="btn_box dp_flex">
+        <button class="btn3 answer_btn" data-index="0">활동 예시</button>
+        <button class="btn3 reset_btn" data-index="0" style="display: none">다시 하기</button>
+        <!-- <button class="btn popup_btn blue" data-index="3">참고</button> -->
+      </div>
+
+      <div class="full_content">
+        <div class="content">
+          <!-- <div class="title">
+            <div class="index_box">
+              <span class="suit">예</span>
+            </div>
+            <span class="suit">530</span>
+            <span class="gRegula arrow">→</span>
+            <span class="gRegula">wû sãn líng<span class="simhei"><span class="suit">(</span>五三零<span class="suit">)</span></span></span>
+            <span class="gRegula arrow">→</span>
+            <span class="gRegula">wô xiâng nî<span class="simhei"><span class="suit">(</span>我想你<span class="suit">)</span></span></span>
+            <span class="suit" style="margin-left: 10px;">네가 보고 싶어</span>
+          </div> -->
+          <div class="context_sec">
+            <div class="reset reset0"></div>
+            <div class="answer answer0" style="display: none;">
+              <div class="text_sec">
+                <!-- <span class="index suit">•</span> -->
+                <span class="context suit">
+                  <span class="simhei" data-audio="112-08.mp3">会当凌绝顶, 一览众山小。</span><br>
+                  <span class="suit">
+                    두보(<span class="simhei" data-audio="112-09.mp3">杜甫</span>)가 지은 《망악(<span class="simhei" data-audio="112-10.mp3">望岳</span>)》의 한 구절이다.<br>
+                    <span class="notoSans">‘</span>반드시 정상에 올라 낮은 산들을 둘러보리라<span class="notoSans">’</span>는 뜻으로,<br>
+                    <span class="notoSans">‘</span>어려움을 극복하고 정상에 도달하면, 모든 어려움이 사소하게 느껴진다<span class="notoSans">’</span>는<br>
+                    의미라서 어려움이 닥칠 때 이 구절이 도움이 될 것 같다.<br>
+                  </span>
+                </span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- 팝업 -->
+      <div class="popup_bg" style="display: none"></div>
+
+    </div>
+  </body>
+
+  <script type="text/javascript">
+    const page = {
+      //컨텐츠에 정답 확인이 존재하는지 여부
+      isAnswer: false,
+      // 단어장 노출 여부 판단.
+      isVocabulary: false,
+      //정답 보기
+      showAnswer: () => {},
+      //정답 숨기기
+      hideAnswer: () => {},
+      // 단어장 보기
+      showVocabulary: () => {},
+    };
+    $(document).ready(function () {});
+  </script>
+  <script type="text/javascript">
+    // 정답 버튼 앞에 경로를 따로 따서 팝업정답 스크립트 분리지정 가능
+    $(".answer_btn").on("click", function () {
+      // let index = $(".answer_btn").index(this);
+      let index = $(this).data("index");
+      $(this).hide();
+      $(`.reset_btn[data-index=${index}]`).show();
+      
+      // $(`.answer`).show();
+      $(`.answer${index}`).show();
+      $(`.reset${index}`).hide();
+    });
+    // 다시 하기 버튼
+    $(".reset_btn").on("click", function () {
+      // let index = $(".reset_btn").index(this);
+      let index = $(this).data("index");
+      $(this).hide();
+      $(`.answer_btn[data-index=${index}]`).show();
+      
+      // $(".answer").hide();
+      $(`.answer${index}`).hide();
+      $(`.reset${index}`).show();
+    });
+  </script>
+  <script src="../common/js/script.js"></script>
+  <script type="text/javascript"></script>
+</html>

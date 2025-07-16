@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>미래엔 중국어</title>
+    <script src="./../common/lib/jquery-3.7.1.min.js"></script>
+    <script src="./../common/lib/howler-2.1.3.min.js"></script>
+    <!-- SUIT Variable 폰트 -->
+    <link
+      href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/variable/woff2/SUIT-Variable.css"
+      rel="stylesheet"
+    />
+    <link href="../common/css/comm.css" rel="stylesheet" />
+    <link href="./css/7_01_30.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div id="wrap" class="china_wrap content_wrap">
+      <div class="title_box">
+        <div class="title">
+          <span class="mainCon suit"
+            ><img class="titleNum" src="./images/7_01_30/logo.svg" />한국과
+            중국에서 즐겨 먹는 간식을 비교해 봅시다.</span
+          >
+        </div>
+      </div>
+
+      <div class="btn_box dp_flex">
+        <div class="bttns">
+          <button class="btn popup_btn blue" data-index="3">참고</button>
+          <button class="btn3 answer_btn" data-index="0">예시 답안</button>
+          <button class="btn3 reset_btn" data-index="0" style="display: none">
+            다시 풀기
+          </button>
+        </div>
+      </div>
+
+      <div class="full_content">
+        <div class="tipImgBox">
+          <img class="tipImg" src="./images/1_01_28/tip.svg" alt="" />
+        </div>
+        <div class="content dp_flex dp_flex_column">
+          <figure class="context context1">
+            <img class="contentImg" src="./images/7_01_30/content1.svg" />
+            <figcaption class="textBox textBox1 simhei" data-audio="090-20.mp3">
+              糖葫芦<br /><span class="gRegula">tánghúlu</span>
+            </figcaption>
+            <figcaption class="textBox textBox2 simhei" data-audio="090-21.mp3">
+              珍珠奶茶<br /><span class="gRegula">zhçnzhñ nâichá</span>
+            </figcaption>
+          </figure>
+          <div class="context context2">
+            <img class="bgImg" src="./images/7_01_30/point.svg" alt="" />
+            <span class="answer suit" style="display: none">
+              한국 간식: 약과, 유과, 식혜, 수정과, 순대, 어묵, 전, 호떡<br />
+              중국 간식:
+              <span class="simhei" data-audio="090-22.mp3">手抓饼</span>(달걀,
+              파, 햄 등을 넣고 구운 토스트),<br />
+              <span class="simhei" data-audio="090-23.mp3">馅饼</span>(야채와
+              고기를 넣어 만든 파이),
+              <span class="simhei" data-audio="090-24.mp3">瓜子</span>(양념한
+              해바라기씨),<br />
+              <span class="simhei" data-audio="090-20.mp3">糖葫芦</span
+              >(산사나무 등의 열매나 과일을 대나무 꼬치에 꽂아 물엿을<br>묻혀 굳힌
+              간식)
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 팝업 -->
+      <div class="popup_bg" style="display: none"></div>
+      <!-- 예시 답안 -->
+      <!-- <div class="popup expPopup" data-popup="3" style="display: none">
+        <div class="tag bmjua dp_flex">예시 답안</div>
+        <button class="close_btn"></button>
+        <div class="popup_content">
+          <div class="contentFig">
+            <img class="lineImg" src="./images/1_01_28/textLine.png" alt="">
+            <span class="suit">
+              우리나라에서 친근한 사이에 <span class="notoSans">‘</span>식사하셨어요?<span class="notoSans">’</span>, <span class="notoSans">‘</span>어디 가세요?<span class="notoSans">’</span> 같은<br>
+              일상의 안부를 묻거나 간단한 질문을 하면서 인사를 대신하는 것처럼 중국에도 아는 사람끼리는 <span class="simhei" data-audio="023-04.mp3">你好</span>뿐만 아니라 다양한 표현으로 인사<br>
+              한다. 체면을 중시하는 중국인들은 헤어질 때도 형식적인 인사를<br>
+              자주 한다. 예를 들어 헤어질 때 <span class="notoSans">‘</span><span class="simhei" data-audio="031-07.mp3">有时间来我家玩儿</span>(시간 있을 때<br>
+              우리 집에 놀러 오세요)!<span class="notoSans">’</span>라고 인사하면, 실제 방문 의사 여부에<br>
+              관계없이 <span class="notoSans">‘</span><span class="simhei" data-audio="031-08.mp3">我一定去</span>(꼭 갈게요)!<span class="notoSans">’</span>와 같은 형식적인 대답을 하는 것이<br>
+              일반적이다.
+            </span>
+          </div>
+        </div>
+      </div> -->
+
+      <!-- 참고 -->
+      <div class="popup popup3 expPopup" data-popup="3" style="display: none">
+        <div class="tag bmjua dp_flex">참고</div>
+        <button class="close_btn"></button>
+        <div class="popup_content">
+          <div class="title">
+            <span class="suit">우리나라 간식의 중국어 표현</span>
+          </div>
+          <div class="content">
+            <div class="flex_wrapper">
+              <div class="flex_wrapper_sec flex_wrapper_sec1">
+                <div class="line line3">
+                  <span class="suit">호떡</span>
+                  <span class="simhei" data-audio="090-28.mp3">糖烧饼 <span class="gRegula">tángshãobîng</span></span>
+                </div>
+                <div class="line line4">
+                  <span class="suit">식혜</span>
+                  <span class="simhei" data-audio="090-29.mp3">甜米露 <span class="gRegula">tiánmîlù</span></span>
+                </div>
+                <div class="line line5">
+                  <span class="suit">유과</span>
+                  <span class="simhei" data-audio="090-30.mp3">油蜜果 <span class="gRegula">yóumìguô</span></span>
+                </div>
+              </div>
+              <div class="flex_wrapper_sec flex_wrapper_sec2">
+                <div class="line line6">
+                  <span class="suit">순대</span>
+                  <span class="simhei" data-audio="090-31.mp3">米肠 <span class="gRegula">mîcháng</span></span>
+                </div>
+                <div class="line line7">
+                  <span class="suit">약과</span>
+                  <span class="simhei" data-audio="090-32.mp3">药果 <span class="gRegula">yàoguô</span></span>
+                </div>
+                <div class="line line8">
+                  <span class="suit">양갱</span>
+                  <span class="simhei" data-audio="090-33.mp3">羊羹 <span class="gRegula">yánggçng</span></span>
+                </div>
+              </div>
+            </div>
+            <div class="line line1">
+              <span class="suit">떡볶이</span>
+              <span class="simhei" data-audio="090-26.mp3">辣炒年糕 <span class="gRegula">là châoniángão</span></span>
+            </div>
+            <div class="line line2">
+              <span class="suit">팥빙수</span>
+              <span class="simhei" data-audio="090-27.mp3">红豆刨冰 <span class="gRegula">hóngdòu bàobång</span></span>
+            </div>  
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript">
+    const page = {
+      //컨텐츠에 정답 확인이 존재하는지 여부
+      isAnswer: false,
+      // 단어장 노출 여부 판단. 이벤트 호출하지 않으면 노출하지 않음.
+      isVocabulary: false,
+      //정답 보기
+      showAnswer: () => {
+        $(".answer_btn").hide();
+        $(".reset_btn").show();
+        $(".answer").show();
+      },
+      //정답 숨기기
+      hideAnswer: () => {
+        $(".answer_btn").show();
+        $(".reset_btn").hide();
+        $(".answer").hide();
+      },
+      // 단어장 보기
+      showVocabulary: () => {
+        setPopup(7);
+      },
+    };
+  </script>
+  <script type="text/javascript">
+    // 정답 버튼
+    $(".answer_btn").on("click", function () {
+      let index = $(".answer_btn").index(this);
+      $(this).hide();
+      $(".reset_btn").eq(index).show();
+      $(".answer").eq(index).show();
+      $(".reset").eq(index).hide();
+    });
+    // 다시 하기 버튼
+    $(".reset_btn").on("click", function () {
+      let index = $(".reset_btn").index(this);
+      $(this).hide();
+      $(".answer_btn").eq(index).show();
+      $(".answer").eq(index).hide();
+      $(".reset").eq(index).show();
+    });
+  </script>
+  <script crossorigin src="../common/lib/libBundle.js"></script>
+  <script src="../common/js/script.js"></script>
+  <script src="../common/js/rolePlayerCh.js"></script>
+  <script src="../common/js/vocabularyBook.js"></script>
+</html>

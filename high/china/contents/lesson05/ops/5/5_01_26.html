@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>미래엔 중국어</title>
+		<script src="./../common/lib/jquery-3.7.1.min.js"></script>
+		<!-- SUIT Variable 폰트 -->
+		<link href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/variable/woff2/SUIT-Variable.css" rel="stylesheet" />
+		<link href="../common/css/comm.css" rel="stylesheet" />
+		<link href="./css/5_01_26.css" rel="stylesheet" />
+	</head>
+
+	<body>
+		<div id="wrap" class="china_wrap content_wrap">
+			<div class="title_box title_box5 dp_flex">
+				<div class="img_box">
+					<img src="../common/images/culture_icon.svg" alt="문화" class="img img1" />
+				</div>
+				<div class="text_box">
+					<span class="suit">중국의 <span class="highlight purple">전통 공연 예술</span></span>
+				</div>
+			</div>
+
+			<div class="btn_box dp_flex">
+				<button class="btn popup_btn blue" data-index="1">활동</button>
+			</div>
+
+			<div class="full_content dp_flex">
+				<!-- <div class="titleBox">
+					<span class="suit">그림자극</span>
+					<span class="FZKai" data-audio="070-05.mp3" data-audio-combo="070-05">皮影戏</span>
+					<span class="gRegula" data-audio="070-05.mp3" data-audio-combo="070-05">píyîngxì</span>
+				</div> -->
+				<div class="content">
+					<p class="content-text suit">중국 전통극의 얼굴 분장은 색깔로 등장인물의 특징과 개성, 성격을 표현합니다.</p>
+				</div>
+			</div>
+
+			<!-- 활동 -->
+			<div class="popup_bg" style="display: none"></div>
+			<div class="popup popup1" data-popup="1" style="display: none">
+				<div class="tag bmjua dp_flex">활동</div>
+				<button class="close_btn"></button>
+				<div class="popup_content">
+					<div class="popup-scroll">
+						<div class="title suit"><span class="FZKai" data-audio="070-13.mp3">脸谱</span> 그리기</div>
+						<div class="text suit">
+							<span class="FZKai" data-audio="070-13.mp3">脸谱<span class="suit" style="font-weight: 600;">(<span class="gRegula">liânpû</span>)</span></span>는 다양한 색깔로 인물의 성격과 개성을 나타낸다.<br /><span class="FZKai" data-audio="070-13.mp3">脸谱</span>의 화려한
+							색채로 관중들은 멀리서도 배역을 이해할 수 있으며,배우들의 실감 나는 표정 연기를 감상할 수 있다.
+						</div>
+						<ul class="list">
+							<li class="list-item suit"><span class="FZKai" data-audio="070-13.mp3">脸谱</span>의 색이 나타내는 인물의 성격을 알아본다.</li>
+							<li class="list-item suit">표현하고 싶은 인물을 선정하고, 선정한 이유와 인물의 성격을 쓴다.</li>
+							<li class="list-item suit">인물의 성격이나 특징이 잘 드러나도록 <span class="FZKai" data-audio="070-13.mp3">脸谱</span>를 그린다.</li>
+							<li class="list-item suit">삶은 달걀이나 탁구공 등을 활용할 수 있다.</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript">
+		const page = {
+			//컨텐츠에 정답 확인이 존재하는지 여부
+			isAnswer: false,
+			// 단어장 노출 여부 판단.
+			isVocabulary: false,
+			//정답 보기
+			showAnswer: () => {},
+			//정답 숨기기
+			hideAnswer: () => {},
+			// 단어장 보기
+			showVocabulary: () => {},
+		};
+		$(document).ready(function () {});
+	</script>
+	<script src="../common/js/script.js"></script>
+</html>

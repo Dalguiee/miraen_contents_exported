@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>미래엔 중국어</title>
+    <script src="./../common/lib/jquery-3.7.1.min.js"></script>
+    <!-- SUIT Variable 폰트 -->
+    <link
+      href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/variable/woff2/SUIT-Variable.css"
+      rel="stylesheet"
+    />
+    <link href="../common/css/comm.css" rel="stylesheet" />
+    <link href="./css/4_01_03.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div id="wrap" class="china_wrap story_wrap">
+      <div class="full_content dp_flex">
+        <div class="left_box">
+          <div class="script_box">
+            <p class="suit">
+              국토가 넓은 중국은 동쪽 끝과 서쪽 끝<br />지역 간에 실제로 4시간의
+              시차가 있지만<br />모든 지역에서 동일하게 베이징 표준시를<br />
+              사용합니다. 그래서 오전 8시일 때 동쪽<br />베이징은 아침이지만
+              서쪽 신장 웨이우얼<br />자치구는 아직 해가 뜨지 않은 새벽입니다.
+            </p>
+            <div class="action_box speak">
+              <span class="hintText suit">
+                한국과 중국의 현재 시각을 말해 봅시다.</span
+              >
+            </div>
+          </div>
+        </div>
+        <div class="right_box">
+          <div class="img_box">
+            <img src="./images/4_01_03/img1.png" class="img img1" />
+          </div>
+        </div>
+
+        <div class="btn-wrap">
+          <!-- <button data-index="3" class="popup_btn btn purple">활동 예시</button> -->
+          <button class="btn explan_popup_btn purple"><span>활동 예시</span></button>
+          <button data-index="1" class="popup_btn btn purple">참고</button>
+          <button data-index="2" class="popup_btn btn purple">보충</button>
+        </div>
+      </div>
+
+      <div class="popup_bg" style="display: none"></div>
+      <!-- 보충 -->
+      <div class="popup popup1" data-popup="2" style="display: none">
+        <div class="tag bmjua dp_flex">보충</div>
+        <button class="close_btn"></button>
+        <div class="popup_content">
+          <div class="popupTitle">
+            <span class="suit">베이징 표준시(<span class="FZKai" data-audio="053-07.mp3">北京时间</span>, Beijing Time)</span>
+          </div>
+          <div class="textSec">
+            <p class="suit">
+              중국 국토의 동쪽과 서쪽 끝의 거리는 약 5,200km에 달해 세계<br />시차표에
+              따르면 5개 시차 구간이 있어 실제로 4시간 정도의<br />시차가 난다.
+              청 왕조 말기에만 해도 중국은 5개 시간대로 구분<br />하였으나,
+              1949년 중화인민공화국이 탄생하면서 마오쩌둥은<br />통제의 효율성을
+              목적으로 수도 이름을 넣어 <span class="notoSans">‘</span>베이징
+              시간<span class="notoSans">’</span>으로<br />명명하고 표준
+              시간(GMT+8)으로 정하여 중국 전체 시간권을<br />통일했다.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 활동 예시 -->
+      <!-- <div class="popup popup1" data-popup="3" style="display: none">
+        <div class="tag bmjua dp_flex">보충</div>
+        <button class="close_btn"></button>
+        <div class="popup_content">
+          <div class="popupTitle">
+            <span class="suit">한국과 중국의 시차</span>
+          </div>
+          <div class="textSec">
+            <p class="suit">
+              한국과 중국은 1시간의 시차가 있으며, 한국이 중국보다 1시간<br>느리다. 그래서 한국이 오전 9시일 때 중국은 오전 8시이다
+            </p>
+          </div>
+        </div>
+      </div> -->
+
+      <!-- 활동 예시(설명) -->
+      <div class="popup explan explan1" style="display: none">
+        <div class="tag bmjua dp_flex">활동 예시</div>
+        <button class="close_btn">
+          <span class="sr-only">닫기</span>
+        </button>
+        <div class="popup_content dp_flex dp_flex_column">
+          <span class="suit">
+            한국과 중국은 1시간의 시차가 있으며,<br>
+            한국이 중국보다 1시간 느리다. 그래서<br>
+            한국이 오전 9시일 때 중국은 오전 8시이다.
+          </span>
+        </div>
+      </div>
+
+
+      <!-- 참고 -->
+      <div class="popup popup2 voca2" data-popup="1" style="display: none">
+        <div class="tag bmjua dp_flex">참고</div>
+        <button class="close_btn"></button>
+        <div class="popup_content">
+          <div class="popup-scroll">
+            <div class="title suit">세계 주요 도시 시차</div>
+            <div class="list-warp">
+              <ul class="popup_content_list">
+                <li class="item">
+                  <div class="item_audio">
+                    <span class="suit tableHead tableHeadLiner">도시</span>
+                  </div>
+                  <div class="item_audio">
+                    <span class="suit tableHead tableHeadLiner">시차</span>
+                  </div>
+                  <span class="suit tableHead">예</span>
+                </li>
+                <li class="item">
+                  <div class="item_audio">
+                    <span class="suit tableLiner">서울</span>
+                  </div>
+                  <div class="item_audio">
+                    <span class="suit tableLiner">+9</span>
+                  </div>
+                  <span class="suit">AM 10:00</span>
+                </li>
+                <li class="item">
+                  <div class="item_audio">
+                    <span class="suit tableLiner">도쿄</span>
+                  </div>
+                  <div class="item_audio">
+                    <span class="suit tableLiner">+9</span>
+                  </div>
+                  <span class="suit">AM 10:00</span>
+                </li>
+                <li class="item">
+                  <div class="item_audio">
+                    <span class="suit tableLiner">베이징</span>
+                  </div>
+                  <div class="item_audio">
+                    <span class="suit tableLiner">+8</span>
+                  </div>
+                  <span class="suit">AM 9:00</span>
+                </li>
+                <li class="item">
+                  <div class="item_audio">
+                    <span class="suit tableLiner">파리</span>
+                  </div>
+                  <div class="item_audio">
+                    <span class="suit tableLiner">+1</span>
+                  </div>
+                  <span class="suit">AM 2:00</span>
+                </li>
+                <li class="item">
+                  <div class="item_audio">
+                    <span class="suit tableLiner">런던</span>
+                  </div>
+                  <div class="item_audio">
+                    <span class="suit tableLiner">0</span>
+                  </div>
+                  <span class="suit">AM 1:00</span>
+                </li>
+                <li class="item">
+                  <div class="item_audio">
+                    <span class="suit tableLiner">시드니</span>
+                  </div>
+                  <div class="item_audio">
+                    <span class="suit tableLiner">+10</span>
+                  </div>
+                  <span class="suit">AM 11:00</span>
+                </li>
+                <li class="item">
+                  <div class="item_audio">
+                    <span class="suit tableLiner">LA</span>
+                  </div>
+                  <div class="item_audio">
+                    <span class="suit tableLiner">-8</span>
+                  </div>
+                  <span class="suit">PM 5:00</span>
+                </li>
+                <li class="item">
+                  <div class="item_audio">
+                    <span class="suit tableLiner">뉴욕</span>
+                  </div>
+                  <div class="item_audio">
+                    <span class="suit tableLiner">-5</span>
+                  </div>
+                  <span class="suit">PM 8:00</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript">
+    const page = {
+      //컨텐츠에 정답 확인이 존재하는지 여부
+      isAnswer: false,
+      // 단어장 노출 여부 판단.
+      isVocabulary: false,
+      //정답 보기
+      showAnswer: () => {},
+      //정답 숨기기
+      hideAnswer: () => {},
+      // 단어장 보기
+      showVocabulary: () => {},
+    };
+    $(document).ready(function () {});
+  </script>
+  <script type="text/javascript">
+    $("[data-audio]").hover(
+      function () {
+        let selectedData = $(this).data("audio");
+        $("[data-audio]").each(function (key, item) {
+          let data = $(item).data("audio");
+          if (data == selectedData) {
+            $(item).addClass("speak");
+          }
+        });
+      },
+      function () {
+        $("[data-audio]").removeClass("speak");
+      }
+    );
+  </script>
+  <script src="../common/js/script.js"></script>
+</html>

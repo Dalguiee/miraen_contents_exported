@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>미래엔 중국어</title>
+  <script src="./../common/lib/jquery-3.7.1.min.js"></script>
+  <script src="./../common/lib/howler-2.1.3.min.js"></script>
+  <!-- SUIT Variable 폰트 -->
+  <link href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/variable/woff2/SUIT-Variable.css"
+    rel="stylesheet" />
+  <link href="../common/css/comm.css" rel="stylesheet" />
+  <link href="./css/6_01_16.css" rel="stylesheet" />
+</head>
+
+<body>
+  <div id="wrap" class="china_wrap content_wrap">
+    <div class="title_box">
+      <div class="title">
+        <span class="mainCon suit"><img class="titleLogo" src="./images/6_01_16/logo.png" /><span
+            class="titleNum"></span><span class="titleText purple"></span></span>
+      </div>
+    </div>
+
+    <div class="btn_box dp_flex">
+      <div class="bttns">
+        <button class="btn popup_btn blue" data-index="2">참고</button>
+        <button class="btn popup_btn blue" data-index="3">추가 활동</button>
+        <button class="btn answer_btn btn3">활동 예시</button>
+        <button class="btn reset_btn btn3" style="display: none">다시 하기</button>
+      </div>
+    </div>
+
+    <div class="full_content">
+      <div class="content dp_flex dp_flex_column">
+        <div class="contentTitle">
+          <span class="main suit">선생님이 불러 주는 문장을 듣고 알맞은 위치에 장소 붙임딱지를 붙여 봅시다.</span><br />
+          <span class="sub gRegula">
+            <img class="text_icon" src="./images/6_01_16/subIcon.png" alt="" /><span data-audio="078-32.mp3">Yóujú zài wô de yòubian.</span><img class="text_pointer" src="./images/6_01_16/page_pointer.svg" alt="">
+          </span>
+        </div>
+        <div class="under">
+          <div class="contextSec">
+            <img class="reset_bg" src="./images/6_01_16/content_reset.svg" alt="" />
+            <img class="answer_bg" src="./images/6_01_16/content.svg" alt="" style="display: none;"/>
+            <div class="answer answer1" data-audio="078-01.mp3" style="display: none">
+              <span class="simhei">市场</span>
+              <span class="gRegula">shìchâng</span>
+            </div>
+            <div class="answer answer2" data-audio="078-04.mp3" style="display: none">
+              <span class="simhei">学校</span>
+              <span class="gRegula">xuéxiào</span>
+            </div>
+            <div class="answer answer3" data-audio="078-03.mp3" style="display: none">
+              <span class="simhei">邮局</span>
+              <span class="gRegula">yóujú</span>
+            </div>
+            <div class="answer answer4" data-audio="078-02.mp3" style="display: none">
+              <span class="simhei">银行</span>
+              <span class="gRegula">yínháng</span>
+            </div>
+            <span class="hint hint1 gRegula" data-audio="019-11.mp3">wô</span>
+            <span class="hint hint2 gRegula"><span data-audio="078-28.mp3">qiánbian</span><span class="suit hint_answer" style="display: none;">앞쪽</span></span>
+            <span class="hint hint3 gRegula"><span data-audio="078-30.mp3">yòubian</span><span class="suit hint_answer" style="display: none;">오른쪽</span></span>
+            <span class="hint hint4 gRegula"><span data-audio="078-31.mp3">hòubian</span><span class="suit hint_answer" style="display: none;">뒤쪽</span></span>
+            <span class="hint hint5 gRegula"><span data-audio="078-29.mp3">zuôbian</span><span class="suit hint_answer" style="display: none;">왼쪽</span></span>
+            <div class="contextBox">
+              <div class="line line1">
+                <div class="textLine textLine1" data-audio="078-01.mp3">
+                  <span class="simhei">市场</span>
+                  <span class="gRegula">shìchâng</span>
+                </div>
+                <div class="textLine textLine2">
+                  <span class="suit">시장</span>
+                </div>
+              </div>
+              <div class="line line1">
+                <div class="textLine textLine1" data-audio="078-02.mp3">
+                  <span class="simhei">银行</span>
+                  <span class="gRegula">yínháng</span>
+                </div>
+                <div class="textLine textLine2">
+                  <span class="suit">은행</span>
+                </div>
+              </div>
+              <div class="line line1">
+                <div class="textLine textLine1" data-audio="078-03.mp3">
+                  <span class="simhei">邮局</span>
+                  <span class="gRegula">yóujú</span>
+                </div>
+                <div class="textLine textLine2">
+                  <span class="suit">우체국</span>
+                </div>
+              </div>
+              <div class="line line1">
+                <div class="textLine textLine1" data-audio="078-04.mp3">
+                  <span class="simhei">学校</span>
+                  <span class="gRegula">xuéxiào</span>
+                </div>
+                <div class="textLine textLine2">
+                  <span class="suit">학교</span>
+                </div>
+              </div>
+              <div class="line line1">
+                <div class="textLine textLine1" data-audio="078-05.mp3">
+                  <span class="simhei">医院</span>
+                  <span class="gRegula">yåyuàn</span>
+                </div>
+                <div class="textLine textLine2">
+                  <span class="suit">병원</span>
+                </div>
+              </div>
+              <div class="line line1">
+                <div class="textLine textLine1" data-audio="078-06.mp3">
+                  <span class="simhei">超市</span>
+                  <span class="gRegula">chãoshì</span>
+                </div>
+                <div class="textLine textLine2">
+                  <span class="suit">슈퍼마켓</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="answer answerContext" style="display: none">
+            <div class="line line1">
+              <span class="simhei" data-audio="078-07.mp3">市场在我的前边。</span>
+              <span class="suit">시장은 내 앞쪽에 있다.</span>
+            </div>
+            <div class="line line1">
+              <span class="simhei" data-audio="078-08.mp3">银行在我的左边。</span>
+              <span class="suit">은행은 내 왼쪽에 있다.</span>
+            </div>
+            <div class="line line1">
+              <span class="simhei" data-audio="078-09.mp3">邮局在我的后边。</span>
+              <span class="suit">우체국은 내 뒤쪽에 있다.</span>
+            </div>
+            <div class="line line1">
+              <span class="simhei" data-audio="078-10.mp3">学校在我的右边。</span>
+              <span class="suit">학교는 내 오른쪽에 있다.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="popup_bg" style="display: none"></div>
+
+    <!-- 참고 -->
+    <div class="popup voca2" data-popup="2" style="display: none">
+      <div class="tag bmjua dp_flex">참고</div>
+      <button class="close_btn"></button>
+      <div class="popup_content">
+        <div class="popup-scroll">
+          <div class="title suit">
+            <span class="main suit">장소 명칭</span>
+            <span class="sub suit">102쪽 ③ 장소 명사를 활용하여 장소를 추가 배치할 수 있다.</span>
+          </div>
+          <div class="list-warp">
+            <ul class="popup_content_list">
+              <li class="item">
+                <div class="item_audio tableHead">
+                  <span class="FZKai" data-audio="078-11.mp3" data-audio-combo="078-11">公司</span>
+                  <span class="gRegula" data-audio="078-11.mp3" data-audio-combo="078-11">gõngså</span>
+                  <span class="suit">회사</span>
+                </div>
+                <div class="item_audio tableHead">
+                  <span class="FZKai" data-audio="078-12.mp3" data-audio-combo="078-12">机场</span>
+                  <span class="gRegula" data-audio="078-12.mp3" data-audio-combo="078-12">jåchâng</span>
+                  <span class="suit">공항</span>
+                </div>
+                <div class="item_audio tableHead">
+                  <span class="FZKai" data-audio="078-13.mp3" data-audio-combo="078-13">餐厅</span>
+                  <span class="gRegula" data-audio="078-13.mp3" data-audio-combo="078-13">cãntång</span>
+                  <span class="suit">식당</span>
+                </div>
+                <div class="item_audio tableHead">
+                  <span class="FZKai" data-audio="078-16.mp3" data-audio-combo="078-16">电影院</span>
+                  <span class="gRegula" data-audio="078-16.mp3" data-audio-combo="078-16">diànyîngyuàn</span>
+                  <span class="suit">영화관</span>
+                </div>
+                <div class="item_audio tableHead tableRight">
+                  <span class="FZKai" data-audio="078-15.mp3" data-audio-combo="078-15">图书馆</span>
+                  <span class="gRegula" data-audio="078-15.mp3" data-audio-combo="078-15">túshñguân</span>
+                  <span class="suit">도서관</span>
+                </div>
+              </li>
+              <li class="item">
+                <div class="item_audio tableHead">
+                  <span class="FZKai" data-audio="078-17.mp3" data-audio-combo="078-17">饭店</span>
+                  <span class="gRegula" data-audio="078-17.mp3" data-audio-combo="078-17">fàndiàn</span>
+                  <span class="suit">호텔</span>
+                </div>
+                <div class="item_audio tableHead">
+                  <span class="FZKai" data-audio="078-18.mp3" data-audio-combo="078-18">宿舍</span>
+                  <span class="gRegula" data-audio="078-18.mp3" data-audio-combo="078-18">sùshè</span>
+                  <span class="suit">기숙사</span>
+                </div>
+                <div class="item_audio tableHead">
+                  <span class="FZKai" data-audio="078-14.mp3" data-audio-combo="078-14">书店</span>
+                  <span class="gRegula" data-audio="078-14.mp3" data-audio-combo="078-14">shñdiàn</span>
+                  <span class="suit">서점</span>
+                </div>
+                <div class="item_audio tableHead">
+                  <span class="FZKai" data-audio="078-20.mp3" data-audio-combo="078-20">药店</span>
+                  <span class="gRegula" data-audio="078-20.mp3" data-audio-combo="078-20">yàodiàn</span>
+                  <span class="suit">약국</span>
+                </div>
+                <div class="item_audio tableHead tableRight">
+                  <span class="FZKai" data-audio="078-21.mp3" data-audio-combo="078-21">咖啡厅</span>
+                  <span class="gRegula" data-audio="078-21.mp3" data-audio-combo="078-21">kãfçitång</span>
+                  <span class="suit">카페</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="popup expPopup" data-popup="3" style="display: none">
+      <div class="tag bmjua dp_flex">추가 활동</div>
+      <button class="close_btn"></button>
+      <div class="popup_content">
+        <!-- <div class="popupTitle">
+            <span class="suit">‘일’과 관련된 표현</span>
+          </div> -->
+        <div class="context context1">
+          <span class="title suit">1.</span>
+          <div class="contextSec">
+            <div class="contextTitle">
+              <span class="suit">중국의 교통수단 4컷 만화</span>
+            </div>
+            <div class="text">
+              <span class="suit">
+                중국 교통수단의 특징과 중국 문화가 드러나게 4컷 만화를 그려
+                본다.<br />
+                교통수단 명칭은 중국어로 작성한다.
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="context context2">
+          <span class="title suit">2.</span>
+          <div class="contextSec">
+            <div class="contextTitle">
+              <span class="suit">등굣길 지도 만들기</span>
+            </div>
+            <div class="text">
+              <span class="suit">① 집과 학교가 포함된 동네 지도를 만든다.</span>
+              <span class="suit">② 집에서 학교까지 가는 경로를 표시한다.</span>
+              <span class="suit">③ 등굣길 이동 방향과 이용하는 교통수단을 중국어로
+                표현한다.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<script type="text/javascript">
+  const page = {
+    //컨텐츠에 정답 확인이 존재하는지 여부
+    isAnswer: false,
+    // 단어장 노출 여부 판단. 이벤트 호출하지 않으면 노출하지 않음.
+    isVocabulary: false,
+    //정답 보기
+    showAnswer: () => {
+      $(".answer_btn").hide();
+      $(".reset_btn").show();
+      $(".answer").show();
+      $(".hint").show();
+    },
+    //정답 숨기기
+    hideAnswer: () => {
+      $(".answer_btn").show();
+      $(".reset_btn").hide();
+      $(".answer").hide();
+      $(".hint").hide();
+    },
+    // 단어장 보기
+    showVocabulary: () => {
+      setPopup(7);
+    },
+  };
+</script>
+<script type="text/javascript">
+  // 정답 버튼
+  $(".answer_btn").on("click", function () {
+    let index = $(".answer_btn").index(this);
+    $(this).hide();
+    $(".reset_btn").eq(index).show();
+    $(".answer").show();
+    $(".hint .hint_answer").show();
+    $(".answer_bg").show();
+    $(".reset_bg").hide();
+  });
+  // 다시 하기 버튼
+  $(".reset_btn").on("click", function () {
+    let index = $(".reset_btn").index(this);
+    $(this).hide();
+    $(".answer_btn").eq(index).show();
+    $(".answer").hide();
+    $(".hint .hint_answer").hide();
+    $(".answer_bg").hide();
+    $(".reset_bg").show();
+  });
+</script>
+<script crossorigin src="../common/lib/libBundle.js"></script>
+<script src="../common/js/script.js"></script>
+<script src="../common/js/rolePlayerCh.js"></script>
+<script src="../common/js/vocabularyBook.js"></script>
+
+</html>

@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>미래엔 중국어</title>
+  <script src="./../common/lib/jquery-3.7.1.min.js"></script>
+  <!-- SUIT Variable 폰트 -->
+  <link href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/variable/woff2/SUIT-Variable.css"
+    rel="stylesheet" />
+  <link href="../common/css/comm.css" rel="stylesheet" />
+  <link href="./css/3_01_16.css" rel="stylesheet" />
+</head>
+
+<body>
+  <div id="wrap" class="china_wrap express_wrap">
+    <div class="btn_box dp_flex">
+      <button class="btn popup_btn blue" data-index="1">추가 단어</button>
+      <button class="btn3 popup_btn" data-index="2">예시 답안</button>
+      <!-- <div class="tempBttns">
+        <button onclick="page.showVocabulary()" data-index="1" class="tempBttn">단어장</button>
+      </div> -->
+    </div>
+
+    <div class="full_content">
+      <div class="title_box dp_flex">
+        <div class="img_box">
+          <img src="../common/images/pa_icon.svg" alt="개인 활동 아이콘" class="img img1" />
+        </div>
+
+        <div class="text_box">
+          <span class="suit">동아리 신청서 작성하기</span>
+        </div>
+      </div>
+
+      <div class="content_box dp_flex dp_flex_column">
+        <div class="text_box">
+          <span class="suit">자신이 가입했거나 가입하고 싶은 동아리의 신청서를 작성해
+            봅시다.</span>
+        </div>
+
+        <div class="apply_box dp_flex">
+          <div class="left_box dp_flex dp_flex_column">
+            <div class="icon_box dp_flex">
+              <span class="suit">예</span>
+            </div>
+            <div class="title_box">
+              <span class="suit">동아리 가입 신청서</span>
+            </div>
+            <div class="list_box">
+              <div class="list list1 dp_flex">
+                <div class="tag dp_flex">
+                  <span class="suit">동아리</span>
+                </div>
+                <div class="text">
+                  <span class="suit">중국 영화 감상</span>
+                </div>
+              </div>
+              <div class="list list2 dp_flex">
+                <div class="tag dp_flex">
+                  <span class="suit">이름</span>
+                </div>
+                <div class="text">
+                  <span class="simhei" data-audio="048-01.mp3">林明星</span>
+                </div>
+              </div>
+              <div class="list list3 dp_flex">
+                <div class="tag dp_flex">
+                  <span class="suit">학교</span>
+                </div>
+                <div class="text">
+                  <span class="simhei" data-audio="048-02.mp3">希望<span class="simhei gray">高中</span>
+                  </span>
+                </div>
+              </div>
+              <div class="list list4 dp_flex">
+                <div class="tag dp_flex">
+                  <span class="suit">학년-반</span>
+                </div>
+                <div class="text">
+                  <span class="simhei flex" data-audio="048-03.mp3">
+                    <span class="simhei gray" style="padding-right: 0">二年级</span>
+                    <span class="simhei gray">三班</span>
+                  </span>
+                </div>
+              </div>
+              <div class="list list5 dp_flex">
+                <div class="tag dp_flex">
+                  <span class="suit">가입 신청 이유</span>
+                </div>
+                <div class="text">
+                  <span class="suit">
+                    중국 영화를 통해 중국 문화를<br />
+                    알고 싶어서 가입 신청합니다.
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="right_box dp_flex dp_flex_column">
+            <div class="title_box">
+              <span class="suit">동아리 가입 신청서</span>
+            </div>
+            <div class="list_box">
+              <div class="list list1 dp_flex">
+                <div class="tag dp_flex">
+                  <span class="suit">동아리</span>
+                </div>
+                <div class="text">
+                  <span class="suit">
+                    <span class="v_hidden">중국 영화 감상</span>
+                  </span>
+                </div>
+              </div>
+              <div class="list list2 dp_flex">
+                <div class="tag dp_flex">
+                  <span class="suit">이름</span>
+                </div>
+                <div class="text">
+                  <span class="simhei">
+                    <span class="v_hidden">金太阳</span>
+                  </span>
+                </div>
+              </div>
+              <div class="list list3 dp_flex">
+                <div class="tag dp_flex">
+                  <span class="suit">학교</span>
+                </div>
+                <div class="text tar">
+                  <span class="simhei gray" data-audio="048-04.mp3">高中</span>
+                </div>
+              </div>
+              <div class="list list4 dp_flex">
+                <div class="tag dp_flex">
+                  <span class="suit">학년-반</span>
+                </div>
+                <div class="text">
+                  <span class="simhei">
+                    <span class="v_hidden">二</span>
+                    <span class="simhei gray" data-audio="048-05.mp3">年级</span>
+                    <span class="v_hidden">六</span>
+                    <span class="simhei gray" data-audio="048-06.mp3">班</span>
+                  </span>
+                </div>
+              </div>
+              <div class="list list5 dp_flex">
+                <div class="tag dp_flex">
+                  <span class="suit">가입 신청 이유</span>
+                </div>
+                <div class="text">
+                  <span class="suit">
+                    <span class="v_hidden">중국 영화를 통해 중국 문화를</span>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="popup_bg" style="display: none"></div>
+    <!-- 추가 단어 -->
+    <div class="popup voca2" data-popup="1" style="display: none">
+      <div class="tag bmjua dp_flex">추가 단어</div>
+      <button class="close_btn"></button>
+
+      <div class="popup_content">
+        <div class="popup-scroll">
+          <div class="title suit">동아리 이름 표현</div>
+          <div class="list-warp">
+            <ul class="popup_content_list">
+              <li class="item">
+                <span class="suit">댄스 동아리</span>
+                <div class="item_audio" data-audio="048-07.mp3">
+                  <span class="FZKai">舞蹈社</span>
+                  <span class="gRegula">wûdâo shè</span>
+                </div>
+              </li>
+              <li class="item">
+                <span class="suit">방송반</span>
+                <div class="item_audio" data-audio="048-09.mp3">
+                  <span class="FZKai">广播社</span>
+                  <span class="gRegula">guângbõ shè</span>
+                </div>
+              </li>
+              <li class="item">
+                <span class="suit">촬영 동아리</span>
+                <div class="item_audio" data-audio="048-11.mp3">
+                  <span class="FZKai">摄影社</span>
+                  <span class="gRegula">shèyîng shè</span>
+                </div>
+              </li>
+              <li class="item">
+                <span class="suit">애니메이션<br />
+                  동아리</span>
+                <div class="item_audio" data-audio="048-13.mp3">
+                  <span class="FZKai">动漫社</span>
+                  <span class="gRegula">dòngmàn shè</span>
+                </div>
+              </li>
+              <li class="item">
+                <span class="suit">봉사 동아리</span>
+                <div class="item_audio" data-audio="048-14.mp3">
+                  <span class="FZKai">志愿服务社</span>
+                  <span class="gRegula">zhìyuàn fúwù shè</span>
+                </div>
+              </li>
+              <li class="item">
+                <span class="suit">환경보호<br />
+                  동아리</span>
+                <div class="item_audio" data-audio="048-15.mp3">
+                  <span class="FZKai">环保协会</span>
+                  <span class="gRegula">huánbâo xiéhuì</span>
+                </div>
+              </li>
+              <li class="item">
+                <span class="suit">영화 평론<br />동아리</span>
+                <div class="item_audio" data-audio="048-16.mp3">
+                  <span class="FZKai">影视评论社</span>
+                  <span class="gRegula">yîngshì pínglùn shè</span>
+                </div>
+              </li>
+              <li class="item">
+                <span class="suit">취미 프로그래밍<br />
+                  동아리</span>
+                <div class="item_audio" data-audio="048-17.mp3">
+                  <span class="FZKai">趣味编程社</span>
+                  <span class="gRegula">qùwèi biãnchéng shè</span>
+                </div>
+              </li>
+              <li class="item">
+                <span class="suit">숏폼<br />
+                  영상 제작<br />
+                  동아리</span>
+                <div class="item_audio" data-audio="048-18.mp3">
+                  <span class="FZKai">微视频创作社</span>
+                  <span class="gRegula">wçishìpín<br />
+                    chuàngzuò shè</span>
+                </div>
+              </li>
+              <li class="item">
+                <span class="suit">과학 연구<br />
+                  동아리</span>
+                <div class="item_audio" data-audio="048-08.mp3">
+                  <span class="FZKai">科研社</span>
+                  <span class="gRegula">kçyán shè</span>
+                </div>
+              </li>
+              <li class="item">
+                <span class="suit">문학 동아리</span>
+                <div class="item_audio" data-audio="048-10.mp3">
+                  <span class="FZKai">文学社</span>
+                  <span class="gRegula">wénxué shè</span>
+                </div>
+              </li>
+              <li class="item">
+                <span class="suit">드론 동아리</span>
+                <div class="item_audio" data-audio="048-12.mp3">
+                  <span class="FZKai">无人机社</span>
+                  <span class="gRegula">wúrénjå shè</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 예시 답안 -->
+    <div class="popup popup2" data-popup="2" style="display: none">
+      <div class="tag bmjua dp_flex">예시 답안</div>
+      <button class="close_btn"></button>
+      <div class="popup_content dp_flex dp_flex_column">
+        <div class="apply_box dp_flex dp_flex_column">
+          <div class="title_box">
+            <span class="suit">동아리 가입 신청서</span>
+          </div>
+          <div class="list_box">
+            <div class="list list1 dp_flex">
+              <div class="tag dp_flex">
+                <span class="suit">동아리</span>
+              </div>
+              <div class="text">
+                <span class="suit">
+                  환경 보호 동아리<span class="FZKai" data-audio="048-15.mp3"><span class="suit">(</span>环保协会<span
+                      class="suit">)</span></span>
+                </span>
+              </div>
+            </div>
+            <div class="list list2 dp_flex">
+              <div class="tag dp_flex">
+                <span class="suit">이름</span>
+              </div>
+              <div class="text">
+                <span class="FZKai" data-audio="048-19.mp3">
+                  <span>金太阳</span>
+                </span>
+              </div>
+            </div>
+            <div class="list list3 dp_flex">
+              <div class="tag dp_flex">
+                <span class="suit">학교</span>
+              </div>
+              <div class="text">
+                <span class="FZKai dp_flex">
+                  <span class="FZKai" data-audio="048-20.mp3">未来</span>
+                  <span class="FZKai black" data-audio="048-04.mp3">高中</span>
+                </span>
+              </div>
+            </div>
+            <div class="list list4 dp_flex">
+              <div class="tag dp_flex">
+                <span class="suit">학년-반</span>
+              </div>
+              <div class="text">
+                <span class="FZKai dp_flex">
+                  <span data-audio="048-21.mp3" class="trans">二</span>
+                  <span class="FZKai black" data-audio="048-05.mp3">年级</span>
+                  <span data-audio="048-22.mp3" class="trans">六</span>
+                  <span class="FZKai black" data-audio="048-06.mp3">班</span>
+                </span>
+              </div>
+            </div>
+            <div class="list list5 dp_flex">
+              <div class="tag dp_flex">
+                <span class="suit">가입 신청 이유</span>
+              </div>
+              <div class="text">
+                <span class="suit">하나뿐인 지구를 잘 보존하기 위해 내가 실천할 수 있는 일을
+                  알고 싶어서 가입을 신청합니다.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 단어장 -->
+    <div class="popup vocabularyBook" data-popup="7" style="display: none">
+      <div class="tag bmjua dp_flex">단어장</div>
+      <button class="close_btn"></button>
+      <div class="popup_content dp_flex">
+        <div class="word_list_box dp_flex dp_flex_column">
+          <div class="word_content">
+            <div class="list dp_flex voca_popup_btn active" data-audio="048-06.mp3">
+              <span class="gRegula">bãn</span>
+            </div>
+          </div>
+        </div>
+        <div class="show_word_box dp_flex dp_flex_column">
+          <div class="china_box dp_flex">
+            <div class="voca_popup_tab" data-audio="048-06.mp3">
+              <span class="FZKai">班</span>
+              <span class="gRegula">bãn</span>
+            </div>
+          </div>
+          <div class="korea_box dp_flex">
+            <div class="voca_warp">
+              <span class="suit">반</span>
+            </div>
+          </div>
+          <div class="show_btn-warp">
+            <button class="btn3 show_pinyin_btn" style="display: none">
+              병음 보기
+            </button>
+            <button class="btn3 hide_pinyin_btn">병음 가리기</button>
+            <button class="btn3 show_btn" style="display: none">
+              뜻 보기
+            </button>
+            <button class="btn3 hide_btn">뜻 감추기</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<script type="text/javascript">
+  const page = {
+    //컨텐츠에 정답 확인이 존재하는지 여부
+    isAnswer: false,
+    // 단어장 노출 여부 판단.
+    isVocabulary: true,
+    //정답 보기
+    showAnswer: () => { },
+    //정답 숨기기
+    hideAnswer: () => { },
+    // 단어장 보기
+    showVocabulary: () => {
+      setPopup(7);
+    },
+  };
+  $(document).ready(function () {
+    // setPopup(3);
+  });
+</script>
+<script src="../common/js/script.js"></script>
+<script src="../common/js/vocabularyBook.js"></script>
+
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>미래엔 중국어</title>
+    <script src="./../common/lib/jquery-3.7.1.min.js"></script>
+    <!-- SUIT Variable 폰트 -->
+    <link
+      href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/variable/woff2/SUIT-Variable.css"
+      rel="stylesheet"
+    />
+    <link href="../common/css/comm.css" rel="stylesheet" />
+    <link href="./css/1_01_03.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div id="wrap" class="china_wrap story_wrap">
+      <div class="full_content dp_flex">
+        <div class="left_box">
+          <div class="script_box">
+            <span class="suit">
+              중국 학생들은 친구에게 <span class="gRegula" data-audio="024-01.mp3">‘hãlou’</span>나
+              <span class="gRegula" data-audio="024-02.mp3">‘hãi’</span>로 인사하기도 하는데, 이는 영어의 <span class="gRegula">‘hello’</span>와 <span class="gRegula">‘hi’</span>를 비슷하게 발음한 것입니다. 헤어질 때는 <span class="gRegula">‘bye-bye’</span>와 발음이 비슷한<br>
+              <span class="gRegula" data-audio="024-03.mp3">‘báibái’</span>로도 인사합니다.
+            </span>
+          </div>
+
+          <div class="action_box speak">
+            <span class="hintText suit"><img src="./images/1_01_03/logo.svg" alt="">내가 아는 다른 나라 인사말을 말해 봅시다.</span>
+          </div>
+        </div>
+        <div class="right_box">
+          <div class="img_box">
+            <img src="./images/1_01_03/back_img.png" class="img img1" />
+          </div>
+        </div>
+        <button data-index="1" class="popup_btn btn purple">활동 예시</button>
+      </div>
+
+      <div class="popup_bg" style="display: none"></div>
+      <div class="popup" data-popup="1" style="display: none">
+        <div class="tag bmjua dp_flex">활동 예시</div>
+        <button class="close_btn"></button>
+        <div class="popupContent">
+          <div class="upper">
+            <div class="line line1">
+              <span class="suit">독일: <span class="gRegula">Hallo</span>(할로)</span>
+              <span class="suit">스웨덴: <span class="gRegula">hej</span>(헤이)</span>
+            </div>
+            <div class="line line2">
+              <span class="suit">인도: <span class="gRegula">नमस् त</span>(나마스떼)</span>
+              <span class="suit">케냐: <span class="gRegula">jambo</span>(잠보)</span>
+            </div>
+          </div>
+          <span class="suit">베트남: <span class="gRegula">xin chào</span>(씬 짜오)</span>
+          <span class="suit">러시아: <span class="gRegula">Здравствуйте</span>(즈드라스트부이쩨)</span>
+          <span class="suit">이탈리아: <span class="gRegula">buon giorno</span>(본 조르노)</span>
+          <span class="suit">스페인: <span class="gRegula">buenos dias</span>(부에노스 디아스)</span>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript">
+    const page = {
+      //컨텐츠에 정답 확인이 존재하는지 여부
+      isAnswer: false,
+      // 단어장 노출 여부 판단.
+      isVocabulary: false,
+      //정답 보기
+      showAnswer: () => {},
+      //정답 숨기기
+      hideAnswer: () => {},
+      // 단어장 보기
+      showVocabulary: () => {},
+    };
+    $(document).ready(function () {});
+  </script>
+  <script src="../common/js/script.js"></script>
+</html>

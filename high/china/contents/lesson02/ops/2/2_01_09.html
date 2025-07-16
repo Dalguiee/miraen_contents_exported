@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>미래엔 중국어</title>
+    <script src="./../common/lib/jquery-3.7.1.min.js"></script>
+    <!-- SUIT Variable 폰트 -->
+    <link href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/variable/woff2/SUIT-Variable.css" rel="stylesheet" />
+    <link href="../common/css/comm.css" rel="stylesheet" />
+    <link href="./css/2_01_09.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div id="wrap" class="china_wrap content2_wrap">
+      <div class="title_box dp_flex">
+        <div class="title">
+          <img class="logoImg" src="./images/2_01_09/logo.svg" alt=""><span class="titleText suit">성씨 묻기</span>
+        </div>
+      </div>
+
+      <div class="btn_box btn_box1 dp_flex">
+        <button class="btn popup_btn blue" data-index="2">보충</button>
+        <!-- <div class="tempBttns">
+          <button onclick="page.showVocabulary()" data-index="1" class="tempBttn">단어장</button>
+        </div> -->
+      </div>
+
+      <div class="full_content">
+        <div class="contentTitle">
+          <span class="suit suit1"><span class="simhei" data-audio="035-31.mp3"><span class="notoSans chDotL">‘</span>您贵姓?<span class="notoSans chDotR">’</span></span>은 상대방에게 격식을 갖춰 성씨를 물을 때 사용합니다.</span>
+          <span class="suit suit2">중국에서도 <span class="notoSans">‘</span>왕 선생님<span class="notoSans">’</span>, <span class="notoSans">‘</span>이 사장님<span class="notoSans">’</span>처럼 성씨 뒤에 직업이나 직함을 붙여서<br>부르기도 합니다.</span>
+        </div>
+        <div class="contentSec">
+          <figure class="contentImgFig">
+            <img class="contentImg" src="./images/2_01_09/content.png" alt="">
+          </figure>
+          <div class="context context1">
+            <div class="comboBox" data-audio="035-31.mp3">
+              <span class="simhei">您贵姓?</span>
+              <span class="gRegula">Nín guìxìng?</span>
+            </div>
+            <span class="suit">성<span class="suit">(<span class="simhei">姓</span>)</span>이 어떻게 되십니까?</span>
+          </div>
+          <div class="context context2">
+            <div class="comboBox" data-audio="035-32.mp3">
+              <span class="simhei trRht">我姓王。</span>
+              <span class="gRegula">Wô xìng Wáng.</span>  
+            </div>
+            <span class="suit">저는 왕 씨입니다.</span>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="popup_bg" style="display: none"></div>
+
+      <!-- 단어장 -->
+      <div class="popup vocabularyBook" data-popup="7" style="display: none">
+        <div class="tag bmjua dp_flex">단어장</div>
+        <button class="close_btn"></button>
+        <div class="popup_content dp_flex">
+          <div class="word_list_box dp_flex dp_flex_column">
+            <div class="word_content">
+              <div class="list dp_flex voca_popup_btn active" data-audio="035-34.mp3">
+                <span class="gRegula">guìxìng</span>
+              </div>
+            </div>
+          </div>
+          <div class="show_word_box dp_flex dp_flex_column">
+            <div class="china_box dp_flex">
+              <div class="voca_popup_tab" data-audio="035-34.mp3">
+                <span class="FZKai">贵姓</span>
+                <span class="gRegula">guìxìng</span>
+              </div>
+            </div>
+            <div class="korea_box dp_flex">
+              <div class="voca_warp">
+                <span class="suit">성씨</span>
+              </div>
+            </div>
+            <div class="show_btn-warp">
+              <button class="btn3 show_pinyin_btn" style="display: none">
+                병음 보기
+              </button>
+              <button class="btn3 hide_pinyin_btn">병음 가리기</button>
+              <button class="btn3 show_btn" style="display: none">
+                뜻 보기
+              </button>
+              <button class="btn3 hide_btn">뜻 감추기</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- 보충 -->
+      <div class="popup popup2" data-popup="2" style="display: none">
+        <div class="tag bmjua dp_flex">보충</div>
+        <button class="close_btn"></button>
+        <div class="popup_content">
+
+          <div class="popupTitle">
+            <span class="suit">격식 갖춰 이름 묻기</span>
+          </div>
+
+          <div class="contextSec contextSec1 upper">
+            <div class="line line1 dp_flex">
+              <div class="index_box"><span class="suit">A:</span></div>
+              <div class="textSec" data-audio="035-31.mp3">
+                <div class="text_box text_box1">
+                  <span class="txt txt1 simhei">您贵姓?</span>
+                  <span class="suit">성이 어떻게 되십니까?</span>
+                </div>
+                <div class="text_box text_box2">
+                  <span class="txt gRegula">Nín guìxìng?</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="line line2">
+              <div class="index_box"><span class="suit">B:</span></div>
+              <div class="textSec" data-audio="035-35.mp3">
+                <div class="text_box text_box1">
+                  <span class="txt txt1 simhei chDot">我姓金, 叫太阳。</span>
+                  <span class="suit">저는 김씨이고, 태양이라고 합니다.</span>
+                </div>
+                <div class="text_box text_box2">
+                  <span class="txt gRegula">Wô xìng Jån,<span class="space" style="margin-right: 12px;"></span>jiào Tàiyáng.</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="contextSec contextSec2 under">
+            <div class="line line4 dp_flex">
+              <div class="index_box"><span class="suit">A:</span></div>
+              <div class="textSec" data-audio="035-36.mp3">
+                <div class="text_box text_box1">
+                  <span class="txt txt1 simhei">您怎么称呼?</span>
+                  <span class="suit">당신을 어떻게 불러야 하나요?</span>
+                </div>
+                <div class="text_box text_box2">
+                  <span class="txt gRegula">Nín zênme chçnghu?</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="line line3 dp_flex">
+              <div class="index_box"><span class="suit">B:</span></div>
+              <div class="textSec" data-audio="034-17.mp3">
+                <div class="text_box text_box1">
+                  <span class="txt txt1 simhei chDot">我叫金太阳。</span>
+                  <span class="suit">저는 김태양이라고 합니다.</span>
+                </div>
+                <div class="text_box text_box2">
+                  <span class="txt gRegula">Wô jiào Jån Tàiyáng.</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </body>
+  <script type="text/javascript">
+    const page = {
+      //컨텐츠에 정답 확인이 존재하는지 여부
+      isAnswer: false,
+      // 단어장 노출 여부 판단.
+      isVocabulary: true,
+      //정답 보기
+      showAnswer: () => {},
+      //정답 숨기기
+      hideAnswer: () => {},
+      // 단어장 보기
+      showVocabulary: () => {
+        setPopup(7);
+      },
+    };
+  </script>
+  <script src="../common/js/script.js"></script>
+  <script src="../common/js/vocabularyBook.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      // setPopup(2);
+    });
+    // 교체 문장
+    $(".tab_btn").on("click", function () {
+      setActive($(this), "tab_btn");
+    });
+  </script>
+  <script type="text/javascript">
+    // 정답 버튼
+    $(".answer_btn").on("click", function () {
+      let index = $(".answer_btn").index(this);
+      $(this).hide();
+      $(".reset_btn").eq(index).show();
+      $(".answer").show();
+      $(".reset").hide();
+    });
+    // 다시 하기 버튼
+    $(".reset_btn").on("click", function () {
+      let index = $(".reset_btn").index(this);
+      $(this).hide();
+      $(".answer_btn").eq(index).show();
+      $(".answer").hide();
+      $(".reset").show();
+    });
+  </script>
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>미래엔 중국어</title>
+  <script src="./../common/lib/jquery-3.7.1.min.js"></script>
+  <!-- SUIT Variable 폰트 -->
+  <link href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/variable/woff2/SUIT-Variable.css"
+    rel="stylesheet" />
+  <link href="../common/css/comm.css" rel="stylesheet" />
+  <link href="./css/7_01_23.css" rel="stylesheet" />
+</head>
+
+<body>
+  <div id="wrap" class="china_wrap content_wrap">
+    <div class="title_box title_box3 flex items-center">
+      <img src="./images/7_01_23/logo.svg" alt="">
+      <div class="text_box">
+        <span class="suit">중국의 <span class="purple suit">식사 문화</span></span>
+      </div>
+    </div>
+    <div class="btn_box dp_flex" style="height: 43px">
+      <button class="btn popup_btn blue" data-index="3">보충</button>  
+    </div>
+
+    <div class="full_content">
+      <div class="content">
+        <span class="suit">
+          중국에서는 나무나 상아 소재의<br>
+          긴 젓가락을 사용하고, 짧고 움푹한<br>
+          숟가락은 국물을 떠먹을 때 사용합니다.
+        </span>
+      </div>
+    </div>
+
+
+    <!-- 팝업 -->
+    <div class="popup_bg" style="display: none"></div>
+    
+    <!-- 보충 -->
+    <div class="popup popup1" data-popup="3" style="display: none">
+      <div class="tag bmjua dp_flex">보충</div>
+      <button class="close_btn"></button>
+      <div class="popup_content">
+        <div class="content">
+          <div class="context">
+            <span class="suit">
+              중국은 기름진 음식을 덜어 먹거나 넓은 테이블에서<br>
+              멀리 있는 음식을 집어 먹기 편하게 마찰력이 높은 나무<br>
+              재질의 긴 젓가락을 사용한다. 중국의 고급 식당에서는<br>
+              물과 수저 세트 등도 돈을 지불해야 하는 경우가 있다.
+            </span>
+          </div>
+
+          <!-- <div class="grammers">
+            <div class="line line1">
+              <span class="simhei" data-audio="090-01.mp3">筷子<span class="gRegula"> kuàizi</span></span>
+              <span class="suit">젓가락</span>
+            </div>
+            <div class="line line2">
+              <span class="simhei" data-audio="090-02.mp3">勺子<span class="gRegula"> sháozi</span></span>
+              <span class="suit">숟가락</span>
+            </div>
+          </div> -->
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+</body>
+<script type="text/javascript">
+  const page = {
+    //컨텐츠에 정답 확인이 존재하는지 여부
+    isAnswer: false,
+    // 단어장 노출 여부 판단.
+    isVocabulary: false,
+    //정답 보기
+    showAnswer: () => {
+      $(".tempBttn.answer_btn").hide();
+      $(".tempBttn.reset_btn").show();
+
+      $(".answer").show();
+      $(".reset").hide();
+    },
+    //정답 숨기기
+    hideAnswer: () => {
+      $(".tempBttn.answer_btn").show();
+      $(".tempBttn.reset_btn").hide();
+
+      $(".answer").hide();
+      $(".reset").show();
+
+    },
+    // 단어장 보기
+    showVocabulary: () => { },
+  };
+  $(document).ready(function () {
+    // setPopup(2);
+  });
+</script>
+<script>
+  $(".pagination .dot").on("click", function(){
+    page.hideAnswer();
+  })
+</script>
+<script src="../common/js/script.js"></script>
+<!-- <script type="text/javascript">
+  let answerCount1 = 0;
+  let answerCount2 = 0;
+  // 체크박스 클릭
+  $(".answer_btn").on("click", function () {
+    const index = $(this).data("index");
+    $(`.answer[data-index="${index}"]`).removeClass("v_hidden");
+    if ($(this).data("answer") === 1) {
+      answerCount1++;
+    }
+    if ($(this).data("answer") === 2) {
+      answerCount2++;
+    }
+    if (answerCount1 >= 5) {
+      $('.answer_box[data-answer="1"]').removeClass("disabled");
+    }
+    if (answerCount2 >= 5) {
+      $('.answer_box[data-answer="2"]').removeClass("disabled");
+    }
+  });
+</script> -->
+
+</html>

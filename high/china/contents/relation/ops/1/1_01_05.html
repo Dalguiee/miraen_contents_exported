@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>미래엔 중국어</title>
+    <script src="./../common/lib/jquery-3.7.1.min.js"></script>
+    <!-- SUIT Variable 폰트 -->
+    <link
+      href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/variable/woff2/SUIT-Variable.css"
+      rel="stylesheet"
+    />
+    <link href="../common/css/comm.css" rel="stylesheet" />
+    <link href="./css/1_01_05.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div id="wrap" class="china_wrap">
+      <div class="title_box">
+        <div class="title">
+          <img class="title_logo" src="./images/1_01_05/logo.svg" alt="">
+          <span class="title_text suit">중국의 <span class="gold">해음 문화</span></span>
+        </div>
+      </div>
+
+      <div class="btn_box dp_flex">
+        <button class="btn popup_btn blue" data-index="3">보충</button>
+      </div>
+
+      <div class="full_content">
+        <div class="content">
+          <div class="title">
+            <span class="bmjua">동물 해음</span>
+          </div>
+          <div class="context">
+            <!-- <img class="content_img" src="./images/1_01_05/content_bg.png" alt=""> -->
+            <div class="text_sec">
+              <div class="text_sec_upper">
+                <div class="text_box">
+                  <span class="simhei" data-audio="104-25.mp3">鱼<span class="gRegula"> yú</span></span>
+                </div>
+                <div class="text_box">
+                  <span class="simhei" data-audio="104-26.mp3">余<span class="gRegula"> yú</span></span>
+                </div>
+              </div>
+              <div class="text_sec_under">
+                <span class="suit"><span class="space" style="margin-right: 20px;"></span>
+                <span class="notoSans">‘</span>물고기(<span class="simhei" data-audio="104-25.mp3">鱼<span class="gRegula"> yú</span></span>)<span class="notoSans">’</span>와 <span class="notoSans">‘</span>여유롭다(<span class="simhei" data-audio="104-26.mp3">余<span class="gRegula"> yú</span></span>)<span class="notoSans">’</span>는
+                발음이  같아서  <span class="notoSans">‘</span>해마다  여유롭길  바라다
+                (<span class="simhei" data-audio="104-27.mp3">年年有余<span class="gRegula"> niánnián-yôuyú</span></span>)<span class="notoSans">’</span>라는 의미로
+                물고기 그림 장식을 많이 합니다.
+                </span>
+              </div>
+            </div>
+          </div>  
+        </div>
+      </div>
+
+      <!-- 팝업 -->
+      <div class="popup_bg" style="display: none"></div>
+
+      <!-- 보충 -->
+      <div class="popup popup1" data-popup="3" style="display: none">
+        <div class="tag bmjua dp_flex">보충</div>
+        <button class="close_btn"></button>
+        <div class="popup_content">
+          <div class="title">
+            <span class="suit">물고기 해음</span>
+          </div>
+          <span class="suit">
+            중국에서 물고기는 ‘여유’를 뜻하여 물고기와 연꽃이 함께 있는<br>
+            그림을 보며 풍요를 기원한다. 연꽃을 뜻하는 <span class="notoSans">‘</span><span class="simhei" data-audio="104-31.mp3">莲<span class="gRegula"><span class="suit">(</span>lián<span class="suit">)</span></span></span><span class="notoSans">’</span>을 써서<br>
+            그림 제목을 <span class="notoSans">‘</span><span class="simhei" data-audio="104-32.mp3">莲年有鱼<span class="gRegula"><span class="suit">(</span>lián nián yôu yú<span class="suit">)</span></span></span><span class="notoSans">’</span>라고도 한다.<br>
+            <span class="notoSans">‘</span><span class="simhei" data-audio="104-33.mp3">莲年<span class="gRegula"><span class="suit">(</span>lián nián<span class="suit">)</span></span></span><span class="notoSans">’</span>이 <span class="notoSans">‘</span>해마다<span class="notoSans">’</span>라는 말인 <span class="notoSans">‘</span><span class="simhei" data-audio="104-34.mp3">年年<span class="gRegula"><span class="suit">(</span>niánnián<span class="suit">)</span></span></span><span class="notoSans">’</span>과<br>
+            발음이 비슷하고, <span class="notoSans">‘</span>연이어 해마다<span class="notoSans">’</span>라는 말인 <span class="notoSans">‘</span><span class="simhei" data-audio="104-33.mp3">连年<span class="gRegula"><span class="suit">(</span>liánnián<span class="suit">)</span></span></span><span class="notoSans">’</span>과 발음이 같기 때문이다.
+          </span>
+        </div>
+      </div>
+      
+    </div>
+  </body>
+
+  <script type="text/javascript">
+    const page = {
+      //컨텐츠에 정답 확인이 존재하는지 여부
+      isAnswer: false,
+      // 단어장 노출 여부 판단.
+      isVocabulary: false,
+      //정답 보기
+      showAnswer: () => {},
+      //정답 숨기기
+      hideAnswer: () => {},
+      // 단어장 보기
+      showVocabulary: () => {},
+    };
+    $(document).ready(function () {});
+  </script>
+  <script src="../common/js/script.js"></script>
+  <script type="text/javascript"></script>
+</html>

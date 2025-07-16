@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>미래엔 중국어</title>
+  <script src="./../common/lib/jquery-3.7.1.min.js"></script>
+  <script src="./../common/lib/howler-2.1.3.min.js"></script>
+  <!-- SUIT Variable 폰트 -->
+  <link href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/variable/woff2/SUIT-Variable.css"
+    rel="stylesheet" />
+  <link href="../common/css/comm.css" rel="stylesheet" />
+  <link href="./css/2_01_11.css" rel="stylesheet" />
+</head>
+
+<body>
+  <div id="wrap" class="china_wrap content_wrap">
+    <div class="title_box">
+      <div class="title">
+        <span class="mainCon suit"><img class="titleLogo" src="./images/2_01_11/logo.svg" /><span
+            class="titleNum suit">1</span><span class="simhei" data-audio="036-17.mp3"
+            data-audio-combo="036-17">也</span><span class="gRegula" data-audio="036-17.mp3"
+            data-audio-combo="036-17">yê</span></span>
+      </div>
+    </div>
+
+    <div class="btn_box dp_flex">
+      <!-- <div class="bttns">
+          <button class="btn popup_btn blue" data-index="3">보충</button>  
+        </div> -->
+      <!-- <div class="tempBttns">
+        <button onclick="page.showVocabulary()" data-index="1" class="tempBttn">단어장</button>
+      </div> -->
+    </div>
+
+    <div class="full_content">
+      <div class="content dp_flex dp_flex_column">
+        <div class="contentTextSec">
+          <div class="contentTitle">
+            <span class="suit"><span class="simhei" data-audio="036-17.mp3">也</span>는 주어
+              뒤에서 <span class="notoSans">‘</span>~도, 또한<span class="notoSans">’</span>이라는 뜻을 나타냅니다.</span>
+          </div>
+          <div class="contentText contentText1">
+            <span class="suit contentTextIndex">A</span>
+            <div class="textBox">
+              <div class="upper">
+                <span class="simhei chDot" data-audio="036-22.mp3" data-audio-combo="036-22">我爱你。</span>
+                <span class="suit">나는 너를 사랑해.</span>
+              </div>
+              <span class="under gRegula" data-audio="036-22.mp3" data-audio-combo="036-22">Wô ài nî.</span>
+            </div>
+          </div>
+
+          <div class="contentText contentText2">
+            <span class="suit contentTextIndex">B</span>
+            <div class="textBox">
+              <div class="upper">
+                <span class="simhei chDot" data-audio="036-23.mp3" data-audio-combo="036-23">我也爱你。</span>
+                <span class="suit">나도 너를 사랑해.</span>
+              </div>
+              <span class="under gRegula" data-audio="036-23.mp3" data-audio-combo="036-23">Wô yê ài nî.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="popup_bg" style="display: none"></div>
+
+    <div class="popup expPopup" data-popup="3" style="display: none">
+      <div class="tag bmjua dp_flex">보충</div>
+      <button class="close_btn"></button>
+      <div class="popup-con">
+        <div class="popupTitle suit">
+          <span>의문사 의문문은 의문사를 넣어 상대에게 구체적 답을 요구 하는
+            것으로, 문장 끝에 <span class="FZKai">吗</span>를 쓰지 않는다.<br />의문사
+            부분에 대답을 넣어 말한다.</span>
+        </div>
+        <div class="context context1">
+          <span class="title">A :</span>
+          <div class="contextSec">
+            <div class="upper">
+              <span class="FZKai">你叫什么名字?</span>
+              <span class="suit">너의 이름은 뭐니?</span>
+            </div>
+            <span class="under gRegula">Nî jiào shénme míngzi?</span>
+          </div>
+        </div>
+        <div class="context context2">
+          <span class="title">B :</span>
+          <div class="contextSec">
+            <div class="upper">
+              <span class="FZKai">我叫金太阳。</span>
+              <span class="suit">나는 김태양이라고 해.</span>
+            </div>
+            <span class="under gRegula">Wô jiào Jån Tàiyáng.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="popup vocabularyBook" data-popup="7" style="display: none">
+      <div class="tag bmjua dp_flex">단어장</div>
+      <button class="close_btn"></button>
+      <div class="popup_content dp_flex">
+        <div class="word_list_box dp_flex dp_flex_column">
+          <div class="word_content">
+            <div class="list dp_flex voca_popup_btn active" data-audio="036-25.mp3">
+              <span class="gRegula">ài</span>
+            </div>
+          </div>
+        </div>
+        <div class="show_word_box dp_flex dp_flex_column">
+          <div class="china_box dp_flex">
+            <div class="voca_popup_tab" data-audio="036-25.mp3">
+              <span class="FZKai">爱</span>
+              <span class="gRegula">ài</span>
+            </div>
+          </div>
+          <div class="korea_box dp_flex">
+            <div class="voca_warp">
+              <span class="suit">사랑하다</span>
+            </div>
+          </div>
+          <div class="show_btn-warp">
+            <button class="btn3 show_pinyin_btn" style="display: none">
+              병음 보기
+            </button>
+            <button class="btn3 hide_pinyin_btn">병음 가리기</button>
+            <button class="btn3 show_btn" style="display: none">
+              뜻 보기
+            </button>
+            <button class="btn3 hide_btn">뜻 감추기</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<script type="text/javascript">
+  const page = {
+    //컨텐츠에 정답 확인이 존재하는지 여부
+    isAnswer: false,
+    // 단어장 노출 여부 판단. 이벤트 호출하지 않으면 노출하지 않음.
+    isVocabulary: true,
+    //정답 보기
+    showAnswer: () => {
+      $(".answer_btn").hide();
+      $(".reset_btn").show();
+      $(".answer").show();
+    },
+    //정답 숨기기
+    hideAnswer: () => {
+      $(".answer_btn").show();
+      $(".reset_btn").hide();
+      $(".answer").hide();
+    },
+    // 단어장 보기
+    showVocabulary: () => {
+      setPopup(7);
+    },
+  };
+</script>
+<script type="text/javascript">
+  // 정답 버튼
+  $(".answer_btn").on("click", function () {
+    let index = $(".answer_btn").index(this);
+    $(this).hide();
+    $(".reset_btn").eq(index).show();
+    $(".answer").eq(index).show();
+    $(".reset").eq(index).hide();
+  });
+  // 다시 하기 버튼
+  $(".reset_btn").on("click", function () {
+    let index = $(".reset_btn").index(this);
+    $(this).hide();
+    $(".answer_btn").eq(index).show();
+    $(".answer").eq(index).hide();
+    $(".reset").eq(index).show();
+  });
+</script>
+<script crossorigin src="../common/lib/libBundle.js"></script>
+<script src="../common/js/script.js"></script>
+<script src="../common/js/rolePlayerCh.js"></script>
+<script src="../common/js/vocabularyBook.js"></script>
+
+</html>

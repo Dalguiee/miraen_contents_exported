@@ -1,0 +1,140 @@
+/* 헤더 */
+.btn_box {
+  padding-top: 9px !important;
+}
+.title_box {
+  left: 0 !important;
+  top: 9px !important;
+}
+.title_box .title {
+  /* display: flex;
+  justify-content: start;
+  align-items: start; */
+}
+.title_box .title .title_num {
+  margin-right: 20px;
+  color: #c1802c;
+  font-size: 36px;
+  line-height: 36px;
+}
+.title_box .title .title_text {
+  font-size: 30px;
+  font-weight: 800;
+  line-height: 30px;
+}
+
+.china_wrap .full_content .num_box span {
+  font-size: 30px;
+  line-height: 30px;
+  color: rgba(35, 24, 21, 1);
+  font-weight: 700;
+  font-family: "SUIT Variable", sans-serif;
+}
+.full_content .content {
+  width: 100%;
+  height: 100%;
+}
+
+.full_content .content .ex_box {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 780px;
+  height: 200px;
+  border-radius: 20px;
+  background: #fff8eb;
+  margin: 52px auto 0 auto;
+}
+.full_content .content .ex_box .index {
+  position: absolute;
+  top: 0;
+  left: -20px;
+  transform: translateX(-100%);
+}
+.full_content .content .ex_box .answer_btn {
+  margin-right: 20px;
+  padding: 10px 20px;
+  background: #fffef7;
+  font-size: 40px;
+  line-height: 46px;
+}
+.full_content .content .ex_box .answer_btn:last-child {
+  margin-right: 0;
+}
+
+.full_content .content .ex_box > .suit {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 40px;
+  margin-top: 21px;
+}
+
+.full_content .content .answer_box {
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  height: 52px;
+  line-height: 52px;
+  margin: 0 auto;
+  pointer-events: none;
+  margin-top: 20px;
+}
+.full_content .content .answer_box .text-group {
+  display: flex;
+  align-items: center;
+  padding: 0 50px;
+  height: 60px;
+  border-bottom: 3px solid #c9caca;
+  gap: 10px;
+}
+.full_content .content .answer_box .text-group .answer {
+  font-size: 46px;
+  color: #e22f61;
+}
+
+.full_content .content[data-tab="1"] .buttons_box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+.full_content .content[data-tab="2"] .buttons_box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+/* 페이지 */
+.number-page {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  right: 20px;
+  bottom: 21px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  font-family: "SUIT Variable", sans-serif;
+  font-weight: 800;
+  font-size: 26px;
+  color: #d9d9d9;
+}
+.number-page .item {
+  display: flex;
+}
+.number-page .item:after {
+  content: "";
+  width: 24px;
+  height: 24px;
+  background: url(./../../common/images/page_arrow.svg) no-repeat center;
+  margin: 0 6px 0 6px;
+}
+.number-page .item:last-of-type:after {
+  display: none;
+}
+.number-page .item.active {
+  color: #231815;
+}

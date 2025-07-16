@@ -1,0 +1,25 @@
+{
+  "lang": ["한자", "병음"],
+  "subtitlelist": [
+    {
+      "start": 7.4,
+      "end": 9.9,
+      "value": ["Nî yôu shénme àihào?", "你有什么爱好?"]
+    },
+    {
+      "start": 10.0,
+      "end": 13.1,
+      "value": ["Wô xîhuan pãi shìpín.", "我喜欢拍视频。"]
+    },
+    {
+      "start": 13.2,
+      "end": 16.4,
+      "value": ["Nî jiãnglái xiâng dãng shénme?", "你将来想当什么?"]
+    },
+    {
+      "start": 16.5,
+      "end": 19.8,
+      "value": ["Wô xiâng dãng wânghóng.", "我想当网红。"]
+    }
+  ]
+}

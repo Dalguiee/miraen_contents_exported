@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>미래엔 중국어</title>
+    <script src="./../common/lib/jquery-3.7.1.min.js"></script>
+    <!-- SUIT Variable 폰트 -->
+    <link
+      href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/variable/woff2/SUIT-Variable.css"
+      rel="stylesheet"
+    />
+    <link href="../common/css/comm.css" rel="stylesheet" />
+    <link href="./css/3_01_18.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div id="wrap" class="china_wrap content_wrap">
+      <div class="title_box title_box3 dp_flex">
+        <div class="num_box">
+          <span>1</span>
+        </div>
+        <div class="text_box">
+          <span>녹음을 듣고 빈칸에 공통으로 들어갈 한어병음을 써 봅시다.</span>
+        </div>
+      </div>
+      <div class="btn_box dp_flex">
+        <button class="btn popup_btn blue" data-index="1">대본</button>
+        <button class="btn popup_btn blue" data-index="2">해석</button>
+      </div>
+
+      <div class="full_content dp_flex">
+        <div class="left_box">
+          <div class="num_box"><span>(1)</span></div>
+
+          <div class="table_box">
+            <table>
+              <tbody>
+                <tr class="tr tr1">
+                  <td class="td index_td">
+                    <div class="index_box dp_flex">
+                      <span>올해</span>
+                    </div>
+                  </td>
+                  <td class="td arrow_td">
+                    <div class="arrow"></div>
+                  </td>
+                  <td class="td text_td text_td1">
+                    <div class="text_box dp_flex">
+                      <span class="gRegula" data-audio="049-01.mp3">jån</span>
+                    </div>
+                  </td>
+                  <td class="td answer_td" rowspan="2">
+                    <div class="answer_box dp_flex">
+                      <span class="gRegula highlight pink answer" data-audio="049-05.mp3" style="display: none">nián</span>
+                      <div class="btn_box dp_flex">
+                        <button class="btn3 sound_btn" data-audio="049-07.mp3">음원</button>
+                        <button class="btn3 answer_btn">정답</button>
+                        <button class="btn3 reset_btn" style="display: none">다시 하기</button>
+                      </div>
+                    </div>
+                  </td>
+                  <td class="td text_td text_td2">
+                    <div class="text_box no_text_box"></div>
+                  </td>
+                </tr>
+                <tr class="tr tr2">
+                  <td class="td index_td">
+                    <div class="index_box dp_flex">
+                      <span>나이</span>
+                    </div>
+                  </td>
+                  <td class="td arrow_td">
+                    <div class="arrow"></div>
+                  </td>
+                  <td class="td text_td text_td1">
+                    <div class="text_box no_text_box"></div>
+                  </td>
+                  <td class="td text_td text_td2">
+                    <div class="text_box dp_flex">
+                      <span class="gRegula" data-audio="049-02.mp3">jì</span>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="right_box">
+          <div class="num_box"><span>(2)</span></div>
+          <div class="table_box">
+            <table>
+              <tbody>
+                <tr class="tr tr1">
+                  <td class="td index_td">
+                    <div class="index_box dp_flex">
+                      <span>중학교</span>
+                    </div>
+                  </td>
+                  <td class="td arrow_td">
+                    <div class="arrow"></div>
+                  </td>
+                  <td class="td text_td text_td1">
+                    <div class="text_box dp_flex">
+                      <span class="gRegula" data-audio="049-03.mp3">chñ</span>
+                    </div>
+                  </td>
+                  <td class="td answer_td" rowspan="2">
+                    <div class="answer_box dp_flex">
+                      <span class="gRegula highlight pink answer" data-audio="049-06.mp3" style="display: none">zhõng</span>
+                      <div class="btn_box dp_flex">
+                        <button class="btn3 sound_btn" data-audio="049-08.mp3">음원</button>
+                        <button class="btn3 answer_btn">정답</button>
+                        <button class="btn3 reset_btn" style="display: none">다시 하기</button>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr class="tr tr2">
+                  <td class="td index_td">
+                    <div class="index_box dp_flex">
+                      <span>고등학교</span>
+                    </div>
+                  </td>
+                  <td class="td arrow_td">
+                    <div class="arrow"></div>
+                  </td>
+                  <td class="td text_td text_td1">
+                    <div class="text_box dp_flex">
+                      <span class="gRegula" data-audio="049-04.mp3">gão</span>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div class="number-page">
+        <div class="item active">01</div>
+        <div class="item">02</div>
+        <div class="item">03</div>
+        <div class="item">04</div>
+        <div class="item">05</div>
+        <div class="item">06</div>
+      </div>
+      <div class="popup_bg" style="display: none"></div>
+      <!-- 대본 -->
+      <div class="popup popup1" data-popup="1" style="display: none">
+        <div class="tag bmjua dp_flex">대본</div>
+        <button class="close_btn"></button>
+        <div class="popup_content">
+          <ul class="list">
+            <li class="item">
+              <div class="index">
+                <span class="suit">(1)</span>
+              </div>
+              <div class="gRegula" style="width: 400px">jånnián, niánjì</div>
+            </li>
+            <li class="item">
+              <div class="index">
+                <span class="suit">(2)</span>
+              </div>
+              <div class="gRegula" style="width: 400px">chñzhõng, gãozhõng</div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- 해석 -->
+      <div class="popup popup1" data-popup="2" style="display: none">
+        <div class="tag bmjua dp_flex">해석</div>
+        <button class="close_btn"></button>
+        <div class="popup_content">
+          <ul class="list">
+            <li class="item">
+              <div class="index">
+                <span class="suit">(1)</span>
+              </div>
+              <div class="gRegula">jånnián<br />niánjì</div>
+              <div class="suit">올해<br />나이</div>
+            </li>
+            <li class="item">
+              <div class="index">
+                <span class="suit">(2)</span>
+              </div>
+              <div class="gRegula">chñzhõng<br />gãozhõng</div>
+              <div class="suit">중학교<br />고등학교</div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript">
+    const page = {
+      //컨텐츠에 정답 확인이 존재하는지 여부
+      isAnswer: true,
+      // 단어장 노출 여부 판단.
+      isVocabulary: false,
+      //정답 보기
+      showAnswer: () => {
+        $(".answer_btn").hide();
+        $(".reset_btn").show();
+        $(".answer").show();
+      },
+      //정답 숨기기
+      hideAnswer: () => {
+        $(".answer_btn").show();
+        $(".reset_btn").hide();
+        $(".answer").hide();
+      },
+      // 단어장 보기
+      showVocabulary: () => {},
+    };
+    $(document).ready(function () {
+      // setPopup(2);
+    });
+  </script>
+  <script src="../common/js/script.js"></script>
+  <script type="text/javascript">
+    // 정답 버튼
+    $(".answer_btn").on("click", function () {
+      let index = $(".answer_btn").index(this);
+      $(this).hide();
+      $(".reset_btn").eq(index).show();
+      $(".answer").eq(index).show();
+    });
+    // 다시 하기 버튼
+    $(".reset_btn").on("click", function () {
+      let index = $(".reset_btn").index(this);
+      $(this).hide();
+      $(".answer_btn").eq(index).show();
+      $(".answer").eq(index).hide();
+    });
+  </script>
+</html>

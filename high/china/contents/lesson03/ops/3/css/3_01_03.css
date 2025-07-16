@@ -1,0 +1,68 @@
+.china_wrap.story_wrap .full_content .script_box p {
+  text-indent: 16px;
+}
+
+.china_wrap .full_content .action_box {
+  margin-top: 77px;
+}
+
+.china_wrap .full_content .right_box{
+  padding-bottom: 20px;
+}
+
+.china_wrap .full_content .img_box {
+  width: 440px;
+  position: relative;
+}
+
+.china_wrap .full_content .img_box .img {
+  width: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: -54px;
+}
+
+.china_wrap.story_wrap .full_content .under_btn_box{
+  position: absolute;
+  right: 352px;
+  bottom: 41px;
+}
+
+
+/* 설명 */
+.popup.explan{
+  width: fit-content !important;
+  padding: 46px 24px 10px 24px;
+}
+.popup.explan1{
+  top: 260px !important;
+  right: 130px !important;
+}
+.popup.explan .popup_content{
+  padding: 0 !important;
+}
+.popup.explan .popup_content .simhei{
+  font-size: 32px !important;
+  line-height: 50px !important;
+  font-weight: 400 !important;
+}
+.popup.explan .popup_content .FZKai{
+  font-size: 32px !important;
+  line-height: 50px !important;
+  font-weight: 400 !important;
+}
+.popup.explan .popup_content .notoSans{
+  font-size: 32px !important;
+  line-height: 50px !important;
+  font-weight: 400 !important;
+}
+.popup.explan .popup_content .gRegula{
+  font-size: 32px !important;
+  line-height: 50px !important;
+  font-weight: 400 !important;
+}
+.popup.explan .popup_content .suit{
+  font-size: 32px !important;
+  line-height: 50px !important;
+  font-weight: 600 !important;
+}

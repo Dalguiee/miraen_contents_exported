@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>미래엔 중국어</title>
+    <script src="./../common/lib/jquery-3.7.1.min.js"></script>
+    <!-- SUIT Variable 폰트 -->
+    <link
+      href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/variable/woff2/SUIT-Variable.css"
+      rel="stylesheet"
+    />
+    <link href="../common/css/comm.css" rel="stylesheet" />
+    <link href="./css/1_01_11.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div id="wrap" class="china_wrap">
+      <div class="title_box">
+        <div class="title">
+          <img class="title_logo" src="./images/1_01_11/logo.svg" alt="">
+          <span class="title_text suit">중국의 <span class="green">외래어 표기법</span></span>
+        </div>
+      </div>
+
+      <div class="btn_box dp_flex">
+        <button class="btn popup_btn blue" data-index="3">보충</button>
+      </div>
+
+      <div class="full_content">
+        <div class="title">
+          <span class="bmjua">음역</span>
+          <span class="suit">외국어의 원래 발음과 유사하게 표시하는 방식</span>
+        </div>
+        <div class="content">
+          <div class="content_upper">
+            <div class="content_box content_box_1">
+              <div class="left">
+                <div class="img_box">
+                  <img src="./images/1_01_11/icon1.svg" alt="">
+                </div>
+                <span class="suit">카드(<span class="gRegula">card</span>)</span>
+              </div>
+              <div class="right">
+                <div class="text_box" data-audio="105-01.mp3">
+                  <span class="simhei">卡</span>
+                  <span class="gRegula">kâ</span>
+                </div>
+              </div>
+            </div>
+            <div class="content_box content_box_2">
+              <div class="left">
+                <div class="img_box">
+                  <img src="./images/1_01_11/icon2.svg" alt="">
+                </div>
+                <span class="suit">소파(<span class="gRegula">sofa</span>)</span>
+              </div>
+              <div class="right">
+                <div class="text_box" data-audio="105-02.mp3">
+                  <span class="simhei">沙发</span>
+                  <span class="gRegula">shãfã</span>
+                </div>
+              </div>
+            </div>
+            <div class="content_box content_box_3">
+              <div class="left">
+                <div class="img_box">
+                  <img src="./images/1_01_11/icon3.svg" alt="">
+                </div>
+                <span class="suit">피자(<span class="gRegula">pizza</span>)</span>
+              </div>
+              <div class="right">
+                <div class="text_box" data-audio="105-03.mp3">
+                  <span class="simhei">比萨</span>
+                  <span class="gRegula">bîsà</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="content_under">
+            <div class="question_box question_box1">
+              <div class="title">
+                <span class="suit">(1)</span>
+                <span class="simhei" data-audio="105-04.mp3">咖啡<span class="gRegula"> kãfçi</span></span>
+              </div>
+              <div class="switch_box">
+                <img class="arrow_icon" src="./images/1_01_11/question_arrow.svg" alt="">
+                <span class="reset reset0"></span>
+                <span class="answer answer0 suit" style="display: none;">커피</span>
+                <div class="bttn_box">
+                  <button class="btn3 answer_btn" data-index="0">정답</button>
+                  <button class="btn3 reset_btn" data-index="0" style="display: none">다시 하기</button>
+                </div>
+              </div>
+            </div>
+            <div class="question_box question_box2">
+              <div class="title">
+                <span class="suit">(2)</span>
+                <span class="simhei" data-audio="105-05.mp3">芒果<span class="gRegula"> mángguô</span></span>
+                
+              </div>
+              <div class="switch_box">
+                <img class="arrow_icon" src="./images/1_01_11/question_arrow.svg" alt="">
+                <span class="reset reset1"></span>
+                <span class="answer answer1 suit" style="display: none;">망고</span>
+                <div class="bttn_box">
+                  <button class="btn3 answer_btn" data-index="1">정답</button>
+                  <button class="btn3 reset_btn" data-index="1" style="display: none">다시 하기</button>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- 팝업 -->
+      <div class="popup_bg" style="display: none"></div>
+
+      <!-- 보충 -->
+      <div class="popup popup3" data-popup="3" style="display: none">
+        <div class="tag bmjua dp_flex">보충</div>
+        <button class="close_btn"></button>
+        <div class="popup_content">
+          <div class="title">
+            <span class="suit">음역 추가 단어</span>
+          </div>
+          <div class="content">
+            <div class="content_sec content_sec_1">
+              <div class="line line1">
+                <span class="simhei" data-audio="105-06.mp3">奥林匹克<span class="suit">(</span><span class="gRegula">Ëolínpîkè</span><span class="suit">)</span></span>
+                <span class="suit">올림픽</span>
+              </div>
+              <div class="line line2">
+                <div class="line line1">
+                  <span class="simhei" data-audio="105-08.mp3">卡通<span class="suit">(</span><span class="gRegula">kâtõng</span><span class="suit">)</span></span>
+                  <span class="suit">카툰</span>
+                </div>
+              </div>
+              <div class="line line3">
+                <div class="line line1">
+                  <span class="simhei" data-audio="105-10.mp3">模特儿<span class="suit">(</span><span class="gRegula">mótèr</span><span class="suit">)</span></span>
+                  <span class="suit">모델</span>
+                </div>  
+              </div>
+            </div>
+            <div class="content_sec content_sec_2">
+              <div class="line line1">
+                <span class="simhei" data-audio="105-07.mp3">巧克力<span class="suit">(</span><span class="gRegula">qiâokèlì</span><span class="suit">)</span></span>
+                <span class="suit">초콜릿</span>
+              </div>
+              <div class="line line2">
+                <span class="simhei" data-audio="105-09.mp3">纽约<span class="suit">(</span><span class="gRegula">Niûyuç</span><span class="suit">)</span></span>
+                <span class="suit">뉴욕</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </body>
+  <script type="text/javascript">
+    const page = {
+      //컨텐츠에 정답 확인이 존재하는지 여부
+      isAnswer: false,
+      // 단어장 노출 여부 판단.
+      isVocabulary: false,
+      //정답 보기
+      showAnswer: () => {},
+      //정답 숨기기
+      hideAnswer: () => {},
+      // 단어장 보기
+      showVocabulary: () => {},
+    };
+    $(document).ready(function () {});
+  </script>
+  <script type="text/javascript">
+    // 정답 버튼 앞에 경로를 따로 따서 팝업정답 스크립트 분리지정 가능
+    $(".answer_btn").on("click", function () {
+      // let index = $(".answer_btn").index(this);
+      let index = $(this).data("index");
+      $(this).hide();
+      $(`.reset_btn[data-index=${index}]`).show();
+      
+      // $(`.answer`).show();
+      $(`.answer${index}`).show();
+      $(`.reset${index}`).hide();
+    });
+    // 다시 하기 버튼
+    $(".reset_btn").on("click", function () {
+      // let index = $(".reset_btn").index(this);
+      let index = $(this).data("index");
+      $(this).hide();
+      $(`.answer_btn[data-index=${index}]`).show();
+      
+      // $(".answer").hide();
+      $(`.answer${index}`).hide();
+      $(`.reset${index}`).show();
+    });
+  </script>
+  <script src="../common/js/script.js"></script>
+  <script type="text/javascript"></script>
+</html>

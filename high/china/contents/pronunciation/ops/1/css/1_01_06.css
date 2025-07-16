@@ -1,0 +1,106 @@
+.china_wrap .top-title {
+  display: flex;
+  align-items: center;
+}
+.china_wrap .top-title::before {
+  content: "";
+  width: 48.44px;
+  height: 54px;
+  background: url(./../images/1_01_06/title1.svg) no-repeat center;
+  background-size: cover;
+  margin-right: 20px;
+}
+.china_wrap .btn_box {
+  right: 0;
+  z-index: 1;
+}
+
+.china_wrap .full_content {
+  width: 100%;
+  height: calc(100% - 42px);
+}
+.china_wrap .full_content .content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.china_wrap .full_content .content .hint{
+  position: absolute;
+  font-size: 70px;;
+}
+.china_wrap .full_content .content .hint1{
+  top: 180px;
+  left: 211px;
+}
+.china_wrap .full_content .content .hint2{
+  top: 180px;
+  left: 49px;
+}
+
+.china_wrap .full_content .content .content_bg {
+  width: 1000px;
+  height: 370px;
+  display: block;
+  margin: 28px auto 0 auto;
+}
+.china_wrap .full_content .content .item {
+  position: absolute;
+  top: 125px;
+  left: 471px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.china_wrap .full_content .content .item .suit{
+  font-size: 30px !important;
+  line-height: 45px !important;
+}
+.china_wrap .full_content .content .item .gRegla{
+  font-size: 30px !important;
+  line-height: 45px !important;
+}
+.china_wrap .full_content .content .item .simhei{
+  font-size: 30px !important;
+  line-height: 45px !important;
+}
+.china_wrap .full_content .content .item .answer {
+  width: 132px;
+  border-bottom: 1px solid #727171;
+  display: flex;
+  justify-content: center;
+  padding: 0 4px;
+}
+
+/* 보충 팝업 */
+.popup.popup3 .popup_content {
+  width: 100%;
+  height: 100%;
+  padding: 46px 34px 8px 55px;
+  position: relative;
+}
+.popup.popup3 .popup_content .content {
+  /* background: rgba(0, 0, 0, 0.2); */
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+}
+.popup.popup3 .popup_content .content .title {
+  line-height: 48px;
+  font-size: 40px;
+}
+.popup.popup3 .popup_content .content .title .suit {
+  font-weight: 800;
+}
+.popup.popup3 .popup_content .content .title .simhei {
+  font-weight: 400;
+}
+.popup.popup3 .popup_content .content .text-box {
+  line-height: 44px;
+  font-size: 32px;
+}
+.popup.popup3 .popup_content .content .text-box .suit {
+  font-weight: 600;
+}
+.popup.popup3 .popup_content .content .text-box .simhei {
+  font-weight: 400;
+}

@@ -1,0 +1,28 @@
+{
+  "lang": ["한자", "병음"],
+  "subtitlelist": [
+    {
+      "start": 4.0,
+      "end": 6.5,
+      "value": ["Wô yào mâi yì shuãng xié.", "我要买一双鞋。"]
+    },
+    {
+      "start": 11.0,
+      "end": 13.5,
+      "value": ["Zhè shuãng báisè de zênmeyàng?", "这双白色的怎么样?"]
+    },
+    {
+      "start": 13.8,
+      "end": 17.0,
+      "value": [
+        "Hái xíng. Yôu méiyôu dà yìdiânr de?",
+        "还行。有没有大一点儿的?"
+      ]
+    },
+    {
+      "start": 17.5,
+      "end": 20.0,
+      "value": ["Yôu, qîng dêng yíxià.", "有，请等一下。"]
+    }
+  ]
+}

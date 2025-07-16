@@ -1,0 +1,115 @@
+.china_wrap .top-title {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 62px;
+  color: #4b75d0;
+}
+
+.china_wrap .btn_box {
+  top: 3px;
+  right: 0;
+  z-index: 1;
+}
+
+.china_wrap .full_content {
+  width: 100%;
+  height: calc(100% - 74px);
+}
+.china_wrap .full_content .content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.full_content .content[data-tab="1"] .text-box {
+  display: flex;
+  margin-left: 20px;
+}
+.full_content .content[data-tab="1"] .content_bg {
+  position: absolute;
+  right: 0;
+  bottom: 50px;
+  width: 407px;
+  height: 239px;
+}
+
+.full_content .content[data-tab="2"] .list {
+  position: relative;
+  width: 520px;
+  height: 363px;
+  margin: 0 auto 0 auto;
+  background: url(./../images/1_01_31/img2.jpg) no-repeat center;
+  background-size: cover;
+}
+
+.full_content .content[data-tab="2"] .list .row {
+  position: absolute;
+  display: flex;
+  top: 0;
+  left: 0;
+  white-space: nowrap;
+  height: 0;
+}
+.full_content .content[data-tab="2"] .list .row.index1 {
+  top: 0;
+  left: 0;
+}
+.full_content .content[data-tab="2"] .list .row.index2 {
+  top: 36px;
+  left: 62px;
+}
+.full_content .content[data-tab="2"] .list .row.index3 {
+  top: 72px;
+  left: 0;
+}
+.full_content .content[data-tab="2"] .list .row.index4 {
+  top: 108px;
+  left: 62px;
+}
+.full_content .content[data-tab="2"] .list .row.index5 {
+  top: 144px;
+  left: 0;
+}
+.full_content .content[data-tab="2"] .list .row.index6 {
+  top: 180px;
+  left: 62px;
+}
+.full_content .content[data-tab="2"] .list .row.index7 {
+  top: 216px;
+  left: 0;
+}
+.full_content .content[data-tab="2"] .list .row.index8 {
+  top: 252px;
+  left: 62px;
+}
+.full_content .content[data-tab="2"] .list .row.index9 {
+  top: 289px;
+  left: 0;
+}
+
+.full_content .content[data-tab="2"] .item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 84px;
+  height: 74px;
+  border-radius: 50%;
+  margin-right: 40.5px;
+  font-size: 20px;
+  line-height: 24px;
+}
+.full_content .content[data-tab="2"] .item:last-of-type {
+  margin-right: 0;
+}
+
+/* 참고 팝업 */
+.popup.popup2 .popup_content {
+  width: 100%;
+  height: 100%;
+  padding: 56px 34px 8px 55px;
+  position: relative;
+}
+.popup.popup2 .popup_content .popup_img {
+  width: 792px;
+  height: 149px;
+}

@@ -1,0 +1,216 @@
+/* allsink */
+.btn-audio{
+  position: absolute;
+  font-size: 46px;
+}
+
+.FZKai{
+  font-family: simhei !important;
+}
+
+/* title header */
+.title_box{
+  top: 5px !important;
+  left: 0 !important;
+}
+.btn_box{
+  padding-top: 9px !important;
+}
+
+
+.title_box .title{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title_box .titleText{
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 50px;
+}
+.title_box .titleText .FZKai{
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 43px;
+}
+
+.title_box .mainCon{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  width: 82px;
+  font-size: 32px;
+  color: #3A958E;
+  margin-right: 14px;
+}
+
+.title_box .titleNum{
+}
+.title_box .titleText{
+  color: #3A958E;
+}
+
+
+
+/* contents */
+.full_content .content{
+  background-color: #ECF7F5;
+  border-radius: 10px;
+  width: 960px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+}
+
+.full_content .mainTextBox{
+  width: 100%;
+  margin-bottom: 22px;
+  padding: 20px 0 0 50px;
+}
+.full_content .mainTextBox .suit{
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 44px;
+}
+.full_content .mainTextBox .FZKai{
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 39px;
+}
+
+.full_content .bgImgFig{
+  margin: 0;
+  position: relative;
+  width: 796px;
+  margin: 0 auto;
+}
+.full_content .bgImgFig .bgImg{
+  width: 100%;
+}
+
+.full_content .bgImgFig .btnText{
+  position: absolute;
+  top: 410px;
+  left: 441px;
+  font-size: 46px;
+}
+.full_content .bgImgFig .btnText1{
+  top: 220px;
+  left: 190px;
+}
+.full_content .bgImgFig .btnText2{
+  top: 220px;
+  left: 510px;
+}
+.full_content .bgImgFig .btnText3{
+  font-size: 28px;
+  font-weight: 800;
+  top: 13px;
+  left: 141px;
+  line-height: 45px;
+  background-color: white;
+  border-radius: 11px;
+  padding: 5px 17px;
+}
+.full_content .bgImgFig .btnText3 .suit{
+  font-weight: 800;
+}
+.full_content .bgImgFig .btnText3 .FZKai{
+  font-weight: 800;
+}
+.full_content .bgImgFig .btnText3 .gRegula{
+  font-weight: 800;
+}
+
+
+.full_content .bgImgFig .btnText4{
+  font-size: 28px;
+  font-weight: 800;
+  top: 13px;
+  left: 455px;
+  line-height: 45px;
+  background-color: white;
+  border-radius: 11px;
+  padding: 5px 17px;
+}
+.full_content .bgImgFig .btnText4 .suit{
+  font-weight: 800;
+}
+.full_content .bgImgFig .btnText4 .FZKai{
+  font-weight: 800;
+}
+.full_content .bgImgFig .btnText4 .gRegula{
+  font-weight: 800;
+}
+
+
+/* 팝업 */
+.popup-con{
+  width: 100%;
+  height: 100%;
+  padding: 56px 29px;
+  font-size: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+}
+
+.expPopup .popup-con .line1{
+  margin-bottom: 47px;
+}
+.expPopup .popup-con .line{
+  margin-left: 80px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+.expPopup .popup-con .suit {
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 46px;
+  /* color: #231815; */
+}
+.expPopup .popup-con .lineTextUnder .gRegula {
+  font-size: 40px;
+  font-weight: 400;
+}
+.expPopup .popup-con .simhei {
+  font-size: 36px;
+  font-weight: 400;
+  color: #231815;
+}
+
+.expPopup .popup-con .lineTextUpper{
+  margin-bottom: 7px;
+}
+
+.expPopup .popup-con .line1::before{
+  content: "1.";
+  position: absolute;
+  font-family: "suit";
+  top: -2px;
+  left: -50px;
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 47px;
+}
+
+.expPopup .popup-con .line2::before{
+  content: "2.";
+  position: absolute;
+  font-family: "suit";
+  top: -2px;
+  left: -50px;
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 47px;
+}
+
+.expPopup .popup-con .red{
+  color: #E22F61;
+}

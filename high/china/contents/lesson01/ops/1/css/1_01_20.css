@@ -1,0 +1,346 @@
+.title_box{
+  top: 14px !important;
+  left: 0 !important;
+}
+.btn_box{
+  padding-top: 9px !important;
+}
+.title_box .titleText{
+  font-weight: bold;
+  font-size: 30px;
+  color: black;
+}
+.title_box .titleText .index{
+  font-family: "BMJua";
+  font-size: 36px;
+  font-weight: 400;
+  color: #498F63;
+  margin-right: 20px;
+}
+.title_box .title{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.title_box .titleText{
+  font-size: 30px;
+  font-weight: 800;
+}
+.title_box .mainCon{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  width: 100%;
+  font-size: 32px;
+  margin-right: 20px;
+  font-weight: bold;
+}
+.title_box .titleNum{
+  margin-right: 20px;
+  color: #498F63;
+  font-size: 36px;
+  font-weight: normal;
+}
+.numberingBox{
+  position: absolute;
+  bottom: 21px;
+  right: 20px;
+  width: 100%;
+  margin-top: 100px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+
+.full_content{
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  padding-top: 11px;
+}
+
+.content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 34px;
+}
+
+.content .line{
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+
+.content .line .leftSide{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+.content .line .ansText{
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content .line .ansTextBox{
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content .line1 .ansText1{
+  top: 127px;
+  left: 325px;
+  height: 50px;
+}
+.content .line1 .qLine{
+  width: 81.7px;
+  height: 50px;
+  border-bottom: 2px solid #C9CACA;
+}
+.content .line1 .ansTextBox{
+  top: 127px;
+  left: 325px;
+}
+
+.content .line1 .ansText3{
+  top: 133px;
+  left: 28px;
+}
+
+
+.content .line2 .ansTextBox{
+  position: absolute;
+}
+
+.content .line2 .ansText1{
+  top: 127px;
+  left: 346px;
+}
+.content .line2 .qLine{
+  width: 81.7px;
+  height: 50px;
+  border-bottom: 2px solid #C9CACA;
+}
+
+.content .line2 .ansTextBox{
+  top: 127px;
+  left: 346px;
+}
+
+.content .line2 .ansText3{
+  top: 133px;
+  left: 40px;
+}
+
+.content .reset .gRegula{
+  font-size: 42px;
+  font-weight: 400;
+  line-height: 42px;
+}
+
+.content .answer .gRegula{
+  font-size: 42px;
+  font-weight: 400;
+  line-height: 42px;
+  border-bottom: 2px solid #C9CACA;
+  height: 50px;
+  padding-top: 5px;
+}
+.content .ansText{
+  font-size: 42px;
+}
+
+
+
+
+.content .rightSide{
+  width: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: start;
+  margin-left: 15px;
+}
+
+.content .rightSide .audio_btn{
+  margin-bottom: 20px;
+}
+
+
+.btn-audio{
+  position: absolute;
+  font-size: 32px;
+}
+
+.btnText1{
+  top: 410px;
+  left: 316px;
+}
+.btnText2{
+  top: 410px;
+  left: 626px;
+}
+
+
+.bgImgFig{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  position: relative;
+  margin: 20px 0;
+  font-size: 34px;
+}
+
+.bgImgFig1::before{
+  content: "1.";
+  color: #4064AE;
+  font-family: "BMJUA";
+  position: absolute;
+  top: 5px;
+  left: -40px;
+  /* width: 416px;
+  height: 379px; */
+}
+
+.bgImgFig2::before{
+  content: "2.";
+  font-family: "BMJUA";
+  color: #4064AE;
+  position: absolute;
+  top: 5px;
+  left: -40px;
+  /* width: 416px;
+  height: 379px; */
+}
+
+.bingoTextContainer{
+  width: 100%;
+  height: 100%;
+  padding: 3% 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.bingoTextBox{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  width: 50%;
+}
+
+.bingoText{
+  font-size: 20px;
+  margin: 9px 0;
+}
+
+
+.mainText{
+  font-size: 36px;
+  line-height: 1.3;
+  font-weight: bold;
+}
+
+
+
+
+
+/* 팝업 */
+.popup{
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  padding: 62px 50px 20px 50px;
+}
+.popup .popup-con{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  padding: 0 !important;
+  gap: 0 !important;
+}
+/* 설명 */
+.popup.explan{
+  padding: 46px 20px 13px 20px;
+}
+.popup.explan .popup-con{
+  padding: 0 !important;
+}
+.popup.explan .popup-con .FZKai{
+  font-size: 28px !important;
+  font-weight: 400 !important;
+}
+.popup.explan .popup-con .gRegula{
+  font-size: 28px !important;
+  font-weight: 400 !important;
+  color: #727171 !important;
+}
+.popup.explan .popup-con .suit{
+  font-size: 28px !important;
+  line-height: 50px !important;
+  font-weight: 600 !important;
+}
+/* 단어게임 */
+.popup.game .popup-con .game_box{
+  margin: 0 !important;
+}
+/* 단어장 */
+.popup.vocabularyBook{
+  padding: 0 !important;
+}
+.popup.vocabularyBook .popup-con{
+  flex-direction: unset !important;
+  padding: 56px 44px 0 44px !important;
+  gap: 40px !important;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+
+
+.expPopup .popup-con{
+  gap: 20px !important;
+}
+
+.expPopup .popup-con .line{
+  /* margin-left: 80px; */
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+
+.expPopup .popup-con .line .gRegula{
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 52px;
+} 
+.expPopup .popup-con .line .suit {
+  font-size: 40px;
+  font-weight: 500;
+}
+.expPopup .popup-con .line .suit.text {
+  color: #3D5591;
+  margin-left: 20px;
+}
+
+.expPopup .popup-con .line .FZKai {
+  font-size: 40px;
+  font-weight: 400;
+}

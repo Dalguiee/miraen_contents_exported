@@ -1,0 +1,206 @@
+#wrap > .title_box {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	gap: unset;
+}
+#wrap > .title_box .num_box span {
+	font-size: 36px;
+	font-weight: 400;
+	line-height: 36px;
+	color: #c1802c;
+}
+#wrap > .title_box .text_box {
+	margin-left: 20px;
+}
+#wrap > .title_box .text_box span {
+	font-size: 30px;
+	font-weight: 800;
+	line-height: 30px;
+	color: #231815;
+}
+
+/* 헤더 */
+.btn_box{
+  padding-top: 9px !important;
+}
+.title_box{
+  left: 0 !important;
+  top: 9px !important;
+}
+.title_box .title{
+  /* display: flex;
+  justify-content: start;
+  align-items: center;
+  height: 36px; */
+}
+.title_box .title .title_num{
+  margin-right: 20px;
+  color: #C1802C;
+  font-size: 36px;
+}
+.title_box .title .title_text{
+  font-size: 30px;
+  font-weight: 800;
+}
+#wrap > .title_box .play_box {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-bottom: 5px;
+}
+#wrap > .title_box .play_box .icon_box {
+	width: 21px;
+	height: 21px;
+}
+#wrap > .title_box .play_box .icon_box img {
+	width: 100%;
+	object-fit: cover;
+}
+#wrap > .title_box .play_box .suit {
+	display: inline-block;
+	margin-left: 10px;
+	font-size: 24px;
+	font-weight: 600;
+	line-height: 31px;
+	color: #727171;
+}
+
+#wrap.china_wrap .full_content {
+	padding: 35px 240px 39px;
+	height: calc(100% - 46px);
+}
+
+#wrap.china_wrap .full_content .box-example {
+	display: flex;
+	align-items: flex-start;
+	justify-content: flex-start;
+	padding: 34px 67px;
+	width: 100%;
+	border: 5px solid #d5e7b2;
+	border-radius: 10px;
+}
+#wrap.china_wrap .full_content .box-example .list {
+	display: flex;
+	flex-direction: column;
+}
+#wrap.china_wrap .full_content .box-example .list-item {
+	display: flex;
+	flex-direction: column;
+}
+#wrap.china_wrap .full_content .box-example .list-item + .list-item {
+	margin-top: 20px;
+}
+#wrap.china_wrap .full_content .box-example .list-item .simhei {
+	font-size: 36px;
+	font-weight: 400;
+	line-height: 43px;
+}
+#wrap.china_wrap .full_content .box-example .list-item .gRegula {
+	font-size: 32px;
+	font-weight: 400;
+	line-height: 37px;
+}
+
+#wrap.china_wrap .full_content .box-text {
+	margin: 30px -72px 0;
+}
+#wrap.china_wrap .full_content .box-text > .suit {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+#wrap.china_wrap .full_content .box-text .suit + .suit {
+	margin-top: 12px;
+}
+#wrap.china_wrap .full_content .box-text .suit span {
+	font-size: 32px;
+	font-weight: 600;
+	line-height: 40px;
+}
+#wrap.china_wrap .full_content .box-text .style-radio {
+	position: relative;
+	padding-left: 48px;
+}
+#wrap.china_wrap .full_content .box-text .style-radio::before {
+	position: absolute;
+	content: '';
+	width: 36px;
+	height: 36px;
+	top: 50%;
+	left: 6px;
+	transform: translateY(-50%);
+	border: 2px solid #d9d9d9;
+	border-radius: 5px;
+}
+#wrap.china_wrap .full_content .box-text .style-radio-checked {
+	color: #E22F61;
+}
+
+#wrap.china_wrap .full_content .box-text .style-radio-checked::after {
+	position: absolute;
+	content: '';
+	top: 0;
+	left: 12px;
+	width: 39px;
+	height: 27px;
+	background: url('../images/5_01_22/check.svg') no-repeat 50% 50%;
+	background-size: cover;
+}
+
+/* number-page */
+.number-page {
+	position: absolute;
+	display: flex;
+	align-items: center;
+	bottom: 12px;
+	width: 100%;
+	display: flex;
+	justify-content: flex-end;
+	font-family: 'SUIT Variable', sans-serif;
+	font-weight: 800;
+	font-size: 26px;
+	color: #d9d9d9;
+}
+.number-page .item {
+	display: flex;
+}
+.number-page .item:after {
+	content: '';
+	width: 24px;
+	height: 24px;
+	background: url(./../../common/images/page_arrow.svg) no-repeat center;
+	margin: 0 6px 0 6px;
+}
+.number-page .item:last-of-type:after {
+	display: none;
+}
+.number-page .item.active {
+	color: #231815;
+}
+
+/* 해석 */
+.china_wrap .popup.popup1 .popup_content {
+	padding: 55px 55px 20px 50px;
+}
+.china_wrap .popup.popup1 .popup_content .list .item {
+	height: 88px;
+	margin-bottom: 14px;
+}
+.china_wrap .popup.popup1 .popup_content .list .item:last-of-type {
+	margin-bottom: 0;
+}
+.china_wrap .popup.popup1 .popup_content .list .item .FZKai {
+	font-weight: 400;
+	font-size: 36px;
+	margin-bottom: 6px;
+}
+.china_wrap .popup.popup1 .popup_content .list .item .suit {
+	white-space: nowrap;
+	color: rgba(61, 85, 145, 1);
+	font-size: 36px;
+	font-weight: 500;
+}
+.china_wrap .popup.popup1 .popup_content .list .item .gRegula {
+	font-size: 32px;
+}

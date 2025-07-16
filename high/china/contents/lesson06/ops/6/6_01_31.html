@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>미래엔 중국어</title>
+    <script src="./../common/lib/jquery-3.7.1.min.js"></script>
+    <script src="./../common/lib/howler-2.1.3.min.js"></script>
+    <!-- SUIT Variable 폰트 -->
+    <link
+      href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/variable/woff2/SUIT-Variable.css"
+      rel="stylesheet"
+    />
+    <link href="../common/css/comm.css" rel="stylesheet" />
+    <link href="./css/6_01_31.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div id="wrap" class="china_wrap content_wrap">
+      <div class="title_box">
+        <div class="title">
+          <span class="mainCon suit"
+            ><img class="titleLogo" src="./images/6_01_31/logo.svg" /></span
+          >
+        </div>
+      </div>
+
+      <div class="btn_box dp_flex"></div>
+
+      <div class="full_content">
+        <div class="content dp_flex dp_flex_column">
+          <div class="context context1">
+            <div class="index">
+              <span class="bmjua">1</span>
+            </div>
+            <div class="innerContext">
+              <span class="contextTitle suit reset">
+                <span
+                  class="simhei"
+                  data-audio="080-02.mp3"
+                  data-audio-combo="080-02"
+                  >东方明珠</span
+                ><span
+                  class="suit"
+                  data-audio="080-02.mp3"
+                  data-audio-combo="080-02"
+                  >(<span class="gRegula">Dõngfãngmíngzhñ</span>)</span
+                >는 중국을 대표하는 궁궐이다. <br />
+                <span class="selectSec"
+                  ><img src="./images/6_01_31/ox.svg" alt=""
+                /></span>
+              </span>
+              <span class="contextTitle suit answer" style="display: none">
+                <span
+                  class="simhei"
+                  data-audio="080-02.mp3"
+                  data-audio-combo="080-02"
+                  >东方明珠</span
+                ><span
+                  class="suit"
+                  data-audio="080-02.mp3"
+                  data-audio-combo="080-02"
+                  >(<span class="gRegula">Dõngfãngmíngzhñ</span>)</span
+                >는 중국을 대표하는 궁궐이다. <br />
+                <span class="selectSec"
+                  ><img src="./images/6_01_31/x.svg" alt=""
+                /></span>
+              </span>
+              <div class="ansBttns">
+                <button class="btn3 answer_btn">정답</button>
+                <button
+                  class="btn3 reset_btn innerResetBtn"
+                  style="display: none"
+                >
+                  다시 하기
+                </button>
+                <button
+                  class="btn3 descPop explan_popup_btn"
+                  style="display: none"
+                >
+                  <span>설명</span>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="context context2">
+            <div class="index">
+              <span class="bmjua">2</span>
+            </div>
+            <div class="innerContext">
+              <span class="contextTitle suit reset">
+                <span
+                  class="simhei"
+                  data-audio="081-02.mp3"
+                  data-audio-combo="081-02"
+                  >蒙古包</span
+                ><span
+                  class="suit"
+                  data-audio="081-02.mp3"
+                  data-audio-combo="081-02"
+                  >(<span class="gRegula">mênggûbão</span>)</span
+                >는 몽골족의 전통 가옥이다.
+                <span class="selectSec"
+                  ><img src="./images/6_01_31/ox.svg" alt=""
+                /></span>
+              </span>
+              <span class="contextTitle suit answer" style="display: none">
+                <span
+                  class="simhei"
+                  data-audio="081-02.mp3"
+                  data-audio-combo="081-02"
+                  >蒙古包</span
+                ><span
+                  class="suit"
+                  data-audio="081-02.mp3"
+                  data-audio-combo="081-02"
+                  >(<span class="gRegula">mênggûbão</span>)</span
+                >는 몽골족의 전통 가옥이다.
+                <span class="selectSec"
+                  ><img src="./images/6_01_31/o.svg" alt=""
+                /></span>
+              </span>
+              <div class="ansBttns">
+                <button class="btn3 answer_btn">정답</button>
+                <button
+                  class="btn3 reset_btn innerResetBtn"
+                  style="display: none"
+                >
+                  다시 하기
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="popup_bg" style="display: none"></div>
+
+      <div class="popup explan explan1" style="display: none">
+        <div class="tag bmjua dp_flex">설명 1</div>
+        <button class="close_btn">
+          <span class="sr-only">닫기</span>
+        </button>
+        <div class="popup_content dp_flex dp_flex_column">
+          <span class="suit">
+            <span class="FZKai" data-audio="080-02.mp3"
+              >东方明珠<span class="gRegula">(Dõngfãngmíngzhñ)</span></span
+            >는<br />상하이에 있는 방송 송신탑이다.
+          </span>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript">
+    const page = {
+      //컨텐츠에 정답 확인이 존재하는지 여부
+      isAnswer: false,
+      // 단어장 노출 여부 판단. 이벤트 호출하지 않으면 노출하지 않음.
+      isVocabulary: false,
+      //정답 보기
+      showAnswer: () => {
+        $(".answer_btn").hide();
+        $(".reset_btn").show();
+        $(".answer").show();
+      },
+      //정답 숨기기
+      hideAnswer: () => {
+        $(".answer_btn").show();
+        $(".reset_btn").hide();
+        $(".answer").hide();
+      },
+      // 단어장 보기
+      showVocabulary: () => {
+        setPopup(7);
+      },
+    };
+  </script>
+  <script type="text/javascript">
+    //설명 팝업
+    $(".explan_popup_btn").on("click", function () {
+      let index = $(".explan_popup_btn").index(this);
+      $(".explan_popup_bg").show();
+      $(".popup.explan").hide();
+      $(".popup.explan").eq(index).show();
+      try {
+        setRoleStop();
+      } catch (error) {}
+      audioStop();
+    });
+  </script>
+  <script type="text/javascript">
+    // 정답 버튼
+    $(".answer_btn").on("click", function () {
+      let index = $(".answer_btn").index(this);
+      $(this).hide();
+      $(".reset_btn").eq(index).show();
+      $(".descPop").eq(index).show();
+      $(".answer").eq(index).show();
+      $(".reset").eq(index).hide();
+    });
+    // 다시 하기 버튼
+    $(".reset_btn").on("click", function () {
+      let index = $(".reset_btn").index(this);
+      $(this).hide();
+      $(".answer_btn").eq(index).show();
+      $(".descPop").eq(index).hide();
+      $(".answer").eq(index).hide();
+      $(".reset").eq(index).show();
+    });
+  </script>
+  <script crossorigin src="../common/lib/libBundle.js"></script>
+  <script src="../common/js/script.js"></script>
+  <script src="../common/js/rolePlayerCh.js"></script>
+  <script src="../common/js/vocabularyBook.js"></script>
+</html>

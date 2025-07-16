@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>미래엔 중국어</title>
+    <script src="./../common/lib/jquery-3.7.1.min.js"></script>
+    <!-- SUIT Variable 폰트 -->
+    <link
+      href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/variable/woff2/SUIT-Variable.css"
+      rel="stylesheet"
+    />
+    <link href="../common/css/comm.css" rel="stylesheet" />
+    <link href="./css/7_01_29.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div id="wrap" class="china_wrap content_wrap">
+      <div class="title_box title_box4 dp_flex">
+        <div class="ex_active_tag">
+          <span><span class="highlight yellow">체험</span> 활동</span>
+        </div>
+        <div class="text_box">
+          <span style="font-size: 30px">
+            중국 음식의 유래를 쓰고 만화로 그려 봅시다.
+          </span>
+          <span>
+            (마파두부, 동파육, 불도장, 탕후루, 취두부 등)
+          </span>
+        </div>
+      </div>
+
+      <div class="btn_box dp_flex">
+        <!-- <button class="btn popup_btn purple" data-index="1">영상 보기</button> -->
+        <button class="btn popup_btn blue" data-index="3">보충</button>
+      </div>
+
+      <div class="full_content dp_flex dp_flex_column">
+        <div class="content" data-tab="1">
+          <img src="./images/7_01_29/content1.svg" alt="눈보호 체조 이미지 1" class="" />
+        </div>
+        <div class="content" data-tab="2" style="display: none">
+          <img src="./images/7_01_29/content2.svg" alt="눈보호 체조 이미지 2" class=""/>
+        </div>
+        <div class="content" data-tab="3" style="display: none">
+          <img src="./images/7_01_29/content3.svg" alt="눈보호 체조 이미지 3" class=""/>
+        </div>
+      </div>
+
+      <div class="popup_bg" style="display: none"></div>
+      <!-- 애니메이션 -->
+      <div class="popup ani" data-popup="1" style="display: none">
+        <div class="contentsArea videoParent">
+          <!-- <div
+                  id="video-controller-container-1"
+                  class="video-controller-container"
+                ></div> -->
+        </div>
+        <button class="close_btn2 popupclose_btn">
+          <span>닫기</span>
+        </button>
+      </div>
+
+      <!-- 참고 -->
+      <div class="popup popup1" data-popup="3" style="display: none">
+        <div class="tag bmjua dp_flex">보충</div>
+        <button class="close_btn"></button>
+        <div class="popup_content">
+          <div class="title">
+            <span class="suit">중국 음식의 유래</span>
+          </div>
+          <div class="content">
+            <div class="line line1">
+              <div class="index">
+                <span class="suit">•</span>
+              </div>
+              <div class="text">
+                <span class="suit">
+                  마파두부(<span class="simhei" data-audio="090-16.mp3">麻婆豆腐</span>): <span class="notoSans">‘</span>곰보 자국이 있는 할머니<span class="notoSans">’</span>를 뜻하는<br>
+                  <span class="notoSans">‘</span>마파<span class="suit">(</span><span class="simhei" data-audio="090-17.mp3">麻婆</span><span class="suit">)</span>가 만든 맵고 얼얼한 두부 요리<span class="notoSans">’</span>라는 뜻으로,<br>
+                  우연히 만든 두부 요리가 맛이 있다고 소문이 나서 유명한<br>
+                  음식이 되었다. 
+                </span>
+              </div>
+            </div>
+            <div class="line line2">
+              <div class="index">
+                <span class="suit">•</span>
+              </div>
+              <div class="text">
+                <span class="suit">
+                  동파육(<span class="simhei" data-audio="090-18.mp3">东坡肉</span>): 소동파가 항저우에 있을 때 수해가 있었다.<br>
+                  소동파가 큰 둑을 쌓게 하여 백성들이 무사할 수 있었다.<br>
+                  백성들이 소동파에게 돼지고기를 선물했고, 소동파가 요리해<br>
+                  다 함께 먹었는데 주변 지역으로 퍼져 나가면서 소동파의<br>
+                  이름이 음식 이름에 붙여졌다.
+                </span>
+              </div>
+            </div>
+            <div class="line line3">
+              <div class="index">
+                <span class="suit">•</span>
+              </div>
+              <div class="text">
+                <span class="suit">
+                  불도장(<span class="simhei" data-audio="090-19.mp3">佛跳墙</span>): 보양식 재료를 고아 낸 음식으로, 불도장<br>
+                  그릇의 뚜껑을 열면 풍겨 나오는 향기가 코를 즐겁게 한다. 음식 냄새 때문에 참선하던 승려가 담장을 넘었다는 의미로<br>
+                  이름이 만들어졌다.
+                </span>
+              </div>
+            </div>
+            <div class="line line4">
+              <div class="index">
+                <span class="suit">•</span>
+              </div>
+              <div class="text">
+                <span class="suit">
+                  탕후루(<span class="simhei" data-audio="090-20.mp3">糖葫芦</span>): 송나라 후궁인 황귀비가 병에 걸렸는데,<br>
+                  어떤 약을 먹어도 낫지 않다가 설탕에 달인 산사나무 열매를<br>
+                  식전에 5~10개씩 먹고 완쾌하였다. 이후 백성들이 달인<br>
+                  산사나무 열매를 긴 나무에 꽂아 팔았는데, 이것이 탕후루의<br>
+                  유래로 알려졌다.
+                </span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div4 class="pagination dp_flex" style="margin-bottom: 12px">
+        <span class="active dot" data-index="1"></span>
+        <span class="dot" data-index="2"></span>
+        <span class="dot" data-index="3"></span>
+      </div4>
+    </div>
+  </body>
+  <script type="text/javascript">
+    const page = {
+      //컨텐츠에 정답 확인이 존재하는지 여부
+      isAnswer: false,
+      // 단어장 노출 여부 판단.
+      isVocabulary: false,
+      //정답 보기
+      showAnswer: () => {},
+      //정답 숨기기
+      hideAnswer: () => {},
+      // 단어장 보기
+      showVocabulary: () => {},
+    };
+  </script>
+  <script crossorigin src="../common/lib/libBundle.js"></script>
+  <script src="../common/js/script.js"></script>
+  <script type="text/javascript">
+    // 애니메이션 팝업 초기화
+    $(".popup.ani .close_btn2").on("click", function () {
+      $(".contentsArea.videoParent").empty();
+      createVideo();
+    });
+    $(document).ready(function () {
+      createVideo();
+    });
+    // 비디오 생성
+    const createVideo = () => {
+      $(".contentsArea.videoParent").html(`<div
+            id="video-controller-container-1"
+            class="video-controller-container"
+          ></div>`);
+      var mediaManager = libBundle.MediaManager.getInstance();
+      // 내부자막 X, 외부자막 X
+      var videoController1 = mediaManager.createVideoController({
+        id: "video-controller-1",
+        query: "#video-controller-container-1",
+        // poster: "./media/mp4/4chi_bon_1.png",
+        src: "./media/mp4/3chi_H_eye.mp4",
+        // volumeVisible: true,
+        // // thumbnail: { startPath: 'media/video/thumbnail/thumbnail_', startIndex: 1000, ext: 'png' },
+        // overlay: true,
+        // // autoplay: true
+        // jsonSubtitlePath: "./media/subtitle/7_0_05.json",
+        volumeSetting: {
+          visible: true,
+          vertical: false,
+        },
+        callback: {},
+      });
+    };
+  </script>
+</html>

@@ -1,0 +1,267 @@
+/* 전역 */
+.speak{
+  color: rgba(226, 47, 97, 1) ;
+}
+
+/* 타이틀 헤더 */
+.btn_box{
+  padding-top: 9px !important;
+}
+.title_box{
+  left: 0 !important;
+  top: 0 !important;
+}
+.title_box .title{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.title_box .title .titleLogo{
+  object-fit: cover;
+}
+.title_box .title .titleText{
+  font-weight: 800;
+  font-size: 30px;
+  color: black;
+  margin-left: 10px;
+}
+.title_box .title .titleText .purple{
+  color: #764A8A;
+}
+
+
+/* 컨텐츠 */
+.full_content{
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.full_content .bgContainer{
+  position: absolute;
+}
+
+.full_content .bgContainer1{
+  width: 342px;
+  left: 33px;
+  bottom: 51px;
+}
+.full_content .bgContainer1 img{
+  width: 100%;
+  object-fit: cover;
+}
+.full_content .bgContainer2{
+  width: 260px;
+  right: 0;
+  bottom: 32px;
+}
+.full_content .bgContainer2 img{
+  width: 100%;
+  object-fit: cover;
+}
+
+.full_content .bgContainer2 .detail_button_box {
+  width: 40px;
+  height: 40px;
+  aspect-ratio: 1;
+  position: absolute;
+  right: 125px;
+  bottom: 170px;
+  z-index: 1;
+}
+.full_content .bgContainer2 .detail_button_box > img{
+  width: 100%;
+  object-fit: cover;
+}
+
+.full_content .contextSec{
+  height: 100%;
+  padding-left: 435px;
+  padding-right: 26px;
+  position: relative;
+}
+
+.full_content .contextSec .contextBox{
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+}
+.full_content .contextSec .contextBox .line{
+  margin-bottom: 10px;
+}
+
+.full_content .contextSec .contextBox .line1{
+  position: relative;
+}
+.full_content .contextSec .contextBox .line1 .textBoxImg{
+  position: absolute;
+  top: -12px;
+  left: -66px;
+  width: 596px;
+  z-index: -1;
+}
+
+.full_content .contextSec .contextBox .line1 .simhei{
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 37px;
+  color: #CA5A85;
+}
+.full_content .contextSec .contextBox .line1 .gRegula{
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 28px;
+  color: #CA5A85;
+}
+.full_content .contextSec .contextBox .line2 .simhei{
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 42px;
+  color: #A46AAA;
+}
+.full_content .contextSec .contextBox .line2 .gRegula{
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 28px;
+  color: #A46AAA;
+}
+.full_content .contextSec .contextBox .line3 .suit{
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 39px;
+}
+.full_content .contextSec .contextBox .line3 .simhei{
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 39px;
+}
+.full_content .contextSec .contextBox .line4{
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  margin-top: 80px;
+  margin-bottom: 0;
+}
+.full_content .contextSec .contextBox .line4 .suit{
+  color: #727171;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 26px;
+}
+
+
+
+
+/* 팝업 */
+.popup{
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  padding: 56px 40px 20px 40px;
+}
+.popup .popup_content{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  padding: 0 !important;
+  gap: 0 !important;
+}
+/* 설명 */
+.popup.explan{
+  /* width: 650px !important; */
+  padding: 46px 24px 10px 24px;
+}
+.popup.explan .popup_content{
+  padding: 0 !important;
+}
+.popup.explan .popup_content .simhei{
+  font-size: 32px !important;
+  line-height: 50px !important;
+  font-weight: 400 !important;
+}
+.popup.explan .popup_content .gRegula{
+  font-size: 32px !important;
+  line-height: 50px !important;
+  font-weight: 400 !important;
+}
+.popup.explan .popup_content .suit{
+  font-size: 32px !important;
+  line-height: 50px !important;
+  font-weight: 600 !important;
+}
+/* 단어게임 */
+.popup.game .popup_content .game_box{
+  margin: 0 !important;
+}
+/* 단어장 */
+.popup.vocabularyBook{
+  padding: 0 !important;
+}
+.popup.vocabularyBook .popup_content{
+  flex-direction: unset !important;
+  padding: 56px 44px 0 44px !important;
+  gap: 40px !important;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+/* 보충 */
+.expPopup .popup_content{
+  overflow-y: scroll;
+  padding: 0 35px 0 15px !important;
+}
+.expPopup .popup_content .title{
+  margin-bottom: 20px;
+}
+.expPopup .popup_content .title .FZKai{
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 43px;
+}
+.expPopup .popup_content .title .suit{
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 43px;
+}
+.expPopup .popup_content .contextSec{}
+.expPopup .popup_content .contextSec .line{}
+.expPopup .popup_content .contextSec .line1{
+  margin-bottom: 40px;
+}
+.expPopup .popup_content .contextSec .line3{
+  margin-bottom: 40px
+}
+
+.expPopup .popup_content .contextSec .line .suit{
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 47px;
+  word-break: keep-all;
+}
+
+/* 크게보기 */
+.popup.detail_popup {
+	padding: 40px 0 40px 0 !important;
+}
+.popup.detail_popup .popup_content {}
+.popup.detail_popup .popup_content .content {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.popup.detail_popup .popup_content .content .img_box{
+  width: 476px;
+}
+.popup.detail_popup .popup_content .content .img_box > img{
+  width: 100%;
+  object-fit: cover;
+}

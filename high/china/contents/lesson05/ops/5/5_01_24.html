@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>미래엔 중국어</title>
+		<script src="./../common/lib/jquery-3.7.1.min.js"></script>
+		<!-- SUIT Variable 폰트 -->
+		<link href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/variable/woff2/SUIT-Variable.css" rel="stylesheet" />
+		<link href="../common/css/comm.css" rel="stylesheet" />
+		<link href="./css/5_01_24.css" rel="stylesheet" />
+	</head>
+
+	<body>
+		<div id="wrap" class="china_wrap content_wrap">
+			<div class="title_box title_box5 dp_flex">
+				<div class="img_box">
+					<img src="../common/images/culture_icon.svg" alt="문화" class="img img1" />
+				</div>
+				<div class="text_box">
+					<span class="suit">중국의 <span class="highlight purple">전통 공연 예술</span></span>
+				</div>
+			</div>
+
+			<div class="btn_box dp_flex">
+				<button class="btn popup_btn blue" data-index="1">보충</button>
+			</div>
+
+			<div class="full_content">
+				<div class="content">
+					<div class="content-title">
+						<span class="suit">경극</span>
+						<span class="dp_flex" data-audio="070-01.mp3">
+							<span class="simhei">京剧</span>
+							<span class="gRegula">jångjù</span>
+						</span>
+					</div>
+					<p class="content-text suit">
+						<span class="notoSans">‘</span>베이징(<span class="simhei" data-audio="070-02.mp3">北京</span>) 오페라<span class="notoSans">’</span>라고도 불리는 경극은 베이징을 중심으로<br />발전했습니다.
+						노래, 대사, 동작, 무술 등이<br />어우러진 공연 예술로, 화려한 복장과<br />얼굴 분장이 특징입니다.
+					</p>
+				</div>
+			</div>
+
+			<!-- 보충 -->
+			<div class="popup_bg" style="display: none"></div>
+			<div class="popup popup1" data-popup="1" style="display: none">
+				<div class="tag bmjua dp_flex">보충</div>
+				<button class="close_btn"></button>
+				<div class="popup_content">
+					<div class="popup_scroll">
+						<div class="title suit">경극(<span class="simhei" data-audio="070-01.mp3">京剧</span>)</div>
+						<div class="text suit">
+							경극은 중국의 대표적인 전통 연극으로 2010년 유네스코<br />
+							인류 무형 문화유산으로 등재되었다. 경극은 <span class="notoSans">‘</span>베이징 오페라<span class="notoSans">’</span> 라는 이름으로 세계적으로 알려졌다. 노래(<span class="simhei" data-audio="069-11.mp3">唱<span class="gRegula"> chàng</span></span>)와<br>대사(<span class="simhei" data-audio="070-06.mp3">念<span class="gRegula"> niàn</span></span>)에 무술(<span class="simhei" data-audio="066-22.mp3">打<span class="gRegula"> dâ</span></span>)과 동작(<span class="simhei" data-audio="070-07.mp3">做<span class="gRegula"> zuò</span></span>)으로 극이
+							진행되며, 경쾌한 연주가 곁들여지는 종합 예술이다. 내용은 역사와 정치, 사회, 일상생활에 관한 이야기이며, 즐거움뿐만 아니라 교훈을 줄 수 있는 이야기를 담고
+							있다. 배역은 생(<span class="simhei" data-audio="070-08.mp3">生<span class="gRegula"> shçng</span></span>: 남자), 단 (<span class="simhei" data-audio="070-09.mp3">旦<span class="gRegula"> dàn</span></span>: 여자), 정(<span class="simhei" data-audio="070-10.mp3">净<span class="gRegula"> jìng</span></span>: 호걸·악한),<br>축(<span class="simhei" data-audio="070-11.mp3">丑<span class="gRegula"> chôu</span></span>: 광대), 말(<span class="simhei" data-audio="070-12.mp3">末<span class="gRegula"> mò</span></span>: 단역)로 나뉘고, 화려한 의상과 독특한 얼굴 분장으로 인물의 신분과
+							성격(개성)을 나타낸다. 경극의 전승은 대부분 거장이 전수생들에게 구술로 지도하거나 전수생들의 관찰과 모방을 통해 전수되고 있다. 경극의 대표적인 작품은 항우와
+							우희의 비극적인 사랑 이야기를 다룬 《패왕별희》가 있다.
+						</div>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	</body>
+	<script type="text/javascript">
+		const page = {
+			//컨텐츠에 정답 확인이 존재하는지 여부
+			isAnswer: false,
+			// 단어장 노출 여부 판단.
+			isVocabulary: false,
+			//정답 보기
+			showAnswer: () => {},
+			//정답 숨기기
+			hideAnswer: () => {},
+			// 단어장 보기
+			showVocabulary: () => {},
+		};
+		$(document).ready(function () {});
+	</script>
+	<script src="../common/js/script.js"></script>
+</html>

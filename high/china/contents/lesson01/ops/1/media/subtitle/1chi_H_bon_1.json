@@ -1,0 +1,9 @@
+{
+  "lang": ["한자", "병음"],
+  "subtitlelist": [
+    { "start": 5.0, "end": 6.7, "value": ["Nî hâo!", "你好!"] },
+    { "start": 6.7, "end": 9.0, "value": ["Nîmen hâo!", "你们好!"] },
+    { "start": 16.0, "end": 18.7, "value": ["Zàijiàn!", "再见!"] },
+    { "start": 18.7, "end": 20, "value": ["Míngtiãn jiàn!", "明天见!"] }
+  ]
+}

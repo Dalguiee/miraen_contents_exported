@@ -1,0 +1,9 @@
+{
+  "lang": ["한자", "병음"],
+  "subtitlelist": [
+    { "start": 4.5, "end": 7.0, "value": ["Xiànzài jî diân?", "现在几点?"] },
+    { "start": 8, "end": 9, "value": ["Qå diân shí fçn.", "七点十分。"] },
+    { "start": 10, "end": 12, "value": ["Nî jî diân shàngxué?", "你几点上学?"] },
+    { "start": 12.7, "end": 13.5, "value": ["Qå diân bàn.", "七点半。"] }
+  ]
+}

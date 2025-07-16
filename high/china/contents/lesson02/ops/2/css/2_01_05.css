@@ -1,0 +1,306 @@
+.btn-audio{
+  position: absolute;
+  font-size: 32px;
+}
+.chDot{
+  margin-right: -18px;
+}
+.trLft10{
+  transform: translateX(-10px);
+}
+.trLft15{
+  transform: translateX(-15px);
+}
+.trLft20{
+  transform: translateX(-20px);
+}
+.chDot5{
+  margin-right: -5px;
+}
+.chDot10{
+  margin-right: -10px;
+}
+.chDot15{
+  margin-right: -15px;
+}
+.chDot20{
+  margin-right: -20px;
+}
+.chDot25{
+  margin-right: -25px;
+}
+
+
+/* 타이틀 헤더 */
+.btn_box{
+  padding-top: 9px !important;
+}
+.title_box{
+  top: 9px !important;
+  left: 0 !important;
+}
+.title_box .title{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.title_box .title .mainCon{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  width: 100%;
+  font-size: 30px;
+  margin-right: 20px;
+  font-weight: bold;
+}
+.title_box .title .mainCon .titleLogo{
+  margin-right: 20px;
+}
+.title_box .title .mainCon .titleNum{
+  margin-right: 20px;
+  color: #C76744;
+  font-size: 36px;
+  font-weight: 800;
+}
+.title_box .title .mainCon .titleText{
+  font-size: 40px;
+  font-weight: 800;
+  color: #C76744;
+}
+
+
+/* 컨텐츠 */
+.full_content{
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  padding-top: 13px;
+}
+
+.full_content .content{
+  width: 100%;
+  height: 390px;
+  background-color: #FFF7F1;
+  border-radius: 11px;
+  padding-left: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  position: relative;
+  padding-top: 20px;
+}
+.full_content .content .contentTitle{
+  font-size: 36px;
+  margin-bottom: 29px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+.full_content .content .contentTitle > .suit{
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 45px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.full_content .content .contentTitle .suit.line1{}
+.full_content .content .contentTitle .suit.line2{}
+
+.full_content .content .contextSec .context{
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  margin-bottom: 35px;
+  padding-left: 34px;
+  /* margin-top: 50px; */
+}
+
+.full_content .content .contextSec .context .contextTitle{
+  font-size: 40px;
+  color: #C76744;
+  font-weight: 800;
+  margin-right: 10px;
+  margin-top: 3px;
+  width: 40px;
+  text-align: center;
+}
+.full_content .content .contextSec .context .contentTextBox{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 25px;
+}
+.full_content .content .contextSec .context .contentText{
+  font-size: 23px;
+  margin: 10px 5px;
+}
+
+.full_content .content .contextSec .context .textBox{}
+.full_content .content .contextSec .context .textBox .suit{
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 45px;
+}
+.full_content .content .contextSec .context .textBox .simhei{
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 43px;
+}
+.full_content .content .contextSec .context .textBox .gRegula{
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 41px;
+}
+
+
+.full_content .content .contextSec .context .gRegula{
+  /* color: #727171; */
+}
+.full_content .content .contextSec .context .line{
+  margin: 0;
+  width: 302px;
+  height: 342px;
+  background-color: rgb(207, 253, 255);
+  border-radius: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.full_content .content .contextSec .context .line .contentImgFig{
+  margin: 0;
+  width: 100%;
+  border: 10px solid rgb(246, 252, 255);
+  border-radius: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.full_content .content .contextSec .context .textBox .upper .suit{
+  margin-left: 20px;
+}
+
+
+
+
+
+
+
+
+/* 팝업 */
+.popup{
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  padding: 56px 40px 20px 40px;
+}
+.popup .popup_content{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  padding: 0 !important;
+  gap: 0 !important;
+}
+/* 설명 */
+.popup.explan{
+  padding: 46px 20px 13px 20px;
+}
+.popup.explan .popup_content{
+  padding: 0 !important;
+}
+.popup.explan .popup_content .FZKai{
+  font-size: 28px !important;
+  font-weight: 400 !important;
+}
+.popup.explan .popup_content .gRegula{
+  font-size: 28px !important;
+  font-weight: 400 !important;
+  /* color: #727171 !important; */
+}
+.popup.explan .popup_content .suit{
+  font-size: 28px !important;
+  line-height: 50px !important;
+  font-weight: 600 !important;
+}
+/* 단어게임 */
+.popup.game .popup_content .game_box{
+  margin: 0 !important;
+}
+/* 단어장 */
+.popup.vocabularyBook{
+  padding: 0 !important;
+}
+.popup.vocabularyBook .popup_content{
+  flex-direction: unset !important;
+  padding: 56px 44px 0 44px !important;
+  gap: 40px !important;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+
+
+
+
+.expPopup .popup_content{
+  padding: 0 10px !important;
+}
+
+.expPopup .popup_content .popupTitle{
+  margin-bottom: 30px;
+}
+.expPopup .popup_content .popupTitle .suit{
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 46px;
+}
+.expPopup .popup_content .popupTitle .suit .simhei{
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 52px;
+}
+
+.expPopup .popup_content .context{
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  margin-bottom: 30px;
+  padding-left: 37px;
+}
+.expPopup .popup_content .context .title{
+  font-size: 36px;
+  font-weight: 600;
+  margin-right: 10px;
+}
+.expPopup .popup_content .context .contextSec .upper{
+  margin-bottom: 5px;
+}
+
+.expPopup .popup_content .context .contextSec .simhei{
+  font-size: 36px;
+  font-weight: 400;
+}
+.expPopup .popup_content .context .contextSec .underLine{
+  border-bottom: 2px solid black;
+}
+
+.expPopup .popup_content .context .contextSec .gRegula{
+  font-size: 36px;
+  font-weight: 400;
+}
+.expPopup .popup_content .context .contextSec .suit{
+  font-size: 36px;
+  font-weight: 600;
+  margin-left: 20px;
+}

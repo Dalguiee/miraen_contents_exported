@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>미래엔 중국어</title>
+    <script src="./../common/lib/jquery-3.7.1.min.js"></script>
+    <!-- SUIT Variable 폰트 -->
+    <link
+      href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/variable/woff2/SUIT-Variable.css"
+      rel="stylesheet"
+    />
+    <link href="../common/css/comm.css" rel="stylesheet" />
+    <link href="./css/1_01_37.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div id="wrap" class="china_wrap">
+      <div class="title_box">
+        <div class="title">
+          <img class="title_logo" src="./images/1_01_37/logo.svg" alt="">
+          <span class="title_text suit">빠르게 발전하고 있는 중국의 과학 기술에 대해 조사해 봅시다.</span>
+        </div>
+      </div>
+
+      <div class="btn_box dp_flex">
+        <button class="btn3 answer_btn" data-index="0">활동 예시</button>
+        <button class="btn3 reset_btn" data-index="0" style="display: none">다시 하기</button>
+        <!-- <button class="btn popup_btn blue" data-index="3">참고</button> -->
+      </div>
+
+      <div class="full_content">
+        <div class="content">
+          <!-- <div class="title">
+            <div class="index_box">
+              <span class="suit">예</span>
+            </div>
+            <span class="suit">530</span>
+            <span class="gRegula arrow">→</span>
+            <span class="gRegula">wû sãn líng<span class="simhei"><span class="suit">(</span>五三零<span class="suit">)</span></span></span>
+            <span class="gRegula arrow">→</span>
+            <span class="gRegula">wô xiâng nî<span class="simhei"><span class="suit">(</span>我想你<span class="suit">)</span></span></span>
+            <span class="suit" style="margin-left: 10px;">네가 보고 싶어</span>
+          </div> -->
+          <div class="context_sec">
+            <div class="reset reset0"></div>
+            <div class="answer answer0" style="display: none;">
+              <!-- <div class="title">
+                <span class="suit">《열하일기》의 일부 내용</span>
+              </div> -->
+              <div class="table_box">
+                <div class="table_border">
+                  <table>
+                    <colgroup>
+                      <col style="width: 131px" />
+                      <col style="width: 742px" />
+                    </colgroup>
+                    <tbody>
+                      <tr>
+                        <th>
+                          <div>
+                            <span class="suit">인공 지능</span>
+                            <span class="gRegula">(AI)</span>
+                          </div>
+                        </th>
+                        <td>
+                          <div>
+                            <span class="suit">
+                              중국의 AI를 활용한 이미지 인식 기술은 세계에서 손꼽히는 수준이다.<br>
+                              의료 이미지 분석, 질병 진단에 적용하는 등 다양한 분야에 적용하여 발전을<br>
+                              가속화하고 있다.
+                            </span>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th>
+                          <div>
+                            <span class="suit">양자 과학</span>
+                          </div>
+                        </th>
+                        <td>
+                          <div>
+                            <span class="suit">
+                              중국에서는 양자 통신, 양자 컴퓨터 및 양자 암호화에 중점을 두고 투자를<br>
+                              빠르게 늘리고 있다. 중국은 양자 통신망 구축과 실용적인 양자 컴퓨터 개발을<br>
+                              목표로 양자 연구 개발을 지속하고 있다.
+                            </span>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th>
+                          <div>
+                            <span class="suit">생명 공학</span>
+                          </div>
+                        </th>
+                        <td>
+                          <div>
+                            <span class="suit">
+                              정부의 투자로 유전체학, 유전자 편집, 정밀 의학에서 중국은 상당한 발전을<br>
+                              이루었다. 유전자 편집 기술에서도 세계를 선도하고 있다.
+                            </span>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th>
+                          <div>
+                            <span class="suit">우주 탐사</span>
+                          </div>
+                        </t>
+                        <td>
+                          <div>
+                            <span class="suit">
+                              중국은 지구 관측, 통신, 항해 등에 활용하기 위해 다양한 위성을 발사했다.<br>
+                              특히 창어(<span class="simhei" data-audio="M010-02.mp3">嫦娥</span>) 6호는 세계 최초로 달 뒷면의 토양을 채취하여 지구에<br>
+                              귀환했다. 중국은 유인 우주 비행을 성공하고, 톈궁 우주 정거장을 설립했다.
+                            </span>
+                          </div>
+                        </td>
+                      </tr>
+
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- 팝업 -->
+      <div class="popup_bg" style="display: none"></div>
+
+    </div>
+  </body>
+
+  <script type="text/javascript">
+    const page = {
+      //컨텐츠에 정답 확인이 존재하는지 여부
+      isAnswer: false,
+      // 단어장 노출 여부 판단.
+      isVocabulary: false,
+      //정답 보기
+      showAnswer: () => {},
+      //정답 숨기기
+      hideAnswer: () => {},
+      // 단어장 보기
+      showVocabulary: () => {},
+    };
+    $(document).ready(function () {});
+  </script>
+  <script type="text/javascript">
+    // 정답 버튼 앞에 경로를 따로 따서 팝업정답 스크립트 분리지정 가능
+    $(".answer_btn").on("click", function () {
+      // let index = $(".answer_btn").index(this);
+      let index = $(this).data("index");
+      $(this).hide();
+      $(`.reset_btn[data-index=${index}]`).show();
+      
+      // $(`.answer`).show();
+      $(`.answer${index}`).show();
+      $(`.reset${index}`).hide();
+    });
+    // 다시 하기 버튼
+    $(".reset_btn").on("click", function () {
+      // let index = $(".reset_btn").index(this);
+      let index = $(this).data("index");
+      $(this).hide();
+      $(`.answer_btn[data-index=${index}]`).show();
+      
+      // $(".answer").hide();
+      $(`.answer${index}`).hide();
+      $(`.reset${index}`).show();
+    });
+  </script>
+  <script src="../common/js/script.js"></script>
+  <script type="text/javascript"></script>
+</html>

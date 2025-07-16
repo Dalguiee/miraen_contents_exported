@@ -1,0 +1,400 @@
+.btn-audio{
+  position: absolute;
+  font-size: 32px;
+}
+
+.speak{
+  color: #E22F61;
+}
+
+.title_box{
+  top: 17px !important;
+  left: 0 !important;
+}
+.btn_box{
+  padding-top: 9px !important;
+}
+
+.title_box .title{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title_box .title .titleText{
+  font-weight: bold;
+  font-size: 30px;
+  color: black;
+}
+.title_box .title .titleText .index{
+  margin-right: 20px;
+  font-family: "BMJua";
+  font-size: 36px;
+  color: #498F63;
+}
+.title_box .mainCon{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding-left: 8px;
+  width: 295px;
+  height: 62px;
+  font-size: 32px;
+  margin-right: 20px;
+  background-image: url(../images/1_01_17/logo.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+/* 하단 헤더 */
+.numberingBox{
+  position: absolute;
+  bottom: 21px;
+  right: 20px;
+  width: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+/* 콘텐츠 */
+.full_content{
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  padding-top: 20px;
+}
+.full_content .content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.full_content .content .bgFig{
+  margin: 0;
+  position: relative;
+  width: 600px;
+}
+.full_content .content .bgFig .bgImg{
+  width: 100%;
+  object-fit: cover;
+}
+.full_content .content .bgFig .context{
+  position: absolute;
+  top: 20px;
+  left: 13px;
+  font-size: 35px;
+}
+
+.full_content .content .bgFig .quesBox{
+  width: 600px;
+  position: absolute;
+  top: 332px;
+  left: 10px;
+}
+
+.full_content .content .bgFig .quesBox .reset{
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.full_content .content .bgFig .quesBox .reset .qLine{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 46px;
+  margin: 0 10px 0 0;
+  border-bottom: 3px solid #C9CACA;
+}
+.full_content .content .bgFig .quesBox .reset .qLine1{
+  width: 50px;
+}
+.full_content .content .bgFig .quesBox .reset .qLine2{
+  width: 50px;
+  margin-right: 0 !important;
+}
+.full_content .content .bgFig .quesBox .reset .qLine3{
+  width: 140px;
+  margin-left: 10px;
+}
+.full_content .content .bgFig .quesBox .reset .qLine4{
+  width: 70px;
+  margin-right: 0 !important;
+}
+
+
+
+.full_content .content .bgFig .quesBox .answer{
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.full_content .content .bgFig .quesBox .answer .qLine{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 46px;
+  margin: 0 10px 0 0;
+  border-bottom: 3px solid #C9CACA;
+}
+.full_content .content .bgFig .quesBox .answer .qLine1{
+  width: 50px;
+}
+.full_content .content .bgFig .quesBox .answer .qLine2{
+  width: 50px;
+  margin-right: 0 !important;
+}
+.full_content .content .bgFig .quesBox .answer .qLine3{
+  width: 140px;
+  margin-left: 10px;
+}
+.full_content .content .bgFig .quesBox .answer .qLine4{
+  width: 70px;
+  margin-right: 0 !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 팝업 */
+.popup{
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  padding: 56px 40px 20px 40px;
+}
+.popup .popup_content{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  padding: 0 !important;
+  gap: 0 !important;
+}
+/* 설명 */
+.popup.explan{
+  width: fit-content !important;
+  padding: 46px 24px 10px 24px;
+}
+.popup.explan .popup_content{
+  padding: 0 !important;
+}
+.popup.explan .popup_content .simhei{
+  font-size: 32px !important;
+  line-height: 50px !important;
+  font-weight: 400 !important;
+}
+.popup.explan .popup_content .gRegula{
+  font-size: 32px !important;
+  line-height: 50px !important;
+  font-weight: 400 !important;
+}
+.popup.explan .popup_content .suit{
+  font-size: 32px !important;
+  line-height: 50px !important;
+  font-weight: 600 !important;
+}
+/* 단어게임 */
+.popup.game .popup_content .game_box{
+  margin: 0 !important;
+}
+/* 단어장 */
+.popup.vocabularyBook{
+  padding: 0 !important;
+}
+.popup.vocabularyBook .popup_content{
+  flex-direction: unset !important;
+  padding: 56px 44px 0 44px !important;
+  gap: 40px !important;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+/* 해석 */
+.popup2 {
+  padding-right: 0px !important;
+}
+
+.popup2 .popupTitle{
+  font-size: 40px;
+}
+.popup2 .popup_content{
+  padding-left: 15px !important;
+}
+
+.popup2 .popup_content .context{
+  text-align: center;
+  font-size: 36px;
+  font-weight: bold;
+  margin: 6px 0;
+}
+.popup2 .popup_content .line{
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+}
+.popup2 .popup_content .line .index{
+  font-size: 40px;
+  font-weight: 800;
+}
+
+.popup2 .popup_content .line .textSec{
+  display: flex;
+  justify-content: center;
+  align-items: start;
+}
+.popup2 .popup_content .line .textSec .text_box{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  margin: 10px 0;
+}
+.popup2 .popup_content .text_box1{
+  margin-right: 20px !important;
+}
+.popup2 .popup_content .line .textSec .FZKai{
+  font-size: 40px;
+}
+.popup2 .popup_content .line .textSec .gRegula{
+  font-size: 36px;
+  font-weight: 400;
+}
+.popup2 .popup_content .line .textSec .suit{
+  font-size: 36px;
+  font-weight: 600;
+  color: #3d5591;
+}
+
+
+
+
+
+
+
+
+
+.content2Text{
+  position: absolute;
+}
+.content2Text1{
+  top: 94px;
+  left: 400px;
+  font-size: 28px;
+  transform: rotate(357deg);
+}
+.content2Text2{
+  top: 72px;
+  left: 540px;
+  font-size: 26px;
+  transform: rotate(356deg);
+}
+.content2Text3{
+  top: 102px;
+  left: 711px;
+  font-size: 24px;
+  transform: rotate(2deg);
+}
+.content2Text4{
+  top: 105px;
+  left: 843px;
+  font-size: 24px;
+  transform: rotate(2deg);
+}
+
+.popup.voca2 .title {
+  font-weight: 800;
+  color: #231815;
+  font-size: 30px;
+  margin-bottom: 14px;
+  padding-left: 32px;
+}
+.popup.voca2 .popup_content {
+  padding: 48px 0 10px 0;
+}
+.popup.voca2 .popup_content .popup-scroll {
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+}
+.popup.voca2 .popup_content .list-warp {
+  padding: 0 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.popup.voca2 .popup_content .list-warp .popup_content_list {
+  width: calc((100% - 8px) / 2);
+  height: fit-content;
+  border: 2px solid #b0d9eb;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.popup.voca2 .popup_content .list-warp .popup_content_list .item {
+  display: flex;
+  width: 100%;
+  border-bottom: 2px solid #b0d9eb;
+}
+.popup.voca2 .popup_content .list-warp .popup_content_list .item:last-of-type {
+  border-bottom: 0;
+}
+.popup.voca2 .popup_content .list-warp .popup_content_list .item .item_audio {
+  display: flex;
+  width: 100%;
+}
+.popup.voca2 .popup_content .list-warp .popup_content_list .item .suit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #eefffe;
+  width: 100%;
+  color: #231815;
+  font-size: 25px;
+  font-weight: 600;
+  padding: 13px 0;
+  border-right: 2px solid #b0d9eb;
+}
+.popup.voca2 .popup_content .list-warp .popup_content_list .item .FZKai {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  font-size: 34px;
+  font-weight: 400;
+  background: white;
+  padding: 13px 0;
+  border-right: 2px solid #b0d9eb;
+}
+.popup.voca2 .popup_content .list-warp .popup_content_list .item .gRegula {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  font-size: 25px;
+  color: #727171;
+  background: white;
+  padding: 13px 0;
+  text-align: center;
+}

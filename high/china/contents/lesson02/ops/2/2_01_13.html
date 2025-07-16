@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>미래엔 중국어</title>
+    <script src="./../common/lib/jquery-3.7.1.min.js"></script>
+    <!-- SUIT Variable 폰트 -->
+    <link href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/variable/woff2/SUIT-Variable.css" rel="stylesheet" />
+    <link href="../common/css/comm.css" rel="stylesheet" />
+    <link href="./css/2_01_13.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div id="wrap" class="china_wrap content2_wrap">
+      <div class="title_box dp_flex">
+        <div class="num_box tmoney">
+          <span>1</span>
+        </div>
+        <div class="title">
+          <span class="suit">국적 말하기</span>
+        </div>
+      </div>
+
+      <div class="btn_box btn_box1 dp_flex">
+        <button class="btn hanja_btn">한자</button>
+        <button class="btn pinyin_btn" style="display: none">병음</button>
+        <button class="btn combo_btn">한자+병음</button>
+        <button class="btn popup_btn blue" data-index="3">해석</button>
+        <button class="explan_popup_btn btn blue"><span>설명</span></button>
+        <!-- <div class="tempBttns">
+          <button onclick="page.showVocabulary()" data-index="1" class="tempBttn">단어장</button>
+        </div> -->
+      </div>
+
+      <div class="full_content">
+        <figure class="tipFig">
+          <img class="tipImg" src="./images/2_01_13/tip.svg" alt="">
+        </figure>
+        <div class="top_box dp_flex dp_flex_column">
+          <div class="tab1" data-tab="1" data-audio="037-01.mp3">
+            <!-- 병음 -->
+            <div class="type type1 dp_flex dp_flex_column" data-view="pinyin">
+              <span class="txt txt2 gRegula fs-50">Tã shì <span class="highlight pink">Hánguó</span> rén.</span>
+            </div>
+            <!-- 한자 -->
+            <div class="type type1 dp_flex dp_flex_column" data-view="hanja" style="display: none">
+              <span class="txt txt1 FZKai fs-50">他是<span class="highlight pink">韩国</span>人。</span>
+            </div>
+            <!-- 한자 + 병음 -->
+            <div class="type type3 dp_flex dp_flex_column" data-view="combo" style="display: none">
+              <span class="txt txt1 FZKai">他是<span class="highlight pink">韩国</span>人。</span>
+              <span class="txt txt2 gRegula">Tã shì <span class="highlight pink">Hánguó</span> rén.</span>
+            </div>
+          </div>
+
+          <div class="tab1" data-tab="2" data-audio="037-02.mp3" style="display: none">
+            <!-- 병음 -->
+            <div class="type type1 dp_flex dp_flex_column" data-view="pinyin">
+              <span class="txt txt2 gRegula fs-50">Tã shì <span class="highlight pink">Mêiguó</span> rén.</span>
+            </div>
+            <!-- 한자 -->
+            <div class="type type1 dp_flex dp_flex_column" data-view="hanja" style="display: none">
+              <span class="txt txt1 FZKai fs-50">他是<span class="highlight pink">美国</span>人。</span>
+            </div>
+            <!-- 한자 + 병음 -->
+            <div class="type type3 dp_flex dp_flex_column" data-view="combo" style="display: none">
+              <span class="txt txt1 FZKai">他是<span class="highlight pink">美国</span>人。</span>
+              <span class="txt txt2 gRegula">Tã shì <span class="highlight pink">Mêiguó</span> rén.</span>
+            </div>
+          </div>
+
+          <div class="tab2" data-tab="3" data-audio="037-03.mp3" style="display: none">
+            <!-- 병음 -->
+            <div class="type type3 dp_flex dp_flex_column" data-view="pinyin">
+              <span class="txt txt2 gRegula fs-50">Tã shì <span class="highlight pink">Yìndù</span> rén.</span>
+            </div>
+            <!-- 한자 -->
+            <div class="type type3 dp_flex dp_flex_column" data-view="hanja" style="display: none">
+              <span class="txt txt1 FZKai fs-50">他是<span class="highlight pink">印度</span>人。</span>
+            </div>
+            <!-- 한자 + 병음 -->
+            <div class="type type3 dp_flex dp_flex_column" data-view="combo" style="display: none">
+              <span class="txt txt1 FZKai">他是<span class="highlight pink">印度</span>人。</span>
+              <span class="txt txt2 gRegula">Tã shì <span class="highlight pink">Yìndù</span> rén.</span>
+            </div>
+          </div>
+
+          <div class="tab3" data-tab="4" data-audio="037-04.mp3" style="display: none">
+            <!-- 병음 -->
+            <div class="type type4 dp_flex dp_flex_column" data-view="pinyin">
+              <span class="txt txt2 gRegula fs-50">Tã shì <span class="highlight pink">Rìbên</span> rén.</span>
+            </div>
+            <!-- 한자 -->
+            <div class="type type4 dp_flex dp_flex_column" data-view="hanja" style="display: none">
+              <span class="txt txt1 FZKai fs-50">他是<span class="highlight pink">日本</span>人。</span>
+            </div>
+            <!-- 병음 + 한자 -->
+            <div class="type type4 dp_flex dp_flex_column" data-view="combo" style="display: none">
+              <span class="txt txt1 FZKai">他是<span class="highlight pink">日本</span>人。</span>
+              <span class="txt txt2 gRegula">Tã shì <span class="highlight pink">Rìbên</span> rén.</span>
+            </div>
+          </div>
+
+          <button class="btn3 basic_btn tab_btn active" data-index="1">기본 문장</button>
+        </div>
+
+        <div class="bottom_box dp_flex dp_flex_column" data-view-info="pinyin" data-tab-info="1">
+          <div class="step step1 dp_flex">
+            <div class="img_box">
+              <img src="./images/2_01_13/icon1.png" class="img img1"/>
+              <div class="line"></div>
+            </div>
+            <div class="text_box dp_flex dp_flex_column" data-audio="037-05.mp3">
+              <!-- 병음 -->
+              <span class="txt txt2 gRegula fs-50" data-view="pinyin">Mêiguó</span>
+              <!-- 한자 -->
+              <span class="txt txt1 FZKai fs-50" style="display: none" data-view="hanja" >美国</span>
+              <!-- 한자 + 병음 -->
+              <span class="txt txt1 FZKai" style="display: none" data-view="combo">美国</span>
+              <span class="txt txt2 gRegula" style="display: none" data-view="combo">Mêiguó</span>
+            </div>
+            <button class="btn3 tab_btn" data-index="2">교체 문장</button>
+          </div>
+
+          <div class="step step2 dp_flex">
+            <div class="img_box">
+              <img src="./images/2_01_13/icon2.png" class="img img1" />
+              <div class="line"></div>
+            </div>
+            <div class="text_box dp_flex dp_flex_column" data-audio="037-06.mp3">
+              <!-- 병음 -->
+              <span class="txt txt2 gRegula fs-50" data-view="pinyin">Yìndù</span>
+              <!-- 한자 -->
+              <span class="txt txt1 FZKai fs-50" style="display: none" data-view="hanja">印度</span>
+              <!-- 한자 + 병음 -->
+              <span class="txt txt1 FZKai" style="display: none" data-view="combo" >印度</span>
+              <span class="txt txt2 gRegula" style="display: none" data-view="combo">Yìndù</span>
+            </div>
+            <button class="btn3 tab_btn" data-index="3">교체 문장</button>
+          </div>
+
+          <div class="step step3 dp_flex">
+            <div class="img_box">
+              <img src="./images/2_01_13/icon3.png" class="img img1" />
+              <div class="line"></div>
+            </div>
+            <div class="text_box dp_flex dp_flex_column" data-audio="037-07.mp3">
+              <!-- 병음 -->
+              <span class="txt txt2 gRegula fs-50" data-view="pinyin">Rìbên</span>
+              <!-- 한자 -->
+              <span class="txt txt1 FZKai fs-50" style="display: none" data-view="hanja">日本</span>
+              <!-- 한자 + 병음 -->
+              <span class="txt txt1 FZKai" style="display: none" data-view="combo">日本</span>
+              <span class="txt txt2 gRegula" style="display: none" data-view="combo">Rìbên</span>
+            </div>
+            <button class="btn3 tab_btn" data-index="4">교체 문장</button>
+          </div>
+        </div>
+
+        <div class="btn_box btn_box2 dp_flex">
+          <button class="btn popup_btn blue" data-index="2">참고</button>
+          <button class="btn popup_btn yellow" data-index="4">자기소개 프로젝트</button>
+        </div>
+      </div>
+
+      <div class="popup_bg" style="display: none"></div>
+
+      <!-- 단어장 -->
+      <div class="popup vocabularyBook" data-popup="7" style="display: none">
+        <div class="tag bmjua dp_flex">단어장</div>
+        <button class="close_btn"></button>
+        <div class="popup_content dp_flex">
+          <div class="word_list_box dp_flex dp_flex_column">
+            <div class="word_content">
+              <div class="list dp_flex voca_popup_btn active" data-audio="037-08.mp3">
+                <span class="gRegula">Mêiguó</span>
+              </div>
+              <div class="list dp_flex voca_popup_btn" data-audio="037-09.mp3">
+                <span class="gRegula">Yìndù</span>
+              </div>
+              <div class="list dp_flex voca_popup_btn" data-audio="037-10.mp3">
+                <span class="gRegula">Rìbên</span>
+              </div>
+            </div>
+          </div>
+          <div class="show_word_box dp_flex dp_flex_column">
+            <div class="china_box dp_flex">
+              <div class="voca_popup_tab" data-audio="037-08.mp3">
+                <span class="FZKai">美国</span>
+                <span class="gRegula">Mêiguó</span>
+              </div>
+              <div class="voca_popup_tab" data-audio="037-09.mp3" style="display: none">
+                <span class="FZKai">印度</span>
+                <span class="gRegula">Yìndù</span>
+              </div>
+              <div class="voca_popup_tab" data-audio="037-10.mp3" style="display: none">
+                <span class="FZKai">日本</span>
+                <span class="gRegula">Rìbên</span>
+              </div>
+            </div>
+            <div class="korea_box dp_flex">
+              <div class="voca_warp">
+                <span class="suit">미국</span>
+                <span class="suit" style="display: none">인도</span>
+                <span class="suit" style="display: none">일본</span>
+              </div>
+            </div>
+            <div class="show_btn-warp">
+              <button class="btn3 show_pinyin_btn" style="display: none">
+                병음 보기
+              </button>
+              <button class="btn3 hide_pinyin_btn">병음 가리기</button>
+              <button class="btn3 show_btn" style="display: none">
+                뜻 보기
+              </button>
+              <button class="btn3 hide_btn">뜻 감추기</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 참고 -->
+      <div class="popup popup3 voca2" data-popup="2" style="display: none">
+        <div class="tag bmjua dp_flex">참고</div>
+        <button class="close_btn"></button>
+        <div class="popup_content">
+          <div class="popup-scroll">
+            <div class="title suit">중국어 나라 이름</div>
+            <div class="list-warp">
+              <ul class=" popup_content_list popup_content_list1">
+                <li class="item" data-audio="037-11.mp3">
+                  <div class="item_audio tableHead">
+                    <span class="simhei">荷兰</span>
+                  </div>
+                  <div class="item_audio">
+                    <span class="gRegula">Hélán</span>
+                  </div>
+                  <div class="item_audio tableRight">
+                    <span class="suit">네덜란드</span>
+                  </div>
+                </li>
+                <li class="item" data-audio="037-12.mp3">
+                  <div class="item_audio tableHead">
+                    <span class="simhei">德国</span>
+                  </div>
+                  <div class="item_audio">
+                    <span class="gRegula">Déguó</span>
+                  </div>
+                  <div class="item_audio tableRight">
+                    <span class="suit">독일</span>
+                  </div>
+                </li>
+                <li class="item" data-audio="037-13.mp3">
+                  <div class="item_audio tableHead">
+                    <span class="simhei">蒙古</span>
+                  </div>
+                  <div class="item_audio">
+                    <span class="gRegula">Mênggû</span>
+                  </div>
+                  <div class="item_audio tableRight">
+                    <span class="suit">몽골</span>
+                  </div>
+                </li>
+                <li class="item" data-audio="037-14.mp3">
+                  <div class="item_audio tableHead">
+                    <span class="simhei">越南</span>
+                  </div>
+                  <div class="item_audio">
+                    <span class="gRegula">Yuènán</span>
+                  </div>
+                  <div class="item_audio tableRight">
+                    <span class="suit">베트남</span>
+                  </div>
+                </li>
+                <li class="item" data-audio="037-15.mp3">
+                  <div class="item_audio tableHead">
+                    <span class="simhei">瑞士</span>
+                  </div>
+                  <div class="item_audio">
+                    <span class="gRegula">Ruìshì</span>
+                  </div>
+                  <div class="item_audio tableRight">
+                    <span class="suit">스위스</span>
+                  </div>
+                </li>
+                <li class="item" data-audio="037-16.mp3">
+                  <div class="item_audio tableHead">
+                    <span class="simhei">埃及</span>
+                  </div>
+                  <div class="item_audio">
+                    <span class="gRegula">Âijí</span>
+                  </div>
+                  <div class="item_audio tableRight">
+                    <span class="suit">이집트</span>
+                  </div>
+                </li>
+                <li class="item" data-audio="037-17.mp3">
+                  <div class="item_audio tableHead">
+                    <span class="simhei">捷克</span>
+                  </div>
+                  <div class="item_audio">
+                    <span class="gRegula">Jiékè</span>
+                  </div>
+                  <div class="item_audio tableRight">
+                    <span class="suit">체코</span>
+                  </div>
+                </li>
+                <li class="item" data-audio="037-18.mp3">
+                  <div class="item_audio tableHead">
+                    <span class="simhei">法国</span>
+                  </div>
+                  <div class="item_audio">
+                    <span class="gRegula">Fâguó</span>
+                  </div>
+                  <div class="item_audio tableRight">
+                    <span class="suit">프랑스</span>
+                  </div>
+                </li>
+                <li class="item" data-audio="037-19.mp3">
+                  <div class="item_audio tableHead">
+                    <span class="simhei">泰国</span>
+                  </div>
+                  <div class="item_audio">
+                    <span class="gRegula">Tàiguó</span>
+                  </div>
+                  <div class="item_audio tableRight">
+                    <span class="suit">태국</span>
+                  </div>
+                </li>
+                <li class="item" data-audio="037-20.mp3">
+                  <div class="item_audio tableHead">
+                    <span class="simhei">巴西</span>
+                  </div>
+                  <div class="item_audio">
+                    <span class="gRegula">Bãxå</span>
+                  </div>
+                  <div class="item_audio tableRight">
+                    <span class="suit">브라질</span>
+                  </div>
+                </li>
+
+              </ul>
+
+              <ul class="popup_content_list popup_content_list2">
+                <li class="item" data-audio="037-21.mp3">
+                  <div class="item_audio tableHead">
+                    <span class="simhei">希腊</span>
+                  </div>
+                  <div class="item_audio">
+                    <span class="gRegula">Xålà</span>
+                  </div>
+                  <div class="item_audio tableRight">
+                    <span class="suit">그리스</span>
+                  </div>
+                </li>
+                <li class="item" data-audio="037-22.mp3">
+                  <div class="item_audio tableHead">
+                    <span class="simhei">俄罗斯</span>
+                  </div>
+                  <div class="item_audio">
+                    <span class="gRegula">Éluóså</span>
+                  </div>
+                  <div class="item_audio tableRight">
+                    <span class="suit">러시아</span>
+                  </div>
+                </li>
+                <li class="item" data-audio="037-23.mp3">
+                  <div class="item_audio tableHead">
+                    <span class="simhei">比利时</span>
+                  </div>
+                  <div class="item_audio">
+                    <span class="gRegula">Bîlìshí</span>
+                  </div>
+                  <div class="item_audio tableRight">
+                    <span class="suit">벨기에</span>
+                  </div>
+                </li>
+                <li class="item" data-audio="037-24.mp3">
+                  <div class="item_audio tableHead">
+                    <span class="simhei">葡萄牙</span>
+                  </div>
+                  <div class="item_audio">
+                    <span class="gRegula">Pútáoyá</span>
+                  </div>
+                  <div class="item_audio tableRight">
+                    <span class="suit">포르투갈</span>
+                  </div>
+                </li>
+                <li class="item" data-audio="037-25.mp3">
+                  <div class="item_audio tableHead">
+                    <span class="simhei">菲律宾</span>
+                  </div>
+                  <div class="item_audio">
+                    <span class="gRegula">FçilÛbån</span>
+                  </div>
+                  <div class="item_audio tableRight">
+                    <span class="suit">필리핀</span>
+                  </div>
+                </li>
+                <li class="item" data-audio="037-26.mp3">
+                  <div class="item_audio tableHead">
+                    <span class="simhei">墨西哥</span>
+                  </div>
+                  <div class="item_audio">
+                    <span class="gRegula">Mòxågç</span>
+                  </div>
+                  <div class="item_audio tableRight">
+                    <span class="suit">멕시코</span>
+                  </div>
+                </li>
+                <li class="item" data-audio="037-27.mp3">
+                  <div class="item_audio tableHead">
+                    <span class="simhei">阿根廷</span>
+                  </div>
+                  <div class="item_audio">
+                    <span class="gRegula">Âgçntíng</span>
+                  </div>
+                  <div class="item_audio tableRight">
+                    <span class="suit">아르헨티나</span>
+                  </div>
+                </li>
+                <li class="item" data-audio="037-28.mp3">
+                  <div class="item_audio tableHead">
+                    <span class="simhei">柬埔寨</span>
+                  </div>
+                  <div class="item_audio">
+                    <span class="gRegula">Jiânpûzhài</span>
+                  </div>
+                  <div class="item_audio tableRight">
+                    <span class="suit">캄보디아</span>
+                  </div>
+                </li>
+                <li class="item" data-audio="037-29.mp3">
+                  <div class="item_audio tableHead">
+                    <span class="simhei">土耳其</span>
+                  </div>
+                  <div class="item_audio">
+                    <span class="gRegula">Tû’êrqí</span>
+                  </div>
+                  <div class="item_audio tableRight">
+                    <span class="suit">튀르키예</span>
+                  </div>
+                </li>
+                <li class="item" data-audio="037-30.mp3">
+                  <div class="item_audio tableHead">
+                    <span class="simhei">巴基斯坦</span>
+                  </div>
+                  <div class="item_audio">
+                    <span class="gRegula">Bãjåsåtân</span>
+                  </div>
+                  <div class="item_audio tableRight">
+                    <span class="suit">파키스탄</span>
+                  </div>
+                </li>
+
+              </ul>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- 설명 -->
+      <div class="popup explan" style="display: none">
+        <div class="tag bmjua dp_flex">설명</div>
+        <button class="close_btn">
+          <span class="sr-only">닫기</span>
+        </button>
+        <div class="popup_content dp_flex dp_flex_column">
+          <span class="suit"><span class="simhei" data-audio="034-13.mp3">是<span class="gRegula">(shì)</span></span>는 설명이나 판단을 나타낼 때 사용하며,<br>부정형은 <span class="simhei" data-audio="036-18.mp3">不是<span class="gRegula">(bú shì)</span></span>이다.</span>
+        </div>
+      </div>
+
+      <!-- 해석 -->
+      <div class="popup popup2" data-popup="3" style="display: none">
+        <div class="tag bmjua dp_flex">해석</div>
+        <button class="close_btn"></button>
+        <div class="popup_content">
+          <div class="line line1 dp_flex">
+            <div class="textSec">
+              <div class="text_box text_box1">
+                <span class="txt txt1 simhei">他是韩国人。</span>
+                <span class="suit">그는 한국인이야.</span>
+              </div>
+              <div class="text_box text_box2">
+                <span class="txt gRegula">Tã shì Hánguó rén.</span>
+              </div>
+            </div>
+          </div>
+          <div class="line line2 dp_flex">
+            <div class="textSec">
+              <div class="text_box text_box1">
+                <span class="txt txt1 simhei">他是美国人。</span>
+                <span class="suit">그는 미국인이야.</span>
+              </div>
+              <div class="text_box text_box2">
+                <span class="txt gRegula">Tã shì Mêiguó rén.</span>
+              </div>
+            </div>
+          </div>
+          <div class="line line3 dp_flex">
+            <div class="textSec">
+              <div class="text_box text_box1">
+                <span class="txt txt1 simhei">他是印度人。</span>
+                <span class="suit">그는 인도인이야.</span>
+              </div>
+              <div class="text_box text_box2">
+                <span class="txt gRegula">Tã shì Yìndù rén.</span>
+              </div>
+            </div>
+          </div>
+          <div class="line line4 dp_flex">
+            <div class="textSec">
+              <div class="text_box text_box1">
+                <span class="txt txt1 simhei">他是日本人。</span>
+                <span class="suit">그는 일본인이야.</span>
+              </div>
+              <div class="text_box text_box2">
+                <span class="txt gRegula">Tã shì Rìbên rén.</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- 자기소개 프로젝트 -->
+      <div class="popup popup4 introduce" data-popup="4" style="display: none">
+        <div class="tag bmjua dp_flex">자기소개 프로젝트</div>
+        <button class="close_btn"></button>
+        <div class="popup_content">
+          <div class="popupTitle">
+            <span class="titleText titleText1 suit">국적을 써 봅시다.</span>
+          </div>
+          <div class="line">
+            <div class="reset upperAns">
+              <span class="gRegula quesText">Wô shì</span>
+              <span class="gRegula resetSec"></span>
+              <span class="gRegula quesText">rén</span>
+              <span class="gRegula">.</span>
+            </div>
+            <div class="answer upperAns" data-audio="037-31.mp3" style="display: none;">
+              <span class="gRegula quesText">Wô shì</span>
+              <span class="gRegula ansSec highlight pink">Hánguó</span>
+              <span class="gRegula quesText">rén</span>
+              <span class="gRegula">.</span>
+            </div>
+            <div class="etcAnswer" style="visibility: hidden;">
+              <span class="suit quesText">나는</span>&nbsp;
+              <span class="suit highlight pink2"">한국인</span>
+              <span class="suit quesText">이야.</span>
+            </div>
+          </div>
+          <div class="bttns">
+            <button class="btn3 answer_btn">예시 답안</button>
+            <button class="btn3 reset_btn" style="display: none">다시 하기</button>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </body>
+  <script type="text/javascript">
+    const page = {
+      //컨텐츠에 정답 확인이 존재하는지 여부
+      isAnswer: false,
+      // 단어장 노출 여부 판단.
+      isVocabulary: true,
+      //정답 보기
+      showAnswer: () => {},
+      //정답 숨기기
+      hideAnswer: () => {},
+      // 단어장 보기
+      showVocabulary: () => {
+        setPopup(7);
+      },
+    };
+  </script>
+  <script src="../common/js/script.js"></script>
+  <script src="../common/js/vocabularyBook.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      // setPopup(2);
+    });
+    // 교체 문장
+    $(".tab_btn").on("click", function () {
+      setActive($(this), "tab_btn");
+    });
+  </script>
+  <script type="text/javascript">
+    // 자기소개 프로젝트 정답 버튼
+    $(".popup.introduce .answer_btn").on("click", function () {
+      let index = $(".answer_btn").index(this);
+      $(this).hide();
+      $(".reset_btn").eq(index).show();
+      $(`.answer`).show();
+      $(`.reset`).hide();
+      $(`.etcAnswer`).css("visibility", "visible");
+
+    });
+    // 다시 하기 버튼
+    $(".popup.introduce .reset_btn").on("click", function () {
+      let index = $(".reset_btn").index(this);
+      $(this).hide();
+      $(".answer_btn").eq(index).show();
+      $(`.answer`).hide();
+      $(`.reset`).show();
+      $(`.etcAnswer`).css("visibility", "hidden");
+    });
+  </script>
+  <!-- 호버시 같은 dataset audio 에 모두 speak 추가 -->
+  <script type="text/javascript">
+    $("[data-audio]").hover(
+      function () {
+        let selectedData = $(this).data("audio");
+        $("[data-audio]").each(function (key, item) {
+          let data = $(item).data("audio");
+          if(data == selectedData) {
+            $(item).addClass('speak');
+          }
+        })
+      },
+      function() {
+        $("[data-audio]").removeClass('speak');
+      }
+    )
+  </script>
+  <script type="text/javascript">
+    // 설명 팝업
+    $(".explan_popup_btn").on("click", function () {
+      let index = $(".explan_popup_btn").index(this);
+      $(".explan_popup_bg").show();
+      $(".popup.explan").hide();
+      $(".popup.explan").eq(index).show();
+      try {
+        setRoleStop();
+      } catch (error) {}
+      audioStop();
+    });
+    // 설명팝업 있는상태에서 다른 팝업 클릭시 팝업 닫기
+    $(".popup_btn").on("click", function () {
+      $(".popup.explan").css("display","none");
+    })  
+  </script>
+</html>

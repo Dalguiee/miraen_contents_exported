@@ -1,0 +1,301 @@
+.title_box{
+  top: 9px !important;
+  left: 0 !important;
+}
+.btn_box{
+  padding-top: 9px !important;
+}
+
+.title_box .title{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.title_box .title .titleText{
+  font-size: 36px;
+  font-weight: 800;
+  line-height: 44px;
+}
+
+
+.title_box .mainCon{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  width: 82px;
+  height: 42px;
+  font-size: 32px;
+  color: #C76744;
+}
+
+.title_box .title .mainCon .titleLogo{
+  width: 100%;
+}
+
+
+.title_box .titleText.index{
+  font-size: 38px;
+  color: #C76744;
+  margin-left: 20px;
+}
+.title_box .titleText.index .text{
+}
+.title_box .titleText .suit{
+  font-size: 40px;
+  font-weight: 800;
+}
+
+
+
+
+/* 컨텐츠 */
+.full_content{
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.full_content .content{
+  width: 100%;
+  height: 390px;
+  background-color: #FFF7F1;
+  border-radius: 11px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  padding: 23px 34px;
+}
+
+.full_content .content > .title {
+  margin-bottom: 25px;
+}
+.full_content .content > .title .suit {
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 35px;
+}
+
+
+.full_content .content .content_under{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+.full_content .content .content_under .content_sec {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.full_content .content .content_under .content_sec .content_title{
+  background-color: white;
+  border-radius: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 12px;
+  margin-bottom: 20px;
+}
+.full_content .content[data-tab="2"] .content_under .content_sec .content_title{
+  width: 310px;
+}
+
+.full_content .content .content_under .content_sec .content_title .suit{
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 42px;
+}
+
+.full_content .content .content_under .content_sec .content_img_box{
+  width: 251px;
+  height: 149px;
+}
+.full_content .content .content_under .content_sec .content_img_box img{
+  width: 100%;
+  object-fit: cover;
+}
+
+
+.full_content .content .content_under .arrow_box{
+  margin-top: 68px;
+}
+
+.full_content .content .annotation_box{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 16px;
+}
+.full_content .content .annotation_box .gRegula{
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 46px;
+}
+
+
+
+.full_content .bgImgFig{
+  margin: 0;
+  width: 960px;
+}
+.full_content .bgImgFig .bgImg{
+  width: 100%;
+}
+.full_content .bgImgFig .btnText{
+  top: 392px;
+  left: 441px;
+}
+
+
+
+
+
+/* 팝업 */
+.popup{
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  padding: 62px 40px 20px 40px;
+}
+.popup .popup_content{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  padding: 0 !important;
+  gap: 0 !important;
+}
+/* 설명 */
+.popup.explan{
+  padding: 46px 20px 13px 20px;
+}
+.popup.explan .popup_content{
+  padding: 0 !important;
+}
+.popup.explan .popup_content .FZKai{
+  font-size: 36px !important;
+  font-weight: 400 !important;
+}
+.popup.explan .popup_content .gRegula{
+  font-size: 32px !important;
+  font-weight: 400 !important;
+  color: #727171 !important;
+}
+.popup.explan .popup_content .suit{
+  font-size: 32px !important;
+  line-height: 50px !important;
+  font-weight: 600 !important;
+}
+/* 단어게임 */
+.popup.game .popup_content .game_box{
+  margin: 0 !important;
+}
+/* 단어장 */
+.popup.vocabularyBook{
+  padding: 0 !important;
+}
+.popup.vocabularyBook .popup_content{
+  flex-direction: unset !important;
+  padding: 56px 44px 0 44px !important;
+  gap: 40px !important;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+
+
+
+.popup1 .popup_content{
+  padding-left: 5px !important;
+}
+.popup .popup_content .line{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+}
+
+.popup .popup_content .line1{
+  width: 100%;
+}
+
+.popup .popup_content .line2{
+  width: 100%;
+}
+
+.popup .popup_content .line .lineText{
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 52px;
+}
+
+.popup .popup_content .line .lineBox{
+  font-size: 24px;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+.popup .popup_content .line .lineBox1{
+  width: 100%;
+  height: 204px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: start;
+  padding-left: 25px;
+}
+
+.popup .popup_content .line .lineBox2{
+  width: 100%;
+  height: 204px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: start;
+  padding-left: 25px;
+}
+
+.popup .popup_content .line .lineBox .lineTextUpper{
+  font-size: 36px;
+}
+
+.popup .popup_content .line .lineBox .lineTextUnder{
+  font-size: 36px;
+}
+.popup .popup_content .line .lineBox .lineTextUpper .arrow{
+  margin: 0 13.5px;
+}
+
+.popup .popup_content .line .lineBox .lineTextUnder .gRegula{
+  font-size: 34px;
+  font-weight: 400;
+}
+
+.popup .popup_content .line .lineBox .lineTextUnder .gRegula .simhei{
+  font-weight: 400;
+  font-size: 34px;
+  color: black;
+}
+
+
+
+.popup .popup_content .line .red{
+  color: #E22F61;
+}
+
+.popup .popup_content .innerLine{
+  height: 40%;
+  border-left: 5px dotted #FAD2A9;
+  margin: 0 20px;
+}

@@ -1,0 +1,308 @@
+/* 전역 */
+.highlight.green{
+  color: #337955;
+}
+
+
+/* 헤더 */
+.btn_box{
+  padding-top: 9px !important;
+}
+.title_box{
+  left: 0 !important;
+  top: 9px !important;
+}
+.title_box .title{
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+}
+.title_box .title .title_num{
+  margin-right: 20px;
+  color: #C1802C;
+  font-size: 36px;
+}
+.title_box .title .title_text{
+  font-size: 30px;
+  font-weight: 800;
+}
+
+
+/* 푸터 */
+.numberingBox{
+  position: absolute;
+  bottom: 21px;
+  right: 20px;
+  width: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+
+/* 컨텐츠 */
+.full_content {
+  padding: 46px 80px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  gap: 80px;
+}
+.full_content .line{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.full_content .line .line_content{
+  display: flex;
+  justify-content: start;
+  align-items: start;
+}
+.full_content .line .line_content .index{}
+.full_content .line .line_content .index .suit{
+  font-size: 38px;
+  font-weight: 400;
+  line-height: 42px;
+  
+}
+.full_content .line .line_content .img_box{
+  width: 180px;
+}
+.full_content .line .line_content .img_box img{
+  width: 100%;
+  object-fit: cover;
+}
+.full_content .line .line_content .ques_sec .ques_sec_text{
+  position: relative;
+}
+
+.full_content .line .line_content .ques_sec .ques_sec_text .gRegula{
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 47px;
+  pointer-events: none;
+  position: relative;
+}
+.full_content .line .line_content .ques_sec .ques_sec_text .answer{
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  border: 2px solid #D9D9D9;
+  background-color: white;
+}
+.full_content .line .line_content .ques_sec .ques_sec_bttns{
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  gap: 8px;
+}
+.full_content .line .line_content .ques_sec {
+  padding-top: 20px;
+}
+.full_content .line .line_content .ques_sec .ques_sec_text{
+  padding-left: 20px;
+}
+.full_content .line .line_content .ques_sec .ques_sec_bttns .bttns{
+  width: 100px;
+}
+
+
+
+
+
+
+.full_content .line1 .line_content1 .ques_sec .ques_sec_text .gRegula::before{
+  content: "";
+  position: absolute;
+  background-image: url(../images/7_01_17/hint1.svg);
+  width: 12.77px;
+  height: 2.3px;
+  top: 10px;
+  left: 46px;
+}
+.full_content .line1 .line_content1 .ques_sec .ques_sec_text .gRegula .answer{
+  top: -5px;
+  left: 44px;
+}
+
+.full_content .line1 .line_content2 .ques_sec .ques_sec_text .gRegula::before{
+  content: "";
+  position: absolute;
+  background-image: url(../images/7_01_17/hint2.svg);
+  width: 8.08px;
+  height: 5.75px;
+  top: 7px;
+  left: 27px;
+}
+.full_content .line1 .line_content2 .ques_sec .ques_sec_text .gRegula .answer{
+  top: -5px;
+  left: 22px;
+}
+
+.full_content .line2 .line_content1 .ques_sec .ques_sec_text .gRegula::before{
+  content: "";
+  position: absolute;
+  background-image: url(../images/7_01_17/hint3.svg);
+  width: 11.91px;
+  height: 5.79px;
+  top: 6px;
+  left: 25px;
+}
+.full_content .line2 .line_content1 .ques_sec .ques_sec_text .gRegula .answer{
+  top: -5px;
+  left: 22px;
+}
+
+.full_content .line2 .line_content2 .ques_sec .ques_sec_text .gRegula::before{
+  content: "";
+  position: absolute;
+  background-image: url(../images/7_01_17/hint4.svg);
+  width: 8.08px;
+  height: 5.75px;
+  top: 6px;
+  left: 15px;
+}
+.full_content .line2 .line_content2 .ques_sec .ques_sec_text .gRegula .answer{
+  top: -5px;
+  left: 11px;
+}
+
+
+/* 팝업전역 */
+.popup{
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  padding: 56px 40px 20px 40px;
+}
+.popup .popup_content{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  padding: 0 !important;
+  gap: 0 !important;
+}
+/* 설명 */
+.popup.explan{
+  width: fit-content !important;
+  padding: 46px 24px 10px 24px;
+}
+.popup.explan .popup_content{
+  padding: 0 !important;
+}
+.popup.explan .popup_content .simhei{
+  font-size: 32px !important;
+  line-height: 50px !important;
+  font-weight: 400 !important;
+}
+.popup.explan .popup_content .FZKai{
+  font-size: 32px !important;
+  line-height: 50px !important;
+  font-weight: 400 !important;
+}
+.popup.explan .popup_content .notoSans{
+  font-size: 32px !important;
+  line-height: 50px !important;
+  font-weight: 400 !important;
+}
+.popup.explan .popup_content .gRegula{
+  font-size: 32px !important;
+  line-height: 50px !important;
+  font-weight: 400 !important;
+}
+.popup.explan .popup_content .suit{
+  font-size: 32px !important;
+  line-height: 50px !important;
+  font-weight: 600 !important;
+}
+/* 단어게임 */
+.popup.game .popup_content .game_box{
+  margin: 0 !important;
+}
+/* 단어장 */
+.popup.vocabularyBook{
+  padding: 0 !important;
+}
+.popup.vocabularyBook .popup_content{
+  flex-direction: unset !important;
+  padding: 56px 44px 0 44px !important;
+  gap: 40px !important;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+
+
+/* 대본 */
+.popup1 .popup_content .content{
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  gap: 60px;
+}
+.popup1 .popup_content .content .text_box {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: 40px;
+}
+.popup1 .popup_content .content .text_box .line .suit.index{
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 48px;
+  margin-right: 10px;
+  width: 44px;
+  display: inline-block;
+  text-align: center;
+}
+.popup1 .popup_content .content .text_box .line .gRegula{
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 48px;
+}
+
+/* 해석 */
+.popup2 .popup_content .content{
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  gap: 60px;
+}
+.popup2 .popup_content .content .text_box {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: 40px;
+}
+.popup2 .popup_content .content .text_box .line .suit.index{
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 48px;
+  margin-right: 10px;
+  width: 44px;
+  display: inline-block;
+  text-align: center;
+}
+.popup2 .popup_content .content .text_box .line .gRegula{
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 48px;
+  margin-right: 10px;
+}
+.popup2 .popup_content .content .text_box .line .suit.translate{
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 48px;
+  color: #3D5591;
+}
+

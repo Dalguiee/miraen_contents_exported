@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>미래엔 중국어</title>
+  <script src="./../common/lib/jquery-3.7.1.min.js"></script>
+  <script src="./../common/lib/howler-2.1.3.min.js"></script>
+  <!-- SUIT Variable 폰트 -->
+  <link href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/variable/woff2/SUIT-Variable.css"
+    rel="stylesheet" />
+  <link href="../common/css/comm.css" rel="stylesheet" />
+  <link href="./css/1_01_06.css" rel="stylesheet" />
+</head>
+
+<body>
+  <div id="wrap" class="china_wrap content_wrap">
+    <div class="title_box">
+      <div class="title">
+        <div class="mainCon bmjua">
+          <img class="titleLogo" src="./images/1_01_06/logo.png" alt="" />
+        </div>
+        <span class="titleText suit index"><span class="suit text">제3성의 성조 변화</span></span>
+      </div>
+    </div>
+
+    <div class="btn_box dp_flex">
+      <button class="btn blue popup_btn" data-tab="1" data-index="3">
+        보충
+      </button>
+      <button class="btn blue popup_btn" data-tab="2" data-index="4" style="display: none">
+        보충
+      </button>
+    </div>
+
+    <div class="full_content dp_flex dp_flex_column">
+      <div class="content" data-tab="1">
+        <div class="title">
+          <span class="suit">* 성조 표기는 바뀌지 않습니다.</span>
+        </div>
+        <div class="content_under">
+          <div class="content_sec content_sec_1">
+            <div class="content_title">
+              <span class="suit">제3성 + 제3성</span>
+            </div>
+            <div class="content_img_box">
+              <img src="./images/1_01_06/content_table_1_1.svg" alt="">
+            </div>
+          </div>
+
+          <div class="arrow_box">
+            <img src="./images/1_01_06/arrow.svg" alt="">
+          </div>
+
+          <div class="content_sec content_sec_2">
+            <div class="content_title">
+              <span class="suit"><span style="color: #E22F61;">제2성</span> + 제3성</span>
+            </div>
+            <div class="content_img_box">
+              <img src="./images/1_01_06/content_table_1_2.svg" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="annotation_box">
+          <span class="btn-audio btnText btnText1 gRegula" data-audio="024-25.mp3">nî hâo</span>
+        </div>
+      </div>
+
+      <div class="content" data-tab="2" style="display: none;">
+        <div class="title">
+          <span class="suit">* 성조 표기는 바뀌지 않습니다.</span>
+        </div>
+        <div class="content_under">
+          <div class="content_sec content_sec_1">
+            <div class="content_title">
+              <span class="suit">제3성 + 제1, 2, 4성, 경성</span>
+            </div>
+            <div class="content_img_box">
+              <img src="./images/1_01_06/content_table_2_1.svg" alt="">
+            </div>
+          </div>
+
+          <div class="arrow_box">
+            <img src="./images/1_01_06/arrow.svg" alt="">
+          </div>
+
+          <div class="content_sec content_sec_2">
+            <div class="content_title">
+              <span class="suit"><span style="color: #E22F61;">반3성</span> + 제1, 2, 4성, 경성</span>
+            </div>
+            <div class="content_img_box">
+              <img src="./images/1_01_06/content_table_2_2.svg" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="annotation_box">
+          <span class="btn-audio btnText btnText2 gRegula" data-audio="024-28.mp3">nîmen</span>
+        </div>
+      </div>
+      <!-- <figure data-tab="1" class="bgImgFig bgImgFig1">
+        <img class="bgImg" src="./images/1_01_06/content1.svg" />
+        <span class="btn-audio btnText btnText1 gRegula" data-audio="024-25.mp3">nî hâo</span>
+      </figure>
+      <figure data-tab="2" class="bgImgFig bgImgFig2" style="display: none">
+        <img class="bgImg" src="./images/1_01_06/content2.svg" />
+        <span class="btn-audio btnText btnText2 gRegula" data-audio="024-28.mp3">nîmen</span>
+      </figure> -->
+    </div>
+
+    <div class="popup_bg" style="display: none"></div>
+
+    <div class="popup popup1 expPopup" data-popup="3" style="display: none">
+      <div class="tag bmjua dp_flex">보충</div>
+      <button class="close_btn"></button>
+      <div class="popup_content">
+        <div class="line line1">
+          <span class="lineText lineText1 suit">제3성 뒤에 제3성이 오면 앞에 있는 제3성은 제2성으로<br />발음한다.
+            이때 성조의 표기는 바뀌지 않는다.</span>
+          <div class="lineBox lineBox1 suit">
+            <span class="lineTextUpper">
+              제3성+제3성
+              <img class="arrow" src="./images/1_01_06/arrow.svg" alt="" />
+              <span class="red">제2성</span>+제3성
+            </span>
+            <div class="lineTextUnder">
+              <span data-audio="024-26.mp3" class="gRegula">lâohû<span class="suit">(<span
+                    class="simhei">老虎</span>)</span></span><span class="notoSans">,</span>
+              <span data-audio="024-27.mp3" class="gRegula">shuîguô<span class="suit">(<span
+                    class="simhei">水果</span>)</span></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="popup popup2 expPopup" data-popup="4" style="display: none">
+      <div class="tag bmjua dp_flex">보충</div>
+      <button class="close_btn"></button>
+      <div class="popup_content">
+        <div class="line line2">
+          <span class="lineText lineText2 suit">
+            제3성 뒤에 제1, 2, 4성이나 경성이 오면 제3성은<br />반3성으로
+            발음한다. 반3성은 제3성의 떨어지는<br />앞부분까지만 발음하고
+            올라가는 뒷부분은 발음하지<br />않는다.
+          </span>
+          <div class="lineBox lineBox2 suit">
+            <span class="lineTextUpper suit">
+              제3성+제1, 2, 4성, 경성
+              <img class="arrow" src="./images/1_01_06/arrow.svg" alt="" />
+              <span class="red">반3성</span>+제1, 2, 4성, 경성
+            </span>
+            <div class="lineTextUnder">
+              <span data-audio="024-29.mp3" class="gRegula">shôujå<span class="suit">(<span
+                    class="simhei">手机</span>)</span></span><span class="notoSans">,</span>
+              <span data-audio="024-30.mp3" class="gRegula">qîchuáng<span class="suit">(<span
+                    class="simhei">起床</span>)</span></span><span class="notoSans">,</span>
+              <span data-audio="024-31.mp3" class="gRegula">mîfàn<span class="suit">(<span
+                    class="simhei">米饭</span>)</span></span><span class="notoSans">,</span>
+              <span data-audio="024-32.mp3" class="gRegula">jiêjie<span class="suit">(<span
+                    class="simhei">姐姐</span>)</span></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="pagination dp_flex" style="margin-bottom: -10px">
+      <span class="active dot" data-index="1"></span>
+      <span class="dot" data-index="2"></span>
+    </div>
+  </div>
+</body>
+<script type="text/javascript">
+  const page = {
+    //컨텐츠에 정답 확인이 존재하는지 여부
+    isAnswer: false,
+    // 단어장 노출 여부 판단. 이벤트 호출하지 않으면 노출하지 않음.
+    isVocabulary: false,
+    //정답 보기
+    showAnswer: () => {
+      $(".wrong").hide();
+      $(".correct").show();
+    },
+    //정답 숨기기
+    hideAnswer: () => {
+      $(".correct").hide();
+      $(".wrong").show();
+    },
+    // 단어장 보기
+    showVocabulary: () => {
+      setPopup(7);
+    },
+  };
+</script>
+<script crossorigin src="../common/lib/libBundle.js"></script>
+<script src="../common/js/script.js"></script>
+<script src="../common/js/rolePlayerCh.js"></script>
+<script src="../common/js/vocabularyBook.js"></script>
+
+</html>

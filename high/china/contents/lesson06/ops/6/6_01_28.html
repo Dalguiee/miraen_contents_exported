@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>미래엔 중국어</title>
+    <script src="./../common/lib/jquery-3.7.1.min.js"></script>
+    <script src="./../common/lib/howler-2.1.3.min.js"></script>
+    <!-- SUIT Variable 폰트 -->
+    <link
+      href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/variable/woff2/SUIT-Variable.css"
+      rel="stylesheet"
+    />
+    <link href="../common/css/comm.css" rel="stylesheet" />
+    <link href="./css/6_01_28.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div id="wrap" class="china_wrap content_wrap">
+      <div class="title_box">
+        <div class="title">
+          <img class="titleLogo" src="./images/6_01_28/logo.svg" alt="" /><span
+            class="titleText suit"
+            >중국의 <span class="purple">명소</span></span
+          >
+        </div>
+      </div>
+
+      <div class="btn_box dp_flex">
+        <div class="bttns">
+          <button class="btn popup_btn blue" data-index="3">보충</button>
+        </div>
+      </div>
+
+      <div class="full_content">
+        <div class="bgContainer bgContainer1">
+          <img src="./images/6_01_28/bg1.png" alt="" />
+        </div>
+
+        <div class="bgContainer bgContainer2">
+          <img src="./images/6_01_28/bg2.svg" alt="" />
+          <button class="detail_button_box popup_btn" data-index="2">
+            <img class="detail_button" src="./images/6_01_28/detail_button.png" alt="">
+          </button>
+        </div>
+
+        <div class="contextSec">
+          <div class="contextBox">
+            <div class="line line1" data-audio="081-01.mp3">
+              <img
+                class="textBoxImg"
+                src="./images/6_01_28/textbox.svg"
+                alt=""
+              />
+              <span class="simhei">内蒙古</span>
+              <span class="gRegula">Nèi Mênggû</span>
+            </div>
+            <div class="line line2" data-audio="081-02.mp3">
+              <span class="simhei">蒙古包</span>
+              <span class="gRegula">mênggûbão</span>
+            </div>
+            <div class="line line3">
+              <span class="suit">
+                <span class="space" style="margin-right: 20px;"></span>
+                몽골족의 전통 가옥인 게르는 쉽게 분해<br>하고 조립할 수 있어 유목
+                생활에 적합합니다.
+              </span>
+            </div>
+            <div class="line line4">
+              <span class="suit">#낙타</span>
+              <span class="suit">#바단지린 사막</span>
+              <span class="suit">#칭기즈 칸</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 팝업 -->
+      <div class="popup_bg" style="display: none"></div>
+      <!-- 보충 -->
+      <div class="popup expPopup" data-popup="3" style="display: none">
+        <div class="tag bmjua dp_flex">보충</div>
+        <button class="close_btn"></button>
+        <div class="popup_content">
+          <div class="title" data-audio="081-01.mp3">
+            <span class="FZKai">内蒙古</span><span class="suit">(<span class="gRegula">Nèi Mênggû</span>)</span>
+          </div>
+          <div class="contextSec">
+            <div class="line line3">
+              <span class="suit">
+                #낙타: 야생 쌍봉낙타는 신장, 네이멍구, 간쑤성 등 중국
+                서북부 사막의 상징이다. 성질이 온순하고 추위와 기갈에도 잘
+                견뎌 사막의 교통, 농경에 쓰인다.
+              </span>
+            </div>
+            <div class="line line1">
+              <span class="suit">
+                #바단지린 사막(<span class="FZKai" data-audio="081-07.mp3"
+                  >巴丹吉林沙漠<span class="gRegula">
+                    Bãdãnjílín Shãmò</span
+                  ></span
+                >):<br />중국에서 네 번째로 큰 바단지린 사막은 네이멍구에 위치해
+                있으며 끝없이 펼쳐져 있는 모래 언덕과 곳곳의 오아시스가 장관을
+                이루는 곳이다.
+              </span>
+            </div>
+            <div class="line line2">
+              <span class="suit">
+                #칭기즈 칸(<span class="FZKai" data-audio="081-08.mp3"
+                  >成吉思汗<span class="gRegula"> Chéngjíså Hán</span></span
+                >): 칭기즈 칸의<br />본명은
+                <span class="notoSans">‘</span>테무친<span class="notoSans"
+                  >’</span
+                >이고, 칸(<span class="FZKai" data-audio="081-09.mp3">汗</span
+                >)은 <span class="notoSans">‘</span>최고 지배자<span
+                  class="notoSans"
+                  >’</span
+                >라는 뜻이다. 탁월한 군사 전략가이자 제왕으로<span
+                  class="notoSans"
+                  >,</span
+                >
+                중앙아시아와 인도 및 러시아 남부에 이르는 몽골 제국을
+                건설하였다.
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 크게 보기 -->
+      <div class="popup detail_popup" data-popup="2" style="display: none">
+        <button class="close_btn"></button>
+        <div class="popup_content">
+          <div class="content">
+            <div class="img_box">
+              <img src="./images/6_01_28/detail_content.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </body>
+  <script type="text/javascript">
+    const page = {
+      //컨텐츠에 정답 확인이 존재하는지 여부
+      isAnswer: false,
+      // 단어장 노출 여부 판단. 이벤트 호출하지 않으면 노출하지 않음.
+      isVocabulary: false,
+      //정답 보기
+      showAnswer: () => {
+        $(".answer_btn").hide();
+        $(".reset_btn").show();
+        $(".answer").show();
+      },
+      //정답 숨기기
+      hideAnswer: () => {
+        $(".answer_btn").show();
+        $(".reset_btn").hide();
+        $(".answer").hide();
+      },
+      // 단어장 보기
+      showVocabulary: () => {
+        setPopup(7);
+      },
+    };
+  </script>
+  <script type="text/javascript">
+    // 정답 버튼
+    $(".answer_btn").on("click", function () {
+      let index = $(".answer_btn").index(this);
+      $(this).hide();
+      $(".reset_btn").eq(index).show();
+      $(".answer").addClass("speak");
+    });
+    // 다시 하기 버튼
+    $(".reset_btn").on("click", function () {
+      let index = $(".reset_btn").index(this);
+      $(this).hide();
+      $(".answer_btn").eq(index).show();
+      $(".answer").removeClass("speak");
+    });
+  </script>
+  <script>
+    $("[data-audiolcm]").on("click", function () {
+      let index = $("[data-audiolcm]").index(this);
+      try {
+        setRoleStop();
+      } catch (error) {}
+      $("[data-audiolcm]").removeClass("speak");
+      $("[data-audio]").removeClass("speak");
+      $(this).addClass("speak");
+      $(`.ansText${index + 1}`).addClass("speak");
+      audioPlay(audio, [`./media/mp3/${$(this).data("audiolcm")}`], () => {
+        $(this).removeClass("speak");
+      });
+    });
+  </script>
+  <script crossorigin src="../common/lib/libBundle.js"></script>
+  <script src="../common/js/script.js"></script>
+  <script src="../common/js/rolePlayerCh.js"></script>
+  <script src="../common/js/vocabularyBook.js"></script>
+</html>

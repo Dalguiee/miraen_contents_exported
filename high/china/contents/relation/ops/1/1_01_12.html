@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>미래엔 중국어</title>
+    <script src="./../common/lib/jquery-3.7.1.min.js"></script>
+    <!-- SUIT Variable 폰트 -->
+    <link
+      href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/variable/woff2/SUIT-Variable.css"
+      rel="stylesheet"
+    />
+    <link href="../common/css/comm.css" rel="stylesheet" />
+    <link href="./css/1_01_12.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div id="wrap" class="china_wrap">
+      <div class="title_box">
+        <div class="title">
+          <img class="title_logo" src="./images/1_01_12/logo.svg" alt="">
+          <span class="title_text suit">중국의 <span class="green">외래어 표기법</span></span>
+        </div>
+      </div>
+
+      <div class="btn_box dp_flex">
+        <button class="btn popup_btn blue" data-index="3">보충</button>
+        <button class="btn popup_btn blue" data-index="4">참고</button>
+      </div>
+
+      <div class="full_content">
+        <div class="title">
+          <span class="bmjua">의역</span>
+          <span class="suit">단어의 의미를 반영하여 표기하는 방식</span>
+        </div>
+        <div class="content">
+          <div class="content_upper">
+            <div class="content_box content_box_1">
+              <div class="left">
+                <div class="img_box">
+                  <img src="./images/1_01_12/icon1.svg" alt="">
+                </div>
+                <span class="suit">블루투스</span>
+                <span class="gRegula">(Bluetooth)</span>
+              </div>
+              <div class="right">
+                <div class="text_box">
+                  <span class="suit"><span class="simhei" data-audio="105-11.mp3">蓝<span class="gRegula"> lán</span></span> <span class="suit">푸르다</span> <span class="gRegula">[blue]</span></span>
+                  <img class="text_box_pointer" src="./images/1_01_12/+_icon.svg" alt="">
+                  <span class="suit"><span class="simhei" data-audio="105-12.mp3">牙<span class="gRegula"> yá</span></span> <span class="suit">이</span> <span class="gRegula">[tooth]</span></span>
+                  <img class="text_box_pointer" src="./images/1_01_12/arrow_under.svg" alt="">
+                  <span class="simhei" data-audio="105-13.mp3">蓝牙<span class="gRegula"> lányá</span></span>
+                </div>
+              </div>
+            </div>
+            <div class="content_box content_box_2">
+              <div class="left">
+                <div class="img_box">
+                  <img src="./images/1_01_12/icon2.svg" alt="">
+                </div>
+                <span class="suit">컴퓨터</span>
+                <span class="gRegula">(computer)</span>
+              </div>
+              <div class="right">
+                <div class="text_box">
+                  <span class="suit"><span class="simhei" data-audio="105-14.mp3">电<span class="gRegula"> diàn</span></span> <span class="suit">전기</span></span>
+                  <img class="text_box_pointer" src="./images/1_01_12/+_icon.svg" alt="">
+                  <span class="suit"><span class="simhei" data-audio="105-15.mp3">脑<span class="gRegula"> nâo</span></span> <span class="suit">두뇌</span></span>
+                  <img class="text_box_pointer" src="./images/1_01_12/arrow_under.svg" alt="">
+                  <span class="simhei" data-audio="105-16.mp3">电脑<span class="gRegula"> diànnâo</span></span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="content_under">
+            <div class="question_box question_box1">
+              <div class="title">
+                <span class="suit">(1)</span>
+                <span class="simhei" data-audio="105-17.mp3">热<span class="gRegula"> rè</span></span>
+                <span class="suit">뜨겁다</span>
+                <span class="suit"> + </span>
+                <span class="simhei" data-audio="105-18.mp3">狗<span class="gRegula"> gôu</span></span>
+                <span class="suit">개</span>
+              </div>
+              <div class="switch_box">
+                <img class="arrow_icon" src="./images/1_01_11/question_arrow.svg" alt="">
+                <span class="reset reset0"></span>
+                <span class="answer answer0 suit" style="display: none;">핫도그</span>
+                <div class="bttn_box">
+                  <button class="btn3 answer_btn" data-index="0">정답</button>
+                  <button class="btn3 reset_btn" data-index="0" style="display: none">다시 하기</button>
+                </div>
+              </div>
+            </div>
+            <div class="question_box question_box2">
+              <div class="title">
+                <span class="suit">(2)</span>
+                <span class="simhei" data-audio="105-20.mp3">世界<span class="gRegula"> shìjiè</span></span>
+                <span class="suit">세계</span>
+                <span class="suit"> + </span>
+                <span class="simhei" data-audio="105-21.mp3">杯<span class="gRegula"> bçi</span></span>
+                <span class="suit">잔, 컵</span>
+              </div>
+              <div class="switch_box">
+                <img class="arrow_icon" src="./images/1_01_11/question_arrow.svg" alt="">
+                <span class="reset reset1"></span>
+                <span class="answer answer1 suit" style="display: none;">월드컵</span>
+                <div class="bttn_box">
+                  <button class="btn3 answer_btn" data-index="1">정답</button>
+                  <button class="btn3 reset_btn" data-index="1" style="display: none">다시 하기</button>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- 팝업 -->
+      <div class="popup_bg" style="display: none"></div>
+
+      <!-- 보충 -->
+      <div class="popup popup3" data-popup="3" style="display: none">
+        <div class="tag bmjua dp_flex">보충</div>
+        <button class="close_btn"></button>
+        <div class="popup_content">
+          <div class="title">
+            <span class="suit">의역 추가 단어</span>
+          </div>
+          <div class="content">
+            <div class="line line1">
+              <span class="suit"><span class="simhei" data-audio="105-23.mp3">文化<span class="suit">(</span><span class="gRegula">wénhuà</span><span class="suit">)</span></span> <span class="suit">문화</span> <span class="suit">+</span> <span class="simhei" data-audio="105-24.mp3">中心<span class="suit">(</span><span class="gRegula">zhõngxån</span><span class="suit">)</span></span> <span class="suit">중심</span></span>
+              <span class="suit"><span class="notoSans">→</span> <span class="simhei" data-audio="105-25.mp3">文化中心<span class="gRegula"><span class="suit">(</span>wénhuà zhõngxån<span class="suit">)</span></span></span> <span class="suit">문화 센터</span></span>
+            </div>
+            <div class="line line2">
+              <span class="suit"><span class="simhei" data-audio="105-26.mp3">网<span class="suit">(</span><span class="gRegula">wâng</span><span class="suit">)</span></span> <span class="suit">그물, 망</span> <span class="suit">+</span> <span class="simhei" data-audio="105-27.mp3">站<span class="suit">(</span><span class="gRegula">zhàn</span><span class="suit">)</span></span> <span class="suit">정거장</span></span>
+              <span class="suit"><span class="notoSans">→</span> <span class="simhei" data-audio="105-28.mp3">网站<span class="gRegula"><span class="suit">(</span>wângzhàn<span class="suit">)</span></span></span> <span class="suit">웹사이트</span></span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 참고 -->
+      <div class="popup popup4" data-popup="4" style="display: none">
+        <div class="tag bmjua dp_flex">참고</div>
+        <button class="close_btn"></button>
+        <div class="popup_content">
+          <div class="title">
+            <span class="suit">의역의 종류</span>
+          </div>
+          <div class="content">
+            <div class="line line1">
+              <div class="index">
+                <span class="suit">1.</span>
+              </div>
+              <div class="text">
+                <span class="suit title">단어의 의미 하나하나를 직역하여 표기</span>
+                <span class="suit"><span class="simhei" data-audio="105-29.mp3">超<span class="suit">(</span><span class="gRegula">chão</span><span class="suit">)</span></span> <span class="suit">초과하다</span> <span class="suit">+</span> <span class="simhei" data-audio="105-30.mp3">人<span class="suit">(</span><span class="gRegula">rén</span><span class="suit">)</span></span> <span class="suit">사람</span> <span class="notoSans">→</span> <span class="simhei" data-audio="105-31.mp3">超人<span class="suit">(</span><span class="gRegula">chãorén</span><span class="suit">)</span></span> <span class="suit">슈퍼맨</span></span>
+                <span class="suit"><span class="simhei" data-audio="105-32.mp3">太阳<span class="gRegula"><span class="suit">(</span>tàiyáng<span class="suit">)</span></span></span> <span class="suit">태양</span> <span class="suit">+</span> <span class="simhei" data-audio="105-33.mp3">镜<span class="suit">(</span><span class="gRegula">jìng</span><span class="suit">)</span></span> <span class="suit">안경</span></span>
+                <span class="suit"><span class="notoSans">→</span> <span class="simhei" data-audio="105-34.mp3">阳镜<span class="gRegula"><span class="suit">(</span>tàiyángjìng<span class="suit">)</span></span></span> <span class="suit">선글라스</span></span>
+              </div>
+            </div>
+
+            <div class="line line2">
+              <div class="index">
+                <span class="suit">2.</span>
+              </div>
+              <div class="text">
+                <span class="suit title">외래어가 가지고 있는 개념을 근거로 의역하여 표기</span>
+                <span class="suit"><span class="simhei" data-audio="105-35.mp3">电<span class="suit">(</span><span class="gRegula">diàn</span><span class="suit">)</span></span> <span class="suit">전기</span> <span class="suit">+</span> <span class="simhei" data-audio="105-36.mp3">视<span class="suit">(</span><span class="gRegula">shì</span><span class="suit">)</span></span> <span class="suit">보다</span> <span class="notoSans">→</span> <span class="simhei" data-audio="105-37.mp3">电视<span class="suit">(</span><span class="gRegula">diànshì</span><span class="suit">)</span></span> <span class="suit">텔레비전</span></span>
+                <span class="suit"><span class="simhei" data-audio="105-38.mp3">演唱<span class="gRegula"><span class="suit">(</span>yânchàng<span class="suit">)</span></span></span> <span class="suit">공연하다</span> <span class="suit">+</span> <span class="simhei" data-audio="105-39.mp3">会<span class="suit">(</span><span class="gRegula">huì</span><span class="suit">)</span></span> <span class="suit">모임</span></span>
+                <span class="suit"><span class="notoSans">→</span> <span class="simhei" data-audio="105-40.mp3">演唱会<span class="gRegula"><span class="suit">(</span>yânchànghuì<span class="suit">)</span></span></span> <span class="suit">콘서트</span></span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </body>
+  <script type="text/javascript">
+    const page = {
+      //컨텐츠에 정답 확인이 존재하는지 여부
+      isAnswer: false,
+      // 단어장 노출 여부 판단.
+      isVocabulary: false,
+      //정답 보기
+      showAnswer: () => {},
+      //정답 숨기기
+      hideAnswer: () => {},
+      // 단어장 보기
+      showVocabulary: () => {},
+    };
+    $(document).ready(function () {});
+  </script>
+  <script type="text/javascript">
+    // 정답 버튼 앞에 경로를 따로 따서 팝업정답 스크립트 분리지정 가능
+    $(".answer_btn").on("click", function () {
+      // let index = $(".answer_btn").index(this);
+      let index = $(this).data("index");
+      $(this).hide();
+      $(`.reset_btn[data-index=${index}]`).show();
+      
+      // $(`.answer`).show();
+      $(`.answer${index}`).show();
+      $(`.reset${index}`).hide();
+    });
+    // 다시 하기 버튼
+    $(".reset_btn").on("click", function () {
+      // let index = $(".reset_btn").index(this);
+      let index = $(this).data("index");
+      $(this).hide();
+      $(`.answer_btn[data-index=${index}]`).show();
+      
+      // $(".answer").hide();
+      $(`.answer${index}`).hide();
+      $(`.reset${index}`).show();
+    });
+  </script>
+  <script src="../common/js/script.js"></script>
+  <script type="text/javascript"></script>
+</html>

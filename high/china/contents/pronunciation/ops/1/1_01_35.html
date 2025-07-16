@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>미래엔 중국어</title>
+    <script src="./../common/lib/jquery-3.7.1.min.js"></script>
+    <script src="./../common/lib/howler-2.1.3.min.js"></script>
+    <!-- SUIT Variable 폰트 -->
+    <link
+      href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/variable/woff2/SUIT-Variable.css"
+      rel="stylesheet"
+    />
+    <link href="../common/css/comm.css" rel="stylesheet" />
+    <link href="./css/1_01_35.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div id="wrap" class="china_wrap">
+      <div class="top-title">
+        <img src="./images/1_01_35/title1.svg" class="title-img" />
+        <div class="flex line-36">
+          <span class="bmjua fs-36 mr-20" style="color: #498f63">3</span
+          ><span class="suit fw-8 fs-30 line-30"
+            >성모, 운모, 성조를 조합하여 한어병음을 바르게 써 봅시다.</span
+          >
+        </div>
+      </div>
+      <!-- bttns -->
+      <div class="btn_box flex absolute">
+        <button class="btn blue popup_btn" data-index="1">해석</button>
+      </div>
+
+      <!-- contents -->
+      <div class="full_content">
+        <div class="content">
+          <div class="item index1">
+            <div class="flex justify-center items-center">
+              <span class="gRegula fs-34"><span data-audio="M018-26.mp3">zh</span> + <span data-audio="M019-47.mp3">uo</span></span
+              ><span class="suit fs-26 fw-6">(제1성)</span>
+            </div>
+            <span class="disabled" data-audio="021-13.mp3" data-index="1">
+              <span
+                class="answer gRegula fs-32 c-red"
+                data-index="1"
+                style="display: none"
+                >zhuõ</span
+              >
+              <span class="explan gRegula fs-32">zi</span>
+            </span>
+            <button class="btn btn3 answer_btn" data-index="1">정답</button>
+            <button
+              class="btn btn3 reset_btn"
+              style="display: none"
+              data-index="1"
+            >
+              다시 풀기
+            </button>
+            <button class="btn btn3 explan_popup_btn">설명 1</button>
+          </div>
+          <div class="item index2">
+            <div class="flex justify-center items-center">
+              <span class="gRegula fs-34" data-audio="M019-25.mp3">i</span
+              ><span class="suit fs-26 fw-6">(제3성)</span>
+            </div>
+            <span class="disabled" data-audio="021-14.mp3" data-index="2">
+              <span
+                class="answer gRegula fs-32 c-red"
+                data-index="2"
+                style="display: none"
+                >yî</span
+              >
+              <span class="explan gRegula fs-32">zi</span>
+            </span>
+            <button class="btn btn3 answer_btn" data-index="2">정답</button>
+            <button
+              class="btn btn3 reset_btn"
+              style="display: none"
+              data-index="2"
+            >
+              다시 풀기
+            </button>
+            <button class="btn btn3 explan_popup_btn">설명 2</button>
+          </div>
+          <div class="item index3">
+            <div class="flex justify-center items-center">
+              <span class="gRegula fs-34"><span data-audio="M018-11.mp3">n</span> + <span data-audio="M019-29.mp3">iou</span></span
+              ><span class="suit fs-26 fw-6">(제2성)</span>
+            </div>
+            <span class="disabled" data-audio="021-15.mp3" data-index="3">
+              <span
+                class="answer gRegula fs-32 c-red"
+                data-index="3"
+                style="display: none"
+                >niú</span
+              >
+              <span class="explan gRegula fs-32">nâi</span>
+            </span>
+            <button class="btn btn3 answer_btn" data-index="3">정답</button>
+            <button
+              class="btn btn3 reset_btn"
+              style="display: none"
+              data-index="3"
+            >
+              다시 풀기
+            </button>
+            <button class="btn btn3 explan_popup_btn">설명 3</button>
+          </div>
+        </div>
+      </div>
+      <div class="number-page">
+        <div class="item">01</div>
+        <div class="item">02</div>
+        <div class="item active">03</div>
+      </div>
+
+      <div class="popup_bg" style="display: none"></div>
+      <!-- 해석 팝업 -->
+      <div class="popup popup2" data-popup="1" style="display: none">
+        <div class="tag bmjua dp_flex">해석</div>
+        <button class="close_btn"></button>
+        <div class="popup_content">
+          <div class="content">
+            <div class="flex fs-40 mb-20">
+              <span class="suit mr-10 line-52">(1)</span><span class="gRegula line-52">zhuõzi <span class="suit right_context c-dblue fw-5">책상</span></span>
+            </div>
+            <div class="flex fs-40 mb-20">
+              <span class="suit line-52 mr-10">(2)</span><span class="gRegula line-52">yîzi <span class="suit right_context c-dblue fw-5">의자</span></span>
+            </div>
+            <div class="flex fs-40 mb-20">
+              <span class="suit line-52 mr-10">(3)</span><span class="gRegula line-52">niúnâi <span class="suit right_context c-dblue fw-5">우유</span></span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 설명1 -->
+      <div class="popup explan index1" style="display: none">
+        <div class="tag bmjua dp_flex">설명 1</div>
+        <button class="close_btn"></button>
+        <div class="popup_content whitespace-nowrap">
+          <div class="flex flex-col mr-20">
+            <span class="line-48 suit fw-6 fs-32"
+              >성조는 <span class="gRegula"><span data-audio="M019-01.mp3">a</span> > <span data-audio="M019-11.mp3">o</span>, <span data-audio="M019-17.mp3">e</span> > <span data-audio="M019-25.mp3">i</span>, <span data-audio="M019-45.mp3">u</span>, </span
+              ><span class="notoSans fw-5" data-audio="M019-63.mp3">ü</span> 순서로 표기한다.</span
+            >
+          </div>
+        </div>
+      </div>
+      <!-- 설명2 -->
+      <div class="popup explan index2" style="display: none">
+        <div class="tag bmjua dp_flex">설명 2</div>
+        <button class="close_btn"></button>
+        <div class="popup_content whitespace-nowrap">
+          <div class="flex flex-col mr-10">
+            <span class="line-48 suit fw-6 fs-32"
+              ><span class="gRegula" data-audio="M019-25.mp3">i</span>가 단독으로 쓰이면
+              <span class="gRegula" data-audio="M019-25.mp3">yi</span>로 표기한다.
+            </span>
+          </div>
+        </div>
+      </div>
+      <!-- 설명3 -->
+      <div class="popup explan index3" style="display: none">
+        <div class="tag bmjua dp_flex">설명 3</div>
+        <button class="close_btn"></button>
+        <div class="popup_content whitespace-nowrap">
+          <div class="flex flex-col mr-10">
+            <span class="line-48 suit fw-6 fs-32"
+              ><span class="gRegula" data-audio="M019-29.mp3">iou</span> 앞에 성모가 있을 때는 가운데
+              모음을 생략하고 표기한다.</span
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript">
+    const page = {
+      //컨텐츠에 정답 확인이 존재하는지 여부
+      isAnswer: false,
+      // 단어장 노출 여부 판단. 이벤트 호출하지 않으면 노출하지 않음.
+      isVocabulary: false,
+      //정답 보기
+      showAnswer: () => {},
+      //정답 숨기기
+      hideAnswer: () => {},
+      // 단어장 보기
+      showVocabulary: () => {},
+    };
+  </script>
+  <script src="../common/js/script.js"></script>
+
+  <script type="text/javascript">
+    $(document).ready(function () {
+      // setPopup(1);
+    });
+    $(".answer_btn").on("click", function () {
+      const index = $(this).data("index");
+      $(this).hide();
+      $(this).next().show();
+      $(`.answer[data-index="${index}"]`).show();
+      $(`[data-audio]`).removeClass("disabled");
+    });
+
+    $(".reset_btn").on("click", function () {
+      const index = $(this).data("index");
+      $(this).hide();
+      $(this).prev().show();
+      $(`.answer[data-index="${index}"]`).hide();
+      $(`[data-audio]`).addClass("disabled");
+    });
+  </script>
+</html>

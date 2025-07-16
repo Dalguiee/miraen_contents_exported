@@ -1,0 +1,28 @@
+{
+  "lang": ["한자", "병음"],
+  "subtitlelist": [
+    {
+      "start": 9.9,
+      "end": 12.4,
+      "value": ["Zhè jiàn yåfu duõshao qián?", "这件衣服多少钱?"]
+    },
+    {
+      "start": 12.9,
+      "end": 14.5,
+      "value": ["Yìbâi kuài.", "一百块。"]
+    },
+    {
+      "start": 14.8,
+      "end": 18.2,
+      "value": [
+        "Tài guì le, néng piányi yìdiânr ma?",
+        "太贵了，能便宜一点儿吗?"
+      ]
+    },
+    {
+      "start": 19.4,
+      "end": 22.2,
+      "value": ["Xíng, gêi nî dâ bã zhé.", "行，给你打八折。"]
+    }
+  ]
+}

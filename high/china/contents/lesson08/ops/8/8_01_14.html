@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>미래엔 중국어</title>
+  <script src="./../common/lib/jquery-3.7.1.min.js"></script>
+  <!-- SUIT Variable 폰트 -->
+  <link href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/variable/woff2/SUIT-Variable.css"
+    rel="stylesheet" />
+  <link href="../common/css/comm.css" rel="stylesheet" />
+  <link href="./css/8_01_14.css" rel="stylesheet" />
+</head>
+
+<body>
+  <div id="wrap" class="china_wrap content2_wrap">
+    <div class="title_box dp_flex">
+      <div class="num_box tmoney">
+        <span>2</span>
+      </div>
+      <div class="text_box">
+        <span class="fs-30">백 단위 숫자 읽기 </span>
+      </div>
+    </div>
+
+    <div class="btn_box dp_flex">
+      <button class="btn hanja_btn">한자</button>
+      <button class="btn pinyin_btn" style="display: none">병음</button>
+      <button class="btn combo_btn">한자+병음</button>
+      <button class="btn popup_btn blue" data-index="1">보충</button>
+      <button class="btn popup_btn blue" data-index="2">추가 활동</button>
+      <!-- <div class="tempBttns">
+        <button onclick="page.showVocabulary()" data-index="1" class="tempBttn">단어장</button>
+      </div> -->
+    </div>
+
+    <div class="full_content">
+      <div class="content">
+        <div class="table mb-12">
+          <div class="row">
+            <div class="col"><span class="suit fw-6 fs-24">100</span></div>
+            <div class="col">
+              <!-- --------한자 + 병음-------- -->
+              <span class="simhei fs-30 line-32 relative mb-26" data-view="combo" data-audio="097-21.mp3">一百<span
+                  class="gRegula fs-22 line-26 subtext">yìbâi</span></span>
+              <!-- --------병음-------- -->
+              <span class="gRegula fs-28 line-32" data-view="pinyin" data-audio="097-21.mp3"
+                style="display: none">yìbâi</span>
+              <!-- --------한자-------- -->
+              <span class="simhei fs-30 line-32" data-view="hanja" data-audio="097-21.mp3"
+                style="display: none">一百</span>
+            </div>
+            <div class="col">
+              <span class="suit fs-26 fw-6">백 단위 앞의 1은
+                <span data-audio="094-17.mp3"><span class="simhei">一</span>(<span class="gRegula">yå</span>)</span>를 붙여서 읽습니다.</span>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col"><span class="suit fw-6 fs-24">101</span></div>
+            <div class="col">
+              <!-- --------한자 + 병음-------- -->
+              <span class="simhei fs-30 line-32 relative mb-26" data-view="combo" data-audio="097-22.mp3">一百零一<span class="gRegula fs-22 line-26 subtext">yìbâi líng yå</span></span>
+              <!-- --------병음-------- -->
+              <span class="gRegula fs-28 line-32" data-view="pinyin" data-audio="097-22.mp3" style="display: none">yìbâi líng yå</span>
+              <!-- --------한자-------- -->
+              <span class="simhei fs-30 line-32" data-view="hanja" data-audio="097-22.mp3" style="display: none">一百零一</span>
+            </div>
+            <div class="col">
+              <span class="suit fs-26 fw-6">숫자 중간의 0은 <span class="simhei" data-audio="097-57.mp3">零<span class="suit">(</span><span class="gRegula">líng</span><span class="suit">)</span></span>으로 읽습니다.</span>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col"><span class="suit fw-6 fs-24">111</span></div>
+            <div class="col">
+              <!-- --------한자 + 병음-------- -->
+              <span class="simhei fs-30 line-32 relative mb-26" data-view="combo" data-audio="097-23.mp3">一百一十一<span class="gRegula fs-22 line-26 subtext">yìbâi yìshí yå</span></span>
+              <!-- --------병음-------- -->
+              <span class="gRegula fs-28 line-32" data-view="pinyin" data-audio="097-23.mp3" style="display: none">yìbâi yìshí yå</span>
+              <!-- --------한자-------- -->
+              <span class="simhei fs-30 line-32" data-view="hanja" data-audio="097-23.mp3" style="display: none">一百一十一</span>
+            </div>
+            <div class="col">
+              <span class="suit fs-26 fw-6">세 자리 이상의 숫자에서 10은 <span class="simhei" data-audio="097-58.mp3">一十<span class="suit">(</span><span class="gRegula">yìshí</span><span class="suit">)</span></span>로 읽습니다.</span>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col"><span class="suit fw-6 fs-24">120</span></div>
+            <div class="col">
+              <!-- --------한자 + 병음-------- -->
+              <span class="simhei fs-30 line-32 relative mb-26" data-view="combo" data-audio="097-24.mp3">一百二(十)<span class="gRegula fs-22 line-26 subtext">yìbâi èr(shí)</span></span>
+              <!-- --------병음-------- -->
+              <span class="gRegula fs-28 line-32" data-view="pinyin" data-audio="097-24.mp3" style="display: none">yìbâi èr(shí)</span>
+              <!-- --------한자-------- -->
+              <span class="simhei fs-30 line-32" data-view="hanja" data-audio="097-24.mp3" style="display: none">一百二(十)</span>
+            </div>
+            <div class="col">
+              <span class="suit fs-26 fw-6">일의 자리가 0인 경우 <span data-audio="020-19.mp3"><span class="simhei">十</span>(<span class="gRegula">shí</span>)</span>를 생략하여 읽기도 합니다.</span>
+            </div>
+          </div>
+        </div>
+        <div class="info">
+          <div class="item" style="width: 130px">
+            <div class="suit c-red fw-6 fs-32 line-40 mb-6">200</div>
+            <span class="simhei fs-26 line-28 relative" data-view="combo"><span data-audio="097-26.mp3"
+                data-audio-combo="097-26">两百</span>
+              /
+              <span data-audio="097-27.mp3" data-audio-combo="097-27">二百</span><span
+                class="gRegula fs-22 line-26 subtext"><span data-audio="097-26.mp3"
+                  data-audio-combo="097-26">liângbâi</span>
+                /
+                <span data-audio="097-27.mp3" data-audio-combo="097-27">èrbâi</span></span></span><span
+              class="gRegula fs-24 line-28" data-view="pinyin" style="display: none"><span
+                data-audio="097-26.mp3">liângbâi</span> /
+              <span data-audio="097-27.mp3">èrbâi</span></span><span class="simhei fs-26 line-28" data-view="hanja"
+              style="display: none"><span data-audio="097-26.mp3">两百</span> /
+              <span data-audio="097-27.mp3">二百</span></span>
+          </div>
+          <div class="item" style="width: 120px">
+            <div class="suit c-red fw-6 fs-32 line-40 mb-6">680</div>
+            <span class="simhei fs-26 line-28 relative" data-view="combo" data-audio="097-28.mp3">六百八(十)<span
+                class="gRegula fs-22 line-26 subtext">liùbâi bã(shí)</span></span><span
+              class="gRegula fs-24 line-28" data-view="pinyin" data-audio="097-28.mp3" style="display: none">liùbâi
+              bã(shí)</span><span class="simhei fs-26 line-28" data-view="hanja" data-audio="097-28.mp3"
+              style="display: none">六百八(十)</span>
+          </div>
+          <div class="item" style="width: 104px">
+            <div class="suit c-red fw-6 fs-32 line-40 mb-6">904</div>
+            <span class="simhei fs-26 line-28 relative" data-view="combo" data-audio="097-30.mp3">九百零四<span
+                class="gRegula fs-22 line-26 subtext">jiûbâi líng sì</span></span><span
+              class="gRegula fs-24 line-28" data-view="pinyin" data-audio="097-30.mp3" style="display: none">jiûbâi líng
+              sì</span><span class="simhei fs-26 line-28" data-view="hanja" data-audio="097-30.mp3"
+              style="display: none">九百零四</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="popup_bg" style="display: none"></div>
+    <!-- 보충 팝업 -->
+    <div class="popup popup3" data-popup="1" style="display: none">
+      <div class="tag bmjua dp_flex">보충</div>
+      <button class="close_btn"></button>
+      <div class="popup_content">
+        <div class="content">
+          <div class="title mt-10 mb-20">
+            <span class="suit">숫자 읽기</span>
+          </div>
+          <div class="text-box mb-20">
+            <span class="index suit line-44">1.</span>
+            <span class="flex flex-col">
+              <span class="suit line-44 mb-10">
+                <span class="FZKai" data-audio="097-32.mp3">百<span class="gRegula"><span class="suit">(</span>bâi<span class="suit">)</span></span></span>,
+                <span class="FZKai" data-audio="097-18.mp3">千<span class="gRegula"><span class="suit">(</span>qiãn<span class="suit">)</span></span></span>,
+                <span class="FZKai" data-audio="097-19.mp3">万<span class="gRegula"><span class="suit">(</span>wàn<span class="suit">)</span></span></span>,
+                <span class="FZKai" data-audio="097-20.mp3">亿<span class="gRegula"><span class="suit">(</span>yì<span class="suit">)</span></span></span>에서 맨 앞의 1은 <span data-audio="094-17.mp3"><span class="FZKai">一</span>(<span class="gRegula">yå</span>)</span>를 붙여서 읽는다.
+              </span>
+              <span class="suit line-44">
+                <span style="margin-right: 50px;"><span class="FZKai" data-audio="097-33.mp3" data-audio-combo="097-33">一千</span><span class="gRegula" data-audio="097-33.mp3" data-audio-combo="097-33" style="margin: 0 10px;">yìqiãn</span><span class="suit">1,000</span></span>
+                <span><span class="FZKai" data-audio="097-34.mp3" data-audio-combo="097-34">一万</span><span class="gRegula" data-audio="097-34.mp3" data-audio-combo="097-34" style="margin: 0 10px;">yíwàn</span><span class="suit">10,000</span></span>
+              </span>
+            </span>
+          </div>
+          <div class="text-box mb-20">
+            <span class="index suit line-44">2.</span><span class="suit line-44">1은 <span class="notoSans">‘</span><span
+                data-audio="097-35.mp3"><span class="FZKai">幺</span>(<span class="gRegula">yão</span>)</span><span
+                class="notoSans">’</span>로도 말하는데, 이는 숫자
+              <span class="notoSans">‘</span><span>1(<span
+                  class="gRegula" data-audio="094-17.mp3">yå</span>)</span><span class="notoSans">’</span>와
+              <span class="notoSans">‘</span><span>7(<span
+                  class="gRegula" data-audio="097-36.mp3">qå</span>)</span><span class="notoSans">’</span>의<br />발음이 비슷하여 혼동될
+              수 있기 때문에 중요한 숫자 정보를<br />전달할 때 혼동을 피하기
+              위해 <span class="notoSans">‘</span><span data-audio="097-35.mp3"><span class="FZKai">幺</span>(<span
+                  class="gRegula">yão</span>)</span><span class="notoSans">’</span>를 사용한다.</span>
+          </div>
+          <div class="text-box mb-20">
+            <span class="index suit line-44">3.</span><span class="flex flex-col"><span class="suit line-44 mb-10">전화번호,
+                방 호수, 교통수단의 번호는 숫자를 하나씩
+                읽는다.</span><span class="suit"><span data-audio="097-37.mp3"><span class="FZKai mr-10">三零八号</span><span
+                    class="gRegula mr-10">sãn líng bã hào</span></span>308호</span></span>
+          </div>
+          <div class="text-box mb-20" style="padding-left: 40px;">
+            <span class="suit"><span class="FZKai mr-20" data-audio="097-38.mp3"
+                data-audio-combo="097-38">零幺零幺二三四五六七八</span>010-1234-5678<br /><span class="gRegula"
+                data-audio="097-38.mp3" data-audio-combo="097-38">líng yão líng yão èr sãn sì wû liù qå bã</span></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 추가 활동 -->
+    <div class="popup popup3" data-popup="2" style="display: none">
+      <div class="tag bmjua dp_flex">추가 활동</div>
+      <button class="close_btn"></button>
+      <div class="popup_content">
+        <div class="content">
+          <div class="text-box mb-20 mt-4">
+            <span class="index suit line-38 fs-32">•</span><span class="flex flex-col"><span
+                class="suit line-38 fs-32 fw-7 mb-10">백 단위 빙고 게임</span><span class="suit line-40 fs-30">모둠별로 100부터 200
+                사이의 숫자 중 5의 배수를 골라 빙고
+                칸을<br />
+                채운다. 모둠별로 돌아가며 중국어로 숫자를 읽고, 교사는 그
+                숫자를<br />칠판에 적어 학생들이 확인할 수 있도록 한다. 가장
+                먼저 네 줄의<br />빙고를 완성하는 모둠이 승리한다.</span></span>
+          </div>
+          <div class="text-box">
+            <span class="index suit line-38 fs-32">•</span><span class="flex flex-col"><span
+                class="suit line-38 fs-32 fw-7 mb-10">화폐 연산 게임</span><span class="suit line-40 fs-30 mb-10">교사가 불러 주는
+                금액을 모두 더하거나 빼는 문제를 내고,
+                학생들은<br />총 금액을 중국어로 말한다.</span><span class="suit fs-28 line-36"><span>예: </span> [교사]
+                <span data-audio="097-39.mp3"><span class="FZKai">两百</span>(<span
+                    class="gRegula">liângbâi</span>)</span>
+                +
+                <span data-audio="097-40.mp3"><span class="FZKai">一百</span>(<span class="gRegula">yìbâi</span>)</span>
+                [학생]
+                <span data-audio="097-41.mp3"><span class="FZKai">三百</span>(<span
+                    class="gRegula">sãnbâi</span>)</span></span></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 단어장 -->
+    <div class="popup vocabularyBook" data-popup="3" style="display: none">
+      <div class="tag bmjua dp_flex">단어장</div>
+      <button class="close_btn"></button>
+      <div class="popup_content dp_flex">
+        <div class="word_list_box dp_flex dp_flex_column">
+          <div class="word_content">
+            <div class="list dp_flex voca_popup_btn active" data-audio="097-31.mp3">
+              <span class="gRegula">líng</span>
+            </div>
+          </div>
+        </div>
+        <div class="show_word_box dp_flex dp_flex_column">
+          <div class="china_box dp_flex">
+            <div class="voca_popup_tab" data-audio="097-31.mp3">
+              <span class="FZKai">零</span>
+              <span class="gRegula">líng</span>
+            </div>
+          </div>
+          <div class="korea_box dp_flex">
+            <div class="voca_warp">
+              <span class="suit">영, 0</span>
+            </div>
+          </div>
+          <div class="show_btn-warp">
+            <button class="btn3 show_pinyin_btn" style="display: none">
+              병음 보기
+            </button>
+            <button class="btn3 hide_pinyin_btn">병음 가리기</button>
+            <button class="btn3 show_btn" style="display: none">
+              뜻 보기
+            </button>
+            <button class="btn3 hide_btn">뜻 감추기</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<script type="text/javascript">
+  const page = {
+    //컨텐츠에 정답 확인이 존재하는지 여부
+    isAnswer: false,
+    // 단어장 노출 여부 판단.
+    isVocabulary: true,
+    //정답 보기
+    showAnswer: () => { },
+    //정답 숨기기
+    hideAnswer: () => { },
+    // 단어장 보기
+    showVocabulary: () => {
+      setPopup(3);
+    },
+  };
+  $(document).ready(function () {
+    // setPopup(2);
+  });
+</script>
+<script src="../common/js/script.js"></script>
+<script src="../common/js/vocabularyBook.js"></script>
+<script type="text/javascript"></script>
+
+</html>

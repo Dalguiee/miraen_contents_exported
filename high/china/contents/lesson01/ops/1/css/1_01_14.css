@@ -1,0 +1,219 @@
+/* 전역 */
+.trRht{
+  transform: translateX(10px);
+}
+
+/* 타이틀 헤더 */
+.title_box{
+  top: 5px !important;
+  left: 0 !important;
+}
+.btn_box{
+  padding-top: 9px !important;
+}
+.btn_box.btn_box1 {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+.btn_box.btn_box1 .title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn_box.btn_box1 .title .titleText {
+  font-size: 38px;
+  color: #3A958E;
+}
+.title_box .num_box span{
+  color: #3A958E;
+}
+.title_box .num_box::after{
+  background-image: url(../../common/images/unit_mark_green.svg) !important;
+}
+
+
+/* 컨텐츠 */
+.full_content .bgImgFig {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  width: 692px;
+}
+.full_content .bgImgFig img{
+  width: 100%;
+}
+
+.full_content .bgImgFig .btnText {
+  font-size: 27px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+}
+.full_content .bgImgFig .btnText .innerBtnText {
+  width: 200px;
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.full_content .bgImgFig .btnText.btnText1 {
+  top: 254px;
+  left: 177px;
+}
+.full_content .bgImgFig .btnText.btnText2 {
+  top: 256px;
+  left: 459px;
+}
+.full_content .bgImgFig .btnText .innerBtnText1 .gRegula{
+  font-size: 28px;
+  color: #727171;
+}
+.full_content .bgImgFig .btnText .innerBtnText2 .FZKai{
+  font-size: 30px;
+  font-weight: 400;
+}
+.full_content .bgImgFig .btnText .innerBtnText3 .FZKai{
+  font-size: 30px;
+  font-weight: 400;
+  margin-bottom: 7px;
+}
+.full_content .bgImgFig .btnText .innerBtnText3 .gRegula{
+  font-size: 27px;
+  color: #727171;
+}
+.full_content .btn_box {
+  width: 100%;
+  display: flex;
+  justify-content: space-between !important;
+  align-items: center;
+}
+.full_content .btn_box.btn_box2 {
+  width: 100%;
+  display: flex;
+  justify-content: end !important;
+  align-items: center;
+  gap: 5px;
+}
+
+
+
+/* 팝업 */
+.popup{
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  padding: 62px 40px 20px 40px;
+}
+.popup .popup_content{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  padding: 0 !important;
+  gap: 0 !important;
+}
+/* 설명 */
+.popup.explan{
+  width: 678px !important;
+  top: 120px !important;
+  right: 150px !important;
+  padding: 46px 24px 10px 24px;
+}
+.popup.explan .popup_content{
+  padding: 0 !important;
+}
+.popup.explan .popup_content .simhei{
+  font-size: 32px !important;
+  line-height: 50px !important;
+  font-weight: 400 !important;
+}
+.popup.explan .popup_content .gRegula{
+  font-size: 32px !important;
+  line-height: 50px !important;
+  font-weight: 400 !important;
+}
+.popup.explan .popup_content .suit{
+  font-size: 32px !important;
+  line-height: 50px !important;
+  font-weight: 600 !important;
+}
+/* 단어게임 */
+.popup.game .popup_content .game_box{
+  margin: 0 !important;
+}
+/* 단어장 */
+.popup.vocabularyBook{
+  padding: 0 !important;
+}
+.popup.vocabularyBook .popup_content{
+  flex-direction: unset !important;
+  padding: 56px 44px 0 44px !important;
+  gap: 40px !important;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+
+
+
+/* 해석 */
+.popup1 .popup_content {
+  padding: 0 15px !important;
+}
+
+.popup1 .popup_content .item {
+  margin: 0 0 30px 0;
+  height: fit-content !important;
+}
+
+.popup1 .popup_content .item_text {
+  display: flex;
+  flex-direction: inherit !important;
+  justify-content: start;
+  align-items: start;
+}
+
+.popup1 .popup_content .chBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+
+.popup1 .popup_content .chBox .simhei {
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 41px;
+}
+
+.popup1 .popup_content .chBox .gRegula{
+  font-weight: 400;
+  font-size: 36px;
+  margin-top: 0 !important;
+  color: #231815 !important;
+}
+
+.popup1 .popup_content .item_text .suit {
+  line-height: 41px;
+}
+
+
+/* 보충 */
+.popup2 .popup_content .suit{
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 54px;
+}
+.popup2 .popup_content .context .simhei{
+  font-size: 36px;
+  font-weight: 400;
+}

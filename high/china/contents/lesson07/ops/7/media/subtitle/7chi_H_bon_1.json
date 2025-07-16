@@ -1,0 +1,25 @@
+{
+  "lang": ["한자", "병음"],
+  "subtitlelist": [
+    {
+      "start": 7,
+      "end": 8.3,
+      "value": ["Nín yào diân shénme?", "您要点什么?"]
+    },
+    {
+      "start": 9,
+      "end": 11,
+      "value": ["Lái yì wân niúròumiàn.", "来一碗牛肉面。"]
+    },
+    {
+      "start": 12,
+      "end": 14.5,
+      "value": ["Zài zhèr chå háishi dài zôu?", "在这儿吃还是带走?"]
+    },
+    {
+      "start": 15,
+      "end": 18.5,
+      "value": ["Dài zôu, wô sâo yíxià èrwéimâ.", "带走，我扫一下二维码。"]
+    }
+  ]
+}

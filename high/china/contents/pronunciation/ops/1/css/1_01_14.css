@@ -1,0 +1,74 @@
+.china_wrap .top-title {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 137px;
+  height: 71px;
+  background: url(./../images/1_01_14/title1.svg) no-repeat bottom;
+  background-size: cover;
+}
+
+.china_wrap .btn_box {
+  top: 3px;
+  right: 0;
+  z-index: 1;
+}
+
+.china_wrap .full_content {
+  width: 100%;
+  height: calc(100% - 74px);
+}
+.china_wrap .full_content .content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.full_content .content .text-box {
+  display: flex;
+  margin-left: 54px;
+}
+
+.full_content .content .text-box .label {
+  width: 66px;
+  height: 42.7px;
+  font-weight: 600;
+  font-size: 24px;
+  color: white;
+  background: url(./../images/1_01_14/title2.svg) no-repeat center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+}
+.full_content .content .content_box {
+  width: 880px;
+  height: 347px;
+  display: block;
+  margin: 0 auto;
+}
+
+/* 보충 팝업 */
+.popup.popup3 .popup_content {
+  width: 100%;
+  height: 100%;
+  padding: 46px 34px 8px 55px;
+  position: relative;
+}
+.popup.popup3 .popup_content .content {
+  /* background: rgba(0, 0, 0, 0.2); */
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+}
+.popup.popup3 .popup_content .content .title {
+  line-height: 48px;
+  font-size: 40px;
+}
+.popup.popup3 .popup_content .content .title .suit {
+  font-weight: 800;
+}
+.popup.popup3 .popup_content .content .title .simhei {
+  font-weight: 400;
+}

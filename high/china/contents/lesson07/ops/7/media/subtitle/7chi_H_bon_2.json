@@ -1,0 +1,21 @@
+{
+	"lang": ["한자", "병음"],
+	"subtitlelist": [
+		{ "start": 6.0, "end": 9, "value": ["Nî yîqián chåguo huôguõ ma?", "你以前吃过火锅吗?"] },
+		{
+			"start": 9,
+			"end": 12.5,
+			"value": ["Méi chåguo. Wèidao zênmeyàng?", "没吃过。味道怎么样?"]
+		},
+		{
+			"start": 12.5,
+			"end": 16.5,
+			"value": ["Yôudiânr là, búguò hên hâochå.", "有点儿辣，不过很好吃。"]
+		},
+		{
+			"start": 16.5,
+			"end": 19.0,
+			"value": ["Méi shìr! Wô bú pà là.", "没事儿! 我不怕辣。"]
+		}
+	]
+}

@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>미래엔 중국어</title>
+  <script src="./../common/lib/jquery-3.7.1.min.js"></script>
+  <!-- SUIT Variable 폰트 -->
+  <link href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/variable/woff2/SUIT-Variable.css"
+    rel="stylesheet" />
+  <link href="../common/css/comm.css" rel="stylesheet" />
+  <link href="./css/5_01_20.css" rel="stylesheet" />
+</head>
+
+<body>
+  <div id="wrap" class="china_wrap content_wrap">
+    <!-- <div class="title_box title_box3 dp_flex">
+        <div class="num_box">
+          <span class="bmjua">3</span>
+        </div>
+        <div class="text_box">
+          <span class="suit">그림에 맞게 질문의 답을 써 봅시다.</span>
+        </div>
+      </div> -->
+
+    <div class="title_box dp_flex">
+      <div class="title">
+        <span class="title_num bmjua">3</span>
+        <span class="title_text suit">그림에 맞게 질문의 답을 써 봅시다.</span>
+      </div>
+
+      <!-- <div class="suit play_box">
+          <div class="icon_box">
+            <img src="./images/5_01_18/icon1.svg" alt="재생" />
+          </div>
+          <span class="suit">083</span>
+        </div> -->
+    </div>
+
+    <div class="btn_box dp_flex">
+      <button class="btn popup_btn blue" data-index="1">해석</button>
+    </div>
+
+    <div class="full_content">
+      <div class="box-example">
+        <span class="gRegula" data-audio="069-08.mp3">Nî jiãnglái xiâng dãng shénme?</span>
+      </div>
+
+      <div class="box-answer">
+        <div class="box box-left">
+          <div class="box_num suit">(1)</div>
+          <div class="box_content">
+            <div class="image-wrap">
+              <img src="./images/5_01_20/image1.png" alt="" />
+            </div>
+            <div class="content-wrap">
+              <div class="content-left" data-answer-reset="1">
+                <div class="dp_flex">
+                  <span class="gRegula">Wô</span>
+                  <span class="line w-105px"></span>
+                  <span class="gRegula">dãng</span>
+                </div>
+                <div class="dp_flex">
+                  <span class="line second_line w-190px"></span>
+                  <span class="gRegula">.</span>
+                </div>
+              </div>
+              <div class="content-left" data-answer="1" style="display: none" data-audio="069-09.mp3">
+                <div class="dp_flex">
+                  <span class="gRegula">Wô</span>
+                  <span class="line w-105px highlight pink gRegula">xiâng</span>
+                  <span class="gRegula">dãng</span>
+                </div>
+                <div class="dp_flex">
+                  <span class="line second_line w-190px highlight pink gRegula">yåshçng</span>
+                  <span class="gRegula">.</span>
+                </div>
+              </div>
+              <div class="content-right">
+                <button class="btn3 btn3-1 off" data-answer-toggle="1">
+                  정답
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="box box-right">
+          <div class="box_num suit">(2)</div>
+          <div class="box_content">
+            <div class="image-wrap">
+              <img src="./images/5_01_20/image2.png" alt="" />
+            </div>
+            <div class="content-wrap">
+              <div class="content-left" data-answer-reset="2">
+                <div class="dp_flex">
+                  <span class="gRegula" style="margin-right: 10px;">Wô</span>
+                  <span class="gRegula">xiâng</span>
+                  <span class="line w-95px"></span>
+                </div>
+                <div class="dp_flex">
+                  <span class="line second_line w-115px"></span>
+                  <span class="gRegula">.</span>
+                </div>
+              </div>
+              <div class="content-left" data-answer="2" style="display: none" data-audio="069-10.mp3">
+                <div class="dp_flex">
+                  <span class="gRegula" style="margin-right: 10px;">Wô</span>
+                  <span class="gRegula">xiâng</span>
+                  <span class="line w-95px highlight pink gRegula">dãng</span>
+                </div>
+                <div class="dp_flex">
+                  <span class="line second_line w-115px highlight pink gRegula">lâoshå</span>
+                  <span class="gRegula">.</span>
+                </div>
+              </div>
+              <div class="content-right">
+                <button class="btn3 btn3-2 off" data-answer-toggle="2">
+                  정답
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="number-page">
+      <div class="item">01</div>
+      <div class="item">02</div>
+      <div class="item active">03</div>
+      <div class="item">04</div>
+      <div class="item">05</div>
+      <div class="item">06</div>
+    </div>
+
+    <div class="popup_bg" style="display: none"></div>
+    <!-- 해석 -->
+    <div class="popup popup1" data-popup="1" style="display: none">
+      <div class="tag bmjua dp_flex">해석</div>
+      <button class="close_btn"></button>
+      <div class="popup_content">
+        <div class="content">
+          <div class="text">
+            <span class="gRegula">Nî jiãnglái xiâng dãng shénme?</span>
+            <span class="suit k_text">너는 장차 무엇이 되고 싶니?</span>
+          </div>
+          <ul class="list">
+            <li class="list-item">
+              <span class="num suit" style="letter-spacing: 1.7px;">(1)</span>
+              <span class="gRegula">Wô xiâng dãng yåshçng.</span>
+              <span class="suit k_text ml-20">나는 의사가 되고 싶어.</span>
+            </li>
+            <li class="list-item">
+              <span class="num suit">(2)</span>
+              <span class="gRegula">Wô xiâng dãng lâoshå.</span>
+              <span class="suit k_text ml-20">나는 선생님이 되고 싶어.</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</body>
+<script type="text/javascript">
+  const page = {
+    //컨텐츠에 정답 확인이 존재하는지 여부
+    isAnswer: false,
+    // 단어장 노출 여부 판단.
+    isVocabulary: false,
+    //정답 보기
+    showAnswer: () => {
+      $(".answer_btn").hide();
+      $(".reset_btn").show();
+      $(".reset").hide();
+      $(".answer").show();
+    },
+    //정답 숨기기
+    hideAnswer: () => {
+      $(".reset_btn").hide();
+      $(".answer_btn").show();
+      $(".reset").show();
+      $(".answer").hide();
+    },
+    // 단어장 보기
+    showVocabulary: () => { },
+  };
+  $(document).ready(function () {
+    // setPopup(1);
+  });
+</script>
+<script src="../common/js/script.js"></script>
+<script type="text/javascript">
+  // 정답 && 다시 하기
+  $("[data-answer-toggle]").on("click", function () {
+    let index = $(this).data("answerToggle");
+    if ($(this).hasClass("off") === true) {
+      $(this).removeClass("off");
+      $(this).addClass("on");
+      $(this).text("다시 하기");
+      $(`[data-answer-reset="${index}"]`).hide();
+      $(`[data-answer="${index}"]`).show();
+    } else {
+      $(this).removeClass("on");
+      $(this).addClass("off");
+      $(this).text("정답");
+      $(`[data-answer-reset="${index}"]`).show();
+      $(`[data-answer="${index}"]`).hide();
+    }
+  });
+</script>
+
+</html>

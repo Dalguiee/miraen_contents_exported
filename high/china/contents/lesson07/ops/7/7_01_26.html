@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>미래엔 중국어</title>
+  <script src="./../common/lib/jquery-3.7.1.min.js"></script>
+  <!-- SUIT Variable 폰트 -->
+  <link href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/variable/woff2/SUIT-Variable.css"
+    rel="stylesheet" />
+  <link href="../common/css/comm.css" rel="stylesheet" />
+  <link href="./css/7_01_26.css" rel="stylesheet" />
+</head>
+
+<body>
+  <div id="wrap" class="china_wrap content_wrap">
+    <div class="title_box title_box3 flex items-center">
+      <img src="./images/7_01_23/logo.svg" alt="">
+      <div class="text_box">
+        <span class="suit">중국의 <span class="purple suit">식사 문화</span></span>
+      </div>
+    </div>
+    <div class="btn_box dp_flex" style="height: 43px">
+      <button class="btn popup_btn blue" data-index="3">보충</button>  
+    </div>
+
+    <div class="full_content">
+      <div class="content">
+        <span class="suit">
+          중국 식당에서는 주로 원형 식탁의<br>
+          돌림판 위에 음식을 놓고 돌려 가며<br>
+          공용 수저로 각자 그릇에 덜어 먹습니다.
+        </span>
+      </div>
+    </div>
+
+
+    <!-- 팝업 -->
+    <div class="popup_bg" style="display: none"></div>
+    
+    <!-- 보충 -->
+    <div class="popup popup1" data-popup="3" style="display: none">
+      <div class="tag bmjua dp_flex">보충</div>
+      <button class="close_btn"></button>
+      <div class="popup_content">
+        <div class="title">
+          <span class="suit">알아 두면 좋은 중국의 식사 문화</span>
+        </div>
+        <div class="content">
+          <div class="line line1">
+            <div class="index">
+              <span class="suit">•</span>
+            </div>
+            <div class="text">
+              <span class="suit">
+                중국 요리는 보통 <span class="notoSans">‘</span>찬 요리<span class="suit">(</span><span class="simhei" data-audio="090-12.mp3">凉菜</span><span class="suit">)</span>-더운 요리<span class="suit">(</span><span class="simhei" data-audio="090-13.mp3">热菜</span><span class="suit">)</span>-탕<span class="suit">(</span><span class="simhei" data-audio="090-14.mp3">汤</span><span class="suit">)</span><br>
+                -주식<span class="suit">(</span><span class="simhei" data-audio="090-15.mp3">主食</span><span class="suit">)</span><span class="notoSans">’</span>의 순서로 나온다.
+              </span>
+            </div>
+          </div>
+          <div class="line line2">
+            <div class="index">
+              <span class="suit">•</span>
+            </div>
+            <div class="text">
+              <span class="suit">
+                큰 접시에 나온 음식은 개인 접시에 덜어 먹는다.
+              </span>
+            </div>
+          </div>
+          <div class="line line3">
+            <div class="index">
+              <span class="suit">•</span>
+            </div>
+            <div class="text">
+              <span class="suit">
+                회전식 원형 식탁에서 식사할 때 돌림판은 시계 방향으로<br>
+                돌린다.
+              </span>
+            </div>
+          </div>
+          <div class="line line4">
+            <div class="index">
+              <span class="suit">•</span>
+            </div>
+            <div class="text">
+              <span class="suit">
+                원형 식탁에 앉을 때 말석은 출입문과 가까운 자리, 상석은<br>
+                말석의 맞은편 자리이다. 보통 상석을 중심으로 왼쪽 자리<br>
+                부터 지위 순으로 앉는다.
+              </span>
+            </div>
+          </div>
+          <div class="line line5">
+            <div class="index">
+              <span class="suit">•</span>
+            </div>
+            <div class="text">
+              <span class="suit">
+                원형 식탁에서 건배할 때 모든 사람들과 일일이 잔을 부딪칠<br>
+                수 없다면 식탁 유리에 잔을 살짝 치면서 건배를 대신한다.
+              </span>
+            </div>
+          </div>
+          <div class="line line6">
+            <div class="index">
+              <span class="suit">•</span>
+            </div>
+            <div class="text">
+              <span class="suit">
+                계산은 식사 후에 앉은 자리에서 종업원을 불러서 하기도<br>
+                한다.
+              </span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+</body>
+<script type="text/javascript">
+  const page = {
+    //컨텐츠에 정답 확인이 존재하는지 여부
+    isAnswer: false,
+    // 단어장 노출 여부 판단.
+    isVocabulary: false,
+    //정답 보기
+    showAnswer: () => {
+      $(".tempBttn.answer_btn").hide();
+      $(".tempBttn.reset_btn").show();
+
+      $(".answer").show();
+      $(".reset").hide();
+    },
+    //정답 숨기기
+    hideAnswer: () => {
+      $(".tempBttn.answer_btn").show();
+      $(".tempBttn.reset_btn").hide();
+
+      $(".answer").hide();
+      $(".reset").show();
+
+    },
+    // 단어장 보기
+    showVocabulary: () => { },
+  };
+  $(document).ready(function () {
+    // setPopup(2);
+  });
+</script>
+<script>
+  $(".pagination .dot").on("click", function(){
+    page.hideAnswer();
+  })
+</script>
+<script src="../common/js/script.js"></script>
+<!-- <script type="text/javascript">
+  let answerCount1 = 0;
+  let answerCount2 = 0;
+  // 체크박스 클릭
+  $(".answer_btn").on("click", function () {
+    const index = $(this).data("index");
+    $(`.answer[data-index="${index}"]`).removeClass("v_hidden");
+    if ($(this).data("answer") === 1) {
+      answerCount1++;
+    }
+    if ($(this).data("answer") === 2) {
+      answerCount2++;
+    }
+    if (answerCount1 >= 5) {
+      $('.answer_box[data-answer="1"]').removeClass("disabled");
+    }
+    if (answerCount2 >= 5) {
+      $('.answer_box[data-answer="2"]').removeClass("disabled");
+    }
+  });
+</script> -->
+
+</html>

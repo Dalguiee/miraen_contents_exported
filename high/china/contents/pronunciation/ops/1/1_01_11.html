@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>미래엔 중국어</title>
+  <script src="./../common/lib/jquery-3.7.1.min.js"></script>
+  <script src="./../common/lib/howler-2.1.3.min.js"></script>
+  <!-- SUIT Variable 폰트 -->
+  <link href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/variable/woff2/SUIT-Variable.css"
+    rel="stylesheet" />
+  <link href="../common/css/comm.css" rel="stylesheet" />
+  <link href="./css/1_01_11.css" rel="stylesheet" />
+</head>
+
+<body>
+  <div id="wrap" class="china_wrap">
+    <div class="top-title"></div>
+    <!-- bttns -->
+    <div class="btn_box flex absolute">
+      <button class="btn popup_btn blue" data-index="1">연습</button>
+    </div>
+
+    <!-- contents -->
+    <div class="full_content">
+      <div class="content">
+        <div class="text-box mb-38 mt-4">
+          <span class="suit fs-30 line-40 fw-6">성모는 음절의 첫머리에 오는 자음입니다.</span>
+        </div>
+        <div class="content_box index1">
+          <div class="list">
+            <div class="item gRegula" style="padding-top: 4px" data-audio="M018-01.mp3">
+              b
+            </div>
+            <div class="item gRegula" data-audio="M018-02.mp3">p</div>
+            <div class="item gRegula" data-audio="M018-03.mp3">m</div>
+            <div class="flex items-center">
+              <span class="gRegula fs-48 c-gray mb-8">+ o</span>
+            </div>
+          </div>
+          <div class="text_box">
+            <span class="suit fw-6 fs-30 line-38">윗입술과 아랫입술을 붙였다 떼며<br />내는 소리</span>
+          </div>
+          <button class="btn btn3 popup_btn" data-index="2">동영상</button>
+        </div>
+        <div class="content_box index2">
+          <div class="list">
+            <div class="item gRegula" style="padding-top: 6px" data-audio="M018-04.mp3">
+              f
+            </div>
+            <div class="flex items-center">
+              <span class="gRegula fs-48 c-gray mb-8">+ o</span>
+            </div>
+          </div>
+          <div class="text_box">
+            <span class="suit fw-6 fs-30 line-38">윗니를 아랫입술에 살짝 대었다<br />떼며 내는 소리</span>
+          </div>
+          <button class="btn btn3 popup_btn" data-index="3">동영상</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="popup_bg" style="display: none"></div>
+
+    <!-- 애니메이션1 -->
+    <div class="popup ani" data-popup="2" style="display: none">
+      <div class="contentsArea videoParent1">
+        <!-- <div
+            id="video-controller-container-1"
+            class="video-controller-container"
+          ></div> -->
+      </div>
+      <button class="close_btn2 popupclose_btn">
+        <span>닫기</span>
+      </button>
+    </div>
+
+    <!-- 애니메이션2 -->
+    <div class="popup ani" data-popup="3" style="display: none">
+      <div class="contentsArea videoParent2">
+        <!-- <div
+                  id="video-controller-container-1"
+                  class="video-controller-container"
+                ></div> -->
+      </div>
+      <button class="close_btn2 popupclose_btn">
+        <span>닫기</span>
+      </button>
+    </div>
+
+    <!-- 연습 팝업 -->
+    <div class="popup popup3" data-popup="1" style="display: none">
+      <div class="tag bmjua dp_flex">연습</div>
+      <button class="close_btn"></button>
+      <div class="popup_content">
+        <div class="content">
+          <div class="line line1 flex mt-6">
+            <div class="flex flex-col mr-60">
+              <span class="suit fs-48 line-56" data-audio="M018-05.mp3">
+                <span class="gRegula">bó</span>(<span class="simhei">膊</span>)
+              </span>
+              <div class="suit fs-36 line-42 c-dblue fw-5">팔</div>
+            </div>
+            <div class="flex flex-col mr-60">
+              <span class="suit fs-48 line-56" data-audio="M018-06.mp3">
+                <span class="gRegula">pò</span>(<span class="simhei">破</span>)
+              </span>
+              <div class="suit fs-36 line-42 c-dblue fw-5">파손되다</div>
+            </div>
+            <div class="flex flex-col mr-60">
+              <span class="suit fs-48 line-56" data-audio="M018-07.mp3">
+                <span class="gRegula">mò</span>(<span class="simhei">墨</span>)
+              </span>
+              <div class="suit fs-36 line-42 c-dblue fw-5">먹</div>
+            </div>
+          </div>
+          <div class="line line2">
+            <div class="flex flex-col mr-60">
+              <span class="suit fs-48 line-56" data-audio="M018-08.mp3">
+                <span class="gRegula">fó</span>(<span class="simhei">佛</span>)
+              </span>
+              <div class="suit fs-36 line-42 c-dblue fw-5">부처</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<script type="text/javascript">
+  const page = {
+    //컨텐츠에 정답 확인이 존재하는지 여부
+    isAnswer: false,
+    // 단어장 노출 여부 판단. 이벤트 호출하지 않으면 노출하지 않음.
+    isVocabulary: false,
+    //정답 보기
+    showAnswer: () => { },
+    //정답 숨기기
+    hideAnswer: () => { },
+    // 단어장 보기
+    showVocabulary: () => { },
+  };
+</script>
+<script crossorigin src="../common/lib/libBundle.js"></script>
+<script src="../common/js/script.js"></script>
+
+<script type="text/javascript">
+  $(document).ready(function () {
+    createVideo1();
+    createVideo2();
+  });
+
+  // 애니메이션 팝업 초기화
+  $(".popup.ani .close_btn2").on("click", function () {
+    $(".contentsArea.videoParent1").empty();
+    $(".contentsArea.videoParent2").empty();
+    createVideo1();
+    createVideo2();
+  });
+
+  // 비디오 생성1
+  const createVideo1 = () => {
+    $(".contentsArea.videoParent1").html(`<div
+            id="video-controller-container-1"
+            class="video-controller-container"
+          ></div>`);
+    var mediaManager = libBundle.MediaManager.getInstance();
+    // 내부자막 X, 외부자막 X
+    var videoController1 = mediaManager.createVideoController({
+      id: "video-controller-1",
+      query: "#video-controller-container-1",
+      // poster: "./media/mp4/2_10.png",
+      src: "./media/mp4/bpm.mp4",
+      // volumeVisible: true,
+      // // thumbnail: { startPath: 'media/video/thumbnail/thumbnail_', startIndex: 1000, ext: 'png' },
+      // overlay: true,
+      // // autoplay: true
+      // jsonSubtitlePath: "./media/subtitle/3chi_H_bon_1.json",
+      volumeSetting: {
+        visible: true,
+        vertical: false,
+      },
+      callback: {},
+    });
+  };
+
+  // 비디오 생성2
+  const createVideo2 = () => {
+    $(".contentsArea.videoParent2").html(`<div
+            id="video-controller-container-2"
+            class="video-controller-container"
+          ></div>`);
+    var mediaManager = libBundle.MediaManager.getInstance();
+    // 내부자막 X, 외부자막 X
+    var videoController1 = mediaManager.createVideoController({
+      id: "video-controller-2",
+      query: "#video-controller-container-2",
+      // poster: "./media/mp4/2_10.png",
+      src: "./media/mp4/f.mp4",
+      // volumeVisible: true,
+      // // thumbnail: { startPath: 'media/video/thumbnail/thumbnail_', startIndex: 1000, ext: 'png' },
+      // overlay: true,
+      // // autoplay: true
+      // jsonSubtitlePath: "./media/subtitle/3chi_H_bon_1.json",
+      volumeSetting: {
+        visible: true,
+        vertical: false,
+      },
+      callback: {},
+    });
+  };
+</script>
+
+</html>

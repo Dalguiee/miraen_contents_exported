@@ -1,0 +1,254 @@
+.btn-audio{
+  position: absolute;
+  font-size: 32px;
+}
+
+
+/* 헤더 */
+.btn_box{
+  padding-top: 9px !important;
+  position: relative;
+  z-index: 1001;
+}
+.title_box{
+  left: 0 !important;
+  top: 9px !important;
+}
+.title_box .title {
+  /* display: flex;
+  justify-content: start;
+  align-items: start; */
+}
+.title_box .title .title_num{
+  font-size: 36px;
+  font-weight: 400;
+  color: #498F63;
+  margin-right: 20px;
+}
+.title_box .title .title_text{
+  width: 100%;
+  font-size: 32px;
+  margin-right: 20px;
+  font-weight: 800;
+}
+
+
+/* 푸터 */
+.number-page {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  bottom: 21px;
+  right: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  font-family: "SUIT Variable", sans-serif;
+  font-weight: 800;
+  font-size: 26px;
+  color: #d9d9d9;
+}
+.number-page .item {
+  display: flex;
+}
+.number-page .item:after {
+  content: "";
+  width: 24px;
+  height: 24px;
+  background: url(./../../common/images/page_arrow.svg) no-repeat center;
+  margin: 0 6px 0 6px;
+}
+.number-page .item:last-of-type:after {
+  display: none;
+}
+.number-page .item.active {
+  color: #231815;
+}
+
+
+/* 컨텐츠 */
+.full_content{
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  padding-top: 30px;
+}
+
+.full_content .content{
+  width: 650px;
+}
+.full_content .content .context .img_box {
+  position: relative;
+  width: 646px;
+}
+.full_content .content .context .img_box img{
+  width: 100%;
+  object-fit: cover;
+}
+
+.full_content .content .context .img_box .simhei {
+  position: absolute;
+  top: 55px;
+  left: 203px;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 43px;
+}
+
+.full_content .content .ques_box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 40px;
+}
+
+.full_content .content .ques_box .line {
+  display: flex;
+  justify-content: start;
+  align-items: end;
+  height: 130px;
+}
+.full_content .content .ques_box .line .ques_text {
+  position: relative;
+}
+.full_content .content .ques_box .line .ques_text .ques_line{
+  width: 130px;
+  height: 65px;
+  border-bottom: 2px solid #C9CACA;
+}
+.full_content .content .ques_box .line .ques_text .answer{
+  display: inline-block;
+  font-size: 44px;
+  font-weight: 400;
+  line-height: 52px;
+  width: 130px;
+  height: 65px;
+  text-align: center;
+  border-bottom: 2px solid #C9CACA;
+  color: #E22F61;
+}
+.full_content .content .ques_box .line .ques_text .bttns{
+  position: absolute;
+  bottom: -50px;
+  right: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 103px;
+}
+
+
+
+
+
+
+
+
+/* 팝업 */
+.popup_bg{
+  z-index: 1002 !important;
+}
+.popup{
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  padding: 56px 40px 20px 40px;
+  z-index: 1003 !important;
+}
+.popup .popup_content{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  padding: 0 !important;
+  gap: 0 !important;
+}
+/* 설명 */
+.popup.explan{
+  width: fit-content !important;
+  padding: 46px 24px 10px 24px;
+}
+.popup.explan1{
+  top: 100px !important;
+  right: 100px !important;
+}
+.popup.explan .popup_content{
+  padding: 0 !important;
+}
+.popup.explan .popup_content .simhei{
+  font-size: 32px !important;
+  line-height: 50px !important;
+  font-weight: 400 !important;
+}
+.popup.explan .popup_content .FZKai{
+  font-size: 32px !important;
+  line-height: 50px !important;
+  font-weight: 400 !important;
+}
+.popup.explan .popup_content .notoSans{
+  font-size: 32px !important;
+  line-height: 50px !important;
+  font-weight: 400 !important;
+}
+.popup.explan .popup_content .gRegula{
+  font-size: 32px !important;
+  line-height: 50px !important;
+  font-weight: 400 !important;
+}
+.popup.explan .popup_content .suit{
+  font-size: 32px !important;
+  line-height: 50px !important;
+  font-weight: 600 !important;
+}
+/* 단어게임 */
+.popup.game .popup_content .game_box{
+  margin: 0 !important;
+}
+/* 단어장 */
+.popup.vocabularyBook{
+  padding: 0 !important;
+}
+.popup.vocabularyBook .popup_content{
+  flex-direction: unset !important;
+  padding: 56px 44px 0 44px !important;
+  gap: 40px !important;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+/* 해석 */
+.popup1 .popup_content{}
+
+.popup1 .popup_content .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: 20px;
+}
+.popup1 .popup_content .content .line {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+}
+.popup1 .popup_content .content .line .FZKai{
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 47px;
+}
+.popup1 .popup_content .content .line .suit {
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 47px;
+  color: #3D5591;
+}
+.popup1 .popup_content .content .line .gRegula {
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 47px;
+}

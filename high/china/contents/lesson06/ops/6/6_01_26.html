@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>미래엔 중국어</title>
+    <script src="./../common/lib/jquery-3.7.1.min.js"></script>
+    <script src="./../common/lib/howler-2.1.3.min.js"></script>
+    <!-- SUIT Variable 폰트 -->
+    <link
+      href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/variable/woff2/SUIT-Variable.css"
+      rel="stylesheet"
+    />
+    <link href="../common/css/comm.css" rel="stylesheet" />
+    <link href="./css/6_01_26.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div id="wrap" class="china_wrap content_wrap">
+      <div class="title_box">
+        <div class="title">
+          <img class="titleLogo" src="./images/6_01_26/logo.svg" alt="" /><span
+            class="titleText suit"
+            >중국의 <span class="purple">명소</span></span
+          >
+        </div>
+      </div>
+
+      <div class="btn_box dp_flex">
+        <div class="bttns">
+          <button class="btn popup_btn blue" data-index="3">보충</button>
+        </div>
+      </div>
+
+      <div class="full_content">
+        <div class="bgContainer bgContainer1">
+          <img src="./images/6_01_26/bg1.png" alt="" />
+        </div>
+
+        <div class="bgContainer bgContainer2">
+          <img src="./images/6_01_26/bg2.svg" alt="" />
+          <button class="detail_button_box popup_btn" data-index="2">
+            <img class="detail_button" src="./images/6_01_26/detail_button.png" alt="">
+          </button>
+        </div>
+
+        <div class="contextSec">
+          <div class="contextBox">
+            <div class="line line1" data-audio="080-03.mp3">
+              <img
+                class="textBoxImg"
+                src="./images/6_01_26/textbox.svg"
+                alt=""
+              />
+              <span class="simhei">西安</span>
+              <span class="gRegula">Xå’ãn</span>
+            </div>
+            <div class="line line2" data-audio="080-04.mp3">
+              <span class="simhei">兵马俑坑</span>
+              <span class="gRegula">Bångmâyông kçng</span>
+            </div>
+            <div class="line line3">
+              <span class="suit"><span class="space" style="margin-right: 20px;"></span>
+                진시황의 무덤인 진시황릉 부근에는 실물에 가까운 크기로 만들어진
+                병사와 말 모형<br />수천 개가 묻혀 있는
+                <span class="simhei" data-audio="080-04.mp3">兵马俑坑</span>이
+                있습니다.
+              </span>
+            </div>
+            <div class="line line4">
+              <span class="suit">#시안 성벽 자전거</span>
+              <span class="suit">#다옌타(대안탑)</span>
+              <span class="suit">#당삼채</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 팝업 -->
+      <div class="popup_bg" style="display: none"></div>
+      <!-- 보충 -->
+      <div class="popup expPopup" data-popup="3" style="display: none">
+        <div class="tag bmjua dp_flex">보충</div>
+        <button class="close_btn"></button>
+        <div class="popup_content">
+          <div class="title" data-audio="080-03.mp3">
+            <span class="FZKai">西安</span><span class="suit">(<span class="gRegula">Xå’ãn</span>)</span>
+          </div>
+          <div class="contextSec">
+            <div class="line line3">
+              <span class="suit">
+                #시안 성벽 자전거: 시안 성벽 곳곳에 자전거 대여소가 있으며, 자전거를 타고 성벽 위에서 경치를 볼 수 있다.
+              </span>
+            </div>
+            <div class="line line1">
+              <span class="suit">
+                #다옌타(<span class="FZKai" data-audio="080-10.mp3"
+                  >大雁塔<span class="gRegula"> dàyàntâ</span></span
+                >): 다옌타는 현장(<span class="FZKai" data-audio="080-11.mp3"
+                  >玄奘<br /><span class="gRegula"> Xuánzàng</span></span
+                >) 법사가 인도에서 가져온 산스크리트 경전을 보관하기 위하여 만든
+                7층 탑이다. 다옌타는 각층 사방의 창으로 시안 시내의 전망을
+                감상할 수 있다.
+              </span>
+            </div>
+            <div class="line line2">
+              <span class="suit">
+                #당삼채(<span class="FZKai" data-audio="080-12.mp3"
+                  >唐三彩<span class="gRegula"> tángsãncâi</span></span
+                >): 당삼채는 다양한 색깔의 유약이 입혀진 당나라의 채색
+                도기로<span class="notoSans">,</span> 대체로 삼색<span class="suit">(</span>황색<span class="notoSans">, </span>녹색<span class="notoSans">,</span> 백색<span class="suit">)</span> 위주여서 <span class="notoSans">‘</span>당삼채<span class="notoSans"
+                  >’</span
+                >라고 일컫는다. 시안 박물관 에서 다양한 당삼채 유물을 볼 수 있다.
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 크게 보기 -->
+      <div class="popup detail_popup" data-popup="2" style="display: none">
+        <button class="close_btn"></button>
+        <div class="popup_content">
+          <div class="content">
+            <div class="img_box">
+              <img src="./images/6_01_26/detail_content.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </body>
+  <script type="text/javascript">
+    const page = {
+      //컨텐츠에 정답 확인이 존재하는지 여부
+      isAnswer: false,
+      // 단어장 노출 여부 판단. 이벤트 호출하지 않으면 노출하지 않음.
+      isVocabulary: false,
+      //정답 보기
+      showAnswer: () => {
+        $(".answer_btn").hide();
+        $(".reset_btn").show();
+        $(".answer").show();
+      },
+      //정답 숨기기
+      hideAnswer: () => {
+        $(".answer_btn").show();
+        $(".reset_btn").hide();
+        $(".answer").hide();
+      },
+      // 단어장 보기
+      showVocabulary: () => {
+        setPopup(7);
+      },
+    };
+  </script>
+  <script type="text/javascript">
+    // 정답 버튼
+    $(".answer_btn").on("click", function () {
+      let index = $(".answer_btn").index(this);
+      $(this).hide();
+      $(".reset_btn").eq(index).show();
+      $(".answer").addClass("speak");
+    });
+    // 다시 하기 버튼
+    $(".reset_btn").on("click", function () {
+      let index = $(".reset_btn").index(this);
+      $(this).hide();
+      $(".answer_btn").eq(index).show();
+      $(".answer").removeClass("speak");
+    });
+  </script>
+  <script>
+    $("[data-audiolcm]").on("click", function () {
+      let index = $("[data-audiolcm]").index(this);
+      try {
+        setRoleStop();
+      } catch (error) {}
+      $("[data-audiolcm]").removeClass("speak");
+      $("[data-audio]").removeClass("speak");
+      $(this).addClass("speak");
+      $(`.ansText${index + 1}`).addClass("speak");
+      audioPlay(audio, [`./media/mp3/${$(this).data("audiolcm")}`], () => {
+        $(this).removeClass("speak");
+      });
+    });
+  </script>
+  <script crossorigin src="../common/lib/libBundle.js"></script>
+  <script src="../common/js/script.js"></script>
+  <script src="../common/js/rolePlayerCh.js"></script>
+  <script src="../common/js/vocabularyBook.js"></script>
+</html>

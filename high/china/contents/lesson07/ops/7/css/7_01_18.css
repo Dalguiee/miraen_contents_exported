@@ -1,0 +1,337 @@
+span,
+img,
+button{
+  user-select: none;
+}
+
+.btn-audio{
+  position: absolute;
+  font-size: 32px;
+}
+
+
+/* 헤더 */
+.btn_box{
+  padding-top: 9px !important;
+  position: relative;
+  z-index: 1001;
+}
+.title_box{
+  left: 0 !important;
+  top: 9px !important;
+}
+.title_box .title {
+  /* display: flex;
+  justify-content: start;
+  align-items: start; */
+}
+.title_box .title .title_num{
+  font-size: 36px;
+  font-weight: 400;
+  color: #498F63;
+  margin-right: 20px;
+}
+.title_box .title .title_text{
+  width: 100%;
+  font-size: 32px;
+  margin-right: 20px;
+  font-weight: 800;
+}
+
+
+/* 푸터 */
+.number-page {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  bottom: 21px;
+  right: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  font-family: "SUIT Variable", sans-serif;
+  font-weight: 800;
+  font-size: 26px;
+  color: #d9d9d9;
+}
+.number-page .item {
+  display: flex;
+}
+.number-page .item:after {
+  content: "";
+  width: 24px;
+  height: 24px;
+  background: url(./../../common/images/page_arrow.svg) no-repeat center;
+  margin: 0 6px 0 6px;
+}
+.number-page .item:last-of-type:after {
+  display: none;
+}
+.number-page .item.active {
+  color: #231815;
+}
+
+
+/* 컨텐츠 */
+.full_content{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  padding-top: 30px;
+}
+.full_content .content{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.full_content .content .itemBox{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 148px;
+}
+.full_content .content .itemBox .conCanvas{
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+}
+.full_content .content .itemBox .itemSec{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: fit-content;
+  gap: 60px;
+}
+.full_content .content .itemBox .itemSec .itemList{
+  display: flex;
+  height: 75px;
+}
+.full_content .content .itemBox .itemSec1 .itemList{
+  justify-content: end;
+  align-items: center;
+  text-align: start;
+}
+.full_content .content .itemBox .itemSec2 .itemList{
+  justify-content: end;
+  align-items: center;
+  justify-content: start;
+}
+.full_content .content .itemBox .itemSec .itemList .index{
+  margin-right: 40px;
+}
+
+.full_content .content .itemBox .itemSec .itemList .index .suit{
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 32px;
+}
+
+.full_content .content .itemBox .itemSec .itemList .itemText{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  z-index: 1002;
+  font-size: 36px;
+}
+.full_content .content .itemBox .itemSec1 .itemList .itemText{
+  justify-content: center;
+  align-items: start;
+}
+.full_content .content .itemBox .itemSec2 .itemList .itemText{
+  justify-content: center;
+  align-items: end;
+}
+
+.full_content .content .itemBox .itemSec .itemList .itemText .simhei{
+  font-size: 36px;
+  font-weight: 400;
+}
+.full_content .content .itemBox .itemSec .itemList .itemText .gRegula{
+  font-size: 36px;
+  font-weight: 400;
+}
+
+
+
+.full_content .content .itemBox1 .itemSec1 .itemList .itemText{
+  width: 190px;
+}
+.full_content .content .itemBox1 .itemSec2 .itemList .itemText{
+  width: 170px;
+  align-items: center;
+}
+.full_content .content .itemBox2 .itemSec1 .itemList .itemText{
+  text-align: start;
+}
+.full_content .content .itemBox2 .itemSec2 .itemList .itemText{
+  width: 136px;
+  text-align: start;
+}
+
+
+
+
+.full_content .content .itemBox .itemSec .itemList .item{
+  width: 10px;
+  height: 10px;
+}
+.itemBox .item[data-locked="true"] {
+  background-color: red;
+}
+.full_content .content .itemBox .itemSec .itemList .itemText .ansBttns{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 110px;
+  z-index: 1002;
+}
+.full_content .content .itemBox1 .itemSec .itemList .itemText .ansBttns{
+  top: 40px;
+  left: -100px;
+}
+.full_content .content .itemBox1 .itemSec .itemList .itemText .ansBttns.ansBttns_vol_2{
+  top: 46px;
+  left: 31px;
+}
+
+.full_content .content .itemBox .itemSec .itemList img{}
+.full_content .content .itemBox .itemSec .itemList .item{
+  border-radius: 100%;
+  background-color: #498F63;
+}
+.full_content .content .itemBox .itemSec1 .itemList .item{
+  z-index: 1001;
+  pointer-events: none;
+}
+.full_content .content .itemBox .itemSec2 .itemList .item{
+  z-index: 1001;
+  pointer-events: none;
+}
+
+
+
+
+
+
+
+
+
+/* 팝업 */
+.popup_bg{
+  z-index: 1002 !important;
+}
+.popup{
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  padding: 56px 40px 20px 40px;
+  z-index: 1003 !important;
+}
+.popup .popup_content{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  padding: 0 !important;
+  gap: 0 !important;
+}
+/* 설명 */
+.popup.explan{
+  width: fit-content !important;
+  padding: 46px 24px 10px 24px;
+}
+.popup.explan1{
+  top: 100px !important;
+  right: 100px !important;
+}
+.popup.explan .popup_content{
+  padding: 0 !important;
+}
+.popup.explan .popup_content .simhei{
+  font-size: 32px !important;
+  line-height: 50px !important;
+  font-weight: 400 !important;
+}
+.popup.explan .popup_content .FZKai{
+  font-size: 32px !important;
+  line-height: 50px !important;
+  font-weight: 400 !important;
+}
+.popup.explan .popup_content .notoSans{
+  font-size: 32px !important;
+  line-height: 50px !important;
+  font-weight: 400 !important;
+}
+.popup.explan .popup_content .gRegula{
+  font-size: 32px !important;
+  line-height: 50px !important;
+  font-weight: 400 !important;
+}
+.popup.explan .popup_content .suit{
+  font-size: 32px !important;
+  line-height: 50px !important;
+  font-weight: 600 !important;
+}
+/* 단어게임 */
+.popup.game .popup_content .game_box{
+  margin: 0 !important;
+}
+/* 단어장 */
+.popup.vocabularyBook{
+  padding: 0 !important;
+}
+.popup.vocabularyBook .popup_content{
+  flex-direction: unset !important;
+  padding: 56px 44px 0 44px !important;
+  gap: 40px !important;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+
+.popup1 .popup_content{}
+
+.popup1 .popup_content .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: 20px;
+}
+.popup1 .popup_content .content .line {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  gap: 10px;
+}
+.popup1 .popup_content .content .line .suit.index {
+  font-size: 28px;
+  line-height: 47px;
+}
+.popup1 .popup_content .content .line .FZKai{
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 47px;
+}
+.popup1 .popup_content .content .line .suit.context {
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 47px;
+  color: #3D5591;
+}
+.popup1 .popup_content .content .line .gRegula {
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 47px;
+}

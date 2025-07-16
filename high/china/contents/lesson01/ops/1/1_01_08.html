@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>미래엔 중국어</title>
+    <script src="./../common/lib/jquery-3.7.1.min.js"></script>
+    <!-- SUIT Variable 폰트 -->
+    <link
+      href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/variable/woff2/SUIT-Variable.css"
+      rel="stylesheet"
+    />
+    <link href="../common/css/comm.css" rel="stylesheet" />
+    <link href="./css/1_01_08.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div id="wrap" class="china_wrap content2_wrap">
+      <div class="title_box dp_flex">
+        <div class="num_box tmoney">
+          <span>2</span>
+        </div>
+        <div class="text_box">
+          <span>헤어질 때 인사말</span>
+        </div>
+      </div>
+
+      <div class="btn_box dp_flex">
+        <button class="btn hanja_btn">한자</button>
+        <button class="btn pinyin_btn" style="display: none">병음</button>
+        <button class="btn combo_btn">한자+병음</button>
+        <button class="btn popup_btn blue" data-index="3">해석</button>
+        <button class="explan_popup_btn btn blue"><span>설명</span></button>
+        <!-- <div class="tempBttns">
+          <button onclick="page.showVocabulary()" class="tempBttn">단어장</button>
+        </div>   -->
+      </div>
+
+      <div class="full_content">
+        <div class="top_box dp_flex dp_flex_column">
+          <div class="tab1" data-tab="1" data-audio="025-12.mp3">
+            <!-- 병음 -->
+            <div class="type type1 dp_flex dp_flex_column" data-view="pinyin">
+              <span class="txt txt2 gRegula fs-50"><span class="highlight pink">Míngtiãn</span> jiàn!</span>
+            </div>
+            <!-- 한자 -->
+            <div class="type type1 dp_flex dp_flex_column" data-view="hanja" style="display: none">
+              <span class="txt txt1 FZKai fs-50">
+                <span class="highlight pink">明天</span>见!
+              </span>
+            </div>
+            <!-- 한자 + 병음 -->
+            <div class="type type3 dp_flex dp_flex_column" data-view="combo" style="display: none">
+              <span class="txt txt1 FZKai">
+                <span class="highlight pink">明天</span>见!
+              </span>
+              <span class="txt txt2 gRegula">
+                <span class="highlight pink">Míngtiãn</span> jiàn!
+              </span>
+            </div>
+          </div>
+
+          <div class="tab1" data-tab="2" data-audio="025-13.mp3" style="display: none">
+            <!-- 병음 -->
+            <div class="type type1 dp_flex dp_flex_column" data-view="pinyin">
+              <span class="txt txt2 gRegula fs-50"><span class="highlight pink">Xiàwû</span> jiàn!</span>
+            </div>
+            <!-- 한자 -->
+            <div class="type type1 dp_flex dp_flex_column" data-view="hanja" style="display: none">
+              <span class="txt txt1 FZKai fs-50">
+                <span class="highlight pink">下午</span>见!
+              </span>
+            </div>
+            <!-- 한자 + 병음 -->
+            <div class="type type3 dp_flex dp_flex_column" data-view="combo" style="display: none">
+              <span class="txt txt1 FZKai">
+                <span class="highlight pink">下午</span>见!
+              </span>
+              <span class="txt txt2 gRegula">
+                <span class="highlight pink">Xiàwû</span> jiàn!
+              </span>
+            </div>
+          </div>
+
+          <div class="tab2" data-tab="3" data-audio="025-14.mp3" style="display: none">
+            <!-- 병음 -->
+            <div class="type type3 dp_flex dp_flex_column" data-view="pinyin">
+              <span class="txt txt2 gRegula fs-50">
+                <span class="highlight pink">Wânshang</span> jiàn!
+              </span>
+            </div>
+            <!-- 한자 -->
+            <div class="type type3 dp_flex dp_flex_column" data-view="hanja" style="display: none">
+              <span class="txt txt1 FZKai fs-50">
+                <span class="highlight pink">晚上</span>见!
+              </span>
+            </div>
+            <!-- 한자 + 병음 -->
+            <div class="type type3 dp_flex dp_flex_column" data-view="combo" style="display: none">
+              <span class="txt txt1 FZKai">
+                <span class="highlight pink">晚上</span>见!
+              </span>
+              <span class="txt txt2 gRegula">
+                <span class="highlight pink">Wânshang</span> jiàn!
+              </span>
+            </div>
+          </div>
+
+          <div class="tab3" data-tab="4" data-audio="025-15.mp3" style="display: none">
+            <!-- 병음 -->
+            <div class="type type4 dp_flex dp_flex_column" data-view="pinyin">
+              <span class="txt txt2 gRegula fs-50">
+                <span class="highlight pink">Zhõumò</span> jiàn!
+              </span>
+            </div>
+            <!-- 한자 -->
+            <div class="type type4 dp_flex dp_flex_column" data-view="hanja" style="display: none">
+              <span class="txt txt1 FZKai fs-50">
+                <span class="highlight pink">周末</span>见!
+              </span>
+            </div>
+            <!-- 병음 + 한자 -->
+            <div class="type type4 dp_flex dp_flex_column" data-view="combo" style="display: none">
+              <span class="txt txt1 FZKai">
+                <span class="highlight pink">周末</span>见!
+              </span>
+              <span class="txt txt2 gRegula">
+                <span class="highlight pink">Zhõumò</span> jiàn!
+              </span>
+            </div>
+          </div>
+
+          <button class="btn3 basic_btn tab_btn active" data-index="1">기본 문장</button>
+        </div>
+
+        <div class="bottom_box dp_flex dp_flex_column" data-view-info="pinyin" data-tab-info="1">
+          <div class="step step1 dp_flex">
+            <div class="img_box">
+              <img src="./images/1_01_08/icon1.png" class="img img1"/>
+              <div class="line"></div>
+            </div>
+            <div class="text_box dp_flex dp_flex_column" data-audio="025-16.mp3">
+              <!-- 병음 -->
+              <span class="txt txt2 gRegula fs-50" data-view="pinyin">xiàwû</span>
+              <!-- 한자 -->
+              <span class="txt txt1 FZKai fs-50" style="display: none" data-view="hanja" >下午</span>
+              <!-- 한자 + 병음 -->
+              <span class="txt txt1 FZKai" style="display: none" data-view="combo">下午</span>
+              <span class="txt txt2 gRegula" style="display: none" data-view="combo">xiàwû</span>
+            </div>
+            <button class="btn3 tab_btn" data-index="2">교체 문장</button>
+          </div>
+
+          <div class="step step2 dp_flex">
+            <div class="img_box">
+              <img src="./images/1_01_08/icon2.png" class="img img1" />
+              <div class="line"></div>
+            </div>
+            <div class="text_box dp_flex dp_flex_column" data-audio="025-17.mp3">
+              <!-- 병음 -->
+              <span class="txt txt2 gRegula fs-50" data-view="pinyin">wânshang</span>
+              <!-- 한자 -->
+              <span class="txt txt1 FZKai fs-50" style="display: none" data-view="hanja">晚上</span>
+              <!-- 한자 + 병음 -->
+              <span class="txt txt1 FZKai" style="display: none" data-view="combo" >晚上</span>
+              <span class="txt txt2 gRegula" style="display: none" data-view="combo">wânshang</span>
+            </div>
+            <button class="btn3 tab_btn" data-index="3">교체 문장</button>
+          </div>
+
+          <div class="step step3 dp_flex">
+            <div class="img_box">
+              <img src="./images/1_01_08/icon3.png" class="img img1" />
+              <div class="line"></div>
+            </div>
+            <div class="text_box dp_flex dp_flex_column" data-audio="025-18.mp3">
+              <!-- 병음 -->
+              <span class="txt txt2 gRegula fs-50" data-view="pinyin">zhõumò</span>
+              <!-- 한자 -->
+              <span class="txt txt1 FZKai fs-50" style="display: none" data-view="hanja">周末</span>
+              <!-- 한자 + 병음 -->
+              <span class="txt txt1 FZKai" style="display: none" data-view="combo">周末</span>
+              <span class="txt txt2 gRegula" style="display: none" data-view="combo">zhõumò</span>
+            </div>
+            <button class="btn3 tab_btn" data-index="4">교체 문장</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="popup_bg" style="display: none"></div>
+      <!-- 단어장 -->
+      <div class="popup vocabularyBook" data-popup="7" style="display: none">
+        <div class="tag bmjua dp_flex">단어장</div>
+        <button class="close_btn"></button>
+        <div class="popup_content dp_flex">
+          <div class="word_list_box dp_flex dp_flex_column">
+            <div class="word_content">
+              <div class="list dp_flex voca_popup_btn active" data-audio="025-19.mp3">
+                <span class="gRegula">xiàwû</span>
+              </div>
+              <div class="list dp_flex voca_popup_btn" data-audio="025-20.mp3">
+                <span class="gRegula">wânshang</span>
+              </div>
+              <div class="list dp_flex voca_popup_btn" data-audio="025-21.mp3">
+                <span class="gRegula">zhõumò</span>
+              </div>
+            </div>
+          </div>
+          <div class="show_word_box dp_flex dp_flex_column">
+            <div class="china_box dp_flex">
+              <div class="voca_popup_tab" data-audio="025-19.mp3">
+                <span class="FZKai">下午</span>
+                <span class="gRegula">xiàwû</span>
+              </div>
+              <div class="voca_popup_tab" data-audio="025-20.mp3" style="display: none">
+                <span class="FZKai">晚上</span>
+                <span class="gRegula">wânshang</span>
+              </div>
+              <div class="voca_popup_tab" data-audio="025-21.mp3" style="display: none">
+                <span class="FZKai">周末</span>
+                <span class="gRegula">zhõumò</span>
+              </div>
+            </div>
+            <div class="korea_box dp_flex">
+              <div class="voca_warp">
+                <span class="suit">오후</span>
+                <span class="suit" style="display: none">저녁, 밤</span>
+                <span class="suit" style="display: none">주말</span>
+              </div>
+            </div>
+            <div class="show_btn-warp">
+              <button class="btn3 show_pinyin_btn" style="display: none">병음 보기</button>
+              <button class="btn3 hide_pinyin_btn">병음 가리기</button>
+              <button class="btn3 show_btn" style="display: none">뜻 보기</button>
+              <button class="btn3 hide_btn">뜻 감추기</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- 설명 new -->
+      <div class="popup explan" style="display: none">
+        <div class="tag bmjua dp_flex">설명</div>
+        <button class="close_btn">
+          <span class="sr-only">닫기</span>
+        </button>
+        <div class="popup_content dp_flex dp_flex_column">
+          <span class="suit"><span class="simhei" data-audio="025-22.mp3">见<span class="gRegula">(jiàn) </span></span>앞에 시간을 나타내는 말을 넣어<br>작별 인사를 할 수 있다.</span>
+        </div>
+      </div>
+
+      <!-- 해석 -->
+      <div class="popup popup1" data-popup="3" style="display: none">
+        <div class="tag bmjua dp_flex">해석</div>
+        <button class="close_btn"></button>
+        <div class="popup_content">
+          <ul class="list">
+            <li class="item item1">
+              <div class="item_text">
+                <div class="chBox">
+                  <span class="simhei">明天见!</span>
+                  <span class="suit">내일 만나!</span>
+                </div>
+                <span class="gRegula">Míngtiãn jiàn!</span>
+              </div>
+            </li>
+            <li class="item item2">
+              <div class="item_text">
+                <div class="chBox">
+                  <span class="simhei">下午见!</span>
+                  <span class="suit">오후에 만나!</span>
+                </div>
+                <span class="gRegula">Xiàwû jiàn!</span>
+              </div>
+            </li>
+            <li class="item item3">
+              <div class="item_text">
+                <div class="chBox">
+                  <span class="simhei">晚上见!</span>
+                  <span class="suit">저녁에 만나!</span>
+                </div>
+                <span class="gRegula">Wânshang jiàn!</span>
+              </div>
+            </li>
+            <li class="item item4">
+              <div class="item_text">
+                <div class="chBox">
+                  <span class="simhei">周末见!</span>
+                  <span class="suit">주말에 만나!</span>
+                </div>
+                <span class="gRegula">Zhõumò jiàn!</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript">
+    const page = {
+      //컨텐츠에 정답 확인이 존재하는지 여부
+      isAnswer: false,
+      // 단어장 노출 여부 판단.
+      isVocabulary: true,
+      //정답 보기
+      showAnswer: () => {},
+      //정답 숨기기
+      hideAnswer: () => {},
+      // 단어장 보기
+      showVocabulary: () => {
+        setPopup(7);
+      },
+    };
+  </script>
+  <script type="text/javascript">
+    //설명 팝업
+    $(".explan_popup_btn").on("click", function () {
+      let index = $(".explan_popup_btn").index(this);
+      $(".explan_popup_bg").show();
+      $(".popup.explan").hide();
+      $(".popup.explan").eq(index).show();
+      try {
+        setRoleStop();
+      } catch (error) {}
+      audioStop();
+    });
+  </script>
+  <script src="../common/js/script.js"></script>
+  <script src="../common/js/vocabularyBook.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      // setPopup(2);
+    });
+    // 교체 문장
+    $(".tab_btn").on("click", function () {
+      setActive($(this), "tab_btn");
+    });
+  </script>
+  <script>
+    $(".popup_btn").on("click", function () {
+      $(".popup.explan").css("display","none");
+    })
+  </script>
+</html>

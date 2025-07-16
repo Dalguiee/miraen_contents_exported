@@ -1,0 +1,121 @@
+#wrap > .title_box3 .num_box {
+  color: rgba(193, 128, 44, 1);
+}
+
+.china_wrap .full_content {
+  padding-top: 55px;
+  justify-content: flex-start;
+}
+
+.china_wrap .full_content .top_box {
+  width: 684px;
+  height: 220px;
+  padding-left: 45px;
+  background-color: rgba(255, 248, 235, 1);
+  border-radius: 24px;
+  justify-content: flex-start;
+  gap: 40px;
+}
+
+.china_wrap .full_content .top_box .text_box {
+  align-items: flex-start;
+}
+
+.china_wrap .full_content .top_box .text_box .simhei {
+  font-size: 34px;
+  color: rgba(35, 24, 21, 1);
+  line-height: 1.5;
+  font-weight: 500;
+}
+
+.china_wrap .full_content .top_box .text_box .gRegula {
+  font-size: 34px;
+  color: rgba(35, 24, 21, 1);
+  line-height: 1.5;
+}
+
+.china_wrap .full_content .btm_box {
+  margin-top: 40px;
+  gap: 16px;
+}
+
+.china_wrap .full_content .btm_box span {
+  font-size: 36px;
+  color: rgba(35, 24, 21, 1);
+  line-height: 1.2;
+  font-weight: 600;
+  font-family: "SUIT Variable", sans-serif;
+}
+
+.china_wrap .full_content .btm_box .quiz_box {
+  position: relative;
+  gap: 30px;
+}
+
+.china_wrap .full_content .btm_box .quiz_box .correct_btn {
+  position: absolute;
+  bottom: -14px;
+  left: 50%;
+  transform: translate(-50%, 100%);
+}
+
+.china_wrap .popup.translate .popup_content {
+  padding: 68px 56px 0 56px;
+}
+
+.china_wrap .full_content .btm_box .radio_label {
+  gap: 10px;
+  pointer-events: none;
+}
+.popup.translate .list .text {
+  display: flex;
+  flex-direction: column;
+}
+.popup.translate .list .FZKai {
+  font-size: 44px;
+  font-weight: 400;
+  color: #231815;
+  margin-bottom: 8px;
+}
+.popup.translate .list .gRegula {
+  font-size: 40px;
+  margin-bottom: 16px;
+}
+.popup.translate .list .suit {
+  font-weight: 500;
+  font-size: 40px;
+  color: #3d5591;
+}
+.radio_label {
+  /* pointer-events: none; */
+}
+
+.number-page {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  bottom: 12px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  font-family: "SUIT Variable", sans-serif;
+  font-weight: 800;
+  font-size: 26px;
+  color: #d9d9d9;
+}
+.number-page .item {
+  display: flex;
+}
+.number-page .item:after {
+  content: "";
+  width: 24px;
+  height: 24px;
+  background: url(./../../common/images/page_arrow.svg) no-repeat center;
+  margin: 0 6px 0 6px;
+}
+.number-page .item:last-of-type:after {
+  display: none;
+}
+.number-page .item.active {
+  color: #231815;
+}

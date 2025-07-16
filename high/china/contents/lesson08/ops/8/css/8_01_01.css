@@ -1,0 +1,173 @@
+#wrap.china_wrap.content_wrap .unit_box {
+  top: 48px;
+  left: 0px;
+}
+
+.full_content {}
+
+.full_content .content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.full_content .content .title {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 120px;
+  font-weight: 400;
+}
+
+.full_content .content .title .FZKai {
+  line-height: 130px;
+}
+
+.full_content .content .title .gRegula {
+  font-size: 70px;
+  line-height: 80px;
+}
+
+.full_content .content .answer_box {
+  height: 70px;
+}
+
+.full_content .content .answer_reset {
+  display: flex;
+  transform: translateX(11px);
+}
+
+.full_content .content .answer_reset .box {
+  border-radius: 10px;
+  margin-right: 24px;
+  height: 62px;
+  background: #f9feff;
+  border: 2px solid #4cc6e1;
+}
+
+.full_content .content .answer_box .box:last-child {
+  margin-right: 0;
+}
+
+.full_content .content .title .popup_btn {
+  position: absolute;
+  top: 45px;
+  right: -56px;
+}
+
+.full_content .content .answer {
+  font-size: 40px;
+  font-weight: 700;
+  transform: translateX(-8px) translateY(10px);
+}
+.full_content .content .answer_box .answer .underline {
+  /* text-decoration: underline;
+  text-underline-offset: 6px;
+  text-decoration-thickness: 2px; */
+  border-bottom: 2px solid #e22f61 ;
+}
+
+
+
+.full_content .content .sub-title {
+  width: fit-content;
+  height: 86px;
+  /* background: url(./../images/8_01_01/title.svg) no-repeat center; */
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding-bottom: 32px;
+}
+
+.full_content .content .sub-title .FZKai {
+  color: #422e16;
+  font-size: 36px;
+}
+
+.full_content .content .sub-title .gRegula {
+  color: white;
+  font-size: 24px;
+}
+
+/* 해석 팝업 */
+.popup.popup2 .popup_content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 20px;
+}
+
+.popup.popup2 .popup_content .title {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 100px;
+  font-weight: 400;
+}
+
+.popup.popup2 .popup_content .title .FZKai {
+  line-height: 130px;
+}
+
+.popup.popup2 .popup_content .title .gRegula {
+  font-size: 70px;
+  line-height: 80px;
+}
+
+.popup.popup2 .popup_content .title .suit {
+  font-size: 50px;
+  font-weight: 500;
+}
+
+/* 제목 찬트 */
+.popup.popup1 .popup_content {
+  width: 100%;
+  height: 100%;
+  padding: 46px 6px 8px 47px;
+  position: relative;
+}
+
+.popup.popup1 .popup_content .content {
+  /* background: rgba(0, 0, 0, 0.2); */
+  width: 100%;
+  height: 100%;
+}
+
+.popup.popup1 .popup_content .content .line {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.popup.popup1 .popup_content .content .line + .line{}
+
+.popup.popup1 .popup_content .content .line .suit {
+  font-size: 38px;
+  font-weight: 600;
+  line-height: 58px;
+}
+
+.popup.popup1 .popup_content .content .line .FZKai {
+  font-size: 38px;
+  font-weight: 400;
+}
+
+.popup.popup1 .popup_content .content .line .gRegula {
+  font-size: 38px;
+  font-weight: 400;
+}
+
+.popup.popup1 .popup_content .listen_btn {
+  position: absolute;
+  right: 70px;
+  top: 24px;
+}

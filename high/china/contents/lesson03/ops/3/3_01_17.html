@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>미래엔 중국어</title>
+    <script src="./../common/lib/jquery-3.7.1.min.js"></script>
+    <!-- SUIT Variable 폰트 -->
+    <link
+      href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/variable/woff2/SUIT-Variable.css"
+      rel="stylesheet"
+    />
+    <link href="../common/css/comm.css" rel="stylesheet" />
+    <link href="./css/3_01_17.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div id="wrap" class="china_wrap content_wrap">
+      <div class="title_box2 dp_flex">
+        <div class="group_tag">
+          <img
+            src="../common/images/group_active_tag.svg"
+            alt="모둠활동 태그"
+            class="img img1"
+          />
+        </div>
+
+        <div class="text_box">
+          <span>가상 가족 만들기</span>
+        </div>
+
+        <!-- <div class="icon_box">
+          <img src="../3/images/3_01_18/digital_icon.svg" class="img img1" />
+        </div> -->
+      </div>
+      <div class="btn_box dp_flex">
+        <button class="btn popup_btn blue" data-index="1">추가 단어</button>
+        <div class="flex" data-tab="2" style="display: none">
+          <button class="btn3 ex_btn">예시 답안</button>
+          <button class="btn3 ex_reset_btn" style="display: none">
+            다시 하기
+          </button>
+        </div>
+      </div>
+
+      <div class="slide_box slide_box1" data-tab="1">
+        <div class="full_content">
+          <div class="table_box">
+            <table cellpadding="0" cellspacing="0">
+              <tbody>
+                <tr class="tr tr1">
+                  <td class="num_td" rowspan="2">
+                    <span class="bmjua">1</span>
+                  </td>
+                  <td class="title_td">
+                    <span class="suit">
+                      모둠별로 검색하여 가상 가족을 만들고, 가족 구성원의 이름과
+                      호칭, 나이를 한어병음으로 써 봅시다.
+                    </span>
+                  </td>
+                </tr>
+                <tr class="tr tr2">
+                  <td class="ex_td">
+                    <div class="ex_box dp_flex">
+                      <div class="ex_tag dp_flex">
+                        <span class="suit">예</span>
+                      </div>
+                      <div class="text_box">
+                        <span class="suit">
+                          예술인 가족, 스포츠인 가족, 정치인 가족
+                        </span>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr class="tr tr3">
+                  <td class="num_td" rowspan="2">
+                    <span class="bmjua">2</span>
+                  </td>
+                  <td class="title_td">
+                    <span class="suit">
+                      모둠원들은 가족 구성원 중 한 명씩 맡아 중국어로
+                      소개합니다.
+                    </span>
+                  </td>
+                </tr>
+                <tr class="tr tr4">
+                  <td class="ex_td">
+                    <div class="ex_box dp_flex">
+                      <div class="ex_tag dp_flex">
+                        <span class="suit">예</span>
+                      </div>
+                      <div class="text_box">
+                        <span class="gRegula" data-audio="048-23.mp3"
+                          >Bèiduõfçn shì wô bàba, tã jånnián wûshí suì.</span
+                        >
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <div class="slide_box slide_box2" data-tab="2" style="display: none">
+        <div class="full_content">
+          <div class="title_box dp_flex">
+            <div class="blink_box dp_flex">
+              <span class="v_hidden reset_explan">스포츠</span>
+              <span class="explan" style="display: none">스포츠</span>
+            </div>
+            <div class="txt"><span>가족</span></div>
+          </div>
+          <div class="content_box dp_flex dp_flex_column">
+            <div class="top_box dp_flex">
+              <div class="intro_box intro_box1 dp_flex">
+                <div class="feat_box dp_flex dp_flex_column">
+                  <div class="line line1 dp_flex">
+                    <div class="title"><span>호칭:</span></div>
+                    <div class="text">
+                      <span class="gRegula black" data-audio="049-09.mp3"
+                        >bàba</span
+                      >
+                    </div>
+                  </div>
+                  <div class="line line2 dp_flex">
+                    <div class="title"><span>나이:</span></div>
+                    <div class="text v_hidden reset_explan">
+                      <span class="gRegula">sìshíbã suì</span>
+                    </div>
+                    <div class="text explan" style="display: none">
+                      <span class="gRegula" data-audio="048-35.mp3"
+                        >sìshíbã suì</span
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="name_box dp_flex dp_flex_column">
+                  <div class="line line1 dp_flex">
+                    <div class="title"><span>이름:</span></div>
+                    <div
+                      class="text dp_flex dp_flex_column v_hidden reset_explan"
+                    >
+                      <span class="gRegula">Sådìfçn·Kùlî</span>
+                      <span class="kor">스테판 커리</span>
+                    </div>
+                    <div
+                      class="text dp_flex dp_flex_column explan"
+                      style="display: none"
+                    >
+                      <span class="gRegula" data-audio="048-34.mp3"
+                        >Sådìfçn·Kùlî</span
+                      >
+                      <span class="kor">스테판 커리</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="intro_box intro_box2 dp_flex">
+                <div class="name_box dp_flex dp_flex_column">
+                  <div class="line line1 dp_flex">
+                    <div class="title"><span>이름:</span></div>
+                    <div
+                      class="text dp_flex dp_flex_column v_hidden reset_explan"
+                    >
+                      <span class="gRegula">Jån Yán’ér</span>
+                      <span class="kor">김연아</span>
+                    </div>
+                    <div
+                      class="text dp_flex dp_flex_column explan"
+                      style="display: none"
+                    >
+                      <span class="gRegula" data-audio="048-29.mp3"
+                        >Jån Yán’ér</span
+                      >
+                      <span class="kor">김연아</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="feat_box dp_flex dp_flex_column">
+                  <div class="line line1 dp_flex">
+                    <div class="title"><span>호칭:</span></div>
+                    <div class="text v_hidden reset_explan">
+                      <span class="gRegula">mãma</span>
+                    </div>
+                    <div class="text explan" style="display: none">
+                      <span class="gRegula" data-audio="048-36.mp3">mãma</span>
+                    </div>
+                  </div>
+                  <div class="line line2 dp_flex">
+                    <div class="title"><span>나이:</span></div>
+                    <div class="text v_hidden reset_explan">
+                      <span class="gRegula">sìshísì suì</span>
+                    </div>
+                    <div class="text explan" style="display: none">
+                      <span class="gRegula" data-audio="048-37.mp3"
+                        >sìshísì suì</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="btm_box dp_flex">
+              <div class="intro_box intro_box1 dp_flex">
+                <div class="feat_box dp_flex dp_flex_column">
+                  <div class="line line1 dp_flex">
+                    <div class="title"><span>호칭:</span></div>
+                    <div class="text v_hidden reset_explan">
+                      <span class="gRegula">gçge</span>
+                    </div>
+                    <div class="text explan" style="display: none">
+                      <span class="gRegula" data-audio="048-38.mp3">gçge</span>
+                    </div>
+                  </div>
+                  <div class="line line2 dp_flex">
+                    <div class="title"><span>나이:</span></div>
+                    <div class="text v_hidden reset_explan">
+                      <span class="gRegula">shíjiû suì </span>
+                    </div>
+                    <div class="text explan" style="display: none">
+                      <span class="gRegula" data-audio="048-39.mp3"
+                        >shíjiû suì
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div class="name_box dp_flex dp_flex_column">
+                  <div class="line line1 dp_flex">
+                    <div class="title"><span>이름:</span></div>
+                    <div
+                      class="text dp_flex dp_flex_column v_hidden reset_explan"
+                    >
+                      <span class="gRegula">
+                        Jåsåtânnú·<br />
+                        Lângnádù
+                      </span>
+                    </div>
+                    <div
+                      class="text dp_flex dp_flex_column explan"
+                      style="display: none"
+                    >
+                      <span class="gRegula" data-audio="048-33.mp3">
+                        Jåsåtânnú·<br />
+                        Lângnádù
+                      </span>
+                    </div>
+                  </div>
+                  <div class="line line2">
+                    <div
+                      class="text dp_flex dp_flex_column v_hidden reset_explan"
+                    >
+                      <span class="kor small">크리스티아누 호날두</span>
+                    </div>
+                    <div
+                      class="text dp_flex dp_flex_column explan"
+                      style="display: none"
+                    >
+                      <span class="kor small">크리스티아누 호날두</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="center_box">
+                <span class="gRegula" data-audio="044-14.mp3">wô</span>
+              </div>
+              <div class="intro_box intro_box2 dp_flex">
+                <div class="name_box dp_flex dp_flex_column">
+                  <div class="line line1 dp_flex">
+                    <div class="title"><span>이름:</span></div>
+                    <div
+                      class="text dp_flex dp_flex_column v_hidden reset_explan"
+                    >
+                      <span class="gRegula">Sñn Xångmîn </span>
+                      <span class="kor">손흥민</span>
+                    </div>
+                    <div
+                      class="text dp_flex dp_flex_column explan"
+                      style="display: none"
+                    >
+                      <span class="gRegula" data-audio="048-28.mp3"
+                        >Sñn Xångmîn
+                      </span>
+                      <span class="kor">손흥민</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="feat_box dp_flex dp_flex_column">
+                  <div class="line line1 dp_flex">
+                    <div class="title"><span>호칭:</span></div>
+                    <div class="text v_hidden reset_explan">
+                      <span class="gRegula">dìdi</span>
+                    </div>
+                    <div class="text explan" style="display: none">
+                      <span class="gRegula" data-audio="048-40.mp3">dìdi</span>
+                    </div>
+                  </div>
+                  <div class="line line2 dp_flex">
+                    <div class="title"><span>나이:</span></div>
+                    <div class="text v_hidden reset_explan">
+                      <span class="gRegula">shísì suì</span>
+                    </div>
+                    <div class="text explan" style="display: none">
+                      <span class="gRegula" data-audio="048-41.mp3"
+                        >shísì suì
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="pagination dp_flex">
+        <span class="active dot" data-index="1"></span>
+        <span class="dot" data-index="2"></span>
+      </div>
+      <div class="popup_bg" style="display: none"></div>
+      <!-- 추가 단어 -->
+      <div class="popup voca2" data-popup="1" style="display: none">
+        <div class="tag bmjua dp_flex">추가 단어</div>
+        <button class="close_btn"></button>
+
+        <div class="popup_content">
+          <div class="popup-scroll">
+            <div class="title suit">유명인의 중국어 이름</div>
+            <div class="list-warp">
+              <ul class="popup_content_list">
+                <li class="item">
+                  <span class="suit">유재석</span>
+                  <div class="item_audio" data-audio="048-26.mp3">
+                    <span class="FZKai">刘在锡</span>
+                    <span class="gRegula">Liú Zàixå</span>
+                  </div>
+                </li>
+                <li class="item">
+                  <span class="suit">이정재</span>
+                  <div class="item_audio" data-audio="048-27.mp3">
+                    <span class="FZKai">李正宰</span>
+                    <span class="gRegula">Lî Zhèngzâi</span>
+                  </div>
+                </li>
+                <li class="item">
+                  <span class="suit">손흥민</span>
+                  <div class="item_audio" data-audio="048-28.mp3">
+                    <span class="FZKai">孙兴慜</span>
+                    <span class="gRegula">Sñn Xångmîn</span>
+                  </div>
+                </li>
+                <li class="item">
+                  <span class="suit">김연아</span>
+                  <div class="item_audio" data-audio="048-29.mp3">
+                    <span class="FZKai">金妍儿</span>
+                    <span class="gRegula">Jån Yán’ér</span>
+                  </div>
+                </li>
+                <li class="item">
+                  <span class="suit">반기문</span>
+                  <div class="item_audio" data-audio="048-30.mp3">
+                    <span class="FZKai">潘基文</span>
+                    <span class="gRegula">Pãn Jåwén</span>
+                  </div>
+                </li>
+                <li class="item">
+                  <span class="suit">링컨</span>
+                  <div class="item_audio" data-audio="048-31.mp3">
+                    <span class="FZKai">林肯</span>
+                    <span class="gRegula">Línkên</span>
+                  </div>
+                </li>
+                <li class="item">
+                  <span class="suit">마이클 젝슨</span>
+                  <div class="item_audio" data-audio="048-32.mp3">
+                    <span class="FZKai"> 麦可尔·杰克逊</span>
+                    <span class="gRegula"> Màikê’êr·Jiékèxùn</span>
+                  </div>
+                </li>
+                <li class="item">
+                  <span class="suit">크리스티아누<br />호날두</span>
+                  <div class="item_audio" data-audio="048-33.mp3">
+                    <span class="FZKai"
+                      >基思坦奴<br />
+                      ·朗拿度</span
+                    >
+                    <span class="gRegula"
+                      >Jåsåtânnú·<br />
+                      Lângnádù</span
+                    >
+                  </div>
+                </li>
+                <li class="item">
+                  <span class="suit">스테판 커리</span>
+                  <div class="item_audio" data-audio="048-34.mp3">
+                    <span class="FZKai">斯蒂芬·库里</span>
+                    <span class="gRegula">Sådìfçn·Kùlî</span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript">
+    const page = {
+      //컨텐츠에 정답 확인이 존재하는지 여부
+      isAnswer: false,
+      // 단어장 노출 여부 판단.
+      isVocabulary: false,
+      //정답 보기
+      showAnswer: () => {},
+      //정답 숨기기
+      hideAnswer: () => {},
+      // 단어장 보기
+      showVocabulary: () => {},
+    };
+  </script>
+  <script src="../common/js/script.js"></script>
+  <script type="text/javascript">
+    // 예시답안 버튼
+    $(".ex_btn").on("click", function () {
+      $(this).hide();
+      $(this).next().show();
+      $(".reset_explan").hide();
+      $(".explan").show();
+    });
+    $(".ex_reset_btn").on("click", function () {
+      $(this).hide();
+      $(this).prev().show();
+      $(".reset_explan").show();
+      $(".explan").hide();
+    });
+  </script>
+</html>

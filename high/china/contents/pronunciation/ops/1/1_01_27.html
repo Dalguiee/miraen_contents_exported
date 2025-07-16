@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>미래엔 중국어</title>
+  <script src="./../common/lib/jquery-3.7.1.min.js"></script>
+  <script src="./../common/lib/howler-2.1.3.min.js"></script>
+  <!-- SUIT Variable 폰트 -->
+  <link href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/variable/woff2/SUIT-Variable.css"
+    rel="stylesheet" />
+  <link href="../common/css/comm.css" rel="stylesheet" />
+  <link href="./css/1_01_27.css" rel="stylesheet" />
+</head>
+
+<body>
+  <div id="wrap" class="china_wrap">
+    <div class="top-title"></div>
+
+    <!-- contents -->
+    <div class="full_content">
+      <div class="content">
+        <div class="text-box mt-24 mb-4">
+          <div class="label suit">활동</div>
+          <span class="suit fs-30 line-40 fw-6">한어병음 결합표를 활용해서 표기 규칙을 연습해 봅시다.</span>
+          <img src="./images/1_01_27/title_annotation.svg" alt="" style="margin-left: 10px;">
+        </div>
+        <img src="./images/1_01_27/img1.svg" class="content_box" />
+      </div>
+    </div>
+
+    <div class="popup_bg" style="display: none"></div>
+    <!-- 참고 팝업 -->
+    <div class="popup popup3" data-popup="1" style="display: none">
+      <div class="tag bmjua dp_flex">참고</div>
+      <button class="close_btn"></button>
+      <div class="popup_content">
+        <div class="content">
+          <div class="title mt-10 mb-20">
+            <span class="suit">주의해야 할 발음</span>
+          </div>
+          <div class="text-box">
+            <div class="line-38 suit fs-32 fw-6 mb-10">
+              • <span class="gRegula">a</span>: 영어
+              <span class="gRegula">a</span>(에이)의 발음과 혼동하지 않도록
+              한다.
+            </div>
+            <div class="line-38 suit fs-32 fw-6 mb-10">
+              • <span class="gRegula">an</span>: 혀를 윗니 뒤쪽 잇몸에 붙이고
+              발음하며, <span class="gRegula">ang</span>이나
+              <span class="gRegula">eng</span> 발음과<br /><span class="v_hidden">• </span>혼동하지 않도록 한다.
+            </div>
+            <div class="line-38 suit fs-32 fw-6 mb-10">
+              •
+              <span class="gRegula">ei, ie, uei,
+                <span class="relative">u<span class="two-dot small"></span></span>e<span class="suit">:</span> e</span>는
+              [에]에 가깝게 발음한다.
+            </div>
+            <div class="line-38 suit fs-32 fw-6 mb-10">
+              •
+              <span class="gRegula">ian,
+                <span class="relative">u<span class="two-dot small"></span></span>an<span class="suit">:</span>
+                an</span>은 [안]이 아닌 [앤]처럼 발음한다.
+            </div>
+            <div class="line-38 suit fs-32 fw-6 mb-10">
+              • <span class="gRegula">er</span>: 혀끝을 말아서 목구멍 가까이에
+              대고 [얼]처럼 발음한다. 이때<br /><span class="v_hidden">• </span>혀끝이 입 천장에 닿지 않도록 주의한다.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<script type="text/javascript">
+  const page = {
+    //컨텐츠에 정답 확인이 존재하는지 여부
+    isAnswer: false,
+    // 단어장 노출 여부 판단. 이벤트 호출하지 않으면 노출하지 않음.
+    isVocabulary: false,
+    //정답 보기
+    showAnswer: () => { },
+    //정답 숨기기
+    hideAnswer: () => { },
+    // 단어장 보기
+    showVocabulary: () => { },
+  };
+</script>
+<script src="../common/js/script.js"></script>
+
+<script type="text/javascript"></script>
+
+</html>

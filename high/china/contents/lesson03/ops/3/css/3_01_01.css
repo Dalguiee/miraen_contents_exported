@@ -1,0 +1,116 @@
+.china_wrap.content_wrap .content_box .question {
+  position: relative;
+}
+.answer_box {
+  position: relative;
+  height: 70px;
+}
+.answer_box .ex_box,
+.answer_box .correct_box {
+  position: absolute;
+  left: 0;
+  transform: translateX(-237px);
+}
+.china_wrap .popup .popup_content {
+  gap: 0;
+}
+.china_wrap.content_wrap .content_box .answer_box .ex_box {
+  gap: 10px;
+}
+
+.china_wrap.content_wrap .content_box .popup_btn {
+  position: absolute;
+  right: -96px;
+  top: 36px;
+}
+
+.china_wrap.content_wrap .content_box .answer_box .ex_box .answer {
+  width: 143px;
+  height: 62px;
+}
+.china_wrap.content_wrap
+  .content_box
+  .answer_box
+  .ex_box
+  .answer:nth-of-type(1) {
+  width: 137px;
+}
+.china_wrap.content_wrap
+  .content_box
+  .answer_box
+  .ex_box
+  .answer:nth-of-type(2) {
+  width: 120px;
+}
+.china_wrap.content_wrap
+  .content_box
+  .answer_box
+  .ex_box
+  .answer:nth-of-type(3) {
+  width: 195px;
+}
+
+.china_wrap.content_wrap .content_box .answer_box .correct_box {
+  transform: translateX(-219px);
+}
+
+.china_wrap.content_wrap .content_box .answer_box .correct_box .answer {
+  font-size: 40px;
+  color: rgba(226, 47, 97, 1);
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 10px;
+}
+.china_wrap.content_wrap .content_box .answer_box .correct_box .answer.answer1 {
+  width: 120px;
+}
+.china_wrap.content_wrap .content_box .answer_box .correct_box .answer.answer2 {
+  width: 102px;
+}
+.china_wrap.content_wrap .content_box .answer_box .correct_box .answer.answer3 {
+  width: 102px;
+}
+/* 팝업 스타일 */
+.china_wrap .popup.popup1 {
+  padding: 56px 60px;
+}
+
+.china_wrap .popup.popup1 > .popup_content {
+  font-size: 38px;
+  font-weight: 600;
+  line-height: 1.8;
+  color: rgba(35, 24, 21, 1);
+}
+
+.china_wrap .popup.popup2 .popup_content .question {
+  font-size: 100px;
+  color: rgba(21, 35, 21, 1);
+  font-weight: 400;
+}
+
+.china_wrap .popup.popup2 .popup_content .pron {
+  padding-top: 20px;
+  font-size: 70px;
+  font-weight: 400;
+  letter-spacing: 4;
+}
+
+.china_wrap .popup.popup2 .popup_content .answer {
+  padding-top: 30px;
+  font-size: 50px;
+  color: rgba(85, 126, 232, 1);
+  font-weight: 500;
+}
+
+.china_wrap .popup.popup .listen_btn {
+  position: absolute;
+  right: 73px;
+  top: 19px;
+}
+
+/* [data-audio].listen_btn {
+  color: white !important;
+}
+[data-audio].listen_btn:hover {
+  color: white !important;
+} */

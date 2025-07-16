@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>미래엔 중국어</title>
+  <script src="./../common/lib/jquery-3.7.1.min.js"></script>
+  <script src="./../common/lib/howler-2.1.3.min.js"></script>
+  <!-- SUIT Variable 폰트 -->
+  <link href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/variable/woff2/SUIT-Variable.css"
+    rel="stylesheet" />
+  <link href="../common/css/comm.css" rel="stylesheet" />
+  <link href="./css/2_01_26.css" rel="stylesheet" />
+</head>
+
+<body>
+  <div id="wrap" class="china_wrap content_wrap">
+    <div class="title_box">
+      <div class="title">
+        <span class="mainCon suit"><img class="titleLogo" src="./images/2_01_26/logo.svg" />존경하는
+          인물의 이름과 국적을 중국어로 알아보고 인물을<br />소개해
+          봅시다.</span>
+      </div>
+    </div>
+
+    <div class="btn_box dp_flex">
+      <div class="bttns" data-tab="1">
+        <button class="btn3 answer_btn" style="display: none">
+          예시 답안
+        </button>
+        <button class="popup_btn btn blue" data-index="1">참고</button>
+        <button class="btn3 reset_btn" style="display: none">
+          다시 하기
+        </button>
+      </div>
+      <div class="bttns" data-tab="2" style="display: none">
+        <button class="btn3 answer_btn">예시 답안</button>
+        <button class="btn3 reset_btn" style="display: none">
+          다시 하기
+        </button>
+        <button class="popup_btn btn blue" data-index="1">참고</button>
+      </div>
+    </div>
+
+    <div class="full_content">
+      <div class="content content1 dp_flex dp_flex_column" data-tab="1">
+        <figure class="reset bgFig" style="display: none">
+          <img class="bgImg" src="./images/2_01_26/content1.svg" alt="" />
+        </figure>
+        <figure class="answer bgFig">
+          <img class="bgImg" src="./images/2_01_26/content1answer.svg" alt="" />
+          <span class="context context1 simhei" data-audio="041-01.mp3">安重根<span class="gRegula space">Ân
+              Zhònggçn</span></span>
+          <span class="context context2 simhei" data-audio="033-07.mp3">韩国<span
+              class="gRegula space">Hánguó</span></span>
+        </figure>
+      </div>
+      <div class="content content2 dp_flex dp_flex_column" data-tab="2" style="display: none">
+        <figure class="reset bgFig">
+          <img class="bgImg" src="./images/2_01_26/content1.svg" alt="" />
+        </figure>
+        <figure class="answer bgFig" style="display: none">
+          <img class="bgImg" src="./images/2_01_26/content2answer.svg" alt="" />
+          <span class="context context1 simhei" data-audio="041-02.mp3">南丁格尔<span
+              class="gRegula space">Nándånggé’êr</span></span>
+          <span class="context context2 simhei" data-audio="033-09.mp3">英国<span
+              class="gRegula space">Yångguó</span></span>
+        </figure>
+      </div>
+    </div>
+
+    <div class="popup_bg" style="display: none"></div>
+
+    <div class="popup popup1 expPopup" data-popup="1" style="display: none">
+      <div class="tag bmjua dp_flex">참고</div>
+      <button class="close_btn"></button>
+      <div class="popup_content">
+        <div class="popupTitle">
+          <span class="suit">국가별 인물의 중국어 이름</span>
+        </div>
+
+        <div class="lineBox">
+          <div class="line line1 dp_flex">
+            <div class="title">
+              <span class="suit">[한국]</span>
+            </div>
+            <div class="contextBox">
+              <span class="context context1 suit">장영실
+                <span class="FZKai" data-audio="041-03.mp3">蒋英实 <span class="gRegula">Jiâng Yångshí</span></span></span>
+              <span class="context context2 suit">주시경
+                <span class="FZKai" data-audio="041-04.mp3">周时经 <span class="gRegula">Zhõu Shíjång</span></span></span>
+            </div>
+          </div>
+          <div class="line line2 dp_flex">
+            <div class="title">
+              <span class="suit">[중국]</span>
+            </div>
+            <div class="contextBox">
+              <span class="context context1 suit">청룽
+                <span class="FZKai" data-audio="041-05.mp3">成龙 <span class="gRegula">Chéng Lóng</span></span></span>
+              <span class="context context2 suit">덩샤오핑
+                <span class="FZKai" data-audio="041-06.mp3">邓小平 <span class="gRegula">Dèng Xiâopíng</span></span></span>
+            </div>
+          </div>
+          <div class="line line3 dp_flex">
+            <div class="title">
+              <span class="suit">[프랑스]</span>
+            </div>
+            <div class="contextBox">
+              <span class="context context1 suit">나폴레옹
+                <span class="FZKai" data-audio="041-07.mp3">拿破仑 <span class="gRegula">Nápòlún</span></span></span>
+              <span class="context context2 suit">마리 퀴리
+                <span class="FZKai" data-audio="041-08.mp3">玛丽居里 <span class="gRegula">Mâlì·Jñlî</span></span></span>
+            </div>
+          </div>
+          <div class="line line4 dp_flex">
+            <div class="title">
+              <span class="suit">[영국]</span>
+            </div>
+            <div class="contextBox">
+              <span class="context context1 suit">아이작 뉴턴
+                <span class="FZKai" data-audio="041-09.mp3">艾萨克<span class="gRegula">·</span>牛顿
+                  <span class="gRegula">Ëisàkè·Niúdùn</span></span></span>
+              <span class="context context2 suit">윌리엄 셰익스피어
+                <span class="FZKai" data-audio="041-10.mp3">威廉<span class="gRegula">·</span>沙士比亚
+                  <span class="gRegula">Wèilián·Shãshìbîyà</span></span></span>
+            </div>
+          </div>
+          <div class="line line5 dp_flex">
+            <div class="title">
+              <span class="suit">[미국]</span>
+            </div>
+            <div class="contextBox">
+              <span class="context context1 suit">스티브 잡스
+                <span class="FZKai" data-audio="041-11.mp3">史蒂夫<span class="gRegula">·</span>乔布斯
+                  <span class="gRegula">Shîdìfñ·Qiáobùså</span></span></span>
+              <span class="context context2 suit">오프라 윈프리
+                <span class="FZKai" data-audio="041-12.mp3">奥普拉<span class="gRegula">·</span>温弗莉
+                  <span class="gRegula">Ëopûlã·Wçnfúlì</span></span></span>
+            </div>
+          </div>
+          <div class="line line6 dp_flex">
+            <div class="title">
+              <span class="suit">[이탈리아]</span>
+            </div>
+            <div class="contextBox">
+              <span class="context context1 suit">레오나르도 다빈치
+                <span class="FZKai" data-audio="041-13.mp3">列奥纳多<span class="gRegula">·</span>达<span
+                    class="gRegula">·</span>芬奇
+                  <span class="gRegula">Liè’àonàduõ·Dá·Fçnqí</span></span></span>
+              <span class="context context2 suit">몬테소리
+                <span class="FZKai" data-audio="041-14.mp3">蒙台梭利 <span class="gRegula">Méngtáisuõlì</span></span></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="pagination dp_flex" style="margin-bottom: 0px">
+      <span class="active dot" data-index="1"></span>
+      <span class="dot" data-index="2"></span>
+    </div>
+  </div>
+</body>
+<script type="text/javascript">
+  const page = {
+    //컨텐츠에 정답 확인이 존재하는지 여부
+    isAnswer: false,
+    // 단어장 노출 여부 판단. 이벤트 호출하지 않으면 노출하지 않음.
+    isVocabulary: false,
+    //정답 보기
+    showAnswer: () => {
+      $(".answer_btn").hide();
+      $(".reset_btn").show();
+      $(".answer").show();
+    },
+    //정답 숨기기
+    hideAnswer: () => {
+      $(".answer_btn").show();
+      $(".reset_btn").hide();
+      $(".answer").hide();
+    },
+    // 단어장 보기
+    showVocabulary: () => {
+      setPopup(7);
+    },
+  };
+</script>
+<script type="text/javascript">
+  //설명 팝업
+  $(".explan_popup_btn").on("click", function () {
+    let index = $(".explan_popup_btn").index(this);
+    $(".explan_popup_bg").show();
+    $(".popup.explan").hide();
+    $(".popup.explan").eq(index).show();
+    try {
+      setRoleStop();
+    } catch (error) { }
+    audioStop();
+  });
+</script>
+<script type="text/javascript">
+  // 정답 버튼
+  $(".answer_btn").on("click", function () {
+    let index = $(".answer_btn").index(this);
+    $(this).hide();
+    $(".reset_btn").eq(index).show();
+    $(".answer").eq(index).show();
+    $(".reset").eq(index).hide();
+  });
+  // 다시 하기 버튼
+  $(".reset_btn").on("click", function () {
+    let index = $(".reset_btn").index(this);
+    $(this).hide();
+    $(".answer_btn").eq(index).show();
+    $(".answer").eq(index).hide();
+    $(".reset").eq(index).show();
+  });
+</script>
+<script crossorigin src="../common/lib/libBundle.js"></script>
+<script src="../common/js/script.js"></script>
+<script src="../common/js/rolePlayerCh.js"></script>
+<script src="../common/js/vocabularyBook.js"></script>
+
+</html>

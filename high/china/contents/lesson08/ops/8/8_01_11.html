@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>미래엔 중국어</title>
+  <script src="./../common/lib/jquery-3.7.1.min.js"></script>
+  <!-- SUIT Variable 폰트 -->
+  <link href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/variable/woff2/SUIT-Variable.css"
+    rel="stylesheet" />
+  <link href="../common/css/comm.css" rel="stylesheet" />
+  <link href="./css/8_01_11.css" rel="stylesheet" />
+</head>
+
+<body>
+  <div id="wrap" class="china_wrap express_wrap">
+    <div class="btn_box">
+      <!-- <div class="tempBttns">
+        <button onclick="page.showVocabulary()" data-index="1" class="tempBttn">단어장</button>
+      </div> -->
+    </div>
+
+    <div class="full_content">
+      <div class="title_box dp_flex">
+        <div class="express_tag"></div>
+        <span class="top_title"><span class="title_num suit">1</span><span class="suit">가격 묻기</span></span>
+        <button class="btn popup_btn blue" data-index="1">보충</button>
+      </div>
+      <div class="content">
+        <div class="line mb-36">
+          <div class="box">
+            <span class="suit line-36 fw-6 fs-30">물건의 가격을<br />물을 때</span>
+          </div>
+          <div class="text">
+            <div class="audio" data-audio="096-25.mp3">
+              <span class="simhei fs-36 line-44">这个多少钱?</span>
+              <span class="gRegula fs-36 line-42">Zhège duõshao qián?</span>
+            </div>
+            <span class="suit fw-6 fs-36 line-44">이거 얼마예요?</span>
+          </div>
+        </div>
+        <div class="line">
+          <div class="box">
+            <span class="suit line-36 fw-6 fs-30">주로 과일 · 채소<br />등을 살 때</span>
+          </div>
+          <div class="text">
+            <div class="audio" data-audio="096-26.mp3">
+              <span class="simhei fs-36 line-44">苹果怎么卖?</span>
+              <span class="gRegula fs-36 line-42">Píngguô zênme mài?</span>
+            </div>
+            <span class="suit fw-6 fs-36 line-44">사과는 어떻게 팔아요?</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="popup_bg" style="display: none"></div>
+    <!-- 보충 팝업 -->
+    <div class="popup popup3" data-popup="1" style="display: none">
+      <div class="tag bmjua dp_flex">보충</div>
+      <button class="close_btn"></button>
+      <div class="popup_content">
+        <div class="content">
+          <div class="title mt-10 mb-20">
+            <span class="suit">가격 묻기 표현</span>
+          </div>
+          <div class="text-box">
+            <span class="suit"><span class="notoSans">‘</span><span data-audio="096-28.mp3"><span
+                  class="FZKai">多少钱</span>?(<span class="gRegula">Duõshao qián?</span>)</span><span
+                class="notoSans">’</span>은
+              <span class="notoSans">‘</span>얼마입니까?<span class="notoSans">’</span>라는 뜻으로,<br />낱개나 낱장 등 단일 품목으로 파는 물건의
+              가격을 물어볼 때<br />쓰는 표현이다. 채소나 고기 등 무게를 달아
+              파는 물건은<br /><span class="notoSans">‘</span>어떻게 팔아요?<span class="notoSans">’</span>라는 의미의
+              <span class="notoSans">‘</span><span data-audio="096-29.mp3"><span class="FZKai">怎么卖</span>?(<span
+                  class="gRegula">Zênme mài?</span>)</span><span class="notoSans">’</span>로<br />말하는데, 자신이 대충
+              가격을 알고 있다는 것을 암시하여<br />가격을 흥정할 때
+              유리하기도 하다.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 단어장 -->
+    <div class="popup vocabularyBook" data-popup="7" style="display: none">
+      <div class="tag bmjua dp_flex">단어장</div>
+      <button class="close_btn"></button>
+      <div class="popup_content dp_flex">
+        <div class="word_list_box dp_flex dp_flex_column">
+          <div class="word_content">
+            <div class="list dp_flex voca_popup_btn active" data-audio="096-27.mp3">
+              <span class="gRegula">mài</span>
+            </div>
+          </div>
+        </div>
+        <div class="show_word_box dp_flex dp_flex_column">
+          <div class="china_box dp_flex">
+            <div class="voca_popup_tab" data-audio="096-27.mp3">
+              <span class="FZKai">卖</span>
+              <span class="gRegula">mài</span>
+            </div>
+          </div>
+          <div class="korea_box dp_flex">
+            <div class="voca_warp">
+              <span class="suit">팔다</span>
+            </div>
+          </div>
+          <div class="show_btn-warp">
+            <button class="btn3 show_pinyin_btn" style="display: none">
+              병음 보기
+            </button>
+            <button class="btn3 hide_pinyin_btn">병음 가리기</button>
+            <button class="btn3 show_btn" style="display: none">
+              뜻 보기
+            </button>
+            <button class="btn3 hide_btn">뜻 감추기</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</body>
+<script crossorigin src="../common/lib/libBundle.js"></script>
+<script src="../common/js/script.js"></script>
+<script src="../common/js/rolePlayerCh.js"></script>
+<script src="../common/js/vocabularyBook.js"></script>
+<script type="text/javascript">
+  const page = {
+    //컨텐츠에 정답 확인이 존재하는지 여부
+    isAnswer: false,
+    // 단어장 노출 여부 판단.
+    isVocabulary: true,
+    //정답 보기
+    showAnswer: () => { },
+    //정답 숨기기
+    hideAnswer: () => { },
+    // 단어장 보기
+    showVocabulary: () => {
+      setPopup(7);
+    },
+  };
+  $(document).ready(function () {
+    // setPopup(1);
+  });
+</script>
+<script src="../common/js/script.js"></script>
+
+</html>

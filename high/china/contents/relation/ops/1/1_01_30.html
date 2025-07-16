@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>미래엔 중국어</title>
+    <script src="./../common/lib/jquery-3.7.1.min.js"></script>
+    <!-- SUIT Variable 폰트 -->
+    <link
+      href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/variable/woff2/SUIT-Variable.css"
+      rel="stylesheet"
+    />
+    <link href="../common/css/comm.css" rel="stylesheet" />
+    <link href="./css/1_01_30.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div id="wrap" class="china_wrap">
+      <div class="title_box">
+        <div class="title">
+          <img class="title_logo" src="./images/1_01_30/logo.svg" alt="">
+          <span class="title_text suit">중국의 <span class="green">환경 보호 정책</span></span>
+        </div>
+      </div>
+
+      <div class="btn_box dp_flex">
+        <button class="btn popup_btn blue" data-index="3">보충</button>
+        <!-- <button class="btn popup_btn blue" data-index="4">참고s</button> -->
+      </div>
+
+      <div class="full_content">
+        <div class="content">
+          <div class="title">
+            <span class="bmjua">플라스틱 규제</span>
+          </div>  
+          <div class="context">
+            <span class="suit">
+              중국 정부는 플라스틱 사용을 효과적으로 통제하고 플라스틱<br>
+              폐기물을 줄이기 위해서 강력한 규제 정책을 실시하고 있습니다.<br>
+              또한 플라스틱 제품의 사용을 단계적으로 금지하고, 친환경<br>
+              대체재에 관심을 기울이고 있습니다.
+            </span>
+          </div>
+          <div class="annotation">
+            <span class="suit">#생분해 플라스틱 산업</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 팝업 -->
+      <div class="popup_bg" style="display: none"></div>
+    
+      <!-- 보충 -->
+      <div class="popup popup3" data-popup="3" style="display: none">
+        <div class="tag bmjua dp_flex">보충</div>
+        <button class="close_btn"></button>
+        <div class="popup_content">
+          <div class="title">
+            <span class="suit">생분해 플라스틱 산업</span>
+          </div>
+          <div class="content">
+            <div class="line line1">
+              <span class="suit">
+                2020년 중국은 분해 불가능한 플라스틱 사용을 전면 금지하였다.<br>
+                분해가 가능한 플라스틱으로는 생분해 플라스틱이 있는데, 이는<br>
+                자연계에 존재하는 미생물의 작용으로 분해되는 플라스틱을<br>
+                의미한다. 해당 플라스틱으로 생산된 제품은 택배 박스, 일회용 식기,<br>
+                일회용 쇼핑백 등이 있다. 
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 참고 -->
+      <div class="popup popup4" data-popup="4" style="display: none">
+        <div class="tag bmjua dp_flex">보충</div>
+        <button class="close_btn"></button>
+        <div class="popup_content">
+          <div class="title">
+            <span class="suit">재생 에너지 시설 확충</span>
+          </div>
+          <div class="content">
+            <div class="line line1">
+              <div class="index">
+                <span class="suit">#</span>
+              </div>
+              <div class="text">
+                <span class="suit">
+                  녹색 전력 증서: 중국 내 재생 에너지 전력 생산·소비를 인증하는<br>
+                  증서로, 재생 에너지 발전 프로젝트에서 생산한 전력량 전체를<br>
+                  심사한 후 발급한다.                
+                </span>
+              </div>
+            </div>
+
+            <div class="line line2">
+              <div class="index">
+                <span class="suit">#</span>
+              </div>
+              <div class="text">
+                <span class="suit">
+                  재생 에너지 의무 할당제: 에너지 사업자에게 공급량의 일정<br>
+                  비율을 신재생 에너지로 하도록 의무화하는 것이다.
+                </span>
+              </div>
+            </div>
+
+            <div class="line line3">
+              <div class="index">
+                <span class="suit">#</span>
+              </div>
+              <div class="text">
+                <span class="suit">
+                  탄소 배출권 거래 제도: 기업들이 온실 가스를 배출할 권리를<br>
+                  사고팔 수 있도록 한 제도이다. 중국은 현재 세계 최대 규모의<br>
+                  탄소 배출권 시장을 이루고 있다.
+                </span>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+
+      <!-- 크게 보기 -->
+      <div class="popup popup5" data-popup="5" style="display: none">
+        <div class="tag bmjua dp_flex">크게 보기</div>
+        <button class="close_btn"></button>
+        <div class="popup_content">
+          <!-- <div class="title">
+            <span class="suit">의역의 종류</span>
+          </div> -->
+          <div class="content">
+            <div class="img_box">
+              <img src="./images/1_01_19/map_detail.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+      
+
+
+    </div>
+  </body>
+  <script type="text/javascript">
+    const page = {
+      //컨텐츠에 정답 확인이 존재하는지 여부
+      isAnswer: false,
+      // 단어장 노출 여부 판단.
+      isVocabulary: false,
+      //정답 보기
+      showAnswer: () => {},
+      //정답 숨기기
+      hideAnswer: () => {},
+      // 단어장 보기
+      showVocabulary: () => {},
+    };
+    $(document).ready(function () {});
+  </script>
+  <script type="text/javascript">
+    // 정답 버튼 앞에 경로를 따로 따서 팝업정답 스크립트 분리지정 가능
+    $(".answer_btn").on("click", function () {
+      // let index = $(".answer_btn").index(this);
+      let index = $(this).data("index");
+      $(this).hide();
+      $(`.reset_btn[data-index=${index}]`).show();
+      
+      // $(`.answer`).show();
+      $(`.answer${index}`).show();
+      $(`.reset${index}`).hide();
+    });
+    // 다시 하기 버튼
+    $(".reset_btn").on("click", function () {
+      // let index = $(".reset_btn").index(this);
+      let index = $(this).data("index");
+      $(this).hide();
+      $(`.answer_btn[data-index=${index}]`).show();
+      
+      // $(".answer").hide();
+      $(`.answer${index}`).hide();
+      $(`.reset${index}`).show();
+    });
+  </script>
+  <script src="../common/js/script.js"></script>
+  <script type="text/javascript"></script>
+</html>

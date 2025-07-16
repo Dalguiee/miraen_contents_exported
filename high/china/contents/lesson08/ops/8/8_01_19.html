@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>미래엔 중국어</title>
+  <script src="./../common/lib/jquery-3.7.1.min.js"></script>
+  <!-- SUIT Variable 폰트 -->
+  <link href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/variable/woff2/SUIT-Variable.css"
+    rel="stylesheet" />
+  <link href="../common/css/comm.css" rel="stylesheet" />
+  <link href="./css/8_01_19.css" rel="stylesheet" />
+</head>
+
+<body>
+  <div id="wrap" class="china_wrap content_wrap">
+    <div class="title_box title_box3 flex items-center">
+      <div class="num_box">
+        <span>2</span>
+      </div>
+      <div class="text_box">
+        <span class="fs-30">물건에 해당하는 양사를 연결하고 읽어 봅시다.</span>
+      </div>
+    </div>
+    <div class="btn_box dp_flex">
+      <button class="btn popup_btn blue" data-index="1">해석</button>
+      <!-- <div class="tempBttns">
+        <button onclick="page.showAnswer(event)" data-index="1" class="tempBttn answer_btn">임시정답</button>
+        <button onclick="page.hideAnswer(event)" data-index="1" class="tempBttn reset_btn"
+          style="display: none">다시하기</button>
+      </div> -->
+    </div>
+
+    <div class="full_content">
+      <div class="content">
+        <img src="./images/8_01_19/img1.svg" data-text="test" class="content_bg" />
+        <canvas class="canvas" width="480" height="400" id="canvas"></canvas>
+        <div class="line-content-wrap">
+          <div class="start-wrap">
+            <div class="start_dot" data-start="1"></div>
+            <div class="start_dot" data-start="2"></div>
+            <div class="start_dot" data-start="3"></div>
+          </div>
+          <div class="end-wrap">
+            <div class="end_dot" data-end="2"></div>
+            <div class="end_dot" data-end="1"></div>
+            <div class="end_dot" data-end="3"></div>
+          </div>
+
+          <div class="line-answer-warp">
+            <div class="line-answer">
+              <div class="line answer" data-answer="1" style="display: none"></div>
+              <div class="dot index1"></div>
+              <div class="dot index2"></div>
+            </div>
+            <div class="line-answer">
+              <div class="line answer" data-answer="2" style="display: none"></div>
+              <div class="dot index1"></div>
+              <div class="dot index2"></div>
+            </div>
+            <div class="line-answer">
+              <div class="line answer" data-answer="3" style="display: none"></div>
+              <div class="dot index1"></div>
+              <div class="dot index2"></div>
+            </div>
+          </div>
+        </div>
+        <!-- 점 선택 방지 -->
+        <div class="dot-block-wrap">
+          <div class="answer index1" data-answer="1" style="display: none"></div>
+          <div class="answer index2" data-answer="1" style="display: none"></div>
+          <div class="answer index3" data-answer="2" style="display: none"></div>
+          <div class="answer index4" data-answer="2" style="display: none"></div>
+          <div class="answer index5" data-answer="3" style="display: none"></div>
+          <div class="answer index6" data-answer="3" style="display: none"></div>
+        </div>
+        <!-- 정답 버튼 그룹 -->
+        <div class="answer-group index1">
+          <span class="suit fs-32 line-32 mr-18 mb-10">(1)</span>
+          <button class="btn btn3 answer_btn" data-index="1">정답</button>
+          <button class="btn btn3 reset_btn" data-index="1" style="display: none">
+            다시 하기
+          </button>
+        </div>
+        <div class="answer-group index2">
+          <span class="suit fs-32 line-32 mr-14 mb-10">(2)</span>
+          <button class="btn btn3 answer_btn" data-index="2">정답</button>
+          <button class="btn btn3 reset_btn" data-index="2" style="display: none">
+            다시 하기
+          </button>
+        </div>
+        <div class="answer-group index3">
+          <span class="suit fs-32 line-32 mr-14 mb-10">(3)</span>
+          <button class="btn btn3 answer_btn" data-index="3">정답</button>
+          <button class="btn btn3 reset_btn" data-index="3" style="display: none">
+            다시 하기
+          </button>
+        </div>
+        <!-- 정답 텍스트 그룹 -->
+        <div class="text-group index1">
+          <div class="index suit">①</div>
+          <span class="text-center" data-audio="095-12.mp3">
+            <span class="simhei fs-36 line-50">本</span><br /><span class="gRegula fs-32 line-32">bên</span>
+          </span>
+        </div>
+        <div class="text-group index2">
+          <div class="index suit">②</div>
+          <span class="text-center" data-audio="095-08.mp3">
+            <span class="simhei fs-36 line-50">件</span><br /><span class="gRegula fs-32 line-32">jiàn</span>
+          </span>
+        </div>
+        <div class="text-group index3">
+          <div class="index suit">③</div>
+          <span class="text-center" data-audio="095-10.mp3">
+            <span class="simhei fs-36 line-50">斤</span><br /><span class="gRegula fs-32 line-32">jån</span>
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <div class="number-page">
+      <div class="item">01</div>
+      <div class="item active">02</div>
+      <div class="item">03</div>
+      <div class="item">04</div>
+      <div class="item">05</div>
+      <div class="item">06</div>
+    </div>
+    <div class="popup_bg" style="display: none"></div>
+    <!-- 해석 -->
+    <div class="popup popup3" data-popup="1" style="display: none">
+      <div class="tag bmjua dp_flex">해석</div>
+      <button class="close_btn"></button>
+      <div class="popup_content">
+        <div class="content">
+          <div class="line mb-56">
+            <div class="index">
+              <span class="suit fs-32 line-50">(1)</span>
+            </div>
+            <span class="FZKai fs-36 line-50 mr-10 relative">本<span
+                class="subtext gRegula fs-30 line-34">bên</span></span><span
+              class="suit fs-32 line-50 fw-6 c-dblue">권[단위]</span>
+          </div>
+          <div class="line mb-56">
+            <div class="index">
+              <span class="suit fs-32 line-50">(2)</span>
+            </div>
+            <span class="FZKai fs-36 line-50 mr-10 relative">件<span
+                class="subtext gRegula fs-30 line-34">jiàn</span></span><span
+              class="suit fs-32 line-50 fw-6 c-dblue">벌[단위]</span>
+          </div>
+          <div class="line">
+            <div class="index">
+              <span class="suit fs-32 line-50">(3)</span>
+            </div>
+            <span class="FZKai fs-36 line-50 mr-10 relative">斤<span
+                class="subtext gRegula fs-30 line-34">jån</span></span><span
+              class="suit fs-32 line-50 fw-6 c-dblue">근[단위]</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</body>
+<script type="text/javascript">
+  const page = {
+    //컨텐츠에 정답 확인이 존재하는지 여부
+    isAnswer: true,
+    // 단어장 노출 여부 판단.
+    isVocabulary: false,
+    //정답 보기
+    showAnswer: () => {
+      $(".answer_btn").hide();
+      $(".reset_btn").show();
+      $(".answer").show();
+    },
+    //정답 숨기기
+    hideAnswer: () => {
+      $(".answer_btn").show();
+      $(".reset_btn").hide();
+      $(".answer").hide();
+      canversReset();
+      dotToDotActivate();
+    },
+    // 단어장 보기
+    showVocabulary: () => { },
+  };
+  $(document).ready(function () {
+    // setPopup(2);
+  });
+</script>
+<script src="../common/js/script.js"></script>
+<script src="../common/js/dotToDot.js"></script>
+<script type="text/javascript">
+  // 정답 버튼
+  $(".answer_btn").on("click", function () {
+    const index = $(this).data("index");
+    $(this).hide();
+    $(this).next().show();
+    $(`.answer[data-answer="${index}"]`).show();
+    console.log(index)
+  });
+  // 다시 하기 버튼
+  $(".reset_btn").on("click", function () {
+    const index = $(this).data("index");
+    $(this).hide();
+    $(this).prev().show();
+    $(`.answer[data-answer="${index}"]`).hide();
+    canversReset();
+    dotToDotActivate();
+  });
+</script>
+
+</html>

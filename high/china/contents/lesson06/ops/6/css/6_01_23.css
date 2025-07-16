@@ -1,0 +1,206 @@
+/* 전역 */
+.speak{
+  color: rgba(226, 47, 97, 1) ;
+}
+.btn-audio{
+  position: absolute;
+  font-size: 32px;
+}
+
+/* 타이틀 헤더 */
+.btn_box{
+  padding-top: 9px !important;
+}
+.title_box{
+  left: 0 !important;
+  top: 14px !important;
+}
+.title_box .title{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.title_box .title .titleText{
+  font-size: 30px;
+  font-weight: 800;
+}
+.title_box .title .titleText .index{
+  margin-right: 20px;
+  font-family: "BMJua";
+  font-size: 36px;
+  color: #498F63;
+}
+
+
+/* 컨텐츠 */
+.full_content{
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  padding-top: 50px;
+}
+.full_content .numberingBox{
+  position: absolute;
+  bottom: 0;
+  right: 3px;
+  width: 100%;
+  margin-top: 100px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.full_content .contentFig{
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: 30px;
+  position: relative;
+  border: 3px solid #FFE899;
+  border-radius: 11px;
+  padding: 40px 50px;
+  margin: 0 0 50px 0;
+}
+.full_content .contentFig .contentSec{
+  display: flex;
+  justify-self: center;
+  align-items: start;
+}
+.full_content .contentFig .contentSec .index{
+  padding-top: 7px;
+  padding-right: 10px;
+}
+.full_content .contentFig .contentSec .index .bmjua{
+  font-size: 30px;
+  font-weight: 400;
+  color: #498F63;
+}
+
+
+.full_content .contentFig .contentSec .hint{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  font-size: 46px;
+  font-weight: 400;
+}
+.full_content .contentFig .contentSec .hint .simhei{
+  font-size: 36px;
+  font-weight: 400;
+}
+.full_content .contentFig .contentSec .hint .gRegula{
+  font-size: 32px;
+  font-weight: 400;
+}
+
+
+.full_content .content{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.full_content .content .line{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.full_content .content .line .suit{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.full_content .content .line .checkBox{
+  width: 35px;
+  height: 35px;
+  border-radius: 11px;
+  border: 2px solid #C9CACA;
+  position: relative;
+  margin: 0 5px;
+}
+
+.full_content .content .line .checkBox.speak::after{
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 0;
+  background-image: url(../images/6_01_20/selected.png);
+  background-size: cover;
+  background-position: center;
+  width: 45px;
+  height: 31px;
+}
+
+
+
+/* 팝업 */
+.popup .popup_content{
+  width: 100%;
+  height: 100%;
+  padding: 56px 29px;
+  font-size: 40px;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: 20px;
+}
+
+.expPopup .popup_content .popupTitle{
+  font-size: 40px;
+  margin-bottom: 30px;
+  font-weight: 600;
+}
+.expPopup .popup_content .context{
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  padding-left: 20px;
+  /* margin-top: 50px; */
+}
+.expPopup .popup_content .context .title{
+  margin-top: -4px;
+  margin-right: 20px;
+}
+.expPopup .popup_content .context .title .suit{
+  font-size: 36px;
+  font-weight: 600;
+}
+
+.expPopup .popup_content .context .contextSec{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+
+.expPopup .popup_content .context .contextSec .FZKai{
+  font-size: 40px;
+  font-weight: 400;
+}
+.expPopup .popup_content .context .contextSec .FZKai.chDot{
+  margin-right: -20px;
+}
+
+.expPopup .popup_content .context .contextSec .suit{
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 43px;
+  color: #3D5591;
+}
+.expPopup .popup_content .context .contextSec .gRegula{
+  font-size: 32px;
+  font-weight: 400;
+}

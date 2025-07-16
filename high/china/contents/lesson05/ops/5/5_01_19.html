@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>미래엔 중국어</title>
+		<script src="./../common/lib/jquery-3.7.1.min.js"></script>
+		<!-- SUIT Variable 폰트 -->
+		<link href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/variable/woff2/SUIT-Variable.css" rel="stylesheet" />
+		<link href="../common/css/comm.css" rel="stylesheet" />
+		<link href="./css/5_01_19.css" rel="stylesheet" />
+	</head>
+
+	<body>
+		<div id="wrap" class="china_wrap content_wrap">
+			<!-- <div class="title_box title_box3 dp_flex">
+				<div class="num_box">
+					<span class="bmjua">2</span>
+				</div>
+				<div class="text_box">
+					<span class="suit">빈칸에 알맞은 단어를 넣고 읽어 봅시다.</span>
+				</div>
+			</div> -->
+
+			<div class="title_box dp_flex">
+        <div class="title">
+          <span class="title_num bmjua">2</span>
+          <span class="title_text suit">빈칸에 알맞은 단어를 넣고 읽어 봅시다.</span>
+        </div>
+        <!-- <div class="suit play_box">
+          <div class="icon_box">
+            <img src="./images/5_01_18/icon1.svg" alt="재생" />
+          </div>
+          <span class="suit">083</span>
+        </div> -->
+      </div>
+
+			<div class="btn_box dp_flex">
+				<button class="btn popup_btn blue" data-index="1">해석</button>
+				<!-- <div class="tempBttns">
+					<button onclick="page.showAnswer(event)" data-index="1" class="tempBttn answer_btn">임시정답</button>
+					<button onclick="page.hideAnswer(event)" data-index="1" class="tempBttn reset_btn" style="display: none">다시하기</button>
+				</div> -->
+			</div>
+
+			<div class="full_content">
+				<div class="box-example reset">
+					<span class="gRegula mr-8">Wô xîhuan tå</span>
+					<span class="line gRegula highlight pink" data-multiple-value="multiple1"></span>
+					<span class="gRegula">.</span>
+				</div>
+				<div class="box-example answer" data-audio="069-03.mp3" style="display: none;">
+					<span class="gRegula mr-8">Wô xîhuan tå</span>
+					<span class="line gRegula highlight pink" data-multiple-value="multiple1">zúqiú</span>
+					<span class="gRegula">.</span>
+				</div>
+
+
+				<ul class="box-checkbox" data-ui="radioGroup" data-name="multiple1">
+					<li class="box-checkbox-item">
+						<span class="checkbox-wrap">
+							<!-- <input type="checkbox" name="multiple1" id="checkbox1-1" data-audio="069-04.mp3" /> -->
+							<label class="checkbox1-1" for="checkbox1-1">
+								<span class="num gRegula">①</span>
+								<span class="value gRegula" data-audio="069-04.mp3">zúqiú</span>
+							</label>
+						</span>
+					</li>
+					<li class="box-checkbox-item">
+						<span class="checkbox-wrap">
+							<!-- <input type="checkbox" name="multiple1" id="checkbox1-2" data-audio="069-05.mp3" /> -->
+							<label for="checkbox1-2">
+								<span class="num gRegula">②</span>
+								<span class="value gRegula" data-audio="069-05.mp3">lánqiú</span>
+							</label>
+						</span>
+					</li>
+					<li class="box-checkbox-item">
+						<span class="checkbox-wrap">
+							<!-- <input type="checkbox" name="multiple1" id="checkbox1-3" data-audio="069-06.mp3" /> -->
+							<label for="checkbox1-3">
+								<span class="num gRegula">③</span>
+								<span class="value gRegula" data-audio="069-06.mp3">tàijíquán</span>
+							</label>
+						</span>
+					</li>
+					<li class="box-checkbox-item">
+						<span class="checkbox-wrap">
+							<!-- <input type="checkbox" name="multiple1" id="checkbox1-4" data-audio="069-07.mp3" /> -->
+							<label for="checkbox1-4">
+								<span class="num gRegula">④</span>
+								<span class="value gRegula" data-audio="069-07.mp3">pångpãngqiú</span>
+							</label>
+						</span>
+					</li>
+				</ul>
+			</div>
+
+			<div class="number-page">
+				<div class="item">01</div>
+				<div class="item active">02</div>
+				<div class="item">03</div>
+				<div class="item">04</div>
+				<div class="item">05</div>
+				<div class="item">06</div>
+			</div>
+
+			<div class="popup_bg" style="display: none"></div>
+			<!-- 해석 -->
+			<div class="popup popup1" data-popup="1" style="display: none">
+				<div class="tag bmjua dp_flex">해석</div>
+				<button class="close_btn"></button>
+				<div class="popup_content">
+					<div class="content">
+						<li class="list-item" style="padding-left: 0;">
+							<span class="gRegula">Wô xîhuan tå zúqiú.</span>
+							<span class="suit ml-20">나는 축구하는 것을 좋아해.</span>
+						</li>
+						<ul class="list">
+							<div class="text_sec">
+								<li class="list-item">
+									<div class="num">
+										<span class="suit">1</span>
+									</div>
+									<span class="gRegula">zúqiú</span>
+									<span class="suit ml-20">축구</span>
+								</li>
+								<li class="list-item">
+									<div class="num">
+										<span class="suit">3</span>
+									</div>
+									<span class="gRegula">tàijíquán</span>
+									<span class="suit ml-20">태극권</span>
+								</li>
+							</div>
+							<div class="text_sec">
+								<li class="list-item">
+									<div class="num">
+										<span class="suit">2</span>
+									</div>
+									<span class="gRegula">lánqiú</span>
+									<span class="suit ml-20">농구</span>
+								</li>
+
+								<li class="list-item">
+									<div class="num">
+										<span class="suit">4</span>
+									</div>
+									<span class="gRegula">pångpãngqiú</span>
+									<span class="suit ml-20">탁구</span>
+							</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript">
+		const page = {
+			//컨텐츠에 정답 확인이 존재하는지 여부
+			isAnswer: true,
+			// 단어장 노출 여부 판단.
+			isVocabulary: false,
+			//정답 보기
+			showAnswer: () => {
+				$(".tempBttn.answer_btn").hide();
+				$(".tempBttn.reset_btn").show();
+
+				$(".answer").show();
+				$(".reset").hide();
+				$("#wrap.china_wrap .full_content .box-checkbox .box-checkbox-item .checkbox1-1").addClass("selected");
+			},
+			//정답 숨기기
+			hideAnswer: () => {
+				$(".tempBttn.answer_btn").show();
+				$(".tempBttn.reset_btn").hide();
+
+				$(".answer").hide();
+				$(".reset").show();
+				$("#wrap.china_wrap .full_content .box-checkbox .box-checkbox-item .checkbox1-1").removeClass("selected");
+			},
+			// 단어장 보기
+			showVocabulary: () => {},
+		};
+		$(document).ready(function () {
+			// setPopup(1);
+		});
+	</script>
+	<script src="../common/js/script.js"></script>
+	<script type="text/javascript">
+		// 라디오 그룹
+		// function actionRadioGroup(radioGroupName) {
+		// 	var name = radioGroupName.toString();
+		// 	var radioGroup = $(`[data-ui="radioGroup"][data-name="${name}"] input[name="${name}"]`);
+
+		// 	radioGroup.on('click', function () {
+		// 		var label = $(`label[for="${$(this).attr('id')}"]`);
+		// 		let audioData = $(this).data('audio');
+		// 		var value = $(label).find('.value').text();
+
+		// 		radioGroup.prop('checked', false);
+		// 		$(this).prop('checked', true);
+
+		// 		// 선택시 답 지문 출력
+		// 		changeMultipleValue(name, value, audioData);
+		// 	});
+		// }
+
+		// function changeMultipleValue(name, value, datasetAudio) {
+		// 	var multipleValue = $(`[data-multiple-value="${name.toString()}"]`);
+		// 	multipleValue.text(`${value.toString()}`);
+		// 	if(datasetAudio.toString() == "069-04.mp3"){
+		// 		$(".box-example .line").data("audio", "069-01.mp3");
+		// 	} else if(datasetAudio.toString() == "069-05.mp3"){
+		// 		$(".box-example .line").data("audio", "069-02.mp3");
+		// 	} else if(datasetAudio.toString() == "069-06.mpe"){
+		// 		$(".box-example .line").data("audio", "069-03.mp3");
+		// 	}	else if(datasetAudio.toString() == "069-07.mpe"){
+		// 		$(".box-example .line").data("audio", "069-04.mp3");
+		// 	}
+
+		// }
+
+		// $(document).ready(function () {
+		// 	actionRadioGroup('multiple1');
+		// });
+	</script>
+</html>

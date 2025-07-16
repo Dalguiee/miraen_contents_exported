@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>미래엔 중국어</title>
+    <script src="./../common/lib/jquery-3.7.1.min.js"></script>
+    <script src="./../common/lib/howler-2.1.3.min.js"></script>
+    <!-- SUIT Variable 폰트 -->
+    <link
+      href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/variable/woff2/SUIT-Variable.css"
+      rel="stylesheet"
+    />
+    <link href="../common/css/comm.css" rel="stylesheet" />
+    <link href="./css/4_01_21.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div id="wrap" class="china_wrap content_wrap">
+      <div class="btn_box dp_flex">
+        <div class="title">
+          <span class="titleText suit"
+            ><span class="index">5</span>대화를 읽고 빈칸을 채워 봅시다.</span
+          >
+        </div>
+        <div class="bttns">
+          <button class="btn popup_btn blue" data-index="3">해석</button>
+          <!-- <div class="tempBttns">
+            <button
+              onclick="page.showAnswer(event)"
+              data-index="1"
+              class="tempBttn answer_btn"
+            >
+              임시정답
+            </button>
+            <button
+              onclick="page.hideAnswer(event)"
+              data-index="1"
+              class="tempBttn reset_btn"
+              style="display: none"
+            >
+              다시하기
+            </button>
+          </div> -->
+        </div>
+      </div>
+
+      <div class="full_content">
+        <div class="content">
+          <div class="quesSec">
+            <div class="imgBox">
+              <img src="./images/4_01_21/content.png" alt="" />
+            </div>
+            <div class="context context1" data-audio="059-09.mp3">
+              <span class="simhei">你几点睡觉？</span>
+              <span class="gRegula">Nî jî diân shuìjiào?</span>
+            </div>
+            <div class="context context2" data-audio="059-10.mp3">
+              <span class="simhei">我十二点睡觉。</span>
+              <span class="gRegula">Wô shí’èr diân shuìjiào.</span>
+            </div>
+          </div>
+          <div class="line">
+            <div class="answerSec">
+              <div class="ansBox">
+                <div class="qLine">
+                  <img
+                    class="conIcon"
+                    src="./images/4_01_21/icon1.png"
+                    alt=""
+                  />
+                  <span class="suit title">는 (1)</span>
+                  <span class="suit wrong0 reset reset1"></span>
+                  <span
+                    class="suit correct0 answer answer1"
+                    style="display: none"
+                    >12</span
+                  >
+                  <span class="suit title">시에 (2)</span>
+                  <span class="suit wrong0 reset reset2"></span>
+                  <span
+                    class="suit correct0 answer answer2"
+                    style="display: none"
+                    >(잠을) 잔다</span
+                  >
+                  <span class="suit end">.</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <figure class="numberingBox">
+          <img src="./images/4_01_21/numbering.svg" alt="" />
+        </figure>
+      </div>
+
+      <div class="popup_bg" style="display: none"></div>
+
+      <div class="popup popup2 expPopup" data-popup="3" style="display: none">
+        <div class="tag bmjua dp_flex">해석</div>
+        <button class="close_btn"></button>
+        <div class="popup_content dp_flex">
+          <div class="popup_content">
+            <div class="line line1 dp_flex">
+              <div class="textSec">
+                <div class="text_box text_box1">
+                  <span class="txt txt1 FZKai">你几点睡觉?</span>
+                  <span class="suit">너는 몇 시에 자?</span>
+                </div>
+                <div class="text_box text_box2">
+                  <span class="txt gRegula">Nî jî diân shuìjiào?</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="line line2 dp_flex">
+              <div class="textSec">
+                <div class="text_box text_box1">
+                  <span class="txt txt1 FZKai chDot">我十二点睡觉。</span>
+                  <span class="suit">나는 12시에 자.</span>
+                </div>
+                <div class="text_box text_box2">
+                  <span class="txt gRegula">Wô shí’èr diân shuìjiào.</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript">
+    const page = {
+      //컨텐츠에 정답 확인이 존재하는지 여부
+      isAnswer: true,
+      // 단어장 노출 여부 판단. 이벤트 호출하지 않으면 노출하지 않음.
+      isVocabulary: false,
+      //정답 보기
+      showAnswer: () => {
+        $(".tempBttn.answer_btn").hide();
+        $(".tempBttn.reset_btn").show();
+
+        $(".answer").show();
+        $(".answer").addClass("speak");
+        $(".reset").hide();
+      },
+      //정답 숨기기
+      hideAnswer: () => {
+        $(".tempBttn.answer_btn").show();
+        $(".tempBttn.reset_btn").hide();
+
+        $(".answer").hide();
+        $(".answer").removeClass("speak");
+        $(".reset").show();
+      },
+      // 단어장 보기
+      showVocabulary: () => {
+        setPopup(7);
+      },
+    };
+  </script>
+  <script crossorigin src="../common/lib/libBundle.js"></script>
+  <script src="../common/js/script.js"></script>
+  <script src="../common/js/rolePlayerCh.js"></script>
+  <script src="../common/js/vocabularyBook.js"></script>
+</html>

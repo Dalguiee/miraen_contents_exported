@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>미래엔 중국어</title>
+    <script src="./../common/lib/jquery-3.7.1.min.js"></script>
+    <!-- SUIT Variable 폰트 -->
+    <link
+      href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/variable/woff2/SUIT-Variable.css"
+      rel="stylesheet"
+    />
+    <link href="../common/css/comm.css" rel="stylesheet" />
+    <link href="./css/1_01_01.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div id="wrap" class="china_wrap">
+      <div class="title_box">
+        <div class="title">
+          <img class="title_logo" src="./images/1_01_01/logo.svg" alt="">
+          <span class="title_text suit">중국의 <span class="gold">해음 문화</span></span>
+        </div>
+      </div>
+
+      <div class="btn_box dp_flex">
+        <button class="btn popup_btn blue" data-index="3">보충</button>
+        <button class="btn popup_btn blue" data-index="4">참고</button>
+      </div>
+
+      <div class="full_content">
+        <div class="content">
+          <div class="title">
+            <span class="bmjua">선물 해음</span>
+          </div>
+          <div class="context">
+            <!-- <img class="content_img" src="./images/1_01_01/content_bg.png" alt=""> -->
+            <div class="text_sec">
+              <div class="text_sec_upper">
+                <div class="text_box">
+                  <span class="simhei" data-audio="104-01.mp3">苹果<span class="gRegula"> píngguô</span></span>
+                </div>
+                <div class="text_box">
+                  <span class="simhei" data-audio="104-02.mp3">平安<span class="gRegula"> píng’ãn</span></span>
+                </div>
+              </div>
+              <div class="text_sec_under">
+                <div class="right">
+                  <span class="suit">
+                    <span class="notoSans">‘</span>사과<span class="suit">(</span><span class="simhei" data-audio="104-01.mp3">苹果<span class="gRegula"> píngguô</span></span><span class="suit">)</span><span class="notoSans">’</span>의 <span class="notoSans">‘</span><span class="simhei" data-audio="104-03.mp3">苹<span class="suit">(</span><span class="gRegula">píng</span><span class="suit">)</span></span><span class="notoSans">’</span>은<br>
+                    <span class="notoSans">‘</span>평안하다<span class="suit">(</span><span class="simhei" data-audio="104-02.mp3">平安<span class="gRegula"> píng<span class="notoSans">’</span>ãn</span></span><span class="suit">)</span><span class="notoSans">’</span>의 <span class="notoSans">‘</span><span class="simhei" data-audio="104-03.mp3">平<span class="suit">(</span><span class="gRegula">píng</span><span class="suit">)</span></span><span class="notoSans">’</span>과<br>
+                  </span>  
+                </div>
+                <div class="left">
+                  <span class="suit">
+                    발음이 같아서 사과는 평안을 기원하는 의미<br>
+                    가 있습니다.
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>  
+        </div>
+      </div>
+
+      <!-- 팝업 -->
+      <div class="popup_bg" style="display: none"></div>
+
+      <!-- 보충 -->
+      <div class="popup popup1" data-popup="3" style="display: none">
+        <div class="tag bmjua dp_flex">보충</div>
+        <button class="close_btn"></button>
+        <div class="popup_content">
+          <span class="suit">
+            <span class="notoSans">‘</span>해음(<span class="simhei" data-audio="104-13.mp3">谐音<span class="gRegula"> xiéyån</span></span>)<span class="notoSans">’</span>이란 어떤 한 단어가 발음이 같거나 비슷한<br>
+            다른 단어를 연상하게 되는 것으로, 중국인들은 해음 현상이<br>
+            길흉화복에 영향을 끼칠 수 있다고 믿는다. <span class="notoSans">‘</span>배를 나누다<span class="notoSans">’</span>의<br>
+            <span class="notoSans">‘</span><span class="simhei" data-audio="104-15.mp3">分梨<span class="suit">(</span><span class="gRegula">fçn lí</span><span class="suit">)</span></span><span class="notoSans">’</span>는 <span class="notoSans">‘</span>이별하다<span class="notoSans">’</span>의 <span class="notoSans">‘</span><span class="simhei" data-audio="104-15.mp3">分离<span class="suit">(</span><span class="gRegula">fçnlí</span><span class="suit">)</span></span><span class="notoSans">’</span>와 발음이 같아<br>
+            배(<span class="simhei" data-audio="104-14.mp3">梨<span class="gRegula"> lí</span></span>)를 선물하거나 잘라 먹는 것을 기피한다.
+          </span>
+        </div>
+      </div>
+
+      <!-- 참고 -->
+      <div class="popup popup2" data-popup="4" style="display: none">
+        <div class="tag bmjua dp_flex">참고</div>
+        <button class="close_btn"></button>
+        <div class="popup_content">
+          <div class="title">
+            <span class="suit">명절 관련 해음 문화</span>
+          </div>
+          <div class="content">
+            <div class="line line1">
+              <div class="index">
+                <span class="suit">•</span>
+              </div>
+              <div class="text">
+                <span class="suit">
+                  섣달 그믐에서 <span class="simhei" data-audio="104-16.mp3">春节</span>로 넘어가는 자시(<span class="simhei" data-audio="104-17.mp3">子时</span>)에 자오쯔(<span class="simhei" data-audio="104-18.mp3">饺子</span>)를<br>
+                  먹는다. <span class="notoSans">‘</span>교체하다<span class="notoSans">’</span>를 뜻하는 <span class="simhei" data-audio="104-19.mp3">交<span class="gRegula"><span class="suit">(</span>jião<span class="suit">)</span></span></span>와 <span class="simhei" data-audio="104-20.mp3">饺<span class="suit">(</span><span class="gRegula">jiâo</span><span class="suit">)</span></span>의 발음이<br>
+                  비슷하기 때문이다.
+                </span>
+              </div>
+            </div>
+
+            <div class="line line2">
+              <div class="index">
+                <span class="suit">•</span>
+              </div>
+              <div class="text">
+                <span class="suit">
+                  정월 초하루에는 <span class="notoSans">‘</span>떨어져 있던 가족과 친척이 한자리에 모이다<span class="notoSans">’</span><br>
+                  라는 <span class="simhei" data-audio="104-21.mp3">团圆<span class="gRegula"><span class="suit">(</span>tuányuán<span class="suit">)</span></span></span>과 발음이 비슷한 탕위안(<span class="simhei" data-audio="104-22.mp3">汤圆<span class="gRegula"> tãngyuán</span></span>)<br>
+                  을 먹는다.
+                </span>
+              </div>
+            </div>
+
+            <div class="line line3">
+              <div class="index">
+                <span class="suit">•</span>
+              </div>
+              <div class="text">
+                <span class="suit">
+                  <span class="simhei" data-audio="061-14.mp3">元宵节</span>(음력 1월 15일)는 <span class="notoSans">‘</span>등불<span class="notoSans">’</span>을 뜻하는 <span class="simhei" data-audio="104-23.mp3">灯<span class="gRegula"><span class="suit">(</span>dçng<span class="suit">)</span></span></span>과<br>
+                  <span class="notoSans">‘</span>성년 남자<span class="notoSans">’</span>를 의미하는 <span class="simhei" data-audio="104-24.mp3">丁<span class="gRegula"><span class="suit">(</span>dång<span class="suit">)</span></span></span>의 발음이 유사하여 등불을<br>
+                  켜고 아들을 낳길 기도하는 풍습이 있다.<br>
+                </span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      
+
+      
+    </div>
+  </body>
+
+  <script type="text/javascript">
+    const page = {
+      //컨텐츠에 정답 확인이 존재하는지 여부
+      isAnswer: false,
+      // 단어장 노출 여부 판단.
+      isVocabulary: false,
+      //정답 보기
+      showAnswer: () => {},
+      //정답 숨기기
+      hideAnswer: () => {},
+      // 단어장 보기
+      showVocabulary: () => {},
+    };
+    $(document).ready(function () {});
+  </script>
+  <script src="../common/js/script.js"></script>
+  <script type="text/javascript"></script>
+</html>

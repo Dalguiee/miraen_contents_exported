@@ -1,0 +1,83 @@
+.china_wrap .top-title {
+  display: flex;
+  flex-direction: column;
+  padding-top: 16px;
+}
+.china_wrap .top-title .title-img {
+  width: 144px;
+  height: 30px;
+  margin-bottom: 10px;
+}
+
+.china_wrap .btn_box {
+  top: 3px;
+  right: 0;
+  z-index: 1;
+}
+
+.china_wrap .full_content {
+  width: 100%;
+  height: calc(100% - 74px);
+}
+.china_wrap .full_content .content {
+  margin: 24px 0 0 40px;
+}
+.china_wrap .full_content .content .item {
+  display: flex;
+  flex-direction: column;
+}
+
+.china_wrap .full_content .content .item .titie {
+  width: 218px;
+  height: 38px;
+}
+
+.number-page {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  bottom: 12px;
+  right: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  font-family: "SUIT Variable", sans-serif;
+  font-weight: 800;
+  font-size: 26px;
+  color: #d9d9d9;
+}
+.number-page .item {
+  display: flex;
+}
+.number-page .item .title {
+  display: flex;
+  align-items: center;
+  height: 66px;
+}
+.number-page .item:after {
+  content: "";
+  width: 24px;
+  height: 24px;
+  background: url(./../../common/images/page_arrow.svg) no-repeat center;
+  margin: 0 6px 0 6px;
+}
+.number-page .item:last-of-type:after {
+  display: none;
+}
+.number-page .item.active {
+  color: #231815;
+}
+
+/* 대본 팝업 */
+.popup.popup2 .popup_content {
+  width: 100%;
+  height: 100%;
+  padding: 56px 34px 8px 55px;
+  position: relative;
+}
+
+.popup.popup2 .popup_content .content {
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+}

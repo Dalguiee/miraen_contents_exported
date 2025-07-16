@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>미래엔 중국어</title>
+  <script src="./../common/lib/jquery-3.7.1.min.js"></script>
+  <script src="./../common/lib/howler-2.1.3.min.js"></script>
+  <!-- SUIT Variable 폰트 -->
+  <link href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/variable/woff2/SUIT-Variable.css"
+    rel="stylesheet" />
+  <link href="../common/css/comm.css" rel="stylesheet" />
+  <link href="./css/1_01_28.css" rel="stylesheet" />
+</head>
+
+<body>
+  <div id="wrap" class="china_wrap content_wrap">
+    <div class="title_box">
+      <div class="title">
+        <span class="mainCon suit"><img class="titleNum" src="./images/1_01_28/logo.png" />평소에 자주
+          쓰는 한국과 중국의 인사말을 찾아 비교해 봅시다.</span>
+      </div>
+    </div>
+
+    <div class="btn_box dp_flex">
+      <div class="bttns">
+        <button class="btn popup_btn btn3" data-index="3">예시 답안</button>
+      </div>
+    </div>
+
+    <div class="full_content">
+      <div class="tipImgBox">
+        <img class="tipImg" src="./images/1_01_28/tip.svg" alt="" />
+      </div>
+      <div class="content dp_flex dp_flex_column">
+        <figure class="context context1">
+          <img class="contentImg" src="./images/1_01_28/content1.svg" />
+          <figcaption class="textBox textBox1 simhei" data-audio="031-05.mp3">
+            你吃饭了吗?<br /><span class="gRegula">Nî chå fàn le ma?</span>
+          </figcaption>
+          <figcaption class="textBox textBox2 simhei" data-audio="031-06.mp3">
+            你去哪儿?<br /><span class="gRegula">Nî qù nâr?</span>
+          </figcaption>
+        </figure>
+        <div class="context context2">
+          <img class="bgImg" src="./images/1_01_28/point.png" alt="" />
+          <span class="answer suit" style="display: none">우리나라에서 친근한 사이에
+            <span class="notoSans">‘</span>식사하셨어요?<span class="notoSans">’</span>, <span class="notoSans">‘</span>어디
+            가세요?<span class="notoSans">’</span>
+            같은 일상의 안부를 묻거나 간단한 질문을 하면서 인사를 대신하는
+            것처럼 중국에도 아는 사람끼리는
+            <span class="FZKai point" data-audio="024-25.mp3">你好</span>뿐만
+            아니라 다양한 표현으로 인사한다. 체면을 중시하는 중국인들은 헤어질
+            때도 형식적인 인사를 자주 한다. 예를 들어 헤어질 때
+            <span class="FZKai point" data-audio="031-07.mp3"><span class="notoSans">‘</span>有时间来我家玩儿
+              <span class="suit">(시간 있을 때 우리 집에 놀러 오세요)!</span><span class="notoSans">’</span></span>
+            라고 인사하면, 실제 방문 의사 여부에 관계없이
+            <span class="FZKai point" data-audio="031-08.mp3"><span class="notoSans">‘</span>我一定去
+              <span class="suit">(꼭 갈게요)</span>!<span class="notoSans">’</span></span>
+            와 같은 형식적인 대답을 하는 것이 일반적이다.</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 팝업 -->
+    <div class="popup_bg" style="display: none"></div>
+    <!-- 예시 답안 -->
+    <div class="popup expPopup" data-popup="3" style="display: none">
+      <div class="tag bmjua dp_flex">예시 답안</div>
+      <button class="close_btn"></button>
+      <div class="popup_content">
+        <div class="contentFig">
+          <img class="lineImg" src="./images/1_01_28/textLine.png" alt="" />
+          <span class="suit">
+            우리나라에서 친근한 사이에
+            <span class="notoSans">‘</span>식사하셨어요?<span class="notoSans">’</span>, <span class="notoSans">‘</span>어디
+            가세요?<span class="notoSans">’</span>
+            같은<br />
+            일상의 안부를 묻거나 간단한 질문을 하면서 인사를 대신하는 것처럼
+            중국에도 아는 사람끼리는
+            <span class="simhei" data-audio="023-04.mp3">你好</span>뿐만
+            아니라 다양한 표현으로 인사<br />
+            한다. 체면을 중시하는 중국인들은 헤어질 때도 형식적인 인사를<br />
+            자주 한다. 예를 들어 헤어질 때 <span class="notoSans">‘</span><span class="simhei"
+              data-audio="031-07.mp3">有时间来我家玩儿</span>(시간 있을 때<br />
+            우리 집에 놀러 오세요)!<span class="notoSans">’</span>라고
+            인사하면, 실제 방문 의사 여부에<br />
+            관계없이 <span class="notoSans">‘</span><span class="simhei" data-audio="031-08.mp3">我一定去</span>(꼭
+            갈게요)!<span class="notoSans">’</span>와 같은 형식적인 대답을
+            하는 것이<br />
+            일반적이다.
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<script type="text/javascript">
+  const page = {
+    //컨텐츠에 정답 확인이 존재하는지 여부
+    isAnswer: false,
+    // 단어장 노출 여부 판단. 이벤트 호출하지 않으면 노출하지 않음.
+    isVocabulary: false,
+    //정답 보기
+    showAnswer: () => {
+      $(".answer_btn").hide();
+      $(".reset_btn").show();
+      $(".answer").show();
+    },
+    //정답 숨기기
+    hideAnswer: () => {
+      $(".answer_btn").show();
+      $(".reset_btn").hide();
+      $(".answer").hide();
+    },
+    // 단어장 보기
+    showVocabulary: () => {
+      setPopup(7);
+    },
+  };
+</script>
+<script type="text/javascript">
+  // 정답 버튼
+  $(".answer_btn").on("click", function () {
+    let index = $(".answer_btn").index(this);
+    $(this).hide();
+    $(".reset_btn").eq(index).show();
+    $(".answer").eq(index).show();
+    $(".reset").eq(index).hide();
+  });
+  // 다시 하기 버튼
+  $(".reset_btn").on("click", function () {
+    let index = $(".reset_btn").index(this);
+    $(this).hide();
+    $(".answer_btn").eq(index).show();
+    $(".answer").eq(index).hide();
+    $(".reset").eq(index).show();
+  });
+</script>
+<script crossorigin src="../common/lib/libBundle.js"></script>
+<script src="../common/js/script.js"></script>
+<script src="../common/js/rolePlayerCh.js"></script>
+<script src="../common/js/vocabularyBook.js"></script>
+
+</html>

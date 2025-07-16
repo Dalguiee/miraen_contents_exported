@@ -1,0 +1,9 @@
+{
+  "lang": ["한자", "병음"],
+  "subtitlelist": [
+    { "start": 8.0, "end": 11.0, "value": ["Nî zênme qù Tiãn’ãn Mén?", "你怎么去天安门?"] },
+    { "start": 11, "end": 14, "value": ["Wô zuò dìtiê qù.", "我坐地铁去。"] },
+    { "start": 14, "end": 17.5, "value": ["Dìtiê zhàn yuân ma?", "地铁站远吗?"] },
+    { "start": 17.5, "end": 20, "value": ["Bù yuân, wâng qián zôu jiù dào le.", "不远，往前走就到了。"] }
+  ]
+}

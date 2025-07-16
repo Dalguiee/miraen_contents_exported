@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>미래엔 중국어</title>
+    <script src="./../common/lib/jquery-3.7.1.min.js"></script>
+    <!-- SUIT Variable 폰트 -->
+    <link
+      href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/variable/woff2/SUIT-Variable.css"
+      rel="stylesheet"
+    />
+    <link href="../common/css/comm.css" rel="stylesheet" />
+    <link href="./css/3_01_14.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div id="wrap" class="china_wrap content2_wrap">
+      <div class="title_box dp_flex">
+        <div class="num_box tmoney">
+          <span>2</span>
+        </div>
+        <div class="text_box">
+          <span>학년 말하기</span>
+        </div>
+      </div>
+
+      <div class="btn_box dp_flex">
+        <button class="btn hanja_btn">한자</button>
+        <button class="btn pinyin_btn" style="display: none">병음</button>
+        <button class="btn combo_btn">한자+병음</button>
+        <button class="btn explan_popup_btn blue"><span>설명</span></button>
+        <button class="btn popup_btn blue" data-index="2">해석</button>
+        <!-- <div class="tempBttns">
+          <button onclick="page.showVocabulary()" data-index="1" class="tempBttn">단어장</button>
+        </div> -->
+      </div>
+
+      <div class="full_content">
+        <div class="top_box dp_flex dp_flex_column">
+          <div class="tab1" data-tab="1" data-audio="047-24.mp3">
+            <!-- 병음 -->
+            <div class="type type1 dp_flex dp_flex_column" data-view="pinyin">
+              <span class="txt txt2 gRegula" style="font-size: 48px">
+                Tã shàng <span class="highlight pink">gãozhõng</span> sãn
+                niánjí.</span>
+            </div>
+            <!-- 한자 -->
+            <div class="type type1 dp_flex dp_flex_column" data-view="hanja" style="display: none">
+              <span class="txt txt1 FZKai">
+                她上<span class="highlight pink">高中</span>三年级。</span>
+            </div>
+            <!-- 한자 + 병음 -->
+            <div class="type type3 dp_flex dp_flex_column" data-view="combo" style="display: none">
+              <span class="txt txt1 FZKai">
+                她上<span class="highlight pink">高中</span>三年级。</span>
+              <span class="txt txt2 gRegula">
+                Tã shàng <span class="highlight pink">gãozhõng</span> sãn
+                niánjí.</span>
+            </div>
+          </div>
+          <div class="tab1" data-tab="2" data-audio="047-25.mp3" style="display: none">
+            <!-- 병음 -->
+            <div class="type type1 dp_flex dp_flex_column" data-view="pinyin">
+              <span class="txt txt2 gRegula" style="font-size: 48px">Tã shàng <span class="highlight pink">xiâoxué</span> sãn
+                niánjí.</span>
+            </div>
+            <!-- 한자 -->
+            <div class="type type1 dp_flex dp_flex_column" data-view="hanja" style="display: none">
+              <span class="txt txt1 FZKai">她上<span class="highlight pink">小学</span>三年级。</span>
+            </div>
+            <!-- 한자 + 병음 -->
+            <div class="type type3 dp_flex dp_flex_column" data-view="combo" style="display: none">
+              <span class="txt txt1 FZKai">她上<span class="highlight pink">小学</span>三年级。</span>
+              <span class="txt txt2 gRegula">Tã shàng <span class="highlight pink">xiâoxué</span> sãn
+                niánjí.</span>
+            </div>
+          </div>
+          <div class="tab2" data-tab="3" data-audio="047-27.mp3" style="display: none">
+            <!-- 병음 -->
+            <div class="type type3 dp_flex dp_flex_column" data-view="pinyin">
+              <span class="txt txt2 gRegula" style="font-size: 48px">
+                Tã shàng <span class="highlight pink">chñzhõng</span> sãn
+                niánjí.</span>
+            </div>
+            <!-- 한자 -->
+            <div class="type type3 dp_flex dp_flex_column" data-view="hanja" style="display: none">
+              <span class="txt txt1 FZKai">
+                她上<span class="highlight pink">初中</span>三年级。</span>
+            </div>
+            <!-- 한자 + 병음 -->
+            <div class="type type3 dp_flex dp_flex_column" data-view="combo" style="display: none">
+              <span class="txt txt1 FZKai">
+                她上<span class="highlight pink">初中</span>三年级。</span>
+              <span class="txt txt2 gRegula">
+                Tã shàng <span class="highlight pink">chñzhõng</span> sãn
+                niánjí.</span>
+            </div>
+          </div>
+          <div class="tab3" data-tab="4" data-audio="047-56.mp3" style="display: none">
+            <!-- 병음 -->
+            <div class="type type4 dp_flex dp_flex_column" data-view="pinyin">
+              <span class="txt txt2 gRegula" style="font-size: 48px">
+                Tã shàng <span class="highlight pink">dàxué</span> sãn
+                niánjí.</span>
+            </div>
+            <!-- 한자 -->
+            <div class="type type4 dp_flex dp_flex_column" data-view="hanja" style="display: none">
+              <span class="txt txt1 FZKai">
+                她上<span class="highlight pink">大学</span>三年级。</span>
+            </div>
+            <!-- 병음 + 한자 -->
+            <div class="type type4 dp_flex dp_flex_column" data-view="combo" style="display: none">
+              <span class="txt txt1 FZKai">
+                她上<span class="highlight pink">大学</span>三年级。</span>
+              <span class="txt txt2 gRegula">
+                Tã shàng <span class="highlight pink">dàxué</span> sãn
+                niánjí.</span>
+            </div>
+          </div>
+          <button class="btn3 basic_btn tab_btn active" data-index="1">
+            기본 문장
+          </button>
+        </div>
+        <div class="bottom_box dp_flex dp_flex_column" data-view-info="pinyin" data-tab-info="1">
+          <div class="step step1 dp_flex">
+            <div class="img_box">
+              <img src="../3/images/3_01_14/icon1.svg" class="img img1" />
+              <div class="line"></div>
+            </div>
+            <div class="text_box dp_flex dp_flex_column" data-audio="047-29.mp3">
+              <!-- 병음 -->
+              <span class="txt txt2 gRegula" data-view="pinyin">xiâoxué</span>
+              <!-- 한자 -->
+              <span class="txt txt1 FZKai" style="display: none" data-view="hanja">小学</span>
+              <!-- 한자 + 병음 -->
+              <span class="txt txt1 FZKai" style="display: none" data-view="combo">小学</span>
+              <span class="txt txt2 gRegula" style="display: none" data-view="combo">xiâoxué</span>
+            </div>
+            <button class="btn3 tab_btn" data-index="2">교체 문장</button>
+          </div>
+          <div class="step step2 dp_flex">
+            <div class="img_box">
+              <img src="../3/images/3_01_14/icon2.svg" class="img img1" />
+              <div class="line"></div>
+            </div>
+            <div class="text_box dp_flex dp_flex_column" data-audio="047-30.mp3">
+              <!-- 병음 -->
+              <span class="txt txt2 gRegula" data-view="pinyin">chñzhõng</span>
+              <!-- 한자 -->
+              <span class="txt txt1 FZKai" style="display: none" data-view="hanja">初中</span>
+              <!-- 한자 + 병음 -->
+              <span class="txt txt1 FZKai" style="display: none" data-view="combo">初中</span>
+              <span class="txt txt2 gRegula" style="display: none" data-view="combo">chñzhõng</span>
+            </div>
+            <button class="btn3 tab_btn" data-index="3">교체 문장</button>
+          </div>
+          <div class="step step3 dp_flex">
+            <div class="img_box">
+              <img src="../3/images/3_01_14/icon3.svg" class="img img1" />
+              <div class="line"></div>
+            </div>
+            <div class="text_box dp_flex dp_flex_column" data-audio="047-31.mp3">
+              <!-- 병음 -->
+              <span class="txt txt2 gRegula" data-view="pinyin">dàxué</span>
+              <!-- 한자 -->
+              <span class="txt txt1 FZKai" style="display: none" data-view="hanja">大学</span>
+              <!-- 한자 + 병음 -->
+              <span class="txt txt1 FZKai" style="display: none" data-view="combo">大学</span>
+              <span class="txt txt2 gRegula" style="display: none" data-view="combo">dàxué</span>
+            </div>
+            <button class="btn3 tab_btn" data-index="4">교체 문장</button>
+          </div>
+        </div>
+        <div class="footer">
+          <button class="btn popup_btn blue" data-index="3">참고</button>
+          <button class="btn popup_btn yellow" data-index="4">
+            자기소개 프로젝트
+          </button>
+        </div>
+      </div>
+
+      <!-- 팝업 -->
+      <div class="popup_bg" style="display: none"></div>
+      <!-- 설명 -->
+      <div class="popup explan" style="display: none">
+        <div class="tag bmjua dp_flex">설명</div>
+        <button class="close_btn">
+          <span class="sr-only">닫기</span>
+        </button>
+        <div class="popup_content dp_flex dp_flex_column">
+          <span class="suit">
+            중국에서는 중·고등학교를 합쳐<br><span class="FZKai" data-audio="047-39.mp3">中学<span class="suit">(<span class="gRegula">zhõngxué</span>)</span></span>라고 한다.
+          </span>
+        </div>
+      </div>
+      <!-- 단어장 -->
+      <div class="popup vocabularyBook" data-popup="7" style="display: none">
+        <div class="tag bmjua dp_flex">단어장</div>
+        <button class="close_btn"></button>
+        <div class="popup_content dp_flex">
+          <div class="word_list_box dp_flex dp_flex_column">
+            <div class="word_content">
+              <div class="list dp_flex voca_popup_btn active" data-audio="047-32.mp3">
+                <span class="gRegula">xiâoxué</span>
+              </div>
+              <div class="list dp_flex voca_popup_btn" data-audio="047-33.mp3">
+                <span class="gRegula">chñzhõng</span>
+              </div>
+              <div class="list dp_flex voca_popup_btn" data-audio="047-34.mp3">
+                <span class="gRegula">dàxué</span>
+              </div>
+            </div>
+          </div>
+          <div class="show_word_box dp_flex dp_flex_column">
+            <div class="china_box dp_flex">
+              <div class="voca_popup_tab" data-audio="047-32.mp3">
+                <span class="FZKai">小学</span>
+                <span class="gRegula">xiâoxué</span>
+              </div>
+              <div class="voca_popup_tab" data-audio="047-33.mp3" style="display: none">
+                <span class="FZKai">初中</span>
+                <span class="gRegula">chñzhõng</span>
+              </div>
+              <div class="voca_popup_tab" data-audio="047-34.mp3" style="display: none">
+                <span class="FZKai">大学</span>
+                <span class="gRegula">dàxué</span>
+              </div>
+            </div>
+            <div class="korea_box dp_flex">
+              <div class="voca_warp">
+                <span class="suit">초등학교</span>
+                <span class="suit" style="display: none">중학교</span>
+                <span class="suit" style="display: none">대학교</span>
+              </div>
+            </div>
+            <div class="show_btn-warp">
+              <button class="btn3 show_pinyin_btn" style="display: none">
+                병음 보기
+              </button>
+              <button class="btn3 hide_pinyin_btn">병음 가리기</button>
+              <button class="btn3 show_btn" style="display: none">
+                뜻 보기
+              </button>
+              <button class="btn3 hide_btn">뜻 감추기</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 해석 -->
+      <div class="popup popup3" data-popup="2" style="display: none">
+        <div class="tag bmjua dp_flex">해석</div>
+        <button class="close_btn"></button>
+        <div class="popup_content">
+          <ul class="list">
+            <li class="item">
+              <div class="item_text">
+                <div class="flex">
+                  <span class="FZKai">她上高中三年级。</span>
+                  <span class="suit">그녀는 고등학교 3학년이야.</span>
+                </div>
+                <span class="gRegula">Tã shàng gãozhõng sãn niánjí.</span>
+              </div>
+            </li>
+            <li class="item">
+              <div class="item_text">
+                <div class="flex">
+                  <span class="FZKai">她上小学三年级。</span>
+                  <span class="suit">그녀는 초등학교 3학년이야.</span>
+                </div>
+                <span class="gRegula">Tã shàng xiâoxué sãn niánjí.</span>
+              </div>
+            </li>
+            <li class="item">
+              <div class="item_text">
+                <div class="flex">
+                  <span class="FZKai">她上初中三年级。</span>
+                  <span class="suit">그녀는 중학교 3학년이야.</span>
+                </div>
+                <span class="gRegula">Tã shàng chñzhõng sãn niánjí.</span>
+              </div>
+            </li>
+            <li class="item">
+              <div class="item_text">
+                <div class="flex">
+                  <span class="FZKai">她上大学三年级。</span>
+                  <span class="suit">그녀는 대학교 3학년이야.</span>
+                </div>
+                <span class="gRegula">Tã shàng dàxué sãn niánjí.</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- 참고 -->
+      <div class="popup popup1" data-popup="3" style="display: none">
+        <div class="tag bmjua dp_flex">참고</div>
+        <button class="close_btn"></button>
+        <div class="popup_content">
+          <span class="title suit">중국의 학제</span>
+          <span class="text suit">
+            우리나라와처럼 6-3-3-4년제를 기본 학제로 하고 있으나, 일부 지역은
+            생활 수준과 지역 실정에 따라 일부 변형된<br>학제를 운영하기도 한다.
+          </span>
+          <div class="table">
+            <div class="content">
+              <div class="title">
+                <span class="suit">기초<br />교육</span>
+              </div>
+              <div class="sub1">
+                <div class="item">
+                  <span class="suit">유치원</span>
+                </div>
+                <div class="item">
+                  <span class="suit">초등학교</span>
+                </div>
+                <div class="item">
+                  <span class="suit">중학교</span>
+                </div>
+                <div class="item">
+                  <span class="suit">고등학교</span>
+                </div>
+              </div>
+              <div class="sub2">
+                <div class="item">
+                  <span data-audio="047-35.mp3">
+                    <span class="FZKai mr-8">幼儿园</span>
+                    <span class="gRegula">yòu’éryuán</span>
+                  </span>
+                </div>
+                <div class="item">
+                  <span data-audio="047-36.mp3">
+                    <span class="FZKai mr-8">小学</span>
+                    <span class="gRegula">xiâoxué</span>
+                  </span>
+                </div>
+                <div class="item justify-start">
+                  <div class="item_sub">
+                    <span data-audio="047-37.mp3">
+                      <span class="FZKai mr-8">初中</span>
+                      <span class="gRegula">chñzhõng</span>
+                    </span>
+                  </div>
+                  <div class="item_sub2">
+                    <span data-audio="047-39.mp3">
+                      <span class="FZKai mr-8">中学</span>
+                      <span class="gRegula">zhõngxué</span>
+                    </span>
+                  </div>
+                </div>
+                <div class="item justify-start">
+                  <div class="item_sub">
+                    <span data-audio="047-38.mp3">
+                      <span class="FZKai mr-8">高中</span>
+                      <span class="gRegula">gãozhõng</span>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="line"></div>
+            <div class="content">
+              <div class="title">
+                <span class="suit">고등<br />교육</span>
+              </div>
+              <div class="sub1">
+                <div class="item">
+                  <span class="suit">대학교</span>
+                </div>
+                <div class="item">
+                  <span class="suit">대학원</span>
+                </div>
+              </div>
+              <div class="sub2">
+                <div class="item">
+                  <span data-audio="047-40.mp3">
+                    <span class="FZKai mr-8">大学</span>
+                    <span class="gRegula">dàxué</span>
+                  </span>
+                </div>
+                <div class="item">
+                  <span data-audio="047-41.mp3">
+                    <span class="FZKai mr-8">研究生院</span>
+                    <span class="gRegula">yánjiñshçngyuàn</span>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 자기소개 프로젝트 -->
+      <div class="popup popup2" data-popup="4" style="display: none">
+        <div class="tag bmjua dp_flex">자기소개 프로젝트</div>
+        <button class="close_btn"></button>
+        <div class="popup_content">
+          <span class="title suit">학년을 써 봅시다.</span>
+          <div class="white_box">
+            <div class="text reset_explan">
+              <div class="gRegula">Wô shàng</div>
+              <div class="line">
+                <span class="gRegula" style="display: none">gãozhõng èr</span>
+              </div>
+              <div class="gRegula">niánjí.</div>
+            </div>
+
+            <div
+              class="text explan"
+              data-audio="047-42.mp3"
+              style="display: none"
+            >
+              <div class="gRegula">Wô shàng</div>
+              <div class="line">
+                <span class="gRegula">gãozhõng èr</span>
+              </div>
+              <div class="gRegula">niánjí.</div>
+            </div>
+
+            <div class="text">
+              <div class="suit">나는</div>
+              <div class="line" style="width: 200px">
+                <span class="suit explan" style="display: none"
+                  >고등학교 2</span
+                >
+              </div>
+              <div class="suit">학년이야.</div>
+            </div>
+          </div>
+          <button class="btn3 ex_btn">예시 답안</button>
+          <button class="btn3 ex_reset_btn" style="display: none">
+            다시 하기
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript">
+    const page = {
+      //컨텐츠에 정답 확인이 존재하는지 여부
+      isAnswer: false,
+      // 단어장 노출 여부 판단.
+      isVocabulary: true,
+      //정답 보기
+      showAnswer: () => {},
+      //정답 숨기기
+      hideAnswer: () => {},
+      // 단어장 보기
+      showVocabulary: () => {
+        setPopup(7);
+      },
+    };
+    $(document).ready(function () {
+      // setPopup(4);
+    });
+  </script>
+  <script src="../common/js/script.js"></script>
+  <script src="../common/js/vocabularyBook.js"></script>
+  <script type="text/javascript">
+    //자기소개 프로젝트 예시 보기 버튼
+    $(".ex_btn").on("click", function () {
+      $(this).hide();
+      $(this).next().show();
+      $(".reset_explan").hide();
+      $(".explan").show();
+    });
+    //자기소개 프로젝트 다시 풀기 버튼
+    $(".ex_reset_btn").on("click", function () {
+      $(this).hide();
+      $(this).prev().show();
+      $(".reset_explan").show();
+      $(".explan").hide();
+    });
+    // 교체 문장
+    $(".tab_btn").on("click", function () {
+      setActive($(this), "tab_btn");
+    });
+  </script>
+  <script type="text/javascript">
+    // 설명 팝업
+    $(".explan_popup_btn").on("click", function () {
+      let index = $(".explan_popup_btn").index(this);
+      $(".explan_popup_bg").show();
+      $(".popup.explan").hide();
+      $(".popup.explan").eq(index).show();
+      try {
+        setRoleStop();
+      } catch (error) {}
+      audioStop();
+    });
+    // 설명팝업 있는상태에서 다른 팝업 클릭시 팝업 닫기
+    $(".popup_btn").on("click", function () {
+      $(".popup.explan").css("display","none");
+    })
+  </script>
+</html>

@@ -1,0 +1,213 @@
+.china_wrap.story_wrap{
+  overflow: visible !important;
+}
+.china_wrap.story_wrap .full_content {
+  padding: 40px 20px;
+}
+
+.china_wrap.story_wrap .full_content .script_box p {
+  text-indent: 40px;
+  white-space: nowrap;
+  font-weight: 700;
+  font-size: 34px;
+  margin-top: 40px;
+}
+.china_wrap.story_wrap .full_content .script_box .simhei {
+  font-size: 36px;
+  font-weight: 400;
+}
+
+.china_wrap .full_content .action_box {
+  margin-top: 75px;
+}
+
+.china_wrap .full_content .img_box {
+  width: 421px;
+  height: 459px;
+  margin-left: 28px;
+  margin-top: 50px;
+}
+
+.china_wrap .full_content .img_box .img {
+  width: 100%;
+}
+.china_wrap .full_content .btn_box {
+  position: absolute;
+  bottom: 7px;
+  right: 0;
+  z-index: 20;
+}
+
+/* 팝업 */
+.popup{
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  padding: 56px 40px 20px 40px;
+}
+.popup .popup_content{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  padding: 0 !important;
+  gap: 0 !important;
+}
+/* 설명 */
+.popup.explan{
+  width: fit-content !important;
+  padding: 46px 24px 10px 24px;
+}
+.popup.explan1{
+  top: 251px !important;
+  right: 100px !important;
+}
+.popup.explan .popup_content{
+  padding: 0 !important;
+}
+.popup.explan .popup_content .simhei{
+  font-size: 32px !important;
+  line-height: 50px !important;
+  font-weight: 400 !important;
+}
+.popup.explan .popup_content .FZKai{
+  font-size: 32px !important;
+  line-height: 50px !important;
+  font-weight: 400 !important;
+}
+.popup.explan .popup_content .notoSans{
+  font-size: 32px !important;
+  line-height: 50px !important;
+  font-weight: 400 !important;
+}
+.popup.explan .popup_content .gRegula{
+  font-size: 32px !important;
+  line-height: 50px !important;
+  font-weight: 400 !important;
+}
+.popup.explan .popup_content .suit{
+  font-size: 32px !important;
+  line-height: 50px !important;
+  font-weight: 600 !important;
+}
+/* 단어게임 */
+.popup.game .popup_content .game_box{
+  margin: 0 !important;
+}
+/* 단어장 */
+.popup.vocabularyBook{
+  padding: 0 !important;
+}
+.popup.vocabularyBook .popup_content{
+  flex-direction: unset !important;
+  padding: 56px 44px 0 44px !important;
+  gap: 40px !important;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+
+/* 참고 팝업 */
+.popup.popup1 .popup_content {
+  padding-left: 15px !important;
+}
+.popup.popup1 .popup_content .title {
+  margin-bottom: 20px;
+}
+.popup.popup1 .popup_content .title .suit{
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 48px;
+}
+.popup.popup1 .popup_content .line {
+  display: flex;
+}
+.popup.popup1 .popup_content .line1 {
+  justify-content: start;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.popup.popup1 .popup_content .line2 {
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+
+.popup.popup1 .popup_content .line1 .FZKai {
+  font-size: 32px;
+}
+.popup.popup1 .popup_content .line1 .gRegula {
+  font-size: 32px;
+}
+.popup.popup1 .popup_content .line1 .suit {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 42px;
+}
+
+.popup.popup1 .popup_content .line2 .FZKai {
+  font-size: 32px;
+}
+.popup.popup1 .popup_content .line2 .gRegula {
+  font-size: 32px;
+}
+.popup.popup1 .popup_content .line2 .suit {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 42px;
+}
+
+
+/* 보충 팝업 */
+.popup.popup2 .popup_content {
+  overflow-y: scroll;
+  padding-left: 15px !important;
+}
+.popup.popup2 .popup_content .title {
+  margin-bottom: 20px;
+}
+.popup.popup2 .popup_content .title .suit{
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 48px;
+}
+.popup.popup2 .popup_content .text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 10px;
+}
+
+.popup.popup2 .popup_content .text .line{
+  display: flex;
+  justify-content: start;
+  align-items: start;
+}
+.popup.popup2 .popup_content .text .line > .suit{
+  position: relative;
+}
+.popup.popup2 .popup_content .text .line .suit .index {
+  font-size: 34px;
+  font-weight: 600;
+  line-height: 44px;
+  margin-right: 3px;
+}
+.popup.popup2 .popup_content .text .line .suit {
+  font-size: 34px;
+}
+
+.popup.popup2 .popup_content .text .line .name {
+  font-size: 34px;
+  font-weight: 400;
+  line-height: 44px;
+}
+.popup.popup2 .popup_content .text .line .context {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 50px;
+}
+

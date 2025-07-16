@@ -1,0 +1,9 @@
+{
+  "lang": ["한자", "병음"],
+  "subtitlelist": [
+    { "start": 9.0, "end": 11.0, "value": ["Nî jiào shénme míngzi?", "你叫什么名字?"] },
+    { "start": 11.3, "end": 14.5, "value": ["Wô jiào Wáng Mêilì, nî ne?", "我叫王美丽，你呢?"] },
+    { "start": 15.0, "end": 17, "value": ["Wô jiào Jån Tàiyáng.", "我叫金太阳。"] },
+    { "start": 17.5, "end": 19, "value": ["Huãnyíng! Huãnyíng!", "欢迎！ 欢迎！"] }
+  ]
+}

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>미래엔 중국어</title>
+  <script src="./../common/lib/jquery-3.7.1.min.js"></script>
+  <script src="./../common/lib/howler-2.1.3.min.js"></script>
+  <!-- SUIT Variable 폰트 -->
+  <link href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/variable/woff2/SUIT-Variable.css"
+    rel="stylesheet" />
+  <link href="../common/css/comm.css" rel="stylesheet" />
+</head>
+
+<body>
+  <div id="wrap" class="china_wrap speak_wrap">
+
+    <!-- contents -->
+    <div class="full_content">
+      <div class="popup_content dp_flex dp_flex_column">
+        <div class="contentsArea videoParent"></div>
+        <!-- <div class="game_box"><iframe src="https://pubvw-cms.mirae-n.com/web_document/457953/2/word-fruit/index.html?lang=cn&set=8#main" title="단어게임" width="100%" height="100%"></iframe></div> -->
+      </div>
+    </div>
+    <!-- popups -->
+
+    <div class="popup_bg" style="display: none"></div>
+    <!-- 애니메이션 -->
+    <div class="popup ani" data-popup="5" style="display: none">
+      <div class="contentsArea videoParent">
+        <!-- <div id="video-controller-container-1" class="video-controller-container"></div> -->
+      </div>
+
+      <button class="close_btn2 popupclose_btn">
+        <span>닫기</span>
+      </button>
+    </div>
+    <!-- 단어게임 -->
+    <div class="popup game" data-popup="6" style="display: none">
+      <div class="tag bmjua dp_flex">단어 게임</div>
+      <button class="close_btn game_close">
+        <span class="sr-only">닫기</span>
+      </button>
+      <div class="popup_content dp_flex dp_flex_column">
+        <div class="game_box">
+          <iframe src="https://pubvw-cms.mirae-n.com/web_document/457953/2/word-fruit/index.html?lang=cn&set=8#main"
+            title="단어게임" width="100%" height="100%"></iframe>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+</body>
+<style>
+  #wrap {
+    height: 550px !important;
+  }
+
+  .full_content {
+    height: 100% !important;
+  }
+
+  .full_content .popup_content {
+    width: 100%;
+    height: 100%;
+  }
+
+  .full_content .popup_content .game_box {
+    width: calc(100% - 24px);
+    height: 100%;
+  }
+
+  .full_content .popup_content .contentArea {
+    width: 100%;
+    height: 100%;
+  }
+</style>
+<script crossorigin src="../common/lib/libBundle.js"></script>
+<script src="../common/js/script.js"></script>
+<script src="../common/js/rolePlayerCh.js"></script>
+<script src="../common/js/vocabularyBook.js"></script>
+
+<script type="text/javascript">
+  // 애니메이션 팝업 초기화
+  $(".popup.ani .close_btn2").on("click", function () {
+    $(".contentsArea.videoParent").empty();
+    createVideo();
+  });
+  $(document).ready(function () {
+    createVideo();
+    // setPopup(7);
+  });
+  // 비디오 생성
+  const createVideo = () => {
+    $(".contentsArea.videoParent").html(`<div
+            id="video-controller-container-1"
+            class="video-controller-container"
+          ></div>`);
+    var mediaManager = libBundle.MediaManager.getInstance();
+    // 내부자막 X, 외부자막 X
+    var videoController1 = mediaManager.createVideoController({
+      id: "video-controller-1",
+      query: "#video-controller-container-1",
+      // poster: "./media/mp4/4chi_bon_1.png",
+      src: "./media/mp4/4chi_H_bon_1.mp4",
+      // volumeVisible: true,
+      // // thumbnail: { startPath: 'media/video/thumbnail/thumbnail_', startIndex: 1000, ext: 'png' },
+      // overlay: true,
+      // // autoplay: true
+      jsonSubtitlePath: "./media/subtitle/4chi_H_bon_1.json",
+      volumeSetting: {
+        visible: true,
+        vertical: false,
+      },
+      callback: {},
+    });
+  };
+
+  //게임 팝업 닫기
+  $(".game_close").on("click", function () {
+    $(".game_box").empty();
+    createGame();
+  });
+
+  // 단어 게임 생성
+  const createGame = () => {
+    $(".game_box").html(`
+        <iframe src="https://pubvw-cms.mirae-n.com/web_document/457953/2/word-fruit/index.html?lang=cn&set=8#main" title="단어게임" width="100%" height="100%"></iframe>
+      `);
+  };
+</script>
+
+</html>

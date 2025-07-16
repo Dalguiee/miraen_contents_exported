@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>미래엔 중국어</title>
+    <script src="./../common/lib/jquery-3.7.1.min.js"></script>
+    <!-- SUIT Variable 폰트 -->
+    <link
+      href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/variable/woff2/SUIT-Variable.css"
+      rel="stylesheet"
+    />
+    <link href="../common/css/comm.css" rel="stylesheet" />
+    <link href="./css/3_01_05.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div id="wrap" class="china_wrap wordReference_wrap">
+      <div class="btn_box dp_flex">
+        <button class="btn popup_btn blue" data-index="1">보충</button>
+      </div>
+
+      <div class="full_content">
+        <div class="title_box dp_flex">
+          <div class="express_tag">
+            <span>본문</span>
+            <div class="plus"></div>
+          </div>
+
+          <div class="text_box">
+            <span>
+              <span class="suit">1</span>
+              <span data-audio="044-21-1.mp3">
+                <span class="simhei">这</span>
+                <span class="gRegula">zhè</span>
+              </span>
+              ·
+              <span data-audio="044-21-2.mp3">
+                <span class="simhei">那</span>
+                <span class="gRegula">nà</span></span
+              >
+            </span>
+          </div>
+        </div>
+
+        <div class="content dp_flex">
+          <div class="left_box">
+            <div class="title_box dp_flex">
+              <span class="simhei" data-audio="044-21-1.mp3">这</span>
+              <span class="suit">이(것), 이 사람</span>
+            </div>
+            <div class="content_box dp_flex dp_flex_column">
+              <div class="img_box">
+                <img
+                  src="../3/images/3_01_05/this_img.svg"
+                  alt="이것 이미지"
+                  class="img img1"
+                />
+              </div>
+              <div class="text_box">
+                <span class="notoSans">가까이 있는 사물·사람</span>
+              </div>
+            </div>
+          </div>
+          <div class="right_box">
+            <div class="title_box dp_flex">
+              <span class="simhei" data-audio="044-21-2.mp3">那</span>
+              <span class="suit">저(것), 저 사람</span>
+            </div>
+            <div class="content_box dp_flex dp_flex_column">
+              <div class="img_box">
+                <img
+                  src="../3/images/3_01_05/that_img.svg"
+                  alt="저것 이미지"
+                  class="img img1"
+                />
+              </div>
+              <div class="text_box">
+                <span class="notoSans">멀리 있는 사물·사람</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="popup_bg" style="display: none"></div>
+      <div class="popup popup1" data-popup="1" style="display: none">
+        <div class="tag bmjua dp_flex">보충</div>
+        <button class="close_btn"></button>
+        <div class="popup_content dp_flex dp_flex_column">
+          <div class="title_box">
+            <span>
+              <span class="suit" data-audio="044-21-1.mp3"><span class="FZKai">这</span><span class="suit bracket">(</span><span class="gRegula">zhè</span><span class="suit"><span class="suit bracket">)</span></span></span><span class="suit">와 </span><span class="suit" data-audio="044-21-2.mp3"><span class="FZKai">那</span><span class="suit bracket">(</span><span class="gRegula">nà</span><span class="suit bracket">)</span></span><span class="suit">의 비교</span>
+            </span>
+          </div>
+          <div class="table_box">
+            <div class="tr tr1 dp_flex">
+              <div class="td title_td title_td1 dp_flex">
+                <span class="txt txt1 FZKai"></span>
+              </div>
+              <div class="td title_td title_td2 dp_flex">
+                <span class="txt txt1 suit">가까운</span>
+              </div>
+              <div class="td title_td title_td3 dp_flex">
+                <span class="txt txt1 suit">먼</span>
+              </div>
+            </div>
+            <div class="tr tr2 dp_flex">
+              <div class="td text_td text_td1 dp_flex">
+                <span class="txt txt1 suit">사람·사물</span>
+              </div>
+              <div class="td text_td text_td2 dp_flex">
+                <span class="txt txt1 FZKai" data-audio="044-21-1.mp3">
+                  <span class="FZKai">这</span>
+                  <span class="gRegula">zhè</span>
+                </span>
+                <span class="txt txt2 suit">이, 이것</span>
+              </div>
+              <div class="td text_td text_td3 dp_flex">
+                <span class="txt txt1 FZKai" data-audio="044-21-2.mp3">
+                  <span class="FZKai">那</span>
+                  <span class="gRegula">nà</span>
+                </span>
+                <span class="txt txt2 suit">저, 저것</span>
+              </div>
+            </div>
+            <div class="tr tr3 two dp_flex">
+              <div class="td text_td text_td1 dp_flex">
+                <span class="txt txt1 suit">장소</span>
+              </div>
+              <div class="td text_td text_td2 dp_flex">
+                <span class="txt txt1 FZKai">
+                  <span data-audio="044-22.mp3">
+                    <span class="FZKai">这儿</span>
+                    <span class="gRegula">zhèr</span>,
+                  </span>
+                  <br />
+                  <span data-audio="044-23.mp3">
+                    <span class="FZKai">这里</span>
+                    <span class="gRegula">zhèli</span>
+                  </span>
+                </span>
+                <span class="txt txt2">여기, 이곳</span>
+              </div>
+              <div class="td text_td text_td3 dp_flex">
+                <span class="txt txt1 FZKai">
+                  <span class="" data-audio="044-24.mp3">
+                    <span class="FZKai">那儿</span>
+                    <span class="gRegula">nàr</span>, </span
+                  ><br />
+                  <span data-audio="044-25.mp3">
+                    <span class="FZKai">那里</span>
+                    <span class="gRegula">nàli</span></span
+                  >
+                </span>
+                <span class="txt txt2">저기, 저곳</span>
+              </div>
+            </div>
+            <div class="tr tr4 two dp_flex">
+              <div class="td text_td text_td1 dp_flex">
+                <span class="txt txt1">성질·방식</span>
+              </div>
+              <div class="td text_td text_td2 dp_flex">
+                <span class="txt txt1 FZKai">
+                  <span data-audio="044-26.mp3">
+                    <span class="FZKai">这么</span>
+                    <span class="gRegula">zhème</span>, </span
+                  ><br />
+                  <span data-audio="044-27.mp3">
+                    <span class="FZKai">这样</span>
+                    <span class="gRegula">zhèyàng</span></span
+                  >
+                </span>
+                <span class="txt txt2">이렇게</span>
+              </div>
+              <div class="td text_td text_td3 dp_flex">
+                <span class="txt txt1 FZKai">
+                  <span data-audio="044-28.mp3">
+                    <span class="FZKai">那么</span>
+                    <span class="gRegula">nàme</span>, </span
+                  ><br />
+                  <span data-audio="044-29.mp3">
+                    <span class="FZKai">那样</span>
+                    <span class="gRegula">nàyàng</span></span
+                  >
+                </span>
+
+                <span class="txt txt1">저렇게</span>
+              </div>
+            </div>
+            <div class="table-line"></div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </body>
+  <script type="text/javascript">
+    const page = {
+      //컨텐츠에 정답 확인이 존재하는지 여부
+      isAnswer: false,
+      // 단어장 노출 여부 판단.
+      isVocabulary: false,
+      //정답 보기
+      showAnswer: () => {},
+      //정답 숨기기
+      hideAnswer: () => {},
+      // 단어장 보기
+      showVocabulary: () => {},
+    };
+    $(document).ready(function () {
+      // setPopup(1);
+    });
+  </script>
+  <script src="../common/js/script.js"></script>
+</html>

@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>미래엔 중국어</title>
+    <script src="./../common/lib/jquery-3.7.1.min.js"></script>
+    <!-- SUIT Variable 폰트 -->
+    <link
+      href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/variable/woff2/SUIT-Variable.css"
+      rel="stylesheet"
+    />
+    <link href="../common/css/comm.css" rel="stylesheet" />
+    <link href="./css/3_01_08.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div id="wrap" class="china_wrap content2_wrap">
+      <div class="title_box dp_flex">
+        <div class="num_box tmoney">
+          <span>2</span>
+        </div>
+        <div class="text_box">
+          <span>나이 묻기</span>
+        </div>
+      </div>
+
+      <div class="btn_box dp_flex">
+        <button class="btn hanja_btn">한자</button>
+        <button class="btn pinyin_btn" style="display: none">병음</button>
+        <button class="btn combo_btn">한자+병음</button>
+        <button class="btn popup_btn blue" data-index="2">해석</button>
+        <button class="btn explan_popup_btn blue"><span>설명</span></button>
+        <!-- <div class="tempBttns">
+          <button onclick="page.showVocabulary()" data-index="1" class="tempBttn">단어장</button>
+        </div> -->
+      </div>
+
+      <div class="full_content">
+        <div class="content">
+          <div class="content_audio">
+            <div data-audio="045-27.mp3">
+              <!-- 한자 + 병음 -->
+              <div class="text_box" data-view="combo">
+                <span class="simhei">你几岁?</span>
+                <span class="gRegula">Nî jî suì?</span>
+              </div>
+              <!-- 한자 -->
+              <div class="text_box" data-view="hanja" style="display: none">
+                <span class="simhei">你几岁?</span>
+              </div>
+              <!-- 병음 -->
+              <div class="text_box" data-view="pinyin" style="display: none">
+                <span class="gRegula">Nî jî suì?</span>
+              </div>
+            </div>
+          </div>
+          <div class="content_audio">
+            <div data-audio="045-28.mp3">
+              <!-- 한자 + 병음 -->
+              <div class="text_box" data-view="combo">
+                <span class="simhei">你多大?</span>
+                <span class="gRegula">Nî duõ dà?</span>
+              </div>
+              <!-- 한자 -->
+              <div class="text_box" data-view="hanja" style="display: none">
+                <span class="simhei">你多大?</span>
+              </div>
+              <!-- 병음 -->
+              <div class="text_box" data-view="pinyin" style="display: none">
+                <span class="gRegula">Nî duõ dà?</span>
+              </div>
+            </div>
+          </div>
+          <div class="content_audio">
+            <div data-audio="045-29.mp3">
+              <!-- 한자 + 병음 -->
+              <div class="text_box" data-view="combo">
+                <span class="simhei">您多大年纪?</span>
+                <span class="gRegula">Nín duõ dà niánjì?</span>
+              </div>
+              <!-- 한자 -->
+              <div class="text_box" data-view="hanja" style="display: none">
+                <span class="simhei">您多大年纪?</span>
+              </div>
+              <!-- 병음 -->
+              <div class="text_box" data-view="pinyin" style="display: none">
+                <span class="gRegula">Nín duõ dà niánjì?</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer">
+          <button class="btn popup_btn blue" data-index="3">보충</button>
+          <button class="btn popup_btn yellow" data-index="4">
+            자기소개 프로젝트
+          </button>
+        </div>
+      </div>
+
+      <div class="popup_bg" style="display: none"></div>
+      <!-- 설명 -->
+      <div class="popup explan" style="display: none">
+        <div class="tag bmjua dp_flex">설명</div>
+        <button class="close_btn">
+          <span class="sr-only">닫기</span>
+        </button>
+        <div class="popup_content dp_flex dp_flex_column">
+          <span class="suit">
+            상대방의 연령대에 따라 구분하여 나이를 묻는다.
+          </span>
+        </div>
+      </div>
+      <!-- 단어장 -->
+      <div class="popup vocabularyBook" data-popup="7" style="display: none">
+        <div class="tag bmjua dp_flex">단어장</div>
+        <button class="close_btn"></button>
+        <div class="popup_content dp_flex">
+          <div class="word_list_box dp_flex dp_flex_column">
+            <div class="word_content">
+              <div class="list dp_flex voca_popup_btn active" data-audio="045-30.mp3">
+                <span class="gRegula">jî</span>
+              </div>
+              <div class="list dp_flex voca_popup_btn" data-audio="045-31.mp3">
+                <span class="gRegula">niánjì</span>
+              </div>
+            </div>
+          </div>
+          <div class="show_word_box dp_flex dp_flex_column">
+            <div class="china_box dp_flex">
+              <div class="voca_popup_tab" data-audio="045-30.mp3">
+                <span class="FZKai">几</span>
+                <span class="gRegula">jî</span>
+              </div>
+              <div class="voca_popup_tab" data-audio="045-31.mp3" style="display: none">
+                <span class="FZKai">年纪</span>
+                <span class="gRegula">niánjì</span>
+              </div>
+            </div>
+            <div class="korea_box dp_flex">
+              <div class="voca_warp">
+                <span class="suit" style="font-size: 36px !important"
+                  >몇[주로 10 이하의 수를 물을 때]</span
+                >
+                <span class="suit" style="display: none">나이, 연령</span>
+              </div>
+            </div>
+            <div class="show_btn-warp">
+              <button class="btn3 show_pinyin_btn" style="display: none">
+                병음 보기
+              </button>
+              <button class="btn3 hide_pinyin_btn">병음 가리기</button>
+              <button class="btn3 show_btn" style="display: none">
+                뜻 보기
+              </button>
+              <button class="btn3 hide_btn">뜻 감추기</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 해석 -->
+      <div class="popup popup1" data-popup="2" style="display: none">
+        <div class="tag bmjua dp_flex">해석</div>
+        <button class="close_btn"></button>
+        <div class="popup_content">
+          <ul class="list">
+            <li class="item">
+              <div class="item_text">
+                <div class="flex">
+                  <span class="FZKai">你几岁?</span>
+                  <span class="suit"
+                    >(주로 10살 미만 아이에게) 너는 몇 살이니?</span
+                  >
+                </div>
+                <span class="gRegula">Nî jî suì?</span>
+              </div>
+            </li>
+            <li class="item">
+              <div class="item_text">
+                <div class="flex">
+                  <span class="FZKai">你多大?</span>
+                  <span class="suit">(동년배에게) 나이가 어떻게 되세요?</span>
+                </div>
+                <span class="gRegula">Nî duõ dà?</span>
+              </div>
+            </li>
+            <li class="item">
+              <div class="item_text">
+                <div class="flex">
+                  <span class="FZKai">您多大年纪?</span>
+                  <span class="suit">(연장자에게) 연세가 어떻게 되세요?</span>
+                </div>
+                <span class="gRegula">Nín duõ dà niánjì?</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- 보충 -->
+      <div class="popup popup1" data-popup="3" style="display: none">
+        <div class="tag bmjua dp_flex">보충</div>
+        <button class="close_btn"></button>
+        <div class="popup_content">
+          <div class="text">
+            <span data-audio="045-32.mp3">
+              <span class="FZKai">几</span
+              ><span class="gRegula" style="margin-right: 6px">(jî)</span>
+            </span>
+            <span class="suit"
+              >는 10 이하의 수를 예상하고 물을 때 쓴다. 대답할</span
+            >
+          </div>
+          <div class="text">
+            <span class="suit" style="margin-right: 6px"
+              >때는 물어보는 문장의</span
+            >
+            <span data-audio="045-32.mp3">
+              <span class="FZKai">几</span
+              ><span class="gRegula" style="margin-right: 6px">(jî)</span>
+            </span>
+            <span class="suit">자리에 숫자를 넣어 말하면</span>
+          </div>
+          <div class="text">
+            <span class="suit">된다.</span>
+          </div>
+          <div class="white_box">
+            <div class="white_box_text">
+              <span class="gRegula text1">A:</span>
+              <div class="flex" data-audio="045-33.mp3">
+                <span class="FZKai text2">你<b>几</b>岁?</span>
+                <span class="gRegula text3">Nî <b>jî</b> suì?</span>
+              </div>
+              <span class="suit text4">너 몇 살이니?</span>
+            </div>
+            <div class="white_box_text">
+              <span class="gRegula text1">B:</span>
+              <div class="flex" data-audio="045-34.mp3">
+                <span class="FZKai text2">我<b>八</b>岁。</span>
+                <span class="gRegula text3">Wô <b>bã</b> suì.</span>
+              </div>
+              <span class="suit text4">나 8살이야.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 자기소개 프로젝트 -->
+      <div class="popup popup2" data-popup="4" style="display: none">
+        <div class="tag bmjua dp_flex">자기소개 프로젝트</div>
+        <button class="close_btn"></button>
+        <div class="popup_content">
+          <span class="title suit">나이를 써 봅시다.</span>
+          <div class="white_box">
+            <div class="text ex_reset">
+              <div class="gRegula">Wô jånnián</div>
+              <div class="line"></div>
+              <div class="gRegula">suì.</div>
+            </div>
+            <div
+              class="text explan"
+              data-audio="045-35.mp3"
+              style="display: none"
+            >
+              <div class="gRegula">Wô jånnián</div>
+              <div class="line">
+                <span class="gRegula">shíqå</span>
+              </div>
+              <div class="gRegula">suì.</div>
+            </div>
+            <div class="text">
+              <div class="suit">나는</div>
+              <div class="line">
+                <span class="suit explan" style="display: none">열일곱</span>
+              </div>
+              <div class="suit">살이야.</div>
+            </div>
+          </div>
+          <span class="info suit explan" style="display: none">
+            * 10~19세의 나이를 말할 때, 맨 앞에 숫자 1인
+            <span data-audio="045-36.mp3"
+              ><span class="gRegula">yå</span>(一)</span
+            >를 붙이지 않도록<br />
+            <span style="padding-left: 20px">주의한다.</span>
+          </span>
+          <button class="btn3 ex_btn">예시 답안</button>
+          <button class="btn3 ex_reset_btn" style="display: none">
+            다시 하기
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript">
+    const page = {
+      //컨텐츠에 정답 확인이 존재하는지 여부
+      isAnswer: false,
+      // 단어장 노출 여부 판단.
+      isVocabulary: true,
+      //정답 보기
+      showAnswer: () => {},
+      //정답 숨기기
+      hideAnswer: () => {},
+      // 단어장 보기
+      showVocabulary: () => {
+        setPopup(7);
+      },
+    };
+  </script>
+  <script src="../common/js/script.js"></script>
+  <script src="../common/js/vocabularyBook.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      // setPopup(4);
+    });
+
+    //자기소개 프로젝트 예시 보기 버튼
+    $(".ex_btn").on("click", function () {
+      $(this).hide();
+      $(this).next().show();
+      $(".explan").show();
+      $(".ex_reset").hide();
+    });
+    //자기소개 프로젝트 다시 풀기 버튼
+    $(".ex_reset_btn").on("click", function () {
+      $(this).hide();
+      $(this).prev().show();
+      $(".explan").hide();
+      $(".ex_reset").show();
+    });
+  </script>
+  <script type="text/javascript">
+    // 설명 팝업
+    $(".explan_popup_btn").on("click", function () {
+      let index = $(".explan_popup_btn").index(this);
+      $(".explan_popup_bg").show();
+      $(".popup.explan").hide();
+      $(".popup.explan").eq(index).show();
+      try {
+        setRoleStop();
+      } catch (error) {}
+      audioStop();
+    });
+    // 설명팝업 있는상태에서 다른 팝업 클릭시 팝업 닫기
+    $(".popup_btn").on("click", function () {
+      $(".popup.explan").css("display","none");
+    })
+  </script>
+</html>

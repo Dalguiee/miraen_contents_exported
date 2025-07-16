@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>미래엔 중국어</title>
+    <script src="./../common/lib/jquery-3.7.1.min.js"></script>
+    <script src="./../common/lib/howler-2.1.3.min.js"></script>
+    <!-- SUIT Variable 폰트 -->
+    <link
+      href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/variable/woff2/SUIT-Variable.css"
+      rel="stylesheet"
+    />
+    <link href="../common/css/comm.css" rel="stylesheet" />
+    <link href="./css/6_01_27.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div id="wrap" class="china_wrap content_wrap">
+      <div class="title_box">
+        <div class="title">
+          <img class="titleLogo" src="./images/6_01_27/logo.svg" alt="" /><span
+            class="titleText suit"
+            >중국의 <span class="purple">명소</span></span
+          >
+        </div>
+      </div>
+
+      <div class="btn_box dp_flex">
+        <div class="bttns">
+          <button class="btn popup_btn blue" data-index="3">보충</button>
+        </div>
+      </div>
+
+      <div class="full_content">
+        <div class="bgContainer bgContainer1">
+          <img src="./images/6_01_27/bg1.png" alt="" />
+        </div>
+
+        <div class="bgContainer bgContainer2">
+          <img src="./images/6_01_27/bg2.svg" alt="" />
+          <button class="detail_button_box popup_btn" data-index="2">
+            <img class="detail_button" src="./images/6_01_27/detail_button.png" alt="">
+          </button>
+        </div>
+
+        <div class="contextSec">
+          <div class="contextBox">
+            <div class="line line1" data-audio="078-24.mp3">
+              <img
+                class="textBoxImg"
+                src="./images/6_01_27/textbox.svg"
+                alt=""
+              />
+              <span class="simhei">哈尔滨</span>
+              <span class="gRegula">Hã’êrbån</span>
+            </div>
+            <div class="line line2" data-audio="080-05.mp3">
+              <span class="simhei">国际冰雪节</span>
+              <span class="gRegula">Guójì Bångxuêjié</span>
+            </div>
+            <div class="line line3">
+              <span class="suit"><span class="space" style="margin-right: 20px;"></span>
+                하얼빈에서 매년 1~2월에 개최되는<br />겨울 축제인
+                <span class="simhei" data-audio="080-05.mp3">国际冰雪节</span>는
+                눈과 얼음으로<br />만든 작품과 화려한 조명으로 유명합니다.
+              </span>
+            </div>
+            <div class="line line4">
+              <span class="suit">#썰매</span>
+              <span class="suit">#얼음 축제</span>
+              <span class="suit">#안중근 의사 기념관</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 팝업 -->
+      <div class="popup_bg" style="display: none"></div>
+      <!-- 보충 -->
+      <div class="popup expPopup" data-popup="3" style="display: none">
+        <div class="tag bmjua dp_flex">보충</div>
+        <button class="close_btn"></button>
+        <div class="popup_content">
+          <div class="title" data-audio="078-24.mp3">
+            <span class="FZKai">哈尔滨</span><span class="suit">(<span class="gRegula">Hã’êrbån</span>)</span>
+          </div>
+          <div class="contextSec">
+            <div class="line line3">
+              <span class="suit">
+                #썰매: 중국 동북부의 쑹화강은 약 5개월의 겨울 동안 얼음 상태로 있는데, 이때 썰매를 이용하여 이동한다.
+              </span>
+            </div>
+            <div class="line line1">
+              <span class="suit">
+                #얼음 축제: 매년 1~2월에 열리는 겨울 축제로, 축제 기간 동안
+                다채로운 빙설 조각 작품이 전시된다. 전 세계에서 모여든 빙설
+                조각가들이 다양한 주제로 작품을 만든다.
+              </span>
+            </div>
+            <div class="line line2">
+              <span class="suit">
+                #안중근 의사 기념관: 1909년 10월 26일 안중근 의사가 이토
+                히로부미를 사살한 현장인 하얼빈역에 위치한 기념관이다. 기념관
+                입구에는 그의 동상과 거사 시각인<br>9시 30분에 멈춘 시계가 있다.
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 크게 보기 -->
+      <div class="popup detail_popup" data-popup="2" style="display: none">
+        <button class="close_btn"></button>
+        <div class="popup_content">
+          <div class="content">
+            <div class="img_box">
+              <img src="./images/6_01_27/detail_content.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </body>
+  <script type="text/javascript">
+    const page = {
+      //컨텐츠에 정답 확인이 존재하는지 여부
+      isAnswer: false,
+      // 단어장 노출 여부 판단. 이벤트 호출하지 않으면 노출하지 않음.
+      isVocabulary: false,
+      //정답 보기
+      showAnswer: () => {
+        $(".answer_btn").hide();
+        $(".reset_btn").show();
+        $(".answer").show();
+      },
+      //정답 숨기기
+      hideAnswer: () => {
+        $(".answer_btn").show();
+        $(".reset_btn").hide();
+        $(".answer").hide();
+      },
+      // 단어장 보기
+      showVocabulary: () => {
+        setPopup(7);
+      },
+    };
+  </script>
+  <script type="text/javascript">
+    // 정답 버튼
+    $(".answer_btn").on("click", function () {
+      let index = $(".answer_btn").index(this);
+      $(this).hide();
+      $(".reset_btn").eq(index).show();
+      $(".answer").addClass("speak");
+    });
+    // 다시 하기 버튼
+    $(".reset_btn").on("click", function () {
+      let index = $(".reset_btn").index(this);
+      $(this).hide();
+      $(".answer_btn").eq(index).show();
+      $(".answer").removeClass("speak");
+    });
+  </script>
+  <script>
+    $("[data-audiolcm]").on("click", function () {
+      let index = $("[data-audiolcm]").index(this);
+      try {
+        setRoleStop();
+      } catch (error) {}
+      $("[data-audiolcm]").removeClass("speak");
+      $("[data-audio]").removeClass("speak");
+      $(this).addClass("speak");
+      $(`.ansText${index + 1}`).addClass("speak");
+      audioPlay(audio, [`./media/mp3/${$(this).data("audiolcm")}`], () => {
+        $(this).removeClass("speak");
+      });
+    });
+  </script>
+  <script crossorigin src="../common/lib/libBundle.js"></script>
+  <script src="../common/js/script.js"></script>
+  <script src="../common/js/rolePlayerCh.js"></script>
+  <script src="../common/js/vocabularyBook.js"></script>
+</html>

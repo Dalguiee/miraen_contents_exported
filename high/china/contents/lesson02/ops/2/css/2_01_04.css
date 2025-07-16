@@ -1,0 +1,673 @@
+@charset "UTF-8";
+/* 전역 */
+button:disabled {
+  cursor: default;
+  color: #ccc !important;
+  border-color: #ccc;
+  box-shadow: 0px 2px 0px 0px #8a8779;
+}
+*[data-audio]:disabled {
+  color: #ccc !important;
+}
+
+.trLft{
+  transform: translateX(-15px);
+}
+.trLft10{
+  transform: translateX(-10px);
+}
+.trLft15{
+  transform: translateX(-15px);
+}
+.trLft20{
+  transform: translateX(-20px);
+}
+.chDot5{
+  margin-right: -5px;
+}
+.chDot10{
+  margin-right: -10px;
+}
+.chDot15{
+  margin-right: -15px;
+}
+.chDot20{
+  margin-right: -20px;
+}
+.chDot25{
+  margin-right: -25px;
+}
+.mr60{
+  margin-right: -60px;
+}
+.mr30{
+  margin-right: -30px;
+}
+
+/* 헤더 */
+.title_box{
+  top: 0 !important;
+  left: 0 !important;
+}
+.btn_box{
+  padding-top: 9px !important;
+}
+.btn_box .rolePlayer {
+  top: 5px;
+  left: 0;
+}
+.btn_box .listen_box {
+  margin-right: 10px;
+}
+.btn_box .rolePlayer .rolePlayer_role .rolePlayer_role_img{
+  transform: scaleX(-1);
+}
+
+/* 푸터 */
+.footerBttns{
+  position: absolute;
+  right: 0px !important;
+  bottom: 5px !important;
+  z-index: 49;
+}
+
+.full_content {
+  position: relative;
+}
+.full_content .content {
+  padding: 40px 0 0 135px !important;
+  height: auto;
+  position: relative;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  align-items: start !important;
+}
+.full_content .content .line {
+  flex-direction: column;
+}
+.full_content .content .line .text_box {
+  position: inherit !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  height: 110px !important;
+  margin: 0 !important;
+}
+.full_content .content .line .text_box .comboBox{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+
+.full_content .content .line .text_box .item_name {
+  width: 100px;
+  height: 40px;
+  background-repeat: no-repeat;
+  border-radius: 20.5px;
+  position: absolute;
+  top: 8px;
+  left: -115px;
+  font-size: 24px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.full_content .content .line .text_box .item_name::before {
+  content: "";
+  width: 80%;
+  height: 6px;
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  top: -5px;
+  right: 0;
+}
+.full_content .content .line .text_box .item_name::after {
+  content: "";
+  width: 20%;
+  height: calc(100% + 10px);
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  top: -5px;
+  right: -5px;
+}
+.full_content .content .line .text_box .item_name.item_name1 {
+  border: 3px solid #F6AE5F;
+  color: #F6AE5F;
+}
+.full_content .content .line .text_box .item_name.item_name2 {
+  border: 3px solid #8FC42F;
+  color: #8FC42F;
+}
+.full_content .content .line .text_box .item_name.item_name3 {
+  border: 3px solid #F6AE5F;
+  color: #F6AE5F;
+}
+.full_content .content .line .text_box .item_name.item_name4 {
+  border: 3px solid #8FC42F;
+  color: #8FC42F;
+}
+.full_content .content .line .text_box .txt {
+  position: static !important;
+}
+.full_content .content .line .text_box .comboBox[data-view="combo"] .txt1 {
+  line-height: 60px !important;
+}
+.full_content .content .line .text_box .comboBox[data-view="combo"] .txt2 {
+  line-height: 20px !important;
+}
+
+.full_content .content .line .text_box .btn3 {
+  position: absolute;
+  white-space: nowrap;
+  top: 8px !important;
+}
+.full_content .content .bgImg {
+  width: 420px;
+  margin: 0;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.full_content .content .bgImg img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.full_content .btn_box {
+  position: absolute;
+  bottom: 7px;
+  right: 0;
+  z-index: 20;
+}
+
+
+
+/* 팝업 전역 */
+.popup{
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  padding: 62px 40px 20px 40px;
+}
+
+.popup .popup_content{
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  padding: 0 !important;
+  gap: 0px !important;
+  width: 100%;
+  height: 100%;
+}
+/* 설명 */
+.popup.explan{
+  padding: 46px 24px 10px 24px;
+  width: fit-content !important;
+}
+.popup.explan1{
+  top: 160px !important;
+  right: 20px !important;
+}
+.popup.explan2{
+  top: 280px !important;
+  right: 20px !important;
+}
+.popup.explan3{
+  top: 57px !important;
+  right: 20px !important;
+}
+.popup.explan .popup_content{
+  padding: 0 !important;
+}
+.popup.explan .popup_content .simhei{
+  font-size: 32px !important;
+  line-height: 48px !important;
+  font-weight: 400 !important;
+}
+.popup.explan .popup_content .gRegula{
+  font-size: 32px !important;
+  line-height: 48px !important;
+  font-weight: 400 !important;
+  /* color: #727171 !important; */
+}
+.popup.explan .popup_content .suit{
+  font-size: 32px !important;
+  line-height: 48px !important;
+  font-weight: 600 !important;
+}
+
+.china_wrap .popup.translate .popup_content .left .item .item_text span.gRegula {
+  font-size: 30px;
+  margin-top: 7px !important;
+}
+
+
+
+/* 본문 확인 */
+.popup.popup1 .popup_content {
+  padding-left: 153px !important;
+}
+.popup.popup1 .popup_content .title{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  position: relative;
+  left: -130px;
+  margin-bottom: 20px;
+}
+.popup.popup1 .popup_content .title .icon {
+  background-color: #8A8779;
+  padding: 5px 10px 2px 10px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 185px;
+  height: 36px;
+}
+.popup.popup1 .popup_content .title .icon .bmjua{
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 32px;
+  color: white;
+}
+.popup.popup1 .popup_content .title .suit{
+  font-size: 36px;
+  font-weight: 600;
+  margin-left: 20px;
+}
+
+.popup.popup1 .popup_content .line {
+  flex-direction: column;
+}
+.popup.popup1 .popup_content .line .text_box {
+  position: relative !important;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  height: 80px !important;
+}
+.popup.popup1 .popup_content .line .text_box .item_name {
+  width: 100px;
+  height: 40px;
+  background-repeat: no-repeat;
+  border-radius: 20.5px;
+  position: absolute;
+  top: 22px;
+  left: -130px;
+  font-size: 24px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.popup.popup1 .popup_content .line .text_box .item_name::before {
+  content: "";
+  width: 80%;
+  height: 6px;
+  background-color: rgb(239, 247, 215);
+  position: absolute;
+  top: -4px;
+  right: 0;
+}
+.popup.popup1 .popup_content .line .text_box .item_name::after {
+  content: "";
+  width: 20%;
+  height: calc(100% + 10px);
+  background-color: rgb(239, 247, 215);
+  position: absolute;
+  top: -5px;
+  right: -5px;
+}
+.popup.popup1 .popup_content .line .text_box .item_name.item_name1 {
+  border: 3px solid #F6AE5F;
+  color: #F6AE5F;
+}
+.popup.popup1 .popup_content .line .text_box .item_name.item_name2 {
+  border: 3px solid #8FC42F;
+  color: #8FC42F;
+}
+.popup.popup1 .popup_content .line .text_box .item_name.item_name3 {
+  border: 3px solid #F6AE5F;
+  color: #F6AE5F;
+}
+.popup.popup1 .popup_content .line .text_box .item_name.item_name4 {
+  border: 3px solid #8FC42F;
+  color: #8FC42F;
+}
+.popup.popup1 .popup_content .line .text_box .txt {
+  position: static !important;
+}
+.popup.popup1 .popup_content .line .text_box .btn3 {
+  position: absolute;
+  white-space: nowrap;
+  top: 27px !important;
+  right: -150px !important;
+}
+.popup.popup1 .popup_content .line .text_box .btn3 span {
+  font-size: 20px;
+}
+.popup.popup1 .popup_content .line .text_box.text_box4 .circle {
+  position: absolute;
+  border: 5px solid #E22F61;
+  border-radius: 100%;
+}
+.popup.popup1 .popup_content .line .text_box.text_box4 .circle.circle1 {
+  width: 201px;
+  height: 72px;
+  top: 6px;
+  left: -15px;
+}
+.popup.popup1 .popup_content .line .text_box.text_box4 .circle.circle2 {
+  width: 299px;
+  height: 86px;
+  top: 0px;
+  left: 181px;
+}
+.popup.popup1 > .popup_content .box {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.popup.popup1 > .popup_content .box .bmjua {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 36px;
+  font-size: 32px;
+  color: white;
+  background: #8a8779;
+  border-radius: 100px;
+  padding: 4px 14px 0 14px;
+  margin-bottom: 20px;
+}
+
+.popup.popup1 > .popup_content .anwer_box {
+  display: flex;
+}
+
+.popup.popup1 > .popup_content .anwer_box span {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.popup.popup1 > .popup_content .anwer_box .line {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 140px;
+  height: 50px;
+  border-bottom: 2px solid black;
+  margin: 0 16px;
+}
+
+.popup.popup1 > .popup_content .anwer_box .line div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 48px;
+}
+
+.popup.popup1 > .popup_content .anwer_box .line span {
+  color: #e22f61;
+  font-weight: 400;
+}
+
+.popup1 .answer_btn,
+.popup1 .reset_btn {
+  position: absolute;
+  right: -122px;
+  top: 0;
+}
+
+.popup.popup1 > .popup_content .box {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.popup.popup1 > .popup_content .box .bmjua {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 36px;
+  font-size: 32px;
+  color: white;
+  background: #8a8779;
+  border-radius: 100px;
+  padding: 4px 14px 0 14px;
+  margin-bottom: 20px;
+}
+
+.popup1 .popup_content .simhei {
+  font-weight: 500;
+}
+.popup1 .popup_content .simhei.chDot{
+  margin-right: -16px;
+}
+.popup1 .popup_content .suit {
+  font-weight: 600;
+}
+.popup1 .popup_content .gRegula {
+  font-size: 32px;
+  font-weight: 400;
+  margin-top: 8px;
+  margin-left: 10px;
+}
+
+
+/* 해석 */
+.popup4 {
+  padding-right: 0 !important;
+}
+
+.popup4 .popup_content{}
+.popup.popup4 .left .item {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+}
+.popup.popup4 .left .item .item_name {
+  margin-right: 30px;
+  top: -8px;
+}
+.popup.popup4 .left .item .item_name.item_name1 {
+  /* color: #87D0F4 !important;
+  border-color: #87D0F4 !important; */
+}
+.popup.popup4 .left .item .item_name.item_name2 {
+  /* color: #ECA1A0 !important;
+  border-color: #ECA1A0 !important; */
+}
+.popup.popup4 .left .item .item_text {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+}
+.popup.popup4 .left .item .item_text .chBox {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  margin-right: 15px;
+}
+.popup.popup4 .left .item .item_text .chBox .simhei{
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 32px;
+  margin-right: 30px;
+}
+.popup.popup4 .left .item .item_text .chBox .suit{
+  font-size: 36px;
+  font-weight: 500;
+  /* line-height: 37px; */
+}
+
+.popup.popup4 .left .item .item_text .chBox .simhei.chDot{
+  margin-right: 20px;
+}
+
+.popup.vocabularyBook .popup_content_list:nth-last-of-type(1n) {
+  width: calc(52% - 12px);
+}
+.popup.vocabularyBook .popup_content_list:nth-last-of-type(2n) {
+  width: calc(48% - 12px);
+}
+
+
+/* 단어장 */
+.popup.vocabularyBook .popup_content_list:nth-of-type(1n) .item_audio span:nth-of-type(2n) {
+  width: 120px;
+}
+
+.popup.vocabularyBook .popup_content_list:nth-of-type(2n) .item_audio span:nth-of-type(1n) {
+  width: 80px;
+}
+
+
+/* 받아쓰기 */
+.popup.popup2 {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding-top: 125px !important;
+}
+.popup.popup2 .popup_content {
+  justify-content: start;
+  align-items: center;
+  padding-right: 9px !important;
+}
+.popup.popup2 .popup_content .box .anwer_box {
+  width: auto;
+}
+.popup.popup2 .popup_content .box .anwer_box .line {}
+.popup.popup2 .popup_content .box .anwer_box .btn_warp {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 0;
+}
+.popup.popup2 .popup_content .box .anwer_box .btn_warp.index1 {
+  left: 439px;
+  bottom: -45px;
+}
+.popup.popup2 .popup_content .box .anwer_box .btn_warp.index2 {
+  left: 301px;
+  bottom: -45px;
+}
+
+/* 받아쓰기 */
+.popup.popup2 > .popup_content .anwer_box {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 680px;
+  display: flex;
+  margin-bottom: 50px;
+}
+
+.popup.popup2 > .popup_content .anwer_box .btn-audio {
+  margin-right: 16px;
+}
+
+.popup.popup2 > .popup_content .anwer_box .index {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background: #3a6d36;
+  border-radius: 50%;
+  margin-right: 12px;
+}
+.popup.popup2 > .popup_content .anwer_box .index .suit{
+  font-size: 34px;
+  font-weight: 800;
+  color: white;
+}
+
+.popup.popup2 > .popup_content .anwer_box:last-of-type {
+  margin-bottom: 0;
+}
+
+.popup.popup2 > .popup_content .anwer_box span {
+  display: flex;
+  align-items: center;
+  font-size: 60px;
+  line-height: 72px;
+  font-weight: 400;
+}
+
+.popup.popup2 > .popup_content .anwer_box .line {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding-bottom: 5px;
+  border-bottom: 2px solid black;
+  margin: 0 16px;
+  font-size: 60px;
+}
+.popup.popup2 > .popup_content .anwer_box1 .line {
+  width: 232px;
+  height: 72px;
+}
+.popup.popup2 > .popup_content .anwer_box2 .line {
+  width: 110px;
+  height: 72px;
+}
+
+.popup.popup2 > .popup_content .anwer_box .line div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.popup.popup2 > .popup_content .anwer_box .answer {
+  color: #e22f61;
+  font-weight: 400;
+}
+
+
+
+/* 단어게임 기본 */
+.popup.game .popup_content{
+  align-items: center !important;
+}
+.popup.game{
+	padding: 45px 43px 10px 43px;
+}
+.popup.game .popup_content .game_box{
+  margin: 0 !important;
+  width: 100%;
+  height: 100%;
+}
+
+
+.popup.game .popup_content .game_box{
+  margin: 0 !important;
+}
+
+/* 단어장 기본 */
+.popup.vocabularyBook {
+  padding: unset !important;
+}
+
+.popup.vocabularyBook .popup_content{
+  flex-direction: unset !important;
+  padding: 56px 44px 0 44px !important;
+  gap: 40px !important;
+} 

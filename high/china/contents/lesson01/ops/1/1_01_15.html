@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>미래엔 중국어</title>
+    <script src="./../common/lib/jquery-3.7.1.min.js"></script>
+    <script src="./../common/lib/howler-2.1.3.min.js"></script>
+    <!-- SUIT Variable 폰트 -->
+    <link
+      href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/variable/woff2/SUIT-Variable.css"
+      rel="stylesheet"
+    />
+    <link href="../common/css/comm.css" rel="stylesheet" />
+    <link href="./css/1_01_15.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div id="wrap" class="china_wrap content_wrap">
+      <div class="title_box">
+        <div class="title">
+          <div class="mainCon bmjua"></div>
+          <span class="titleText bmjua"
+            ><span class="bmjua">감사를 표현하는 손동작 </span></span
+          >
+        </div>
+      </div>
+      <div class="btn_box dp_flex">
+        <button class="btn popup_btn blue" data-index="3">보충</button>
+      </div>
+
+      <div class="full_content dp_flex dp_flex_column">
+        <span class="mainText suit">
+          중국인들은 손가락을 구부려 탁자를 두드리는 것으로 차를 따라 준<br />상대에게
+          감사 인사를 하기도 합니다. 상대방의 연령에 따라 손동작이<br />다릅니다.
+        </span>
+        <figure class="bgImgFig">
+          <img class="bgImg" src="./images/1_01_15/content.svg" />
+        </figure>
+      </div>
+
+      <!-- 팝업 -->
+      <div class="popup_bg" style="display: none"></div>
+      <div class="popup expPopup" data-popup="3" style="display: none">
+        <div class="tag bmjua dp_flex">보충</div>
+        <div class="popup_content">
+          <div class="line line1">
+            <span class="suit">
+              차를 즐겨 마시는 중국 사람들은 차를 따라 주는 상대방에게 감사의
+              표시로 손가락으로 테이블을 가볍게 두드리기도 한다.<br />
+              상대방의 연령에 따라 손의 모양을 다르게 표현하기도 하지만
+              일반적으로 검지와 중지를 굽히는 모양으로 인사한다.<br />
+              손가락의 굽은 모양이 엎드려 절하며 감사를 표시하는 모양과 비슷하기
+              때문이다. 이렇게 예의를 차리는 손동작을
+              <span class="simhei" data-audio="027-16.mp3"
+                >叩指礼<span class="notoSans">(</span
+                ><span class="gRegula">kòuzhîlî</span
+                ><span class="notoSans">)</span></span
+              >라고 한다.
+            </span>
+          </div>
+        </div>
+
+        <button class="close_btn"></button>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript">
+    const page = {
+      //컨텐츠에 정답 확인이 존재하는지 여부
+      isAnswer: false,
+      // 단어장 노출 여부 판단. 이벤트 호출하지 않으면 노출하지 않음.
+      isVocabulary: false,
+      //정답 보기
+      showAnswer: () => {
+        $(".wrong").hide();
+        $(".correct").show();
+      },
+      //정답 숨기기
+      hideAnswer: () => {
+        $(".correct").hide();
+        $(".wrong").show();
+      },
+      // 단어장 보기
+      showVocabulary: () => {
+        setPopup(7);
+      },
+    };
+  </script>
+  <script type="text/javascript">
+    //설명 팝업
+    $(".explan_popup_btn").on("click", function () {
+      let index = $(".explan_popup_btn").index(this);
+      $(".explan_popup_bg").show();
+      $(".popup.explan").hide();
+      $(".popup.explan").eq(index).show();
+      try {
+        setRoleStop();
+      } catch (error) {}
+      audioStop();
+    });
+  </script>
+  <script crossorigin src="../common/lib/libBundle.js"></script>
+  <script src="../common/js/script.js"></script>
+  <script src="../common/js/rolePlayerCh.js"></script>
+  <script src="../common/js/vocabularyBook.js"></script>
+</html>

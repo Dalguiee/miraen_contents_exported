@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>미래엔 중국어</title>
+  <script src="./../common/lib/jquery-3.7.1.min.js"></script>
+  <script src="./../common/lib/howler-2.1.3.min.js"></script>
+  <!-- SUIT Variable 폰트 -->
+  <link href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/variable/woff2/SUIT-Variable.css"
+    rel="stylesheet" />
+  <link href="../common/css/comm.css" rel="stylesheet" />
+  <link href="./css/6_01_05.css" rel="stylesheet" />
+</head>
+
+<body>
+  <div id="wrap" class="china_wrap content_wrap">
+    <div class="title_box">
+      <div class="title">
+        <span class="mainCon suit"><img class="titleLogo" src="./images/6_01_05/logo.png" /><span
+            class="titleNum">1</span><span class="titleText simhei purple" data-audio="074-28.mp3">怎么 <span
+              class="gRegula">zênme</span></span></span>
+      </div>
+    </div>
+
+    <div class="btn_box dp_flex">
+      <div class="bttns">
+        <button class="btn popup_btn blue" data-index="3">참고</button>
+      </div>
+      <!-- <div class="tempBttns">
+        <button onclick="page.showVocabulary()" data-index="1" class="tempBttn">단어장</button>
+      </div> -->
+    </div>
+
+    <div class="full_content">
+      <div class="content dp_flex dp_flex_column">
+        <div class="contentTitle">
+          <span class="suit">
+            <span class="simhei" data-audio="074-28.mp3">怎么</span>는 수단과
+            방법을 물을 때 사용하는 의문사입니다.
+          </span>
+        </div>
+        <div class="contextSec">
+          <div class="context context1">
+            <span data-audio="074-29.mp3" data-audio-combo="074-29" class="simhei">怎么办?</span>
+            <span data-audio="074-29.mp3" data-audio-combo="074-29" class="gRegula">Zênme bàn?</span>
+            <span class="suit">어떻게 해요?</span>
+          </div>
+          <div class="context context2">
+            <span data-audio="074-30.mp3" data-audio-combo="074-30" class="simhei">怎么念?</span>
+            <span data-audio="074-30.mp3" data-audio-combo="074-30" class="gRegula">Zênme niàn?</span>
+            <span class="suit">어떻게 읽어요?</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 팝업 -->
+    <div class="popup_bg" style="display: none"></div>
+
+    <!-- 참고 -->
+    <div class="popup expPopup" data-popup="3" style="display: none">
+      <div class="tag bmjua dp_flex">참고</div>
+      <button class="close_btn"></button>
+      <div class="popup_content">
+        <div class="popupTitle">
+          <span class="suit"><span class="FZKai" data-audio="074-36.mp3">怎么去</span>와
+            <span class="FZKai" data-audio="074-37.mp3">怎么走</span></span>
+        </div>
+        <div class="contextLine contextLine1">
+          <div class="context context1">
+            <span class="title suit">1.</span>
+            <div class="contextSec">
+              <span class="suit">
+                <span class="FZKai" data-audio="074-36.mp3">怎么去</span>+목적지?<span class="under suit">: 목적지까지 가는 교통수단을 물을 때</span>
+              </span>
+              
+            </div>
+          </div>
+          <div class="context context2">
+            <span class="title suit">Q.</span>
+            <div class="contextSec">
+              <span class="suit">
+                <span class="FZKai" data-audio="074-38.mp3" data-audio-combo="074-38">怎么去北京站? </span>베이징역에 어떻게 가?
+              </span>
+              <span class="under suit">
+                <span class="gRegula" data-audio="074-38.mp3" data-audio-combo="074-38">Zênme qù Bêijïng zhàn?</span>
+              </span>
+            </div>
+          </div>
+          <div class="context context3">
+            <span class="title suit">A.</span>
+            <div class="contextSec">
+              <span class="suit">
+                <span class="FZKai" data-audio="074-39.mp3" data-audio-combo="074-39">坐公交车去。</span>버스 타고 가.
+              </span>
+              <span class="under suit">
+                <span class="gRegula" data-audio="074-39.mp3" data-audio-combo="074-39">Zuò gõngjiãochç qù.</span>
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="contextLine contextLine2">
+          <div class="context context1">
+            <span class="title suit">2.</span>
+            <div class="contextSec">
+              <span class="suit">
+                목적지+<span class="FZKai" data-audio="074-37.mp3">怎么走</span>?<span class="under suit">: 목적지까지 가는 경로를 물어볼 때</span>
+              </span>
+              
+            </div>
+          </div>
+          <div class="context context2">
+            <span class="title suit">Q.</span>
+            <div class="contextSec">
+              <span class="suit">
+                <span class="FZKai" data-audio="074-40.mp3" data-audio-combo="074-40">北京站怎么走? </span>베이징역에 어떻게 가?
+              </span>
+              <span class="under suit">
+                <span class="gRegula" data-audio="074-40.mp3" data-audio-combo="074-40">Bêijïng zhàn zênme zôu?</span>
+              </span>
+            </div>
+          </div>
+          <div class="context context3">
+            <span class="title suit">A.</span>
+            <div class="contextSec">
+              <span class="suit">
+                <span class="FZKai" data-audio="074-41.mp3" data-audio-combo="074-41">往左拐就到了。</span>왼쪽으로 돌면 바로 도착해.
+              </span>
+              <span class="under suit">
+                <span class="gRegula" data-audio="074-41.mp3" data-audio-combo="074-41">Wâng zuô guâi jiù dào le.</span>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 단어장 -->
+    <div class="popup vocabularyBook" data-popup="7" style="display: none">
+      <div class="tag bmjua dp_flex">단어장</div>
+      <button class="close_btn"></button>
+      <div class="popup_content dp_flex">
+        <div class="word_list_box dp_flex dp_flex_column">
+          <div class="word_content">
+            <div class="list dp_flex voca_popup_btn active" data-audio="074-34.mp3">
+              <span class="gRegula">bàn</span>
+            </div>
+            <div class="list dp_flex voca_popup_btn" data-audio="074-35.mp3">
+              <span class="gRegula">niàn</span>
+            </div>
+          </div>
+        </div>
+        <div class="show_word_box dp_flex dp_flex_column">
+          <div class="china_box dp_flex">
+            <div class="voca_popup_tab" data-audio="074-34.mp3">
+              <span class="FZKai">办</span>
+              <span class="gRegula">bàn</span>
+            </div>
+            <div class="voca_popup_tab" data-audio="074-35.mp3" style="display: none">
+              <span class="FZKai">念</span>
+              <span class="gRegula">niàn</span>
+            </div>
+          </div>
+          <div class="korea_box dp_flex">
+            <div class="voca_warp">
+              <span class="suit">하다</span>
+              <span class="suit" style="display: none">읽다</span>
+            </div>
+          </div>
+          <div class="show_btn-warp">
+            <button class="btn3 show_pinyin_btn" style="display: none">
+              병음 보기
+            </button>
+            <button class="btn3 hide_pinyin_btn">병음 가리기</button>
+            <button class="btn3 show_btn" style="display: none">
+              뜻 보기
+            </button>
+            <button class="btn3 hide_btn">뜻 감추기</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<script type="text/javascript">
+  const page = {
+    //컨텐츠에 정답 확인이 존재하는지 여부
+    isAnswer: false,
+    // 단어장 노출 여부 판단. 이벤트 호출하지 않으면 노출하지 않음.
+    isVocabulary: true,
+    //정답 보기
+    showAnswer: () => {
+      $(".answer_btn").hide();
+      $(".reset_btn").show();
+      $(".answer").show();
+    },
+    //정답 숨기기
+    hideAnswer: () => {
+      $(".answer_btn").show();
+      $(".reset_btn").hide();
+      $(".answer").hide();
+    },
+    // 단어장 보기
+    showVocabulary: () => {
+      setPopup(7);
+    },
+  };
+</script>
+<script type="text/javascript">
+  // 정답 버튼
+  $(".answer_btn").on("click", function () {
+    let index = $(".answer_btn").index(this);
+    $(this).hide();
+    $(".reset_btn").eq(index).show();
+    $(".answer").eq(index).show();
+    $(".reset").eq(index).hide();
+  });
+  // 다시 하기 버튼
+  $(".reset_btn").on("click", function () {
+    let index = $(".reset_btn").index(this);
+    $(this).hide();
+    $(".answer_btn").eq(index).show();
+    $(".answer").eq(index).hide();
+    $(".reset").eq(index).show();
+  });
+</script>
+<script crossorigin src="../common/lib/libBundle.js"></script>
+<script src="../common/js/script.js"></script>
+<script src="../common/js/rolePlayerCh.js"></script>
+<script src="../common/js/vocabularyBook.js"></script>
+
+</html>

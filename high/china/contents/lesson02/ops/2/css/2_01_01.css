@@ -1,0 +1,330 @@
+/* util */
+.trRht {
+	transform: translateX(30px);
+}
+.m40 {
+	margin-right: 40px !important;
+}
+.tempTr {
+	transform: translateX(-34px);
+}
+.suit {
+	font-weight: 600;
+}
+.chDot{
+	margin-right: -16px;
+}
+
+/* 타이틀 헤더 */
+.btn_box {
+	padding-top: 9px !important;
+}
+.title_box {
+	top: 0 !important;
+	left: 0 !important;
+}
+
+/* 컨텐츠 */
+#wrap.china_wrap.content_wrap .btn_box .btn:nth-of-type(1) {
+	width: 67px;
+}
+#wrap.china_wrap.content_wrap .full_content {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+#wrap.china_wrap.content_wrap .unit_box {
+	position: absolute;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	padding: 0 0 16px 20px;
+	top: 48px;
+	left: 0px;
+	width: 245px;
+	height: 86px;
+	background: url('../images/2_01_01/num.svg') no-repeat 50% 50%;
+	background-size: cover;
+}
+#wrap.china_wrap.content_wrap .unit_box .text_box {
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-end;
+}
+#wrap.china_wrap.content_wrap .unit_box .FZKai {
+	font-size: 36px;
+	font-weight: 400;
+	line-height: 39px;
+	color: #422e16;
+}
+#wrap.china_wrap.content_wrap .unit_box .gRegula {
+	padding-left: 10px;
+	font-size: 24px;
+	font-weight: 400;
+	line-height: 28px;
+	color: #ffffff;
+}
+#wrap.china_wrap.content_wrap .content_box .question_box {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	height: 217px;
+}
+#wrap.china_wrap.content_wrap .content_box .question_box .question {
+	position: relative;
+}
+#wrap.china_wrap.content_wrap .content_box .question_box .question .kaikai {
+	margin-right: -75px;
+	display: block;
+	height: 130px;
+	font-size: 120px;
+	font-weight: 400;
+	line-height: 130px;
+	color: #231815;
+}
+#wrap.china_wrap.content_wrap .content_box .popup_btn {
+	position: absolute;
+	top: 45px;
+	right: -98px;
+	width: 105px;
+	z-index: 101;
+}
+#wrap.china_wrap.content_wrap .content_box .question_box .pron {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 40px;
+}
+#wrap.china_wrap.content_wrap .content_box .question_box .pron,
+#wrap.china_wrap.content_wrap .content_box .question_box .pron .gRegula {
+	margin: 0;
+	font-size: 70px;
+	font-weight: 400;
+	line-height: 81px;
+	letter-spacing: 0.04em;
+	color: #727171;
+}
+
+/* @TEMP */
+.full_content .content_box .answer_box {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 70px;
+}
+.full_content .content_box .answer_box .answerBtn{
+	position: absolute;
+	right: -100px;
+}
+.full_content .content_box .answer_box .resetBtn{
+	position: absolute;
+	right: -140px;
+}
+
+.full_content .content_box .answer_box .ex_box,
+.full_content .content_box .answer_box .correct_box {
+	position: absolute;
+}
+
+.full_content .content_box .answer_box .ex_box {
+	gap: 10px;
+}
+.full_content .content_box .answer_box .ex_box .answer {
+	width: 143px;
+	height: 62px;
+}
+/* .full_content .content_box .popup_btn {
+	position: absolute;
+	right: -116px;
+	top: 36px;
+} */
+
+.full_content .content_box .answer_box .ex_box .answer:nth-of-type(1) {
+	width: 87px;
+	height: 62px;
+	margin-right: 24px;
+}
+.full_content .content_box .answer_box .ex_box .answer:nth-of-type(2) {
+	width: 115px;
+	height: 62px;
+	margin-right: 28px;
+}
+.full_content .content_box .answer_box .ex_box .answer:nth-of-type(3) {
+	width: 255px;
+	height: 62px;
+	margin-right: 31px;
+}
+.full_content .content_box .answer_box .ex_box .answer:nth-of-type(4) {
+	width: 117px;
+	height: 62px;
+	margin-right: 20px;
+}
+.full_content .content_box .answer_box .correct_box {
+	display: flex;
+	justify-content: start !important;
+	align-items: center;
+}
+
+.full_content .content_box .answer_box .correct_box .answer {
+	font-size: 40px;
+	color: rgb(226, 47, 97);
+	font-weight: 700;
+	text-decoration: underline;
+	text-underline-offset: 10px;
+	text-wrap: nowrap;
+	text-align: center;
+}
+
+.full_content .content_box .answer_box .correct_box .answer.answer1 {
+	width: 35px;
+	margin-right: 13px;
+}
+.full_content .content_box .answer_box .correct_box .answer.answer2 {
+	width: 212px;
+	margin-right: 94px;
+}
+.full_content .content_box .answer_box .correct_box .answer.answer3 {
+	width: 70px;
+	margin-right: 151px;
+}
+.full_content .content_box .answer_box .correct_box .answer.answer4 {
+	width: 70px;
+}
+
+/* 팝업 */
+.popup{
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  padding: 56px 40px 20px 40px;
+}
+.popup .popup_content{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  padding: 0 !important;
+  gap: 0 !important;
+}
+/* 설명 */
+.popup.explan{
+  padding: 46px 20px 13px 20px;
+}
+.popup.explan .popup_content{
+  padding: 0 !important;
+}
+.popup.explan .popup_content .simhei{
+  font-size: 28px !important;
+  font-weight: 400 !important;
+}
+.popup.explan .popup_content .gRegula{
+  font-size: 28px !important;
+  font-weight: 400 !important;
+  /* color: #727171 !important; */
+}
+.popup.explan .popup_content .suit{
+  font-size: 28px !important;
+  line-height: 50px !important;
+  font-weight: 600 !important;
+}
+/* 단어게임 */
+.popup.game .popup_content .game_box{
+  margin: 0 !important;
+}
+/* 단어장 */
+.popup.vocabularyBook{
+  padding: 0 !important;
+}
+.popup.vocabularyBook .popup_content{
+  flex-direction: unset !important;
+  padding: 56px 44px 0 44px !important;
+  gap: 40px !important;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+
+/* 찬트 */
+.popup1{
+	padding-top: 45px !important;
+}
+.popup1 .popup_content {}
+.popup1 .popup_content .line {}
+
+.popup.popup1 > .popup_content .line .suit{
+	font-size: 38px;
+	font-weight: 600;
+	line-height: 69px;
+	color: rgb(35, 24, 21);
+}
+.popup.popup1 > .popup_content .line .simhei{
+	font-size: 38px;
+	font-weight: 400;
+	line-height: 69px;
+	color: rgb(35, 24, 21);
+}
+.popup.popup1 > .popup_content .line .gRegula{
+	font-size: 38px;
+	font-weight: 400;
+	line-height: 69px;
+	color: rgb(35, 24, 21);
+}
+
+.popup1 .popup_content {
+	display: flex;
+	flex-direction: column;
+	justify-content: start;
+	align-items: start;
+}
+
+
+
+/* 해석 */
+.popup.popup2 .popup_content .question {
+	font-size: 100px;
+	color: rgb(21, 35, 21);
+	font-weight: 400;
+}
+
+.popup2 .popup_content {
+	align-items: center;
+	padding-top: 48px !important;
+}
+.popup.popup2 .popup_content .pron {
+	padding-top: 20px;
+	font-size: 70px;
+	/* color: rgb(114, 113, 113); */
+	font-weight: 400;
+	letter-spacing: 4;
+}
+
+.popup.popup2 .popup_content .answer {
+	padding-top: 30px;
+	font-size: 50px;
+	color: rgb(85, 126, 232);
+	font-weight: 500;
+}
+
+.popup.popup .listen_btn {
+	position: absolute;
+	right: 64px;
+	top: 10px;
+}
+
+/* util */
+.btn {
+	padding: 7px 16px;
+	line-height: 25px;
+	letter-spacing: -0.02em;
+	text-align: center;
+	box-sizing: border-box;
+}
+
+.btn3 {
+	padding: 4px 13px;
+}

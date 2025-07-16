@@ -1,0 +1,110 @@
+#wrap > .btn_box {
+  padding-top: 0;
+}
+
+.china_wrap.express_wrap .full_content .express_tag {
+  width: 82px;
+  height: 42px;
+  background: url(./../images/8_01_11/title.svg) no-repeat center;
+  background-size: cover;
+}
+.china_wrap.express_wrap .full_content .title_box {
+  margin-bottom: 30px;
+}
+.china_wrap.express_wrap .full_content .title_box .btn {
+  position: absolute;
+  top: 4px;
+  right: 0;
+}
+.china_wrap.express_wrap .full_content .top_title span {
+  font-size: 40px;
+  font-weight: 800;
+  color: #2e938d;
+}
+.full_content .title_box .title_num {
+  margin-right: 20px !important;
+}
+.china_wrap.express_wrap .full_content .title_box span:nth-of-type(1) {
+  margin-right: 12px;
+}
+.china_wrap.express_wrap .full_content .title_box span.FZKai {
+  font-weight: 400;
+}
+
+.full_content .content {
+  width: 100%;
+  height: 390px;
+  background: #f2f9f8;
+  border-radius: 36px;
+  margin: 36px 0 0 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 70px;
+}
+.full_content .content .line {
+  display: flex;
+  align-items: center;
+}
+.full_content .content .line .box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 10px;
+  width: 250px;
+  height: 112px;
+  border: 1px solid #727171;
+  margin-right: 25px;
+}
+.full_content .content .line .text {
+  display: flex;
+  margin-bottom: 42px;
+}
+.full_content .content .line .text .suit{
+  color: #727171;
+}
+
+.full_content .content .line .audio {
+  position: relative;
+  margin-right: 10px;
+}
+.full_content .content .line .audio .gRegula {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  transform: translateY(100%);
+  white-space: nowrap;
+}
+
+/* 보충 팝업 */
+.popup.popup3 .popup_content {
+  width: 100%;
+  height: 100%;
+  padding: 46px 34px 8px 55px;
+  position: relative;
+}
+.popup.popup3 .popup_content .content {
+  /* background: rgba(0, 0, 0, 0.2); */
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+}
+.popup.popup3 .popup_content .content .title {
+  line-height: 48px;
+  font-size: 40px;
+}
+.popup.popup3 .popup_content .content .title .suit {
+  font-weight: 800;
+}
+.popup.popup3 .popup_content .content .title .FZKai {
+  font-weight: 400;
+}
+.popup.popup3 .popup_content .content .text-box {
+  line-height: 44px;
+  font-size: 34px;
+}
+.popup.popup3 .popup_content .content .text-box .suit {
+  font-weight: 600;
+}
+.popup.popup3 .popup_content .content .text-box .gRegula {}

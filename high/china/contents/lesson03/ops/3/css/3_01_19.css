@@ -1,0 +1,149 @@
+.china_wrap .full_content {
+  padding-left: 128px;
+  justify-content: flex-start;
+}
+
+.china_wrap .full_content .img_box span {
+  margin-top: 8px;
+  margin-left: -28px;
+  font-size: 36px;
+  color: rgba(35, 24, 21, 1);
+  font-weight: 700;
+  font-family: "SUIT Variable", sans-serif;
+}
+
+.china_wrap .full_content .left_bubble_box {
+  align-items: flex-end;
+  gap: 54px;
+}
+
+.china_wrap .full_content .right_bubble_box {
+  align-items: flex-start;
+  gap: 52px;
+}
+
+.china_wrap .full_content .bubble_box {
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.china_wrap .full_content .left_bubble_box .bubble_box {
+  padding-right: 23px;
+}
+
+.china_wrap .full_content .right_bubble_box .bubble_box {
+  padding-left: 23px;
+}
+
+.china_wrap .full_content .bubble_box1 {
+  width: 231px;
+  aspect-ratio: 177.56/108;
+  background-image: url(../images/3_01_20/bubble01.svg);
+}
+
+.china_wrap .full_content .bubble_box2 {
+  width: 210px;
+  aspect-ratio: 162.42/108;
+  background-image: url(../images/3_01_20/bubble02.svg);
+}
+
+.china_wrap .full_content .bubble_box3 {
+  width: 280px;
+  aspect-ratio: 215.96/108;
+  background-image: url(../images/3_01_20/bubble03.svg);
+}
+
+.china_wrap .full_content .bubble_box4 {
+  width: 266px;
+  aspect-ratio: 205.82/108;
+  background-image: url(../images/3_01_20/bubble04.svg);
+}
+
+.china_wrap .full_content .bubble_box span {
+  font-size: 48px;
+  line-height: 1.2;
+}
+
+.china_wrap .full_content .bubble_box .simhei {
+  font-weight: 400;
+  font-size: 44px;
+}
+
+.china_wrap .full_content .bubble_box .correct {
+  width: 160px;
+  aspect-ratio: 1/1;
+  border: 4px solid rgba(226, 47, 97, 1);
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+}
+
+.china_wrap .full_content .left_bubble_box .bubble_box .correct {
+  left: calc(50% - 8.5px);
+}
+
+.china_wrap .full_content .right_bubble_box .bubble_box .correct {
+  left: calc(50% + 8.5px);
+}
+
+.number-page {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  bottom: 12px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  font-family: "SUIT Variable", sans-serif;
+  font-weight: 800;
+  font-size: 26px;
+  color: #d9d9d9;
+}
+.number-page .item {
+  display: flex;
+}
+.number-page .item:after {
+  content: "";
+  width: 24px;
+  height: 24px;
+  background: url(./../../common/images/page_arrow.svg) no-repeat center;
+  margin: 0 6px 0 6px;
+}
+.number-page .item:last-of-type:after {
+  display: none;
+}
+.number-page .item.active {
+  color: #231815;
+}
+.popup1 .popup_content {
+  padding: 54px 12px 12px 48px;
+}
+.popup1 .popup_content .item .FZKai {
+  font-size: 40px;
+  width: 120px;
+  font-weight: 400;
+}
+.popup1 .popup_content .item {
+  display: flex;
+  align-items: center;
+}
+.popup1 .popup_content .item {
+  margin-bottom: 24px;
+}
+.popup1 .popup_content .item_audio {
+  display: flex;
+  align-items: center;
+}
+.popup1 .popup_content .item .gRegula {
+  font-size: 40px;
+  font-weight: 400;
+  width: 200px;
+}
+.popup1 .popup_content .item .suit {
+  font-size: 40px;
+  color: #3d5591;
+  font-weight: 500;
+}

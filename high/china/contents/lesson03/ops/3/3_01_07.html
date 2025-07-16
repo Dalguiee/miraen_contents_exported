@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>미래엔 중국어</title>
+    <script src="./../common/lib/jquery-3.7.1.min.js"></script>
+    <!-- SUIT Variable 폰트 -->
+    <link
+      href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/variable/woff2/SUIT-Variable.css"
+      rel="stylesheet"
+    />
+    <link href="../common/css/comm.css" rel="stylesheet" />
+    <link href="./css/3_01_07.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div id="wrap" class="china_wrap content2_wrap">
+      <div class="title_box dp_flex">
+        <div class="num_box tmoney">
+          <span>1</span>
+        </div>
+        <div class="text_box">
+          <span>소개하기</span>
+        </div>
+      </div>
+
+      <div class="btn_box dp_flex">
+        <button class="btn hanja_btn">한자</button>
+        <button class="btn pinyin_btn" style="display: none">병음</button>
+        <button class="btn combo_btn">한자+병음</button>
+        <button class="btn popup_btn blue" data-index="3">해석</button>
+        <button class="btn explan_popup_btn blue"><span>설명</span></button>
+        <button class="btn popup_btn blue" data-index="2">추가 단어</button>
+        <!-- <div class="tempBttns">
+          <button onclick="page.showVocabulary()" data-index="1" class="tempBttn">단어장</button>
+        </div> -->
+      </div>
+
+      <div class="full_content">
+        <div class="top_box dp_flex dp_flex_column">
+          <div class="tab1" data-tab="1" data-audio="045-01.mp3">
+            <!-- 병음 -->
+            <div class="type type1 dp_flex dp_flex_column" data-view="pinyin">
+              <span class="txt txt2 gRegula">
+                Zhè shì wô <span class="highlight pink">gçge</span>.
+              </span>
+            </div>
+            <!-- 한자 -->
+            <div class="type type1 dp_flex dp_flex_column" data-view="hanja" style="display: none">
+              <span class="txt txt1 FZKai">
+                这是我<span class="highlight pink">哥哥</span>。
+              </span>
+            </div>
+            <!-- 한자 + 병음 -->
+            <div class="type type3 dp_flex dp_flex_column" data-view="combo" style="display: none">
+              <span class="txt txt1 FZKai">
+                这是我<span class="highlight pink">哥哥</span>。
+              </span>
+              <span class="txt txt2 gRegula">
+                Zhè shì wô <span class="highlight pink">gçge</span>.
+              </span>
+            </div>
+          </div>
+          <div class="tab1" data-tab="2" data-audio="045-02.mp3" style="display: none">
+            <!-- 병음 -->
+            <div class="type type1 dp_flex dp_flex_column" data-view="pinyin">
+              <span class="txt txt2 gRegula">Zhè shì wô <span class="highlight pink">bàba</span>.</span>
+            </div>
+            <!-- 한자 -->
+            <div class="type type1 dp_flex dp_flex_column" data-view="hanja" style="display: none">
+              <span class="txt txt1 FZKai">
+                这是我<span class="highlight pink">爸爸</span>。
+              </span>
+            </div>
+            <!-- 한자 + 병음 -->
+            <div class="type type3 dp_flex dp_flex_column" data-view="combo" style="display: none">
+              <span class="txt txt1 FZKai">
+                这是我<span class="highlight pink">爸爸</span>。
+              </span>
+              <span class="txt txt2 gRegula">
+                Zhè shì wô <span class="highlight pink">bàba</span>.
+              </span>
+            </div>
+          </div>
+          <div class="tab2" data-tab="3" data-audio="045-03.mp3" style="display: none">
+            <!-- 병음 -->
+            <div class="type type3 dp_flex dp_flex_column" data-view="pinyin">
+              <span class="txt txt2 gRegula">
+                Zhè shì wô <span class="highlight pink">dìdi</span>.
+              </span>
+            </div>
+            <!-- 한자 -->
+            <div class="type type3 dp_flex dp_flex_column" data-view="hanja" style="display: none">
+              <span class="txt txt1 FZKai">
+                这是我<span class="highlight pink">弟弟</span>。
+              </span>
+            </div>
+            <!-- 한자 + 병음 -->
+            <div class="type type3 dp_flex dp_flex_column" data-view="combo" style="display: none">
+              <span class="txt txt1 FZKai">
+                这是我<span class="highlight pink">弟弟</span>。
+              </span>
+              <span class="txt txt2 gRegula">
+                Zhè shì wô <span class="highlight pink">dìdi</span>.
+              </span>
+            </div>
+          </div>
+          <div class="tab3" data-tab="4" data-audio="045-04.mp3" style="display: none">
+            <!-- 병음 -->
+            <div class="type type4 dp_flex dp_flex_column" data-view="pinyin">
+              <span class="txt txt2 gRegula">
+                Zhè shì wô <span class="highlight pink">péngyou</span>.
+              </span>
+            </div>
+            <!-- 한자 -->
+            <div class="type type4 dp_flex dp_flex_column" data-view="hanja" style="display: none">
+              <span class="txt txt1 FZKai">
+                这是我<span class="highlight pink">朋友</span>。
+              </span>
+            </div>
+            <!-- 병음 + 한자 -->
+            <div class="type type4 dp_flex dp_flex_column" data-view="combo" style="display: none">
+              <span class="txt txt1 FZKai">
+                这是我<span class="highlight pink">朋友</span>。
+              </span>
+              <span class="txt txt2 gRegula">
+                Zhè shì wô <span class="highlight pink">péngyou</span>.
+              </span>
+            </div>
+          </div>
+          <button class="btn3 basic_btn tab_btn active" data-index="1">
+            기본 문장
+          </button>
+        </div>
+        <div class="bottom_box dp_flex dp_flex_column" data-view-info="pinyin" data-tab-info="1">
+          <div class="step step1 dp_flex">
+            <div class="img_box">
+              <img src="../3/images/3_01_06/icon1.svg" class="img img1" />
+              <div class="line"></div>
+            </div>
+            <div class="text_box dp_flex dp_flex_column" data-audio="045-05.mp3">
+              <!-- 병음 -->
+              <span class="txt txt2 gRegula" data-view="pinyin">bàba</span>
+              <!-- 한자 -->
+              <span class="txt txt1 FZKai" style="display: none" data-view="hanja">爸爸</span>
+              <!-- 한자 + 병음 -->
+              <span class="txt txt1 FZKai" style="display: none" data-view="combo">爸爸</span>
+              <span class="txt txt2 gRegula" style="display: none" data-view="combo">bàba</span>
+            </div>
+            <button class="btn3 tab_btn" data-index="2">교체 문장</button>
+          </div>
+          <div class="step step2 dp_flex">
+            <div class="img_box">
+              <img src="../3/images/3_01_06/icon2.svg" class="img img1" />
+              <div class="line"></div>
+            </div>
+            <div class="text_box dp_flex dp_flex_column" data-audio="045-06.mp3">
+              <!-- 병음 -->
+              <span class="txt txt2 gRegula" data-view="pinyin">dìdi</span>
+              <!-- 한자 -->
+              <span class="txt txt1 FZKai" style="display: none" data-view="hanja">弟弟</span>
+              <!-- 한자 + 병음 -->
+              <span class="txt txt1 FZKai" style="display: none" data-view="combo">弟弟</span>
+              <span class="txt txt2 gRegula" style="display: none" data-view="combo">dìdi</span>
+            </div>
+            <button class="btn3 tab_btn" data-index="3">교체 문장</button>
+          </div>
+          <div class="step step3 dp_flex">
+            <div class="img_box">
+              <img src="../3/images/3_01_06/icon3.svg" class="img img1" />
+              <div class="line"></div>
+            </div>
+            <div class="text_box dp_flex dp_flex_column" data-audio="045-07.mp3">
+              <!-- 병음 -->
+              <span class="txt txt2 gRegula" data-view="pinyin">péngyou</span>
+              <!-- 한자 -->
+              <span class="txt txt1 FZKai" style="display: none" data-view="hanja">朋友</span>
+              <!-- 한자 + 병음 -->
+              <span class="txt txt1 FZKai" style="display: none" data-view="combo">朋友</span>
+              <span class="txt txt2 gRegula" style="display: none" data-view="combo">péngyou</span>
+            </div>
+            <button class="btn3 tab_btn" data-index="4">교체 문장</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="popup_bg" style="display: none"></div>
+      <!-- 설명 -->
+      <div class="popup explan" style="display: none">
+        <div class="tag bmjua dp_flex">설명</div>
+        <button class="close_btn">
+          <span class="sr-only">닫기</span>
+        </button>
+        <div class="popup_content dp_flex dp_flex_column">
+          <span class="suit">
+            <span class="FZKai" data-audio="044-12.mp3">这<span class="suit">(<span class="gRegula">zhè</span>)</span></span>를 사용하여 가까이 있는<br>사람이나 사물을 소개한다.
+          </span>
+        </div>
+      </div>
+      <!-- 단어장 -->
+      <div class="popup vocabularyBook" data-popup="7" style="display: none">
+        <div class="tag bmjua dp_flex">단어장</div>
+        <button class="close_btn"></button>
+        <div class="popup_content dp_flex">
+          <div class="word_list_box dp_flex dp_flex_column">
+            <div class="word_content">
+              <div class="list dp_flex voca_popup_btn active" data-audio="045-08.mp3">
+                <span class="gRegula">bàba</span>
+              </div>
+              <div class="list dp_flex voca_popup_btn" data-audio="045-09.mp3">
+                <span class="gRegula">dìdi</span>
+              </div>
+              <div class="list dp_flex voca_popup_btn" data-audio="045-10.mp3">
+                <span class="gRegula">péngyou</span>
+              </div>
+            </div>
+          </div>
+          <div class="show_word_box dp_flex dp_flex_column">
+            <div class="china_box dp_flex">
+              <div class="voca_popup_tab" data-audio="045-08.mp3">
+                <span class="FZKai">爸爸</span>
+                <span class="gRegula">bàba</span>
+              </div>
+              <div class="voca_popup_tab" data-audio="045-09.mp3" style="display: none">
+                <span class="FZKai">弟弟</span>
+                <span class="gRegula">dìdi</span>
+              </div>
+              <div class="voca_popup_tab" data-audio="045-10.mp3" style="display: none">
+                <span class="FZKai">朋友</span>
+                <span class="gRegula">péngyou</span>
+              </div>
+            </div>
+            <div class="korea_box dp_flex">
+              <div class="voca_warp">
+                <span class="suit">아버지, 아빠</span>
+                <span class="suit" style="display: none">남동생</span>
+                <span class="suit" style="display: none">친구</span>
+              </div>
+            </div>
+            <div class="show_btn-warp">
+              <button class="btn3 show_pinyin_btn" style="display: none">
+                병음 보기
+              </button>
+              <button class="btn3 hide_pinyin_btn">병음 가리기</button>
+              <button class="btn3 show_btn" style="display: none">
+                뜻 보기
+              </button>
+              <button class="btn3 hide_btn">뜻 감추기</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 추가단어 -->
+      <div class="popup voca2" data-popup="2" style="display: none">
+        <div class="tag bmjua dp_flex">추가 단어</div>
+        <button class="close_btn"></button>
+        <div class="popup_content">
+          <div class="popup-scroll">
+            <div class="title suit">가족 호칭 표현</div>
+            <div class="list-warp">
+              <ul class="popup_content_list">
+                <li class="item">
+                  <span class="suit">할아버지</span>
+                  <div class="item_audio" data-audio="045-11.mp3">
+                    <span class="FZKai">爷爷</span>
+                    <span class="gRegula">yéye</span>
+                  </div>
+                </li>
+                <li class="item">
+                  <span class="suit">할머니</span>
+                  <div class="item_audio" data-audio="045-12.mp3">
+                    <span class="FZKai">奶奶</span>
+                    <span class="gRegula">nâinai</span>
+                  </div>
+                </li>
+                <li class="item">
+                  <span class="suit">외할아버지</span>
+                  <div class="item_audio" data-audio="045-13.mp3">
+                    <span class="FZKai">姥爷</span>
+                    <span class="gRegula">lâoye</span>
+                  </div>
+                </li>
+                <li class="item">
+                  <span class="suit">외할머니</span>
+                  <div class="item_audio" data-audio="045-14.mp3">
+                    <span class="FZKai">姥姥</span>
+                    <span class="gRegula">lâolao</span>
+                  </div>
+                </li>
+                <li class="item">
+                  <span class="suit">아버지</span>
+                  <div class="item_audio" data-audio="045-08.mp3">
+                    <span class="FZKai">爸爸</span>
+                    <span class="gRegula">bàba</span>
+                  </div>
+                </li>
+                <li class="item">
+                  <span class="suit">어머니</span>
+                  <div class="item_audio" data-audio="045-15.mp3">
+                    <span class="FZKai">妈妈</span>
+                    <span class="gRegula">mãma</span>
+                  </div>
+                </li>
+                <li class="item">
+                  <span class="suit">누나/언니</span>
+                  <div class="item_audio" data-audio="045-16.mp3">
+                    <span class="FZKai">姐姐</span>
+                    <span class="gRegula">jiêjie</span>
+                  </div>
+                </li>
+                <li class="item">
+                  <span class="suit">형/오빠</span>
+                  <div class="item_audio" data-audio="044-15.mp3">
+                    <span class="FZKai">哥哥</span>
+                    <span class="gRegula">gçge</span>
+                  </div>
+                </li>
+                <li class="item">
+                  <span class="suit">남동생</span>
+                  <div class="item_audio" data-audio="045-09.mp3">
+                    <span class="FZKai">弟弟</span>
+                    <span class="gRegula">dìdi</span>
+                  </div>
+                </li>
+                <li class="item">
+                  <span class="suit">여동생</span>
+                  <div class="item_audio" data-audio="045-17.mp3">
+                    <span class="FZKai">妹妹</span>
+                    <span class="gRegula">mèimei</span>
+                  </div>
+                </li>
+              </ul>
+              <ul class="popup_content_list">
+                <li class="item">
+                  <span class="suit">삼촌</span>
+                  <div class="item_audio" data-audio="045-18.mp3">
+                    <span class="FZKai">叔叔</span>
+                    <span class="gRegula">shñshu</span>
+                  </div>
+                </li>
+                <li class="item">
+                  <span class="suit">고모</span>
+                  <div class="item_audio" data-audio="045-19.mp3">
+                    <span class="FZKai">姑姑</span>
+                    <span class="gRegula">gñgu</span>
+                  </div>
+                </li>
+                <li class="item">
+                  <span class="suit">외삼촌</span>
+                  <div class="item_audio" data-audio="045-20.mp3">
+                    <span class="FZKai">舅舅</span>
+                    <span class="gRegula">jiùjiu</span>
+                  </div>
+                </li>
+                <li class="item">
+                  <span class="suit">이모</span>
+                  <div class="item_audio" data-audio="045-21.mp3">
+                    <span class="FZKai">姨母</span>
+                    <span class="gRegula">yímû</span>
+                  </div>
+                </li>
+                <li class="item">
+                  <span class="suit">아들</span>
+                  <div class="item_audio" data-audio="045-22.mp3">
+                    <span class="FZKai">儿子</span>
+                    <span class="gRegula">érzi</span>
+                  </div>
+                </li>
+                <li class="item">
+                  <span class="suit">딸</span>
+                  <div class="item_audio" data-audio="045-23.mp3">
+                    <span class="FZKai">女儿</span>
+                    <span class="gRegula">nÚ’ér</span>
+                  </div>
+                </li>
+                <li class="item">
+                  <span class="suit">남편</span>
+                  <div class="item_audio" data-audio="045-24.mp3">
+                    <span class="FZKai">丈夫</span>
+                    <span class="gRegula">zhàngfu</span>
+                  </div>
+                </li>
+                <li class="item">
+                  <span class="suit">아내</span>
+                  <div class="item_audio" data-audio="045-25.mp3">
+                    <span class="FZKai">妻子</span>
+                    <span class="gRegula">qåzi</span>
+                  </div>
+                </li>
+                <li class="item">
+                  <span class="suit" style="height: 110px">형제자매</span>
+                  <div class="item_audio" data-audio="045-26.mp3">
+                    <span class="FZKai" style="height: 110px">兄弟姐妹</span>
+                    <span class="gRegula" style="height: 110px">xiõngdì<br />jiêmèi</span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 해석 -->
+      <div class="popup popup1" data-popup="3" style="display: none">
+        <div class="tag bmjua dp_flex">해석</div>
+        <button class="close_btn"></button>
+        <div class="popup_content">
+          <ul class="list">
+            <li class="item">
+              <div class="item_text">
+                <div class="flex">
+                  <span class="FZKai">这是我哥哥。</span>
+                  <span class="suit">이 사람은 내 오빠야.</span>
+                </div>
+                <span class="gRegula">Zhè shì wô gçge.</span>
+              </div>
+            </li>
+            <li class="item">
+              <div class="item_text">
+                <div class="flex">
+                  <span class="FZKai">这是我爸爸。</span>
+                  <span class="suit">이분은 제 아버지십니다.</span>
+                </div>
+                <span class="gRegula">Zhè shì wô bàba.</span>
+              </div>
+            </li>
+            <li class="item">
+              <div class="item_text">
+                <div class="flex">
+                  <span class="FZKai">这是我弟弟。</span>
+                  <span class="suit">이 사람은 내 남동생이야.</span>
+                </div>
+                <span class="gRegula">Zhè shì wô dìdi.</span>
+              </div>
+            </li>
+            <li class="item">
+              <div class="item_text">
+                <div class="flex">
+                  <span class="FZKai">这是我朋友。</span>
+                  <span class="suit">이 사람은 내 친구야.</span>
+                </div>
+                <span class="gRegula">Zhè shì wô péngyou.</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript">
+    const page = {
+      //컨텐츠에 정답 확인이 존재하는지 여부
+      isAnswer: false,
+      // 단어장 노출 여부 판단.
+      isVocabulary: true,
+      //정답 보기
+      showAnswer: () => {},
+      //정답 숨기기
+      hideAnswer: () => {},
+      // 단어장 보기
+      showVocabulary: () => {
+        setPopup(7);
+      },
+    };
+  </script>
+  <script src="../common/js/script.js"></script>
+  <script src="../common/js/vocabularyBook.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      // setPopup(2);
+    });
+    // 교체 문장
+    $(".tab_btn").on("click", function () {
+      setActive($(this), "tab_btn");
+    });
+  </script>
+  <script type="text/javascript">
+    // 설명 팝업
+    $(".explan_popup_btn").on("click", function () {
+      let index = $(".explan_popup_btn").index(this);
+      $(".explan_popup_bg").show();
+      $(".popup.explan").hide();
+      $(".popup.explan").eq(index).show();
+      try {
+        setRoleStop();
+      } catch (error) {}
+      audioStop();
+    });
+    // 설명팝업 있는상태에서 다른 팝업 클릭시 팝업 닫기
+    $(".popup_btn").on("click", function () {
+      $(".popup.explan").css("display","none");
+    })
+  </script>
+</html>

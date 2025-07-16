@@ -1,0 +1,162 @@
+.content {
+  width: 100%;
+}
+.content .inner_content {
+  width: 100%;
+}
+.content .inner_content .content_box {
+  width: 100%;
+  height: 390px;
+  background: #fff7f1;
+  border-radius: 11px;
+  margin-top: 35px;
+  padding: 25px 40px;
+  color: #231815;
+}
+
+.content .inner_content .content_box .inner_content{
+  width: 100%;
+}
+
+.title_box .title_num_box{
+  margin: 0 10px;
+}
+.title_box .title_num_box .title_num{
+  font-weight: 700 !important;
+  font-size: 40px !important;
+}
+
+
+.content .inner_content .content_box .title {
+  display: flex;
+  align-items: center;
+  margin-bottom: 66px;
+}
+.content .inner_content .content_box .title .simhei {
+  font-size: 36px;
+}
+.content .inner_content .content_box .title .suit {
+  font-size: 36px;
+  font-weight: 600;
+}
+.content .inner_content .content_box .main {
+  display: flex;
+  width: 710px;
+  height: 212px;
+  margin-left: 71px;
+}
+.content .inner_content .content_box .main .group1,
+.content .inner_content .content_box .main .group2 {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-right: 18px;
+}
+.content .inner_content .content_box .main .group1 .box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 110px;
+  height: 100px;
+  border: 2px solid #c9caca;
+  border-radius: 12px;
+  font-size: 32px;
+  color: #d07b3e;
+  font-weight: 600;
+}
+.content .inner_content .content_box .main .group2 .box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 144px;
+  height: 98px;
+  background: #feebc4;
+  border-radius: 12px;
+}
+.content .inner_content .content_box .main .group2 .box .simhei {
+  font-size: 36px;
+  line-height: 48px;
+}
+.content .inner_content .content_box .main .group2 .box .gRegula {
+  font-size: 30px;
+}
+.content .inner_content .content_box .main .group3 {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  margin-right: 30px;
+}
+.content .inner_content .content_box .main .group3 .gRegula {
+  color: #727171;
+  margin-right: 6px;
+  font-size: 35px;
+  display: inline-block;
+  height: 42px;
+}
+.content .inner_content .content_box .main .group3 .suit {
+  font-size: 32px;
+  font-weight: 600;
+}
+.content .inner_content .content_box .main .group4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.content .inner_content .content_box .main .group4 .box {
+  display: flex;
+  align-items: center;
+}
+.content .inner_content .content_box .main .group4 .box .arrow {
+  width: 35px;
+  height: 24px;
+  margin-right: 12px;
+}
+.content .inner_content .content_box .main .group4 .box .suit {
+  font-size: 32px;
+  font-weight: 600;
+}
+
+/* 팝업 스타일 */
+.popup.popup1 .popup_content {
+  margin: 50px auto 0;
+  width: calc(100% - 100px);
+  height: calc(100% - 80px);
+  color: #231815;
+}
+.popup.popup1 .popup_content .title {
+  font-size: 40px;
+  margin-bottom: 10px;
+  line-height: 48px;
+}
+.popup.popup1 .popup_content .title .suit {
+  font-weight: 800;
+}
+.popup.popup1 .popup_content .title .FZKai {
+  font-weight: 800;
+}
+
+.popup.popup1 .popup_content .text .row {
+  display: flex;
+  font-size: 34px;
+  margin-bottom: 20px;
+}
+.popup.popup1 .popup_content .text .row .suit.innerTitle {
+  line-height: 54px;
+}
+.popup.popup1 .popup_content .text .row .index {
+  width: 30px;
+  margin-right: 10px;
+}
+.popup.popup1 .popup_content .text .row .index .suit{
+  line-height: 55px !important;
+}
+
+.popup.popup1 .popup_content .text .row .suit {
+  font-weight: 600;
+  line-height: 30px;
+}
+.popup.popup1 .popup_content .text .row .gRegula {
+  line-height: 30px;
+}

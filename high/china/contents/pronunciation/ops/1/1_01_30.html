@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>미래엔 중국어</title>
+    <script src="./../common/lib/jquery-3.7.1.min.js"></script>
+    <script src="./../common/lib/howler-2.1.3.min.js"></script>
+    <!-- SUIT Variable 폰트 -->
+    <link
+      href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/variable/woff2/SUIT-Variable.css"
+      rel="stylesheet"
+    />
+    <link href="../common/css/comm.css" rel="stylesheet" />
+    <link href="./css/1_01_30.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div id="wrap" class="china_wrap">
+      <div class="top-title">
+        <img src="./images/1_01_30/title1.svg" class="mr-8" /><span
+          class="suit fs-26 fw-8 line-32"
+          >디지털 기기로 중국어와 친해지기</span
+        >
+      </div>
+      <!-- bttns -->
+      <div class="btn_box flex absolute" data-tab="1">
+        <button class="btn blue popup_btn" data-index="1">해석</button>
+        <button class="btn blue popup_btn" data-index="2">참고</button>
+      </div>
+
+      <div class="btn_box flex absolute" data-tab="2" style="display: none">
+        <button class="btn btn3 answer_btn">예시 답안</button>
+        <button class="btn btn3 reset_btn" style="display: none">
+          다시 풀기
+        </button>
+        <button class="btn blue popup_btn" data-index="2">참고</button>
+      </div>
+
+      <!-- contents -->
+      <div class="full_content">
+        <div class="content" data-tab="1">
+          <div class="text-box mt-24 mb-12">
+            <span class="bmjua fs-40 line-52 mr-10" style="color: #4064ae"
+              >1</span
+            ><span class="suit fs-32 line-42 fw-7 mb-4"
+              >한어병음을 참고하여 한자(간화자)를 휴대 전화에 입력해
+              봅시다.</span
+            >
+          </div>
+          <div class="content_box">
+            <div class="row">
+              <div class="col">
+                <span class="suit fw-6 fs-24 line-30">간화자</span>
+              </div>
+              <div class="col">
+                <span class="suit fw-6 fs-28 line-34"
+                  >(1) <span class="simhei fs-34 line-36" data-audio="012-03.mp3" data-audio-combo="012-03">山</span></span
+                >
+              </div>
+              <div class="col">
+                <span class="suit fw-6 fs-28 line-34"
+                  >(2) <span class="simhei fs-34 line-36" data-audio="012-05.mp3" data-audio-combo="012-05">茶</span></span
+                >
+              </div>
+              <div class="col">
+                <span class="suit fw-6 fs-28 line-34"
+                  >(3) <span class="simhei fs-34 line-36" data-audio="012-04.mp3" data-audio-combo="012-04">太阳</span></span
+                >
+              </div>
+              <div class="col">
+                <span class="suit fw-6 fs-28 line-34"
+                  >(4) <span class="simhei fs-34 line-36" data-audio="015-09.mp3" data-audio-combo="012-09">妈妈</span></span
+                >
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <span class="suit fw-6 fs-24 line-30">한어병음</span>
+              </div>
+              <div class="col">
+                <span class="gRegula fs-34 line-40" data-audio="012-03.mp3" data-audio-combo="012-03"
+                  >shãn</span
+                >
+              </div>
+              <div class="col">
+                <span class="gRegula fs-34 line-40" data-audio="012-05.mp3" data-audio-combo="012-05"
+                  >chá</span
+                >
+              </div>
+              <div class="col">
+                <span class="gRegula fs-34 line-40" data-audio="012-04.mp3" data-audio-combo="012-04"
+                  >tàiyáng</span
+                >
+              </div>
+              <div class="col">
+                <span class="gRegula fs-34 line-40" data-audio="015-09.mp3" data-audio-combo="012-09"
+                  >mãma</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="content" data-tab="2" style="display: none">
+          <div class="text-box mt-24 mb-12">
+            <span class="bmjua fs-40 line-52 mr-10" style="color: #4064ae"
+              >2</span
+            ><span class="suit fs-32 line-42 fw-7 mb-4"
+              >중국어로 궁금한 단어를 인터넷 사전에서 찾아 써 봅시다.</span
+            >
+          </div>
+          <div class="content_box">
+            <div class="item index1">
+              <div class="suit fw-6 line-40 fs-32 mb-34">친구</div>
+              <div class="simhei line-36 fs-32 mb-32" data-audio="020-01.mp3" data-audio-combo="020-01">朋友</div>
+              <div class="gRegula line-36 fs-32" data-audio="020-01.mp3" data-audio-combo="020-01">péngyou</div>
+            </div>
+            <div class="item index2 answer" style="display: none">
+              <div class="suit fw-6 line-40 fs-32 mb-34 c-red">행복</div>
+              <div class="simhei line-36 fs-32 mb-32 c-red" data-audio="020-02.mp3" data-audio-combo="020-02">幸福</div>
+              <div class="gRegula line-36 fs-32 c-red" data-audio="020-02.mp3" data-audio-combo="020-02">xìngfú</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="pagination dp_flex mb-8">
+        <span class="active dot" data-index="1"></span>
+        <span class="dot" data-index="2"></span>
+      </div>
+
+      <div class="popup_bg" style="display: none"></div>
+      <!-- 해석 팝업 -->
+      <div class="popup popup3" data-popup="1" style="display: none">
+        <div class="tag bmjua dp_flex">해석</div>
+        <button class="close_btn"></button>
+        <div class="popup_content">
+          <div class="content">
+            <div class="flex mt-6 whitespace-nowrap">
+              <div class="flex flex-col mr-60">
+                <span class="suit fs-40 line-56 fw-6"
+                  >(1) <span class="gRegula">shãn</span></span
+                >
+                <div class="suit fs-36 line-42 c-dblue fw-5 ml-58">산</div>
+              </div>
+              <div class="flex flex-col mr-60">
+                <span class="suit fs-40 line-56 fw-6"
+                  >(2) <span class="gRegula">chá</span></span
+                >
+                <div class="suit fs-36 line-42 c-dblue fw-5 ml-58">차</div>
+              </div>
+              <div class="flex flex-col mr-60">
+                <span class="suit fs-40 line-56 fw-6"
+                  >(3) <span class="gRegula">tàiyáng</span></span
+                >
+                <div class="suit fs-36 line-42 c-dblue fw-5 ml-58">태양</div>
+              </div>
+              <div class="flex flex-col mr-60">
+                <span class="suit fs-40 line-56 fw-6"
+                  >(4) <span class="gRegula">mãma</span></span
+                >
+                <div class="suit fs-36 line-42 c-dblue fw-5 ml-58">엄마</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 참고 팝업 -->
+      <div class="popup popup2" data-popup="2" style="display: none">
+        <div class="tag bmjua dp_flex">참고</div>
+        <button class="close_btn"></button>
+        <div class="popup_content">
+          <div class="content">
+            <div class="suit fw-6 fs-28 line-34 mb-10">
+              <span class="mr-4">1.</span> 기기의
+              <span class="notoSans">‘</span>설정<span class="notoSans">’</span>
+              메뉴에서 <span class="notoSans">‘</span>언어와 키보드<span
+                class="notoSans"
+                >’</span
+              >에 <span class="notoSans">‘</span>중국어(간체)<span
+                class="notoSans"
+                >’</span
+              >를 추가한다.
+            </div>
+            <img
+              src="./images/1_01_30/popup1.png"
+              class="popup_img ml-42 mb-16"
+            />
+            <div class="suit fw-6 fs-28 line-34 mb-16">
+              <span class="mr-4">2.</span> 입력 창에서 언어를
+              <span class="notoSans">‘</span>중국어(간체)<span class="notoSans"
+                >’</span
+              >
+              또는 <span class="notoSans">‘</span
+              ><span class="simhei fw-4">中文,简体拼音</span
+              ><span class="notoSans">’</span>으로 설정한다.
+            </div>
+            <div class="suit fw-6 fs-28 line-34 mb-16">
+              <span class="mr-4">3.</span> 로마자(알파벳) 자판이 나오면 한자의
+              발음을 한어병음으로 입력한다.<br /><span class="ml-30"
+                >(한어병음 <span class="fw-4">ü</span>는
+                <span class="fw-4">v</span>로 입력한다.)</span
+              >
+            </div>
+            <div class="suit fw-6 fs-28 line-34 mb-16">
+              <span class="mr-4">4.</span> 발음에 해당하는 모든 한자들이
+              제시되면 원하는 한자를 고른다.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript">
+    const page = {
+      //컨텐츠에 정답 확인이 존재하는지 여부
+      isAnswer: false,
+      // 단어장 노출 여부 판단. 이벤트 호출하지 않으면 노출하지 않음.
+      isVocabulary: false,
+      //정답 보기
+      showAnswer: () => {},
+      //정답 숨기기
+      hideAnswer: () => {},
+      // 단어장 보기
+      showVocabulary: () => {},
+    };
+  </script>
+  <script src="../common/js/script.js"></script>
+
+  <script type="text/javascript">
+    $(document).ready(function () {
+      // setPopup(1);
+    });
+    $(".answer_btn").on("click", function () {
+      $(this).hide();
+      $(this).next().show();
+      $(".answer").show();
+    });
+    $(".reset_btn").on("click", function () {
+      $(this).hide();
+      $(this).prev().show();
+      $(".answer").hide();
+    });
+  </script>
+</html>

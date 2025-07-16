@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>미래엔 중국어</title>
+    <script src="./../common/lib/jquery-3.7.1.min.js"></script>
+    <script src="./../common/lib/howler-2.1.3.min.js"></script>
+    <!-- SUIT Variable 폰트 -->
+    <link
+      href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/variable/woff2/SUIT-Variable.css"
+      rel="stylesheet"
+    />
+    <link href="../common/css/comm.css" rel="stylesheet" />
+    <link href="./css/1_01_16.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div id="wrap" class="china_wrap content_wrap">
+      <div class="title_box">
+        <div class="title">
+          <div class="mainCon bmjua">
+            <img class="titleLogo" src="./images/1_01_16/logo.svg" alt="" />
+          </div>
+        </div>
+      </div>
+
+      <div class="btn_box dp_flex">
+        <div>
+          <button class="btn popup_btn blue" data-index="2">해석</button>
+          <button class="btn popup_btn blue" data-index="3">추가 활동</button>
+        </div>
+      </div>
+
+      <div class="full_content dp_flex">
+        <div class="content content1" data-tab="1">
+          <div class="textSec">
+            <div class="line line1">
+              <div class="title">
+                <span class="index">1</span>
+              </div>
+              <div class="context">
+                <span class="suit"
+                  ><span class="imgBox"
+                    ><img src="./images/1_01_16/logo2.svg" alt="logo" /></span
+                  >의 인사말을 빙고 칸에 채우고, 선생님이 말하는 문장에<br />표시합니다.</span
+                >
+              </div>
+            </div>
+            <div class="line line2">
+              <div class="title">
+                <span class="index">2</span>
+              </div>
+              <div class="context">
+                <span class="suit"
+                  >가로나 세로, 대각선 중 4개의 줄을 먼저 완성한 사람이
+                  이깁니다.</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="content content2" data-tab="2" style="display: none">
+          <figure class="bgImgFig bgImgFig1">
+            <img class="bgImg" src="./images/1_01_16/box1.png" />
+            <img class="lineImg" src="./images/1_01_16/line.png" alt="" />
+            <div class="bingoTextContainer">
+              <div class="bingoTextBox bingoTextBox1">
+                <span data-audio="023-04.mp3" class="bingoText gRegula"
+                  >Nî hâo!</span
+                >
+                <span data-audio="024-16.mp3" class="bingoText gRegula"
+                  >Nîmen hâo!</span
+                >
+                <span data-audio="025-03.mp3" class="bingoText gRegula"
+                  >Dàjiã hâo!</span
+                >
+                <span data-audio="025-02.mp3" class="bingoText gRegula"
+                  >Nín hâo!</span
+                >
+                <span data-audio="023-05.mp3" class="bingoText gRegula"
+                  >Zàijiàn!</span
+                >
+                <span data-audio="025-12.mp3" class="bingoText gRegula"
+                  >Míngtiãn jiàn!</span
+                >
+                <span data-audio="025-13.mp3" class="bingoText gRegula"
+                  >Xiàwû jiàn!</span
+                >
+                <span data-audio="025-14.mp3" class="bingoText gRegula"
+                  >Wânshang jiàn!</span
+                >
+              </div>
+              <div class="bingoTextBox bingoTextBox2">
+                <span data-audio="023-06.mp3" class="bingoText gRegula"
+                  >Xièxie!</span
+                >
+                <span data-audio="027-02.mp3" class="bingoText gRegula"
+                  >Xièxie nîmen!</span
+                >
+                <span data-audio="027-03.mp3" class="bingoText gRegula"
+                  >Xièxie lâoshå!</span
+                >
+                <span data-audio="027-04.mp3" class="bingoText gRegula"
+                  >Xièxie mãma!</span
+                >
+                <span data-audio="029-02.mp3" class="bingoText gRegula"
+                  >Bú kèqi!</span
+                >
+                <span data-audio="023-07.mp3" class="bingoText gRegula"
+                  >Bù hâoyìsi.</span
+                >
+                <span data-audio="028-18.mp3" class="bingoText gRegula"
+                  >Duìbuqî.</span
+                >
+                <span data-audio="026-19.mp3" class="bingoText gRegula"
+                  >Méi guãnxi.</span
+                >
+              </div>
+            </div>
+          </figure>
+          <figure class="bgImgFig bgImgFig2">
+            <img class="bgImg" src="./images/1_01_16/box2.png" />
+          </figure>
+        </div>
+      </div>
+
+      <!-- 팝업 -->
+      <div class="popup_bg" style="display: none"></div>
+      <!-- 추가활동 -->
+      <div class="popup popup1 expPopup" data-popup="3" style="display: none">
+        <div class="tag bmjua dp_flex">추가 활동</div>
+        <div class="popup-con">
+          <div class="line line1">
+            <span class="suit"
+              >학생들의 수준에 따라 단어를 한어병음이나 한자로 써서 진행할 수
+              있다.
+            </span>
+          </div>
+          <div class="line line2">
+            <span class="suit">
+              <span data-audio="028-01.mp3" class="simhei"
+                >你<span class="gRegula">(nî)</span></span
+              ><span class="notoSans" style="font-size: 34px">,</span>
+              <span data-audio="028-02.mp3" class="simhei"
+                >好<span class="gRegula">(hâo)</span></span
+              ><span class="notoSans" style="font-size: 34px">,</span>
+              <span data-audio="028-03.mp3" class="simhei"
+                >们<span class="gRegula">(men)</span></span
+              ><span class="notoSans" style="font-size: 34px">,</span>
+              <span data-audio="027-05.mp3" class="simhei"
+                >你们<span class="gRegula">(nîmen)</span></span
+              ><span class="notoSans" style="font-size: 34px">,</span>
+              <span data-audio="028-04.mp3" class="simhei"
+                >见<span class="gRegula">(jiàn)</span></span
+              ><span class="notoSans" style="font-size: 34px">,</span><br />
+              <span data-audio="028-05.mp3" class="simhei"
+                >您<span class="gRegula">(nín)</span></span
+              ><span class="notoSans" style="font-size: 34px">,</span>
+              <span data-audio="028-06.mp3" class="simhei"
+                >大家<span class="gRegula">(dàjiã)</span></span
+              ><span class="notoSans" style="font-size: 34px">,</span>
+              <span data-audio="028-07.mp3" class="simhei"
+                >他<span class="gRegula">(tã)</span></span
+              ><span class="notoSans" style="font-size: 34px">,</span>
+              <span data-audio="028-08.mp3" class="simhei"
+                >下午<span class="gRegula">(xiàwû)</span></span
+              ><span class="notoSans" style="font-size: 34px">,</span>
+              <span data-audio="028-09.mp3" class="simhei"
+                >没<span class="gRegula">(méi)</span></span
+              ><span class="notoSans" style="font-size: 34px">,</span><br />
+              <span data-audio="028-10.mp3" class="simhei"
+                >明天<span class="gRegula">(míngtiãn)</span></span
+              ><span class="notoSans" style="font-size: 34px">,</span>
+              <span data-audio="028-11.mp3" class="simhei"
+                >早上<span class="gRegula">(zâoshang)</span></span
+              ><span class="notoSans" style="font-size: 34px">,</span>
+              <span data-audio="028-12.mp3" class="simhei"
+                >晚上<span class="gRegula">(wânshang)</span></span
+              ><span class="notoSans" style="font-size: 34px">,</span><br>
+              <span data-audio="028-14.mp3" class="simhei"
+                >老师<span class="gRegula">(lâoshå)</span></span
+              ><span class="notoSans" style="font-size: 34px">,</span>
+              <span data-audio="028-13.mp3" class="simhei"
+                >周末<span class="gRegula">(zhõumò)</span></span
+              ><span class="notoSans" style="font-size: 34px">,</span>
+              <span data-audio="028-15.mp3" class="simhei"
+                >妈妈<span class="gRegula">(mãma)</span></span
+              >
+            </span>
+          </div>
+        </div>
+        <button class="close_btn"></button>
+      </div>
+
+      <!-- 해석 -->
+      <div class="popup popup2 voca2" data-popup="2" style="display: none">
+        <div class="tag bmjua dp_flex">해석</div>
+        <button class="close_btn"></button>
+        <div class="popup_content">
+          <div class="popup-scroll">
+            <div class="list-warp">
+              <ul class="popup_content_list">
+                <li class="item">
+                  <div class="innerItem" data-audio="023-04.mp3">
+                    <span class="gRegula">Nî hâo!</span>
+                  </div>
+                  <div class="innerItem tableRight">
+                    <span class="suit">안녕!</span>
+                  </div>
+                </li>
+                <li class="item">
+                  <div class="innerItem" data-audio="024-16.mp3">
+                    <span class="gRegula">Nîmen hâo!</span>
+                  </div>
+                  <div class="innerItem tableRight">
+                    <span class="suit">얘들아 안녕!</span>
+                  </div>
+                </li>
+                <li class="item">
+                  <div class="innerItem" data-audio="025-03.mp3">
+                    <span class="gRegula">Dàjiã hâo!</span>
+                  </div>
+                  <div class="innerItem tableRight">
+                    <span class="suit">여러분 안녕하세요!</span>
+                  </div>
+                </li>
+                <li class="item">
+                  <div class="innerItem" data-audio="025-02.mp3">
+                    <span class="gRegula">Nín hâo!</span>
+                  </div>
+                  <div class="innerItem tableRight">
+                    <span class="suit">안녕하세요!</span>
+                  </div>
+                </li>
+                <li class="item">
+                  <div class="innerItem" data-audio="023-05.mp3">
+                    <span class="gRegula">Zàijiàn!</span>
+                  </div>
+                  <div class="innerItem tableRight">
+                    <span class="suit">잘 가!</span>
+                  </div>
+                </li>
+                <li class="item">
+                  <div class="innerItem" data-audio="025-12.mp3">
+                    <span class="gRegula">Míngtiãn jiàn!</span>
+                  </div>
+                  <div class="innerItem tableRight">
+                    <span class="suit">내일 만나!</span>
+                  </div>
+                </li>
+                <li class="item">
+                  <div class="innerItem" data-audio="025-13.mp3">
+                    <span class="gRegula">Xiàwû jiàn!</span>
+                  </div>
+                  <div class="innerItem tableRight">
+                    <span class="suit">오후에 만나!</span>
+                  </div>
+                </li>
+                <li class="item">
+                  <div class="innerItem" data-audio="025-14.mp3">
+                    <span class="gRegula">Wânshang jiàn!</span>
+                  </div>
+                  <div class="innerItem tableRight">
+                    <span class="suit">저녁에 만나!</span>
+                  </div>
+                </li>
+              </ul>
+              <ul class="popup_content_list">
+                <li class="item">
+                  <div class="innerItem" data-audio="023-06.mp3">
+                    <span class="gRegula">Xièxie!</span>
+                  </div>
+                  <div class="innerItem tableRight">
+                    <span class="suit">고마워!</span>
+                  </div>
+                </li>
+                <li class="item">
+                  <div class="innerItem" data-audio="027-02.mp3">
+                    <span class="gRegula">Xièxie nîmen!</span>
+                  </div>
+                  <div class="innerItem tableRight">
+                    <span class="suit">너희에게 고마워!</span>
+                  </div>
+                </li>
+                <li class="item">
+                  <div class="innerItem" data-audio="027-03.mp3">
+                    <span class="gRegula">Xièxie lâoshå!</span>
+                  </div>
+                  <div class="innerItem tableRight">
+                    <span class="suit">선생님, 감사합니다!</span>
+                  </div>
+                </li>
+                <li class="item">
+                  <div class="innerItem" data-audio="027-04.mp3">
+                    <span class="gRegula">Xièxie mãma!</span>
+                  </div>
+                  <div class="innerItem tableRight">
+                    <span class="suit">엄마, 고마워요!</span>
+                  </div>
+                </li>
+                <li class="item">
+                  <div class="innerItem" data-audio="029-02.mp3">
+                    <span class="gRegula">Bú kèqi!</span>
+                  </div>
+                  <div class="innerItem tableRight">
+                    <span class="suit">천만에!</span>
+                  </div>
+                </li>
+                <li class="item">
+                  <div class="innerItem" data-audio="023-07.mp3">
+                    <span class="gRegula">Bù hâoyìsi.</span>
+                  </div>
+                  <div class="innerItem tableRight">
+                    <span class="suit">미안해.</span>
+                  </div>
+                </li>
+                <li class="item">
+                  <div class="innerItem" data-audio="028-18.mp3">
+                    <span class="gRegula">Duìbuqî.</span>
+                  </div>
+                  <div class="innerItem tableRight">
+                    <span class="suit">미안합니다.</span>
+                  </div>
+                </li>
+                <li class="item">
+                  <div class="innerItem" data-audio="026-19.mp3">
+                    <span class="gRegula">Méi guãnxi.</span>
+                  </div>
+                  <div class="innerItem tableRight">
+                    <span class="suit">괜찮아.</span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="pagination dp_flex" style="margin-bottom: 0px">
+        <span class="active dot" data-index="1"></span>
+        <span class="dot" data-index="2"></span>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript">
+    const page = {
+      //컨텐츠에 정답 확인이 존재하는지 여부
+      isAnswer: false,
+      // 단어장 노출 여부 판단. 이벤트 호출하지 않으면 노출하지 않음.
+      isVocabulary: false,
+      //정답 보기
+      showAnswer: () => {
+        $(".wrong").hide();
+        $(".correct").show();
+      },
+      //정답 숨기기
+      hideAnswer: () => {
+        $(".correct").hide();
+        $(".wrong").show();
+      },
+      // 단어장 보기
+      showVocabulary: () => {
+        setPopup(7);
+      },
+    };
+  </script>
+  <script crossorigin src="../common/lib/libBundle.js"></script>
+  <script src="../common/js/script.js"></script>
+  <script src="../common/js/rolePlayerCh.js"></script>
+  <script src="../common/js/vocabularyBook.js"></script>
+</html>

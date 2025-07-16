@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>미래엔 중국어</title>
+  <script src="./../common/lib/jquery-3.7.1.min.js"></script>
+  <!-- SUIT Variable 폰트 -->
+  <link href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/variable/woff2/SUIT-Variable.css"
+    rel="stylesheet" />
+  <link href="../common/css/comm.css" rel="stylesheet" />
+  <link href="./css/8_01_02.css" rel="stylesheet" />
+</head>
+
+<body>
+  <div id="wrap" class="china_wrap">
+    <div class="btn_box dp_flex">
+      <button class="btn hanja_btn">한자</button>
+      <button class="btn pinyin_btn" style="display: none">병음</button>
+      <button class="btn combo_btn">한자+병음</button>
+      <button class="btn popup_btn blue" data-index="1">해석</button>
+    </div>
+
+    <div class="full_content">
+      <div class="content">
+        <div class="line mb-50">
+          <div class="index bmjua mt-16">학습 목표</div>
+          <span class="suit">물건을 구입할 때 필요한 표현을 말할 수 있다.<br />가격을 묻고
+            흥정할 수 있다.</span>
+        </div>
+        <div class="line mb-32">
+          <div class="index bmjua mt-8">기본 표현</div>
+          <div>
+            <div class="line-60 mb-4">
+              <span class="suit mr-30">구매</span><span class="gRegula" data-view="pinyin" data-audio="093-04.mp3">Wô yào
+                mâi yì shuãng xié.</span><span class="FZKai" data-view="hanja" data-audio="093-04.mp3"
+                style="display: none">我要买一双鞋。</span><span data-view="combo" data-audio="093-04.mp3"
+                style="display: none"><span class="FZKai">我要买一双鞋。</span><span class="gRegula">Wô yào mâi yì shuãng
+                  xié.</span></span>
+            </div>
+            <div class="line-60 mb-4">
+              <span class="suit mr-30 v_hidden">구매</span><span class="gRegula" data-view="pinyin"
+                data-audio="093-05.mp3">Zhè jiàn yåfu duõshao qián?</span><span class="FZKai" data-view="hanja"
+                data-audio="093-05.mp3" style="display: none">这件衣服多少钱?</span><span data-view="combo"
+                data-audio="093-05.mp3" style="display: none"><span class="FZKai mr-12">这件衣服多少钱?</span><span
+                  class="gRegula">Zhè jiàn yåfu duõshao qián?</span></span>
+            </div>
+            <div class="line-60">
+              <span class="suit mr-30">부탁</span><span class="gRegula" data-audio="093-06.mp3" data-view="pinyin">Qîng
+                dêng yíxià.</span><span class="FZKai" style="display: none" data-view="hanja"
+                data-audio="093-06.mp3">请等一下。</span><span data-view="combo" data-audio="093-06.mp3"
+                style="display: none"><span class="FZKai">请等一下。</span><span class="gRegula">Qîng dêng
+                  yíxià.</span></span>
+            </div>
+          </div>
+        </div>
+        <div class="line">
+          <div class="index bmjua mt-8">중국 문화</div>
+          <span class="suit fs-36">중국의 화폐</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="popup_bg" style="display: none"></div>
+    <!-- 해석 팝업 -->
+    <div class="popup popup1" data-popup="1" style="display: none">
+      <div class="tag bmjua dp_flex">해석</div>
+      <button class="close_btn"></button>
+      <div class="popup_content">
+        <div class="content">
+          <div class="item mb-30">
+            <div class="index mr-30" style="height: 248px">
+              <span class="suit">구매</span>
+            </div>
+            <div>
+              <div class="line-60">
+                <span class="FZKai" style="margin-right: -21px;">我要买一双鞋。</span><span class="suit text c-dblue">저는 신발 한 켤레를
+                  사려고 해요.</span>
+              </div>
+              <div class="line-54 mb-30" style="margin-top: -2px">
+                <span class="gRegula">Wô yào mâi yì shuãng xié.</span>
+              </div>
+              <div class="line-60">
+                <span class="FZKai">这件衣服多少钱?</span><span class="suit text c-dblue">이 옷은 얼마예요?</span>
+              </div>
+              <div class="line-54" style="margin-top: -2px">
+                <span class="gRegula">Zhè jiàn yåfu duõshao qián?</span>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="index mr-30" style="height: 109px">
+              <span class="suit">부탁</span>
+            </div>
+            <div>
+              <div class="line-60">
+                <span class="FZKai" style="margin-right: -21px;">请等一下。</span><span class="suit text c-dblue">잠깐만 기다리세요.</span>
+              </div>
+              <div class="line-54" style="margin-top: -2px">
+                <span class="gRegula">Qîng dêng yíxià.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<script type="text/javascript">
+  const page = {
+    //컨텐츠에 정답 확인이 존재하는지 여부
+    isAnswer: false,
+    // 단어장 노출 여부 판단. 이벤트 호출하지 않으면 노출하지 않음.
+    isVocabulary: false,
+    //정답 보기
+    showAnswer: () => { },
+    //정답 숨기기
+    hideAnswer: () => { },
+    // 단어장 보기
+    showVocabulary: () => { },
+  };
+</script>
+<script src="../common/js/script.js"></script>
+<script type="text/javascript">
+  $(document).ready(function () {
+    // setPopup(1);
+  });
+</script>
+
+</html>

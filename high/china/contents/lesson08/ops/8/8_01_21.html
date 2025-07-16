@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>미래엔 중국어</title>
+  <script src="./../common/lib/jquery-3.7.1.min.js"></script>
+  <!-- SUIT Variable 폰트 -->
+  <link href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/variable/woff2/SUIT-Variable.css"
+    rel="stylesheet" />
+  <link href="../common/css/comm.css" rel="stylesheet" />
+  <link href="./css/8_01_21.css" rel="stylesheet" />
+</head>
+
+<body>
+  <div id="wrap" class="china_wrap content_wrap">
+    <div class="title_box title_box3 flex items-center">
+      <div class="num_box">
+        <span>4</span>
+      </div>
+      <div class="text_box">
+        <span class="fs-30">대화를 읽고 물건값을 골라 봅시다.</span>
+      </div>
+    </div>
+    <div class="btn_box dp_flex">
+      <button class="btn popup_btn blue" data-index="1">해석</button>
+      <!-- <div class="tempBttns">
+          <button onclick="page.showAnswer(event)" data-index="1" class="tempBttn answer_btn">임시정답</button>
+          <button onclick="page.hideAnswer(event)" data-index="1" class="tempBttn reset_btn" style="display: none">다시하기</button>
+        </div> -->
+    </div>
+
+    <div class="full_content">
+      <div class="content">
+        <div class="ex_box mb-36">
+          <div class="line mb-30">
+            <span class="notoSans fw-8 fs-36 line-44 mr-16" style="color: #a37a3f">A</span><span
+              class="simhei fs-36 line-44" data-audio="096-25.mp3">这个多少钱<span style="font-size: 40px;">?</span></span>
+          </div>
+          <div class="line">
+            <span class="notoSans fw-8 fs-36 line-44 mr-16" style="color: #a37a3f">B</span><span
+              class="simhei fs-36 line-44" data-audio="099-04.mp3">一百八。</span>
+          </div>
+        </div>
+        <div class="answer_box">
+          <div class="line mb-40">
+            <button class="check_box" style="margin-right: 154px">
+              <span class="suit fw-6 fs-32 line-40">① <span data-audio="099-10.mp3">108<span
+                    class="simhei">块</span></span></span></button><button class="check_box correct">
+              <span class="suit fw-6 fs-32 line-40">② <span data-audio="099-11.mp3">180<span
+                    class="simhei">块</span></span></span>
+            </button>
+          </div>
+          <div class="line">
+            <button class="check_box" style="margin-right: 150px">
+              <span class="suit fw-6 fs-32 line-40">③ <span data-audio="099-12.mp3">208<span
+                    class="simhei">块</span></span></span></button><button class="check_box">
+              <span class="suit fw-6 fs-32 line-40">④ <span data-audio="099-13.mp3">280<span
+                    class="simhei">块</span></span></span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="number-page">
+      <div class="item">01</div>
+      <div class="item">02</div>
+      <div class="item">03</div>
+      <div class="item active">04</div>
+      <div class="item">05</div>
+      <div class="item">06</div>
+    </div>
+    <div class="popup_bg" style="display: none"></div>
+    <!-- 해석 -->
+    <div class="popup popup3" data-popup="1" style="display: none">
+      <div class="tag bmjua dp_flex">해석</div>
+      <button class="close_btn"></button>
+      <div class="popup_content">
+        <div class="content">
+          <div class="line mb-56">
+            <span class="FZKai fs-36 line-50 mr-20 relative">这个多少钱?<span class="subtext gRegula fs-30 line-34">Zhège
+                duõshao qián?</span></span><span class="suit fs-32 line-50 fw-6 c-dblue">이거 얼마예요?</span>
+          </div>
+          <div class="line mb-56">
+            <span class="FZKai fs-36 line-50 relative">一百八。<span class="subtext gRegula fs-30 line-34">Yìbâi
+                bã.</span></span><span class="suit fs-32 line-50 fw-6 c-dblue">180위안입니다.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<script type="text/javascript">
+  const page = {
+    //컨텐츠에 정답 확인이 존재하는지 여부
+    isAnswer: true,
+    // 단어장 노출 여부 판단.
+    isVocabulary: false,
+    //정답 보기
+    showAnswer: () => {
+      $(".tempBttn.answer_btn").hide();
+      $(".tempBttn.reset_btn").show();
+
+      $('.check_box').removeClass("active");
+      $(`.correct`).addClass("active");
+    },
+    //정답 숨기기
+    hideAnswer: () => {
+      $(".tempBttn.answer_btn").show();
+      $(".tempBttn.reset_btn").hide();
+
+      $(`.correct`).removeClass("active");
+    },
+    // 단어장 보기
+    showVocabulary: () => { },
+  };
+  $(document).ready(function () {
+    // setPopup(2);
+  });
+</script>
+<script src="../common/js/script.js"></script>
+<!-- <script type="text/javascript">
+    // 체크박스 클릭
+    $(".check_box").on("click", function () {
+      // page.hideAnswer();
+      const index = $(this).data("index");
+      $(".check_box").removeClass("active");
+      $(this).addClass("active");
+    });
+  </script> -->
+
+</html>

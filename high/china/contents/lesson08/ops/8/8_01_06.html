@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>미래엔 중국어</title>
+  <script src="./../common/lib/jquery-3.7.1.min.js"></script>
+  <!-- SUIT Variable 폰트 -->
+  <link href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/variable/woff2/SUIT-Variable.css"
+    rel="stylesheet" />
+  <link href="../common/css/comm.css" rel="stylesheet" />
+  <link href="./css/8_01_06.css" rel="stylesheet" />
+</head>
+
+<body>
+  <div id="wrap" class="china_wrap wordReference_wrap">
+    <div class="btn_box dp_flex">
+      <button class="btn explan_popup_btn blue">설명</button>
+    </div>
+
+    <div class="full_content">
+      <div class="title_box dp_flex">
+        <div class="express_tag">
+          <span>본문</span>
+          <div class="plus"></div>
+        </div>
+
+        <div class="text_box">
+          <span class="title_num suit">2</span>
+          <span data-audio="094-35.mp3"><span class="simhei">一点儿 </span><span class="gRegula">yìdiânr</span></span><span class="gRegula"> • </span><span data-audio="094-36.mp3"><span class="simhei">有点儿 </span><span class="gRegula">yôudiânr</span></span>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="content_box">
+          <div class="box mr-36">
+            <div class="ex_box mb-30">
+              <span class="suit fw-6 fs-40 line-50">형용사 +
+                <span data-audio="094-35.mp3">(<span class="simhei">一</span>)<span
+                    class="simhei">点儿</span></span></span>
+              <span class="suit fw-6 fs-34 line-42 c-gray">조금 ~하다(<span class="fs-30">상대적 의미</span>)</span>
+            </div>
+            <div class="flex flex-col justify-center items-center">
+              <div class="simhei fs-36" style="line-height: 60px;" data-audio="094-37.mp3" data-audio-combo="094-37">
+                这双鞋大一点儿。
+              </div>
+              <div class="gRegula fs-30 line-32 mb-10" data-audio="094-37.mp3" data-audio-combo="094-37">
+                Zhè shuãng xié dà yìdiânr.
+              </div>
+              <div class="suit line-34 c-gray fs-30">
+                이 신발이 (저것보다) 조금 커요.
+              </div>
+            </div>
+          </div>
+          <div class="box">
+            <div class="ex_box mb-30">
+              <span class="suit fw-6 fs-36 line-50"><span class="simhei" data-audio="094-36.mp3">有点儿</span> +
+                형용사</span>
+              <span class="suit fw-6 fs-34 line-42 c-gray">조금 ~하다(<span class="fs-30">불만족스러운 느낌</span>)</span>
+            </div>
+            <div class="flex flex-col justify-center items-center">
+              <div class="simhei fs-40" style="line-height: 60px;" data-audio="094-38.mp3" data-audio-combo="094-38">
+                这双鞋有点儿大。
+              </div>
+              <div class="gRegula fs-30 line-32 mb-10" data-audio="094-38.mp3" data-audio-combo="094-38">
+                Zhè shuãng xié yôudiânr dà.
+              </div>
+              <div class="suit line-34 c-gray fs-30">
+                이 신발은 조금 커(서 불편해)요.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="popup_bg" style="display: none"></div>
+    <!-- 설명 -->
+    <div class="popup explan" style="display: none">
+      <div class="tag bmjua dp_flex">설명</div>
+      <button class="close_btn"></button>
+      <div class="popup_content">
+        <div class="content">
+          <span class="suit"><span class="notoSans">‘</span>형용사+<span data-audio="094-35.mp3"><span
+                class="FZKai">一点儿</span>(<span class="gRegula">yìdiânr</span>)</span><span class="notoSans">’</span>은
+            기준보다 정도가 약함을<br />나타낸다.
+            <span class="notoSans">‘</span><span data-audio="094-36.mp3"><span class="FZKai">有点儿</span>(<span
+                class="gRegula">yôudiânr</span>)</span>+형용사<span class="notoSans">’</span>는 상황이 다소<br />불만족스럽거나
+            부정적임을 나타낸다.</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<script type="text/javascript">
+  const page = {
+    //컨텐츠에 정답 확인이 존재하는지 여부
+    isAnswer: false,
+    // 단어장 노출 여부 판단.
+    isVocabulary: false,
+    //정답 보기
+    showAnswer: () => { },
+    //정답 숨기기
+    hideAnswer: () => { },
+    // 단어장 보기
+    showVocabulary: () => { },
+  };
+  $(document).ready(function () {
+    // setPopup(1);
+  });
+</script>
+<script src="../common/js/script.js"></script>
+
+</html>

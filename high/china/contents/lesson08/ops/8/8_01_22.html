@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>미래엔 중국어</title>
+  <script src="./../common/lib/jquery-3.7.1.min.js"></script>
+  <!-- SUIT Variable 폰트 -->
+  <link href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/variable/woff2/SUIT-Variable.css"
+    rel="stylesheet" />
+  <link href="../common/css/comm.css" rel="stylesheet" />
+  <link href="./css/8_01_22.css" rel="stylesheet" />
+</head>
+
+<body>
+  <div id="wrap" class="china_wrap content_wrap">
+    <div class="title_box title_box3 flex items-center">
+      <div class="num_box">
+        <span>5</span>
+      </div>
+      <div class="text_box">
+        <span class="fs-30">중국어 어순에 맞게 문장을 완성해 봅시다.</span>
+      </div>
+    </div>
+    <div class="btn_box dp_flex" style="height: 43px">
+      <!-- <div class="tempBttns">
+        <button onclick="page.showAnswer(event)" data-index="1" class="tempBttn answer_btn">임시정답</button>
+        <button onclick="page.hideAnswer(event)" data-index="1" class="tempBttn reset_btn" style="display: none">다시하기</button>
+      </div> -->
+    </div>
+
+    <div class="full_content">
+      <div class="content" data-tab="1">
+        <div class="ex_box mb-20">
+          <div class="index suit fs-36 line-44">(1)</div>
+          <div class="flex mb-20">
+            <button class="answer_btn gRegula" data-index="1" data-audio="094-35.mp3">yìdiânr</button>
+            <button class="answer_btn gRegula" data-index="2" data-audio="095-47.mp3">méiyôu</button>
+            <button class="answer_btn gRegula" data-index="3" data-audio="095-43.mp3">xiâo</button>
+            <button class="answer_btn gRegula" data-index="4" data-audio="094-27.mp3">de</button>
+            <button class="answer_btn gRegula" data-index="5" data-audio="095-46.mp3">yôu</button>
+          </div>
+          <span class="suit fw-6 fs-32 line-40">조금 작은 거 있어요, 없어요?</span>
+        </div>
+        <div class="answer_box" data-answer="0" data-audio="095-37.mp3">
+          <div class="text-group">
+            <span class="answer gRegula fs-40 c-red mr-10 v_hidden" data-answer="0" data-index="5">Yôu</span><span
+              class="answer gRegula fs-40 c-red mr-10 v_hidden" data-answer="0" data-index="2">méiyôu</span><span
+              class="answer gRegula fs-40 c-red mr-10 v_hidden" data-answer="0" data-index="3">xiâo</span><span
+              class="answer gRegula fs-40 c-red mr-10 v_hidden" data-answer="0" data-index="1">yìdiânr</span><span
+              class="answer gRegula fs-40 c-red v_hidden" data-answer="0" data-index="4">de</span>
+          </div>
+          <span class="suit fs-36">?</span>
+        </div>
+        <div class="buttons_box">
+          <button class="btn3 answer_btn" data-index="0">정답</button>
+          <button class="btn3 reset_btn" data-index="0" style="display: none">다시 하기</button>
+        </div>
+      </div>
+
+      <div class="content" data-tab="2" style="display: none">
+        <div class="ex_box mb-20">
+          <div class="index suit fs-36 line-44">(2)</div>
+          <div class="flex mb-20">
+            <button class="answer_btn gRegula" data-index="6" data-audio="099-09.mp3">yì shuãng</button>
+            <button class="answer_btn gRegula" data-index="7" data-audio="084-25.mp3">yào</button>
+            <button class="answer_btn gRegula" data-index="8" data-audio="025-23.mp3">wô</button>
+            <button class="answer_btn gRegula" data-index="9" data-audio="099-05.mp3">mâi</button>
+            <button class="answer_btn gRegula" data-index="10" data-audio="099-06.mp3">xié</button>
+          </div>
+          <span class="suit fw-6 fs-32 line-40">저는 신발 한 켤레를 사려고 합니다.</span>
+        </div>
+        <div class="answer_box" data-answer="1" data-audio="093-04.mp3">
+          <div class="text-group">
+            <span class="answer gRegula fs-40 c-red mr-10 v_hidden" data-answer="1" data-index="8">Wô</span>
+            <span class="answer gRegula fs-40 c-red mr-10 v_hidden" data-answer="1" data-index="7">yào</span>
+            <span class="answer gRegula fs-40 c-red mr-10 v_hidden" data-answer="1" data-index="9">mâi</span>
+            <span class="answer gRegula fs-40 c-red mr-10 v_hidden" data-answer="1" data-index="6">yì shuãng</span>
+            <span class="answer gRegula fs-40 c-red v_hidden" data-answer="1" data-index="10">xié</span>
+          </div>
+          <span class="suit fs-36">.</span>
+        </div>
+        <div class="buttons_box">
+          <button class="btn3 answer_btn" data-index="1">정답</button>
+          <button class="btn3 reset_btn" data-index="1" style="display: none">다시 하기</button>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="number-page">
+      <div class="item">01</div>
+      <div class="item">02</div>
+      <div class="item">03</div>
+      <div class="item">04</div>
+      <div class="item active">05</div>
+      <div class="item">06</div>
+    </div>
+
+    <div class="pagination dp_flex" style="margin-bottom: 23px">
+      <span class="active dot" data-index="1"></span>
+      <span class="dot" data-index="2"></span>
+    </div>
+    <div class="popup_bg" style="display: none"></div>
+  </div>
+</body>
+<script type="text/javascript">
+  const page = {
+    //컨텐츠에 정답 확인이 존재하는지 여부
+    isAnswer: false,
+    // 단어장 노출 여부 판단.
+    isVocabulary: false,
+    //정답 보기
+    showAnswer: () => {
+      $(".tempBttn.answer_btn").hide();
+      $(".tempBttn.reset_btn").show();
+      $(".answer").css("visibility", "visible");
+    },
+    //정답 숨기기
+    hideAnswer: () => {
+      $(".tempBttn.answer_btn").show();
+      $(".tempBttn.reset_btn").hide();
+      $(".answer").css("visibility", "hidden");
+    },
+    // 단어장 보기
+    showVocabulary: () => { },
+  };
+  $(document).ready(function () {
+    // setPopup(2);
+  });
+</script>
+<!-- <script>
+  $(".pagination .dot").on("click", function () {
+    page.hideAnswer();
+  })
+</script> -->
+<script src="../common/js/script.js"></script>
+<!-- <script type="text/javascript">
+  let answerCount1 = 0;
+  let answerCount2 = 0;
+  // 체크박스 클릭
+  $(".answer_btn").on("click", function () {
+    const index = $(this).data("index");
+    $(`.answer[data-index="${index}"]`).removeClass("v_hidden");
+    if ($(this).data("answer") === 1) {
+      answerCount1++;
+    }
+    if ($(this).data("answer") === 2) {
+      answerCount2++;
+    }
+    if (answerCount1 >= 5) {
+      $('.answer_box[data-answer="1"]').removeClass("disabled");
+    }
+    if (answerCount2 >= 5) {
+      $('.answer_box[data-answer="2"]').removeClass("disabled");
+    }
+  });
+</script> -->
+<script type="text/javascript">
+  // 정답 버튼 앞에 경로를 따로 따서 팝업정답 스크립트 분리지정 가능
+  $(".answer_btn[data-index]").on("click", function () {
+    // let index = $(".answer_btn").index(this);
+    let index = $(this).data("index");
+    $(this).hide();
+    $(`.reset_btn[data-index=${index}]`).show();
+
+    // $(`.answer`).show();
+    $(`.answer[data-answer=${index}]`).css(`visibility`, `visible`);
+    $(`.answer_box[data-answer=${index}]`).css(`pointer-events`, `unset`);
+  });
+  // 다시 하기 버튼
+  $(".reset_btn[data-index]").on("click", function () {
+    // let index = $(".reset_btn").index(this);
+    let index = $(this).data("index");
+    $(this).hide();
+    $(`.answer_btn[data-index=${index}]`).show();
+
+    // $(".answer").hide();
+    $(`.answer[data-answer=${index}]`).css(`visibility`, `hidden`);
+    $(`.answer_box[data-answer=${index}]`).css(`pointer-events`, `none`);
+  });
+</script>
+
+
+</html>

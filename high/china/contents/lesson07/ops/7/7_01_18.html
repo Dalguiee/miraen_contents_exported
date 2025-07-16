@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>미래엔 중국어</title>
+    <script src="./../common/lib/jquery-3.7.1.min.js"></script>
+    <script src="./../common/lib/howler-2.1.3.min.js"></script>
+    <!-- SUIT Variable 폰트 -->
+    <link
+      href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/variable/woff2/SUIT-Variable.css"
+      rel="stylesheet"
+    />
+    <link href="../common/css/comm.css" rel="stylesheet" />
+    <link href="./css/7_01_18.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div id="wrap" class="china_wrap content_wrap">
+      <div class="title_box">
+        <div class="title">
+          <span class="title_num bmjua">2</span
+          ><span class="title_text suit"
+            >단어와 그림을 바르게 연결하고 읽어 봅시다.</span
+          >
+        </div>
+      </div>
+
+      <div class="btn_box dp_flex">
+        <div class="bttns">
+          <button class="btn popup_btn blue" data-index="3">해석</button>
+        </div>
+        <!-- <div class="tempBttns">
+          <button onclick="page.showAnswer(event)" data-index="1" class="tempBttn answer_btn">임시정답</button>
+          <button onclick="page.hideAnswer(event)" data-index="1" class="tempBttn reset_btn" style="display: none">다시하기</button>
+        </div> -->
+      </div>
+
+      <div class="full_content">
+        <div class="content">
+          <div class="itemBox itemBox1">
+            <canvas class="conCanvas" width="1920" height="1200"></canvas>
+            <div class="itemSec itemSec1">
+              <div class="itemList itemList1">
+                <div class="index">
+                  <span class="suit">(1)</span>
+                </div>
+                <div class="itemText">
+                  <span class="gRegula" data-audio="088-23.mp3"
+                    >niúròumiàn</span
+                  >
+                  <div class="ansBttns">
+                    <button class="btn3 answer_btn" data-d-index="0">정답</button>
+                    <button class="btn3 reset_btn" data-d-index="0" style="display: none">
+                      다시 하기
+                    </button>
+                  </div>
+                </div>
+                <div
+                  class="item item1"
+                  data-val="0"
+                  data-type="question"
+                  data-locked="false"
+                ></div>
+              </div>
+              <div class="itemList itemList2">
+                <div class="index">
+                  <span class="suit">(2)</span>
+                </div>
+                <div class="itemText">
+                  <span class="gRegula" data-audio="088-01.mp3">kâoyã</span>
+                  <div class="ansBttns">
+                    <button class="btn3 answer_btn" data-d-index="1">정답</button>
+                    <button class="btn3 reset_btn" data-d-index="1" style="display: none">
+                      다시 하기
+                    </button>
+                  </div>
+                </div>
+                <div
+                  class="item item2"
+                  data-val="1"
+                  data-type="question"
+                  data-locked="false"
+                ></div>
+              </div>
+              <div class="itemList itemList3">
+                <div class="index">
+                  <span class="suit">(3)</span>
+                </div>
+                <div class="itemText">
+                  <span class="gRegula" data-audio="089-05.mp3">kãfçi</span>
+                  <div class="ansBttns">
+                    <button class="btn3 answer_btn" data-d-index="2">정답</button>
+                    <button class="btn3 reset_btn" data-d-index="2" style="display: none">
+                      다시 하기
+                    </button>
+                  </div>
+                </div>
+                <div
+                  class="item item3"
+                  data-val="2"
+                  data-type="question"
+                  data-locked="false"
+                ></div>
+              </div>
+            </div>
+
+            <div class="itemSec itemSec2">
+              <div class="itemList itemList1">
+                <div
+                  class="item item4"
+                  data-val="2"
+                  data-type="answer"
+                  data-locked="false"
+                ></div>
+                <div class="itemText">
+                  <span class="simhei" data-audio="089-05.mp3">咖啡</span>
+                  <div class="ansBttns ansBttns_vol_2">
+                    <button class="btn3 answer_btn" data-d-index="3">정답</button>
+                    <button class="btn3 reset_btn" data-d-index="3" style="display: none">
+                      다시 하기
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="itemList itemList2">
+                <div
+                  class="item item5"
+                  data-val="0"
+                  data-type="answer"
+                  data-locked="false"
+                ></div>
+                <div class="itemText">
+                  <span class="simhei" data-audio="088-23.mp3">牛肉面</span>
+                  <div class="ansBttns ansBttns_vol_2">
+                    <button class="btn3 answer_btn" data-d-index="4">정답</button>
+                    <button class="btn3 reset_btn" data-d-index="4" style="display: none">
+                      다시 하기
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="itemList itemList3">
+                <div
+                  class="item item6"
+                  data-val="1"
+                  data-type="answer"
+                  data-locked="false"
+                ></div>
+                <div class="itemText">
+                  <span class="simhei" data-audio="088-01.mp3">烤鸭</span>
+                  <div class="ansBttns ansBttns_vol_2">
+                    <button class="btn3 answer_btn" data-d-index="5">정답</button>
+                    <button class="btn3 reset_btn" data-d-index="5" style="display: none">
+                      다시 하기
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="itemBox itemBox2">
+            <div class="itemSec itemSec1">
+              <div class="itemList itemList1">
+                <img src="./images/6_01_19/flag1.png" alt="" />
+                <div class="itemText"></div>
+                <div
+                  class="item item1"
+                  data-val="3"
+                  data-type="question"
+                  data-locked="false"
+                ></div>
+              </div>
+              <div class="itemList itemList2">
+                <img src="./images/6_01_19/flag2.png" alt="" />
+                <div class="itemText"></div>
+                <div
+                  class="item item2"
+                  data-val="4"
+                  data-type="question"
+                  data-locked="false"
+                ></div>
+              </div>
+              <div class="itemList itemList3">
+                <img src="./images/6_01_19/flag3.png" alt="" />
+                <div class="itemText"></div>
+                <div
+                  class="item item3"
+                  data-val="5"
+                  data-type="question"
+                  data-locked="false"
+                ></div>
+              </div>
+            </div>
+
+            <div class="itemSec itemSec2">
+              <div class="itemList itemList1">
+                <div
+                  class="item item4"
+                  data-val="5"
+                  data-type="answer"
+                  data-locked="false"
+                ></div>
+                <div class="itemText">
+                  <img src="./images/7_01_18/icon1.svg" alt="" />
+                </div>
+              </div>
+              <div class="itemList itemList2">
+                <div
+                  class="item item5"
+                  data-val="4"
+                  data-type="answer"
+                  data-locked="false"
+                ></div>
+                <div class="itemText">
+                  <img src="./images/7_01_18/icon2.svg" alt="" />
+                </div>
+              </div>
+              <div class="itemList itemList3">
+                <div
+                  class="item item6"
+                  data-val="3"
+                  data-type="answer"
+                  data-locked="false"
+                ></div>
+                <div class="itemText">
+                  <img src="./images/7_01_18/icon3.svg" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="number-page">
+          <div class="item">01</div>
+          <div class="item active">02</div>
+          <div class="item">03</div>
+          <div class="item">04</div>
+          <div class="item">05</div>
+          <div class="item">06</div>
+        </div>
+      </div>
+
+      <!-- 팝업 -->
+      <div class="popup_bg" style="display: none"></div>
+      <!-- 해석 -->
+      <div class="popup popup1 translate" data-popup="3" style="display: none">
+        <div class="tag bmjua dp_flex">해석</div>
+        <button class="close_btn"></button>
+        <div class="popup_content">
+          <div class="content">
+            <div class="line line1">
+              <span class="index suit">(1)</span>
+              <span class="FZKai">牛肉面</span>
+              <span class="gRegula">niúròumiàn</span>
+              <span class="suit context"
+                >뉴러우<span class="notoSans" style="font-weight: 500"
+                  >몐</span
+                ></span
+              >
+            </div>
+            <div class="line line1">
+              <span class="index suit">(2)</span>
+              <span class="FZKai">烤鸭</span>
+              <span class="gRegula">kâoyã</span>
+              <span class="suit context">오리구이</span>
+            </div>
+            <div class="line line1">
+              <span class="index suit">(3)</span>
+              <span class="FZKai">咖啡</span>
+              <span class="gRegula">kãfçi</span>
+              <span class="suit context">커피</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript">
+    const page = {
+      //컨텐츠에 정답 확인이 존재하는지 여부
+      isAnswer: true,
+      // 단어장 노출 여부 판단. 이벤트 호출하지 않으면 노출하지 않음.
+      isVocabulary: false,
+      //정답 보기
+      showAnswer: () => {
+        $(".answer_btn").hide();
+        $(".reset_btn").show();
+        quesInfo.forEach((item, key) => {
+          ansLiner[key] = new AnsLine(quesInfo[key].x, quesInfo[key].y, ansInfo[key].x, ansInfo[key].y, true, item.val);
+        });
+        testObj.forEach(function (item, key) {
+          item.dataset.locked = "true";
+        });
+      },
+      //정답 숨기기
+      hideAnswer: () => {
+        $(".answer_btn").show();
+        $(".reset_btn").hide();
+        quesInfo.forEach((item, key) => {
+          ansLiner[key] = new AnsLine(0, 0, 0, 0, false, null);
+        });
+        testObj.forEach(function (item, key) {
+          item.dataset.locked = "false";
+        });
+      },
+      // 단어장 보기
+      showVocabulary: () => {
+        setPopup(7);
+      },
+    };
+  </script>
+  <script type="text/javascript">
+    // 정답 버튼
+    $(".answer_btn").on("click", function () {
+      let index = $(this).data("dIndex");
+      $(this).hide();
+      $(`.reset_btn[data-d-index=${index}]`).show()
+
+      ansLiner[index] = new AnsLine(quesInfo[index].x, quesInfo[index].y, ansInfo[index].x, ansInfo[index].y, true, index);
+      testObj.forEach(function (item, key) {
+        if (item.dataset.val == index) {
+          item.dataset.locked = "true";
+        }
+      });
+    });
+    // 다시 하기 버튼
+    $(".reset_btn").on("click", function () {
+      let index = $(this).data("dIndex");
+      $(this).hide();
+      $(`.answer_btn[data-d-index=${index}]`).show()
+
+      ansLiner[index] = new AnsLine(0, 0, 0, 0, false, null);
+      testObj.forEach(function (item, key) {
+        if (item.dataset.val == index) {
+          item.dataset.locked = "false";
+        }
+      });
+    });
+  </script>
+  <script crossorigin src="../common/lib/libBundle.js"></script>
+  <script src="../common/js/script.js"></script>
+  <script src="../common/js/rolePlayerCh.js"></script>
+  <script src="../common/js/vocabularyBook.js"></script>
+
+  <!-- 여기서부터 챔니스 캔버스 함수가 시작됨요 -->
+  <script src="../common/js/DotToDotLCM.js"></script>
+</html>

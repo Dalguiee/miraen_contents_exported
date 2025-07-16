@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>미래엔 중국어</title>
+    <script src="./../common/lib/jquery-3.7.1.min.js"></script>
+    <!-- SUIT Variable 폰트 -->
+    <link href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/variable/woff2/SUIT-Variable.css" rel="stylesheet" />
+    <link href="../common/css/comm.css" rel="stylesheet" />
+    <link href="./css/2_01_14.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div id="wrap" class="china_wrap content2_wrap">
+      <div class="title_box dp_flex">
+        <div class="num_box tmoney">
+          <span>2</span>
+        </div>
+        <div class="title">
+          <span class="suit"><span class="simhei" data-audio="034-13.mp3">是</span>로 긍정·부정 대답하기</span>
+        </div>
+      </div>
+
+      <div class="btn_box btn_box1 dp_flex">
+        <button class="btn hanja_btn">한자</button>
+        <button class="btn pinyin_btn" style="display: none">병음</button>
+        <button class="btn combo_btn">한자+병음</button>
+        <button class="btn popup_btn blue" data-index="3">해석</button>
+        <button class="explan_popup_btn btn blue"><span>설명</span></button>
+        <button class="btn popup_btn blue" data-index="4">보충</button>
+        <!-- <div class="tempBttns">
+          <button onclick="page.showVocabulary()" data-index="1" class="tempBttn">단어장</button>
+        </div> -->
+      </div>
+
+      <div class="full_content">
+        <!-- <figure class="tipFig">
+          <img class="tipImg" src="./images/2_01_14/tip.svg" alt="">
+          <span class="hint hint1 simhei" data-audio="036-19.mp3">不</span>
+          <span class="hint hint2 gRegula" data-audio="036-19.mp3">bù</span>
+          <span class="hint hint3 gRegula" data-audio="037-55.mp3">bú</span>
+        </figure> -->
+        <figure class="tipFig">
+          <img src="./images/2_01_14/tip_logo.svg" alt="">
+          <span class="suit">
+            <span class="simhei" data-audio="036-19.mp3">不</span>는 원래 제4성(<span class="gRegula" data-audio="036-19.mp3">bù</span>)이지만,<br>뒤에 제4성이 오면 제2성(<span class="gRegula" data-audio="037-55.mp3">bú</span>)으로 발음이 바뀌어요.
+          </span>
+        </figure>
+
+        <!-- <div class="title">
+          <span class="suit"><span class="FZKai" data-audio="034-13.mp3">是<span class="gRegula">(shì)</span></span>와 <span class="FZKai" data-audio="036-18.mp3">不是<span class="gRegula">(bú shì)</span></span>를 단독으로 쓰면 각각 긍정과 부정의 대답이 됩니다.</span>
+        </div> -->
+        <div class="top_box dp_flex dp_flex_column">
+          <div class="tab1" data-tab="1" data-audio="037-32.mp3">
+            <div class="type type1 dp_flex dp_flex_column">
+              <!-- 병음 -->
+              <span class="txt txt2 gRegula" data-view="pinyin" style="display: none;"><span class="highlight pink">Bú shì</span>, tã shì Zhõngguó rén.</span>
+              <!-- 한자 -->
+              <span class="txt txt1 FZKai" data-view="hanja" style="display: none;"><span class="highlight pink">不是</span>，她是中国人。</span>
+              <!-- 콤보 -->
+              <span class="txt txt1 FZKai" data-view="combo"><span class="highlight pink">不是</span>，她是中国人。</span>
+              <span class="txt txt2 gRegula" data-view="combo"><span class="highlight pink">Bú shì</span>, tã shì Zhõngguó rén.</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="bottom_box dp_flex dp_flex_column">
+          <div class="step step1 dp_flex">
+            <div class="text_box dp_flex" data-audio="037-33.mp3">
+              <!-- 병음 -->
+              <span class="txt txt2 gRegula" data-view="pinyin" style="display: none;">Tã shì xuésheng ma?</span>
+              <!-- 한자 -->
+              <span class="txt txt1 FZKai" data-view="hanja" style="display: none">他是学生吗?</span>
+              <!-- 한자 + 병음 -->
+              <span class="txt txt1 FZKai" data-view="combo">他是学生吗?</span>
+              <span class="txt txt2 gRegula" data-view="combo">Tã shì xuésheng ma?</span>
+            </div>
+          </div>
+
+          <div class="step step2 dp_flex">
+            <div class="text_box dp_flex" data-audio="037-34.mp3">
+              <!-- 병음 -->
+              <span class="txt txt2 gRegula" data-view="pinyin" style="display: none"><span class="highlight pink">Shì</span>, tã shì xuésheng.</span>
+              <!-- 한자 -->
+              <span class="txt txt1 FZKai chDot" data-view="hanja" style="display: none"><span class="highlight pink">是</span>，他是学生。</span>
+              <!-- 한자 + 병음 -->
+              <span class="txt txt1 FZKai chDot" data-view="combo"><span class="highlight pink">是</span>，他是学生。</span>
+              <span class="txt txt2 gRegula" data-view="combo"><span class="highlight pink">Shì</span>, tã shì xuésheng.</span>
+            </div>
+          </div>
+
+          <div class="step step3 dp_flex">
+            <div class="text_box dp_flex" data-audio="037-35.mp3">
+              <!-- 병음 -->
+              <span class="txt txt2 gRegula" data-view="pinyin" style="display: none"><span class="highlight pink">Bú shì</span>, tã shì lâoshå.</span>
+              <!-- 한자 -->
+              <span class="txt txt1 FZKai chDot" data-view="hanja" style="display: none"><span class="highlight pink">不是</span>，他是老师。</span>
+              <!-- 한자 + 병음 -->
+              <span class="txt txt1 FZKai chDot" data-view="combo"><span class="highlight pink">不是</span>，他是老师。</span>
+              <span class="txt txt2 gRegula" data-view="combo"><span class="highlight pink">Bú shì</span>, tã shì lâoshå.</span>
+            </div>
+          </div>
+
+          <img src="./images/2_01_14/container.png" alt="">
+        </div>
+      </div>
+
+      <div class="popup_bg" style="display: none"></div>
+      <!-- 단어장 -->
+      <div class="popup vocabularyBook" data-popup="7" style="display: none">
+        <div class="tag bmjua dp_flex">단어장</div>
+        <button class="close_btn"></button>
+        <div class="popup_content dp_flex">
+          <div class="word_list_box dp_flex dp_flex_column">
+            <div class="word_content">
+              <div class="list dp_flex voca_popup_btn active" data-audio="037-36.mp3">
+                <span class="gRegula">xuésheng</span>
+              </div>
+            </div>
+          </div>
+          <div class="show_word_box dp_flex dp_flex_column">
+            <div class="china_box dp_flex">
+              <div class="voca_popup_tab" data-audio="037-36.mp3">
+                <span class="FZKai">学生</span>
+                <span class="gRegula">xuésheng</span>
+              </div>
+            </div>
+            <div class="korea_box dp_flex">
+              <div class="voca_warp">
+                <span class="suit">학생</span>
+              </div>
+            </div>
+            <div class="show_btn-warp">
+              <button class="btn3 show_pinyin_btn" style="display: none">병음 보기</button>
+              <button class="btn3 hide_pinyin_btn">병음 가리기</button>
+              <button class="btn3 show_btn" style="display: none">뜻 보기</button>
+              <button class="btn3 hide_btn">뜻 감추기</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 해석 -->
+      <div class="popup translate" data-popup="3" style="display: none">
+        <div class="tag bmjua dp_flex">해석</div>
+        <button class="close_btn"></button>
+        <div class="popup_content">
+          <div class="line line1 dp_flex">
+            <div class="textSec">
+              <div class="text_box text_box1">
+                <span class="txt txt1 simhei chDot">不是，她是中国人。</span>
+                <span class="suit">아니, 그녀는 중국인이야.</span>
+              </div>
+              <div class="text_box text_box2">
+                <span class="txt gRegula">Bú shì, tã shì Zhõngguó rén.</span>
+              </div>
+            </div>
+          </div>
+          <div class="line line2 dp_flex">
+            <div class="textSec">
+              <div class="text_box text_box1">
+                <span class="txt txt1 simhei">他是学生吗?</span>
+                <span class="suit">그는 학생입니까?</span>
+              </div>
+              <div class="text_box text_box2">
+                <span class="txt gRegula">Tã shì xuésheng ma?</span>
+              </div>
+            </div>
+          </div>
+          <div class="line line3 dp_flex">
+            <div class="textSec">
+              <div class="text_box text_box1">
+                <span class="txt txt1 simhei chDot">是，他是学生。</span>
+                <span class="suit">네, 그는 학생입니다.</span>
+              </div>
+              <div class="text_box text_box2">
+                <span class="txt gRegula">Shì, tã shì xuésheng.</span>
+              </div>
+            </div>
+          </div>
+          <div class="line line4 dp_flex">
+            <div class="textSec">
+              <div class="text_box text_box1">
+                <span class="txt txt1 simhei chDot">不是，他是老师。</span>
+                <span class="suit">아니요, 그는 선생님입니다.</span>
+              </div>
+              <div class="text_box text_box2">
+                <span class="txt gRegula">Bú shì, tã shì lâoshå.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- 설명  -->
+      <div class="popup explan" style="display: none">
+        <div class="tag bmjua dp_flex">설명</div>
+        <button class="close_btn">
+          <span class="sr-only">닫기</span>
+        </button>
+        <div class="popup_content dp_flex dp_flex_column">
+          <span class="txt txt1 suit"><span class="simhei" data-audio="034-13.mp3">是<span class="gRegula">(shì)</span></span>와 <span class="simhei" data-audio="036-18.mp3">不是<span class="gRegula">(bú shì)</span></span>를 단독으로 쓰면 각각 <br> 긍정과 부정의 대답이 된다.</span>
+        </div>
+      </div>
+      
+      <!-- 보충 -->
+      <div class="popup popup4" data-popup="4" style="display: none">
+        <div class="tag bmjua dp_flex">보충</div>
+        <button class="close_btn"></button>
+        <div class="popup_content">
+          <div class="popupTitle">
+            <span class="suit"><span class="simhei" data-audio="034-13.mp3">是<span class="suit">(<span class="gRegula">shì</span>)</span></span>의 용법</span>
+          </div>
+          <div class="context context1">
+            <div class="contextIndex"><span class="suit">1.</span></div>
+            <div class="contextSec">
+              <div class="title">
+                <span class="suit">단독으로 사용하면 질문에 대한 대답이 된다.</span>
+              </div>
+              <span class="suit"><span class="simhei" data-audio="034-13.mp3">是。<span class="gRegula chDotAfter">Shì.</span></span>응. / <span class="simhei" data-audio="036-18.mp3">不是。<span class="gRegula chDotAfter">Bú shì.</span></span>아니.</span>
+            </div>
+          </div>
+          <div class="context context2">
+            <div class="contextIndex"><span class="suit">2.</span></div>
+            <div class="contextSec">
+              <div class="title">
+                <span class="suit">설명이나 판단을 나타내는 동사이다.</span>
+              </div>
+              <span class="suit"><span class="simhei" data-audio="037-37.mp3">他是韩国人。<span class="gRegula chDotAfter">Tã shì Hánguó rén.</span></span>그는 한국인이다.</span>
+            </div>
+          </div>
+          <div class="context context3">
+            <div class="contextIndex"><span class="suit">3.</span></div>
+            <div class="contextSec">
+              <div class="title">
+                <span class="suit">부정문은 <span class="simhei" data-audio="034-13.mp3">是<span class="suit">(<span class="gRegula">shì</span>)</span></span> 앞에 <span class="simhei" data-audio="036-19.mp3">不<span class="suit">(<span class="gRegula">bù</span>)</span></span>만 쓸 수 있다.</span>
+              </div>
+              <span class="suit"><span class="simhei" data-audio="037-38.mp3">他不是学生。<span class="gRegula chDotAfter">Tã bú shì xuésheng.</span></span>그는 학생이 아니다.</span>
+            </div>
+          </div>
+          <div class="context context4">
+            <div class="contextIndex"><span class="suit">4.</span></div>
+            <div class="contextSec">
+              <div class="title">
+                <span class="suit">의문문을 만들 때 <span class="simhei" data-audio="037-39.mp3"><span class="notoSans">‘</span>是<span class="suit">(<span class="gRegula">shì</span>)</span><span class="notoSans">~</span>吗<span class="suit">(<span class="gRegula">ma</span>)</span>?<span class="notoSans">’</span></span> 혹은 <span class="notoSans">‘</span><span class="simhei" data-audio="037-40.mp3">是不是<span class="suit">(<span class="gRegula">shì bu shì</span>)</span><span class="notoSans">~</span>?</span><span class="notoSans">’</span> 형태로 쓴다.</span>
+              </div>
+              <span class="suit"><span class="simhei space" data-audio="037-41.mp3" data-audio-combo="037-41">她是中国人吗?</span>그녀는 중국인이니?<br><span data-audio="037-41.mp3" data-audio-combo="037-41" class="gRegula">Tã shì Zhõngguó rén ma?</span></span>
+              <span class="suit"><span class="simhei space" data-audio="037-42.mp3" data-audio-combo="037-42">她是不是中国人?</span>그녀는 중국인이니?<br><span data-audio="037-42.mp3" data-audio-combo="037-42" class="gRegula">Tã shì bu shì Zhõngguó rén?</span></span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </body>
+  <script type="text/javascript">
+    const page = {
+      //컨텐츠에 정답 확인이 존재하는지 여부
+      isAnswer: false,
+      // 단어장 노출 여부 판단.
+      isVocabulary: true,
+      //정답 보기
+      showAnswer: () => {},
+      //정답 숨기기
+      hideAnswer: () => {},
+      // 단어장 보기
+      showVocabulary: () => {
+        setPopup(7);
+      },
+    };
+  </script>
+  <script src="../common/js/script.js"></script>
+  <script src="../common/js/vocabularyBook.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      // setPopup(2);
+    });
+    // 교체 문장
+    $(".tab_btn").on("click", function () {
+      setActive($(this), "tab_btn");
+    });
+  </script>
+  <script type="text/javascript">
+    // 정답 버튼
+    $(".answer_btn").on("click", function () {
+      let index = $(".answer_btn").index(this);
+      $(this).hide();
+      $(".reset_btn").eq(index).show();
+      $(".answer").eq(index).show();
+      $(".reset").eq(index).hide();
+    });
+    // 다시 하기 버튼
+    $(".reset_btn").on("click", function () {
+      let index = $(".reset_btn").index(this);
+      $(this).hide();
+      $(".answer_btn").eq(index).show();
+      $(".answer").eq(index).hide();
+      $(".reset").eq(index).show();
+    });
+  </script>
+  <script type="text/javascript">
+    // 설명 팝업
+    $(".explan_popup_btn").on("click", function () {
+      let index = $(".explan_popup_btn").index(this);
+      $(".explan_popup_bg").show();
+      $(".popup.explan").hide();
+      $(".popup.explan").eq(index).show();
+      try {
+        setRoleStop();
+      } catch (error) {}
+      audioStop();
+    });
+    // 설명팝업 있는상태에서 다른 팝업 클릭시 팝업 닫기
+    $(".popup_btn").on("click", function () {
+      $(".popup.explan").css("display","none");
+    })
+  </script>
+</html>

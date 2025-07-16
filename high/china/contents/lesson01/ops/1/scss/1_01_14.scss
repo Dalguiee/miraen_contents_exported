@@ -1,0 +1,160 @@
+@use "../../common/css/_mixin.scss";
+
+#wrap{
+  // 첫 버튼영역
+  .btn_box{
+    &.btn_box1{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .title{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .titleText{
+          font-size: 38px;
+          color: #3A958E;        
+        }
+      }
+      .sub{}
+    }
+  }
+
+  // 중앙 콘텐츠
+  .full_content{
+    .bgImgFig{
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0;  
+      .bgImg{}
+      .btnText{
+        font-size: 27px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        .innerBtnText{
+          width: 200px;
+          height: 120px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        }      
+        &.btnText1{
+          top: 254px;
+          left: 177px;      
+        }
+        &.btnText2{
+          top: 256px;
+          left: 459px;      
+        }
+      }
+    }
+  
+    // 마지막 버튼영역
+    .btn_box{
+      &.btn_box2{
+        width: 100%;
+        display: flex;
+        justify-content: end !important;
+        align-items: center;
+        gap: 5px;
+      }
+      width: 100%;
+      display: flex;
+      justify-content: space-between !important;
+      align-items: center;
+    }
+    
+  }
+
+  // 팝업영역
+  .popup{
+    &.popup2{
+      .popup_content{
+        .context{
+          font-size: 36px;
+          line-height: 1.6;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}
+
+
+.mainText{
+  font-size: 36px;
+  line-height: 1.3;
+}
+
+.item_text{
+  display: flex;
+  flex-direction: inherit !important;
+  justify-content: start;
+  align-items: center;
+}
+
+.item_text .suit{
+  margin-left: 50px;
+}
+
+.chBox{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+
+
+
+.popup-con{
+  width: 100%;
+  height: 100%;
+  padding: 56px 29px;
+  font-size: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+
+.popup-con .line1{
+  margin-bottom: 47px;
+}
+.popup-con .line{
+  margin-left: 80px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+.popup-con .sui t {
+  font-weight: bold;
+}
+.popup-con .lineTextUpper{
+  margin-bottom: 7px;
+}
+
+.popup-con .line1::after{
+  content: "1.";
+  position: absolute;
+  top: 2px;
+  left: -60px;
+}
+
+.popup-con .line2::after{
+  content: "2.";
+  position: absolute;
+  top: 2px;
+  left: -60px;
+}
+
+.popup-con .red{
+  color: red;
+}

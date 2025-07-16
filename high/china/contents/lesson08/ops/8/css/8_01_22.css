@@ -1,0 +1,110 @@
+#wrap > .title_box3 {
+  gap: 20px;
+}
+#wrap > .title_box .text_box {
+  padding-bottom: 0;
+}
+#wrap > .title_box3 .num_box {
+  color: rgba(193, 128, 44, 1);
+}
+
+.china_wrap .full_content .num_box span {
+  font-size: 30px;
+  line-height: 30px;
+  color: rgba(35, 24, 21, 1);
+  font-weight: 700;
+  font-family: "SUIT Variable", sans-serif;
+}
+.full_content .content {
+  width: 100%;
+  height: 100%;
+}
+
+.full_content .content .ex_box {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 780px;
+  height: 200px;
+  border-radius: 20px;
+  background: #fff8eb;
+  margin: 52px auto 0 auto;
+}
+.full_content .content .ex_box .index {
+  position: absolute;
+  top: 0;
+  left: -20px;
+  transform: translateX(-100%);
+}
+.full_content .content .ex_box .answer_btn {
+  margin-right: 20px;
+  padding: 10px 20px;
+  background: #fffef7;
+  font-size: 40px;
+  line-height: 46px;
+}
+.full_content .content .ex_box .answer_btn:last-child {
+  margin-right: 0;
+}
+
+.full_content .content .answer_box {
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  height: 52px;
+  line-height: 52px;
+  margin: 0 auto;
+}
+.full_content .content .answer_box .text-group {
+  display: flex;
+  align-items: center;
+  padding: 0 18px;
+  height: 50px;
+  border-bottom: 2px solid #c9caca;
+}
+
+.full_content .content[data-tab="1"] .buttons_box {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  items-center: center;
+}
+.full_content .content[data-tab="2"] .buttons_box {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  items-center: center;
+}
+
+/* 페이지 */
+.number-page {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  bottom: 12px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  font-family: "SUIT Variable", sans-serif;
+  font-weight: 800;
+  font-size: 26px;
+  color: #d9d9d9;
+}
+.number-page .item {
+  display: flex;
+}
+.number-page .item:after {
+  content: "";
+  width: 24px;
+  height: 24px;
+  background: url(./../../common/images/page_arrow.svg) no-repeat center;
+  margin: 0 6px 0 6px;
+}
+.number-page .item:last-of-type:after {
+  display: none;
+}
+.number-page .item.active {
+  color: #231815;
+}

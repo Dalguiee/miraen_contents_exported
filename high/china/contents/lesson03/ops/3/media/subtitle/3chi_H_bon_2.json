@@ -1,0 +1,21 @@
+{
+  "lang": ["한자", "병음"],
+  "subtitlelist": [
+    { "start": 4.3, "end": 6.2, "value": ["Nî yôu mèimei ma?", "你有妹妹吗?"] },
+    {
+      "start": 6.5,
+      "end": 9.3,
+      "value": ["Méiyôu, zhî yôu yí ge jiêjie.", "没有, 只有一个姐姐。"]
+    },
+    {
+      "start": 10.5,
+      "end": 12.5,
+      "value": ["Tã shàng jî niánjí?", "她上几年级？"]
+    },
+    {
+      "start": 14.1,
+      "end": 15.7,
+      "value": ["Gãozhõng sãn niánjí.", "高中三年级。"]
+    }
+  ]
+}

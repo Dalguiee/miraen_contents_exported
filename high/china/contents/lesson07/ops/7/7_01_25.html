@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>미래엔 중국어</title>
+  <script src="./../common/lib/jquery-3.7.1.min.js"></script>
+  <!-- SUIT Variable 폰트 -->
+  <link href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/variable/woff2/SUIT-Variable.css"
+    rel="stylesheet" />
+  <link href="../common/css/comm.css" rel="stylesheet" />
+  <link href="./css/7_01_25.css" rel="stylesheet" />
+</head>
+
+<body>
+  <div id="wrap" class="china_wrap content_wrap">
+    <div class="title_box title_box3 flex items-center">
+      <img src="./images/7_01_23/logo.svg" alt="">
+      <div class="text_box">
+        <span class="suit">중국의 <span class="purple suit">식사 문화</span></span>
+      </div>
+    </div>
+    <div class="btn_box dp_flex" style="height: 43px">
+      <button class="btn popup_btn blue" data-index="3">보충</button>  
+    </div>
+
+    <div class="full_content">
+      <div class="content">
+        <span class="suit">
+          중국인들은 평소에 따뜻한 차(<span class="simhei" data-audio="088-25.mp3" style="font-weight: 400;">茶</span>)를<br>
+          즐겨 마시고, 식당에서도 찬물 대신 차를<br>
+          제공합니다. 물을 요청하면 요금이<br>
+          추가되는 식당이 많습니다.
+        </span>
+      </div>
+    </div>
+
+
+    <!-- 팝업 -->
+    <div class="popup_bg" style="display: none"></div>
+    
+    <!-- 보충 -->
+    <div class="popup popup1" data-popup="3" style="display: none">
+      <div class="tag bmjua dp_flex">보충</div>
+      <button class="close_btn"></button>
+      <div class="popup_content">
+        <div class="title">
+          <span class="suit">중국의 차</span>
+        </div>
+        <div class="content">
+          <div class="line line1">
+            <div class="index">
+              <span class="suit">•</span>
+            </div>
+            <div class="text">
+              <span class="suit">
+                <span class="simhei" data-audio="090-03.mp3">乌龙茶<span class="suit">(<span class="gRegula">wñlóngchá</span>)</span></span>: 주로 푸젠<span class="suit">(<span class="simhei" data-audio="090-04.mp3">福建</span>)</span>성에서 생산되는<br>
+                반발효차로, 체중 감소, 노화 예방의 효과가 있다.
+              </span>
+            </div>
+          </div>
+          <div class="line line2">
+            <div class="index">
+              <span class="suit">•</span>
+            </div>
+            <div class="text">
+              <span class="suit">
+                <span class="simhei" data-audio="090-05.mp3">普洱茶<span class="suit">(<span class="gRegula">pû’êrchá</span>)</span></span>: <span class="notoSans">‘</span>보이차<span class="notoSans">’</span>라고도 불리는 푸얼차는<br>
+                윈난<span class="suit">(<span class="simhei" data-audio="090-06.mp3">云南</span>)</span>성 남부에서 생산되는 발효차로 향과 색이<br>
+                독특하다.
+              </span>
+            </div>
+          </div>
+          <div class="line line3">
+            <div class="index">
+              <span class="suit">•</span>
+            </div>
+            <div class="text">
+              <span class="suit">
+                <span class="simhei" data-audio="090-07.mp3">茉莉花茶<span class="suit">(<span class="gRegula" data-audio="090-08.mp3">mòlìhuãchá</span>)</span></span>: 재스민 향이 나는 화차<span class="suit">(<span class="simhei" data-audio="090-08.mp3">花茶</span>)</span>로,<br>
+                향이 좋고 쓴맛이 적다.
+              </span>
+            </div>
+          </div>
+          <div class="line line4">
+            <div class="index">
+              <span class="suit">•</span>
+            </div>
+            <div class="text">
+              <span class="suit">
+                <span class="simhei" data-audio="090-09.mp3">龙井茶<span class="suit">(<span class="gRegula">lóngjîngchá</span>)</span></span>: 항저우<span class="suit">(<span class="simhei" data-audio="090-10.mp3">杭州</span>)</span> 시후<span class="suit">(<span class="simhei" data-audio="090-11.mp3">西湖</span>)</span>호 일대<br>
+                에서 생산되는 녹차로, 진한 초록색 잎과 진한 향기, 달콤한<br>
+                맛으로 유명하다.
+              </span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+</body>
+<script type="text/javascript">
+  const page = {
+    //컨텐츠에 정답 확인이 존재하는지 여부
+    isAnswer: false,
+    // 단어장 노출 여부 판단.
+    isVocabulary: false,
+    //정답 보기
+    showAnswer: () => {
+      $(".tempBttn.answer_btn").hide();
+      $(".tempBttn.reset_btn").show();
+
+      $(".answer").show();
+      $(".reset").hide();
+    },
+    //정답 숨기기
+    hideAnswer: () => {
+      $(".tempBttn.answer_btn").show();
+      $(".tempBttn.reset_btn").hide();
+
+      $(".answer").hide();
+      $(".reset").show();
+
+    },
+    // 단어장 보기
+    showVocabulary: () => { },
+  };
+  $(document).ready(function () {
+    // setPopup(2);
+  });
+</script>
+<script>
+  $(".pagination .dot").on("click", function(){
+    page.hideAnswer();
+  })
+</script>
+<script src="../common/js/script.js"></script>
+<!-- <script type="text/javascript">
+  let answerCount1 = 0;
+  let answerCount2 = 0;
+  // 체크박스 클릭
+  $(".answer_btn").on("click", function () {
+    const index = $(this).data("index");
+    $(`.answer[data-index="${index}"]`).removeClass("v_hidden");
+    if ($(this).data("answer") === 1) {
+      answerCount1++;
+    }
+    if ($(this).data("answer") === 2) {
+      answerCount2++;
+    }
+    if (answerCount1 >= 5) {
+      $('.answer_box[data-answer="1"]').removeClass("disabled");
+    }
+    if (answerCount2 >= 5) {
+      $('.answer_box[data-answer="2"]').removeClass("disabled");
+    }
+  });
+</script> -->
+
+</html>

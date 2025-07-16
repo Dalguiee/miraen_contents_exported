@@ -1,0 +1,236 @@
+.china_wrap .full_content {
+  height: calc(100% - 43px) !important;
+  gap: 40px;
+  padding: 30px 0 0 0;
+}
+
+.china_wrap .full_content .content {
+  height: 400px;
+  margin-top: 10px;
+  padding-top: 50px;
+  align-items: flex-start;
+  background-color: rgba(255, 247, 241, 1);
+  border-radius: 11px;
+}
+
+.china_wrap .full_content .content .inner_content {
+  align-items: flex-start;
+}
+
+.china_wrap .full_content .content .title_box {
+  gap: 5px;
+  transform: translateX(-40px);
+}
+
+.china_wrap .full_content .content .title_box .simhei {
+  font-size: 40px;
+  color: rgba(35, 24, 21, 1);
+  font-weight: 400;
+}
+
+.china_wrap .full_content .content .title_box .suit {
+  font-size: 40px;
+  color: rgba(35, 24, 21, 1);
+  font-weight: 600;
+}
+
+.china_wrap .full_content .content .content_box {
+  margin-top: 56px;
+}
+
+.china_wrap .full_content .content .content_box .list {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+}
+
+.china_wrap .full_content .content .content_box .list + .list {
+  margin-top: 45px;
+}
+
+.china_wrap .full_content .content .content_box .list .simhei {
+  font-size: 44px;
+  font-weight: 400;
+  line-height: 40px;
+  color: rgba(35, 24, 21, 1);
+}
+
+.china_wrap .full_content .content .content_box .list .gRegula {
+  font-size: 36px;
+  font-weight: 400;
+}
+
+.china_wrap .full_content .content .content_box .list .suit {
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 40px;
+  color: #595757;
+}
+
+.china_wrap .full_content .content .content_box .list .left_box {
+  align-items: flex-start;
+  gap: 5px;
+}
+
+.china_wrap .full_content .content .content_box .list.list1 .left_box {
+  margin-right: 50px;
+}
+
+.china_wrap .full_content .content .content_box .list.list2 .left_box {
+  margin-right: 36px;
+}
+
+/* 팝업 스타일 */
+.popup{
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  padding: 56px 40px 20px 40px;
+}
+.popup .popup_content{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  padding: 0 !important;
+  gap: 0 !important;
+}
+/* 설명 */
+.popup.explan{
+  width: fit-content !important;
+  padding: 46px 24px 10px 24px;
+}
+.popup.explan1{
+  top: 100px !important;
+  right: 100px !important;
+}
+.popup.explan .popup_content{
+  padding: 0 !important;
+}
+.popup.explan .popup_content .simhei{
+  font-size: 32px !important;
+  line-height: 50px !important;
+  font-weight: 400 !important;
+}
+.popup.explan .popup_content .FZKai{
+  font-size: 32px !important;
+  line-height: 50px !important;
+  font-weight: 400 !important;
+}
+.popup.explan .popup_content .notoSans{
+  font-size: 32px !important;
+  line-height: 50px !important;
+  font-weight: 400 !important;
+}
+.popup.explan .popup_content .gRegula{
+  font-size: 32px !important;
+  line-height: 50px !important;
+  font-weight: 400 !important;
+}
+.popup.explan .popup_content .suit{
+  font-size: 32px !important;
+  line-height: 50px !important;
+  font-weight: 600 !important;
+}
+/* 단어게임 */
+.popup.game .popup_content .game_box{
+  margin: 0 !important;
+}
+/* 단어장 */
+.popup.vocabularyBook{
+  padding: 0 !important;
+}
+.popup.vocabularyBook .popup_content{
+  flex-direction: unset !important;
+  padding: 56px 44px 0 44px !important;
+  gap: 40px !important;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+
+/* 보충 */
+.china_wrap .popup.popup1 .popup_content {
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.china_wrap .popup.popup1 .popup_content .title_box .FZKai {
+  font-size: 40px;
+  color: rgba(35, 24, 21, 1);
+  font-weight: 500;
+}
+
+.china_wrap .popup.popup1 .popup_content .title_box .suit {
+  font-size: 40px;
+  color: rgba(35, 24, 21, 1);
+  font-weight: 800;
+}
+
+.china_wrap .popup.popup1 .popup_content .text_box {
+  margin-top: 15px;
+}
+
+.china_wrap .popup.popup1 .popup_content .text_box .suit {
+  font-size: 36px;
+  color: rgba(35, 24, 21, 1);
+  font-weight: 600;
+  line-height: 1.3;
+  word-break: keep-all;
+}
+.china_wrap .popup.popup1 .popup_content .text_box .gRegula {
+  font-size: 36px;
+  color: rgba(35, 24, 21, 1);
+  font-weight: 400;
+  line-height: 1.3;
+}
+.china_wrap .popup.popup1 .popup_content .text_box .FZKai {
+  font-weight: 400;
+}
+
+.china_wrap .popup.popup1 .popup_content .ex_box {
+  width: 100%;
+  padding: 8px 0;
+  margin-top: 10px;
+  /* background-color: rgba(255, 255, 255, 1); */
+  border-radius: 8px;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  padding-left: 40px;
+}
+
+.china_wrap .popup.popup1 .popup_content .ex_box .audio-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.china_wrap .popup.popup1 .popup_content .ex_box .FZKai {
+  font-size: 36px;
+  color: rgba(35, 24, 21, 1);
+  font-weight: 400;
+  line-height: 48px;
+}
+
+.china_wrap .popup.popup1 .popup_content .ex_box .gRegula {
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 48px;
+}
+
+.china_wrap .popup.popup1 .popup_content .ex_box .suit {
+  font-size: 36px;
+  color: rgba(35, 24, 21, 1); 
+  font-weight: 600;
+  line-height: 48px;
+}
+.china_wrap
+  .popup.vocabularyBook
+  .popup_content_list
+  .item_audio
+  span:nth-of-type(1) {
+  width: 70px;
+}

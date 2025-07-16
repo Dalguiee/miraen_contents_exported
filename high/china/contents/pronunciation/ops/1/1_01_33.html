@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>미래엔 중국어</title>
+  <script src="./../common/lib/jquery-3.7.1.min.js"></script>
+  <script src="./../common/lib/howler-2.1.3.min.js"></script>
+  <!-- SUIT Variable 폰트 -->
+  <link href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/variable/woff2/SUIT-Variable.css"
+    rel="stylesheet" />
+  <link href="../common/css/comm.css" rel="stylesheet" />
+  <link href="./css/1_01_33.css" rel="stylesheet" />
+</head>
+
+<body>
+  <div id="wrap" class="china_wrap">
+    <div class="top-title">
+      <img src="./images/1_01_33/title1.svg" class="title-img" />
+      <div class="flex line-36">
+        <span class="bmjua fs-36 mr-20" style="color: #498f63">1</span><span class="suit fw-8 fs-30 line-30">녹음을 듣고,
+          해당하는 발음을 골라 봅시다.</span>
+      </div>
+    </div>
+    <!-- bttns -->
+    <div class="btn_box flex absolute">
+      <button class="btn blue popup_btn" data-index="1">대본</button>
+    </div>
+
+    <!-- contents -->
+    <div class="full_content">
+      <div class="content">
+        <div class="item">
+          <div class="title">
+            <div class="suit fw-6 fs-32 line-40 mr-36">(1)</div>
+            <div class="img suit fw-6 fs-24 line-30 index1">1단계</div>
+          </div>
+          <div class="btn_warp">
+            <button class="btn btn3 mb-10" data-audio="021-01.mp3">
+              음원
+            </button>
+            <button class="btn btn3 answer_btn" data-index="0">정답</button>
+            <button class="btn btn3 reset_btn" data-index="0" style="display: none">
+              다시 풀기
+            </button>
+          </div>
+          <div class="ex_box" data-index="0">
+            <div class="explan">
+              <span class="index suit fs-32 line-34 fw-6 mr-10">①</span><span class="gRegula fs-42 line-36" data-audio="021-04.mp3">jå</span>
+            </div>
+            <div class="explan correct">
+              <span class="index suit fs-32 line-34 fw-6 mr-10">②</span><span class="gRegula fs-42 line-36" data-audio="021-01.mp3">qå</span>
+            </div>
+            <div class="explan">
+              <span class="index suit fs-32 line-34 fw-6 mr-10">③</span><span class="gRegula fs-42 line-36" data-audio="021-05.mp3">xå</span>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="title">
+            <div class="suit fw-6 fs-32 line-40 mr-36">(2)</div>
+            <div class="img suit fw-6 fs-24 line-30 index2">2단계</div>
+          </div>
+          <div class="btn_warp">
+            <button class="btn btn3 mb-10" data-audio="021-02.mp3">
+              음원
+            </button>
+            <button class="btn btn3 answer_btn" data-index="1">정답</button>
+            <button class="btn btn3 reset_btn" data-index="1" style="display: none">
+              다시 풀기
+            </button>
+          </div>
+          <div class="ex_box" data-index="1">
+            <div class="explan correct">
+              <span class="index suit fs-32 line-34 fw-6 mr-10">①</span><span class="gRegula fs-42 line-36" data-audio="021-02.mp3">lÛ</span>
+            </div>
+            <div class="explan">
+              <span class="index suit fs-32 line-34 fw-6 mr-10">②</span><span class="gRegula fs-42 line-36" data-audio="021-06.mp3">lù</span>
+            </div>
+            <div class="explan">
+              <span class="index suit fs-32 line-34 fw-6 mr-10">③</span><span class="gRegula fs-42 line-36" data-audio="021-07.mp3">rì</span>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="title">
+            <div class="suit fw-6 fs-32 line-40 mr-36">(3)</div>
+            <div class="img suit fw-6 fs-24 line-30 index3">3단계</div>
+          </div>
+          <div class="btn_warp">
+            <button class="btn btn3 mb-10" data-audio="021-03.mp3">
+              음원
+            </button>
+            <button class="btn btn3 answer_btn" data-index="2">정답</button>
+            <button class="btn btn3 reset_btn" data-index="2" style="display: none">
+              다시 풀기
+            </button>
+          </div>
+          <div class="ex_box" data-index="2">
+            <div class="explan">
+              <span class="index suit fs-32 line-34 fw-6 mr-10">①</span><span class="gRegula fs-42 line-36" data-audio="021-08.mp3">quán</span>
+            </div>
+            <div class="explan">
+              <span class="index suit fs-32 line-34 fw-6 mr-10">②</span><span class="gRegula fs-42 line-36" data-audio="021-09.mp3">suàn</span>
+            </div>
+            <div class="explan correct">
+              <span class="index suit fs-32 line-34 fw-6 mr-10">③</span><span class="gRegula fs-42 line-36" data-audio="021-03.mp3">chuãn</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="number-page">
+      <div class="item active">01</div>
+      <div class="item">02</div>
+      <div class="item">03</div>
+    </div>
+    <div class="popup_bg" style="display: none"></div>
+    <!-- 대본 팝업 -->
+    <div class="popup popup2" data-popup="1" style="display: none">
+      <div class="tag bmjua dp_flex">대본</div>
+      <button class="close_btn"></button>
+      <div class="popup_content">
+        <div class="content">
+          <div class="line-52 fs-40 mb-20">
+            <span class="suit mr-10">(1)</span><span class="gRegula">qå</span>
+          </div>
+          <div class="line-52 fs-40 mb-20">
+            <span class="suit mr-10">(2)</span><span class="gRegula">lÛ</span>
+          </div>
+          <div class="line-52 fs-40">
+            <span class="suit mr-10">(3)</span><span class="gRegula">chuãn</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<script type="text/javascript">
+  const page = {
+    //컨텐츠에 정답 확인이 존재하는지 여부
+    isAnswer: false,
+    // 단어장 노출 여부 판단. 이벤트 호출하지 않으면 노출하지 않음.
+    isVocabulary: false,
+    //정답 보기
+    showAnswer: () => { },
+    //정답 숨기기
+    hideAnswer: () => { },
+    // 단어장 보기
+    showVocabulary: () => { },
+  };
+</script>
+<script src="../common/js/script.js"></script>
+
+<script type="text/javascript">
+  $(document).ready(function () {
+    // setPopup(1);
+  });
+  $(".answer_btn").on("click", function () {
+    const index = $(this).data("index");
+    $(this).hide();
+    $(this).next().show();
+    $(`.ex_box[data-index='${index}'] .correct`).addClass("active");
+    $(`.ex_box[data-index='${index}']`).addClass("active");
+  });
+
+  $(".reset_btn").on("click", function () {
+    const index = $(this).data("index");
+    $(this).hide();
+    $(this).prev().show();
+    $(`.ex_box[data-index='${index}'] .correct`).removeClass("active");
+    $(`.ex_box[data-index='${index}']`).removeClass("active");
+  });
+</script>
+
+</html>

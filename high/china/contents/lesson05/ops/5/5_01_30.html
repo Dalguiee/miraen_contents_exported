@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>미래엔 중국어</title>
+	<script src="./../common/lib/jquery-3.7.1.min.js"></script>
+	<!-- SUIT Variable 폰트 -->
+	<link href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/variable/woff2/SUIT-Variable.css"
+		rel="stylesheet" />
+	<link href="../common/css/comm.css" rel="stylesheet" />
+	<link href="./css/5_01_30.css" rel="stylesheet" />
+</head>
+
+<body>
+	<div id="wrap" class="china_wrap content_wrap">
+		<div class="title_box title_box3 dp_flex">
+			<div class="img_box">
+				<img src="./images/5_01_30/title.svg" alt="한중 문화 비교" class="img img1" />
+			</div>
+			<div class="text_box">
+				<span class="suit">예로부터 즐겨 하는 한국과 중국의 놀이에 대해 조사해<br />봅시다.</span>
+			</div>
+		</div>
+
+		<div class="btn_box dp_flex">
+			<button class="btn3 off" data-answer-toggle="1">예시 답안</button>
+			<button class="btn popup_btn blue" data-index="1">보충</button>
+		</div>
+
+		<div class="full_content">
+			<div class="content">
+				<div class="image-wrap">
+					<img src="./images/5_01_30/image1.png" alt="한국 중국" />
+				</div>
+				<div class="image-text-left">
+					<span class="suit"> 윷놀이 </span>
+				</div>
+				<div class="image-text-right" data-audio="063-07.mp3">
+					<span class="simhei">空竹</span>
+					<span class="gRegula">kõngzhú</span>
+				</div>
+				<div class="image-text-bottom">
+					<p class="suit highlight pink" data-answer="1" style="display: none">
+						윷놀이는 편을 갈라 윷으로 승부를 겨루는 놀이로, 교대로 윷을 던져서 윷판 위에 네 개의 말을 움직여 모든 말이 먼저 시작점으로 돌아오면 이긴다. 쿵주(<span class="simhei"
+							data-audio="063-07.mp3">空竹</span>) 놀이는 600년 이상된 중국 전통 놀이로, 두 개의 대나무 막대에 줄을 매달아 작은 장구 모양의 대나무 통 가운데에 감고 돌리는
+						놀이로, 요요와 흡사하다.
+					</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="popup_bg" style="display: none"></div>
+		<!-- 보충 -->
+		<div class="popup popup1" data-popup="1" style="display: none">
+			<div class="tag bmjua dp_flex">보충</div>
+			<button class="close_btn"></button>
+			<div class="popup_content">
+				<div class="popup_scroll">
+					<div class="title">
+						<span class="suit">한국과 중국의 전통놀이</span>
+					</div>
+					<div class="image-wrap">
+						<img src="./images/5_01_30/image2.svg" alt="" />
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+<script type="text/javascript">
+	const page = {
+		//컨텐츠에 정답 확인이 존재하는지 여부
+		isAnswer: false,
+		// 단어장 노출 여부 판단.
+		isVocabulary: false,
+		//정답 보기
+		showAnswer: () => { },
+		//정답 숨기기
+		hideAnswer: () => { },
+		// 단어장 보기
+		showVocabulary: () => { },
+	};
+</script>
+<script src="../common/js/script.js"></script>
+<script type="text/javascript">
+	$(document).ready(function () {
+		// 예시 답안
+		$('[data-answer-toggle]').on('click', function () {
+			var index = $(this).data('answerToggle');
+			if ($(this).hasClass('off') === true) {
+				$(this).removeClass('off');
+				$(this).addClass('on');
+				$(this).text('다시 풀기');
+				$(`[data-answer-reset="${index}"]`).hide();
+				$(`[data-answer="${index}"]`).show();
+			} else {
+				$(this).removeClass('on');
+				$(this).addClass('off');
+				$(this).text('예시 답안');
+				$(`[data-answer-reset="${index}"]`).show();
+				$(`[data-answer="${index}"]`).hide();
+			}
+		});
+	});
+</script>
+
+</html>

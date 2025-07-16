@@ -1,0 +1,265 @@
+.china_wrap.express_wrap .full_content .express_tag {
+  background: #a1d9ca;
+}
+.china_wrap.express_wrap .full_content .express_tag span {
+  color: #2e938d;
+}
+.china_wrap.express_wrap .full_content .title_box {
+  margin-bottom: 10px;
+}
+.china_wrap.express_wrap .full_content .title_box .btn {
+  position: absolute;
+  top: 4px;
+  right: 0;
+}
+.china_wrap.express_wrap .full_content .top_title span {
+  font-size: 40px;
+  font-weight: 800;
+  color: #2e938d;
+}
+.china_wrap.express_wrap .full_content .title_box span:nth-of-type(1) {
+  margin-right: 12px;
+}
+.china_wrap.express_wrap .full_content .title_box span.simhei {
+  font-weight: 400;
+}
+
+
+
+.full_content {
+  padding: 0;
+}
+
+.full_content .content_box{
+  background-color: #ecf7f5;
+  border-radius: 8px;
+  height: 450px;
+  padding-top: 10px;
+}
+.content1 {
+  display: flex;
+  flex-direction: column;
+  width: 835px;
+  margin: 0 auto 26px;
+}
+.content1 span {
+  font-size: 34px;
+  line-height: 46px;
+}
+.content1 span.simhei {
+  font-weight: 400;
+}
+.content1 span.suit {
+  font-weight: 600;
+}
+.content2 {
+  display: flex;
+  justify-content: space-between;
+  width: 796px;
+  margin: 0 auto 42px;
+}
+.content2 .box {
+  width: calc(50% - 13px);
+  height: 146px;
+  background: white;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.content2 .box .box_audio {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.content2 .box .box_audio span {
+  font-size: 36px;
+  font-weight: 600;
+}
+.content2 .ml-38 {
+  margin-left: 38px;
+}
+.content2 .box .box_audio span.mb-10 {
+  margin-bottom: 10px;
+}
+.content2 .box .box_audio span .font-400 {
+  font-weight: 400;
+}
+.content2 .box .box_audio span .fs-30 {
+  margin-top: 12px;
+  font-size: 30px;
+}
+.font-red {
+  color: #e22f61;
+}
+.content3 {
+  width: 796px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  font-size: 34px;
+  font-weight: 600;
+}
+.content3 .simhei {
+  font-weight: 400;
+}
+.content3 .mr-8 {
+  margin-right: 8px;
+}
+
+
+/* 팝업 */
+.popup{
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  padding: 56px 40px 20px 40px;
+}
+.popup .popup_content{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  padding: 0 !important;
+  gap: 0 !important;
+}
+/* 설명 */
+.popup.explan{
+  width: fit-content !important;
+  padding: 46px 24px 10px 24px;
+}
+.popup.explan .popup_content{
+  padding: 0 !important;
+}
+.popup.explan .popup_content .simhei{
+  font-size: 32px !important;
+  line-height: 50px !important;
+  font-weight: 400 !important;
+}
+.popup.explan .popup_content .FZKai{
+  font-size: 32px !important;
+  line-height: 50px !important;
+  font-weight: 400 !important;
+}
+.popup.explan .popup_content .notoSans{
+  font-size: 32px !important;
+  line-height: 50px !important;
+  font-weight: 400 !important;
+}
+.popup.explan .popup_content .gRegula{
+  font-size: 32px !important;
+  line-height: 50px !important;
+  font-weight: 400 !important;
+}
+.popup.explan .popup_content .suit{
+  font-size: 32px !important;
+  line-height: 50px !important;
+  font-weight: 600 !important;
+}
+/* 단어게임 */
+.popup.game .popup_content .game_box{
+  margin: 0 !important;
+}
+/* 단어장 */
+.popup.vocabularyBook{
+  padding: 0 !important;
+}
+.popup.vocabularyBook .popup_content{
+  flex-direction: unset !important;
+  padding: 56px 44px 0 44px !important;
+  gap: 40px !important;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+/* 보충 */
+.popup1 .popup_content {
+  padding: 0 20px 0 0 !important;
+}
+.popup1 .popup_content .title {
+  font-size: 40px;
+  font-weight: 800;
+  margin-bottom: 24px;
+  display: flex;
+}
+.popup1 .popup_content .title .FZKai {
+  font-weight: 800;
+}
+.popup1 .popup_content .title .suit {
+  font-weight: 800;
+}
+.popup1 .list {
+  width: 100%;
+}
+.popup1 .list .item {
+  display: flex;
+  margin-bottom: 28px;
+}
+.popup1 .list .item:last-of-type {
+  margin-bottom: 0;
+}
+.popup1 .list .item .text {
+  display: flex;
+  flex-direction: column;
+}
+.popup1 .list .item .index {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  margin-right: 12px;
+  margin-top: 3px;
+}
+.popup1 .list .item .index .suit{
+  font-size: 36px;
+  font-weight: 600;
+}
+
+.popup1 .list .item .text .suit {
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 46px;
+}
+.popup1 .list .item .text .FZKai {
+  font-size: 36px;
+  font-weight: 400;
+}
+.popup1 .list .item .text .gRegula {
+  font-size: 36px;
+  font-weight: 400;
+}
+
+.popup1 .list .item .mb-8 {
+  margin-bottom: 8px;
+}
+.popup1 .list .item .mb-12 {
+  margin-bottom: 12px;
+}
+.popup1 .list .item .mr-8 {
+  margin-right: 8px;
+}
+.popup1 .list .item .mr-16 {
+  margin-right: 16px;
+}
+.popup1 .list .item .arrow {
+  margin: 0 16px;
+}
+
+.mb-16 {
+  margin-bottom: 16px;
+}
+.mr--12 {
+  margin-right: -12px;
+}
+.ml--6 {
+  margin-left: -6px;
+}
+.pl-24 {
+  padding-left: 24px;
+}
+.pl-33 {
+  padding-left: 33px;
+}

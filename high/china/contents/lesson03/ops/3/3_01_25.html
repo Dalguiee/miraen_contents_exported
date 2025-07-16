@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>미래엔 중국어</title>
+    <script src="./../common/lib/jquery-3.7.1.min.js"></script>
+    <!-- SUIT Variable 폰트 -->
+    <link
+      href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/variable/woff2/SUIT-Variable.css"
+      rel="stylesheet"
+    />
+    <link href="../common/css/comm.css" rel="stylesheet" />
+    <link href="./css/3_01_25.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div id="wrap" class="china_wrap content_wrap">
+      <div class="title_box title_box5 dp_flex">
+        <div class="img_box">
+          <img
+            src="../common/images/culture_icon.svg"
+            alt="문화 아이콘"
+            class="img img1"
+          />
+        </div>
+        <div class="text_box">
+          <span>중국의 <span class="highlight purple">학교생활</span></span>
+        </div>
+      </div>
+
+      <div class="btn_box dp_flex">
+        <button class="btn popup_btn blue" data-index="1">참고</button>
+      </div>
+
+      <div class="full_content dp_flex">
+        <div class="content">
+          <div class="text2 suit">대학 입시와 시험</div>
+          <div class="text3 suit">
+            중국의 대학 입학시험인
+            <span class="gRegula" data-audio="050-08.mp3"><span class="simhei">高考</span><br /><span class="suit">(</span><span class="gRegula">gãokâo<span class="suit">)</span></span></span>는 매년 6월 초에 시행<br />됩니다. 시험은 지역에 따라 2~4일<br />간
+            치러지며 자체적으로 시험 문제를<br />출제하기도 합니다.
+          </div>
+          <div class="text4 suit">
+            중국에서는 시험지를 채점할 때 정답이면<br />✓ 표시를 하고, 오답이면 ✕ 표시를 합니다.
+          </div>
+          <button class="detail_button_box popup_btn" data-index="2">
+            <img class="detail_button" src="./images/3_01_24/detail_button.png" alt="">
+          </button>
+        </div>
+      </div>
+
+      <!-- 팝업 -->
+      <div class="popup_bg" style="display: none"></div>
+      <!-- 참고 -->
+      <div class="popup popup1" data-popup="1" style="display: none">
+        <div class="tag bmjua dp_flex">참고</div>
+        <button class="close_btn"></button>
+        <div class="popup_content">
+          <div class="popup-scroll">
+            <div class="title suit">
+              중국의 대입 시험
+              <span class="FZKai" data-audio="050-08.mp3">高考</span>
+            </div>
+            <div class="text suit">
+              정식 명칭은 일반 대학 입학 전국 통일 시험(<span class="FZKai" style="font-weight: 400" data-audio="050-03.mp3">普通高等学校招生全国统一考试</span>)이다. 매년 요일에 상관없이 6월 7일~8일에 치러지며, 일부 지역은
+              9일 혹은 10일까지 이어져 4일까지 진행되는 곳도 있다.<br>
+              2023년 기준으로 한국의 수능 응시생수는 50여만 명이었고,
+              중국은 1,200여만 명 정도로 한국의 26배에 달했다.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 크게 보기 -->
+      <div class="popup detail_popup" data-popup="2" style="display: none">
+        <button class="close_btn"></button>
+        <div class="popup_content">
+          <div class="content">
+            <div class="img_box">
+              <img src="./images/3_01_25/detail_content.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </body>
+  <script type="text/javascript">
+    const page = {
+      //컨텐츠에 정답 확인이 존재하는지 여부
+      isAnswer: false,
+      // 단어장 노출 여부 판단.
+      isVocabulary: false,
+      //정답 보기
+      showAnswer: () => {},
+      //정답 숨기기
+      hideAnswer: () => {},
+      // 단어장 보기
+      showVocabulary: () => {},
+    };
+    $(document).ready(function () {
+      // setPopup(1);
+    });
+  </script>
+  <script src="../common/js/script.js"></script>
+</html>

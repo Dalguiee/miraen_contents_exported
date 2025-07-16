@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>미래엔 중국어</title>
+    <script src="./../common/lib/jquery-3.7.1.min.js"></script>
+    <!-- SUIT Variable 폰트 -->
+    <link
+      href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/variable/woff2/SUIT-Variable.css"
+      rel="stylesheet"
+    />
+    <link href="../common/css/comm.css" rel="stylesheet" />
+    <link href="./css/8_01_15.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div id="wrap" class="china_wrap express_wrap">
+      <div class="btn_box dp_flex">
+        <button class="btn popup_btn blue" data-index="1">보충</button>
+        <!-- <div class="tempBttns">
+          <button onclick="page.showVocabulary()" data-index="1" class="tempBttn">단어장</button>
+        </div> -->
+      </div>
+
+      <div class="full_content">
+        <div class="title_box dp_flex">
+          <div class="express_tag">
+            <span>표현</span>
+            <div class="plus"></div>
+          </div>
+          <div class="text_box">
+            <span class="suit">할인 표현</span>
+          </div>
+        </div>
+        <div class="content">
+          <img src="./images/8_01_15/img1.jpg" class="content_bg" />
+          <div class="item index1">
+            <span class="simhei fs-36 line-44 relative mr-12" data-audio="097-42.mp3"
+              >打八折<span class="subtext gRegula line-40 fs-34"
+                >dâ bã zhé</span
+              ></span
+            ><span class="suit c-gray line-44 fs-30 fw-6">20% 할인</span>
+          </div>
+          <div class="item index2">
+            <span class="simhei fs-36 line-44 relative mr-12" data-audio="097-43.mp3"
+              >买一送一<span class="subtext gRegula line-40 fs-34"
+                >mâi yå sòng yå</span
+              ></span
+            ><span class="suit c-gray line-44 fs-30 fw-6">1+1</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="popup_bg" style="display: none"></div>
+      <!-- 단어장 -->
+      <div class="popup vocabularyBook" data-popup="2" style="display: none">
+        <div class="tag bmjua dp_flex">단어장</div>
+        <button class="close_btn"></button>
+        <div class="popup_content dp_flex">
+          <div class="word_list_box dp_flex dp_flex_column">
+            <div class="word_content">
+              <div
+                class="list dp_flex voca_popup_btn active"
+                data-audio="097-44.mp3"
+              >
+                <span class="gRegula">sòng</span>
+              </div>
+            </div>
+          </div>
+          <div class="show_word_box dp_flex dp_flex_column">
+            <div class="china_box dp_flex">
+              <div class="voca_popup_tab" data-audio="097-44.mp3">
+                <span class="FZKai">送</span>
+                <span class="gRegula">sòng</span>
+              </div>
+            </div>
+            <div class="korea_box dp_flex">
+              <div class="voca_warp">
+                <span class="suit">주다, 증정하다</span>
+              </div>
+            </div>
+            <div class="show_btn-warp">
+              <button class="btn3 show_pinyin_btn" style="display: none">
+                병음 보기
+              </button>
+              <button class="btn3 hide_pinyin_btn">병음 가리기</button>
+              <button class="btn3 show_btn" style="display: none">
+                뜻 보기
+              </button>
+              <button class="btn3 hide_btn">뜻 감추기</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 보충 팝업 -->
+      <div class="popup popup3" data-popup="1" style="display: none">
+        <div class="tag bmjua dp_flex">보충</div>
+        <button class="close_btn"></button>
+        <div class="popup_content">
+          <div class="title">
+            <span class="suit">다양한 할인 표현</span>
+          </div>
+          <div class="content">
+            <div class="text-box mt-10">
+              <div class="col" style="width: 348px">
+                <span class="audio" data-audio="097-45.mp3"
+                  ><span class="FZKai fs-30 mr-10">半价</span
+                  ><span class="gRegula fs-30 mr-10">bànjià</span></span
+                ><span class="suit fs-28 fw-6">반값</span>
+              </div>
+              <div class="col">
+                <span class="audio" data-audio="097-46.mp3"
+                  ><span class="FZKai fs-30 mr-10">折扣</span
+                  ><span class="gRegula fs-30 mr-10">zhékòu</span></span
+                ><span class="suit fs-28 fw-6">할인(하다)</span>
+              </div>
+            </div>
+            <div class="text-box">
+              <div class="col" style="width: 348px">
+                <span class="audio" data-audio="097-47.mp3"
+                  ><span class="FZKai fs-30 mr-10">低价</span
+                  ><span class="gRegula fs-30 mr-10">dåjià</span></span
+                ><span class="suit fs-28 fw-6">저가</span>
+              </div>
+              <div class="col">
+                <span class="audio" data-audio="097-48.mp3"
+                  ><span class="FZKai fs-30 mr-10">甩卖</span
+                  ><span class="gRegula fs-30 mr-10"
+                    >shuâimài</span
+                  ></span
+                ><span class="suit fs-28 fw-6">바겐세일 하다</span>
+              </div>
+            </div>
+            <div class="text-box">
+              <div class="col" style="width: 348px">
+                <span class="audio" data-audio="097-49.mp3"
+                  ><span class="FZKai fs-30 mr-10">特价</span
+                  ><span class="gRegula fs-30 mr-10">tèjià</span></span
+                ><span class="suit fs-28 fw-6">특가</span>
+              </div>
+              <div class="col">
+                <span class="audio" data-audio="097-50.mp3"
+                  ><span class="FZKai fs-30 mr-10">酬宾</span
+                  ><span class="gRegula fs-30 mr-10">chóubån</span></span
+                ><span class="suit fs-28 fw-6">우대 가격으로 팔다</span>
+              </div>
+            </div>
+            <div class="text-box">
+              <div class="col" style="width: 348px">
+                <span class="audio" data-audio="097-51.mp3"
+                  ><span class="FZKai fs-30 mr-10">优惠</span
+                  ><span class="gRegula fs-30 mr-10">yõuhuì</span></span
+                ><span class="suit fs-28 fw-6">혜택, 우대</span>
+              </div>
+              <div class="col">
+                <span class="audio" data-audio="097-52.mp3"
+                  ><span class="FZKai fs-30 mr-10">减价</span
+                  ><span class="gRegula fs-30 mr-10">jiânjià</span></span
+                ><span class="suit fs-28 fw-6">값을 내리다, 할인하다</span>
+              </div>
+            </div>
+            <div class="text-box">
+              <div class="col">
+                <span class="audio" data-audio="097-53.mp3"
+                  ><span class="FZKai fs-30 mr-10">打对折</span
+                  ><span class="gRegula fs-30 mr-10"
+                    >dâ duì zhé</span
+                  ></span
+                ><span class="suit fs-28 fw-6">50% 할인</span>
+              </div>
+            </div>
+            <div class="text-box">
+              <div class="col">
+                <span class="audio" data-audio="097-54.mp3"
+                  ><span class="FZKai fs-30 mr-10">买二送一</span
+                  ><span class="gRegula fs-30 mr-10"
+                    >mâi èr sòng yå</span
+                  ></span
+                ><span class="suit fs-28 fw-6">2+1</span>
+              </div>
+            </div>
+            <div class="text-box">
+              <div class="col">
+                <span class="audio" data-audio="097-55.mp3"
+                  ><span class="FZKai fs-30 mr-10"
+                    >满<span class="gRegula">A</span>减<span class="gRegula"
+                      >B</span
+                    ></span
+                  ><span class="gRegula fs-30 mr-10"
+                    >mân A jiân B</span
+                  ></span
+                ><span class="suit fs-28 fw-6"
+                  >금액 A을 채우면 B 금액만큼 할인해 준다</span
+                >
+              </div>
+            </div>
+            <div class="text-box mb-40">
+              <div class="col">
+                <span class="audio" data-audio="097-56.mp3"
+                  ><span class="FZKai fs-30 mr-10 relative"
+                    >买100送20<span class="subtext gRegula fs-30 line-40"
+                      >mâi yìbâi sòng èrshí</span
+                    ></span
+                  ></span
+                ><span class="suit fs-28 fw-6"
+                  >100<span class="FZKai">元</span> 어치를 사면 20<span
+                    class="FZKai"
+                    >元</span
+                  >을 돌려준다</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript">
+    const page = {
+      //컨텐츠에 정답 확인이 존재하는지 여부
+      isAnswer: false,
+      // 단어장 노출 여부 판단.
+      isVocabulary: true,
+      //정답 보기
+      showAnswer: () => {},
+      //정답 숨기기
+      hideAnswer: () => {},
+      // 단어장 보기
+      showVocabulary: () => {
+        setPopup(2);
+      },
+    };
+    $(document).ready(function () {
+      // page.showVocabulary();
+      // setPopup(1);
+    });
+  </script>
+  <script src="../common/js/script.js"></script>
+  <script src="../common/js/vocabularyBook.js"></script>
+</html>

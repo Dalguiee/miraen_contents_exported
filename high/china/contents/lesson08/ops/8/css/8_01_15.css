@@ -1,0 +1,82 @@
+.china_wrap .full_content {
+  height: calc(100% - 43px) !important;
+}
+
+.china_wrap .full_content .title_box {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.china_wrap .full_content .title_box .express_tag {
+  background-color: rgba(253, 185, 192, 1);
+}
+
+.china_wrap .full_content .title_box .express_tag span {
+  color: rgba(178, 92, 123, 1);
+}
+
+.china_wrap .full_content .title_box .text_box span {
+  font-size: 40px;
+  color: #b75d7d;
+  font-weight: 700;
+}
+
+.full_content .content .content_bg {
+  width: 900px;
+  height: 286px;
+  margin: 72px auto 0 auto;
+  display: block;
+}
+
+.subtext {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: translateY(100%);
+  white-space: nowrap;
+}
+.full_content .content .item {
+  position: absolute;
+  top: 376px;
+}
+.full_content .content .item.index1 {
+  left: 110px;
+}
+.full_content .content .item.index2 {
+  left: 662px;
+}
+
+/* 보충 팝업 */
+.popup.popup3 {
+  padding: 46px 34px 8px 55px;
+}
+
+.popup.popup3 .popup_content {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow-y: scroll;
+}
+.popup.popup3 .popup_content .title{
+  margin-bottom: 10px;
+}
+.popup.popup3 .popup_content .title .suit{
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 60px;
+}
+
+.popup.popup3 .popup_content .content {
+  /* background: rgba(0, 0, 0, 0.2); */
+  width: 100%;
+  height: 100%;
+  padding-bottom: 30px;
+}
+.popup.popup3 .popup_content .content .text-box {
+  display: flex;
+  margin-bottom: 5px;
+}
+.popup.popup3 .popup_content .content .text-box .col {
+  line-height: 47px;
+}

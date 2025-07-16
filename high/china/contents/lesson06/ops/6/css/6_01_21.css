@@ -1,0 +1,198 @@
+/* 전역 */
+.speak{
+  color: rgba(226, 47, 97, 1) ;
+}
+.btn-audio{
+  position: absolute;
+  font-size: 32px;
+}
+
+/* 타이틀 헤더 */
+.btn_box{
+  padding-top: 9px !important;
+}
+.title_box{
+  left: 0 !important;
+  top: 14px !important;
+}
+.title_box .title{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.title_box .title .titleText{
+  font-size: 30px;
+  font-weight: 800;
+}
+.title_box .title .titleText .index{
+  margin-right: 20px;
+  font-family: "BMJua";
+  font-size: 36px;
+  color: #C1802C;
+}
+
+
+/* 컨텐츠 */
+.full_content{
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  padding-top: 50px;
+}
+.full_content .numberingBox{
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  width: 100%;
+  margin: 0px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+.full_content .contentFig{
+  position: relative;
+  border: 3px solid #D5E7B2;
+  border-radius: 11px;
+  /* padding: 20px 130px; */
+  width: 660px;
+  height: 82px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0 40px 0;
+}
+.full_content .contentFig .hint{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 46px;
+  font-weight: 400;
+}
+.full_content .contentFig .hint .simhei{
+  font-size: 42px;
+  font-weight: 400;
+}
+
+.full_content .content{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 660px;
+  gap: 20px;
+}
+
+.full_content .content .line{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.full_content .content .line .leftSide{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+.full_content .content .line .leftSide .questionSec{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+}
+
+.full_content .content .line .leftSide .questionSec .index{
+  font-size: 32px;
+}
+
+.full_content .content .line .leftSide .questionSec .ansText{
+  font-size: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 13px;
+}
+
+.full_content .content .line .checkBox{
+  width: 35px;
+  height: 35px;
+  border-radius: 4px;
+  border: 2px solid #C9CACA;
+  margin-left: 30px;
+  margin-top: 20px;
+  position: relative;
+}
+
+.full_content .content .line .checkBox.speak::after{
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 0;
+  background-image: url(../images/6_01_20/selected.png);
+  background-size: cover;
+  background-position: center;
+  width: 45px;
+  height: 31px;
+}
+
+
+
+/* 팝업 */
+.popup .popup-con{
+  width: 100%;
+  height: 100%;
+  padding: 56px 29px;
+  font-size: 40px;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: 20px;
+}
+
+.popup.translate .popup_content {
+  padding: 0 55px 0 50px;
+}
+.popup.translate .popup_content .list .item {
+  height: 88px;
+  margin-bottom: 14px;
+}
+.popup.translate .popup_content .list .item .item_text{
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+}
+.popup.translate .popup_content .list .item .item_text .chBox{
+  display: flex;
+  justify-content: center;
+  align-items: start; 
+}
+.popup.translate .popup_content .list .item .item_text .suit{
+  margin-left: 50px;
+}
+.popup.translate .popup_content .list .item:last-of-type {
+  margin-bottom: 0;
+}
+.popup.translate .popup_content .list .item .FZKai {
+  font-weight: 400;
+  font-size: 40px;
+  margin-bottom: 6px;
+}
+.popup.translate .popup_content .list .item .suit {
+  white-space: nowrap;
+  color: #3d5591;
+  font-size: 36px;
+  font-weight: 500;
+}
+.popup.translate .popup_content .list .item .gRegula {
+  font-size: 32px;
+}
+

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>미래엔 중국어</title>
+  <script src="./../common/lib/jquery-3.7.1.min.js"></script>
+  <script src="./../common/lib/howler-2.1.3.min.js"></script>
+  <!-- SUIT Variable 폰트 -->
+  <link href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/variable/woff2/SUIT-Variable.css"
+    rel="stylesheet" />
+  <link href="../common/css/comm.css" rel="stylesheet" />
+  <link href="./css/4_01_27.css" rel="stylesheet" />
+</head>
+
+<body>
+  <div id="wrap" class="china_wrap content_wrap">
+    <div class="title_box">
+      <div class="title">
+        <span class="titleText suit"><img src="./images/4_01_26/logo.svg" alt="" /><span class="index"></span></span>
+      </div>
+    </div>
+
+    <div class="btn_box dp_flex">
+      <button class="btn popup_btn blue" data-index="3" data-tab="1">
+        보충
+      </button>
+      <button class="btn popup_btn blue" data-index="4" data-tab="2" style="display: none">
+        보충
+      </button>
+      <div class="bttns" data-tab="3" style="display: none">
+        <button class="btn popup_btn blue" data-index="5">보충</button>
+        <button class="btn popup_btn blue" data-index="6">해석</button>
+      </div>
+    </div>
+
+    <div class="full_content">
+      <div class="content content1" data-tab="1">
+        <div class="title">
+          <span class="suit">중국의 기념일</span>
+        </div>
+        <div class="secondTitle">
+          <span class="simhei" data-audio="060-21.mp3">国庆节<span class="gRegula">Guóqìngjié</span></span><br /><span
+            class="suit">양력 10월 1일</span>
+        </div>
+        <div class="context" style="text-indent: 24px">
+          <span class="line line1 suit">
+            1949년 10월 1일 중화인민공화국의 건국을<br />
+            기념하는 날로, 일주일 정도의 연휴를 보냅니다.<br />
+            <span class="simhei" data-audio="060-22.mp3">天安门<span class="gRegula">(Tiãn’ãn Mén)</span></span>
+            주변에서<br />
+            다채로운 기념행사가 열립니다.
+          </span>
+        </div>
+      </div>
+      <figure class="bgFig">
+        <img class="bgImg" src="./images/4_01_27/bg.png" alt="" />
+      </figure>
+    </div>
+
+    <div class="popup_bg" style="display: none"></div>
+
+    <div class="popup popup2 expPopup" data-popup="3" style="display: none">
+      <div class="tag bmjua dp_flex">보충</div>
+      <button class="close_btn"></button>
+      <div class="popup_content">
+        <div class="popupTitle">
+          <span class="suit">궈칭제(<span class="simhei" data-audio="060-21.mp3">国庆节</span>)</span>
+        </div>
+
+        <div class="lineBox">
+          <div class="line line1 dp_flex">
+            <span class="txt suit">
+              톈안먼 광장에서는 국기 게양식 및 행진 등 다채로운 행사가<br>
+              열린다. 궈칭제 연휴에는 장거리 여행객들로 중국 내 주요<br />
+              관광지가 인산인해를 이루고, 해외로 여행을 떠나는 중국인도 많다.
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<script type="text/javascript">
+  const page = {
+    //컨텐츠에 정답 확인이 존재하는지 여부
+    isAnswer: false,
+    // 단어장 노출 여부 판단. 이벤트 호출하지 않으면 노출하지 않음.
+    isVocabulary: false,
+    //정답 보기
+    showAnswer: () => {
+      $(".answer_btn").hide();
+      $(".reset_btn").show();
+      $(".answer").show();
+      $(".reset").hide();
+    },
+    //정답 숨기기
+    hideAnswer: () => {
+      $(".answer_btn").show();
+      $(".reset_btn").hide();
+      $(".answer").hide();
+      $(".reset").show();
+    },
+    // 단어장 보기
+    showVocabulary: () => {
+      setPopup(7);
+    },
+  };
+</script>
+<script type="text/javascript">
+  // 정답 버튼
+  $(".answer_btn").on("click", function () {
+    let index = $(".answer_btn").index(this);
+    $(this).hide();
+    $(".reset_btn").eq(index).show();
+    $(".answer").eq(index).show();
+    $(".answer .qLine").eq(index).addClass("speak");
+    $(".reset").eq(index).hide();
+  });
+  // 다시 하기 버튼
+  $(".reset_btn").on("click", function () {
+    let index = $(".reset_btn").index(this);
+    $(this).hide();
+    $(".answer_btn").eq(index).show();
+    $(".answer").eq(index).hide();
+    $(".answer .qLine").eq(index).removeClass("speak");
+    $(".reset").eq(index).show();
+  });
+</script>
+<script crossorigin src="../common/lib/libBundle.js"></script>
+<script src="../common/js/script.js"></script>
+<script src="../common/js/rolePlayerCh.js"></script>
+<script src="../common/js/vocabularyBook.js"></script>
+
+</html>

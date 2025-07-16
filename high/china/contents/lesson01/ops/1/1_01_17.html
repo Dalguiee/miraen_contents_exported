@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>미래엔 중국어</title>
+    <script src="./../common/lib/jquery-3.7.1.min.js"></script>
+    <script src="./../common/lib/howler-2.1.3.min.js"></script>
+    <!-- SUIT Variable 폰트 -->
+    <link href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/variable/woff2/SUIT-Variable.css" rel="stylesheet" />
+    <link href="../common/css/comm.css" rel="stylesheet" />
+    <link href="./css/1_01_17.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div id="wrap" class="china_wrap content_wrap">
+      <div class="title_box">
+        <div class="title">
+          <div class="mainCon bmjua"></div>
+        </div>
+      </div>
+      
+      <div class="btn_box dp_flex">
+        <div>
+          <button class="btn popup_btn blue" data-index="2">활동 설명</button>
+          <button class="btn popup_btn blue" data-index="3">예시 작품</button>  
+        </div>
+      </div>
+
+      <div class="full_content">
+        <div class="content content1" data-tab="1">
+          <div class="textSec">
+            <div class="line line1">
+              <div class="title">
+                <span class="index bmjua">1</span>
+              </div>
+              <div class="context">
+                <span class="suit">모둠원들은 감독, 배우, 편집자로 역할을 나누고, <span class="imgBox"><img class="logo" src="./images/1_01_16/logo2.svg" alt="logo" /></span>의 상황을</br>연출하여 사진을 찍습니다.</span>
+              </div>
+            </div>
+            <div class="line line2">
+              <div class="title">
+                <span class="index bmjua">2</span>
+              </div>
+              <div class="context">
+                <span class="suit">사진에 알맞은 인사말을 중국어로 써서 공유해 봅시다.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="content content2" data-tab="2" style="display: none;">
+          <figure class="bgImgFig bgImgFig3">
+            <img class="bgImg bgImg3" src="./images/1_01_17/content2.svg" />
+            <span class="simhei content2Text content2Text1" data-audio="028-16.mp3">你好！</span>
+            <span class="simhei content2Text content2Text2" data-audio="028-17.mp3">你们好！</span>
+            <span class="simhei content2Text content2Text3" data-audio="028-18.mp3">对不起。</span>
+            <span class="simhei content2Text content2Text4" data-audio="028-19.mp3">没关系。</span>
+          </figure>
+        </div>
+      </div>
+
+      <div class="popup_bg" style="display: none"></div>
+      <div class="popup popup1 expPopup" data-popup="2" style="display: none">
+        <div class="tag bmjua dp_flex">활동 설명</div>
+        <button class="close_btn"></button>
+        <div class="popup-con">
+          <figure class="bgImgFig bgImgFig1">
+            <span class="suit">1. 스토리보드 활동지 만들기</span>
+            <img class="bgImg bgImg1" src="./images/1_01_17/content.svg" />
+          </figure>
+          <figure class="bgImgFig bgImgFig2">
+            <span class="suit">2. 휴대 전화로 한어병음과 한자 입력하는 방법은 교과서 114쪽을 참고한다.</span>
+          </figure>
+        </div>
+
+      </div>
+
+      <div class="popup popup2 voca2" data-popup="3" style="display: none">
+        <div class="tag bmjua dp_flex">예시 작품</div>
+        <button class="close_btn"></button>
+        <div class="popup_content">
+          <img src="./images/1_01_17/popupcon.png" alt="">
+          <span class="expText expText1 simhei" data-audio="028-20.mp3">早安!<span class="gRegula">Zâo’ãn!</span></span>
+          <span class="expText expText2 simhei" data-audio="028-21.mp3">早!<span class="gRegula">Zâo!</span></span>
+          <span class="expText expText3 simhei" data-audio="028-22.mp3">谢谢!<span class="gRegula">Xièxie!</span></span>
+          <span class="expText expText4 simhei" data-audio="028-23.mp3">不客气!<span class="gRegula">Bú kèqi!</span></span>
+        </div>
+      </div>
+
+      <div class="pagination dp_flex" style="margin-bottom: 0px">
+        <span class="active dot" data-index="1"></span>
+        <span class="dot" data-index="2"></span>
+      </div>
+    </div>
+    
+  </body>
+  <script type="text/javascript">
+    const page = {
+      //컨텐츠에 정답 확인이 존재하는지 여부
+      isAnswer: false,
+      // 단어장 노출 여부 판단. 이벤트 호출하지 않으면 노출하지 않음.
+      isVocabulary: false,
+      //정답 보기
+      showAnswer: () => {
+        $(".wrong").hide();
+        $(".correct").show();
+      },
+      //정답 숨기기
+      hideAnswer: () => {
+        $(".correct").hide();
+        $(".wrong").show();
+      },
+      // 단어장 보기
+      showVocabulary: () => {
+        setPopup(7);
+      },
+    };
+  </script>
+  <script crossorigin src="../common/lib/libBundle.js"></script>
+  <script src="../common/js/script.js"></script>
+  <script src="../common/js/rolePlayerCh.js"></script>
+  <script src="../common/js/vocabularyBook.js"></script>
+</html>

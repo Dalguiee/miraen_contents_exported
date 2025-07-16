@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>미래엔 중국어</title>
+    <script src="./../common/lib/jquery-3.7.1.min.js"></script>
+    <!-- SUIT Variable 폰트 -->
+    <link
+      href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/variable/woff2/SUIT-Variable.css"
+      rel="stylesheet"
+    />
+    <link href="../common/css/comm.css" rel="stylesheet" />
+    <link href="./css/3_01_11.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div id="wrap" class="china_wrap express_wrap">
+      <div class="full_content">
+        <div class="title_box dp_flex">
+          <div class="express_tag">
+            <span>본문</span>
+            <div class="plus"></div>
+          </div>
+          <span class="top_title">
+            <span class="suit">1</span>
+            <span class="simhei" data-audio="046-30.mp3">一</span><span class="suit">의 성조 변화</span>
+          </span>
+          <button class="btn popup_btn blue" data-index="1">보충</button>
+        </div>
+
+        <div class="content_box">
+          <div class="content1">
+            <span>
+              <span class="simhei" data-audio="046-30.mp3">一</span><span class="suit">는 원래 제1성이지만 뒤에 오는 성조에 따라 성조가 변합니다.</span>
+              <span class="simhei" data-audio="046-30.mp3">一</span><span class="suit">는 바뀐 성조로 표기합니다.</span>
+            </span>
+          </div>
+          <div class="content2">
+            <div class="box">
+              <div class="box_audio">
+                <span class="mb-10">
+                  <span data-audio="046-31.mp3">
+                    <span class="simhei">一</span><span class="suit">(</span><span class="gRegula font-red font-400">yì</span><span class="suit">)</span>
+                  </span>
+                  <span class="suit"> + 제1, 2, 3성</span>
+                </span>
+                <span class="suit font-red ml-38">제4성</span>
+              </div>
+            </div>
+            <div class="box">
+              <div class="box_audio">
+                <span class="mb-10">
+                  <span data-audio="046-32.mp3">
+                    <span class="simhei">一</span><span class="suit">(</span><span class="gRegula font-red font-400">yí</span><span class="suit">)</span>
+                  </span>
+                  <span class="suit"> + 제4성</span>
+                </span>
+                <span class="suit font-red ml-38">제2성</span>
+              </div>
+            </div>
+          </div>
+          <div class="content3">
+            <span class="text mb-16">
+              <span class="suit">서수일 때는 </span>
+              <span>
+                <span class="suit">제1성(</span><span class="gRegula" data-audio="046-30.mp3">yå</span>)</span><span class="suit">으로 읽습니다.</span>
+            </span>
+            <span>
+              <span data-audio="046-33.mp3" class="mr-8 pl-33">
+                <span class="simhei mr-8">一年级</span><span class="gRegula font-red mr-8">yå</span><span class="gRegula">niánjí</span>
+              </span>
+              <!-- <span class="suit" style="font-size: 32px; color: #727171">1학년</span> -->
+            </span>
+          </div>
+  
+        </div>
+      </div>
+
+      <div class="popup_bg" style="display: none"></div>
+      <!-- 보충 팝업 -->
+      <div class="popup popup1" data-popup="1" style="display: none">
+        <div class="tag bmjua dp_flex">보충</div>
+        <button class="close_btn"></button>
+        <div class="popup_content">
+          <span class="title">
+            <span class="FZKai" data-audio="046-30.mp3">一</span>
+            <span class="suit">의 성조 변화</span>
+          </span>
+          <ul class="list">
+            <li class="item">
+              <div class="index">
+                <span class="suit">1.</span>
+              </div>
+              <div class="text">
+                <span class="suit">단독으로 쓰거나 서수로 쓰일 때는 제1성으로 발음한다.</span>
+                <span class="suit under">
+                  <span class="mr-8" data-audio="046-34.mp3">
+                    <span class="FZKai mr-8">第一</span>
+                    <span class="gRegula">dì yå</span>
+                  </span>
+                  <span class="suit">첫 번째</span></span>
+              </div>
+            </li>
+            <li class="item">
+              <div class="index">
+                <span class="suit">2.</span>
+              </div>
+              <div class="text">
+                <span class="suit">
+                  <span data-audio="046-30.mp3">
+                    <span class="FZKai">一</span><span class="suit">(</span><span class="gRegula">yå</span>
+                    <span class="suit ml--6">)</span>
+                  </span>
+                  <span class="suit">+ 제1, 2, 3성</span>
+                  <img src="./../common/images/popup_arrow.svg" alt="화살표" class="arrow" />
+                  <span data-audio="046-31.mp3">
+                    <span class="FZKai">一</span><span class="suit">(</span><span class="gRegula">yì</span>
+                    <span class="suit ml--6">)</span>
+                  </span>
+                  <span class="suit">+ 제1, 2, 3성</span>
+                </span>
+                <span class="suit">
+                  <span class="mr-8" data-audio="046-35.mp3">
+                    <span class="FZKai mr-8">一天</span><span class="gRegula">yìtiãn</span>
+                  </span>
+                  <span class="suit mr-16">하루</span>
+                  <span class="mr-8" data-audio="046-36.mp3">
+                    <span class="FZKai mr-8">一直</span>
+                    <span class="gRegula">yìzhí</span>
+                  </span>
+                  <span class="suit mr-16">줄곧</span>
+                  <span class="mr-8" data-audio="046-37.mp3">
+                    <span class="FZKai mr-8">一起</span>
+                    <span class="gRegula">yìqî</span>
+                  </span>
+                  <span class="suit mr-16">함께</span>
+                </span>
+              </div>
+            </li>
+            <li class="item">
+              <div class="index">
+                <span class="suit">3.</span>
+              </div>
+              <div class="text">
+                <span class="suit">
+                  <span data-audio="046-30.mp3">
+                    <span class="FZKai">一</span><span class="suit">(</span><span class="gRegula">yå</span>
+                    <span class="suit ml--6">)</span>
+                  </span>
+                  <span class="suit">+ 제4성</span>
+                  <img src="./../common/images/popup_arrow.svg" alt="화살표" class="arrow" />
+                  <span data-audio="046-32.mp3">
+                    <span class="FZKai">一</span><span class="suit">(</span><span class="gRegula">yí</span>
+                    <span class="suit ml--6">)</span>
+                  </span>
+                  <span class="suit">+ 제4성</span>
+                </span>
+                <span class="suit">
+                  <span class="mr-8" data-audio="046-38.mp3">
+                    <span class="FZKai mr-8">一样</span>
+                    <span class="gRegula">yíyàng</span>
+                  </span>
+                  <span class="suit mr-16">같다</span>
+                </span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </body>
+  <script type="text/javascript">
+    const page = {
+      //컨텐츠에 정답 확인이 존재하는지 여부
+      isAnswer: false,
+      // 단어장 노출 여부 판단.
+      isVocabulary: false,
+      //정답 보기
+      showAnswer: () => {},
+      //정답 숨기기
+      hideAnswer: () => {},
+      // 단어장 보기
+      showVocabulary: () => {},
+    };
+    $(document).ready(function () {
+      // setPopup(1);
+    });
+  </script>
+  <script src="../common/js/script.js"></script>
+</html>

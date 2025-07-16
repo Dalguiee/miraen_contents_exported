@@ -1,0 +1,218 @@
+/* 전역 */
+#wrap{
+  overflow: hidden;
+}
+
+.speak{
+  color: #E22F61;
+}
+
+/* 헤더 */
+.btn_box{
+  padding-top: 9px !important;
+}
+.title_box{
+  left: 0 !important;
+  top: 13px !important;
+}
+.title_box .title{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.title_box .title .titleText{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 800;
+  font-size: 30px;
+  color: black;
+}
+.title_box .title .titleText .textBucket{
+  font-weight: 600;
+}
+
+.title_box .title .titleText .FZKai{
+  margin: 0 0 0 5px;
+}
+
+.title_box .title .titleText .index{
+  margin-right: 10px;
+  font-family: "BMJua";
+  font-size: 36px;
+  color: #C1802C;
+}
+.title_box .mainCon{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding-left: 8px;
+  width: 295px;
+  height: 62px;
+  font-size: 32px;
+  margin-right: 20px;
+  background-image: url(../images/1_01_17/logo.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+/* 컨텐츠 */
+.full_content{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 30px 0 0 0;
+}
+.full_content .content{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+}
+
+.full_content .content .context{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  padding-top: 8px;
+  padding-right: 57px;
+}
+
+.full_content .content .context .suit{
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 42px;
+}
+.full_content .content .context .gRegula{
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 42px;
+}
+.full_content .content .context .FZKai{
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 42px;
+}
+
+.full_content .content .bgFig{
+  width: 100%;
+  height: 420px;
+  background-color: #F6F3F9;
+  border-radius: 11px;
+  margin: 0;
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.full_content .content .bgFig .imgBox{
+  width: 700px;
+}
+.full_content .content .bgFig .imgBox .bgImg{
+  width: 100%;
+  object-fit: cover;
+}
+
+
+
+/* 팝업 */
+.popup{
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  padding: 56px 55px 20px 55px;
+}
+.popup .popup_content{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  padding: 0 !important;
+  gap: 0 !important;
+}
+/* 설명 */
+.popup.explan{
+  /* width: 650px !important; */
+  padding: 46px 24px 10px 24px;
+}
+.popup.explan .popup_content{
+  padding: 0 !important;
+}
+.popup.explan .popup_content .FZKai{
+  font-size: 32px !important;
+  line-height: 48px !important;
+  font-weight: 400 !important;
+}
+.popup.explan .popup_content .gRegula{
+  font-size: 32px !important;
+  line-height: 48px !important;
+  font-weight: 400 !important;
+  /* color: #727171 !important; */
+}
+.popup.explan .popup_content .suit{
+  font-size: 32px !important;
+  line-height: 48px !important;
+  font-weight: 600 !important;
+}
+/* 단어게임 */
+.popup.game .popup_content .game_box{
+  margin: 0 !important;
+}
+/* 단어장 */
+.popup.vocabularyBook{
+  padding: 0 !important;
+}
+.popup.vocabularyBook .popup_content{
+  flex-direction: unset !important;
+  padding: 56px 44px 0 44px !important;
+  gap: 40px !important;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+
+/* 해석 */
+.popup2 .popup_content{
+  padding-right: 34px !important;
+}
+
+.popup2 .popup_content .popupTitle{
+  margin-bottom: 20px;
+}
+.popup2 .popup_content .popupTitle .suit{
+  font-size: 40px;
+  font-weight: 800;
+}
+
+.popup2 .popup_content .lineBox .line{
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  margin-bottom: 10px;
+}
+
+.popup2 .popup_content .lineBox{
+  margin-bottom: 10px;
+}
+
+.popup2 .popup_content .lineBox .line .suit{
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 54px;
+}
+.popup2 .popup_content .lineBox .line .suit .FZKai{
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 54px;
+}
+
+

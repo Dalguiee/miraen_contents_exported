@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>미래엔 중국어</title>
+    <script src="./../common/lib/jquery-3.7.1.min.js"></script>
+    <!-- SUIT Variable 폰트 -->
+    <link
+      href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/variable/woff2/SUIT-Variable.css"
+      rel="stylesheet"
+    />
+    <link href="../common/css/comm.css" rel="stylesheet" />
+    <link href="./css/3_01_24.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div id="wrap" class="china_wrap content_wrap">
+      <div class="title_box title_box5 dp_flex">
+        <div class="img_box">
+          <img
+            src="../common/images/culture_icon.svg"
+            alt="문화 아이콘"
+            class="img img1"
+          />
+        </div>
+        <div class="text_box">
+          <span>중국의 <span class="highlight purple">학교생활</span></span>
+        </div>
+      </div>
+
+      <div class="btn_box dp_flex">
+        <button class="btn popup_btn blue" data-index="1">참고</button>
+      </div>
+
+      <div class="full_content dp_flex">
+        <div class="content">
+          <div class="text1">
+            <span class="suit">
+              고등학교에 입학할 때 군사 훈련<br />(<span data-audio="050-07.mp3"
+                ><span class="simhei">军训</span>
+                <span class="gRegula">jñnxùn</span></span
+              >)을 받기도 해.
+            </span>
+          </div>
+          <div class="text2 suit">고등학교 생활</div>
+          <div class="text3 suit">
+            중국은 9월에 새 학년이 시작됩니다.<br />
+            중국 고등학교는 일반적으로 1학년부터<br />3학년까지 학급 친구들과
+            담임 선생님이<br />바뀌지 않습니다. 또한 많은 학생들이<br />기숙사
+            생활을 하고, 주로 체육복을<br />교복으로 입습니다.
+          </div>
+          <button class="detail_button_box popup_btn" data-index="2">
+            <img class="detail_button" src="./images/3_01_24/detail_button.png" alt="">
+          </button>
+        </div>
+      </div>
+
+      <!-- 팝업 -->
+      <div class="popup_bg" style="display: none"></div>
+      <!-- 참고 -->
+      <div class="popup popup1" data-popup="1" style="display: none">
+        <div class="tag bmjua dp_flex">참고</div>
+        <button class="close_btn"></button>
+        <div class="popup_content">
+          <div class="popup-scroll">
+            <div class="title suit">
+              중국의 군사 훈련(<span class="FZKai" data-audio="050-07.mp3">军训</span>)
+            </div>
+            <div class="text suit">
+              <span
+                class="FZKai"
+                data-audio="050-07.mp3"
+                style="font-weight: 400"
+                >军训<span class="gRegula"><span class="suit">(</span>jñnxùn<span class="suit">)</span></span></span
+              >은 1955년 중국의 <span class="notoSans">‘</span>병역법<span
+                class="notoSans"
+                >’</span
+              >이 제정된 이후 학생들을 대상으로 한 군사 훈련을 말하는데,
+              지금까지 65년의 역사를 가지고 있다. 고등학생의 군사 훈련은 기본
+              군사 지식과 기본 군사 기능의 두 개 부분으로 이루어져 있다. 훈련
+              일수는 1 주에서 길게는 2주까지 이어지며 이수 시간은 최소 56시간
+              이상이다. 군사 훈련 성적은 학생 생활기록부에 기록되기도 한다고
+              한다.
+            </div>
+            <!-- <span class="suit preface">[EBS 뉴스 군사 훈련 받는 中 고등학생 2021. 04. 26. / 최영택 수정 인용]</span> -->
+          </div>
+        </div>
+      </div>
+
+      <!-- 크게 보기 -->
+      <div class="popup detail_popup" data-popup="2" style="display: none">
+        <button class="close_btn"></button>
+        <div class="popup_content">
+          <div class="content">
+            <div class="img_box">
+              <img src="./images/3_01_24/detail_content.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </body>
+  <script type="text/javascript">
+    const page = {
+      //컨텐츠에 정답 확인이 존재하는지 여부
+      isAnswer: false,
+      // 단어장 노출 여부 판단.
+      isVocabulary: false,
+      //정답 보기
+      showAnswer: () => {},
+      //정답 숨기기
+      hideAnswer: () => {},
+      // 단어장 보기
+      showVocabulary: () => {},
+    };
+    $(document).ready(function () {
+      // setPopup(1);
+    });
+  </script>
+  <script src="../common/js/script.js"></script>
+</html>

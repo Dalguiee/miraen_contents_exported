@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>미래엔 중국어</title>
+    <script src="./../common/lib/jquery-3.7.1.min.js"></script>
+    <!-- SUIT Variable 폰트 -->
+    <link
+      href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/variable/woff2/SUIT-Variable.css"
+      rel="stylesheet"
+    />
+    <link href="../common/css/comm.css" rel="stylesheet" />
+    <link href="./css/3_01_20.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div id="wrap" class="china_wrap content_wrap">
+      <div class="title_box title_box3 dp_flex">
+        <div class="num_box">
+          <span>3</span>
+        </div>
+        <div class="text_box">
+          <span>알맞은 단어를 골라 문장을 완성해 봅시다.</span>
+        </div>
+      </div>
+      <div class="full_content">
+        <div class="ex_box">
+          <span class="gRegula" data-audio="049-13.mp3">yôu</span>
+          <span class="gRegula" data-audio="049-14.mp3">méiyôu</span>
+          <span class="gRegula" data-audio="049-15.mp3">bù</span>
+        </div>
+        <div class="con1">
+          <span class="suit"
+            ><span class="suit" style="margin-right: 16px">(1)</span>그는 휴대
+            전화가 없어.</span
+          >
+          <div class="con_box reset">
+            <span class="gRegula">Tã</span>
+            <div class="blank"></div>
+            <span class="gRegula">shôujå.</span>
+          </div>
+          <div
+            class="con_box answer"
+            data-audio="049-16.mp3"
+            style="display: none"
+          >
+            <span class="gRegula">Tã</span>
+            <div class="blank">
+              <span class="gRegula">méiyôu</span>
+            </div>
+            <span class="gRegula">shôujå.</span>
+          </div>
+          <button class="btn3 answer_btn">정답</button>
+          <button class="btn3 reset_btn" style="display: none">
+            다시 하기
+          </button>
+        </div>
+        <div class="con1 con2">
+          <span class="suit"
+            ><span class="suit" style="margin-right: 16px">(2)</span>나는
+            자전거가 있어.</span
+          >
+          <div class="con_box reset">
+            <span class="gRegula">Wô</span>
+            <div class="blank"></div>
+            <span class="gRegula">zìxíngchç.</span>
+          </div>
+          <div
+            class="con_box answer"
+            data-audio="049-17.mp3"
+            style="display: none"
+          >
+            <span class="gRegula">Wô</span>
+            <div class="blank">
+              <span class="gRegula">yôu</span>
+            </div>
+            <span class="gRegula">zìxíngchç.</span>
+          </div>
+          <button class="btn3 answer_btn">정답</button>
+          <button class="btn3 reset_btn" style="display: none">
+            다시 하기
+          </button>
+        </div>
+      </div>
+      <div class="number-page">
+        <div class="item">01</div>
+        <div class="item">02</div>
+        <div class="item active">03</div>
+        <div class="item">04</div>
+        <div class="item">05</div>
+        <div class="item">06</div>
+      </div>
+      <div class="popup_bg" style="display: none"></div>
+    </div>
+  </body>
+  <script type="text/javascript">
+    const page = {
+      //컨텐츠에 정답 확인이 존재하는지 여부
+      isAnswer: false,
+      // 단어장 노출 여부 판단.
+      isVocabulary: false,
+      //정답 보기
+      showAnswer: () => {
+        $(".answer_btn").hide();
+        $(".reset_btn").show();
+        $(".reset").hide();
+        $(".answer").show();
+      },
+      //정답 숨기기
+      hideAnswer: () => {
+        $(".reset_btn").hide();
+        $(".answer_btn").show();
+        $(".reset").show();
+        $(".answer").hide();
+      },
+      // 단어장 보기
+      showVocabulary: () => {},
+    };
+    $(document).ready(function () {
+      // setPopup(1);
+    });
+  </script>
+  <script src="../common/js/script.js"></script>
+  <script type="text/javascript">
+    //개별정답 버튼
+    $(".answer_btn").on("click", function () {
+      let index = $(".answer_btn").index(this);
+      $(this).hide();
+      $(this).next().show();
+      $(".reset").eq(index).hide();
+      $(".answer").eq(index).show();
+    });
+    //다시풀기 버튼
+    $(".reset_btn").on("click", function () {
+      let index = $(".reset_btn").index(this);
+      $(this).hide();
+      $(this).prev().show();
+      $(".answer").eq(index).hide();
+      $(".reset").eq(index).show();
+    });
+  </script>
+</html>

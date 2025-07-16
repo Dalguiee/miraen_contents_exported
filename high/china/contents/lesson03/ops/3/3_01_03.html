@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>미래엔 중국어</title>
+    <script src="./../common/lib/jquery-3.7.1.min.js"></script>
+    <!-- SUIT Variable 폰트 -->
+    <link
+      href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/variable/woff2/SUIT-Variable.css"
+      rel="stylesheet"
+    />
+    <link href="../common/css/comm.css" rel="stylesheet" />
+    <link href="./css/3_01_03.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div id="wrap" class="china_wrap story_wrap">
+      <div class="full_content dp_flex">
+        <div class="left_box">
+          <div class="script_box">
+            <p class="suit">
+              중국 정부는 1982년부터 <span class="notoSans">‘</span>1가구 1자녀 정책<span class="notoSans">’</span><br />을 법제화하여 인구
+              증가를 통제했습니다.<br />그러나 인구의 고령화, 노동 인구 감소
+              등의<br />문제가 발생하자 2016년부터 두 자녀 출산을<br />허용했고,
+              2021년부터는 세 자녀까지 허용<br />하고 있습니다.
+            </p>
+          </div>
+
+          <div class="action_box speak">
+            <span class="suit"> 나의 형제자매에 대해 이야기해 봅시다.</span>
+          </div>
+        </div>
+        <div class="right_box"> 
+          <div class="img_box">
+            <img src="../3/images/3_01_03/back_img.png" class="img img1" />
+          </div>
+        </div>
+
+        <div class="under_btn_box">
+          <button class="btn explan_popup_btn purple"><span>활동 예시</span></button>
+        </div>
+      </div>
+      
+      <div class="popup explan explan1" style="display: none">
+        <div class="tag bmjua dp_flex">활동 예시</div>
+        <button class="close_btn">
+          <span class="sr-only">닫기</span>
+        </button>
+        <div class="popup_content dp_flex dp_flex_column">
+          <span class="suit">
+            나는 오빠가 한 명 있다. 가끔 다투기도 하지만<br>도움이 필요할 때 의지가 되어 든든하다.
+          </span>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript">
+    const page = {
+      //컨텐츠에 정답 확인이 존재하는지 여부
+      isAnswer: false,
+      // 단어장 노출 여부 판단.
+      isVocabulary: false,
+      //정답 보기
+      showAnswer: () => {},
+      //정답 숨기기
+      hideAnswer: () => {},
+      // 단어장 보기
+      showVocabulary: () => {},
+    };
+    $(document).ready(function () {});
+  </script>
+  <script src="../common/js/script.js"></script>
+</html>

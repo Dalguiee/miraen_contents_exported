@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>미래엔 중국어</title>
+    <script src="./../common/lib/jquery-3.7.1.min.js"></script>
+    <!-- SUIT Variable 폰트 -->
+    <link
+      href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/variable/woff2/SUIT-Variable.css"
+      rel="stylesheet"
+    />
+    <link href="../common/css/comm.css" rel="stylesheet" />
+    <link href="./css/8_01_20.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div id="wrap" class="china_wrap content_wrap">
+      <div class="title_box title_box3 flex items-center">
+        <div class="num_box">
+          <span>3</span>
+        </div>
+        <div class="text_box">
+          <span class="fs-30">할인 표현을 읽고 알맞은 것을 골라 봅시다.</span>
+        </div>
+      </div>
+      <div class="btn_box dp_flex">
+        <button class="btn popup_btn blue" data-index="1">해석</button>
+      </div>
+
+      <div class="full_content">
+        <div class="content">
+          <div class="ex_box">
+            <span class="text1 simhei fs-36 line-42" data-audio="099-03.mp3"
+              >打三折</span
+            >
+            <span class="text2 simhei fs-36 line-42" data-audio="097-43.mp3"
+              >买一送一</span
+            >
+            <span class="text3 suit fs-26 line-32 fw-5">￥540</span>
+          </div>
+          <div class="answer_box">
+            <div class="line suit mb-20">
+              <span class="mr-20">(1)</span><span class="mr-10">가방은 (</span
+              ><button class="check_box suit mr-10" data-index="1">30%</button
+              ><button class="check_box suit mr-10 correct" data-index="1">
+                70%</button
+              ><span class="mr-10">) 할인한다.</span>
+              <button class="btn btn3 answer_btn" data-index="1">정답</button>
+              <button
+                class="btn btn3 reset_btn"
+                data-index="1"
+                style="display: none"
+              >
+                다시 풀기
+              </button>
+            </div>
+            <div class="line suit">
+              <span class="mr-20">(2)</span
+              ><span class="mr-10">540위안에 신발 (</span
+              ><button class="check_box suit mr-10" data-index="2">
+                한 켤레</button
+              ><button class="check_box suit correct" data-index="2">
+                두 켤레</button
+              ><span class="mr-10">)를 살 수 있다.</span>
+              <button class="btn btn3 answer_btn" data-index="2">정답</button>
+              <button
+                class="btn btn3 reset_btn"
+                data-index="2"
+                style="display: none"
+              >
+                다시 풀기
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="number-page">
+        <div class="item">01</div>
+        <div class="item">02</div>
+        <div class="item active">03</div>
+        <div class="item">04</div>
+        <div class="item">05</div>
+        <div class="item">06</div>
+      </div>
+      <div class="popup_bg" style="display: none"></div>
+      <!-- 해석 -->
+      <div class="popup popup3" data-popup="1" style="display: none">
+        <div class="tag bmjua dp_flex">해석</div>
+        <button class="close_btn"></button>
+        <div class="popup_content">
+          <div class="content">
+            <div class="line mb-56">
+              <span class="FZKai fs-36 line-50 mr-20 relative"
+                >打三折<span class="subtext gRegula fs-30 line-34"
+                  >dâ sãn zhé</span
+                ></span
+              ><span class="suit fs-32 line-50 fw-6 c-dblue">70% 할인</span>
+            </div>
+            <div class="line mb-56">
+              <span class="FZKai fs-36 line-50 mr-20 relative"
+                >买一送一<span class="subtext gRegula fs-30 line-34"
+                  >mâi yå sòng yå</span
+                ></span
+              ><span class="suit fs-32 line-50 fw-6 c-dblue">1 + 1</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript">
+    const page = {
+      //컨텐츠에 정답 확인이 존재하는지 여부
+      isAnswer: false,
+      // 단어장 노출 여부 판단.
+      isVocabulary: false,
+      //정답 보기
+      showAnswer: () => {
+        $(".answer_btn").hide();
+        $(".reset_btn").show();
+        $(`.check_box`).removeClass("active");
+        $(`.correct`).addClass("active");
+      },
+      //정답 숨기기
+      hideAnswer: () => {
+        $(".answer_btn").show();
+        $(".reset_btn").hide();
+        $(`.check_box`).removeClass("active");
+      },
+      // 단어장 보기
+      showVocabulary: () => {},
+    };
+    $(document).ready(function () {
+      // setPopup(2);
+    });
+  </script>
+  <script src="../common/js/script.js"></script>
+  <script type="text/javascript">
+    // 정답 버튼
+    $(".answer_btn").on("click", function () {
+      const index = $(this).data("index");
+      $(this).hide();
+      $(this).next().show();
+      $(`.check_box[data-index="${index}"]`).removeClass("active");
+      $(`.correct[data-index="${index}"]`).addClass("active");
+    });
+    // 다시 하기 버튼
+    $(".reset_btn").on("click", function () {
+      const index = $(this).data("index");
+      $(this).hide();
+      $(this).prev().show();
+      $(`.check_box[data-index="${index}"]`).removeClass("active");
+    });
+
+    // 체크박스 클릭
+    $(".check_box").on("click", function () {
+      const index = $(this).data("index");
+      $(`.check_box[data-index="${index}"]`).removeClass("active");
+      $(this).addClass("active");
+      if ($(this).hasClass("correct")) {
+        $(`.answer_btn[data-index="${index}"]`).hide();
+        $(`.reset_btn[data-index="${index}"]`).show();
+      } else {
+        $(`.answer_btn[data-index="${index}"]`).show();
+        $(`.reset_btn[data-index="${index}"]`).hide();
+      }
+    });
+  </script>
+</html>

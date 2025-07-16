@@ -1,0 +1,136 @@
+#wrap > .title_box3 {
+  gap: 20px;
+}
+#wrap > .title_box .text_box {
+  padding-bottom: 0;
+}
+#wrap > .title_box3 .num_box {
+  color: rgba(193, 128, 44, 1);
+}
+
+.china_wrap .full_content .num_box span {
+  font-size: 30px;
+  line-height: 30px;
+  color: rgba(35, 24, 21, 1);
+  font-weight: 700;
+  font-family: "SUIT Variable", sans-serif;
+}
+.full_content .content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.play_btn {
+  display: flex;
+  align-items: center;
+  height: fit-content;
+}
+.play_btn::before {
+  content: "";
+  width: 21px;
+  height: 21px;
+  background: url(./../images/8_01_18/play.svg) no-repeat center;
+  background-size: cover;
+  margin-right: 10px;
+}
+
+.full_content .content .content_bg {
+  position: absolute;
+  top: 80px;
+  left: 185px;
+  width: 546px;
+  height: 214px;
+}
+
+.full_content .content .item {
+  display: flex;
+  align-items: center;
+  position: absolute;
+}
+.full_content .content .item.index1 {
+  top: 306px;
+  left: 148px;
+}
+.full_content .content .item.index2 {
+  top: 306px;
+  left: 572px;
+}
+.full_content .content .item .audio {
+  display: flex;
+  align-items: center;
+}
+.full_content .content .item .answer_box {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 174px;
+  height: 44px;
+  border-bottom: 2px solid #c9caca;
+}
+.full_content .content .item .answer_btn,
+.full_content .content .item .reset_btn {
+  position: absolute;
+  bottom: -10px;
+  left: 142px;
+  transform: translateY(100%) translateX(-50%);
+}
+
+.number-page {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  bottom: 12px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  font-family: "SUIT Variable", sans-serif;
+  font-weight: 800;
+  font-size: 26px;
+  color: #d9d9d9;
+}
+.number-page .item {
+  display: flex;
+}
+.number-page .item:after {
+  content: "";
+  width: 24px;
+  height: 24px;
+  background: url(./../../common/images/page_arrow.svg) no-repeat center;
+  margin: 0 6px 0 6px;
+}
+.number-page .item:last-of-type:after {
+  display: none;
+}
+.number-page .item.active {
+  color: #231815;
+}
+/* 대본, 해석 */
+.popup.popup3 .popup_content {
+  width: 100%;
+  height: 100%;
+  padding: 46px 34px 8px 55px;
+  position: relative;
+}
+.popup.popup3 .popup_content .content {
+  width: 100%;
+  height: 100%;
+  padding-top: 14px;
+  overflow-y: auto;
+}
+.popup.popup3 .content .line {
+  display: flex;
+  height: 50px;
+}
+.popup.popup3 .content .line .index {
+  width: 52px;
+  margin-right: 10px;
+}
+
+.popup.popup3 .subtext {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  transform: translateY(100%);
+  white-space: nowrap;
+}

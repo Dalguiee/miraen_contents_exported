@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>미래엔 중국어</title>
+		<script src="./../common/lib/jquery-3.7.1.min.js"></script>
+		<!-- SUIT Variable 폰트 -->
+		<link href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/variable/woff2/SUIT-Variable.css" rel="stylesheet" />
+		<link href="../common/css/comm.css" rel="stylesheet" />
+		<link href="./css/4_01_02.css" rel="stylesheet" />
+	</head>
+
+	<body>
+		<div id="wrap" class="china_wrap index_wrap">
+			<div class="btn_box dp_flex">
+				<button class="btn hanja_btn">한자</button>
+				<button class="btn pinyin_btn" style="display: none">병음</button>
+				<button class="btn combo_btn">한자+병음</button>
+				<button class="btn popup_btn blue" data-index="1">해석</button>
+			</div>
+
+			<div class="full_content">
+				<div class="target_box text_box-wrqp">
+					<div class="tag">학습 목표</div>
+					<div class="text_box">
+						<span class="suit"> 날짜와 요일을 묻고 답할 수 있다.<br />시간과 일과 표현을 말할 수 있다. </span>
+					</div>
+				</div>
+				<div class="express_box text_box-wrqp">
+					<div class="tag">기본 표현</div>
+					<!-- 병음 -->
+					<div class="text_box dp_flex dp_flex_column" data-view="pinyin">
+						<div class="line line1 dp_flex">
+							<span class="index">날짜</span>
+							<span class="title gRegula" data-audio="053-04.mp3">Wû yuè shí hào.</span>
+						</div>
+						<div class="line line2 dp_flex">
+							<span class="index">요일</span>
+							<span class="title gRegula" data-audio="053-05.mp3">Xångqåsì.</span>
+						</div>
+						<div class="line line3 dp_flex">
+							<span class="index">시간</span>
+							<span class="title gRegula" data-audio="053-06.mp3">Qå diân shí fçn.</span>
+						</div>
+					</div>
+					<!-- 한자 -->
+					<div class="text_box dp_flex dp_flex_column" data-view="hanja" style="display: none">
+						<div class="line line1 dp_flex">
+							<span class="index">날짜</span>
+							<span class="title FZKai" data-audio="053-04.mp3">五月十号。</span>
+						</div>
+						<div class="line line2 dp_flex">
+							<span class="index">요일</span>
+							<span class="title FZKai" data-audio="053-05.mp3">星期四。</span>
+						</div>
+						<div class="line line3 dp_flex">
+							<span class="index">시간</span>
+							<span class="title FZKai" data-audio="053-06.mp3">七点十分。</span>
+						</div>
+					</div>
+					<!-- 한자 + 병음 -->
+					<div class="text_box text_box_combo dp_flex dp_flex_column" data-view="combo" style="display: none">
+						<div class="line line1 dp_flex">
+							<span class="index">날짜</span>
+							<span class="title FZKai" data-audio="053-04.mp3" data-audio-combo="053-04">五月十号。</span>
+							<span class="title gRegula" data-audio="053-04.mp3" data-audio-combo="053-04">Wû yuè shí hào.</span>
+						</div>
+						<div class="line line2 dp_flex">
+							<span class="index">요일</span>
+							<span class="title FZKai" data-audio="053-05.mp3" data-audio-combo="053-05">星期四。</span>
+							<span class="title gRegula" data-audio="053-05.mp3" data-audio-combo="053-05">Xångqåsì.</span>
+						</div>
+						<div class="line line3 dp_flex">
+							<span class="index">시간</span>
+							<span class="title FZKai" data-audio="053-06.mp3" data-audio-combo="053-06">七点十分。</span>
+							<span class="title gRegula" data-audio="053-06.mp3" data-audio-combo="053-06">Qå diân shí fçn.</span>
+						</div>
+					</div>
+				</div>
+				<div class="culture_box text_box-wrqp">
+					<div class="tag">중국 문화</div>
+					<div class="text_box">
+						<span class="suit"> 중국의 명절과 기념일 </span>
+					</div>
+				</div>
+			</div>
+
+			<div class="popup_bg" style="display: none"></div>
+			<div class="popup popup1" data-popup="1" style="display: none">
+				<div class="tag bmjua dp_flex">해석</div>
+				<button class="close_btn"></button>
+				<div class="popup_content dp_flex">
+					<div class="line line1 dp_flex">
+						<div class="index_box dp_flex">날짜</div>
+						<div class="textSec">
+							<div class="text_box text_box1">
+								<span>
+									<span class="txt txt1 FZKai">五月十号。</span>
+									<span class="txt gRegula">Wû yuè shí hào.</span>
+								</span>
+								<span class="suit">5월 10일이야.</span>
+							</div>
+						</div>
+					</div>
+
+					<div class="line line2 dp_flex">
+						<div class="index_box dp_flex">요일</div>
+						<div class="textSec">
+							<div class="text_box text_box1">
+								<span>
+									<span class="txt FZKai">星期四。</span>
+									<span class="txt gRegula">Xångqåsì.</span>
+								</span>
+								<span class="suit">목요일이야.</span>
+							</div>
+						</div>
+					</div>
+
+					<div class="line line3 dp_flex">
+						<div class="index_box dp_flex">시간</div>
+						<div class="textSec">
+							<div class="text_box text_box1">
+								<span>
+									<span class="txt FZKai">七点十分。</span>
+									<span class="txt gRegula">Qå diân shí fçn.</span>
+								</span>
+								<span class="suit trLft">7시 10분이야.</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript">
+		const page = {
+			//컨텐츠에 정답 확인이 존재하는지 여부
+			isAnswer: false,
+			// 단어장 노출 여부 판단. 이벤트 호출하지 않으면 노출하지 않음.
+			isVocabulary: false,
+			//정답 보기
+			showAnswer: () => {},
+			//정답 숨기기
+			hideAnswer: () => {},
+			// 단어장 보기
+			showVocabulary: () => {},
+		};
+	</script>
+	<script src="../common/js/script.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function () {});
+	</script>
+</html>

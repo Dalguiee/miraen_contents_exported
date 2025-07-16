@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>미래엔 중국어</title>
+    <script src="./../common/lib/jquery-3.7.1.min.js"></script>
+    <!-- SUIT Variable 폰트 -->
+    <link
+      href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/variable/woff2/SUIT-Variable.css"
+      rel="stylesheet"
+    />
+    <link href="../common/css/comm.css" rel="stylesheet" />
+    <link href="./css/3_01_22.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div id="wrap" class="china_wrap content_wrap">
+      <div class="title_box title_box3 dp_flex">
+        <div class="num_box">
+          <span>5</span>
+        </div>
+        <div class="text_box">
+          <span style="font-size: 30px"
+            >문장을 읽고 내용과 일치하는 것을 골라 봅시다.</span
+          >
+        </div>
+      </div>
+
+      <div class="btn_box dp_flex">
+        <button class="btn popup_btn blue" data-index="1">해석</button>
+      </div>
+
+      <div class="full_content dp_flex dp_flex_column">
+        <div class="top_box dp_flex">
+          <div class="img_box">
+            <img
+              src="../3/images/3_01_22/study.svg"
+              alt="공부하는 학생"
+              class="img img1"
+            />
+          </div>
+
+          <div class="text_box dp_flex dp_flex_column" data-audio="049-28.mp3">
+            <span class="simhei"> 我妹妹上初中二年级。 </span>
+            <span class="gRegula">
+              Wô mèimei shàng <br />
+              chñzhõng èr niánjí.
+            </span>
+          </div>
+        </div>
+
+        <div class="btm_box dp_flex">
+          <span class="txt txt1 FZKai">내 (</span>
+
+          <div class="quiz_box quiz_box1 dp_flex">
+            <label class="radio_label dp_flex">
+              <input type="radio" name="quiz1" />
+              <div class="check_icon"></div>
+              <span> 언니 </span>
+            </label>
+
+            <label class="radio_label dp_flex">
+              <input type="radio" name="quiz1" class="answer" />
+              <div class="check_icon"></div>
+              <span> 여동생 </span>
+            </label>
+
+            <button class="btn3 correct_btn answer_btn">정답</button>
+            <button class="btn3 correct_btn reset_btn" style="display: none">
+              다시 하기
+            </button>
+          </div>
+
+          <span class="txt txt2">) 는/은 (</span>
+
+          <div class="quiz_box quiz_box2 dp_flex">
+            <label class="radio_label dp_flex">
+              <input type="radio" name="quiz2" class="answer" />
+              <div class="check_icon"></div>
+              <span> 중2 </span>
+            </label>
+
+            <label class="radio_label dp_flex">
+              <input type="radio" name="quiz2" />
+              <div class="check_icon"></div>
+              <span> 고2 </span>
+            </label>
+
+            <button class="btn3 correct_btn answer_btn">정답</button>
+            <button class="btn3 correct_btn reset_btn" style="display: none">
+              다시 하기
+            </button>
+          </div>
+
+          <span class="txt txt2">)이다.</span>
+        </div>
+      </div>
+      <div class="popup_bg" style="display: none"></div>
+      <!-- 해석 -->
+      <div class="popup translate" data-popup="1" style="display: none">
+        <div class="tag bmjua dp_flex">해석</div>
+        <button class="close_btn"></button>
+        <div class="popup_content">
+          <ul class="list">
+            <li class="item">
+              <div class="text">
+                <span class="FZKai">我妹妹上初中二年级。</span>
+                <span class="gRegula">Wô mèimei shàng chñzhõng èr niánjí.</span>
+              </div>
+              <div class="suit">내 여동생은 중학교 2학년이야.</div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="number-page">
+        <div class="item">01</div>
+        <div class="item">02</div>
+        <div class="item">03</div>
+        <div class="item">04</div>
+        <div class="item active">05</div>
+        <div class="item">06</div>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript">
+    const page = {
+      //컨텐츠에 정답 확인이 존재하는지 여부
+      isAnswer: false,
+      // 단어장 노출 여부 판단.
+      isVocabulary: false,
+      //정답 보기
+      showAnswer: () => {
+        $(".answer_btn").hide();
+        $(".reset_btn").show();
+        $(".answer").prop("checked", true);
+      },
+      //정답 숨기기
+      hideAnswer: () => {
+        $(".answer_btn").show();
+        $(".reset_btn").hide();
+        $(".answer").prop("checked", false);
+      },
+      // 단어장 보기
+      showVocabulary: () => {},
+    };
+    $(document).ready(function () {
+      // setPopup(1);
+    });
+  </script>
+  <script src="../common/js/script.js"></script>
+  <script type="text/javascript">
+    // 정답 버튼
+    $(".answer_btn").on("click", function () {
+      let index = $(".answer_btn").index(this);
+      $(this).hide();
+      $(".reset_btn").eq(index).show();
+      $(".answer").eq(index).prop("checked", true);
+    });
+    // 다시 하기 버튼
+    $(".reset_btn").on("click", function () {
+      let index = $(".reset_btn").index(this);
+      $(this).hide();
+      $(".answer_btn").eq(index).show();
+      $(".answer").eq(index).prop("checked", false);
+    });
+  </script>
+</html>

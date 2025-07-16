@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>미래엔 중국어</title>
+    <script src="./../common/lib/jquery-3.7.1.min.js"></script>
+    <!-- SUIT Variable 폰트 -->
+    <link
+      href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/variable/woff2/SUIT-Variable.css"
+      rel="stylesheet"
+    />
+    <link href="../common/css/comm.css" rel="stylesheet" />
+    <link href="./css/4_01_09.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div id="wrap" class="china_wrap content2_wrap">
+      <div class="title_box dp_flex">
+        <div class="text_box">
+          <img class="logoImg" src="./images/4_01_09/logo.svg" alt="문화" />
+          <span class="suit">중국의 생일 음식</span>
+        </div>
+      </div>
+
+      <div class="btn_box dp_flex">
+        <button class="btn popup_btn blue" data-index="2">보충</button>
+      </div>
+
+      <div class="full_content">
+        <div class="content">
+          <div class="text_box">
+            <span class="suit">
+              중국에서는 생일에 장수하기를<br />바라는 마음을 담아 한
+              가닥으로<br />길게 만든 국수인
+              <span data-audio="055-49.mp3"><span class="simhei">长寿面</span><br />(<span
+                  class="gRegula">chángshòumiàn</span>)</span>이나 복숭아<br />모양의 찐빵인
+              <span data-audio="055-50.mp3"><span class="simhei">寿桃</span>(<span class="gRegula">shòutáo</span>)</span><br />또는
+              복숭아를 먹기도 합니다.
+            </span>
+          </div>
+          <img src="./images/4_01_09/img1.jpg" class="img" />
+        </div>
+      </div>
+      <!-- <div class="contextSec">
+          <span class="context suit">
+            중국에서는 생일에 장수하기를 바라는 마음을 담아 한 가닥으로 길게
+            만든 국수인<span data-audio="055-49.mp3"
+              ><span class="FZKai">长寿面</span>(<span class="gRegula"
+                >chángshòumiàn</span
+              >)</span
+            >이나 복숭아 모양의 찐빵인
+            <span data-audio="055-50.mp3"
+              ><span class="FZKai">寿桃</span>(<span class="gRegula"
+                >shòutáo</span
+              >)</span
+            >이나 복숭아를 먹기도 합니다.
+          </span>
+        </div> -->
+
+      <div class="popup_bg" style="display: none"></div>
+      <!-- 보충 -->
+      <div class="popup popup2" data-popup="2" style="display: none">
+        <div class="tag bmjua dp_flex">보충</div>
+        <button class="close_btn"></button>
+        <div class="popup_content">
+          <div class="popupTitle">
+            <span class="suit">중국의 생일 음식</span>
+          </div>
+          <div class="textSec">
+            <div class="index">
+              <span class="suit">•</span>
+            </div>
+            <div class="text">
+              <span class="context suit">
+                장수면(<span data-audio="055-49.mp3"
+                  ><span class="simhei">长寿面</span>
+                  <span class="gRegula">chángshòumiàn</span></span
+                >): 장수면은 하나의 면발로<br />만든 국수로, 면발을 끊지 않고
+                먹으면 장수한다는 속설이 있다.
+              </span>
+            </div>
+          </div>
+          <div class="textSec mt-12">
+            <div class="index">
+              <span class="suit">•</span>
+            </div>
+            <div class="text">
+              <span class="context suit">
+                서우타오(<span data-audio="055-50.mp3"
+                  ><span class="simhei">寿桃</span>
+                  <span class="gRegula">shòutáo</span>)</span
+                >: 서우타오는 밀가루로 만든 복숭아<br />모양의 떡이다. 복숭아는
+                중국 신화 속에서 장수의 상징으로<br />여겨져 오늘날 생일상에
+                복숭아 모양의 떡이나 케이크를 올리는<br />풍습이 있다.
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript">
+    const page = {
+      //컨텐츠에 정답 확인이 존재하는지 여부
+      isAnswer: false,
+      // 단어장 노출 여부 판단.
+      isVocabulary: false,
+      //정답 보기
+      showAnswer: () => {},
+      //정답 숨기기
+      hideAnswer: () => {},
+      // 단어장 보기
+      showVocabulary: () => {},
+    };
+  </script>
+  <script src="../common/js/script.js"></script>
+</html>

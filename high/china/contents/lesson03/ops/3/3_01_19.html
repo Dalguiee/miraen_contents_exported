@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>미래엔 중국어</title>
+    <script src="./../common/lib/jquery-3.7.1.min.js"></script>
+    <!-- SUIT Variable 폰트 -->
+    <link
+      href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/variable/woff2/SUIT-Variable.css"
+      rel="stylesheet"
+    />
+    <link href="../common/css/comm.css" rel="stylesheet" />
+    <link href="./css/3_01_19.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div id="wrap" class="china_wrap content_wrap">
+      <div class="title_box title_box3 dp_flex">
+        <div class="num_box">
+          <span>2</span>
+        </div>
+        <div class="text_box">
+          <span>가족 호칭을 모두 골라 ○표 해 봅시다.</span>
+        </div>
+      </div>
+      <div class="btn_box dp_flex">
+        <button class="btn blue popup_btn" data-index="1">해석</button>
+        <!-- <div class="tempBttns">
+          <button onclick="page.showAnswer(event)" data-index="1" class="tempBttn answer_btn">임시정답</button>
+          <button onclick="page.hideAnswer(event)" data-index="1" class="tempBttn reset_btn" style="display: none">다시하기</button>
+        </div> -->
+      </div>
+
+      <div class="full_content dp_flex">
+        <div class="left_bubble_box dp_flex dp_flex_column">
+          <div
+            class="bubble_box bubble_box1 dp_flex dp_flex_column"
+            data-audio="049-09.mp3"
+          >
+            <span class="simhei">爸爸</span>
+            <span class="gRegula">bàba</span>
+            <div class="correct" style="display: none"></div>
+          </div>
+          <div
+            class="bubble_box bubble_box2 dp_flex dp_flex_column"
+            data-audio="049-11.mp3"
+          >
+            <span class="simhei">哥哥</span>
+            <span class="gRegula">gçge</span>
+            <div class="correct" style="display: none"></div>
+          </div>
+        </div>
+
+        <div class="img_box dp_flex dp_flex_column">
+          <img
+            src="../3/images/3_01_20/family.svg"
+            alt="가족 그림"
+            class="img img1"
+          />
+          <span>나</span>
+        </div>
+
+        <div class="right_bubble_box dp_flex dp_flex_column">
+          <div
+            class="bubble_box bubble_box3 dp_flex dp_flex_column"
+            data-audio="049-10.mp3"
+          >
+            <span class="simhei">朋友</span>
+            <span class="gRegula">péngyou</span>
+          </div>
+          <div
+            class="bubble_box bubble_box4 dp_flex dp_flex_column"
+            data-audio="049-12.mp3"
+          >
+            <span class="simhei">妹妹</span>
+            <span class="gRegula">mèimei</span>
+            <div class="correct" style="display: none"></div>
+          </div>
+        </div>
+      </div>
+      <div class="number-page">
+        <div class="item">01</div>
+        <div class="item active">02</div>
+        <div class="item">03</div>
+        <div class="item">04</div>
+        <div class="item">05</div>
+        <div class="item">06</div>
+      </div>
+      <div class="popup_bg" style="display: none"></div>
+      <!-- 해석 -->
+      <div class="popup popup1" data-popup="1" style="display: none">
+        <div class="tag bmjua dp_flex">해석</div>
+        <button class="close_btn"></button>
+        <div class="popup_content">
+          <ul class="list">
+            <li class="item">
+              <div class="item_audio">
+                <div class="FZKai">爸爸</div>
+                <div class="gRegula">bàba</div>
+              </div>
+              <span class="suit">아버지, 아빠</span>
+            </li>
+            <li class="item">
+              <div class="item_audio">
+                <div class="FZKai">哥哥</div>
+                <div class="gRegula">gçge</div>
+              </div>
+              <span class="suit">오빠, 형</span>
+            </li>
+            <li class="item">
+              <div class="item_audio">
+                <div class="FZKai">妹妹</div>
+                <div class="gRegula">mèimei</div>
+              </div>
+              <span class="suit">여동생</span>
+            </li>
+            <li class="item">
+              <div class="item_audio">
+                <div class="FZKai">朋友</div>
+                <div class="gRegula">péngyou</div>
+              </div>
+              <span class="suit">친구</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript">
+    const page = {
+      //컨텐츠에 정답 확인이 존재하는지 여부
+      isAnswer: true,
+      // 단어장 노출 여부 판단.
+      isVocabulary: false,
+      //정답 보기
+      showAnswer: () => {
+        // $(".answer_btn").hide();
+        $(".tempBttn.answer_btn").hide();
+        $(".tempBttn.reset_btn").show();
+        $(".correct").show();
+      },
+      //정답 숨기기
+      hideAnswer: () => {
+        // $(".answer_btn").show();
+        $(".tempBttn.answer_btn").show();
+        $(".tempBttn.reset_btn").hide();
+        $(".correct").hide();
+      },
+      // 단어장 보기
+      showVocabulary: () => {},
+    };
+    $(document).ready(function () {
+      // setPopup(1);
+    });
+  </script>
+  <script src="../common/js/script.js"></script>
+  <script type="text/javascript">
+    // 정답 버튼
+    // $(".answer_btn").on("click", function () {
+    //   $(".answer_btn").hide();
+    //   $(".correct").show();
+    // });
+    // 다시 하기 버튼
+    // $(".reset_btn").on("click", function () {
+    //   $(".answer_btn").show();
+    //   $(".correct").hide();
+    // });
+  </script>
+</html>

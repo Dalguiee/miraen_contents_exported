@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>미래엔 중국어</title>
+    <script src="./../common/lib/jquery-3.7.1.min.js"></script>
+    <script src="./../common/lib/howler-2.1.3.min.js"></script>
+    <!-- SUIT Variable 폰트 -->
+    <link
+      href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/variable/woff2/SUIT-Variable.css"
+      rel="stylesheet"
+    />
+    <link href="../common/css/comm.css" rel="stylesheet" />
+    <link href="./css/4_01_22.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div id="wrap" class="china_wrap content_wrap">
+      <div class="btn_box dp_flex">
+        <div class="title">
+          <span class="titleText suit"
+            ><span class="index">6</span>달력에 맞게 문장을 완성하고 대화해
+            봅시다.
+          </span>
+        </div>
+        <div class="bttns">
+          <button class="btn popup_btn blue" data-index="3">해석</button>
+          <!-- <div class="tempBttns">
+            <button
+              onclick="page.showAnswer(event)"
+              data-index="1"
+              class="tempBttn answer_btn"
+            >
+              임시정답
+            </button>
+            <button
+              onclick="page.hideAnswer(event)"
+              data-index="1"
+              class="tempBttn reset_btn"
+              style="display: none"
+            >
+              다시하기
+            </button>
+          </div> -->
+        </div>
+      </div>
+
+      <div class="full_content">
+        <div class="content">
+          <div class="quesSec">
+            <img class="conImg" src="./images/4_01_22/content1.svg" alt="" />
+          </div>
+          <div class="line">
+            <div class="item mb-42">
+              <div class="index suit">A</div>
+              <div class="text-box" data-audio="058-11.mp3">
+                <span class="simhei">你的生日是几月几号？</span
+                ><span class="gRegula">Nî de shçngrì shì jî yuè jî hào?</span>
+              </div>
+            </div>
+            <div class="item reset">
+              <div class="index suit">B</div>
+              <div class="text-box">
+                <span class="simhei mb-16"
+                  ><span class="underline c-none">五</span>月<span
+                    class="underline c-none"
+                    >十四</span
+                  >号, 星期<span class="underline c-none">六</span>。</span
+                ><span class="gRegula fs-36"
+                  ><span class="underline c-none">Wû</span> yuè
+                  <span class="underline c-none">shísì</span> hào, xångqå<span
+                    class="underline c-none"
+                    >liù</span
+                  >.</span
+                >
+              </div>
+            </div>
+            <div class="item answer" style="display: none">
+              <div class="index suit">B</div>
+              <div class="text-box" data-audio="059-11.mp3">
+                <span class="simhei mb-16"
+                  ><span class="underline c-red">五</span>月<span
+                    class="underline c-red"
+                    >十四</span
+                  >号, 星期<span class="underline c-red">六</span>。</span
+                ><span class="gRegula fs-36"
+                  ><span class="underline c-red">Wû</span> yuè
+                  <span class="underline c-red">shísì</span> hào, xångqå<span
+                    class="underline c-red"
+                    >liù</span
+                  >.</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <figure class="numberingBox">
+          <img src="./images/4_01_22/numbering.svg" alt="" />
+        </figure>
+      </div>
+
+      <div class="popup_bg" style="display: none"></div>
+
+      <div class="popup popup2 expPopup" data-popup="3" style="display: none">
+        <div class="tag bmjua dp_flex">해석</div>
+        <button class="close_btn"></button>
+        <div class="popup_content dp_flex">
+          <div class="popup_content">
+            <div class="line line1 dp_flex">
+              <div class="index">
+                <span class="suit">A:</span>
+              </div>
+              <div class="textSec">
+                <div class="text_box text_box1">
+                  <span class="txt txt1 FZKai">你的生日是几月几号?</span>
+                  <span class="suit">네 생일은 몇 월 며칠이야?</span>
+                </div>
+                <div class="text_box text_box2">
+                  <span class="txt gRegula"
+                    >Nî de shçngrì shì jî yuè jî hào?</span
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="line line2 dp_flex">
+              <div class="index">
+                <span class="suit">B:</span>
+              </div>
+              <div class="textSec">
+                <div class="text_box text_box1">
+                  <span class="txt txt1 FZKai chDot">五月十四号, 星期六。</span>
+                  <span class="suit">5월 14일, 토요일이야.</span>
+                </div>
+                <div class="text_box text_box2">
+                  <span class="txt gRegula">Wû yuè shísì hào, xångqåliù.</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript">
+    const page = {
+      //컨텐츠에 정답 확인이 존재하는지 여부
+      isAnswer: true,
+      // 단어장 노출 여부 판단. 이벤트 호출하지 않으면 노출하지 않음.
+      isVocabulary: false,
+      //정답 보기
+      showAnswer: () => {
+        $(".tempBttn.answer_btn").hide();
+        $(".tempBttn.reset_btn").show();
+
+        $(".answer").show();
+        $(".reset").hide();
+      },
+      //정답 숨기기
+      hideAnswer: () => {
+        $(".tempBttn.answer_btn").show();
+        $(".tempBttn.reset_btn").hide();
+
+        $(".answer").hide();
+        $(".reset").show();
+      },
+      // 단어장 보기
+      showVocabulary: () => {
+        setPopup(7);
+      },
+    };
+  </script>
+  <script crossorigin src="../common/lib/libBundle.js"></script>
+  <script src="../common/js/script.js"></script>
+  <script src="../common/js/rolePlayerCh.js"></script>
+  <script src="../common/js/vocabularyBook.js"></script>
+</html>

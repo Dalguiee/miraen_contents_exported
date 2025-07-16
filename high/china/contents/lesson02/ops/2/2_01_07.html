@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>미래엔 중국어</title>
+    <script src="./../common/lib/jquery-3.7.1.min.js"></script>
+    <!-- SUIT Variable 폰트 -->
+    <link href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/variable/woff2/SUIT-Variable.css" rel="stylesheet" />
+    <link href="../common/css/comm.css" rel="stylesheet" />
+    <link href="./css/2_01_07.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div id="wrap" class="china_wrap content2_wrap">
+      <div class="title_box dp_flex">
+        <div class="num_box tmoney">
+          <span>1</span>
+        </div>
+        <div class="text_box">
+          <span class="suit">이름 말하기</span>
+        </div>
+      </div>
+
+      <div class="btn_box dp_flex">
+        <button class="btn hanja_btn">한자</button>
+        <button class="btn pinyin_btn" style="display: none">병음</button>
+        <button class="btn combo_btn">한자+병음</button>
+        <button class="btn popup_btn blue" data-index="3">해석</button>
+        <button class="explan_popup_btn btn blue"><span>설명</span></button>
+        <button class="btn popup_btn blue" data-index="2">참고</button>
+        <!-- <div class="tempBttns">
+          <button onclick="page.showVocabulary()" data-index="1" class="tempBttn">단어장</button>
+        </div> -->
+      </div>
+
+      <div class="full_content">
+        <figure class="tipFig">
+          <img class="tipImg" src="./images/2_01_07/tip.svg" alt="">
+        </figure>
+        <div class="top_box dp_flex dp_flex_column">
+          <div class="tab1" data-tab="1" data-audio="035-01.mp3">
+            <!-- 병음 -->
+            <div class="type type1 dp_flex dp_flex_column pinyTr1" data-view="pinyin">
+              <span class="txt txt2 gRegula fs-50">Wô jiào <span class="highlight pink">Jån Tàiyáng</span>.</span>
+            </div>
+            <!-- 한자 -->
+            <div class="type type1 dp_flex dp_flex_column" data-view="hanja" style="display: none">
+              <span class="txt txt1 FZKai fs-50">我叫<span class="highlight pink">金太阳</span>。</span>
+            </div>
+            <!-- 한자 + 병음 -->
+            <div class="type type3 dp_flex dp_flex_column comboTr1" data-view="combo" style="display: none">
+              <span class="txt txt1 FZKai">我叫<span class="highlight pink">金太阳</span>。</span>
+              <span class="txt txt2 gRegula">Wô jiào <span class="highlight pink">Jån Tàiyáng</span>.</span>
+            </div>
+          </div>
+
+          <div class="tab1" data-tab="2" data-audio="035-02.mp3" style="display: none">
+            <!-- 병음 -->
+            <div class="type type1 dp_flex dp_flex_column pinyTr2" data-view="pinyin">
+              <span class="txt txt2 gRegula fs-50">Wô jiào <span class="highlight pink">Liû Kuãnshùn</span>.</span>
+            </div>
+            <!-- 한자 -->
+            <div class="type type1 dp_flex dp_flex_column" data-view="hanja" style="display: none">
+              <span class="txt txt1 FZKai fs-50">我叫<span class="highlight pink">柳宽顺</span>。</span>
+            </div>
+            <!-- 한자 + 병음 -->
+            <div class="type type3 dp_flex dp_flex_column comboTr2" data-view="combo" style="display: none">
+              <span class="txt txt1 FZKai">我叫<span class="highlight pink">柳宽顺</span>。</span>
+              <span class="txt txt2 gRegula">Wô jiào <span class="highlight pink">Liû Kuãnshùn</span>.</span>
+            </div>
+          </div>
+
+          <div class="tab2" data-tab="3" data-audio="035-03.mp3" style="display: none">
+            <!-- 병음 -->
+            <div class="type type3 dp_flex dp_flex_column pinyTr3" data-view="pinyin">
+              <span class="txt txt2 gRegula fs-50">Wô jiào <span class="highlight pink">Lû Xùn</span>.</span>
+            </div>
+            <!-- 한자 -->
+            <div class="type type3 dp_flex dp_flex_column hanjaTr3" data-view="hanja" style="display: none">
+              <span class="txt txt1 FZKai fs-50">我叫<span class="highlight pink">鲁迅</span>。</span>
+            </div>
+            <!-- 한자 + 병음 -->
+            <div class="type type3 dp_flex dp_flex_column comboTr3" data-view="combo" style="display: none">
+              <span class="txt txt1 FZKai">我叫<span class="highlight pink">鲁迅</span>。</span>
+              <span class="txt txt2 gRegula">Wô jiào <span class="highlight pink">Lû Xùn</span>.</span>
+            </div>
+          </div>
+
+          <div class="tab3" data-tab="4" data-audio="035-04.mp3" style="display: none">
+            <!-- 병음 -->
+            <div class="type type4 dp_flex dp_flex_column pinyTr4" data-view="pinyin">
+              <span class="txt txt2 gRegula fs-50">Wô jiào <span class="highlight pink">Bèiduõfçn</span>.</span>
+            </div>
+            <!-- 한자 -->
+            <div class="type type4 dp_flex dp_flex_column" data-view="hanja" style="display: none">
+              <span class="txt txt1 FZKai fs-50">我叫<span class="highlight pink">贝多芬</span>。</span>
+            </div>
+            <!-- 병음 + 한자 -->
+            <div class="type type4 dp_flex dp_flex_column comboTr4" data-view="combo" style="display: none">
+              <span class="txt txt1 FZKai">我叫<span class="highlight pink">贝多芬</span>。</span>
+              <span class="txt txt2 gRegula">Wô jiào <span class="highlight pink">Bèiduõfçn</span>.</span>
+            </div>
+          </div>
+
+          <button class="btn3 basic_btn tab_btn active" data-index="1">기본 문장</button>
+        </div>
+
+        <div class="bottom_box dp_flex dp_flex_column">
+          <div class="step step1 dp_flex">
+            <div class="img_box">
+              <img src="./images/2_01_07/icon1.png" class="img img1"/>
+              <div class="line"></div>
+            </div>
+            <div class="text_box dp_flex dp_flex_column" data-audio="035-05.mp3">
+              <!-- 병음 -->
+              <span class="txt txt2 gRegula fs-50" data-view="pinyin">Liû Kuãnshùn</span>
+              <!-- 한자 -->
+              <span class="txt txt1 FZKai fs-50" style="display: none" data-view="hanja" >柳宽顺</span>
+              <!-- 한자 + 병음 -->
+              <span class="txt txt1 FZKai" style="display: none" data-view="combo">柳宽顺</span>
+              <span class="txt txt2 gRegula" style="display: none" data-view="combo">Liû Kuãnshùn</span>
+            </div>
+            <button class="btn3 tab_btn" data-index="2">교체 문장</button>
+          </div>
+
+          <div class="step step2 dp_flex">
+            <div class="img_box">
+              <img src="./images/2_01_07/icon2.png" class="img img1" />
+              <div class="line"></div>
+            </div>
+            <div class="text_box dp_flex dp_flex_column" data-audio="035-06.mp3">
+              <!-- 병음 -->
+              <span class="txt txt2 gRegula fs-50" data-view="pinyin">Lû Xùn</span>
+              <!-- 한자 -->
+              <span class="txt txt1 FZKai fs-50" style="display: none" data-view="hanja">鲁迅</span>
+              <!-- 한자 + 병음 -->
+              <span class="txt txt1 FZKai" style="display: none" data-view="combo" >鲁迅</span>
+              <span class="txt txt2 gRegula" style="display: none" data-view="combo">Lû Xùn</span>
+            </div>
+            <button class="btn3 tab_btn" data-index="3">교체 문장</button>
+          </div>
+
+          <div class="step step3 dp_flex">
+            <div class="img_box">
+              <img src="./images/2_01_07/icon3.png" class="img img1" />
+              <div class="line"></div>
+            </div>
+            <div class="text_box dp_flex dp_flex_column" data-audio="035-07.mp3">
+              <!-- 병음 -->
+              <span class="txt txt2 gRegula fs-50" data-view="pinyin">Bèiduõfçn</span>
+              <!-- 한자 -->
+              <span class="txt txt1 FZKai fs-50" style="display: none" data-view="hanja">贝多芬</span>
+              <!-- 한자 + 병음 -->
+              <span class="txt txt1 FZKai" style="display: none" data-view="combo">贝多芬</span>
+              <span class="txt txt2 gRegula" style="display: none" data-view="combo">Bèiduõfçn</span>
+            </div>
+            <button class="btn3 tab_btn" data-index="4">교체 문장</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="popup_bg" style="display: none"></div>
+      <!-- 단어장 -->
+      <div class="popup vocabularyBook" data-popup="7" style="display: none">
+        <div class="tag bmjua dp_flex">단어장</div>
+        <button class="close_btn"></button>
+        <div class="popup_content dp_flex">
+          <div class="word_list_box dp_flex dp_flex_column">
+            <div class="word_content">
+              <div class="list dp_flex voca_popup_btn active" data-audio="035-08.mp3">
+                <span class="gRegula">Liû Kuãnshùn</span>
+              </div>
+              <div class="list dp_flex voca_popup_btn" data-audio="035-09.mp3">
+                <span class="gRegula">Lû Xùn</span>
+              </div>
+              <div class="list dp_flex voca_popup_btn" data-audio="035-10.mp3">
+                <span class="gRegula">Bèiduõfçn</span>
+              </div>
+            </div>
+          </div>
+          <div class="show_word_box dp_flex dp_flex_column">
+            <div class="china_box dp_flex">
+              <div class="voca_popup_tab" data-audio="035-08.mp3">
+                <span class="FZKai">柳宽顺</span>
+                <span class="gRegula">Liû Kuãnshùn</span>
+              </div>
+              <div class="voca_popup_tab" data-audio="035-09.mp3" style="display: none">
+                <span class="FZKai">鲁迅</span>
+                <span class="gRegula">Lû Xùn</span>
+              </div>
+              <div class="voca_popup_tab" data-audio="035-10.mp3" style="display: none">
+                <span class="FZKai">贝多芬</span>
+                <span class="gRegula">Bèiduõfçn</span>
+              </div>
+            </div>
+            <div class="korea_box dp_flex">
+              <div class="voca_warp">
+                <span class="suit">유관순</span>
+                <span class="suit" style="display: none">루쉰</span>
+                <span class="suit" style="display: none">베토벤</span>
+              </div>
+            </div>
+            <div class="show_btn-warp">
+              <button class="btn3 show_pinyin_btn" style="display: none">
+                병음 보기
+              </button>
+              <button class="btn3 hide_pinyin_btn">병음 가리기</button>
+              <button class="btn3 show_btn" style="display: none">
+                뜻 보기
+              </button>
+              <button class="btn3 hide_btn">뜻 감추기</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 해석 -->
+      <div class="popup popup1" data-popup="3" style="display: none">
+        <div class="tag bmjua dp_flex">해석</div>
+        <button class="close_btn"></button>
+        <div class="popup_content">
+          <ul class="list">
+            <li class="item">
+              <div class="item_text">
+                <div class="chBox">
+                  <span class="simhei">我叫金太阳。</span>
+                  <span class="suit">나는 김태양이라고 해.</span>
+                </div>
+                <span class="gRegula">Wô jiào Jån Tàiyáng.</span>
+              </div>
+            </li>
+            <li class="item">
+              <div class="item_text">
+                <div class="chBox">
+                  <span class="simhei">我叫柳宽顺。</span>
+                  <span class="suit">나는 유관순이라고 해.</span>
+                </div>
+                <span class="gRegula">Wô jiào Liû Kuãnshùn.</span>
+              </div>
+            </li>
+            <li class="item">
+              <div class="item_text">
+                <div class="chBox">
+                  <span class="simhei">我叫鲁迅。</span>
+                  <span class="suit">나는 루쉰이라고 해.</span>
+                </div>
+                <span class="gRegula">Wô jiào Lû Xùn.</span>
+              </div>
+            </li>
+            <li class="item">
+              <div class="item_text">
+                <div class="chBox">
+                  <span class="simhei">我叫贝多芬。</span>
+                  <span class="suit">나는 베토벤이라고 해.</span>
+                </div>
+                <span class="gRegula">Wô jiào Bèiduõfçn.</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- 설명 -->
+      <div class="popup explan" style="display: none">
+        <div class="tag bmjua dp_flex">설명</div>
+        <button class="close_btn">
+          <span class="sr-only">닫기</span>
+        </button>
+        <div class="popup_content dp_flex dp_flex_column">
+          <span class="suit">이름을 소개할 때 동사 <span class="simhei" data-audio="034-12.mp3">叫<span class="suit">(<span class="gRegula">jiào</span>)</span></span>를 써서 표현한다.</span>
+        </div>
+      </div>
+
+      <!-- 참고 -->
+      <div class="popup popup2" data-popup="2" style="display: none">
+        <div class="tag bmjua dp_flex">참고</div>
+        <button class="close_btn"></button>
+        <div class="popup_content">
+          <div class="popupTitle">
+            <span class="suit"><span class="simhei" data-audio="034-12.mp3">叫<span class="suit" style="font-weight: 400;">(<span class="gRegula">jiào</span>)</span></span>와 <span class="simhei" data-audio="034-13.mp3">是<span class="suit" style="font-weight: 400;">(<span class="gRegula">shì</span>)</span></span>로 이름 말하기</span>
+          </div>
+          <div class="line line1">
+            <span class="context context1 suit">• <span class="simhei" data-audio="034-12.mp3">叫<span class="suit" style="font-weight: 400;">(<span class="gRegula">jiào</span>)</span></span>는 처음 만나는 사람에게 자신을 소개할 때 사용한다.</span>
+            <span class="context context2 suit"><span class="simhei" data-audio="034-17.mp3" data-audio-combo="034-17">我叫金太阳。</span>나는 김태양이라고 해. (<img class="arrow" src="./images/2_01_07/arrow.svg" alt=""> <span class="simhei" data-audio="035-11.mp3">金太阳</span>을 강조)<span class="simhei"></span></span>  
+            <span class="context context3 gRegula" data-audio="034-17.mp3" data-audio-combo="034-17">Wô jiào Jån Tàiyáng.</span>
+          </div>
+          <div class="line line2">
+            <span class="context context1 suit">• <span class="simhei" data-audio="034-13.mp3">是<span class="suit" style="font-weight: 400;">(<span class="gRegula">shì</span>)</span></span>는 상대방이 자신을 어느 정도 알고 있는 상황에서 사용한다.</span>
+            <span class="context context2 suit"><span class="simhei" data-audio="034-14.mp3" data-audio-combo="034-14">我是金太阳。</span>내가 김태양이야. (<img class="arrow" src="./images/2_01_07/arrow.svg" alt=""> <span class="simhei" data-audio="035-12.mp3">我</span>를 강조)<span class="simhei"></span></span>  
+            <span class="context context3 gRegula" data-audio="034-14.mp3" data-audio-combo="034-14">Wô shì Jån Tàiyáng.</span>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </body>
+  <script type="text/javascript">
+    const page = {
+      //컨텐츠에 정답 확인이 존재하는지 여부
+      isAnswer: false,
+      // 단어장 노출 여부 판단.
+      isVocabulary: true,
+      //정답 보기
+      showAnswer: () => {},
+      //정답 숨기기
+      hideAnswer: () => {},
+      // 단어장 보기
+      showVocabulary: () => {
+        setPopup(7);
+      },
+    };
+  </script>
+  <script type="text/javascript">
+    //설명 팝업
+    $(".explan_popup_btn").on("click", function () {
+      let index = $(".explan_popup_btn").index(this);
+      $(".explan_popup_bg").show();
+      $(".popup.explan").hide();
+      $(".popup.explan").eq(index).show();
+      try {
+        setRoleStop();
+      } catch (error) {}
+      audioStop();
+    });
+  </script>
+  <script src="../common/js/script.js"></script>
+  <script src="../common/js/vocabularyBook.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      // setPopup(2);
+    });
+    // 교체 문장
+    $(".tab_btn").on("click", function () {
+      setActive($(this), "tab_btn");
+    });
+  </script>
+  <script type="text/javascript">
+    // 설명 팝업
+    $(".explan_popup_btn").on("click", function () {
+      let index = $(".explan_popup_btn").index(this);
+      $(".explan_popup_bg").show();
+      $(".popup.explan").hide();
+      $(".popup.explan").eq(index).show();
+      try {
+        setRoleStop();
+      } catch (error) {}
+      audioStop();
+    });
+    // 설명팝업 있는상태에서 다른 팝업 클릭시 팝업 닫기
+    $(".popup_btn").on("click", function () {
+      $(".popup.explan").css("display","none");
+    })
+  </script>
+</html>

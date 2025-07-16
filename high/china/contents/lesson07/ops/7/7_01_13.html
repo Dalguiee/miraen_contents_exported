@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>미래엔 중국어</title>
+    <script src="./../common/lib/jquery-3.7.1.min.js"></script>
+    <!-- SUIT Variable 폰트 -->
+    <link href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/variable/woff2/SUIT-Variable.css" rel="stylesheet" />
+    <link href="../common/css/comm.css" rel="stylesheet" />
+    <link href="./css/7_01_13.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div id="wrap" class="china_wrap content2_wrap">
+      <div class="title_box dp_flex">
+        <div class="num_box tmoney">
+          <span>2</span>
+        </div>
+        <div class="text_box">
+          <span class="suit">맛 표현하기</span>
+        </div>
+      </div>
+
+      <div class="btn_box dp_flex">
+        <button class="btn hanja_btn">한자</button>
+        <button class="btn pinyin_btn" style="display: none">병음</button>
+        <button class="btn combo_btn">한자+병음</button>
+        <button class="btn popup_btn blue" data-index="2">해석</button>
+        <button class="explan_popup_btn btn blue"><span>설명</span></button>
+        <!-- <div class="tempBttns">
+          <button onclick="page.showVocabulary()" data-index="1" class="tempBttn">단어장</button>
+        </div> -->
+      </div>
+
+      <div class="full_content">
+
+        <!-- <figure class="tipFig">
+          <img class="tipImg" src="./images/2_01_07/tip.png" alt="">
+        </figure> -->
+
+        <!-- 윗구역 -->
+        <div class="top_box dp_flex dp_flex_column" data-view-info="pinyin" data-tab-info="1">
+          <!-- 기본문장 -->
+          <div class="tab1" data-tab="1" data-audio="087-37.mp3">
+            <!-- 병음 -->
+            <div class="type type1 dp_flex dp_flex_column" data-view="pinyin">
+              <span class="txt txt2 gRegula">Yôudiânr <span class="highlight pink">là</span>, búguò hên hâochå.</span>
+            </div>
+            <!-- 한자 -->
+            <div class="type type1 dp_flex dp_flex_column" data-view="hanja" style="display: none">
+              <span class="txt txt1 FZKai">有点儿<span class="highlight pink">辣</span>，不过很好吃。</span>
+            </div>
+            <!-- 한자 + 병음 -->
+            <div class="type type3 dp_flex dp_flex_column" data-view="combo" style="display: none">
+              <span class="txt txt1 FZKai">有点儿<span class="highlight pink">辣</span>，不过很好吃。</span>
+              <span class="txt txt2 gRegula">Yôudiânr <span class="highlight pink">là</span>, búguò hên hâochå.</span>
+            </div>
+          </div>
+          <!-- 첫번째 교체문장 -->
+          <div class="tab1" data-tab="2" data-audio="087-38.mp3" style="display: none">
+            <!-- 병음 -->
+            <div class="type type1 dp_flex dp_flex_column" data-view="pinyin">
+              <span class="txt txt2 gRegula">Yôudiânr <span class="highlight pink">suãn</span>, búguò hên hâochå.</span>
+            </div>
+            <!-- 한자 -->
+            <div class="type type1 dp_flex dp_flex_column" data-view="hanja" style="display: none">
+              <span class="txt txt1 FZKai">有点儿<span class="highlight pink">酸</span>，不过很好吃。</span>
+            </div>
+            <!-- 한자 + 병음 -->
+            <div class="type type3 dp_flex dp_flex_column" data-view="combo" style="display: none">
+              <span class="txt txt1 FZKai">有点儿<span class="highlight pink">酸</span>，不过很好吃。</span>
+              <span class="txt txt2 gRegula">Yôudiânr <span class="highlight pink">suãn</span>, búguò hên hâochå.</span>
+            </div>
+          </div>
+          <!-- 둘쨰 교체문장 -->
+          <div class="tab2" data-tab="3" data-audio="087-39.mp3" style="display: none">
+            <!-- 병음 -->
+            <div class="type type3 dp_flex dp_flex_column" data-view="pinyin">
+              <span class="txt txt2 gRegula">Yôudiânr <span class="highlight pink">tián</span>, búguò hên hâochå.</span>
+            </div>
+            <!-- 한자 -->
+            <div class="type type3 dp_flex dp_flex_column" data-view="hanja" style="display: none">
+              <span class="txt txt1 FZKai">有点儿<span class="highlight pink">甜</span>，不过很好吃。</span>
+            </div>
+            <!-- 한자 + 병음 -->
+            <div class="type type3 dp_flex dp_flex_column" data-view="combo" style="display: none">
+              <span class="txt txt1 FZKai">有点儿<span class="highlight pink">甜</span>，不过很好吃。</span>
+              <span class="txt txt2 gRegula">Yôudiânr <span class="highlight pink">tián</span>, búguò hên hâochå.</span>
+            </div>
+          </div>
+          <!-- 셋째 교체문장 -->
+          <div class="tab3" data-tab="4" data-audio="087-40.mp3" style="display: none">
+            <!-- 병음 -->
+            <div class="type type4 dp_flex dp_flex_column" data-view="pinyin">
+              <span class="txt txt2 gRegula">Yôudiânr <span class="highlight pink">kû</span>, búguò hên hâochå.</span>
+            </div>
+            <!-- 한자 -->
+            <div class="type type4 dp_flex dp_flex_column" data-view="hanja" style="display: none">
+              <span class="txt txt1 FZKai">有点儿<span class="highlight pink">苦</span>，不过很好吃。</span>
+            </div>
+            <!-- 병음 + 한자 -->
+            <div class="type type4 dp_flex dp_flex_column" data-view="combo" style="display: none">
+              <span class="txt txt1 FZKai">有点儿<span class="highlight pink">苦</span>，不过很好吃。</span>
+              <span class="txt txt2 gRegula">Yôudiânr <span class="highlight pink">kû</span>, búguò hên hâochå.</span>
+            </div>
+          </div>
+          <!-- 기본으로 교체 -->
+          <button class="btn3 basic_btn tab_btn active" data-index="1">기본 문장</button>
+        </div>
+
+        <!-- 아래구역 -->
+        <div class="bottom_box" data-view-info="pinyin" data-tab-info="1">
+          <!-- 첫째줄 -->
+          <div class="step step1 dp_flex">
+            <div class="img_box img_box1">
+              <img src="./images/7_01_13/icon1.svg" class="img img1"/>
+              <div class="line"></div>
+            </div>
+            <div class="text_box text_box1" data-audio="087-41.mp3">
+              <!-- 병음 -->
+              <span class="txt txt2 gRegula" data-view="pinyin">suãn</span>
+              <!-- 한자 -->
+              <span class="txt txt1 FZKai" style="display: none" data-view="hanja" >酸</span>
+              <!-- 한자 + 병음 -->
+              <span class="txt txt1 FZKai" style="display: none" data-view="combo">酸</span>
+              <span class="txt txt2 gRegula" style="display: none" data-view="combo">suãn</span>
+            </div>
+            <button class="btn3 tab_btn" data-index="2">교체 문장</button>
+          </div>
+          <!-- 둘째줄 -->
+          <div class="step step2 dp_flex">
+            <div class="img_box img_box1">
+              <img src="./images/7_01_13/icon2.svg" class="img img1"/>
+              <div class="line"></div>
+            </div>
+            <div class="text_box text_box1" data-audio="087-42.mp3">
+              <!-- 병음 -->
+              <span class="txt txt2 gRegula" data-view="pinyin">tián</span>
+              <!-- 한자 -->
+              <span class="txt txt1 FZKai" style="display: none" data-view="hanja" >甜</span>
+              <!-- 한자 + 병음 -->
+              <span class="txt txt1 FZKai" style="display: none" data-view="combo">甜</span>
+              <span class="txt txt2 gRegula" style="display: none" data-view="combo">tián</span>
+            </div>
+            <button class="btn3 tab_btn" data-index="3">교체 문장</button>
+          </div>
+          <!-- 셋째줄 -->
+          <div class="step step3 dp_flex">
+            <div class="img_box img_box1">
+              <img src="./images/7_01_13/icon3.svg" class="img img1"/>
+              <div class="line"></div>
+            </div>
+            <div class="text_box text_box1" data-audio="087-43.mp3">
+              <!-- 병음 -->
+              <span class="txt txt2 gRegula" data-view="pinyin">kû</span>
+              <!-- 한자 -->
+              <span class="txt txt1 FZKai" style="display: none" data-view="hanja" >苦</span>
+              <!-- 한자 + 병음 -->
+              <span class="txt txt1 FZKai" style="display: none" data-view="combo">苦</span>
+              <span class="txt txt2 gRegula" style="display: none" data-view="combo">kû</span>
+            </div>
+            <button class="btn3 tab_btn" data-index="4">교체 문장</button>
+          </div>
+        </div>
+
+        <div class="bttm_btn_box">
+          <button class="btn popup_btn blue" data-index="3">보충</button>
+          <button class="btn popup_btn blue" data-index="4">참고</button>
+          <!-- <button class="btn popup_btn yellow" data-index="5">자기소개 프로젝트</button> -->
+        </div>
+  
+      </div>
+
+      <!-- 팝업 -->
+      <div class="popup_bg" style="display: none"></div>
+
+      <!-- 단어장 -->
+      <div class="popup vocabularyBook" data-popup="1" style="display: none">
+        <div class="tag bmjua dp_flex">단어장</div>
+        <button class="close_btn"></button>
+        <div class="popup_content dp_flex">
+          <div class="word_list_box dp_flex dp_flex_column">
+            <div class="word_content">
+              <div class="list dp_flex voca_popup_btn active" data-audio="087-44.mp3">
+                <span class="gRegula">suãn</span>
+              </div>
+              <div class="list dp_flex voca_popup_btn" data-audio="087-45.mp3">
+                <span class="gRegula">tián</span>
+              </div>
+              <div class="list dp_flex voca_popup_btn" data-audio="087-46.mp3">
+                <span class="gRegula">kû</span>
+              </div>
+
+            </div>
+          </div>
+          <div class="show_word_box dp_flex dp_flex_column">
+            <div class="china_box dp_flex">
+              <div class="voca_popup_tab" data-audio="087-44.mp3">
+                <span class="FZKai">酸</span>
+                <span class="gRegula">suãn</span>
+              </div>
+              <div class="voca_popup_tab" data-audio="087-45.mp3" style="display: none">
+                <span class="FZKai">甜</span>
+                <span class="gRegula">tián</span>
+              </div>
+              <div class="voca_popup_tab" data-audio="087-46.mp3" style="display: none">
+                <span class="FZKai">苦</span>
+                <span class="gRegula">kû</span>
+              </div>
+
+            </div>
+            <div class="korea_box dp_flex">
+              <div class="voca_warp">
+                <span class="suit">시다</span>
+                <span class="suit" style="display: none">달다</span>
+                <span class="suit" style="display: none">쓰다</span>
+              </div>
+            </div>
+            <div class="show_btn-warp">
+              <button class="btn3 show_pinyin_btn" style="display: none">
+                병음 보기
+              </button>
+              <button class="btn3 hide_pinyin_btn">병음 가리기</button>
+              <button class="btn3 show_btn" style="display: none">
+                뜻 보기
+              </button>
+              <button class="btn3 hide_btn">뜻 감추기</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 해석 -->
+      <div class="popup popup1" data-popup="2" style="display: none">
+        <div class="tag bmjua dp_flex">해석</div>
+        <button class="close_btn"></button>
+        <div class="popup_content">
+          <ul class="list">
+            <li class="item">
+              <div class="item_text">
+                <div class="chBox">
+                  <span class="FZKai">有点儿辣，不过很好吃。</span>
+                  <span class="suit">조금 매워, 그런데 맛있어.</span>
+                </div>
+                <span class="gRegula">Yôudiânr là, búguò hên hâochå.</span>
+              </div>
+            </li>
+            <li class="item">
+              <div class="item_text">
+                <div class="chBox">
+                  <span class="FZKai">有点儿酸，不过很好吃。</span>
+                  <span class="suit">좀 셔, 그런데 맛있어.</span>
+                </div>
+                <span class="gRegula">Yôudiânr suãn, búguò hên hâochå.</span>
+              </div>
+            </li>
+            <li class="item">
+              <div class="item_text">
+                <div class="chBox">
+                  <span class="FZKai">有点儿甜，不过很好吃。</span>
+                  <span class="suit">좀 달아, 그런데 맛있어.</span>
+                </div>
+                <span class="gRegula">Yôudiânr tián, búguò hên hâochå.</span>
+              </div>
+            </li>
+            <li class="item">
+              <div class="item_text">
+                <div class="chBox">
+                  <span class="FZKai">有点儿苦，不过很好吃。</span>
+                  <span class="suit">좀 써, 그런데 맛있어.</span>
+                </div>
+                <span class="gRegula">Yôudiânr kû, búguò hên hâochå.</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- 설명 -->
+      <div class="popup explan" style="display: none">
+        <div class="tag bmjua dp_flex">설명</div>
+        <button class="close_btn">
+          <span class="sr-only">닫기</span>
+        </button>
+        <div class="popup_content dp_flex dp_flex_column">
+          <span class="suit">
+            ‘<span class="FZKai" data-audio="086-20.mp3">有点儿<span class="gRegula">(yôudiânr)</span></span>+맛을 나타내는 형용사’의<br>
+            형식으로 맛에 대한 주관적인 불만족을 표현한다.
+          </span>
+        </div>
+      </div>
+
+      <!-- 보충 -->
+      <div class="popup popup2" data-popup="3" style="display: none">
+        <div class="tag bmjua dp_flex">보충</div>
+        <button class="close_btn"></button>
+        <div class="popup_content">
+          <div class="title">
+            <span class="suit"><span class="simhei" data-audio="086-20.mp3">有点儿<span class="gRegula"><span class="suit">(</span>yôudiânr<span class="suit">)</span></span></span>과 <span class="simhei" data-audio="087-47.mp3">一点儿<span class="gRegula"><span class="suit">(</span>yìdiânr<span class="suit">)</span></span></span></span>
+          </div>
+          <div class="context">
+
+            <div class="line line1">
+              <div class="index">
+                <span class="suit">•</span>
+              </div>
+              <div class="content_sec">
+                <div class="title_text">
+                  <span class="simhei" data-audio="086-20.mp3">有点儿</span>
+                  <span class="suit"> + </span>
+                  <span class="suit">맛 표현</span>
+                </div>
+                <div class="text">
+                  <div class="upper_sec">
+                    <span class="simhei" data-audio="087-48.mp3" data-audio-combo="087-48">有点儿辣。</span>
+                    <span class="suit">좀 매워.</span>
+                  </div>
+                  <span class="gRegula" data-audio="087-48.mp3" data-audio-combo="087-48">Yôudiânr là.</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="line line2">
+              <div class="index">
+                <span class="suit">•</span>
+              </div>
+              <div class="content_sec">
+                <div class="title_text">
+                  <span class="suit">맛 표현</span>
+                  <span class="suit"> + </span>
+                  <span class="simhei" data-audio="087-47.mp3">一点儿</span>
+                </div>
+                <div class="text">
+                  <div class="upper_sec">
+                    <span class="simhei" data-audio="087-49.mp3" data-audio-combo="087-49">辣一点儿。</span>
+                    <span class="suit">좀 맵게 해 주세요.</span>
+                  </div>
+                  <span class="gRegula" data-audio="087-49.mp3" data-audio-combo="087-49">Là yìdiânr.</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- 참고 -->
+      <div class="popup popup3" data-popup="4" style="display: none">
+        <div class="tag bmjua dp_flex">참고</div>
+        <button class="close_btn"></button>
+        <div class="popup_content">
+          <div class="title">
+            <span class="suit">다양한 맛 표현</span>
+          </div>
+          <div class="table_sec">
+            <div class="table_box">
+              <div class="table_border">
+                <table>
+                  <colgroup>
+                    <col width="126px">
+                    <col width="117px">
+                    <col width="160px"/>
+                  </colgroup>
+                  <tbody>
+                    <tr>
+                      <th scope="row">
+                        <div>
+                          <span class="FZKai" data-audio="087-50.mp3" data-audio-combo="087-50">咸</span>
+                        </div>
+                      </th>
+                      <td>
+                        <div>
+                          <span class="gRegula" data-audio="087-50.mp3" data-audio-combo="087-50">xián</span>
+                        </div>
+                      </td>
+                      <td>
+                        <div>
+                          <span class="suit">짜다</span>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">
+                        <div>
+                          <span class="FZKai" data-audio="087-52.mp3" data-audio-combo="087-52">涩</span>
+                        </div>
+                      </th>
+                      <td>
+                        <div>
+                          <span class="gRegula" data-audio="087-52.mp3" data-audio-combo="087-52">sè</span>
+                        </div>
+                      </td>
+                      <td>
+                        <div>
+                          <span class="suit">떫다</span>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">
+                        <div>
+                          <span class="FZKai" data-audio="087-54.mp3" data-audio-combo="087-54">香</span>
+                        </div>
+                      </th>
+                      <td>
+                        <div>
+                          <span class="gRegula" data-audio="087-54.mp3" data-audio-combo="087-54">xiãng</span>
+                        </div>
+                      </td>
+                      <td>
+                        <div>
+                          <span class="suit">맛있다</span>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">
+                        <div>
+                          <span class="FZKai" data-audio="087-56.mp3" data-audio-combo="087-56">清淡</span>
+                        </div>
+                      </th>
+                      <td>
+                        <div>
+                          <span class="gRegula" data-audio="087-56.mp3" data-audio-combo="087-56">qångdàn</span>
+                        </div>
+                      </td>
+                      <td>
+                        <div>
+                          <span class="suit">담백하다</span>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">
+                        <div>
+                          <span class="FZKai" data-audio="087-58.mp3" data-audio-combo="087-58">筋道</span>
+                        </div>
+                      </th>
+                      <td>
+                        <div>
+                          <span class="gRegula" data-audio="087-58.mp3" data-audio-combo="087-58">jåndao</span>
+                        </div>
+                      </td>
+                      <td>
+                        <div>
+                          <span class="suit">쫄깃하다</span>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="table_box">
+              <div class="table_border">
+                <table>
+                  <colgroup>
+                    <col width="126px">
+                    <col width="117px">
+                    <col width="160px"/>
+                  </colgroup>
+                  <tbody>
+                    <tr>
+                      <th scope="row">
+                        <div>
+                          <span class="FZKai" data-audio="087-51.mp3" data-audio-combo="087-51">淡</span>
+                        </div>
+                      </th>
+                      <td>
+                        <div>
+                          <span class="gRegula" data-audio="087-51.mp3" data-audio-combo="087-51">dàn</span>
+                        </div>
+                      </td>
+                      <td>
+                        <div>
+                          <span class="suit">싱겁다</span>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">
+                        <div>
+                          <span class="FZKai" data-audio="087-53.mp3" data-audio-combo="087-53">脆</span>
+                        </div>
+                      </th>
+                      <td>
+                        <div>
+                          <span class="gRegula" data-audio="087-53.mp3" data-audio-combo="087-53">cuì</span>
+                        </div>
+                      </td>
+                      <td>
+                        <div>
+                          <span class="suit">바삭하다</span>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">
+                        <div>
+                          <span class="FZKai" data-audio="087-55.mp3" data-audio-combo="087-55">难吃</span>
+                        </div>
+                      </th>
+                      <td>
+                        <div>
+                          <span class="gRegula" data-audio="087-55.mp3" data-audio-combo="087-55">nánchå</span>
+                        </div>
+                      </td>
+                      <td>
+                        <div>
+                          <span class="suit">맛없다</span>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">
+                        <div>
+                          <span class="FZKai" data-audio="087-57.mp3" data-audio-combo="087-57">油腻</span>
+                        </div>
+                      </th>
+                      <td>
+                        <div>
+                          <span class="gRegula" data-audio="087-57.mp3" data-audio-combo="087-57">yóunì</span>
+                        </div>
+                      </td>
+                      <td>
+                        <div>
+                          <span class="suit">느끼하다</span>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">
+                        <div>
+                          <span class="FZKai" data-audio="087-59.mp3" data-audio-combo="087-59">麻辣</span>
+                        </div>
+                      </th>
+                      <td>
+                        <div>
+                          <span class="gRegula" data-audio="087-59.mp3" data-audio-combo="087-59">málà</span>
+                        </div>
+                      </td>
+                      <td>
+                        <div>
+                          <span class="suit">맵고 얼얼하다</span>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- 자기소개 프로젝트 -->
+			<!-- <div class="popup introduce" data-popup="5" style="display: none">
+				<div class="tag bmjua dp_flex">자기소개 프로젝트</div>
+				<button class="close_btn"></button>
+
+				<div class="popup_content">
+					<div class="popupTitle">
+						<span class="titleText titleText1 suit">먹어 본 중국 음식을 써 봅시다.</span>
+					</div>
+
+					<div class="line_wrap line1">
+						<div class="line notYet" data-audio="067-13.mp3">
+							<span class="gRegula quesText">Wô chåguo</span>
+							<span class="gRegula reset reset0"></span>
+							<span class="gRegula answer answer0 highlight pink" style="display: none">málàtàng</span>
+							<span class="gRegula">.</span>
+						</div>
+						<div class="line line_type2">
+							<span class="suit answer answer0" style="display: none">나는 <span class="highlight pink">마라탕</span>을 먹어봤다.</span>
+						</div>
+					</div>
+
+					<div class="bttns">
+						<button class="btn3 answer_btn">예시 답안</button>
+						<button class="btn3 reset_btn" style="display: none">다시 하기</button>
+					</div>
+				</div>
+			</div> -->
+
+      
+    </div>
+  </body>
+  <script type="text/javascript">
+    const page = {
+      //컨텐츠에 정답 확인이 존재하는지 여부
+      isAnswer: false,
+      // 단어장 노출 여부 판단.
+      isVocabulary: true,
+      //정답 보기
+      showAnswer: () => {},
+      //정답 숨기기
+      hideAnswer: () => {},
+      // 단어장 보기
+      showVocabulary: () => {
+        setPopup(1);
+      },
+    };
+  </script>
+  <script type="text/javascript">
+    // 설명 팝업
+    $(".explan_popup_btn").on("click", function () {
+      let index = $(".explan_popup_btn").index(this);
+      $(".explan_popup_bg").show();
+      $(".popup.explan").hide();
+      $(".popup.explan").eq(index).show();
+      try {
+        setRoleStop();
+      } catch (error) {}
+      audioStop();
+    });
+    // 설명팝업 있는상태에서 다른 팝업 클릭시 팝업 닫기
+    $(".popup_btn").on("click", function () {
+      $(".popup.explan").css("display","none");
+    })
+  </script>
+  <script src="../common/js/script.js"></script>
+  <script src="../common/js/vocabularyBook.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      // setPopup(2);
+    });
+    // 교체 문장
+    $(".tab_btn").on("click", function () {
+      setActive($(this), "tab_btn");
+    });
+  </script>
+  <script type="text/javascript">
+    // 자기소개 프로젝트 정답 버튼
+    $(".popup.introduce .answer_btn").on("click", function () {
+      let index = $(".answer_btn").index(this);
+      $(this).hide();
+      $(".reset_btn").eq(index).show();
+      $(`.answer`).show();
+      $(`.reset`).hide();
+
+      $(".notYet").removeClass("notYet");
+    });
+    // 자기소개 프로젝트 정답 다시 하기 버튼
+    $(".popup.introduce .reset_btn").on("click", function () {
+      let index = $(".reset_btn").index(this);
+      $(this).hide();
+      $(".answer_btn").eq(index).show();
+      $(`.answer`).hide();
+      $(`.reset`).show();
+
+      $(".popup.introduce .line1 .line").addClass("notYet");
+    });
+  </script>  
+</html>

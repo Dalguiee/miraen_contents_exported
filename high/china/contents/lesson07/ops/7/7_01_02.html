@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>미래엔 중국어</title>
+		<script src="./../common/lib/jquery-3.7.1.min.js"></script>
+		<!-- SUIT Variable 폰트 -->
+		<link href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/variable/woff2/SUIT-Variable.css" rel="stylesheet" />
+		<link href="../common/css/comm.css" rel="stylesheet" />
+		<link href="./css/7_01_02.css" rel="stylesheet" />
+	</head>
+
+	<body>
+		<div id="wrap" class="china_wrap index_wrap">
+			<div class="btn_box dp_flex">
+				<button class="btn hanja_btn">한자</button>
+				<button class="btn pinyin_btn" style="display: none">병음</button>
+				<button class="btn combo_btn">한자+병음</button>
+				<button class="btn popup_btn blue" data-index="1">해석</button>
+			</div>
+
+			<div class="full_content dp_flex dp_flex_column">
+				<div class="target_box dp_flex">
+					<div class="tag">학습 목표</div>
+					<div class="text_box">
+						<span class="suit">
+							음식을 주문하고 맛을 표현할 수 있다.<br />
+							선택 묻기와 경험의 표현을 말할 수 있다.
+						</span>
+					</div>
+				</div>
+				<div class="express_box dp_flex">
+					<div class="tag">기본 표현</div>
+					<!-- 병음 -->
+					<div class="text_box dp_flex dp_flex_column" data-view="pinyin">
+						<div class="line line1 dp_flex">
+							<span class="index">식사</span>
+							<span class="title gRegula" data-audio="083-04.mp3">Lái yì wân niúròumiàn.</span>
+						</div>
+						<div class="line line2 dp_flex">
+							<span class="index">선택</span>
+							<span class="title gRegula" data-audio="083-05.mp3">Zài zhèr chå háishi dài zôu?</span>
+						</div>
+						<div class="line line3 dp_flex">
+							<span class="index">디지털 매체</span>
+							<span class="title gRegula" data-audio="083-06.mp3">Wô sâo yíxià èrwéimâ.</span>
+						</div>
+						<div class="line line4 dp_flex">
+							<span class="index">경험</span>
+							<span class="title gRegula" data-audio="083-07.mp3">Nî yîqián chåguo huôguõ ma?</span>
+						</div>
+
+					</div>
+					<!-- 한자 -->
+					<div class="text_box dp_flex dp_flex_column" data-view="hanja" style="display: none">
+						<div class="line line1 dp_flex">
+							<span class="index">식사</span>
+							<span class="title FZKai" data-audio="083-04.mp3">来一碗牛肉面。</span>
+						</div>
+						<div class="line line2 dp_flex">
+							<span class="index">선택</span>
+							<span class="title FZKai" data-audio="083-05.mp3">在这儿吃还是带走?</span>
+						</div>
+						<div class="line line3 dp_flex">
+							<span class="index">디지털 매체</span>
+							<span class="title FZKai" data-audio="083-06.mp3">我扫一下二维码。</span>
+						</div>
+						<div class="line line4 dp_flex">
+							<span class="index">경험</span>
+							<span class="title FZKai" data-audio="083-07.mp3">你以前吃过火锅吗?</span>
+						</div>
+					</div>
+					<!-- 한자 + 병음 -->
+					<div class="text_box dp_flex dp_flex_column" data-view="combo" style="display: none">
+						<div class="line line1 dp_flex">
+							<span class="index">식사</span>
+							<div class="flex" data-audio="083-04.mp3">
+								<span class="title FZKai" style="margin-right: -16px;">来一碗牛肉面。</span>
+								<span class="title gRegula" style="font-size: 36px">Lái yì wân niúròumiàn.</span>
+							</div>
+						</div>
+						<div class="line line2 dp_flex">
+							<span class="index">선택</span>
+							<div class="flex" data-audio="083-05.mp3">
+								<span class="title FZKai" style="margin-right: 0">在这儿吃还是带走?</span>
+								<span class="title gRegula" style="font-size: 36px">Zài zhèr chå háishi dài zôu?</span>
+							</div>
+						</div>
+						<div class="line line3 dp_flex">
+							<span class="index">디지털 매체</span>
+							<div class="flex" data-audio="083-06.mp3">
+								<span class="title FZKai" style="margin-right: -16px;">我扫一下二维码。</span>
+								<span class="title gRegula" style="font-size: 36px">Wô sâo yíxià èrwéimâ.</span>
+							</div>
+						</div>
+						<div class="line line4 dp_flex">
+							<span class="index">경험</span>
+							<div class="flex" data-audio="083-07.mp3">
+								<span class="title FZKai">你以前吃过火锅吗?</span>
+								<span class="title gRegula" style="font-size: 36px">Nî yîqián chåguo huôguõ ma?</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="culture_box dp_flex">
+					<div class="tag">중국 문화</div>
+					<div class="text_box">
+						<span class="suit">중국의 식사 문화</span>
+					</div>
+				</div>
+			</div>
+
+			<!-- 팝업 -->
+			<div class="popup_bg" style="display: none"></div>
+			<!-- 해석 -->
+			<div class="popup popup1" data-popup="1" style="display: none">
+				<div class="tag bmjua dp_flex">해석</div>
+				<button class="close_btn"></button>
+				<div class="popup_content dp_flex">
+					<div class="layout dp_flex dp_flex_column">
+						<div class="line line1 dp_flex">
+							<div class="index_box dp_flex">식사</div>
+							<div class="text_box">
+								<div class="upper">
+									<span class="txt txt1 FZKai" style="margin-right: -20px;">来一碗牛肉面。</span>
+									<span class="suit">뉴러우<span class="notoSans">몐</span> 한 그릇 주세요.</span>
+								</div>
+								<span class="txt txt2 gRegula">Lái yì wân niúròumiàn.</span>
+							</div>
+						</div>
+						<div class="line line2 dp_flex">
+							<div class="index_box dp_flex">선택</div>
+							<div class="text_box">
+								<div class="upper">
+									<span class="txt txt1 FZKai">在这儿吃还是带走?</span>
+									<span class="suit">여기서 드세요, 아니면 가져가세요?</span>
+								</div>
+								<span class="txt txt2 gRegula">Zài zhèr chå háishi dài zôu?</span>
+							</div>
+						</div>
+						<div class="line line3 dp_flex">
+							<div class="index_box dp_flex">디지털 매체</div>
+							<div class="text_box">
+								<div class="upper">
+									<span class="txt txt1 FZKai" style="margin-right: -20px;">我扫一下二维码。</span>
+									<span class="suit">QR 코드 좀 스캔할게요.</span>
+								</div>
+								<span class="txt txt2 gRegula">Wô sâo yíxià èrwéimâ.</span>
+							</div>
+						</div>
+						<div class="line line4 dp_flex">
+							<div class="index_box dp_flex">경험</div>
+							<div class="text_box">
+								<div class="upper">
+									<span class="txt txt1 FZKai">你以前吃过火锅吗?</span>
+									<span class="suit">너는 전에 훠궈 먹어 본 적 있니?</span>
+								</div>
+								<span class="txt txt2 gRegula">Nî yîqián chåguo huôguõ ma?</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</body>
+	<script type="text/javascript">
+		const page = {
+			//컨텐츠에 정답 확인이 존재하는지 여부
+			isAnswer: false,
+			// 단어장 노출 여부 판단. 이벤트 호출하지 않으면 노출하지 않음.
+			isVocabulary: false,
+			//정답 보기
+			showAnswer: () => {},
+			//정답 숨기기
+			hideAnswer: () => {},
+			// 단어장 보기
+			showVocabulary: () => {},
+		};
+	</script>
+	<script src="../common/js/script.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function () {
+			// setPopup(1);
+		});
+	</script>
+</html>

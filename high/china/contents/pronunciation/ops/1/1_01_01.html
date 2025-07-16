@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>미래엔 중국어</title>
+    <script src="./../common/lib/jquery-3.7.1.min.js"></script>
+    <!-- SUIT Variable 폰트 -->
+    <link
+      href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/variable/woff2/SUIT-Variable.css"
+      rel="stylesheet"
+    />
+    <link href="../common/css/comm.css" rel="stylesheet" />
+    <link href="./css/1_01_01.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div id="wrap" class="china_wrap">
+      <div class="full_content">
+        <div class="big_title">
+          <img src="./images/1_01_01/big_title.svg" alt="">
+        </div>
+        <div class="content">
+          <div class="flex items-center" style="margin-bottom: 90px">
+            <div class="title_img mr-42 bmjua">학습 목표</div>
+            <span class="line-44 suit fs-32 fw-6"
+              >중국어의 특징을 이해하고 발음할 수 있다.</span
+            >
+          </div>
+          <div class="flex items-start">
+            <div class="title_img mt-10 mr-42 bmjua">학습 내용</div>
+            <div class="flex flex-col suit fs-32 fw-6">
+              <div class="flex items-center line-48 dot">
+                우리가 배울 중국어
+              </div>
+              <div class="flex items-center line-48 dot">성조, 성모, 운모</div>
+              <div class="flex items-center line-48 dot">
+                한어병음 표기 규칙
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="popup_bg" style="display: none"></div>
+    </div>
+  </body>
+
+  <script type="text/javascript">
+    const page = {
+      //컨텐츠에 정답 확인이 존재하는지 여부
+      isAnswer: false,
+      // 단어장 노출 여부 판단.
+      isVocabulary: false,
+      //정답 보기
+      showAnswer: () => {},
+      //정답 숨기기
+      hideAnswer: () => {},
+      // 단어장 보기
+      showVocabulary: () => {},
+    };
+    $(document).ready(function () {});
+  </script>
+  <script src="../common/js/script.js"></script>
+  <script type="text/javascript"></script>
+</html>

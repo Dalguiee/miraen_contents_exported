@@ -1,0 +1,9 @@
+{
+  "lang": ["한자", "병음"],
+  "subtitlelist": [
+    { "start": 4.5, "end": 6.0, "value": ["Tã shì nâ guó rén?", "他是哪国人?"] },
+    { "start": 7, "end": 9, "value": ["Tã shì Hánguó rén.", "他是韩国人。"] },
+    { "start": 10, "end": 12, "value": ["Tã yê shì Hánguó rén ma?", "她也是韩国人吗?"] },
+    { "start": 12.7, "end": 15.5, "value": ["Bú shì, tã shì Zhõngguó rén.", "不是，她是中国人。"] }
+  ]
+}

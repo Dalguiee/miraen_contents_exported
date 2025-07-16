@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>미래엔 중국어</title>
+    <script src="./../common/lib/jquery-3.7.1.min.js"></script>
+    <!-- SUIT Variable 폰트 -->
+    <link href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/variable/woff2/SUIT-Variable.css" rel="stylesheet" />
+    <link href="../common/css/comm.css" rel="stylesheet" />
+    <link href="./css/6_01_09.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div id="wrap" class="china_wrap content2_wrap">
+      <div class="title_box dp_flex">
+        <div class="text_box">
+          <img class="logoImg" src="./images/6_01_09/logo.svg" alt=""><span class="suit">중국 기차의 다양한 좌석</span>
+        </div>
+      </div>
+
+      <div class="btn_box dp_flex">
+        <button class="btn popup_btn blue" data-index="2">보충</button>
+      </div>
+
+      <div class="full_content">
+        <figure class="contentFig">
+          <img class="contentImg" src="./images/6_01_09/content.svg" alt="">
+          <div class="contextSec">
+            <div class="context context1">
+              <span class="simhei" data-audio="075-39.mp3" data-audio-combo="075-39">硬座</span>
+              <span class="gRegula" data-audio="075-39.mp3" data-audio-combo="075-39">yìngzuò</span>
+              <span class="suit">딱딱한<br>일반 좌석</span>
+            </div>
+            <div class="context context2">
+              <span class="simhei" data-audio="075-40.mp3" data-audio-combo="075-40">软座</span>
+              <span class="gRegula" data-audio="075-40.mp3" data-audio-combo="075-40">ruânzuò</span>
+              <span class="suit">푹신한<br>고급 좌석</span>
+            </div>
+            <div class="context context3">
+              <span class="simhei" data-audio="075-41.mp3" data-audio-combo="075-41">硬卧</span>
+              <span class="gRegula" data-audio="075-41.mp3" data-audio-combo="075-41">yìngwò</span>
+              <span class="suit">딱딱한<br>일반 침대석</span>
+            </div>
+            <div class="context context4">
+              <span class="simhei" data-audio="075-42.mp3" data-audio-combo="075-42">软卧</span>
+              <span class="gRegula" data-audio="075-42.mp3" data-audio-combo="075-42">ruânwò</span>
+              <span class="suit">푹신한<br>고급 침대석</span>
+            </div>
+
+          </div>
+        </figure>
+
+
+      </div>
+
+      <div class="popup_bg" style="display: none"></div>
+      <!-- 보충 -->
+      <div class="popup expPopup" data-popup="2" style="display: none">
+        <div class="tag bmjua dp_flex">보충</div>
+        <button class="close_btn"></button>
+        <div class="popup_content">
+          <div class="popupTitle">
+            <span class="suit">중국 기차의 좌석 종류</span>
+          </div>
+          <div class="context context1">
+            <div class="contextTitle">
+              <span class="title suit">●</span>
+              <span class="FZKai" data-audio="075-39.mp3">硬座<span class="gRegula">(yìngzuò)</span>:</span>
+            </div>
+            <div class="contextSec">
+              <span class="suit">
+                조금 딱딱한 좌석칸으로 가장 저렴하다.
+              </span>
+            </div>
+          </div>
+          <div class="context context2">
+            <div class="contextTitle">
+              <span class="title suit">●</span>
+              <span class="FZKai" data-audio="075-40.mp3">软座<span class="gRegula">(ruânzuò)</span>:</span>
+            </div>
+            <div class="contextSec">
+              <span class="suit">
+                중단거리를 운행하는 기차의 좌석으로<br>
+                비교적 편안하다.
+              </span>
+            </div>
+          </div>
+          <div class="context context3">
+            <div class="contextTitle">
+              <span class="title suit">●</span>
+              <span class="FZKai" data-audio="075-41.mp3">硬卧<span class="gRegula">(yìngwò)</span>:</span>
+            </div>
+            <div class="contextSec">
+              <span class="suit">
+                딱딱한 침대칸이 3층으로, 6인이 마주 보는<br>
+                형태로 아래층일수록 비싸다.
+              </span>
+            </div>
+          </div>
+          <div class="context context4">
+            <div class="contextTitle">
+              <span class="title suit">●</span>
+              <span class="FZKai" data-audio="075-42.mp3">软卧<span class="gRegula">(ruânwò)</span>:</span>
+            </div>
+            <div class="contextSec">
+              <span class="suit">
+                고급 침대칸이 2층으로, 4인 1실의 형태이다.<br>
+                좌석 중 요금이 가장 비싸다.
+              </span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+
+
+
+    </div>
+  </body>
+  <script type="text/javascript">
+    const page = {
+      //컨텐츠에 정답 확인이 존재하는지 여부
+      isAnswer: false,
+      // 단어장 노출 여부 판단.
+      isVocabulary: false,
+      //정답 보기
+      showAnswer: () => {},
+      //정답 숨기기
+      hideAnswer: () => {},
+      // 단어장 보기
+      showVocabulary: () => {
+        setPopup(1);
+      },
+    };
+  </script>
+  <script type="text/javascript">
+    // 설명 팝업
+    $(".explan_popup_btn").on("click", function () {
+      let index = $(".explan_popup_btn").index(this);
+      $(".explan_popup_bg").show();
+      $(".popup.explan").hide();
+      $(".popup.explan").eq(index).show();
+      try {
+        setRoleStop();
+      } catch (error) {}
+      audioStop();
+    });
+    // 설명팝업 있는상태에서 다른 팝업 클릭시 팝업 닫기
+    $(".popup_btn").on("click", function () {
+      $(".popup.explan").css("display","none");
+    })
+  </script>
+  <script src="../common/js/script.js"></script>
+  <script src="../common/js/vocabularyBook.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      // setPopup(2);
+    });
+    // 교체 문장
+    $(".tab_btn").on("click", function () {
+      setActive($(this), "tab_btn");
+    });
+  </script>
+  <script type="text/javascript">
+    // 자기소개 프로젝트 정답 버튼
+    $(".popup.introduce .answer_btn").on("click", function () {
+      let index = $(".answer_btn").index(this);
+      $(this).hide();
+      $(".reset_btn").eq(index).show();
+      $(`.answer`).show();
+      $(`.reset`).hide();
+    });
+    // 자기소개 프로젝트 정답 다시 하기 버튼
+    $(".popup.introduce .reset_btn").on("click", function () {
+      let index = $(".reset_btn").index(this);
+      $(this).hide();
+      $(".answer_btn").eq(index).show();
+      $(`.answer`).hide();
+      $(`.reset`).show();
+    });
+  </script>  
+</html>

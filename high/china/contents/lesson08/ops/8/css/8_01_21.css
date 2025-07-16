@@ -1,0 +1,116 @@
+#wrap > .title_box3 {
+  gap: 20px;
+}
+#wrap > .title_box .text_box {
+  padding-bottom: 0;
+}
+#wrap > .title_box3 .num_box {
+  color: rgba(193, 128, 44, 1);
+}
+
+.china_wrap .full_content .num_box span {
+  font-size: 30px;
+  line-height: 30px;
+  color: rgba(35, 24, 21, 1);
+  font-weight: 700;
+  font-family: "SUIT Variable", sans-serif;
+}
+.full_content .content {
+  width: 100%;
+  height: 100%;
+}
+
+.full_content .content .ex_box {
+  margin: 50px auto 0 auto;
+  width: 568px;
+  height: 200px;
+  border-radius: 10px;
+  border: 5px solid #d9e9ba;
+  padding-top: 32px;
+  padding-left: 52px;
+}
+
+.full_content .content .answer_box {
+  margin-left: 290px;
+}
+.full_content .content .answer_box .check_box {
+  position: relative;
+  cursor: default;
+}
+.full_content .content .answer_box .check_box.active {}
+
+.full_content .content .answer_box .check_box::before {
+  content: "";
+  display: none;
+  position: absolute;
+  top: -4px;
+  width: 39px;
+  height: 26px;
+  background: url(./../images/8_01_20/check.svg) no-repeat center;
+  background-size: cover;
+}
+.full_content .content .answer_box .check_box.active {
+  color: #e22f61;
+}
+.full_content .content .answer_box .check_box.active::before {
+  display: block;
+}
+
+/* 페이지 */
+.number-page {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  bottom: 12px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  font-family: "SUIT Variable", sans-serif;
+  font-weight: 800;
+  font-size: 26px;
+  color: #d9d9d9;
+}
+.number-page .item {
+  display: flex;
+}
+.number-page .item:after {
+  content: "";
+  width: 24px;
+  height: 24px;
+  background: url(./../../common/images/page_arrow.svg) no-repeat center;
+  margin: 0 6px 0 6px;
+}
+.number-page .item:last-of-type:after {
+  display: none;
+}
+.number-page .item.active {
+  color: #231815;
+}
+/* 해석 */
+.popup.popup3 .popup_content {
+  width: 100%;
+  height: 100%;
+  padding: 46px 34px 8px 55px;
+  position: relative;
+}
+.popup.popup3 .popup_content .content {
+  width: 100%;
+  height: 100%;
+  padding-top: 14px;
+  overflow-y: auto;
+}
+.popup.popup3 .content .line {
+  display: flex;
+  height: 50px;
+}
+.popup.popup3 .content .line .index {
+  margin-right: 10px;
+}
+
+.popup.popup3 .subtext {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  transform: translateY(100%);
+  white-space: nowrap;
+}

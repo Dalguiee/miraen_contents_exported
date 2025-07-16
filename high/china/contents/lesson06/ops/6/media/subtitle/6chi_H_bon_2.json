@@ -1,0 +1,9 @@
+{
+  "lang": ["한자", "병음"],
+  "subtitlelist": [
+    { "start": 5.5, "end": 8, "value": ["Wô yôudiânr tóuténg.", "我有点儿头疼。"] },
+    { "start": 9, "end": 12, "value": ["Nî qù yåyuàn kànkan ba.", "你去医院看看吧。"] },
+    { "start": 12, "end": 14.5, "value": ["Yåyuàn zài nâr?", "医院在哪儿?"] },
+    { "start": 16.5, "end": 18.5, "value": ["Jiù zài xuéxiào pángbiãn.", "就在学校旁边。"] }
+  ]
+}

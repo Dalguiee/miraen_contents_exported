@@ -1,0 +1,368 @@
+/* 전역 */
+.btn-audio{
+  position: absolute;
+  font-size: 32px;
+}
+
+/* 타이틀 헤더 */
+.btn_box{
+  padding-top: 9px !important;
+}
+.btn_box .bttns{
+  z-index: 1001;
+}
+.title_box{
+  top: 17px !important;
+  left: 0 !important;
+}
+.title_box{
+  justify-content: space-between !important;
+  align-items: center;
+  position: relative;
+}
+.title_box .title .mainCon{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  width: 100%;
+  font-size: 30px;
+  font-weight: 800;
+  line-height: 30px;
+  margin-right: 20px;
+}
+
+.title_box .title .mainCon .titleNum{
+  margin-right: 18px;
+  color: #498F63;
+  font-size: 36px;
+  font-weight: normal;
+}
+
+
+/* 컨텐츠 */
+.full_content{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  padding-top: 49px;
+}
+
+.full_content .content{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* .full_content .content .dot {
+  width: 25px;
+  aspect-ratio: 1/1;
+  margin-top: 10px;
+  background-color: rgba(132, 162, 178, 1);
+  border-radius: 50%;
+  display: none;
+} */
+
+
+.full_content .numberingBox{
+  position: absolute;
+  bottom: 21px;
+  right: 20px;
+  width: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+
+
+
+.full_content .content .itemBox{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.full_content .content .itemBox .conCanvas{
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+}
+
+.full_content .content .itemBox .itemSec{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* margin: 0 80px; */
+  width: 100%;
+  padding-left: 130px;
+}
+.full_content .content .itemBox .itemSec1{
+  /* padding-left: 80px; */
+  align-items: start;
+
+}
+.full_content .content .itemBox .itemSec2{
+  /* padding-right: 80px; */
+  align-items: end;
+
+}
+
+.full_content .content .itemBox .itemSec1 .itemList{
+  margin: 28px 0;
+}
+.full_content .content .itemBox .itemSec2 .itemList{
+  margin: 45px 0;
+
+}
+.full_content .content .itemBox .itemSec .itemList .itemText .FZKai{
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 43px;
+  z-index: 1001;
+}
+.full_content .content .itemBox .itemSec .itemList .itemText .gRegula{
+  font-size: 32px;
+  z-index: 1001;
+}
+
+.full_content .content .itemBox .itemSec .itemList .item{
+  width: 10px;
+  height: 10px;
+}
+
+.itemBox .item[data-locked="true"] {
+  background-color: red;
+}
+
+
+.full_content .content .itemBox .itemSec .itemList .itemText{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.full_content .content .itemBox .itemSec .itemList .itemText::before{
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 32px;
+  position: absolute;
+}
+.full_content .content .itemBox .itemSec1 .itemList .itemText::before{
+  left: -160px;
+}
+.full_content .content .itemBox .itemSec2 .itemList .itemText::before{
+  left: 29px;
+}
+
+
+
+.full_content .content .itemBox .itemSec1 .itemList1 .itemText::before{
+  content: "(1)";
+}
+.full_content .content .itemBox .itemSec1 .itemList2 .itemText::before{
+  content: "(2)";
+}
+.full_content .content .itemBox .itemSec1 .itemList3 .itemText::before{
+  content: "(3)";
+}
+
+.full_content .content .itemBox .itemSec2 .itemList1 .itemText::before{
+  content: "①";
+}
+.full_content .content .itemBox .itemSec2 .itemList2 .itemText::before{
+  content: "②";
+}
+.full_content .content .itemBox .itemSec2 .itemList3 .itemText::before{
+  content: "③";
+}
+
+
+
+/* .itemBox{
+  position: relative;
+}
+.itemSec1 .item{
+  position: absolute;
+  right: -50px;
+}
+.itemSec2 .item{
+  position: absolute;
+  left: -50px;
+} */
+
+
+
+
+.full_content .content .itemBox .itemSec .itemList{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.full_content .content .itemBox .itemSec1 .itemList .ansBttns{
+  position: absolute;
+  z-index: 1001;
+  width: 110px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.full_content .content .itemBox .itemSec1 .itemList1 .ansBttns{
+  top: 60px;
+  left: -106px;
+}
+.full_content .content .itemBox .itemSec1 .itemList2 .ansBttns{
+  top: 60px;
+  left: -106px;
+}
+.full_content .content .itemBox .itemSec1 .itemList3 .ansBttns{
+  top: 60px;
+  left: -106px;
+}
+
+.full_content .content .itemBox .itemSec .itemList .item{
+  border-radius: 100%;
+  background-color: #498F63;
+}
+
+.full_content .content .itemBox .itemSec .itemList .itemText{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 36px;
+}
+.full_content .content .itemBox .itemSec1 .itemList .itemText{
+  width: 129px;
+  height: 30px;
+}
+.full_content .content .itemBox .itemSec2 .itemList .itemText{
+  width: 320px;
+  height: 30px;
+}
+
+/* .full_content .content .itemBox .itemSec1 .itemList .itemText{
+  width: 210px;
+}
+.full_content .content .itemBox .itemSec2 .itemList .itemText{
+  width: 320px;
+} */
+
+
+
+
+
+
+
+
+/* 팝업 */
+.popup_bg{
+  z-index: 5000 !important;
+}
+.popup{
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  padding: 62px 40px 20px 40px;
+  z-index: 5001 !important;
+}
+.popup .popup_content{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  padding: 0 !important;
+  gap: 0 !important;
+}
+/* 설명 */
+.popup.explan{
+  padding: 46px 20px 13px 20px;
+}
+.popup.explan .popup_content{
+  padding: 0 !important;
+}
+.popup.explan .popup_content span{
+  line-height: 50px;
+  font-weight: 600;
+}
+/* 단어게임 */
+.popup.game .popup_content .game_box{
+  margin: 0 !important;
+}
+/* 단어장 */
+.popup.vocabularyBook{
+  padding: 0 !important;
+}
+.popup.vocabularyBook .popup_content{
+  flex-direction: unset !important;
+  padding: 56px 44px 0 44px !important;
+  gap: 40px !important;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+
+
+.popup1 .popup_content{
+  padding-left: 60px !important;
+  gap: 30px !important;
+}
+
+
+.popup1 .popup_content .popupItem .item_text{
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: inherit !important;
+  justify-content: start;
+  align-items: center;
+}
+.popup1 .popup_content .popupItem .item_text .flex{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+.popup1 .popup_content .popupItem .item_text::before{
+  font-size: 32px;
+  position: absolute;
+  left: -50px;
+  font-family: "SUIT Variable", sans-serif;
+}
+
+.popup1 .popup_content .popupItem1 .item_text::before{
+  content: "(1)";
+}
+.popup1 .popup_content .popupItem2 .item_text::before{
+  content: "(2)";
+}
+.popup1 .popup_content .popupItem3 .item_text::before{
+  content: "(3)";
+}
+
+.popup1 .popup_content .popupItem .item_text .FZKai{
+  font-size: 40px;
+  font-weight: 400;
+}
+.popup1 .popup_content .popupItem .item_text .suit {
+  font-size: 36px;
+  color: #3D5591;
+  margin-left: 20px;
+}
+.popup1 .popup_content .popupItem .item_text .gRegula {
+  font-size: 30px;
+  color: #727171;
+  margin-left: 20px;
+}

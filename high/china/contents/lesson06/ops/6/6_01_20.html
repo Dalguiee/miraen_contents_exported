@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>미래엔 중국어</title>
+  <script src="./../common/lib/jquery-3.7.1.min.js"></script>
+  <script src="./../common/lib/howler-2.1.3.min.js"></script>
+  <!-- SUIT Variable 폰트 -->
+  <link href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/variable/woff2/SUIT-Variable.css"
+    rel="stylesheet" />
+  <link href="../common/css/comm.css" rel="stylesheet" />
+  <link href="./css/6_01_20.css" rel="stylesheet" />
+</head>
+
+<body>
+  <div id="wrap" class="china_wrap content_wrap">
+    <div class="title_box">
+      <div class="title">
+        <span class="titleText suit"><span class="index">3</span> 문장을 읽고 나의 증상을 모두 골라
+          봅시다.</span>
+      </div>
+    </div>
+
+    <div class="btn_box dp_flex">
+      <div class="bttns">
+        <button class="btn popup_btn blue" data-index="3">해석</button>
+        <button class="btn3 answer_btn">정답</button>
+        <button class="btn3 reset_btn" style="display: none">
+          다시 하기
+        </button>
+      </div>
+    </div>
+    <div class="full_content">
+      <figure class="contentFig">
+        <img class="contentImg" src="./images/6_01_20/content.png" alt="" />
+        <div class="hint" data-audio="079-08.mp3">
+          <span class="gRegula">Wô tóuténg,</span>
+          <span class="gRegula">késou, liú bítì.</span>
+        </div>
+      </figure>
+      <div class="content">
+        <div class="line line1">
+          <figure class="leftSide">
+            <div class="questionSec">
+              <span class="ansText suit">① 열이 난다</span>
+            </div>
+          </figure>
+        </div>
+        <div class="line line2">
+          <figure class="leftSide">
+            <div class="questionSec">
+              <span class="answer ansText suit">② 머리가 아프다</span>
+            </div>
+          </figure>
+        </div>
+        <div class="line line3">
+          <figure class="leftSide">
+            <div class="questionSec">
+              <span class="answer ansText suit">③ 기침한다</span>
+            </div>
+          </figure>
+        </div>
+        <div class="line line4">
+          <figure class="leftSide">
+            <div class="questionSec">
+              <span class="answer ansText suit">④ 콧물이 흐른다</span>
+            </div>
+          </figure>
+        </div>
+      </div>
+      <figure class="numberingBox">
+        <img src="./images/6_01_20/numbering.svg" alt="" />
+      </figure>
+    </div>
+
+    <div class="popup_bg" style="display: none"></div>
+
+    <div class="popup popup2 expPopup" data-popup="3" style="display: none">
+      <div class="tag bmjua dp_flex">해석</div>
+      <div class="popup-con">
+        <span class="popupContext popupContext1 gRegula">Wô tóuténg, késou, liú bítì.</span>
+        <span class="popupContext popupContext2 suit">나는 머리가 아프고, 기침하고, 콧물이 흐른다.</span>
+      </div>
+      <button class="close_btn"></button>
+    </div>
+  </div>
+</body>
+<script type="text/javascript">
+  const page = {
+    //컨텐츠에 정답 확인이 존재하는지 여부
+    isAnswer: false,
+    // 단어장 노출 여부 판단. 이벤트 호출하지 않으면 노출하지 않음.
+    isVocabulary: false,
+    //정답 보기
+    showAnswer: () => {
+      $(".answer_btn").hide();
+      $(".reset_btn").show();
+      $(".answer").show();
+    },
+    //정답 숨기기
+    hideAnswer: () => {
+      $(".answer_btn").show();
+      $(".reset_btn").hide();
+      $(".answer").hide();
+    },
+    // 단어장 보기
+    showVocabulary: () => {
+      setPopup(7);
+    },
+  };
+</script>
+<script type="text/javascript">
+  // 정답 버튼
+  $(".answer_btn").on("click", function () {
+    let index = $(".answer_btn").index(this);
+    $(this).hide();
+    $(".reset_btn").eq(index).show();
+    $(".answer").addClass("speak");
+  });
+  // 다시 하기 버튼
+  $(".reset_btn").on("click", function () {
+    let index = $(".reset_btn").index(this);
+    $(this).hide();
+    $(".answer_btn").eq(index).show();
+    $(".answer").removeClass("speak");
+  });
+</script>
+<script crossorigin src="../common/lib/libBundle.js"></script>
+<script src="../common/js/script.js"></script>
+<script src="../common/js/rolePlayerCh.js"></script>
+<script src="../common/js/vocabularyBook.js"></script>
+
+</html>

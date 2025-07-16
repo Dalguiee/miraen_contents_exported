@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>미래엔 중국어</title>
+    <script src="./../common/lib/jquery-3.7.1.min.js"></script>
+    <script src="./../common/lib/howler-2.1.3.min.js"></script>
+    <!-- SUIT Variable 폰트 -->
+    <link
+      href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/variable/woff2/SUIT-Variable.css"
+      rel="stylesheet"
+    />
+    <link href="../common/css/comm.css" rel="stylesheet" />
+    <link href="./css/6_01_33.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div id="wrap" class="china_wrap content_wrap">
+      <div class="title_box">
+        <div class="title">
+          <span class="mainCon suit"
+            ><img class="titleNum" src="./images/6_01_33/logo.svg" />한국과
+            중국의 세계 문화유산을 조사해 봅시다.</span
+          >
+        </div>
+      </div>
+
+      <div class="btn_box dp_flex">
+        <div class="bttns">
+          <button class="btn popup_btn blue" data-index="4">보충</button>
+          <!-- <button class="btn popup_btn btn3" data-index="3">예시 답안</button> -->
+          <button class="btn3 answer_btn">예시 답안</button>
+          <button class="btn3 reset_btn" style="display: none">
+            다시 하기
+          </button>
+        </div>
+      </div>
+
+      <div class="full_content">
+        <!-- <div class="tipImgBox">
+          <img class="tipImg" src="./images/6_01_33/tip.svg" alt="">
+        </div> -->
+        <div class="content dp_flex dp_flex_column">
+          <figure class="context context1">
+            <img class="contentImg" src="./images/6_01_33/content1.svg" />
+            <div class="hint hint1" data-audio="073-10.mp3">
+              <span class="simhei">长城</span>
+              <span class="gRegula">Chángchéng</span>
+            </div>
+          </figure>
+          <div class="context context2">
+            <img class="bgImg" src="./images/6_01_33/textLine.svg" alt="" />
+            <span class="answer suit" style="display: none">
+              수원 화성은 수도 남쪽의 국방 요새로 활용하기 위해, 정조
+              18년 정약용이 설계하였다. 동서양 축성술을 집약한 축성 방법으로
+              대한민국 성곽 건축 사상 가장 독보적인 건축물로 평가 받고 있다.
+              1997년 세계 문화유산으로 지정되었다.<br />
+              만리장성(<span class="simhei" data-audio="073-10.mp3">长城</span
+              >)은 중국의 역대 왕조들이 북방 민족의 침공을 막기 위해 세운
+              성벽으로,<br>진나라 시황제 때에 처음 건립되었다고 전해지며 현재의 성벽은 대부분
+              15세기 이후 명나라 때에 쌓은 것이다. 인류 최대의 토목 공사라고
+              불리며 1987년 유네스코 세계 문화유산으로 지정되었다.
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 팝업 -->
+      <div class="popup_bg" style="display: none"></div>
+      <!-- 예시 답안 -->
+      <div class="popup expPopup" data-popup="3" style="display: none">
+        <div class="tag bmjua dp_flex">예시 답안</div>
+        <button class="close_btn"></button>
+        <div class="popup_content">
+          <div class="contentFig">
+            <img class="lineImg" src="./images/6_01_33/textLine.svg" alt="" />
+            <span class="suit">
+              수원 화성은 수도 남쪽의 국방 요새로 활용하기 위한 것으로, 정조
+              18년 정약용이 설계하였다. 동서양 축성술을 집약한 축성 방법으로
+              대한민국 성곽 건축 사상 가장 독보적인 건축물로 평가 받고 있다.
+              1997년 세계 문화유산으로 지정되었다.<br />
+              만리장성(<span class="simhei" data-audio="073-10.mp3">长城</span
+              >)은 중국의 역대 왕조들이 북방 유목 민족의 침공을 막기 위해 세운
+              성벽으로, 진(<span class="simhei" data-audio="081-10.mp3">秦</span
+              >)나라 시황제 때에 처음 건립되었다고 전해지며 현재의 성벽은 대부분
+              15세기 이후 명나라 때에 쌓은 것이다. 인류 최대의 토목 공사라고
+              불리며 1987년 유네스코 세계 문화유산으로 지정되었다.
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 보충 -->
+      <div class="popup popup3" data-popup="4" style="display: none">
+        <div class="tag bmjua dp_flex">보충</div>
+        <button class="close_btn"></button>
+        <div class="popup_content">
+          <div class="title">
+            <span class="suit">한국과 중국의 세계 문화유산</span>
+          </div>
+          <div class="tableBox">
+            <div class="tableBorder">
+              <table>
+                <colgroup>
+                  <col width="365" />
+                  <col width="456" />
+                </colgroup>
+                <thead>
+                  <tr>
+                    <th scope="col">
+                      <div>
+                        <span class="suit">한국</span>
+                      </div>
+                    </th>
+                    <th scope="col">
+                      <div>
+                        <span class="suit">중국</span>
+                      </div>
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <div>
+                        <span class="suit">석굴암, 불국사</span>
+                      </div>
+                    </td>
+                    <td>
+                      <div>
+                        <span class="suit"
+                          >윈강 석굴, 룽먼 석굴, 둔황 모가오 굴</span
+                        >
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div>
+                        <span class="suit">종묘</span>
+                      </div>
+                    </td>
+                    <td>
+                      <div>
+                        <span class="suit">톈탄(천단)</span>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div>
+                        <span class="suit">창덕궁</span>
+                      </div>
+                    </td>
+                    <td>
+                      <div>
+                        <span class="suit">이허위안(이화원)</span>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div>
+                        <span class="suit">화성</span>
+                      </div>
+                    </td>
+                    <td>
+                      <div>
+                        <span class="suit">카이핑 댜오러우 건축물과 마을</span>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div>
+                        <span class="suit">경주역사 유적지구</span>
+                      </div>
+                    </td>
+                    <td>
+                      <div>
+                        <span class="suit">
+                          량주 고성 유적, 핑야오 고대 도시,<br />
+                          라싸의 포탈라 궁의 역사 유적군
+                        </span>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div>
+                        <span class="suit">고창, 화순, 강화 고인돌 유적</span>
+                      </div>
+                    </td>
+                    <td>
+                      <div>
+                        <span class="suit"
+                          >저우커우뎬 베이징원인 유적, 은허</span
+                        >
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div>
+                        <span class="suit">조선왕릉</span>
+                      </div>
+                    </td>
+                    <td>
+                      <div>
+                        <span class="suit">명과 청 시대의 황릉, 진시황릉</span>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div>
+                        <span class="suit">한국 역사 마을: 하회와 양동</span>
+                      </div>
+                    </td>
+                    <td>
+                      <div>
+                        <span class="suit"
+                          >푸젠성 토루, 리장 옛 시가지</span
+                        >
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div>
+                        <span class="suit">남한산성</span>
+                      </div>
+                    </td>
+                    <td>
+                      <div>
+                        <span class="suit">창청(만리장성)</span>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript">
+    const page = {
+      //컨텐츠에 정답 확인이 존재하는지 여부
+      isAnswer: false,
+      // 단어장 노출 여부 판단. 이벤트 호출하지 않으면 노출하지 않음.
+      isVocabulary: false,
+      //정답 보기
+      showAnswer: () => {
+        $(".answer_btn").hide();
+        $(".reset_btn").show();
+        $(".answer").show();
+      },
+      //정답 숨기기
+      hideAnswer: () => {
+        $(".answer_btn").show();
+        $(".reset_btn").hide();
+        $(".answer").hide();
+      },
+      // 단어장 보기
+      showVocabulary: () => {
+        setPopup(7);
+      },
+    };
+  </script>
+  <script type="text/javascript">
+    // 정답 버튼
+    $(".answer_btn").on("click", function () {
+      let index = $(".answer_btn").index(this);
+      $(this).hide();
+      $(".reset_btn").eq(index).show();
+      $(".answer").eq(index).show();
+      $(".reset").eq(index).hide();
+    });
+    // 다시 하기 버튼
+    $(".reset_btn").on("click", function () {
+      let index = $(".reset_btn").index(this);
+      $(this).hide();
+      $(".answer_btn").eq(index).show();
+      $(".answer").eq(index).hide();
+      $(".reset").eq(index).show();
+    });
+  </script>
+  <script crossorigin src="../common/lib/libBundle.js"></script>
+  <script src="../common/js/script.js"></script>
+  <script src="../common/js/rolePlayerCh.js"></script>
+  <script src="../common/js/vocabularyBook.js"></script>
+</html>

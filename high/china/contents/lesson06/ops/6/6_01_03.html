@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>미래엔 중국어</title>
+  <script src="./../common/lib/jquery-3.7.1.min.js"></script>
+  <!-- SUIT Variable 폰트 -->
+  <link href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/variable/woff2/SUIT-Variable.css"
+    rel="stylesheet" />
+  <link href="../common/css/comm.css" rel="stylesheet" />
+  <link href="./css/6_01_03.css" rel="stylesheet" />
+</head>
+
+<body>
+  <div id="wrap" class="china_wrap story_wrap">
+    <div class="full_content dp_flex">
+      <div class="left_box">
+        <div class="script_box">
+          <p class="suit">
+            요즘 중국은 대기 오염을 줄여 주는 전동 자전거, 전동 오토바이를 많이 이용합니다. 이밖에 두 대를 연결한 굴절 버스, 전기로 달리는 트롤리 버스, 침대칸이 있는 기차나 버스 등 다양한
+            교통수단이 있습니다.
+          </p>
+        </div>
+        <div class="action_box speak">
+          <span class="hintText suit">타 보고 싶은 중국의 교통수단을 이야기해 봅시다.</span>
+        </div>
+      </div>
+      <div class="right_box">
+        <div class="img_box">
+          <img src="./images/6_01_03/bg.png" class="img img1" />
+        </div>
+      </div>
+
+      <div class="bttns">
+        <button class="btn explan_popup_btn purple"><span>활동 예시</span></button>
+        <button data-index="1" class="popup_btn btn purple">참고</button>
+        <button data-index="2" class="popup_btn btn purple">보충</button>
+      </div>
+    </div>
+
+
+    <div class="popup_bg" style="display: none"></div>
+
+    <div class="popup explan explan1" style="display: none">
+      <div class="tag bmjua dp_flex">활동 예시</div>
+      <button class="close_btn">
+        <span class="sr-only">닫기</span>
+      </button>
+      <div class="popup_content dp_flex dp_flex_column">
+        <span class="suit">
+          삼륜차를 타고 베이징의 구불구불한 옛 골목인<br>
+          후퉁을 다니며 관광하고 싶다.
+        </span>
+      </div>
+    </div>
+
+    <div class="popup expPopup" data-popup="1" style="display: none">
+      <div class="tag bmjua dp_flex">참고</div>
+      <button class="close_btn"></button>
+      <div class="popup_content">
+        <div class="title">
+          <span class="suit">중국의 교통수단</span>
+        </div>
+        <div class="line dp_flex">
+          <div class="text_box text_box1">
+            <div class="title">
+              <span class="suit">·</span>
+            </div>  
+            <span class="txt txt1 suit">
+              지하철: 베이징, 상하이 등의 대도시에는 지하철이 잘 갖춰져 있어<br>
+              이용이 편리하다. 중국의 지하철은 보안 검색이 있어 엑스레이<br>
+              검색대를 통과해야 개찰구에 들어갈 수 있다. 지하철 요금은<br>
+              위챗페이나 알리페이 등을 활용하여 큐알 코드로 지불할 수 있다.
+            </span>
+          </div>
+          <div class="text_box text_box1">
+            <div class="title">
+              <span class="suit">·</span>
+            </div>  
+            <span class="txt txt1 suit">
+              버스: 중국에는 대·중·소형 버스, 이층 버스(<span class="simhei" data-audio="073-16.mp3">双层巴士<br>
+              <span class="gRegula">shuãngcéng bãshì</span></span>), 저상형 버스(<span class="simhei" data-audio="073-17.mp3">低地台巴士 <span class="gRegula">dådìtái bãshì</span></span>),<br>
+              굴절 버스(<span class="simhei" data-audio="073-18.mp3">铰接公交车 <span class="gRegula">jiâojiç gõngjiãochç</span></span>), 전기 버스<br>
+              (<span class="simhei" data-audio="073-19.mp3">纯电动公交车 <span class="gRegula">chún diàndòng gõngjiãochç</span></span>) 등이 있다.<br>
+              기본 요금은 2위안이고, 5km마다 할증되는 지역도 있다.<br>
+              요금은 현금도 가능하지만 앱이나 카드를 많이 사용한다.
+            </span>
+          </div>
+          <div class="text_box text_box1">
+            <div class="title">
+              <span class="suit">·</span>
+            </div>  
+            <span class="txt txt1 suit">
+              택시: 중국의 택시는 도시마다 색깔이 다르다. 기본 요금이<br>
+              13~16위안이며, 일부 도시에서는 자율 주행하는 무인 택시가<br>
+              운행되고 있다. 택시 호출은 DiDi(디디추싱) 앱을 많이 사용한다.
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="popup popup2 voca2" data-popup="2" style="display: none">
+      <div class="tag bmjua dp_flex">보충</div>
+      <button class="close_btn"></button>
+      <div class="popup_content">
+        <div class="popup-scroll">
+          <div class="title suit">베이징의 명소</div>
+          <div class="list-warp">
+            <ul class="popup_content_list">
+              <li class="item">
+                <div class="item_audio tableHead">
+                  <span class="suit">톈안먼</span>
+                  <span class="simhei">(<span data-audio="073-08.mp3">天安门</span>)</span>
+                </div>
+                <div class="item_audio tableRight">
+                  <span class="suit">
+                    톈안먼은 세계에서 가장 넓은 도시 광장으로, 톈안먼 중앙에는 중화인민공화국을 건국한 마오쩌둥의 초상화가 걸려 있다.
+                  </span>
+                </div>
+              </li>
+              <li class="item">
+                <div class="item_audio tableHead">
+                  <span class="suit">이허위안</span>
+                  <span class="simhei">(<span data-audio="073-09.mp3">颐和园</span>)</span>
+                </div>
+                <div class="item_audio tableRight">
+                  <span class="suit">
+                    이허위안은 청나라 황실의 여름 별궁이다. 높이 60m인<br>만수산과 면적 2.2㎢인 거대한 인공 호수 쿤밍호가 있다.
+                  </span>
+                </div>
+              </li>
+              <li class="item">
+                <div class="item_audio tableHead">
+                  <span class="suit">만리장성</span>
+                  <span class="simhei">(<span data-audio="073-10.mp3">长城</span>)</span>
+                </div>
+                <div class="item_audio tableRight">
+                  <span class="suit">
+                    중국의 역대 왕조들이 북방 유목 민족의 침공을 막기 위해 세운 성벽으로, 1987년 유네스코 세계 문화유산으로<br>지정되었다.
+                  </span>
+                </div>
+              </li>
+              <li class="item">
+                <div class="item_audio tableHead">
+                  <span class="suit">국가 체육장</span>
+                  <span class="simhei">(<span data-audio="073-11.mp3">国家体育场</span>)</span>
+                </div>
+                <div class="item_audio tableRight">
+                  <span class="suit">
+                    <span class="notoSans">‘</span>새둥지<span class="notoSans">’</span>라는 의미의 <span class="notoSans">‘</span><span class="simhei" data-audio="073-12.mp3">巢鸟<span
+                        class="gRegula">(niâocháo)</span></span><span class="notoSans">’</span>라고도 불린다. 2008년
+                    베이징 올림픽의 주 경기장으로, 올림픽 개폐회식이 열린 곳이다.
+                  </span>
+                </div>
+              </li>
+              <li class="item">
+                <div class="item_audio tableHead">
+                  <span class="suit">톈탄</span>
+                  <span class="simhei">(<span data-audio="073-13.mp3">天坛</span>)</span>
+                </div>
+                <div class="item_audio tableRight">
+                  <span class="suit">
+                    황제가 하늘에 제사를 올리는 의식을 행하기 위하여 설치한 제단으로, 건축 양식이 독특하고 장식이 아름답다.
+                  </span>
+                </div>
+              </li>
+              <li class="item">
+                <div class="item_audio tableHead">
+                  <span class="suit">구궁</span>
+                  <span class="simhei">(<span data-audio="073-14.mp3">故宫</span>)</span>
+                </div>
+                <div class="item_audio tableRight">
+                  <span class="suit">
+                    자금성(<span class="FZKai" data-audio="073-15.mp3">紫禁城</span>)으로 알려진 구궁은 명청 왕조의 궁궐이다.
+                  </span>
+                </div>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</body>
+<script type="text/javascript">
+  const page = {
+    //컨텐츠에 정답 확인이 존재하는지 여부
+    isAnswer: false,
+    // 단어장 노출 여부 판단.
+    isVocabulary: false,
+    //정답 보기
+    showAnswer: () => { },
+    //정답 숨기기
+    hideAnswer: () => { },
+    // 단어장 보기
+    showVocabulary: () => { },
+  };
+  $(document).ready(function () { });
+</script>
+<script src="../common/js/script.js"></script>
+
+</html>
