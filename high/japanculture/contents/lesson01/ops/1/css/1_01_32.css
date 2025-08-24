@@ -1,0 +1,74 @@
+.content-contents-wrap {
+  display: flex;
+  flex-direction: column;
+}
+
+.content-contents {
+  position: relative;
+  flex: 1;
+}
+
+.contents-sub-tit-wrap {
+  padding: 5px 20px 0;
+  display: flex;
+  height: 69px;
+  margin-bottom: 18px;
+}
+
+.contents-sub-tit {
+  display: inline-block;
+  color: #f58880;
+  letter-spacing: 0;
+  padding-top: 7px;
+  background: url('../../common/images/img_munhwaplus.png') top left 3px no-repeat;
+}
+
+.contents-sub-tit .plus {
+  margin-left: 4px;
+  color: #ffdd2b;
+}
+
+.content-wrap .content-contents-wrap .content-contents {
+  padding-left: 20px;
+  overflow: visible;
+  display: flex;
+  height: calc(100% - 87px);
+}
+
+.cont-tit-wrap {
+  width: 100%;
+  position: absolute;
+  bottom: calc(100% + 20px);
+  left: 0;
+}
+
+.cont-tit-wrap .cont-tit {
+  display: inline-block;
+  padding: 0 28px;
+  height: 61px;
+  line-height: 61px;
+  border-radius: 61px;
+  background-color: #cb637d;
+  color: #fff;
+}
+
+.content-contents .cont-wrap {
+  width: 100%;
+  justify-content: space-between;
+}
+
+.content-contents .cont {
+  overflow-x: hidden;
+  overflow-y: auto;
+  padding-right: 15px;
+  line-height: 61.7px;
+}
+
+.content-contents .image-pop-preview {
+  width: 260px;
+  height: 156px;
+}
+
+.content-contents .img-wrap li + li {
+  margin-top: 20px;
+}

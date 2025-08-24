@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>미래엔 일본 문화</title>
+    <script src="./../common/lib/jquery-3.7.1.min.js"></script>
+    <script src="./../common/lib/howler-2.1.3.min.js"></script>
+    <script src="./../common/lib/tailwind.js"></script>
+    <!-- 폰트 -->
+    <link href="./../common/font/suit/suit.css" rel="stylesheet" />
+    <link href="./../common/font/bmjua/bmjua.css" rel="stylesheet" />
+    <link
+      href="./../common/font/nanumsquare/nanumSquare.css"
+      rel="stylesheet"
+    />
+    <link href="./../common/font/notoSansJP/notoSansJP.css" rel="stylesheet" />
+    <link href="./../common/css/tailwind.css" rel="stylesheet" />
+    <link href="./../common/css/fontStyle.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div id="wrap">
+      <!-- contents -->
+      <div class="relative w-full h-full pt-60">
+        <!-- title -->
+        <img
+          src="./images/9_01_40/title_culture.svg"
+          alt="일본인의 종교관"
+          class="absolute w-482 h-54 top-10"
+        />
+
+        <!-- main -->
+        <div class="relative flex flex-col w-full h-full overflow-y-auto">
+          <div
+            class="flex flex-col flex-1 w-full text-40 f-nanum-s leading-52 ps-20"
+          >
+            <div class="mt-5 mb-4 flex gap-4">
+              <img src="./images/9_01_40/title_index_2.svg" alt="" />
+              <span class="font-extrabold"> 신토와 불교 </span>
+            </div>
+            <!-- ======== page 1 ======== -->
+            <div
+              data-name="page"
+              class="flex flex-col mb-20 font-bold f-nanum-s text-40"
+            >
+              <div>
+                <p class="ps-28">
+                  일본인 종교관의 밑바탕에는 신토와 불교가 자리 잡고 있다.
+                </p>
+                <p>
+                  신토는 일본 고유의 신앙으로, 자연 신앙과 조상 숭배에 기초한
+                </p>
+                <p>애니미즘(animism)의 일종이다. 애니미즘에서는 자연이나</p>
+                <p>
+                  사물, 그리고 사람을 신으로 모실 수 있다. 이러한 다양한 신을
+                </p>
+                <p>
+                  모시는 장소가 신사이며, 신사에는 하나 또는 여러 신이 모셔져
+                </p>
+                <p>있다.</p>
+              </div>
+            </div>
+
+            <!-- ======== page 2 ======== -->
+            <div
+              data-name="page"
+              class="flex flex-col mb-20 font-bold f-nanum-s text-40"
+              style="display: none"
+            >
+              <div>
+                <p>
+                  각 지역에 세워진 신사는 지역 공동체의 신앙 생활과 연대 의식
+                </p>
+                <p>형성에 긍정적 역할을 수행한다. 또 가정에 신단을 설치해서</p>
+                <p>아침저녁으로 신단 앞에서 합장을 하는 습관이 있다.</p>
+                <p class="ps-28">
+                  ‘신토’라는 이름을 갖게 되고 신사가 지금의 모습이 된 것은
+                </p>
+                <p>
+                  그리 오래된 일이 아니다. 오랜 역사를 가진 불교는 에도 시대
+                </p>
+                <p>까지 기존의 신토와 서로 영향을 주고받으며 공존하였다.</p>
+              </div>
+            </div>
+
+            <!-- ======== page 3 ======== -->
+            <div
+              data-name="page"
+              class="flex flex-col mb-20 font-bold f-nanum-s text-40"
+              style="display: none"
+            >
+              <div>
+                <p>그런데 일왕을 숭배하는 ‘국가 신토’로 나라를 통합하려던</p>
+                <p>메이지 정부는 신사와 절을 분리하는 정책을 펼쳤다. 그 결과</p>
+                <p>
+                  패전 후 국가 신토는 없어졌지만, 신사와 절은 기본적으로 분리
+                </p>
+                <p>되었다. 하지만 지금도 사람들은 신사에도 가고 절에도 간다.</p>
+                <p>여기에 특별히 위화감을 갖지 않는 것은 오랜 종교관이 남아</p>
+                <p>있기 때문이다.</p>
+              </div>
+            </div>
+
+            <!-- ======== page 4 ======== -->
+            <div
+              data-name="page"
+              class="flex flex-col mb-20 font-bold f-nanum-s text-40"
+              style="display: none"
+            >
+              <div>
+                <p>언뜻 보기에 복잡하고 이상해 보일 수</p>
+                <p>있으나, 이러한 행동은 일상의 불안을</p>
+                <p>없애고 좋은 결과를 얻고자 하는 인간</p>
+                <p>의 보편적인 행동이라고 할 수 있다.</p>
+              </div>
+              <div
+                class="absolute flex flex-col items-end gap-10 bottom-30 right-20"
+              >
+                <div class="relative flex flex-col w-360">
+                  <img
+                    src="./images/9_01_41/main_photo1.jpg"
+                    alt="신토"
+                    class="w-full h-full rounded-10"
+                  />
+                  <button
+                    data-name="btn-view"
+                    class="absolute bottom-10 right-10"
+                    onclick="contentUtil.setPopup(1); contentUtil.setPhotoPopup(1);"
+                  ></button>
+                </div>
+                <div class="relative flex flex-col w-360">
+                  <img
+                    src="./images/9_01_41/main_photo2.jpg"
+                    alt="불교"
+                    class="w-full h-full rounded-10"
+                  />
+                  <button
+                    data-name="btn-view"
+                    class="absolute bottom-10 right-10"
+                    onclick="contentUtil.setPopup(1); contentUtil.setPhotoPopup(2);"
+                  ></button>
+                </div>
+              </div>
+            </div>
+
+            <!-- pagination -->
+            <div
+              class="absolute -translate-x-1/2 left-1/2 bottom-10"
+              data-name="pagination"
+            >
+              <button class="active" data-name="btn-pagination"></button>
+              <button class="" data-name="btn-pagination"></button>
+              <button class="" data-name="btn-pagination"></button>
+              <button class="" data-name="btn-pagination"></button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- popup -->
+      <div id="popup-wrap" style="display: none">
+        <!-- 사진 팝업창 -->
+        <div data-name="popup" data-popup="1" style="display: none">
+          <div data-name="popup-header">
+            <div data-name="popup-title">사진 팝업창</div>
+            <button
+              data-name="popup-close"
+              onclick="contentUtil.setPopup()"
+            ></button>
+          </div>
+          <div
+            data-name="popup-body"
+            class="flex items-center justify-center w-full h-full gap-16"
+          >
+            <div
+              class="flex flex-col items-center w-608 h-402"
+              data-name="popup_photo_wrap"
+            >
+              <div
+                class="pe-4 w-full overflow-x-hidden overflow-y-auto rounded-10"
+              >
+                <img
+                  data-name="popup_photo"
+                  style="display: none"
+                  src="./images/9_01_41/popup_photo1.jpg"
+                  alt="신토"
+                  class="object-contain min-w-608"
+                />
+                <img
+                  data-name="popup_photo"
+                  src="./images/9_01_41/popup_photo2.jpg"
+                  alt="불교"
+                  class="object-contain min-w-608 rounded-10"
+                />
+              </div>
+              <div
+                class="flex mt-8 font-bold f-nanum-s h-52 text-40 leading-52 shrink-0"
+              >
+                <div data-name="popup_photo_text">신사</div>
+                <div data-name="popup_photo_text" style="display: none">절</div>
+              </div>
+            </div>
+
+            <div class="w-266 h-402">
+              <div class="flex w-full gap-10">
+                <button
+                  onclick="contentUtil.setPhotoPopup(1)"
+                  data-name="btn-popup_photo"
+                  class="w-128 h-72"
+                >
+                  <img src="./images/9_01_41/popup_btn_photo1.jpg" alt="신토" />
+                </button>
+                <button
+                  onclick="contentUtil.setPhotoPopup(2)"
+                  data-name="btn-popup_photo"
+                  class="w-128 h-72 active"
+                >
+                  <img src="./images/9_01_41/popup_btn_photo2.jpg" alt="불교" />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript">
+    const page = {
+      isAnswer: false,
+      isVocabulary: false,
+      showAnswer: () => {},
+      hideAnswer: () => {},
+      showVocabulary: () => {},
+    };
+  </script>
+  <script src="./../common/js/tailwind.config.js"></script>
+  <script src="./../common/js/script.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      // contentUtil.setPopup(1);
+    });
+
+    // $(`[data-name="btn-pagination"]`).on("click", function () {
+    //   if ($(this).index() === 0) {
+    //     $(`[data-name="btn-common"]`).show();
+    //   } else {
+    //     $(`[data-name="btn-common"]`).hide();
+    //   }
+    // });
+  </script>
+</html>

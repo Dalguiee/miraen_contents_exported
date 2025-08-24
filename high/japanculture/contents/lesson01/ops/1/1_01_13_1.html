@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>미래엔 일본 문화</title>
+    <script src="./../common/lib/jquery-3.7.1.min.js"></script>
+    <script src="./../common/lib/howler-2.1.3.min.js"></script>
+    <script src="./../common/lib/tailwind.js"></script>
+    <!-- 폰트 -->
+    <link href="./../common/font/suit/suit.css" rel="stylesheet" />
+    <link href="./../common/font/bmjua/bmjua.css" rel="stylesheet" />
+    <link
+      href="./../common/font/nanumsquare/nanumSquare.css"
+      rel="stylesheet"
+    />
+    <link href="./../common/font/notoSansJP/notoSansJP.css" rel="stylesheet" />
+    <link href="./../common/css/tailwind.css" rel="stylesheet" />
+    <link href="./../common/css/fontStyle.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div id="wrap">
+      <!-- contents -->
+      <div class="relative w-full h-full pt-60">
+        <!-- title -->
+        <img
+          src="./images/1_01_04/title.svg"
+          alt="문화 들여다보기1 주택의 종류와 특징"
+          class="absolute w-605 w-764 h-49 top-10"
+        />
+        <!-- main -->
+        <div class="flex flex-col w-full h-full">
+          <div class="flex flex-col w-full pl-20 overflow-y-auto leading-52">
+            <div class="flex items-center mt-20 mb-10">
+              <img
+                src="./../common/images/index_pink_2.svg"
+                alt="번호 1"
+                class="w-40 h-40 me-4"
+              />
+              <span class="flex font-extrabold f-nanum-s text-40"
+                >상차림과 식사 예절</span
+              >
+            </div>
+
+            <div class="pr-5">
+              <!-- 문제 상단 말풍선 -->
+              <div class="flex justify-end w-full">
+                <div
+                  class="mb-24 w-757 relative h-85 bg-[url(./images/1_01_13_1/context_box_1.png)] bg-no-repeat bg-contain text-40 font-bold f-nanum-s"
+                >
+                  <div
+                    class="absolute top-0 left-0 flex items-center w-full h-full pt-8 pl-19"
+                  >
+                    일본에서는 왜 젓가락을 가로로 놓나요?
+                  </div>
+                </div>
+              </div>
+
+              <!-- 정답 말풍선 -->
+              <div
+                class="w-960 relative h-180 bg-[url(./images/1_01_13_1/context_box_2.png)] bg-no-repeat bg-contain text-40 font-bold f-nanum-s"
+              >
+                <div
+                  data-answer="1"
+                  class="absolute top-0 left-0 flex items-center justify-end w-full h-full pr-30"
+                  style="display: none"
+                >
+                  <div>
+                    <p>날카로운 젓가락 끝을 상대방을 향해 두는 것은 실례</p>
+                    <p>라고 생각해요. 송곳이나 가위 끝을 상대방 쪽으로</p>
+                    <p>주지 않는 것과 같은 것이죠.</p>
+                  </div>
+                </div>
+                <!-- 정답버튼 -->
+                <button
+                  data-reset="1"
+                  data-name="btn-common"
+                  class="absolute left-0 min-w-101 top-93"
+                  onclick="contentUtil.showAnswer(1);"
+                >
+                  확인하기
+                </button>
+                <!-- 리셋버튼 -->
+                <button
+                  data-answer="1"
+                  style="display: none"
+                  data-name="btn-common"
+                  class="absolute left-0 min-w-101 top-93"
+                  onclick="contentUtil.hideAnswer(1)"
+                >
+                  다시하기
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- popup -->
+      <div id="popup-wrap" style="display: none"></div>
+    </div>
+  </body>
+  <script type="text/javascript">
+    const page = {
+      isAnswer: false,
+      isVocabulary: false,
+      showAnswer: () => {},
+      hideAnswer: () => {},
+      showVocabulary: () => {},
+    };
+  </script>
+  <script src="./../common/js/tailwind.config.js"></script>
+  <script src="./../common/js/script.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {});
+  </script>
+</html>

@@ -1,0 +1,1076 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>미래엔 일본 문화</title>
+    <script src="./../common/lib/jquery-3.7.1.min.js"></script>
+    <script src="./../common/lib/howler-2.1.3.min.js"></script>
+    <script src="./../common/lib/tailwind.js"></script>
+    <!-- 폰트 -->
+    <link href="./../common/font/suit/suit.css" rel="stylesheet" />
+    <link href="./../common/font/bmjua/bmjua.css" rel="stylesheet" />
+    <link
+      href="./../common/font/nanumsquare/nanumSquare.css"
+      rel="stylesheet"
+    />
+    <link href="./../common/font/notoSansJP/notoSansJP.css" rel="stylesheet" />
+    <link href="./../common/css/tailwind.css" rel="stylesheet" />
+    <link href="./../common/css/fontStyle.css" rel="stylesheet" />
+    <link href="./../common/css/rolePlayer.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div id="wrap">
+      <!-- contents -->
+      <div class="relative w-full h-full pt-67">
+        <!-- title -->
+        <img
+          src="./images/8_01_31/title_culture.svg"
+          alt="문화 일본어"
+          class="absolute left-0 w-193 h-51 top-10"
+        />
+        <div
+          class="absolute flex items-center justify-center font-bold h-51 left-204 top-9 text-[#D83953] f-noto text-36 px-12 bg-[#FFE1DE] rounded-100"
+        >
+          <span data-audio="8_01_31/126-01.mp3">すみません</span>
+        </div>
+        <!-- 음원 플레이어 -->
+        <div data-name="rolePlayer" class="absolute right-0 z-50 top-186">
+          <div class="rolePlayer">
+            <div class="rolePlayer_player">
+              <div class="rolePlayer_box">
+                <button class="rolePlayer_play-btn play"></button>
+                <button class="rolePlayer_stop-btn"></button>
+                <div class="rolePlayer_duration">
+                  <input
+                    type="range"
+                    class="rolePlayer_duration_range"
+                    min="0"
+                    max="100"
+                    value="0"
+                    step="1"
+                  />
+                  <div class="rolePlayer_duration_range-ui">
+                    <div
+                      class="rolePlayer_duration_range-ui_bar"
+                      style="width: 0"
+                    ></div>
+                  </div>
+                  <span class="rolePlayer_duration_text seek">00:00</span>
+                  <span class="rolePlayer_duration_text duration">00:00</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- main -->
+        <div class="w-full font-bold text-40 leading-52 f-nanum-s">
+          <!-- ======== page 1 ======== -->
+          <div data-name="page" class="flex flex-col w-full">
+            <!-- header-btn -->
+            <div
+              class="absolute right-0 flex gap-6 top-13"
+              data-name="header-btn"
+            >
+              <button data-name="btn-common" onclick="contentUtil.setPopup(1)">
+                해석 보기
+              </button>
+            </div>
+            <!-- text -->
+            <div
+              class="flex font-extrabold mb-27 leading-52 ms-20 text-40 f-nanum-s"
+            >
+              <img
+                src="./images/8_01_31/label_flower.svg"
+                alt=""
+                class="mt-12 me-8 w-30 h-25"
+              />
+              <div>
+                <p class="flex">
+                  ‘<span
+                    data-audio="8_01_31/126-01.mp3"
+                    class="font-bold f-noto"
+                    >すみません</span
+                  >’은 기본적으로 사과할 때 쓰는 표현입니다.
+                </p>
+                <p>이외에도 어떤 상황에서 사용하는지 알아봅시다.</p>
+              </div>
+            </div>
+            <!-- content -->
+            <div
+              class="relative w-898 h-260 ms-122 bg-[url(./images/8_01_31/main_img1.jpg)] bg-no-repeat bg-cover"
+            >
+              <!-- title -->
+              <span class="absolute text-center w-234 left-260 top-9"
+                >사과할 때</span
+              >
+              <!-- text 1 -->
+              <div
+                class="absolute font-medium text-center f-noto left-10 top-111"
+              >
+                <p data-audio="8_01_31/126-04.mp3">すみません。</p>
+              </div>
+              <!-- text 2 -->
+              <div
+                class="absolute font-medium text-center f-noto left-533 top-89"
+              >
+                <p><span data-audio="8_01_31/126-05.mp3">いいえ。</span></p>
+                <p>
+                  <span data-audio="8_01_31/126-05(1).mp3"
+                    >だいじょうぶ です。</span
+                  >
+                </p>
+              </div>
+              <!-- btn view -->
+              <button
+                data-name="btn-view"
+                class="absolute bottom-12 left-454"
+                onclick="contentUtil.setPopup(6); contentUtil.setPhotoPopup(1);"
+              ></button>
+            </div>
+          </div>
+          <!-- ======== page 2 ======== -->
+          <div
+            data-name="page"
+            class="flex flex-col w-full pt-59"
+            style="display: none"
+          >
+            <!-- header-btn -->
+            <div
+              class="absolute right-0 flex gap-6 top-13"
+              data-name="header-btn"
+            >
+              <button data-name="btn-common" onclick="contentUtil.setPopup(2)">
+                해석 보기
+              </button>
+            </div>
+            <!-- content -->
+            <div
+              class="relative w-825 h-260 ms-82 bg-[url(./images/8_01_31/main_img2.jpg)] bg-no-repeat bg-cover"
+            >
+              <!-- title -->
+              <span class="absolute text-center w-235 left-300 top-9"
+                >고마울 때</span
+              >
+              <!-- text 1 -->
+              <div
+                class="absolute font-medium text-center f-noto left-12 top-108"
+              >
+                <p>
+                  <span data-audio="8_01_31/126-07.mp3" data-group="1"
+                    >さいふ、</span
+                  >
+                </p>
+                <p class="pt-12">
+                  <span data-audio="8_01_31/126-07.mp3" data-group="1">
+                    <span class="relative">落<span class="ruby">お</span></span
+                    >ちましたよ。
+                  </span>
+                </p>
+              </div>
+              <!-- text 2 -->
+              <div class="absolute font-medium f-noto left-588 top-133">
+                <p>
+                  <span data-audio="8_01_31/126-08.mp3" data-group="2"
+                    >あ、どうも</span
+                  >
+                </p>
+                <p>
+                  <span data-audio="8_01_31/126-08.mp3" data-group="2"
+                    >すみません。</span
+                  >
+                </p>
+              </div>
+              <!-- btn view -->
+              <button
+                data-name="btn-view"
+                class="absolute bottom-12 left-493"
+                onclick="contentUtil.setPopup(6); contentUtil.setPhotoPopup(2);"
+              ></button>
+            </div>
+          </div>
+          <!-- ======== page 3 ======== -->
+          <div
+            data-name="page"
+            class="flex flex-col w-full pt-59"
+            style="display: none"
+          >
+            <!-- header-btn -->
+            <div
+              class="absolute right-0 flex gap-6 top-13"
+              data-name="header-btn"
+            >
+              <button data-name="btn-common" onclick="contentUtil.setPopup(3)">
+                해석 보기
+              </button>
+            </div>
+            <!-- content -->
+            <div
+              class="relative w-915 h-264 ms-69 bg-[url(./images/8_01_31/main_img3.jpg)] bg-no-repeat bg-cover"
+            >
+              <!-- title -->
+              <span class="absolute text-center w-234 left-313 top-9"
+                >점원을 부를 때</span
+              >
+              <!-- text 1 -->
+              <div
+                class="absolute font-medium text-center f-noto left-12 top-111"
+              >
+                <p><span data-audio="8_01_31/126-11.mp3">すみません。</span></p>
+                <p class="pt-12">
+                  <span data-audio="8_01_31/126-12.mp3">
+                    お<span class="relative"
+                      >水<span class="ruby">みず</span></span
+                    >
+                    ください。
+                  </span>
+                </p>
+              </div>
+              <!-- text 2 -->
+              <div
+                class="absolute font-medium text-center f-noto left-598 top-137"
+              >
+                <p>
+                  <span data-audio="8_01_31/126-13.mp3">はい。</span>
+                  <span
+                    data-audio="8_01_31/126-14.mp3"
+                    data-group="7"
+                    class="relative"
+                    >少々<span class="ruby tracking-[-0.25em]"
+                      >しょう しょう</span
+                    ></span
+                  >
+                  &nbsp;&nbsp;&nbsp;
+                </p>
+                <p class="pt-12">
+                  <span data-audio="8_01_31/126-14.mp3" data-group="7">
+                    お<span class="relative"
+                      >待<span class="ruby">ま</span></span
+                    >ちください。
+                  </span>
+                </p>
+              </div>
+              <!-- btn view -->
+              <button
+                data-name="btn-view"
+                class="absolute bottom-16 left-506"
+                onclick="contentUtil.setPopup(6); contentUtil.setPhotoPopup(3);"
+              ></button>
+            </div>
+          </div>
+          <!-- ======== page 4 ======== -->
+          <div
+            data-name="page"
+            class="flex flex-col w-full pt-36"
+            style="display: none"
+          >
+            <!-- header-btn -->
+            <div
+              class="absolute right-0 flex gap-6 top-13"
+              data-name="header-btn"
+            >
+              <button data-name="btn-common" onclick="contentUtil.setPopup(4)">
+                해석 보기
+              </button>
+            </div>
+            <!-- content -->
+            <div
+              class="relative w-961 h-340 ms-31 bg-[url(./images/8_01_31/main_img4.jpg)] bg-no-repeat bg-cover"
+            >
+              <!-- title -->
+              <div class="absolute text-center w-270 left-335 top-17">
+                <p>모르는 사람에게</p>
+                <p>말을 걸 때</p>
+              </div>
+              <!-- text 1 -->
+              <div
+                class="absolute font-medium text-center f-noto left-24 top-155"
+              >
+                <p>
+                  <span data-audio="8_01_31/126-16.mp3" data-group="4"
+                    >あのう、</span
+                  >
+                </p>
+                <p>
+                  <span data-audio="8_01_31/126-16.mp3" data-group="4"
+                    >すみません。</span
+                  >
+                </p>
+                <p class="pt-12">
+                  <span data-audio="8_01_31/126-17.mp3">
+                    <span class="relative"
+                      >駅<span class="ruby">えき</span></span
+                    >は どこですか。
+                  </span>
+                </p>
+              </div>
+              <!-- text 2 -->
+              <div class="absolute font-medium f-noto left-636 top-144">
+                <p>
+                  <span data-audio="8_01_31/126-18.mp3" data-group="5"
+                    >ここを まっすぐ</span
+                  >
+                </p>
+                <p class="pt-12">
+                  <span data-audio="8_01_31/126-18.mp3" data-group="5">
+                    <span class="relative">行<span class="ruby">い</span></span
+                    >くと あります。
+                  </span>
+                </p>
+              </div>
+              <!-- btn view -->
+              <button
+                data-name="btn-view"
+                class="absolute bottom-30 left-544"
+                onclick="contentUtil.setPopup(6); contentUtil.setPhotoPopup(4);"
+              ></button>
+            </div>
+          </div>
+          <!-- ======== page 5 ======== -->
+          <div
+            data-name="page"
+            class="flex flex-col w-full pt-4"
+            style="display: none"
+          >
+            <!-- header-btn -->
+            <div
+              class="absolute right-0 flex gap-6 top-13"
+              data-name="header-btn"
+            >
+              <button data-name="btn-common" onclick="contentUtil.setPopup(5)">
+                해설 보기
+              </button>
+            </div>
+            <div class="font-bold text-40 leading-52 f-nanum-s ms-20">
+              <div>
+                <p class="flex ps-28">
+                  ‘<span
+                    data-audio="8_01_31/126-01.mp3"
+                    class="font-medium f-noto"
+                    >すみません</span
+                  >’은 미안한 마음을 담아 사과할 때뿐만 아니라,
+                </p>
+                <p>
+                  감사하는 마음을 나타낼 때도 사용한다. 그리고 가게에서 점원
+                </p>
+                <p>을 부를 때나 모르는 사람에게 말을 걸 때도 사용한다.</p>
+                <p class="flex ps-28">
+                  사과를 나타내는 다른 표현으로는 ‘<span
+                    data-audio="8_01_31/126-02.mp3"
+                    class="font-medium f-noto"
+                    >ごめんなさい</span
+                  >’가 있다.
+                </p>
+                <p class="flex">
+                  ‘<span
+                    data-audio="8_01_31/126-01.mp3"
+                    class="font-medium f-noto"
+                    >すみません</span
+                  >’에 비해 친구와 가족처럼 친한 사이에서 주로
+                </p>
+                <p>
+                  사용하며, 비즈니스 상황에서는 잘 쓰지 않는다. 업무 상황이나
+                </p>
+                <p class="flex">
+                  격식을 갖춘 장소에서는 더욱 정중한 표현인 ‘<span
+                    data-audio="8_01_31/126-03.mp3"
+                    data-group="6"
+                    class="font-medium f-noto"
+                    >もうしわけあり</span
+                  >
+                </p>
+                <p class="flex">
+                  <span
+                    data-audio="8_01_31/126-03.mp3"
+                    data-group="6"
+                    class="font-medium f-noto"
+                    >ません</span
+                  >’을 쓴다.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- pagination -->
+        <div
+          class="absolute -translate-x-1/2 bottom-10 left-1/2"
+          data-name="pagination"
+        >
+          <button
+            class="active"
+            data-name="btn-pagination"
+            data-audio-play="1"
+          ></button>
+          <button
+            class=""
+            data-name="btn-pagination"
+            data-audio-play="2"
+          ></button>
+          <button
+            class=""
+            data-name="btn-pagination"
+            data-audio-play="3"
+          ></button>
+          <button
+            class=""
+            data-name="btn-pagination"
+            data-audio-play="4"
+          ></button>
+          <button class="" data-name="btn-pagination"></button>
+        </div>
+      </div>
+      <!-- popup -->
+      <div id="popup-wrap" style="display: none">
+        <!-- 해석 보기 1 -->
+        <div data-name="popup" data-popup="1" style="display: none">
+          <div data-name="popup-header" class="relative">
+            <div data-name="popup-title">해석 보기</div>
+            <button
+              data-name="popup-close"
+              onclick="contentUtil.setPopup()"
+            ></button>
+            <!-- explan -->
+            <div class="absolute flex top-5 right-52">
+              <img
+                src="./images/8_01_31/label_popup_ex.svg"
+                alt="문장을 클릭하면 음원을 들을 수 있습니다."
+                class="w-298 h-37 me-12"
+              />
+              <button
+                data-name="btn-common-light"
+                data-exreset="1"
+                onclick="contentUtil.showExplan(1)"
+              >
+                해석 보기
+              </button>
+              <button
+                data-name="btn-common-light"
+                data-explan="1"
+                onclick="contentUtil.hideExplan(1)"
+                style="display: none"
+              >
+                해석 감추기
+              </button>
+            </div>
+          </div>
+          <div
+            data-name="popup-body"
+            class="flex flex-col flex-1 mt-16 mb-10 ms-26 leading-52 text-40 f-nanum-s me-6"
+          >
+            <!-- ---------- -->
+            <div class="flex mb-20 font-medium f-noto">
+              <span>A</span>
+              <span data-name="colon-black">:</span>
+              <div class="flex flex-col">
+                <!-- text -->
+                <div>
+                  <p>
+                    <span data-audio="8_01_31/126-04.mp3">すみません。</span>
+                  </p>
+                </div>
+                <!-- ex -->
+                <div
+                  class="mt-6 font-bold text-blue f-nanum-s"
+                  data-explan="1"
+                  style="display: none"
+                >
+                  <p>죄송합니다.</p>
+                </div>
+              </div>
+            </div>
+            <!-- ---------- -->
+            <div class="flex mb-20 font-medium f-noto">
+              <span>B</span>
+              <span data-name="colon-black">:</span>
+              <div class="flex flex-col">
+                <!-- text -->
+                <div>
+                  <p>
+                    <span data-audio="8_01_31/126-05.mp3">いいえ。</span
+                    ><span data-audio="8_01_31/126-05(1).mp3"
+                      >だいじょうぶです。</span
+                    >
+                  </p>
+                </div>
+                <!-- ex -->
+                <div
+                  class="mt-6 font-bold text-blue f-nanum-s"
+                  data-explan="1"
+                  style="display: none"
+                >
+                  <p>아니요. 괜찮습니다.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 해석 보기 2 -->
+        <div data-name="popup" data-popup="2" style="display: none">
+          <div data-name="popup-header" class="relative">
+            <div data-name="popup-title">해석 보기</div>
+            <button
+              data-name="popup-close"
+              onclick="contentUtil.setPopup()"
+            ></button>
+            <!-- explan -->
+            <div class="absolute flex top-5 right-52">
+              <img
+                src="./images/8_01_31/label_popup_ex.svg"
+                alt="문장을 클릭하면 음원을 들을 수 있습니다."
+                class="w-298 h-37 me-12"
+              />
+              <button
+                data-name="btn-common-light"
+                data-exreset="2"
+                onclick="contentUtil.showExplan(2)"
+              >
+                해석 보기
+              </button>
+              <button
+                data-name="btn-common-light"
+                data-explan="2"
+                onclick="contentUtil.hideExplan(2)"
+                style="display: none"
+              >
+                해석 감추기
+              </button>
+            </div>
+          </div>
+          <div
+            data-name="popup-body"
+            class="flex flex-col flex-1 mt-16 mb-10 ms-26 leading-52 text-40 f-nanum-s me-6"
+          >
+            <!-- ---------- -->
+            <div class="flex pt-12 mb-20 font-medium f-noto">
+              <span>A</span>
+              <span data-name="colon-black">:</span>
+              <div class="flex flex-col">
+                <!-- text -->
+                <div>
+                  <p>
+                    <span data-audio="8_01_31/126-07.mp3"
+                      >さいふ、<span class="relative"
+                        >落<span class="ruby">お</span></span
+                      >ちましたよ。</span
+                    >
+                  </p>
+                </div>
+                <!-- ex -->
+                <div
+                  class="mt-6 font-bold text-blue f-nanum-s"
+                  data-explan="2"
+                  style="display: none"
+                >
+                  <p>지갑, 떨어졌어요.</p>
+                </div>
+              </div>
+            </div>
+            <!-- ---------- -->
+            <div class="flex mb-20 font-medium f-noto">
+              <span>B</span>
+              <span data-name="colon-black">:</span>
+              <div class="flex flex-col">
+                <!-- text -->
+                <div>
+                  <p>
+                    <span data-audio="8_01_31/126-08.mp3"
+                      >あ、どうも すみません。</span
+                    >
+                  </p>
+                </div>
+                <!-- ex -->
+                <div
+                  class="mt-6 font-bold text-blue f-nanum-s"
+                  data-explan="2"
+                  style="display: none"
+                >
+                  <p>아, 정말 고맙습니다.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 해석 보기 3 -->
+        <div data-name="popup" data-popup="3" style="display: none">
+          <div data-name="popup-header" class="relative">
+            <div data-name="popup-title">해석 보기</div>
+            <button
+              data-name="popup-close"
+              onclick="contentUtil.setPopup()"
+            ></button>
+            <!-- explan -->
+            <div class="absolute flex top-5 right-52">
+              <img
+                src="./images/8_01_31/label_popup_ex.svg"
+                alt="문장을 클릭하면 음원을 들을 수 있습니다."
+                class="w-298 h-37 me-12"
+              />
+              <button
+                data-name="btn-common-light"
+                data-exreset="3"
+                onclick="contentUtil.showExplan(3)"
+              >
+                해석 보기
+              </button>
+              <button
+                data-name="btn-common-light"
+                data-explan="3"
+                onclick="contentUtil.hideExplan(3)"
+                style="display: none"
+              >
+                해석 감추기
+              </button>
+            </div>
+          </div>
+          <div
+            data-name="popup-body"
+            class="flex flex-col flex-1 mt-16 mb-10 ms-26 leading-52 text-40 f-nanum-s me-6"
+          >
+            <!-- ---------- -->
+            <div class="flex pt-12 mb-20 font-medium f-noto">
+              <span>A</span>
+              <span data-name="colon-black">:</span>
+              <div class="flex flex-col">
+                <!-- text -->
+                <div>
+                  <p>
+                    <span data-audio="8_01_31/126-11.mp3">すみません。</span
+                    ><span data-audio="8_01_31/126-12.mp3"
+                      >お<span class="relative"
+                        >水<span class="ruby">みず</span></span
+                      >
+                      ください。</span
+                    >
+                  </p>
+                </div>
+                <!-- ex -->
+                <div
+                  class="mt-6 font-bold text-blue f-nanum-s"
+                  data-explan="3"
+                  style="display: none"
+                >
+                  <p>저기요. 물 주세요.</p>
+                </div>
+              </div>
+            </div>
+            <!-- ---------- -->
+            <div class="flex mb-20 font-medium f-noto">
+              <span>B</span>
+              <span data-name="colon-black">:</span>
+              <div class="flex flex-col">
+                <!-- text -->
+                <div>
+                  <p>
+                    <span data-audio="8_01_31/126-13.mp3">はい。</span>
+                    <span data-audio="8_01_31/126-14.mp3">
+                      <span class="relative"
+                        >少々<span class="ruby tracking-[-0.25em]"
+                          >しょう しょう</span
+                        ></span
+                      ><span>
+                        お<span class="relative"
+                          >待<span class="ruby">ま</span></span
+                        >ちください。</span
+                      >
+                    </span>
+                  </p>
+                </div>
+                <!-- ex -->
+                <div
+                  class="mt-6 font-bold text-blue f-nanum-s"
+                  data-explan="3"
+                  style="display: none"
+                >
+                  <p>네. 잠시 기다려 주세요.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 해석 보기 4 -->
+        <div data-name="popup" data-popup="4" style="display: none">
+          <div data-name="popup-header" class="relative">
+            <div data-name="popup-title">해석 보기</div>
+            <button
+              data-name="popup-close"
+              onclick="contentUtil.setPopup()"
+            ></button>
+            <!-- explan -->
+            <div class="absolute flex top-5 right-52">
+              <img
+                src="./images/8_01_31/label_popup_ex.svg"
+                alt="문장을 클릭하면 음원을 들을 수 있습니다."
+                class="w-298 h-37 me-12"
+              />
+              <button
+                data-name="btn-common-light"
+                data-exreset="4"
+                onclick="contentUtil.showExplan(4)"
+              >
+                해석 보기
+              </button>
+              <button
+                data-name="btn-common-light"
+                data-explan="4"
+                onclick="contentUtil.hideExplan(4)"
+                style="display: none"
+              >
+                해석 감추기
+              </button>
+            </div>
+          </div>
+          <div
+            data-name="popup-body"
+            class="flex flex-col flex-1 mt-16 mb-10 ms-26 leading-52 text-40 f-nanum-s me-6"
+          >
+            <!-- ---------- -->
+            <div class="flex pt-12 mb-20 font-medium f-noto">
+              <span>A</span>
+              <span data-name="colon-black">:</span>
+              <div class="flex flex-col">
+                <!-- text -->
+                <div>
+                  <p>
+                    <span data-audio="8_01_31/126-16.mp3"
+                      >あのう、すみません。</span
+                    ><span data-audio="8_01_31/126-17.mp3"
+                      ><span class="relative"
+                        >駅<span class="ruby">えき</span></span
+                      >は どこですか。</span
+                    >
+                  </p>
+                </div>
+                <!-- ex -->
+                <div
+                  class="mt-6 font-bold text-blue f-nanum-s"
+                  data-explan="4"
+                  style="display: none"
+                >
+                  <p>저, 실례합니다. 역은 어디입니까?</p>
+                </div>
+              </div>
+            </div>
+            <!-- ---------- -->
+            <div class="flex mb-20 font-medium f-noto">
+              <span>B</span>
+              <span data-name="colon-black">:</span>
+              <div class="flex flex-col">
+                <!-- text -->
+                <div>
+                  <p>
+                    <span data-audio="8_01_31/126-18.mp3"
+                      >ここを まっすぐ
+                      <span class="relative"
+                        >行<span class="ruby">い</span></span
+                      >くと あります。</span
+                    >
+                  </p>
+                </div>
+                <!-- ex -->
+                <div
+                  class="mt-6 font-bold text-blue f-nanum-s"
+                  data-explan="4"
+                  style="display: none"
+                >
+                  <p>여기를 곧장 가면 있습니다.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 해설 보기 -->
+        <div data-name="popup" data-popup="5" style="display: none">
+          <div data-name="popup-header">
+            <div data-name="popup-title">해설 보기</div>
+            <button
+              data-name="popup-close"
+              onclick="contentUtil.setPopup()"
+            ></button>
+          </div>
+          <div
+            data-name="popup-body"
+            class="flex flex-col flex-1 mt-16 mb-2 ms-26 f-nanum-s me-6"
+          >
+            <!-- title -->
+            <div class="flex items-center mb-10 h-55">
+              <img
+                src="./../common/images/popup_titlemark_primary.svg"
+                alt=""
+                class="w-35 h-55 me-10"
+              />
+              <div class="flex font-extrabold text-42 text-[#41674B]">
+                말을 시작할 때 사용하는 ‘<span class="font-bold f-noto"
+                  >すみません</span
+                >‘
+              </div>
+            </div>
+            <!-- text -->
+            <div class="mb-10 font-bold text-40 leading-52">
+              <p class="flex">
+                ‘<span class="font-medium f-noto">すみません</span>’은 사과할
+                때, 감사할 때, 사람을 부를 때
+              </p>
+              <p>이외에 부탁할 때나 말을 시작할 때도 사용한다. 더 정중</p>
+              <p class="flex pt-12">
+                하게 말할 때는 ‘<span class="font-medium f-noto"
+                  ><span class="relative">恐<span class="ruby">おそ</span></span
+                  >れ<span class="relative">入<span class="ruby">い</span></span
+                  >りますが、～</span
+                >’라고 한다.
+              </p>
+            </div>
+            <!-- example -->
+            <div class="flex pt-12 font-bold text-40 leading-52">
+              <img
+                src="./images/8_01_31/label_ex_green.svg"
+                alt="예"
+                class="w-40 h-40 mt-6 me-12"
+              />
+              <div>
+                <p>
+                  <span class="font-medium f-noto"
+                    ><span class="text-red">すみませんが</span>、メニューを
+                    <span class="relative">見<span class="ruby">み</span></span
+                    >せて</span
+                  >
+                </p>
+                <p>
+                  <span class="font-medium f-noto">いただけませんか。</span>
+                </p>
+                <p>
+                  <span class="text-blue"
+                    >저기요, 메뉴를 보여 주시겠습니까?</span
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 사진 팝업창 -->
+        <div data-name="popup" data-popup="6" style="display: none">
+          <div data-name="popup-header">
+            <div data-name="popup-title">사진 팝업창</div>
+            <button
+              data-name="popup-close"
+              onclick="contentUtil.setPopup()"
+            ></button>
+          </div>
+          <div
+            data-name="popup-body"
+            class="flex items-center justify-center w-full h-full gap-16"
+          >
+            <div
+              class="flex flex-col items-center w-608 h-402"
+              data-name="popup_photo_wrap"
+            >
+              <div class="w-full overflow-x-hidden overflow-y-auto pe-4">
+                <img
+                  src="./images/8_01_31/popup_photo1.jpg"
+                  alt=""
+                  class="object-contain min-w-608 rounded-10"
+                  data-name="popup_photo"
+                  style="display: none"
+                />
+                <img
+                  src="./images/8_01_31/popup_photo2.jpg"
+                  alt=""
+                  class="object-contain min-w-608 rounded-10"
+                  data-name="popup_photo"
+                />
+                <img
+                  src="./images/8_01_31/popup_photo3.jpg"
+                  alt=""
+                  class="object-contain min-w-608 rounded-10"
+                  data-name="popup_photo"
+                />
+                <img
+                  src="./images/8_01_31/popup_photo4.jpg"
+                  alt=""
+                  class="object-contain min-w-608 rounded-10"
+                  data-name="popup_photo"
+                />
+              </div>
+              <div
+                class="flex mt-8 font-bold f-nanum-s h-52 text-40 leading-52 shrink-0"
+              >
+                <div data-name="popup_photo_text">사과할 때</div>
+                <div data-name="popup_photo_text" style="display: none">
+                  고마울 때
+                </div>
+                <div data-name="popup_photo_text" style="display: none">
+                  점원을 부를 때
+                </div>
+                <div data-name="popup_photo_text" style="display: none">
+                  모르는 사람에게 말을 걸 때
+                </div>
+              </div>
+            </div>
+            <div class="w-266 h-402">
+              <div class="flex flex-wrap w-full gap-10">
+                <button
+                  data-name="btn-popup_photo"
+                  class="w-128 h-72 active"
+                  onclick="contentUtil.setPhotoPopup(1)"
+                >
+                  <img src="./images/8_01_31/popup_btn_photo1.jpg" alt="" />
+                </button>
+                <button
+                  data-name="btn-popup_photo"
+                  class="w-128 h-72"
+                  onclick="contentUtil.setPhotoPopup(2)"
+                >
+                  <img src="./images/8_01_31/popup_btn_photo2.jpg" alt="" />
+                </button>
+                <button
+                  data-name="btn-popup_photo"
+                  class="w-128 h-72"
+                  onclick="contentUtil.setPhotoPopup(3)"
+                >
+                  <img src="./images/8_01_31/popup_btn_photo3.jpg" alt="" />
+                </button>
+                <button
+                  data-name="btn-popup_photo"
+                  class="w-128 h-72"
+                  onclick="contentUtil.setPhotoPopup(4)"
+                >
+                  <img src="./images/8_01_31/popup_btn_photo4.jpg" alt="" />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript">
+    const page = {
+      isAnswer: false,
+      isVocabulary: false,
+      showAnswer: () => {},
+      hideAnswer: () => {},
+      showVocabulary: () => {},
+    };
+
+    //역할 연습 음원
+    // audio : 재생할 전체음원
+    // data
+    // start : 시작 시간
+    // end : 끝 시간
+    // value : 해당되는 data-audio
+    // role : 해당되는 역할
+    // scroll : 해당 시간대 위치할 스크롤
+    // page : 해당 시간대 위치할 페이지
+    const rolePlayerAudio = [
+      //  ----- page 1 -----
+      {
+        audio: "8_01_31/126-06.mp3",
+        data: [
+          {
+            start: 0,
+            end: 1.5,
+            value: "8_01_31/126-04.mp3",
+          },
+          {
+            start: 1.5,
+            end: 2.5,
+            value: "8_01_31/126-05.mp3",
+          },
+          {
+            start: 2.5,
+            end: 3.9,
+            value: "8_01_31/126-05(1).mp3",
+          },
+        ],
+      },
+      //  ----- page 2 -----
+      {
+        audio: "8_01_31/126-10.mp3",
+        data: [
+          {
+            start: 0,
+            end: 2.3,
+            value: "8_01_31/126-07.mp3",
+          },
+          {
+            start: 2.3,
+            end: 5.2,
+            value: "8_01_31/126-08.mp3",
+          },
+        ],
+      },
+      //  ----- page 3 -----
+      {
+        audio: "8_01_31/126-15.mp3",
+        data: [
+          {
+            start: 0,
+            end: 1.1,
+            value: "8_01_31/126-11.mp3",
+          },
+          {
+            start: 1.1,
+            end: 2.8,
+            value: "8_01_31/126-12.mp3",
+          },
+          {
+            start: 2.8,
+            end: 3.6,
+            value: "8_01_31/126-13.mp3",
+          },
+          {
+            start: 3.6,
+            end: 5.4,
+            value: "8_01_31/126-14.mp3",
+          },
+        ],
+      },
+      //  ----- page 4 -----
+      {
+        audio: "8_01_31/126-19.mp3",
+        data: [
+          {
+            start: 0,
+            end: 2.1,
+            value: "8_01_31/126-16.mp3",
+          },
+          {
+            start: 2.1,
+            end: 4,
+            value: "8_01_31/126-17.mp3",
+          },
+          {
+            start: 4,
+            end: 6.9,
+            value: "8_01_31/126-18.mp3",
+          },
+        ],
+      },
+    ];
+  </script>
+  <script src="./../common/js/tailwind.config.js"></script>
+  <script src="./../common/js/script.js"></script>
+  <script src="../common/js/rolePlayerJc.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {});
+    // 음원 플레이어 노출
+    $(`[data-name="btn-pagination"]`).on("click", function () {
+      if ($(this).index() === 4) {
+        $(`[data-name="rolePlayer"]`).hide();
+      } else {
+        $(`[data-name="rolePlayer"]`).show();
+      }
+    });
+
+    // 음원 플레이어 이동
+    $(`[data-name="btn-pagination"]`).on("click", function () {
+      if ($(this).index() === 0) {
+        $(`[data-name="rolePlayer"]`).removeClass("top-60");
+        $(`[data-name="rolePlayer"]`).addClass("top-186");
+      } else {
+        $(`[data-name="rolePlayer"]`).addClass("top-60");
+        $(`[data-name="rolePlayer"]`).removeClass("top-186");
+      }
+    });
+  </script>
+</html>

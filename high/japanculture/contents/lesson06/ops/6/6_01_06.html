@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>미래엔 일본 문화</title>
+    <script src="./../common/lib/jquery-3.7.1.min.js"></script>
+    <script src="./../common/lib/howler-2.1.3.min.js"></script>
+    <script src="./../common/lib/tailwind.js"></script>
+    <!-- 폰트 -->
+    <link href="./../common/font/suit/suit.css" rel="stylesheet" />
+    <link href="./../common/font/bmjua/bmjua.css" rel="stylesheet" />
+    <link
+      href="./../common/font/nanumsquare/nanumSquare.css"
+      rel="stylesheet"
+    />
+    <link href="./../common/font/notoSansJP/notoSansJP.css" rel="stylesheet" />
+    <link href="./../common/css/tailwind.css" rel="stylesheet" />
+    <link href="./../common/css/fontStyle.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div id="wrap">
+      <!-- contents -->
+      <div class="relative w-full h-full pt-68">
+        <!-- title -->
+        <img
+          src="./../common/images/title_look_culture1.svg"
+          alt="문화 들여다보기1 연말연시와 공휴일"
+          class="absolute w-764 h-49 top-10"
+        />
+        <!-- header-btn -->
+        <div class="absolute right-0 flex gap-6 top-13" data-name="header-btn">
+          <button data-name="btn-common" onclick="contentUtil.setPopup(1)">
+            해설 보기
+          </button>
+        </div>
+        <!-- main -->
+        <div class="flex flex-col w-full h-full">
+          <div
+            class="flex flex-col w-full mb-8 h-404 text-40 f-nanum-s leading-52 ps-20"
+          >
+            <div class="flex items-center mb-4">
+              <img
+                src="./../common/images/index_pink_1.svg"
+                alt="번호 1"
+                class="w-40 h-40 me-4"
+              />
+              <span class="font-extrabold">연말</span>
+            </div>
+            <div class="flex mb-4">
+              <div data-name="number-2" class="bg-[#C84935]"></div>
+              <span class="text-[#C84935] font-extrabold flex"
+                >오미소카(<span
+                  data-audio="6_01_06/088-02.mp3"
+                  class="font-bold f-noto"
+                  >おおみそか</span
+                >)</span
+              >
+            </div>
+            <!-- ======== page 1 ======== -->
+            <div data-name="page" class="flex flex-col font-bold">
+              <div>
+                <p class="ps-28">
+                  일본에서는 ‘오미소카’라고 부르는 12월 31일이 한 해를
+                </p>
+                <p>마무리하는 중요한 날이다. 이날 밤에 하는 대표적</p>
+                <p>텔레비전 프로그램인 ‘홍백가합전’을 가족이 함께</p>
+                <p>보기도 하고, 가족끼리 제야의 종소리를 들으며</p>
+                <p class="flex">
+                  ‘도시코시소바(<span
+                    data-audio="6_01_06/088-03.mp3"
+                    class="font-medium f-noto"
+                    >としこしそば</span
+                  >)’라고 하는 해넘이
+                </p>
+                <p>국수를 먹기도 한다.</p>
+              </div>
+              <!-- img box -->
+              <div class="absolute bottom-32 right-20 w-210 h-210">
+                <img src="./images/6_01_06/main_photo1.jpg" alt="" class="" />
+                <button
+                  data-name="btn-view"
+                  class="absolute right-10 bottom-10"
+                  onclick="contentUtil.setPopup(2);contentUtil.setPhotoPopup(1);"
+                ></button>
+              </div>
+            </div>
+            <!-- ======== page 2 ======== -->
+            <div
+              data-name="page"
+              class="flex flex-col font-bold"
+              style="display: none"
+            >
+              <div>
+                <p>제야의 종을 33번 치는 우리나라와 달리, 일본은 인간이</p>
+                <p>가지고 있는 108가지 번뇌를 쫓아내는 의미로 108번 제야의</p>
+                <p>종을 친다. 해넘이 국수를 먹는 것은 잘</p>
+                <p>끊어지면서 긴 메밀국수처럼 1년간 일어난</p>
+                <p>나쁜 일을 끊어 내고 오래 살기를 기원하는</p>
+                <p>마음을 담고 있다.</p>
+              </div>
+              <!-- img box -->
+              <div class="absolute bottom-30 right-20 w-267 h-200">
+                <img src="./images/6_01_06/main_photo2.jpg" alt="" class="" />
+                <button
+                  data-name="btn-view"
+                  class="absolute right-10 bottom-10"
+                  onclick="contentUtil.setPopup(2);contentUtil.setPhotoPopup(2);"
+                ></button>
+              </div>
+            </div>
+          </div>
+
+          <!-- pagination -->
+          <div
+            class="absolute -translate-x-1/2 left-1/2 bottom-10"
+            data-name="pagination"
+          >
+            <button class="active" data-name="btn-pagination"></button>
+            <button class="" data-name="btn-pagination"></button>
+          </div>
+        </div>
+      </div>
+      <!-- popup -->
+      <div id="popup-wrap" style="display: none">
+        <!-- 해설 보기 -->
+        <div data-name="popup" data-popup="1" style="display: none">
+          <div data-name="popup-header">
+            <div data-name="popup-title">해설 보기</div>
+            <button
+              data-name="popup-close"
+              onclick="contentUtil.setPopup()"
+            ></button>
+          </div>
+          <div data-name="popup-body" class="mt-16 mb-10 ms-26 f-nanum-s me-6">
+            <div class="flex flex-col">
+              <!-- title -->
+              <div class="flex items-center mb-10 mt-14 h-55">
+                <img
+                  src="./../common/images/popup_titlemark_primary.svg"
+                  alt=""
+                  class="w-35 h-55 me-10"
+                />
+                <div class="flex font-extrabold text-42 text-[#41674B]">
+                  홍백가합전(<span class="font-bold f-noto"
+                    ><span class="relative"
+                      >紅<span class="font-bold ruby">こう</span></span
+                    ><span class="relative"
+                      >白<span class="font-bold ruby">はく</span></span
+                    ><span class="relative"
+                      >歌<span class="font-bold ruby">うた</span></span
+                    ><span class="relative"
+                      >合<span class="font-bold ruby">がっ</span></span
+                    ><span class="relative"
+                      >戦<span class="font-bold ruby">せん</span></span
+                    ></span
+                  >)
+                </div>
+              </div>
+              <div class="font-bold leading-52 text-40">
+                <p>NHK가 매년 12월 31일에 홍팀(여성)과 백팀(남성)으로</p>
+                <p>나누어 겨루는 대형 가요 경연 프로그램이다. 최근 시청률</p>
+                <p class="flex">
+                  은 30%대이지만, 1962년부터 1984년까지는 70<span
+                    class="font-medium f-noto"
+                    >～</span
+                  >80
+                </p>
+                <p>%대의 높은 시청률을 자랑했다. 1963년에는 81.4%</p>
+                <p>(비공식 89.8%)라는 대기록을 가지고 있다. 우리나라</p>
+                <p>가수로는 1987년에 조용필이 첫 출연을 했으며, 2002년</p>
+                <p>에는 보아가 댄스 가수로 첫 출연을 했다.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 사진 팝업창 -->
+        <div data-name="popup" data-popup="2" style="display: none">
+          <div data-name="popup-header">
+            <div data-name="popup-title">사진 팝업창</div>
+            <button
+              data-name="popup-close"
+              onclick="contentUtil.setPopup()"
+            ></button>
+          </div>
+          <div
+            data-name="popup-body"
+            class="flex items-center justify-center w-full h-full gap-16"
+          >
+            <div
+              class="flex flex-col items-center w-608 h-402"
+              data-name="popup_photo_wrap"
+            >
+              <div class="w-full overflow-x-hidden overflow-y-auto pe-4">
+                <img
+                  src="./images/6_01_06/popup_photo1.jpg"
+                  alt=""
+                  class="object-contain min-w-608 rounded-10"
+                  data-name="popup_photo"
+                />
+                <img
+                  src="./images/6_01_06/popup_photo2.jpg"
+                  alt=""
+                  class="object-contain min-w-608 rounded-10"
+                  data-name="popup_photo"
+                  style="display: none"
+                />
+              </div>
+              <div
+                class="flex mt-8 font-bold f-nanum-s text-40 leading-52 shrink-0"
+              >
+                <div data-name="popup_photo_text">도시코시소바</div>
+                <div data-name="popup_photo_text" style="display: none">
+                  제야의 종
+                </div>
+              </div>
+            </div>
+            <div class="w-266 h-402">
+              <div class="flex flex-wrap w-full gap-10">
+                <button
+                  data-name="btn-popup_photo"
+                  class="w-128 h-72 active"
+                  onclick="contentUtil.setPhotoPopup(1)"
+                >
+                  <img src="./images/6_01_06/popup_btn_photo1.jpg" alt="" />
+                </button>
+                <button
+                  data-name="btn-popup_photo"
+                  class="w-128 h-72"
+                  onclick="contentUtil.setPhotoPopup(2)"
+                >
+                  <img src="./images/6_01_06/popup_btn_photo2.jpg" alt="" />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript">
+    const page = {
+      isAnswer: false,
+      isVocabulary: false,
+      showAnswer: () => {},
+      hideAnswer: () => {},
+      showVocabulary: () => {},
+    };
+  </script>
+  <script src="./../common/js/tailwind.config.js"></script>
+  <script src="./../common/js/script.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {});
+  </script>
+</html>

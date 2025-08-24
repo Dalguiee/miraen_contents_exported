@@ -1,0 +1,134 @@
+@import url(./popup.css);
+@import url(./button.css);
+@import url(./pagination.css);
+@import url(./colon.css);
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+}
+*::-webkit-scrollbar {
+  width: 6px;
+}
+*::-webkit-scrollbar-thumb {
+  background-color: rgba(161, 161, 161, 0.6);
+  border-radius: 4px;
+}
+*::-webkit-scrollbar-track {
+  /* background-color: rgba(206, 223, 201, 0.6); */
+  background-color: rgba(0, 0, 0, 0.04);
+  border-radius: 4px;
+}
+html {
+  width: 100%;
+  height: 100%;
+  color: #1e1e1e;
+}
+body {
+  line-height: 1;
+  width: 100%;
+  height: 100%;
+  white-space: nowrap;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+#wrap {
+  width: 1000px;
+  height: 520px;
+  background-color: white;
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  /* outline: 1px solid #ddd; */
+  overflow: hidden;
+  display: none;
+}
+
+.ruby {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%) translateY(-10px);
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 20px;
+  white-space: nowrap;
+}
+
+/* 비디오 생성 영역 */
+#videoParent {
+  z-index: 10;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+/* 선긋기 css */
+[data-name="canvas"],
+[data-name="canvas_answer"] {
+  pointer-events: none;
+  opacity: 0;
+}
+[data-name="canvas"].show,
+[data-name="canvas_answer"].show {
+  pointer-events: auto;
+  opacity: 1;
+}
+
+/* 음성 */
+*[data-audio] {
+  cursor: pointer;
+}
+@media (hover: hover) {
+  *[data-audio]:hover {
+    color: #e22f61 !important;
+  }
+  *[data-audio]:hover * {
+    color: #e22f61 !important;
+  }
+  *[data-group].hover {
+    color: #e22f61 !important;
+  }
+  *[data-group].hover * {
+    color: #e22f61 !important;
+  }
+  [data-name="audio-text"] [data-name="default"] {
+    opacity: 1;
+  }
+  [data-name="audio-text"] [data-name="active"] {
+    opacity: 0;
+  }
+  [data-name="audio-text"]:hover [data-name="default"] {
+    opacity: 0;
+  }
+  [data-name="audio-text"]:hover [data-name="active"] {
+    opacity: 1;
+  }
+}
+*[data-audio].speak {
+  color: #e22f61 !important;
+}
+*[data-audio].speak * {
+  color: #e22f61 !important;
+}
+[data-name="audio-text"].speak [data-name="default"] {
+  opacity: 0;
+}
+[data-name="audio-text"].speak [data-name="active"] {
+  opacity: 1;
+}
+
+/* 임시버튼 비활성화 */
+.btn-all-answer,
+.btn-all-reset,
+.btn-show-vocabulary {
+  display: none;
+}

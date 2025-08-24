@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>미래엔 일본 문화</title>
+  <script src="./../common/lib/jquery-3.7.1.min.js"></script>
+  <script src="./../common/lib/howler-2.1.3.min.js"></script>
+  <script src="./../common/lib/tailwind.js"></script>
+  <!-- 폰트 -->
+  <link href="./../common/font/suit/suit.css" rel="stylesheet" />
+  <link href="./../common/font/bmjua/bmjua.css" rel="stylesheet" />
+  <link href="./../common/font/nanumsquare/nanumSquare.css" rel="stylesheet" />
+  <link href="./../common/font/notoSansJP/notoSansJP.css" rel="stylesheet" />
+  <link href="./../common/css/tailwind.css" rel="stylesheet" />
+  <link href="./../common/css/fontStyle.css" rel="stylesheet" />
+</head>
+
+<body>
+  <div id="wrap">
+    <!-- contents -->
+    <div class="relative w-full h-full pt-70">
+      <!-- title -->
+      <img src="./../common/images/title_learning_objectives.svg" alt="학습목표" class="absolute w-160 h-52 top-10" />
+      <!-- header-btn -->
+      <div class="absolute right-0 flex gap-6 top-13" data-name="header-btn">
+        <button data-name="btn-common" onclick="contentUtil.setPopup(2)">
+          사진 설명
+        </button>
+        <button data-name="btn-common" onclick="contentUtil.setPopup(1); contentUtil.setPhotoPopup(1)">
+          추가 사진
+        </button>
+      </div>
+      <!-- main -->
+      <div class="flex flex-col w-full h-full">
+        <!-- ---------list--------- -->
+        <div class="flex flex-col w-full gap-4 px-20 font-bold f-nanum-s">
+          <!-- line1 -->
+          <div class="flex w-full">
+            <div class="w-12 h-12 mt-20 bg-black rounded-full me-10"></div>
+            <div class="leading-52 text-40">
+              <span class="text-[#E9474D]">유명한 마쓰리의 종류와 풍경</span>에 대해 말할 수 있다.
+            </div>
+          </div>
+          <!-- line2 -->
+          <div class="flex w-full">
+            <div class="w-12 h-12 mt-20 bg-black rounded-full me-10"></div>
+            <div class="leading-52 text-40">
+              <span class="text-[#E9474D]">일본의 행운을 기원하는 물건</span>에 대해 설명할 수 있다.
+            </div>
+          </div>
+          <!-- line3 -->
+          <div class="flex w-full">
+            <div class="w-12 h-12 mt-20 bg-black rounded-full me-10"></div>
+            <div class="leading-52 text-40">
+              <p>한국과 일본의 합격을 기원하는 풍습을 비교하여 설명할 수</p>
+              <p>있다.</p>
+            </div>
+          </div>
+        </div>
+        <!-- ---------photo--------- -->
+        <div class="absolute right-0 bottom-31 w-400 h-225 ms-auto me-20">
+          <img src="./images/7_01_01/main_photo1.jpg" alt="기온 마쓰리" class="w-full h-full" />
+          <button data-name="btn-view" class="absolute bottom-10 right-10"
+            onclick="contentUtil.setPopup(3); contentUtil.setPhotoPopup(4)"></button>
+        </div>
+      </div>
+    </div>
+    <!-- popup -->
+    <div id="popup-wrap" style="display: none">
+      <!-- 추가 사진 -->
+      <div data-name="popup" data-popup="1" style="display: none">
+        <div data-name="popup-header">
+          <div data-name="popup-title">추가 사진</div>
+          <button data-name="popup-close" onclick="contentUtil.setPopup()"></button>
+        </div>
+        <div data-name="popup-body" class="flex items-center justify-center w-full h-full gap-16">
+          <div class="flex flex-col items-center w-608 h-402" data-name="popup_photo_wrap">
+            <div class="w-full overflow-x-hidden overflow-y-auto pe-4">
+              <img src="./images/7_01_01/popup_photo1.jpg" alt="기온 마쓰리" class="object-contain min-w-608 rounded-10"
+                data-name="popup_photo" />
+              <img src="./images/7_01_01/popup_photo2.jpg" alt="야마보코 행진" class="object-contain min-w-608 rounded-10"
+                data-name="popup_photo" style="display: none" />
+              <img src="./images/7_01_01/popup_photo3.jpg" alt="야사카(やさか) 신사 "
+                class="object-contain min-w-608 rounded-10" data-name="popup_photo" style="display: none" />
+            </div>
+            <div class="flex mt-8 font-bold f-nanum-s h-52 text-40 leading-52 shrink-0">
+              <div data-name="popup_photo_text" class="text-blue">
+                기온 마쓰리
+              </div>
+              <div style="display: none" data-name="popup_photo_text" class="text-blue">
+                야마보코 행진
+              </div>
+              <div style="display: none" data-name="popup_photo_text" class="text-blue">
+                야사카(<span class="font-medium f-noto">やさか</span>) 신사 
+              </div>
+            </div>
+          </div>
+          <div class="w-266 h-402">
+            <div class="flex flex-wrap w-full gap-10">
+              <button onclick="contentUtil.setPhotoPopup(1)" data-name="btn-popup_photo" class="w-128 h-72 active">
+                <img src="./images/7_01_01/popup_btn_photo1.jpg" alt="기온 마쓰리" />
+              </button>
+              <button onclick="contentUtil.setPhotoPopup(2)" data-name="btn-popup_photo" class="w-128 h-72">
+                <img src="./images/7_01_01/popup_btn_photo2.jpg" alt="야마보코 행진" />
+              </button>
+              <button onclick="contentUtil.setPhotoPopup(3)" data-name="btn-popup_photo" class="w-128 h-72">
+                <img src="./images/7_01_01/popup_btn_photo3.jpg" alt="야사카(やさか) 신사 " />
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 사진 설명 -->
+      <div data-name="popup" data-popup="2" style="display: none">
+        <div data-name="popup-header">
+          <div data-name="popup-title">사진 설명</div>
+          <button data-name="popup-close" onclick="contentUtil.setPopup()"></button>
+        </div>
+        <div data-name="popup-body" class="mt-16 mb-10 ms-26 f-nanum-s me-6">
+          <div class="flex flex-col">
+            <!-- title -->
+            <div class="flex items-center mb-10 h-55">
+              <img src="./../common/images/popup_titlemark_primary.svg" alt="" class="w-35 h-55 me-10" />
+              <div class="flex font-extrabold text-42 text-[#F25F7C]">
+                교토의 기온 마쓰리
+              </div>
+            </div>
+            <div class="font-bold f-nanum-s text-40 leading-52">
+              <p>매년 7월 1일부터 31일까지 교토 기온 지역의 ‘야사카</p>
+              <p class="flex">
+                (<span class="font-medium f-noto">やさか</span>) 신사’에서
+                열리는 마쓰리이다. 기온 마쓰리는
+              </p>
+              <p>전염병을 퇴치하기 위한 기원제에서 유래되었다. 산 모양의</p>
+              <p>장식대에 창이나 칼을 꽂은 화려한 수레인 ‘야마보코</p>
+              <p class="flex">
+                (<span class="font-medium f-noto">やまぼこ</span>)’를 전통
+                음악인 ‘기온바야시’에 맞추어 끌면서
+              </p>
+              <p>교토 시내를 행진한다.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 사진 팝업창 -->
+      <div data-name="popup" data-popup="3" style="display: none">
+        <div data-name="popup-header">
+          <div data-name="popup-title">사진 팝업창</div>
+          <button data-name="popup-close" onclick="contentUtil.setPopup()"></button>
+        </div>
+        <div data-name="popup-body" class="flex items-center justify-center w-full h-full gap-16">
+          <div class="flex flex-col items-center w-730 h-400" data-name="popup_photo_wrap">
+            <div class="w-full overflow-x-hidden overflow-y-auto pe-4">
+              <img src="./images/7_01_01/popup_photo4.jpg" alt="기온 마쓰리" class="object-contain min-w-730 rounded-10"
+                data-name="popup_photo" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<script type="text/javascript">
+  const page = {
+    isAnswer: false,
+    isVocabulary: false,
+    showAnswer: () => { },
+    hideAnswer: () => { },
+    showVocabulary: () => { },
+  };
+</script>
+<script src="./../common/js/tailwind.config.js"></script>
+<script src="./../common/js/script.js"></script>
+<script type="text/javascript">
+  $(document).ready(function () {
+    // contentUtil.setPopup(1);
+  });
+</script>
+
+</html>

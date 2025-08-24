@@ -1,0 +1,32 @@
+.bullet-flower-pink {
+  background-position: left top 19px;
+}
+
+.img-wrap {
+  display: flex;
+  margin-top: 10px;
+}
+
+.img-wrap > li {
+  width: 380px;
+}
+
+.img-wrap > li + li {
+  margin-left: 70px;
+}
+
+.img-wrap > li .img-container {
+  width: 380px;
+  height: 200px;
+}
+
+.img-wrap > li .txt {
+  width: 100%;
+  text-align: center;
+  margin-top: 6px;
+  line-height: 48px;
+}
+
+.popup-contents {
+  line-height: 52px;
+}

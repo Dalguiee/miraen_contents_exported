@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>미래엔 일본 문화</title>
+    <script src="./../common/lib/jquery-3.7.1.min.js"></script>
+    <script src="./../common/lib/howler-2.1.3.min.js"></script>
+    <script src="./../common/lib/tailwind.js"></script>
+    <!-- 폰트 -->
+    <link href="./../common/font/suit/suit.css" rel="stylesheet" />
+    <link href="./../common/font/bmjua/bmjua.css" rel="stylesheet" />
+    <link
+      href="./../common/font/nanumsquare/nanumSquare.css"
+      rel="stylesheet"
+    />
+    <link href="./../common/font/notoSansJP/notoSansJP.css" rel="stylesheet" />
+    <link href="./../common/css/tailwind.css" rel="stylesheet" />
+    <link href="./../common/css/fontStyle.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div id="wrap">
+      <!-- contents -->
+      <div class="relative w-full h-full pt-68">
+        <!-- title -->
+        <img
+          src="./../common/images/title_look_culture1.svg"
+          alt="문화 들여다보기1 성씨와 가족 호칭"
+          class="absolute w-764 h-49 top-10"
+        />
+        <!-- header-btn -->
+        <div class="absolute right-0 flex gap-6 top-13" data-name="header-btn">
+          <button
+            data-name="btn-common-dark"
+            class="min-w-62"
+            onclick="contentUtil.setPopup(3)"
+            style="display: none"
+          >
+            TIP
+          </button>
+        </div>
+        <!-- main -->
+        <div class="flex flex-col w-full h-full">
+          <div class="flex flex-col w-full mb-8 h-404 leading-52 ps-20">
+            <div class="flex items-center mb-4">
+              <img
+                src="./../common/images/index_pink_2.svg"
+                alt="번호 2"
+                class="w-40 h-40 me-4"
+              />
+              <span class="font-extrabold f-nanum-s text-40">가족 호칭</span>
+            </div>
+            <!-- ======== page 1 ======== -->
+            <div
+              data-name="page"
+              class="flex flex-col font-bold f-nanum-s text-40"
+            >
+              <div>
+                <p class="ps-28">
+                  가족 호칭은 혈연관계나 결혼으로 형성된 집단 간의 호칭을
+                </p>
+                <p>말한다. 일본에서도 자녀는 부모에게 가족 호칭을 사용하고,</p>
+                <p>부모는 자녀의 이름을 부른다.</p>
+                <p class="ps-28">
+                  일본의 가족 호칭은 자신의 가족을 남에게 말할 때와 남의
+                </p>
+                <p>가족을 말할 때 사용하는 호칭이 다르다. 내 가족을 남에게</p>
+                <p>말할 때는 낮춰 말하고 남의 가족은 높여 말한다.</p>
+              </div>
+            </div>
+            <!-- ======== page 2 ======== -->
+            <div
+              data-name="page"
+              class="flex flex-col font-bold f-nanum-s text-40"
+              style="display: none"
+            >
+              <div>
+                <p class="ps-28">
+                  그리고 한국은 친가와 외가를 구분하지만, 일본은 구분하지
+                </p>
+                <p>
+                  않는다. 친가와 외가 모두 본인과 삼촌 관계에 있는 남자 친척
+                </p>
+                <p class="flex">
+                  (숙부, 외숙부, 고모부, 이모부 등)은 ‘<span
+                    data-audio="4_01_13/063-01.mp3"
+                    class="font-medium f-noto"
+                    >おじさん</span
+                  >’이라고 하고,
+                </p>
+                <p class="flex">
+                  여자 친척(숙모, 외숙모, 고모, 이모 등)은 ‘<span
+                    data-audio="4_01_13/063-02.mp3"
+                    class="font-medium f-noto"
+                    >おばさん</span
+                  >’이라고
+                </p>
+                <p>한다.</p>
+              </div>
+            </div>
+            <!-- ======== page 3 ======== -->
+            <div
+              data-name="page"
+              class="relative mx-auto w-811 h-334"
+              style="display: none"
+            >
+              <img
+                src="./images/4_01_13/main_img1.jpg"
+                alt=""
+                class="w-full h-full"
+              />
+              <button
+                data-name="btn-view"
+                class="absolute top-28 left-28"
+                onclick="contentUtil.setPopup(1); contentUtil.setPhotoPopup(1);"
+              ></button>
+              <button
+                data-name="btn-view"
+                class="absolute top-28 right-28"
+                onclick="contentUtil.setPopup(1); contentUtil.setPhotoPopup(2);"
+              ></button>
+              <!-- ----- -->
+              <div
+                data-name="audio-text"
+                data-audio="4_01_13/063-09.mp3"
+                class="absolute flex items-center justify-center w-48 h-31 top-109 left-107"
+              >
+                <img
+                  data-name="default"
+                  src="./images/4_01_13/main_text1.svg"
+                  alt="ちち"
+                  class="absolute w-42 h-22"
+                />
+                <img
+                  data-name="active"
+                  src="./images/4_01_13/main_text1_active.svg"
+                  alt="ちち"
+                  class="absolute w-42 h-22"
+                />
+              </div>
+              <!-- ----- -->
+              <div
+                data-name="audio-text"
+                data-audio="4_01_13/063-10.mp3"
+                class="absolute flex items-center justify-center w-48 h-31 top-109 left-222"
+              >
+                <img
+                  data-name="default"
+                  src="./images/4_01_13/main_text2.svg"
+                  alt="はは"
+                  class="absolute w-45 h-21"
+                />
+                <img
+                  data-name="active"
+                  src="./images/4_01_13/main_text2_active.svg"
+                  alt="はは"
+                  class="absolute w-45 h-21"
+                />
+              </div>
+              <!-- ----- -->
+              <div
+                data-name="audio-text"
+                data-audio="4_01_13/063-17.mp3"
+                class="absolute flex items-center justify-center w-101 h-31 top-112 left-502"
+              >
+                <img
+                  data-name="default"
+                  src="./images/4_01_13/main_text3.svg"
+                  alt="おとうさん"
+                  class="absolute w-98 h-22"
+                />
+                <img
+                  data-name="active"
+                  src="./images/4_01_13/main_text3_active.svg"
+                  alt="おとうさん"
+                  class="absolute w-98 h-22"
+                />
+              </div>
+              <!-- ----- -->
+              <div
+                data-name="audio-text"
+                data-audio="4_01_13/063-18.mp3"
+                class="absolute flex items-center justify-center w-113 h-31 top-112 left-617"
+              >
+                <img
+                  data-name="default"
+                  src="./images/4_01_13/main_text4.svg"
+                  alt="おかあさん"
+                  class="absolute w-110 h-22"
+                />
+                <img
+                  data-name="active"
+                  src="./images/4_01_13/main_text4_active.svg"
+                  alt="おかあさん"
+                  class="absolute w-110 h-22"
+                />
+              </div>
+              <!-- ----- -->
+              <div
+                data-name="audio-text"
+                data-audio="4_01_13/063-11.mp3"
+                class="absolute flex items-center justify-center w-28 h-18 top-247 left-57"
+              >
+                <img
+                  data-name="default"
+                  src="./images/4_01_13/main_text5.svg"
+                  alt="あに"
+                  class="absolute w-26 h-13"
+                />
+                <img
+                  data-name="active"
+                  src="./images/4_01_13/main_text5_active.svg"
+                  alt="あに"
+                  class="absolute w-26 h-13"
+                />
+              </div>
+              <!-- ----- -->
+              <div
+                data-name="audio-text"
+                data-audio="4_01_13/063-12.mp3"
+                class="absolute flex items-center justify-center w-28 h-18 top-247 left-122"
+              >
+                <img
+                  data-name="default"
+                  src="./images/4_01_13/main_text6.svg"
+                  alt="あね"
+                  class="absolute w-27 h-13"
+                />
+                <img
+                  data-name="active"
+                  src="./images/4_01_13/main_text6_active.svg"
+                  alt="あね"
+                  class="absolute w-27 h-13"
+                />
+              </div>
+              <!-- ----- -->
+              <div
+                data-name="audio-text"
+                data-audio="4_01_13/063-13.mp3"
+                class="absolute flex items-center justify-center w-24 h-18 top-247 left-165"
+              >
+                <img
+                  data-name="default"
+                  src="./images/4_01_13/main_text7.svg"
+                  alt="ぼく"
+                  class="absolute w-21 h-13"
+                />
+                <img
+                  data-name="active"
+                  src="./images/4_01_13/main_text7_active.svg"
+                  alt="ぼく"
+                  class="absolute w-21 h-13"
+                />
+              </div>
+              <!-- ----- -->
+              <div
+                class="absolute w-2 h-2 bg-black rounded-10 top-256 left-189"
+              ></div>
+              <!-- ----- -->
+              <div
+                data-name="audio-text"
+                data-audio="4_01_13/063-14.mp3"
+                class="absolute flex items-center justify-center w-38 h-18 top-247 left-192"
+              >
+                <img
+                  data-name="default"
+                  src="./images/4_01_13/main_text7-1.svg"
+                  alt="わたし"
+                  class="absolute w-36 h-13"
+                />
+                <img
+                  data-name="active"
+                  src="./images/4_01_13/main_text7-1_active.svg"
+                  alt="わたし"
+                  class="absolute w-36 h-13"
+                />
+              </div>
+              <!-- ----- -->
+              <div
+                data-name="audio-text"
+                data-audio="4_01_13/063-15.mp3"
+                class="absolute flex items-center justify-center w-50 h-18 top-247 left-235"
+              >
+                <img
+                  data-name="default"
+                  src="./images/4_01_13/main_text8.svg"
+                  alt="いもうと"
+                  class="absolute w-49 h-13"
+                />
+                <img
+                  data-name="active"
+                  src="./images/4_01_13/main_text8_active.svg"
+                  alt="いもうと"
+                  class="absolute w-49 h-13"
+                />
+              </div>
+              <!-- ----- -->
+              <div
+                data-name="audio-text"
+                data-audio="4_01_13/063-16.mp3"
+                class="absolute flex items-center justify-center w-58 h-18 top-247 left-295"
+              >
+                <img
+                  data-name="default"
+                  src="./images/4_01_13/main_text9.svg"
+                  alt="おとうと"
+                  class="absolute w-49 h-13"
+                />
+                <img
+                  data-name="active"
+                  src="./images/4_01_13/main_text9_active.svg"
+                  alt="おとうと"
+                  class="absolute w-49 h-13"
+                />
+              </div>
+              <!-- ----- -->
+              <div
+                data-name="audio-text"
+                data-audio="4_01_13/063-19.mp3"
+                class="absolute flex items-center justify-center w-65 h-18 top-244 left-454"
+              >
+                <img
+                  data-name="default"
+                  src="./images/4_01_13/main_text10.svg"
+                  alt="おにいさん"
+                  class="absolute w-63 h-13"
+                />
+                <img
+                  data-name="active"
+                  src="./images/4_01_13/main_text10_active.svg"
+                  alt="おにいさん"
+                  class="absolute w-63 h-13"
+                />
+              </div>
+              <!-- ----- -->
+              <div
+                data-name="audio-text"
+                data-audio="4_01_13/063-20.mp3"
+                class="absolute flex items-center justify-center w-65 h-18 top-244 left-521"
+              >
+                <img
+                  data-name="default"
+                  src="./images/4_01_13/main_text11.svg"
+                  alt="おねえさん"
+                  class="absolute w-63 h-13"
+                />
+                <img
+                  data-name="active"
+                  src="./images/4_01_13/main_text11_active.svg"
+                  alt="おねえさん"
+                  class="absolute w-63 h-13"
+                />
+              </div>
+              <!-- ----- -->
+              <div
+                data-name="audio-text"
+                data-audio="4_01_13/063-21.mp3"
+                class="absolute flex items-center justify-center w-52 h-18 top-244 left-588"
+              >
+                <img
+                  data-name="default"
+                  src="./images/4_01_13/main_text12.svg"
+                  alt="○○さん"
+                  class="absolute w-52 h-13"
+                />
+                <img
+                  data-name="active"
+                  src="./images/4_01_13/main_text12_active.svg"
+                  alt="○○さん"
+                  class="absolute w-52 h-13"
+                />
+              </div>
+              <!-- ----- -->
+              <div
+                data-name="audio-text"
+                data-audio="4_01_13/063-22.mp3"
+                class="absolute flex items-center justify-center w-75 h-18 top-244 left-642"
+              >
+                <img
+                  data-name="default"
+                  src="./images/4_01_13/main_text13.svg"
+                  alt="いもうとさん"
+                  class="absolute w-73 h-13"
+                />
+                <img
+                  data-name="active"
+                  src="./images/4_01_13/main_text13_active.svg"
+                  alt="いもうとさん"
+                  class="absolute w-73 h-13"
+                />
+              </div>
+              <!-- ----- -->
+              <div
+                data-name="audio-text"
+                data-audio="4_01_13/063-23.mp3"
+                class="absolute flex items-center justify-center w-75 h-18 top-244 left-719"
+              >
+                <img
+                  data-name="default"
+                  src="./images/4_01_13/main_text14.svg"
+                  alt="おとうとさん"
+                  class="absolute w-73 h-13"
+                />
+                <img
+                  data-name="active"
+                  src="./images/4_01_13/main_text14_active.svg"
+                  alt="おとうとさん"
+                  class="absolute w-73 h-13"
+                />
+              </div>
+            </div>
+            <!-- ======== page 4 ======== -->
+            <div
+              data-name="page"
+              class="flex flex-col font-bold f-nanum-s text-40"
+              style="display: none"
+            >
+              <div>
+                <p class="ps-28">또한, 일본인은 가족 호칭을 사용할 때</p>
+                <p>가족 중 막내를 기준으로 부르기도 한다.</p>
+                <p>예를 들어 자녀가 3명인 경우, 엄마가 장녀와</p>
+                <p>장남을 부를 때 막내가 부르는 호칭대로</p>
+                <p class="flex">
+                  장녀를 ‘<span
+                    data-audio="4_01_13/063-03.mp3"
+                    class="font-medium f-noto"
+                    >おねえさん</span
+                  >(누나·언니)’, 장남을
+                </p>
+                <p class="flex">
+                  ‘<span
+                    data-audio="4_01_13/063-04.mp3"
+                    class="font-medium f-noto"
+                    >おにいさん</span
+                  >(형·오빠)’이라고 부른다.
+                </p>
+              </div>
+            </div>
+            <!-- ======== page 5 ======== -->
+            <div
+              data-name="page"
+              class="flex flex-col font-bold f-nanum-s text-40"
+              style="display: none"
+            >
+              <div>
+                <p>이처럼 가족 내에서 막내를 기준으로</p>
+                <p>호칭을 통일하면 호칭의 혼돈을 피할 수</p>
+                <p>있다는 장점이 있다.</p>
+              </div>
+            </div>
+            <!-- img box -->
+            <div
+              data-name="img-box"
+              class="absolute w-0 font-medium h-367 top-80 right-20 text-40 f-noto"
+              style="display: none"
+            >
+              <img
+                src="./images/4_01_13/main_photo3.png"
+                alt=""
+                class="absolute top-0 right-0 pointer-events-none h-422 min-w-348"
+              />
+              <span
+                data-audio="4_01_13/063-07.mp3"
+                class="absolute top-18 -left-315"
+                >おねえちゃん。</span
+              >
+              <span
+                data-audio="4_01_13/063-08.mp3"
+                class="absolute top-90 -left-143"
+                >はい。</span
+              >
+              <span
+                class="absolute font-bold top-330 -left-341 f-nanum-s text-36"
+                >엄마</span
+              >
+              <span
+                class="absolute font-bold top-359 -left-250 f-nanum-s text-36"
+                >장녀</span
+              >
+              <span
+                class="absolute font-bold top-369 -left-160 f-nanum-s text-36"
+                >막내</span
+              >
+              <span
+                class="absolute font-bold top-369 -left-70 f-nanum-s text-36"
+                >장남</span
+              >
+              <button
+                data-name="btn-view"
+                class="absolute bottom-160 right-30"
+                onclick="contentUtil.setPopup(2)"
+              ></button>
+            </div>
+          </div>
+          <!-- pagination -->
+          <div
+            class="absolute -translate-x-1/2 left-1/2 bottom-10"
+            data-name="pagination"
+          >
+            <button class="active" data-name="btn-pagination"></button>
+            <button class="" data-name="btn-pagination"></button>
+            <button class="" data-name="btn-pagination"></button>
+            <button class="" data-name="btn-pagination"></button>
+            <button class="" data-name="btn-pagination"></button>
+          </div>
+        </div>
+      </div>
+      <!-- popup -->
+      <div id="popup-wrap" style="display: none">
+        <!-- 사진 팝업창 1 -->
+        <div data-name="popup" data-popup="1" style="display: none">
+          <div data-name="popup-header">
+            <div data-name="popup-title">사진 팝업창</div>
+            <button
+              data-name="popup-close"
+              onclick="contentUtil.setPopup()"
+            ></button>
+          </div>
+          <div
+            data-name="popup-body"
+            class="flex items-center justify-center w-full h-full gap-16"
+          >
+            <div
+              class="flex flex-col items-center w-608 h-402"
+              data-name="popup_photo_wrap"
+            >
+              <div class="w-full">
+                <!-- ============ -->
+                <div
+                  class="relative font-medium f-noto"
+                  data-name="popup_photo"
+                >
+                  <img
+                    src="./images/4_01_13/popup_photo1.jpg"
+                    alt=""
+                    class="object-contain min-w-608 rounded-10"
+                  />
+                  <!-- ------ -->
+                  <div
+                    class="absolute flex items-center justify-center top-118 left-187 w-60 h-39"
+                  >
+                    <span data-audio="4_01_13/063-09.mp3" class="text-30"
+                      >ちち</span
+                    >
+                  </div>
+                  <!-- ------ -->
+                  <div
+                    class="absolute flex items-center justify-center top-118 left-351 w-60 h-39"
+                  >
+                    <span data-audio="4_01_13/063-10.mp3" class="text-30"
+                      >はは</span
+                    >
+                  </div>
+                  <!-- ------ -->
+                  <div
+                    class="absolute flex items-center justify-center w-40 top-310 left-108 h-26"
+                  >
+                    <span data-audio="4_01_13/063-11.mp3" class="text-20"
+                      >あに</span
+                    >
+                  </div>
+                  <!-- ------ -->
+                  <div
+                    class="absolute flex items-center justify-center w-40 top-310 left-202 h-26"
+                  >
+                    <span data-audio="4_01_13/063-12.mp3" class="text-20"
+                      >あね</span
+                    >
+                  </div>
+                  <!-- ------ -->
+                  <div
+                    class="absolute flex items-center justify-center w-97 top-310 left-261 h-26"
+                  >
+                    <span class="text-20 tracking-[-0.08em]"
+                      ><span class="tracking-[-0.09em]"
+                        ><span data-audio="4_01_13/063-13.mp3">ぼく</span
+                        ><span class="-ms-4">·</span></span
+                      ><span data-audio="4_01_13/063-14.mp3">わたし</span></span
+                    >
+                  </div>
+                  <!-- ------ -->
+                  <div
+                    class="absolute flex items-center justify-center w-72 top-310 left-364 h-26"
+                  >
+                    <span
+                      data-audio="4_01_13/063-15.mp3"
+                      class="text-20 tracking-[-0.08em]"
+                      >いもうと</span
+                    >
+                  </div>
+                  <!-- ------ -->
+                  <div
+                    class="absolute flex items-center justify-center w-75 top-310 left-450 h-26"
+                  >
+                    <span
+                      data-audio="4_01_13/063-16.mp3"
+                      class="text-20 tracking-[-0.08em]"
+                      >おとうと</span
+                    >
+                  </div>
+                </div>
+                <!-- ============ -->
+                <div
+                  class="relative font-medium f-noto"
+                  data-name="popup_photo"
+                  style="display: none"
+                >
+                  <img
+                    src="./images/4_01_13/popup_photo2.jpg"
+                    alt=""
+                    class="object-contain min-w-608 rounded-10"
+                  />
+                  <!-- ------ -->
+                  <div
+                    class="absolute flex items-center justify-center top-127 left-154 w-126 h-39"
+                  >
+                    <span
+                      data-audio="4_01_13/063-17.mp3"
+                      class="text-30 tracking-[-0.08em]"
+                      >おとうさん</span
+                    >
+                  </div>
+                  <!-- ------ -->
+                  <div
+                    class="absolute flex items-center justify-center top-127 left-313 w-141 h-39"
+                  >
+                    <span
+                      data-audio="4_01_13/063-18.mp3"
+                      class="text-30 tracking-[-0.08em]"
+                      >おかあさん</span
+                    >
+                  </div>
+                  <!-- ------ -->
+                  <div
+                    class="absolute flex items-center justify-center w-92 top-311 left-68 h-26"
+                  >
+                    <span
+                      data-audio="4_01_13/063-19.mp3"
+                      class="text-20 tracking-[-0.08em]"
+                      >おにいさん</span
+                    >
+                  </div>
+                  <!-- ------ -->
+                  <div
+                    class="absolute flex items-center justify-center w-92 top-311 left-168 h-26"
+                  >
+                    <span
+                      data-audio="4_01_13/063-20.mp3"
+                      class="text-20 tracking-[-0.08em]"
+                      >おねえさん</span
+                    >
+                  </div>
+                  <!-- ------ -->
+                  <div
+                    class="absolute flex items-center justify-center w-74 top-311 left-268 h-26"
+                  >
+                    <span
+                      data-audio="4_01_13/063-21.mp3"
+                      class="text-20 tracking-[-0.08em]"
+                      >○○さん</span
+                    >
+                  </div>
+                  <!-- ------ -->
+                  <div
+                    class="absolute flex items-center justify-center w-108 top-311 left-346 h-26"
+                  >
+                    <span
+                      data-audio="4_01_13/063-22.mp3"
+                      class="text-20 tracking-[-0.09em]"
+                    >
+                      いもうとさん</span
+                    >
+                  </div>
+                  <!-- ------ -->
+                  <div
+                    class="absolute flex items-center justify-center w-106 top-311 left-462 h-26"
+                  >
+                    <span
+                      data-audio="4_01_13/063-23.mp3"
+                      class="text-20 tracking-[-0.09em]"
+                    >
+                      おとうとさん</span
+                    >
+                  </div>
+                </div>
+              </div>
+              <div
+                class="flex mt-8 font-bold f-nanum-s text-40 leading-52 shrink-0"
+              >
+                <div data-name="popup_photo_text">
+                  자신의 가족을 남에게 말할 때
+                </div>
+                <div data-name="popup_photo_text" style="display: none">
+                  남의 가족을 말할 때
+                </div>
+              </div>
+            </div>
+            <div class="w-266 h-402">
+              <div class="flex flex-wrap w-full gap-10">
+                <button
+                  data-name="btn-popup_photo"
+                  class="w-128 h-72 active"
+                  onclick="contentUtil.setPhotoPopup(1)"
+                >
+                  <img src="./images/4_01_13/popup_btn_photo1.jpg" alt="" />
+                </button>
+                <button
+                  data-name="btn-popup_photo"
+                  class="w-128 h-72"
+                  onclick="contentUtil.setPhotoPopup(2)"
+                >
+                  <img src="./images/4_01_13/popup_btn_photo2.jpg" alt="" />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 사진 팝업창 2 -->
+        <div data-name="popup" data-popup="2" style="display: none">
+          <div data-name="popup-header">
+            <div data-name="popup-title">사진 팝업창</div>
+            <button
+              data-name="popup-close"
+              onclick="contentUtil.setPopup()"
+            ></button>
+          </div>
+          <div
+            data-name="popup-body"
+            class="flex items-center justify-center w-full h-full"
+          >
+            <img
+              src="./images/4_01_13/popup_photo3.jpg"
+              alt=""
+              class="w-730 h-400 rounded-10"
+            />
+          </div>
+        </div>
+        <!-- TIP -->
+        <div data-name="popup" data-popup="3" style="display: none">
+          <div data-name="popup-header">
+            <div data-name="popup-title">TIP</div>
+            <button
+              data-name="popup-close"
+              onclick="contentUtil.setPopup()"
+            ></button>
+          </div>
+          <div
+            data-name="popup-body"
+            class="flex-1 mt-16 mb-10 font-bold ms-26 f-nanum-s text-40 leading-52 me-6"
+          >
+            <div>
+              <p>부부 사이의 호칭은 이름이나 애칭을 부르기도 하고,</p>
+              <p class="flex">
+                남편이 아내를 ‘<span
+                  data-audio="4_01_13/063-05.mp3"
+                  class="font-medium f-noto"
+                  >おかあさん</span
+                >
+                (엄마)’, 아내가 남편을
+              </p>
+              <p class="flex">
+                ‘<span
+                  data-audio="4_01_13/063-06.mp3"
+                  class="font-medium f-noto"
+                  >おとうさん</span
+                >(아빠)’이라고 부르기도 한다.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript">
+    const page = {
+      isAnswer: false,
+      isVocabulary: false,
+      showAnswer: () => {},
+      hideAnswer: () => {},
+      showVocabulary: () => {},
+    };
+  </script>
+  <script src="./../common/js/tailwind.config.js"></script>
+  <script src="./../common/js/script.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {});
+
+    // 이미지 박스
+    $('[data-name="btn-pagination"]').on("click", function () {
+      if ($(this).index() >= 3) {
+        $(`[data-name="img-box"]`).show();
+        $(`[data-name="btn-common-dark"]`).show();
+      } else {
+        $(`[data-name="img-box"]`).hide();
+        $(`[data-name="btn-common-dark"]`).hide();
+      }
+    });
+  </script>
+</html>

@@ -1,0 +1,46 @@
+.content-contents {
+  padding: 5px 20px 0;
+}
+
+.contents-left {
+  width: calc(100% - 250px);
+}
+
+.contents-right {
+  width: 328px;
+  margin-left: 48px;
+}
+
+.bullet-list > li + li {
+  margin-top: 8px;
+}
+
+.image-pop-preview {
+  width: 240px;
+  height: 135px;
+  border: solid 8px #fff;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.12);
+  background-size: cover;
+  background-position: top;
+  position: absolute;
+  top: 5px;
+  right: 20px;
+}
+
+.image-pop-preview.img2 {
+  top: 153px;
+}
+
+.image-pop-preview.img3 {
+  top: 302px;
+}
+
+.image-pop-preview.img4 {
+  top: 302px;
+  right: 276px;
+}
+
+.image-pop-preview.img5 {
+  top: 302px;
+  right: 532px;
+}

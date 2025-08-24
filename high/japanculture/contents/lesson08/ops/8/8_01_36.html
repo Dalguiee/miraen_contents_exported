@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>미래엔 일본 문화</title>
+    <script src="./../common/lib/jquery-3.7.1.min.js"></script>
+    <script src="./../common/lib/howler-2.1.3.min.js"></script>
+    <script src="./../common/lib/tailwind.js"></script>
+    <!-- 폰트 -->
+    <link href="./../common/font/suit/suit.css" rel="stylesheet" />
+    <link href="./../common/font/bmjua/bmjua.css" rel="stylesheet" />
+    <link
+      href="./../common/font/nanumsquare/nanumSquare.css"
+      rel="stylesheet"
+    />
+    <link href="./../common/font/notoSansJP/notoSansJP.css" rel="stylesheet" />
+    <link href="./../common/css/tailwind.css" rel="stylesheet" />
+    <link href="./../common/css/fontStyle.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div id="wrap">
+      <!-- contents -->
+      <div class="relative flex flex-col w-full h-full pt-65">
+        <!-- title -->
+        <div class="absolute left-0 flex top-10">
+          <img
+            src="./../common/images/title_getactive.svg"
+            alt="활동하기"
+            class="w-160 h-50 me-10"
+          />
+          <span class="f-bmjua text-36 text-[#6773B1] leading-50"
+            >진로 연계 활동</span
+          >
+        </div>
+        <!-- header-btn -->
+        <div class="absolute right-0 flex gap-6 top-13" data-name="header-btn">
+          <button data-name="btn-common" onclick="contentUtil.setPopup(1)">
+            보충 자료
+          </button>
+        </div>
+        <!-- main -->
+        <div
+          class="flex flex-col flex-1 w-full px-20 font-bold leading-52 f-nanum-s text-40"
+        >
+          <div class="flex mb-10">
+            <img
+              src="./../common/images/label_flower_blue.svg"
+              alt="label"
+              class="w-30 h-52 me-8"
+            />
+            <div class="font-extrabold">
+              <p>일본 관광 홍보 ‘카드 뉴스’를 제작해 봅시다.</p>
+            </div>
+          </div>
+          <!-- ======== page 1 ======== -->
+          <div data-name="page">
+            <div class="flex flex-col gap-10">
+              <!-- 1 -->
+              <div class="flex">
+                <div data-name="number-1" class="bg-[#5B87B8] me-10"></div>
+                <div>
+                  <p class="flex">
+                    3<span class="font-medium f-noto">～</span>4명이 한 모둠이
+                    된다.
+                  </p>
+                </div>
+              </div>
+              <!-- 2 -->
+              <div class="flex">
+                <div data-name="number-2" class="bg-[#5B87B8] me-10"></div>
+                <div>
+                  <p>‘도쿄, 오사카, 교토, 후쿠오카, 홋카이도, 오키나와’ 중</p>
+                  <p>모둠별로 소개하고 싶은 도시를 선정한다.</p>
+                </div>
+              </div>
+              <!-- 3 -->
+              <div class="flex">
+                <div data-name="number-3" class="bg-[#5B87B8] me-10"></div>
+                <div>
+                  <p>
+                    각 모둠별로 세부적인 소재를 나누어 제작 담당자를 정한다.
+                  </p>
+                  <p class="flex text-[#696A69]">
+                    <img
+                      src="./images/8_01_36/ex_label_gray.svg"
+                      alt="예"
+                      class="w-40 h-40 mt-6 me-6"
+                    />도시의 특징, 기후, 유명 관광지, 맛집 등
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ======== page 2 ======== -->
+          <div data-name="page" style="display: none">
+            <div class="flex flex-col gap-10">
+              <!-- 4 -->
+              <div class="flex">
+                <div data-name="number-4" class="bg-[#5B87B8] me-10"></div>
+                <div>
+                  <p>자신이 담당한 내용에 대해 조사한다.</p>
+                </div>
+              </div>
+              <!-- 5 -->
+              <div class="flex">
+                <div data-name="number-5" class="bg-[#5B87B8] me-10"></div>
+                <div>
+                  <p>조사한 내용을 바탕으로 카드 뉴스 제작 플랫폼을 활용하여</p>
+                  <p class="flex">
+                    1인당 3<span class="font-medium f-noto">～</span>4장의 카드
+                    뉴스를 제작한다.
+                  </p>
+                </div>
+              </div>
+              <!-- 6 -->
+              <div class="flex">
+                <div data-name="number-6" class="bg-[#5B87B8] me-10"></div>
+                <div>
+                  <p>카드 뉴스가 완성되면 모둠별로 발표한다.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ======== page 3 ======== -->
+          <div data-name="page" style="display: none">
+            <div class="flex flex-col">
+              <!-- img box -->
+              <div class="flex mx-auto mb-10 gap-30">
+                <div class="relative w-260 h-240">
+                  <img
+                    src="./images/8_01_36/main_photo1.jpg"
+                    alt=""
+                    class="w-full h-full rounded-10"
+                  />
+                  <button
+                    data-name="btn-view"
+                    class="absolute bottom-10 right-10"
+                    onclick="contentUtil.setPopup(2); contentUtil.setPhotoPopup(1);"
+                  ></button>
+                </div>
+                <div class="relative w-260 h-240">
+                  <img
+                    src="./images/8_01_36/main_photo2.jpg"
+                    alt=""
+                    class="w-full h-full rounded-10"
+                  />
+                  <button
+                    data-name="btn-view"
+                    class="absolute bottom-10 right-10"
+                    onclick="contentUtil.setPopup(2); contentUtil.setPhotoPopup(2);"
+                  ></button>
+                </div>
+                <div class="relative w-260 h-240">
+                  <img
+                    src="./images/8_01_36/main_photo3.jpg"
+                    alt=""
+                    class="w-full h-full rounded-10"
+                  />
+                  <button
+                    data-name="btn-view"
+                    class="absolute bottom-10 right-10"
+                    onclick="contentUtil.setPopup(2); contentUtil.setPhotoPopup(3);"
+                  ></button>
+                </div>
+              </div>
+              <!-- text -->
+              <div class="text-34 leading-45 tracking-[-0.03em]">
+                <p>
+                  ‘<span class="font-extrabold">카드 뉴스</span>’란 보도 내용을
+                  간단히 정리하고 관련된 이미지를 보기 좋게
+                </p>
+                <p>배치해 쉽게 읽을 수 있도록 만든 뉴스 보도 형태를 말한다.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- pagination -->
+        <div
+          class="absolute -translate-x-1/2 bottom-10 left-1/2"
+          data-name="pagination"
+        >
+          <button class="active" data-name="btn-pagination"></button>
+          <button class="" data-name="btn-pagination"></button>
+          <button class="" data-name="btn-pagination"></button>
+        </div>
+      </div>
+      <!-- popup -->
+      <div id="popup-wrap" style="display: none">
+        <!-- 보충 자료 -->
+        <div data-name="popup" data-popup="1" style="display: none">
+          <div data-name="popup-header">
+            <div data-name="popup-title">보충 자료</div>
+            <button
+              data-name="popup-close"
+              onclick="contentUtil.setPopup()"
+            ></button>
+          </div>
+          <div data-name="popup-body" class="mt-16 mb-10 ms-26 f-nanum-s me-6">
+            <div class="flex flex-col">
+              <!-- title -->
+              <div class="flex items-center mb-10 h-55">
+                <img
+                  src="./../common/images/popup_titlemark_primary.svg"
+                  alt=""
+                  class="w-35 h-55 me-10"
+                />
+                <div class="flex font-extrabold text-42 text-[#41674B]">
+                  미디어 리터리시 교육
+                </div>
+              </div>
+              <!-- text -->
+              <div class="font-bold f-nanum-s text-40 leading-52">
+                <p>‘미디어 리터리시’란 다양한 매체를 이해할 수 있는 능력을</p>
+                <p>의미한다. 단순히 미디어 내용을 이해하는 것만이 아니라,</p>
+                <p>미디어를 비판적으로 수용하는 능력까지 포함하는 개념이</p>
+                <p>라고 할 수 있다. 미디어에서 제공되는 정보가 넘쳐나는</p>
+                <p>현대 사회에서 학생들이 필수적으로 갖추어야 할 능력으로</p>
+                <p>볼 수 있다.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 사진 팝업창 -->
+        <div data-name="popup" data-popup="2" style="display: none">
+          <div data-name="popup-header">
+            <div data-name="popup-title">사진 팝업창</div>
+            <button
+              data-name="popup-close"
+              onclick="contentUtil.setPopup()"
+            ></button>
+          </div>
+          <div
+            data-name="popup-body"
+            class="flex items-center justify-center w-full h-full gap-16"
+          >
+            <div
+              class="flex flex-col items-center w-608 h-402"
+              data-name="popup_photo_wrap"
+            >
+              <div class="w-full overflow-x-hidden overflow-y-auto pe-4">
+                <img
+                  src="./images/8_01_36/popup_photo1.jpg"
+                  alt=""
+                  class="object-contain min-w-608 rounded-10"
+                  data-name="popup_photo"
+                  style="display: none"
+                />
+                <img
+                  src="./images/8_01_36/popup_photo2.jpg"
+                  alt=""
+                  class="object-contain min-w-608 rounded-10"
+                  data-name="popup_photo"
+                />
+                <img
+                  src="./images/8_01_36/popup_photo3.jpg"
+                  alt=""
+                  class="object-contain min-w-608 rounded-10"
+                  data-name="popup_photo"
+                />
+              </div>
+            </div>
+            <div class="w-266 h-402">
+              <div class="flex flex-wrap w-full gap-10">
+                <button
+                  data-name="btn-popup_photo"
+                  class="w-128 h-72 active"
+                  onclick="contentUtil.setPhotoPopup(1)"
+                >
+                  <img src="./images/8_01_36/popup_btn_photo1.jpg" alt="" />
+                </button>
+                <button
+                  data-name="btn-popup_photo"
+                  class="w-128 h-72"
+                  onclick="contentUtil.setPhotoPopup(2)"
+                >
+                  <img src="./images/8_01_36/popup_btn_photo2.jpg" alt="" />
+                </button>
+                <button
+                  data-name="btn-popup_photo"
+                  class="w-128 h-72"
+                  onclick="contentUtil.setPhotoPopup(3)"
+                >
+                  <img src="./images/8_01_36/popup_btn_photo3.jpg" alt="" />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript">
+    const page = {
+      isAnswer: false,
+      isVocabulary: false,
+      showAnswer: () => {},
+      hideAnswer: () => {},
+      showVocabulary: () => {},
+    };
+  </script>
+  <script src="./../common/js/tailwind.config.js"></script>
+  <script src="./../common/js/script.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {});
+  </script>
+</html>

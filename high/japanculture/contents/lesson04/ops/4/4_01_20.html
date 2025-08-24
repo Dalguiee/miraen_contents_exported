@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>미래엔 일본 문화</title>
+    <script src="./../common/lib/jquery-3.7.1.min.js"></script>
+    <script src="./../common/lib/howler-2.1.3.min.js"></script>
+    <script src="./../common/lib/tailwind.js"></script>
+    <!-- 폰트 -->
+    <link href="./../common/font/suit/suit.css" rel="stylesheet" />
+    <link href="./../common/font/bmjua/bmjua.css" rel="stylesheet" />
+    <link
+      href="./../common/font/nanumsquare/nanumSquare.css"
+      rel="stylesheet"
+    />
+    <link href="./../common/font/notoSansJP/notoSansJP.css" rel="stylesheet" />
+    <link href="./../common/css/tailwind.css" rel="stylesheet" />
+    <link href="./../common/css/fontStyle.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div id="wrap">
+      <!-- contents -->
+      <div class="relative w-full h-full pt-60">
+        <!-- title -->
+        <img
+          src="./../common/images/title_digital.svg"
+          alt="디지털 활동"
+          class="absolute h-42 w-261 top-10"
+        />
+        <!-- main -->
+        <div class="flex flex-col w-full h-full px-20 leading-52">
+          <div class="mb-10 font-extrabold text-40 f-nanum-s">
+            <p>나라별 인사 방법을 검색하여 조사하고 발표해 봅시다.</p>
+          </div>
+          <div
+            class="border-4 w-full py-8 ps-20 pe-4 h-343 border-[#3589D7] rounded-10 mb-8"
+          >
+            <div class="w-full h-full py-8 overflow-y-auto"></div>
+          </div>
+          <div class="ms-auto">
+            <button
+              data-name="btn-common"
+              data-reset="1"
+              onclick="contentUtil.setPopup(1); audioPlay(audio, [`./../common/media/mp3/showAnswer.mp3`]);"
+            >
+              예시 답안
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- popup -->
+      <div id="popup-wrap" style="display: none">
+        <!-- 예시 답안 -->
+        <div data-name="popup" data-popup="1" style="display: none">
+          <div data-name="popup-header">
+            <div data-name="popup-title">예시 답안</div>
+            <button
+              data-name="popup-close"
+              onclick="contentUtil.setPopup()"
+            ></button>
+          </div>
+          <div
+            data-name="popup-body"
+            class="flex-1 mt-16 mb-10 ms-26 f-nanum-s me-6"
+          >
+            <!-- table -->
+            <div
+              class="flex flex-col w-full mb-10 font-bold leading-52 text-40 f-nanum-s"
+            >
+              <!-- th -->
+              <div class="flex w-full">
+                <div
+                  class="flex items-center bg-[#B3CFEA] justify-center rounded-tl-10 py-10 w-240 border-r-1 border-t-3 border-l-3 border-[#9DB9D3]"
+                >
+                  <span>인사 방법</span>
+                </div>
+                <div
+                  class="flex items-center bg-[#B3CFEA] justify-center py-10 w-660 border-r-3 border-t-3 border-[#9DB9D3] rounded-tr-10"
+                >
+                  <span>내용</span>
+                </div>
+              </div>
+              <!-- td -->
+              <!-- ===== -->
+              <div class="flex w-full">
+                <div class="flex items-stretch">
+                  <!-- ------ -->
+                  <div
+                    class="flex items-center justify-center w-240 border-r-1 border-l-3 border-b-1 border-[#9DB9D3] py-10 bg-white"
+                  >
+                    <div class="text-center text-red">
+                      <p>공수</p>
+                      <p class="flex">
+                        (<span class="font-medium f-noto">拱手</span>)
+                      </p>
+                    </div>
+                  </div>
+                  <!-- ------ -->
+                  <div
+                    class="flex flex-col gap-4 w-660 border-r-3 border-b-1 border-[#9db9d3] p-10 items-stretch bg-white"
+                  >
+                    <!-- -- -->
+                    <div class="flex w-full text-red">
+                      <div
+                        class="w-12 h-12 mt-20 rounded-full me-8 bg-red"
+                      ></div>
+                      <div>
+                        <p>중국의 인사법이다.</p>
+                      </div>
+                    </div>
+                    <!-- -- -->
+                    <div class="flex w-full text-red">
+                      <div
+                        class="w-12 h-12 mt-20 rounded-full me-8 bg-red"
+                      ></div>
+                      <div>
+                        <p>상대방에게 왼손을 보이는 것은 공경을,</p>
+                        <p>오른손을 보이는 것은 공격을 의미한다.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- ===== -->
+              <div class="flex w-full">
+                <div class="flex items-stretch">
+                  <!-- ------ -->
+                  <div
+                    class="flex items-center justify-center w-240 border-r-1 border-l-3 border-b-1 border-[#9DB9D3] py-10 bg-white"
+                  >
+                    <div class="text-center text-red">
+                      <p>나마스테</p>
+                      <p>(Namaste)</p>
+                    </div>
+                  </div>
+                  <!-- ------ -->
+                  <div
+                    class="flex flex-col gap-4 w-660 border-r-3 border-b-1 border-[#9db9d3] p-10 items-stretch bg-white"
+                  >
+                    <!-- -- -->
+                    <div class="flex w-full text-red">
+                      <div
+                        class="w-12 h-12 mt-20 rounded-full me-8 bg-red"
+                      ></div>
+                      <div>
+                        <p>불교의 영향을 받은 국가에서 주로 하는</p>
+                        <p>인사법이다.</p>
+                      </div>
+                    </div>
+                    <!-- -- -->
+                    <div class="flex w-full text-red">
+                      <div
+                        class="w-12 h-12 mt-20 rounded-full me-8 bg-red"
+                      ></div>
+                      <div>
+                        <p>존경의 표시이며, 산스크리트어로</p>
+                        <p>당신 앞에 절을 한다는 것을 의미한다.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- ===== -->
+              <div class="flex w-full">
+                <div class="flex items-stretch">
+                  <!-- ------ -->
+                  <div
+                    class="flex items-center justify-center w-240 border-r-1 border-l-3 border-b-1 border-[#9DB9D3] py-10 bg-white"
+                  >
+                    <div class="text-center text-red">
+                      <p>도스 베소스</p>
+                      <p>(Dos besos)</p>
+                    </div>
+                  </div>
+                  <!-- ------ -->
+                  <div
+                    class="flex flex-col gap-4 w-660 border-r-3 border-b-1 border-[#9db9d3] p-10 items-stretch bg-white"
+                  >
+                    <!-- -- -->
+                    <div class="flex w-full text-red">
+                      <div
+                        class="w-12 h-12 mt-20 rounded-full me-8 bg-red"
+                      ></div>
+                      <div>
+                        <p>스페인, 멕시코, 남미 등에서의 인사법</p>
+                        <p>이다.</p>
+                      </div>
+                    </div>
+                    <!-- -- -->
+                    <div class="flex w-full text-red">
+                      <div
+                        class="w-12 h-12 mt-20 rounded-full me-8 bg-red"
+                      ></div>
+                      <div>
+                        <p>양쪽 뺨을 번갈아 맞대며 쪽 소리를 내는</p>
+                        <p>인사법으로, 뺨을 맞댈 때 가볍게 입으로</p>
+                        <p>소리만 낸다.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- ===== -->
+              <div class="flex w-full">
+                <div class="flex items-stretch">
+                  <!-- ------ -->
+                  <div
+                    class="flex items-center justify-center w-240 border-r-1 border-l-3 border-b-1 border-[#9DB9D3] py-10 bg-white"
+                  >
+                    <div class="text-center text-red">
+                      <p>목례</p>
+                      <p>(Bow)</p>
+                    </div>
+                  </div>
+                  <!-- ------ -->
+                  <div
+                    class="flex flex-col gap-4 w-660 border-r-3 border-b-1 border-[#9db9d3] p-10 items-stretch bg-white"
+                  >
+                    <!-- -- -->
+                    <div class="flex w-full text-red">
+                      <div
+                        class="w-12 h-12 mt-20 rounded-full me-8 bg-red"
+                      ></div>
+                      <div>
+                        <p>중국을 비롯한 유교 영향권의 아시아</p>
+                        <p>국가에서 하는 인사법이다.</p>
+                      </div>
+                    </div>
+                    <!-- -- -->
+                    <div class="flex w-full text-red">
+                      <div
+                        class="w-12 h-12 mt-20 rounded-full me-8 bg-red"
+                      ></div>
+                      <div>
+                        <p>머리를 숙여 경의를 표현하는 동작이며,</p>
+                        <p>상대방에 관한 존경 및 친밀함의 정도에</p>
+                        <p>따라 상반신을 숙이는 정도가 다르다.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- ===== -->
+              <div class="flex w-full">
+                <div class="flex items-stretch">
+                  <!-- ------ -->
+                  <div
+                    class="flex items-center justify-center w-240 border-r-1 border-l-3 border-b-1 border-[#9DB9D3] py-10 bg-white"
+                  >
+                    <div class="text-center text-red">
+                      <p>살람</p>
+                      <p>(Salaam)</p>
+                    </div>
+                  </div>
+                  <!-- ------ -->
+                  <div
+                    class="flex flex-col gap-4 w-660 border-r-3 border-b-1 border-[#9db9d3] p-10 items-stretch bg-white"
+                  >
+                    <!-- -- -->
+                    <div class="flex w-full text-red">
+                      <div
+                        class="w-12 h-12 mt-20 rounded-full me-8 bg-red"
+                      ></div>
+                      <div>
+                        <p>중동 지역의 전통 인사법이다.</p>
+                      </div>
+                    </div>
+                    <!-- -- -->
+                    <div class="flex w-full text-red">
+                      <div
+                        class="w-12 h-12 mt-20 rounded-full me-8 bg-red"
+                      ></div>
+                      <div>
+                        <p>오른손으로 가슴과 이마를 순서대로</p>
+                        <p>만진 후, 손을 더 높이 바깥쪽을 향해</p>
+                        <p>올리고 머리를 살짝 숙이며 인사한다.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- ===== -->
+              <div class="flex w-full">
+                <div class="flex items-stretch">
+                  <!-- ------ -->
+                  <div
+                    class="flex items-center justify-center w-240 border-r-1 border-l-3 border-b-1 border-[#9DB9D3] py-10 bg-white"
+                  >
+                    <div class="text-center text-red">
+                      <p>아브라쏘</p>
+                      <p>(Abrazo)</p>
+                    </div>
+                  </div>
+                  <!-- ------ -->
+                  <div
+                    class="flex flex-col gap-4 w-660 border-r-3 border-b-1 border-[#9db9d3] p-10 items-stretch bg-white"
+                  >
+                    <!-- -- -->
+                    <div class="flex w-full text-red">
+                      <div
+                        class="w-12 h-12 mt-20 rounded-full me-8 bg-red"
+                      ></div>
+                      <div>
+                        <p>아르헨티나, 콜롬비아 등 중남미 국가들</p>
+                        <p>의 인사법이다.</p>
+                      </div>
+                    </div>
+                    <!-- -- -->
+                    <div class="flex w-full text-red">
+                      <div
+                        class="w-12 h-12 mt-20 rounded-full me-8 bg-red"
+                      ></div>
+                      <div>
+                        <p>껴안고 키스를 한 후 친근감의 표시로</p>
+                        <p>상대방의 등을 문지른다.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- ===== -->
+              <div class="flex w-full">
+                <div class="flex items-stretch">
+                  <!-- ------ -->
+                  <div
+                    class="flex items-center justify-center w-240 border-r-1 border-l-3 border-b-1 border-[#9DB9D3] py-10 bg-white"
+                  >
+                    <div class="text-center text-red">
+                      <p>와이</p>
+                      <p>(Wai)</p>
+                    </div>
+                  </div>
+                  <!-- ------ -->
+                  <div
+                    class="flex flex-col gap-4 w-660 border-r-3 border-b-1 border-[#9db9d3] p-10 items-stretch bg-white"
+                  >
+                    <!-- -- -->
+                    <div class="flex w-full text-red">
+                      <div
+                        class="w-12 h-12 mt-20 rounded-full me-8 bg-red"
+                      ></div>
+                      <div>
+                        <p>태국의 전통 인사로 두 손을 모으고 팔과</p>
+                        <p>팔꿈치를 몸에 붙인 채로 ‘와이’하고</p>
+                        <p>말하면서 고개를 숙이는 인사법이다.</p>
+                      </div>
+                    </div>
+                    <!-- -- -->
+                    <div class="flex w-full text-red">
+                      <div
+                        class="w-12 h-12 mt-20 rounded-full me-8 bg-red"
+                      ></div>
+                      <div>
+                        <p>합장한 손이 위로 올라갈수록 공경의</p>
+                        <p>정도가 커지며, 존경 또는 감사의 표시</p>
+                        <p>이다.</p>
+                      </div>
+                    </div>
+                    <!-- -- -->
+                    <div class="flex w-full text-red">
+                      <div
+                        class="w-12 h-12 mt-20 rounded-full me-8 bg-red"
+                      ></div>
+                      <div>
+                        <p>상위자가 하위자의 와이에 응할 때는</p>
+                        <p>양손을 합장하되, 머리는 숙이지 않는다.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- ===== -->
+              <div class="flex w-full">
+                <div class="flex items-stretch">
+                  <!-- ------ -->
+                  <div
+                    class="flex items-center justify-center w-240 border-r-1 border-l-3 border-b-3 border-[#9db9d3] py-10 bg-white rounded-bl-10"
+                  >
+                    <div class="text-center text-red">
+                      <p>입맞춤</p>
+                      <p>(Kissing)</p>
+                    </div>
+                  </div>
+                  <!-- ------ -->
+                  <div
+                    class="flex flex-col gap-4 w-660 border-r-3 border-b-3 border-[#9db9d3] p-10 items-stretch bg-white rounded-br-10"
+                  >
+                    <!-- -- -->
+                    <div class="flex w-full text-red">
+                      <div
+                        class="w-12 h-12 mt-20 rounded-full me-8 bg-red"
+                      ></div>
+                      <div>
+                        <p>연인이 아닌 경우에는 실제로 하지 않고</p>
+                        <p>소리만 낸다.</p>
+                      </div>
+                    </div>
+                    <!-- -- -->
+                    <div class="flex w-full text-red">
+                      <div
+                        class="w-12 h-12 mt-20 rounded-full me-8 bg-red"
+                      ></div>
+                      <div>
+                        <p>이탈리아, 포르투갈, 프랑스 등의 지중해</p>
+                        <p>연안의 국가들은 주로 양쪽 뺨에 입맞춤</p>
+                        <p>을 한다.</p>
+                      </div>
+                    </div>
+                    <!-- -- -->
+                    <div class="flex w-full text-red">
+                      <div
+                        class="w-12 h-12 mt-20 rounded-full me-8 bg-red"
+                      ></div>
+                      <div><p>러시아는 키스를 하고 포옹을 한다.</p></div>
+                    </div>
+                    <!-- -- -->
+                    <div class="flex w-full text-red">
+                      <div
+                        class="w-12 h-12 mt-20 rounded-full me-8 bg-red"
+                      ></div>
+                      <div>
+                        <p>사우디아라비아는 악수를 한 후에 양쪽</p>
+                        <p>뺨에 입맞춤을 한다.</p>
+                      </div>
+                    </div>
+                    <!-- -- -->
+                    <div class="flex w-full text-red">
+                      <div
+                        class="w-12 h-12 mt-20 rounded-full me-8 bg-red"
+                      ></div>
+                      <div>
+                        <p>중남미 국가들은 여성의 손등에 입맞춤</p>
+                        <p>을 하는 경우가 있다.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript">
+    const page = {
+      isAnswer: false,
+      isVocabulary: false,
+      showAnswer: () => {},
+      hideAnswer: () => {},
+      showVocabulary: () => {},
+    };
+  </script>
+  <script src="./../common/js/tailwind.config.js"></script>
+  <script src="./../common/js/script.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {});
+  </script>
+</html>

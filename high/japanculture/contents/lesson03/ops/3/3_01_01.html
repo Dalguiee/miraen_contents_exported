@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>미래엔 일본 문화</title>
+    <script src="./../common/lib/jquery-3.7.1.min.js"></script>
+    <script src="./../common/lib/howler-2.1.3.min.js"></script>
+    <script src="./../common/lib/tailwind.js"></script>
+    <!-- 폰트 -->
+    <link href="./../common/font/suit/suit.css" rel="stylesheet" />
+    <link href="./../common/font/bmjua/bmjua.css" rel="stylesheet" />
+    <link
+      href="./../common/font/nanumsquare/nanumSquare.css"
+      rel="stylesheet"
+    />
+    <link href="./../common/font/notoSansJP/notoSansJP.css" rel="stylesheet" />
+    <link href="./../common/css/tailwind.css" rel="stylesheet" />
+    <link href="./../common/css/fontStyle.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div id="wrap">
+      <!-- contents -->
+      <div class="relative w-full h-full pt-70">
+        <!-- title -->
+        <img
+          src="./../common/images/title_learning_objectives.svg"
+          alt="학습목표"
+          class="absolute w-160 h-52 top-10"
+        />
+        <!-- header-btn -->
+        <div class="absolute right-0 flex gap-6 top-13" data-name="header-btn">
+          <button data-name="btn-common" onclick="contentUtil.setPopup(1)">
+            사진 설명
+          </button>
+          <button data-name="btn-common" onclick="contentUtil.setPopup(2)">
+            해설 보기
+          </button>
+        </div>
+        <!-- main -->
+        <div class="flex flex-col w-full h-full">
+          <!-- ---------list--------- -->
+          <div class="flex flex-col w-full gap-4 px-20 font-bold f-nanum-s">
+            <!-- line1 -->
+
+            <div class="flex w-full">
+              <div class="w-12 h-12 mt-20 bg-black rounded-full me-10"></div>
+              <span class="leading-52 text-40"
+                ><span class="text-[#E9474D]">일본 주택의 종류와 특징</span>을
+                말할 수 있다.</span
+              >
+            </div>
+            <!-- line2 -->
+            <div class="flex w-full">
+              <div class="w-12 h-12 mt-20 bg-black rounded-full me-10"></div>
+              <span class="leading-52 text-40"
+                ><span class="text-[#E9474D]">일본 주택의 내부 구조</span>를
+                설명할 수 있다.
+              </span>
+            </div>
+            <!-- line3 -->
+            <div class="flex w-full">
+              <div class="w-12 h-12 mt-20 bg-black rounded-full me-10"></div>
+              <div class="leading-52 text-40">
+                <p>한국과 일본의 재난에 대비한 설비를 비교하여</p>
+                <p>설명할 수 있다.</p>
+              </div>
+            </div>
+          </div>
+          <!-- ---------photo--------- -->
+          <div class="relative w-400 h-225 ms-auto me-20 top-[-21px]">
+            <img
+              src="./images/3_01_01/main_photo1.jpg"
+              alt=""
+              class="w-full h-full overflow-hidden rounded-10"
+            />
+            <button
+              data-name="btn-view"
+              class="absolute bottom-10 right-10"
+              onclick="contentUtil.setPopup(3)"
+            ></button>
+          </div>
+        </div>
+      </div>
+      <!-- popup -->
+      <div id="popup-wrap" style="display: none">
+        <!-- 사진 설명 -->
+        <div data-name="popup" data-popup="1" style="display: none">
+          <div data-name="popup-header">
+            <div data-name="popup-title">사진 설명</div>
+            <button
+              data-name="popup-close"
+              onclick="contentUtil.setPopup()"
+            ></button>
+          </div>
+          <div data-name="popup-body" class="mt-16 mb-10 ms-26 f-nanum-s me-6">
+            <div class="flex flex-col">
+              <!-- title -->
+              <div class="flex items-center mb-10 h-55">
+                <img
+                  src="./../common/images/popup_titlemark_primary.svg"
+                  alt=""
+                  class="w-35 h-55 me-10"
+                />
+                <div class="flex font-extrabold text-42 text-[#F25F7C]">
+                  일본의 단독 주택과 아파트
+                </div>
+              </div>
+              <div class="">
+                <div class="font-bold f-nanum-s text-40 leading-52">
+                  <p>
+                    일본의 주택은 크게 ‘단독 주택’과 ‘공동 주택’으로 나뉜다.
+                  </p>
+                  <p>
+                    사진의 앞쪽에 보이는 것은 ‘단독 주택’으로, 일본인이 가장
+                  </p>
+                  <p>
+                    선호하는 주거 형태이다. 보통 2층으로 되어 있고, 고온다습
+                  </p>
+                  <p>한 기후 때문에 창문이 많고 지붕이 높은 것이 특징이다.</p>
+                  <p class="flex">
+                    사진의 뒤쪽에 보이는 것은 ‘공동 주택’으로, ‘<span
+                      class="font-medium f-noto"
+                      >マンション</span
+                    >’
+                  </p>
+                  <p>이라고 부르는 우리나라의 아파트에 해당한다.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 해설 보기 -->
+        <div data-name="popup" data-popup="2" style="display: none">
+          <div data-name="popup-header">
+            <div data-name="popup-title">해설 보기</div>
+            <button
+              data-name="popup-close"
+              onclick="contentUtil.setPopup()"
+            ></button>
+          </div>
+          <div
+            data-name="popup-body"
+            class="mt-20 mb-10 ms-26 f-nanum-s me-6 h-404"
+          >
+            <div class="flex flex-col">
+              <!-- title -->
+              <div class="flex items-center mt-12 mb-10 h-55">
+                <img
+                  src="./../common/images/popup_titlemark_primary.svg"
+                  alt=""
+                  class="w-35 h-55 me-10"
+                />
+                <div class="flex font-extrabold text-42 text-[#F25F7C]">
+                  <!-- data-audio="044-01.mp3" -->
+                  일본의 단독 주택 (<span class="font-bold f-noto"
+                    ><span class="relative"
+                      >一<span class="font-bold ruby">いっ</span></span
+                    ><span class="relative"
+                      >戸<span class="font-bold ruby">こ</span></span
+                    ><span class="relative"
+                      >建<span class="font-bold ruby">だ</span></span
+                    >て</span
+                  >)
+                </div>
+              </div>
+              <!-- text -->
+              <div class="mb-40 font-bold f-nanum-s text-40 leading-52">
+                <p>과거에는 목조 주택의 비중이 높았지만, 잦은 지진으로</p>
+                <p>최근에는 철근 콘크리트를 사용한 서양식 양식이 늘고 있다.</p>
+                <p>또한, 일본에서는 차량을 구입할 때 반드시 주차 공간을</p>
+                <p>확보해야 하므로 단독 주택에는 차고가 있는 경우가 많다.</p>
+              </div>
+              <!-- title -->
+              <div class="flex items-center mb-10 h-55">
+                <img
+                  src="./../common/images/popup_titlemark_primary.svg"
+                  alt=""
+                  class="w-35 h-55 me-10"
+                />
+                <div class="flex font-extrabold text-42 text-[#F25F7C]">
+                  일본의 공동 주택 (<span class="font-bold f-noto">
+                    <!-- data-audio="045-01.mp3" -->
+                    <span>マンション</span> •
+                    <!-- data-audio="045-02.mp3" -->
+                    <span>アパート</span></span
+                  >)
+                </div>
+              </div>
+              <!-- 사진 -->
+              <!-- text -->
+              <div class="font-bold f-nanum-s text-40 leading-52">
+                <p class="flex">
+                  <!-- data-audio="045-01.mp3" -->
+                  일본의 ‘<span class="font-medium f-noto">マンション</span>’은
+                  우리나라의 아파트와 비슷한
+                </p>
+                <p class="flex">
+                  <!--  data-audio="045-02.mp3" -->
+                  대규모 공동 주택이다. 일본의 ‘<span class="font-medium f-noto"
+                    >アパート</span
+                  >’는 우리나라의
+                </p>
+                <p>아파트가 아닌 목조나 경량 철골조를 사용한 2~3층</p>
+                <p>높이의 ‘다세대 주택’이다.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 사진 팝업창 -->
+        <div data-name="popup" data-popup="3" style="display: none">
+          <div data-name="popup-header">
+            <div data-name="popup-title">사진 팝업창</div>
+            <button
+              data-name="popup-close"
+              onclick="contentUtil.setPopup()"
+            ></button>
+          </div>
+          <div
+            data-name="popup-body"
+            class="flex items-center justify-center w-full h-full"
+          >
+            <img
+              src="./images/3_01_01/popup_photo1.jpg"
+              alt=""
+              class="w-730 h-400 rounded-10"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript">
+    const page = {
+      isAnswer: false,
+      isVocabulary: false,
+      showAnswer: () => {},
+      hideAnswer: () => {},
+      showVocabulary: () => {},
+    };
+  </script>
+  <script src="./../common/js/tailwind.config.js"></script>
+  <script src="./../common/js/script.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      // contentUtil.setPopup(2);
+    });
+  </script>
+</html>

@@ -1,0 +1,133 @@
+.content-wrap .content-title-wrap + .content-contents-wrap {
+  height: 100%;
+}
+
+.content-wrap .content-title-wrap {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 150px;
+  z-index: 9;
+}
+
+.content-wrap .content-contents-wrap {
+  padding: 0;
+}
+
+.quiz-num {
+  color: #5b1810;
+}
+
+.quiz-title {
+  position: relative;
+  line-height: 52px;
+}
+
+.quiz-title .quiz-num {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.quiz-title {
+  padding-left: 43px;
+}
+
+.check-list {
+  margin-top: 30px;
+}
+
+.check-list > li {
+  display: flex;
+  line-height: 48px;
+}
+
+.check-list > li + li {
+  margin-top: 40px;
+}
+
+.check-list > li .num {
+  width: 36px;
+  height: 36px;
+  border-radius: 100%;
+  background-color: #94b894;
+  color: #fff;
+  line-height: 36px;
+  text-align: center;
+  margin-top: 5px;
+  margin-right: 8px;
+  font-size: 29px;
+}
+
+.check-list > li .txt {
+  flex: 1;
+}
+
+.check-list > li .btn-wrap {
+  display: flex;
+}
+
+.check-list > li .btn-wrap .btn-x {
+  margin-left: 4px;
+}
+
+.check-list .answer-box-wrap {
+  margin-left: 30px;
+  width: 200px;
+}
+
+.check-list .answer-box-wrap::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.check-list .answer-box {
+  width: 100%;
+  height: 52px;
+  border: solid 2px #a1d8ff;
+  background-color: #f6fdff;
+  border-radius: 8px;
+  /* font-size: 30px; */
+  font-size: 40px;
+  line-height: 45px;
+  color: var(--answer-red);
+  font-weight: 800;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.check-list .answer-box .ft-noto-jp {
+  font-weight: 700;
+}
+
+.check-list .answer-box.on {
+  border: none;
+  background-color: #f4f4f4;
+}
+
+.check-list .answer-box-wrap .btn-view-answer {
+  float: right;
+  margin-top: 11px;
+}
+
+.popup-contents .check-list {
+  margin-top: 8px;
+}
+
+.popup-contents .check-list > li {
+  position: relative;
+  line-height: 48px;
+}
+
+.popup-contents .check-list > li + li {
+  margin-top: 16px;
+  margin-left: 0;
+}
+
+.contents-popup-wrap .contents-popup .popup-contents-wrap .popup-contents {
+  padding-right: 43px;
+  padding-left: 43px;
+}

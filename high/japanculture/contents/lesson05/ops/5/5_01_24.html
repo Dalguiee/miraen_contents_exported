@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>미래엔 일본 문화</title>
+    <script src="./../common/lib/jquery-3.7.1.min.js"></script>
+    <script src="./../common/lib/howler-2.1.3.min.js"></script>
+    <script src="./../common/lib/tailwind.js"></script>
+    <!-- 폰트 -->
+    <link href="./../common/font/suit/suit.css" rel="stylesheet" />
+    <link href="./../common/font/bmjua/bmjua.css" rel="stylesheet" />
+    <link
+      href="./../common/font/nanumsquare/nanumSquare.css"
+      rel="stylesheet"
+    />
+    <link href="./../common/font/notoSansJP/notoSansJP.css" rel="stylesheet" />
+    <link href="./../common/css/tailwind.css" rel="stylesheet" />
+    <link href="./../common/css/fontStyle.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div id="wrap">
+      <!-- contents -->
+      <div class="relative w-full h-full pt-68">
+        <!-- title -->
+        <img
+          src="./../common/images/title_look_culture6.svg"
+          alt="문화 들여다보기2 학교 행사와 교육 제도"
+          class="absolute w-764 h-49 top-10"
+        />
+        <div class="absolute right-0 flex gap-6 top-13">
+          <button
+            style="display: none"
+            data-name="btn-common"
+            onclick="contentUtil.setPopup(2);"
+          >
+            보충 자료
+          </button>
+        </div>
+        <!-- main -->
+        <div class="flex flex-col w-full h-full">
+          <div
+            class="flex flex-col flex-1 w-full leading-52 ps-20 text-40 f-nanum-s"
+          >
+            <div class="flex items-center mb-4">
+              <img
+                src="./../common/images/index_pink_3.svg"
+                alt="번호 3"
+                class="w-40 h-40 me-4"
+              />
+              <span class="font-extrabold">입시 제도</span>
+            </div>
+
+            <!-- ======== page 1 ======== -->
+            <div
+              data-name="page"
+              class="flex flex-col font-bold f-nanum-s text-40"
+            >
+              <div>
+                <p class="ps-28">
+                  일본에서는 고등학교에 진학할 때도 기본적으로 입시를
+                </p>
+                <p>치르기 때문에 고등학교 간 학력 격차가 큰 편이다. 특히</p>
+                <p>학업을 중시하여 명문대 진학률이 높은 학교를 ‘진학교</p>
+                <p class="flex">
+                  (<span
+                    data-audio="5_01_24/080-03.mp3"
+                    class="font-medium f-noto"
+                    >進学校</span
+                  >)’라고 한다.
+                </p>
+              </div>
+            </div>
+            <!-- ======== page 2 ======== -->
+            <div
+              data-name="page"
+              class="flex flex-col font-bold f-nanum-s text-40"
+              style="display: none"
+            >
+              <div>
+                <p class="ps-28">
+                  고등학교 졸업 후 바로 취업을 하기도 하지만, 진학을 희망
+                </p>
+                <p>하는 경우가 더 많아 기술을 전문적으로 배우는 전문학교,</p>
+                <p class="flex">
+                  2<span class="font-medium f-noto">～</span>3년제의 전문 대학,
+                  또는 4년제 대학에 입학한다. 비율
+                </p>
+                <p>로는 전문 대학을 포함해 대학에 진학하는 비율이 약 60%</p>
+                <p>정도이다.</p>
+              </div>
+            </div>
+
+            <!-- ======== page 3 ======== -->
+            <div
+              data-name="page"
+              class="flex flex-col font-bold f-nanum-s text-40"
+              style="display: none"
+            >
+              <div>
+                <p class="ps-28">
+                  보통 4년제 대학 입시에는 일반 입시, 추천 입시, 종합형
+                </p>
+                <p>
+                  입시가 있으며, 국·공립 대학 일반 입시의 경우 ‘대학 입학 공통
+                </p>
+                <p>테스트’라고 하는, 우리나라 대학수학능력시험과 유사한</p>
+                <p>시험을 치른다.</p>
+              </div>
+            </div>
+
+            <!-- ======== page 4 ======== -->
+            <div
+              data-name="page"
+              class="flex flex-col font-bold f-nanum-s text-40"
+              style="display: none"
+            >
+              <div class="mb-10">
+                <p class="ps-28">
+                  일본의 주요 4년제 대학으로는 국립 대학인 도쿄 대학교,
+                </p>
+                <p>교토 대학교 등과 사립 대학인 와세다 대학교, 게이오기주쿠</p>
+                <p>대학교 등이 있다.</p>
+              </div>
+
+              <div class="flex justify-center w-full gap-30">
+                <div
+                  class="relative flex items-center justify-center w-260 h-162 bg-[#F9E5C8] overflow-hidden rounded-10"
+                >
+                  <img
+                    class="overflow-hidden w-240 h-142 rounded-10"
+                    src="./images/5_01_24/popup_photo1.jpg"
+                    alt="도쿄 대학교"
+                  />
+                  <button
+                    data-name="btn-view"
+                    class="absolute bottom-10 right-10"
+                    onclick="contentUtil.setPopup(1); contentUtil.setPhotoPopup(1);"
+                  ></button>
+                </div>
+                <div
+                  class="relative flex items-center justify-center w-260 h-162 bg-[#F9E5C8] overflow-hidden rounded-10"
+                >
+                  <img
+                    class="overflow-hidden w-240 h-142 rounded-10"
+                    src="./images/5_01_24/popup_photo2.jpg"
+                    alt="교토 대학교"
+                  />
+                  <button
+                    data-name="btn-view"
+                    class="absolute bottom-10 right-10"
+                    onclick="contentUtil.setPopup(1); contentUtil.setPhotoPopup(2);"
+                  ></button>
+                </div>
+                <div
+                  class="relative flex items-center justify-center w-260 h-162 bg-[#F9E5C8] overflow-hidden rounded-10"
+                >
+                  <img
+                    class="overflow-hidden w-240 h-142 rounded-10"
+                    src="./images/5_01_24/popup_photo3.jpg"
+                    alt="와세다 대학교"
+                  />
+                  <button
+                    data-name="btn-view"
+                    class="absolute bottom-10 right-10"
+                    onclick="contentUtil.setPopup(1); contentUtil.setPhotoPopup(3);"
+                  ></button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- pagination -->
+          <div class="mb-10" data-name="pagination">
+            <button class="active" data-name="btn-pagination"></button>
+            <button class="" data-name="btn-pagination"></button>
+            <button class="" data-name="btn-pagination"></button>
+            <button class="" data-name="btn-pagination"></button>
+          </div>
+        </div>
+      </div>
+      <!-- popup -->
+      <div id="popup-wrap" style="display: none">
+        <!-- 사진 팝업창 -->
+        <div data-name="popup" data-popup="1" style="display: none">
+          <div data-name="popup-header">
+            <div data-name="popup-title">사진 팝업창</div>
+            <button
+              data-name="popup-close"
+              onclick="contentUtil.setPopup()"
+            ></button>
+          </div>
+          <div
+            data-name="popup-body"
+            class="flex items-center justify-center w-full h-full gap-16"
+          >
+            <div
+              class="flex flex-col items-center w-608 h-402"
+              data-name="popup_photo_wrap"
+            >
+              <div class="w-full overflow-x-hidden overflow-y-auto">
+                <img
+                  src="./images/5_01_24/popup_photo1.jpg"
+                  alt="도쿄 대학교"
+                  class="object-contain min-w-608 rounded-10"
+                  data-name="popup_photo"
+                />
+                <img
+                  src="./images/5_01_24/popup_photo2.jpg"
+                  alt="교토 대학교"
+                  class="object-contain min-w-608 rounded-10"
+                  data-name="popup_photo"
+                  style="display: none"
+                />
+                <img
+                  src="./images/5_01_24/popup_photo3.jpg"
+                  alt="와세다 대학교"
+                  class="object-contain min-w-608 rounded-10"
+                  data-name="popup_photo"
+                  style="display: none"
+                />
+              </div>
+              <div
+                class="flex mt-8 font-bold f-nanum-s h-52 text-40 leading-52 shrink-0"
+              >
+                <div data-name="popup_photo_text">도쿄 대학교</div>
+                <div data-name="popup_photo_text" style="display: none">
+                  교토 대학교
+                </div>
+                <div data-name="popup_photo_text" style="display: none">
+                  와세다 대학교
+                </div>
+              </div>
+            </div>
+            <div class="w-266 h-402">
+              <div class="flex flex-wrap w-full gap-10">
+                <button
+                  onclick="contentUtil.setPhotoPopup(1)"
+                  data-name="btn-popup_photo"
+                  class="w-128 h-72 active"
+                >
+                  <img
+                    src="./images/5_01_24/popup_btn_photo1.jpg"
+                    alt="도쿄 대학교"
+                  />
+                </button>
+                <button
+                  onclick="contentUtil.setPhotoPopup(2)"
+                  data-name="btn-popup_photo"
+                  class="w-128 h-72"
+                >
+                  <img
+                    src="./images/5_01_24/popup_btn_photo2.jpg"
+                    alt="교토 대학교"
+                  />
+                </button>
+                <button
+                  onclick="contentUtil.setPhotoPopup(3)"
+                  data-name="btn-popup_photo"
+                  class="w-128 h-72"
+                >
+                  <img
+                    src="./images/5_01_24/popup_btn_photo3.jpg"
+                    alt="와세다 대학교"
+                  />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 보충 자료 -->
+        <div data-name="popup" data-popup="2" style="display: none">
+          <div data-name="popup-header">
+            <div data-name="popup-title">보충 자료</div>
+            <button
+              data-name="popup-close"
+              onclick="contentUtil.setPopup()"
+            ></button>
+          </div>
+          <div
+            data-name="popup-body"
+            class="flex-1 mt-16 mb-10 ms-26 f-nanum-s-ac me-6"
+          >
+            <div class="flex flex-col">
+              <!-- title -->
+              <div class="flex items-center mb-10 h-55">
+                <img
+                  src="./../common/images/popup_titlemark_primary.svg"
+                  alt=""
+                  class="w-35 h-55 me-10"
+                />
+                <div class="flex font-extrabold text-42 text-[#F25F7C]">
+                  일본의 전문 대학 진학률
+                </div>
+              </div>
+              <div class="mb-20">
+                <div class="font-bold f-nanum-s text-40 leading-52">
+                  <p>리쿠르트 진학 통계(시장 레포츠, 2023)의 자료에 따르면</p>
+                  <p>일본의 전문 대학 진학률은 2014년부터 꾸준히 감소</p>
+                  <p>추세에 있다. 학생 수 감소로 인해 대학에 들어가기가</p>
+                  <p>비교적 쉬워져 전문 대학에 대한 선호도가 낮아진 점이</p>
+                  <p>원인 중 하나이다.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript">
+    const page = {
+      isAnswer: false,
+      isVocabulary: false,
+      showAnswer: () => {},
+      hideAnswer: () => {},
+      showVocabulary: () => {},
+    };
+  </script>
+  <script src="./../common/js/tailwind.config.js"></script>
+  <script src="./../common/js/script.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      // contentUtil.setPage(4);
+    });
+
+    $(`[data-name="btn-pagination"]`).on("click", function () {
+      if ($(this).index() === 1) {
+        $(`[data-name="btn-common"]`).show();
+      } else {
+        $(`[data-name="btn-common"]`).hide();
+      }
+    });
+  </script>
+</html>

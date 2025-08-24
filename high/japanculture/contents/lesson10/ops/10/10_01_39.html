@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>미래엔 일본 문화</title>
+    <script src="./../common/lib/jquery-3.7.1.min.js"></script>
+    <script src="./../common/lib/howler-2.1.3.min.js"></script>
+    <script src="./../common/lib/tailwind.js"></script>
+    <!-- 폰트 -->
+    <link href="./../common/font/suit/suit.css" rel="stylesheet" />
+    <link href="./../common/font/bmjua/bmjua.css" rel="stylesheet" />
+    <link
+      href="./../common/font/nanumsquare/nanumSquare.css"
+      rel="stylesheet"
+    />
+    <link href="./../common/font/notoSansJP/notoSansJP.css" rel="stylesheet" />
+    <link href="./../common/css/tailwind.css" rel="stylesheet" />
+    <link href="./../common/css/fontStyle.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div id="wrap">
+      <!-- contents -->
+      <div class="relative flex flex-col w-full h-full pt-70">
+        <!-- title -->
+        <img
+          src="./../common/images/title_check.svg"
+          alt="확인하기"
+          class="absolute left-0 w-163 h-50 top-10"
+        />
+        <div class="absolute right-0 flex gap-6 top-13">
+          <button
+            data-name="btn-common"
+            data-exreset="1"
+            onclick="contentUtil.showExplan(1)"
+          >
+            해석 보기
+          </button>
+          <button
+            data-name="btn-common"
+            data-explan="1"
+            onclick="contentUtil.hideExplan(1)"
+            style="display: none"
+          >
+            해석 감추기
+          </button>
+          <button data-name="btn-common" onclick="contentUtil.setPopup(1)">
+            해설 보기
+          </button>
+        </div>
+
+        <!-- main -->
+        <div class="flex flex-col flex-1 w-full leading-52 f-nanum-s text-40">
+          <div class="flex items-center mb-10">
+            <img
+              src="./images/10_01_39/title_index_4.svg"
+              alt="label"
+              class="me-12"
+            />
+            <div class="font-extrabold">
+              <p>주어진 글자를 조합하여 관용 표현을 완성해 봅시다.</p>
+            </div>
+          </div>
+          <div class="flex-col flex items-center">
+            <div class="flex justify-center w-full mb-10">
+              <div class="flex justify-center w-960 f-noto font-medium">
+                <!-- content box -->
+                <div
+                  class="flex w-full border-4 border-[#B8C86F] rounded-10 px-97 py-33 justify-between"
+                >
+                  <div
+                    data-audio="10_01_39/159-01.mp3"
+                    class="bg-[#F0F5D9] w-72 rounded-10 p-10 text-center"
+                  >
+                    い
+                  </div>
+                  <div
+                    data-audio="10_01_39/159-02.mp3"
+                    class="bg-[#F0F5D9] w-72 rounded-10 p-10 text-center"
+                  >
+                    た
+                  </div>
+                  <div
+                    data-audio="10_01_39/159-03.mp3"
+                    class="bg-[#F0F5D9] w-72 rounded-10 p-10 text-center"
+                  >
+                    ち
+                  </div>
+                  <div
+                    data-audio="10_01_39/159-04.mp3"
+                    class="bg-[#F0F5D9] w-72 rounded-10 p-10 text-center"
+                  >
+                    か
+                  </div>
+                  <div
+                    data-audio="10_01_39/159-05.mp3"
+                    class="bg-[#F0F5D9] w-72 rounded-10 p-10 text-center"
+                  >
+                    く
+                  </div>
+                  <div
+                    data-audio="10_01_39/159-06.mp3"
+                    class="bg-[#F0F5D9] w-72 rounded-10 p-10 text-center"
+                  >
+                    が
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="border-b-3 border-[#B8C86F] min-w-282 h-62">
+              <div
+                class="flex gap-20 justify-center"
+                style="display: none"
+                data-answer="1"
+              >
+                <span
+                  data-audio="10_01_39/159-07.mp3"
+                  class="text-red f-noto font-medium"
+                >
+                  くちが かたい
+                </span>
+                <span
+                  data-explan="1"
+                  style="display: none"
+                  class="text-blue font-bold"
+                  >입이 무겁다</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- popup -->
+      <div id="popup-wrap" style="display: none">
+        <!-- 해설 보기 -->
+        <div data-name="popup" data-popup="1" style="display: none">
+          <div data-name="popup-header">
+            <div data-name="popup-title">해설 보기</div>
+            <button
+              data-name="popup-close"
+              onclick="contentUtil.setPopup()"
+            ></button>
+          </div>
+          <div
+            data-name="popup-body"
+            class="flex-1 mt-16 mb-10 overflow-hidden ms-26 f-nanum-s me-6"
+          >
+            <div class="flex flex-col font-bold text-40 leading-52 f-nanum-s">
+              <!-- title -->
+              <div class="flex items-center mb-10 h-55">
+                <img
+                  src="./../common/images/popup_titlemark_primary.svg"
+                  alt=""
+                  class="w-35 h-55 me-10"
+                />
+                <div class="flex font-extrabold text-42 text-[#41674B]">
+                  해설
+                </div>
+              </div>
+              <!-- text -->
+              <div class="leading-52">
+                <p class="flex">
+                  관용 표현 ‘<span class="f-noto font-medium"
+                    ><span class="relative"
+                      >口<span class="ruby">くち</span></span
+                    >が かたい</span
+                  >’는 ‘입이 무겁다’는 뜻을 나타낸다.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ======================임시버튼============================== -->
+      <div class="absolute bottom-0 right-0">
+        <button class="btn-all-answer text-12">정답 보기</button>
+        <button class="btn-all-reset text-12" style="display: none">
+          다시 풀기
+        </button>
+      </div>
+      <!-- ======================================================== -->
+    </div>
+  </body>
+  <script type="text/javascript">
+    const page = {
+      isAnswer: true,
+      isVocabulary: false,
+      showAnswer: () => {
+        contentUtil.showAnswer();
+      },
+      hideAnswer: () => {
+        contentUtil.hideAnswer();
+      },
+      showVocabulary: () => {},
+    };
+  </script>
+  <script src="./../common/js/tailwind.config.js"></script>
+  <script src="./../common/js/script.js"></script>
+
+  <script type="text/javascript">
+    $(document).ready(function () {
+      // contentUtil.setPopup(1);
+    });
+  </script>
+</html>

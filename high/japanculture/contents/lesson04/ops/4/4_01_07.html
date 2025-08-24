@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>미래엔 일본 문화</title>
+    <script src="./../common/lib/jquery-3.7.1.min.js"></script>
+    <script src="./../common/lib/howler-2.1.3.min.js"></script>
+    <script src="./../common/lib/tailwind.js"></script>
+    <!-- 폰트 -->
+    <link href="./../common/font/suit/suit.css" rel="stylesheet" />
+    <link href="./../common/font/bmjua/bmjua.css" rel="stylesheet" />
+    <link
+      href="./../common/font/nanumsquare/nanumSquare.css"
+      rel="stylesheet"
+    />
+    <link href="./../common/font/notoSansJP/notoSansJP.css" rel="stylesheet" />
+    <link href="./../common/css/tailwind.css" rel="stylesheet" />
+    <link href="./../common/css/fontStyle.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div id="wrap">
+      <!-- contents -->
+      <div class="relative w-full h-full pt-68">
+        <!-- title -->
+        <img
+          src="./../common/images/title_look_culture1.svg"
+          alt="문화 들여다보기1 성씨와 가족 호칭"
+          class="absolute w-764 h-49 top-10"
+        />
+        <!-- header-btn -->
+        <div class="absolute right-0 flex gap-6 top-13" data-name="header-btn">
+          <button
+            data-name="btn-common-dark"
+            class="min-w-62"
+            onclick="contentUtil.setPopup(4)"
+          >
+            TIP
+          </button>
+          <button data-name="btn-common" onclick="contentUtil.setPopup(1)">
+            보충 자료
+          </button>
+        </div>
+        <!-- main -->
+        <div class="flex flex-col w-full h-full">
+          <div
+            class="flex flex-col w-full mb-8 font-bold h-404 leading-52 ps-20 f-nanum-s text-40"
+          >
+            <div class="flex items-center mb-4">
+              <img
+                src="./../common/images/index_pink_1.svg"
+                alt="번호 1"
+                class="w-40 h-40 me-4"
+              />
+              <span class="font-extrabold f-nanum-s text-40">일본의 성씨</span>
+            </div>
+            <div class="flex mb-4">
+              <div data-name="number-2" class="bg-[#C84935]"></div>
+              <span class="text-[#C84935] font-extrabold">성씨의 유래</span>
+            </div>
+            <!-- ======== page 1 ======== -->
+            <div data-name="page" class="flex flex-col">
+              <!-- text -->
+              <div class="relative z-10">
+                <p class="ps-28">
+                  일본인의 성씨는 지명에서 유래한 것이 가장 많다.
+                </p>
+                <p class="flex">
+                  예를 들어 ‘미우라(<span
+                    data-audio="4_01_07/061-01.mp3"
+                    class="font-medium f-noto"
+                    >三浦</span
+                  >)’는 가나가와현
+                </p>
+                <p class="flex">
+                  미우라반도에서, ‘호소카와(<span
+                    data-audio="4_01_07/061-02.mp3"
+                    class="font-medium f-noto"
+                    >細川</span
+                  >)’는
+                </p>
+                <p>아이치현 호소카와초에서 유래한 성씨이다.</p>
+              </div>
+              <!-- img box -->
+              <div class="absolute w-284 h-334 right-20 bottom-34">
+                <img
+                  src="./images/4_01_07/main_photo1.jpg"
+                  alt="지명에서 유래한 성씨"
+                  class="w-full h-full"
+                />
+                <button
+                  data-name="btn-view"
+                  class="absolute right-10 bottom-10"
+                  onclick="contentUtil.setPopup(2)"
+                ></button>
+              </div>
+            </div>
+            <!-- ======== page 2 ======== -->
+            <div data-name="page" class="flex flex-col" style="display: none">
+              <!-- text -->
+              <div>
+                <p class="flex ps-28">
+                  또한 산[<span class="font-medium f-noto">山</span>], 강[<span
+                    class="font-medium f-noto"
+                    >川</span
+                  >], 논[<span class="font-medium f-noto">田</span>] 등 지형과
+                  동서남북[<span class="font-medium f-noto">東西南北</span>],
+                </p>
+                <p class="flex">
+                  앞[<span class="font-medium f-noto">前</span>], 가운데[<span
+                    class="font-medium f-noto"
+                    >中</span
+                  >] 등 방향이나 위치를 나타내는 글자를
+                </p>
+                <p>조합한 성씨도 많다.</p>
+              </div>
+              <!-- img box -->
+              <div class="absolute w-344 h-158 right-20 bottom-60">
+                <img
+                  src="./images/4_01_07/main_photo3.jpg"
+                  alt="지형, 방향 등에서 유래한 성씨"
+                  class="w-full h-full"
+                />
+                <button
+                  data-name="btn-view"
+                  class="absolute bottom-10 right-27"
+                  onclick="contentUtil.setPopup(3)"
+                ></button>
+              </div>
+            </div>
+          </div>
+          <!-- pagination -->
+          <div
+            class="absolute -translate-x-1/2 left-1/2 bottom-10"
+            data-name="pagination"
+          >
+            <button class="active" data-name="btn-pagination"></button>
+            <button class="" data-name="btn-pagination"></button>
+          </div>
+        </div>
+      </div>
+      <!-- popup -->
+      <div id="popup-wrap" style="display: none">
+        <!-- 보충 자료 -->
+        <div data-name="popup" data-popup="1" style="display: none">
+          <div data-name="popup-header" class="relative">
+            <div data-name="popup-title">보충 자료</div>
+            <button
+              data-name="popup-close"
+              onclick="contentUtil.setPopup()"
+            ></button>
+            <!-- explan -->
+            <div class="absolute flex top-5 right-52">
+              <button
+                data-name="btn-common-light"
+                data-exreset="1"
+                onclick="contentUtil.showExplan(1)"
+              >
+                해석 보기
+              </button>
+              <button
+                data-name="btn-common-light"
+                data-explan="1"
+                onclick="contentUtil.hideExplan(1)"
+                style="display: none"
+              >
+                해석 감추기
+              </button>
+            </div>
+          </div>
+          <div data-name="popup-body" class="mt-16 mb-10 ms-24 f-nanum-s me-6">
+            <div class="flex flex-col">
+              <!-- title -->
+              <div class="flex items-center mb-10 h-55">
+                <img
+                  src="./../common/images/popup_titlemark_primary.svg"
+                  alt=""
+                  class="w-35 h-55 me-10"
+                />
+                <div class="flex font-extrabold text-42 text-[#41674B]">
+                  일본인의 성씨 TOP 10
+                </div>
+              </div>
+              <!-- table -->
+              <div
+                class="flex flex-col w-full mb-10 font-bold leading-52 text-40 f-nanum-s"
+              >
+                <!-- th -->
+                <div class="flex w-full">
+                  <div
+                    class="flex items-center bg-[#B3CFEA] justify-center rounded-tl-10 py-10 w-90 border-r-1 border-t-1 border-l-1 border-b-1 border-[#9DB9D3]"
+                  >
+                    <span>순위</span>
+                  </div>
+                  <div
+                    class="flex items-center bg-[#B3CFEA] justify-center py-10 w-360 border-r-1 border-t-1 border-b-1 border-[#9DB9D3]"
+                  >
+                    <span>성씨</span>
+                  </div>
+                  <div
+                    class="flex items-center bg-[#B3CFEA] justify-center py-10 w-90 border-r-1 border-t-1 border-b-1 border-[#9DB9D3]"
+                  >
+                    <span>순위</span>
+                  </div>
+                  <div
+                    class="flex items-center bg-[#B3CFEA] justify-center rounded-tr-10 border-t-1 border-r-1 border-b-1 py-10 border-[#9DB9D3] w-360"
+                  >
+                    <span>성씨</span>
+                  </div>
+                </div>
+                <!-- td -->
+                <!-- ===== -->
+                <div class="flex w-full">
+                  <div class="flex items-stretch">
+                    <!-- ------ -->
+                    <div
+                      class="flex items-center justify-center h-72 w-90 border-r-1 border-l-1 border-b-1 border-[#9DB9D3] bg-white p-10"
+                    >
+                      <span class="text-red">1위</span>
+                    </div>
+                    <!-- ------ -->
+                    <div
+                      class="flex justify-center w-360 h-72 border-r-1 border-b-1 border-[#9DB9D3] bg-white p-10 items-stretch"
+                    >
+                      <span class="font-medium text-red f-noto">さとう</span>
+                      <!-- ex -->
+                      <span
+                        class="font-bold ps-10 text-blue f-nanum-s"
+                        data-explan="1"
+                        style="display: none"
+                      >
+                        사토
+                      </span>
+                    </div>
+                    <!-- ------ -->
+                    <div
+                      class="flex justify-center w-90 h-72 border-r-1 border-b-1 border-[#9DB9D3] bg-white p-10 items-stretch"
+                    >
+                      <span class="text-red">6위</span>
+                    </div>
+                    <!-- ------ -->
+                    <div
+                      class="flex items-stretch justify-center h-72 p-10 border-b-1 border-r-1 w-360 border-[#9DB9D3] bg-white"
+                    >
+                      <span class="font-medium text-red f-noto">わたなべ</span>
+                      <!-- ex -->
+                      <span
+                        class="font-bold ps-10 text-blue f-nanum-s"
+                        data-explan="1"
+                        style="display: none"
+                      >
+                        와타나베
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <!-- ===== -->
+                <div class="flex w-full">
+                  <div class="flex items-stretch">
+                    <!-- ------ -->
+                    <div
+                      class="flex items-center justify-center h-72 w-90 border-r-1 border-l-1 border-b-1 border-[#9DB9D3] bg-white p-10"
+                    >
+                      <span class="text-red">2위</span>
+                    </div>
+                    <!-- ------ -->
+                    <div
+                      class="flex justify-center w-360 h-72 border-r-1 border-b-1 border-[#9DB9D3] bg-white p-10 items-stretch"
+                    >
+                      <span class="font-medium text-red f-noto">すずき</span>
+                      <!-- ex -->
+                      <span
+                        class="font-bold ps-10 text-blue f-nanum-s"
+                        data-explan="1"
+                        style="display: none"
+                      >
+                        스즈키
+                      </span>
+                    </div>
+                    <!-- ------ -->
+                    <div
+                      class="flex justify-center w-90 h-72 border-r-1 border-b-1 border-[#9DB9D3] bg-white p-10 items-stretch"
+                    >
+                      <span class="text-red">7위</span>
+                    </div>
+                    <!-- ------ -->
+                    <div
+                      class="flex items-stretch justify-center h-72 p-10 border-b-1 border-r-1 w-360 border-[#9DB9D3] bg-white"
+                    >
+                      <span class="font-medium text-red f-noto">やまもと</span>
+                      <!-- ex -->
+                      <span
+                        class="font-bold ps-10 text-blue f-nanum-s"
+                        data-explan="1"
+                        style="display: none"
+                      >
+                        야마모토
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <!-- ===== -->
+                <div class="flex w-full">
+                  <div class="flex items-stretch">
+                    <!-- ------ -->
+                    <div
+                      class="flex items-center justify-center h-72 w-90 border-r-1 border-l-1 border-b-1 border-[#9DB9D3] bg-white p-10"
+                    >
+                      <span class="text-red">3위</span>
+                    </div>
+                    <!-- ------ -->
+                    <div
+                      class="flex justify-center w-360 h-72 border-r-1 border-b-1 border-[#9DB9D3] bg-white p-10 items-stretch"
+                    >
+                      <span class="font-medium text-red f-noto">たかはし</span>
+                      <!-- ex -->
+                      <span
+                        class="font-bold ps-10 text-blue f-nanum-s"
+                        data-explan="1"
+                        style="display: none"
+                      >
+                        다카하시
+                      </span>
+                    </div>
+                    <!-- ------ -->
+                    <div
+                      class="flex justify-center w-90 h-72 border-r-1 border-b-1 border-[#9DB9D3] bg-white p-10 items-stretch"
+                    >
+                      <span class="text-red">8위</span>
+                    </div>
+                    <!-- ------ -->
+                    <div
+                      class="flex items-stretch justify-center h-72 p-10 border-b-1 border-r-1 w-360 border-[#9DB9D3] bg-white"
+                    >
+                      <span class="font-medium text-red f-noto">なかむら</span>
+                      <!-- ex -->
+                      <span
+                        class="font-bold ps-10 text-blue f-nanum-s"
+                        data-explan="1"
+                        style="display: none"
+                      >
+                        나카무라
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <!-- ===== -->
+                <div class="flex w-full">
+                  <div class="flex items-stretch">
+                    <!-- ------ -->
+                    <div
+                      class="flex items-center justify-center h-72 w-90 border-r-1 border-l-1 border-b-1 border-[#9DB9D3] bg-white p-10"
+                    >
+                      <span class="text-red">4위</span>
+                    </div>
+                    <!-- ------ -->
+                    <div
+                      class="flex justify-center w-360 h-72 border-r-1 border-b-1 border-[#9DB9D3] bg-white p-10 items-stretch"
+                    >
+                      <span class="font-medium text-red f-noto">たなか</span>
+                      <!-- ex -->
+                      <span
+                        class="font-bold ps-10 text-blue f-nanum-s"
+                        data-explan="1"
+                        style="display: none"
+                      >
+                        다나카
+                      </span>
+                    </div>
+                    <!-- ------ -->
+                    <div
+                      class="flex justify-center w-90 h-72 border-r-1 border-b-1 border-[#9DB9D3] bg-white p-10 items-stretch"
+                    >
+                      <span class="text-red">9위</span>
+                    </div>
+                    <!-- ------ -->
+                    <div
+                      class="flex items-stretch justify-center h-72 p-10 border-b-1 border-r-1 w-360 border-[#9DB9D3] bg-white"
+                    >
+                      <span class="font-medium text-red f-noto">こばやし</span>
+                      <!-- ex -->
+                      <span
+                        class="font-bold ps-10 text-blue f-nanum-s"
+                        data-explan="1"
+                        style="display: none"
+                      >
+                        고바야시
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <!-- ===== -->
+                <div class="flex w-full">
+                  <div class="flex items-stretch">
+                    <!-- ------ -->
+                    <div
+                      class="flex items-center justify-center h-72 w-90 border-r-1 border-l-1 border-b-1 border-[#9DB9D3] bg-white p-10 rounded-bl-10"
+                    >
+                      <span class="text-red">5위</span>
+                    </div>
+                    <!-- ------ -->
+                    <div
+                      class="flex justify-center w-360 h-72 border-r-1 border-b-1 border-[#9DB9D3] bg-white p-10 items-stretch"
+                    >
+                      <span class="font-medium text-red f-noto">いとう</span>
+                      <!-- ex -->
+                      <span
+                        class="font-bold ps-10 text-blue f-nanum-s"
+                        data-explan="1"
+                        style="display: none"
+                      >
+                        이토
+                      </span>
+                    </div>
+                    <!-- ------ -->
+                    <div
+                      class="flex justify-center w-90 h-72 border-r-1 border-b-1 border-[#9DB9D3] bg-white py-10 items-stretch"
+                    >
+                      <span class="text-red">10위</span>
+                    </div>
+                    <!-- ------ -->
+                    <div
+                      class="flex items-stretch justify-center h-72 p-10 border-b-1 border-r-1 w-360 border-[#9DB9D3] bg-white rounded-br-10"
+                    >
+                      <span class="font-medium text-red f-noto">かとう</span>
+                      <!-- ex -->
+                      <span
+                        class="font-bold ps-10 text-blue f-nanum-s"
+                        data-explan="1"
+                        style="display: none"
+                      >
+                        가토
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 사진 팝업창 1 -->
+        <div data-name="popup" data-popup="2" style="display: none">
+          <div data-name="popup-header">
+            <div data-name="popup-title">사진 팝업창</div>
+            <button
+              data-name="popup-close"
+              onclick="contentUtil.setPopup()"
+            ></button>
+          </div>
+          <div data-name="popup-body" class="mt-16 mb-10 ms-26 f-nanum-s me-6">
+            <div class="flex flex-col">
+              <div
+                class="relative mb-10 font-bold w-900 h-781 leading-52 f-nanum-s text-40"
+              >
+                <img
+                  src="./images/4_01_07/popup_photo1.jpg"
+                  alt="지명에서 유래한 성씨"
+                  class="w-full h-full rounded-10"
+                />
+                <!-- -------- -->
+                <div
+                  class="absolute flex items-center justify-center top-132 left-640 h-50 w-185"
+                >
+                  <span>후쿠시마현</span>
+                </div>
+                <!-- -------- -->
+                <div
+                  class="absolute flex items-center justify-center top-140 left-230 h-50 w-150"
+                >
+                  <span>도치기현</span>
+                </div>
+                <!-- -------- -->
+                <div
+                  class="absolute flex items-center justify-center top-268 left-17 h-50 w-185"
+                >
+                  <span>구마모토현</span>
+                </div>
+                <!-- -------- -->
+                <div
+                  class="absolute flex items-center justify-center top-294 left-638 h-50 w-116"
+                >
+                  <span>지바현</span>
+                </div>
+                <!-- -------- -->
+                <div
+                  class="absolute flex items-center justify-center top-453 left-579 h-50 w-185"
+                >
+                  <span>가나가와현</span>
+                </div>
+                <!-- -------- -->
+                <div
+                  class="absolute flex items-center justify-center top-622 left-17 h-50 w-185"
+                >
+                  <span>나가사키현</span>
+                </div>
+                <!-- -------- -->
+                <div
+                  class="absolute flex items-center justify-center top-622 left-346 h-50 w-150"
+                >
+                  <span>아이치현</span>
+                </div>
+                <!-- -------- -->
+                <div
+                  class="absolute flex items-center justify-center top-203 left-228 h-74 w-288"
+                >
+                  <span class="flex mt-12"
+                    >나스 지역의&nbsp;
+                    <span
+                      data-audio="4_01_07/061-04.mp3"
+                      class="font-medium f-noto"
+                      ><span class="relative"
+                        >那<span class="ruby">な</span></span
+                      ><span class="relative"
+                        >須<span class="ruby">す</span></span
+                      ></span
+                    ></span
+                  >
+                </div>
+                <!-- -------- -->
+                <div
+                  class="absolute flex items-center justify-center top-195 left-637 h-74 w-239"
+                >
+                  <span class="flex mt-12"
+                    >다테시의&nbsp;
+                    <span
+                      data-audio="4_01_07/061-03.mp3"
+                      class="font-medium f-noto"
+                      ><span class="relative"
+                        >伊<span class="ruby">だ</span></span
+                      ><span class="relative"
+                        >達<span class="ruby">て</span></span
+                      ></span
+                    ></span
+                  >
+                </div>
+                <!-- -------- -->
+                <div
+                  class="absolute flex items-center justify-center top-331 left-14 h-74 w-267"
+                >
+                  <span class="flex mt-12"
+                    >기쿠치시의&nbsp;
+                    <span
+                      data-audio="4_01_07/061-06.mp3"
+                      class="font-medium f-noto"
+                      ><span class="relative"
+                        >菊<span class="ruby">きく</span></span
+                      ><span class="relative"
+                        >池<span class="ruby">ち</span></span
+                      ></span
+                    ></span
+                  >
+                </div>
+                <!-- -------- -->
+                <div
+                  class="absolute flex items-center justify-center top-357 left-635 h-74 w-239"
+                >
+                  <span class="flex mt-12"
+                    >지바시의&nbsp;
+                    <span
+                      data-audio="4_01_07/061-05.mp3"
+                      class="font-medium f-noto"
+                      ><span class="relative"
+                        >千<span class="ruby">ち</span></span
+                      ><span class="relative"
+                        >葉<span class="ruby">ば</span></span
+                      ></span
+                    ></span
+                  >
+                </div>
+                <!-- -------- -->
+                <div
+                  class="absolute flex items-center justify-center top-516 left-576 h-74 w-306"
+                >
+                  <span class="flex mt-12"
+                    >미우라반도의&nbsp;
+                    <span
+                      data-audio="4_01_07/061-01.mp3"
+                      class="font-medium f-noto"
+                      ><span class="relative"
+                        >三<span class="ruby">み</span></span
+                      ><span class="relative"
+                        >浦<span class="ruby">うら</span></span
+                      ></span
+                    ></span
+                  >
+                </div>
+                <!-- -------- -->
+                <div
+                  class="absolute flex items-center justify-center top-685 left-15 h-74 w-301"
+                >
+                  <span class="flex mt-12"
+                    >마쓰우라시의&nbsp;
+                    <span
+                      data-audio="4_01_07/061-07.mp3"
+                      class="font-medium f-noto"
+                      ><span class="relative"
+                        >松<span class="ruby">まつ</span></span
+                      ><span class="relative"
+                        >浦<span class="ruby">うら</span></span
+                      ></span
+                    ></span
+                  >
+                </div>
+                <!-- -------- -->
+                <div
+                  class="absolute flex items-center justify-center top-685 left-343 h-74 w-305"
+                >
+                  <span class="flex mt-12"
+                    >호소카와초의&nbsp;
+                    <span
+                      data-audio="4_01_07/061-02.mp3"
+                      class="font-medium f-noto"
+                      ><span class="relative"
+                        >細<span class="ruby">ほそ</span></span
+                      ><span class="relative"
+                        >川<span class="ruby">かわ</span></span
+                      ></span
+                    ></span
+                  >
+                </div>
+              </div>
+              <div
+                class="flex justify-center mt-8 font-bold f-nanum-s h-52 text-40 leading-52 shrink-0 pe-20"
+              >
+                <div data-name="popup_photo_text">
+                  <p>지명에서 유래한 성씨</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 사진 팝업창2 -->
+        <div data-name="popup" data-popup="3" style="display: none">
+          <div data-name="popup-header">
+            <div data-name="popup-title">사진 팝업창</div>
+            <button
+              data-name="popup-close"
+              onclick="contentUtil.setPopup()"
+            ></button>
+          </div>
+          <div
+            data-name="popup-body"
+            class="flex flex-col items-center w-full h-full pt-17"
+          >
+            <div class="relative w-785 h-360">
+              <img
+                src="./images/4_01_07/popup_photo3.jpg"
+                alt=""
+                class="w-full h-full rounded-10"
+              />
+              <!-- ---------- -->
+              <div
+                data-name="audio-text"
+                data-audio="4_01_07/061-09.mp3"
+                class="absolute h-64 top-157 left-32 w-34"
+              >
+                <img
+                  data-name="default"
+                  src="./images/4_01_07/popup_text1.svg"
+                  alt="山下"
+                  class="absolute top-0 left-0 w-full h-full"
+                />
+                <img
+                  data-name="active"
+                  src="./images/4_01_07/popup_text1_active.svg"
+                  alt="山下"
+                  class="absolute top-0 left-0 w-full h-full"
+                />
+              </div>
+              <!-- ---------- -->
+              <div
+                data-name="audio-text"
+                data-audio="4_01_07/061-11.mp3"
+                class="absolute h-64 top-138 left-359 w-34"
+              >
+                <img
+                  data-name="default"
+                  src="./images/4_01_07/popup_text2.svg"
+                  alt="山口"
+                  class="absolute top-0 left-0 w-full h-full"
+                />
+                <img
+                  data-name="active"
+                  src="./images/4_01_07/popup_text2_active.svg"
+                  alt="山口"
+                  class="absolute top-0 left-0 w-full h-full"
+                />
+              </div>
+              <!-- ---------- -->
+              <div
+                data-name="audio-text"
+                data-audio="4_01_07/061-13.mp3"
+                class="absolute h-64 top-81 left-486 w-34"
+              >
+                <img
+                  data-name="default"
+                  src="./images/4_01_07/popup_text3.svg"
+                  alt="前田"
+                  class="absolute top-0 left-0 w-full h-full"
+                />
+                <img
+                  data-name="active"
+                  src="./images/4_01_07/popup_text3_active.svg"
+                  alt="前田"
+                  class="absolute top-0 left-0 w-full h-full"
+                />
+              </div>
+              <!-- ---------- -->
+              <div
+                data-name="audio-text"
+                data-audio="4_01_07/061-14.mp3"
+                class="absolute h-64 top-144 left-669 w-34"
+              >
+                <img
+                  data-name="default"
+                  src="./images/4_01_07/popup_text4.svg"
+                  alt="森"
+                  class="absolute top-0 left-0 w-full h-full"
+                />
+                <img
+                  data-name="active"
+                  src="./images/4_01_07/popup_text4_active.svg"
+                  alt="森"
+                  class="absolute top-0 left-0 w-full h-full"
+                />
+              </div>
+              <!-- ---------- -->
+              <div
+                data-name="audio-text"
+                data-audio="4_01_07/061-10.mp3"
+                class="absolute h-64 top-249 left-123 w-34"
+              >
+                <img
+                  data-name="default"
+                  src="./images/4_01_07/popup_text5.svg"
+                  alt="小林"
+                  class="absolute top-0 left-0 w-full h-full"
+                />
+                <img
+                  data-name="active"
+                  src="./images/4_01_07/popup_text5_active.svg"
+                  alt="小林"
+                  class="absolute top-0 left-0 w-full h-full"
+                />
+              </div>
+              <!-- ---------- -->
+              <div
+                data-name="audio-text"
+                data-audio="4_01_07/061-12.mp3"
+                class="absolute h-64 top-260 left-425 w-34"
+              >
+                <img
+                  data-name="default"
+                  src="./images/4_01_07/popup_text6.svg"
+                  alt="小川"
+                  class="absolute top-0 left-0 w-full h-full"
+                />
+                <img
+                  data-name="active"
+                  src="./images/4_01_07/popup_text6_active.svg"
+                  alt="小川"
+                  class="absolute top-0 left-0 w-full h-full"
+                />
+              </div>
+              <!-- ---------- -->
+              <div
+                data-name="audio-text"
+                data-audio="4_01_07/061-15.mp3"
+                class="absolute h-64 top-256 left-606 w-34"
+              >
+                <img
+                  data-name="default"
+                  src="./images/4_01_07/popup_text7.svg"
+                  alt="田中"
+                  class="absolute top-0 left-0 w-full h-full"
+                />
+                <img
+                  data-name="active"
+                  src="./images/4_01_07/popup_text7_active.svg"
+                  alt="田中"
+                  class="absolute top-0 left-0 w-full h-full"
+                />
+              </div>
+            </div>
+            <div
+              class="flex justify-center mt-8 font-bold f-nanum-s h-52 text-40 leading-52 shrink-0"
+            >
+              <div data-name="popup_photo_text">
+                <p>지형, 방향 등에서 유래한 성씨</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- TIP -->
+        <div data-name="popup" data-popup="4" style="display: none">
+          <div data-name="popup-header">
+            <div data-name="popup-title">TIP</div>
+            <button
+              data-name="popup-close"
+              onclick="contentUtil.setPopup()"
+            ></button>
+          </div>
+          <div
+            data-name="popup-body"
+            class="flex flex-col w-full h-full pt-16 font-bold px-26 leading-52 text-40 f-nanum-s"
+          >
+            <div>
+              <p>일본에서는 성씨의 종류가 많기 때문에 처음 만났을 때</p>
+              <p>성씨를 잘못 읽더라도 실례가 되지는 않으며, 읽는 법을</p>
+              <p>직접 묻기도 한다. 그리고 서류 등을 쓸 때는 성과 이름</p>
+              <p class="flex">
+                한자 위에 ‘후리가나(<span
+                  data-audio="4_01_07/061-08.mp3"
+                  class="font-medium f-noto"
+                  >ふりがな</span
+                >)’
+              </p>
+              <p>라고 하여 읽는 법을 히라가나로</p>
+              <p>작게 쓴다.</p>
+            </div>
+            <img
+              src="./images/4_01_07/popup_photo2.jpg"
+              alt=""
+              class="-mt-149 w-390 h-220 rounded-10 ms-auto"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript">
+    const page = {
+      isAnswer: false,
+      isVocabulary: false,
+      showAnswer: () => {},
+      hideAnswer: () => {},
+      showVocabulary: () => {},
+    };
+  </script>
+  <script src="./../common/js/tailwind.config.js"></script>
+  <script src="./../common/js/script.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {});
+  </script>
+</html>

@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>미래엔 일본 문화</title>
+    <script src="./../common/lib/jquery-3.7.1.min.js"></script>
+    <script src="./../common/lib/howler-2.1.3.min.js"></script>
+    <script src="./../common/lib/tailwind.js"></script>
+    <!-- 폰트 -->
+    <link href="./../common/font/suit/suit.css" rel="stylesheet" />
+    <link href="./../common/font/bmjua/bmjua.css" rel="stylesheet" />
+    <link
+      href="./../common/font/nanumsquare/nanumSquare.css"
+      rel="stylesheet"
+    />
+    <link href="./../common/font/notoSansJP/notoSansJP.css" rel="stylesheet" />
+    <link href="./../common/css/tailwind.css" rel="stylesheet" />
+    <link href="./../common/css/fontStyle.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div id="wrap">
+      <!-- contents -->
+      <div class="relative w-full h-full pt-60">
+        <!-- title -->
+        <img
+          src="./../common/images/title_look_culture4.svg"
+          alt="문화 들여다보기1 주택의 종류와 특징"
+          class="absolute w-605 h-49 top-10"
+        />
+        <div
+          class="bg-[#FFB0C0] absolute right-76 rounded-10 h-37 flex justify-center items-center top-13"
+        >
+          <span class="px-12 font-extrabold text-16 f-nanum-s"
+            >번호를 클릭해 보세요.</span
+          >
+        </div>
+        <button
+          data-name="btn-common-dark"
+          onclick="contentUtil.setPopup(2)"
+          class="absolute right-0 top-13 min-w-64 tip_box"
+        >
+          TIP
+        </button>
+        <!-- main -->
+        <div class="relative flex flex-col w-full h-full overflow-y-auto">
+          <div
+            class="flex flex-col flex-1 w-full text-40 f-nanum-s leading-52 ps-20"
+          >
+            <div class="flex items-center mt-10 mb-4">
+              <img
+                src="./../common/images/index_pink_2.svg"
+                alt="번호 2"
+                class="w-40 h-40 me-4"
+              />
+              <span class="font-extrabold f-nanum-s text-40"
+                >재난에 대비한 설비</span
+              >
+            </div>
+            <div class="flex h-52 mb-11">
+              <div data-name="number-2" class="bg-[#C84935]"></div>
+              <span class="text-[#C84935] font-extrabold"
+                >주택 내부의 안전
+              </span>
+            </div>
+            <!-- ======== page 1 ======== -->
+            <div
+              data-name="page"
+              class="flex flex-col font-bold f-nanum-s text-40"
+            >
+              <div class="relative flex items-center justify-center w-full">
+                <div class="relative w-650 h-330">
+                  <img src="./images/3_01_33/main_photo1.jpg" alt="주택 내부" />
+                  <button
+                    data-name="btn-view"
+                    class="absolute bottom-10 right-15"
+                    onclick="contentUtil.setPopup(1);"
+                  ></button>
+                </div>
+
+                <!-- number 1 -->
+                <div>
+                  <div class="absolute top-45 left-261">
+                    <div
+                      data-name="number-1-light"
+                      class="m-0"
+                      onclick="contentUtil.hideAnswer();
+                      contentUtil.showAnswer(1)"
+                    ></div>
+                  </div>
+                  <div
+                    data-answer="1"
+                    style="display: none"
+                    class="absolute z-10 top-25 left-300 bg-[url('./images/3_01_33/bubble1.svg')] bg-no-repeat bg-contain w-618 h-76 flex items-center"
+                  >
+                    <div class="flex items-center gap-6">
+                      <div class="ml-28">
+                        <p>창문에는 비산 방지 필름을 붙인다.</p>
+                      </div>
+                      <img
+                        onclick="contentUtil.hideAnswer(1)"
+                        class="w-36 h-36"
+                        src="./images/3_01_33/btn_x.svg"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                <!-- number 2 -->
+                <div>
+                  <div class="absolute top-149 left-287">
+                    <div
+                      data-name="number-2-light"
+                      class="m-0"
+                      onclick="contentUtil.hideAnswer();
+                      contentUtil.showAnswer(2)"
+                    ></div>
+                  </div>
+                  <div
+                    data-answer="2"
+                    style="display: none"
+                    class="absolute top-7 left-244 z-10 bg-[url('./images/3_01_33/bubble2.svg')] bg-no-repeat bg-contain w-457 h-137 flex"
+                  >
+                    <div class="flex items-start gap-6 mt-12 ml-20">
+                      <div class="w-375">
+                        <p>침대는 가구가 쓰러지지</p>
+                        <p>않는 위치에 둔다.</p>
+                      </div>
+
+                      <img
+                        onclick="contentUtil.hideAnswer(2)"
+                        class="w-36 h-36 mt-7"
+                        src="./images/3_01_33/btn_x.svg"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                <!-- number 3 -->
+                <div>
+                  <div class="absolute top-140 left-441">
+                    <div
+                      data-name="number-3-light"
+                      class="m-0"
+                      onclick="contentUtil.hideAnswer();
+                      contentUtil.showAnswer(3)"
+                    ></div>
+                  </div>
+                  <div
+                    data-answer="3"
+                    style="display: none"
+                    class="absolute top-50 left-400 z-10 bg-[url('./images/3_01_33/bubble3.svg')] bg-no-repeat bg-contain w-503 h-85 flex"
+                  >
+                    <div class="flex items-center gap-6 mb-5">
+                      <div class="ml-20">
+                        <p>서랍장은 서랍 걸쇠를 한다.</p>
+                      </div>
+
+                      <img
+                        onclick="contentUtil.hideAnswer(3)"
+                        class="w-36 h-36 mb-9"
+                        src="./images/3_01_33/btn_x.svg"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                <!-- number 4 -->
+                <div>
+                  <div class="absolute top-14 left-527">
+                    <div
+                      data-name="number-4-light"
+                      class="m-0"
+                      onclick="contentUtil.hideAnswer();
+                      contentUtil.showAnswer(4)"
+                    ></div>
+                  </div>
+                  <div
+                    data-answer="4"
+                    style="display: none"
+                    class="absolute top-[-5px] left-17 z-10 bg-[url('./images/3_01_33/bubble4.svg')] bg-no-repeat bg-contain w-505 h-128 flex"
+                  >
+                    <div class="flex items-start">
+                      <img
+                        onclick="contentUtil.hideAnswer(4)"
+                        class="absolute w-36 h-36 top-17 right-26"
+                        src="./images/3_01_33/btn_x.svg"
+                        alt=""
+                      />
+                      <div class="mt-12 ml-20">
+                        <p>책장과 같은 큰 가구는 L자</p>
+                        <p>형 브래킷 등으로 고정한다.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- number 5 -->
+                <div>
+                  <div class="absolute top-185 left-648">
+                    <div
+                      data-name="number-5-light"
+                      class="m-0"
+                      onclick="contentUtil.hideAnswer();
+                      contentUtil.showAnswer(5)"
+                    ></div>
+                  </div>
+                  <div
+                    data-answer="5"
+                    style="display: none"
+                    class="absolute top-95 left-275 z-10 bg-[url('./images/3_01_33/bubble5.svg')] bg-no-repeat bg-contain w-497 h-85 flex"
+                  >
+                    <img
+                      onclick="contentUtil.hideAnswer(5)"
+                      class="absolute w-36 h-36 top-17 right-20"
+                      src="./images/3_01_33/btn_x.svg"
+                      alt=""
+                    />
+                    <div class="mt-12 ml-18">
+                      <p>무거운 것은 아래쪽에 둔다.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- popup -->
+      <div id="popup-wrap" style="display: none">
+        <!-- TIP -->
+        <div data-name="popup" data-popup="2" style="display: none">
+          <div data-name="popup-header">
+            <div data-name="popup-title">TIP</div>
+            <button
+              data-name="popup-close"
+              onclick="contentUtil.setPopup()"
+            ></button>
+          </div>
+          <div
+            data-name="popup-body"
+            class="mt-16 mb-20 mr-10 ms-26 f-nanum-s me-6"
+          >
+            <!--  popup section 1  -->
+            <div class="flex flex-col mr-14">
+              <div class="font-bold f-nanum-s text-40 leading-52">
+                <p>지진이 발생했을 때 실내에서 비교적 안전한 장소는 기둥,</p>
+                <p>벽으로 둘러싸여 강도가 높은 곳, 유리창이 없거나 적은 곳,</p>
+                <p>가구가 적은 곳이다. 대표적으로 현관, 화장실, 욕조 등이</p>
+                <p>안전한 장소로 여겨진다.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 사진 팝업창 -->
+        <div data-name="popup" data-popup="1" style="display: none">
+          <div data-name="popup-header">
+            <div data-name="popup-title">사진 팝업창</div>
+            <button
+              data-name="popup-close"
+              onclick="contentUtil.setPopup()"
+            ></button>
+          </div>
+          <div data-name="popup-body" class="flex justify-center w-full h-full">
+            <div
+              class="flex flex-col mt-20 w-720 h-402"
+              data-name="popup_photo_wrap"
+            >
+              <div class="w-full overflow-hidden h-400 rounded-10">
+                <img
+                  src="./images/3_01_33/popup_photo1.jpg"
+                  alt="주택 내부"
+                  class="w-full h-full"
+                  data-name="popup_photo"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript">
+    const page = {
+      isAnswer: false,
+      isVocabulary: false,
+      showAnswer: () => {},
+      hideAnswer: () => {},
+      showVocabulary: () => {},
+    };
+  </script>
+  <script src="./../common/js/tailwind.config.js"></script>
+  <script src="./../common/js/script.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      // contentUtil.showAnswer(3);
+    });
+  </script>
+</html>

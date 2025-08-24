@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>미래엔 일본 문화</title>
+    <script src="./../common/lib/jquery-3.7.1.min.js"></script>
+    <script src="./../common/lib/howler-2.1.3.min.js"></script>
+    <script src="./../common/lib/tailwind.js"></script>
+    <script src="./../common/lib/rkusa-touch-dnd.js"></script>
+    <!-- 폰트 -->
+    <link href="./../common/font/suit/suit.css" rel="stylesheet" />
+    <link href="./../common/font/bmjua/bmjua.css" rel="stylesheet" />
+    <link
+      href="./../common/font/nanumsquare/nanumSquare.css"
+      rel="stylesheet"
+    />
+    <link href="./../common/font/notoSansJP/notoSansJP.css" rel="stylesheet" />
+    <link href="./../common/css/tailwind.css" rel="stylesheet" />
+    <link href="./../common/css/fontStyle.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div id="wrap">
+      <!-- contents -->
+      <div class="relative w-full h-full">
+        <div class="w-full h-full pt-115">
+          <!-- title -->
+          <div class="absolute left-0 flex top-10 text-40 leading-52">
+            <img
+              src="./images/6_01_35/title_index_2.svg"
+              alt="2"
+              class="w-23 h-52 me-12"
+            />
+            <div class="font-extrabold f-nanum-s">
+              <p>주어진 낱말 카드를 바르게 배열하여 문장을 완성해</p>
+              <p>봅시다.</p>
+            </div>
+          </div>
+          <!-- header-btn -->
+          <div
+            class="absolute right-0 flex gap-6 top-13"
+            data-name="header-btn"
+          >
+            <button
+              data-name="btn-common"
+              data-exreset="1"
+              onclick="contentUtil.showExplan(1)"
+            >
+              해석 보기
+            </button>
+            <button
+              data-name="btn-common"
+              data-explan="1"
+              onclick="contentUtil.hideExplan(1)"
+              style="display: none"
+            >
+              해석 감추기
+            </button>
+          </div>
+          <img
+            src="./images/6_01_35/main_label_drag.svg"
+            alt="각 단어 카드를 드래그하여 배열해 보세요."
+            class="absolute right-0 w-298 h-37 top-70"
+          />
+          <!-- main -->
+          <div
+            class="relative flex flex-col w-full h-full font-bold f-nanum-s text-40 leading-52"
+          >
+            <!-- 보기 -->
+            <div
+              data-name="draggable"
+              class="flex mx-auto mt-20 mb-5 gap-30 h-81"
+            >
+              <!-- ------- -->
+              <div class="relative w-193 h-81">
+                <!-- static -->
+                <div
+                  class="bg-[url(./images/6_01_35/main_card.svg)] bg-no-repeat bg-cover flex justify-end items-end w-full h-full opacity-50"
+                >
+                  <div class="flex items-center justify-center w-177 h-72">
+                    <span class="font-medium f-noto">いつも</span>
+                  </div>
+                </div>
+                <!-- draggable -->
+                <div
+                  class="bg-[url(./images/6_01_35/main_card.svg)] bg-no-repeat bg-cover flex justify-end items-end w-full h-full absolute top-0 left-0 draggable cursor-grab"
+                >
+                  <div class="flex items-center justify-center w-177 h-72">
+                    <span class="font-medium f-noto">いつも</span>
+                  </div>
+                </div>
+              </div>
+              <!-- ------- -->
+              <div class="relative w-193 h-81">
+                <!-- static -->
+                <div
+                  class="bg-[url(./images/6_01_35/main_card.svg)] bg-no-repeat bg-cover flex justify-end items-end w-full h-full opacity-50"
+                >
+                  <div class="flex items-center justify-center w-177 h-72">
+                    <span class="font-medium f-noto">なって</span>
+                  </div>
+                </div>
+                <!-- draggable -->
+                <div
+                  class="bg-[url(./images/6_01_35/main_card.svg)] bg-no-repeat bg-cover flex justify-end items-end w-full h-full absolute top-0 left-0 draggable cursor-grab"
+                >
+                  <div class="flex items-center justify-center w-177 h-72">
+                    <span class="font-medium f-noto">なって</span>
+                  </div>
+                </div>
+              </div>
+              <!-- ------- -->
+              <div class="relative w-193 h-81">
+                <!-- static -->
+                <div
+                  class="bg-[url(./images/6_01_35/main_card.svg)] bg-no-repeat bg-cover flex justify-end items-end w-full h-full opacity-50"
+                >
+                  <div class="flex items-center justify-center w-177 h-72">
+                    <span class="font-medium f-noto">おります</span>
+                  </div>
+                </div>
+                <!-- draggable -->
+                <div
+                  class="bg-[url(./images/6_01_35/main_card.svg)] bg-no-repeat bg-cover flex justify-end items-end w-full h-full absolute top-0 left-0 draggable cursor-grab"
+                >
+                  <div class="flex items-center justify-center w-177 h-72">
+                    <span class="font-medium f-noto">おります</span>
+                  </div>
+                </div>
+              </div>
+              <!-- ------- -->
+              <div class="relative w-193 h-81">
+                <!-- static -->
+                <div
+                  class="bg-[url(./images/6_01_35/main_card.svg)] bg-no-repeat bg-cover flex justify-end items-end w-full h-full opacity-50"
+                >
+                  <div class="flex items-center justify-center w-177 h-72">
+                    <span class="font-medium f-noto">お世話に</span>
+                  </div>
+                </div>
+                <!-- draggable -->
+                <div
+                  class="bg-[url(./images/6_01_35/main_card.svg)] bg-no-repeat bg-cover flex justify-end items-end w-full h-full absolute top-0 left-0 draggable cursor-grab"
+                >
+                  <div class="flex items-center justify-center w-177 h-72">
+                    <span class="font-medium f-noto">お世話に</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="flex mx-auto mb-20 gap-30 h-52">
+              <div
+                data-explan="1"
+                class="flex justify-end h-full w-193"
+                style="display: none"
+              >
+                <div class="flex items-center justify-center h-full w-177">
+                  <span class="text-blue">항상</span>
+                </div>
+              </div>
+              <div
+                data-explan="1"
+                class="flex justify-end h-full w-193"
+                style="display: none"
+              >
+                <div class="flex items-center justify-center h-full w-177">
+                  <span class="text-blue">되고</span>
+                </div>
+              </div>
+              <div
+                data-explan="1"
+                class="flex justify-end h-full w-193"
+                style="display: none"
+              >
+                <div class="flex items-center justify-center h-full w-177">
+                  <span class="text-blue">있습니다 </span>
+                </div>
+              </div>
+              <div
+                data-explan="1"
+                class="flex justify-end h-full w-193"
+                style="display: none"
+              >
+                <div class="flex items-center justify-center h-full w-177">
+                  <span class="text-blue">신세가</span>
+                </div>
+              </div>
+            </div>
+            <!-- 정답 영역 -->
+            <div
+              data-name="droppable"
+              data-reset="1"
+              class="flex mb-10 font-medium f-noto ms-22"
+            >
+              <div class="flex me-20">
+                <img
+                  src="./images/6_01_35/main_arrow.svg"
+                  alt=""
+                  class="mt-12 w-34 h-30 me-10"
+                />
+                <span>れんが</span>
+              </div>
+              <div
+                class="flex gap-20 w-803 h-62 bg-[url(./images/6_01_35/main_answer_bg.svg)] bg-no-repeat bg-cover bg-center"
+              >
+                <!-- ------- -->
+                <div class="pb-8 w-174 h-60 droppable"></div>
+                <!-- ------- -->
+                <div class="pb-8 w-174 h-60 droppable"></div>
+                <!-- ------- -->
+                <div class="pb-8 w-174 h-60 droppable"></div>
+                <!-- ------- -->
+                <div class="pb-8 w-174 h-60 droppable"></div>
+              </div>
+            </div>
+            <!-- 정답 확인 -->
+            <div
+              data-answer="1"
+              data-audio="6_01_35/097-33.mp3"
+              class="flex mb-10 font-medium f-noto ms-22"
+              style="display: none"
+            >
+              <div class="flex me-20">
+                <img
+                  src="./images/6_01_35/main_arrow.svg"
+                  alt=""
+                  class="mt-12 w-34 h-30 me-10"
+                />
+                <span>れんが</span>
+              </div>
+              <div
+                class="flex gap-20 w-803 h-62 bg-[url(./images/6_01_35/main_answer_bg.svg)] bg-no-repeat bg-cover bg-center"
+              >
+                <!-- ------- -->
+                <div class="flex items-center justify-center pb-8 w-174 h-60">
+                  <span class="text-red">いつも</span>
+                </div>
+                <!-- ------- -->
+                <div class="flex items-center justify-center pb-8 w-174 h-60">
+                  <span class="text-red">お世話に</span>
+                </div>
+                <!-- ------- -->
+                <div class="flex items-center justify-center pb-8 w-174 h-60">
+                  <span class="text-red">なって</span>
+                </div>
+                <!-- ------- -->
+                <div class="flex items-center justify-center pb-8 w-174 h-60">
+                  <span class="text-red">おります</span>
+                </div>
+              </div>
+            </div>
+            <span
+              data-explan="1"
+              class="mx-auto text-blue"
+              style="display: none"
+            >
+              렌이 항상 신세가 많습니다.
+            </span>
+          </div>
+        </div>
+      </div>
+      <!-- popup -->
+      <div id="popup-wrap" style="display: none"></div>
+      <!-- ======================임시버튼============================== -->
+      <div class="absolute bottom-0 right-0">
+        <button class="btn-all-answer text-12">정답 보기</button>
+        <button class="btn-all-reset text-12" style="display: none">
+          다시 풀기
+        </button>
+      </div>
+      <!-- ======================================================== -->
+    </div>
+  </body>
+  <script type="text/javascript">
+    const page = {
+      isAnswer: true,
+      isVocabulary: false,
+      showAnswer: () => {
+        contentUtil.showAnswer();
+        dragReset();
+      },
+      hideAnswer: () => {
+        contentUtil.hideAnswer();
+      },
+      showVocabulary: () => {},
+    };
+  </script>
+  <script src="./../common/js/tailwind.config.js"></script>
+  <script src="./../common/js/script.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      dragFn();
+      dropFn();
+    });
+
+    //드래그드롭
+    const dragFn = () => {
+      $(".draggable")
+        .draggable()
+        .on("draggable:start", function (drop, draggable) {
+          draggable.item.addClass("z-10");
+        })
+        .on("draggable:stop", function (drop, draggable) {
+          draggable.item.removeClass("z-10");
+        });
+    };
+    const dropFn = () => {
+      $(".droppable")
+        .droppable()
+        .on("droppable:drop", function (drop, draggable) {
+          draggable.item.removeClass("absolute");
+          draggable.item.removeClass(
+            "bg-[url(./images/6_01_35/main_card.svg)]"
+          );
+          draggable.item.removeClass("w-full");
+          draggable.item.removeClass("h-full");
+          draggable.item.children().removeClass("h-72");
+          draggable.item.children().addClass("h-auto");
+          console.log(drop.currentTarget);
+          setTimeout(() => {
+            $(drop.currentTarget).addClass("pointer-events-none");
+          }, 0);
+        });
+    };
+
+    const dragReset = () => {
+      $(`[data-name="draggable"]`).html(`
+      <!-- ------- -->
+      <div class="relative w-193 h-81">
+        <!-- static -->
+        <div
+          class="bg-[url(./images/6_01_35/main_card.svg)] bg-no-repeat bg-cover flex justify-end items-end w-full h-full opacity-50"
+        >
+          <div class="flex items-center justify-center w-177 h-72">
+            <span class="font-medium f-noto">いつも</span>
+          </div>
+        </div>
+        <!-- draggable -->
+        <div
+          class="bg-[url(./images/6_01_35/main_card.svg)] bg-no-repeat bg-cover flex justify-end items-end w-full h-full absolute top-0 left-0 draggable cursor-grab"
+        >
+          <div class="flex items-center justify-center w-177 h-72">
+            <span class="font-medium f-noto">いつも</span>
+          </div>
+        </div>
+      </div>
+      <!-- ------- -->
+      <div class="relative w-193 h-81">
+        <!-- static -->
+        <div
+          class="bg-[url(./images/6_01_35/main_card.svg)] bg-no-repeat bg-cover flex justify-end items-end w-full h-full opacity-50"
+        >
+          <div class="flex items-center justify-center w-177 h-72">
+            <span class="font-medium f-noto">なって</span>
+          </div>
+        </div>
+        <!-- draggable -->
+        <div
+          class="bg-[url(./images/6_01_35/main_card.svg)] bg-no-repeat bg-cover flex justify-end items-end w-full h-full absolute top-0 left-0 draggable cursor-grab"
+        >
+          <div class="flex items-center justify-center w-177 h-72">
+            <span class="font-medium f-noto">なって</span>
+          </div>
+        </div>
+      </div>
+      <!-- ------- -->
+      <div class="relative w-193 h-81">
+        <!-- static -->
+        <div
+          class="bg-[url(./images/6_01_35/main_card.svg)] bg-no-repeat bg-cover flex justify-end items-end w-full h-full opacity-50"
+        >
+          <div class="flex items-center justify-center w-177 h-72">
+            <span class="font-medium f-noto">おります</span>
+          </div>
+        </div>
+        <!-- draggable -->
+        <div
+          class="bg-[url(./images/6_01_35/main_card.svg)] bg-no-repeat bg-cover flex justify-end items-end w-full h-full absolute top-0 left-0 draggable cursor-grab"
+        >
+          <div class="flex items-center justify-center w-177 h-72">
+            <span class="font-medium f-noto">おります</span>
+          </div>
+        </div>
+      </div>
+      <!-- ------- -->
+      <div class="relative w-193 h-81">
+        <!-- static -->
+        <div
+          class="bg-[url(./images/6_01_35/main_card.svg)] bg-no-repeat bg-cover flex justify-end items-end w-full h-full opacity-50"
+        >
+          <div class="flex items-center justify-center w-177 h-72">
+            <span class="font-medium f-noto">お世話に</span>
+          </div>
+        </div>
+        <!-- draggable -->
+        <div
+          class="bg-[url(./images/6_01_35/main_card.svg)] bg-no-repeat bg-cover flex justify-end items-end w-full h-full absolute top-0 left-0 draggable cursor-grab"
+        >
+          <div class="flex items-center justify-center w-177 h-72">
+            <span class="font-medium f-noto">お世話に</span>
+          </div>
+        </div>
+      </div>
+      `);
+
+      $(`[data-name="droppable"]`).html(`
+        <div class="flex me-20">
+          <img
+            src="./images/6_01_35/main_arrow.svg"
+            alt=""
+            class="mt-12 w-34 h-30 me-10"
+          />
+          <span>れんが</span>
+        </div>
+        <div
+          class="flex gap-20 w-803 h-62 bg-[url(./images/6_01_35/main_answer_bg.svg)] bg-no-repeat bg-cover bg-center"
+        >
+          <!-- ------- -->
+          <div class="pb-8 w-174 h-60 droppable"></div>
+          <!-- ------- -->
+          <div class="pb-8 w-174 h-60 droppable"></div>
+          <!-- ------- -->
+          <div class="pb-8 w-174 h-60 droppable"></div>
+          <!-- ------- -->
+          <div class="pb-8 w-174 h-60 droppable"></div>
+        </div>
+      `);
+      dragFn();
+      dropFn();
+    };
+  </script>
+</html>

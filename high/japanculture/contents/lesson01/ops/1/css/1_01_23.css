@@ -1,0 +1,79 @@
+.content-wrap .content-contents-wrap .content-contents {
+  overflow: visible;
+}
+
+.sushi-contents {
+  border-radius: 20px;
+  overflow: hidden;
+  background-color: #cce1f4;
+}
+
+.sushi-contents .image-pop-preview {
+  width: 404px;
+  height: 228px;
+}
+
+.sushi-contents .sushi {
+  padding: 20px 0 0 30px;
+}
+
+.sushi-contents .sushi .tit {
+  color: #3a7270;
+}
+
+.sushi-contents .sushi .cont {
+  padding-left: 44px;
+  margin-top: 10px;
+  line-height: 48px;
+}
+
+.tab-content-1 {
+  line-height: 48px;
+}
+
+.tab-content-1 .image-pop-preview {
+  width: 266px;
+  height: 116px;
+  margin-left: 20px;
+  margin-top: 13px;
+}
+
+.tip-contents {
+  line-height: 37.4px;
+  padding-left: 0;
+  text-indent: 72px;
+  background-position: left top;
+}
+
+.contents-sub-tit {
+  height: 60px;
+}
+
+.img-wrap {
+  display: flex;
+  margin-top: 10px;
+}
+
+.img-wrap > li {
+  width: 380px;
+}
+
+.img-wrap > li + li {
+  margin-left: 70px;
+}
+
+.img-wrap > li .img-container {
+  width: 380px;
+  height: 200px;
+}
+
+.img-wrap > li .txt {
+  width: 100%;
+  text-align: center;
+  margin-top: 6px;
+  line-height: 48px;
+}
+
+.popup-contents {
+  line-height: 52px;
+}

@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>미래엔 일본 문화</title>
+  <script src="./../common/lib/jquery-3.7.1.min.js"></script>
+  <script src="./../common/lib/howler-2.1.3.min.js"></script>
+  <script src="./../common/lib/tailwind.js"></script>
+  <!-- 폰트 -->
+  <link href="./../common/font/suit/suit.css" rel="stylesheet" />
+  <link href="./../common/font/bmjua/bmjua.css" rel="stylesheet" />
+  <link href="./../common/font/nanumsquare/nanumSquare.css" rel="stylesheet" />
+  <link href="./../common/font/notoSansJP/notoSansJP.css" rel="stylesheet" />
+  <link href="./../common/css/tailwind.css" rel="stylesheet" />
+  <link href="./../common/css/fontStyle.css" rel="stylesheet" />
+</head>
+
+<body>
+  <div id="wrap">
+    <!-- contents -->
+    <div class="relative w-full h-full pt-60">
+      <!-- title -->
+      <img src="./../common/images/title_look_culture7.svg" alt="문화 들여다보기1 마쓰리" class="absolute w-764 h-49 top-10" />
+      <!-- header-btn -->
+      <div class="absolute right-0 flex gap-6 top-13" data-name="header-btn">
+        <button data-name="btn-common" class="min-w-62 btn-change-view1" onclick="contentUtil.setPopup(1)">
+          보충 자료
+        </button>
+        <button data-name="btn-common" style="display: none" class="min-w-62 btn-change-view2"
+          onclick="contentUtil.setPopup(3); contentUtil.setPhotoPopup(1)">
+          추가 사진
+        </button>
+      </div>
+      <!-- main -->
+      <div class="flex flex-col w-full h-full">
+        <div class="flex flex-col mb-8 w-763 h-404 leading-52 ps-20">
+          <div class="flex items-center mt-20 mb-4">
+            <img src="./../common/images/index_pink_1.svg" alt="번호 1" class="w-40 h-40 me-4" />
+            <span class="flex font-extrabold f-nanum-s text-40">마쓰리(<span data-audio="7_01_04/104-01.mp3"
+                class="font-bold f-noto"><span class="relative">祭<span
+                    class="font-bold ruby">まつ</span></span>り</span>)란</span>
+          </div>
+          <!-- ======== page 1 ======== -->
+          <div data-name="page" class="flex flex-col font-bold f-nanum-s text-40">
+            <p class="flex pt-12 ps-28">
+              일본의 고유 신앙인 신토(<span data-audio="7_01_04/104-02.mp3" class="font-medium f-noto"><span
+                  class="relative">神<span class="ruby">しん</span></span><span class="relative">道<span
+                    class="ruby">とう</span></span></span>)는 자연에 대한 경외심에서
+            </p>
+            <p>비롯되었는데, 자연 및 세상 만물 곳곳에 있는 신을 모시는</p>
+            <p class="flex pt-12">
+              장소가 바로 신사(<span data-audio="7_01_04/104-03.mp3" class="font-medium f-noto"><span class="relative">神<span
+                    class="ruby">じん</span></span><span class="relative">社<span class="ruby">じゃ</span></span></span>)이다.
+              작은 마을이라도 반드시 하나
+            </p>
+            <p>이상의 신사가 있으며, 크고 작은 신사를 모두 합하면 그 수가</p>
+            <p>편의점 수보다 많다고 한다.</p>
+          </div>
+
+          <!-- ======== page 2 ======== -->
+          <div style="display: none" data-name="page" class="flex flex-col font-bold f-nanum-s text-40">
+            <div>
+              <p class="flex ps-28">
+                마쓰리는 신에게 제사를 드리는 신사의 종교적 의례로 예로
+              </p>
+              <p>
+                부터 신에게 바치는 노래와 춤 등의 예능적 요소가 풍부하였다.
+              </p>
+              <p>이것이 오늘날까지 이어져 종교적 색채 없이 오락적 요소가</p>
+              <p>많은 행사나 축제도 마쓰리라고 한다. 대개 지역 주민들이</p>
+              <p>마쓰리 전반에 주체적으로 참여하며 공동체 구성원 간의 유대</p>
+              <p>를 강화하는 기능도 한다.</p>
+            </div>
+          </div>
+
+          <!-- ======== page 3 ======== -->
+          <div style="display: none" data-name="page" class="flex w-full gap-16 font-bold f-nanum-s text-40">
+            <div>
+              <p>마쓰리를 보기 위해 많은 관광객이</p>
+              <p>찾아오기 때문에 지역 활성화에도</p>
+              <p>도움이 된다.</p>
+            </div>
+
+            <div class="flex flex-col items-center gap-20 min-w-420">
+              <div class="relative">
+                <img class="w-full" src="./images/7_01_04/main_photo1.jpg" alt="신사입구와 도리이" />
+                <button class="absolute bottom-10 right-10" data-name="btn-view"
+                  onclick="contentUtil.setPopup(2);  contentUtil.setPhotoPopup(1)"></button>
+              </div>
+
+              <div class="flex gap-7">
+                <img src="../common/images/popup_photolabel.svg" alt="" />
+                <span>신사의 입구와
+                  <span onclick="contentUtil.setPopup(4)" class="relative cursor-pointer">도리이<button
+                      class="left-[-5px] top-[-14px]" data-name="btn-explan"></button></span></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- pagination -->
+        <div class="absolute -translate-x-1/2 left-1/2 bottom-10" data-name="pagination">
+          <button class="active" data-name="btn-pagination"></button>
+          <button class="" data-name="btn-pagination"></button>
+          <button class="" data-name="btn-pagination"></button>
+        </div>
+      </div>
+    </div>
+    <!-- popup -->
+    <div id="popup-wrap" style="display: none">
+      <!-- 보충 자료 -->
+      <div data-name="popup" data-popup="1" style="display: none">
+        <div data-name="popup-header">
+          <div data-name="popup-title">보충 자료</div>
+          <button data-name="popup-close" onclick="contentUtil.setPopup()"></button>
+        </div>
+        <div data-name="popup-body" class="mt-16 mb-10 font-bold ms-26 f-nanum-s me-6 leading-52 text-40">
+          <div class="flex flex-col">
+            <!-- title -->
+            <div class="flex items-center mb-10 h-55">
+              <img src="./../common/images/popup_titlemark_primary.svg" alt="" class="w-35 h-55 me-10" />
+              <div class="flex">
+                <div class="font-extrabold text-42 text-[#F25F7C]">
+                  <p>신사 참배 방법</p>
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-col gap-10">
+              <div class="flex">
+                <div data-name="number-1" class="bg-[#F78585] me-10 mt-9"></div>
+                <div>
+                  <p>도리이를 통과한 후, 본전에 참배하기 전에 물이 있는</p>
+                  <p class="flex pt-12">
+                    '데미즈야(<span class="font-medium f-noto"><span class="relative">手<span
+                          class="ruby">て</span></span><span class="relative">水<span class="ruby">みず</span></span><span
+                        class="relative">舎<span class="ruby">や</span></span></span>)'에서 입과 손을 씻는다.
+                  </p>
+                </div>
+              </div>
+              <div class="flex">
+                <div data-name="number-2" class="bg-[#F78585] me-10 mt-9"></div>
+                <span>새전함에 돈을 넣는다.</span>
+              </div>
+              <div class="flex">
+                <div data-name="number-3" class="bg-[#F78585] me-10 mt-9"></div>
+                <span>허리를 굽혀 두 번 인사한다.</span>
+              </div>
+              <div class="flex">
+                <div data-name="number-4" class="bg-[#F78585] me-10 mt-9"></div>
+                <span>두 번 박수를 친 후, 합장한 채로 소원을 빈다.</span>
+              </div>
+              <div class="flex">
+                <div data-name="number-5" class="bg-[#F78585] me-10 mt-9"></div>
+                <span>다시 한 번 인사한다.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 사진 팝업창 -->
+      <div data-name="popup" data-popup="2" style="display: none">
+        <div data-name="popup-header">
+          <div data-name="popup-title">사진 팝업창</div>
+          <button data-name="popup-close" onclick="contentUtil.setPopup()"></button>
+        </div>
+        <div data-name="popup-body" class="flex items-center justify-center w-full h-full gap-16">
+          <div class="flex flex-col items-center w-608 h-402" data-name="">
+            <div class="w-full overflow-x-hidden overflow-y-auto pe-4">
+              <img src="./images/7_01_04/popup_photo3.jpg" alt="신사의 입구와 도리이" class="object-contain min-w-608 rounded-10"
+                data-name="" />
+            </div>
+            <div class="flex mt-8 font-bold f-nanum-s h-52 text-40 leading-52 shrink-0">
+              <div class="flex gap-6">
+                <img src="../common/images/popup_photolabel.svg" alt="" />
+                <span data-name=""> 신사의 입구와 도리이 </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 추가 사진 -->
+      <div data-name="popup" data-popup="3" style="display: none">
+        <div data-name="popup-header">
+          <div data-name="popup-title">추가 사진</div>
+          <button data-name="popup-close" onclick="contentUtil.setPopup()"></button>
+        </div>
+        <div data-name="popup-body" class="flex items-center justify-center w-full h-full gap-16">
+          <div class="flex flex-col items-center w-608 h-402" data-name="popup_photo_wrap">
+            <div class="w-full overflow-x-hidden overflow-y-auto pe-4">
+              <img src="./images/7_01_04/popup_photo1.jpg" alt="도리이" class="object-contain min-w-608 rounded-10"
+                data-name="popup_photo" />
+              <img src="./images/7_01_04/popup_photo2.jpg" alt="도리이" class="object-contain min-w-608 rounded-10"
+                data-name="popup_photo" style="display: none" />
+            </div>
+            <div class="flex mt-8 font-bold f-nanum-s h-52 text-40 leading-52 shrink-0">
+              <div data-name="popup_photo_text" class="text-blue">도리이</div>
+              <div style="display: none" data-name="popup_photo_text" class="text-blue">
+                도리이
+              </div>
+            </div>
+          </div>
+          <div class="w-266 h-402">
+            <div class="flex flex-wrap w-full gap-10">
+              <button onclick="contentUtil.setPhotoPopup(1)" data-name="btn-popup_photo" class="w-128 h-72 active">
+                <img src="./images/7_01_04/popup_btn_photo1.jpg" alt="도리이" />
+              </button>
+              <button onclick="contentUtil.setPhotoPopup(2)" data-name="btn-popup_photo" class="w-128 h-72">
+                <img src="./images/7_01_04/popup_btn_photo2.jpg" alt="도리이" />
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 설명 -->
+      <div data-name="popup" class="blue" data-popup="4" style="display: none">
+        <div data-name="popup-header">
+          <div data-name="popup-title">설명</div>
+          <button data-name="popup-close" onclick="contentUtil.setPopup()"></button>
+        </div>
+        <div data-name="popup-body" class="mt-16 overflow-hidden ms-26 f-nanum-s me-6">
+          <div class="flex flex-col">
+            <!-- title -->
+            <div class="flex items-center mb-10 h-55">
+              <img src="./../common/images/popup_titlemark_blue.svg" alt="" class="w-35 h-55 me-10" />
+              <div class="flex font-extrabold text-42 text-[#1D4A99]">
+                <span class="flex">도리이(<span data-audio="7_01_04/104-04.mp3" class="font-bold f-noto">とりい</span>)</span>
+              </div>
+            </div>
+            <!-- text -->
+            <div class="font-bold f-nanum-s text-40 leading-52">
+              <p>신성한 곳이 시작되는 것을 알리는 문으로 신사 입구에서</p>
+              <p>볼 수 있다. 나무로 만들어진 주홍색의 도리이가 가장</p>
+              <p>흔하지만 돌, 금속 등으로 만들어진 것도 있다.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<script type="text/javascript">
+  const page = {
+    isAnswer: false,
+    isVocabulary: false,
+    showAnswer: () => { },
+    hideAnswer: () => { },
+    showVocabulary: () => { },
+  };
+</script>
+<script src="./../common/js/tailwind.config.js"></script>
+<script src="./../common/js/script.js"></script>
+<script type="text/javascript">
+  $(document).ready(function () {
+    // contentUtil.setPage(3);
+  });
+
+  $(`[data-name="btn-pagination"]`).on("click", function () {
+    if ($(this).index() === 2) {
+      $(".btn-change-view2").show();
+    } else {
+      $(".btn-change-view2").hide();
+    }
+  });
+</script>
+
+</html>

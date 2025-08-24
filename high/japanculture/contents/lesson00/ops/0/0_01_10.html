@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>미래엔 일본 문화</title>
+    <script src="./../common/lib/jquery-3.7.1.min.js"></script>
+    <script src="./../common/lib/howler-2.1.3.min.js"></script>
+    <script src="./../common/lib/tailwind.js"></script>
+    <!-- 폰트 -->
+    <link href="./../common/font/suit/suit.css" rel="stylesheet" />
+    <link href="./../common/font/bmjua/bmjua.css" rel="stylesheet" />
+    <link
+      href="./../common/font/nanumsquare/nanumSquare.css"
+      rel="stylesheet"
+    />
+    <link href="./../common/font/notoSansJP/notoSansJP.css" rel="stylesheet" />
+    <link href="./../common/css/tailwind.css" rel="stylesheet" />
+    <link href="./../common/css/fontStyle.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div id="wrap">
+      <!-- contents -->
+      <div class="relative w-full h-full pt-60">
+        <!-- title -->
+        <img
+          src="./../common/images/title_activity.svg"
+          alt="활동"
+          class="absolute w-73 h-52 top-5"
+        />
+        <!-- main -->
+        <div class="flex flex-col w-full h-full">
+          <div
+            class="flex flex-col w-full mb-10 font-extrabold text-40 f-nanum-s leading-52 ps-20"
+          >
+            <p>우리나라 지폐의 인물에 대해 조사하고 발표해 봅시다.</p>
+          </div>
+          <div
+            class="border-4 py-8 ps-20 w-960 pe-4 h-278 mx-auto border-[#84C5A0] rounded-10 mb-8"
+          >
+            <div class="flex items-center w-full h-full">
+              <div
+                data-answer="1"
+                class="flex flex-col w-full gap-10 font-bold text-red text-40 f-nanum-s leading-52"
+                style="display: none"
+              >
+                <!-- ------- -->
+                <div class="flex">
+                  <div class="w-12 h-12 mt-20 rounded-full me-10 bg-red"></div>
+                  <div>1,000원(퇴계 이황)</div>
+                  <div data-name="colon-red">:</div>
+                  <div>조선 시대의 문신, 대학자</div>
+                </div>
+                <!-- ------- -->
+                <div class="flex">
+                  <div class="w-12 h-12 mt-20 rounded-full me-10 bg-red"></div>
+                  <div>5,000원(율곡 이이)</div>
+                  <div data-name="colon-red">:</div>
+                  <div>조선 시대의 대학자, 정치가</div>
+                </div>
+                <!-- ------- -->
+                <div class="flex">
+                  <div class="w-12 h-12 mt-20 rounded-full me-10 bg-red"></div>
+                  <div>10,000원(세종대왕)</div>
+                  <div data-name="colon-red">:</div>
+                  <div>훈민정음 창시</div>
+                </div>
+                <!-- ------- -->
+                <div class="flex">
+                  <div class="w-12 h-12 mt-20 rounded-full me-10 bg-red"></div>
+                  <div>50,000원(신사임당)</div>
+                  <div data-name="colon-red">:</div>
+                  <div>조선 시대의 예술가, 자녀 교육</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="mr-20 ms-auto">
+            <button
+              data-name="btn-common"
+              data-reset="1"
+              onclick="contentUtil.showAnswer(1)"
+            >
+              예시 답안
+            </button>
+            <button
+              data-name="btn-common"
+              data-answer="1"
+              onclick="contentUtil.hideAnswer(1)"
+              style="display: none"
+            >
+              다시 풀기
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- popup -->
+      <div id="popup-wrap" style="display: none"></div>
+    </div>
+  </body>
+  <script type="text/javascript">
+    const page = {
+      isAnswer: false,
+      isVocabulary: false,
+      showAnswer: () => {},
+      hideAnswer: () => {},
+      showVocabulary: () => {},
+    };
+  </script>
+  <script src="./../common/js/tailwind.config.js"></script>
+  <script src="./../common/js/script.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {});
+  </script>
+</html>

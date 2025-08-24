@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>미래엔 일본 문화</title>
+    <script src="./../common/lib/jquery-3.7.1.min.js"></script>
+    <script src="./../common/lib/howler-2.1.3.min.js"></script>
+    <script src="./../common/lib/tailwind.js"></script>
+    <!-- 폰트 -->
+    <link href="./../common/font/suit/suit.css" rel="stylesheet" />
+    <link href="./../common/font/bmjua/bmjua.css" rel="stylesheet" />
+    <link
+      href="./../common/font/nanumsquare/nanumSquare.css"
+      rel="stylesheet"
+    />
+    <link href="./../common/font/notoSansJP/notoSansJP.css" rel="stylesheet" />
+    <link href="./../common/css/tailwind.css" rel="stylesheet" />
+    <link href="./../common/css/fontStyle.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div id="wrap">
+      <!-- contents -->
+      <div class="relative w-full h-full pt-70">
+        <!-- title -->
+        <div class="absolute flex top-4 left-4">
+          <img
+            src="./../common/images/title_learnaboutjapan.svg"
+            alt="일본 알아보기"
+            class="h-56 w-244 me-8"
+          />
+          <div class="flex mt-4 font-bold text-40 leading-52 f-nanum-s">
+            <img
+              src="./../common/images/number_2.svg"
+              alt="1"
+              class="rounded-full w-34 h-34 mt-9 me-6"
+              style="box-shadow: 2px 0 0 #eaa7a4"
+            />
+            <div class="font-extrabold">일본의 지리</div>
+          </div>
+        </div>
+        <!-- main -->
+        <div
+          class="flex flex-col w-full h-full font-bold leading-52 text-40 f-nanum-s"
+        >
+          <div class="flex mb-4 ms-20">
+            <img
+              src="./../common/images/index_yellow_1.svg"
+              alt=""
+              class="w-40 mt-5 me-6 h-42"
+            />
+            <div class="font-extrabold">국토</div>
+          </div>
+          <!-- ======== page 1 ======== -->
+          <div data-name="page" class="flex flex-col ms-20">
+            <p class="ps-28">
+              일본은 국토의 75% 정도가 산지이며, 동서남북으로 많은
+            </p>
+            <p class="flex pt-12">
+              섬들이 흩어져 있다. 홋카이도(<span
+                data-audio="0_01_04/009-01.mp3"
+                class="font-medium f-noto"
+                ><span class="relative">北<span class="ruby">ほっ</span></span
+                ><span class="relative">海<span class="ruby">かい</span></span
+                ><span class="relative"
+                  >道<span class="ruby">どう</span></span
+                ></span
+              >), 혼슈(<span
+                data-audio="0_01_04/009-02.mp3"
+                class="font-medium f-noto"
+                ><span class="relative">本<span class="ruby">ほん</span></span
+                ><span class="relative"
+                  >州<span class="ruby tracking-[-0.25em]">しゅう</span></span
+                ></span
+              >), 시코쿠
+            </p>
+            <p class="flex pt-12">
+              (<span data-audio="0_01_04/009-03.mp3" class="font-medium f-noto"
+                ><span class="relative">四<span class="ruby">し</span></span
+                ><span class="relative"
+                  >国<span class="ruby">こく</span></span
+                ></span
+              >), 규슈(<span
+                data-audio="0_01_04/009-04.mp3"
+                class="font-medium f-noto"
+                ><span class="relative"
+                  >九州<span class="ruby tracking-[-0.25em]"
+                    >きゅうしゅう</span
+                  ></span
+                ></span
+              >) 4개의 큰 섬과 14,125개(국토지리원,
+            </p>
+            <p>2022년)의 작은 섬들로 이루어져 있다.</p>
+            <p class="ps-28">
+              해안은 복잡한 지형으로 이루어져 있으며, 강은 짧고 급류가
+            </p>
+            <p>많아 재해가 잦다.</p>
+          </div>
+          <!-- ======== page 2 ======== -->
+          <div
+            data-name="page"
+            class="flex flex-col ms-20"
+            style="display: none"
+          >
+            <div>
+              <p>일본 열도는 남북으로 등뼈와 같은</p>
+              <p>산맥이 있는 것이 특징이며, 주부</p>
+              <p class="flex pt-12">
+                (<span
+                  data-audio="0_01_04/009-05.mp3"
+                  class="font-medium f-noto"
+                  ><span class="relative"
+                    >中<span class="ruby tracking-[-0.25em]">ちゅう</span></span
+                  ><span class="relative"
+                    >部<span class="ruby">ぶ</span></span
+                  ></span
+                >) 지방에 있는 가장 높은 3개의
+              </p>
+              <p>산맥을 ‘일본의 알프스'라고 부른다.</p>
+              <p>그리고 가고시마현의 ‘사쿠라지마'를</p>
+              <p>비롯하여 많은 활화산이 있다.</p>
+            </div>
+            <!-- img box -->
+            <div class="absolute flex flex-col gap-10 right-20 bottom-18">
+              <div class="relative w-320 h-190">
+                <img
+                  src="./images/0_01_04/main_photo1.jpg"
+                  alt=""
+                  class="w-full h-full"
+                />
+                <button
+                  data-name="btn-view"
+                  class="absolute right-10 bottom-10"
+                  onclick="contentUtil.setPopup(1); contentUtil.setPhotoPopup(1);"
+                ></button>
+              </div>
+              <div class="relative w-320 h-190">
+                <img
+                  src="./images/0_01_04/main_photo2.jpg"
+                  alt=""
+                  class="w-full h-full"
+                />
+                <button
+                  data-name="btn-view"
+                  class="absolute right-10 bottom-10"
+                  onclick="contentUtil.setPopup(1); contentUtil.setPhotoPopup(2);"
+                ></button>
+              </div>
+            </div>
+          </div>
+          <!-- pagination -->
+          <div
+            class="absolute -translate-x-1/2 left-1/2 bottom-10"
+            data-name="pagination"
+          >
+            <button class="active" data-name="btn-pagination"></button>
+            <button class="" data-name="btn-pagination"></button>
+          </div>
+        </div>
+      </div>
+      <!-- popup -->
+      <div id="popup-wrap" style="display: none">
+        <!-- 사진 팝업창 -->
+        <div data-name="popup" data-popup="1" style="display: none">
+          <div data-name="popup-header">
+            <div data-name="popup-title">사진 팝업창</div>
+            <button
+              data-name="popup-close"
+              onclick="contentUtil.setPopup()"
+            ></button>
+          </div>
+          <div
+            data-name="popup-body"
+            class="flex items-center justify-center w-full h-full gap-16"
+          >
+            <div
+              class="flex flex-col items-center w-608 h-410"
+              data-name="popup_photo_wrap"
+            >
+              <div class="w-full overflow-x-hidden overflow-y-auto pe-4">
+                <img
+                  src="./images/0_01_04/popup_photo1.jpg"
+                  alt=""
+                  class="object-contain min-w-608 rounded-10"
+                  data-name="popup_photo"
+                />
+                <div
+                  data-name="popup_photo"
+                  class="w-full"
+                  style="display: none"
+                >
+                  <img
+                    src="./images/0_01_04/popup_photo2.jpg"
+                    alt=""
+                    class="object-contain w-full mb-20 rounded-10"
+                  />
+                  <div class="flex items-start justify-center">
+                    <img
+                      src="./../common/images/popup_photolabel.svg"
+                      alt=""
+                      class="min-w-34 h-52 me-3"
+                    />
+                    <div
+                      class="flex flex-col items-center font-bold f-nanum-s text-40 leading-52"
+                    >
+                      <p class="flex">
+                        가고시마현(<span
+                          data-audio="0_01_04/009-07.mp3"
+                          class="font-medium f-noto"
+                          ><span class="relative"
+                            >鹿<span class="ruby">か</span></span
+                          ><span class="relative"
+                            >児<span class="ruby">ご</span></span
+                          ><span class="relative"
+                            >島<span class="ruby">しま</span></span
+                          ><span class="relative"
+                            >県<span class="ruby">けん</span></span
+                          ></span
+                        >)의
+                      </p>
+                      <p class="flex pt-12">
+                        사쿠라지마(<span
+                          data-audio="0_01_04/009-08.mp3"
+                          class="font-medium f-noto"
+                          ><span class="relative"
+                            >桜<span
+                              class="ruby tracking-[-0.25em] absolute left-15"
+                              >さくら</span
+                            ></span
+                          ><span class="relative"
+                            >島<span class="ruby">じま</span></span
+                          ></span
+                        >)
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                data-name="popup_photo_text"
+                class="flex pt-12 mt-8 font-bold f-nanum-s h-52 text-40 leading-52 shrink-0"
+              >
+                <span class="flex"
+                  >일본의 북알프스와 나가노현(<span
+                    data-audio="0_01_04/009-06.mp3"
+                    class="font-medium f-noto"
+                    ><span class="relative"
+                      >長<span class="ruby">なが</span></span
+                    ><span class="relative">野<span class="ruby">の</span></span
+                    ><span class="relative"
+                      >県<span class="ruby">けん</span></span
+                    ></span
+                  >)</span
+                >
+              </div>
+              <div
+                data-name="popup_photo_text"
+                class="h-0 overflow-hidden"
+                style="display: none"
+              ></div>
+            </div>
+            <div class="w-266 h-402">
+              <div class="flex flex-wrap w-full gap-10">
+                <button
+                  data-name="btn-popup_photo"
+                  class="w-128 h-72 active"
+                  onclick="contentUtil.setPhotoPopup(1)"
+                >
+                  <img src="./images/0_01_04/popup_btn_photo1.jpg" alt="" />
+                </button>
+                <button
+                  data-name="btn-popup_photo"
+                  class="w-128 h-72"
+                  onclick="contentUtil.setPhotoPopup(2)"
+                >
+                  <img src="./images/0_01_04/popup_btn_photo2.jpg" alt="" />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript">
+    const page = {
+      isAnswer: false,
+      isVocabulary: false,
+      showAnswer: () => {},
+      hideAnswer: () => {},
+      showVocabulary: () => {},
+    };
+  </script>
+  <script src="./../common/js/tailwind.config.js"></script>
+  <script src="./../common/js/script.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {});
+  </script>
+</html>

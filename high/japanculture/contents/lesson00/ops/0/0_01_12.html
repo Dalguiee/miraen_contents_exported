@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>미래엔 일본 문화</title>
+    <script src="./../common/lib/jquery-3.7.1.min.js"></script>
+    <script src="./../common/lib/howler-2.1.3.min.js"></script>
+    <script src="./../common/lib/tailwind.js"></script>
+    <!-- 폰트 -->
+    <link href="./../common/font/suit/suit.css" rel="stylesheet" />
+    <link href="./../common/font/bmjua/bmjua.css" rel="stylesheet" />
+    <link
+      href="./../common/font/nanumsquare/nanumSquare.css"
+      rel="stylesheet"
+    />
+    <link href="./../common/font/notoSansJP/notoSansJP.css" rel="stylesheet" />
+    <link href="./../common/css/tailwind.css" rel="stylesheet" />
+    <link href="./../common/css/fontStyle.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div id="wrap">
+      <!-- contents -->
+      <div class="relative w-full h-full pt-70">
+        <!-- title -->
+        <div class="absolute flex top-4 left-4">
+          <img
+            src="./../common/images/title_learnaboutjapan.svg"
+            alt="일본 알아보기"
+            class="h-56 w-244 me-8"
+          />
+          <div class="flex mt-4 font-bold text-40 leading-52 f-nanum-s">
+            <img
+              src="./../common/images/number_4.svg"
+              alt="1"
+              class="rounded-full w-34 h-34 mt-9 me-6"
+              style="box-shadow: 2px 0 0 #eaa7a4"
+            />
+            <div class="font-extrabold">일본어</div>
+          </div>
+        </div>
+        <!-- header-btn -->
+        <div class="absolute right-0 flex gap-6 top-13" data-name="header-btn">
+          <button data-name="btn-common" onclick="contentUtil.setPopup(1)">
+            해설 보기
+          </button>
+        </div>
+        <!-- main -->
+        <div
+          class="flex flex-col w-full h-full font-bold leading-52 text-40 f-nanum-s"
+        >
+          <div class="flex mb-4 ms-20">
+            <img
+              src="./../common/images/index_yellow_1.svg"
+              alt=""
+              class="w-40 mt-5 me-6 h-42"
+            />
+            <div class="font-extrabold">문자</div>
+          </div>
+          <!-- ======== page 1 ======== -->
+          <div data-name="page" class="flex flex-col ms-20">
+            <p class="flex ps-28">
+              일본어에서 문자는 ‘히라가나(<span
+                data-audio="0_01_12/013-01.mp3"
+                class="font-medium f-noto"
+                >ひらがな</span
+              >), 가타카나
+            </p>
+            <p class="flex">
+              (<span data-audio="0_01_12/013-02.mp3" class="font-medium f-noto"
+                >カタカナ</span
+              >), 한자(<span
+                data-audio="0_01_12/013-03.mp3"
+                class="font-medium f-noto"
+                >漢字</span
+              >)’가 주로 쓰이며 로마자, 숫자 등이
+            </p>
+            <p>보조적으로 사용된다.</p>
+          </div>
+          <!-- ======== page 2 ======== -->
+          <div
+            data-name="page"
+            class="flex flex-col ms-20"
+            style="display: none"
+          >
+            <div class="flex items-center mt-26">
+              <div class="relative w-269 h-260 me-40">
+                <img
+                  src="./images/0_01_12/main_photo1.jpg"
+                  alt=""
+                  class="w-full h-full"
+                />
+                <button
+                  data-name="btn-view"
+                  class="absolute right-20 bottom-20"
+                  onclick="contentUtil.setPopup(2)"
+                ></button>
+              </div>
+              <div class="flex flex-col items-start">
+                <div class="py-2 px-8 bg-[#739678] text-white mb-12">
+                  <span
+                    data-audio="0_01_12/013-01.mp3"
+                    class="font-medium f-noto"
+                    >ひらがな</span
+                  >(히라가나)
+                </div>
+                <div>
+                  <p>한자의 흘림체로 만든 문자로, 현대 일본어</p>
+                  <p>에서는 46개를 사용하고 있다.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ======== page 3 ======== -->
+          <div
+            data-name="page"
+            class="flex flex-col ms-20"
+            style="display: none"
+          >
+            <div class="flex items-center mt-26">
+              <div class="relative w-269 h-260 me-40">
+                <img
+                  src="./images/0_01_12/main_photo1.jpg"
+                  alt=""
+                  class="w-full h-full"
+                />
+                <button
+                  data-name="btn-view"
+                  class="absolute right-20 bottom-20"
+                  onclick="contentUtil.setPopup(2)"
+                ></button>
+              </div>
+              <div class="flex flex-col items-start">
+                <div class="py-2 px-8 bg-[#739678] text-white mb-12">
+                  <span
+                    data-audio="0_01_12/013-02.mp3"
+                    class="font-medium f-noto"
+                    >カタカナ</span
+                  >(가타카나)
+                </div>
+                <div>
+                  <p>한자 획의 일부를 따서 만든 문자로,</p>
+                  <p>외래어·의성어·의태어·강조하고 싶은</p>
+                  <p>말 등의 표기에 주로 사용한다.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ======== page 4 ======== -->
+          <div
+            data-name="page"
+            class="flex flex-col ms-20"
+            style="display: none"
+          >
+            <div class="flex items-center mt-26">
+              <div class="relative w-269 h-260 me-40">
+                <img
+                  src="./images/0_01_12/main_photo1.jpg"
+                  alt=""
+                  class="w-full h-full"
+                />
+                <button
+                  data-name="btn-view"
+                  class="absolute right-20 bottom-20"
+                  onclick="contentUtil.setPopup(2)"
+                ></button>
+              </div>
+              <div class="flex flex-col items-start">
+                <div class="py-2 px-8 bg-[#739678] text-white mb-12">
+                  <span
+                    data-audio="0_01_12/013-03.mp3"
+                    class="font-medium f-noto"
+                    >漢字</span
+                  >(한자)
+                </div>
+                <div>
+                  <p>정자가 아닌 약자를 사용하고 있다.</p>
+                </div>
+                <div class="flex font-medium f-noto">
+                  <img
+                    src="./images/0_01_12/label_ex_gray.svg"
+                    alt="예"
+                    class="w-40 h-40 mt-9 me-20"
+                  />
+                  <div
+                    class="w-12 h-12 mt-22 me-8 bg-[#B34840] rounded-full"
+                  ></div>
+                  <div class="me-10">國</div>
+                  <img
+                    src="./images/0_01_12/main_arrow_black.svg"
+                    alt=""
+                    class="w-32 h-24 mt-14 me-10"
+                  />
+                  <div data-audio="0_01_12/013-04.mp3" class="me-40">国</div>
+                  <div
+                    class="w-12 h-12 mt-22 me-8 bg-[#B34840] rounded-full"
+                  ></div>
+                  <div class="me-10">學</div>
+                  <img
+                    src="./images/0_01_12/main_arrow_black.svg"
+                    alt=""
+                    class="w-32 h-24 mt-14 me-10"
+                  />
+                  <div data-audio="0_01_12/013-05.mp3">学</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- pagination -->
+          <div
+            class="absolute -translate-x-1/2 left-1/2 bottom-10"
+            data-name="pagination"
+          >
+            <button class="active" data-name="btn-pagination"></button>
+            <button class="" data-name="btn-pagination"></button>
+            <button class="" data-name="btn-pagination"></button>
+            <button class="" data-name="btn-pagination"></button>
+          </div>
+        </div>
+      </div>
+      <!-- popup -->
+      <div id="popup-wrap" style="display: none">
+        <!-- 해설 보기 -->
+        <div data-name="popup" data-popup="1" style="display: none">
+          <div data-name="popup-header">
+            <div data-name="popup-title">해설 보기</div>
+            <button
+              data-name="popup-close"
+              onclick="contentUtil.setPopup()"
+            ></button>
+          </div>
+          <div
+            data-name="popup-body"
+            class="mt-16 mb-10 font-bold ms-26 f-nanum-s me-6 text-40 leading-52"
+          >
+            <div class="flex flex-col">
+              <!-- title -->
+              <div class="flex items-center mb-10 h-55">
+                <img
+                  src="./../common/images/popup_titlemark_primary.svg"
+                  alt=""
+                  class="w-35 h-55 me-10"
+                />
+                <div class="flex font-extrabold text-42 text-[#41674B]">
+                  히라가나
+                </div>
+              </div>
+              <!-- text -->
+              <div class="mb-40">
+                <p>히라가나는 한자 초서체(흘림체)에서 만들어져 글자 모양</p>
+                <p>이 둥글고 부드러운 형태이다. 헤이안 시대에 주로 평민들</p>
+                <p class="flex">
+                  과 여성들이 사용하여 ‘온나데(<span class="font-medium f-noto"
+                    >おんなで</span
+                  >)’라고 불리기도
+                </p>
+                <p>하였으며, 공문서 등에 한자와 가타카나만 사용되던 시기도</p>
+                <p>있었다.</p>
+              </div>
+              <!-- title -->
+              <div class="flex items-center mb-10 h-55">
+                <img
+                  src="./../common/images/popup_titlemark_primary.svg"
+                  alt=""
+                  class="w-35 h-55 me-10"
+                />
+                <div class="flex font-extrabold text-42 text-[#41674B]">
+                  오십음도
+                </div>
+              </div>
+              <!-- text -->
+              <div class="mb-10">
+                <p class="flex">
+                  일본어 문자인 ‘가나(<span class="font-medium f-noto"
+                    >かな</span
+                  >)’를 5개의 ‘단’과 10개의 ‘행’으로
+                </p>
+                <p class="flex">
+                  배열한 표를 말한다. ‘단(<span class="font-medium f-noto"
+                    >段</span
+                  >)’은 같은 모음이 들어간 글자
+                </p>
+                <p class="flex">
+                  들로 ‘a’ 모음이 들어간 글자는 ‘<span
+                    class="font-medium f-noto"
+                    >あ</span
+                  >단’, ‘i’ 모음이 들어간
+                </p>
+                <p class="flex">
+                  글자는 ‘<span class="font-medium f-noto">い</span>단’, ‘u’
+                  모음이 들어간 글자는 ‘<span class="font-medium f-noto"
+                    >う</span
+                  >단’, ‘e’ 모음이
+                </p>
+                <p class="flex">
+                  들어간 글자는 ‘<span class="font-medium f-noto">え</span>단’,
+                  ‘o’ 모음이 들어간 글자는 ‘<span class="font-medium f-noto"
+                    >お</span
+                  >단’
+                </p>
+                <p class="flex">
+                  이라고 한다. ‘행(<span class="font-medium f-noto">行</span
+                  >)’은 ‘<span class="font-medium f-noto">あ</span>행(<span
+                    class="font-medium f-noto"
+                    >あ</span
+                  >,&nbsp;<span class="font-medium f-noto">い</span>,&nbsp;<span
+                    class="font-medium f-noto"
+                    >う</span
+                  >,&nbsp;<span class="font-medium f-noto">え</span>,&nbsp;<span
+                    class="font-medium f-noto"
+                    >お</span
+                  >)’을 제외
+                </p>
+                <p>하고 같은 자음을 가진 글자들로 되어 있다. 오십음도는</p>
+                <p>현재 50개의 글자 중 없어지거나 음이 중복되어 쓰이지</p>
+                <p class="flex">
+                  않는 글자가 제외되고 ‘<span class="font-medium f-noto"
+                    >ん</span
+                  >’이 포함되어 46개이다.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 사진 팝업창 -->
+        <div data-name="popup" data-popup="2" style="display: none">
+          <div data-name="popup-header">
+            <div data-name="popup-title">사진 팝업창</div>
+            <button
+              data-name="popup-close"
+              onclick="contentUtil.setPopup()"
+            ></button>
+          </div>
+          <div
+            data-name="popup-body"
+            class="flex items-center justify-center w-full h-full"
+          >
+            <img
+              src="./images/0_01_12/popup_photo1.jpg"
+              alt=""
+              class="w-730 h-400 rounded-10"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript">
+    const page = {
+      isAnswer: false,
+      isVocabulary: false,
+      showAnswer: () => {},
+      hideAnswer: () => {},
+      showVocabulary: () => {},
+    };
+  </script>
+  <script src="./../common/js/tailwind.config.js"></script>
+  <script src="./../common/js/script.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $(`[data-name="btn-pagination"]`).on("click", function () {
+        if ($(this).index() > 1) {
+          $(`[data-name ="btn-common"]`).css("display", "none");
+        } else {
+          $(`[data-name ="btn-common"]`).css("display", "block");
+        }
+      });
+    });
+  </script>
+</html>

@@ -1,0 +1,26 @@
+.contents-sub-cont {
+  line-height: 52px;
+}
+
+.img-wrap {
+  margin-top: 5px;
+}
+
+.img-wrap li + li {
+  margin-top: 30px;
+}
+
+.image-pop-preview {
+  width: 240px;
+  height: 144px;
+}
+
+.image-pop-preview + .txt {
+  width: 100%;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.image-pop-preview + .txt.ft-36 {
+  line-height: 46.8px;
+}

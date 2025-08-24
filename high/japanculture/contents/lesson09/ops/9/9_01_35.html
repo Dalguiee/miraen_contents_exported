@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>미래엔 일본 문화</title>
+    <script src="./../common/lib/jquery-3.7.1.min.js"></script>
+    <script src="./../common/lib/howler-2.1.3.min.js"></script>
+    <script src="./../common/lib/tailwind.js"></script>
+    <!-- 폰트 -->
+    <link href="./../common/font/suit/suit.css" rel="stylesheet" />
+    <link href="./../common/font/bmjua/bmjua.css" rel="stylesheet" />
+    <link
+      href="./../common/font/nanumsquare/nanumSquare.css"
+      rel="stylesheet"
+    />
+    <link href="./../common/font/notoSansJP/notoSansJP.css" rel="stylesheet" />
+    <link href="./../common/css/tailwind.css" rel="stylesheet" />
+    <link href="./../common/css/fontStyle.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div id="wrap">
+      <!-- contents -->
+      <div class="relative flex flex-col w-full h-full pt-70">
+        <!-- title -->
+        <img
+          src="./../common/images/title_check.svg"
+          alt="확인하기"
+          class="absolute left-0 w-163 h-50 top-10"
+        />
+        <div class="absolute right-0 flex gap-6 top-13">
+          <button data-name="btn-common" onclick="contentUtil.setPopup(1)">
+            해설 보기
+          </button>
+        </div>
+
+        <!-- main -->
+        <div class="flex flex-col flex-1 w-full leading-52 f-nanum-s text-40">
+          <div class="flex items-center mb-10">
+            <img
+              src="./images/9_01_35/title_index_1.svg"
+              alt="label"
+              class="me-12"
+            />
+            <div class="font-extrabold">
+              <p>밑줄 친 ‘이것’에 해당하는 말을 써 봅시다.</p>
+            </div>
+          </div>
+          <div class="flex justify-center w-full h-full">
+            <div class="flex flex-col items-center w-960">
+              <!-- content box -->
+              <div
+                class="content_box flex flex-col border-3 gap-20 w-full border-[#D98697] rounded-20 px-11 pt-17 pb-11"
+              >
+                <!-- --------- -->
+                <div class="flex flex-col font-bold">
+                  <p class="ps-28 mb-6">
+                    문화 산업의 기본 전략으로 알려져 있는
+                    <span class="relative"
+                      >이것<span
+                        class="w-70 h-3 absolute -bottom-5 left-2 bg-black"
+                      ></span></span
+                    >은 하나의
+                    <!--   <span class="underline underline-offset-[13px] decoration-3"
+                      >이것</span
+                     -->
+                  </p>
+                  <p>소스로 다양한 장르의 콘텐츠를 만드는 것을 말한다.</p>
+                </div>
+              </div>
+              <div class="w-full mt-10 pl-116 flex gap-28">
+                <div>
+                  <div
+                    class="w-715 h-64 border-[#D98999] border-b-3 flex items-center justify-center relative"
+                  >
+                    <span
+                      style="display: none"
+                      data-answer="1"
+                      data-audio="9_01_45/115-03.mp3"
+                      class="leading-52 text-red font-bold"
+                      >원 소스 멀티유스(One Source Multi-Use)</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- popup -->
+      <div id="popup-wrap" style="display: none">
+        <!-- 해설 보기 -->
+        <div data-name="popup" data-popup="1" style="display: none">
+          <div data-name="popup-header">
+            <div data-name="popup-title">해설 보기</div>
+            <button
+              data-name="popup-close"
+              onclick="contentUtil.setPopup()"
+            ></button>
+          </div>
+          <div
+            data-name="popup-body"
+            class="flex-1 mt-16 mb-10 overflow-hidden ms-26 f-nanum-s me-6"
+          >
+            <div class="flex flex-col font-bold text-40 leading-52 f-nanum-s">
+              <!-- title -->
+              <div class="flex items-center mb-10 h-55">
+                <img
+                  src="./../common/images/popup_titlemark_primary.svg"
+                  alt=""
+                  class="w-35 h-55 me-10"
+                />
+                <div class="flex font-extrabold text-42 text-[#F25F7C]">
+                  해설
+                </div>
+              </div>
+              <!-- text -->
+              <div class="leading-52">
+                <p>문화 산업의 기본 전략이며, 하나의 소스로 다양한 장르의</p>
+                <p>콘텐츠를 만드는 것을 ‘원 소스 멀티유스(One Source</p>
+                <p>Multi-Use)’라고 한다.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ======================임시버튼============================== -->
+      <div class="absolute bottom-0 right-0">
+        <button class="btn-all-answer text-12">정답 보기</button>
+        <button class="btn-all-reset text-12" style="display: none">
+          다시 풀기
+        </button>
+      </div>
+      <!-- ======================================================== -->
+    </div>
+  </body>
+  <script type="text/javascript">
+    const page = {
+      isAnswer: true,
+      isVocabulary: false,
+      showAnswer: () => {
+        contentUtil.showAnswer();
+        $(".content_box [data-audio]").css("pointer-events", "auto");
+      },
+      hideAnswer: () => {
+        contentUtil.hideAnswer();
+        $(".content_box [data-audio]")
+          .removeClass("speak")
+          .css("pointer-events", "none");
+        audio.pause();
+      },
+      showVocabulary: () => {},
+    };
+  </script>
+  <script src="./../common/js/tailwind.config.js"></script>
+  <script src="./../common/js/script.js"></script>
+
+  <script type="text/javascript">
+    $(document).ready(function () {
+      // contentUtil.setPopup(1);
+      // $(".content_box [data-audio]").css("pointer-events", "none");
+    });
+  </script>
+</html>

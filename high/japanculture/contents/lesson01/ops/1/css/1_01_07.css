@@ -1,0 +1,26 @@
+.contents-sub-cont .image-pop-preview {
+  width: 335px;
+  margin: 10px 0 0 25px;
+}
+
+.contents-sub-cont .image-pop-preview .btn-image-zoom {
+  bottom: -40px;
+}
+
+.contents-sub-cont .contents-left {
+  width: calc(100% - 360px);
+}
+
+.popup-contents .contents-sub-cont img {
+  width: 270px;
+  margin: 10px 0 0 63px;
+}
+
+.img-full-popup .contents-popup .popup-contents-wrap {
+  padding-top: 37px;
+}
+
+.image-pop-preview .btn-image-zoom::after {
+  right: 2px;
+  bottom: 19px;
+}

@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>미래엔 일본 문화</title>
+    <script src="./../common/lib/jquery-3.7.1.min.js"></script>
+    <script src="./../common/lib/howler-2.1.3.min.js"></script>
+    <script src="./../common/lib/tailwind.js"></script>
+    <!-- 폰트 -->
+    <link href="./../common/font/suit/suit.css" rel="stylesheet" />
+    <link href="./../common/font/bmjua/bmjua.css" rel="stylesheet" />
+    <link
+      href="./../common/font/nanumsquare/nanumSquare.css"
+      rel="stylesheet"
+    />
+    <link href="./../common/font/notoSansJP/notoSansJP.css" rel="stylesheet" />
+    <link href="./../common/css/tailwind.css" rel="stylesheet" />
+    <link href="./../common/css/fontStyle.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div id="wrap">
+      <!-- contents -->
+      <div class="relative w-full h-full pt-60">
+        <!-- title -->
+        <img
+          src="./../common/images/title_look_culture7.svg"
+          alt="문화 들여다보기1 마쓰리"
+          class="absolute w-764 h-49 top-10"
+        />
+        <!-- header-btn -->
+        <div class="absolute right-0 flex gap-6 top-13" data-name="header-btn">
+          <button
+            data-name="btn-common"
+            onclick="contentUtil.setPopup(1); contentUtil.setPhotoPopup(1)"
+          >
+            추가 사진
+          </button>
+        </div>
+
+        <!-- main -->
+        <div class="flex flex-col w-full h-full">
+          <div
+            class="flex flex-col w-full mb-8 h-404 text-40 f-nanum-s leading-52 ps-20"
+          >
+            <div class="flex items-center mt-10 mb-4">
+              <img
+                src="./../common/images/index_pink_3.svg"
+                alt="번호 3"
+                class="w-40 h-40 me-4"
+              />
+              <span class="font-extrabold f-nanum-s text-40 flex"
+                >그 밖의 다양한 마쓰리
+              </span>
+            </div>
+            <div class="flex mb-4">
+              <div data-name="number-1" class="bg-[#C84935]"></div>
+              <span class="text-[#C84935] font-extrabold flex"
+                >아와오도리(<span
+                  data-audio="7_01_13/106-02.mp3"
+                  class="f-noto font-bold"
+                  >あわおどり</span
+                >)</span
+              >
+            </div>
+            <div class="flex flex-col font-bold">
+              <p class="ps-28">
+                ‘아와오도리’는 매년 8월 중순 도쿠시마에서 개최되는 큰
+              </p>
+              <p>규모의 마쓰리이다. 많은 팀이 마쓰리에 참가하는데, 남녀가</p>
+              <p>서로 다른 복장을 하고 샤미센과 피리 반주에 맞추어 춤추면서</p>
+              <p>행렬을 형성한다. 보는 사람도 즐겁고 춤을</p>
+              <p>추는 사람도 즐거운 마쓰리로, 유료 관람석이</p>
+              <p>설치될 정도로 인기가 있다.</p>
+            </div>
+
+            <div class="absolute top-60 right-0 flex justify-center qr_box">
+              <img src="./images/7_01_13/qrCode.svg" alt="큐알코드" />
+              <button
+                data-name="btn-common-light"
+                class="absolute top-70 min-w-0 p-0 h-30 w-40"
+                onclick="window.open('https://www.awaodorimirai.com/')"
+              >
+                <img
+                  class="w-26 h-14"
+                  src="../common/images/qrBtn.svg"
+                  alt="큐알버튼"
+                />
+              </button>
+            </div>
+            <!-- img box -->
+            <div class="absolute flex gap-10 mt-6 right-20 bottom-12">
+              <div class="relative overflow-hidden w-264 h-160 rounded-10">
+                <img
+                  src="./images/7_01_13/main_photo1.jpg"
+                  alt="아와오도리"
+                  class="w-full h-full"
+                />
+                <button
+                  data-name="btn-view"
+                  class="absolute bottom-10 right-10"
+                  onclick="contentUtil.setPopup(3); contentUtil.setPhotoPopup(3);"
+                ></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- popup -->
+      <div id="popup-wrap" style="display: none">
+        <!-- 추가 사진 -->
+        <div data-name="popup" data-popup="1" style="display: none">
+          <div data-name="popup-header">
+            <div data-name="popup-title">추가 사진</div>
+            <button
+              data-name="popup-close"
+              onclick="contentUtil.setPopup()"
+            ></button>
+          </div>
+          <div
+            data-name="popup-body"
+            class="flex items-center justify-center w-full h-full gap-16"
+          >
+            <div
+              class="flex flex-col items-center w-608 h-402"
+              data-name="popup_photo_wrap"
+            >
+              <div class="w-full overflow-x-hidden overflow-y-auto pe-4 h-342">
+                <img
+                  src="./images/7_01_13/popup_photo1.jpg"
+                  alt="아와오도리"
+                  class="object-contain min-w-608 rounded-10"
+                  data-name="popup_photo"
+                />
+                <img
+                  src="./images/7_01_13/popup_photo2.jpg"
+                  alt="아와오도리"
+                  class="object-contain min-w-608 rounded-10"
+                  data-name="popup_photo"
+                  style="display: none"
+                />
+              </div>
+              <div
+                class="flex mt-8 font-bold f-nanum-s h-52 text-40 leading-52 shrink-0"
+              >
+                <div data-name="popup_photo_text" class="text-blue">
+                  아와오도리
+                </div>
+                <div
+                  style="display: none"
+                  data-name="popup_photo_text"
+                  class="text-blue"
+                >
+                  아와오도리
+                </div>
+              </div>
+            </div>
+            <div class="w-266 h-402">
+              <div class="flex flex-wrap w-full gap-10">
+                <button
+                  data-name="btn-popup_photo"
+                  class="w-128 h-72 active"
+                  onclick="contentUtil.setPhotoPopup(1)"
+                >
+                  <img
+                    src="./images/7_01_13/popup_btn_photo1.jpg"
+                    alt="아와오도리"
+                  />
+                </button>
+                <button
+                  data-name="btn-popup_photo"
+                  class="w-128 h-72"
+                  onclick="contentUtil.setPhotoPopup(2)"
+                >
+                  <img
+                    src="./images/7_01_13/popup_btn_photo2.jpg"
+                    alt="아와오도리"
+                  />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 사진 팝업창 -->
+        <div data-name="popup" data-popup="3" style="display: none">
+          <div data-name="popup-header">
+            <div data-name="popup-title">사진 팝업창</div>
+            <button
+              data-name="popup-close"
+              onclick="contentUtil.setPopup()"
+            ></button>
+          </div>
+          <div
+            data-name="popup-body"
+            class="flex items-center justify-center w-full h-full gap-16"
+          >
+            <div
+              class="flex flex-col items-center w-608 h-402"
+              data-name="popup_photo_wrap"
+            >
+              <div class="w-full overflow-x-hidden overflow-y-auto pe-4">
+                <img
+                  src="./images/7_01_13/popup_photo3.jpg"
+                  alt="아와오도리"
+                  class="object-contain min-w-608 rounded-10"
+                  data-name="popup_photo"
+                />
+              </div>
+              <div
+                class="flex mt-8 font-bold f-nanum-s h-52 text-40 leading-52 shrink-0"
+              >
+                <div data-name="popup_photo_text">아와오도리</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript">
+    const page = {
+      isAnswer: false,
+      isVocabulary: false,
+      showAnswer: () => {},
+      hideAnswer: () => {},
+      showVocabulary: () => {},
+    };
+  </script>
+  <script src="./../common/js/tailwind.config.js"></script>
+  <script src="./../common/js/script.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      // contentUtil.setPopup(1);
+    });
+    $(`[data-name="btn-pagination"]`).on("click", function () {
+      if ($(this).index() === 1) {
+        $(".qr_box").hide();
+      } else {
+        $(".qr_box").show();
+      }
+    });
+  </script>
+</html>

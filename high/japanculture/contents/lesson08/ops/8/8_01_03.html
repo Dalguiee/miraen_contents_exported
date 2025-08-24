@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>미래엔 일본 문화</title>
+    <script src="./../common/lib/jquery-3.7.1.min.js"></script>
+    <script src="./../common/lib/howler-2.1.3.min.js"></script>
+    <script src="./../common/lib/tailwind.js"></script>
+    <script src="./../common/lib/libBundle-jc.js"></script>
+    <!-- 폰트 -->
+    <link href="./../common/font/suit/suit.css" rel="stylesheet" />
+    <link href="./../common/font/bmjua/bmjua.css" rel="stylesheet" />
+    <link
+      href="./../common/font/nanumsquare/nanumSquare.css"
+      rel="stylesheet"
+    />
+    <link href="./../common/font/notoSansJP/notoSansJP.css" rel="stylesheet" />
+    <link href="./../common/css/tailwind.css" rel="stylesheet" />
+    <link href="./../common/css/fontStyle.css" rel="stylesheet" />
+    <!-- 영상 라이브러리 -->
+    <link href="./../common/css/libBundle.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div id="wrap">
+      <!-- contents -->
+      <div class="relative w-full h-full pt-60">
+        <!-- title -->
+        <img
+          src="./../common/images/title_open_thoughts.svg"
+          alt="생각 열기"
+          class="absolute w-190 h-44 top-10"
+        />
+        <!-- header-btn -->
+        <div class="absolute right-0 flex gap-6 top-13" data-name="header-btn">
+          <button data-name="btn-common" onclick="contentUtil.setPopup(3)">
+            해설 보기
+          </button>
+          <button data-name="btn-common-dark" onclick="createVideo()">
+            애니메이션
+          </button>
+        </div>
+        <!-- main -->
+        <div class="flex flex-col w-full h-full">
+          <!-- ------------- -->
+          <div class="flex items-center px-20 mb-5 leading-52">
+            <img
+              src="./../common/images/label_diamond_black.svg"
+              alt=""
+              class="w-22 h-52 me-10"
+            />
+            <span class="font-extrabold f-nanum-s text-40"
+              >만화를 보고 물음에 대한 자신의 생각을 말해 봅시다.</span
+            >
+          </div>
+          <!-- ------------- -->
+          <div class="relative flex justify-center mx-auto mb-20 w-fit">
+            <img
+              src="./images/8_01_03/main_photo1.jpg"
+              alt="만화"
+              class="w-623 h-215"
+            />
+            <button
+              class="absolute top-0 right-0"
+              data-name="btn-view"
+              onclick="contentUtil.setPopup(2)"
+            ></button>
+          </div>
+          <!-- ------------- -->
+          <div class="relative mx-auto mb-3 w-960 leading-52">
+            <div class="flex mb-20">
+              <img
+                src="./../common/images/label_q_yellow.svg"
+                alt=""
+                class="mt-4 w-44 h-44 me-8"
+              />
+              <div class="font-extrabold f-nanum-s text-40">
+                <p>‘에키벤’은 무엇일까요?</p>
+              </div>
+              <button
+                data-name="btn-common"
+                onclick="contentUtil.setPopup(1); audioPlay(audio, [`./../common/media/mp3/showAnswer.mp3`]);"
+                class="self-end mb-8 ms-auto"
+              >
+                예시 답안
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- popup -->
+      <div id="popup-wrap" style="display: none">
+        <!-- 예시 답안 -->
+        <div data-name="popup" data-popup="1" style="display: none">
+          <div data-name="popup-header">
+            <div data-name="popup-title">예시 답안</div>
+            <button
+              data-name="popup-close"
+              onclick="contentUtil.setPopup()"
+            ></button>
+          </div>
+          <div
+            data-name="popup-body"
+            class="mt-16 overflow-hidden font-bold ms-26 f-nanum-s me-6 leading-52 text-40 text-red"
+          >
+            <div>
+              <p>기차역에서 판매하는 도시락으로, 지역별 식재료를 사용</p>
+              <p>하여 만든다.</p>
+            </div>
+          </div>
+        </div>
+        <!-- 사진 팝업창 -->
+        <div data-name="popup" data-popup="2" style="display: none">
+          <div data-name="popup-header">
+            <div data-name="popup-title">사진 팝업창</div>
+            <button
+              data-name="popup-close"
+              onclick="contentUtil.setPopup()"
+            ></button>
+          </div>
+          <div
+            data-name="popup-body"
+            class="flex items-center justify-center w-full h-full"
+          >
+            <img
+              src="./images/8_01_03/popup_photo1.png"
+              alt=""
+              class="w-900 h-405"
+            />
+          </div>
+        </div>
+        <!-- 해설 보기 -->
+        <div data-name="popup" data-popup="3" style="display: none">
+          <div data-name="popup-header">
+            <div data-name="popup-title">해설 보기</div>
+            <button
+              data-name="popup-close"
+              onclick="contentUtil.setPopup()"
+            ></button>
+          </div>
+          <div data-name="popup-body" class="mt-16 mb-10 ms-26 f-nanum-s me-6">
+            <div class="flex flex-col">
+              <!-- title -->
+              <div class="flex items-center mb-10 h-55">
+                <img
+                  src="./../common/images/popup_titlemark_primary.svg"
+                  alt=""
+                  class="w-35 h-55 me-10"
+                />
+                <div class="flex font-extrabold text-42 text-[#41674B]">
+                  에키벤
+                </div>
+              </div>
+              <!-- text -->
+              <div class="font-bold f-nanum-s text-40 leading-52">
+                <p>일본 사람들에게 에키벤은 하나의 문화로 자리 잡았다.</p>
+                <p>일본에서는 매년 최고의 에키벤을 선정하는 ‘에키벤 그랑</p>
+                <p>프리’라는 대회를 개최한다. 동일본 여객 철도가 2012년</p>
+                <p>이후로 매년 주최하고 있는 이 대회는 누리꾼들의 투표로</p>
+                <p>7개 종목을 선정하여 상을 수여한다.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- video -->
+      <div id="videoParent" data-name="video-popup"></div>
+    </div>
+  </body>
+  <script type="text/javascript">
+    const page = {
+      isAnswer: false,
+      isVocabulary: false,
+      showAnswer: () => {},
+      hideAnswer: () => {},
+      showVocabulary: () => {},
+    };
+  </script>
+  <script src="./../common/js/tailwind.config.js"></script>
+  <script src="./../common/js/script.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {});
+
+    // 비디오 생성
+    const createVideo = () => {
+      $("#videoParent").show();
+      $("#videoParent").html(`<div
+            id="video-controller-container-1"
+            class="video-controller-containe"
+          ></div>`);
+      var mediaManager = libBundle.MediaManager.getInstance();
+      // 내부자막 X, 외부자막 X
+      var videoController1 = mediaManager.createVideoController({
+        id: "video-controller-1",
+        query: "#video-controller-container-1",
+        // poster: "./media/mp4/4chi_bon_1.png",
+        src: "./media/mp4/8_01_03/jap_H_cul_08.mp4",
+        // volumeVisible: true,
+        // // thumbnail: { startPath: 'media/video/thumbnail/thumbnail_', startIndex: 1000, ext: 'png' },
+        // overlay: true,
+        // // autoplay: true
+        jsonSubtitlePath: "./media/subtitle/8_01_03/jap_H_cul_08.json",
+        volumeSetting: {
+          visible: true,
+          vertical: false,
+        },
+        callback: {},
+      });
+
+      $("#videoParent .btn-close").on("click", function () {
+        removeVideo();
+      });
+    };
+
+    const removeVideo = () => {
+      $(".controller-button.stop").click();
+      $("#videoParent").hide();
+      $("#videoParent").empty();
+    };
+  </script>
+</html>

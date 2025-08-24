@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>미래엔 일본 문화</title>
+    <script src="./../common/lib/jquery-3.7.1.min.js"></script>
+    <script src="./../common/lib/howler-2.1.3.min.js"></script>
+    <script src="./../common/lib/tailwind.js"></script>
+    <!-- 폰트 -->
+    <link href="./../common/font/suit/suit.css" rel="stylesheet" />
+    <link href="./../common/font/bmjua/bmjua.css" rel="stylesheet" />
+    <link
+      href="./../common/font/nanumsquare/nanumSquare.css"
+      rel="stylesheet"
+    />
+    <link href="./../common/font/notoSansJP/notoSansJP.css" rel="stylesheet" />
+    <link href="./../common/css/tailwind.css" rel="stylesheet" />
+    <link href="./../common/css/fontStyle.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div id="wrap">
+      <!-- contents -->
+      <div class="relative w-full h-full pt-60">
+        <!-- title -->
+        <img
+          src="./../common/images/title_activity.png"
+          alt="활동"
+          class="absolute w-191 h-42 top-8"
+        />
+        <button
+          data-name="btn-common"
+          onclick="contentUtil.setPopup(1)"
+          class="absolute right-0 top-13"
+        >
+          보충 자료
+        </button>
+        <!-- main -->
+        <div class="flex flex-col w-full h-full px-20 leading-52">
+          <div class="flex flex-col w-full mb-10">
+            <span class="font-extrabold text-40 f-nanum-s">
+              <p class="">
+                우리나라 지역별 주택의 특징을 조사하고 발표해 봅시다.
+              </p>
+            </span>
+          </div>
+
+          <!-- Answer Box -->
+          <div
+            class="border-4 w-full mb-8 h-345 border-[#F57F81] rounded-10 mx-auto pt-20 pb-10 pe-6 items-center"
+          >
+            <!-- Table -->
+
+            <div
+              data-answer="1"
+              style="display: none"
+              class="flex flex-col w-full h-full pl-20 pr-10 overflow-y-auto font-bold f-nanum-s text-40 leading-52"
+            >
+              <div class="text-red">
+                <p>모든 가옥은 거주하고 있는 지역의 기후와 자연 조건에</p>
+                <p>적응하면서 만들어진다. 그렇기 때문에 더운 지역과 추운</p>
+                <p>지역의 건축 형태가 다를 수밖에 없다. 한국의 한옥도 북부,</p>
+                <p>중부, 남부, 섬 지역마다 건축물의 구조와 배치가 다르게</p>
+                <p>나타난다. 추위를 막으려는 북부 지방은 미음(ㅁ)자형 배치,</p>
+                <p>중부 지방은 기역(ㄱ)자 또는 니은(ㄴ)자형 배치, 통풍을</p>
+                <p>
+                  중시하는 남부 지방은 일(<span class="align-text-bottom"
+                    >ㅡ</span
+                  >)자형 배치, 섬 지역은 바람과
+                </p>
+
+                <div class="flex items-center gap-20">
+                  <span>
+                    <p>눈을 피하는 가옥 구조가 만들어졌다.</p>
+                  </span>
+                  <button
+                    data-name="btn-common-light"
+                    onclick="contentUtil.setPopup(2)"
+                    class=""
+                  >
+                    특징 비교
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="ms-auto">
+            <button
+              data-name="btn-common"
+              data-reset="1"
+              onclick="contentUtil.showAnswer(1)"
+            >
+              예시 답안
+            </button>
+            <button
+              data-name="btn-common"
+              data-answer="1"
+              onclick="contentUtil.hideAnswer(1)"
+              style="display: none"
+            >
+              다시 풀기
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- popup -->
+
+      <div id="popup-wrap" style="display: none">
+        <!-- 보충 자료 -->
+        <div data-name="popup" data-popup="1" style="display: none">
+          <div data-name="popup-header">
+            <div data-name="popup-title">보충 자료</div>
+            <button
+              data-name="popup-close"
+              onclick="contentUtil.setPopup()"
+            ></button>
+          </div>
+          <div data-name="popup-body" class="mt-16 mb-10 ms-26 f-nanum-s me-6">
+            <div class="flex flex-col">
+              <!-- title -->
+              <div class="flex items-center mb-10 h-55">
+                <img
+                  src="./../common/images/popup_titlemark_primary.svg"
+                  alt=""
+                  class="w-35 h-55 me-10"
+                />
+                <div class="flex font-extrabold text-42 text-[#F25F7C]">
+                  우리나라 전통 한옥
+                </div>
+              </div>
+              <div class="font-bold f-nanum-s text-40 leading-52">
+                <p>현재 우리나라에서 전통 한옥은 그 명맥을 이어가기가 쉽지</p>
+                <p>않다. 기본적으로 가옥이 지리적·기후적 조건에 맞추어</p>
+                <p>지어지는 방식이기 때문에 어떤 곳에 짓더라도 똑같은</p>
+                <p>형태의 아파트가 들어서고 있는 실정이다.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 예시 답안 -->
+        <div data-name="popup" data-popup="2" style="display: none">
+          <div data-name="popup-header">
+            <div data-name="popup-title">예시 답안</div>
+            <button
+              data-name="popup-close"
+              onclick="contentUtil.setPopup()"
+            ></button>
+          </div>
+          <div
+            data-name="popup-body"
+            class="flex flex-col items-center w-full h-full pt-16 pb-10 pl-16 pr-6 mx-auto"
+          >
+            <div
+              class="pr-10 overflow-y-auto font-bold f-nanum-s text-40 leading-52"
+            >
+              <!-- ------------- -->
+              <div class="flex items-stretch w-full">
+                <div
+                  class="w-270 h-72 bg-[#F57F81] flex items-center justify-center rounded-tl-10 border-t-3 border-l-3 border-b-1 border-[#F9AFB0]"
+                >
+                  <span>지역</span>
+                </div>
+                <div
+                  class="w-644 h-72 bg-[#F57F81] flex items-center justify-center rounded-tr-10 border-t-3 border-l-1 border-b-1 border-r-3 border-[#F9AFB0] border-l-[#F9AFB0] border-b-[#F9AFB0]"
+                >
+                  <span>특징</span>
+                </div>
+              </div>
+              <!-- ------------- -->
+              <div class="flex items-stretch w-full text-red">
+                <div
+                  class="flex items-center justify-center py-20 bg-white w-270 h-622 border-l-3 border-[#F9AFB0]"
+                >
+                  <!-- 지역 -->
+                  <div class="text-center">
+                    <p>북부 지방의</p>
+                    <p>한옥</p>
+                    <p>(함경도, 평안도,</p>
+                    <p>황해도 북부,</p>
+                    <p>강원도 지역)</p>
+                  </div>
+                </div>
+                <div
+                  class="flex flex-col items-start leading-52 py-10 bg-white w-644 h-622 border-r-3 border-l-1 border-[#F9AFB0]"
+                >
+                  <!-- 특징 1 -->
+                  <div class="flex pl-10">
+                    <div
+                      class="w-12 h-12 mt-20 rounded-full bg-red me-10"
+                    ></div>
+                    <div class="text-start">
+                      <p>기후 조건이 춥고 눈이 많이 오기</p>
+                      <p>때문에 이에 관한 대비책으로 건물로</p>
+                      <p>마당을 감싸거나 방들을 서로 이어서</p>
+                      <p>추운 날씨에도 일할 수 있는 공간</p>
+                      <p>(정주간)이 있다.</p>
+                    </div>
+                  </div>
+                  <!-- 특징 2 -->
+                  <div class="flex pt-10 pl-10">
+                    <div
+                      class="w-12 h-12 mt-20 rounded-full bg-red me-10"
+                    ></div>
+                    <div class="text-start">
+                      <p>건축물의 구조는 미음(ㅁ)자형으로,</p>
+                      <p>마루가 없다.</p>
+                    </div>
+                  </div>
+                  <!-- 특징 3 -->
+                  <div class="flex pt-10 pl-10">
+                    <div
+                      class="w-12 h-12 mt-20 rounded-full bg-red me-10"
+                    ></div>
+                    <div class="text-start">
+                      <p>부엌이 넓고, 창고나 외양간도 실내에</p>
+                      <p>둔다.</p>
+                    </div>
+                  </div>
+                  <!-- 특징 4 -->
+                  <div class="flex pt-10 pl-10">
+                    <div
+                      class="w-12 h-12 mt-20 rounded-full bg-red me-10"
+                    ></div>
+                    <div class="text-start">
+                      <p>아궁이가 부엌에 있고, 난방도 부엌에</p>
+                      <p>서 한다.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- ------------- -->
+              <div class="flex items-stretch w-full text-red">
+                <div
+                  class="flex items-center px-10 justify-center py-6 bg-white w-270 h-410 border-l-3 border-b-1 border-t-1 border-[#F9AFB0]"
+                >
+                  <div class="text-center">
+                    <p>중부 지방의</p>
+                    <p>한옥</p>
+                    <p>(황해도 남부,</p>
+                    <p>경기도,</p>
+                    <p>충청도 지역)</p>
+                  </div>
+                </div>
+                <div
+                  class="flex flex-col justify-start pt-10 pb-13 bg-white w-644 h-410 border-b-1 border-t-1 border-r-3 border-l-1 border-[#F9AFB0]"
+                >
+                  <!-- 특징 1 -->
+                  <div class="flex pl-10">
+                    <div
+                      class="w-12 h-12 mt-20 rounded-full bg-red me-10"
+                    ></div>
+                    <div class="text-start">
+                      <p>남부 지방에 비해 마루가 좁고 창문이</p>
+                      <p>적다.</p>
+                    </div>
+                  </div>
+                  <!-- 특징 2 -->
+                  <div class="flex pt-10 pl-10">
+                    <div
+                      class="w-12 h-12 mt-20 rounded-full bg-red me-10"
+                    ></div>
+                    <div class="text-start">
+                      <p>건축물의 구조는 기역(ㄱ)자형이나</p>
+                      <p>니은(ㄴ)자형으로, 안방과 건넌방</p>
+                      <p>사이에 마루가 있지만 그 폭이 좁다.</p>
+                    </div>
+                  </div>
+                  <!-- 특징 3 -->
+                  <div class="flex pt-10 pl-10">
+                    <div
+                      class="w-12 h-12 mt-20 rounded-full bg-red me-10"
+                    ></div>
+                    <div class="text-start">
+                      <p>마루는 대청마루를 두고 통풍을 위해</p>
+                      <p>창문을 크게 만든다.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- ------------- -->
+              <div class="flex items-stretch w-full text-red">
+                <div
+                  class="flex items-center justify-center bg-white py-6 w-270 h-456 border-b-1 border-l-3 border-[#F9AFB0]"
+                >
+                  <div class="text-center">
+                    <p>남부 지방의</p>
+                    <p>한옥</p>
+                    <p>(경상도,</p>
+                    <p>전라도 지역)</p>
+                  </div>
+                </div>
+                <div
+                  class="flex flex-col justify-start py-10 bg-white w-644 h-456 border-b-1 border-r-3 border-l-1 border-[#F9AFB0] border-r-[#F9AFB0]"
+                >
+                  <!-- 특징 1 -->
+                  <div class="flex pl-10">
+                    <div
+                      class="w-12 h-12 mt-20 rounded-full bg-red me-10"
+                    ></div>
+                    <div class="text-start">
+                      <p>더운 여름에 바람이 잘 통할 수 있도록</p>
+                      <p>통풍에 신경을 쓴다.</p>
+                    </div>
+                  </div>
+                  <!-- 특징 2 -->
+                  <div class="flex pt-10 pl-10">
+                    <div
+                      class="w-12 h-12 mt-20 rounded-full bg-red me-10"
+                    ></div>
+                    <div class="text-start">
+                      <p>
+                        건축물의 구조는 일(<span class="align-text-bottom"
+                          >ㅡ</span
+                        >)자형이고 방,
+                      </p>
+                      <p>마루, 부엌이 일자형으로 되어 있으며,</p>
+                      <p>마루가 넓고 문이나 방문이 많다.</p>
+                    </div>
+                  </div>
+
+                  <!-- 특징 3 -->
+                  <div class="flex pt-10 pl-10">
+                    <div
+                      class="w-12 h-12 mt-20 rounded-full bg-red me-10"
+                    ></div>
+                    <div class="text-start">
+                      <p>마루는 더위를 이기기 위한 구조이면서</p>
+                      <p>방을 연결하는 통로이기 때문에 방과 방</p>
+                      <p>사이의 통풍을 위해 마루를 둔다.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- ------------- -->
+              <div class="flex items-stretch w-full text-red">
+                <!-- 지역 -->
+                <div
+                  class="flex items-center bg-white justify-center py-6 w-270 h-498 border-l-3 rounded-bl-10 border-b-3 border-[#F9AFB0]"
+                >
+                  <div class="text-center">
+                    <p>섬 지역의</p>
+                    <p>한옥</p>
+                    <p>(울릉도, 제주도)</p>
+                  </div>
+                </div>
+
+                <div
+                  class="flex flex-col justify-start py-10 bg-white w-644 h-498 border-b-3 rounded-br-10 border-l-1 border-r-3 border-[#F9AFB0] border-r-[#F9AFB0]"
+                >
+                  <!-- 특징 1 -->
+                  <div class="flex pl-10">
+                    <div
+                      class="w-12 h-12 mt-20 rounded-full bg-red me-10"
+                    ></div>
+                    <div class="text-start">
+                      <p>눈이 많이 내리는 울릉도는 눈이 집안</p>
+                      <p>으로 들이치지 않도록 우데기를 두르고</p>
+                      <p>벽에 진흙을 두껍게 바르며, 지붕은</p>
+                      <p>억새풀로 촘촘하게 엮는다.</p>
+                    </div>
+                  </div>
+                  <!-- 특징 2 -->
+                  <div class="flex pt-10 pl-10">
+                    <div
+                      class="w-12 h-12 mt-20 rounded-full bg-red me-10"
+                    ></div>
+                    <div class="text-start">
+                      <p>바람이 많이 부는 제주도는 지붕이 거센</p>
+                      <p>바람에 날아가지 않도록 새끼줄로 엮고</p>
+                      <p>돌담을 쌓았고 집이 낮다. 기후가 따뜻</p>
+                      <p>하기 때문에 온돌 시설이 없어 부뚜막</p>
+                      <p>이 없고 솥을 따로 내걸어 음식을 한다.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Table End -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript">
+    const page = {
+      isAnswer: false,
+      isVocabulary: false,
+      showAnswer: () => {},
+      hideAnswer: () => {},
+      showVocabulary: () => {},
+    };
+  </script>
+  <script src="./../common/js/tailwind.config.js"></script>
+  <script src="./../common/js/script.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      // contentUtil.setPopup(2);
+    });
+  </script>
+</html>

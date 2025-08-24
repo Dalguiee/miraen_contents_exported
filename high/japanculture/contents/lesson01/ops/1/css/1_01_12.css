@@ -1,0 +1,16 @@
+.content-contents {
+  padding-top: 13px;
+}
+
+.contents-cont {
+  line-height: 52px;
+  padding: 30px 20px;
+}
+
+.contents-cont .tit {
+  margin-bottom: 7px;
+}
+
+.contents-cont li + li {
+  margin-top: 35px;
+}

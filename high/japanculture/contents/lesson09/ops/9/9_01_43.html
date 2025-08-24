@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>미래엔 일본 문화</title>
+    <script src="./../common/lib/jquery-3.7.1.min.js"></script>
+    <script src="./../common/lib/howler-2.1.3.min.js"></script>
+    <script src="./../common/lib/tailwind.js"></script>
+    <!-- 폰트 -->
+    <link href="./../common/font/suit/suit.css" rel="stylesheet" />
+    <link href="./../common/font/bmjua/bmjua.css" rel="stylesheet" />
+    <link
+      href="./../common/font/nanumsquare/nanumSquare.css"
+      rel="stylesheet"
+    />
+    <link href="./../common/font/notoSansJP/notoSansJP.css" rel="stylesheet" />
+    <link href="./../common/css/tailwind.css" rel="stylesheet" />
+    <link href="./../common/css/fontStyle.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div id="wrap">
+      <!-- contents -->
+      <div class="relative w-full h-full pt-60">
+        <!-- title -->
+        <img
+          src="./images/9_01_43/Label_tit.svg"
+          alt="활동"
+          class="absolute w-72 h-52 top-5"
+        />
+        <!-- header-btn -->
+        <div class="absolute right-0 flex gap-6 top-13" data-name="header-btn">
+          <button
+            data-name="btn-common"
+            data-reset="1"
+            onclick="contentUtil.setPopup(1); audioPlay(audio, [`./../common/media/mp3/showAnswer.mp3`]);"
+          >
+            예시 답안
+          </button>
+        </div>
+
+        <!-- main -->
+        <div class="flex flex-col w-full h-full px-20 leading-52">
+          <div
+            class="flex flex-col w-full text-40 f-nanum-s mb-10 font-extrabold"
+          >
+            <p class="flex pt-12">
+              신사 입구에서 볼 수 있는 ‘도리이, 데미즈야(
+              <span data-audio="9_01_43/145-02.mp3" class="f-noto font-bold"
+                ><span class="relative"
+                  >手<span class="ruby font-bold">て</span></span
+                ><span class="relative"
+                  >水<span class="ruby font-bold">みず</span></span
+                ><span class="relative"
+                  >舎<span class="ruby font-bold">や</span></span
+                >
+              </span>
+              ), 고마이누
+            </p>
+            <p class="flex pt-12 mb-10">
+              (
+              <span data-audio="9_01_43/145-03.mp3" class="f-noto font-bold"
+                ><span class="relative"
+                  >狛<span class="ruby font-bold">こま</span></span
+                ><span class="relative"
+                  >犬<span class="ruby font-bold">いぬ</span></span
+                >
+              </span>
+              ) 동상’은 어떤 의미가 있는지 조사하고 발표해 봅시다.
+            </p>
+
+            <!-- Image Box -->
+            <div class="flex gap-40 w-full justify-center">
+              <div class="relative flex flex-col w-440 h-264 items-center">
+                <img
+                  src="./images/9_01_43/main_photo1.jpg"
+                  alt="데미즈야"
+                  class="w-full h-full rounded-10"
+                />
+                <button
+                  data-name="btn-view"
+                  class="absolute bottom-10 right-10"
+                  onclick="contentUtil.setPopup(2); contentUtil.setPhotoPopup(1);"
+                ></button>
+
+                <div
+                  class="absolute top-222 p-6 bg-[#ffffff] border-[#E3A39C] border-2 rounded-10"
+                >
+                  <div class="bg-[#F4C7BF] px-10 py-6 rounded-10 font-bold">
+                    데미즈야
+                  </div>
+                </div>
+              </div>
+              <div class="relative flex flex-col w-440 h-264 items-center">
+                <img
+                  src="./images/9_01_43/main_photo2.jpg"
+                  alt="고마이누 동상"
+                  class="w-full h-full rounded-10"
+                />
+                <button
+                  data-name="btn-view"
+                  class="absolute bottom-10 right-10"
+                  onclick="contentUtil.setPopup(2); contentUtil.setPhotoPopup(2);"
+                ></button>
+
+                <div
+                  class="absolute top-222 p-6 bg-[#ffffff] border-[#E3A39C] border-2 rounded-10"
+                >
+                  <div class="bg-[#F4C7BF] px-10 py-6 rounded-10 font-bold">
+                    고마이누 동상
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- popup -->
+      <div id="popup-wrap" style="display: none">
+        <!-- 예시 답안 -->
+        <div data-name="popup" data-popup="1" style="display: none">
+          <div data-name="popup-header">
+            <div data-name="popup-title">예시 답안</div>
+            <button
+              data-name="popup-close"
+              onclick="contentUtil.setPopup()"
+            ></button>
+          </div>
+          <div data-name="popup-body" class="mt-16 mb-10 ms-26 f-nanum-s me-6">
+            <!-- table -->
+            <div
+              class="flex flex-col mb-10 font-bold w-fit leading-52 text-40 f-nanum-s"
+            >
+              <!-- ========= -->
+              <div class="flex items-stretch">
+                <!-- ------- -->
+                <div
+                  class="w-158 bg-[#F57F81] flex items-center justify-center p-10 rounded-tl-10 border-[#F9AFB0] border-t-2 border-l-2 border-1"
+                >
+                  <div class="flex flex-col items-center">
+                    <p>도리이</p>
+                  </div>
+                </div>
+                <div
+                  class="w-742 bg-white flex flex-col p-10 rounded-tr-10 border-[#F9AFB0] border-t-2 border-b-1 border-r-2 gap-10"
+                >
+                  <div class="flex">
+                    <div
+                      class="w-12 h-12 mt-20 bg-red rounded-full me-10"
+                    ></div>
+                    <div class="text-red">
+                      <p>신성한 장소와 인간이 사는 곳의 경계를 나타</p>
+                      <p>내는 건축물로, 신사의 상징이자 문이다.</p>
+                    </div>
+                  </div>
+                  <div class="flex">
+                    <div
+                      class="w-12 h-12 mt-20 bg-red rounded-full me-10"
+                    ></div>
+                    <div class="text-red">
+                      <p>신사에 부정한 것이 들어가지 못하도록 하는</p>
+                      <p>결계의 의미도 있다.</p>
+                    </div>
+                  </div>
+                  <div class="flex">
+                    <div
+                      class="w-12 h-12 mt-20 bg-red rounded-full me-10"
+                    ></div>
+                    <div class="text-red">
+                      <p>큰 신사에는 많은 도리이가 있는 경우도 있다.</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- ------- -->
+              </div>
+              <!-- ========= -->
+              <div class="flex items-stretch">
+                <!-- ------- -->
+                <div
+                  class="w-158 bg-[#F57F81] flex items-center justify-center p-10 border-[#F9AFB0] border-r-1 border-l-2 border-b-2"
+                >
+                  <div class="flex flex-col items-center">
+                    <p>데미즈야</p>
+                    <p class="flex pt-12">
+                      (
+                      <span class="f-noto font-medium"
+                        ><span class="relative"
+                          >手<span class="ruby">て</span></span
+                        ><span class="relative"
+                          >水<span class="ruby">みず</span></span
+                        ><span class="relative"
+                          >舎<span class="ruby">や</span></span
+                        >
+                      </span>
+                      )
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="w-742 bg-white flex flex-col p-10 border-[#F9AFB0] border-b-2 border-r-2 gap-10"
+                >
+                  <div class="flex">
+                    <div
+                      class="w-12 h-12 mt-20 bg-red rounded-full me-10"
+                    ></div>
+                    <div class="text-red">
+                      <p>참배하기 전에 손과 입을 깨끗이 하기 위한</p>
+                      <p>장소이다.</p>
+                    </div>
+                  </div>
+                  <div class="flex">
+                    <div
+                      class="w-12 h-12 mt-20 bg-red rounded-full me-10"
+                    ></div>
+                    <div class="text-red">
+                      <p>청결하게 하는 의미보다는 참배에 있어서 몸</p>
+                      <p>과 마음을 깨끗하게 한다는 관념적인 의미를</p>
+                      <p>가진다.</p>
+                    </div>
+                  </div>
+                  <div class="flex">
+                    <div
+                      class="w-12 h-12 mt-20 bg-red rounded-full me-10"
+                    ></div>
+                    <div class="text-red">
+                      <p>신화에서 신이 물로 몸을 정화한 것에서 유래</p>
+                      <p>했다고 한다.</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- ------- -->
+              </div>
+              <!-- ========= -->
+              <div class="flex items-stretch">
+                <!-- ------- -->
+                <div
+                  class="w-158 bg-[#F57F81] flex items-center justify-center p-10 border-[#F9AFB0] border-r-1 border-l-2 border-b-2 rounded-bl-10"
+                >
+                  <div class="flex flex-col items-center">
+                    <p>고마이누</p>
+                    <p class="flex pt-12">
+                      (<span class="f-noto font-medium"
+                        ><span class="relative"
+                          >狛<span class="ruby">こま</span></span
+                        ><span class="relative"
+                          >犬<span class="ruby">いぬ</span></span
+                        ></span
+                      >)
+                    </p>
+                    <p>동상</p>
+                  </div>
+                </div>
+                <div
+                  class="w-742 bg-white flex flex-col p-10 border-[#F9AFB0] border-b-2 border-r-2 rounded-br-10 gap-10"
+                >
+                  <div class="flex">
+                    <div
+                      class="w-12 h-12 mt-20 bg-red rounded-full me-10"
+                    ></div>
+                    <div class="text-red">
+                      <p class="flex">
+                        도리이 앞이나 배전(<span class="f-noto font-medium"
+                          >拝殿</span
+                        >) 앞 좌우 한 쌍으로
+                      </p>
+                      <p>설치되어 있는 석상으로, 신전을 수호하는</p>
+                      <p>역할을 하고 있다.</p>
+                    </div>
+                  </div>
+                  <div class="flex">
+                    <div
+                      class="w-12 h-12 mt-20 bg-red rounded-full me-10"
+                    ></div>
+                    <div class="text-red">
+                      <p>이름은 ‘개’를 뜻하지만, 사자를 닮은 상상의</p>
+                      <p>동물이다.</p>
+                    </div>
+                  </div>
+                  <div class="flex">
+                    <div
+                      class="w-12 h-12 mt-20 bg-red rounded-full me-10"
+                    ></div>
+                    <div class="text-red">
+                      <p>신사에 따라서는 여우나 용 등도 있다.</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- ------- -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 사진 팝업창 -->
+        <div data-name="popup" data-popup="2" style="display: none">
+          <div data-name="popup-header">
+            <div data-name="popup-title">사진 팝업창</div>
+            <button
+              data-name="popup-close"
+              onclick="contentUtil.setPopup()"
+            ></button>
+          </div>
+          <div
+            data-name="popup-body"
+            class="flex items-center justify-center w-full h-full gap-16"
+          >
+            <div
+              class="flex flex-col items-center w-608 h-402"
+              data-name="popup_photo_wrap"
+            >
+              <div class="w-full overflow-x-hidden overflow-y-auto pe-4">
+                <img
+                  src="./images/9_01_43/popup_photo1.jpg"
+                  alt="데미즈야"
+                  class="object-contain min-w-608 rounded-10"
+                  data-name="popup_photo"
+                />
+                <img
+                  src="./images/9_01_43/popup_photo2.jpg"
+                  alt="고마이누 동상"
+                  class="object-contain min-w-608 rounded-10"
+                  data-name="popup_photo"
+                  style="display: none"
+                />
+              </div>
+              <div
+                class="flex mt-8 font-bold f-nanum-s h-52 text-40 leading-52 shrink-0"
+              >
+                <span data-name="popup_photo_text">데미즈야</span>
+                <span style="display: none" data-name="popup_photo_text"
+                  >고마이누 동상</span
+                >
+              </div>
+            </div>
+            <div class="w-266 h-402">
+              <div class="flex flex-wrap w-full gap-10">
+                <button
+                  data-name="btn-popup_photo"
+                  class="w-128 h-72 active"
+                  onclick="contentUtil.setPhotoPopup(1)"
+                >
+                  <img
+                    src="./images/9_01_43/popup_btn_photo1.jpg"
+                    alt="데미즈야"
+                  />
+                </button>
+                <button
+                  data-name="btn-popup_photo"
+                  class="w-128 h-72"
+                  onclick="contentUtil.setPhotoPopup(2)"
+                >
+                  <img
+                    src="./images/9_01_43/popup_btn_photo2.jpg"
+                    alt="고마이누 동상"
+                  />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript">
+    const page = {
+      isAnswer: false,
+      isVocabulary: false,
+      showAnswer: () => {},
+      hideAnswer: () => {},
+      showVocabulary: () => {},
+    };
+  </script>
+  <script src="./../common/js/tailwind.config.js"></script>
+  <script src="./../common/js/script.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      // contentUtil.setPopup(2);
+    });
+  </script>
+</html>

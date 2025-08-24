@@ -1,0 +1,14 @@
+[data-name="colon-black"],
+[data-name="colon-red"] {
+  width: 6px;
+  height: 52px;
+  margin-right: 8px;
+  margin-left: 8px;
+  font-size: 0;
+}
+[data-name="colon-black"] {
+  background: url(./../images/label_colon_black.svg) no-repeat center / cover;
+}
+[data-name="colon-red"] {
+  background: url(./../images/label_colon_red.svg) no-repeat center / cover;
+}

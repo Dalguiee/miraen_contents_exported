@@ -1,0 +1,13 @@
+.contents-02 {
+  margin-top: 12px;
+}
+
+.contents-02 .contents-left {
+  width: 434px;
+  margin-right: 20px;
+  padding-top: 8px;
+}
+
+.contents-02 .contents-right {
+  width: calc(100% - 454px);
+}

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>미래엔 일본 문화</title>
+    <script src="./../common/lib/jquery-3.7.1.min.js"></script>
+    <script src="./../common/lib/howler-2.1.3.min.js"></script>
+    <script src="./../common/lib/tailwind.js"></script>
+    <!-- 폰트 -->
+    <link href="./../common/font/suit/suit.css" rel="stylesheet" />
+    <link href="./../common/font/bmjua/bmjua.css" rel="stylesheet" />
+    <link
+      href="./../common/font/nanumsquare/nanumSquare.css"
+      rel="stylesheet"
+    />
+    <link href="./../common/font/notoSansJP/notoSansJP.css" rel="stylesheet" />
+    <link href="./../common/css/tailwind.css" rel="stylesheet" />
+    <link href="./../common/css/fontStyle.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div id="wrap">
+      <!-- contents -->
+      <div class="relative w-full h-full pt-68">
+        <!-- title -->
+        <img
+          src="./../common/images/title_look_culture6.svg"
+          alt="문화 들여다보기2 학교 행사와 교육 제도"
+          class="absolute w-764 h-49 top-10"
+        />
+        <!-- header-btn -->
+        <div class="absolute right-0 flex gap-6 top-16" data-name="header-btn">
+          <button
+            data-name="btn-common-dark"
+            onclick="contentUtil.setPopup(1)"
+            class="min-w-64"
+          >
+            TIP
+          </button>
+        </div>
+
+        <!-- main -->
+        <div class="flex flex-col w-full h-full">
+          <div
+            class="flex flex-col flex-1 w-full leading-52 ps-20 text-40 f-nanum-s"
+          >
+            <div class="flex items-center mb-4">
+              <img
+                src="./../common/images/index_pink_2.svg"
+                alt="번호 2"
+                class="w-40 h-40 me-4"
+              />
+              <span class="font-extrabold">교육 제도</span>
+            </div>
+
+            <!-- ======== page 1 ======== -->
+            <div
+              data-name="page"
+              class="flex flex-col font-bold f-nanum-s text-40"
+            >
+              <div>
+                <p class="ps-28">
+                  일본의 교육 제도는 초등학교 6년, 중학교 3년, 고등학교
+                </p>
+                <p>3년, 대학교 4년의 ‘6·3·3·4제’를 채택하고 있다. 의무 교육</p>
+                <p>은 초등학교 6년, 중학교 3년을 포함하여 9년이다.</p>
+                <p class="ps-28">
+                  대부분의 초·중·고등학교는 3학기제로 운영되고 있으며,
+                </p>
+                <p>일반적으로 4월에 1학기가 시작되고 3월에 3학기가 끝난다.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- popup -->
+      <div id="popup-wrap" style="display: none">
+        <!-- TIP -->
+        <div data-name="popup" data-popup="1" style="display: none">
+          <div data-name="popup-header">
+            <div data-name="popup-title">TIP</div>
+            <button
+              data-name="popup-close"
+              onclick="contentUtil.setPopup()"
+            ></button>
+          </div>
+          <div
+            data-name="popup-body"
+            class="mt-16 mb-10 mr-10 ms-26 f-nanum-s me-6"
+          >
+            <!--  popup section 1  -->
+            <div
+              class="flex flex-col font-bold mr-14 f-nanum-s text-40 leading-52"
+            >
+              <div class="mb-10">
+                <p>학기 사이에 보통 6주 정도의 여름 방학, 2주 정도의</p>
+                <p>겨울 방학과 봄 방학이 있다.</p>
+              </div>
+              <!-- table -->
+              <!-- th -->
+              <div class="flex w-full">
+                <div
+                  class="flex items-center bg-[#B5C0E7] justify-center rounded-tl-10 py-10 min-w-200 border-r-1 boder-b-1 border-[#FFFFFF]"
+                >
+                  <span class="text-center">1학기</span>
+                </div>
+                <div
+                  class="flex items-center bg-[#B5C0E7] justify-center min-w-200 py-10 border-[#FFFFFF] border-r-1 boder-b-1"
+                >
+                  <span class="text-center">2학기</span>
+                </div>
+                <div
+                  class="flex items-center bg-[#B5C0E7] justify-center min-w-200 py-10 border-[#B5C0E7] rounded-tr-10 boder-b-1"
+                >
+                  <span class="text-center">3학기</span>
+                </div>
+              </div>
+              <!-- td -->
+              <div class="flex w-full">
+                <div class="flex items-stretch h-72">
+                  <!-- ------- -->
+                  <div
+                    class="flex items-center justify-center w-200 border-r-1 border-l-1 border-b-1 rounded-bl-10 border-[#B5C0E7] bg-white"
+                  >
+                    <div
+                      class="flex items-center justify-center w-full h-full rounded-8"
+                    >
+                      <div class="text-center">
+                        <p class="flex">
+                          4<span class="font-medium f-noto">～</span>7월
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- ------- -->
+                  <div
+                    class="flex justify-center w-200 border-r-1 border-b-1 border-[#B5C0E7] items-stretch bg-white"
+                  >
+                    <div
+                      class="flex items-center justify-center w-full h-full rounded-8"
+                    >
+                      <div class="text-center">
+                        <p class="flex">
+                          9<span class="font-medium f-noto">～</span>12월
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- ------- -->
+                  <div
+                    class="flex justify-center w-200 border-r-1 border-b-1 border-[#B5C0E7] rounded-br-10 items-stretch bg-white"
+                  >
+                    <div
+                      class="flex items-center justify-center w-full h-full rounded-8"
+                    >
+                      <div class="text-center">
+                        <p class="flex">
+                          1<span class="font-medium f-noto">～</span>3월
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript">
+    const page = {
+      isAnswer: false,
+      isVocabulary: false,
+      showAnswer: () => {},
+      hideAnswer: () => {},
+      showVocabulary: () => {},
+    };
+  </script>
+  <script src="./../common/js/tailwind.config.js"></script>
+  <script src="./../common/js/script.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      // contentUtil.setPopup(1);
+    });
+    $(`[data-name="btn-pagination"]`).on("click", function () {
+      if ($(this).index() === 0) {
+        $(".btn-view-change").show();
+      } else {
+        $(".btn-view-change").hide();
+      }
+    });
+  </script>
+</html>

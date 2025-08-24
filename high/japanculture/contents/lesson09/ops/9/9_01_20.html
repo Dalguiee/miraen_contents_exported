@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>미래엔 일본 문화</title>
+    <script src="./../common/lib/jquery-3.7.1.min.js"></script>
+    <script src="./../common/lib/howler-2.1.3.min.js"></script>
+    <script src="./../common/lib/tailwind.js"></script>
+    <!-- 폰트 -->
+    <link href="./../common/font/suit/suit.css" rel="stylesheet" />
+    <link href="./../common/font/bmjua/bmjua.css" rel="stylesheet" />
+    <link
+      href="./../common/font/nanumsquare/nanumSquare.css"
+      rel="stylesheet"
+    />
+    <link href="./../common/font/notoSansJP/notoSansJP.css" rel="stylesheet" />
+    <link href="./../common/css/tailwind.css" rel="stylesheet" />
+    <link href="./../common/css/fontStyle.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div id="wrap">
+      <!-- contents -->
+      <div class="relative w-full h-full pt-60">
+        <!-- title -->
+        <img
+          src="./../common/images/title_activity.png"
+          alt="활동"
+          class="absolute w-191 h-42 top-8"
+        />
+        <button
+          data-name="btn-common"
+          onclick="contentUtil.setPopup(1); audioPlay(audio, [`./../common/media/mp3/showAnswer.mp3`]); "
+          class="absolute right-20 bottom-8"
+        >
+          예시 답안
+        </button>
+        <!-- main -->
+        <div class="flex flex-col w-full h-full px-20 leading-52">
+          <div class="flex flex-col w-full mb-10">
+            <div class="font-extrabold text-40 f-nanum-s">
+              <p>일본 애니메이션 중 친구들에게 추천하고 싶은 작품의 제목과</p>
+              <p>그 이유를 이야기해 봅시다.</p>
+            </div>
+          </div>
+
+          <!-- Answer Box -->
+          <div
+            class="border-4 w-full mb-6 h-291 border-[#F57F81] rounded-10 mx-auto py-16 pe-6 items-center"
+          ></div>
+        </div>
+      </div>
+
+      <!-- popup -->
+
+      <div id="popup-wrap" style="display: none">
+        <!-- 예시 답안 -->
+        <div data-name="popup" data-popup="1" style="display: none">
+          <div data-name="popup-header">
+            <div data-name="popup-title">예시 답안</div>
+            <button
+              data-name="popup-close"
+              onclick="contentUtil.setPopup()"
+            ></button>
+          </div>
+          <div data-name="popup-body" class="mt-16 mb-10 ms-26 f-nanum-s me-6">
+            <div
+              class="flex flex-col w-full h-full overflow-y-auto font-bold pr-14 f-nanum-s text-40 leading-52"
+            >
+              <!-- Answer Box -->
+              <div class="items-center w-full mx-auto">
+                <!-- Table -->
+
+                <!-- ------------- -->
+                <div class="flex items-stretch w-full">
+                  <div
+                    class="w-316 h-72 bg-[#F57F81] flex items-center justify-center rounded-tl-10 border-t-3 border-l-3 border-b-1 border-r-1 border-[#FCD7D7]"
+                  >
+                    <span>애니메이션 제목</span>
+                  </div>
+                  <div
+                    class="w-584 h-72 bg-[#F57F81] rounded-tr-10 flex items-center justify-center pl-10 py-10 border-t-3 border-b-1 border-r-3 border-[#FCD7D7]"
+                  >
+                    <div class="">추천 이유</div>
+                  </div>
+                </div>
+
+                <!-- ------------- -->
+                <div class="flex items-stretch w-full">
+                  <div
+                    class="w-316 h-120 bg-[#ffffff] flex items-center justify-center pl-10 py-10 border-r-1 border-l-3 border-b-1 border-[#FCD7D7]"
+                  >
+                    <div class="text-red">
+                      <p>너의 이름은</p>
+                    </div>
+                  </div>
+                  <div
+                    class="w-584 h-120 bg-[#ffffff] flex items-center pl-8 py-10 border-r-3 border-b-1 border-[#FCD7D7]"
+                  >
+                    <div class="text-red">
+                      <p>꿈속에서 몸이 뒤바뀐 남녀 주인공의</p>
+                      <p>사랑이 신비롭기 때문이다.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- ------------- -->
+                <div class="flex items-stretch w-full">
+                  <div
+                    class="w-316 h-120 bg-[#ffffff] flex items-center justify-center pl-10 py-10 border-r-1 border-l-3 border-b-1 border-[#FCD7D7]"
+                  >
+                    <div class="text-red">
+                      <p>시간을 달리는 소녀</p>
+                    </div>
+                  </div>
+                  <div
+                    class="w-584 h-120 bg-[#ffffff] flex items-center pl-8 py-10 border-r-3 border-b-1 border-[#FCD7D7]"
+                  >
+                    <div class="text-red">
+                      <p>타임 리프라는 소재와 상황 설정이</p>
+                      <p>인상 깊었기 때문이다.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- ------------- -->
+                <div class="flex items-stretch w-full">
+                  <div
+                    class="w-316 h-120 bg-[#ffffff] flex items-center justify-center pl-10 py-10 border-r-1 border-l-3 border-b-3 rounded-bl-10 border-[#FCD7D7]"
+                  >
+                    <div class="text-red">
+                      <p>하울의 움직이는 성</p>
+                    </div>
+                  </div>
+                  <div
+                    class="w-584 h-120 bg-[#ffffff] flex items-center pl-8 py-10 border-r-3 border-b-3 rounded-br-10 border-[#FCD7D7]"
+                  >
+                    <div class="text-red">
+                      <p>주인공 소피의 성장 스토리가 정말</p>
+                      <p>멋지다고 생각했기 때문이다.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript">
+    const page = {
+      isAnswer: false,
+      isVocabulary: false,
+      showAnswer: () => {},
+      hideAnswer: () => {},
+      showVocabulary: () => {},
+    };
+  </script>
+  <script src="./../common/js/tailwind.config.js"></script>
+  <script src="./../common/js/script.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      // contentUtil.setPopup(1);
+    });
+  </script>
+</html>

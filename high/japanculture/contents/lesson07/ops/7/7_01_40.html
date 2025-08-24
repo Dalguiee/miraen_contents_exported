@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>미래엔 일본 문화</title>
+  <script src="./../common/lib/jquery-3.7.1.min.js"></script>
+  <script src="./../common/lib/howler-2.1.3.min.js"></script>
+  <script src="./../common/lib/tailwind.js"></script>
+  <!-- 폰트 -->
+  <link href="./../common/font/suit/suit.css" rel="stylesheet" />
+  <link href="./../common/font/bmjua/bmjua.css" rel="stylesheet" />
+  <link href="./../common/font/nanumsquare/nanumSquare.css" rel="stylesheet" />
+  <link href="./../common/font/notoSansJP/notoSansJP.css" rel="stylesheet" />
+  <link href="./../common/css/tailwind.css" rel="stylesheet" />
+  <link href="./../common/css/fontStyle.css" rel="stylesheet" />
+  <link href="./../common/css/rolePlayer.css" rel="stylesheet" />
+</head>
+
+<body>
+  <div id="wrap">
+    <!-- contents -->
+    <div class="relative flex flex-col w-full h-full pt-65">
+      <!-- title -->
+      <div class="absolute left-0 flex h-50 top-10">
+        <img src="./../common/images/title_getactive.svg" alt="활동하기" class="w-160 me-10" />
+        <span class="f-bmjua text-36 text-[#6773B1] leading-50">문화 체험 활동</span>
+      </div>
+      <!-- header-btn -->
+      <div class="absolute right-0 flex gap-6 top-13" data-name="header-btn">
+        <button class="min-w-0" data-name="btn-common-dark" onclick="contentUtil.setPopup(3);">
+          부록
+        </button>
+        <button style="display: none" data-name="btn-common" onclick="contentUtil.setPopup(1);">
+          해석 보기
+        </button>
+      </div>
+      <!-- 음원 플레이어 -->
+      <div style="display: none" data-name="rolePlayer-wrap" class="absolute right-0 z-50 top-121">
+        <div class="rolePlayer">
+          <div class="rolePlayer_player">
+            <div class="rolePlayer_box">
+              <button class="rolePlayer_play-btn play"></button>
+              <button class="rolePlayer_stop-btn"></button>
+              <div class="rolePlayer_duration">
+                <input type="range" class="rolePlayer_duration_range" min="0" max="100" value="0" step="1" />
+                <div class="rolePlayer_duration_range-ui">
+                  <div class="rolePlayer_duration_range-ui_bar" style="width: 0"></div>
+                </div>
+                <span class="rolePlayer_duration_text seek">00:00</span>
+                <span class="rolePlayer_duration_text duration">00:00</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- main -->
+      <div class="flex flex-col flex-1 w-full px-20 overflow-y-auto f-nanum-s leading-52 text-40">
+        <div class="flex mb-10">
+          <img src="./../common/images/label_flower_blue.svg" alt="label" class="w-30 h-52 me-8" />
+          <div class="flex items-end font-extrabold gap-13">
+            <p class="">소원을 적고 걸어 두는 에마를 만들어 봅시다.</p>
+            <span class="text-32 text-[#562B1A] cursor-pointer" onclick="contentUtil.setPopup(3)">[부록 179쪽]</span>
+          </div>
+        </div>
+        <!-- ======== page 1 ======== -->
+        <div data-name="page" class="flex flex-col flex-1 w-full">
+          <div class="flex flex-col gap-10 font-bold">
+            <!-- 1 -->
+            <div class="flex items-center">
+              <div data-name="number-1" class="bg-[#5B87B8] me-10 my-9"></div>
+              <div class="mr-4 h-36 pt-4 w-139 bg-[#FEEDD9] rounded-full flex items-center justify-center">
+                <div class="flex items-center justify-center text-28 leading-36 text-[#562B1A] font-medium f-bmjua">
+                  활동 자료
+                </div>
+              </div>
+              <div data-name="number-4" class="bg-[#562B1A] my-9"></div>
+              <div>의 에마 판 양식의 앞면에 그림을 그려 넣는다.</div>
+            </div>
+
+            <!-- 2 -->
+            <div class="flex items-center">
+              <div data-name="number-2" class="bg-[#5B87B8] me-10 my-9"></div>
+              <div>
+                예시와 같이 에마 판 뒷면에 소원과 날짜, 이름을 적는다.
+              </div>
+            </div>
+
+            <!-- 3 -->
+            <div class="flex">
+              <div data-name="number-3" class="bg-[#5B87B8] me-10 my-9"></div>
+              <div class="flex flex-col">
+                <p>완성한 에마에 대해 친구들과 이야기를 나누고 지정된 곳에</p>
+                <p>걸어 둔다.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ======== page 2 ======== -->
+        <div style="display: none" data-name="page" class="flex flex-col flex-1 w-full">
+          <div class="absolute right-40 top-180">
+            <img src="./images/7_01_40/main_photo1.jpg" alt="호칭1" class="w-160 h-133" />
+            <button data-name="btn-view" class="absolute bottom-10 right-10"
+              onclick="contentUtil.setPopup(2); contentUtil.setPhotoPopup(1);"></button>
+          </div>
+          <div class="pl-18 py-11 w-full h-293 border-2 border-dashed border-[#767CAE] flex font-bold rounded-10 mt-40">
+            <div class="mr-10">
+              <img src="./images/7_01_40/label_ex_gray.svg" alt="" />
+            </div>
+            <div class="flex flex-col gap-20">
+              <div class="flex gap-21">
+                <div class="min-w-397">
+                  <span data-audio="7_01_40/114-01.mp3" class="flex font-medium f-noto">たのしい まいにち！</span>
+                </div>
+                <div class="">
+                  <span class="text-[#636463]">즐거운 매일!</span>
+                </div>
+              </div>
+              <div class="flex gap-21">
+                <div class="min-w-397">
+                  <span data-audio="7_01_40/114-02.mp3" class="flex font-medium f-noto">○○
+                    <span>
+                      <span class="relative">大<span class="ruby">だい</span></span><span class="relative">学<span
+                          class="ruby">がく</span></span> </span>に&nbsp;
+                    <span>
+                      <span class="relative">合<span class="ruby">ごう</span></span><span class="relative">格<span
+                          class="ruby">かく</span></span>
+                    </span>
+                    ！</span>
+                </div>
+                <div class="">
+                  <span class="text-[#636463]">○○ 대학에 합격!</span>
+                </div>
+              </div>
+              <div class="flex gap-21">
+                <div class="min-w-397">
+                  <span data-audio="7_01_40/114-03.mp3" class="flex font-medium f-noto"><span><span
+                        class="relative">歌<span class="ruby">か</span></span><span class="relative">手<span
+                          class="ruby">しゅ</span></span> </span>に なれますように</span>
+                </div>
+                <div class="">
+                  <span class="text-[#636463]">가수가 될 수 있기를</span>
+                </div>
+              </div>
+              <div class="flex gap-21">
+                <div class="min-w-397">
+                  <span data-audio="7_01_40/114-04.mp3" class="flex font-medium f-noto">
+                    <span><span class="relative">夢<span class="ruby">ゆめ</span></span>
+                    </span>
+                    が かないますように</span>
+                </div>
+                <div class="">
+                  <span class="text-[#636463]">꿈을 이룰 수 있기를</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- pagination -->
+        <div class="absolute -translate-x-1/2 left-1/2 bottom-10" data-name="pagination">
+          <button class="active" data-name="btn-pagination"></button>
+          <button class="" data-name="btn-pagination"></button>
+        </div>
+      </div>
+    </div>
+    <!-- popup -->
+    <div id="popup-wrap" style="display: none">
+      <!-- 해석 보기 1 -->
+      <div data-name="popup" data-popup="1" style="display: none">
+        <div data-name="popup-header" class="relative">
+          <div data-name="popup-title">해석 보기</div>
+          <button data-name="popup-close" onclick="contentUtil.setPopup()"></button>
+          <!-- explan -->
+          <div class="absolute flex top-5 right-52">
+            <img src="./images/7_01_36/label_popup_ex.svg" alt="문장을 클릭하면 음원을 들을 수 있습니다." class="w-298 h-37 me-12" />
+            <button data-name="btn-common-light" data-exreset="1" onclick="contentUtil.showExplan(1)">
+              해석 보기
+            </button>
+            <button data-name="btn-common-light" data-explan="1" onclick="contentUtil.hideExplan(1)"
+              style="display: none">
+              해석 감추기
+            </button>
+          </div>
+        </div>
+        <div data-name="popup-body" class="flex flex-col flex-1 mt-16 mb-10 ms-26 leading-52 text-40 f-nanum-s me-6">
+          <!-- ---------- -->
+          <div class="flex mt-16 font-medium f-noto">
+            <div class="flex gap-10">
+              <!-- text -->
+              <div data-audio="7_01_40/114-06.mp3">
+                <p class="flex">
+                  ○○
+                  <span><span class="relative">大<span class="ruby">だい</span></span><span class="relative">学<span
+                        class="ruby">がく</span></span>
+                  </span>
+                </p>
+              </div>
+              <!-- ex -->
+              <div class="font-bold text-blue f-nanum-s" data-explan="1" style="display: none">
+                <p>○○대학</p>
+              </div>
+            </div>
+          </div>
+          <!-- ---------- -->
+          <div class="flex mt-16 font-medium f-noto">
+            <div class="flex gap-10">
+              <!-- text -->
+              <div data-audio="7_01_40/114-07.mp3">
+                <p class="flex">
+                  <span>
+                    <span class="relative">絶<span class="ruby">ぜっ</span></span><span class="relative">対<span
+                        class="ruby">たい</span></span>&nbsp;<span class="relative">合<span
+                        class="ruby">ごう</span></span><span class="relative">格<span class="ruby">かく</span></span>
+                  </span>
+                </p>
+              </div>
+              <!-- ex -->
+              <div class="font-bold text-blue f-nanum-s" data-explan="1" style="display: none">
+                <p>꼭(절대) 합격</p>
+              </div>
+            </div>
+          </div>
+          <!-- ---------- -->
+          <div class="flex mt-16 font-medium f-noto">
+            <div class="flex gap-10">
+              <!-- text -->
+              <div data-audio="7_01_40/114-08.mp3">
+                <p class="flex">
+                  <span>
+                    △<span class="relative">月<span class="ruby">がつ</span></span>
+                    □<span class="relative">日<span class="ruby">にち</span></span>
+                  </span>
+                </p>
+              </div>
+              <!-- ex -->
+              <div class="font-bold text-blue f-nanum-s" data-explan="1" style="display: none">
+                <p>△월 □일</p>
+              </div>
+            </div>
+          </div>
+          <!-- ---------- -->
+          <div class="flex mt-16 font-medium f-noto">
+            <div class="flex gap-10">
+              <!-- text -->
+              <div data-audio="7_01_40/114-09.mp3">
+                <p class="flex">イ·スア</p>
+              </div>
+              <!-- ex -->
+              <div class="font-bold text-blue f-nanum-s" data-explan="1" style="display: none">
+                <p>이수아</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 사진 팝업창 -->
+      <div data-name="popup" data-popup="2" style="display: none">
+        <div data-name="popup-header">
+          <div data-name="popup-title">사진 팝업창</div>
+          <button data-name="popup-close" onclick="contentUtil.setPopup()"></button>
+        </div>
+        <div data-name="popup-body" class="flex items-center justify-center w-full h-full gap-16">
+          <div class="flex flex-col items-center overflow-hidden w-730 h-400 rounded-10" data-name="popup_photo_wrap">
+            <div class="w-full">
+              <img src="./images/7_01_40/popup_photo1.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 부록 -->
+      <div data-name="popup" data-popup="3" style="display: none">
+        <div data-name="popup-header">
+          <div data-name="popup-title">부록</div>
+          <button data-name="popup-close" onclick="contentUtil.setPopup()"></button>
+        </div>
+        <div data-name="popup-body" class="relative flex justify-center w-full h-full gap-16">
+          <div class="absolute h-60 top-16 bg-[#EAD6B5] py-4 px-20 rounded-10">
+            <span class="font-bold text-40 leading-52 f-nanum-s">에마 만들기</span>
+          </div>
+          <div class="flex flex-col items-center overflow-hidden mt-46 w-844 h-382 rounded-10"
+            data-name="popup_photo_wrap">
+            <div class="w-full">
+              <img src="./images/7_01_40/popup_photo2.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<script type="text/javascript">
+  const page = {
+    isAnswer: false,
+    isVocabulary: false,
+    showAnswer: () => { },
+    hideAnswer: () => { },
+    showVocabulary: () => { },
+  };
+
+  //역할 연습 음원
+  // audio : 재생할 전체음원
+  // data
+  // start : 시작 시간
+  // end : 끝 시간
+  // value : 해당되는 data-audio
+  // role : 해당되는 역할
+  // scroll : 해당 시간대 위치할 스크롤
+  // page : 해당 시간대 위치할 페이지
+  const rolePlayerAudio = [
+    //  ----- page 1 -----
+    {
+      audio: "7_01_40/114-05.mp3",
+      data: [
+        {
+          start: 0,
+          end: 2.5,
+          value: "7_01_40/114-01.mp3",
+        },
+        {
+          start: 2.6,
+          end: 5.7,
+          value: "7_01_40/114-02.mp3",
+        },
+        {
+          start: 5.8,
+          end: 8,
+          value: "7_01_40/114-03.mp3",
+        },
+        {
+          start: 8.1,
+          end: 11,
+          value: "7_01_40/114-04.mp3",
+        },
+      ],
+    },
+  ];
+</script>
+<script src="./../common/js/tailwind.config.js"></script>
+<script src="./../common/js/script.js"></script>
+<script src="../common/js/rolePlayerJc.js"></script>
+<script type="text/javascript">
+  $(document).ready(function () {
+    // contentUtil.setPage(2);
+  });
+
+  $(`[data-name="btn-pagination"]`).on("click", function () {
+    if ($(this).index() === 1) {
+      $(`[data-name="btn-common"]`).show();
+      $(`[data-name="rolePlayer-wrap"]`).show();
+    } else {
+      $(`[data-name="btn-common"]`).hide();
+      $(`[data-name="rolePlayer-wrap"]`).hide();
+    }
+  });
+</script>
+
+</html>

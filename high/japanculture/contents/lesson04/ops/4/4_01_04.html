@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>미래엔 일본 문화</title>
+    <script src="./../common/lib/jquery-3.7.1.min.js"></script>
+    <script src="./../common/lib/howler-2.1.3.min.js"></script>
+    <script src="./../common/lib/tailwind.js"></script>
+    <!-- 폰트 -->
+    <link href="./../common/font/suit/suit.css" rel="stylesheet" />
+    <link href="./../common/font/bmjua/bmjua.css" rel="stylesheet" />
+    <link
+      href="./../common/font/nanumsquare/nanumSquare.css"
+      rel="stylesheet"
+    />
+    <link href="./../common/font/notoSansJP/notoSansJP.css" rel="stylesheet" />
+    <link href="./../common/css/tailwind.css" rel="stylesheet" />
+    <link href="./../common/css/fontStyle.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div id="wrap">
+      <!-- contents -->
+      <div class="relative w-full h-full pt-68">
+        <!-- title -->
+        <img
+          src="./../common/images/title_look_culture1.svg"
+          alt="문화 들여다보기1 성씨와 가족 호칭"
+          class="absolute w-764 h-49 top-10"
+        />
+        <!-- header-btn -->
+        <div class="absolute right-0 flex gap-6 top-13" data-name="header-btn">
+          <button data-name="btn-common" onclick="contentUtil.setPopup(1)">
+            해설 보기
+          </button>
+        </div>
+        <!-- main -->
+        <div class="flex flex-col w-full h-full">
+          <div class="flex flex-col mb-8 w-763 h-404 leading-52 ps-20">
+            <div class="flex items-center mb-4">
+              <img
+                src="./../common/images/index_pink_1.svg"
+                alt="번호 1"
+                class="w-40 h-40 me-4"
+              />
+              <span class="font-extrabold f-nanum-s text-40">일본의 성씨</span>
+            </div>
+            <div class="flex mb-4 text-40 f-nanum-s">
+              <div data-name="number-1" class="bg-[#C84935]"></div>
+              <span class="text-[#C84935] font-extrabold">성씨와 이름</span>
+            </div>
+            <!-- ======== page 1 ======== -->
+            <div
+              data-name="page"
+              class="flex flex-col font-bold f-nanum-s text-40"
+            >
+              <div>
+                <p class="ps-28">
+                  일본은 세계적으로 성씨가 많은 나라로 알려져 있다. 일본인
+                </p>
+                <p>성씨는 귀족이나 무사 등의 집단에서 사용되었으나 메이지</p>
+                <p>유신 이후 일반 서민도 성씨를 갖게 되었다.</p>
+                <p class="ps-28">
+                  성씨는 두 글자가 일반적이지만 한 글자나 세 글자인 경우도
+                </p>
+                <p>
+                  있으며, 성씨의 종류는 조사 방법에 따라 약 10만 종에서 30만
+                </p>
+                <p>종으로 추정된다.</p>
+              </div>
+            </div>
+            <!-- ======== page 2 ======== -->
+            <div
+              data-name="page"
+              class="flex flex-col font-bold f-nanum-s text-40"
+              style="display: none"
+            >
+              <div>
+                <p>
+                  성씨는 원래 가문을 나타내던 것으로, 자녀나 형제가 분가할 때
+                </p>
+                <p>본가의 성씨에서 읽는 방법은 그대로 두고 한자만 바꾸거나</p>
+                <p>한자는 그대로 두고 읽는 방법만 바꾸면서 늘어나게 되었다.</p>
+                <p>일본에서는 성씨의 종류가 많고 한자를 읽는 방법이 다양하여</p>
+                <p>이를 명확히 하기 위해 명함을 주고받는 문화가 발달하였다.</p>
+              </div>
+            </div>
+            <!-- ======== page 3 ======== -->
+            <div
+              data-name="page"
+              class="flex flex-col font-bold f-nanum-s text-40"
+              style="display: none"
+            >
+              <div>
+                <p class="ps-28">
+                  일본은 인명용 한자, 상용한자, 히라가나, 가타카나를
+                </p>
+                <p>사용하여 이름을 짓는다. 한자 이름을 읽는 방법에 특별한</p>
+                <p>제한이 없어 성씨와 마찬가지로 동일한 한자를 다양하게</p>
+                <p class="flex">
+                  읽는다. 예를 들어 ‘<span class="font-medium f-noto">大翔</span
+                  >(대상)’이라는 이름을 읽는 방법은
+                </p>
+                <p class="flex">
+                  약 18가지이고, ‘<span class="font-medium f-noto">結愛</span
+                  >(결애)’는 약 14가지이다.
+                </p>
+              </div>
+            </div>
+            <!-- ======== page 4 ======== -->
+            <div
+              data-name="page"
+              class="flex flex-col font-bold f-nanum-s text-40"
+              style="display: none"
+            >
+              <div>
+                <p class="ps-28">
+                  아이의 이름은 보통 아이에 대한 소망과 기대를 담아 부모가
+                </p>
+                <p>짓는 경우가 많으나, 발음이나 유행에 따라</p>
+                <p>짓기도 한다. 그러나 문제가 될 수 있는</p>
+                <p>이름은 명명권 남용으로 출생 신고가</p>
+                <p>거부되기도 한다.</p>
+              </div>
+              <!-- img box -->
+              <div class="absolute w-302 h-198 right-20 top-262">
+                <img
+                  src="./images/4_01_04/main_photo1.jpg"
+                  alt="이름 ‘大翔(대상)’을 읽는 방법"
+                  class="w-full h-full"
+                />
+                <!-- text1 -->
+                <div
+                  class="absolute font-medium top-24 left-24 text-12 f-noto leading-16"
+                >
+                  <p>
+                    <span data-audio="4_01_04/060-01.mp3">ひろと？</span>
+                  </p>
+                  <p>
+                    <span data-audio="4_01_04/060-02.mp3">ひろき？</span>
+                  </p>
+                  <p>
+                    <span data-audio="4_01_04/060-03.mp3">はると？</span>
+                  </p>
+                  <p>
+                    <span data-audio="4_01_04/060-04.mp3">はるま？</span>
+                  </p>
+                </div>
+                <!-- text2 -->
+                <div
+                  class="absolute font-medium top-10 left-236 text-12 f-noto leading-16"
+                >
+                  <p>
+                    <span data-audio="4_01_04/060-05.mp3">やまと？</span>
+                  </p>
+                  <p>
+                    <span data-audio="4_01_04/060-06.mp3">まさと？</span>
+                  </p>
+                  <p>
+                    <span data-audio="4_01_04/060-07.mp3">たいと？</span>
+                  </p>
+                  <p>
+                    <span data-audio="4_01_04/060-08.mp3">だいと？</span>
+                  </p>
+                </div>
+                <button
+                  data-name="btn-view"
+                  class="absolute bottom-8 right-22"
+                  onclick="contentUtil.setPopup(2)"
+                ></button>
+              </div>
+            </div>
+          </div>
+
+          <!-- pagination -->
+          <div
+            class="absolute -translate-x-1/2 left-1/2 bottom-10"
+            data-name="pagination"
+          >
+            <button class="active" data-name="btn-pagination"></button>
+            <button class="" data-name="btn-pagination"></button>
+            <button class="" data-name="btn-pagination"></button>
+            <button class="" data-name="btn-pagination"></button>
+          </div>
+        </div>
+      </div>
+      <!-- popup -->
+      <div id="popup-wrap" style="display: none">
+        <!-- 해설 보기 -->
+        <div data-name="popup" data-popup="1" style="display: none">
+          <div data-name="popup-header">
+            <div data-name="popup-title">해설 보기</div>
+            <button
+              data-name="popup-close"
+              onclick="contentUtil.setPopup()"
+            ></button>
+          </div>
+          <div data-name="popup-body" class="mt-16 mb-10 ms-26 f-nanum-s me-6">
+            <div class="flex flex-col">
+              <!-- title -->
+              <div class="flex items-center mb-10 h-55">
+                <img
+                  src="./../common/images/popup_titlemark_primary.svg"
+                  alt=""
+                  class="w-35 h-55 me-10"
+                />
+                <div class="flex font-extrabold text-42 text-[#41674B]">
+                  일본의 성씨 소유
+                </div>
+              </div>
+              <!-- text -->
+              <div class="font-bold f-nanum-s text-40 leading-52">
+                <p>일본에서는 1870년 이전에는 서민들이 공식적으로</p>
+                <p>성씨를 가지는 것이 금지되어 있었다. 그러나 메이지 시대</p>
+                <p class="flex pt-12">
+                  (<span class="font-medium f-noto"
+                    ><span class="relative"
+                      >明<span class="ruby">めい</span></span
+                    ><span class="relative">治<span class="ruby">じ</span></span
+                    ><span class="relative">時<span class="ruby">じ</span></span
+                    ><span class="relative"
+                      >代<span class="ruby">だい</span></span
+                    ></span
+                  >, 1868<span class="font-medium f-noto">～</span>1912)에
+                  근대화를 진행하는 과정
+                </p>
+                <p>에서 호적을 편성하여 국민을 관리하기 위해 1875년에</p>
+                <p>성씨 사용을 법적으로 의무화하여 모든 국민이 성씨를</p>
+                <p>가지게 되었다.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 사진 팝업창 -->
+        <div data-name="popup" data-popup="2" style="display: none">
+          <div data-name="popup-header">
+            <div data-name="popup-title">사진 팝업창</div>
+            <button
+              data-name="popup-close"
+              onclick="contentUtil.setPopup()"
+            ></button>
+          </div>
+          <div
+            data-name="popup-body"
+            class="flex items-center justify-center w-full h-full gap-16"
+          >
+            <div
+              class="flex flex-col items-center w-608 h-402"
+              data-name="popup_photo_wrap"
+            >
+              <div class="w-full overflow-x-hidden overflow-y-auto pe-4">
+                <div class="relative min-w-608">
+                  <img
+                    src="./images/4_01_04/popup_photo1.jpg"
+                    alt="구로토메소데"
+                    class="object-contain min-w-608 rounded-10"
+                  />
+                  <!-- text1 -->
+                  <div
+                    class="absolute font-medium top-50 left-85 text-16 f-noto leading-20"
+                  >
+                    <p>
+                      <span data-audio="4_01_04/060-01.mp3">ひろと？</span>
+                    </p>
+                    <p>
+                      <span data-audio="4_01_04/060-02.mp3">ひろき？</span>
+                    </p>
+                    <p>
+                      <span data-audio="4_01_04/060-03.mp3">はると？</span>
+                    </p>
+                    <p>
+                      <span data-audio="4_01_04/060-04.mp3">はるま？</span>
+                    </p>
+                  </div>
+                  <!-- text2 -->
+                  <div
+                    class="absolute font-medium top-45 left-467 text-16 f-noto leading-20"
+                  >
+                    <p>
+                      <span data-audio="4_01_04/060-05.mp3">やまと？</span>
+                    </p>
+                    <p>
+                      <span data-audio="4_01_04/060-06.mp3">まさと？</span>
+                    </p>
+                    <p>
+                      <span data-audio="4_01_04/060-07.mp3">たいと？</span>
+                    </p>
+                    <p>
+                      <span data-audio="4_01_04/060-08.mp3">だいと？</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="flex mt-8 font-bold f-nanum-s h-52 text-40 leading-52 shrink-0"
+              >
+                <span data-name="popup_photo_text"
+                  >이름 ‘<span class="font-medium f-noto">大翔</span>(대상)’을
+                  읽는 방법</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript">
+    const page = {
+      isAnswer: false,
+      isVocabulary: false,
+      showAnswer: () => {},
+      hideAnswer: () => {},
+      showVocabulary: () => {},
+    };
+  </script>
+  <script src="./../common/js/tailwind.config.js"></script>
+  <script src="./../common/js/script.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {});
+  </script>
+</html>

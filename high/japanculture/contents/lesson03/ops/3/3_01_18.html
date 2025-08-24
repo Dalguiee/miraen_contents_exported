@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>미래엔 일본 문화</title>
+    <script src="./../common/lib/jquery-3.7.1.min.js"></script>
+    <script src="./../common/lib/howler-2.1.3.min.js"></script>
+    <script src="./../common/lib/tailwind.js"></script>
+    <!-- 폰트 -->
+    <link href="./../common/font/suit/suit.css" rel="stylesheet" />
+    <link href="./../common/font/bmjua/bmjua.css" rel="stylesheet" />
+    <link
+      href="./../common/font/nanumsquare/nanumSquare.css"
+      rel="stylesheet"
+    />
+    <link href="./../common/font/notoSansJP/notoSansJP.css" rel="stylesheet" />
+    <link href="./../common/css/tailwind.css" rel="stylesheet" />
+    <link href="./../common/css/fontStyle.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div id="wrap">
+      <!-- contents -->
+      <div class="relative w-full h-full pt-68">
+        <!-- title -->
+        <img
+          src="./../common/images/title_look_culture3.svg"
+          alt="문화 들여다보기1 주택의 종류와 특징"
+          class="absolute w-605 w-764 h-49 top-10"
+        />
+        <button
+          data-name="btn-common"
+          onclick="contentUtil.setPopup(1)"
+          class="absolute right-0 top-13"
+        >
+          해설 보기
+        </button>
+
+        <!-- main -->
+        <div class="flex flex-col w-full h-full">
+          <div
+            class="flex flex-col w-full mb-8 h-404 f-nanum-s text-40 leading-52 ps-20"
+          >
+            <div class="flex items-center mb-4">
+              <img
+                src="./../common/images/index_pink_3.svg"
+                alt="번호 3"
+                class="w-40 h-40 me-4"
+              />
+              <span class="font-extrabold">주택 임대</span>
+            </div>
+            <div class="flex mb-4 h-52">
+              <div data-name="number-2" class="bg-[#C84935]"></div>
+              <span class="text-[#C84935] font-extrabold">집 구조 표기 </span>
+            </div>
+            <!-- ======== page 1 ======== -->
+            <div
+              data-name="page"
+              class="flex flex-col font-bold w-724 f-nanum-s-ac"
+            >
+              <div class="ps-28">
+                <p>일본에서는 집의 내부 구조를 표기할 때</p>
+              </div>
+              <div>
+                <p class="">
+                  ‘<span data-audio="3_01_18/047-04.mp3">LDK</span>’라는 표기를
+                  쓴다. L은 거실(Living
+                </p>
+                <p class="">room), D는 식당(Dining room), K는 주방</p>
+                <p class="">
+                  (Kitchen)의 앞 글자를 따 온 말로
+                  <span data-audio="3_01_18/047-05.mp3">1K</span>,
+                  <span data-audio="3_01_18/047-06.mp3">2DK</span>,
+                </p>
+                <p class="">
+                  <span data-audio="3_01_18/047-07.mp3">3LDK</span> 등으로
+                  표시한다.
+                </p>
+              </div>
+            </div>
+            <!-- ======== page 2 ======== -->
+            <div
+              style="display: none"
+              data-name="page"
+              class="flex flex-col font-bold w-724 f-nanum-s-ac"
+            >
+              <div>
+                <p>
+                  예를 들어 ‘<span data-audio="3_01_18/047-07.mp3">3LDK</span
+                  >’는 3개의 방과 1개의 거실,
+                </p>
+                <p>식당, 주방이 있는 집을 말한다. 일본은 방</p>
+                <p>개수가 많을수록 DK 넓이가 넓어진다. 대개</p>
+                <p>
+                  우리나라의 84m² 아파트가 ‘<span
+                    data-audio="3_01_18/047-07.mp3"
+                    >3LDK</span
+                  >’ 정도라고
+                </p>
+                <p>볼 수 있다.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- img box -->
+          <div class="absolute w-272 h-187 right-16 top-180">
+            <img
+              src="./images/3_01_18/main_photo1.jpg"
+              alt="주택1"
+              class="w-full h-full"
+            />
+            <button
+              data-name="btn-view"
+              class="absolute bottom-10 right-10"
+              onclick="contentUtil.setPopup(2)"
+            ></button>
+          </div>
+
+          <!-- pagination -->
+          <div
+            class="absolute -translate-x-1/2 left-1/2 bottom-10"
+            data-name="pagination"
+          >
+            <button class="active" data-name="btn-pagination"></button>
+            <button class="" data-name="btn-pagination"></button>
+          </div>
+        </div>
+      </div>
+      <!-- popup -->
+      <div id="popup-wrap" style="display: none">
+        <!-- 해설 보기 -->
+        <div data-name="popup" data-popup="1" style="display: none">
+          <div data-name="popup-header">
+            <div data-name="popup-title">해설 보기</div>
+            <button
+              data-name="popup-close"
+              onclick="contentUtil.setPopup()"
+            ></button>
+          </div>
+          <div
+            data-name="popup-body"
+            class="mt-16 mb-10 mr-10 ms-26 f-nanum-s me-6"
+          >
+            <!--  popup section 1  -->
+            <div class="flex flex-col mr-14">
+              <!-- title -->
+              <div class="flex items-center mb-10 h-55">
+                <img
+                  src="./../common/images/popup_titlemark_primary.svg"
+                  alt=""
+                  class="w-35 h-55 me-10"
+                />
+                <div
+                  class="flex font-extrabold text-42 text-[#F25F7C] items-baseline"
+                >
+                  1R
+                </div>
+              </div>
+              <div class="">
+                <div class="font-bold f-nanum-s text-40 leading-52">
+                  <p>‘R’은 ‘ROOM’의 약자이며, ‘1R’의 방 구조는 현관문을</p>
+                  <p>열면 바로 방이 나오는 형태로 방 안에 작은 주방이 포함된</p>
+                  <p>
+                    것을 말한다. 화장실과 세면대, 욕실이 일체형으로 되어 있는
+                  </p>
+                  <p>
+                    우리가 흔히 말하는 원룸의 형태를 가리킨다. ‘1R’의 방 구조
+                  </p>
+                  <p>외에는 원칙적으로 생략한다.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 사진 팝업창 -->
+        <div data-name="popup" data-popup="2" style="display: none">
+          <div data-name="popup-header">
+            <div data-name="popup-title">사진 팝업창</div>
+            <button
+              data-name="popup-close"
+              onclick="contentUtil.setPopup()"
+            ></button>
+          </div>
+          <div
+            data-name="popup-body"
+            class="flex items-center justify-center w-full h-full gap-16"
+          >
+            <div
+              class="flex flex-col items-center w-608 h-402"
+              data-name="popup_photo_wrap"
+            >
+              <div class="w-full overflow-x-hidden overflow-y-auto h-400 pe-4">
+                <img
+                  src="./images/3_01_18/popup_photo1.jpg"
+                  alt="오키나와의 개방형 주택"
+                  class="object-contain w-full rounded-10"
+                  data-name="popup_photo"
+                />
+              </div>
+              <div
+                class="flex mt-8 font-bold f-nanum-s h-52 text-40 leading-52 shrink-0"
+              >
+                <div data-name="popup_photo_text">
+                  <span class="flex"> 3LDK 구조 </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript">
+    const page = {
+      isAnswer: false,
+      isVocabulary: false,
+      showAnswer: () => {},
+      hideAnswer: () => {},
+      showVocabulary: () => {},
+    };
+  </script>
+  <script src="./../common/js/tailwind.config.js"></script>
+  <script src="./../common/js/script.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      // contentUtil.setPopup(1);
+    });
+  </script>
+</html>

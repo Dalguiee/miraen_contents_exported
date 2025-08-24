@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>미래엔 일본 문화</title>
+    <script src="./../common/lib/jquery-3.7.1.min.js"></script>
+    <script src="./../common/lib/howler-2.1.3.min.js"></script>
+    <script src="./../common/lib/tailwind.js"></script>
+    <!-- 폰트 -->
+    <link href="./../common/font/suit/suit.css" rel="stylesheet" />
+    <link href="./../common/font/bmjua/bmjua.css" rel="stylesheet" />
+    <link
+      href="./../common/font/nanumsquare/nanumSquare.css"
+      rel="stylesheet"
+    />
+    <link href="./../common/font/notoSansJP/notoSansJP.css" rel="stylesheet" />
+    <link href="./../common/css/tailwind.css" rel="stylesheet" />
+    <link href="./../common/css/fontStyle.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div id="wrap">
+      <!-- contents -->
+      <div class="relative w-full h-full pt-68">
+        <!-- title -->
+        <img
+          src="./../common/images/title_look_culture5.svg"
+          alt="문화 들여다보기1 동아리 활동"
+          class="absolute w-764 h-49 top-10"
+        />
+        <!-- header-btn -->
+        <div class="absolute right-0 flex gap-6 top-13" data-name="header-btn">
+          <button
+            data-name="btn-common"
+            onclick="contentUtil.setPopup(2)"
+            class="absolute top-0 right-0 min-w-64 btn_comment1"
+          >
+            해설 보기
+          </button>
+        </div>
+
+        <!-- main -->
+        <div class="flex flex-col w-full h-full">
+          <div
+            class="flex flex-col w-full mb-8 h-404 text-40 f-nanum-s leading-52 ps-20"
+          >
+            <div class="flex items-center mb-10">
+              <img
+                src="./../common/images/index_pink_2.svg"
+                alt="번호 2"
+                class="w-40 h-40 me-4"
+              />
+              <span class="font-extrabold f-nanum-s text-40">
+                일본 고등학생의 하루
+              </span>
+            </div>
+
+            <!-- ======== page 1 ======== -->
+
+            <div data-name="page" class="flex flex-col font-bold">
+              <div class="bg-[#E7F3F7] w-960 h-323 rounded-20 overflow-hidden">
+                <div
+                  class="absolute gap-10 overflow-hidden w-406 h-283 left-40 bottom-86 rounded-10"
+                >
+                  <img
+                    src="./images/5_01_13/main_photo1.jpg"
+                    alt="일본 등교"
+                    class="w-full h-full"
+                  />
+                  <button
+                    data-name="btn-view"
+                    class="absolute bottom-10 right-10"
+                    onclick="contentUtil.setPopup(1); contentUtil.setPhotoPopup(1);"
+                  ></button>
+                </div>
+                <div
+                  class="absolute flex flex-col items-center justify-center gap-10 overflow-hidden bg-white w-239 h-141 right-20 top-60 rounded-10"
+                >
+                  <img
+                    src="./images/5_01_13/main_photo2.jpg"
+                    alt="일본 자전거 주차장"
+                    class="w-222 h-125"
+                  />
+                  <button
+                    data-name="btn-view"
+                    class="absolute bottom-18 right-18"
+                    onclick="contentUtil.setPopup(1); contentUtil.setPhotoPopup(2);"
+                  ></button>
+                </div>
+                <div class="flex flex-col items-end w-full h-full pr-20 mt-44">
+                  <div class="flex flex-col items-start w-484">
+                    <div
+                      class="mb-12 mr-170 w-314 h-67 bg-[#B2DAEE] rounded-10 overflow-hidden relative z-10"
+                    >
+                      <span
+                        class="flex items-center gap-10 mt-10 ml-10 font-medium f-bmjua text-36"
+                      >
+                        <span>AM 8:00~8:30</span>
+                        <span class="text-[#C33F35]">등교</span>
+                      </span>
+                    </div>
+                    <div>
+                      <div>
+                        <p>자전거로 등교하는 학생이 많아</p>
+                        <p>자전거 주차장이 넓게 마련되어</p>
+                        <p>있다.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- ======== page 2 ======== -->
+
+            <div
+              style="display: none"
+              data-name="page"
+              class="flex flex-col font-bold"
+            >
+              <div class="bg-[#E7F3F7] w-960 h-323 rounded-20 overflow-hidden">
+                <div
+                  class="absolute gap-10 overflow-hidden w-406 h-283 left-40 bottom-86 rounded-10"
+                >
+                  <img
+                    src="./images/5_01_13/main_photo3.jpg"
+                    alt="일본 점심시간"
+                    class="w-full h-full"
+                  />
+                  <button
+                    data-name="btn-view"
+                    class="absolute bottom-10 right-10"
+                    onclick="contentUtil.setPopup(1); contentUtil.setPhotoPopup(3);"
+                  ></button>
+                </div>
+
+                <div class="flex flex-col items-end w-full h-full pr-20 mt-20">
+                  <div class="flex flex-col items-start w-484">
+                    <div
+                      class="mb-12 mr-204 w-280 h-67 bg-[#B2DAEE] rounded-10 overflow-hidden relative z-10"
+                    >
+                      <span
+                        class="flex items-center gap-10 mt-10 ml-10 font-medium f-bmjua text-36"
+                      >
+                        <span>PM 12:10</span>
+                        <span class="text-[#C33F35]">점심시간</span>
+                      </span>
+                    </div>
+                    <div>
+                      <div>
+                        <p>점심시간에는 교실에서 도시락</p>
+                        <p>을 먹거나 학생 식당에서 사</p>
+                        <p>먹기도 한다. 또한 급식을 하는</p>
+                        <p>학교도 있다.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- ======== page 3 ======== -->
+
+            <div
+              style="display: none"
+              data-name="page"
+              class="flex flex-col font-bold"
+            >
+              <div class="bg-[#FFEFD5] w-960 h-323 rounded-20 overflow-hidden">
+                <div
+                  class="absolute flex items-center justify-center w-406 h-283 bg-[#F8C676] gap-10 left-40 bottom-86 overflow-hidden rounded-10"
+                >
+                  <div class="overflow-hidden w-390 h-267 rounded-10">
+                    <img
+                      src="./images/5_01_13/main_photo4.jpg"
+                      alt="일본 매점"
+                      class="w-full h-full"
+                    />
+                    <button
+                      data-name="btn-view"
+                      class="absolute bottom-10 right-10"
+                      onclick="contentUtil.setPopup(1); contentUtil.setPhotoPopup(4);"
+                    ></button>
+                  </div>
+                </div>
+
+                <div class="flex flex-col items-end w-full h-full pr-20 mt-52">
+                  <div class="w-484">
+                    <div
+                      class="mb-12 mr-204 w-280 h-67 bg-[#F8C676] rounded-10 overflow-hidden relative z-10"
+                    >
+                      <span
+                        class="flex items-center gap-10 mt-10 ml-10 font-medium f-bmjua text-36"
+                      >
+                        <span>PM 12:10</span>
+                        <span class="text-[#C33F35]">점심시간</span>
+                      </span>
+                    </div>
+                    <div
+                      class="flex bg-white overflow-hidden justify-center items-center rounded-10 border-2 border-solid border-[#F0B672]"
+                    >
+                      <div
+                        class="bg-[#FBDBA8] overflow-hidden rounded-10 px-[7.5px] py-10 my-8 mx-8"
+                      >
+                        <div>
+                          <p>학교 내 매점에서는 간식 외에</p>
+                          <p>학용품을 판매하기도 한다.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- ======== page 4 ======== -->
+
+            <div
+              style="display: none"
+              data-name="page"
+              class="flex flex-col font-bold"
+            >
+              <div class="bg-[#E7F3F7] w-960 h-323 rounded-20 overflow-hidden">
+                <div
+                  class="absolute flex items-center justify-center overflow-hidden w-406 h-283 left-40 bottom-86 rounded-10"
+                >
+                  <div class="w-full h-full">
+                    <img
+                      src="./images/5_01_13/main_photo5.jpg"
+                      alt="일본 청소 시간"
+                      class="w-full h-full"
+                    />
+                    <button
+                      data-name="btn-view"
+                      class="absolute bottom-10 right-10"
+                      onclick="contentUtil.setPopup(1); contentUtil.setPhotoPopup(5);"
+                    ></button>
+                  </div>
+                </div>
+
+                <div class="flex flex-col items-end w-full h-full pr-20 mt-20">
+                  <div class="w-484">
+                    <div
+                      class="mb-12 mr-204 w-280 h-67 bg-[#B2DAEE] rounded-10 overflow-hidden relative z-10"
+                    >
+                      <span
+                        class="flex items-center gap-10 mt-10 ml-10 font-medium f-bmjua text-36"
+                      >
+                        <span>PM 3:40</span>
+                        <span class="text-[#C33F35]">청소 시간</span>
+                      </span>
+                    </div>
+                    <div>
+                      <p>청소도 학습의 일환으로 당번을</p>
+                      <p>정해 학생이 직접 한다. 학교에</p>
+                      <p>따라서 점심시간 전후에 청소</p>
+                      <p>시간을 두기도 한다.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- ======== page 5 ======== -->
+
+            <div
+              style="display: none"
+              data-name="page"
+              class="flex flex-col font-bold"
+            >
+              <div class="bg-[#E7F3F7] w-960 h-323 rounded-20 overflow-hidden">
+                <div
+                  class="absolute flex items-center justify-center overflow-hidden w-406 h-283 left-40 bottom-86 rounded-10"
+                >
+                  <div class="w-full h-full">
+                    <img
+                      src="./images/5_01_13/main_photo6.jpg"
+                      alt="일본 동아리 활동"
+                      class="w-full h-full"
+                    />
+                    <button
+                      data-name="btn-view"
+                      class="absolute bottom-10 right-10"
+                      onclick="contentUtil.setPopup(1); contentUtil.setPhotoPopup(6);"
+                    ></button>
+                  </div>
+                </div>
+
+                <div class="flex flex-col items-end w-full h-full pr-20 mt-70">
+                  <div class="w-484">
+                    <div
+                      class="mb-12 mr-204 w-314 h-67 bg-[#B2DAEE] rounded-10 overflow-hidden relative z-10"
+                    >
+                      <span
+                        class="flex items-center gap-10 mt-10 ml-10 font-medium f-bmjua text-36"
+                      >
+                        <span>PM 4:00</span>
+                        <span class="text-[#C33F35]">동아리 활동</span>
+                      </span>
+                    </div>
+                    <div>
+                      <p>방과 후에 대다수의 학생이</p>
+                      <p>동아리 활동을 한다.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- ======== page 6 ======== -->
+
+            <div
+              style="display: none"
+              data-name="page"
+              class="flex flex-col font-bold"
+            >
+              <div class="bg-[#E7F3F7] w-960 h-323 rounded-20 overflow-hidden">
+                <div
+                  class="absolute flex items-center justify-center overflow-hidden w-203 h-305 left-823 bottom-60 rounded-10"
+                >
+                  <div class="w-full h-full">
+                    <img
+                      src="./images/5_01_13/main_photo7.png"
+                      alt="일본 고등학생의 하루7"
+                      class="w-full h-full"
+                    />
+                    <button
+                      data-name="btn-view"
+                      class="absolute bottom-30 right-55"
+                      onclick="contentUtil.setPopup(1); contentUtil.setPhotoPopup(7);"
+                    ></button>
+                  </div>
+                </div>
+                <img
+                  class="absolute top-63 right-81 w-300 h-210"
+                  src="./images/5_01_13/bubble_text.svg"
+                  alt="말풍선"
+                />
+
+                <div
+                  class="flex flex-col items-start w-full h-full pl-20 mt-44"
+                >
+                  <div class="w-484">
+                    <div
+                      class="mb-12 mr-204 w-221 h-67 bg-[#B2DAEE] rounded-10 overflow-hidden relative z-10"
+                    >
+                      <span
+                        class="flex items-center gap-10 mt-10 ml-10 font-medium f-bmjua text-36"
+                      >
+                        <span>PM 7:00</span>
+                        <span class="text-[#C33F35]">학원</span>
+                      </span>
+                    </div>
+                    <div>
+                      <p>동아리 활동이 끝나고 학원에 가기도 한다.</p>
+                      <p>보통 과목별로 여러 학원을 다니는 것이</p>
+                      <p>아니라 한 곳에서 여러 과목을 공부한다.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- pagination -->
+          <div
+            class="absolute -translate-x-1/2 left-1/2 bottom-10"
+            data-name="pagination"
+          >
+            <button class="active" data-name="btn-pagination"></button>
+            <button class="" data-name="btn-pagination"></button>
+            <button class="" data-name="btn-pagination"></button>
+            <button class="" data-name="btn-pagination"></button>
+            <button class="" data-name="btn-pagination"></button>
+            <button class="" data-name="btn-pagination"></button>
+          </div>
+        </div>
+      </div>
+      <!-- popup -->
+      <div id="popup-wrap" style="display: none">
+        <!-- 사진 팝업창 -->
+        <div data-name="popup" data-popup="1" style="display: none">
+          <div data-name="popup-header">
+            <div data-name="popup-title">사진 팝업창</div>
+            <button
+              data-name="popup-close"
+              onclick="contentUtil.setPopup()"
+            ></button>
+          </div>
+          <div
+            data-name="popup-body"
+            class="flex items-center justify-center w-full h-full gap-16"
+          >
+            <div
+              class="flex flex-col items-center w-608 h-402"
+              data-name="popup_photo_wrap"
+            >
+              <div
+                class="w-full overflow-x-hidden overflow-y-auto pe-4 rounded-10"
+              >
+                <img
+                  src="./images/5_01_13/popup_photo1.jpg"
+                  alt="등교"
+                  class="object-contain min-w-608 rounded-10"
+                  data-name="popup_photo"
+                />
+                <img
+                  src="./images/5_01_13/popup_photo2.jpg"
+                  alt="자전거 주차장"
+                  class="object-contain min-w-608 rounded-10"
+                  data-name="popup_photo"
+                  style="display: none"
+                />
+                <img
+                  src="./images/5_01_13/popup_photo3.jpg"
+                  alt="점심시간"
+                  class="object-contain min-w-608 rounded-10"
+                  data-name="popup_photo"
+                  style="display: none"
+                />
+                <img
+                  src="./images/5_01_13/popup_photo4.jpg"
+                  alt="매점"
+                  class="object-contain min-w-608 rounded-10"
+                  data-name="popup_photo"
+                  style="display: none"
+                />
+                <img
+                  src="./images/5_01_13/popup_photo5.jpg"
+                  alt="청소 시간"
+                  class="object-contain min-w-608 rounded-10"
+                  data-name="popup_photo"
+                  style="display: none"
+                />
+                <img
+                  src="./images/5_01_13/popup_photo6.jpg"
+                  alt="동아리 활동"
+                  class="object-contain min-w-608 rounded-10"
+                  data-name="popup_photo"
+                  style="display: none"
+                />
+                <img
+                  src="./images/5_01_13/popup_photo7.jpg"
+                  alt="고등학생의 하루7"
+                  class="object-contain w-full rounded-10"
+                  data-name="popup_photo"
+                  style="display: none"
+                />
+              </div>
+              <div class="flex font-bold f-nanum-s text-40 leading-52 shrink-0">
+                <div class="pt-8" data-name="popup_photo_text">등교</div>
+                <div
+                  class="pt-8"
+                  style="display: none"
+                  data-name="popup_photo_text"
+                >
+                  자전거 주차장
+                </div>
+                <div
+                  class="pt-8"
+                  style="display: none"
+                  data-name="popup_photo_text"
+                >
+                  점심시간
+                </div>
+                <div
+                  class="pt-8"
+                  style="display: none"
+                  data-name="popup_photo_text"
+                >
+                  매점
+                </div>
+                <div
+                  class="pt-8"
+                  style="display: none"
+                  data-name="popup_photo_text"
+                >
+                  청소 시간
+                </div>
+                <div
+                  class="pt-8"
+                  style="display: none"
+                  data-name="popup_photo_text"
+                >
+                  동아리 활동
+                </div>
+              </div>
+            </div>
+            <div class="w-266 h-402">
+              <div class="flex flex-wrap w-full gap-10">
+                <button
+                  onclick="contentUtil.setPhotoPopup(1)"
+                  data-name="btn-popup_photo"
+                  class="w-128 h-72 active"
+                >
+                  <img src="./images/5_01_13/popup_btn_photo1.jpg" alt="등교" />
+                </button>
+                <button
+                  onclick="contentUtil.setPhotoPopup(2)"
+                  data-name="btn-popup_photo"
+                  class="w-128 h-72"
+                >
+                  <img
+                    src="./images/5_01_13/popup_btn_photo2.jpg"
+                    alt="자전거 주차장"
+                  />
+                </button>
+                <button
+                  onclick="contentUtil.setPhotoPopup(3)"
+                  data-name="btn-popup_photo"
+                  class="w-128 h-72"
+                >
+                  <img
+                    src="./images/5_01_13/popup_btn_photo3.jpg"
+                    alt="점심시간"
+                  />
+                </button>
+                <button
+                  onclick="contentUtil.setPhotoPopup(4)"
+                  data-name="btn-popup_photo"
+                  class="w-128 h-72"
+                >
+                  <img src="./images/5_01_13/popup_btn_photo4.jpg" alt="매점" />
+                </button>
+                <button
+                  onclick="contentUtil.setPhotoPopup(5)"
+                  data-name="btn-popup_photo"
+                  class="w-128 h-72"
+                >
+                  <img
+                    src="./images/5_01_13/popup_btn_photo5.jpg"
+                    alt="청소 시간"
+                  />
+                </button>
+                <button
+                  onclick="contentUtil.setPhotoPopup(6)"
+                  data-name="btn-popup_photo"
+                  class="w-128 h-72"
+                >
+                  <img
+                    src="./images/5_01_13/popup_btn_photo6.jpg"
+                    alt="동아리 활동"
+                  />
+                </button>
+                <button
+                  onclick="contentUtil.setPhotoPopup(7)"
+                  data-name="btn-popup_photo"
+                  class="w-128 h-72"
+                >
+                  <img
+                    src="./images/5_01_13/popup_btn_photo7.jpg"
+                    alt="고등학생의 하루7"
+                  />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 해설 보기 -->
+        <div data-name="popup" data-popup="2" style="display: none">
+          <div data-name="popup-header">
+            <div data-name="popup-title">해설 보기</div>
+            <button
+              data-name="popup-close"
+              onclick="contentUtil.setPopup()"
+            ></button>
+          </div>
+          <div data-name="popup-body" class="mt-16 mb-10 ms-26 f-nanum-s me-6">
+            <div class="flex flex-col">
+              <div class="flex items-center mb-10 h-55">
+                <img
+                  src="./../common/images/popup_titlemark_primary.svg"
+                  alt=""
+                  class="w-35 h-55 me-10"
+                />
+                <div
+                  class="flex font-extrabold text-42 text-[#F25F7C] items-baseline"
+                >
+                  자전거 주차장
+                </div>
+              </div>
+              <div class="">
+                <div class="font-bold f-nanum-s text-40 leading-52">
+                  <p>일본에서는 자전거를 이용하여 등교하는 학생들을 위해</p>
+                  <p>학교에 자전거 주차장이나 자전거 보관소가 설치되어 있는</p>
+                  <p>학교가 많다.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript">
+    const page = {
+      isAnswer: false,
+      isVocabulary: false,
+      showAnswer: () => {},
+      hideAnswer: () => {},
+      showVocabulary: () => {},
+    };
+  </script>
+  <script src="./../common/js/tailwind.config.js"></script>
+  <script src="./../common/js/script.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      // contentUtil.setPopup(1);
+    });
+
+    $(`[data-name="btn-pagination"]`).on("click", function () {
+      if ($(this).index() === 0) {
+        $(`[data-name="btn-common"]`).show();
+      } else {
+        $(`[data-name="btn-common"]`).hide();
+      }
+    });
+  </script>
+</html>

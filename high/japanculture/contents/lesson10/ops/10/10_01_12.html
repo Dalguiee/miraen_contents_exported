@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>미래엔 일본 문화</title>
+    <script src="./../common/lib/jquery-3.7.1.min.js"></script>
+    <script src="./../common/lib/howler-2.1.3.min.js"></script>
+    <script src="./../common/lib/tailwind.js"></script>
+    <!-- 폰트 -->
+    <link href="./../common/font/suit/suit.css" rel="stylesheet" />
+    <link href="./../common/font/bmjua/bmjua.css" rel="stylesheet" />
+    <link
+      href="./../common/font/nanumsquare/nanumSquare.css"
+      rel="stylesheet"
+    />
+    <link href="./../common/font/notoSansJP/notoSansJP.css" rel="stylesheet" />
+    <link href="./../common/css/tailwind.css" rel="stylesheet" />
+    <link href="./../common/css/fontStyle.css" rel="stylesheet" />
+    <link href="./../common/css/rolePlayer.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div id="wrap">
+      <!-- contents -->
+      <div class="relative w-full h-full pt-60">
+        <!-- title -->
+        <img
+          src="./../common/images/title_look_culture1.svg"
+          alt="문화 들여다보기1 전통예술"
+          class="absolute w-764 h-49 top-10"
+        />
+        <!-- header-btn -->
+        <div
+          class="absolute right-0 flex gap-6 top-13"
+          data-name="header-btn"
+        ></div>
+
+        <!-- 음원 플레이어 -->
+        <div class="absolute top-16 right-0 z-10">
+          <div style="display: none" class="rolePlayer">
+            <div class="rolePlayer_player">
+              <div class="rolePlayer_box">
+                <button class="rolePlayer_play-btn play"></button>
+                <button class="rolePlayer_stop-btn"></button>
+                <div class="rolePlayer_duration">
+                  <input
+                    type="range"
+                    class="rolePlayer_duration_range"
+                    min="0"
+                    max="100"
+                    value="0"
+                    step="1"
+                  />
+                  <div class="rolePlayer_duration_range-ui">
+                    <div
+                      class="rolePlayer_duration_range-ui_bar"
+                      style="width: 0"
+                    ></div>
+                  </div>
+                  <span class="rolePlayer_duration_text seek">00:00</span>
+                  <span class="rolePlayer_duration_text duration">00:00</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- main -->
+        <div class="flex flex-col w-full h-full mt-10">
+          <div class="flex flex-col mb-8 leading-52 ps-20">
+            <div class="flex items-center mb-4">
+              <img
+                src="./../common/images/index_pink_5.svg"
+                alt="번호 5"
+                class="w-40 h-40 me-4"
+              />
+              <span class="font-extrabold f-nanum-s text-40 flex">
+                하이쿠(<span
+                  data-audio="10_01_12/151-01.mp3"
+                  class="f-noto font-bold"
+                  >はいく</span
+                >)
+              </span>
+            </div>
+            <!-- ======== page 1 ======== -->
+            <div
+              data-name="page"
+              class="flex flex-col font-bold f-nanum-s text-40"
+            >
+              <div>
+                <p class="ps-28">
+                  ‘하이쿠’는 5·7·5 음률의 17자로 이루어진 일본 고유의 시
+                </p>
+                <p class="flex">
+                  (<span class="f-noto font-medium">詩</span>) 형식이다. 계절을
+                  나타내는 계절어와 구(<span class="f-noto font-medium">句</span
+                  >)의 매듭을
+                </p>
+                <p>
+                  짓는 말을 꼭 사용해야 한다는 규칙이 있다. 유명한 시인으로는
+                </p>
+                <p>‘마쓰오 바쇼’가 있으며, 다음 하이쿠는 그의 대표 작품이다.</p>
+              </div>
+            </div>
+            <!-- ======== page 2 ======== -->
+            <div
+              data-name="page"
+              class="flex flex-col font-bold f-nanum-s text-40 w-full"
+              style="display: none"
+            >
+              <div class="w-960 relative mt-6">
+                <img src="./images/10_01_12/main_photo1.jpg" alt="연못" />
+                <div class="absolute flex flex-col gap-10 top-96 left-117">
+                  <div class="flex gap-108">
+                    <p class="">
+                      <span
+                        data-audio="10_01_12/151-02.mp3"
+                        class="f-noto font-medium flex"
+                        >ふるいけ<span class="bg-[#B6D5EB] leading-52"
+                          >や</span
+                        ></span
+                      >
+                    </p>
+                    <p>오랜 못이여</p>
+                  </div>
+                  <div class="flex gap-30">
+                    <p class="">
+                      <span
+                        data-audio="10_01_12/151-03.mp3"
+                        class="f-noto font-medium flex"
+                      >
+                        <span class="bg-[#B6D5EB] leading-52">かわず</span>
+                        とびこむ
+                      </span>
+                    </p>
+                    <p>개구리 뛰어들어</p>
+                  </div>
+                  <div class="flex gap-109">
+                    <p class="flex">
+                      <span
+                        data-audio="10_01_12/151-04.mp3"
+                        class="f-noto font-medium"
+                        >みずのおと</span
+                      >
+                    </p>
+                    <p>물치는 소리</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- ======== page 3 ======== -->
+            <div
+              data-name="page"
+              class="flex flex-col font-bold f-nanum-s text-40 w-full"
+              style="display: none"
+            >
+              <div class="w-full">
+                <p class="ps-28">
+                  이 ‘하이쿠’는 5·7·5의 음률로 이루어져 있으며, ‘개구리
+                </p>
+                <p class="flex">
+                  (<span
+                    data-audio="10_01_12/151-05.mp3"
+                    class="f-noto font-medium"
+                    >かわず</span
+                  >)’라는 봄을 나타내는 계절어를 사용하였다. 계절별로
+                </p>
+                <p>
+                  사용하는 ‘계절어’가 정해져 있어 하이쿠를 지을 때는 계절어를
+                </p>
+                <p class="flex">
+                  모아 둔 책을 참고한다. 또한 첫 줄 마지막에 ‘<span
+                    data-audio="10_01_12/151-06.mp3"
+                    class="f-noto font-medium"
+                    >や</span
+                  >’는 구의 매듭을
+                </p>
+                <p>
+                  짓기 위해 사용하였으며, 시의 흐름을 끊어 산문처럼 단조롭게
+                </p>
+                <p>읽히는 것을 방지하는 효과가 있다.</p>
+              </div>
+            </div>
+            <!-- ======== page 4 ======== -->
+            <div
+              data-name="page"
+              class="flex flex-col font-bold f-nanum-s text-40 w-full"
+              style="display: none"
+            >
+              <div class="w-full">
+                <p class="ps-28">
+                  한편 이러한 제약이 있는 하이쿠와 달리 5·7·5 음률만
+                </p>
+                <p class="flex">
+                  지키고, 계절어 등이 없는 ‘센류(<span
+                    data-audio="10_01_12/151-07.mp3"
+                    class="f-noto font-medium"
+                    >せんりゅう</span
+                  >)’라는 장르도
+                </p>
+                <p>
+                  있다. ‘센류’는 주로 구어체로 이루어져 인간이나 인간 사회와
+                </p>
+                <p>관련된 주제를 익살스럽게 쓴다.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- pagination -->
+          <div
+            class="absolute -translate-x-1/2 left-1/2 bottom-10"
+            data-name="pagination"
+          >
+            <button class="active" data-name="btn-pagination"></button>
+            <button class="" data-name="btn-pagination"></button>
+            <button class="" data-name="btn-pagination"></button>
+            <button class="" data-name="btn-pagination"></button>
+          </div>
+        </div>
+      </div>
+      <!-- popup -->
+      <div id="popup-wrap" style="display: none"></div>
+    </div>
+  </body>
+  <script type="text/javascript">
+    const page = {
+      isAnswer: false,
+      isVocabulary: false,
+      showAnswer: () => {},
+      hideAnswer: () => {},
+      showVocabulary: () => {},
+    };
+
+    //역할 연습 음원
+    // audio : 재생할 전체음원
+    // data
+    // start : 시작 시간
+    // end : 끝 시간
+    // value : 해당되는 data-audio
+    // role : 해당되는 역할
+    // scroll : 해당 시간대 위치할 스크롤
+    // page : 해당 시간대 위치할 페이지
+    const rolePlayerAudio = [
+      //  ----- page 1 -----
+      {
+        audio: "10_01_12/151-100.mp3",
+        data: [
+          {
+            start: 0,
+            end: 1.5,
+            value: "10_01_12/151-02.mp3",
+          },
+          {
+            start: 1.5,
+            end: 3.5,
+            value: "10_01_12/151-03.mp3",
+          },
+          {
+            start: 3.5,
+            end: 5.3,
+            value: "10_01_12/151-04.mp3",
+          },
+        ],
+      },
+    ];
+  </script>
+
+  <script src="./../common/js/tailwind.config.js"></script>
+  <script src="./../common/js/script.js"></script>
+  <script src="../common/js/rolePlayerJc.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      // contentUtil.setPage(2);
+    });
+
+    $(`[data-name="btn-pagination"]`).on("click", function () {
+      if ($(this).index() === 1) {
+        $(".rolePlayer").show();
+      } else {
+        $(".rolePlayer").hide();
+      }
+    });
+  </script>
+</html>

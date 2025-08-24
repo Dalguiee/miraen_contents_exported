@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>미래엔 일본 문화</title>
+    <script src="./../common/lib/jquery-3.7.1.min.js"></script>
+    <script src="./../common/lib/howler-2.1.3.min.js"></script>
+    <script src="./../common/lib/tailwind.js"></script>
+    <!-- 폰트 -->
+    <link href="./../common/font/suit/suit.css" rel="stylesheet" />
+    <link href="./../common/font/bmjua/bmjua.css" rel="stylesheet" />
+    <link
+      href="./../common/font/nanumsquare/nanumSquare.css"
+      rel="stylesheet"
+    />
+    <link href="./../common/font/notoSansJP/notoSansJP.css" rel="stylesheet" />
+    <link href="./../common/css/tailwind.css" rel="stylesheet" />
+    <link href="./../common/css/fontStyle.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div id="wrap">
+      <!-- contents -->
+      <div class="relative w-full h-full pt-68">
+        <!-- title -->
+        <img
+          src="./../common/images/title_look_culture1.svg"
+          alt="문화 들여다보기1 대중문화의 특징"
+          class="absolute w-764 h-49 top-10"
+        />
+        <!-- header-btn -->
+        <div class="absolute right-0 flex gap-6 top-13" data-name="header-btn">
+          <button
+            style="display: none"
+            data-name="btn-common"
+            onclick="contentUtil.setPopup(1)"
+          >
+            해설 보기
+          </button>
+        </div>
+        <!-- main -->
+        <div class="flex flex-col w-full h-full">
+          <div
+            class="flex flex-col w-full mb-8 h-404 text-40 f-nanum-s leading-52 ps-20"
+          >
+            <div class="flex items-center mb-4">
+              <img
+                src="./../common/images/index_pink_1.svg"
+                alt="번호 1"
+                class="w-40 h-40 me-4"
+              />
+              <span class="font-extrabold">대중문화와 문화 산업</span>
+            </div>
+            <!-- ======== page 1 ======== -->
+            <div data-name="page" class="flex flex-col font-bold">
+              <div>
+                <p class="ps-28">
+                  일본 대중문화는 현재 일본 사회의 모습을 투영하고 있으며,
+                </p>
+                <p>
+                  다양한 작품이 세계적으로 인기를 얻고 있다. 이는 대중문화가
+                </p>
+                <p>대량으로 산업화된 1960년대, 특히 애니메이션을 비롯한 작품</p>
+                <p>이 세계로 수출되면서부터이다. 1990년대부터는 애니메이션</p>
+                <p>이나 영화, 음악, 만화 등 다양한 문화 상품이 세계 시장에서</p>
+                <p>성공하자 일본 정부도 대중문화 수출을 지원하기 시작하였다.</p>
+              </div>
+            </div>
+            <!-- ======== page 2 ======== -->
+            <div
+              data-name="page"
+              class="flex flex-col font-bold"
+              style="display: none"
+            >
+              <div>
+                <p class="ps-28">
+                  문화 산업에서는 기본 전략으로 ‘원 소스 멀티유스(One
+                </p>
+                <p>Source Multi-Use)’를 폭넓게 도입하고 있다. ‘원 소스 멀티</p>
+                <p>유스(OSMU)’란 게임이나 만화, 애니메이션 등 하나의 소스로</p>
+                <p>
+                  다양한 장르의 콘텐츠를 만드는 것을 말한다. 예를 들어 대중의
+                </p>
+                <p>인기를 얻은 만화는 애니메이션으로도 제작하고 영화, 게임,</p>
+                <p>뮤지컬, 소설, 이벤트, 캐릭터 상품 등에 영향을 주면서 오랫</p>
+                <p>동안 인기를 이어 간다.</p>
+              </div>
+            </div>
+            <!-- ======== page 3 ======== -->
+            <div
+              data-name="page"
+              class="flex flex-col font-bold"
+              style="display: none"
+            >
+              <!-- img box -->
+              <div class="relative mt-6 w-328 h-329 ms-316">
+                <img
+                  src="./images/9_01_04/main_photo1.jpg"
+                  alt="문화 콘텐츠 산업의 OSMU"
+                  class="w-full h-full rounded-10"
+                />
+                <button
+                  data-name="btn-view"
+                  class="absolute bottom-10 right-50"
+                  onclick="contentUtil.setPopup(2); contentUtil.setPhotoPopup(1);"
+                ></button>
+              </div>
+            </div>
+          </div>
+
+          <!-- pagination -->
+          <div
+            class="absolute -translate-x-1/2 left-1/2 bottom-10"
+            data-name="pagination"
+          >
+            <button class="active" data-name="btn-pagination"></button>
+            <button class="" data-name="btn-pagination"></button>
+            <button class="" data-name="btn-pagination"></button>
+          </div>
+        </div>
+      </div>
+      <!-- popup -->
+      <div id="popup-wrap" style="display: none">
+        <!-- 해설 보기 -->
+        <div data-name="popup" data-popup="1" style="display: none">
+          <div data-name="popup-header">
+            <div data-name="popup-title">해설 보기</div>
+            <button
+              data-name="popup-close"
+              onclick="contentUtil.setPopup()"
+            ></button>
+          </div>
+          <div data-name="popup-body" class="mt-16 mb-10 ms-26 f-nanum-s me-6">
+            <div class="flex flex-col">
+              <!-- title -->
+              <div class="flex items-center mb-10 h-55">
+                <img
+                  src="./../common/images/popup_titlemark_primary.svg"
+                  alt=""
+                  class="w-35 h-55 me-10"
+                />
+                <div class="flex font-extrabold text-42 text-[#F25F7C]">
+                  원 소스 멀티유스(OSMU)
+                </div>
+              </div>
+              <!-- text -->
+              <div class="mb-10 font-bold f-nanum-s text-40 leading-52">
+                <p>이 용어는 1980년대 일본의 전자 공학 분야에서 처음</p>
+                <p>쓰이기 시작했다고 알려져 있다. 이것이 1990년 중반</p>
+                <p>우리나라의 언론 보도에서 하나의 영상을 다양한 종류의</p>
+                <p>매체로 가공하여 제공하는 것을 가리키는 말로 사용되기</p>
+                <p>시작했다. 최근에는 문화 콘텐츠 산업의 특징을 설명하는</p>
+                <p>용어로 사용되고 있다.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 사진 팝업창 -->
+        <div data-name="popup" data-popup="2" style="display: none">
+          <div data-name="popup-header">
+            <div data-name="popup-title">사진 팝업창</div>
+            <button
+              data-name="popup-close"
+              onclick="contentUtil.setPopup()"
+            ></button>
+          </div>
+          <div
+            data-name="popup-body"
+            class="flex items-center justify-center h-full gap-16"
+          >
+            <div
+              class="flex flex-col items-center"
+              data-name="popup_photo_wrap"
+            >
+              <div class="pe-4 h-342 w-608 overflow-y-auto overflow-x-hidden">
+                <img
+                  data-name="popup_photo"
+                  src="./images/9_01_04/popup_photo1.jpg"
+                  alt="문화 콘텐츠 산업의 OSMU"
+                  class="object-contain rounded-10"
+                />
+              </div>
+              <div
+                class="flex mt-8 font-bold f-nanum-s h-52 text-40 leading-52 shrink-0"
+              >
+                <span data-name="popup_photo_text"
+                  >문화 콘텐츠 산업의 OSMU</span
+                >
+              </div>
+              <button data-name="btn-popup_photo" class="hidden"></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript">
+    const page = {
+      isAnswer: false,
+      isVocabulary: false,
+      showAnswer: () => {},
+      hideAnswer: () => {},
+      showVocabulary: () => {},
+    };
+  </script>
+  <script src="./../common/js/tailwind.config.js"></script>
+  <script src="./../common/js/script.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      // contentUtil.setPopup(2);
+    });
+
+    $(`[data-name="btn-pagination"]`).on("click", function () {
+      if ($(this).index() === 1) {
+        $(`[data-name="btn-common"]`).show();
+      } else {
+        $(`[data-name="btn-common"]`).hide();
+      }
+    });
+  </script>
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>미래엔 일본 문화</title>
+    <script src="./../common/lib/jquery-3.7.1.min.js"></script>
+    <script src="./../common/lib/howler-2.1.3.min.js"></script>
+    <script src="./../common/lib/tailwind.js"></script>
+    <!-- 폰트 -->
+    <link href="./../common/font/suit/suit.css" rel="stylesheet" />
+    <link href="./../common/font/bmjua/bmjua.css" rel="stylesheet" />
+    <link
+      href="./../common/font/nanumsquare/nanumSquare.css"
+      rel="stylesheet"
+    />
+    <link href="./../common/font/notoSansJP/notoSansJP.css" rel="stylesheet" />
+    <link href="./../common/css/tailwind.css" rel="stylesheet" />
+    <link href="./../common/css/fontStyle.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div id="wrap">
+      <!-- contents -->
+      <div class="relative w-full h-full pt-60">
+        <!-- title -->
+        <img
+          src="./../common/images/title_look_culture5.svg"
+          alt="문화 들여다보기1 동아리 활동"
+          class="absolute w-764 h-49 top-10"
+        />
+        <!-- header-btn -->
+        <div class="absolute right-0 flex gap-6 top-13" data-name="header-btn">
+          <button
+            data-name="btn-common"
+            class="min-w-62"
+            onclick="contentUtil.setPopup(1)"
+          >
+            해설 보기
+          </button>
+        </div>
+        <!-- main -->
+        <div class="flex flex-col w-full h-full">
+          <div class="flex flex-col mb-8 w-763 h-404 leading-52 ps-20">
+            <div class="flex items-center mt-20 mb-4">
+              <img
+                src="./../common/images/index_pink_1.svg"
+                alt="번호 1"
+                class="w-40 h-40 me-4"
+              />
+              <span class="flex font-extrabold f-nanum-s text-40"
+                >동아리 활동(
+                <span data-audio="5_01_05/074-01.mp3" class="font-bold f-noto">
+                  <span class="relative"
+                    >部<span class="font-bold ruby">ぶ</span></span
+                  ><span class="relative"
+                    >活<span class="font-bold ruby">かつ</span>
+                  </span></span
+                >)
+              </span>
+            </div>
+            <!-- ======== page 1 ======== -->
+            <div
+              data-name="page"
+              class="flex flex-col font-bold f-nanum-s text-40"
+            >
+              <div>
+                <p class="ps-28">
+                  일본 중고등학교에서는 학생 대부분이 동아리에 소속되어
+                </p>
+                <p>
+                  활동하고 있을 정도로 동아리가 활성화되어 있다. 스포츠 관련
+                </p>
+                <p>동아리를 ‘운동부’라고 하고, 문화나 예술과 관련된 동아리를</p>
+                <p>‘문화부’라고 한다. 학생들은 학업과 상관없이 관심 있는</p>
+                <p>동아리를 선택하여 활동하는 경우가 많다.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- popup -->
+      <div id="popup-wrap" style="display: none">
+        <!-- 해설 보기 -->
+        <div data-name="popup" data-popup="1" style="display: none">
+          <div data-name="popup-header">
+            <div data-name="popup-title">해설 보기</div>
+            <button
+              data-name="popup-close"
+              onclick="contentUtil.setPopup()"
+            ></button>
+          </div>
+          <div
+            data-name="popup-body"
+            class="mt-16 mb-10 font-bold ms-26 f-nanum-s me-6 leading-52 text-40"
+          >
+            <div class="flex flex-col">
+              <!-- title -->
+              <div class="flex items-center mb-10 h-55">
+                <img
+                  src="./../common/images/popup_titlemark_primary.svg"
+                  alt=""
+                  class="w-35 h-55 me-10"
+                />
+                <div class="flex">
+                  <div class="font-extrabold text-42 text-[#F25F7C]">
+                    <p>동아리 활동</p>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <p>일본에서는 많은 학생들이 방과 후에 동아리 활동에 참여</p>
+                <p>하고 있다. 필수는 아니므로 모든 학생이 동아리 활동을 해야</p>
+                <p>하는 의무는 없다. 일반적으로 중학교에서 가입했던 동아리</p>
+                <p>활동을 고등학교에서도 계속하는 학생이 많은 편이다.</p>
+                <p>고등학교마다 전통적으로 유명한 동아리가 있어, 그 동아리</p>
+                <p>에 들어가는 것을 목적으로 고등학교를 고르기도 한다.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript">
+    const page = {
+      isAnswer: false,
+      isVocabulary: false,
+      showAnswer: () => {},
+      hideAnswer: () => {},
+      showVocabulary: () => {},
+    };
+  </script>
+  <script src="./../common/js/tailwind.config.js"></script>
+  <script src="./../common/js/script.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {});
+
+    $(`[data-name="btn-pagination"]`).on("click", function () {
+      if ($(this).index() === 3) {
+        $(`[data-name="btn-common-dark"]`).show();
+      } else {
+        $(`[data-name="btn-common-dark"]`).hide();
+      }
+    });
+  </script>
+</html>

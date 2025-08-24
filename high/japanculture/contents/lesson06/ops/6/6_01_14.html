@@ -1,0 +1,1244 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>미래엔 일본 문화</title>
+    <script src="./../common/lib/jquery-3.7.1.min.js"></script>
+    <script src="./../common/lib/howler-2.1.3.min.js"></script>
+    <script src="./../common/lib/tailwind.js"></script>
+    <!-- 폰트 -->
+    <link href="./../common/font/suit/suit.css" rel="stylesheet" />
+    <link href="./../common/font/bmjua/bmjua.css" rel="stylesheet" />
+    <link
+      href="./../common/font/nanumsquare/nanumSquare.css"
+      rel="stylesheet"
+    />
+    <link href="./../common/font/notoSansJP/notoSansJP.css" rel="stylesheet" />
+    <link href="./../common/css/tailwind.css" rel="stylesheet" />
+    <link href="./../common/css/fontStyle.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div id="wrap">
+      <!-- contents -->
+      <div class="relative w-full h-full pt-68">
+        <!-- title -->
+        <img
+          src="./../common/images/title_look_culture1.svg"
+          alt="문화 들여다보기1 연말연시와 공휴일"
+          class="absolute w-764 h-49 top-10"
+        />
+        <!-- main -->
+        <div class="flex flex-col w-full h-full">
+          <div
+            class="flex flex-col w-full font-bold h-404 text-40 f-nanum-s leading-52 ps-20"
+          >
+            <div class="flex items-center">
+              <img
+                src="./../common/images/index_pink_3.svg"
+                alt="번호 3"
+                class="w-40 h-40 me-4"
+              />
+              <span class="flex font-extrabold f-nanum-s text-40">
+                월별 행사와 공휴일
+              </span>
+            </div>
+            <!-- ======== page 1 ======== -->
+            <div data-name="page" class="pt-42">
+              <!-- header-btn -->
+              <div
+                class="absolute right-0 flex gap-6 top-13"
+                data-name="header-btn"
+              >
+                <button
+                  data-name="btn-common"
+                  onclick="contentUtil.setPopup(1)"
+                >
+                  보충 자료
+                </button>
+              </div>
+              <!-- contents box -->
+              <div
+                class="flex items-center gap-40 w-960 py-18 border-2 border-[#80A084] ps-18"
+                style="box-shadow: #a1c4a6 3px 3px 10px"
+              >
+                <img
+                  src="./images/6_01_14/main_img1.jpg"
+                  alt=""
+                  class="w-126 h-104"
+                />
+                <!-- ------- -->
+                <div class="flex flex-col">
+                  <img
+                    src="./images/6_01_14/main_label1.svg"
+                    alt="전통 행사"
+                    class="mb-10 w-178 h-50"
+                  />
+                  <span class="flex ps-10">
+                    <span
+                      class="text-[#77957B] f-nanum-s-ac font-extrabold me-10"
+                    >
+                      1일
+                    </span>
+                    설날(<span
+                      data-audio="6_01_14/089-01.mp3"
+                      class="font-medium f-noto"
+                      >お<span class="relative"
+                        >正月<span class="ruby tracking-[-0.1em]"
+                          >しょう がつ&nbsp;&nbsp;&nbsp;</span
+                        ></span
+                      ></span
+                    >)
+                  </span>
+                </div>
+                <!-- ------- -->
+                <div class="flex flex-col">
+                  <img
+                    src="./images/6_01_14/main_label2.svg"
+                    alt="공휴일"
+                    class="mb-10 w-117 h-50"
+                  />
+                  <span class="flex mb-8 ps-10">
+                    <span
+                      class="text-[#77957B] f-nanum-s-ac font-extrabold me-10"
+                    >
+                      1일
+                    </span>
+                    설날(<span
+                      data-audio="6_01_14/091-01.mp3"
+                      class="font-medium f-noto"
+                      ><span class="relative"
+                        >元<span class="ruby">がん</span></span
+                      ><span class="relative"
+                        >日<span class="ruby">じつ</span></span
+                      ></span
+                    >)
+                  </span>
+                  <span class="flex ps-10">
+                    <span
+                      class="text-[#77957B] f-nanum-s-ac font-extrabold me-10"
+                    >
+                      둘째 월요일
+                    </span>
+                    성인의 날
+                  </span>
+                </div>
+              </div>
+            </div>
+            <!-- ======== page 2 ======== -->
+            <div data-name="page" class="pt-20" style="display: none">
+              <!-- header-btn -->
+              <div
+                class="absolute right-0 flex gap-6 top-13"
+                data-name="header-btn"
+              >
+                <button
+                  data-name="btn-common"
+                  onclick="contentUtil.setPopup(2)"
+                >
+                  해설 보기
+                </button>
+              </div>
+              <!-- contents box -->
+              <div
+                class="flex items-center gap-40 w-960 py-18 border-2 border-[#80A084] ps-18"
+                style="box-shadow: #a1c4a6 3px 3px 10px"
+              >
+                <img
+                  src="./images/6_01_14/main_img2.jpg"
+                  alt=""
+                  class="w-126 h-100"
+                />
+                <!-- ------- -->
+                <div class="flex flex-col">
+                  <img
+                    src="./images/6_01_14/main_label1.svg"
+                    alt="전통 행사"
+                    class="mb-10 w-178 h-50"
+                  />
+                  <span class="flex mb-20 ps-10">
+                    <span
+                      class="text-[#77957B] f-nanum-s-ac font-extrabold me-10"
+                    >
+                      3일경
+                    </span>
+                    세쓰분(<span
+                      data-audio="6_01_14/091-02.mp3"
+                      class="font-medium f-noto"
+                      >せつぶん</span
+                    >)
+                  </span>
+                  <img
+                    src="./images/6_01_14/main_label3.svg"
+                    alt="현대적 행사"
+                    class="mb-10 w-178 h-50"
+                  />
+                  <span class="flex ps-10">
+                    <span
+                      class="text-[#77957B] f-nanum-s-ac font-extrabold me-10"
+                    >
+                      14일
+                    </span>
+                    밸런타인데이
+                  </span>
+                </div>
+                <!-- ------- -->
+                <div class="flex flex-col self-start">
+                  <img
+                    src="./images/6_01_14/main_label2.svg"
+                    alt="공휴일"
+                    class="mb-10 w-117 h-50"
+                  />
+                  <span class="flex mb-8 ps-10">
+                    <span
+                      class="text-[#77957B] f-nanum-s-ac font-extrabold me-10"
+                    >
+                      11일
+                    </span>
+                    건국 기념일
+                  </span>
+                  <span class="flex ps-10">
+                    <span
+                      class="text-[#77957B] f-nanum-s-ac font-extrabold me-10"
+                    >
+                      23일
+                    </span>
+                    일왕 생일
+                  </span>
+                </div>
+              </div>
+            </div>
+            <!-- ======== page 3 ======== -->
+            <div data-name="page" class="pt-10" style="display: none">
+              <!-- header-btn -->
+              <div
+                class="absolute right-0 flex gap-6 top-13"
+                data-name="header-btn"
+              >
+                <button
+                  data-name="btn-common"
+                  onclick="contentUtil.setPopup(3)"
+                >
+                  해설 보기
+                </button>
+              </div>
+              <!-- contents box -->
+              <div
+                class="flex items-center gap-40 w-960 py-14 border-2 border-[#80A084] ps-18"
+                style="box-shadow: #a1c4a6 3px 3px 10px"
+              >
+                <img
+                  src="./images/6_01_14/main_img3.jpg"
+                  alt=""
+                  class="w-126 h-100"
+                />
+                <!-- ------- -->
+                <div class="flex flex-col">
+                  <img
+                    src="./images/6_01_14/main_label1.svg"
+                    alt="전통 행사"
+                    class="mb-10 w-178 h-50"
+                  />
+                  <span class="flex mb-20 ps-10">
+                    <span
+                      class="text-[#77957B] f-nanum-s-ac font-extrabold me-10"
+                    >
+                      3일
+                    </span>
+                    <div>
+                      <p>히나마쓰리</p>
+                      <p class="flex">
+                        (<span
+                          data-audio="6_01_14/091-03.mp3"
+                          class="font-medium f-noto"
+                          >ひなまつり</span
+                        >)
+                      </p>
+                    </div>
+                  </span>
+                  <img
+                    src="./images/6_01_14/main_label3.svg"
+                    alt="현대적 행사"
+                    class="mb-10 w-178 h-50"
+                  />
+                  <span class="flex ps-10">
+                    <span
+                      class="text-[#77957B] f-nanum-s-ac font-extrabold me-10"
+                    >
+                      14일
+                    </span>
+                    화이트 데이
+                  </span>
+                </div>
+                <!-- ------- -->
+                <div class="flex flex-col self-start ms-40">
+                  <img
+                    src="./images/6_01_14/main_label2.svg"
+                    alt="공휴일"
+                    class="mb-10 w-117 h-50"
+                  />
+                  <span class="flex ps-10">
+                    <span
+                      class="text-[#77957B] f-nanum-s-ac font-extrabold me-10"
+                    >
+                      21일경
+                    </span>
+                    춘분의 날
+                  </span>
+                </div>
+              </div>
+            </div>
+            <!-- ======== page 4 ======== -->
+            <div data-name="page" class="pt-42" style="display: none">
+              <!-- header-btn -->
+              <div
+                class="absolute right-0 flex gap-6 top-13"
+                data-name="header-btn"
+              >
+                <button
+                  data-name="btn-common-dark"
+                  class="min-w-62"
+                  onclick="contentUtil.setPopup(5)"
+                >
+                  TIP
+                </button>
+                <button
+                  data-name="btn-common"
+                  onclick="contentUtil.setPopup(4)"
+                >
+                  해설 보기
+                </button>
+              </div>
+              <!-- contents box -->
+              <div
+                class="flex items-center gap-40 w-960 py-47 border-2 border-[#80A084] ps-18"
+                style="box-shadow: #a1c4a6 3px 3px 10px"
+              >
+                <img
+                  src="./images/6_01_14/main_img4.jpg"
+                  alt=""
+                  class="w-130 h-104"
+                />
+                <!-- ------- -->
+                <div class="flex flex-col">
+                  <img
+                    src="./images/6_01_14/main_label1.svg"
+                    alt="전통 행사"
+                    class="mb-10 w-178 h-50"
+                  />
+                  <span class="flex pt-6 ps-10"
+                    >하나미(<span
+                      data-audio="6_01_14/091-04.mp3"
+                      class="font-medium f-noto"
+                      ><span class="relative"
+                        >花<span class="ruby">はな</span></span
+                      ><span class="relative"
+                        >見<span class="ruby">み</span></span
+                      ></span
+                    >)</span
+                  >
+                </div>
+                <!-- ------- -->
+                <div class="flex flex-col self-start ms-80">
+                  <img
+                    src="./images/6_01_14/main_label2.svg"
+                    alt="공휴일"
+                    class="mb-10 w-117 h-50"
+                  />
+                  <span class="flex ps-10">
+                    <span
+                      class="text-[#77957B] f-nanum-s-ac font-extrabold me-10"
+                    >
+                      29일
+                    </span>
+                    쇼와의 날
+                  </span>
+                </div>
+              </div>
+            </div>
+            <!-- ======== page 5 ======== -->
+            <div data-name="page" class="pt-10" style="display: none">
+              <!-- header-btn -->
+              <div
+                class="absolute right-0 flex gap-6 top-13"
+                data-name="header-btn"
+              >
+                <button
+                  data-name="btn-common-dark"
+                  class="min-w-62"
+                  onclick="contentUtil.setPopup(5)"
+                >
+                  TIP
+                </button>
+                <button
+                  data-name="btn-common"
+                  onclick="contentUtil.setPopup(6)"
+                >
+                  해설 보기
+                </button>
+              </div>
+              <!-- contents box -->
+              <div
+                class="flex items-center gap-40 w-960 py-14 border-2 border-[#80A084] ps-18"
+                style="box-shadow: #a1c4a6 3px 3px 10px"
+              >
+                <img
+                  src="./images/6_01_14/main_img5.jpg"
+                  alt=""
+                  class="w-126 h-100"
+                />
+                <!-- ------- -->
+                <div class="flex flex-col">
+                  <img
+                    src="./images/6_01_14/main_label1.svg"
+                    alt="전통 행사"
+                    class="mb-10 w-178 h-50"
+                  />
+                  <span class="flex mb-20 ps-10">
+                    <span
+                      class="text-[#77957B] f-nanum-s-ac font-extrabold me-10"
+                    >
+                      5일
+                    </span>
+                    <div>
+                      <p>단고노셋쿠</p>
+                      <p class="flex">
+                        (<span
+                          data-audio="6_01_14/091-05.mp3"
+                          class="font-medium f-noto"
+                          >たんごの せっく</span
+                        >)
+                      </p>
+                    </div>
+                  </span>
+                  <img
+                    src="./images/6_01_14/main_label3.svg"
+                    alt="현대적 행사"
+                    class="mb-10 w-178 h-50"
+                  />
+                  <span class="flex ps-10">
+                    <span
+                      class="text-[#77957B] f-nanum-s-ac font-extrabold me-10"
+                    >
+                      둘째 일요일
+                    </span>
+                    어머니의 날
+                  </span>
+                </div>
+                <!-- ------- -->
+                <div class="flex flex-col self-start -ms-10">
+                  <img
+                    src="./images/6_01_14/main_label2.svg"
+                    alt="공휴일"
+                    class="mb-10 w-117 h-50"
+                  />
+                  <span class="flex mb-4 ps-10">
+                    <span
+                      class="text-[#77957B] f-nanum-s-ac font-extrabold me-10"
+                    >
+                      3일
+                    </span>
+                    헌법 기념일
+                  </span>
+                  <span class="flex mb-4 ps-10">
+                    <span
+                      class="text-[#77957B] f-nanum-s-ac font-extrabold me-10"
+                    >
+                      4일
+                    </span>
+                    녹색의 날
+                  </span>
+                  <span class="flex ps-10">
+                    <span
+                      class="text-[#77957B] f-nanum-s-ac font-extrabold me-10"
+                    >
+                      5일
+                    </span>
+                    어린이날
+                  </span>
+                </div>
+              </div>
+            </div>
+            <!-- ======== page 6 ======== -->
+            <div data-name="page" class="pt-42" style="display: none">
+              <!-- contents box -->
+              <div
+                class="flex items-center gap-36 w-960 py-48 border-2 border-[#80A084] ps-18"
+                style="box-shadow: #a1c4a6 3px 3px 10px"
+              >
+                <img
+                  src="./images/6_01_14/main_img6.jpg"
+                  alt=""
+                  class="w-130 h-104"
+                />
+                <!-- ------- -->
+                <div class="flex flex-col">
+                  <img
+                    src="./images/6_01_14/main_label3.svg"
+                    alt="현대적 행사"
+                    class="mb-10 w-178 h-50"
+                  />
+                  <span class="flex ps-10">
+                    <span
+                      class="text-[#77957B] f-nanum-s-ac font-extrabold me-10"
+                    >
+                      셋째 일요일
+                    </span>
+                    아버지의 날
+                  </span>
+                </div>
+              </div>
+            </div>
+            <!-- ======== page 7 ======== -->
+            <div data-name="page" class="pt-42" style="display: none">
+              <!-- contents box -->
+              <div
+                class="flex items-center gap-35 w-960 py-47 border-2 border-[#80A084] ps-18"
+                style="box-shadow: #a1c4a6 3px 3px 10px"
+              >
+                <img
+                  src="./images/6_01_14/main_img7.jpg"
+                  alt=""
+                  class="w-131 h-104"
+                />
+                <!-- ------- -->
+                <div class="flex flex-col">
+                  <img
+                    src="./images/6_01_14/main_label1.svg"
+                    alt="전통 행사"
+                    class="mb-10 w-178 h-50"
+                  />
+                  <span class="flex pt-6 ps-10">
+                    <span
+                      class="text-[#77957B] f-nanum-s-ac font-extrabold me-10"
+                      >7일</span
+                    >
+                    다나바타(<span
+                      data-audio="6_01_14/091-06.mp3"
+                      class="font-medium f-noto"
+                      ><span class="relative"
+                        >七<span class="ruby">たな</span></span
+                      ><span class="relative"
+                        >夕<span class="ruby">ばた</span></span
+                      ></span
+                    >)
+                  </span>
+                </div>
+                <!-- ------- -->
+                <div class="flex flex-col self-start ms-5">
+                  <img
+                    src="./images/6_01_14/main_label2.svg"
+                    alt="공휴일"
+                    class="mb-10 w-117 h-50"
+                  />
+                  <span class="flex ps-10">
+                    <span
+                      class="text-[#77957B] f-nanum-s-ac font-extrabold me-10"
+                    >
+                      셋째 월요일
+                    </span>
+                    바다의 날
+                  </span>
+                </div>
+              </div>
+            </div>
+            <!-- ======== page 8 ======== -->
+            <div data-name="page" class="pt-42" style="display: none">
+              <!-- contents box -->
+              <div
+                class="flex items-center w-960 py-47 border-2 border-[#80A084] ps-18"
+                style="box-shadow: #a1c4a6 3px 3px 10px"
+              >
+                <img
+                  src="./images/6_01_14/main_img8.jpg"
+                  alt=""
+                  class="w-143 h-104 me-23"
+                />
+                <!-- ------- -->
+                <div class="flex flex-col me-80">
+                  <img
+                    src="./images/6_01_14/main_label1.svg"
+                    alt="전통 행사"
+                    class="mb-10 w-178 h-50"
+                  />
+                  <span class="flex ps-10">
+                    <span
+                      class="text-[#77957B] f-nanum-s-ac font-extrabold me-10"
+                      >15일경</span
+                    >
+                    오본(<span
+                      data-audio="6_01_14/091-07.mp3"
+                      class="font-medium f-noto"
+                      >おぼん</span
+                    >)
+                  </span>
+                </div>
+                <!-- ------- -->
+                <div class="flex flex-col self-start ms-5">
+                  <img
+                    src="./images/6_01_14/main_label2.svg"
+                    alt="공휴일"
+                    class="mb-10 w-117 h-50"
+                  />
+                  <span class="flex ps-10">
+                    <span
+                      class="text-[#77957B] f-nanum-s-ac font-extrabold me-10"
+                    >
+                      11일
+                    </span>
+                    산의 날
+                  </span>
+                </div>
+              </div>
+            </div>
+            <!-- ======== page 9 ======== -->
+            <div data-name="page" class="pt-42" style="display: none">
+              <!-- contents box -->
+              <div
+                class="flex items-center w-960 py-18 border-2 border-[#80A084] ps-18"
+                style="box-shadow: #a1c4a6 3px 3px 10px"
+              >
+                <img
+                  src="./images/6_01_14/main_img9.jpg"
+                  alt=""
+                  class="w-128 h-108 me-38"
+                />
+                <!-- ------- -->
+                <div class="flex flex-col me-95">
+                  <img
+                    src="./images/6_01_14/main_label1.svg"
+                    alt="전통 행사"
+                    class="mb-10 w-178 h-50"
+                  />
+                  <span class="flex flex-col ps-10">
+                    <span
+                      class="text-[#77957B] f-nanum-s-ac font-extrabold me-10"
+                      >음력 8월 15일</span
+                    >
+                    <span class="flex pt-10"
+                      >쓰키미(<span
+                        data-audio="6_01_14/091-08.mp3"
+                        class="font-medium f-noto"
+                        ><span class="relative"
+                          >月<span class="ruby">つき</span></span
+                        ><span class="relative"
+                          >見<span class="ruby">み</span></span
+                        ></span
+                      >)</span
+                    >
+                  </span>
+                </div>
+                <!-- ------- -->
+                <div class="flex flex-col self-start ms-5">
+                  <img
+                    src="./images/6_01_14/main_label2.svg"
+                    alt="공휴일"
+                    class="mb-10 w-117 h-50"
+                  />
+                  <span class="flex mb-4 ps-10">
+                    <span
+                      class="text-[#77957B] f-nanum-s-ac font-extrabold me-10"
+                    >
+                      셋째 월요일
+                    </span>
+                    경로의 날
+                  </span>
+                  <span class="flex ps-10">
+                    <span
+                      class="text-[#77957B] f-nanum-s-ac font-extrabold me-10"
+                    >
+                      23일경
+                    </span>
+                    추분의 날
+                  </span>
+                </div>
+              </div>
+            </div>
+            <!-- ======== page 10 ======== -->
+            <div data-name="page" class="pt-42" style="display: none">
+              <!-- header-btn -->
+              <div
+                class="absolute right-0 flex gap-6 top-13"
+                data-name="header-btn"
+              >
+                <button
+                  data-name="btn-common"
+                  onclick="contentUtil.setPopup(7)"
+                >
+                  해설 보기
+                </button>
+              </div>
+              <!-- contents box -->
+              <div
+                class="flex items-center w-960 py-47 border-2 border-[#80A084] ps-18"
+                style="box-shadow: #a1c4a6 3px 3px 10px"
+              >
+                <img
+                  src="./images/6_01_14/main_img10.jpg"
+                  alt=""
+                  class="w-158 h-114 me-8"
+                />
+                <!-- ------- -->
+                <div class="flex flex-col me-86">
+                  <img
+                    src="./images/6_01_14/main_label3.svg"
+                    alt="현대적 행사"
+                    class="mb-10 w-178 h-50"
+                  />
+                  <span class="flex ps-10">
+                    <span
+                      class="text-[#77957B] f-nanum-s-ac font-extrabold me-10"
+                      >31일</span
+                    >
+                    핼러윈
+                  </span>
+                </div>
+                <!-- ------- -->
+                <div class="flex flex-col self-start">
+                  <img
+                    src="./images/6_01_14/main_label2.svg"
+                    alt="공휴일"
+                    class="mb-10 w-117 h-50"
+                  />
+                  <span class="flex ps-10">
+                    <span
+                      class="text-[#77957B] f-nanum-s-ac font-extrabold me-10"
+                    >
+                      둘째 월요일
+                    </span>
+                    스포츠의 날
+                  </span>
+                </div>
+              </div>
+            </div>
+            <!-- ======== page 11 ======== -->
+            <div data-name="page" class="pt-42" style="display: none">
+              <!-- contents box -->
+              <div
+                class="flex items-center w-960 py-16 border-2 border-[#80A084] ps-18"
+                style="box-shadow: #a1c4a6 3px 3px 10px"
+              >
+                <img
+                  src="./images/6_01_14/main_img11.jpg"
+                  alt=""
+                  class="w-160 h-109 me-6"
+                />
+                <!-- ------- -->
+                <div class="flex flex-col me-80">
+                  <img
+                    src="./images/6_01_14/main_label1.svg"
+                    alt="전통 행사"
+                    class="mb-10 w-178 h-50"
+                  />
+                  <span class="flex ps-10">
+                    <span
+                      class="text-[#77957B] f-nanum-s-ac font-extrabold me-10"
+                      >15일</span
+                    >
+                    <div>
+                      <p>시치고산</p>
+                      <p class="flex pt-12">
+                        (<span
+                          data-audio="6_01_14/091-09.mp3"
+                          class="font-medium f-noto"
+                          ><span class="relative"
+                            >七<span class="ruby">しち</span></span
+                          ><span class="relative"
+                            >五<span class="ruby">ご</span></span
+                          ><span class="relative"
+                            >三<span class="ruby">さん</span></span
+                          ></span
+                        >)
+                      </p>
+                    </div>
+                  </span>
+                </div>
+                <!-- ------- -->
+                <div class="flex flex-col ms-5">
+                  <img
+                    src="./images/6_01_14/main_label2.svg"
+                    alt="공휴일"
+                    class="mb-10 w-117 h-50"
+                  />
+                  <span class="flex mb-4 ps-10">
+                    <span
+                      class="text-[#77957B] f-nanum-s-ac font-extrabold me-10"
+                    >
+                      3일
+                    </span>
+                    문화의 날
+                  </span>
+                  <span class="flex ps-10">
+                    <span
+                      class="text-[#77957B] f-nanum-s-ac font-extrabold me-10"
+                    >
+                      23일
+                    </span>
+                    근로 감사의 날
+                  </span>
+                </div>
+              </div>
+            </div>
+            <!-- ======== page 12 ======== -->
+            <div data-name="page" class="pt-42" style="display: none">
+              <!-- header-btn -->
+              <div
+                class="absolute right-0 flex gap-6 top-13"
+                data-name="header-btn"
+              >
+                <button
+                  data-name="btn-common"
+                  onclick="contentUtil.setPopup(8)"
+                >
+                  해설 보기
+                </button>
+              </div>
+              <!-- contents box -->
+              <div
+                class="flex items-center w-960 py-22 border-2 border-[#80A084] ps-18"
+                style="box-shadow: #a1c4a6 3px 3px 10px"
+              >
+                <img
+                  src="./images/6_01_14/main_img12.jpg"
+                  alt=""
+                  class="w-142 h-110 me-24"
+                />
+                <!-- ------- -->
+                <div class="flex flex-col me-80">
+                  <img
+                    src="./images/6_01_14/main_label1.svg"
+                    alt="전통 행사"
+                    class="mb-10 w-178 h-50"
+                  />
+                  <span class="flex ps-10">
+                    <span
+                      class="text-[#77957B] f-nanum-s-ac font-extrabold me-10"
+                      >31일</span
+                    >
+                    <div>
+                      <p>오미소카</p>
+                      <p class="flex">
+                        (<span
+                          data-audio="6_01_14/091-10.mp3"
+                          class="font-medium f-noto"
+                          >おおみそか</span
+                        >)
+                      </p>
+                    </div>
+                  </span>
+                </div>
+                <!-- ------- -->
+                <div class="flex flex-col ms-5">
+                  <img
+                    src="./images/6_01_14/main_label3.svg"
+                    alt="현대적 행사"
+                    class="mb-10 w-178 h-50"
+                  />
+                  <span class="flex ps-10">
+                    <span
+                      class="text-[#77957B] f-nanum-s-ac font-extrabold me-10"
+                    >
+                      25일
+                    </span>
+                    크리스마스
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- pagination -->
+          <div
+            class="absolute -translate-x-1/2 left-1/2 bottom-10"
+            data-name="pagination"
+          >
+            <button class="active" data-name="btn-pagination"></button>
+            <button class="" data-name="btn-pagination"></button>
+            <button class="" data-name="btn-pagination"></button>
+            <button class="" data-name="btn-pagination"></button>
+            <button class="" data-name="btn-pagination"></button>
+            <button class="" data-name="btn-pagination"></button>
+            <button class="" data-name="btn-pagination"></button>
+            <button class="" data-name="btn-pagination"></button>
+            <button class="" data-name="btn-pagination"></button>
+            <button class="" data-name="btn-pagination"></button>
+            <button class="" data-name="btn-pagination"></button>
+            <button class="" data-name="btn-pagination"></button>
+          </div>
+        </div>
+      </div>
+      <!-- popup -->
+      <div id="popup-wrap" style="display: none">
+        <!-- page1 보충 자료 -->
+        <div data-name="popup" data-popup="1" style="display: none">
+          <div data-name="popup-header">
+            <div data-name="popup-title">보충 자료</div>
+            <button
+              data-name="popup-close"
+              onclick="contentUtil.setPopup()"
+            ></button>
+          </div>
+          <div
+            data-name="popup-body"
+            class="flex-1 mt-16 mb-10 ms-26 f-nanum-s me-6"
+          >
+            <div class="flex flex-col">
+              <!-- title -->
+              <div class="flex items-center mb-10 h-55">
+                <img
+                  src="./../common/images/popup_titlemark_primary.svg"
+                  alt=""
+                  class="w-35 h-55 me-10"
+                />
+                <div class="flex font-extrabold text-42 text-[#41674B]">
+                  <span>일본의 공식</span>
+                  <div
+                    class="w-10 h-10 rounded-full bg-[#41674B] mt-24 mx-12"
+                  ></div>
+                  <span>비공식 휴일</span>
+                </div>
+              </div>
+              <!-- text -->
+              <div
+                class="flex flex-col gap-10 font-bold f-nanum-s text-40 leading-52"
+              >
+                <!-- ------- -->
+                <div class="flex">
+                  <div
+                    class="w-12 h-12 mt-20 bg-black rounded-full me-10"
+                  ></div>
+                  <span>공식 휴일(해피먼데이법)</span>
+                </div>
+                <!-- ------- -->
+                <div class="flex ps-22">
+                  <span class="me-8">-</span>
+                  <span>연말연시 휴일</span>
+                  <span data-name="colon-black">:</span>
+                  <div>
+                    <p class="flex">
+                      일반적으로 12월 29일<span class="font-medium f-noto"
+                        >～</span
+                      >1월 3일
+                    </p>
+                  </div>
+                </div>
+                <!-- ------- -->
+                <div class="flex ps-22">
+                  <span class="me-8">-</span>
+                  <span>오본 휴일(여름 휴가)</span>
+                  <span data-name="colon-black">:</span>
+                  <div>
+                    <p>국가 공무원은 3일,</p>
+                    <p class="flex">
+                      지방 공무원은 3일<span class="font-medium f-noto">～</span
+                      >5일,
+                    </p>
+                    <p>일반 기업은 2일</p>
+                  </div>
+                </div>
+                <!-- ------- -->
+                <div class="flex">
+                  <div
+                    class="w-12 h-12 mt-20 bg-black rounded-full me-10"
+                  ></div>
+                  <span>비공식 휴일</span>
+                  <span data-name="colon-black">:</span>
+                  <span>3일 연휴(토·일·월)는 1년에 4회</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- page2 해설 보기 -->
+        <div data-name="popup" data-popup="2" style="display: none">
+          <div data-name="popup-header">
+            <div data-name="popup-title">해설 보기</div>
+            <button
+              data-name="popup-close"
+              onclick="contentUtil.setPopup()"
+            ></button>
+          </div>
+          <div
+            data-name="popup-body"
+            class="flex-1 mt-16 mb-10 ms-26 f-nanum-s me-6"
+          >
+            <div class="flex flex-col">
+              <!-- title -->
+              <div class="flex items-center mb-10 h-55">
+                <img
+                  src="./../common/images/popup_titlemark_primary.svg"
+                  alt=""
+                  class="w-35 h-55 me-10"
+                />
+                <div class="flex font-extrabold text-42 text-[#41674B]">
+                  밸런타인데이(2월 14일)
+                </div>
+              </div>
+              <!-- text -->
+              <div class="font-bold f-nanum-s text-40 leading-52">
+                <p>여성이 남성에게 초콜릿 선물을 한다. 일본에서는 좋아하는</p>
+                <p class="flex pt-12">
+                  남성에게 주는 ‘진짜(<span class="font-medium f-noto"
+                    ><span class="relative"
+                      >本<span class="ruby">ほん</span></span
+                    ><span class="relative"
+                      >命<span class="ruby">めい</span></span
+                    ></span
+                  >) 초콜릿’과 평소 신세를 지고 있는
+                </p>
+                <p class="flex pt-12">
+                  사람에게 주는 ‘의리(<span class="font-medium f-noto"
+                    ><span class="relative">義<span class="ruby">ぎ</span></span
+                    ><span class="relative"
+                      >理<span class="ruby">り</span></span
+                    ></span
+                  >) 초콜릿’의 두 가지 종류가 있다.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- page3 해설 보기 -->
+        <div data-name="popup" data-popup="3" style="display: none">
+          <div data-name="popup-header">
+            <div data-name="popup-title">해설 보기</div>
+            <button
+              data-name="popup-close"
+              onclick="contentUtil.setPopup()"
+            ></button>
+          </div>
+          <div
+            data-name="popup-body"
+            class="flex-1 mt-16 mb-10 ms-26 f-nanum-s me-6"
+          >
+            <div class="flex flex-col">
+              <!-- title -->
+              <div class="flex items-center mb-10 h-55">
+                <img
+                  src="./../common/images/popup_titlemark_primary.svg"
+                  alt=""
+                  class="w-35 h-55 me-10"
+                />
+                <div class="flex font-extrabold text-42 text-[#41674B]">
+                  화이트 데이(3월 14일)
+                </div>
+              </div>
+              <!-- text -->
+              <div class="font-bold f-nanum-s text-40 leading-52">
+                <p>일본에서 유래된 화이트 데이는 어느 과자점에서 마시멜로</p>
+                <p>를 판매하기 위해 ‘마시멜로 데이’라고 했는데, 이것을 사탕</p>
+                <p>과 과자 연합회에서 밸런타인데이의 답례로 보내는 화이트</p>
+                <p>데이로 정했다고 한다.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- page4 해설 보기 -->
+        <div data-name="popup" data-popup="4" style="display: none">
+          <div data-name="popup-header">
+            <div data-name="popup-title">해설 보기</div>
+            <button
+              data-name="popup-close"
+              onclick="contentUtil.setPopup()"
+            ></button>
+          </div>
+          <div
+            data-name="popup-body"
+            class="flex-1 mt-16 mb-10 ms-26 f-nanum-s me-6"
+          >
+            <div class="flex flex-col">
+              <!-- title -->
+              <div class="flex items-center mb-10 h-55">
+                <img
+                  src="./../common/images/popup_titlemark_primary.svg"
+                  alt=""
+                  class="w-35 h-55 me-10"
+                />
+                <div class="flex font-extrabold text-42 text-[#41674B]">
+                  하나미(<span class="font-bold f-noto">はなみ</span>)
+                </div>
+              </div>
+              <!-- text -->
+              <div class="mb-40 font-bold f-nanum-s text-40 leading-52">
+                <p>벚꽃 축제인 하나미는 일본에서 봄에 가장 인기 있는 행사</p>
+                <p>중 하나이다. 3월과 4월에 걸쳐 벚꽃 나무 아래에서 돗자리</p>
+                <p>를 깔고 동료나 가족들이 함께 음식을 먹으며 즐긴다.</p>
+              </div>
+              <!-- title -->
+              <div class="flex items-center mb-10 h-55">
+                <img
+                  src="./../common/images/popup_titlemark_primary.svg"
+                  alt=""
+                  class="w-35 h-55 me-10"
+                />
+                <div class="flex font-extrabold text-42 text-[#41674B]">
+                  쇼와의 날(4월 29일)
+                </div>
+              </div>
+              <!-- text -->
+              <div class="mb-10 font-bold f-nanum-s text-40 leading-52">
+                <p>2007년에 제정된 일본의 공휴일 중 하나로, 쇼와 천황의</p>
+                <p>생일인 4월 29일이다. 격동의 나날을 거쳐 부흥을 이룬</p>
+                <p>쇼와 시대를 돌이켜 보고, 나라의 장래를 생각하기 위해</p>
+                <p>제정되었다. 골든 위크 휴일 중 하나이기도 하다.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- page4 TIP -->
+        <div data-name="popup" data-popup="5" style="display: none">
+          <div data-name="popup-header">
+            <div data-name="popup-title">TIP</div>
+            <button
+              data-name="popup-close"
+              onclick="contentUtil.setPopup()"
+            ></button>
+          </div>
+          <div
+            data-name="popup-body"
+            class="flex-1 mt-16 mb-10 ms-26 f-nanum-s me-6"
+          >
+            <div class="flex flex-col">
+              <!-- text -->
+              <div class="font-bold f-nanum-s text-40 leading-52">
+                <p>일본에서는 공휴일과 일요일이 겹치면 다음 날 쉬는 대체</p>
+                <p>휴일 제도가 있다. 그래서 공휴일이 많은 4월 29일부터</p>
+                <p>5월 5일경까지가 최대의 황금연휴가 되는데, 이때를</p>
+                <p class="flex">
+                  ‘골든 위크(<span
+                    data-audio="6_01_14/091-11.mp3"
+                    class="font-medium f-noto"
+                    >ゴールデンウイーク</span
+                  >)’라고 한다.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- page5 해설 보기 -->
+        <div data-name="popup" data-popup="6" style="display: none">
+          <div data-name="popup-header">
+            <div data-name="popup-title">해설 보기</div>
+            <button
+              data-name="popup-close"
+              onclick="contentUtil.setPopup()"
+            ></button>
+          </div>
+          <div
+            data-name="popup-body"
+            class="flex-1 mt-16 mb-10 ms-26 f-nanum-s me-6"
+          >
+            <div class="flex flex-col">
+              <!-- title -->
+              <div class="flex items-center mb-10 h-55">
+                <img
+                  src="./../common/images/popup_titlemark_primary.svg"
+                  alt=""
+                  class="w-35 h-55 me-10"
+                />
+                <div class="flex font-extrabold text-42 text-[#41674B]">
+                  녹색의 날(5월 4일)
+                </div>
+              </div>
+              <!-- text -->
+              <div class="mb-40 font-bold f-nanum-s text-40 leading-52">
+                <p class="flex">
+                  일본의 공휴일 중 하나로, 1989년<span
+                    class="font-medium f-noto"
+                    >～</span
+                  >2006년은 4월 29일
+                </p>
+                <p>이었으나 2007년부터 지금과 같은 5월 4일로 날짜가</p>
+                <p>바뀌었다. 자연을 아끼며 그 은혜에 감사한 마음을 기른다는</p>
+                <p>취지로 제정되었으며, 골든 위크 휴일 중 하나이기도 하다.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- page10 해설 보기 -->
+        <div data-name="popup" data-popup="7" style="display: none">
+          <div data-name="popup-header">
+            <div data-name="popup-title">해설 보기</div>
+            <button
+              data-name="popup-close"
+              onclick="contentUtil.setPopup()"
+            ></button>
+          </div>
+          <div
+            data-name="popup-body"
+            class="flex-1 mt-16 mb-10 ms-26 f-nanum-s me-6"
+          >
+            <div class="flex flex-col">
+              <!-- title -->
+              <div class="flex items-center mb-10 h-55">
+                <img
+                  src="./../common/images/popup_titlemark_primary.svg"
+                  alt=""
+                  class="w-35 h-55 me-10"
+                />
+                <div class="flex font-extrabold text-42 text-[#41674B]">
+                  핼러윈(10월 31일)
+                </div>
+              </div>
+              <!-- text -->
+              <div class="mb-40 font-bold f-nanum-s text-40 leading-52">
+                <p>일본의 핼러윈은 코스프레에 초점을 맞춘 것이 특징이다.</p>
+                <p>핼러윈 축제의 명소는 일본 애니메이션 중심지인</p>
+                <p>이케부쿠로의 핼러윈 축제로, 2만 명 이상 참여하며</p>
+                <p>코스프레 퍼레이드가 유명하다.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- page12 해설 보기 -->
+        <div data-name="popup" data-popup="8" style="display: none">
+          <div data-name="popup-header">
+            <div data-name="popup-title">해설 보기</div>
+            <button
+              data-name="popup-close"
+              onclick="contentUtil.setPopup()"
+            ></button>
+          </div>
+          <div
+            data-name="popup-body"
+            class="flex-1 mt-16 mb-10 ms-26 f-nanum-s me-6"
+          >
+            <div class="flex flex-col">
+              <!-- title -->
+              <div class="flex items-center mb-10 h-55">
+                <img
+                  src="./../common/images/popup_titlemark_primary.svg"
+                  alt=""
+                  class="w-35 h-55 me-10"
+                />
+                <div class="flex font-extrabold text-42 text-[#41674B]">
+                  크리스마스(12월 25일)
+                </div>
+              </div>
+              <!-- text -->
+              <div class="mb-40 font-bold f-nanum-s text-40 leading-52">
+                <p>프라이드치킨을 가장 즐겨 먹어 11월부터 예약 접수를</p>
+                <p>받는다.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript">
+    const page = {
+      isAnswer: false,
+      isVocabulary: false,
+      showAnswer: () => {},
+      hideAnswer: () => {},
+      showVocabulary: () => {},
+    };
+  </script>
+  <script src="./../common/js/tailwind.config.js"></script>
+  <script src="./../common/js/script.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {});
+  </script>
+</html>

@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>미래엔 일본 문화</title>
+    <script src="./../common/lib/jquery-3.7.1.min.js"></script>
+    <script src="./../common/lib/howler-2.1.3.min.js"></script>
+    <script src="./../common/lib/tailwind.js"></script>
+    <!-- 폰트 -->
+    <link href="./../common/font/suit/suit.css" rel="stylesheet" />
+    <link href="./../common/font/bmjua/bmjua.css" rel="stylesheet" />
+    <link
+      href="./../common/font/nanumsquare/nanumSquare.css"
+      rel="stylesheet"
+    />
+    <link href="./../common/font/notoSansJP/notoSansJP.css" rel="stylesheet" />
+    <link href="./../common/css/tailwind.css" rel="stylesheet" />
+    <link href="./../common/css/fontStyle.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div id="wrap">
+      <!-- contents -->
+      <div class="relative w-full h-full pt-60">
+        <!-- title -->
+        <img
+          src="./../common/images/title_digital.svg"
+          alt="디지털 활동"
+          class="absolute h-42 w-261 top-10"
+        />
+        <!-- main -->
+        <!-- ======== page 1 ======== -->
+        <div
+          data-name="page"
+          class="flex flex-col w-full h-full px-20 leading-52"
+        >
+          <div class="flex mb-10 font-extrabold text-40 f-nanum-s">
+            <img
+              src="./images/8_01_17/index_blue_1.svg"
+              alt=""
+              class="w-26 h-52 me-12"
+            />
+            <div>
+              <p>일본의 인기 온천 순위를 검색하여 발표해 봅시다.</p>
+            </div>
+          </div>
+          <div
+            class="border-4 w-full py-8 ps-20 pe-4 h-338 border-[#3589D7] rounded-10 mb-8"
+          >
+            <div class="w-full h-full py-8 overflow-y-auto"></div>
+          </div>
+          <div class="ms-auto">
+            <button
+              data-name="btn-common"
+              onclick="contentUtil.setPopup(1) ; audioPlay(audio, [`./../common/media/mp3/showAnswer.mp3`]);"
+            >
+              예시 답안
+            </button>
+          </div>
+        </div>
+        <!-- ======== page 2 ======== -->
+        <div
+          data-name="page"
+          class="flex flex-col w-full h-full px-20 leading-52"
+        >
+          <div class="flex mb-10 font-extrabold text-40 f-nanum-s">
+            <img
+              src="./images/8_01_17/index_blue_2.svg"
+              alt=""
+              class="w-26 h-52 me-12"
+            />
+            <div>
+              <p>가장 가 보고 싶은 온천을 선정해 친구들에게 소개해 봅시다.</p>
+            </div>
+          </div>
+          <div
+            class="border-4 w-full py-8 ps-20 pe-4 h-338 border-[#3589D7] rounded-10 mb-8"
+          >
+            <div class="w-full h-full py-8 overflow-y-auto"></div>
+          </div>
+          <div class="ms-auto">
+            <button
+              data-name="btn-common"
+              onclick="contentUtil.setPopup(2) ; audioPlay(audio, [`./../common/media/mp3/showAnswer.mp3`]);"
+            >
+              예시 답안
+            </button>
+          </div>
+        </div>
+        <!-- pagination -->
+        <div
+          class="absolute -translate-x-1/2 left-1/2 bottom-10"
+          data-name="pagination"
+        >
+          <button class="active" data-name="btn-pagination"></button>
+          <button class="" data-name="btn-pagination"></button>
+        </div>
+      </div>
+      <!-- popup -->
+      <div id="popup-wrap" style="display: none">
+        <!-- 예시 답안 1 -->
+        <div data-name="popup" data-popup="1" style="display: none">
+          <div data-name="popup-header">
+            <div data-name="popup-title">예시 답안</div>
+            <button
+              data-name="popup-close"
+              onclick="contentUtil.setPopup()"
+            ></button>
+          </div>
+          <div data-name="popup-body" class="mt-16 mb-10 ms-26 f-nanum-s me-6">
+            <div class="flex flex-col">
+              <!-- table -->
+              <div
+                class="flex flex-col w-full mb-10 font-bold leading-52 text-40 f-nanum-s"
+              >
+                <!-- th -->
+                <div class="flex w-full">
+                  <div
+                    class="flex items-center bg-[#B3CFEA] justify-center rounded-tl-10 py-8 w-92 border-r-1 border-t-2 border-l-2 border-b-1 border-[#9DB9D3]"
+                  >
+                    <span>순위</span>
+                  </div>
+                  <div
+                    class="flex items-center bg-[#B3CFEA] justify-center py-8 w-358 border-r-1 border-t-2 border-b-1 border-[#9DB9D3]"
+                  >
+                    <span>온천</span>
+                  </div>
+                  <div
+                    class="flex items-center bg-[#B3CFEA] justify-center py-8 w-92 border-r-1 border-t-2 border-b-1 border-[#9DB9D3]"
+                  >
+                    <span>순위</span>
+                  </div>
+                  <div
+                    class="flex items-center bg-[#B3CFEA] justify-center rounded-tr-10 border-t-2 border-r-2 border-b-1 py-8 border-[#9DB9D3] w-358"
+                  >
+                    <span>온천</span>
+                  </div>
+                </div>
+                <!-- td -->
+                <!-- ===== -->
+                <div class="flex w-full">
+                  <div class="flex items-stretch">
+                    <!-- ------ -->
+                    <div
+                      class="flex justify-center items-center min-h-72 w-92 border-r-1 border-l-2 border-b-1 border-[#9DB9D3] p-10 bg-white"
+                    >
+                      <span class="text-red">1</span>
+                    </div>
+                    <!-- ------ -->
+                    <div
+                      class="flex items-center w-358 min-h-72 border-r-1 border-b-1 border-[#9DB9D3] p-10 bg-white"
+                    >
+                      <div class="text-red">
+                        <p>군마현의 구사쓰 온천</p>
+                      </div>
+                    </div>
+                    <!-- ------ -->
+                    <div
+                      class="flex justify-center items-center w-92 min-h-72 border-r-1 border-b-1 border-[#9DB9D3] p-10 bg-white"
+                    >
+                      <span class="text-red">6</span>
+                    </div>
+                    <!-- ------ -->
+                    <div
+                      class="flex items-center min-h-72 p-10 border-b-1 border-r-2 w-358 border-[#9DB9D3] bg-white"
+                    >
+                      <div class="text-red">
+                        <p>가고시마현의</p>
+                        <p>이부스키 온천</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- ===== -->
+                <div class="flex w-full">
+                  <div class="flex items-stretch">
+                    <!-- ------ -->
+                    <div
+                      class="flex justify-center items-center min-h-72 w-92 border-r-1 border-l-2 border-b-1 border-[#9DB9D3] p-10 bg-white"
+                    >
+                      <span class="text-red">2</span>
+                    </div>
+                    <!-- ------ -->
+                    <div
+                      class="flex items-center w-358 min-h-72 border-r-1 border-b-1 border-[#9DB9D3] p-10 bg-white"
+                    >
+                      <div class="text-red">
+                        <p>기후현의 게로 온천</p>
+                      </div>
+                    </div>
+                    <!-- ------ -->
+                    <div
+                      class="flex justify-center items-center w-92 min-h-72 border-r-1 border-b-1 border-[#9DB9D3] p-10 bg-white"
+                    >
+                      <span class="text-red">7</span>
+                    </div>
+                    <!-- ------ -->
+                    <div
+                      class="flex items-center min-h-72 p-10 border-b-1 border-r-2 w-358 border-[#9DB9D3] bg-white"
+                    >
+                      <div class="text-red">
+                        <p>효고현의 아리마 온천</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- ===== -->
+                <div class="flex w-full">
+                  <div class="flex items-stretch">
+                    <!-- ------ -->
+                    <div
+                      class="flex justify-center items-center min-h-72 w-92 border-r-1 border-l-2 border-b-1 border-[#9DB9D3] p-10 bg-white"
+                    >
+                      <span class="text-red">3</span>
+                    </div>
+                    <!-- ------ -->
+                    <div
+                      class="flex items-center w-358 min-h-72 border-r-1 border-b-1 border-[#9DB9D3] p-10 bg-white"
+                    >
+                      <div class="text-red">
+                        <p>에히메현의 도고 온천</p>
+                      </div>
+                    </div>
+                    <!-- ------ -->
+                    <div
+                      class="flex justify-center items-center w-92 min-h-72 border-r-1 border-b-1 border-[#9DB9D3] p-10 bg-white"
+                    >
+                      <span class="text-red">8</span>
+                    </div>
+                    <!-- ------ -->
+                    <div
+                      class="flex items-center min-h-72 p-10 border-b-1 border-r-2 w-358 border-[#9DB9D3] bg-white"
+                    >
+                      <div class="text-red">
+                        <p>가나가와현의 하코네</p>
+                        <p>온천</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- ===== -->
+                <div class="flex w-full">
+                  <div class="flex items-stretch">
+                    <!-- ------ -->
+                    <div
+                      class="flex justify-center items-center min-h-72 w-92 border-r-1 border-l-2 border-b-1 border-[#9DB9D3] p-10 bg-white"
+                    >
+                      <span class="text-red">4</span>
+                    </div>
+                    <!-- ------ -->
+                    <div
+                      class="flex items-center w-358 min-h-72 border-r-1 border-b-1 border-[#9DB9D3] p-10 bg-white"
+                    >
+                      <div class="text-red">
+                        <p>오이타현의 벳부 핫토</p>
+                        <p>온천</p>
+                      </div>
+                    </div>
+                    <!-- ------ -->
+                    <div
+                      class="flex justify-center items-center w-92 min-h-72 border-r-1 border-b-1 border-[#9DB9D3] p-10 bg-white"
+                    >
+                      <span class="text-red">9</span>
+                    </div>
+                    <!-- ------ -->
+                    <div
+                      class="flex items-center min-h-72 p-10 border-b-1 border-r-2 w-358 border-[#9DB9D3] bg-white"
+                    >
+                      <div class="text-red">
+                        <p>오이타현의 유후인</p>
+                        <p>온천</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- ===== -->
+                <div class="flex w-full">
+                  <div class="flex items-stretch">
+                    <!-- ------ -->
+                    <div
+                      class="flex justify-center items-center min-h-72 w-92 border-r-1 border-l-2 border-b-2 border-[#9DB9D3] p-10 bg-white rounded-bl-10"
+                    >
+                      <span class="text-red">5</span>
+                    </div>
+                    <!-- ------ -->
+                    <div
+                      class="flex items-center w-358 min-h-72 border-r-1 border-b-2 border-[#9DB9D3] p-10 bg-white"
+                    >
+                      <div class="text-red">
+                        <p>홋카이도의</p>
+                        <p>노보리베쓰 온천</p>
+                      </div>
+                    </div>
+                    <!-- ------ -->
+                    <div
+                      class="flex justify-center items-center w-92 min-h-72 border-r-1 border-b-2 border-[#9DB9D3] p-10 bg-white"
+                    >
+                      <span class="text-red">10</span>
+                    </div>
+                    <!-- ------ -->
+                    <div
+                      class="flex items-center min-h-72 p-10 border-b-2 border-r-2 w-358 border-[#9DB9D3] bg-white rounded-br-10"
+                    >
+                      <div class="text-red">
+                        <p>효고현의 기노사키</p>
+                        <p>온천</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="flex mb-10 font-bold text-red text-20 ms-auto me-16">
+                <span>출처: 일본 여행사 직원 및 여행 프로의 투표, 2022</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 예시 답안 2 -->
+        <div data-name="popup" data-popup="2" style="display: none">
+          <div data-name="popup-header">
+            <div data-name="popup-title">예시 답안</div>
+            <button
+              data-name="popup-close"
+              onclick="contentUtil.setPopup()"
+            ></button>
+          </div>
+          <div data-name="popup-body" class="mt-16 mb-10 ms-26 f-nanum-s me-6">
+            <div class="flex flex-col font-bold text-red text-40 leading-52">
+              <div class="flex flex-col gap-12 mb-23">
+                <!-- ------- -->
+                <div class="flex">
+                  <div class="w-12 h-12 mt-20 rounded-full bg-red me-10"></div>
+                  <div class="flex flex-col gap-4">
+                    <span>시즈오카현의 아타미 온천</span>
+                    <div class="flex -ms-6">
+                      <div>
+                        <p>
+                          일본 수도권에서의 접근성이 좋기 때문에 가 보고 싶다.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- ------- -->
+                <div class="flex">
+                  <div class="w-12 h-12 mt-20 rounded-full bg-red me-10"></div>
+                  <div class="flex flex-col gap-4">
+                    <span>오이타현의 벳부와 유후인 온천</span>
+                    <div class="flex -ms-6">
+                      <div>
+                        <p>
+                          우리나라에서 가깝고 관광객이 가장 많이 찾는 온천이기
+                        </p>
+                        <p>때문에 가 보고 싶다.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- ------- -->
+                <div class="flex">
+                  <div class="w-12 h-12 mt-20 rounded-full bg-red me-10"></div>
+                  <div class="flex flex-col gap-4">
+                    <span>가고시마현의 이부스키 온천</span>
+                    <div class="flex -ms-6">
+                      <div>
+                        <p class="flex">
+                          온천 열에 데워진 모래로 찜질하는 스나부로(<span
+                            class="font-medium f-noto"
+                            ><span class="relative"
+                              >砂<span class="ruby">すな</span></span
+                            ><span class="relative"
+                              >風<span class="ruby">ぶ</span></span
+                            ><span class="relative"
+                              >呂<span class="ruby">ろ</span></span
+                            ></span
+                          >)를
+                        </p>
+                        <p>체험해 보고 싶기 때문에 가 보고 싶다.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- ------- -->
+                <div class="flex">
+                  <div class="w-12 h-12 mt-20 rounded-full bg-red me-10"></div>
+                  <div class="flex flex-col gap-4">
+                    <span>에히메현의 도고 온천</span>
+                    <div class="flex -ms-6">
+                      <div>
+                        <p class="tracking-[-0.03em]">
+                          애니메이션 ‘센과 치히로의 행방불명’의 배경으로 유명한
+                        </p>
+                        <p>온천이기 때문에 가 보고 싶다.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="flex gap-10">
+                <div class="flex flex-col w-441">
+                  <img
+                    src="./images/8_01_17/popup_img2.jpg"
+                    alt=""
+                    class="mb-4 w-441 h-294 rounded-10"
+                  />
+                  <span class="text-center text-blue">이부스키 온천</span>
+                </div>
+                <div class="flex flex-col w-441">
+                  <img
+                    src="./images/8_01_17/popup_img1.jpg"
+                    alt=""
+                    class="mb-4 w-441 h-294 rounded-10"
+                  />
+                  <span class="text-center text-blue">도고 온천</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript">
+    const page = {
+      isAnswer: false,
+      isVocabulary: false,
+      showAnswer: () => {},
+      hideAnswer: () => {},
+      showVocabulary: () => {},
+    };
+  </script>
+  <script src="./../common/js/tailwind.config.js"></script>
+  <script src="./../common/js/script.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {});
+  </script>
+</html>

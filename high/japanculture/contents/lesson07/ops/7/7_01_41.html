@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>미래엔 일본 문화</title>
+    <script src="./../common/lib/jquery-3.7.1.min.js"></script>
+    <script src="./../common/lib/howler-2.1.3.min.js"></script>
+    <script src="./../common/lib/tailwind.js"></script>
+    <!-- 폰트 -->
+    <link href="./../common/font/suit/suit.css" rel="stylesheet" />
+    <link href="./../common/font/bmjua/bmjua.css" rel="stylesheet" />
+    <link
+      href="./../common/font/nanumsquare/nanumSquare.css"
+      rel="stylesheet"
+    />
+    <link href="./../common/font/notoSansJP/notoSansJP.css" rel="stylesheet" />
+    <link href="./../common/css/tailwind.css" rel="stylesheet" />
+    <link href="./../common/css/fontStyle.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div id="wrap">
+      <!-- contents -->
+      <div class="relative flex flex-col w-full h-full pt-65">
+        <!-- title -->
+        <div class="absolute left-0 flex h-50 top-10">
+          <img
+            src="./../common/images/title_getactive.svg"
+            alt="활동하기"
+            class="w-160 me-10"
+          />
+          <span class="f-bmjua text-36 text-[#6773B1] leading-50"
+            >진로 연계 활동</span
+          >
+        </div>
+        <!-- header-btn -->
+        <div class="absolute right-0 flex gap-6 top-13" data-name="header-btn">
+          <button
+            class="min-w-0"
+            data-name="btn-common-dark"
+            onclick="contentUtil.setPopup(2);"
+          >
+            부록
+          </button>
+          <button
+            data-name="btn-common"
+            onclick="contentUtil.setPopup(1); audioPlay(audio, [`./../common/media/mp3/showAnswer.mp3`]);"
+          >
+            예시 답안
+          </button>
+        </div>
+
+        <!-- main -->
+        <div
+          class="flex flex-col flex-1 w-full px-20 overflow-y-auto f-nanum-s leading-52 text-40"
+        >
+          <!-- ======== page 1 ======== -->
+          <div data-name="page" class="flex flex-col flex-1 w-full">
+            <div class="flex mb-10">
+              <img
+                src="./../common/images/label_flower_blue.svg"
+                alt="label"
+                class="w-30 h-52 me-8"
+              />
+              <div class="font-extrabold flex gap-13 items-end">
+                <p class="">지역 축제를 기획해 봅시다.</p>
+                <span
+                  class="text-32 text-[#376750] cursor-pointer"
+                  onclick="contentUtil.setPopup(2)"
+                  >[부록 181쪽]</span
+                >
+              </div>
+            </div>
+            <div class="flex flex-col font-bold">
+              <!-- 1 -->
+              <div class="flex items-center mb-10">
+                <div data-name="number-1" class="bg-[#5B87B8] me-10 my-9"></div>
+                <div
+                  class="mr-4 h-36 pt-4 w-139 bg-[#F0F5EC] rounded-full flex items-center justify-center"
+                >
+                  <div
+                    class="flex items-center justify-center text-28 leading-36 text-[#446966] font-medium f-bmjua"
+                  >
+                    활동 자료
+                  </div>
+                </div>
+                <div data-name="number-5" class="bg-[#446966] my-9"></div>
+                <div>의 지역 축제 기획 보고서 양식에 작성한다.</div>
+              </div>
+
+              <!-- 2 -->
+              <div class="flex mb-6">
+                <div data-name="number-2" class="bg-[#5B87B8] me-10 my-9"></div>
+                <div>
+                  <p>모둠별로 인터넷 검색을 통해 지역의 특색에 관한 정보를</p>
+                  <p>수집한다.</p>
+                </div>
+              </div>
+              <div class="flex ml-44 mr-10 items-start gap-10">
+                <img class="" src="./images/7_01_40/label_ex_gray.svg" alt="" />
+                <div class="text-[#636463]">
+                  <p>지역 특산품, 지역 출신 역사 위인, 유명 건축물, 지역명</p>
+                  <p>의 유래, 전통 시장, 자연환경, 문화유산 등</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- ======== page 2 ======== -->
+          <div
+            style="display: none"
+            data-name="page"
+            class="flex flex-col flex-1 w-full"
+          >
+            <div class="flex flex-col font-bold">
+              <!-- 3 -->
+              <div class="flex mb-6">
+                <div data-name="number-3" class="bg-[#5B87B8] me-10 my-9"></div>
+                <p>개최할 축제의 주제를 무엇으로 정할지 의견을 나눈다.</p>
+              </div>
+              <div class="mb-10 flex ml-44 mr-10 items-start gap-10">
+                <img class="" src="./images/7_01_40/label_ex_gray.svg" alt="" />
+                <div class="text-[#636463]">
+                  <p>대관령 눈꽃 축제, 평창 효석 문화제, 진주 남강 유등</p>
+                  <p>축제, 남원 춘향제, 함평 나비 축제 등</p>
+                </div>
+              </div>
+
+              <!-- 4 -->
+              <div class="flex mb-6">
+                <div data-name="number-4" class="bg-[#5B87B8] me-10 my-9"></div>
+                <div>
+                  <p>모둠 내 구성원이 가장 많이 선택한 주제를 선정한다.</p>
+                </div>
+              </div>
+              <!-- 5 -->
+              <div class="flex mb-6">
+                <div data-name="number-5" class="bg-[#5B87B8] me-10 my-9"></div>
+                <div>
+                  <p>
+                    주제에 맞는 행사로 무엇을 할지 의견을 나누고 세부 내용과
+                  </p>
+                  <p>시기, 장소, 담당자 등을 정한다.</p>
+                </div>
+              </div>
+              <!-- 6 -->
+              <div class="flex mb-6">
+                <div data-name="number-6" class="bg-[#5B87B8] me-10 my-9"></div>
+                <div>
+                  <p>모둠별로 기획한 내용을 정리하여 발표한다.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- pagination -->
+          <div
+            class="absolute -translate-x-1/2 left-1/2 bottom-10"
+            data-name="pagination"
+          >
+            <button class="active" data-name="btn-pagination"></button>
+            <button class="" data-name="btn-pagination"></button>
+          </div>
+        </div>
+      </div>
+      <!-- popup -->
+      <div id="popup-wrap" style="display: none">
+        <!-- 예시 답안 -->
+        <div data-name="popup" data-popup="1" style="display: none">
+          <div data-name="popup-header">
+            <div data-name="popup-title">예시 답안</div>
+            <button
+              data-name="popup-close"
+              onclick="contentUtil.setPopup()"
+            ></button>
+          </div>
+          <div data-name="popup-body" class="mt-16 mb-10 ms-26 f-nanum-s me-6">
+            <div class="flex flex-col">
+              <div class="font-bold f-nanum-s text-40 leading-52 text-red">
+                우리나라의 특색 있는 지역 축제
+                <div
+                  class="mt-10 w-full h-full overflow-y-auto font-bold text-red text-40 f-nanum-s leading-50"
+                >
+                  <div
+                    class="flex flex-col w-full mb-6 font-bold leading-42 text-40 f-nanum-s"
+                  >
+                    <!-- table -->
+                    <!-- th -->
+                    <div class="flex w-full text-black">
+                      <div class="flex items-stretch h-228">
+                        <div
+                          class="flex items-center bg-[#F57F81] justify-center rounded-tl-10 py-15 min-w-168 border-r-2 border-t-3 border-b-2 border-l-3 border-[#F9AFB0]"
+                        >
+                          <div class="flex flex-col items-center leading-52">
+                            <p>대관령</p>
+                            <p>눈꽃 축제</p>
+                          </div>
+                        </div>
+                        <div
+                          class="relative flex flex-col gap-10 bg-white min-w-732 p-10 border-[#F9AFB0] border-t-3 border-r-3 border-b-2 rounded-tr-10"
+                        >
+                          <div class="flex flex-col text-red leading-52">
+                            <p>전국에서 가장 먼저 탄생한 겨울 축제로, 매년</p>
+                            <p>1월 말에서 2월 중순 사이에 강원도 평창에서</p>
+                            <p>열린다. 겨울철 비수기 극복과 지역 경제</p>
+                            <p>활성화가 목표이다.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- table -->
+                    <!-- th -->
+                    <div class="flex w-full text-black">
+                      <div class="flex items-stretch h-228">
+                        <div
+                          class="flex items-center bg-[#F57F81] justify-center py-15 min-w-168 border-r-2 border-b-2 border-l-3 border-[#F9AFB0]"
+                        >
+                          <div class="flex flex-col items-center leading-52">
+                            <p>진주 남강</p>
+                            <p>유등 축제</p>
+                          </div>
+                        </div>
+                        <div
+                          class="relative flex flex-col gap-10 bg-white min-w-732 p-10 border-[#F9AFB0] border-r-3 border-b-2"
+                        >
+                          <div class="flex flex-col text-red leading-52">
+                            <p>경상남도 진주시에서 매년 10월에 개천</p>
+                            <p>예술제와 함께 열린다. 임진왜란 당시 왜군을</p>
+                            <p>저지하고 안부를 전하기 위해 남강에 유등을</p>
+                            <p>띄운 일에서 유래되었다.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- table -->
+                    <!-- th -->
+                    <div class="flex w-full text-black">
+                      <div class="flex items-stretch h-228">
+                        <div
+                          class="flex items-center bg-[#F57F81] justify-center py-15 min-w-168 border-r-2 border-b-2 border-l-3 rounded-bl-10 border-[#F9AFB0]"
+                        >
+                          <div class="flex flex-col items-center leading-52">
+                            <p>남원</p>
+                            <p>춘향제</p>
+                          </div>
+                        </div>
+                        <div
+                          class="relative flex flex-col gap-10 bg-white min-w-732 p-10 border-[#F9AFB0] border-r-3 border-b-2 rounded-br-10"
+                        >
+                          <div class="flex flex-col text-red leading-52">
+                            <p>‘춘향전’에 등장하는 춘향과 이몽룡이 처음</p>
+                            <p>만난 날에 맞추어 매년 5월 전라북도 남원시</p>
+                            <p>에서 열린다. 94년의 역사를 자랑하는 공연</p>
+                            <p>예술형 지역 축제의 시초이다.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 부록 -->
+        <div data-name="popup" data-popup="2" style="display: none">
+          <div data-name="popup-header">
+            <div data-name="popup-title">부록</div>
+            <button
+              data-name="popup-close"
+              onclick="contentUtil.setPopup()"
+            ></button>
+          </div>
+          <div
+            data-name="popup-body"
+            class="flex-1 mt-16 mb-10 ms-26 f-nanum-s me-6"
+          >
+            <div
+              class="flex flex-col items-center w-900 h-400"
+              data-name="popup_photo_wrap"
+            >
+              <div class="w-full h-full">
+                <img
+                  class="rounded-10 overflow-hidden"
+                  src="./images/7_01_41/popup_photo1.jpg"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript">
+    const page = {
+      isAnswer: false,
+      isVocabulary: false,
+      showAnswer: () => {},
+      hideAnswer: () => {},
+      showVocabulary: () => {},
+    };
+  </script>
+  <script src="./../common/js/tailwind.config.js"></script>
+  <script src="./../common/js/script.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      // contentUtil.setPopup(2);
+    });
+
+    // $(`[data-name="btn-pagination"]`).on("click", function () {
+    //   if ($(this).index() === 1) {
+    //     $(`[data-name="btn-common"]`).show();
+    //     $(`[data-name="rolePlayer-wrap"]`).show();
+    //   } else {
+    //     $(`[data-name="btn-common"]`).hide();
+    //     $(`[data-name="rolePlayer-wrap"]`).hide();
+    //   }
+    // });
+  </script>
+</html>

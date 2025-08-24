@@ -1,0 +1,51 @@
+.content-title-wrap {
+  position: absolute;
+  z-index: 10;
+}
+
+.contents-sub-tit-wrap {
+  padding: 10px 20px 0;
+  margin-bottom: 16px;
+  display: flex;
+}
+
+.content-wrap .content-title-wrap + .content-contents-wrap {
+  height: 100%;
+}
+
+.contents-sub-tit {
+  display: inline-block;
+  padding: 0 12px;
+  height: 51px;
+  line-height: 51px;
+  font-size: 36px;
+  color: #fff;
+  border-radius: 20px;
+  background-color: #f58880;
+  letter-spacing: 0;
+}
+
+.content-wrap .content-contents-wrap .content-contents {
+  height: calc(100% - 77px);
+}
+
+.contents.type2 {
+  height: 100%;
+}
+
+.contents.type2 .contents-tit {
+  letter-spacing: -0.055em;
+}
+
+.contents.type2 .contents-cont {
+  background-color: #ffefd2;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ex-txt {
+  line-height: 52px;
+  letter-spacing: -0.06em;
+}

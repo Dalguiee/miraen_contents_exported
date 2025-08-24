@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>미래엔 일본 문화</title>
+    <script src="./../common/lib/jquery-3.7.1.min.js"></script>
+    <script src="./../common/lib/howler-2.1.3.min.js"></script>
+    <script src="./../common/lib/tailwind.js"></script>
+    <!-- 폰트 -->
+    <link href="./../common/font/suit/suit.css" rel="stylesheet" />
+    <link href="./../common/font/bmjua/bmjua.css" rel="stylesheet" />
+    <link
+      href="./../common/font/nanumsquare/nanumSquare.css"
+      rel="stylesheet"
+    />
+    <link href="./../common/font/notoSansJP/notoSansJP.css" rel="stylesheet" />
+    <link href="./../common/css/tailwind.css" rel="stylesheet" />
+    <link href="./../common/css/fontStyle.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div id="wrap">
+      <!-- contents -->
+      <div class="relative w-full h-full pt-60">
+        <!-- title -->
+        <img
+          src="./../common/images/title_digital.svg"
+          alt="디지털 활동"
+          class="absolute h-42 w-261 top-10"
+        />
+        <!-- main -->
+        <div
+          class="flex flex-col w-full h-full px-20 overflow-y-auto leading-52"
+        >
+          <div class="mb-6 font-extrabold text-40 f-nanum-s">
+            <p>한국과 일본의 전통 혼례식과 혼례 복장 등을 비교·조사하여</p>
+            <p>자료를 온라인 학습방에 공유해 봅시다.</p>
+          </div>
+
+          <!-- ======= page 1 ======= -->
+          <div data-name="page">
+            <div class="flex mb-10">
+              <div data-name="number-1" class="bg-[#76B7F4] me-10"></div>
+              <span class="text-[#204E78] text-40 font-extrabold f-nanum-s"
+                >결혼식 비교</span
+              >
+            </div>
+            <!-- table -->
+            <div
+              class="flex flex-col w-full mb-6 font-bold leading-52 text-40 f-nanum-s"
+            >
+              <!-- th -->
+              <div class="flex w-full">
+                <div
+                  class="flex items-center bg-[#B3CFEA] justify-center rounded-tl-10 py-10 min-w-120 border-r-2 border-t-2 border-l-2 border-[#B3CFEA] border-r-[#9DB9D3]"
+                >
+                  구분
+                </div>
+                <div
+                  class="flex items-center bg-[#B3CFEA] justify-center min-w-420 py-10 border-[#B3CFEA] border-t-2 border-r-2 border-r-[#9DB9D3]"
+                >
+                  한국
+                </div>
+                <div
+                  class="flex items-center bg-[#B3CFEA] justify-center rounded-tr-10 border-t-2 border-r-2 py-10 border-[#B3CFEA] min-w-420"
+                >
+                  일본
+                </div>
+              </div>
+              <!-- td -->
+              <div class="flex w-full">
+                <div class="flex items-stretch">
+                  <div
+                    class="flex items-center justify-center w-120 border-r-2 border-l-2 border-b-2 border-[#B3CFEA] p-10"
+                  >
+                    하객
+                  </div>
+                  <div
+                    class="flex justify-center w-420 border-r-2 border-b-2 border-[#B3CFEA] p-10 items-stretch"
+                  >
+                    <div
+                      class="w-full min-h-98 bg-[#F6FDFF] border-2 border-[#A1D8FF] rounded-8 p-10"
+                    >
+                      <div
+                        data-answer="2"
+                        class="flex mb-4 text-red leading-52 text-40 text-bold"
+                        style="display: none"
+                      >
+                        <div>
+                          <p>주변 지인 등 많은</p>
+                          <p>사람을 초대</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="flex items-stretch justify-center p-10 border-b-2 border-r-2 w-420 border-[#B3CFEA]"
+                  >
+                    <div
+                      class="w-full min-h-98 bg-[#F6FDFF] border-2 border-[#A1D8FF] rounded-8 p-10"
+                    >
+                      <div
+                        data-answer="2"
+                        class="flex text-red leading-52 text-40 text-bold"
+                        style="display: none"
+                      >
+                        <div>
+                          <p>가족, 친척, 직장 동료 등</p>
+                          <p>을 초대(참석 여부 기재)</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="flex w-full">
+                <div class="flex items-stretch">
+                  <div
+                    class="flex items-center justify-center w-120 border-r-2 border-l-2 border-b-2 border-[#B3CFEA] py-10"
+                  >
+                    축의금
+                  </div>
+                  <div
+                    class="flex justify-center w-420 border-r-2 border-b-2 border-[#B3CFEA] p-10 items-stretch"
+                  >
+                    <div
+                      class="w-full bg-[#F6FDFF] border-2 border-[#A1D8FF] rounded-8 p-10"
+                    >
+                      <div data-reset="2" class="h-78"></div>
+                      <div
+                        data-answer="2"
+                        class="flex mb-4 text-red leading-52 text-40 text-bold"
+                        style="display: none"
+                      >
+                        <p class="flex">
+                          5<span class="font-medium f-noto">～</span>10만원 내외
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="flex items-stretch justify-center p-10 border-b-2 border-r-2 w-420 border-[#B3CFEA]"
+                  >
+                    <div
+                      class="w-full bg-[#F6FDFF] border-2 border-[#A1D8FF] rounded-8 p-10"
+                    >
+                      <div data-reset="2" class="h-78"></div>
+                      <div
+                        data-answer="2"
+                        class="flex text-red leading-52 text-40 text-bold"
+                        style="display: none"
+                      >
+                        <p>3만 엔 이상</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="flex w-full">
+                <div class="flex items-stretch">
+                  <div
+                    class="flex items-center flex-col justify-center w-120 border-r-2 border-l-2 border-b-2 rounded-bl-10 border-[#B3CFEA] py-10"
+                  >
+                    <p>예식</p>
+                    <p>시간</p>
+                  </div>
+                  <div
+                    class="flex justify-center w-420 border-r-2 border-b-2 items-center border-[#B3CFEA] p-10"
+                  >
+                    <div
+                      class="w-full bg-[#F6FDFF] border-2 border-[#A1D8FF] rounded-8 p-10"
+                    >
+                      <div data-reset="2" class="h-78"></div>
+                      <div
+                        data-answer="2"
+                        class="flex text-red leading-52 text-40 text-bold"
+                        style="display: none"
+                      >
+                        <p>시간이 짧고 엄숙한 편</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="flex justify-center items-center p-10 border-b-2 border-r-2 w-420 border-[#B3CFEA] rounded-br-10"
+                  >
+                    <div
+                      class="w-full bg-[#F6FDFF] border-2 border-[#A1D8FF] rounded-8 p-10 flex"
+                    >
+                      <div data-reset="2" class="h-78"></div>
+                      <div
+                        data-answer="2"
+                        class="flex text-red leading-52 text-40 text-bold"
+                        style="display: none"
+                      >
+                        <p>시간이 길고 파티 분위기</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="relative flex justify-end">
+              <button
+                data-name="btn-common"
+                data-reset="2"
+                onclick="contentUtil.showAnswer(2)"
+              >
+                예시 답안
+              </button>
+              <button
+                data-name="btn-common"
+                data-answer="2"
+                onclick="contentUtil.hideAnswer(2)"
+                style="display: none"
+              >
+                다시 풀기
+              </button>
+            </div>
+          </div>
+          <!-- ======= page 2 ======= -->
+          <div data-name="page" style="display: none">
+            <div class="flex mb-10">
+              <div data-name="number-2" class="bg-[#76B7F4] me-10"></div>
+              <span class="text-[#204E78] text-40 font-extrabold f-nanum-s"
+                >전통 혼례 복장</span
+              >
+            </div>
+            <!-- table -->
+            <div
+              class="flex flex-col w-full mb-8 font-bold leading-52 text-40 f-nanum-s"
+            >
+              <!-- th -->
+              <div class="flex w-full">
+                <div
+                  class="flex items-center bg-[#B3CFEA] justify-center rounded-tl-10 py-10 min-w-120 border-r-2 border-t-2 border-l-2 border-[#B3CFEA] border-r-[#9DB9D3]"
+                >
+                  구분
+                </div>
+                <div
+                  class="flex items-center bg-[#B3CFEA] justify-center min-w-420 py-10 border-[#B3CFEA] border-t-2 border-r-2 border-r-[#9DB9D3]"
+                >
+                  한국
+                </div>
+                <div
+                  class="flex items-center bg-[#B3CFEA] justify-center rounded-tr-10 border-t-2 border-r-2 py-10 border-[#B3CFEA] min-w-420"
+                >
+                  일본
+                </div>
+              </div>
+              <!-- td -->
+              <div class="flex w-full">
+                <div class="flex items-stretch">
+                  <div
+                    class="flex items-center justify-center w-120 border-r-2 border-l-2 border-b-2 rounded-bl-10 border-[#B3CFEA] p-10"
+                  >
+                    복장
+                  </div>
+                  <div
+                    class="flex justify-center w-420 border-r-2 border-b-2 border-[#B3CFEA] p-10 items-stretch"
+                  >
+                    <div
+                      class="w-full min-h-136 bg-[#F6FDFF] border-2 border-[#A1D8FF] rounded-8 p-10"
+                    >
+                      <div
+                        data-answer="1"
+                        class="flex mb-4 text-red leading-52 text-40 text-bold"
+                        style="display: none"
+                      >
+                        <div
+                          class="w-12 h-12 mr-6 rounded-full mt-15 bg-red"
+                        ></div>
+                        <div class="flex flex-col">
+                          <p class="flex">
+                            신부<span data-name="colon-red">:</span>궁중에서
+                            입던
+                          </p>
+                          <p>대례복(원삼이나 활옷)</p>
+                        </div>
+                      </div>
+                      <div
+                        data-answer="1"
+                        class="flex text-red leading-52 text-40 text-bold"
+                        style="display: none"
+                      >
+                        <div
+                          class="w-12 h-12 mr-6 rounded-full mt-15 bg-red"
+                        ></div>
+                        <div class="flex flex-col">
+                          <p class="flex">
+                            신랑<span data-name="colon-red">:</span>관복 중
+                            평상복인
+                          </p>
+                          <p>단령포(사모관대)</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="flex items-stretch justify-center p-10 border-b-2 border-r-2 w-420 border-[#B3CFEA] rounded-br-10"
+                  >
+                    <div
+                      class="w-full min-h-136 bg-[#F6FDFF] border-2 border-[#A1D8FF] rounded-8 p-10"
+                    >
+                      <div
+                        data-answer="1"
+                        class="flex mb-4 text-red leading-52 text-40 text-bold"
+                        style="display: none"
+                      >
+                        <div
+                          class="w-12 h-12 mr-6 rounded-full mt-15 bg-red"
+                        ></div>
+                        <div class="flex flex-col">
+                          <p class="flex">
+                            신부<span data-name="colon-red">:</span>시로무쿠,
+                          </p>
+                          <p>이로우치카케</p>
+                        </div>
+                      </div>
+                      <div
+                        data-answer="1"
+                        class="flex text-red leading-52 text-40 text-bold"
+                        style="display: none"
+                      >
+                        <div
+                          class="w-12 h-12 mr-6 rounded-full mt-15 bg-red"
+                        ></div>
+                        <div class="flex flex-col">
+                          <p class="flex">
+                            신랑<span data-name="colon-red">:</span>5개의 가문
+                          </p>
+                          <p>문장이 붙은 하오리</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="relative flex justify-end">
+              <button
+                data-name="btn-common"
+                data-reset="1"
+                onclick="contentUtil.showAnswer(1)"
+              >
+                예시 답안
+              </button>
+              <button
+                data-name="btn-common"
+                data-answer="1"
+                onclick="contentUtil.hideAnswer(1)"
+                style="display: none"
+              >
+                다시 풀기
+              </button>
+            </div>
+          </div>
+          <!-- pagination -->
+          <div class="-mt-34" data-name="pagination">
+            <button class="active" data-name="btn-pagination"></button>
+            <button class="" data-name="btn-pagination"></button>
+          </div>
+        </div>
+      </div>
+      <!-- popup -->
+      <div id="popup-wrap" style="display: none"></div>
+    </div>
+  </body>
+  <script type="text/javascript">
+    const page = {
+      isAnswer: false,
+      isVocabulary: false,
+      showAnswer: () => {},
+      hideAnswer: () => {},
+      showVocabulary: () => {},
+    };
+  </script>
+  <script src="./../common/js/tailwind.config.js"></script>
+  <script src="./../common/js/script.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {});
+  </script>
+</html>

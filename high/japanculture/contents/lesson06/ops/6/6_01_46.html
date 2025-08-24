@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>미래엔 일본 문화</title>
+    <script src="./../common/lib/jquery-3.7.1.min.js"></script>
+    <script src="./../common/lib/howler-2.1.3.min.js"></script>
+    <script src="./../common/lib/tailwind.js"></script>
+    <!-- 폰트 -->
+    <link href="./../common/font/suit/suit.css" rel="stylesheet" />
+    <link href="./../common/font/bmjua/bmjua.css" rel="stylesheet" />
+    <link
+      href="./../common/font/nanumsquare/nanumSquare.css"
+      rel="stylesheet"
+    />
+    <link href="./../common/font/notoSansJP/notoSansJP.css" rel="stylesheet" />
+    <link href="./../common/css/tailwind.css" rel="stylesheet" />
+    <link href="./../common/css/fontStyle.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div id="wrap">
+      <!-- contents -->
+      <div class="relative flex flex-col w-full h-full pt-70">
+        <!-- title -->
+        <div class="absolute left-0 flex top-10">
+          <img
+            src="./images/6_01_46/title_label.svg"
+            alt="문화 톡톡 2"
+            class="w-221 h-54 me-10"
+          />
+          <span class="font-extrabold f-nanum-s text-40 leading-52"
+            >일본의 장인 문화</span
+          >
+        </div>
+
+        <!-- header-btn -->
+        <div class="absolute right-0 flex gap-6 top-13" data-name="header-btn">
+          <button data-name="btn-common" onclick="contentUtil.setPopup(1)">
+            보충 자료
+          </button>
+        </div>
+        <!-- main -->
+        <div
+          class="flex flex-col flex-1 w-full overflow-y-auto font-bold leading-52 f-nanum-s text-40 ps-20"
+        >
+          <div class="flex items-center mb-4">
+            <img
+              src="./images/6_01_46/index_3.svg"
+              alt="1"
+              class="w-56 h-34 me-4"
+            />
+            <span class="font-extrabold">가업 계승</span>
+          </div>
+          <!-- ======= page 1 ======= -->
+          <div data-name="page">
+            <p class="ps-28">
+              장인 문화가 일본에서 두드러진 이유는 우수한 기술을 가진
+            </p>
+            <p>사람이 있고, 이를 가업으로 이어 간다는 점을 들 수 있다.</p>
+            <p class="flex">
+              일본에서는 ‘가업을 잇는 것(<span
+                data-audio="6_01_46/101-01.mp3"
+                class="font-medium f-noto"
+                >いえを つぐ</span
+              >)’을 매우 중요하게
+            </p>
+            <p class="flex">
+              생각한다. ‘<span
+                data-audio="6_01_46/101-02.mp3"
+                class="font-medium f-noto"
+                >いえ</span
+              >’는 건물로서의 ‘집(<span
+                data-audio="6_01_46/101-02.mp3"
+                class="font-medium f-noto"
+                >家</span
+              >)’과 발음이 같지만,
+            </p>
+            <p>‘대를 이어 계승되는 사회 집단’이라는 의미가 있다.</p>
+          </div>
+          <!-- ======= page 2 ======= -->
+          <div data-name="page" style="display: none">
+            <p class="ps-28">
+              가업은 장남이 계승하는 경우가 가장 많지만, 다른 친척이나
+            </p>
+            <p>혈연 관계가 없는 사람도 계승할 수 있으며 일을 잘하는 사람을</p>
+            <p>양자로 삼아 가업을 잇거나 기술을 전승하는 경우도 자주 볼 수</p>
+            <p>있다.</p>
+          </div>
+          <!-- ======= page 3 ======= -->
+          <div data-name="page" style="display: none">
+            <p class="ps-28">
+              이러한 모습은 드라마나 영화 소재로도 자주 등장한다.
+            </p>
+            <p>400년 전통이 있는 절을 이어 갈 차기 주지 스님의 이야기를</p>
+            <p>그린 드라마나 대대로 이어온 신사의 대를 잇기 위해</p>
+            <p>‘데릴사위’를 들이는 내용의 영화가 큰 인기를 끌기도 하였다.</p>
+          </div>
+          <!-- ======= page 4 ======= -->
+          <div data-name="page" style="display: none">
+            <p class="ps-28">
+              이렇듯 가업 계승을 중시한 결과, 일본에서는 역사가 긴
+            </p>
+            <p>음식점이나 200년 이상 된 기업을 흔하게 볼 수 있으며 다른</p>
+            <p>나라와 비교해 봐도 장수 기업 수가 매우 많다. 역사가 긴 기업</p>
+            <p>은 그 자체만으로도 신용이 있다고 생각하기 때문에 가업 계승</p>
+            <p>은 ‘기술의 전승’인 동시에 ‘신용의 전승’이라고 할 수 있다.</p>
+          </div>
+          <!-- ======= page 5 ======= -->
+          <div
+            data-name="page"
+            class="flex flex-col gap-20 pt-6"
+            style="display: none"
+          >
+            <!-- ------- -->
+            <div class="flex items-center gap-20">
+              <div class="relative w-280 h-190">
+                <img
+                  src="./images/6_01_46/main_photo1.jpg"
+                  alt=""
+                  class="w-full h-full rounded-10"
+                />
+                <button
+                  data-name="btn-view"
+                  class="absolute bottom-10 right-10"
+                  onclick="contentUtil.setPopup(2); contentUtil.setPhotoPopup(1);"
+                ></button>
+              </div>
+              <div class="flex">
+                <img
+                  src="./../common/images/popup_photolabel.svg"
+                  alt=""
+                  class="me-10 w-36 h-52"
+                />
+                <div>
+                  <p>‘게이운 해(서기 705년)’에 개장해,</p>
+                  <p>세계에서 가장 오래된 숙박 시설로</p>
+                  <p class="flex pt-12">
+                    인정받고 있는 야마나시현(<span
+                      data-audio="6_01_46/101-100.mp3"
+                      class="font-medium f-noto"
+                      ><span class="relative"
+                        >山<span class="ruby">やま</span></span
+                      ><span class="relative"
+                        >梨<span class="ruby">なし</span></span
+                      ><span class="relative"
+                        >県<span class="ruby">けん</span></span
+                      ></span
+                    >)에
+                  </p>
+                  <p>위치한 온천 료칸</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ======= page 6 ======= -->
+          <div
+            data-name="page"
+            class="flex flex-col pt-6 mx-auto"
+            style="display: none"
+          >
+            <div class="relative w-292 h-329">
+              <img
+                src="./images/6_01_46/main_photo2.jpg"
+                alt=""
+                class="w-full h-full rounded-10"
+              />
+              <button
+                data-name="btn-view"
+                class="absolute bottom-10 right-10"
+                onclick="contentUtil.setPopup(2); contentUtil.setPhotoPopup(2);"
+              ></button>
+            </div>
+          </div>
+        </div>
+        <!-- pagination -->
+        <div
+          class="absolute -translate-x-1/2 bottom-10 left-1/2"
+          data-name="pagination"
+        >
+          <button class="active" data-name="btn-pagination"></button>
+          <button class="" data-name="btn-pagination"></button>
+          <button class="" data-name="btn-pagination"></button>
+          <button class="" data-name="btn-pagination"></button>
+          <button class="" data-name="btn-pagination"></button>
+          <button class="" data-name="btn-pagination"></button>
+        </div>
+      </div>
+      <!-- popup -->
+      <div id="popup-wrap" style="display: none">
+        <!-- 보충 자료 -->
+        <div data-name="popup" data-popup="1" style="display: none">
+          <div data-name="popup-header">
+            <div data-name="popup-title">보충 자료</div>
+            <button
+              data-name="popup-close"
+              onclick="contentUtil.setPopup()"
+            ></button>
+          </div>
+          <div data-name="popup-body" class="mt-16 mb-10 ms-26 f-nanum-s me-6">
+            <div class="flex flex-col">
+              <!-- title -->
+              <div class="flex items-center mb-10 h-55">
+                <img
+                  src="./../common/images/popup_titlemark_primary.svg"
+                  alt=""
+                  class="w-35 h-55 me-10"
+                />
+                <div class="flex font-extrabold text-42 text-[#41674B]">
+                  가부키의 가업 계승
+                </div>
+              </div>
+              <!-- text -->
+              <div class="font-bold f-nanum-s text-40 leading-52">
+                <p>가부키의 세계도 전형적으로 양자를 들여 가업을 잇는 관습</p>
+                <p>이 남아 있다. 또한, 가업 이외에 선조의 이름도 계승된다.</p>
+                <p class="flex pt-12">
+                  예를 들어, 제 13대&nbsp;<span class="font-medium f-noto"
+                    ><span class="relative"
+                      >市<span class="ruby">いち</span></span
+                    ><span class="relative"
+                      >川<span class="ruby">かわ</span></span
+                    ><span class="relative"
+                      >團<span class="ruby">だん</span></span
+                    ><span class="relative"
+                      >十<span class="ruby tracking-[-0.25em]"
+                        >じゅう</span
+                      ></span
+                    ><span class="relative"
+                      >郎<span class="ruby ms-6">ろう</span></span
+                    ></span
+                  >(이치카와 단주로) 등이
+                </p>
+                <p>있다. 이름을 계승하는 것만으로도 스스로 기술 계승자라고</p>
+                <p>자각하여 사명감을 가지게 되며, 주변에서도 그를 기대한다</p>
+                <p>고 한다.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 사진 팝업창 -->
+        <div data-name="popup" data-popup="2" style="display: none">
+          <div data-name="popup-header">
+            <div data-name="popup-title">사진 팝업창</div>
+            <button
+              data-name="popup-close"
+              onclick="contentUtil.setPopup()"
+            ></button>
+          </div>
+          <div
+            data-name="popup-body"
+            class="flex items-center justify-center w-full h-full gap-16"
+          >
+            <div
+              class="flex flex-col items-center w-608 h-402"
+              data-name="popup_photo_wrap"
+            >
+              <div class="w-full overflow-x-hidden overflow-y-auto pe-4">
+                <img
+                  src="./images/6_01_46/popup_photo1.jpg"
+                  alt="1"
+                  class="object-contain min-w-608 rounded-10"
+                  data-name="popup_photo"
+                />
+                <img
+                  src="./images/6_01_46/popup_photo2.jpg"
+                  alt="2"
+                  class="object-contain min-w-608 rounded-10"
+                  data-name="popup_photo"
+                  style="display: none"
+                />
+              </div>
+            </div>
+            <div class="w-266 h-402">
+              <div class="flex flex-wrap w-full gap-10">
+                <button
+                  data-name="btn-popup_photo"
+                  class="w-128 h-72 active"
+                  onclick="contentUtil.setPhotoPopup(1)"
+                >
+                  <img src="./images/6_01_46/popup_btn_photo1.jpg" alt="" />
+                </button>
+                <button
+                  data-name="btn-popup_photo"
+                  class="w-128 h-72"
+                  onclick="contentUtil.setPhotoPopup(2)"
+                >
+                  <img src="./images/6_01_46/popup_btn_photo2.jpg" alt="" />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript">
+    const page = {
+      isAnswer: true,
+      isVocabulary: false,
+      showAnswer: () => {
+        contentUtil.showAnswer();
+      },
+      hideAnswer: () => {
+        contentUtil.hideAnswer();
+      },
+      showVocabulary: () => {},
+    };
+  </script>
+  <script src="./../common/js/tailwind.config.js"></script>
+  <script src="./../common/js/script.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {});
+  </script>
+</html>

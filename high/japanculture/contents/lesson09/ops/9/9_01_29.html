@@ -1,0 +1,948 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>미래엔 일본 문화</title>
+    <script src="./../common/lib/jquery-3.7.1.min.js"></script>
+    <script src="./../common/lib/howler-2.1.3.min.js"></script>
+    <script src="./../common/lib/tailwind.js"></script>
+    <!-- 폰트 -->
+    <link href="./../common/font/suit/suit.css" rel="stylesheet" />
+    <link href="./../common/font/bmjua/bmjua.css" rel="stylesheet" />
+    <link
+      href="./../common/font/nanumsquare/nanumSquare.css"
+      rel="stylesheet"
+    />
+    <link href="./../common/font/notoSansJP/notoSansJP.css" rel="stylesheet" />
+    <link href="./../common/css/tailwind.css" rel="stylesheet" />
+    <link href="./../common/css/fontStyle.css" rel="stylesheet" />
+    <link href="./../common/css/rolePlayer.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div id="wrap">
+      <!-- contents -->
+      <div class="relative w-full h-full pt-60">
+        <!-- title -->
+        <img
+          src="./images/9_01_29/title_culture.svg"
+          alt="문화 일본어 줄임말"
+          class="absolute left-0 w-316 h-51 top-10"
+        />
+
+        <!-- 음원 플레이어 -->
+        <div
+          style="display: none"
+          data-name="rolePlayer-wrap"
+          class="absolute right-0 z-50 top-174"
+        >
+          <div class="rolePlayer">
+            <div class="rolePlayer_player">
+              <div class="rolePlayer_box">
+                <button class="rolePlayer_play-btn play"></button>
+                <button class="rolePlayer_stop-btn"></button>
+                <div class="rolePlayer_duration">
+                  <input
+                    type="range"
+                    class="rolePlayer_duration_range"
+                    min="0"
+                    max="100"
+                    value="0"
+                    step="1"
+                  />
+                  <div class="rolePlayer_duration_range-ui">
+                    <div
+                      class="rolePlayer_duration_range-ui_bar"
+                      style="width: 0"
+                    ></div>
+                  </div>
+                  <span class="rolePlayer_duration_text seek">00:00</span>
+                  <span class="rolePlayer_duration_text duration">00:00</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- main -->
+        <div class="w-full">
+          <!-- ======== page 1 ======== -->
+          <div data-name="page" class="flex flex-col w-full h-403">
+            <div
+              class="absolute z-10 flex pt-7 font-extrabold left-20 leading-52 text-40 f-nanum-s"
+            >
+              <img
+                src="./images/9_01_29/label_flower.svg"
+                alt=""
+                class="mt-12 me-8 w-30 h-25"
+              />
+              <div>
+                <p class="flex">
+                  일본어에는 ‘<span
+                    data-audio="9_01_29/140-01.mp3"
+                    class="f-noto font-bold"
+                    >ゆるキャラ</span
+                  >’와 같이 줄임말이 많은데, 특히
+                </p>
+                <p>가타카나로 쓰는 외래어에 많습니다. 긴 외래어를 간결하게</p>
+                <p>전할 수 있는 장점이 있는 가타카나 줄임말을 알아봅시다.</p>
+              </div>
+            </div>
+          </div>
+          <!-- ======== page 2 ======== -->
+          <div
+            data-name="page"
+            class="flex flex-col w-full h-403"
+            style="display: none"
+          >
+            <!-- header-btn -->
+            <div
+              class="absolute right-0 flex gap-6 top-13"
+              data-name="header-btn"
+            >
+              <button
+                data-name="btn-common"
+                class="btn_change_view"
+                onclick="contentUtil.setPopup(1)"
+              >
+                해석 보기
+              </button>
+            </div>
+            <div
+              class="relative flex items-end w-full h-full font-bold f-noto text-40 tracking-[-0.03em] leading-52"
+            >
+              <div class="relative">
+                <img
+                  src="./images/9_01_29/main_photo1.jpg"
+                  alt="줄임말2"
+                  class="w-960 h-370 mb-14 ml-20"
+                />
+                <button
+                  data-name="btn-view"
+                  class="absolute bottom-177 left-312"
+                  onclick="contentUtil.setPopup(3); contentUtil.setPhotoPopup(1);"
+                ></button>
+                <button
+                  data-name="btn-view"
+                  class="absolute bottom-177 right-176"
+                  onclick="contentUtil.setPopup(3); contentUtil.setPhotoPopup(2);"
+                ></button>
+              </div>
+              <div class="flex absolute gap-155 left-120 bottom-40">
+                <!-- text 1 -->
+                <div class="flex flex-col">
+                  <div class="flex flex-col items-center">
+                    <div
+                      data-audio="9_01_29/140-12.mp3"
+                      class="bg-[#FEF1C2] rounded-full px-10 py-4"
+                    >
+                      <p class="text-red">アニメ</p>
+                    </div>
+                    <div class="flex">
+                      (
+                      <p class="font-medium" data-audio="9_01_29/140-13.mp3">
+                        アニメーション
+                      </p>
+                      )
+                    </div>
+                  </div>
+                </div>
+
+                <!-- text 2 -->
+                <div class="flex flex-col">
+                  <div class="flex flex-col items-center">
+                    <div
+                      data-audio="9_01_29/140-14.mp3"
+                      class="bg-[#FEF1C2] rounded-full px-10 py-4"
+                    >
+                      <p class="text-red">バスケ</p>
+                    </div>
+                    <div class="flex">
+                      (
+                      <p class="font-medium" data-audio="9_01_29/140-15.mp3">
+                        バスケットボール
+                      </p>
+                      )
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ======== page 3 ======== -->
+          <div
+            data-name="page"
+            class="flex flex-col w-full h-403"
+            style="display: none"
+          >
+            <!-- header-btn -->
+            <div
+              class="absolute right-0 flex gap-6 top-13"
+              data-name="header-btn"
+            >
+              <button
+                data-name="btn-common"
+                class="btn_change_view"
+                onclick="contentUtil.setPopup(4)"
+              >
+                해석 보기
+              </button>
+            </div>
+            <div
+              class="relative flex items-end w-full h-full font-bold f-noto text-40 tracking-[-0.03em] leading-52"
+            >
+              <div class="relative">
+                <img
+                  src="./images/9_01_29/main_photo2.jpg"
+                  alt="줄임말2"
+                  class="w-960 h-370 mb-14 ml-20"
+                />
+                <button
+                  data-name="btn-view"
+                  class="absolute bottom-177 left-312"
+                  onclick="contentUtil.setPopup(3); contentUtil.setPhotoPopup(3);"
+                ></button>
+                <button
+                  data-name="btn-view"
+                  class="absolute bottom-177 right-165"
+                  onclick="contentUtil.setPopup(3); contentUtil.setPhotoPopup(4);"
+                ></button>
+              </div>
+              <div class="flex absolute gap-203 left-158 bottom-40">
+                <!-- text 1 -->
+                <div class="flex flex-col">
+                  <div class="flex flex-col items-center">
+                    <div
+                      data-audio="9_01_29/140-17.mp3"
+                      class="bg-[#FEF1C2] rounded-full px-10 py-4"
+                    >
+                      <p class="text-red">バイト</p>
+                    </div>
+                    <div class="flex">
+                      (
+                      <p class="font-medium" data-audio="9_01_29/140-18.mp3">
+                        アルバイト
+                      </p>
+                      )
+                    </div>
+                  </div>
+                </div>
+
+                <!-- text 2 -->
+                <div class="flex flex-col">
+                  <div class="flex flex-col items-center">
+                    <div
+                      data-audio="9_01_29/140-19.mp3"
+                      class="bg-[#FEF1C2] rounded-full px-10 py-4"
+                    >
+                      <p class="text-red">ネット</p>
+                    </div>
+                    <div class="flex">
+                      (
+                      <p class="font-medium" data-audio="9_01_29/140-20.mp3">
+                        インターネット
+                      </p>
+                      )
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ======== page 4 ======== -->
+          <div
+            data-name="page"
+            class="flex flex-col w-full h-403"
+            style="display: none"
+          >
+            <!-- header-btn -->
+            <div
+              class="absolute right-0 flex gap-6 top-13"
+              data-name="header-btn"
+            >
+              <button
+                data-name="btn-common"
+                class="btn_change_view"
+                onclick="contentUtil.setPopup(5)"
+              >
+                해석 보기
+              </button>
+            </div>
+            <div
+              class="relative flex items-end w-full h-full font-bold f-noto text-40 tracking-[-0.03em] leading-52"
+            >
+              <div class="relative">
+                <img
+                  src="./images/9_01_29/main_photo3.jpg"
+                  alt="줄임말2"
+                  class="w-960 h-370 mb-14 ml-20"
+                />
+                <button
+                  data-name="btn-view"
+                  class="absolute bottom-177 left-242"
+                  onclick="contentUtil.setPopup(3); contentUtil.setPhotoPopup(5);"
+                ></button>
+                <button
+                  data-name="btn-view"
+                  class="absolute bottom-177 right-233"
+                  onclick="contentUtil.setPopup(3); contentUtil.setPhotoPopup(6);"
+                ></button>
+              </div>
+
+              <div class="flex absolute gap-86 left-90 bottom-40">
+                <!-- text 1 -->
+                <div class="flex flex-col">
+                  <div class="flex flex-col items-center">
+                    <div
+                      data-audio="9_01_29/140-22.mp3"
+                      class="bg-[#FEF1C2] rounded-full px-10 py-4"
+                    >
+                      <p class="text-red">スマホ</p>
+                    </div>
+                    <div class="flex">
+                      (
+                      <p class="font-medium" data-audio="9_01_29/140-23.mp3">
+                        スマートフォン
+                      </p>
+                      )
+                    </div>
+                  </div>
+                </div>
+
+                <!-- text 2 -->
+                <div class="flex flex-col">
+                  <div class="flex flex-col items-center">
+                    <div
+                      data-audio="9_01_29/140-24.mp3"
+                      class="bg-[#FEF1C2] rounded-full px-10 py-4"
+                    >
+                      <p class="text-red">パソコン</p>
+                    </div>
+                    <div class="flex">
+                      (
+                      <p
+                        class="font-medium tracking-[-0.1em]"
+                        data-audio="9_01_29/140-25.mp3"
+                      >
+                        パーソナル コンピューター
+                      </p>
+                      )
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ======== page 5 ======== -->
+          <div
+            data-name="page"
+            class="flex flex-col w-full h-403"
+            style="display: none"
+          >
+            <div
+              class="flex flex-col px-20 mb-20 font-bold f-nanum-s text-40 leading-52 mt-11"
+            >
+              <div>
+                <p class="ps-28">
+                  가타카나 줄임말은 주로 낱말의 앞이나 뒤를 생략하는 경우와
+                </p>
+                <p class="flex">
+                  두 낱말로 된 복합어의 일부만을 쓰는 경우가 많다. ‘<span
+                    class="f-noto font-medium"
+                    data-audio="9_01_29/140-02.mp3"
+                    >アニメ</span
+                  >,
+                </p>
+                <p class="flex">
+                  <span
+                    data-audio="9_01_29/140-03.mp3"
+                    class="f-noto font-medium"
+                    >コンビニ</span
+                  >
+                  ’ 등과 같이 생활 속에 정착되어 있어서 줄임말이라는
+                </p>
+                <p>것을 의식하지 않고 사용하는 낱말도 있다.</p>
+              </div>
+            </div>
+          </div>
+          <!-- ======== page 6 ======== -->
+          <div
+            data-name="page"
+            class="flex flex-col w-full h-403"
+            style="display: none"
+          >
+            <!-- header-btn -->
+            <div
+              class="absolute right-0 flex gap-6 top-13"
+              data-name="header-btn"
+            >
+              <button
+                data-name="btn-common"
+                class="btn_change_view"
+                onclick="contentUtil.setPopup(2)"
+              >
+                해설 보기
+              </button>
+            </div>
+            <div
+              class="flex flex-col px-20 mb-20 font-bold f-nanum-s text-40 leading-52 mt-11"
+            >
+              <div>
+                <p class="flex pt-12 ps-28">
+                  또한 ‘
+                  <span
+                    data-audio="9_01_29/140-04.mp3"
+                    class="f-noto font-medium"
+                  >
+                    バスの
+                    <span class="relative"
+                      >停<span class="ruby tracking-[-0.1em]">てい</span></span
+                    ><span class="relative"
+                      >留<span class="ruby tracking-[-0.29em]"
+                        >りゅう</span
+                      ></span
+                    ><span class="relative"
+                      >所<span class="ruby tracking-[-0.1em]">じょ</span></span
+                    >
+                  </span>
+                  (버스 정류장)’의 줄임말 ‘
+                  <span
+                    data-audio="9_01_29/140-05.mp3"
+                    class="f-noto font-medium"
+                  >
+                    バス<span
+                      ><span class="relative"
+                        >停<span class="ruby">てい</span></span
+                      >
+                    </span></span
+                  >’,
+                </p>
+                <p class="flex pt-12">
+                  ‘
+                  <span
+                    data-audio="9_01_29/140-06.mp3"
+                    class="f-noto font-medium"
+                  >
+                    デパートの
+                    <span class="relative">地<span class="ruby">ち</span></span
+                    ><span class="relative">下<span class="ruby">か</span></span
+                    ><span class="relative"
+                      >食<span class="ruby tracking-[-0.25em]"
+                        >しょく</span
+                      ></span
+                    ><span class="relative"
+                      >品<span class="ruby tracking-[-0.15em]">ひん</span></span
+                    ><span class="relative">売<span class="ruby">う</span></span
+                    >り<span class="relative"
+                      >場<span class="ruby">ば</span></span
+                    ></span
+                  >
+                  (백화점 지하에 있는 식료품
+                </p>
+                <p class="flex pt-12">
+                  판매장)’의 줄임말 ‘
+                  <span
+                    data-audio="9_01_29/140-07.mp3"
+                    class="f-noto font-medium"
+                  >
+                    デパ<span class="relative"
+                      >地<span class="ruby">ち</span></span
+                    ><span class="relative"
+                      >下<span class="ruby">か</span></span
+                    ></span
+                  >’, ‘
+                  <span
+                    data-audio="9_01_29/140-08.mp3"
+                    class="f-noto font-medium"
+                    ><span class="relative"
+                      >朝<span class="ruby">あさ</span></span
+                    >の ドラマ
+                  </span>
+                  (아침 드라마)’의
+                </p>
+                <p class="flex pt-12">
+                  줄임말 ‘
+                  <span
+                    data-audio="9_01_29/140-09.mp3"
+                    class="f-noto font-medium"
+                  >
+                    <span class="relative"
+                      >朝<span class="ruby">あさ</span></span
+                    >ドラ</span
+                  >
+                  ’, ‘
+                  <span
+                    data-audio="9_01_29/140-10.mp3"
+                    class="f-noto font-medium"
+                  >
+                    <span class="relative"
+                      >白<span class="ruby">しろ</span></span
+                    >バイク
+                  </span>
+                  (기동 순찰대)’의 줄임말 ‘
+                  <span
+                    data-audio="9_01_29/140-11.mp3"
+                    class="f-noto font-medium"
+                  >
+                    <span class="relative"
+                      >白<span class="ruby">しろ</span></span
+                    >バイ
+                  </span>
+                  ’
+                </p>
+                <p class="flex pt-12">
+                  와 같이 외래어와 한자어 등의 복합어 일부를 생략하거나 축약
+                </p>
+                <p>하여 나타내는 형태도 있다.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- pagination -->
+        <div class="mx-auto mb-10" data-name="pagination">
+          <button
+            class="active"
+            data-name="btn-pagination"
+            data-audio-play="1"
+          ></button>
+          <button
+            class=""
+            data-name="btn-pagination"
+            data-audio-play="2"
+          ></button>
+          <button
+            class=""
+            data-name="btn-pagination"
+            data-audio-play="3"
+          ></button>
+          <button
+            class=""
+            data-name="btn-pagination"
+            data-audio-play="4"
+          ></button>
+          <button class="" data-name="btn-pagination"></button>
+          <button class="" data-name="btn-pagination"></button>
+        </div>
+      </div>
+      <!-- popup -->
+      <div id="popup-wrap" style="display: none">
+        <!-- 해석 보기1  -->
+        <div data-name="popup" data-popup="1" style="display: none">
+          <div data-name="popup-header" class="relative">
+            <div data-name="popup-title">해석 보기</div>
+            <button
+              data-name="popup-close"
+              onclick="contentUtil.setPopup()"
+            ></button>
+            <!-- explan -->
+            <div class="absolute flex top-5 right-52"></div>
+          </div>
+          <div
+            data-name="popup-body"
+            class="flex flex-col flex-1 mt-16 mb-10 ms-26 leading-52 text-40 gap-20 f-nanum-s font-bold me-6"
+          >
+            <div class="flex flex-col">
+              <div class="flex mb-6">
+                <div class="w-12 h-12 mt-20 bg-black rounded-full me-10"></div>
+                낱말 뒤를 생략한 경우
+              </div>
+              <div class="ml-22 flex gap-10 mb-4">
+                <span class="f-noto font-medium">アニメ</span>
+                <span class="text-blue">애니메이션</span>
+              </div>
+              <div class="ml-22 flex gap-10">
+                <span class="f-noto font-medium">バスケ</span>
+                <span class="text-blue">농구</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 해설 보기 -->
+        <div data-name="popup" data-popup="2" style="display: none">
+          <div data-name="popup-header">
+            <div data-name="popup-title">해설 보기</div>
+            <button
+              data-name="popup-close"
+              onclick="contentUtil.setPopup()"
+            ></button>
+          </div>
+          <div
+            data-name="popup-body"
+            class="flex flex-col flex-1 mt-16 mb-10 ms-26 f-nanum-s me-6"
+          >
+            <!-- title -->
+            <div class="flex items-center mb-10 h-55">
+              <img
+                src="./../common/images/popup_titlemark_primary.svg"
+                alt=""
+                class="w-35 h-55 me-10"
+              />
+              <div class="flex font-extrabold text-42 text-[#f25f7c]">
+                <span>일본어 줄임말의 형태</span>
+              </div>
+            </div>
+            <!-- text -->
+            <div class="mb-10 font-bold text-40 leading-52">
+              <p>줄임말을 만드는 법칙 중 복합어를 생략한 ‘2박＋2박’인</p>
+              <p class="flex pt-12">
+                4박의 형태가 가장 많다. ‘<span class="f-noto font-medium"
+                  >バス<span class="relative"
+                    >停<span class="ruby">てい</span></span
+                  > </span
+                >’, ‘<span class="f-noto font-medium"
+                  >デパ<span class="relative"
+                    >地<span class="ruby">ち</span></span
+                  ><span class="relative"
+                    >下<span class="ruby">か</span></span
+                  ></span
+                >’ 등은
+              </p>
+              <p>‘한자어+외래어’의 형태를 짧게 줄인 것으로, 복합어의</p>
+              <p>생략에는 ‘한자어+한자어’와 ‘외래어+외래어’의 형태가</p>
+              <p>많다.</p>
+            </div>
+          </div>
+        </div>
+        <!-- 사진 팝업창 -->
+        <div data-name="popup" data-popup="3" style="display: none">
+          <div data-name="popup-header">
+            <div data-name="popup-title">사진 팝업창</div>
+            <button
+              data-name="popup-close"
+              onclick="contentUtil.setPopup()"
+            ></button>
+          </div>
+          <div
+            data-name="popup-body"
+            class="flex items-center justify-center w-full h-full gap-16"
+          >
+            <div
+              class="flex flex-col items-center w-608 h-402"
+              data-name="popup_photo_wrap"
+            >
+              <div class="w-full overflow-x-hidden overflow-y-auto h-400 pe-4">
+                <img
+                  src="./images/9_01_29/popup_photo1.jpg"
+                  alt="줄임말1"
+                  class="object-contain min-w-608 rounded-10"
+                  data-name="popup_photo"
+                />
+                <img
+                  src="./images/9_01_29/popup_photo2.jpg"
+                  alt="줄임말2"
+                  class="object-contain min-w-608 rounded-10"
+                  data-name="popup_photo"
+                  style="display: none"
+                />
+                <img
+                  src="./images/9_01_29/popup_photo3.jpg"
+                  alt="줄임말3"
+                  class="object-contain min-w-608 rounded-10"
+                  data-name="popup_photo"
+                  style="display: none"
+                />
+                <img
+                  src="./images/9_01_29/popup_photo4.jpg"
+                  alt="줄임말4"
+                  class="object-contain min-w-608 rounded-10"
+                  data-name="popup_photo"
+                  style="display: none"
+                />
+                <img
+                  src="./images/9_01_29/popup_photo5.jpg"
+                  alt="줄임말5"
+                  class="object-contain min-w-608 rounded-10"
+                  data-name="popup_photo"
+                  style="display: none"
+                />
+                <img
+                  src="./images/9_01_29/popup_photo6.jpg"
+                  alt="줄임말6"
+                  class="object-contain min-w-608 rounded-10"
+                  data-name="popup_photo"
+                  style="display: none"
+                />
+              </div>
+              <!-- <div
+                class="flex mt-8 font-bold f-nanum-s h-52 text-40 leading-52 shrink-0"
+              >
+                <div data-name="popup_photo_text">양보할 때</div>
+                <div data-name="popup_photo_text">권유할 때</div>
+                <div data-name="popup_photo_text">물건을 건넬 때</div>
+                <div data-name="popup_photo_text">허락·승낙할 때</div>
+              </div> -->
+            </div>
+            <div class="w-266 h-402">
+              <div class="flex flex-wrap w-full gap-10">
+                <button
+                  data-name="btn-popup_photo"
+                  class="w-128 h-72 active"
+                  onclick="contentUtil.setPhotoPopup(1)"
+                >
+                  <img
+                    src="./images/9_01_29/popup_btn_photo1.jpg"
+                    alt="줄임말1"
+                  />
+                </button>
+                <button
+                  data-name="btn-popup_photo"
+                  class="w-128 h-72"
+                  onclick="contentUtil.setPhotoPopup(2)"
+                >
+                  <img
+                    src="./images/9_01_29/popup_btn_photo2.jpg"
+                    alt="줄임말2"
+                  />
+                </button>
+                <button
+                  data-name="btn-popup_photo"
+                  class="w-128 h-72"
+                  onclick="contentUtil.setPhotoPopup(3)"
+                >
+                  <img
+                    src="./images/9_01_29/popup_btn_photo3.jpg"
+                    alt="줄임말3"
+                  />
+                </button>
+                <button
+                  data-name="btn-popup_photo"
+                  class="w-128 h-72"
+                  onclick="contentUtil.setPhotoPopup(4)"
+                >
+                  <img
+                    src="./images/9_01_29/popup_btn_photo4.jpg"
+                    alt="줄임말4"
+                  />
+                </button>
+                <button
+                  data-name="btn-popup_photo"
+                  class="w-128 h-72"
+                  onclick="contentUtil.setPhotoPopup(5)"
+                >
+                  <img
+                    src="./images/9_01_29/popup_btn_photo5.jpg"
+                    alt="줄임말5"
+                  />
+                </button>
+                <button
+                  data-name="btn-popup_photo"
+                  class="w-128 h-72"
+                  onclick="contentUtil.setPhotoPopup(6)"
+                >
+                  <img
+                    src="./images/9_01_29/popup_btn_photo6.jpg"
+                    alt="줄임말6"
+                  />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 해석 보기2  -->
+        <div data-name="popup" data-popup="4" style="display: none">
+          <div data-name="popup-header" class="relative">
+            <div data-name="popup-title">해석 보기</div>
+            <button
+              data-name="popup-close"
+              onclick="contentUtil.setPopup()"
+            ></button>
+            <!-- explan -->
+            <div class="absolute flex top-5 right-52"></div>
+          </div>
+          <div
+            data-name="popup-body"
+            class="flex flex-col flex-1 mt-16 mb-10 ms-26 leading-52 text-40 gap-20 f-nanum-s font-bold me-6"
+          >
+            <div class="flex flex-col">
+              <div class="flex mb-6">
+                <div class="w-12 h-12 mt-20 bg-black rounded-full me-10"></div>
+                낱말 앞을 생략한 경우
+              </div>
+              <div class="ml-22 flex gap-10 mb-4">
+                <span class="f-noto font-medium">バイト </span>
+                <span class="text-blue">아르바이트</span>
+              </div>
+              <div class="ml-22 flex gap-10">
+                <span class="f-noto font-medium">ネット</span>
+                <span class="text-blue">인터넷</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 해석 보기3  -->
+        <div data-name="popup" data-popup="5" style="display: none">
+          <div data-name="popup-header" class="relative">
+            <div data-name="popup-title">해석 보기</div>
+            <button
+              data-name="popup-close"
+              onclick="contentUtil.setPopup()"
+            ></button>
+            <!-- explan -->
+            <div class="absolute flex top-5 right-52"></div>
+          </div>
+          <div
+            data-name="popup-body"
+            class="flex flex-col flex-1 mt-16 mb-10 ms-26 leading-52 text-40 gap-20 f-nanum-s font-bold me-6"
+          >
+            <div class="flex flex-col">
+              <div class="flex mb-6">
+                <div class="w-12 h-12 mt-20 bg-black rounded-full me-10"></div>
+                복합어 일부를 생략·축약한 경우
+              </div>
+              <div class="ml-22 flex gap-10 mb-4">
+                <span class="f-noto font-medium">スマホ </span>
+                <span class="text-blue">스마트폰</span>
+              </div>
+              <div class="ml-22 flex gap-10">
+                <span class="f-noto font-medium">パソコン</span>
+                <span class="text-blue">퍼스널 컴퓨터(PC)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript">
+    const page = {
+      isAnswer: false,
+      isVocabulary: false,
+      showAnswer: () => {},
+      hideAnswer: () => {},
+      showVocabulary: () => {},
+    };
+
+    //역할 연습 음원
+    // audio : 재생할 전체음원
+    // data
+    // start : 시작 시간
+    // end : 끝 시간
+    // value : 해당되는 data-audio
+    // role : 해당되는 역할
+    // scroll : 해당 시간대 위치할 스크롤
+    // page : 해당 시간대 위치할 페이지
+    const rolePlayerAudio = [
+      //  ----- page 1 -----
+      {
+        // audio: "9_01_29/140-16.mp3",
+        // data: [
+        //   {
+        //     start: 0,
+        //     end: 2.9,
+        //     value: "9_01_29/140-16.mp3",
+        //   },
+        //   {
+        //     start: 3.0,
+        //     end: 4.5,
+        //     value: "9_01_29/140-07.mp3",
+        //   },
+        // ],
+      },
+      //  ----- page 2 -----
+      {
+        audio: "9_01_29/140-16.mp3",
+        data: [
+          {
+            start: 0,
+            end: 2.4,
+            value: "9_01_29/140-12.mp3",
+          },
+          {
+            start: 2.5,
+            end: 4.8,
+            value: "9_01_29/140-13.mp3",
+          },
+          {
+            start: 4.9,
+            end: 6.8,
+            value: "9_01_29/140-14.mp3",
+          },
+          {
+            start: 6.9,
+            end: 9.7,
+            value: "9_01_29/140-15.mp3",
+          },
+        ],
+      },
+      //  ----- page 3 -----
+      {
+        audio: "9_01_29/140-21.mp3",
+        data: [
+          {
+            start: 0,
+            end: 2.4,
+            value: "9_01_29/140-17.mp3",
+          },
+          {
+            start: 2.5,
+            end: 4.5,
+            value: "9_01_29/140-18.mp3",
+          },
+          {
+            start: 4.6,
+            end: 6.4,
+            value: "9_01_29/140-19.mp3",
+          },
+          {
+            start: 6.5,
+            end: 9,
+            value: "9_01_29/140-20.mp3",
+          },
+        ],
+      },
+      //  ----- page 4 -----
+      {
+        audio: "9_01_29/140-26.mp3",
+        data: [
+          {
+            start: 0,
+            end: 2.5,
+            value: "9_01_29/140-22.mp3",
+          },
+          {
+            start: 2.6,
+            end: 4.7,
+            value: "9_01_29/140-23.mp3",
+          },
+          {
+            start: 4.8,
+            end: 6.6,
+            value: "9_01_29/140-24.mp3",
+          },
+          {
+            start: 6.7,
+            end: 9.6,
+            value: "9_01_29/140-25.mp3",
+          },
+        ],
+      },
+    ];
+  </script>
+  <script src="./../common/js/tailwind.config.js"></script>
+  <script src="./../common/js/script.js"></script>
+  <script src="../common/js/rolePlayerJc.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      // contentUtil.setPage(4);
+    });
+
+    $(`[data-name="btn-pagination"]`).on("click", function () {
+      if ($(this).index() > 0) {
+        $(`[data-name="rolePlayer-wrap"]`).css("top", "60px");
+      } else {
+        $(`[data-name="rolePlayer-wrap"]`).css("top", "180px");
+      }
+      if ($(this).index() === 0 || $(this).index() > 3) {
+        $(`[data-name="rolePlayer-wrap"]`).css("display", "none");
+      } else {
+        $(`[data-name="rolePlayer-wrap"]`).css("display", "block");
+      }
+
+      // if ($(this).index() > 0) {
+      //   $(".btn_change_view").css("display", "none");
+      // } else {
+      //   $(".btn_change_view").css("display", "block");
+      // }
+    });
+  </script>
+</html>

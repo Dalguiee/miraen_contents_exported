@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>미래엔 일본 문화</title>
+    <script src="./../common/lib/jquery-3.7.1.min.js"></script>
+    <script src="./../common/lib/howler-2.1.3.min.js"></script>
+    <script src="./../common/lib/tailwind.js"></script>
+    <!-- 폰트 -->
+    <link href="./../common/font/suit/suit.css" rel="stylesheet" />
+    <link href="./../common/font/bmjua/bmjua.css" rel="stylesheet" />
+    <link
+      href="./../common/font/nanumsquare/nanumSquare.css"
+      rel="stylesheet"
+    />
+    <link href="./../common/font/notoSansJP/notoSansJP.css" rel="stylesheet" />
+    <link href="./../common/css/tailwind.css" rel="stylesheet" />
+    <link href="./../common/css/fontStyle.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div id="wrap">
+      <!-- contents -->
+      <div class="relative w-full h-full pt-60">
+        <!-- title -->
+        <img
+          src="./../common/images/title_look_culture4.svg"
+          alt="문화 들여다보기2 행운 기원"
+          class="absolute w-540 h-49 top-10"
+        />
+        <!-- header-btn -->
+        <div class="absolute right-0 flex gap-6 top-13" data-name="header-btn">
+          <button
+            class="min-w-0"
+            data-name="btn-common-dark"
+            onclick="contentUtil.setPopup(2); contentUtil.setPhotoPopup(1)"
+          >
+            TIP
+          </button>
+        </div>
+        <!-- main -->
+        <div class="flex flex-col w-full h-full">
+          <div
+            class="flex flex-col w-full mb-8 h-404 text-40 f-nanum-s leading-52 ps-20"
+          >
+            <div class="flex items-center mt-10 mb-4">
+              <img
+                src="./../common/images/index_pink_3.svg"
+                alt="번호 3"
+                class="w-40 h-40 me-4"
+              />
+              <span class="font-extrabold f-nanum-s text-40 flex"
+                >합격을 기원하는 것
+              </span>
+            </div>
+
+            <!-- ======== page 1 ======== -->
+            <div data-name="page" class="flex flex-col font-bold">
+              <div>
+                <p class="ps-28 flex">
+                  돈가스(<span
+                    data-audio="7_01_33/111-01.mp3"
+                    class="f-noto font-medium"
+                    >とんカツ</span
+                  >)의 ‘<span
+                    data-audio="7_01_33/111-02.mp3"
+                    class="f-noto font-medium"
+                    >カツ</span
+                  >’는 ‘이기다’라는 의미의 낱말
+                </p>
+                <p class="flex pt-12">
+                  (
+                  <span
+                    class="f-noto font-medium"
+                    data-audio="7_01_33/111-03.mp3"
+                    ><span class="relative">勝<span class="ruby">か</span></span
+                    >つ</span
+                  >)과 발음이 같아 일본의 수험생은 시험 전날 돈가스나
+                </p>
+                <p>돈가스덮밥 등을 먹으며 합격을 기원</p>
+                <p>한다.</p>
+              </div>
+
+              <!-- img box -->
+              <div class="absolute flex flex-col right-20 bottom-12">
+                <div class="relative overflow-hidden w-350 h-260 rounded-10">
+                  <img
+                    src="./images/7_01_33/main_photo1.jpg"
+                    alt="돈가스 도시락"
+                    class="w-full h-full"
+                  />
+                  <button
+                    data-name="btn-view"
+                    class="absolute bottom-10 right-10"
+                    onclick="contentUtil.setPopup(1); contentUtil.setPhotoPopup(1);"
+                  ></button>
+                </div>
+              </div>
+            </div>
+
+            <!-- ======== page 2 ======== -->
+            <div
+              style="display: none"
+              data-name="page"
+              class="flex flex-col font-bold"
+            >
+              <div>
+                <p class="ps-28">
+                  수험생에게 문어 모양의 학용품이나 인형 등을 선물하는
+                </p>
+
+                <p>경우가 많다. 이는 ‘문어(octopus)’의 일본식 발음인</p>
+                <p class="flex">
+                  ‘<span
+                    data-audio="7_01_33/111-04.mp3"
+                    class="f-noto font-medium"
+                    >オクトパス</span
+                  >’가 ‘(문어 인형을) 놓아
+                </p>
+                <p>두면 (시험에) 패스’라는 뜻이 되기</p>
+                <p>때문이다.</p>
+              </div>
+
+              <!-- img box -->
+              <div class="absolute flex flex-col right-20 bottom-12">
+                <div class="relative overflow-hidden w-360 h-270 rounded-10">
+                  <img
+                    src="./images/7_01_33/main_photo2.jpg"
+                    alt="문어 모양 상품"
+                    class="w-full h-full"
+                  />
+                  <button
+                    data-name="btn-view"
+                    class="absolute bottom-10 right-10"
+                    onclick="contentUtil.setPopup(1); contentUtil.setPhotoPopup(2);"
+                  ></button>
+                </div>
+              </div>
+            </div>
+
+            <!-- ======== page 3 ======== -->
+            <div
+              style="display: none"
+              data-name="page"
+              class="flex flex-col font-bold"
+            >
+              <div>
+                <p class="ps-28 flex">
+                  ‘오각(<span
+                    data-audio="7_01_33/111-05.mp3"
+                    class="f-noto font-medium"
+                    >ごかく</span
+                  >)’과 ‘합격(<span
+                    data-audio="7_01_33/111-06.mp3"
+                    class="f-noto font-medium"
+                    >ごうかく</span
+                  >)’의 발음이 비슷해서
+                </p>
+                <p class="">
+                  수험생에게 오각형의 연필을 선물하기도 한다. 오각형의
+                </p>
+                <p>과자나 오각형의 오마모리도</p>
+                <p>인기가 많다.</p>
+              </div>
+
+              <!-- img box -->
+              <div class="absolute flex gap-10 right-20 bottom-77">
+                <div class="relative overflow-hidden w-200 h-200 rounded-10">
+                  <img
+                    src="./images/7_01_33/main_photo3.jpg"
+                    alt="오각 연필"
+                    class="w-full h-full"
+                  />
+                  <button
+                    data-name="btn-view"
+                    class="absolute bottom-10 right-20"
+                    onclick="contentUtil.setPopup(1); contentUtil.setPhotoPopup(3);"
+                  ></button>
+                </div>
+                <div class="relative overflow-hidden w-267 h-200 rounded-10">
+                  <img
+                    src="./images/7_01_33/main_photo4.jpg"
+                    alt="오마모리"
+                    class="w-full h-full"
+                  />
+                  <button
+                    data-name="btn-view"
+                    class="absolute bottom-10 right-10"
+                    onclick="contentUtil.setPopup(1); contentUtil.setPhotoPopup(4);"
+                  ></button>
+                </div>
+              </div>
+            </div>
+
+            <!-- ======== page 4 ======== -->
+            <div
+              style="display: none"
+              data-name="page"
+              class="flex flex-col font-bold"
+            >
+              <div>
+                <p class="ps-28 flex">
+                  초콜릿 과자의 이름을 일본식으로 읽으면 ‘<span
+                    data-audio="7_01_33/111-07.mp3"
+                    class="f-noto font-medium"
+                    >キットカット</span
+                  >’로
+                </p>
+                <p class="flex">
+                  ‘반드시 이긴다(<span
+                    data-audio="7_01_33/111-08.mp3"
+                    class="f-noto font-medium"
+                    >きっと かつ</span
+                  >)’라는 말과 발음이 비슷하여
+                </p>
+                <p>입시철 인기 선물이 되었다.</p>
+              </div>
+
+              <!-- img box -->
+              <div class="absolute flex flex-col right-20 bottom-12">
+                <div class="relative overflow-hidden w-360 h-270 rounded-10">
+                  <img
+                    src="./images/7_01_33/main_photo5.jpg"
+                    alt="초코릿 과자"
+                    class="w-full h-full"
+                  />
+                  <button
+                    data-name="btn-view"
+                    class="absolute bottom-10 right-10"
+                    onclick="contentUtil.setPopup(1); contentUtil.setPhotoPopup(5);"
+                  ></button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- pagination -->
+          <div
+            class="absolute -translate-x-1/2 left-1/2 bottom-10"
+            data-name="pagination"
+          >
+            <button class="active" data-name="btn-pagination"></button>
+            <button class="" data-name="btn-pagination"></button>
+            <button class="" data-name="btn-pagination"></button>
+            <button class="" data-name="btn-pagination"></button>
+          </div>
+        </div>
+      </div>
+      <!-- popup -->
+      <div id="popup-wrap" style="display: none">
+        <!-- 추가 사진 -->
+        <div data-name="popup" data-popup="1" style="display: none">
+          <div data-name="popup-header">
+            <div data-name="popup-title">추가 사진</div>
+            <button
+              data-name="popup-close"
+              onclick="contentUtil.setPopup()"
+            ></button>
+          </div>
+          <div
+            data-name="popup-body"
+            class="flex items-center justify-center w-full h-full gap-16"
+          >
+            <div
+              class="flex flex-col items-center w-608 h-402"
+              data-name="popup_photo_wrap"
+            >
+              <div class="w-full overflow-x-hidden overflow-y-auto mb-8">
+                <img
+                  src="./images/7_01_33/popup_photo1.jpg"
+                  alt="돈가스 도시락"
+                  class="object-contain min-w-608 rounded-10"
+                  data-name="popup_photo"
+                />
+                <img
+                  src="./images/7_01_33/popup_photo2.jpg"
+                  alt="문어 모양 상품"
+                  class="object-contain min-w-608 rounded-10"
+                  data-name="popup_photo"
+                  style="display: none"
+                />
+                <img
+                  src="./images/7_01_33/popup_photo3.jpg"
+                  alt="오각 연필"
+                  class="object-contain min-w-608 rounded-10"
+                  data-name="popup_photo"
+                  style="display: none"
+                />
+                <img
+                  src="./images/7_01_33/popup_photo4.jpg"
+                  alt="오마모리"
+                  class="object-contain min-w-608 rounded-10"
+                  data-name="popup_photo"
+                  style="display: none"
+                />
+                <img
+                  src="./images/7_01_33/popup_photo5.jpg"
+                  alt="초콜릿 과자"
+                  class="object-contain min-w-608 rounded-10"
+                  data-name="popup_photo"
+                  style="display: none"
+                />
+              </div>
+              <div class="font-bold f-nanum-s text-40 leading-52 shrink-0">
+                <div data-name="popup_photo_text">돈가스 도시락</div>
+                <div style="display: none" data-name="popup_photo_text">
+                  문어 모양 상품
+                </div>
+                <div style="display: none" data-name="popup_photo_text">
+                  오각형의 연필
+                </div>
+                <div style="display: none" data-name="popup_photo_text">
+                  오마모리
+                </div>
+                <div style="display: none" data-name="popup_photo_text">
+                  합격 기원 초콜릿
+                </div>
+              </div>
+            </div>
+            <div class="w-266 h-402">
+              <div class="flex flex-wrap w-full gap-10">
+                <button
+                  data-name="btn-popup_photo"
+                  class="w-128 h-72 active"
+                  onclick="contentUtil.setPhotoPopup(1)"
+                >
+                  <img
+                    src="./images/7_01_33/popup_btn_photo1.jpg"
+                    alt="돈가스 도시락"
+                  />
+                </button>
+                <button
+                  data-name="btn-popup_photo"
+                  class="w-128 h-72"
+                  onclick="contentUtil.setPhotoPopup(2)"
+                >
+                  <img
+                    src="./images/7_01_33/popup_btn_photo2.jpg"
+                    alt="문어 모양 상품"
+                  />
+                </button>
+                <button
+                  data-name="btn-popup_photo"
+                  class="w-128 h-72"
+                  onclick="contentUtil.setPhotoPopup(3)"
+                >
+                  <img
+                    src="./images/7_01_33/popup_btn_photo3.jpg"
+                    alt="오각 연필"
+                  />
+                </button>
+                <button
+                  data-name="btn-popup_photo"
+                  class="w-128 h-72"
+                  onclick="contentUtil.setPhotoPopup(4)"
+                >
+                  <img
+                    src="./images/7_01_33/popup_btn_photo4.jpg"
+                    alt="오마모리"
+                  />
+                </button>
+                <button
+                  data-name="btn-popup_photo"
+                  class="w-128 h-72"
+                  onclick="contentUtil.setPhotoPopup(5)"
+                >
+                  <img
+                    src="./images/7_01_33/popup_btn_photo5.jpg"
+                    alt="초콜릿 과자"
+                  />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- TIP -->
+        <div data-name="popup" data-popup="2" style="display: none">
+          <div data-name="popup-header">
+            <div data-name="popup-title">TIP</div>
+            <button
+              data-name="popup-close"
+              onclick="contentUtil.setPopup()"
+            ></button>
+          </div>
+          <div
+            data-name="popup-body"
+            class="relative mt-16 mb-10 font-bold ms-26 f-nanum-s me-6 leading-52 text-40 h-full"
+          >
+            <div class="flex flex-col">
+              <p>끈기가 있는 낫토와 마, 구멍이 있어 전망이 좋다는 의미의</p>
+              <p class="flex">
+                연근, 이름에 ‘<span
+                  data-audio="7_01_33/111-09.mp3"
+                  class="f-noto font-medium"
+                  >かつ</span
+                >’가 들어간 ‘가쓰오부시(<span
+                  data-audio="7_01_33/111-10.mp3"
+                  class="f-noto font-medium"
+                  >かつおぶし</span
+                >)’,
+              </p>
+              <p class="flex">
+                ‘매듭’이라는 의미의 ‘주먹밥(<span
+                  data-audio="7_01_33/111-11.mp3"
+                  class="f-noto font-medium"
+                  >おむすび</span
+                >)’ 등도 합격을 기원
+              </p>
+              <p>하는 식품으로 인기가 있다.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript">
+    const page = {
+      isAnswer: false,
+      isVocabulary: false,
+      showAnswer: () => {},
+      hideAnswer: () => {},
+      showVocabulary: () => {},
+    };
+  </script>
+  <script src="./../common/js/tailwind.config.js"></script>
+  <script src="./../common/js/script.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      // contentUtil.setPopup(1);
+    });
+  </script>
+</html>

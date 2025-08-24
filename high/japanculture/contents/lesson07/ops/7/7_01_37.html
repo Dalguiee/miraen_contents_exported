@@ -1,0 +1,1773 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>미래엔 일본 문화</title>
+    <script src="./../common/lib/jquery-3.7.1.min.js"></script>
+    <script src="./../common/lib/howler-2.1.3.min.js"></script>
+    <script src="./../common/lib/tailwind.js"></script>
+    <!-- 폰트 -->
+    <link href="./../common/font/suit/suit.css" rel="stylesheet" />
+    <link href="./../common/font/bmjua/bmjua.css" rel="stylesheet" />
+    <link
+      href="./../common/font/nanumsquare/nanumSquare.css"
+      rel="stylesheet"
+    />
+    <link href="./../common/font/notoSansJP/notoSansJP.css" rel="stylesheet" />
+    <link href="./../common/css/tailwind.css" rel="stylesheet" />
+    <link href="./../common/css/fontStyle.css" rel="stylesheet" />
+    <link href="./../common/css/rolePlayer.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div id="wrap">
+      <!-- contents -->
+      <div class="relative w-full h-full pt-60">
+        <!-- title -->
+        <img
+          src="./images/7_01_37/title_daily.svg"
+          alt="생활 속 일본어"
+          class="absolute left-0 w-223 h-50 top-10"
+        />
+        <div class="absolute right-0 flex gap-6 top-13">
+          <button data-name="btn-common" onclick="contentUtil.setPopup(1)">
+            정중체(존댓말 표현)로 바꿔 보기
+          </button>
+          <button data-name="btn-common" onclick="contentUtil.setPopup(2)">
+            해석 보기
+          </button>
+          <button data-name="btn-common" onclick="contentUtil.setPopup(3)">
+            해설 보기
+          </button>
+        </div>
+
+        <!-- 음원 플레이어 -->
+        <div class="absolute top-122 right-20">
+          <div class="rolePlayer">
+            <div class="rolePlayer_player">
+              <div class="rolePlayer_box">
+                <div class="plus_btn_box">
+                  <button
+                    data-audio-play="1"
+                    data-role="0"
+                    class="txt_btn active"
+                  >
+                    <span class="f-suit">전체 듣기</span>
+                  </button>
+                  <button data-audio-play="2" data-role="0" class="txt_btn">
+                    <span class="f-suit">따라 읽기</span>
+                  </button>
+                </div>
+                <button class="rolePlayer_play-btn play"></button>
+                <button class="rolePlayer_stop-btn"></button>
+                <div class="rolePlayer_duration">
+                  <input
+                    type="range"
+                    class="rolePlayer_duration_range"
+                    min="0"
+                    max="100"
+                    value="0"
+                    step="1"
+                  />
+                  <div class="rolePlayer_duration_range-ui">
+                    <div
+                      class="rolePlayer_duration_range-ui_bar"
+                      style="width: 0"
+                    ></div>
+                  </div>
+                  <span class="rolePlayer_duration_text seek">00:00</span>
+                  <span class="rolePlayer_duration_text duration">00:00</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="rolePlayButton">
+              <button data-audio-play="1" data-role="1" class="img_btn">
+                <img src="./images/7_01_37/role1.png" class="img" />
+              </button>
+              <button data-audio-play="1" data-role="3" class="img_btn">
+                <img src="./images/7_01_37/role2.png" class="img" />
+              </button>
+              <button data-audio-play="1" data-role="2" class="img_btn">
+                <img src="./images/7_01_37/role3.png" class="img" />
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- main -->
+        <div class="flex flex-col w-full h-full px-20">
+          <!-- title -->
+          <div class="flex">
+            <img
+              src="./images/7_01_37/label_flower.svg"
+              alt=""
+              class="mt-12 me-8 w-30 h-25"
+            />
+            <div class="mb-4 font-extrabold leading-52 text-40 f-nanum-s">
+              <p>수아와 친구들이 마쓰리에 대해 이야기를 하고 있습니다.</p>
+            </div>
+          </div>
+
+          <div
+            class="w-full h-330 rounded-10 leading-52 text-40 f-noto font-medium border-3 border-[#D05871] p-7 mt-52"
+          >
+            <div
+              data-scroll="1"
+              class="relative w-full h-full p-12 overflow-y-auto"
+            >
+              <div class="w-full">
+                <!-- Main Photo -->
+                <div class="absolute right-24 w-221 h-148">
+                  <img
+                    class="w-full h-full"
+                    src="./images/7_01_37/main_photo1.jpg"
+                  />
+                  <button
+                    data-name="btn-view"
+                    class="absolute right-6 bottom-10"
+                    onclick="contentUtil.setPopup(5);"
+                  ></button>
+                </div>
+
+                <!-- Text Area -->
+                <div class="font-medium f-noto leading-52 text-40">
+                  <!-- ------------------- -->
+                  <div class="flex mb-20 gap-22">
+                    <p data-audio="7_01_37/113-36.mp3" class="text-[#583537]">
+                      れん
+                    </p>
+                    <p data-audio="7_01_37/113-01.mp3" class="flex">
+                      おまつり、
+                      <span>
+                        <span class="relative"
+                          >楽<span class="ruby">たの</span></span
+                        >
+                      </span>
+                      しかったね。
+                    </p>
+                  </div>
+
+                  <!-- ------------------- -->
+                  <div class="flex mb-20 gap-22">
+                    <p data-audio="7_01_37/113-37.mp3" class="text-[#5B87B8]">
+                      スア
+                    </p>
+                    <p class="flex">
+                      <span data-audio="7_01_37/113-02.mp3"> うんうん。 </span>
+
+                      <span data-audio="7_01_37/113-03.mp3">
+                        <span class="relative"
+                          >特<span class="ruby">とく</span></span
+                        >に&nbsp;<span class="relative"
+                          >金<span class="ruby">きん</span></span
+                        ><span class="relative"
+                          >魚<span class="ruby">ぎょ</span></span
+                        >すくい！
+                      </span>
+                    </p>
+                  </div>
+
+                  <!-- ------------------- -->
+                  <div class="flex mb-20 gap-22">
+                    <p data-audio="7_01_37/113-38.mp3" class="text-[#C4673D]">
+                      みお
+                    </p>
+                    <p class="flex">
+                      <span data-audio="7_01_37/113-04.mp3">そうそう。</span
+                      ><span data-audio="7_01_37/113-05.mp3"
+                        >ちょっと むずかしかったけどね。</span
+                      >
+                    </p>
+                  </div>
+
+                  <!-- ------------------- -->
+                  <div class="flex mb-20 gap-22">
+                    <p data-audio="7_01_37/113-36.mp3" class="text-[#583537]">
+                      れん
+                    </p>
+                    <div>
+                      <p data-audio="7_01_37/113-06.mp3" class="flex">
+                        ぼくは やっぱり&nbsp;
+                        <span>
+                          <span class="relative"
+                            >食<span class="ruby">た</span></span
+                          >
+                        </span>
+                        べ
+                        <span>
+                          <span class="relative"
+                            >物<span class="ruby">もの</span></span
+                          >
+                        </span>
+                        だなあ。
+                      </p>
+                      <p data-audio="7_01_37/113-07.mp3" class="flex mt-12">
+                        たこ<span
+                          ><span class="relative"
+                            >焼<span class="ruby">や</span></span
+                          ></span
+                        >
+                        き、おいしかった～。
+                      </p>
+                    </div>
+                  </div>
+
+                  <!-- ------------------- -->
+                  <div class="flex mb-20 gap-22">
+                    <p data-audio="7_01_37/113-37.mp3" class="text-[#5B87B8]">
+                      スア
+                    </p>
+                    <div>
+                      <p class="flex">
+                        <span data-audio="7_01_37/113-08.mp3">そうだね。</span>
+                        <span data-group="1" data-audio="7_01_37/113-09.mp3">
+                          みんなと いっしょに&nbsp;<span
+                            ><span class="relative"
+                              >食<span class="ruby">た</span></span
+                            ></span
+                          >べると
+                        </span>
+                      </p>
+                      <p
+                        class="flex"
+                        data-group="1"
+                        data-audio="7_01_37/113-09.mp3"
+                      >
+                        もっと おいしいよね。
+                      </p>
+                    </div>
+                  </div>
+
+                  <!-- ------------------- -->
+                  <div class="flex mb-20 gap-22">
+                    <p data-audio="7_01_37/113-38.mp3" class="text-[#C4673D]">
+                      みお
+                    </p>
+                    <div>
+                      <p class="flex">
+                        <span data-audio="7_01_37/113-10.mp3">
+                          ほんとほんと。
+                        </span>
+                        <span data-group="2" data-audio="7_01_37/113-11.mp3">
+                          また みんなで おまつり
+                        </span>
+                      </p>
+                      <p
+                        data-group="2"
+                        data-audio="7_01_37/113-11.mp3"
+                        class="flex pt-12"
+                      >
+                        <span
+                          ><span class="relative"
+                            >行<span class="ruby">い</span></span
+                          ></span
+                        >
+                        きたいね。
+                      </p>
+                    </div>
+                  </div>
+
+                  <!-- ------------------- -->
+                  <div class="flex mb-10 gap-22">
+                    <p data-audio="7_01_37/113-36.mp3" class="text-[#583537]">
+                      れん
+                    </p>
+                    <p>
+                      <span data-audio="7_01_37/113-12.mp3"> うん。 </span>
+                      <span data-audio="7_01_37/113-13.mp3"
+                        >また&nbsp;<span class="relative">行<span class="ruby">い</span></span
+                        >こう！</span>
+                      </span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- popup -->
+      <div id="popup-wrap" style="display: none">
+        <!-- 정중체(존댓말 표현)로 바꿔 보기 -->
+        <div data-name="popup" data-popup="1" style="display: none">
+          <div data-name="popup-header" class="relative">
+            <div data-name="popup-title">정중체(존댓말 표현)로 바꿔 보기</div>
+            <button
+              data-name="popup-close"
+              onclick="contentUtil.setPopup()"
+            ></button>
+            <!-- explan -->
+            <div class="absolute flex top-5 right-52">
+              <img
+                src="./images/7_01_37/label_popup_ex.svg"
+                alt="문장을 클릭하면 음원을 들을 수 있습니다."
+                class="w-298 h-37 me-12"
+              />
+              <button
+                data-name="btn-common-light"
+                data-exreset="1"
+                onclick="contentUtil.showExplan(1)"
+              >
+                해석 보기
+              </button>
+              <button
+                data-name="btn-common-light"
+                data-explan="1"
+                onclick="contentUtil.hideExplan(1)"
+                style="display: none"
+              >
+                해석 감추기
+              </button>
+            </div>
+          </div>
+          <div
+            data-name="popup-body"
+            class="flex flex-col flex-1 mt-16 mb-10 ms-26 leading-52 text-40 f-nanum-s me-6"
+          >
+            <!-- ---------- -->
+            <div class="flex flex-col mb-20 mt-19 font-medium f-noto">
+              <div class="flex">
+                <p
+                  data-audio="7_01_37/113-36.mp3"
+                  data-exreset="1"
+                  class="text-[#583537]"
+                >
+                  れん
+                </p>
+                <p
+                  style="display: none"
+                  class="text-[#583537] min-w-80 flex justify-center"
+                  data-explan="1"
+                >
+                  렌
+                </p>
+                <p data-name="colon-black">:</p>
+                <p data-audio="7_01_37/113-16.mp3" class="flex">
+                  <span> おまつり、 </span>
+                  <span>
+                    <span class="relative"
+                      >楽<span class="ruby">たの</span></span
+                    >
+                  </span>
+                  しかったですね。
+                </p>
+              </div>
+              <!-- ex -->
+              <div
+                class="flex font-bold text-blue f-nanum-s ml-102"
+                data-explan="1"
+                style="display: none"
+              >
+                <p>마쓰리, 즐거웠어요.</p>
+              </div>
+            </div>
+            <!-- ---------- -->
+            <div class="flex flex-col mb-20 font-medium f-noto">
+              <div class="flex">
+                <p
+                  data-audio="7_01_37/113-37.mp3"
+                  data-exreset="1"
+                  class="text-[#5B87B8]"
+                >
+                  スア
+                </p>
+                <p
+                  style="display: none"
+                  class="text-[#5B87B8] min-w-80 flex justify-center"
+                  data-explan="1"
+                >
+                  수 아
+                </p>
+                <p data-name="colon-black">:</p>
+                <p class="flex">
+                  <span data-audio="7_01_37/113-17.mp3"> はいはい。 </span>
+                  <span data-audio="7_01_37/113-18.mp3">
+                    <span class="relative"
+                      >特<span class="ruby">とく</span></span
+                    >に&nbsp;<span class="relative"
+                      >金<span class="ruby">きん</span></span
+                    ><span class="relative"
+                      >魚<span class="ruby">ぎょ</span></span
+                    >すくいです！
+                  </span>
+                </p>
+              </div>
+              <!-- ex -->
+              <div
+                class="flex font-bold text-blue f-nanum-s ml-102"
+                data-explan="1"
+                style="display: none"
+              >
+                <p>네. 특히 금붕어 건지기요!</p>
+              </div>
+            </div>
+            <!-- ---------- -->
+            <div class="flex flex-col mb-20 font-medium f-noto">
+              <div class="flex">
+                <p
+                  data-audio="7_01_37/113-38.mp3"
+                  data-exreset="1"
+                  class="text-[#C4673D]"
+                >
+                  みお
+                </p>
+                <p
+                  style="display: none"
+                  class="text-[#C4673D] min-w-80 flex justify-center"
+                  data-explan="1"
+                >
+                  미 오
+                </p>
+                <p data-name="colon-black">:</p>
+                <div class="flex flex-col">
+                  <p data-audio="7_01_37/113-19.mp3">そうですね。</p>
+                  <p data-audio="7_01_37/113-20.mp3">
+                    ちょっと むずかしかったですけどね。
+                  </p>
+                </div>
+              </div>
+              <!-- ex -->
+              <div
+                class="flex font-bold text-blue f-nanum-s ml-102"
+                data-explan="1"
+                style="display: none"
+              >
+                <p>맞아요. 조금 어렵기는 했지만요.</p>
+              </div>
+            </div>
+            <!-- ---------- -->
+            <div class="flex flex-col mb-20 font-medium f-noto">
+              <div class="flex">
+                <p
+                  data-audio="7_01_37/113-36.mp3"
+                  data-exreset="1"
+                  class="text-[#583537]"
+                >
+                  れん
+                </p>
+                <p
+                  style="display: none"
+                  class="text-[#583537] min-w-80 flex justify-center"
+                  data-explan="1"
+                >
+                  렌
+                </p>
+                <p data-name="colon-black">:</p>
+                <div>
+                  <p data-audio="7_01_37/113-21.mp3" class="flex">
+                    <span>
+                      <span class="relative"
+                        >私<span class="ruby tracking-[-0.18em]"
+                          >わたし</span
+                        ></span
+                      >は やっぱり&nbsp;
+                    </span>
+                    <span>
+                      <span class="relative"
+                        >食<span class="ruby">た</span></span
+                      >
+                    </span>
+                    べ
+                    <span>
+                      <span class="relative"
+                        >物<span class="ruby">もの</span></span
+                      >
+                    </span>
+                    ですね。
+                  </p>
+                  <p data-audio="7_01_37/113-22.mp3" class="flex mt-12">
+                    たこ
+                    <span>
+                      <span class="relative"
+                        >焼<span class="ruby">や</span></span
+                      >
+                    </span>
+                    き、おいしかったです。
+
+
+
+                  </p>
+                </div>
+              </div>
+              <!-- ex -->
+              <div
+                class="flex font-bold text-blue f-nanum-s ml-102"
+                data-explan="1"
+                style="display: none"
+              >
+                <p>저는 역시 먹거리예요. 다코야키, 맛있었어요.</p>
+              </div>
+            </div>
+            <!-- ---------- -->
+            <div class="flex flex-col mb-20 font-medium f-noto">
+              <div class="flex">
+                <p
+                  data-audio="7_01_37/113-37.mp3"
+                  data-exreset="1"
+                  class="text-[#5B87B8]"
+                >
+                  スア
+                </p>
+                <p
+                  style="display: none"
+                  class="text-[#5B87B8] min-w-80 flex justify-center"
+                  data-explan="1"
+                >
+                  수 아
+                </p>
+                <p data-name="colon-black">:</p>
+                <div class="flex flex-col">
+                  <p class="flex">
+                    <span data-audio="7_01_37/113-23.mp3">そうですね。</span>
+                    <span data-group="3" data-audio="7_01_37/113-24.mp3">
+                      みんなと いっしょに<span class="relative"
+                        >&nbsp;食<span class="ruby">た</span></span
+                      >べると
+                    </span>
+                  </p>
+                  <p data-group="3" data-audio="7_01_37/113-24.mp3">
+                    もっと おいしいですよね。
+                  </p>
+                </div>
+              </div>
+              <!-- ex -->
+              <div
+                class="flex font-bold text-blue f-nanum-s ml-102"
+                data-explan="1"
+                style="display: none"
+              >
+                <p>맞아요. 다 같이 함께 먹으면 더 맛있지요.</p>
+              </div>
+            </div>
+            <!-- ---------- -->
+            <div class="flex flex-col mb-20 mt-19 font-medium f-noto">
+              <div class="flex">
+                <p
+                  data-audio="7_01_37/113-38.mp3"
+                  data-exreset="1"
+                  class="text-[#C4673D]"
+                >
+                  みお
+                </p>
+                <p
+                  style="display: none"
+                  class="text-[#C4673D] min-w-80 flex justify-center"
+                  data-explan="1"
+                >
+                  미 오
+                </p>
+                <p data-name="colon-black">:</p>
+                <div class="flex flex-col">
+                  <p class="flex">
+                    <span data-audio="7_01_37/113-25.mp3"
+                      >ほんとうですね。</span
+                    >
+                    <span data-group="4" data-audio="7_01_37/113-26.mp3"
+                      >また みんなで おまつり</span
+                    >
+                  </p>
+                  <p
+                    data-group="4"
+                    data-audio="7_01_37/113-26.mp3"
+                    class="flex pt-12"
+                  >
+                    <span>
+                      <span class="relative"
+                        >行<span class="ruby">い</span></span
+                      >
+                    </span>
+                    きたいですね。
+                  </p>
+                </div>
+              </div>
+              <!-- ex -->
+              <div
+                class="flex font-bold text-blue f-nanum-s ml-102"
+                data-explan="1"
+                style="display: none"
+              >
+                <p>정말이에요. 또 다 같이 마쓰리 가고 싶네요.</p>
+              </div>
+            </div>
+            <!-- ---------- -->
+            <div class="flex flex-col mb-20 font-medium f-noto">
+              <div class="flex">
+                <p
+                  data-audio="7_01_37/113-36.mp3"
+                  data-exreset="1"
+                  class="text-[#583537]"
+                >
+                  れん
+                </p>
+                <p
+                  style="display: none"
+                  class="text-[#583537] min-w-80 flex justify-center"
+                  data-explan="1"
+                >
+                  렌
+                </p>
+                <p data-name="colon-black">:</p>
+                <p class="flex">
+                  <span data-audio="7_01_37/113-27.mp3"> はい。 </span>
+                  <span data-audio="7_01_37/113-28.mp3">
+                    また&nbsp;
+                    <span class="relative">行<span class="ruby">い</span></span
+                    >きましょう！
+                  </span>
+                </p>
+              </div>
+              <!-- ex -->
+              <div
+                class="flex font-bold text-blue f-nanum-s ml-102"
+                data-explan="1"
+                style="display: none"
+              >
+                <p>네. 또 갑시다!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 해석 보기 -->
+        <div data-name="popup" data-popup="2" style="display: none">
+          <div data-name="popup-header" class="relative">
+            <div data-name="popup-title">해석 보기</div>
+            <button
+              data-name="popup-close"
+              onclick="contentUtil.setPopup()"
+            ></button>
+            <!-- explan -->
+            <div class="absolute flex top-5 right-52">
+              <img
+                src="./images/7_01_37/label_popup_ex.svg"
+                alt="문장을 클릭하면 음원을 들을 수 있습니다."
+                class="w-298 h-37 me-12"
+              />
+              <button
+                data-name="btn-common-light"
+                data-exreset="2"
+                onclick="contentUtil.showExplan(2)"
+              >
+                해석 보기
+              </button>
+              <button
+                data-name="btn-common-light"
+                data-explan="2"
+                onclick="contentUtil.hideExplan(2)"
+                style="display: none"
+              >
+                해석 감추기
+              </button>
+            </div>
+          </div>
+          <div
+            data-name="popup-body"
+            class="flex flex-col flex-1 mt-16 mb-10 ms-26 leading-52 text-40 f-nanum-s me-6"
+          >
+            <!-- ---------- -->
+            <div class="flex items-start mb-20 font-medium mt-18 f-noto">
+              <div class="flex flex-col">
+                <!-- text -->
+                <div class="flex">
+                  <p
+                    data-audio="7_01_37/113-36.mp3"
+                    data-exreset="2"
+                    class="text-[#583537]"
+                  >
+                    れん
+                  </p>
+                  <p
+                    style="display: none"
+                    class="text-[#583537] min-w-80 flex justify-center"
+                    data-explan="2"
+                  >
+                    렌
+                  </p>
+                  <p data-name="colon-black">:</p>
+                  <p data-audio="7_01_37/113-01.mp3" class="flex">
+                    おまつり、
+                      <span class="relative"
+                        >楽<span class="ruby">たの</span></span
+                      >
+                    しかったね。
+                  </p>
+                </div>
+                <!-- ex -->
+                <div
+                  class="font-bold text-blue f-nanum-s ml-102"
+                  data-explan="2"
+                  style="display: none"
+                >
+                  <p>마쓰리, 즐거웠어.</p>
+                </div>
+              </div>
+            </div>
+            <!-- ---------- -->
+            <div class="flex items-start mb-20 font-medium f-noto">
+              <div class="flex flex-col">
+                <!-- text -->
+                <div class="flex">
+                  <p
+                    data-audio="7_01_37/113-37.mp3"
+                    data-exreset="2"
+                    class="text-[#5B87B8]"
+                  >
+                    スア
+                  </p>
+                  <p
+                    style="display: none"
+                    class="text-[#5B87B8] min-w-80 flex justify-center"
+                    data-explan="2"
+                  >
+                    수 아
+                  </p>
+                  <p data-name="colon-black">:</p>
+                  <p class="flex">
+                    <span data-audio="7_01_37/113-02.mp3"> うんうん。 </span>
+
+                    <span data-audio="7_01_37/113-03.mp3">
+                      <span class="relative"
+                        >特<span class="ruby">とく</span></span
+                      >に&nbsp;<span class="relative"
+                        >金<span class="ruby">きん</span></span
+                      ><span class="relative"
+                        >魚<span class="ruby">ぎょ</span></span
+                      >すくい！
+                    </span>
+                  </p>
+                </div>
+                <!-- ex -->
+                <div
+                  class="flex font-bold text-blue f-nanum-s ml-102"
+                  data-explan="2"
+                  style="display: none"
+                >
+                  <p>응응. 특히 금붕어 건지기!</p>
+                </div>
+              </div>
+            </div>
+            <!-- ---------- -->
+            <div class="flex items-start mb-20 font-medium f-noto">
+              <div class="flex flex-col">
+                <!-- text -->
+                <div class="flex">
+                  <p
+                    data-audio="7_01_37/113-38.mp3"
+                    data-exreset="2"
+                    class="text-[#C4673D]"
+                  >
+                    みお
+                  </p>
+                  <p
+                    style="display: none"
+                    class="text-[#C4673D] min-w-80 flex justify-center"
+                    data-explan="2"
+                  >
+                    미 오
+                  </p>
+                  <p data-name="colon-black">:</p>
+                  <p class="flex">
+                    <span data-audio="7_01_37/113-04.mp3">そうそう。</span
+                    ><span data-audio="7_01_37/113-05.mp3"
+                      >ちょっと むずかしかったけどね。</span
+                    >
+                  </p>
+                </div>
+                <!-- ex -->
+                <div
+                  class="flex font-bold text-blue f-nanum-s ml-102"
+                  data-explan="2"
+                  style="display: none"
+                >
+                  <p>맞아맞아. 조금 어렵기는 했지만.</p>
+                </div>
+              </div>
+            </div>
+            <!-- ---------- -->
+            <div class="flex items-start mb-20 font-medium f-noto">
+              <div class="flex flex-col">
+                <!-- text -->
+                <div class="flex">
+                  <p
+                    data-audio="7_01_37/113-36.mp3"
+                    data-exreset="2"
+                    class="text-[#583537]"
+                  >
+                    れん
+                  </p>
+                  <p
+                    style="display: none"
+                    class="text-[#583537] min-w-80 flex justify-center"
+                    data-explan="2"
+                  >
+                    렌
+                  </p>
+                  <p data-name="colon-black">:</p>
+                  <div>
+                    <p data-audio="7_01_37/113-06.mp3" class="flex">
+                      ぼくは やっぱり&nbsp;
+                      <span>
+                        <span class="relative"
+                          >食<span class="ruby">た</span></span
+                        >
+                      </span>
+                      べ
+                      <span>
+                        <span class="relative"
+                          >物<span class="ruby">もの</span></span
+                        >
+                      </span>
+                      だなあ。
+                    </p>
+                    <p data-audio="7_01_37/113-07.mp3" class="flex mt-12">
+                      たこ<span
+                        ><span class="relative"
+                          >焼<span class="ruby">や</span></span
+                        ></span
+                      >
+                      き、おいしかった～。
+                    </p>
+                  </div>
+                </div>
+                <!-- ex -->
+                <div
+                  class="font-bold text-blue f-nanum-s ml-102"
+                  data-explan="2"
+                  style="display: none"
+                >
+                  <p class="flex">
+                    나는 역시 먹거리지. 다코야키, 맛있었어<span
+                      class="f-noto font-medium"
+                      >～</span
+                    >.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- ---------- -->
+            <div class="flex items-start mb-20 font-medium f-noto">
+              <div class="flex flex-col">
+                <div class="flex">
+                  <p
+                    data-audio="7_01_37/113-37.mp3"
+                    data-exreset="2"
+                    class="text-[#5B87B8]"
+                  >
+                    スア
+                  </p>
+                  <p
+                    style="display: none"
+                    class="text-[#5B87B8] min-w-80 flex justify-center"
+                    data-explan="2"
+                  >
+                    수 아
+                  </p>
+                  <p data-name="colon-black">:</p>
+                  <div>
+                    <p class="flex">
+                      <span data-audio="7_01_37/113-08.mp3">そうだね。</span>
+                      <span data-group="1" data-audio="7_01_37/113-09.mp3">
+                        みんなと いっしょに&nbsp;<span
+                          ><span class="relative"
+                            >食<span class="ruby">た</span></span
+                          ></span
+                        >べると
+                      </span>
+                    </p>
+                    <p data-group="1" data-audio="7_01_37/113-09.mp3">
+                      もっと おいしいよね。
+                    </p>
+                  </div>
+                </div>
+                <!-- ex -->
+                <div
+                  class="font-bold text-blue f-nanum-s ml-102"
+                  data-explan="2"
+                  style="display: none"
+                >
+                  <p>맞아. 다 같이 함께 먹으면 더 맛있지.</p>
+                </div>
+              </div>
+            </div>
+            <!-- ---------- -->
+            <div class="flex items-start mb-20 font-medium f-noto">
+              <div class="flex flex-col">
+                <div class="flex">
+                  <p
+                    data-audio="7_01_37/113-38.mp3"
+                    data-exreset="2"
+                    class="text-[#C4673D]"
+                  >
+                    みお
+                  </p>
+                  <p
+                    style="display: none"
+                    class="text-[#C4673D] min-w-80 flex justify-center"
+                    data-explan="2"
+                  >
+                    미 오
+                  </p>
+                  <p data-name="colon-black">:</p>
+
+                  <div>
+                    <p class="flex">
+                      <span data-audio="7_01_37/113-10.mp3">
+                        ほんとほんと。
+                      </span>
+                      <span data-group="2" data-audio="7_01_37/113-11.mp3">
+                        また みんなで おまつり
+                      </span>
+                    </p>
+                    <p
+                      data-group="2"
+                      data-audio="7_01_37/113-11.mp3"
+                      class="flex pt-12"
+                    >
+                      <span
+                        ><span class="relative"
+                          >行<span class="ruby">い</span></span
+                        ></span
+                      >
+                      きたいね。
+                    </p>
+                  </div>
+                </div>
+                <!-- ex -->
+                <div
+                  class="font-bold text-blue f-nanum-s ml-102"
+                  data-explan="2"
+                  style="display: none"
+                >
+                  <p>정말이야. 또 다 같이 마쓰리 가고 싶다.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- ---------- -->
+            <div class="flex items-start font-medium f-noto">
+              <div class="flex flex-col">
+                <div class="flex">
+                  <p
+                    data-audio="7_01_37/113-36.mp3"
+                    data-exreset="2"
+                    class="text-[#583537]"
+                  >
+                    れん
+                  </p>
+                  <p
+                    style="display: none"
+                    class="text-[#583537] min-w-80 flex justify-center"
+                    data-explan="2"
+                  >
+                    렌
+                  </p>
+                  <p data-name="colon-black">:</p>
+                  <p class="flex">
+                    <span data-audio="7_01_37/113-12.mp3"> うん。 </span>
+                    <span data-audio="7_01_37/113-13.mp3"
+                      >また <span class="relative"
+                        >行<span class="ruby">い</span></span
+                      >こう！
+                    </span>
+                  </p>
+                </div>
+                <!-- ex -->
+                <div
+                  class="font-bold text-blue f-nanum-s ml-102"
+                  data-explan="2"
+                  style="display: none"
+                >
+                  <p>응. 또 가자!</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 해설 보기 -->
+        <div data-name="popup" data-popup="3" style="display: none">
+          <div data-name="popup-header">
+            <div data-name="popup-title">해설 보기</div>
+            <button
+              data-name="popup-close"
+              onclick="contentUtil.setPopup()"
+            ></button>
+          </div>
+          <div
+            data-name="popup-body"
+            class="flex flex-col flex-1 mt-16 mb-10 overflow-x-hidden ms-26 f-nanum-s me-6"
+          >
+            <!-- title -->
+            <div class="flex items-center mb-10 h-55">
+              <img
+                src="./../common/images/popup_titlemark_primary.svg"
+                alt=""
+                class="w-35 h-55 me-10"
+              />
+              <div class="flex font-extrabold text-42 text-[#F25F7C] f-nanum-s">
+                접두어
+              </div>
+            </div>
+            <!-- text -->
+            <div class="mb-10 font-bold text-40 leading-52">
+              <p class="flex">
+                접두어 ‘<span class="f-noto font-medium">お-</span>,&nbsp;
+                <span class="f-noto font-medium">ご-</span>’는 존경의 뜻을
+                나타내거나 말을
+              </p>
+              <p>부드럽고 아름답게 표현하는 역할을 한다.</p>
+            </div>
+
+            <!-- ---- -->
+            <div class="flex text-40 flex-col mb-10">
+              <div class="flex">
+                <div class="w-12 h-12 mt-20 rounded-full bg-black me-8"></div>
+                <p class="flex leading-55 font-extrabold">
+                  <span class="f-noto font-bold">お&nbsp;</span> + 순수 일본어
+                </p>
+              </div>
+              <div class="flex leading-52 ml-22">
+                <div class="flex flex-col mt-22 gap-10 w-289">
+                  <div class="flex gap-10 items-center">
+                    <p class="f-noto font-medium flex">
+                      お<span
+                        ><span class="relative"
+                          >部<span class="ruby">へ</span></span
+                        ><span class="relative"
+                          >屋<span class="ruby">や</span></span
+                        ></span
+                      >
+                    </p>
+                    <p class="text-blue font-bold">방</p>
+                  </div>
+                  <div class="flex items-center gap-10 mt-12">
+                    <p class="f-noto font-medium flex">
+                      お<span
+                        ><span class="relative"
+                          >名<span class="ruby">な</span></span
+                        ><span class="relative"
+                          >前<span class="ruby">まえ</span></span
+                        ></span
+                      >
+                    </p>
+                    <p class="text-blue font-bold">이름</p>
+                  </div>
+                </div>
+                <div class="flex flex-col mt-22 gap-10 w-289">
+                  <div class="flex gap-10 items-center">
+                    <p class="f-noto font-medium flex">
+                      お
+                      <span>
+                        <span class="relative"
+                          >話<span class="ruby tracking-[-0.08em]"
+                            >はなし</span
+                          ></span
+                        >
+                      </span>
+                    </p>
+                    <p class="text-blue font-bold">이야기</p>
+                  </div>
+                  <div class="flex items-center gap-10 mt-12">
+                    <p class="f-noto font-medium flex">
+                      お
+                      <span
+                        ><span class="relative"
+                          >手<span class="ruby">て</span></span
+                        ><span class="relative"
+                          >紙<span class="ruby">がみ</span></span
+                        ></span
+                      >
+                    </p>
+                    <p class="text-blue font-bold">편지</p>
+                  </div>
+                </div>
+                <div class="flex flex-col mt-22 gap-10 w-289">
+                  <div class="flex gap-10 items-center">
+                    <p class="f-noto font-medium flex">
+                      お<span
+                        ><span class="relative"
+                          >国<span class="ruby">くに</span></span
+                        ></span
+                      >
+                    </p>
+                    <p class="text-blue font-bold">나라</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- ---- -->
+            <div class="flex text-40 flex-col mb-10">
+              <div class="flex">
+                <div class="w-12 h-12 mt-20 rounded-full bg-black me-8"></div>
+                <p class="flex leading-55 font-extrabold">
+                  <span class="f-noto font-bold">ご&nbsp;</span> + 한자어
+                </p>
+              </div>
+              <div class="flex leading-52 ml-22">
+                <div class="flex flex-col mt-22 gap-10 w-289">
+                  <div class="flex gap-10 items-center">
+                    <p class="f-noto font-medium flex">
+                      ご<span
+                        ><span class="relative"
+                          >家<span class="ruby">か</span></span
+                        ><span class="relative"
+                          >族<span class="ruby">ぞく</span></span
+                        ></span
+                      >
+                    </p>
+                    <p class="text-blue font-bold">가족</p>
+                  </div>
+                  <div class="flex items-center gap-10 mt-12">
+                    <p class="f-noto font-medium flex">
+                      ご<span
+                        ><span class="relative"
+                          >住<span class="ruby tracking-[-0.20em]"
+                            >じゅう</span
+                          ></span
+                        ><span class="relative"
+                          >所<span class="ruby">しょ</span></span
+                        ></span
+                      >
+                    </p>
+                    <p class="text-blue font-bold">주소</p>
+                  </div>
+                </div>
+                <div class="flex flex-col mt-22 gap-10 w-289">
+                  <div class="flex gap-10 items-center">
+                    <p class="f-noto font-medium flex">
+                      ご
+                      <span>
+                        <span class="relative"
+                          >卒<span class="ruby tracking-[-0.03em]"
+                            >そつ</span
+                          ></span
+                        ><span class="relative"
+                          >業<span class="ruby tracking-[-0.25em]"
+                            >ぎょう</span
+                          ></span
+                        >
+                      </span>
+                    </p>
+                    <p class="text-blue font-bold">졸업</p>
+                  </div>
+                </div>
+                <div class="flex flex-col mt-22 gap-10 w-289">
+                  <div class="flex gap-10 items-center">
+                    <p class="f-noto font-medium flex">
+                      <span
+                        >ご<span
+                          ><span class="relative"
+                            >両<span class="ruby tracking-[-0.27em]"
+                              >りょう</span
+                            ></span
+                          ></span
+                        ><span
+                          ><span class="relative"
+                            >親<span class="ruby">しん</span></span
+                          ></span
+                        ></span
+                      >
+                    </p>
+                    <p class="text-blue font-bold">부모님</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- ---- -->
+            <div class="flex text-40 flex-col mb-10">
+              <div class="flex">
+                <div class="w-12 h-12 mt-20 rounded-full bg-black me-8"></div>
+                <p class="flex leading-55 font-extrabold">예외 단어</p>
+              </div>
+              <div class="flex leading-52 ml-22">
+                <div class="flex flex-col mt-22 gap-10 w-289">
+                  <div class="flex gap-10 items-center">
+                    <p class="f-noto font-medium flex">
+                      お<span
+                        ><span class="relative"
+                          >時<span class="ruby">じ</span></span
+                        ><span class="relative"
+                          >間<span class="ruby">かん</span></span
+                        ></span
+                      >
+                    </p>
+                    <p class="text-blue font-bold">시간</p>
+                  </div>
+                  <div class="flex items-center gap-10 mt-12">
+                    <p class="f-noto font-medium flex">
+                      お<span
+                        ><span class="relative"
+                          >料<span class="ruby tracking-[-0.3em]"
+                            >りょう</span
+                          ></span
+                        ><span class="relative"
+                          >理<span class="ruby">り</span></span
+                        ></span
+                      >
+                    </p>
+                    <p class="text-blue font-bold">요리</p>
+                  </div>
+                </div>
+                <div class="flex flex-col mt-22 gap-10 w-289">
+                  <div class="flex gap-10 items-center">
+                    <p class="f-noto font-medium flex">
+                      お
+                      <span>
+                        <span class="relative"
+                          >電<span class="ruby">でん</span></span
+                        ><span class="relative"
+                          >話<span class="ruby">わ</span></span
+                        >
+                      </span>
+                    </p>
+                    <p class="text-blue font-bold">전화</p>
+                  </div>
+                  <div class="flex gap-10 items-center mt-12">
+                    <p class="f-noto font-medium flex">
+                      お
+                      <span>
+                        <span class="relative"
+                          >食<span class="ruby tracking-[-0.2em]"
+                            >しょく</span
+                          ></span
+                        ><span class="relative"
+                          >事<span class="ruby">じ</span></span
+                        >
+                      </span>
+                    </p>
+                    <p class="text-blue font-bold">식사</p>
+                  </div>
+                </div>
+                <div class="flex flex-col mt-22 gap-10 w-289">
+                  <div class="flex gap-10 items-center">
+                    <p class="f-noto font-medium flex">
+                      お
+                      <span>
+                        <span
+                          ><span class="relative"
+                            >約<span class="ruby">やく</span></span
+                          ></span
+                        ><span><span class="relative"
+                            >束<span class="ruby">そく</span></span
+                          ></span
+                        >
+                      </span>
+                    </p>
+                    <p class="text-blue font-bold">약속</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="flex items-center gap-10 mt-10 leading-52 ml-22">
+                <div class="flex w-429 gap-10">
+                  <p class="f-noto font-medium flex">ごゆっくり</p>
+                  <p class="text-blue font-bold">천천히</p>
+                </div>
+
+                <div class="flex w-429 gap-10">
+                  <p class="f-noto font-medium flex">ごいっしょに</p>
+                  <p class="text-blue font-bold">함께</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 단어장 -->
+        <div
+          data-name="popup"
+          class="vocabularyBook"
+          data-popup="4"
+          style="display: none"
+        >
+          <div data-name="popup-header">
+            <div data-name="popup-title">단어장</div>
+            <button
+              data-name="popup-close"
+              onclick="contentUtil.setPopup()"
+            ></button>
+          </div>
+          <div
+            data-name="popup-body"
+            class="flex justify-center flex-1 mt-20 f-nanum-s"
+          >
+            <!-- list -->
+            <div
+              class="py-8 w-336 h-335 bg-white/50 ps-20 pe-6 rounded-10 me-39"
+            >
+              <div
+                data-name="vocabulary-list"
+                class="flex flex-col w-full h-full py-12 overflow-y-auto font-medium leading-52 f-noto text-40 text-[#404040] pe-8"
+              >
+                <!-- ------------ -->
+                <button
+                  data-audio="7_01_37/113-39.mp3"
+                  class="w-full border-b-2 border-[#FFE2E7] flex py-4 text-red"
+                >
+                  <span>
+                    <span class="relative"
+                      >特<span class="ruby">とく</span></span
+                    >に
+                  </span>
+                </button>
+                <!-- ------------ -->
+                <button
+                  data-audio="7_01_37/113-40.mp3"
+                  class="w-full border-b-2 border-[#FFE2E7] flex py-4"
+                >
+                  <span class="mt-18">
+                    <span
+                      ><span class="relative"
+                        >金<span class="ruby">きん</span></span
+                      ><span class="relative"
+                        >魚<span class="ruby">ぎょ</span></span
+                      ></span
+                    >すくい
+                  </span>
+                </button>
+                <!-- ------------ -->
+                <button
+                  data-audio="7_01_37/113-41.mp3"
+                  class="w-full border-b-2 border-[#FFE2E7] flex py-4"
+                >
+                  <span>むずかしい</span>
+                </button>
+                <!-- ------------ -->
+                <button
+                  data-audio="7_01_37/113-42.mp3"
+                  class="w-full border-b-2 border-[#FFE2E7] flex py-4"
+                >
+                  <span> ～けど </span>
+                </button>
+
+                <!-- ------------ -->
+                <button
+                  data-audio="7_01_37/113-43.mp3"
+                  class="w-full border-b-2 border-[#FFE2E7] flex py-4"
+                >
+                  <span>やっぱり</span>
+                </button>
+                <!-- ------------ -->
+                <button
+                  data-audio="7_01_37/113-44.mp3"
+                  class="w-full border-b-2 border-[#FFE2E7] flex py-4"
+                >
+                  <span class="mt-18">
+                    <span class="relative">食<span class="ruby">た</span></span
+                    >べ<span class="relative"
+                      >物<span class="ruby">もの</span></span
+                    ></span
+                  >
+                </button>
+
+                <!-- ------------ -->
+                <button
+                  data-audio="7_01_37/113-45.mp3"
+                  class="w-full border-b-2 border-[#FFE2E7] flex py-4"
+                >
+                  <span>～な</span>
+                </button>
+                <!-- ------------ -->
+                <button
+                  data-audio="7_01_37/113-46.mp3"
+                  class="w-full border-b-2 border-[#FFE2E7] flex py-4"
+                >
+                  <span>もっと</span>
+                </button>
+                <!-- ------------ -->
+                <button
+                  data-audio="7_01_37/113-47.mp3"
+                  class="w-full border-b-2 border-[#FFE2E7] flex py-4"
+                >
+                  <span class="mt-18">
+                    <span class="relative">行<span class="ruby">い</span></span
+                    >く
+                  </span>
+                </button>
+
+                <!-- ------------ -->
+                <button
+                  data-audio="7_01_37/113-48.mp3"
+                  class="w-full border-b-2 border-[#FFE2E7] flex py-4"
+                >
+                  <span>～たい</span>
+                </button>
+              </div>
+            </div>
+            <!-- vocabulary -->
+            <div class="flex flex-col items-center w-500">
+              <div class="w-full bg-white h-335 rounded-10">
+                <!-- ====== 일본어 ====== -->
+                <div
+                  data-name="word"
+                  class="w-full flex justify-center f-noto items-center text-68 font-medium h-1/2 border-b-4 border-[#FFEEF1]"
+                >
+                  <!-- ------------ -->
+                  <span data-audio="7_01_37/113-39.mp3">
+                    <span>
+                      <span class="relative"
+                        >特<span class="ruby text-28">とく</span></span
+                      >に
+                    </span></span
+                  >
+                  <!-- ------------ -->
+                  <span data-audio="7_01_37/113-40.mp3" style="display: none">
+                    <span
+                      ><span class="relative"
+                        >金<span class="ruby text-28">きん</span></span
+                      ><span class="relative"
+                        >魚<span class="ruby text-28">ぎょ</span></span
+                      ></span
+                    >すくい
+                  </span>
+                  <!-- ------------ -->
+                  <span data-audio="7_01_37/113-41.mp3" style="display: none">
+                    むずかしい
+                  </span>
+                  <!-- ------------ -->
+                  <span data-audio="7_01_37/113-42.mp3" style="display: none">
+                    ～けど
+                  </span>
+                  <!-- ------------ -->
+                  <span data-audio="7_01_37/113-43.mp3" style="display: none">
+                    <span class=""> やっぱり </span>
+                  </span>
+                  <!-- ------------ -->
+                  <span data-audio="7_01_37/113-44.mp3" style="display: none">
+                    <span class="">
+                      <span class="relative"
+                        >食<span class="ruby text-28">た</span></span
+                      >べ<span class="relative"
+                        >物<span class="ruby text-28">もの</span></span
+                      ></span
+                    ></span
+                  >
+                  <!-- ------------ -->
+                  <span data-audio="7_01_37/113-45.mp3" style="display: none">
+                    ～な
+                  </span>
+                  <!-- ------------ -->
+                  <span
+                    data-audio="7_01_37/113-46.mp3"
+                    style="display: none"
+                    class="mt-18"
+                    >もっと</span
+                  >
+                  <!-- ------------ -->
+                  <span data-audio="7_01_37/113-47.mp3" style="display: none">
+                    <span class="relative"
+                      >行<span class="ruby text-28">い</span></span
+                    >く
+                  </span>
+                  <!-- ------------ -->
+                  <span data-audio="7_01_37/113-48.mp3" style="display: none"
+                    ><span>～たい</span></span
+                  >
+                </div>
+                <!-- ====== 한글 ====== -->
+                <div class="w-full h-1/2">
+                  <div
+                    class="flex items-center justify-center w-full h-full font-bold text-50 text-blue"
+                    data-name="definition"
+                    style="display: none"
+                  >
+                    <!-- ------------ -->
+                    <span>특히</span>
+                    <!-- ------------ -->
+                    <span style="display: none">금붕어 건지기</span>
+
+                    <!-- ------------ -->
+                    <span style="display: none">어렵다</span>
+                    <!-- ------------ -->
+                    <span style="display: none"
+                      ><span class="font-medium f-noto">～</span>이지만</span
+                    >
+                    <!-- ------------ -->
+                    <span class="text-center" style="display: none">역시</span>
+
+                    <!-- ------------ -->
+                    <span style="display: none">먹을 것, 음식</span>
+                    <!-- ------------ -->
+                    <span style="display: none"
+                      ><span class="font-medium f-noto">～</span>구나</span
+                    >
+                    <!-- ------------ -->
+                    <span style="display: none">좀 더</span>
+                    <!-- ------------ -->
+                    <span style="display: none">가다</span>
+                    <!-- ------------ -->
+                    <span style="display: none"
+                      ><span class="font-medium f-noto">～</span>하고 싶다</span
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="pt-20">
+                <button data-name="btn-common-light" class="show_defi">
+                  뜻 보기
+                </button>
+                <button
+                  data-name="btn-common-light"
+                  class="hide_defi"
+                  style="display: none"
+                >
+                  뜻 감추기
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 사진 팝업창 -->
+        <div data-name="popup" data-popup="5" style="display: none">
+          <div data-name="popup-header">
+            <div data-name="popup-title">사진 팝업창</div>
+            <button
+              data-name="popup-close"
+              onclick="contentUtil.setPopup()"
+            ></button>
+          </div>
+          <div
+            data-name="popup-body"
+            class="flex items-center justify-center w-full h-full gap-16"
+          >
+            <div
+              class="flex flex-col items-center w-730 h-400"
+              data-name="popup_photo_wrap"
+            >
+              <div class="w-full overflow-x-hidden overflow-y-auto h-400">
+                <img
+                  src="./images/7_01_37/popup_photo1.jpg"
+                  alt="다코야끼 굽는사진"
+                  class="object-contain w-full rounded-10"
+                  data-name="popup_photo"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ======================임시버튼============================== -->
+      <div class="absolute bottom-0 right-0">
+        <button class="btn-show-vocabulary text-12">단어장 보기</button>
+      </div>
+
+      <!-- ======================================================== -->
+    </div>
+  </body>
+  <script type="text/javascript">
+    const page = {
+      isAnswer: false,
+      isVocabulary: true,
+      showAnswer: () => {},
+      hideAnswer: () => {},
+      showVocabulary: () => {
+        contentUtil.setPopup(4);
+      },
+    };
+
+    //역할 연습 음원
+    // audio : 재생할 전체음원
+    // data
+    // start : 시작 시간
+    // end : 끝 시간
+    // value : 해당되는 data-audio
+    // role : 해당되는 역할
+    // scroll : 해당 시간대 위치할 스크롤
+    // page : 해당 시간대 위치할 페이지
+    const rolePlayerAudio = [
+      // ---------- 전체듣기 (role1, role2) ----------
+      {
+        audio: "7_01_37/113-14.mp3",
+        containerScroll: 1,
+        data: [
+          {
+            start: 0,
+            end: 3.1,
+            value: "7_01_37/113-01.mp3",
+            role: 1,
+            scroll: 0,
+          },
+          {
+            start: 3.1,
+            end: 4.3,
+            value: "7_01_37/113-02.mp3",
+            role: 2,
+            scroll: 0,
+          },
+          {
+            start: 4.3,
+            end: 6.1,
+            value: "7_01_37/113-03.mp3",
+            role: 2,
+            scroll: 0,
+          },
+          {
+            start: 6.1,
+            end: 7.8,
+            value: "7_01_37/113-04.mp3",
+            role: 3,
+            scroll: 0,
+          },
+          {
+            start: 7.8,
+            end: 10.0,
+            value: "7_01_37/113-05.mp3",
+            role: 3,
+            scroll: 0,
+          },
+          {
+            start: 10.0,
+            end: 13.1,
+            value: "7_01_37/113-06.mp3",
+            role: 1,
+            scroll: 180,
+          },
+          {
+            start: 13.1,
+            end: 16.2,
+            value: "7_01_37/113-07.mp3",
+            role: 1,
+            scroll: 180,
+          },
+          {
+            start: 16.2,
+            end: 17.9,
+            value: "7_01_37/113-08.mp3",
+            role: 2,
+            scroll: 300,
+          },
+          {
+            start: 17.9,
+            end: 21.7,
+            value: "7_01_37/113-09.mp3",
+            role: 2,
+            scroll: 300,
+          },
+          {
+            start: 21.7,
+            end: 23.6,
+            value: "7_01_37/113-10.mp3",
+            role: 3,
+            scroll: 300,
+          },
+          {
+            start: 23.6,
+            end: 26.4,
+            value: "7_01_37/113-11.mp3",
+            role: 3,
+            scroll: 300,
+          },
+          {
+            start: 26.4,
+            end: 27.7,
+            value: "7_01_37/113-12.mp3",
+            role: 1,
+            scroll: 400,
+          },
+          {
+            start: 27.7,
+            end: 29.6,
+            value: "7_01_37/113-13.mp3",
+            role: 1,
+            scroll: 400,
+          },
+        ],
+      },
+      // ---------- 따라읽기 ----------
+      {
+        audio: "7_01_37/113-15.mp3",
+        containerScroll: 1,
+        data: [
+          {
+            start: 0,
+            end: 6.8,
+            value: "7_01_37/113-01.mp3",
+            scroll: 0,
+          },
+          {
+            start: 6.9,
+            end: 10.2,
+            value: "7_01_37/113-02.mp3",
+            scroll: 0,
+          },
+          {
+            start: 10.3,
+            end: 15.3,
+            value: "7_01_37/113-03.mp3",
+            scroll: 0,
+          },
+          {
+            start: 15.4,
+            end: 19.1,
+            value: "7_01_37/113-04.mp3",
+            scroll: 0,
+          },
+          {
+            start: 19.2,
+            end: 25.0,
+            value: "7_01_37/113-05.mp3",
+            scroll: 0,
+          },
+          {
+            start: 25.1,
+            end: 31.9,
+            value: "7_01_37/113-06.mp3",
+            scroll: 180,
+          },
+          {
+            start: 32,
+            end: 39.4,
+            value: "7_01_37/113-07.mp3",
+            scroll: 180,
+          },
+          {
+            start: 39.5,
+            end: 43.5,
+            value: "7_01_37/113-08.mp3",
+            scroll: 300,
+          },
+          {
+            start: 43.6,
+            end: 52.5,
+            value: "7_01_37/113-09.mp3",
+            scroll: 300,
+          },
+          {
+            start: 52.6,
+            end: 56.9,
+            value: "7_01_37/113-10.mp3",
+            scroll: 300,
+          },
+          {
+            start: 57,
+            end: 64.3,
+            value: "7_01_37/113-11.mp3",
+            scroll: 300,
+          },
+          {
+            start: 64.4,
+            end: 67.3,
+            value: "7_01_37/113-12.mp3",
+            scroll: 400,
+          },
+          {
+            start: 67.4,
+            end: 71.4,
+            value: "7_01_37/113-13.mp3",
+            scroll: 400,
+          },
+        ],
+      },
+    ];
+  </script>
+  <script src="./../common/js/tailwind.config.js"></script>
+  <script src="./../common/js/script.js"></script>
+  <script src="../common/js/vocabularyBook.js"></script>
+  <script src="../common/js/rolePlayerJc.js"></script>
+
+  <script type="text/javascript">
+    $(document).ready(function () {
+      // contentUtil.setPopup(3);
+    });
+  </script>
+</html>

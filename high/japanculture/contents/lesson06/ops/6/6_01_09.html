@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>미래엔 일본 문화</title>
+    <script src="./../common/lib/jquery-3.7.1.min.js"></script>
+    <script src="./../common/lib/howler-2.1.3.min.js"></script>
+    <script src="./../common/lib/tailwind.js"></script>
+    <!-- 폰트 -->
+    <link href="./../common/font/suit/suit.css" rel="stylesheet" />
+    <link href="./../common/font/bmjua/bmjua.css" rel="stylesheet" />
+    <link
+      href="./../common/font/nanumsquare/nanumSquare.css"
+      rel="stylesheet"
+    />
+    <link href="./../common/font/notoSansJP/notoSansJP.css" rel="stylesheet" />
+    <link href="./../common/font/notoSansCS/notoSansCS.css" rel="stylesheet" />
+    <link href="./../common/css/tailwind.css" rel="stylesheet" />
+    <link href="./../common/css/fontStyle.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div id="wrap">
+      <!-- contents -->
+      <div class="relative w-full h-full pt-68">
+        <!-- title -->
+        <img
+          src="./../common/images/title_look_culture1.svg"
+          alt="문화 들여다보기1 연말연시와 공휴일"
+          class="absolute w-764 h-49 top-10"
+        />
+        <!-- header-btn -->
+        <div class="absolute right-0 flex gap-6 top-13" data-name="header-btn">
+          <button data-name="btn-common" onclick="contentUtil.setPopup(1)">
+            해설 보기
+          </button>
+          <button
+            data-name="btn-common"
+            onclick="contentUtil.setPopup(3); contentUtil.setPhotoPopup(3);"
+          >
+            추가 사진
+          </button>
+        </div>
+        <!-- main -->
+        <div class="flex flex-col w-full h-full">
+          <div
+            class="flex flex-col w-full mb-8 h-404 text-40 f-nanum-s leading-52 ps-20"
+          >
+            <div class="flex items-center pt-8 mb-4">
+              <img
+                src="./../common/images/index_pink_2.svg"
+                alt="번호 2"
+                class="w-40 h-40 me-4"
+              />
+              <span class="flex font-extrabold f-nanum-s text-40"
+                >설날(<span
+                  data-audio="6_01_09/089-01.mp3"
+                  class="font-bold f-noto"
+                  >お<span class="relative"
+                    >正<span
+                      class="font-bold ruby tracking-[-0.25em] translate-x-[calc(-50%_-_4px)] -translate-y-10"
+                      >しょう</span
+                    ></span
+                  ><span class="relative"
+                    >月<span
+                      class="font-bold ruby translate-x-[calc(-50%_+_4px)] -translate-y-10"
+                      >がつ</span
+                    ></span
+                  ></span
+                >)</span
+              >
+            </div>
+            <div class="flex mb-4">
+              <div data-name="number-2" class="bg-[#C84935]"></div>
+              <span class="text-[#C84935] font-extrabold">설 장식</span>
+            </div>
+            <!-- ======== page 1 ======== -->
+            <div data-name="page" class="flex flex-col font-bold">
+              <div>
+                <p class="ps-28">
+                  ‘도시가미사마’를 맞이하기 위해 집 대문 옆 또는 현관 입구에
+                </p>
+                <p>
+                  ‘가도마쓰’를 장식하거나 현관에 ‘시메카자리’를 장식한다. 집
+                </p>
+                <p>
+                  안에는 무병장수를 기원하며, 신이 깃든다고 알려진 둥근 거울
+                </p>
+                <p>모양의 찹쌀떡으로 만든 ‘가가미모치’를 장식하기도 한다.</p>
+              </div>
+            </div>
+            <!-- ======== page 2 ======== -->
+            <div
+              data-name="page"
+              class="flex pt-6 gap-30 ms-20"
+              style="display: none"
+            >
+              <div class="relative w-445 h-263">
+                <img
+                  src="./images/6_01_09/main_photo1.jpg"
+                  alt=""
+                  class="w-full h-full rounded-10"
+                />
+                <button
+                  data-name="btn-view"
+                  class="absolute bottom-10 right-10"
+                  onclick="contentUtil.setPopup(2); contentUtil.setPhotoPopup(1);"
+                ></button>
+              </div>
+              <div class="relative w-445 h-263">
+                <img
+                  src="./images/6_01_09/main_photo2.jpg"
+                  alt=""
+                  class="w-full h-full rounded-10"
+                />
+                <button
+                  data-name="btn-view"
+                  class="absolute bottom-10 right-10"
+                  onclick="contentUtil.setPopup(2); contentUtil.setPhotoPopup(2);"
+                ></button>
+              </div>
+            </div>
+          </div>
+
+          <!-- pagination -->
+          <div
+            class="absolute -translate-x-1/2 left-1/2 bottom-10"
+            data-name="pagination"
+          >
+            <button class="active" data-name="btn-pagination"></button>
+            <button class="" data-name="btn-pagination"></button>
+          </div>
+        </div>
+      </div>
+      <!-- popup -->
+      <div id="popup-wrap" style="display: none">
+        <!-- 해설 보기 -->
+        <div data-name="popup" data-popup="1" style="display: none">
+          <div data-name="popup-header">
+            <div data-name="popup-title">해설 보기</div>
+            <button
+              data-name="popup-close"
+              onclick="contentUtil.setPopup()"
+            ></button>
+          </div>
+          <div data-name="popup-body" class="mt-16 mb-10 ms-26 f-nanum-s me-6">
+            <div class="flex flex-col">
+              <!-- title -->
+              <div class="flex items-center mb-10 h-55">
+                <img
+                  src="./../common/images/popup_titlemark_primary.svg"
+                  alt=""
+                  class="w-35 h-55 me-10"
+                />
+                <div class="flex font-extrabold text-42 text-[#41674B]">
+                  새해맞이 장식 준비
+                </div>
+              </div>
+              <!-- text -->
+              <div class="mb-40 font-bold f-nanum-s text-40 leading-52">
+                <p class="flex">
+                  숫자 8(<span class="font-medium f-noto">八</span>)은 모양이
+                  아래로 갈수록 넓어지기 때문에
+                </p>
+                <p>일본에서 행운의 숫자로 여겨지는데, 이에 기인하여 12월</p>
+                <p>28일까지 새해맞이 장식을 준비하는 지역이 많다. 장식을</p>
+                <p>정리하는 날은 1월 7일(관동 지방) 혹은 1월 15일(관서</p>
+                <p class="flex">
+                  지방)이 일반적이며, 1월 15일에 열리는 ‘돈도야키(<span
+                    class="font-medium f-noto"
+                    >どんど</span
+                  >
+                </p>
+                <p class="flex pt-12">
+                  <span class="font-medium f-noto"
+                    ><span class="relative">焼<span class="ruby">や</span></span
+                    >き</span
+                  >)’에서 장식물을 태운다. ‘돈도야키’는 설날에 모신 신
+                </p>
+                <p class="flex pt-12">
+                  (<span class="font-medium f-noto"
+                    ><span class="relative"
+                      >年<span class="ruby">とし</span></span
+                    ><span class="relative"
+                      >神<span class="ruby">がみ</span></span
+                    ><span class="relative"
+                      >様<span class="ruby">さま</span></span
+                    ></span
+                  >)을 보내는 일본의 전통적인 행사로, ‘돈도야키’의
+                </p>
+                <p>불을 쬐면 1년을 건강하게 보낼 수 있다는 풍습이 있다.</p>
+              </div>
+              <!-- title -->
+              <div class="flex items-center mb-10 h-55">
+                <img
+                  src="./../common/images/popup_titlemark_primary.svg"
+                  alt=""
+                  class="w-35 h-55 me-10"
+                />
+                <div class="flex font-extrabold text-42 text-[#41674B]">
+                  가도마쓰(<span class="font-bold f-noto"
+                    ><span class="relative"
+                      >門<span class="font-bold ruby">かど</span></span
+                    ><span class="relative"
+                      >松<span class="font-bold ruby">まつ</span></span
+                    ></span
+                  >)
+                </div>
+              </div>
+              <!-- text -->
+              <div class="mb-40 font-bold f-nanum-s text-40 leading-52">
+                <p>가도마쓰를 소나무로 만드는 이유는 소나무를 뜻하는</p>
+                <p class="flex pt-12">
+                  ‘<span class="font-medium f-noto">まつ</span>(<span
+                    class="font-medium f-noto"
+                    >松</span
+                  >)’가 ‘기다리다’는 의미의 단어 ‘<span
+                    class="font-medium f-noto"
+                    ><span class="relative">待<span class="ruby">ま</span></span
+                    >つ</span
+                  >’와 발음이
+                </p>
+                <p>같아서 ‘신을 기다린다’는 의미를 담고 있기 때문이다.</p>
+              </div>
+              <!-- title -->
+              <div class="flex items-center mb-10 h-55">
+                <img
+                  src="./../common/images/popup_titlemark_primary.svg"
+                  alt=""
+                  class="w-35 h-55 me-10"
+                />
+                <div class="flex font-extrabold text-42 text-[#41674B]">
+                  가가미모치(<span class="font-bold f-noto"
+                    ><span class="relative"
+                      >鏡<span class="f-noto-cs">餅</span
+                      ><span class="font-bold ruby">かがみもち</span></span
+                    ></span
+                  >)
+                </div>
+              </div>
+              <!-- text -->
+              <div class="mb-10 font-bold f-nanum-s text-40 leading-52">
+                <p>가가미는 ‘거울’이라는 뜻으로, 떡의 모양이 구리거울처럼</p>
+                <p>생겼다는 데서 유래했다고 한다. 가가미모치는 신이 먹다가</p>
+                <p>남긴 떡이기 때문에 나누어 먹으면 복을 받는다고 하여</p>
+                <p>손으로 잘게 뜯어 떡국에 넣어 먹거나 구워서 먹기도 한다.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 사진 팝업창 -->
+        <div data-name="popup" data-popup="2" style="display: none">
+          <div data-name="popup-header">
+            <div data-name="popup-title">사진 팝업창</div>
+            <button
+              data-name="popup-close"
+              onclick="contentUtil.setPopup()"
+            ></button>
+          </div>
+          <div
+            data-name="popup-body"
+            class="flex items-center justify-center w-full h-full gap-16"
+          >
+            <div
+              class="flex flex-col items-center w-608 h-402"
+              data-name="popup_photo_wrap"
+            >
+              <div class="w-full overflow-x-hidden overflow-y-auto pe-4">
+                <div data-name="popup_photo" class="w-full">
+                  <img
+                    src="./images/6_01_09/popup_photo1.jpg"
+                    alt=""
+                    class="object-contain w-full mb-20 rounded-10"
+                  />
+                  <div class="flex items-start">
+                    <img
+                      src="./../common/images/popup_photolabel.svg"
+                      alt=""
+                      class="min-w-36 h-52 me-3"
+                    />
+                    <div
+                      class="flex flex-col items-center font-bold f-nanum-s text-40 leading-52"
+                    >
+                      <p class="tracking-[-0.065em]">
+                        집 대문 옆 또는 현관 입구에 장식하는
+                      </p>
+                      <p class="flex pt-12">
+                        가도마쓰(<span
+                          data-audio="6_01_09/089-05.mp3"
+                          class="font-medium f-noto"
+                          ><span class="relative"
+                            >門<span class="ruby">かど</span></span
+                          ><span class="relative"
+                            >松<span class="ruby">まつ</span></span
+                          ></span
+                        >)와 현관에 장식하는
+                      </p>
+                      <p class="flex">
+                        시메카자리(<span
+                          data-audio="6_01_09/089-06.mp3"
+                          class="font-medium f-noto"
+                          >しめかざり</span
+                        >)
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <img
+                  src="./images/6_01_09/popup_photo2.jpg"
+                  alt=""
+                  class="object-contain min-w-608 rounded-10"
+                  data-name="popup_photo"
+                  style="display: none"
+                />
+              </div>
+              <div
+                data-name="popup_photo_text"
+                class="h-0 overflow-hidden"
+              ></div>
+              <div
+                data-name="popup_photo_text"
+                class="flex pt-12 mt-8 font-bold f-nanum-s h-52 text-40 leading-52 shrink-0"
+                style="display: none"
+              >
+                <span class="flex"
+                  >집 안에 장식하는 가가미모치(<span
+                    data-audio="6_01_09/089-07.mp3"
+                    class="font-medium f-noto"
+                    ><span class="relative"
+                      >鏡<span class="f-noto-cs">餅</span
+                      ><span class="ruby">かがみもち</span></span
+                    ></span
+                  >)</span
+                >
+              </div>
+            </div>
+            <div class="w-266 h-402">
+              <div class="flex flex-wrap w-full gap-10">
+                <button
+                  data-name="btn-popup_photo"
+                  class="w-128 h-72 active"
+                  onclick="contentUtil.setPhotoPopup(1)"
+                >
+                  <img src="./images/6_01_09/popup_btn_photo1.jpg" alt="" />
+                </button>
+                <button
+                  data-name="btn-popup_photo"
+                  class="w-128 h-72"
+                  onclick="contentUtil.setPhotoPopup(2)"
+                >
+                  <img src="./images/6_01_09/popup_btn_photo2.jpg" alt="" />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 추가 사진 -->
+        <div data-name="popup" data-popup="3" style="display: none">
+          <div data-name="popup-header">
+            <div data-name="popup-title">추가 사진</div>
+            <button
+              data-name="popup-close"
+              onclick="contentUtil.setPopup()"
+            ></button>
+          </div>
+          <div
+            data-name="popup-body"
+            class="flex items-center justify-center w-full h-full gap-16"
+          >
+            <div
+              class="flex flex-col items-center w-608 h-402"
+              data-name="popup_photo_wrap"
+            >
+              <div class="w-full overflow-x-hidden overflow-y-auto pe-4">
+                <img
+                  src="./images/6_01_09/popup_photo4.jpg"
+                  alt=""
+                  class="object-contain min-w-608 rounded-10"
+                  data-name="popup_photo"
+                  style="display: none"
+                />
+                <img
+                  src="./images/6_01_09/popup_photo5.jpg"
+                  alt=""
+                  class="object-contain min-w-608 rounded-10"
+                  data-name="popup_photo"
+                  style="display: none"
+                />
+                <img
+                  src="./images/6_01_09/popup_photo6.jpg"
+                  alt=""
+                  class="object-contain min-w-608 rounded-10"
+                  data-name="popup_photo"
+                  style="display: none"
+                />
+                <img
+                  src="./images/6_01_09/popup_photo7.jpg"
+                  alt=""
+                  class="object-contain min-w-608 rounded-10"
+                  data-name="popup_photo"
+                  style="display: none"
+                />
+                <img
+                  src="./images/6_01_09/popup_photo3.jpg"
+                  alt=""
+                  class="object-contain min-w-608 rounded-10"
+                  data-name="popup_photo"
+                />
+              </div>
+              <div
+                class="flex mt-8 font-bold f-nanum-s h-52 text-40 leading-52 shrink-0"
+              >
+                <div data-name="popup_photo_text" class="text-blue">
+                  가도마쓰
+                </div>
+                <div
+                  data-name="popup_photo_text"
+                  class="text-blue"
+                  style="display: none"
+                >
+                  가도마쓰
+                </div>
+                <div
+                  data-name="popup_photo_text"
+                  class="text-blue"
+                  style="display: none"
+                >
+                  시메카자리
+                </div>
+                <div
+                  data-name="popup_photo_text"
+                  class="text-blue"
+                  style="display: none"
+                >
+                  시메카자리
+                </div>
+                <div
+                  data-name="popup_photo_text"
+                  class="text-blue"
+                  style="display: none"
+                >
+                  가가미모치
+                </div>
+              </div>
+            </div>
+            <div class="w-266 h-402">
+              <div class="flex flex-wrap w-full gap-10">
+                <button
+                  data-name="btn-popup_photo"
+                  class="w-128 h-72 active"
+                  onclick="contentUtil.setPhotoPopup(3)"
+                >
+                  <img src="./images/6_01_09/popup_btn_photo4.jpg" alt="" />
+                </button>
+                <button
+                  data-name="btn-popup_photo"
+                  class="w-128 h-72"
+                  onclick="contentUtil.setPhotoPopup(4)"
+                >
+                  <img src="./images/6_01_09/popup_btn_photo5.jpg" alt="" />
+                </button>
+                <button
+                  data-name="btn-popup_photo"
+                  class="w-128 h-72"
+                  onclick="contentUtil.setPhotoPopup(5)"
+                >
+                  <img src="./images/6_01_09/popup_btn_photo6.jpg" alt="" />
+                </button>
+                <button
+                  data-name="btn-popup_photo"
+                  class="w-128 h-72"
+                  onclick="contentUtil.setPhotoPopup(6)"
+                >
+                  <img src="./images/6_01_09/popup_btn_photo7.jpg" alt="" />
+                </button>
+                <button
+                  data-name="btn-popup_photo"
+                  class="w-128 h-72"
+                  onclick="contentUtil.setPhotoPopup(7)"
+                >
+                  <img src="./images/6_01_09/popup_btn_photo3.jpg" alt="" />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript">
+    const page = {
+      isAnswer: false,
+      isVocabulary: false,
+      showAnswer: () => {},
+      hideAnswer: () => {},
+      showVocabulary: () => {},
+    };
+  </script>
+  <script src="./../common/js/tailwind.config.js"></script>
+  <script src="./../common/js/script.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {});
+  </script>
+</html>

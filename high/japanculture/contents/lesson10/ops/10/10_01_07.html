@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>미래엔 일본 문화</title>
+    <script src="./../common/lib/jquery-3.7.1.min.js"></script>
+    <script src="./../common/lib/howler-2.1.3.min.js"></script>
+    <script src="./../common/lib/tailwind.js"></script>
+    <!-- 폰트 -->
+    <link href="./../common/font/suit/suit.css" rel="stylesheet" />
+    <link href="./../common/font/bmjua/bmjua.css" rel="stylesheet" />
+    <link
+      href="./../common/font/nanumsquare/nanumSquare.css"
+      rel="stylesheet"
+    />
+    <link href="./../common/font/notoSansJP/notoSansJP.css" rel="stylesheet" />
+    <link href="./../common/css/tailwind.css" rel="stylesheet" />
+    <link href="./../common/css/fontStyle.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div id="wrap">
+      <!-- contents -->
+      <div class="relative w-full h-full pt-60">
+        <!-- title -->
+        <img
+          src="./../common/images/title_digital.svg"
+          alt="디지털 활동"
+          class="absolute h-42 w-261 top-10"
+        />
+        <!-- main -->
+        <div class="flex flex-col w-full h-full px-20 leading-52">
+          <div class="mb-10 font-extrabold text-40 f-nanum-s">
+            <p>다양한 꽃꽂이 작품 사진을 검색해 보고 서양식과 일본식의</p>
+            <p>차이점에 대해 이야기해 봅시다.</p>
+          </div>
+          <div
+            class="border-4 w-full pt-14 ps-20 pe-4 pb-14 h-245 border-[#3589D7] rounded-10 mb-8"
+          >
+            <div
+              data-answer="1"
+              style="display: none"
+              class="w-full h-full font-bold text-40 f-nanum-s leading-50"
+            >
+              <div class="flex flex-col">
+                <!-- table -->
+                <div
+                  class="flex flex-col mb-10 font-bold w-fit leading-52 text-40 f-nanum-s"
+                >
+                  <!-- ========= -->
+                  <div class="flex items-stretch">
+                    <!-- ------- -->
+                    <div
+                      class="w-178 bg-[#B3CFEA] flex items-center justify-center p-10 rounded-tl-10 border-[#CEDCE9] border-t-3 border-l-3 border-1"
+                    >
+                      <div class="flex flex-col items-center">
+                        <p>일본식</p>
+                      </div>
+                    </div>
+                    <div
+                      class="bg-white w-722 flex flex-col rounded-tr-10 border-[#CEDCE9] border-t-3 border-b-1 border-r-3"
+                    >
+                      <div
+                        class="text-red w-full px-20 py-7 flex flex-col gap-10"
+                      >
+                        <div class="flex">
+                          <div
+                            class="w-12 h-12 mt-20 bg-red rounded-full me-10"
+                          ></div>
+                          공간과의 조화를 중시한다.
+                        </div>
+                        <div class="flex">
+                          <div
+                            class="w-12 h-12 mt-20 bg-red rounded-full me-10"
+                          ></div>
+                          여백의 미를 살리는 방식이 많다.
+                        </div>
+                      </div>
+                    </div>
+                    <!-- ------- -->
+                  </div>
+                  <!-- ========= -->
+                  <div class="flex items-stretch">
+                    <!-- ------- -->
+                    <div
+                      class="w-178 bg-[#B3CFEA] flex items-center justify-center p-10 border-[#CEDCE9] border-r-1 border-l-3 border-b-3 rounded-bl-10"
+                    >
+                      <div class="flex flex-col items-center">
+                        <p>서양식</p>
+                      </div>
+                    </div>
+                    <div
+                      class="bg-white w-722 flex flex-col border-[#CEDCE9] border-b-3 border-r-3 rounded-br-10"
+                    >
+                      <div
+                        class="text-red w-full px-20 py-7 flex flex-col gap-10"
+                      >
+                        꽃 자체의 화려함을 강조하는 방식이 많다.
+                      </div>
+                    </div>
+                    <!-- ------- -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="ms-auto">
+            <button
+              data-name="btn-common"
+              data-reset="1"
+              onclick="contentUtil.showAnswer(1); audioPlay(audio, [`./../common/media/mp3/showAnswer.mp3`]);"
+            >
+              예시 답안
+            </button>
+            <button
+              style="display: none"
+              data-answer="1"
+              data-name="btn-common"
+              onclick="contentUtil.hideAnswer(1);"
+            >
+              다시 풀기
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- popup -->
+      <div id="popup-wrap" style="display: none"></div>
+    </div>
+  </body>
+  <script type="text/javascript">
+    const page = {
+      isAnswer: false,
+      isVocabulary: false,
+      showAnswer: () => {},
+      hideAnswer: () => {},
+      showVocabulary: () => {},
+    };
+  </script>
+  <script src="./../common/js/tailwind.config.js"></script>
+  <script src="./../common/js/script.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      // contentUtil.setPopup(1);
+    });
+  </script>
+</html>

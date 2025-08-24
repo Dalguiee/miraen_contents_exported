@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>미래엔 일본 문화</title>
+    <script src="./../common/lib/jquery-3.7.1.min.js"></script>
+    <script src="./../common/lib/howler-2.1.3.min.js"></script>
+    <script src="./../common/lib/tailwind.js"></script>
+    <!-- 폰트 -->
+    <link href="./../common/font/suit/suit.css" rel="stylesheet" />
+    <link href="./../common/font/bmjua/bmjua.css" rel="stylesheet" />
+    <link
+      href="./../common/font/nanumsquare/nanumSquare.css"
+      rel="stylesheet"
+    />
+    <link href="./../common/font/notoSansJP/notoSansJP.css" rel="stylesheet" />
+    <link href="./../common/css/tailwind.css" rel="stylesheet" />
+    <link href="./../common/css/fontStyle.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div id="wrap">
+      <!-- contents -->
+      <div class="relative w-full h-full pt-68">
+        <!-- title -->
+        <img
+          src="./../common/images/title_look_culture1.svg"
+          alt="문화 들여다보기1 전통의상1"
+          class="absolute w-764 h-49 top-10"
+        />
+        <!-- header-btn -->
+        <div class="absolute right-0 flex gap-6 top-13" data-name="header-btn">
+          <button data-name="btn-common" onclick="contentUtil.setPopup(2)">
+            추가 사진
+          </button>
+        </div>
+        <!-- main -->
+        <div class="flex flex-col w-full h-full">
+          <div
+            class="flex flex-col w-full mb-8 h-404 text-40 f-nanum-s leading-52 ps-20"
+          >
+            <div class="flex items-center mb-4">
+              <img
+                src="./../common/images/index_pink_2.svg"
+                alt="번호 2"
+                class="w-40 h-40 me-4"
+              />
+              <span class="font-extrabold">여성용 기모노</span>
+            </div>
+            <div class="flex mb-4">
+              <div data-name="number-1" class="bg-[#C84935]"></div>
+              <span class="text-[#C84935] font-extrabold"
+                >결혼 여부에 따른 기모노</span
+              >
+            </div>
+            <div class="px-10 w-fit bg-[#FCF0D7] font-extrabold mb-10 flex">
+              도메소데(<span
+                data-audio="2_01_07/031-02.mp3"
+                class="font-bold f-noto"
+                >とめそで</span
+              >)
+            </div>
+            <!-- ======== page 1 ======== -->
+            <div data-name="page" class="flex flex-col font-bold">
+              <div>
+                <p class="ps-28">
+                  일반적으로 결혼한 여성이 입으며 소매폭이 좁은 기모노를
+                </p>
+                <p>‘도메소데’라고 한다. 도메소데는 옷감의 색상에 따라 검은색</p>
+                <p>바탕의 ‘구로토메소데’와 검은색 이외의 단색을 바탕으로 한</p>
+                <p>‘이로토메소데’로 나뉜다.</p>
+              </div>
+            </div>
+            <!-- ======== page 2 ======== -->
+            <div
+              data-name="page"
+              class="flex flex-col font-bold"
+              style="display: none"
+            >
+              <div>
+                <p class="ps-28">
+                  구로토메소데는 아래쪽 단에 고풍스러운 무늬가 들어가
+                </p>
+                <p>
+                  있으며, 결혼식에서 양가 어머니나 할머니가 입는 경우가 많다.
+                </p>
+                <p>이로토메소데는 아래쪽 단에 무늬가 들어가 있는 화려한</p>
+                <p>기모노로 격식을 갖춘 자리에서 주로 입는데, 요즘은 미혼</p>
+                <p>여성이 입기도 한다.</p>
+              </div>
+            </div>
+            <!-- ======== page 3 ======== -->
+            <div
+              data-name="page"
+              class="flex flex-col font-bold"
+              style="display: none"
+            >
+              <!-- img box -->
+              <div class="absolute flex gap-40 right-80 bottom-66">
+                <div class="relative w-200 h-300">
+                  <img
+                    src="./images/2_01_07/main_photo2.jpg"
+                    alt="구로토메소데"
+                    class="w-full h-full"
+                  />
+                  <button
+                    data-name="btn-view"
+                    class="absolute bottom-10 right-10"
+                    onclick="contentUtil.setPopup(1); contentUtil.setPhotoPopup(1);"
+                  ></button>
+                </div>
+                <div class="relative w-200 h-300">
+                  <img
+                    src="./images/2_01_07/main_photo1.jpg"
+                    alt="이로토메소데"
+                    class="w-full h-full"
+                  />
+                  <button
+                    data-name="btn-view"
+                    class="absolute bottom-10 right-10"
+                    onclick="contentUtil.setPopup(1); contentUtil.setPhotoPopup(2);"
+                  ></button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- pagination -->
+          <div
+            class="absolute -translate-x-1/2 left-1/2 bottom-10"
+            data-name="pagination"
+          >
+            <button class="active" data-name="btn-pagination"></button>
+            <button class="" data-name="btn-pagination"></button>
+            <button class="" data-name="btn-pagination"></button>
+          </div>
+        </div>
+      </div>
+      <!-- popup -->
+      <div id="popup-wrap" style="display: none">
+        <!-- 사진 팝업창 -->
+        <div data-name="popup" data-popup="1" style="display: none">
+          <div data-name="popup-header">
+            <div data-name="popup-title">사진 팝업창</div>
+            <button
+              data-name="popup-close"
+              onclick="contentUtil.setPopup()"
+            ></button>
+          </div>
+          <div
+            data-name="popup-body"
+            class="flex items-center justify-center w-full h-full gap-16"
+          >
+            <div
+              class="flex flex-col items-center w-608 h-402"
+              data-name="popup_photo_wrap"
+            >
+              <div class="w-full overflow-x-hidden overflow-y-auto pe-4">
+                <img
+                  src="./images/2_01_07/popup_photo1.jpg"
+                  alt="구로토메소데"
+                  class="object-contain w-full rounded-10"
+                  data-name="popup_photo"
+                />
+                <img
+                  src="./images/2_01_07/popup_photo2.jpg"
+                  alt="이로토메소데"
+                  class="object-contain w-full rounded-10"
+                  data-name="popup_photo"
+                  style="display: none"
+                />
+              </div>
+              <div
+                class="flex mt-8 font-bold f-nanum-s h-52 text-40 leading-52 shrink-0"
+              >
+                <div data-name="popup_photo_text">구로토메소데</div>
+                <div data-name="popup_photo_text">이로토메소데</div>
+              </div>
+            </div>
+            <div class="w-266 h-402">
+              <div class="flex flex-wrap w-full gap-10">
+                <button
+                  data-name="btn-popup_photo"
+                  class="w-128 h-72 active"
+                  onclick="contentUtil.setPhotoPopup(1)"
+                >
+                  <img
+                    src="./images/2_01_07/popup_btn_photo1.jpg"
+                    alt="구로토메소데"
+                  />
+                </button>
+                <button
+                  data-name="btn-popup_photo"
+                  class="w-128 h-72"
+                  onclick="contentUtil.setPhotoPopup(2)"
+                >
+                  <img
+                    src="./images/2_01_07/popup_btn_photo2.jpg"
+                    alt="이로토메소데"
+                  />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 추가 사진 -->
+        <div data-name="popup" data-popup="2" style="display: none">
+          <div data-name="popup-header">
+            <div data-name="popup-title">추가 사진</div>
+            <button
+              data-name="popup-close"
+              onclick="contentUtil.setPopup()"
+            ></button>
+          </div>
+          <div
+            data-name="popup-body"
+            class="flex items-center justify-center w-full h-full gap-16"
+          >
+            <div
+              class="flex flex-col items-center w-608 h-402"
+              data-name="popup_photo_wrap"
+            >
+              <div class="w-full overflow-x-hidden overflow-y-auto pe-4">
+                <img
+                  src="./images/2_01_07/popup_photo3.jpg"
+                  alt="구로토메소데"
+                  class="object-contain min-w-608 rounded-10"
+                />
+              </div>
+              <div
+                class="flex mt-8 font-bold f-nanum-s h-52 text-40 leading-52 shrink-0"
+              >
+                <div class="flex justify-center text-blue">
+                  <span>구로토메소데</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript">
+    const page = {
+      isAnswer: false,
+      isVocabulary: false,
+      showAnswer: () => {},
+      hideAnswer: () => {},
+      showVocabulary: () => {},
+    };
+  </script>
+  <script src="./../common/js/tailwind.config.js"></script>
+  <script src="./../common/js/script.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {});
+  </script>
+</html>

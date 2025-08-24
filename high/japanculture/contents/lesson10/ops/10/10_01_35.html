@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>미래엔 일본 문화</title>
+    <script src="./../common/lib/jquery-3.7.1.min.js"></script>
+    <script src="./../common/lib/howler-2.1.3.min.js"></script>
+    <script src="./../common/lib/tailwind.js"></script>
+    <!-- 폰트 -->
+    <link href="./../common/font/suit/suit.css" rel="stylesheet" />
+    <link href="./../common/font/bmjua/bmjua.css" rel="stylesheet" />
+    <link
+      href="./../common/font/nanumsquare/nanumSquare.css"
+      rel="stylesheet"
+    />
+    <link href="./../common/font/notoSansJP/notoSansJP.css" rel="stylesheet" />
+    <link href="./../common/css/tailwind.css" rel="stylesheet" />
+    <link href="./../common/css/fontStyle.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div id="wrap">
+      <!-- contents -->
+      <div class="relative flex flex-col w-full h-full pt-65">
+        <!-- title -->
+        <div class="absolute left-0 flex h-50 top-10">
+          <img
+            src="./../common/images/title_getactive.svg"
+            alt="활동하기"
+            class="w-160 me-10"
+          />
+          <span class="f-bmjua text-36 text-[#6773B1] leading-50"
+            >진로 연계 활동</span
+          >
+        </div>
+        <!-- header-btn -->
+        <div
+          class="absolute right-0 flex gap-6 top-13"
+          data-name="header-btn"
+        ></div>
+        <!-- main -->
+        <div
+          class="flex flex-col flex-1 w-full px-20 overflow-y-auto leading-52 f-nanum-s text-40"
+        >
+          <div class="flex mb-10">
+            <img
+              src="./../common/images/label_flower_blue.svg"
+              alt="label"
+              class="w-30 h-52 me-8"
+            />
+            <div class="font-extrabold">
+              <p>우리나라의 전통문화를 조사하고 발표해 봅시다.</p>
+            </div>
+          </div>
+
+          <!-- ======== page 1 ======== -->
+          <div data-name="page" class="flex flex-col flex-1 w-full">
+            <div class="flex flex-col gap-10 font-bold">
+              <!-- 1 -->
+              <div class="flex">
+                <div data-name="number-1" class="bg-[#5B87B8] me-10"></div>
+                <div class="flex flex-col">
+                  <div class="flex flex-col mb-6">
+                    <p>우리나라 전통문화 중 관심 있는 분야를 선정하고 발표</p>
+                    <p>주제를 정한다.</p>
+                  </div>
+                  <div class="flex gap-10">
+                    <img
+                      class="w-40 h-40 mt-5"
+                      src="./images/10_01_35/label_ex.svg"
+                      alt="예"
+                    />
+                    <div class="text-[#636463] flex flex-col gap-10">
+                      <p>미술 분야 - 조선 시대 풍속화</p>
+                      <p>요리 분야 - 우리나라 김치</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- ======== page 2 ======== -->
+          <div
+            style="display: none"
+            data-name="page"
+            class="flex flex-col flex-1 w-full"
+          >
+            <div class="flex flex-col gap-10 font-bold">
+              <!-- 2 -->
+              <div class="flex-col flex">
+                <div class="flex justify-start mb-6">
+                  <div data-name="number-2" class="bg-[#5B87B8] me-10"></div>
+                  <div>
+                    <p>
+                      위에서 정한 주제와 비교할 만한 일본의 전통문화를 정한다.
+                    </p>
+                  </div>
+                </div>
+                <div class="flex items-start gap-10 ml-44">
+                  <img
+                    class="mt-5"
+                    src="./images/10_01_35/label_ex.svg"
+                    alt="예"
+                  />
+                  <div class="flex flex-col text-[#636463] gap-10">
+                    <p>미술 분야 - 조선 시대 풍속화 / 에도 시대 우키요에</p>
+                    <p>요리 분야 - 우리나라 김치 / 일본의 쓰케모노</p>
+                  </div>
+                </div>
+              </div>
+              <!-- 3 -->
+              <div class="flex">
+                <div data-name="number-3" class="bg-[#5B87B8] me-10"></div>
+                <div>
+                  <p>주제가 결정되면 인터넷 등을 활용하여 조사한 후에 자료를</p>
+                  <p>정리하여 발표한다.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- pagination -->
+          <div
+            class="absolute -translate-x-1/2 left-1/2 bottom-10"
+            data-name="pagination"
+          >
+            <button class="active" data-name="btn-pagination"></button>
+            <button class="" data-name="btn-pagination"></button>
+          </div>
+        </div>
+      </div>
+      <!-- popup -->
+      <div id="popup-wrap" style="display: none"></div>
+    </div>
+  </body>
+  <script type="text/javascript">
+    const page = {
+      isAnswer: false,
+      isVocabulary: false,
+      showAnswer: () => {},
+      hideAnswer: () => {},
+      showVocabulary: () => {},
+    };
+  </script>
+  <script src="./../common/js/tailwind.config.js"></script>
+  <script src="./../common/js/script.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      // contentUtil.setPage(2);
+    });
+
+    // $(`[data-name="btn-pagination"]`).on("click", function () {
+    //   if ($(this).index() === 0) {
+    //     $(`[data-name="btn-common"]`).show();
+    //   } else {
+    //     $(`[data-name="btn-common"]`).hide();
+    //   }
+    // });
+  </script>
+</html>

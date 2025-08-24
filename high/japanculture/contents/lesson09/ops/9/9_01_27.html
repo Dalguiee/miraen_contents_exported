@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>미래엔 일본 문화</title>
+    <script src="./../common/lib/jquery-3.7.1.min.js"></script>
+    <script src="./../common/lib/howler-2.1.3.min.js"></script>
+    <script src="./../common/lib/tailwind.js"></script>
+    <!-- 폰트 -->
+    <link href="./../common/font/suit/suit.css" rel="stylesheet" />
+    <link href="./../common/font/bmjua/bmjua.css" rel="stylesheet" />
+    <link
+      href="./../common/font/nanumsquare/nanumSquare.css"
+      rel="stylesheet"
+    />
+    <link href="./../common/font/notoSansJP/notoSansJP.css" rel="stylesheet" />
+    <link href="./../common/css/tailwind.css" rel="stylesheet" />
+    <link href="./../common/css/fontStyle.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div id="wrap">
+      <!-- contents -->
+      <div class="relative w-full h-full pt-60">
+        <!-- title -->
+        <img
+          src="./../common/images/title_digital.svg"
+          alt="디지털 활동"
+          class="absolute h-42 w-261 top-10"
+        />
+        <!-- main -->
+        <div class="flex flex-col w-full h-full px-20 leading-52">
+          <!-- Page 1 -->
+          <div
+            data-name="page"
+            class="flex flex-col font-bold f-nanum-s text-40"
+          >
+            <div class="flex gap-12">
+              <div class="">
+                <img src="./images/9_01_27/main_index_1.svg" alt="" />
+              </div>
+              <div class="mb-10 font-extrabold text-40 f-nanum-s">
+                <p>우리나라에 잘 알려진 일본 애니메이션 음악을 찾아 들어</p>
+                <p>보고 느낌을 이야기해 봅시다.</p>
+              </div>
+            </div>
+            <div
+              class="border-4 w-full py-8 ps-20 pe-4 h-286 border-[#3589D7] rounded-10 mb-8"
+            >
+              <div
+                data-answer="1"
+                style="display: none"
+                class="w-full h-full py-8 overflow-y-auto"
+              >
+                <div class="f-nanum-s font-bold text-red text-40 leading-52">
+                  <div class="flex mb-10">
+                    <div
+                      class="w-12 h-12 mt-20 bg-red rounded-full me-10"
+                    ></div>
+                    이웃집 토토로
+                    <div data-name="colon-red">:</div>
+                    바람이 지나가는 길(Wind Forest)
+                  </div>
+                  <p>이웃집 토토로의 신비스럽고 판타지스러운 느낌이 피아노</p>
+                  <p>선율과 어우러져 마음이 따뜻해지는 느낌을 받았다.</p>
+                </div>
+              </div>
+            </div>
+            <div class="ms-auto">
+              <button
+                data-reset="1"
+                data-name="btn-common"
+                onclick="contentUtil.showAnswer(1) ; audioPlay(audio, [`./../common/media/mp3/showAnswer.mp3`]);"
+              >
+                예시 답안
+              </button>
+
+              <button
+                data-name="btn-common"
+                data-answer="1"
+                onclick="contentUtil.hideAnswer(1)"
+                style="display: none"
+              >
+                다시 풀기
+              </button>
+            </div>
+          </div>
+
+          <!-- Page 2 -->
+          <div
+            data-name="page"
+            style="display: none"
+            class="flex flex-col font-bold f-nanum-s text-40"
+          >
+            <div class="flex gap-12">
+              <div class="">
+                <img src="./images/9_01_27/main_index_2.svg" alt="" />
+              </div>
+              <div class="mb-10 font-extrabold text-40 f-nanum-s">
+                <p>일본 음악 중 한 곡을 골라 친구들과 30초 댄스 챌린지</p>
+                <p>영상을 촬영해 봅시다.</p>
+              </div>
+            </div>
+            <div
+              class="border-4 w-full py-8 ps-20 pe-4 h-286 border-[#3589D7] rounded-10 mb-8"
+            >
+              <div class="w-full h-full py-8 overflow-y-auto">
+                <div
+                  style="display: none"
+                  data-answer="2"
+                  class="f-nanum-s font-bold text-red text-40 leading-52"
+                >
+                  <p>영화 '시간을 달리는 소녀'의 노래 '변하지 않는 것'이라는</p>
+                  <p>노래를 이용해 댄스 챌린지 영상을 촬영하여 SNS에 올렸다.</p>
+                </div>
+              </div>
+            </div>
+            <div class="ms-auto">
+              <button
+                data-reset="2"
+                data-name="btn-common"
+                onclick="contentUtil.showAnswer(2) ; audioPlay(audio, [`./../common/media/mp3/showAnswer.mp3`]);"
+              >
+                예시 답안
+              </button>
+              <button
+                data-name="btn-common"
+                data-answer="2"
+                onclick="contentUtil.hideAnswer(2)"
+                style="display: none"
+              >
+                다시 풀기
+              </button>
+            </div>
+          </div>
+
+          <!-- pagination -->
+          <div
+            class="absolute -translate-x-1/2 bottom-10 left-1/2"
+            data-name="pagination"
+          >
+            <button class="active" data-name="btn-pagination"></button>
+            <button class="" data-name="btn-pagination"></button>
+          </div>
+        </div>
+      </div>
+      <!-- popup -->
+      <div id="popup-wrap" style="display: none"></div>
+    </div>
+  </body>
+  <script type="text/javascript">
+    const page = {
+      isAnswer: false,
+      isVocabulary: false,
+      showAnswer: () => {},
+      hideAnswer: () => {},
+      showVocabulary: () => {},
+    };
+  </script>
+  <script src="./../common/js/tailwind.config.js"></script>
+  <script src="./../common/js/script.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      // contentUtil.setPopup(1);
+    });
+  </script>
+</html>

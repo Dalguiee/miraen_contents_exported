@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>미래엔 일본 문화</title>
+    <script src="./../common/lib/jquery-3.7.1.min.js"></script>
+    <script src="./../common/lib/howler-2.1.3.min.js"></script>
+    <script src="./../common/lib/tailwind.js"></script>
+    <!-- 폰트 -->
+    <link href="./../common/font/suit/suit.css" rel="stylesheet" />
+    <link href="./../common/font/bmjua/bmjua.css" rel="stylesheet" />
+    <link
+      href="./../common/font/nanumsquare/nanumSquare.css"
+      rel="stylesheet"
+    />
+    <link href="./../common/font/notoSansJP/notoSansJP.css" rel="stylesheet" />
+    <link href="./../common/css/tailwind.css" rel="stylesheet" />
+    <link href="./../common/css/fontStyle.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div id="wrap">
+      <!-- contents -->
+      <div class="relative w-full h-full pt-60">
+        <!-- title -->
+        <img
+          src="./../common/images/title_look_culture1.svg"
+          alt="문화 들여다보기1 전통예술"
+          class="absolute w-764 h-49 top-10"
+        />
+        <!-- header-btn -->
+        <div
+          class="absolute right-0 flex gap-6 top-13"
+          data-name="header-btn"
+        ></div>
+        <!-- main -->
+        <div class="flex flex-col w-full h-full mt-20">
+          <div class="flex flex-col mb-8 leading-52 ps-20">
+            <div class="flex items-center mb-4">
+              <img
+                src="./../common/images/index_pink_1.svg"
+                alt="번호 1"
+                class="w-40 h-40 me-4"
+              />
+              <span class="flex font-extrabold f-nanum-s text-40"
+                >서예(<span
+                  data-audio="10_01_04/148-01.mp3"
+                  class="f-noto font-bold"
+                  ><span class="relative"
+                    >書<span class="ruby font-bold">しょ</span></span
+                  ><span class="relative"
+                    >道<span class="ruby font-bold">どう</span></span
+                  ></span
+                >)</span
+              >
+            </div>
+            <!-- ======== page 1 ======== -->
+            <div
+              data-name="page"
+              class="flex flex-col font-bold f-nanum-s text-40"
+            >
+              <div>
+                <p class="ps-28">
+                  서예는 붓과 먹으로 문자를 써 아름다움을 표현하는 예술
+                </p>
+                <p>
+                  이다. 원래 중국에서 전해졌으나, 일본에서는 한자와 가나 문자
+                </p>
+                <p>를 함께 조화롭게 쓰는 방향으로 발전하였다. 우리나라에서는</p>
+                <p>
+                  한자 혼용 문화가 사라지며 한자 및 서예 교육에 대한 중요성이
+                </p>
+                <p>줄어든 반면, 일본의 초등학교와 중학교에서는 바른 자세와</p>
+                <p>글자 교육의 중요성을 강조하며 지금도 교과 시간에 가르치고</p>
+                <p>있다.</p>
+              </div>
+            </div>
+            <!-- ======== page 2 ======== -->
+            <div
+              data-name="page"
+              class="flex flex-col font-bold f-nanum-s text-40 w-full"
+              style="display: none"
+            >
+              <div class="w-full">
+                <div class="w-full mb-20">
+                  <p class="ps-28">
+                    새해를 맞아 좋은 내용의 시가나 글귀를 붓으로 직접 쓰는
+                  </p>
+                  <p class="flex">
+                    ‘가키조메(<span
+                      data-audio="10_01_04/148-02.mp3"
+                      class="f-noto font-medium"
+                      >かきぞめ</span
+                    >)’라는 행사도 현재까지 이어지고 있다.
+                  </p>
+                </div>
+                <!-- Image Box -->
+                <div class="flex gap-30 w-full justify-center">
+                  <div class="relative flex flex-col w-310 h-200 items-center">
+                    <img
+                      src="./images/10_01_04/main_photo1.jpg"
+                      alt="초등학교 서예 시간"
+                      class="w-full h-full rounded-10"
+                    />
+                    <button
+                      data-name="btn-view"
+                      class="absolute bottom-10 right-10"
+                      onclick="contentUtil.setPopup(1); contentUtil.setPhotoPopup(1);"
+                    ></button>
+                  </div>
+                  <div class="relative flex flex-col w-310 h-200 items-center">
+                    <img
+                      src="./images/10_01_04/main_photo2.jpg"
+                      alt="가키조메"
+                      class="w-full h-full rounded-10"
+                    />
+                    <button
+                      data-name="btn-view"
+                      class="absolute bottom-10 right-10"
+                      onclick="contentUtil.setPopup(1); contentUtil.setPhotoPopup(2);"
+                    ></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- pagination -->
+          <div
+            class="absolute -translate-x-1/2 left-1/2 bottom-10"
+            data-name="pagination"
+          >
+            <button class="active" data-name="btn-pagination"></button>
+            <button class="" data-name="btn-pagination"></button>
+          </div>
+        </div>
+      </div>
+      <!-- popup -->
+      <div id="popup-wrap" style="display: none">
+        <!-- 사진 팝업창 -->
+        <div data-name="popup" data-popup="1" style="display: none">
+          <div data-name="popup-header">
+            <div data-name="popup-title">사진 팝업창</div>
+            <button
+              data-name="popup-close"
+              onclick="contentUtil.setPopup()"
+            ></button>
+          </div>
+          <div
+            data-name="popup-body"
+            class="flex items-center justify-center w-full h-full gap-16"
+          >
+            <div
+              class="flex flex-col items-center w-608 h-402"
+              data-name="popup_photo_wrap"
+            >
+              <div class="w-full overflow-hidden h-400 rounded-10">
+                <img
+                  src="./images/10_01_04/popup_photo1.jpg"
+                  alt="초등학교 서예 시간"
+                  class="min-w-608 h-full"
+                  data-name="popup_photo"
+                />
+                <img
+                  src="./images/10_01_04/popup_photo2.jpg"
+                  alt="가키조메"
+                  class="min-w-608 h-full"
+                  data-name="popup_photo"
+                  style="display: none"
+                />
+              </div>
+              <div
+                class="flex mt-8 font-bold f-nanum-s h-52 text-40 leading-52 shrink-0"
+              >
+                <div data-name="popup_photo_text">초등학교 서예 시간</div>
+                <div data-name="popup_photo_text" style="display: none">
+                  가키조메
+                </div>
+              </div>
+            </div>
+            <div class="w-266 h-402">
+              <div class="flex flex-wrap w-full gap-10">
+                <button
+                  data-name="btn-popup_photo"
+                  class="w-128 h-72 active"
+                  onclick="contentUtil.setPhotoPopup(1)"
+                >
+                  <img
+                    src="./images/10_01_04/popup_btn_photo1.jpg"
+                    alt="초등학교 서예 시간"
+                  />
+                </button>
+                <button
+                  data-name="btn-popup_photo"
+                  class="w-128 h-72"
+                  onclick="contentUtil.setPhotoPopup(2)"
+                >
+                  <img
+                    src="./images/10_01_04/popup_btn_photo2.jpg"
+                    alt="가키조메"
+                  />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript">
+    const page = {
+      isAnswer: false,
+      isVocabulary: false,
+      showAnswer: () => {},
+      hideAnswer: () => {},
+      showVocabulary: () => {},
+    };
+  </script>
+  <script src="./../common/js/tailwind.config.js"></script>
+  <script src="./../common/js/script.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      // contentUtil.setPage(2);
+    });
+
+    $(`[data-name="btn-pagination"]`).on("click", function () {
+      if ($(this).index() === 3) {
+        $(`[data-name="btn-common-dark"]`).show();
+      } else {
+        $(`[data-name="btn-common-dark"]`).hide();
+      }
+    });
+  </script>
+</html>

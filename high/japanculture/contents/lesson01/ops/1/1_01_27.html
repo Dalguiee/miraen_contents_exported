@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>미래엔 일본 문화</title>
+    <script src="./../common/lib/jquery-3.7.1.min.js"></script>
+    <script src="./../common/lib/howler-2.1.3.min.js"></script>
+    <script src="./../common/lib/tailwind.js"></script>
+    <!-- 폰트 -->
+    <link href="./../common/font/suit/suit.css" rel="stylesheet" />
+    <link href="./../common/font/bmjua/bmjua.css" rel="stylesheet" />
+    <link
+      href="./../common/font/nanumsquare/nanumSquare.css"
+      rel="stylesheet"
+    />
+    <link href="./../common/font/notoSansJP/notoSansJP.css" rel="stylesheet" />
+    <link href="./../common/css/tailwind.css" rel="stylesheet" />
+    <link href="./../common/css/fontStyle.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div id="wrap">
+      <!-- contents -->
+      <div class="relative w-full h-full pt-68">
+        <!-- title -->
+        <img
+          src="./images/1_01_18/title_theme_2.svg"
+          alt="문화 들여다보기1 주택의 종류와 특징"
+          class="absolute w-528 h-49 top-10"
+        />
+        <div class="absolute right-0 flex gap-12 top-13">
+          <button
+            data-name="btn-common"
+            onclick="contentUtil.setPopup(2); contentUtil.setPhotoPopup(3);"
+            class=""
+          >
+            추가 사진
+          </button>
+        </div>
+
+        <!-- main -->
+        <div class="flex flex-col w-full h-full">
+          <div
+            class="flex flex-col mb-8 w-763 h-404 leading-52 ps-20 whitespace-nowrap"
+          >
+            <div class="flex items-center mb-4">
+              <img
+                src="./../common/images/index_pink_1.svg"
+                alt="번호 1"
+                class="w-40 h-40 me-4"
+              />
+              <span class="font-extrabold f-nanum-s text-40"
+                >인기 있는 일본 음식</span
+              >
+            </div>
+            <div
+              class="flex items-center justify-start mb-4 font-bold f-nanum-s text-40"
+            >
+              <!-- <div data-name="number-6" class="bg-[#C84935]"></div> -->
+              <div class="mr-6">
+                <img src="./images/1_01_11/number_icon_exception.svg" alt="" />
+              </div>
+              <span class="text-[#C84935] font-extrabold flex"
+                >주먹밥(<span
+                  data-audio="1_01_27/021-11.mp3"
+                  class="font-extrabold f-noto"
+                  >おにぎり</span
+                >)</span
+              >
+            </div>
+
+            <!-- 컨텍스트 -->
+            <div class="flex gap-26">
+              <div
+                data-name="page"
+                class="flex flex-col font-bold f-nanum-s text-40"
+              >
+                <div>
+                  <p class="flex ps-28">일본에서는 주먹밥에 다양한 속 재료를</p>
+                </div>
+                <div>
+                  <p class="relative flex">
+                    사용한다. 도호쿠 지방의 ‘연어알주먹밥’,
+                  </p>
+                  <p>규슈의 ‘명란주먹밥’, 오키나와의 ‘돼지</p>
+                  <p>고기계란주먹밥’ 등과 같이 지역 특산물을</p>
+                  <p>활용한 주먹밥도 있다.</p>
+                </div>
+              </div>
+
+              <!-- 이미지 -->
+              <div
+                class="relative flex flex-col flex-shrink-0 gap-10 bottom-50 w-300 h-fit"
+              >
+                <div class="relative w-full">
+                  <img
+                    class="object-cover w-full rounded-10"
+                    src="./images/1_01_27/main_img_1.png"
+                    alt=""
+                  />
+                  <button
+                    data-name="btn-view"
+                    class="absolute bottom-10 right-10"
+                    onclick="contentUtil.setPopup(1); contentUtil.setPhotoPopup(1);"
+                  ></button>
+                </div>
+                <div class="relative w-full">
+                  <img
+                    class="object-cover w-full rounded-10"
+                    src="./images/1_01_27/main_img_2.png"
+                    alt=""
+                  />
+                  <button
+                    data-name="btn-view"
+                    class="absolute bottom-10 right-10"
+                    onclick="contentUtil.setPopup(1); contentUtil.setPhotoPopup(2);"
+                  ></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- popup -->
+      <div id="popup-wrap" style="display: none">
+        <!-- 사진 팝업창 -->
+        <div data-name="popup" data-popup="1" style="display: none">
+          <div data-name="popup-header">
+            <div data-name="popup-title">사진 팝업창</div>
+            <button
+              data-name="popup-close"
+              onclick="contentUtil.setPopup()"
+            ></button>
+          </div>
+          <div
+            data-name="popup-body"
+            class="flex items-center justify-center w-full h-full gap-16"
+          >
+            <div
+              class="flex flex-col items-center w-608 h-402"
+              data-name="popup_photo_wrap"
+            >
+              <div class="w-full overflow-x-hidden overflow-y-auto pe-4">
+                <img
+                  src="./images/1_01_27/photo_popup_img_1.png"
+                  alt="1"
+                  class="object-contain min-w-608 rounded-10"
+                  data-name="popup_photo"
+                />
+                <img
+                  src="./images/1_01_27/photo_popup_img_2.png"
+                  alt="2"
+                  class="object-contain min-w-608 rounded-10"
+                  data-name="popup_photo"
+                  style="display: none"
+                />
+              </div>
+              <div
+                class="flex mt-8 font-bold f-nanum-s text-40 leading-52 shrink-0"
+              >
+                <span data-name="popup_photo_text">연어알주먹밥</span>
+                <span data-name="popup_photo_text" style="display: none"
+                  >명란주먹밥</span
+                >
+              </div>
+            </div>
+            <div class="w-266 h-402">
+              <div class="flex flex-wrap w-full gap-10">
+                <button
+                  data-name="btn-popup_photo"
+                  class="w-128 h-72 active"
+                  onclick="contentUtil.setPhotoPopup(1)"
+                >
+                  <img src="./images/1_01_27/photo_popup_img_1.png" alt="1" />
+                </button>
+                <button
+                  data-name="btn-popup_photo"
+                  class="w-128 h-72"
+                  onclick="contentUtil.setPhotoPopup(2)"
+                >
+                  <img src="./images/1_01_27/photo_popup_img_2.png" alt="2" />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 추가 사진 -->
+        <div data-name="popup" data-popup="2" style="display: none">
+          <div data-name="popup-header">
+            <div data-name="popup-title">추가 사진</div>
+            <button
+              data-name="popup-close"
+              onclick="contentUtil.setPopup()"
+            ></button>
+          </div>
+          <div
+            data-name="popup-body"
+            class="flex items-center justify-center w-full h-full gap-16"
+          >
+            <div
+              class="flex flex-col items-center w-608 h-402"
+              data-name="popup_photo_wrap"
+            >
+              <div class="w-full overflow-x-hidden overflow-y-auto pe-4">
+                <img
+                  src="./images/1_01_27/extra_photo_popup_img_1.png"
+                  alt="1"
+                  class="object-contain min-w-608 rounded-10"
+                  data-name="popup_photo"
+                />
+                <img
+                  src="./images/1_01_27/extra_photo_popup_img_2.png"
+                  alt="2"
+                  class="object-contain min-w-608 rounded-10"
+                  data-name="popup_photo"
+                  style="display: none"
+                />
+              </div>
+              <div
+                class="flex mt-8 font-bold f-nanum-s text-40 leading-52 shrink-0"
+              >
+                <span class="text-blue" data-name="popup_photo_text"
+                  >오키나와의 돼지고기계란주먹밥</span
+                >
+                <span
+                  class="text-blue"
+                  data-name="popup_photo_text"
+                  style="display: none"
+                  >구운 주먹밥</span
+                >
+              </div>
+            </div>
+            <div class="w-266 h-402">
+              <div class="flex flex-wrap w-full gap-10">
+                <button
+                  data-name="btn-popup_photo"
+                  class="w-128 h-72 active"
+                  onclick="contentUtil.setPhotoPopup(3)"
+                >
+                  <img
+                    src="./images/1_01_27/extra_photo_popup_img_1.png"
+                    alt="1"
+                  />
+                </button>
+                <button
+                  data-name="btn-popup_photo"
+                  class="w-128 h-72"
+                  onclick="contentUtil.setPhotoPopup(4)"
+                >
+                  <img
+                    src="./images/1_01_27/extra_photo_popup_img_2.png"
+                    alt="2"
+                  />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript">
+    const page = {
+      isAnswer: false,
+      isVocabulary: false,
+      showAnswer: () => {},
+      hideAnswer: () => {},
+      showVocabulary: () => {},
+    };
+  </script>
+  <script src="./../common/js/tailwind.config.js"></script>
+  <script src="./../common/js/script.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      // contentUtil.setPopup(3);
+    });
+  </script>
+</html>

@@ -1,0 +1,32 @@
+[data-name="pagination"] {
+  display: flex;
+  justify-content: center;
+  gap: 4px;
+}
+[data-name="btn-pagination"] {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+}
+[data-name="btn-pagination"]::after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #c1c1c1;
+}
+[data-name="btn-pagination"].active::after {
+  background: #333333;
+}
+[data-name="btn-pagination"].active::before {
+  content: "";
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 3px solid #333333;
+}

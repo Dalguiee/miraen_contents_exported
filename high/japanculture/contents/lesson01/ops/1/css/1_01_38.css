@@ -1,0 +1,84 @@
+/* .content-wrap .content-title-wrap {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 200px;
+  z-index: 9;
+} */
+
+.tab-contents-wrap {
+  flex: 1;
+  height: 100%;
+}
+
+.tab-contents-wrap .tab-content {
+  height: 100%;
+}
+
+.contents-title {
+  line-height: 52px;
+}
+
+.contents-title .title {
+  word-break: keep-all;
+}
+
+.contents-cont {
+  padding: 20px 20px 0;
+  height: calc(100% - 156px);
+}
+
+.contents {
+  display: flex;
+  flex-direction: column;
+}
+
+.contents .txt-box + .txt-box {
+  margin-top: 12px;
+}
+
+.contents .txt-box .num {
+  width: 36px;
+  height: 36px;
+  border-radius: 100%;
+  color: #fff;
+  background-color: #6291cc;
+  text-align: center;
+  font-size: 29px;
+  line-height: 36px;
+  position: absolute;
+  left: 0;
+  top: 7px;
+}
+
+.contents .txt-box {
+  line-height: 52px;
+}
+
+/* .content-wrap .content-contents-wrap .content-contents {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+} */
+
+.tab-content-1 .contents .txt-box {
+  padding-left: 44px;
+  position: relative;
+}
+
+.tab-content-2 .contents {
+  padding: 30px;
+  background-color: #dce6ef;
+  overflow-x: hidden;
+  overflow-y: auto;
+  height: calc(100% - 10px);
+}
+
+.tab-content-2 .contents .ex-txt {
+  color: var(--answer-red);
+}
+
+.tab-content-2 .contents-title {
+  padding-right: 200px;
+}

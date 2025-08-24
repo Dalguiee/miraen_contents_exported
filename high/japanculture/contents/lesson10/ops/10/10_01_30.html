@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>미래엔 일본 문화</title>
+    <script src="./../common/lib/jquery-3.7.1.min.js"></script>
+    <script src="./../common/lib/howler-2.1.3.min.js"></script>
+    <script src="./../common/lib/tailwind.js"></script>
+    <!-- 폰트 -->
+    <link href="./../common/font/suit/suit.css" rel="stylesheet" />
+    <link href="./../common/font/bmjua/bmjua.css" rel="stylesheet" />
+    <link
+      href="./../common/font/nanumsquare/nanumSquare.css"
+      rel="stylesheet"
+    />
+    <link href="./../common/font/notoSansJP/notoSansJP.css" rel="stylesheet" />
+    <link href="./../common/font/notoSansCS/notoSansCS.css" rel="stylesheet" />
+    <link href="./../common/css/tailwind.css" rel="stylesheet" />
+    <link href="./../common/css/fontStyle.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div id="wrap">
+      <!-- contents -->
+      <div class="relative w-full h-full pt-70">
+        <!-- title -->
+        <img
+          src="./images/10_01_30/title_culture.svg"
+          alt="관용표현문화 일본어 관용표현"
+          class="absolute left-0 w-361 h-51 top-10"
+        />
+
+        <!-- main -->
+        <div class="w-full px-20">
+          <!-- ======== page 1 ======== -->
+          <div data-name="page" class="flex flex-col w-full h-403">
+            <div
+              class="flex font-extrabold left-20 leading-52 text-40 f-nanum-s"
+            >
+              <img
+                src="./images/10_01_30/label_flower.svg"
+                alt="관용표현"
+                class="mt-12 me-8 w-30 h-25"
+              />
+              <div class="mb-8">
+                <p>일본어 관용구에는 그 의미를 그대로 파악하면 본래의 뜻과</p>
+                <p>달라 재미있는 것이 있습니다. 그중 신체 부위와 관련된 관용</p>
+                <p>표현을 알아봅시다.</p>
+              </div>
+            </div>
+            <div
+              class="bg-[#FFFBF1] pt-22 pl-20 pb-18 leading-52 f-nanum-s font-bold text-40"
+            >
+              <div class="flex">
+                <div class="w-12 h-12 mt-20 bg-black rounded-full me-10"></div>
+
+                <div>
+                  <p>다음 신체 부위와 관련된 관용 표현의 뜻을 유추하여</p>
+                  <p>알맞은 것끼리 선으로 연결해 봅시다.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ======== page 2 ======== -->
+          <div
+            data-name="page"
+            class="flex flex-col w-full h-403"
+            style="display: none"
+          >
+            <!-- header-btn -->
+            <div
+              class="absolute right-0 flex gap-6 top-13"
+              data-name="header-btn"
+            >
+              <img src="./images/10_01_30/popup_label1.svg" alt="" />
+              <button
+                data-name="btn-common"
+                class="btn_change_view"
+                onclick="contentUtil.setPopup(1)"
+              >
+                해석 보기
+              </button>
+            </div>
+            <div
+              class="flex flex-col flex-1 w-full font-bold leading-52 f-nanum-s text-40"
+            >
+              <div class="w-920 gap-10 flex mx-auto mb-4">
+                <div class="flex justify-center w-1/4 relative">
+                  <img
+                    class="w-148 h-140"
+                    src="./images/10_01_30/main_photo1.jpg"
+                    alt="관용표현1"
+                  />
+                  <button
+                    class="absolute right-10 bottom-10"
+                    data-name="btn-view"
+                    onclick="contentUtil.setPopup(3); contentUtil.setPhotoPopup(1);"
+                  ></button>
+                </div>
+                <div class="flex justify-center w-1/4 relative">
+                  <img
+                    class="w-148 h-140"
+                    src="./images/10_01_30/main_photo2.jpg"
+                    alt="관용표현2"
+                  />
+                  <button
+                    class="absolute right-10 bottom-10"
+                    data-name="btn-view"
+                    onclick="contentUtil.setPopup(3); contentUtil.setPhotoPopup(2);"
+                  ></button>
+                </div>
+                <div class="flex justify-center w-1/4 relative">
+                  <img
+                    class="w-148 h-140"
+                    src="./images/10_01_30/main_photo3.jpg"
+                    alt="관용표현3"
+                  />
+                  <button
+                    class="absolute right-10 bottom-10"
+                    data-name="btn-view"
+                    onclick="contentUtil.setPopup(3); contentUtil.setPhotoPopup(3);"
+                  ></button>
+                </div>
+                <div class="flex justify-center w-1/4 relative">
+                  <img
+                    class="w-148 h-140"
+                    src="./images/10_01_30/main_photo4.jpg"
+                    alt="관용표현4"
+                  />
+                  <button
+                    class="absolute right-10 bottom-10"
+                    data-name="btn-view"
+                    onclick="contentUtil.setPopup(3); contentUtil.setPhotoPopup(4);"
+                  ></button>
+                </div>
+              </div>
+              <!-- start -->
+              <div class="z-10 flex gap-8 mx-auto select-none w-920">
+                <div
+                  class="relative flex justify-center w-1/4 h-76 pt-8 bg-[#FFD79A] rounded-10"
+                >
+                  <div
+                    data-audio="10_01_30/156-01.mp3"
+                    class="text-center leading-52 text-40"
+                  >
+                    <p class="flex pt-12">
+                      <span class="font-medium f-noto">
+                        <span class="relative"
+                          >顔<span class="ruby">かお</span></span
+                        >が
+                        <span class="relative"
+                          >広<span class="ruby">ひろ</span></span
+                        >い
+                      </span>
+                    </p>
+                  </div>
+                  <div
+                    data-name="start_dot"
+                    data-value="1"
+                    class="absolute w-10 h-10 -translate-x-1/2 bg-black rounded-full pointer-events-none left-1/2 -bottom-20"
+                  ></div>
+                </div>
+
+                <div
+                  class="relative flex justify-center w-1/4 h-76 pt-8 bg-[#FFD79A] rounded-10"
+                >
+                  <div
+                    data-audio="10_01_30/156-02.mp3"
+                    class="text-center leading-52 text-40"
+                  >
+                    <p class="flex pt-12">
+                      <span class="font-medium f-noto"
+                        ><span class="relative"
+                          >足<span class="ruby">あし</span></span
+                        >を
+                        <span class="relative"
+                          >洗<span class="ruby">あら</span></span
+                        >う
+                      </span>
+                    </p>
+                  </div>
+                  <div
+                    data-name="start_dot"
+                    data-value="2"
+                    class="absolute w-10 h-10 -translate-x-1/2 bg-black rounded-full pointer-events-none left-1/2 -bottom-20"
+                  ></div>
+                </div>
+                <div
+                  class="relative flex justify-center w-1/4 h-76 pt-8 bg-[#FFD79A] rounded-10"
+                >
+                  <div
+                    data-audio="10_01_30/156-03.mp3"
+                    class="text-center leading-52 text-40"
+                  >
+                    <p class="flex pt-12">
+                      <span class="font-medium f-noto">
+                        <span class="relative"
+                          >口<span class="ruby">くち</span></span
+                        >が かたい
+                      </span>
+                    </p>
+                  </div>
+                  <div
+                    data-name="start_dot"
+                    data-value="3"
+                    class="absolute w-10 h-10 -translate-x-1/2 bg-black rounded-full pointer-events-none left-1/2 -bottom-20"
+                  ></div>
+                </div>
+                <div
+                  class="relative flex justify-center w-1/4 h-76 pt-8 bg-[#FFD79A] rounded-10"
+                >
+                  <div
+                    data-audio="10_01_30/156-04.mp3"
+                    class="text-center leading-52 text-40"
+                  >
+                    <p class="flex pt-12">
+                      <span class="font-medium f-noto">
+                        <span class="relative"
+                          >目<span class="ruby">め</span></span
+                        >が ない
+                      </span>
+                    </p>
+                  </div>
+                  <div
+                    data-name="start_dot"
+                    data-value="4"
+                    class="absolute w-10 h-10 -translate-x-1/2 bg-black rounded-full pointer-events-none left-1/2 -bottom-20"
+                  ></div>
+                </div>
+              </div>
+              <!-- 캔버스 -->
+              <div class="relative mx-auto w-920 h-110">
+                <canvas
+                  data-name="canvas"
+                  width="960"
+                  height="110"
+                  class="absolute top-0 left-0 show"
+                ></canvas>
+                <!-- 정답 캔버스 -->
+                <canvas
+                  data-name="canvas_answer"
+                  width="960"
+                  height="110"
+                  class="absolute top-0 left-0"
+                ></canvas>
+              </div>
+              <!-- end -->
+              <div class="z-10 flex gap-8 mx-auto select-none w-920">
+                <!-- --------- -->
+                <div class="relative flex flex-col items-center w-1/4">
+                  <div
+                    class="flex items-center justify-center w-full h-68 bg-[#F9C7C0] rounded-10 mb-4"
+                  >
+                    <span>손을 떼다</span>
+                    <div
+                      data-name="end_dot"
+                      data-value="2"
+                      class="absolute w-10 h-10 -translate-x-1/2 bg-black rounded-full pointer-events-none left-1/2 -top-20"
+                    ></div>
+                  </div>
+                </div>
+                <!-- --------- -->
+                <div class="relative flex flex-col items-center w-1/4">
+                  <div
+                    class="flex items-center justify-center w-full h-68 bg-[#F9C7C0] rounded-10 mb-4"
+                  >
+                    <span>매우 좋아하다</span>
+                    <div
+                      data-name="end_dot"
+                      data-value="4"
+                      class="absolute w-10 h-10 -translate-x-1/2 bg-black rounded-full pointer-events-none left-1/2 -top-20"
+                    ></div>
+                  </div>
+                </div>
+                <!-- --------- -->
+                <div class="relative flex flex-col items-center w-1/4">
+                  <div
+                    class="flex items-center justify-center w-full h-68 bg-[#F9C7C0] rounded-10 mb-4"
+                  >
+                    <span>발이 넓다 </span>
+                    <div
+                      data-name="end_dot"
+                      data-value="1"
+                      class="absolute w-10 h-10 -translate-x-1/2 bg-black rounded-full pointer-events-none left-1/2 -top-20"
+                    ></div>
+                  </div>
+                </div>
+                <!-- --------- -->
+                <div class="relative flex flex-col items-center w-1/4">
+                  <div
+                    class="flex items-center justify-center w-full h-68 bg-[#F9C7C0] rounded-10 mb-4"
+                  >
+                    <span>입이 무겁다</span>
+                    <div
+                      data-name="end_dot"
+                      data-value="3"
+                      class="absolute w-10 h-10 -translate-x-1/2 bg-black rounded-full pointer-events-none left-1/2 -top-20"
+                    ></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ======== page 3 ======== -->
+          <div
+            data-name="page"
+            class="flex flex-col w-full h-403 mx-auto"
+            style="display: none"
+          >
+            <!-- header-btn -->
+            <div
+              class="absolute right-0 flex gap-6 top-13"
+              data-name="header-btn"
+            >
+              <button
+                data-name="btn-common"
+                class="btn_change_view"
+                onclick="contentUtil.setPopup(2)"
+              >
+                보충 자료
+              </button>
+            </div>
+            <div
+              class="relative flex flex-col w-full h-full font-bold f-nanum-s text-40 leading-52"
+            >
+              <div class="">
+                <p class="ps-28">
+                  관용 표현은 그 사회의 습관이나 사고방식이 언어에 반영되어
+                </p>
+                <p>
+                  오랫동안 사용되어 온 표현이다. 대개 2개 이상의 요소가 결합
+                </p>
+                <p>하여 특수한 의미를 가지며, 일본어 관용 표현에는 특히 신체</p>
+                <p>부위를 활용한 표현이 많다.</p>
+              </div>
+              <div>
+                <p class="flex ps-28 pt-12">
+                  ‘<span
+                    data-audio="10_01_30/156-01.mp3"
+                    class="f-noto font-medium"
+                    ><span class="relative"
+                      >顔<span class="ruby">かお</span></span
+                    >が&nbsp;<span class="relative"
+                      >広<span class="ruby">ひろ</span></span
+                    >い</span
+                  >’는 ‘발이 넓다’, ‘<span
+                    data-audio="10_01_30/156-02.mp3"
+                    class="f-noto font-medium"
+                  >
+                    <span class="f-noto font-medium"
+                      ><span class="relative"
+                        >足<span class="ruby">あし</span></span
+                      >を&nbsp;<span class="relative"
+                        >洗<span class="ruby">あら</span></span
+                      >う</span
+                    > </span
+                  >’는 ‘나쁜 일에서 손을
+                </p>
+                <p class="flex pt-12">
+                  떼다’, ‘<span
+                    data-audio="10_01_30/156-03.mp3"
+                    class="f-noto font-medium"
+                    ><span class="relative"
+                      >口<span class="ruby">くち</span></span
+                    >が かたい</span
+                  >’는 ‘입이 무겁다’, ‘
+                  <span
+                    data-audio="10_01_30/156-04.mp3"
+                    class="f-noto font-medium"
+                  >
+                    <span class="relative">目<span class="ruby">め</span></span
+                    >が ない
+                  </span>
+                  ’는 ‘매우 좋아
+                </p>
+                <p>하다’라는 의미로 사용한다.</p>
+              </div>
+            </div>
+          </div>
+          <!-- ======== page 4 ======== -->
+          <div
+            data-name="page"
+            class="flex flex-col w-full h-403"
+            style="display: none"
+          >
+            <!-- header-btn -->
+            <div
+              class="absolute right-0 flex gap-6 top-13"
+              data-name="header-btn"
+            >
+              <button
+                data-name="btn-common"
+                class="btn_change_view"
+                onclick="contentUtil.setPopup(2)"
+              >
+                보충 자료
+              </button>
+            </div>
+            <div
+              class="relative flex flex-col w-full h-full font-bold f-nanum-s text-40 leading-52"
+            >
+              <div class="">
+                <p class="ps-28">
+                  이외에 우리나라 관용 표현과 비슷한 의미를 지닌 표현으로는
+                </p>
+                <p class="flex pt-12">
+                  ‘입이 가볍다’라는 의미의 ‘<span
+                    data-audio="10_01_30/156-05.mp3"
+                    class="f-noto font-medium"
+                    ><span class="relative"
+                      >口<span class="ruby">くち</span></span
+                    >が
+                    <span
+                      data-audio="10_01_30/156-06.mp3"
+                      class="f-noto font-medium"
+                    >
+                      <span class="relative"
+                        >軽<span class="ruby">かる</span></span
+                      >い</span
+                    ></span
+                  >’, ‘머리가 좋다’라는 의미의
+                </p>
+                <p class="flex pt-12">
+                  ‘<span
+                    data-audio="10_01_30/156-06.mp3"
+                    class="f-noto font-medium"
+                    ><span class="relative"
+                      >頭<span class="ruby">あたま</span></span
+                    >が いい</span
+                  >’ 등이 있다.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- pagination -->
+        <div class="mx-auto mb-10" data-name="pagination">
+          <button class="active" data-name="btn-pagination"></button>
+          <button
+            class=""
+            data-name="btn-pagination"
+            onclick="setTimeout(()=>{drawAnswerLines()},[1])"
+          ></button>
+          <button class="" data-name="btn-pagination"></button>
+          <button class="" data-name="btn-pagination"></button>
+        </div>
+      </div>
+      <!-- popup -->
+      <div id="popup-wrap" style="display: none">
+        <!-- 해석 보기  -->
+        <div data-name="popup" data-popup="1" style="display: none">
+          <div data-name="popup-header" class="relative">
+            <div data-name="popup-title">해석 보기</div>
+            <button
+              data-name="popup-close"
+              onclick="contentUtil.setPopup()"
+            ></button>
+            <!-- explan -->
+            <div class="absolute flex top-5 right-52 gap-12">
+              <img src="./images/10_01_30/popup_label2.svg" alt="" />
+              <button
+                data-name="btn-common-light"
+                data-exreset="1"
+                onclick="contentUtil.showExplan()"
+              >
+                해석 보기
+              </button>
+              <button
+                data-name="btn-common-light"
+                data-explan="1"
+                onclick="contentUtil.hideExplan()"
+                style="display: none"
+              >
+                해석 감추기
+              </button>
+            </div>
+          </div>
+          <div
+            data-name="popup-body"
+            class="flex flex-col flex-1 gap-20 mt-16 mb-10 font-bold ms-26 leading-52 text-40 f-nanum-s me-6"
+          >
+            <div class="flex flex-col gap-20">
+              <div class="gap-20 pt-17 flex">
+                <p data-audio="10_01_30/156-01.mp3" class="flex">
+                  <span class="f-noto font-medium">
+                    <span class="relative"
+                      >顔<span class="ruby">かお</span></span
+                    >が&nbsp;
+                    <span class="relative"
+                      >広<span class="ruby">ひろ</span></span
+                    >い
+                  </span>
+                </p>
+                <p
+                  style="display: none"
+                  data-explan="1"
+                  class="f-nanum-s font-bold text-blue"
+                >
+                  발이 넓다
+                </p>
+              </div>
+              <div class="gap-20 flex">
+                <p data-audio="10_01_30/156-02.mp3" class="flex">
+                  <span class="f-noto font-medium">
+                    <span class="relative"
+                      >足<span class="ruby">あし</span></span
+                    >を&nbsp;
+                    <span class="relative"
+                      >洗<span class="ruby">あら</span></span
+                    >う
+                  </span>
+                </p>
+                <p
+                  style="display: none"
+                  data-explan="1"
+                  class="f-nanum-s font-bold text-blue"
+                >
+                  손을 떼다
+                </p>
+              </div>
+              <div class="gap-20 flex">
+                <p data-audio="10_01_30/156-03.mp3" class="f-noto font-medium">
+                  <span class="relative">口<span class="ruby">くち</span></span
+                  >が かたい
+                </p>
+                <p
+                  style="display: none"
+                  data-explan="1"
+                  class="f-nanum-s font-bold text-blue"
+                >
+                  입이 무겁다
+                </p>
+              </div>
+              <div class="gap-20 flex">
+                <p data-audio="10_01_30/156-04.mp3" class="f-noto font-medium">
+                  <span class="relative">目<span class="ruby">め</span></span
+                  >が ない
+                </p>
+                <p
+                  style="display: none"
+                  data-explan="1"
+                  class="f-nanum-s font-bold text-blue"
+                >
+                  매우 좋아하다
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 보충 자료 -->
+        <div data-name="popup" data-popup="2" style="display: none">
+          <div data-name="popup-header">
+            <div data-name="popup-title">보충 자료</div>
+            <button
+              data-name="popup-close"
+              onclick="contentUtil.setPopup()"
+            ></button>
+          </div>
+          <div
+            data-name="popup-body"
+            class="flex flex-col flex-1 mt-16 ms-26 f-nanum-s me-6"
+          >
+            <!-- title -->
+            <div class="flex items-center mb-10 h-55">
+              <img
+                src="./../common/images/popup_titlemark_primary.svg"
+                alt=""
+                class="w-35 h-55 me-10"
+              />
+              <div class="flex font-extrabold text-42 text-[#41674B]">
+                <span>동물과 관련된 관용 표현</span>
+              </div>
+            </div>
+            <!-- text -->
+            <div class="mb-10 font-bold text-40 leading-52">
+              <div class="flex flex-col gap-20">
+                <div class="flex">
+                  <div
+                    class="w-12 h-12 mt-20 bg-black rounded-full me-10"
+                  ></div>
+                  <span class="font-medium f-noto">
+                    <span class="relative"
+                      >猫<span class="ruby">ねこ</span></span
+                    >を かぶる</span
+                  >
+                  <span data-name="colon-black">:</span>
+                  <span>얌전한 척 내숭떨다</span>
+                </div>
+                <div class="flex">
+                  <div
+                    class="w-12 h-12 mt-20 bg-black rounded-full me-10"
+                  ></div>
+                  <span class="font-medium f-noto">
+                    <span class="relative"
+                      >馬<span class="ruby">うま</span></span
+                    >が
+                    <span class="relative">合<span class="ruby">あ</span></span
+                    >う
+                  </span>
+                  <span data-name="colon-black">:</span>
+                  <span>성격이 맞다</span>
+                </div>
+                <div class="flex">
+                  <div
+                    class="w-12 h-12 mt-20 bg-black rounded-full me-10"
+                  ></div>
+                  <span class="font-medium f-noto"
+                    ><span class="relative"
+                      >雀<span class="ruby">すずめ</span></span
+                    >の
+                    <span class="relative"
+                      >涙<span class="ruby">なみだ</span></span
+                    >
+                  </span>
+                  <span data-name="colon-black">:</span>
+                  <span>매우 적은 분량</span>
+                </div>
+                <div class="flex">
+                  <div
+                    class="w-12 h-12 mt-20 bg-black rounded-full me-10"
+                  ></div>
+                  <span class="font-medium f-noto"
+                    ><span class="relative"
+                      >猫<span class="ruby">ねこ</span></span
+                    >の
+                    <span class="relative">手<span class="ruby">て</span></span
+                    >も
+                    <span class="relative">借<span class="ruby">か</span></span
+                    >りたい</span
+                  >
+                  <span data-name="colon-black">:</span>
+                  <span>매우 바쁘다</span>
+                </div>
+                <div class="flex">
+                  <div
+                    class="w-12 h-12 mt-20 bg-black rounded-full me-10"
+                  ></div>
+                  <span class="font-medium f-noto">
+                    <span class="relative"
+                      ><span class="f-noto-cs">鯖</span
+                      ><span class="ruby">さば</span></span
+                    >を
+                    <span class="relative">読<span class="ruby">よ</span></span
+                    >む</span
+                  >
+                  <span data-name="colon-black">:</span>
+                  <span>연령이나 수량을 속이다</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 사진 팝업창 -->
+        <div data-name="popup" data-popup="3" style="display: none">
+          <div data-name="popup-header">
+            <div data-name="popup-title">사진 팝업창</div>
+            <button
+              data-name="popup-close"
+              onclick="contentUtil.setPopup()"
+            ></button>
+          </div>
+          <div
+            data-name="popup-body"
+            class="flex items-center justify-center w-full h-full gap-16"
+          >
+            <div
+              class="flex flex-col items-center w-608 h-402"
+              data-name="popup_photo_wrap"
+            >
+              <div class="w-full overflow-x-hidden overflow-y-auto h-400 pe-4">
+                <img
+                  src="./images/10_01_30/popup_photo1.jpg"
+                  alt="관용표현1"
+                  class="object-contain min-w-608 rounded-10"
+                  data-name="popup_photo"
+                />
+                <img
+                  src="./images/10_01_30/popup_photo2.jpg"
+                  alt="관용표현2"
+                  class="object-contain min-w-608 rounded-10"
+                  data-name="popup_photo"
+                  style="display: none"
+                />
+                <img
+                  src="./images/10_01_30/popup_photo3.jpg"
+                  alt="관용표현3"
+                  class="object-contain min-w-608 rounded-10"
+                  data-name="popup_photo"
+                  style="display: none"
+                />
+                <img
+                  src="./images/10_01_30/popup_photo4.jpg"
+                  alt="관용표현4"
+                  class="object-contain min-w-608 rounded-10"
+                  data-name="popup_photo"
+                  style="display: none"
+                />
+              </div>
+              <!-- <div
+                class="flex mt-8 font-bold f-nanum-s h-52 text-40 leading-52 shrink-0"
+              >
+                <div data-name="popup_photo_text">양보할 때</div>
+                <div data-name="popup_photo_text">권유할 때</div>
+                <div data-name="popup_photo_text">물건을 건넬 때</div>
+                <div data-name="popup_photo_text">허락·승낙할 때</div>
+              </div> -->
+            </div>
+            <div class="w-266 h-402">
+              <div class="flex flex-wrap w-full gap-10">
+                <button
+                  data-name="btn-popup_photo"
+                  class="w-128 h-72 active"
+                  onclick="contentUtil.setPhotoPopup(1)"
+                >
+                  <img
+                    src="./images/10_01_30/popup_btn_photo1.jpg"
+                    alt="관용표현1"
+                  />
+                </button>
+                <button
+                  data-name="btn-popup_photo"
+                  class="w-128 h-72"
+                  onclick="contentUtil.setPhotoPopup(2)"
+                >
+                  <img
+                    src="./images/10_01_30/popup_btn_photo2.jpg"
+                    alt="관용표현2"
+                  />
+                </button>
+                <button
+                  data-name="btn-popup_photo"
+                  class="w-128 h-72"
+                  onclick="contentUtil.setPhotoPopup(3)"
+                >
+                  <img
+                    src="./images/10_01_30/popup_btn_photo3.jpg"
+                    alt="관용표현3"
+                  />
+                </button>
+                <button
+                  data-name="btn-popup_photo"
+                  class="w-128 h-72"
+                  onclick="contentUtil.setPhotoPopup(4)"
+                >
+                  <img
+                    src="./images/10_01_30/popup_btn_photo4.jpg"
+                    alt="관용표현4"
+                  />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ======================임시버튼============================== -->
+      <div style="display: none" class="answer_btn absolute bottom-0 right-0">
+        <button class="btn-all-answer text-12">정답 보기</button>
+        <button class="btn-all-reset text-12" style="display: none">
+          다시 풀기
+        </button>
+      </div>
+      <!-- ======================================================== -->
+    </div>
+  </body>
+  <script type="text/javascript">
+    const page = {
+      isAnswer: true,
+      isVocabulary: false,
+      showAnswer: () => {
+        contentUtil.showAnswer();
+        canversReset();
+        $(`[data-name="canvas_answer"]`).addClass("show");
+      },
+      hideAnswer: () => {
+        contentUtil.hideAnswer();
+        $(`[data-name="canvas_answer"]`).removeClass("show");
+      },
+      showVocabulary: () => {},
+    };
+  </script>
+  <script src="./../common/js/tailwind.config.js"></script>
+  <script src="./../common/js/script.js"></script>
+  <script src="./../common/js/dotToDot.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      // contentUtil.setPage(2);
+
+      $(`[data-name="btn-pagination"]`).on("click", function () {
+        if ($(this).index() === 1) {
+          $(".answer_btn").css("display", "block");
+        } else {
+          $(".answer_btn").css("display", "none");
+        }
+      });
+    });
+
+    // 캔버스 리셋
+    const canversReset = () => {
+      $(`[data-name="canvas"]`).remove();
+      $(
+        '<canvas data-name="canvas" width="960" height="98" class="absolute top-0 left-0 show"></canvas>'
+      ).insertBefore(`[data-name="canvas_answer"]`);
+      dotToDotActivate();
+    };
+  </script>
+</html>

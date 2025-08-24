@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>미래엔 일본 문화</title>
+    <script src="./../common/lib/jquery-3.7.1.min.js"></script>
+    <script src="./../common/lib/howler-2.1.3.min.js"></script>
+    <script src="./../common/lib/tailwind.js"></script>
+    <!-- 폰트 -->
+    <link href="./../common/font/suit/suit.css" rel="stylesheet" />
+    <link href="./../common/font/bmjua/bmjua.css" rel="stylesheet" />
+    <link
+      href="./../common/font/nanumsquare/nanumSquare.css"
+      rel="stylesheet"
+    />
+    <link href="./../common/font/notoSansJP/notoSansJP.css" rel="stylesheet" />
+    <link href="./../common/css/tailwind.css" rel="stylesheet" />
+    <link href="./../common/css/fontStyle.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div id="wrap">
+      <!-- contents -->
+      <div class="relative w-full h-full pt-68">
+        <!-- title -->
+        <img
+          src="./images/1_01_18/title_theme_2.svg"
+          alt="문화 들여다보기1 주택의 종류와 특징"
+          class="absolute w-528 h-49 top-10"
+        />
+        <div class="absolute right-0 flex gap-6 top-13">
+          <!-- 페이지 1 버튼 -->
+          <button
+            data-name="btn-common"
+            onclick="contentUtil.setPopup(1);"
+            class="btn-change-view btn-change-view-1"
+          >
+            해설 보기
+          </button>
+          <button
+            data-name="btn-common"
+            onclick="contentUtil.setPopup(2); contentUtil.setPhotoPopup(1);"
+            class="btn-change-view btn-change-view-1"
+          >
+            추가 사진
+          </button>
+        </div>
+
+        <!-- main -->
+        <div class="flex flex-col w-full h-full">
+          <div
+            class="flex flex-col mb-8 w-full h-404 leading-52 ps-20 whitespace-nowrap"
+          >
+            <div class="flex items-center mb-4">
+              <img
+                src="./../common/images/index_pink_2.svg"
+                alt="번호 1"
+                class="w-40 h-40 me-4"
+              />
+              <span class="font-extrabold f-nanum-s text-40"
+                >일본의 독특한 음식</span
+              >
+            </div>
+
+            <!-- 페이지 1 -->
+            <div data-name="page">
+              <!-- 타이틀 말상자 -->
+              <div
+                class="flex items-center justify-start mb-4 font-bold f-nanum-s text-40"
+              >
+                <!-- <div data-name="number-6" class="bg-[#C84935]"></div> -->
+                <div
+                  class="flex justify-center items-center mr-6 w-353 h-99 bg-no-repeat bg-cover bg-[center_center] bg-[url(./images/1_01_29/title_box_1.png)]"
+                >
+                  <span class="flex pt-12 font-extrabold"
+                    >소 혀 요리(<span
+                      data-audio="1_01_29/022-01.mp3"
+                      class="font-extrabold f-noto"
+                      ><span class="relative"
+                        >牛<span class="font-bold ruby">ぎゅう</span></span
+                      >タン</span
+                    >)</span
+                  >
+                </div>
+              </div>
+
+              <!-- 컨텍스트 -->
+              <div class="flex gap-55">
+                <div class="flex flex-col font-bold f-nanum-s text-40">
+                  <div>
+                    <p class="flex ps-28">소의 혀를 양념해 요리한 것으로,</p>
+                  </div>
+                  <div>
+                    <p>센다이의 두껍게 썬 소의 혀 구이가</p>
+                    <p>가장 유명하다.</p>
+                  </div>
+                </div>
+
+                <!-- 이미지 -->
+                <div
+                  class="relative bottom-0 flex flex-col flex-shrink-0 gap-10 w-370 h-fit"
+                >
+                  <img
+                    class="object-cover w-full rounded-10"
+                    src="./images/1_01_29/page_1_main_img_1.png"
+                    alt=""
+                  />
+                  <button
+                    data-name="btn-view"
+                    class="absolute bottom-10 right-10"
+                    onclick="contentUtil.setPopup(3); contentUtil.setPhotoPopup(3);"
+                  ></button>
+                </div>
+              </div>
+            </div>
+
+            <!-- 페이지 2 -->
+            <div data-name="page" style="display: none">
+              <!-- 타이틀 말상자 -->
+              <div
+                class="flex items-center justify-start mb-4 font-bold f-nanum-s text-40"
+              >
+                <!-- <div data-name="number-6" class="bg-[#C84935]"></div> -->
+                <div
+                  class="flex justify-center items-center mr-6 w-343 h-78 bg-no-repeat bg-cover bg-[center_center] bg-[url(./images/1_01_29/title_box_2.png)]"
+                >
+                  <span class="flex font-extrabold"
+                    >말고기 회(<span
+                      data-audio="1_01_29/022-02.mp3"
+                      class="font-extrabold f-noto relative bottom-3"
+                      >ばさし</span
+                    >)</span
+                  >
+                </div>
+              </div>
+
+              <!-- 컨텍스트 -->
+              <div class="flex gap-17">
+                <div class="flex flex-col font-bold f-nanum-s text-40">
+                  <div>
+                    <p class="flex ps-28">말의 다양한 부위를 얇게 썰어 양파,</p>
+                  </div>
+                  <div>
+                    <p>생강, 고추냉이 등과 함께 날것으로</p>
+                    <p>먹는다. 구마모토의 향토 요리로 유명</p>
+                    <p>하다.</p>
+                  </div>
+                </div>
+
+                <!-- 이미지 -->
+                <div
+                  class="relative bottom-0 flex flex-col flex-shrink-0 gap-10 mt-21 w-370 h-fit"
+                >
+                  <img
+                    class="object-cover w-full rounded-10"
+                    src="./images/1_01_29/page_2_main_img_1.png"
+                    alt=""
+                  />
+                  <button
+                    data-name="btn-view"
+                    class="absolute bottom-10 right-10"
+                    onclick="contentUtil.setPopup(3); contentUtil.setPhotoPopup(4);"
+                  ></button>
+                </div>
+              </div>
+            </div>
+
+            <!-- 페이지 3 -->
+            <div data-name="page" style="display: none">
+              <!-- 타이틀 말상자 -->
+              <div
+                class="flex items-center justify-start mb-4 font-bold f-nanum-s text-40"
+              >
+                <!-- <div data-name="number-6" class="bg-[#C84935]"></div> -->
+                <div
+                  class="flex justify-center items-center mr-6 w-370 h-78 bg-no-repeat bg-cover bg-[center_center] bg-[url(./images/1_01_29/title_box_3.png)]"
+                >
+                  <span class="flex font-extrabold"
+                    >우메보시(<span
+                      data-audio="1_01_29/022-03.mp3"
+                      class="font-extrabold f-noto relative bottom-3"
+                      >うめぼし</span
+                    >)</span
+                  >
+                </div>
+              </div>
+
+              <!-- 컨텍스트 -->
+              <div class="flex gap-35">
+                <div class="flex flex-col font-bold f-nanum-s text-40">
+                  <div>
+                    <p class="flex ps-28">매실을 소금에 절이고 건조 과정을</p>
+                  </div>
+                  <div>
+                    <p>거쳐 만드는 매실장아찌이다. 새콤</p>
+                    <p>하면서 짠맛이 나며 보존성이 매우</p>
+                    <p>높다.</p>
+                  </div>
+                </div>
+
+                <!-- 이미지 -->
+                <div
+                  class="relative bottom-0 flex flex-col flex-shrink-0 gap-10 mt-21 w-370 h-fit"
+                >
+                  <img
+                    class="object-cover w-full rounded-10"
+                    src="./images/1_01_29/page_3_main_img_1.png"
+                    alt=""
+                  />
+                  <button
+                    data-name="btn-view"
+                    class="absolute bottom-10 right-10"
+                    onclick="contentUtil.setPopup(3); contentUtil.setPhotoPopup(5);"
+                  ></button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 페이지네이션 -->
+          <div
+            class="absolute -translate-x-1/2 left-1/2 bottom-10"
+            data-name="pagination"
+          >
+            <button class="active" data-name="btn-pagination"></button>
+            <button class="" data-name="btn-pagination"></button>
+            <button class="" data-name="btn-pagination"></button>
+          </div>
+        </div>
+      </div>
+      <!-- popup -->
+      <div id="popup-wrap" style="display: none">
+        <!-- 페이지 1 해설 보기 -->
+        <div data-name="popup" data-popup="1" style="display: none">
+          <div data-name="popup-header">
+            <div data-name="popup-title">해설 보기</div>
+            <button
+              data-name="popup-close"
+              onclick="contentUtil.setPopup()"
+            ></button>
+          </div>
+          <div
+            data-name="popup-body"
+            class="relative h-full pt-32 mb-10 font-bold ms-26 f-nanum-s me-6 leading-52 text-40"
+          >
+            <div class="flex flex-col">
+              <div class="flex items-center mb-10 h-55">
+                <img
+                  src="./../common/images/popup_titlemark_primary.svg"
+                  alt=""
+                  class="w-35 h-55 me-10"
+                />
+                <div class="font-extrabold text-42 text-[#F25F7C] flex">
+                  <span class="flex font-extrabold"
+                    >소 혀 요리(<span class="font-extrabold f-noto"
+                      ><span class="relative"
+                        >牛<span class="font-bold ruby">ぎゅう</span></span
+                      >タン</span
+                    >)</span
+                  >
+                </div>
+              </div>
+              <div class="">
+                <p class="flex">
+                  소 혀 요리의 ‘<span class="font-medium f-noto">タン</span>’은
+                  혀를 뜻하는 ‘tongue’에서 온 것
+                </p>
+                <p>으로, 소의 혀 중에서도 질기지 않은 가운데 부분만 구워</p>
+                <p>식감이 부드러운 요리로 알려져 있다.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 페이지 1 추가 사진 -->
+        <div data-name="popup" data-popup="2" style="display: none">
+          <div data-name="popup-header">
+            <div data-name="popup-title">추가 사진</div>
+            <button
+              data-name="popup-close"
+              onclick="contentUtil.setPopup()"
+            ></button>
+          </div>
+          <div
+            data-name="popup-body"
+            class="flex items-center justify-center w-full h-full gap-16"
+          >
+            <div
+              class="flex flex-col items-center w-608 h-402"
+              data-name="popup_photo_wrap"
+            >
+              <div class="w-full overflow-x-hidden overflow-y-auto pe-4">
+                <img
+                  src="./images/1_01_29/page_1_popup_photo1.jpg"
+                  alt="1"
+                  class="object-contain w-full rounded-10"
+                  data-name="popup_photo"
+                />
+                <img
+                  src="./images/1_01_29/page_1_extra_photo_popup_img_2.png"
+                  alt="2"
+                  class="object-contain min-w-608 rounded-10"
+                  data-name="popup_photo"
+                  style="display: none"
+                />
+              </div>
+              <div
+                class="flex mt-8 font-bold f-nanum-s text-40 leading-52 shrink-0"
+              >
+                <span class="text-blue" data-name="popup_photo_text"
+                  >소 혀 양념 고기</span
+                >
+                <span
+                  class="text-blue"
+                  data-name="popup_photo_text"
+                  style="display: none"
+                  >센다이의 구운 소 혀 고기</span
+                >
+              </div>
+            </div>
+            <div class="w-266 h-402">
+              <div class="flex flex-wrap w-full gap-10">
+                <button
+                  data-name="btn-popup_photo"
+                  class="w-128 h-72 active"
+                  onclick="contentUtil.setPhotoPopup(1)"
+                >
+                  <img
+                    src="./images/1_01_29/page_1_extra_photo_popup_img_1.png"
+                    alt="1"
+                  />
+                </button>
+                <button
+                  data-name="btn-popup_photo"
+                  class="w-128 h-72"
+                  onclick="contentUtil.setPhotoPopup(2)"
+                >
+                  <img
+                    src="./images/1_01_29/page_1_extra_photo_popup_img_2.png"
+                    alt="2"
+                  />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 페이지 1~3 사진 팝업창 -->
+        <div data-name="popup" data-popup="3" style="display: none">
+          <div data-name="popup-header">
+            <div data-name="popup-title">사진 팝업창</div>
+            <button
+              data-name="popup-close"
+              onclick="contentUtil.setPopup()"
+            ></button>
+          </div>
+          <div
+            data-name="popup-body"
+            class="flex items-center justify-center w-full h-full gap-16"
+          >
+            <div
+              class="flex flex-col items-center w-608 h-402"
+              data-name="popup_photo_wrap"
+            >
+              <div class="w-full overflow-x-hidden overflow-y-auto pe-4">
+                <img
+                  src="./images/1_01_29/photo_popup_img_1.png"
+                  alt="1"
+                  class="object-contain min-w-608 rounded-10"
+                  data-name="popup_photo"
+                />
+                <img
+                  src="./images/1_01_29/photo_popup_img_2.png"
+                  alt="2"
+                  class="object-contain min-w-608 rounded-10"
+                  data-name="popup_photo"
+                  style="display: none"
+                />
+                <img
+                  src="./images/1_01_29/photo_popup_img_3.png"
+                  alt="3"
+                  class="object-contain min-w-608 rounded-10"
+                  data-name="popup_photo"
+                />
+              </div>
+              <div
+                class="flex mt-8 font-bold f-nanum-s text-40 h-52 leading-52 shrink-0"
+              >
+                <span data-name="popup_photo_text" class="flex pt-12"
+                  >소 혀 요리(<span
+                    data-audio="1_01_29/022-01.mp3"
+                    class="font-medium f-noto relative bottom-3"
+                    ><span class="relative"
+                      >牛<span class="ruby">ぎゅう</span></span
+                    >タン</span
+                  >)</span
+                >
+                <span data-name="popup_photo_text" style="display: none"
+                  >말고기 회(<span
+                    data-audio="1_01_29/022-02.mp3"
+                    class="font-medium f-noto relative bottom-3"
+                    >ばさし</span
+                  >)</span
+                >
+                <span data-name="popup_photo_text" style="display: none"
+                  >우메보시(<span
+                    data-audio="1_01_29/022-03.mp3"
+                    class="font-medium f-noto relative bottom-3"
+                    >うめぼし</span
+                  >)</span
+                >
+              </div>
+            </div>
+            <div class="w-266 h-402">
+              <div class="flex flex-wrap w-full gap-10">
+                <button
+                  data-name="btn-popup_photo"
+                  class="w-128 h-72 active"
+                  onclick="contentUtil.setPhotoPopup(3)"
+                >
+                  <img src="./images/1_01_29/photo_popup_img_1.png" alt="1" />
+                </button>
+                <button
+                  data-name="btn-popup_photo"
+                  class="w-128 h-72"
+                  onclick="contentUtil.setPhotoPopup(4)"
+                >
+                  <img src="./images/1_01_29/photo_popup_img_2.png" alt="2" />
+                </button>
+                <button
+                  data-name="btn-popup_photo"
+                  class="w-128 h-72"
+                  onclick="contentUtil.setPhotoPopup(5)"
+                >
+                  <img src="./images/1_01_29/photo_popup_img_3.png" alt="3" />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript">
+    const page = {
+      isAnswer: false,
+      isVocabulary: false,
+      showAnswer: () => {},
+      hideAnswer: () => {},
+      showVocabulary: () => {},
+    };
+  </script>
+  <script src="./../common/js/tailwind.config.js"></script>
+  <script src="./../common/js/script.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      // contentUtil.setPopup(3);
+      $(`[data-name="btn-pagination"]`).on("click", function () {
+        console.log($(this).index());
+        if ($(this).index() === 0) {
+          $(".btn-change-view").hide();
+          $(".btn-change-view-1").show();
+        } else if ($(this).index() === 1) {
+          $(".btn-change-view").hide();
+          $(".btn-change-view-2").show();
+        } else if ($(this).index() === 2) {
+          $(".btn-change-view").hide();
+          $(".btn-change-view-3").show();
+          $(".btn-change-view-3").show();
+        }
+      });
+    });
+  </script>
+</html>

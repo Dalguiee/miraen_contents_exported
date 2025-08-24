@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>미래엔 일본 문화</title>
+    <script src="./../common/lib/jquery-3.7.1.min.js"></script>
+    <script src="./../common/lib/howler-2.1.3.min.js"></script>
+    <script src="./../common/lib/tailwind.js"></script>
+    <!-- 폰트 -->
+    <link href="./../common/font/suit/suit.css" rel="stylesheet" />
+    <link href="./../common/font/bmjua/bmjua.css" rel="stylesheet" />
+    <link
+      href="./../common/font/nanumsquare/nanumSquare.css"
+      rel="stylesheet"
+    />
+    <link href="./../common/font/notoSansJP/notoSansJP.css" rel="stylesheet" />
+    <link href="./../common/css/tailwind.css" rel="stylesheet" />
+    <link href="./../common/css/fontStyle.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div id="wrap">
+      <!-- contents -->
+      <div class="relative w-full h-full pt-60">
+        <!-- title -->
+        <img
+          src="./../common/images/title_digital.svg"
+          alt="디지털 활동"
+          class="absolute h-42 w-261 top-10"
+        />
+
+        <!-- main -->
+        <div class="flex flex-col w-full h-full px-20 leading-52">
+          <div class="mb-10">
+            <div class="font-extrabold text-40 f-nanum-s">
+              <p>일본 고등학생에게 인기 있는 수학여행지를 검색해 봅시다.</p>
+            </div>
+          </div>
+          <div
+            class="border-4 w-full h-345 border-[#3589D7] rounded-10 py-10 ps-20 pe-4 mb-8"
+          ></div>
+          <div class="ms-auto">
+            <button
+              data-name="btn-common"
+              onclick="contentUtil.setPopup(1); audioPlay(audio, [`./../common/media/mp3/showAnswer.mp3`]);"
+            >
+              예시 답안
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- popup -->
+      <div id="popup-wrap" style="display: none">
+        <!-- 예시 답안 -->
+        <div data-name="popup" data-popup="1" style="display: none">
+          <div data-name="popup-header">
+            <div data-name="popup-title">예시 답안</div>
+            <button
+              data-name="popup-close"
+              onclick="contentUtil.setPopup()"
+            ></button>
+          </div>
+          <div
+            data-name="popup-body"
+            class="flex-1 mt-16 mb-10 ms-26 f-nanum-s me-6"
+          >
+            <div
+              class="flex flex-col w-full mb-6 font-bold leading-42 text-32 f-nanum-s"
+            >
+              <!-- table -->
+              <!-- th -->
+              <div class="flex w-full">
+                <div
+                  class="flex items-center bg-[#B3CFEA] justify-center rounded-tl-10 py-15 min-w-92 border-r-1 border-t-3 boder-b-1 border-l-3 border-[#9DB9D3]"
+                >
+                  <span class="text-center">순위</span>
+                </div>
+                <div
+                  class="flex items-center bg-[#B3CFEA] justify-center min-w-269 py-15 border-[#9DB9D3] border-t-3 border-r-1 boder-b-1"
+                >
+                  <span class="text-center">여행지</span>
+                </div>
+                <div
+                  class="flex items-center bg-[#B3CFEA] justify-center min-w-269 py-15 border-[#9DB9D3] border-t-3 border-r-1 boder-b-1"
+                >
+                  <span class="text-center">건수</span>
+                </div>
+                <div
+                  class="flex items-center bg-[#B3CFEA] justify-center rounded-tr-10 border-t-3 border-r-3 boder-b-1 py-15 border-[#9DB9D3] min-w-269"
+                >
+                  비율
+                </div>
+              </div>
+              <!-- td 순위 1 -->
+              <div class="flex w-full">
+                <div class="flex items-stretch h-72">
+                  <!-- ------- -->
+                  <div
+                    class="flex items-center justify-center w-92 border-r-1 border-l-3 border-b-1 border-[#B3CFEA] bg-white"
+                  >
+                    <div
+                      class="flex items-center justify-center w-full h-full rounded-8"
+                    >
+                      <span class="text-center text-red">
+                        <p>1</p>
+                      </span>
+                    </div>
+                  </div>
+                  <!-- ------- -->
+                  <div
+                    class="flex justify-center w-269 border-r-1 border-b-1 border-[#B3CFEA] items-stretch bg-white"
+                  >
+                    <div
+                      class="flex items-center justify-center w-full h-full rounded-8"
+                    >
+                      <span class="text-red">오사카</span>
+                    </div>
+                  </div>
+                  <!-- ------- -->
+                  <div
+                    class="flex justify-center w-269 border-r-1 border-b-1 border-[#B3CFEA] items-stretch bg-white"
+                  >
+                    <div
+                      class="flex items-center justify-center w-full h-full rounded-8"
+                    >
+                      <span class="text-red">299</span>
+                    </div>
+                  </div>
+                  <!-- ------- -->
+                  <div
+                    class="flex items-stretch justify-center border-b-1 border-r-3 w-269 border-[#B3CFEA] bg-white"
+                  >
+                    <div
+                      class="flex items-center justify-center w-full h-full rounded-8"
+                    >
+                      <span class="text-red">13.5%</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- td 순위 2 -->
+              <div class="flex w-full">
+                <div class="flex items-stretch h-72">
+                  <!-- ------- -->
+                  <div
+                    class="flex items-center justify-center w-92 border-r-1 border-l-3 border-b-1 border-[#B3CFEA] bg-white"
+                  >
+                    <div
+                      class="flex items-center justify-center w-full h-full rounded-8"
+                    >
+                      <div class="text-center text-red">
+                        <p>2</p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- ------- -->
+                  <div
+                    class="flex justify-center w-269 border-r-1 border-b-1 border-[#B3CFEA] items-stretch bg-white"
+                  >
+                    <div
+                      class="flex items-center justify-center w-full h-full rounded-8"
+                    >
+                      <span class="text-red">교토</span>
+                    </div>
+                  </div>
+                  <!-- ------- -->
+                  <div
+                    class="flex justify-center w-269 border-r-1 border-b-1 border-[#B3CFEA] items-stretch bg-white"
+                  >
+                    <div
+                      class="flex items-center justify-center w-full h-full rounded-8"
+                    >
+                      <span class="text-red">286</span>
+                    </div>
+                  </div>
+                  <!-- ------- -->
+                  <div
+                    class="flex items-stretch justify-center border-b-1 border-r-3 w-269 border-[#B3CFEA] bg-white"
+                  >
+                    <div
+                      class="flex items-center justify-center w-full h-full rounded-8"
+                    >
+                      <span class="text-red">12.9%</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- td 순위 3 -->
+              <div class="flex w-full">
+                <div class="flex items-stretch h-72">
+                  <!-- ------- -->
+                  <div
+                    class="flex items-center justify-center w-92 border-r-1 border-l-3 border-b-1 border-[#B3CFEA] bg-white"
+                  >
+                    <div
+                      class="flex items-center justify-center w-full h-full rounded-8"
+                    >
+                      <div class="text-center text-red">
+                        <p>3</p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- ------- -->
+                  <div
+                    class="flex justify-center w-269 border-r-1 border-b-1 border-[#B3CFEA] items-stretch bg-white"
+                  >
+                    <div
+                      class="flex items-center justify-center w-full h-full rounded-8"
+                    >
+                      <span class="text-red">오키나와</span>
+                    </div>
+                  </div>
+                  <!-- ------- -->
+                  <div
+                    class="flex justify-center w-269 border-r-1 border-b-1 border-[#B3CFEA] items-stretch bg-white"
+                  >
+                    <div
+                      class="flex items-center justify-center w-full h-full rounded-8"
+                    >
+                      <span class="text-red">175</span>
+                    </div>
+                  </div>
+                  <!-- ------- -->
+                  <div
+                    class="flex items-stretch justify-center border-b-1 border-r-3 w-269 border-[#B3CFEA] bg-white"
+                  >
+                    <div
+                      class="flex items-center justify-center w-full h-full rounded-8"
+                    >
+                      <span class="text-red">7.9%</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- td 순위 4 -->
+              <div class="flex w-full">
+                <div class="flex items-stretch h-72">
+                  <!-- ------- -->
+                  <div
+                    class="flex items-center justify-center w-92 border-r-1 border-l-3 border-b-1 border-[#B3CFEA] bg-white"
+                  >
+                    <div
+                      class="flex items-center justify-center w-full h-full rounded-8"
+                    >
+                      <div class="text-center text-red">
+                        <p>4</p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- ------- -->
+                  <div
+                    class="flex justify-center w-269 border-r-1 border-b-1 border-[#B3CFEA] items-stretch bg-white"
+                  >
+                    <div
+                      class="flex items-center justify-center w-full h-full rounded-8"
+                    >
+                      <span class="text-red">도쿄</span>
+                    </div>
+                  </div>
+                  <!-- ------- -->
+                  <div
+                    class="flex justify-center w-269 border-r-1 border-b-1 border-[#B3CFEA] items-stretch bg-white"
+                  >
+                    <div
+                      class="flex items-center justify-center w-full h-full rounded-8"
+                    >
+                      <span class="text-red">171</span>
+                    </div>
+                  </div>
+                  <!-- ------- -->
+                  <div
+                    class="flex items-stretch justify-center border-b-1 border-r-3 w-269 border-[#B3CFEA] bg-white"
+                  >
+                    <div
+                      class="flex items-center justify-center w-full h-full rounded-8"
+                    >
+                      <span class="text-red">7.7%</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- td 순위 5 -->
+              <div class="flex w-full">
+                <div class="flex items-stretch h-72">
+                  <!-- ------- -->
+                  <div
+                    class="flex items-center justify-center w-92 border-r-1 border-l-3 border-b-1 border-[#B3CFEA] bg-white"
+                  >
+                    <div
+                      class="flex items-center justify-center w-full h-full rounded-8"
+                    >
+                      <div class="text-center text-red">
+                        <p>5</p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- ------- -->
+                  <div
+                    class="flex justify-center w-269 border-r-1 border-b-1 border-[#B3CFEA] items-stretch bg-white"
+                  >
+                    <div
+                      class="flex items-center justify-center w-full h-full rounded-8"
+                    >
+                      <span class="text-red">나라</span>
+                    </div>
+                  </div>
+                  <!-- ------- -->
+                  <div
+                    class="flex justify-center w-269 border-r-1 border-b-1 border-[#B3CFEA] items-stretch bg-white"
+                  >
+                    <div
+                      class="flex items-center justify-center w-full h-full rounded-8"
+                    >
+                      <span class="text-red">161</span>
+                    </div>
+                  </div>
+                  <!-- ------- -->
+                  <div
+                    class="flex items-stretch justify-center border-b-1 border-r-3 w-269 border-[#B3CFEA] bg-white"
+                  >
+                    <div
+                      class="flex items-center justify-center w-full h-full rounded-8"
+                    >
+                      <span class="text-red">7.3%</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- td 순위 6 -->
+              <div class="flex w-full">
+                <div class="flex items-stretch h-72">
+                  <!-- ------- -->
+                  <div
+                    class="flex items-center justify-center w-92 border-r-1 border-l-3 border-b-1 border-[#B3CFEA] bg-white"
+                  >
+                    <div
+                      class="flex items-center justify-center w-full h-full rounded-8"
+                    >
+                      <div class="text-center text-red">
+                        <p>6</p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- ------- -->
+                  <div
+                    class="flex justify-center w-269 border-r-1 border-b-1 border-[#B3CFEA] items-stretch bg-white"
+                  >
+                    <div
+                      class="flex items-center justify-center w-full h-full rounded-8"
+                    >
+                      <span class="text-red">지바현</span>
+                    </div>
+                  </div>
+                  <!-- ------- -->
+                  <div
+                    class="flex justify-center w-269 border-r-1 border-b-1 border-[#B3CFEA] items-stretch bg-white"
+                  >
+                    <div
+                      class="flex items-center justify-center w-full h-full rounded-8"
+                    >
+                      <span class="text-red">127</span>
+                    </div>
+                  </div>
+                  <!-- ------- -->
+                  <div
+                    class="flex items-stretch justify-center border-b-1 border-r-3 w-269 border-[#B3CFEA] bg-white"
+                  >
+                    <div
+                      class="flex items-center justify-center w-full h-full rounded-8"
+                    >
+                      <span class="text-red">5.7%</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- td 순위 7 -->
+              <div class="flex w-full">
+                <div class="flex items-stretch h-72">
+                  <!-- ------- -->
+                  <div
+                    class="flex items-center justify-center w-92 border-r-1 border-l-3 border-b-1 border-[#B3CFEA] bg-white"
+                  >
+                    <div
+                      class="flex items-center justify-center w-full h-full rounded-8"
+                    >
+                      <div class="text-center text-red">
+                        <p>7</p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- ------- -->
+                  <div
+                    class="flex justify-center w-269 border-r-1 border-b-1 border-[#B3CFEA] items-stretch bg-white"
+                  >
+                    <div
+                      class="flex items-center justify-center w-full h-full rounded-8"
+                    >
+                      <span class="text-red">효고현</span>
+                    </div>
+                  </div>
+                  <!-- ------- -->
+                  <div
+                    class="flex justify-center w-269 border-r-1 border-b-1 border-[#B3CFEA] items-stretch bg-white"
+                  >
+                    <div
+                      class="flex items-center justify-center w-full h-full rounded-8"
+                    >
+                      <span class="text-red">122</span>
+                    </div>
+                  </div>
+                  <!-- ------- -->
+                  <div
+                    class="flex items-stretch justify-center border-b-1 border-r-3 w-269 border-[#B3CFEA] bg-white"
+                  >
+                    <div
+                      class="flex items-center justify-center w-full h-full rounded-8"
+                    >
+                      <span class="text-red">5.5%</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- td 순위 8 -->
+              <div class="flex w-full">
+                <div class="flex items-stretch h-72">
+                  <!-- ------- -->
+                  <div
+                    class="flex items-center justify-center w-92 border-r-1 border-l-3 border-b-1 border-[#B3CFEA] bg-white"
+                  >
+                    <div
+                      class="flex items-center justify-center w-full h-full rounded-8"
+                    >
+                      <div class="text-center text-red">
+                        <p>8</p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- ------- -->
+                  <div
+                    class="flex justify-center w-269 border-r-1 border-b-1 border-[#B3CFEA] items-stretch bg-white"
+                  >
+                    <div
+                      class="flex items-center justify-center w-full h-full rounded-8"
+                    >
+                      <span class="text-red">히로시마</span>
+                    </div>
+                  </div>
+                  <!-- ------- -->
+                  <div
+                    class="flex justify-center w-269 border-r-1 border-b-1 border-[#B3CFEA] items-stretch bg-white"
+                  >
+                    <div
+                      class="flex items-center justify-center w-full h-full rounded-8"
+                    >
+                      <span class="text-red">115</span>
+                    </div>
+                  </div>
+                  <!-- ------- -->
+                  <div
+                    class="flex items-stretch justify-center border-b-1 border-r-3 w-269 border-[#B3CFEA] bg-white"
+                  >
+                    <div
+                      class="flex items-center justify-center w-full h-full rounded-8"
+                    >
+                      <span class="text-red">5.2%</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- td 순위 9 -->
+              <div class="flex w-full">
+                <div class="flex items-stretch h-72">
+                  <!-- ------- -->
+                  <div
+                    class="flex items-center justify-center w-92 border-r-1 border-l-3 border-b-1 border-[#B3CFEA] bg-white"
+                  >
+                    <div
+                      class="flex items-center justify-center w-full h-full rounded-8"
+                    >
+                      <div class="text-center text-red">
+                        <p>9</p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- ------- -->
+                  <div
+                    class="flex justify-center w-269 border-r-1 border-b-1 border-[#B3CFEA] items-stretch bg-white"
+                  >
+                    <div
+                      class="flex items-center justify-center w-full h-full rounded-8"
+                    >
+                      <span class="text-red">홋카이도</span>
+                    </div>
+                  </div>
+                  <!-- ------- -->
+                  <div
+                    class="flex justify-center w-269 border-r-1 border-b-1 border-[#B3CFEA] items-stretch bg-white"
+                  >
+                    <div
+                      class="flex items-center justify-center w-full h-full rounded-8"
+                    >
+                      <span class="text-red">93</span>
+                    </div>
+                  </div>
+                  <!-- ------- -->
+                  <div
+                    class="flex items-stretch justify-center border-b-1 border-r-3 w-269 border-[#B3CFEA] bg-white"
+                  >
+                    <div
+                      class="flex items-center justify-center w-full h-full rounded-8"
+                    >
+                      <span class="text-red">4.2%</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- td 순위 10 -->
+              <div class="flex w-full">
+                <div class="flex items-stretch h-72">
+                  <!-- ------- -->
+                  <div
+                    class="flex items-center justify-center w-92 border-r-1 rounded-bl-10 border-l-3 border-b-3 border-[#B3CFEA] bg-white"
+                  >
+                    <div
+                      class="flex items-center justify-center w-full h-full rounded-8"
+                    >
+                      <div class="text-center text-red">
+                        <p>10</p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- ------- -->
+                  <div
+                    class="flex justify-center w-269 border-r-1 border-b-3 border-[#B3CFEA] items-stretch bg-white"
+                  >
+                    <div
+                      class="flex items-center justify-center w-full h-full rounded-8"
+                    >
+                      <span class="text-red">후쿠오카</span>
+                    </div>
+                  </div>
+                  <!-- ------- -->
+                  <div
+                    class="flex justify-center w-269 border-r-1 border-b-3 border-[#B3CFEA] items-stretch bg-white"
+                  >
+                    <div
+                      class="flex items-center justify-center w-full h-full rounded-8"
+                    >
+                      <span class="text-red">86</span>
+                    </div>
+                  </div>
+                  <!-- ------- -->
+                  <div
+                    class="flex items-stretch justify-center border-b-3 rounded-br-10 border-r-3 w-269 border-[#B3CFEA] bg-white"
+                  >
+                    <div
+                      class="flex items-center justify-center w-full h-full rounded-8"
+                    >
+                      <span class="text-red">3.2%</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="mt-10 text-red text-20 text-right mr-15">
+                출처: 전국 수학여행 조사(일본 수학여행 협회, 2022)
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript">
+    const page = {
+      isAnswer: false,
+      isVocabulary: false,
+      showAnswer: () => {},
+      hideAnswer: () => {},
+      showVocabulary: () => {},
+    };
+  </script>
+  <script src="./../common/js/tailwind.config.js"></script>
+  <script src="./../common/js/script.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      // contentUtil.setPopup(1);
+    });
+  </script>
+</html>

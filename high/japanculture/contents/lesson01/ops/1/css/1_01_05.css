@@ -1,0 +1,39 @@
+.contents-left {
+  width: calc(100% - 198px);
+}
+
+.contents-right {
+  width: 188px;
+  margin-left: 10px;
+}
+
+.contents-right .image-pop-preview + .image-pop-preview {
+  margin-top: 20px;
+}
+
+.contents-right .img-container {
+  width: 188px;
+  height: 188px;
+  border-radius: 10px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.popup-contents .contents-sub-tit {
+  margin-bottom: 8px;
+}
+
+.popup-contents .contents-right {
+  width: 320px;
+  margin: 10px 0 0 0;
+}
+
+.popup-contents .contents-right .img-container {
+  width: 320px;
+  height: 180px;
+}
+
+.contents.type1 .tip-contents-wrap {
+  margin-top: 16px;
+}

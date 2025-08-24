@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>미래엔 일본 문화</title>
+    <script src="./../common/lib/jquery-3.7.1.min.js"></script>
+    <script src="./../common/lib/howler-2.1.3.min.js"></script>
+    <script src="./../common/lib/tailwind.js"></script>
+    <!-- 폰트 -->
+    <link href="./../common/font/suit/suit.css" rel="stylesheet" />
+    <link href="./../common/font/bmjua/bmjua.css" rel="stylesheet" />
+    <link
+      href="./../common/font/nanumsquare/nanumSquare.css"
+      rel="stylesheet"
+    />
+    <link href="./../common/font/notoSansJP/notoSansJP.css" rel="stylesheet" />
+    <link href="./../common/css/tailwind.css" rel="stylesheet" />
+    <link href="./../common/css/fontStyle.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div id="wrap">
+      <!-- contents -->
+      <div class="relative w-full h-full pt-70">
+        <!-- title -->
+        <div class="absolute flex top-4 left-4">
+          <img
+            src="./../common/images/title_learnaboutjapan.svg"
+            alt="일본 알아보기"
+            class="h-56 w-244 me-8"
+          />
+          <div class="flex mt-4 font-bold text-40 leading-52 f-nanum-s">
+            <img
+              src="./../common/images/number_3.svg"
+              alt="3"
+              class="rounded-full w-34 h-34 mt-9 me-6"
+              style="box-shadow: 2px 0 0 #eaa7a4"
+            />
+            <div class="font-extrabold">일본의 화폐</div>
+          </div>
+        </div>
+        <!-- header-btn -->
+        <div
+          class="absolute right-0 flex gap-6 top-13"
+          data-name="header-btn"
+        ></div>
+        <!-- main -->
+        <div
+          class="flex flex-col w-full h-full overflow-y-auto font-bold leading-52 text-40 f-nanum-s"
+        >
+          <div class="flex flex-col ms-20">
+            <div class="flex mb-10">
+              <div
+                class="w-24 h-24 rounded-full border-8 border-[#E77974] mt-14 me-10"
+              ></div>
+              <div class="font-extrabold">
+                <p>2024년부터 새로 발행된 지폐의 인물을 검색해 보고,</p>
+                <div class="flex">
+                  알맞은 설명을 찾아
+                  <div
+                    class="w-52 h-52 border-2 rounded-8 border-[#D9D9D9] bg-white ms-12 me-5"
+                  ></div>
+                  에 기호를 써 봅시다.
+                </div>
+              </div>
+            </div>
+            <div
+              class="flex w-932 h-200 bg-[#E9F5FE] rounded-20 gap-20 ms-14 pt-16 px-10 mb-45"
+            >
+              <div class="flex flex-col items-center w-316">
+                <div class="relative mb-20 w-177 h-90">
+                  <img
+                    src="./images/0_01_09/main_photo1.jpg"
+                    alt=""
+                    class="w-full h-full"
+                  />
+                  <button
+                    data-name="btn-view"
+                    class="absolute right-0 -bottom-2"
+                    onclick="contentUtil.setPopup(1); contentUtil.setPhotoPopup(1);"
+                  ></button>
+                </div>
+                <div class="flex w-full">
+                  <span class="me-8">1.</span
+                  ><span
+                    data-audio="0_01_09/012-01.mp3"
+                    class="font-medium f-noto"
+                    ><span class="relative"
+                      >北<span class="ruby">きた</span></span
+                    ><span class="relative"
+                      >里<span class="ruby">さと</span></span
+                    >&nbsp;<span class="relative"
+                      >柴<span class="ruby">しば</span></span
+                    ><span class="relative"
+                      >三<span class="ruby">さぶ</span></span
+                    ><span class="relative"
+                      >郎<span class="ruby">ろう</span></span
+                    ></span
+                  >
+                  <div
+                    class="w-52 h-52 border-2 rounded-8 border-[#D9D9D9] bg-white ms-10 relative flex items-center justify-center"
+                  >
+                    <span class="text-red" data-answer="1" style="display: none"
+                      >a</span
+                    >
+                    <div class="absolute translate-y-full -bottom-6">
+                      <button
+                        data-name="btn-common-light"
+                        data-reset="1"
+                        onclick="contentUtil.showAnswer(1)"
+                      >
+                        개별 정답
+                      </button>
+                      <button
+                        data-name="btn-common-light"
+                        data-answer="1"
+                        onclick="contentUtil.hideAnswer(1)"
+                        style="display: none"
+                      >
+                        다시 풀기
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="flex flex-col items-center w-278">
+                <div class="relative mb-20 w-177 h-90">
+                  <img
+                    src="./images/0_01_09/main_photo2.jpg"
+                    alt=""
+                    class="w-full h-full"
+                  />
+                  <button
+                    data-name="btn-view"
+                    class="absolute right-0 -bottom-2"
+                    onclick="contentUtil.setPopup(1); contentUtil.setPhotoPopup(2);"
+                  ></button>
+                </div>
+                <div class="flex w-full">
+                  <span class="me-8">2.</span
+                  ><span
+                    data-audio="0_01_09/012-02.mp3"
+                    class="font-medium f-noto"
+                    ><span class="relative">津<span class="ruby">つ</span></span
+                    ><span class="relative"
+                      >田<span class="ruby">だ</span></span
+                    >&nbsp;<span class="relative"
+                      >梅<span class="ruby">うめ</span></span
+                    ><span class="relative"
+                      >子<span class="ruby">こ</span></span
+                    ></span
+                  >
+                  <div
+                    class="w-52 h-52 border-2 rounded-8 border-[#D9D9D9] bg-white ms-10 relative flex items-center justify-center"
+                  >
+                    <span class="text-red" data-answer="2" style="display: none"
+                      >b</span
+                    >
+                    <div class="absolute translate-y-full -bottom-6">
+                      <button
+                        data-name="btn-common-light"
+                        data-reset="2"
+                        onclick="contentUtil.showAnswer(2)"
+                      >
+                        개별 정답
+                      </button>
+                      <button
+                        data-name="btn-common-light"
+                        data-answer="2"
+                        onclick="contentUtil.hideAnswer(2)"
+                        style="display: none"
+                      >
+                        다시 풀기
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="flex flex-col items-center w-278">
+                <div class="relative mb-20 w-177 h-90">
+                  <img
+                    src="./images/0_01_09/main_photo3.jpg"
+                    alt=""
+                    class="w-full h-full"
+                  />
+                  <button
+                    data-name="btn-view"
+                    class="absolute right-0 -bottom-2"
+                    onclick="contentUtil.setPopup(1); contentUtil.setPhotoPopup(3);"
+                  ></button>
+                </div>
+                <div class="flex w-full">
+                  <span class="me-8">3.</span
+                  ><span
+                    data-audio="0_01_09/012-03.mp3"
+                    class="font-medium f-noto"
+                    ><span class="relative"
+                      >渋<span class="ruby">しぶ</span></span
+                    ><span class="relative"
+                      ><span class="ruby">さわ</span>沢</span
+                    >&nbsp;<span class="relative"
+                      >栄<span class="ruby">えい</span></span
+                    ><span class="relative"
+                      >一<span class="ruby">いち</span></span
+                    ></span
+                  >
+                  <div
+                    class="w-52 h-52 border-2 rounded-8 border-[#D9D9D9] bg-white ms-10 relative flex items-center justify-center"
+                  >
+                    <span class="text-red" data-answer="3" style="display: none"
+                      >c</span
+                    >
+                    <div class="absolute translate-y-full -bottom-6">
+                      <button
+                        data-name="btn-common-light"
+                        data-reset="3"
+                        onclick="contentUtil.showAnswer(3)"
+                      >
+                        개별 정답
+                      </button>
+                      <button
+                        data-name="btn-common-light"
+                        data-answer="3"
+                        onclick="contentUtil.hideAnswer(3)"
+                        style="display: none"
+                      >
+                        다시 풀기
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-col gap-10 mb-20 ms-34">
+              <div class="flex">
+                <img
+                  src="./images/0_01_09/main_index_a.svg"
+                  alt="a"
+                  class="w-34 h-34 mt-9 me-10"
+                />
+                <div>파상풍 치료법을 개발한 미생물학자</div>
+              </div>
+              <div class="flex">
+                <img
+                  src="./images/0_01_09/main_index_b.svg"
+                  alt="b"
+                  class="w-34 h-34 mt-9 me-10"
+                />
+                <div>일본 여성 교육 발전에 이바지한 교육자</div>
+              </div>
+              <div class="flex">
+                <img
+                  src="./images/0_01_09/main_index_c.svg"
+                  alt="c"
+                  class="w-34 h-34 mt-9 me-10"
+                />
+                <div>‘일본 자본주의의 아버지’로 불리는 기업인</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- popup -->
+      <div id="popup-wrap" style="display: none">
+        <!-- 사진 팝업창 -->
+        <div data-name="popup" data-popup="1" style="display: none">
+          <div data-name="popup-header">
+            <div data-name="popup-title">사진 팝업창</div>
+            <button
+              data-name="popup-close"
+              onclick="contentUtil.setPopup()"
+            ></button>
+          </div>
+          <div
+            data-name="popup-body"
+            class="flex items-center justify-center w-full h-full gap-16"
+          >
+            <div
+              class="flex flex-col items-center w-608 h-402"
+              data-name="popup_photo_wrap"
+            >
+              <div class="w-full overflow-x-hidden overflow-y-auto pe-4">
+                <img
+                  src="./images/0_01_09/popup_photo1.jpg"
+                  alt=""
+                  class="object-contain min-w-608 rounded-10"
+                  data-name="popup_photo"
+                />
+                <img
+                  src="./images/0_01_09/popup_photo2.jpg"
+                  alt=""
+                  class="object-contain min-w-608 rounded-10"
+                  data-name="popup_photo"
+                  style="display: none"
+                />
+                <img
+                  src="./images/0_01_09/popup_photo3.jpg"
+                  alt=""
+                  class="object-contain min-w-608 rounded-10"
+                  data-name="popup_photo"
+                  style="display: none"
+                />
+              </div>
+            </div>
+            <div class="w-266 h-402">
+              <div class="flex flex-wrap w-full gap-10">
+                <button
+                  data-name="btn-popup_photo"
+                  class="w-128 h-72 active"
+                  onclick="contentUtil.setPhotoPopup(1)"
+                >
+                  <img src="./images/0_01_09/popup_btn_photo1.jpg" alt="" />
+                </button>
+                <button
+                  data-name="btn-popup_photo"
+                  class="w-128 h-72"
+                  onclick="contentUtil.setPhotoPopup(2)"
+                >
+                  <img src="./images/0_01_09/popup_btn_photo2.jpg" alt="" />
+                </button>
+                <button
+                  data-name="btn-popup_photo"
+                  class="w-128 h-72"
+                  onclick="contentUtil.setPhotoPopup(3)"
+                >
+                  <img src="./images/0_01_09/popup_btn_photo3.jpg" alt="" />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ======================임시버튼============================== -->
+      <div class="absolute bottom-0 right-0">
+        <button class="btn-all-answer text-12">정답 보기</button>
+        <button class="btn-all-reset text-12" style="display: none">
+          다시 풀기
+        </button>
+      </div>
+      <!-- ======================================================== -->
+    </div>
+  </body>
+  <script type="text/javascript">
+    const page = {
+      isAnswer: false,
+      isVocabulary: false,
+      showAnswer: () => {
+        contentUtil.showAnswer();
+      },
+      hideAnswer: () => {
+        contentUtil.hideAnswer();
+      },
+      showVocabulary: () => {},
+    };
+  </script>
+  <script src="./../common/js/tailwind.config.js"></script>
+  <script src="./../common/js/script.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {});
+  </script>
+</html>

@@ -1,0 +1,38 @@
+.content-contents-wrap {
+  padding-top: 13px;
+}
+
+.contents-tit {
+  letter-spacing: -0.05em;
+}
+
+.contents-cont {
+  padding: 30px;
+}
+
+.contents-table .tr .th {
+  width: 264px;
+  padding: 0;
+}
+
+.contents-table .tr .td {
+  flex: 1;
+  letter-spacing: -0.07em;
+  line-height: 52px;
+}
+
+.contents-table,
+.contents-table .tr + .tr,
+.contents-table .tr .th + .td,
+.contents-table .tr .td + .td {
+  border-color: #73adde;
+}
+
+.contents-table .tr .td {
+  padding: 20px 0 20px 20px;
+}
+
+.img-container {
+  width: 226px;
+  height: 124px;
+}

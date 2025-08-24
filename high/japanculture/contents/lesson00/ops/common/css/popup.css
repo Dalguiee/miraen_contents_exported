@@ -1,0 +1,98 @@
+/* 팝업 */
+#popup-wrap {
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+[data-name="popup"] {
+  display: flex;
+  flex-direction: column;
+  width: 960px;
+  height: 480px;
+  background: #dfeeda;
+  border: 4px solid #a0cdac;
+  border-radius: 10px;
+  overflow: hidden;
+}
+[data-name="popup-header"] {
+  width: 100%;
+  height: 32px;
+  display: flex;
+  justify-content: space-between;
+}
+[data-name="popup-title"] {
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px 20px 0px 20px;
+  font-family: "BMJUA";
+  font-weight: 400;
+  background: #a0cdac;
+  font-size: 28px;
+  border-bottom-right-radius: 10px;
+  margin-left: -4px;
+  margin-top: -4px;
+}
+[data-name="popup-close"] {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 100%;
+  background: #a0cdac;
+  border-bottom-left-radius: 10px;
+  margin-right: -4px;
+  overflow: hidden;
+}
+[data-name="popup-close"]::after {
+  content: "";
+  top: -4px;
+  position: absolute;
+  width: 36px;
+  height: 36px;
+  background: url(./../images/btn_popup-close_green.svg) no-repeat center /
+    cover;
+}
+[data-name="popup-body"] {
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+[data-name="popup_photo_text"] {
+  display: flex;
+  justify-content: center;
+}
+[data-name="popup_photo_text"]::before {
+  content: "";
+  width: 34px;
+  height: 52px;
+  margin-right: 6px;
+  background: url(./../images/popup_photolabel.svg) no-repeat center / cover;
+}
+[data-name="popup_photo_text"].text-blue::before {
+  display: none;
+}
+
+/* 팝업 블루 테마 */
+[data-name="popup"].blue {
+  background: #ebf1fd;
+  border: 4px solid #93bbfe;
+}
+.blue [data-name="popup-title"] {
+  background: #93bbfe;
+}
+.blue [data-name="popup-close"] {
+  background: #93bbfe;
+}
+.blue [data-name="popup-close"]::after {
+  background: url(./../images/btn_popup-close_blue.svg) no-repeat center / cover;
+}

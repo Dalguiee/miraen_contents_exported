@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>미래엔 일본 문화</title>
+    <script src="./../common/lib/jquery-3.7.1.min.js"></script>
+    <script src="./../common/lib/howler-2.1.3.min.js"></script>
+    <script src="./../common/lib/tailwind.js"></script>
+    <!-- 폰트 -->
+    <link href="./../common/font/suit/suit.css" rel="stylesheet" />
+    <link href="./../common/font/bmjua/bmjua.css" rel="stylesheet" />
+    <link
+      href="./../common/font/nanumsquare/nanumSquare.css"
+      rel="stylesheet"
+    />
+    <link href="./../common/font/notoSansJP/notoSansJP.css" rel="stylesheet" />
+    <link href="./../common/css/tailwind.css" rel="stylesheet" />
+    <link href="./../common/css/fontStyle.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div id="wrap">
+      <!-- contents -->
+      <div class="relative w-full h-full pt-60">
+        <!-- title -->
+        <img
+          src="./../common/images/title_digital.svg"
+          alt="디지털 활동"
+          class="absolute h-42 w-261 top-10"
+        />
+        <!-- main -->
+        <div class="flex flex-col w-full h-full px-20 leading-52">
+          <div class="mb-10 font-extrabold text-40 f-nanum-s">
+            <p>가면을 쓰고 하는 우리나라의 전통 공연 예술을 검색하여 조사</p>
+            <p>하고, ‘노’와 비교해 발표해 봅시다.</p>
+          </div>
+          <div
+            class="border-4 w-full pt-14 ps-20 pe-4 pb-14 h-293 border-[#3589D7] rounded-10 mb-8"
+          >
+            <div class="w-full h-full"></div>
+          </div>
+          <div class="ms-auto">
+            <button
+              data-name="btn-common"
+              data-reset="1"
+              onclick="contentUtil.setPopup(1); audioPlay(audio, [`./../common/media/mp3/showAnswer.mp3`]);"
+            >
+              예시 답안
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- popup -->
+      <div id="popup-wrap" style="display: none">
+        <!-- 예시 답안 -->
+        <div data-name="popup" data-popup="1" style="display: none">
+          <div data-name="popup-header">
+            <div data-name="popup-title">예시 답안</div>
+            <button
+              data-name="popup-close"
+              onclick="contentUtil.setPopup()"
+            ></button>
+          </div>
+          <div data-name="popup-body" class="mt-16 mb-10 ms-26 f-nanum-s me-6">
+            <div class="flex flex-col">
+              <!-- table -->
+              <div
+                class="flex flex-col font-bold w-fit leading-52 text-40 f-nanum-s"
+              >
+                <!-- ========= -->
+                <div class="flex items-stretch">
+                  <!-- ------- -->
+                  <div
+                    class="w-168 bg-[#B3CFEA] flex items-center justify-center p-10 rounded-tl-10 border-[#CEDCE9] border-t-3 border-l-3 border-1"
+                  >
+                    <div class="flex flex-col items-center">
+                      <p>봉산 탈춤</p>
+                    </div>
+                  </div>
+                  <div
+                    class="bg-white w-732 flex flex-col rounded-tr-10 border-[#CEDCE9] border-t-3 border-b-1 border-r-3"
+                  >
+                    <div
+                      class="text-red w-full px-10 py-7 flex flex-col gap-10"
+                    >
+                      <div class="flex">
+                        <div
+                          class="w-12 h-12 mt-20 bg-red rounded-full me-10"
+                        ></div>
+                        <div class="flex flex-col">
+                          <p>봉산 탈을 쓰고 추는 탈춤으로, 황해도</p>
+                          <p>봉산군의 전통 춤이다.</p>
+                        </div>
+                      </div>
+                      <div class="flex">
+                        <div
+                          class="w-12 h-12 mt-20 bg-red rounded-full me-10"
+                        ></div>
+                        중요 무형문화제 제17호로 지정되었다.
+                      </div>
+                      <div class="flex">
+                        <div
+                          class="w-12 h-12 mt-20 bg-red rounded-full me-10"
+                        ></div>
+                        <div class="flex flex-col">
+                          <p>가면 무극으로, 가무적인 부분과 연극적인</p>
+                          <p>부분이 어우러져 있다.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- ------- -->
+                </div>
+                <!-- ========= -->
+                <div class="flex items-stretch">
+                  <!-- ------- -->
+                  <div
+                    class="w-168 bg-[#B3CFEA] flex items-center justify-center p-10 border-[#CEDCE9] border-r-1 border-l-3 border-b-3 rounded-bl-10"
+                  >
+                    <div class="flex flex-col items-center">
+                      <p>노</p>
+                    </div>
+                  </div>
+                  <div
+                    class="bg-white w-732 flex flex-col border-[#CEDCE9] border-b-3 border-r-3 rounded-br-10"
+                  >
+                    <div
+                      class="text-red w-full px-10 py-7 flex flex-col gap-10"
+                    >
+                      <div class="flex">
+                        <div
+                          class="w-12 h-12 mt-20 bg-red rounded-full me-10"
+                        ></div>
+                        <div class="flex flex-col">
+                          <p>일본에서 가장 오래된 연극 양식이다.</p>
+                        </div>
+                      </div>
+                      <div class="flex">
+                        <div
+                          class="w-12 h-12 mt-20 bg-red rounded-full me-10"
+                        ></div>
+                        <div class="flex flex-col">
+                          <p>노멘을 쓰고 소나무 한 그루가 장식된 무대</p>
+                          <p>에서 공연한다.</p>
+                        </div>
+                      </div>
+                      <div class="flex">
+                        <div
+                          class="w-12 h-12 mt-20 bg-red rounded-full me-10"
+                        ></div>
+                        <div class="flex flex-col">
+                          <p>느린 노래와 반주에 맞춰 춤추는 가면 무도극</p>
+                          <p>이다.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- ------- -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript">
+    const page = {
+      isAnswer: false,
+      isVocabulary: false,
+      showAnswer: () => {},
+      hideAnswer: () => {},
+      showVocabulary: () => {},
+    };
+  </script>
+  <script src="./../common/js/tailwind.config.js"></script>
+  <script src="./../common/js/script.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      // contentUtil.setPopup(1);
+    });
+  </script>
+</html>

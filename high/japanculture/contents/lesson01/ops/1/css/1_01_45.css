@@ -1,0 +1,17 @@
+.content-wrap .content-contents-wrap .content-contents {
+  padding-top: 10px;
+}
+
+.contents {
+  padding-left: 34px;
+  margin-top: 10px;
+}
+.answer-box {
+  border-radius: 10px;
+  background-color: #f8e8ec;
+  height: 174px;
+  width: 100%;
+  padding: 20px;
+  line-height: 52px;
+  color: var(--answer-red);
+}

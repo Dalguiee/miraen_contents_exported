@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>미래엔 일본 문화</title>
+    <script src="./../common/lib/jquery-3.7.1.min.js"></script>
+    <script src="./../common/lib/howler-2.1.3.min.js"></script>
+    <script src="./../common/lib/tailwind.js"></script>
+    <!-- 폰트 -->
+    <link href="./../common/font/suit/suit.css" rel="stylesheet" />
+    <link href="./../common/font/bmjua/bmjua.css" rel="stylesheet" />
+    <link
+      href="./../common/font/nanumsquare/nanumSquare.css"
+      rel="stylesheet"
+    />
+    <link href="./../common/font/notoSansJP/notoSansJP.css" rel="stylesheet" />
+    <link href="../common/css/tailwind.css" rel="stylesheet" />
+    <link href="./../common/css/fontStyle.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div id="wrap">
+      <!-- contents -->
+      <div class="relative flex flex-col w-full h-full pt-70">
+        <!-- title -->
+        <div class="absolute left-0 flex h-50 top-10">
+          <img
+            src="./../common/images/title_getactive.svg"
+            alt="활동하기"
+            class="w-160 me-10"
+          />
+          <span class="f-bmjua text-36 text-[#6773B1] leading-50"
+            >진로 연계 활동</span
+          >
+        </div>
+        <button
+          data-name="btn-common"
+          onclick="contentUtil.setPopup(2); audioPlay(audio, [`./../common/media/mp3/showAnswer.mp3`]);"
+          class="absolute right-0 top-13"
+        >
+          예시 답안
+        </button>
+
+        <!-- main -->
+        <div class="flex-col flex-1 w-full px-20 leading-52 f-nanum-s text-40">
+          <div class="flex mb-10">
+            <img
+              src="./../common/images/label_flower_blue.svg"
+              alt="label"
+              class="w-30 h-52 me-8"
+            />
+            <div class="font-extrabold">
+              <p>일본의 오랜 역사를 자랑하는 음식점을 조사하여 발표해</p>
+              <p class="flex items-center">봅시다.</p>
+            </div>
+          </div>
+          <!-- ======== page 1 ======== -->
+          <div data-name="page" class="flex flex-col w-full">
+            <div class="flex mb-10 font-bold">
+              <div data-name="number-1" class="bg-[#6291CC] me-10"></div>
+              <div>
+                <p class="flex gap-5">
+                  일본의 오래된 음식점을 검색하여 인기 메뉴, 특징, 역사,
+                </p>
+                <p class="flex gap-5">일화 등을 정리한다.</p>
+              </div>
+            </div>
+            <div class="flex mb-10 font-bold">
+              <div data-name="number-2" class="bg-[#6291CC] me-10"></div>
+              <div>
+                <p>개별 혹은 모둠별로 조사한 내용을 발표한다.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- popup -->
+      <div id="popup-wrap" style="display: none">
+        <!-- 부록 -->
+        <div data-name="popup" data-popup="1" style="display: none">
+          <div data-name="popup-header">
+            <div data-name="popup-title">부록</div>
+            <button
+              data-name="popup-close"
+              onclick="contentUtil.setPopup()"
+            ></button>
+          </div>
+          <div
+            data-name="popup-body"
+            class="flex items-center justify-center w-full h-full gap-16"
+          >
+            <div
+              class="flex flex-col items-center w-516 h-406"
+              data-name="popup_photo_wrap"
+            >
+              <div class="overflow-hidden w-509 h-400 rounded-10">
+                <img src="./images/3_01_40/popup_photo1.jpg" alt="집안 내부" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 예시 답안 -->
+        <div data-name="popup" data-popup="2" style="display: none">
+          <div data-name="popup-header">
+            <div data-name="popup-title">예시 답안</div>
+            <button
+              data-name="popup-close"
+              onclick="contentUtil.setPopup()"
+            ></button>
+          </div>
+          <div
+            data-name="popup-body"
+            class="flex-1 mt-16 mb-10 ms-26 f-nanum-s me-6"
+          >
+            <div class="relative flex flex-col gap-10 p-10 pb-0 min-w-800">
+              <div
+                class="flex flex-col gap-20 font-bold text-red leading-52 f-nanum-s text-40"
+              >
+                <div class="flex">
+                  <div class="w-12 h-12 mt-20 rounded-full bg-red me-8"></div>
+                  <div>
+                    <div class="mb-6">
+                      <p class="flex">
+                        다코우메(<span class="font-medium f-noto">たこうめ</span
+                        >)
+                      </p>
+                    </div>
+                    <div>
+                      <p>160여 년의 역사를 자랑하는 오뎅 전문점으로, 1860년</p>
+                      <p>오사카 도톤보리에서 개업했다. 무쇠 솥의 특제 국물에</p>
+                      <p>
+                        어묵, 달걀, 유부 등을 넣어 오랜 시간 끓여 낸다. 손님이
+                      </p>
+                      <p>주문하면 오래되어 찌그러진 양은 쟁반에 오뎅을 담아</p>
+                      <p>주는 것이 특징이다.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="flex">
+                  <div class="w-12 h-12 mt-20 rounded-full bg-red me-8"></div>
+                  <div>
+                    <div class="mb-6">
+                      <p class="flex">
+                        오와리야(<span class="font-medium f-noto"
+                          ><span class="relative"
+                            >尾<span class="ruby">お</span></span
+                          ><span class="relative"
+                            >張<span class="ruby">わり</span></span
+                          ><span class="relative"
+                            >屋<span class="ruby">や</span></span
+                          > </span
+                        >)
+                      </p>
+                    </div>
+                    <div>
+                      <p>1465년부터 영업을 시작하여 일본에서 가장 오래된</p>
+                      <p>
+                        메밀국수 집으로 알려져 있다. 첨가물 없이 메밀국수 본연
+                      </p>
+                      <p>의 맛을 살려 요리하는 것이 특징이다. 과자를 만들던</p>
+                      <p>장인이 메밀국수를 만들어 판 이래로 현재는 15대손이</p>
+                      <p>
+                        가업을 이어받아 영업을 하고 있으며, 일왕 가에서 자주
+                      </p>
+                      <p>찾는 명소로 유명하다.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript">
+    const page = {
+      isAnswer: false,
+      isVocabulary: false,
+      showAnswer: () => {},
+      hideAnswer: () => {},
+      showVocabulary: () => {},
+    };
+  </script>
+  <script src="./../common/js/tailwind.config.js"></script>
+  <script src="./../common/js/script.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      // contentUtil.setPopup(2);
+    });
+  </script>
+</html>

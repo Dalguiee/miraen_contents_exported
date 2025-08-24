@@ -1,0 +1,36 @@
+.content-wrap .content-contents-wrap .content-contents {
+  overflow-y: hidden;
+}
+.sushi-contents {
+  border-radius: 20px;
+  overflow: hidden;
+  background-color: #cce1f4;
+}
+
+.sushi-contents .image-pop-preview {
+  width: 404px;
+  height: 228px;
+}
+
+.sushi-contents .sushi {
+  padding: 20px 0 0 30px;
+}
+
+.sushi-contents .sushi .tit {
+  color: #3a7270;
+}
+
+.sushi-contents .sushi .cont {
+  padding-left: 44px;
+  margin-top: 10px;
+  line-height: 48px;
+}
+
+.bullet-flower-pink {
+  background-position: left top 19px;
+}
+
+.tab-content-1 {
+  height: 250px;
+  overflow-y: scroll;
+}

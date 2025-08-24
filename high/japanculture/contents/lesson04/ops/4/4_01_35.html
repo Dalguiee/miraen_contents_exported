@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>미래엔 일본 문화</title>
+    <script src="./../common/lib/jquery-3.7.1.min.js"></script>
+    <script src="./../common/lib/howler-2.1.3.min.js"></script>
+    <script src="./../common/lib/tailwind.js"></script>
+    <!-- 폰트 -->
+    <link href="./../common/font/suit/suit.css" rel="stylesheet" />
+    <link href="./../common/font/bmjua/bmjua.css" rel="stylesheet" />
+    <link
+      href="./../common/font/nanumsquare/nanumSquare.css"
+      rel="stylesheet"
+    />
+    <link href="./../common/font/notoSansJP/notoSansJP.css" rel="stylesheet" />
+    <link href="./../common/css/tailwind.css" rel="stylesheet" />
+    <link href="./../common/css/fontStyle.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div id="wrap">
+      <!-- contents -->
+      <div class="relative flex flex-col w-full h-full pt-70">
+        <!-- title -->
+        <img
+          src="./../common/images/title_check.svg"
+          alt="확인하기"
+          class="absolute left-0 w-163 h-50 top-10"
+        />
+        <!-- header-btn -->
+        <div class="absolute right-0 flex gap-6 top-13" data-name="header-btn">
+          <button data-name="btn-common" onclick="contentUtil.setPopup(1)">
+            해설 보기
+          </button>
+        </div>
+        <!-- main -->
+        <div
+          class="flex flex-col flex-1 w-full overflow-y-auto leading-52 f-nanum-s text-40"
+        >
+          <div class="flex mb-10">
+            <img
+              src="./images/4_01_35/title_index_1.svg"
+              alt="label"
+              class="w-25 h-52 me-12"
+            />
+            <div class="font-extrabold">
+              <p>일본의 성씨와 가족 호칭에 대한 설명으로 알맞은 것은?</p>
+            </div>
+          </div>
+          <!-- 정답 선택 -->
+          <div
+            data-name="select"
+            data-reset="1"
+            class="flex flex-col gap-10 font-bold ps-20"
+          >
+            <!-- ------- -->
+            <div data-name="option" class="flex cursor-pointer select-none">
+              <button data-name="number-1" class="bg-[#666666] me-10"></button>
+              <div>
+                <p>이름은 한자만 사용하여 짓는다.</p>
+              </div>
+            </div>
+            <!-- ------- -->
+            <div data-name="option" class="flex cursor-pointer select-none">
+              <button data-name="number-2" class="bg-[#666666] me-10"></button>
+              <div>
+                <p>고대부터 일반 서민도 성씨를 가지고 있었다.</p>
+              </div>
+            </div>
+            <!-- ------- -->
+            <div data-name="option" class="flex cursor-pointer select-none">
+              <button data-name="number-3" class="bg-[#666666] me-10"></button>
+              <div>
+                <p>남녀가 결혼하면 법률상 같은 성씨를 사용해야 한다.</p>
+              </div>
+            </div>
+            <!-- ------- -->
+            <div data-name="option" class="flex cursor-pointer select-none">
+              <button data-name="number-4" class="bg-[#666666] me-10"></button>
+              <div>
+                <p>한자 이름을 읽는 방법은 보통 한 가지로 정해져 있다.</p>
+              </div>
+            </div>
+            <!-- ------- -->
+            <div data-name="option" class="flex cursor-pointer select-none">
+              <button data-name="number-5" class="bg-[#666666] me-10"></button>
+              <div>
+                <p>다른 사람에게 자기 가족과 남의 가족을 소개할 때 사용하는</p>
+                <p>호칭이 같다.</p>
+              </div>
+            </div>
+          </div>
+          <!-- 정답  -->
+          <div
+            data-answer="1"
+            class="flex flex-col gap-10 font-bold pointer-events-none ps-20"
+            style="display: none"
+          >
+            <!-- ------- -->
+            <div class="flex cursor-pointer select-none">
+              <button data-name="number-1" class="bg-[#666666] me-10"></button
+              ><span>이름은 한자만 사용하여 짓는다.</span>
+            </div>
+            <!-- ------- -->
+            <div class="flex cursor-pointer select-none">
+              <button data-name="number-2" class="bg-[#666666] me-10"></button>
+              <div>
+                <p>고대부터 일반 서민도 성씨를 가지고 있었다.</p>
+              </div>
+            </div>
+            <!-- ------- -->
+            <div class="flex cursor-pointer select-none">
+              <button
+                data-name="number-3"
+                class="bg-[#666666] me-10 checked"
+              ></button>
+              <div class="text-red">
+                <p>남녀가 결혼하면 법률상 같은 성씨를 사용해야 한다.</p>
+              </div>
+            </div>
+            <!-- ------- -->
+            <div class="flex cursor-pointer select-none">
+              <button data-name="number-4" class="bg-[#666666] me-10"></button>
+              <div>
+                <p>한자 이름을 읽는 방법은 보통 한 가지로 정해져 있다.</p>
+              </div>
+            </div>
+            <!-- ------- -->
+            <div class="flex cursor-pointer select-none">
+              <button data-name="number-5" class="bg-[#666666] me-10"></button>
+              <div>
+                <p>다른 사람에게 자기 가족과 남의 가족을 소개할 때 사용하는</p>
+                <p>호칭이 같다.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- popup -->
+      <div id="popup-wrap" style="display: none">
+        <!-- 해설 보기 -->
+        <div data-name="popup" data-popup="1" style="display: none">
+          <div data-name="popup-header">
+            <div data-name="popup-title">해설 보기</div>
+            <button
+              data-name="popup-close"
+              onclick="contentUtil.setPopup()"
+            ></button>
+          </div>
+          <div
+            data-name="popup-body"
+            class="flex-1 mt-16 mb-10 ms-26 f-nanum-s me-6"
+          >
+            <div class="flex flex-col font-bold text-40 leading-52 f-nanum-s">
+              <!-- title -->
+              <div class="flex items-center mb-10 h-55">
+                <img
+                  src="./../common/images/popup_titlemark_primary.svg"
+                  alt=""
+                  class="w-35 h-55 me-10"
+                />
+                <div class="flex font-extrabold text-42 text-[#41674B]">
+                  해설
+                </div>
+              </div>
+              <!-- list -->
+              <div class="flex flex-col gap-10 mb-20">
+                <!-- ------- -->
+                <div class="flex">
+                  <div data-name="number-1" class="bg-[#666666] me-10"></div>
+                  <div>
+                    <p>이름은 인명용 한자, 상용한자, 히라가나, 가타카나를</p>
+                    <p>사용하여 짓는다.</p>
+                  </div>
+                </div>
+                <!-- ------- -->
+                <div class="flex">
+                  <div data-name="number-2" class="bg-[#666666] me-10"></div>
+                  <div>
+                    <p>일반 서민이 성씨를 갖게 된 것은 메이지 유신 이후부터</p>
+                    <p>이다.</p>
+                  </div>
+                </div>
+                <!-- ------- -->
+                <div class="flex">
+                  <div data-name="number-4" class="bg-[#666666] me-10"></div>
+                  <div>
+                    <p>한자 이름을 읽는 방법은 다양하다.</p>
+                  </div>
+                </div>
+                <!-- ------- -->
+                <div class="flex">
+                  <div data-name="number-5" class="bg-[#666666] me-10"></div>
+                  <div>
+                    <p>일본에서는 다른 사람에게 자기 가족과 남의 가족을</p>
+                    <p>소개할 때 다른 호칭을 사용한다.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ======================임시버튼============================== -->
+      <div class="absolute bottom-0 right-0">
+        <button class="btn-all-answer text-12">정답 보기</button>
+        <button class="btn-all-reset text-12" style="display: none">
+          다시 풀기
+        </button>
+      </div>
+      <!-- ======================================================== -->
+    </div>
+  </body>
+  <script type="text/javascript">
+    const page = {
+      isAnswer: true,
+      isVocabulary: false,
+      showAnswer: () => {
+        contentUtil.showAnswer();
+      },
+      hideAnswer: () => {
+        contentUtil.hideAnswer();
+        $(`[data-name="option"]`).children("button").removeClass("checked");
+        $(`[data-name="option"]`).children("div").removeClass("text-red");
+      },
+      showVocabulary: () => {},
+    };
+  </script>
+  <script src="./../common/js/tailwind.config.js"></script>
+  <script src="./../common/js/script.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {});
+
+    // ========== 선택형 타입 ==========
+    $(`[data-name="option"]`).on("click", function () {
+      if ($(this).children("button").hasClass("checked")) {
+        $(this).children("button").removeClass("checked");
+        $(this).children("div").removeClass("text-red");
+      } else {
+        $(`[data-name="option"]`).children("button").removeClass("checked");
+        $(`[data-name="option"]`).children("div").removeClass("text-red");
+        $(this).children("button").addClass("checked");
+        $(this).children("div").addClass("text-red");
+      }
+    });
+  </script>
+</html>

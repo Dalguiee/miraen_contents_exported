@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>미래엔 일본 문화</title>
+    <script src="./../common/lib/jquery-3.7.1.min.js"></script>
+    <script src="./../common/lib/howler-2.1.3.min.js"></script>
+    <script src="./../common/lib/tailwind.js"></script>
+    <!-- 폰트 -->
+    <link href="./../common/font/suit/suit.css" rel="stylesheet" />
+    <link href="./../common/font/bmjua/bmjua.css" rel="stylesheet" />
+    <link
+      href="./../common/font/nanumsquare/nanumSquare.css"
+      rel="stylesheet"
+    />
+    <link href="./../common/font/notoSansJP/notoSansJP.css" rel="stylesheet" />
+    <link href="./../common/css/tailwind.css" rel="stylesheet" />
+    <link href="./../common/css/fontStyle.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div id="wrap">
+      <!-- contents -->
+      <div class="relative w-full h-full pt-68">
+        <!-- title -->
+        <img
+          src="./../common/images/title_look_culture2.svg"
+          alt="문화 들여다보기1 교통문화"
+          class="absolute w-764 h-49 top-10"
+        />
+        <!-- main -->
+        <div class="flex flex-col w-full h-full">
+          <div
+            class="flex flex-col w-full mb-8 h-404 text-40 f-nanum-s leading-52 ps-20"
+          >
+            <div class="flex items-center mb-4">
+              <img
+                src="./../common/images/index_pink_1.svg"
+                alt=""
+                class="w-40 h-40 me-4"
+              />
+              <span class="flex font-extrabold"
+                >신칸센(<span
+                  data-audio="8_01_20/122-01.mp3"
+                  class="font-bold f-noto"
+                  >しんかんせん</span
+                >)</span
+              >
+            </div>
+            <div class="flex flex-col font-bold">
+              <!-- ======== page 1 ======== -->
+              <div data-name="page" class="flex flex-col">
+                <!-- header-btn -->
+                <div
+                  class="absolute right-0 flex gap-6 top-13"
+                  data-name="header-btn"
+                >
+                  <button
+                    data-name="btn-common"
+                    onclick="contentUtil.setPopup(1)"
+                  >
+                    보충 자료
+                  </button>
+                </div>
+                <div>
+                  <p class="ps-28">
+                    1964년 개통한 신칸센은 일본의 고속 철도로, 우리나라의
+                  </p>
+                  <p>KTX에 해당한다. 현재 신칸센은 도카이도·산요선의 ‘노조미</p>
+                  <p class="flex">
+                    (<span
+                      data-audio="8_01_20/122-02.mp3"
+                      class="font-medium f-noto"
+                      >のぞみ</span
+                    >), 히카리(<span
+                      data-audio="8_01_20/122-03.mp3"
+                      class="font-medium f-noto"
+                      >ひかり</span
+                    >), 고다마(<span
+                      data-audio="8_01_20/122-04.mp3"
+                      class="font-medium f-noto"
+                      >こだま</span
+                    >)’, 산요·규슈선의
+                  </p>
+                  <p class="flex">
+                    ‘미즈호(<span
+                      data-audio="8_01_20/122-05.mp3"
+                      class="font-medium f-noto"
+                      >みずほ</span
+                    >), 사쿠라(<span
+                      data-audio="8_01_20/122-06.mp3"
+                      class="font-medium f-noto"
+                      >さくら</span
+                    >)’, 도호쿠·아키타선의
+                  </p>
+                  <p>
+                    ‘하야부사(<span
+                      data-audio="8_01_20/122-07.mp3"
+                      class="font-medium f-noto"
+                      >はやぶさ</span
+                    >), 고마치(<span
+                      data-audio="8_01_20/122-08.mp3"
+                      class="font-medium f-noto"
+                      >こまち</span
+                    >)’ 등 노선과 소요 시간에
+                  </p>
+                  <p>따라 종류가 다양하다.</p>
+                </div>
+              </div>
+              <!-- ======== page 2 ======== -->
+              <div data-name="page" class="flex flex-col" style="display: none">
+                <!-- header-btn -->
+                <div
+                  class="absolute right-0 flex gap-6 top-13"
+                  data-name="header-btn"
+                >
+                  <button
+                    data-name="btn-common"
+                    onclick="contentUtil.setPopup(1)"
+                  >
+                    보충 자료
+                  </button>
+                  <button
+                    data-name="btn-common"
+                    onclick="contentUtil.setPopup(3); contentUtil.setPhotoPopup(3);"
+                  >
+                    추가 사진
+                  </button>
+                </div>
+                <div>
+                  <p>도카이도·산요선에서 가장 빠른 ‘노조미’를</p>
+                  <p>이용하면 도쿄에서 오사카까지 약 2시간</p>
+                  <p>30분 걸린다. 일본 여행 중 도시간 이동이</p>
+                  <p class="flex">
+                    많을 경우 JR패스(<span
+                      class="flex"
+                      data-audio="8_01_20/122-09.mp3"
+                      >JR<span class="font-medium -translate-y-2 f-noto"
+                        >パス</span
+                      ></span
+                    >)를 구매하면
+                  </p>
+                  <p>신칸센을 저렴하게 이용할 수 있다.</p>
+                </div>
+                <!-- img box -->
+                <div class="absolute flex flex-col gap-10 bottom-40 right-20">
+                  <div class="relative w-270 h-180">
+                    <img
+                      src="./images/8_01_20/main_img1.jpg"
+                      alt=""
+                      class="w-full h-full rounded-10"
+                    />
+                    <button
+                      data-name="btn-view"
+                      class="absolute bottom-10 right-10"
+                      onclick="contentUtil.setPopup(2); contentUtil.setPhotoPopup(1);"
+                    ></button>
+                  </div>
+                  <div class="relative w-270 h-180">
+                    <img
+                      src="./images/8_01_20/main_img2.jpg"
+                      alt=""
+                      class="w-full h-full rounded-10"
+                    />
+                    <button
+                      data-name="btn-view"
+                      class="absolute bottom-10 right-10"
+                      onclick="contentUtil.setPopup(2); contentUtil.setPhotoPopup(2);"
+                    ></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- pagination -->
+          <div
+            class="absolute -translate-x-1/2 left-1/2 bottom-10"
+            data-name="pagination"
+          >
+            <button class="active" data-name="btn-pagination"></button>
+            <button class="" data-name="btn-pagination"></button>
+          </div>
+        </div>
+      </div>
+      <!-- popup -->
+      <div id="popup-wrap" style="display: none">
+        <!-- 보충 자료 -->
+        <div data-name="popup" data-popup="1" style="display: none">
+          <div data-name="popup-header">
+            <div data-name="popup-title">보충 자료</div>
+            <button
+              data-name="popup-close"
+              onclick="contentUtil.setPopup()"
+            ></button>
+          </div>
+          <div data-name="popup-body" class="mt-16 mb-10 ms-26 f-nanum-s me-6">
+            <div class="flex flex-col">
+              <!-- title -->
+              <div class="flex items-center mb-10 h-55 mt-14">
+                <img
+                  src="./../common/images/popup_titlemark_primary.svg"
+                  alt=""
+                  class="w-35 h-55 me-10"
+                />
+                <div class="flex font-extrabold text-42 text-[#41674B]">
+                  녹색 창구(<span class="font-bold f-noto"
+                    >みどりの&nbsp;<span class="relative"
+                      >窓<span class="font-bold ruby">まど</span></span
+                    ><span class="relative"
+                      >口<span class="font-bold ruby">ぐち</span></span
+                    ></span
+                  >)
+                </div>
+              </div>
+              <!-- text -->
+              <div class="mb-10 font-bold f-nanum-s text-40 leading-52">
+                <p>JR의 모든 역에 설치되어 있는 종합 안내 창구로, 신칸센</p>
+                <p>등의 표를 직접 구매할 수 있다. 요즘은 인터넷 구매도 가능</p>
+                <p>하지만, 현지에서 변경이 필요한 경우에 이용할 수 있다.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 사진 팝업창 -->
+        <div data-name="popup" data-popup="2" style="display: none">
+          <div data-name="popup-header">
+            <div data-name="popup-title">사진 팝업창</div>
+            <button
+              data-name="popup-close"
+              onclick="contentUtil.setPopup()"
+            ></button>
+          </div>
+          <div
+            data-name="popup-body"
+            class="flex items-center justify-center w-full h-full gap-16"
+          >
+            <div
+              class="flex flex-col items-center w-608 h-402"
+              data-name="popup_photo_wrap"
+            >
+              <div class="w-full overflow-x-hidden overflow-y-auto pe-4">
+                <img
+                  src="./images/8_01_20/popup_photo1.jpg"
+                  alt=""
+                  class="object-contain min-w-608 rounded-10"
+                  data-name="popup_photo"
+                />
+                <img
+                  src="./images/8_01_20/popup_photo2.jpg"
+                  alt=""
+                  class="object-contain min-w-608 rounded-10"
+                  data-name="popup_photo"
+                  style="display: none"
+                />
+              </div>
+              <div
+                class="flex mt-8 font-bold f-nanum-s h-52 text-40 leading-52 shrink-0"
+              >
+                <div data-name="popup_photo_text">신칸센</div>
+                <div data-name="popup_photo_text" style="display: none">
+                  JR패스
+                </div>
+              </div>
+            </div>
+            <div class="w-266 h-402">
+              <div class="flex flex-wrap w-full gap-10">
+                <button
+                  data-name="btn-popup_photo"
+                  class="w-128 h-72 active"
+                  onclick="contentUtil.setPhotoPopup(1)"
+                >
+                  <img src="./images/8_01_20/popup_btn_photo1.jpg" alt="" />
+                </button>
+                <button
+                  data-name="btn-popup_photo"
+                  class="w-128 h-72"
+                  onclick="contentUtil.setPhotoPopup(2)"
+                >
+                  <img src="./images/8_01_20/popup_btn_photo2.jpg" alt="" />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 추가 사진 -->
+        <div data-name="popup" data-popup="3" style="display: none">
+          <div data-name="popup-header">
+            <div data-name="popup-title">추가 사진</div>
+            <button
+              data-name="popup-close"
+              onclick="contentUtil.setPopup()"
+            ></button>
+          </div>
+          <div
+            data-name="popup-body"
+            class="flex items-center justify-center w-full h-full gap-16"
+          >
+            <div
+              class="flex flex-col items-center w-608 h-402"
+              data-name="popup_photo_wrap"
+            >
+              <div class="w-full overflow-x-hidden overflow-y-auto pe-4">
+                <img
+                  src="./images/8_01_20/popup_photo3.jpg"
+                  alt=""
+                  class="object-contain min-w-608 rounded-10"
+                  data-name="popup_photo"
+                />
+                <img
+                  src="./images/8_01_20/popup_photo4.jpg"
+                  alt=""
+                  class="object-contain min-w-608 rounded-10"
+                  data-name="popup_photo"
+                  style="display: none"
+                />
+                <img
+                  src="./images/8_01_20/popup_photo5.jpg"
+                  alt=""
+                  class="object-contain min-w-608 rounded-10"
+                  data-name="popup_photo"
+                  style="display: none"
+                />
+              </div>
+              <div
+                class="flex mt-8 font-bold f-nanum-s h-52 text-40 leading-52 shrink-0"
+              >
+                <div data-name="popup_photo_text" class="text-blue">신칸센</div>
+                <div
+                  data-name="popup_photo_text"
+                  class="text-blue"
+                  style="display: none"
+                >
+                  신칸센
+                </div>
+                <div
+                  data-name="popup_photo_text"
+                  class="text-blue"
+                  style="display: none"
+                >
+                  신칸센 내부 좌석
+                </div>
+              </div>
+            </div>
+            <div class="w-266 h-402">
+              <div class="flex flex-wrap w-full gap-10">
+                <button
+                  data-name="btn-popup_photo"
+                  class="w-128 h-72 active"
+                  onclick="contentUtil.setPhotoPopup(3)"
+                >
+                  <img src="./images/8_01_20/popup_btn_photo3.jpg" alt="" />
+                </button>
+                <button
+                  data-name="btn-popup_photo"
+                  class="w-128 h-72"
+                  onclick="contentUtil.setPhotoPopup(4)"
+                >
+                  <img src="./images/8_01_20/popup_btn_photo4.jpg" alt="" />
+                </button>
+                <button
+                  data-name="btn-popup_photo"
+                  class="w-128 h-72"
+                  onclick="contentUtil.setPhotoPopup(5)"
+                >
+                  <img src="./images/8_01_20/popup_btn_photo5.jpg" alt="" />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript">
+    const page = {
+      isAnswer: false,
+      isVocabulary: false,
+      showAnswer: () => {},
+      hideAnswer: () => {},
+      showVocabulary: () => {},
+    };
+  </script>
+  <script src="./../common/js/tailwind.config.js"></script>
+  <script src="./../common/js/script.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {});
+  </script>
+</html>

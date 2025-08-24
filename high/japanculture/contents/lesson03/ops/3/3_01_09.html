@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>미래엔 일본 문화</title>
+    <script src="./../common/lib/jquery-3.7.1.min.js"></script>
+    <script src="./../common/lib/howler-2.1.3.min.js"></script>
+    <script src="./../common/lib/tailwind.js"></script>
+    <!-- 폰트 -->
+    <link href="./../common/font/suit/suit.css" rel="stylesheet" />
+    <link href="./../common/font/bmjua/bmjua.css" rel="stylesheet" />
+    <link
+      href="./../common/font/nanumsquare/nanumSquare.css"
+      rel="stylesheet"
+    />
+    <link href="./../common/font/notoSansJP/notoSansJP.css" rel="stylesheet" />
+    <link href="./../common/css/tailwind.css" rel="stylesheet" />
+    <link href="./../common/css/fontStyle.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div id="wrap">
+      <!-- contents -->
+      <div class="relative w-full h-full pt-68">
+        <!-- title -->
+        <img
+          src="./../common/images/title_look_culture3.svg"
+          alt="문화 들여다보기1 주택의 종류와 특징"
+          class="absolute w-605 w-764 h-49 top-10"
+        />
+        <button
+          data-name="btn-common-dark"
+          onclick="contentUtil.setPopup(2)"
+          class="absolute right-111 top-13 min-w-64"
+        >
+          TIP
+        </button>
+        <button
+          data-name="btn-common"
+          onclick="contentUtil.setPopup(3); contentUtil.setPhotoPopup(1);"
+          class="absolute right-0 top-13"
+        >
+          추가 사진
+        </button>
+
+        <!-- main -->
+        <div class="flex flex-col w-full h-full">
+          <div
+            class="flex flex-col mb-8 w-763 h-404 leading-52 ps-20 whitespace-nowrap"
+          >
+            <div class="flex items-center mb-4">
+              <img
+                src="./../common/images/index_pink_1.svg"
+                alt="번호 1"
+                class="w-40 h-40 me-4"
+              />
+              <span class="font-extrabold f-nanum-s text-40">주택의 종류</span>
+            </div>
+            <div class="flex mb-4 font-bold f-nanum-s text-40">
+              <div data-name="number-3" class="bg-[#C84935]"></div>
+              <span class="text-[#C84935] font-extrabold flex"
+                >아파트 (<span
+                  data-audio="3_01_08/045-02.mp3"
+                  class="font-bold f-noto"
+                  >マンション</span
+                >)</span
+              >
+            </div>
+
+            <!-- ======== page 1 ======== -->
+            <div
+              data-name="page"
+              class="flex flex-col font-bold f-nanum-s text-40"
+            >
+              <div class="flex mb-4 ps-28">
+                일본의 ‘<span
+                  data-audio="3_01_08/045-02.mp3"
+                  class="font-medium f-noto"
+                  >マンション</span
+                >’은 철근 콘크리트로 지은 고층 건물로,
+              </div>
+              <div>
+                <p>
+                  우리나라의 아파트와 비슷하다. 거실과 부엌, 욕실이 있고 난방
+                </p>
+                <p>시설이 설치되어 있는 경우가 많다. 요즘은</p>
+                <p>한국의 온돌과 비슷하게 바닥을 따뜻하게</p>
+                <p>하는 난방 시설을 갖춘 곳도 있다.</p>
+              </div>
+            </div>
+            <!-- ======== page 2 ======== -->
+            <div
+              data-name="page"
+              class="flex flex-col font-bold f-nanum-s text-40"
+              style="display: none"
+            >
+              <!-- <div
+                data-name="tip-box-green"
+                class="absolute h-64 w-392 top-95 right-30"
+              >
+                <p>일본은 비가 많이 와서 크고 작은 침수가 자주 발생한다.</p>
+                <p>
+                  또한 고온 다습한 날씨로 습기가 많아 반지하 집이 거의 없다.
+                </p>
+              </div> -->
+              <div class="flex">
+                관리비나 임대료가 비싸며 엄격한 관리 규약이나 규정이 있다.
+              </div>
+              <div>
+                <p>
+                  요즘은 기술의 발달로 내진 설계가 잘 되어 고층 아파트도 많이
+                </p>
+                <p>볼 수 있다. 우리나라의 아파트처럼 대단지</p>
+                <p>를 형성하기보다는 한두 동 정도의 소규모</p>
+                <p>단지로 된 아파트가 많다.</p>
+              </div>
+            </div>
+          </div>
+          <!-- img box -->
+          <div
+            class="absolute flex flex-col items-center gap-20 overflow-hidden w-268 h-178 right-19 bottom-29"
+          >
+            <img
+              src="./images/3_01_09/main_photo1.jpg"
+              alt="아파트"
+              class="w-full h-full"
+            />
+
+            <button
+              data-name="btn-view"
+              class="absolute bottom-10 right-9"
+              onclick="contentUtil.setPopup(1); contentUtil.setPhotoPopup(1);"
+            ></button>
+          </div>
+          <!-- pagination -->
+          <div
+            class="absolute -translate-x-1/2 left-1/2 bottom-10"
+            data-name="pagination"
+          >
+            <button class="active" data-name="btn-pagination"></button>
+            <button class="" data-name="btn-pagination"></button>
+          </div>
+        </div>
+      </div>
+      <!-- popup -->
+      <div id="popup-wrap" style="display: none">
+        <!-- 사진 팝업창 -->
+        <div data-name="popup" data-popup="1" style="display: none">
+          <div data-name="popup-header">
+            <div data-name="popup-title">사진 팝업창</div>
+            <button
+              data-name="popup-close"
+              onclick="contentUtil.setPopup()"
+            ></button>
+          </div>
+          <div
+            data-name="popup-body"
+            class="flex items-center justify-center w-full h-full gap-16"
+          >
+            <div
+              class="flex flex-col items-center w-608 h-402"
+              data-name="popup_photo_wrap"
+            >
+              <div class="w-full overflow-hidden h-400 rounded-10">
+                <img
+                  src="./images/3_01_09/popup_photo1.jpg"
+                  alt="아파트"
+                  class="w-full h-full"
+                />
+              </div>
+              <div
+                class="flex mt-8 font-bold f-nanum-s h-52 text-40 leading-52 shrink-0"
+              >
+                <div class="flex justify-center">
+                  <img
+                    src="./../common/images/popup_photolabel.svg"
+                    alt=""
+                    class="w-36 h-52 me-6"
+                  />
+                  <span>아파트</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- TIP -->
+        <div data-name="popup" data-popup="2" style="display: none">
+          <div data-name="popup-header">
+            <div data-name="popup-title">TIP</div>
+            <button
+              data-name="popup-close"
+              onclick="contentUtil.setPopup()"
+            ></button>
+          </div>
+          <div
+            data-name="popup-body"
+            class="mt-16 mb-20 mr-10 ms-26 f-nanum-s me-6"
+          >
+            <!--  popup section 1  -->
+            <div class="flex flex-col mr-14">
+              <span class="font-bold f-nanum-s text-40 leading-52">
+                <p>일본은 비가 많이 와서 크고 작은 침수가 자주 발생한다.</p>
+                <p>또한 고온 다습한 날씨로 습기가 많아 반지하 집이 거의</p>
+                <p>없다.</p>
+              </span>
+            </div>
+          </div>
+        </div>
+        <!-- 추가 사진 -->
+        <div data-name="popup" data-popup="3" style="display: none">
+          <div data-name="popup-header">
+            <div data-name="popup-title">추가 사진</div>
+            <button
+              data-name="popup-close"
+              onclick="contentUtil.setPopup()"
+            ></button>
+          </div>
+          <div
+            data-name="popup-body"
+            class="flex items-center justify-center w-full h-full gap-16"
+          >
+            <div
+              class="flex flex-col items-center w-608 h-402"
+              data-name="popup_photo_wrap"
+            >
+              <div class="w-full overflow-x-hidden overflow-y-auto h-400 pe-4">
+                <img
+                  src="./images/3_01_09/popup_photo3.jpg"
+                  alt="1"
+                  class="object-contain min-w-608 rounded-10"
+                  data-name="popup_photo"
+                />
+                <img
+                  style="display: none"
+                  src="./images/3_01_09/popup_photo4.jpg"
+                  alt="2"
+                  class="object-contain min-w-608 rounded-10"
+                  data-name="popup_photo"
+                />
+              </div>
+              <div
+                class="flex mt-8 font-bold f-nanum-s h-52 text-40 leading-52 shrink-0"
+              >
+                <div data-name="popup_photo_text" class="text-blue">
+                  아파트(<span class="font-medium f-noto">マンション</span>)
+                </div>
+                <div
+                  data-name="popup_photo_text"
+                  class="text-blue"
+                  style="display: none"
+                >
+                  아파트(<span class="font-medium f-noto">マンション</span>)
+                </div>
+              </div>
+            </div>
+            <div class="w-266 h-402">
+              <div class="flex flex-wrap w-full gap-10">
+                <button
+                  data-name="btn-popup_photo"
+                  class="w-128 h-72 active"
+                  onclick="contentUtil.setPhotoPopup(1)"
+                >
+                  <img src="./images/3_01_09/popup_btn_photo3.jpg" alt="1" />
+                </button>
+                <button
+                  data-name="btn-popup_photo"
+                  class="w-128 h-72"
+                  onclick="contentUtil.setPhotoPopup(2)"
+                >
+                  <img src="./images/3_01_09/popup_btn_photo4.jpg" alt="2" />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript">
+    const page = {
+      isAnswer: false,
+      isVocabulary: false,
+      showAnswer: () => {},
+      hideAnswer: () => {},
+      showVocabulary: () => {},
+    };
+  </script>
+  <script src="./../common/js/tailwind.config.js"></script>
+  <script src="./../common/js/script.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {});
+  </script>
+</html>

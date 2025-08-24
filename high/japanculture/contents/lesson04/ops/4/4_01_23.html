@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>미래엔 일본 문화</title>
+    <script src="./../common/lib/jquery-3.7.1.min.js"></script>
+    <script src="./../common/lib/howler-2.1.3.min.js"></script>
+    <script src="./../common/lib/tailwind.js"></script>
+    <!-- 폰트 -->
+    <link href="./../common/font/suit/suit.css" rel="stylesheet" />
+    <link href="./../common/font/bmjua/bmjua.css" rel="stylesheet" />
+    <link
+      href="./../common/font/nanumsquare/nanumSquare.css"
+      rel="stylesheet"
+    />
+    <link href="./../common/font/notoSansJP/notoSansJP.css" rel="stylesheet" />
+    <link href="./../common/css/tailwind.css" rel="stylesheet" />
+    <link href="./../common/css/fontStyle.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div id="wrap">
+      <!-- contents -->
+      <div class="relative w-full h-full pt-68">
+        <!-- title -->
+        <img
+          src="./../common/images/title_look_culture2.svg"
+          alt="문화 들여다보기2 일본인의 예절"
+          class="absolute w-764 h-49 top-10"
+        />
+        <!-- header-btn -->
+        <div class="absolute right-0 flex gap-6 top-13" data-name="header-btn">
+          <button
+            data-name="btn-common-dark"
+            class="min-w-62"
+            onclick="contentUtil.setPopup(1)"
+          >
+            TIP
+          </button>
+        </div>
+        <!-- main -->
+        <div class="flex flex-col w-full h-full">
+          <div class="flex flex-col flex-1 w-full leading-52 ps-20">
+            <div class="flex items-center mb-4">
+              <img
+                src="./../common/images/index_pink_3.svg"
+                alt="번호 3"
+                class="w-40 h-40 me-4"
+              />
+              <span class="font-extrabold f-nanum-s text-40">선물 문화</span>
+            </div>
+            <div class="flex mb-4 text-40 f-nanum-s">
+              <div data-name="number-1" class="bg-[#C84935]"></div>
+              <span class="text-[#C84935] font-extrabold">선물의 명칭</span>
+            </div>
+            <!-- ======= page1 ======= -->
+            <div
+              data-name="page"
+              class="flex flex-col font-bold f-nanum-s text-40"
+            >
+              <div>
+                <p class="ps-28">
+                  일본에서는 선물의 용도에 따라 선물의 명칭이 조금씩
+                </p>
+                <p>
+                  다르다. 선물을 직접 전달할 때는 ‘괜찮으시면 다 같이(드세요)
+                </p>
+                <p class="flex">
+                  (<span class="font-medium f-noto"
+                    ><span data-audio="4_01_23/066-01.mp3"
+                      >よろしければ みなさんで</span
+                    >……</span
+                  >), 마음뿐이지만
+                </p>
+                <p class="flex">
+                  (<span class="font-medium f-noto"
+                    ><span data-audio="4_01_23/066-02.mp3"
+                      >こころばかりですが</span
+                    >……</span
+                  >)’ 등의 표현과 함께 겸손하게
+                </p>
+                <p>건넨다.</p>
+              </div>
+            </div>
+            <!-- ======= page2 ======= -->
+            <div
+              data-name="page"
+              class="flex flex-col font-bold f-nanum-s text-40"
+              style="display: none"
+            >
+              <div class="mb-28">
+                <p>그리고 일반적으로 선물을 받았을 때는 가까운 시일 내에,</p>
+                <p>보통 받은 선물의 약 3분의 1이나 절반 정도의 금액에</p>
+                <p>해당하는 보답을 하는 것이 예의이다.</p>
+              </div>
+            </div>
+            <!-- ======= page3 ======= -->
+            <div
+              data-name="page"
+              class="flex flex-col pt-6 font-bold f-nanum-s text-40"
+              style="display: none"
+            >
+              <!-- table -->
+              <div
+                class="flex flex-col w-full mb-10 font-bold leading-52 text-40 f-nanum-s"
+              >
+                <!-- th -->
+                <div class="flex w-full">
+                  <div
+                    class="flex items-center bg-[#FFEDB5] justify-center rounded-tl-10 py-10 w-224 border-2 border-[#734D35]"
+                  >
+                    <span>명칭</span>
+                  </div>
+                  <div
+                    class="flex items-center bg-[#FFEDB5] justify-center py-10 w-436 border-2 border-l-0 border-[#734D35]"
+                  >
+                    <span>용도</span>
+                  </div>
+                  <div
+                    class="flex items-center bg-[#FFEDB5] justify-center py-10 w-300 border-2 border-l-0 border-[#734D35] rounded-tr-10"
+                  >
+                    <span>선물 내용</span>
+                  </div>
+                </div>
+                <!-- td -->
+                <!-- ===== -->
+                <div class="flex w-full">
+                  <div class="flex items-stretch">
+                    <!-- ------ -->
+                    <div
+                      class="flex items-center justify-center w-224 border-2 border-t-0 border-[#734D35] rounded-bl-10 py-10"
+                    >
+                      <span
+                        data-audio="4_01_23/066-03.mp3"
+                        class="font-medium text-center f-noto"
+                        >プレゼント</span
+                      >
+                    </div>
+                    <!-- ------ -->
+                    <div
+                      class="flex flex-col gap-4 w-436 border-2 border-t-0 border-l-0 border-[#734D35] p-10 items-stretch"
+                    >
+                      <!-- -- -->
+                      <div class="text-center">
+                        <p>생일이나 크리스마스 등</p>
+                        <p>특정한 날 하는 선물</p>
+                      </div>
+                    </div>
+                    <div
+                      class="flex flex-col gap-4 w-300 border-2 border-t-0 border-l-0 border-[#734D35] rounded-br-10 p-10 items-stretch"
+                    >
+                      <!-- -- -->
+                      <div class="text-center">
+                        <p>학용품, 장신구,</p>
+                        <p>지갑 등</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- ======= page4 ======= -->
+            <div
+              data-name="page"
+              class="flex flex-col pt-6 font-bold f-nanum-s text-40"
+              style="display: none"
+            >
+              <!-- table -->
+              <div
+                class="flex flex-col w-full mb-10 font-bold leading-52 text-40 f-nanum-s"
+              >
+                <!-- th -->
+                <div class="flex w-full">
+                  <div
+                    class="flex items-center bg-[#FFEDB5] justify-center rounded-tl-10 py-10 w-224 border-2 border-[#734D35]"
+                  >
+                    <span>명칭</span>
+                  </div>
+                  <div
+                    class="flex items-center bg-[#FFEDB5] justify-center py-10 w-436 border-2 border-l-0 border-[#734D35]"
+                  >
+                    <span>용도</span>
+                  </div>
+                  <div
+                    class="flex items-center bg-[#FFEDB5] justify-center py-10 w-300 border-2 border-l-0 border-[#734D35] rounded-tr-10"
+                  >
+                    <span>선물 내용</span>
+                  </div>
+                </div>
+                <!-- td -->
+                <!-- ===== -->
+                <div class="flex w-full">
+                  <div class="flex items-stretch">
+                    <!-- ------ -->
+                    <div
+                      class="flex items-center justify-center w-224 border-2 border-t-0 border-[#734D35] rounded-bl-10 py-10"
+                    >
+                      <span
+                        data-audio="4_01_23/066-04.mp3"
+                        class="font-medium text-center f-noto"
+                        >おみやげ</span
+                      >
+                    </div>
+                    <!-- ------ -->
+                    <div
+                      class="flex flex-col gap-4 w-436 border-2 border-t-0 border-l-0 border-[#734D35] p-10 items-stretch"
+                    >
+                      <!-- -- -->
+                      <div class="text-center">
+                        <p>출장이나 여행을</p>
+                        <p>다녀와서 하는 선물</p>
+                      </div>
+                    </div>
+                    <div
+                      class="flex flex-col gap-4 w-300 border-2 border-t-0 border-l-0 border-[#734D35] rounded-br-10 p-10 items-stretch"
+                    >
+                      <!-- -- -->
+                      <div class="text-center">
+                        <p>지역 특산품,</p>
+                        <p>과자, 차 등</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- ======= page5 ======= -->
+            <div
+              data-name="page"
+              class="flex flex-col pt-6 font-bold f-nanum-s text-40"
+              style="display: none"
+            >
+              <!-- table -->
+              <div
+                class="flex flex-col w-full mb-10 font-bold leading-52 text-40 f-nanum-s"
+              >
+                <!-- th -->
+                <div class="flex w-full">
+                  <div
+                    class="flex items-center bg-[#FFEDB5] justify-center rounded-tl-10 py-10 w-224 border-2 border-[#734D35]"
+                  >
+                    <span>명칭</span>
+                  </div>
+                  <div
+                    class="flex items-center bg-[#FFEDB5] justify-center py-10 w-436 border-2 border-l-0 border-[#734D35]"
+                  >
+                    <span>용도</span>
+                  </div>
+                  <div
+                    class="flex items-center bg-[#FFEDB5] justify-center py-10 w-300 border-2 border-l-0 border-[#734D35] rounded-tr-10"
+                  >
+                    <span>선물 내용</span>
+                  </div>
+                </div>
+                <!-- td -->
+                <!-- ===== -->
+                <div class="flex w-full">
+                  <div class="flex items-stretch">
+                    <!-- ------ -->
+                    <div
+                      class="flex items-center justify-center w-224 border-2 border-t-0 border-[#734D35] rounded-bl-10 py-10"
+                    >
+                      <span
+                        data-audio="4_01_23/066-05.mp3"
+                        class="font-medium text-center f-noto"
+                        >てみやげ</span
+                      >
+                    </div>
+                    <!-- ------ -->
+                    <div
+                      class="flex flex-col gap-4 w-436 border-2 border-t-0 border-l-0 border-[#734D35] p-10"
+                    >
+                      <!-- -- -->
+                      <div class="text-center">
+                        <p>남의 집을 방문할 때</p>
+                        <p>하는 선물</p>
+                      </div>
+                    </div>
+                    <div
+                      class="flex flex-col gap-4 w-300 border-2 border-t-0 border-l-0 border-[#734D35] rounded-br-10 p-10"
+                    >
+                      <!-- -- -->
+                      <div
+                        class="flex items-center justify-center w-full h-full"
+                      >
+                        <p>과자, 차 등</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- ======= page6 ======= -->
+            <div
+              data-name="page"
+              class="flex flex-col pt-6 font-bold f-nanum-s text-40"
+              style="display: none"
+            >
+              <!-- table -->
+              <div
+                class="flex flex-col w-full mb-10 font-bold leading-52 text-40 f-nanum-s"
+              >
+                <!-- th -->
+                <div class="flex w-full">
+                  <div
+                    class="flex items-center bg-[#FFEDB5] justify-center rounded-tl-10 py-10 w-224 border-2 border-[#734D35]"
+                  >
+                    <span>명칭</span>
+                  </div>
+                  <div
+                    class="flex items-center bg-[#FFEDB5] justify-center py-10 w-436 border-2 border-l-0 border-[#734D35]"
+                  >
+                    <span>용도</span>
+                  </div>
+                  <div
+                    class="flex items-center bg-[#FFEDB5] justify-center py-10 w-300 border-2 border-l-0 border-[#734D35] rounded-tr-10"
+                  >
+                    <span>선물 내용</span>
+                  </div>
+                </div>
+                <!-- td -->
+                <!-- ===== -->
+                <div class="flex w-full">
+                  <div class="flex items-stretch">
+                    <!-- ------ -->
+                    <div
+                      class="flex items-center justify-center w-224 border-2 border-t-0 border-[#734D35] rounded-bl-10 py-10"
+                    >
+                      <span
+                        data-audio="4_01_23/066-06.mp3"
+                        class="font-medium text-center f-noto"
+                        >おかえし</span
+                      >
+                    </div>
+                    <!-- ------ -->
+                    <div
+                      class="flex flex-col gap-4 w-436 border-2 border-t-0 border-l-0 border-[#734D35] p-10"
+                    >
+                      <!-- -- -->
+                      <div class="text-center">
+                        <p>받은 선물에 대한 답례로</p>
+                        <p>하는 선물</p>
+                      </div>
+                    </div>
+                    <div
+                      class="flex flex-col gap-4 w-300 border-2 border-t-0 border-l-0 border-[#734D35] rounded-br-10 p-10"
+                    >
+                      <!-- -- -->
+                      <div class="text-center">
+                        <p>과자, 음료,</p>
+                        <p>상품권 등</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- pagination -->
+          <div
+            data-name="pagination"
+            class="absolute -translate-x-1/2 bottom-10 left-1/2"
+          >
+            <button class="active" data-name="btn-pagination"></button>
+            <button class="" data-name="btn-pagination"></button>
+            <button class="" data-name="btn-pagination"></button>
+            <button class="" data-name="btn-pagination"></button>
+            <button class="" data-name="btn-pagination"></button>
+            <button class="" data-name="btn-pagination"></button>
+          </div>
+        </div>
+      </div>
+      <!-- popup -->
+      <div id="popup-wrap" style="display: none">
+        <!-- tip -->
+        <div data-name="popup" data-popup="1" style="display: none">
+          <div data-name="popup-header">
+            <div data-name="popup-title">TIP</div>
+            <button
+              data-name="popup-close"
+              onclick="contentUtil.setPopup()"
+            ></button>
+          </div>
+          <div
+            data-name="popup-body"
+            class="mt-16 mb-10 font-bold ms-26 f-nanum-s me-6 leading-52 text-40"
+          >
+            <div class="flex flex-col">
+              <p>요즘에는 다양한 상품이 나와 있는 카탈로그를 보내서</p>
+              <p>선물을 받는 사람이 상품을 직접 선택하게 하기도 한다.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript">
+    const page = {
+      isAnswer: false,
+      isVocabulary: false,
+      showAnswer: () => {},
+      hideAnswer: () => {},
+      showVocabulary: () => {},
+    };
+  </script>
+  <script src="./../common/js/tailwind.config.js"></script>
+  <script src="./../common/js/script.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {});
+  </script>
+</html>

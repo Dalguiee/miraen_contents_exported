@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>미래엔 일본 문화</title>
+    <script src="./../common/lib/jquery-3.7.1.min.js"></script>
+    <script src="./../common/lib/howler-2.1.3.min.js"></script>
+    <script src="./../common/lib/tailwind.js"></script>
+    <!-- 폰트 -->
+    <link href="./../common/font/suit/suit.css" rel="stylesheet" />
+    <link href="./../common/font/bmjua/bmjua.css" rel="stylesheet" />
+    <link
+      href="./../common/font/nanumsquare/nanumSquare.css"
+      rel="stylesheet"
+    />
+    <link href="./../common/font/notoSansJP/notoSansJP.css" rel="stylesheet" />
+    <link href="./../common/css/tailwind.css" rel="stylesheet" />
+    <link href="./../common/css/fontStyle.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div id="wrap">
+      <!-- contents -->
+      <div class="relative flex flex-col w-full h-full pt-70">
+        <!-- title -->
+        <img
+          src="./../common/images/title_check.svg"
+          alt="확인하기"
+          class="absolute left-0 w-163 h-50 top-10"
+        />
+        <!-- header-btn -->
+        <div class="absolute right-0 flex gap-6 top-13" data-name="header-btn">
+          <button
+            data-exreset="1"
+            data-name="btn-common"
+            onclick="contentUtil.showExplan(1)"
+          >
+            해석 보기
+          </button>
+          <button
+            data-explan="1"
+            data-name="btn-common"
+            onclick="contentUtil.hideExplan(1)"
+            style="display: none"
+          >
+            해석 감추기
+          </button>
+          <button data-name="btn-common" onclick="contentUtil.setPopup(1)">
+            해설 보기
+          </button>
+        </div>
+
+        <!-- main -->
+        <div
+          class="flex flex-col flex-1 w-full overflow-y-auto font-bold leading-52 f-nanum-s text-40"
+        >
+          <div class="flex mb-20">
+            <img
+              src="./images/4_01_38/title_index_4.svg"
+              alt="label"
+              class="w-25 h-52 me-12"
+            />
+            <div class="font-extrabold">
+              <p>그림을 보고 오랫동안 헤어질 때 하는 인사말을 일본어로</p>
+              <p>써 봅시다.</p>
+            </div>
+          </div>
+          <!-- answer box -->
+          <div class="flex items-center mx-auto">
+            <div class="relative w-280 h-208 me-30">
+              <img
+                src="./images/4_01_38/main_img1.jpg"
+                alt=""
+                class="w-full h-full"
+              />
+              <button
+                data-name="btn-view"
+                class="absolute right-10 bottom-10"
+                onclick="contentUtil.setPopup(2)"
+              ></button>
+            </div>
+
+            <div
+              class="flex flex-col items-center justify-center w-427 py-40 border-4 border-[#F3F7D9] rounded-20"
+            >
+              <div
+                class="h-56 w-347 bg-[url(./images/4_01_38/main_img2.svg)] bg-no-repeat bg-cover flex"
+              >
+                <span
+                  data-answer="1"
+                  class="font-medium text-center text-red f-noto w-302"
+                  data-audio="4_01_38/071-01.mp3"
+                  style="display: none"
+                  >さようなら
+                </span>
+              </div>
+              <div data-answer="1" style="display: none">
+                <p
+                  data-explan="1"
+                  class="mt-6 me-24 text-blue"
+                  style="display: none"
+                >
+                  잘 가.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- popup -->
+      <div id="popup-wrap" style="display: none">
+        <!-- 해설 보기 -->
+        <div data-name="popup" data-popup="1" style="display: none">
+          <div data-name="popup-header">
+            <div data-name="popup-title">해설 보기</div>
+            <button
+              data-name="popup-close"
+              onclick="contentUtil.setPopup()"
+            ></button>
+          </div>
+          <div
+            data-name="popup-body"
+            class="flex-1 mt-16 mb-10 ms-26 f-nanum-s me-6"
+          >
+            <div class="flex flex-col font-bold text-40 leading-52 f-nanum-s">
+              <!-- title -->
+              <div class="flex items-center mb-10 h-55">
+                <img
+                  src="./../common/images/popup_titlemark_primary.svg"
+                  alt=""
+                  class="w-35 h-55 me-10"
+                />
+                <div class="flex font-extrabold text-42 text-[#41674B]">
+                  해설
+                </div>
+              </div>
+              <!-- text -->
+              <div>
+                <p class="flex">
+                  오랫동안 헤어질 때 하는 인사말은 ‘<span
+                    class="font-medium f-noto"
+                    >さようなら</span
+                  >’이다.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 사진 팝업창 -->
+        <div data-name="popup" data-popup="2" style="display: none">
+          <div data-name="popup-header">
+            <div data-name="popup-title">사진 팝업창</div>
+            <button
+              data-name="popup-close"
+              onclick="contentUtil.setPopup()"
+            ></button>
+          </div>
+          <div
+            data-name="popup-body"
+            class="flex items-center justify-center w-full h-full"
+          >
+            <img
+              src="./images/4_01_38/popup_photo1.jpg"
+              alt=""
+              class="w-730 h-400 rounded-10"
+            />
+          </div>
+        </div>
+      </div>
+      <!-- ======================임시버튼============================== -->
+      <div class="absolute bottom-0 right-0">
+        <button class="btn-all-answer text-12">정답 보기</button>
+        <button class="btn-all-reset text-12" style="display: none">
+          다시 풀기
+        </button>
+      </div>
+      <!-- ======================================================== -->
+    </div>
+  </body>
+  <script type="text/javascript">
+    const page = {
+      isAnswer: true,
+      isVocabulary: false,
+      showAnswer: () => {
+        contentUtil.showAnswer();
+      },
+      hideAnswer: () => {
+        contentUtil.hideAnswer();
+      },
+      showVocabulary: () => {},
+    };
+  </script>
+  <script src="./../common/js/tailwind.config.js"></script>
+  <script src="./../common/js/script.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {});
+  </script>
+</html>

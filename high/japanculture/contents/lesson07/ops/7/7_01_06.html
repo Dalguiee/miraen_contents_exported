@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>미래엔 일본 문화</title>
+    <script src="./../common/lib/jquery-3.7.1.min.js"></script>
+    <script src="./../common/lib/howler-2.1.3.min.js"></script>
+    <script src="./../common/lib/tailwind.js"></script>
+    <!-- 폰트 -->
+    <link href="./../common/font/suit/suit.css" rel="stylesheet" />
+    <link href="./../common/font/bmjua/bmjua.css" rel="stylesheet" />
+    <link
+      href="./../common/font/nanumsquare/nanumSquare.css"
+      rel="stylesheet"
+    />
+    <link href="./../common/font/notoSansJP/notoSansJP.css" rel="stylesheet" />
+    <link href="./../common/css/tailwind.css" rel="stylesheet" />
+    <link href="./../common/css/fontStyle.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div id="wrap">
+      <!-- contents -->
+      <div class="relative w-full h-full pt-60">
+        <!-- title -->
+        <div class="absolute left-0 flex items-center top-6">
+          <img
+            src="./../common/images/title_culture_plus.svg"
+            alt="문화 +"
+            class="w-111 h-44 me-10"
+          />
+        </div>
+        <!-- header-btn -->
+        <div class="absolute right-0 flex gap-6 top-13" data-name="header-btn">
+          <button
+            data-name="btn-common"
+            class="min-w-62"
+            onclick="contentUtil.setPopup(2)"
+          >
+            해설 보기
+          </button>
+          <button
+            data-name="btn-common"
+            class="min-w-62"
+            onclick="contentUtil.setPopup(3); contentUtil.setPhotoPopup(3)"
+          >
+            추가 사진
+          </button>
+        </div>
+
+        <div class="w-406 h-54 ml-20 mb-10">
+          <img src="./images/7_01_06/label.svg" alt="라벨" />
+        </div>
+
+        <!-- main -->
+        <div class="flex flex-col w-full h-full">
+          <!-- img box -->
+          <div class="absolute right-20 bottom-66 flex gap-10">
+            <div class="relative flex flex-col w-230 h-150">
+              <img
+                src="./images/7_01_06/main_photo1.jpg"
+                alt="‘미코시’를 메고 행진하는 모습"
+                class="w-full h-full"
+              />
+              <button
+                data-name="btn-view"
+                class="absolute bottom-10 right-10"
+                onclick="contentUtil.setPopup(1); contentUtil.setPhotoPopup(1);"
+              ></button>
+            </div>
+            <div class="relative flex flex-col w-230 h-150">
+              <img
+                src="./images/7_01_06/main_photo2.jpg"
+                alt="‘미코시’를 메고 행진하는 모습"
+                class="w-full h-full"
+              />
+              <button
+                data-name="btn-view"
+                class="absolute bottom-10 right-10"
+                onclick="contentUtil.setPopup(1); contentUtil.setPhotoPopup(2);"
+              ></button>
+            </div>
+          </div>
+          <!-- page1 -->
+          <div data-name="page" class="flex flex-col w-full mb-8 h-404 ps-20">
+            <div class="font-bold leading-52 text-40 f-nanum-s">
+              <p class="ps-28">
+                전국 각지에서 일 년 내내 열리는 마쓰리는 각 지역의 전통과
+              </p>
+              <p>특색을 드러내기도 하지만 대개 다음과 같은 전형적인 모습을</p>
+              <p class="flex">
+                띤다. 머리에 수건을 두르고 ‘핫피(<span
+                  data-audio="7_01_06/104-05.mp3"
+                  class="f-noto font-medium"
+                  >はっぴ</span
+                >)’를 입은 사람들이
+              </p>
+              <p class="flex pt-12">
+                신을 모신 화려한 수레(<span
+                  data-audio="7_01_06/104-06.mp3"
+                  class="f-noto font-medium"
+                  ><span class="relative"
+                    >山車<span class="ruby">だし</span></span
+                  ></span
+                >)를
+              </p>
+              <p>끌거나 일종의 가마인 ‘미코시</p>
+              <p class="flex">
+                (<span
+                  data-audio="7_01_06/104-07.mp3"
+                  class="f-noto font-medium"
+                  >みこし</span
+                >)’를 메고 행진한다.
+              </p>
+            </div>
+          </div>
+          <!-- page2 -->
+          <div
+            data-name="page"
+            style="display: none"
+            class="flex flex-col w-full mb-8 font-bold h-404 leading-52 text-40 ps-20 f-nanum-s"
+          >
+            <div>
+              <p>참가자들의 춤과 노래, 함성 소리가 전통 악기인 ‘샤미센’과</p>
+              <p>피리, 북 등의 소리와 어우러져 흥이 넘친다. 사람들은</p>
+              <p class="flex">
+                포장마차(<span
+                  data-audio="7_01_06/104-08.mp3"
+                  class="f-noto font-medium"
+                  >やたい</span
+                >)에서 음식을 사 먹고 놀이를 즐기며
+              </p>
+              <p>여름에는 유카타를 입기도 한다.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- pagination -->
+      <div
+        class="absolute -translate-x-1/2 left-1/2 bottom-10"
+        data-name="pagination"
+      >
+        <button class="active" data-name="btn-pagination"></button>
+        <button class="" data-name="btn-pagination"></button>
+      </div>
+
+      <!-- popup -->
+      <div id="popup-wrap" style="display: none">
+        <!-- 사진 팝업창 -->
+        <div data-name="popup" data-popup="1" style="display: none">
+          <div data-name="popup-header">
+            <div data-name="popup-title">사진 팝업창</div>
+            <button
+              data-name="popup-close"
+              onclick="contentUtil.setPopup()"
+            ></button>
+          </div>
+          <div
+            data-name="popup-body"
+            class="flex items-center justify-center w-full h-full gap-16"
+          >
+            <div
+              class="flex flex-col items-center w-608 h-402"
+              data-name="popup_photo_wrap"
+            >
+              <div
+                class="pe-4 w-full overflow-x-hidden overflow-y-auto rounded-10 mb-8"
+              >
+                <img
+                  data-name="popup_photo"
+                  style="display: none"
+                  src="./images/7_01_06/popup_photo2.jpg"
+                  alt="‘미코시’를 메고 행진하는 모습"
+                  class="object-contain min-w-608 rounded-10"
+                />
+                <img
+                  data-name="popup_photo"
+                  src="./images/7_01_06/popup_photo4.jpg"
+                  alt="‘미코시’를 메고 행진하는 모습"
+                  class="object-contain min-w-608 rounded-10"
+                />
+              </div>
+              <div class="flex font-bold f-nanum-s text-40 leading-52 shrink-0">
+                <div class="" data-name="popup_photo_text">
+                  ‘미코시’를 메고 행진하는 모습
+                </div>
+                <div class="" data-name="popup_photo_text">
+                  ‘미코시’를 메고 행진하는 모습
+                </div>
+              </div>
+            </div>
+            <div class="w-266 h-402">
+              <div class="flex w-full gap-10">
+                <button
+                  onclick="contentUtil.setPhotoPopup(1)"
+                  data-name="btn-popup_photo"
+                  class="w-128 h-72"
+                >
+                  <img
+                    src="./images/7_01_06/popup_btn_photo2.jpg"
+                    alt="‘미코시’를 메고 행진하는 모습"
+                  />
+                </button>
+                <button
+                  onclick="contentUtil.setPhotoPopup(2)"
+                  data-name="btn-popup_photo"
+                  class="w-128 h-72 active"
+                >
+                  <img
+                    src="./images/7_01_06/popup_btn_photo1.jpg"
+                    alt="‘미코시’를 메고 행진하는 모습"
+                  />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 해설 보기 -->
+        <div data-name="popup" data-popup="2" style="display: none">
+          <div data-name="popup-header">
+            <div data-name="popup-title">해설 보기</div>
+            <button
+              data-name="popup-close"
+              onclick="contentUtil.setPopup()"
+            ></button>
+          </div>
+          <div
+            data-name="popup-body"
+            class="mt-16 mb-10 font-bold ms-26 f-nanum-s me-6 leading-52 text-40"
+          >
+            <div class="flex flex-col">
+              <!-- title -->
+              <div class="flex items-center mb-10 h-55">
+                <img
+                  src="./../common/images/popup_titlemark_primary.svg"
+                  alt=""
+                  class="w-35 h-55 me-10"
+                />
+                <div class="flex font-extrabold text-42 text-[#F25F7C]">
+                  미코시(<span class="f-noto font-bold">みこし</span>)
+                </div>
+              </div>
+              <div>
+                <p class="flex">
+                  신이 신사에서 외출할 때 탄 것이 ‘미코시(<span
+                    class="f-noto font-medium"
+                    >みこし</span
+                  >)’이다.
+                </p>
+                <p>신이 타는 것이기 때문에 미코시를 볼 때 건물 위에서</p>
+                <p>내려다보게 되면 경우에 따라서는 주의를 받을 수도 있다.</p>
+                <p>미코시는 작은 신전 모양을 하고 있으며, 크기에 따라</p>
+                <p>10명이 들기도 하고 100여 명이 들기도 한다.</p>
+                <p class="flex pt-12">
+                  또한 미코시를 드는 사람들의 모임인 ‘<span
+                    class="f-noto font-medium"
+                    >みこし<span class="relative"
+                      >会<span class="ruby">かい</span></span
+                    ></span
+                  >’는 일본
+                </p>
+                <p>전국에 많이 존재한다. 이 모임은 주로 미코시를 드는</p>
+                <p>연습을 하는데, 모임에 따라서는 주말마다 전국의 마쓰리를</p>
+                <p>다니며 원정 연습을 하기도 한다.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 추가 사진 -->
+        <div data-name="popup" data-popup="3" style="display: none">
+          <div data-name="popup-header">
+            <div data-name="popup-title">추가 사진</div>
+            <button
+              data-name="popup-close"
+              onclick="contentUtil.setPopup()"
+            ></button>
+          </div>
+          <div
+            data-name="popup-body"
+            class="flex items-center justify-center w-full h-full gap-16"
+          >
+            <div
+              class="flex flex-col items-center w-608 h-402"
+              data-name="popup_photo_wrap"
+            >
+              <div
+                class="pe-4 w-full overflow-x-hidden overflow-y-auto rounded-10"
+              >
+                <img
+                  data-name="popup_photo"
+                  src="./images/7_01_06/popup_photo3.jpg"
+                  alt="미코시"
+                  class="object-contain min-w-608 rounded-10"
+                />
+                <img
+                  data-name="popup_photo"
+                  style="display: none"
+                  src="./images/7_01_06/popup_photo1.jpg"
+                  alt="미코시"
+                  class="object-contain min-w-608"
+                />
+              </div>
+
+              <div
+                class="flex mt-8 font-bold f-nanum-s h-52 text-40 leading-52 shrink-0"
+              >
+                <div class="text-blue">미코시</div>
+                <div style="display: none" class="text-blue">미코시</div>
+              </div>
+            </div>
+            <div class="w-266 h-402">
+              <div class="flex w-full gap-10">
+                <button
+                  onclick="contentUtil.setPhotoPopup(3)"
+                  data-name="btn-popup_photo"
+                  class="w-128 h-72 active"
+                >
+                  <img
+                    src="./images/7_01_06/popup_btn_photo3.jpg"
+                    alt="미코시"
+                  />
+                </button>
+                <button
+                  onclick="contentUtil.setPhotoPopup(4)"
+                  data-name="btn-popup_photo"
+                  class="w-128 h-72"
+                >
+                  <img
+                    src="./images/7_01_06/popup_btn_photo4.jpg"
+                    alt="미코시"
+                  />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript">
+    const page = {
+      isAnswer: false,
+      isVocabulary: false,
+      showAnswer: () => {},
+      hideAnswer: () => {},
+      showVocabulary: () => {},
+    };
+  </script>
+  <script src="./../common/js/tailwind.config.js"></script>
+  <script src="./../common/js/script.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      // contentUtil.setPopup(1);
+    });
+  </script>
+</html>

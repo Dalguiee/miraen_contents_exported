@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>미래엔 일본 문화</title>
+    <script src="./../common/lib/jquery-3.7.1.min.js"></script>
+    <script src="./../common/lib/howler-2.1.3.min.js"></script>
+    <script src="./../common/lib/tailwind.js"></script>
+    <!-- 폰트 -->
+    <link href="./../common/font/suit/suit.css" rel="stylesheet" />
+    <link href="./../common/font/bmjua/bmjua.css" rel="stylesheet" />
+    <link
+      href="./../common/font/nanumsquare/nanumSquare.css"
+      rel="stylesheet"
+    />
+    <link href="./../common/font/notoSansJP/notoSansJP.css" rel="stylesheet" />
+    <link href="./../common/css/tailwind.css" rel="stylesheet" />
+    <link href="./../common/css/fontStyle.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div id="wrap">
+      <!-- contents -->
+      <div class="relative w-full h-full pt-68">
+        <!-- title -->
+        <img
+          src="./../common/images/title_look_culture3.svg"
+          alt="문화 들여다보기1 주택의 종류와 특징"
+          class="absolute w-605 w-764 h-49 top-10"
+        />
+        <button
+          data-name="btn-common"
+          onclick="contentUtil.setPopup(1)"
+          class="absolute right-111 top-13 photo_btn"
+        >
+          해설 보기
+        </button>
+        <button
+          data-name="btn-common"
+          onclick="contentUtil.setPopup(3); contentUtil.setPhotoPopup(1);"
+          class="absolute right-0 top-13"
+        >
+          추가 사진
+        </button>
+        <!-- main -->
+        <div class="flex flex-col w-full h-full">
+          <div
+            class="flex flex-col mb-8 w-763 h-404 leading-52 ps-20 whitespace-nowrap"
+          >
+            <div class="flex items-center mb-4">
+              <img
+                src="./../common/images/index_pink_1.svg"
+                alt="번호 1"
+                class="w-40 h-40 me-4"
+              />
+              <span class="font-extrabold f-nanum-s text-40">주택의 종류</span>
+            </div>
+            <div class="flex mb-4 font-bold f-nanum-s text-40">
+              <div data-name="number-1" class="bg-[#C84935]"></div>
+              <span class="text-[#C84935] font-extrabold flex"
+                >단독 주택 (<span
+                  class="font-bold f-noto"
+                  data-audio="3_01_06/044-01.mp3"
+                  ><span class="relative"
+                    >一<span class="font-bold ruby">いっ</span></span
+                  ><span class="relative"
+                    >戸<span class="font-bold ruby">こ</span></span
+                  ><span class="relative"
+                    >建<span class="font-bold ruby">だ</span></span
+                  >て</span
+                >)</span
+              >
+            </div>
+
+            <!-- ======== page 1 ======== -->
+            <div
+              data-name="page"
+              class="flex flex-col font-bold f-nanum-s text-40"
+            >
+              <div>
+                <p class="flex ps-28">
+                  단독 주택은 일본인이 가장 선호하는 주거 형태로, 보통
+                </p>
+              </div>
+              <div>
+                <p class="flex">
+                  1<span class="font-medium f-noto">～</span>2층 건물이며 작은
+                  정원이나 주차장이 있다. 일본은 주차
+                </p>
+                <p>공간이 확보되어 있지 않으면 자동차를 구매할 수 없으므로</p>
+                <p>주택에 대부분 주차장을 갖추고 있다.</p>
+              </div>
+            </div>
+            <!-- ======== page 2 ======== -->
+            <div
+              data-name="page"
+              class="flex flex-col font-bold f-nanum-s text-40"
+              style="display: none"
+            >
+              <div class="flex">
+                <p>전통적인 단독 주택은 목조 건물에 기와지붕을 얹은 형태로,</p>
+              </div>
+              <div>
+                <p>
+                  집 주변은 소나무나 대나무 울타리를 두르고 집에 들어갈 때는
+                </p>
+                <p>작은 뜰을 지나 안으로 들어간다.</p>
+              </div>
+            </div>
+            <!-- ======== page 3 ======== -->
+            <div
+              data-name="page"
+              class="flex flex-col font-bold f-nanum-s text-40"
+              style="display: none"
+            >
+              <div>
+                <span class="flex ps-28">
+                  요즘은 생활 양식의 변화와 시공법의 발전으로 단독 주택도
+                </span>
+                <div>
+                  <p>철근 콘크리트로 지은 집이 많다. 단독 주택은 공동 주택과</p>
+                  <p>달리 독립적인 생활 환경이 보장되고 주변 이웃과 적당한</p>
+                  <p>거리를 유지할 수 있다는 장점이 있다.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- img box -->
+          <div
+            class="absolute flex flex-col items-center gap-20 overflow-hidden w-260 h-144 right-20 bottom-28 rounded-10"
+          >
+            <img
+              src="./images/3_01_06/main_photo1.jpg"
+              alt="단독 주택"
+              class="w-full h-full"
+            />
+
+            <button
+              data-name="btn-view"
+              class="absolute bottom-10 right-10"
+              onclick="contentUtil.setPopup(2);"
+            ></button>
+          </div>
+          <!-- pagination -->
+          <div
+            class="absolute -translate-x-1/2 left-1/2 bottom-10"
+            data-name="pagination"
+          >
+            <button class="active" data-name="btn-pagination"></button>
+            <button class="" data-name="btn-pagination"></button>
+            <button class="" data-name="btn-pagination"></button>
+          </div>
+        </div>
+      </div>
+      <!-- popup -->
+      <div id="popup-wrap" style="display: none">
+        <!-- 해설 보기 -->
+        <div data-name="popup" data-popup="1" style="display: none">
+          <div data-name="popup-header">
+            <div data-name="popup-title">해설 보기</div>
+            <button
+              data-name="popup-close"
+              onclick="contentUtil.setPopup()"
+            ></button>
+          </div>
+          <div
+            data-name="popup-body"
+            class="mt-16 mb-20 mr-10 ms-26 f-nanum-s me-6"
+          >
+            <!--  popup section 1  -->
+            <div class="flex flex-col mr-14">
+              <!-- title -->
+              <div class="flex items-center mb-10 h-55">
+                <img
+                  src="./../common/images/popup_titlemark_primary.svg"
+                  alt=""
+                  class="w-35 h-55 me-10"
+                />
+                <div
+                  class="flex font-extrabold text-42 text-[#F25F7C] items-baseline"
+                >
+                  일본의 단독 주택
+                </div>
+              </div>
+              <div class="font-bold f-nanum-s text-40 leading-52">
+                <p>과거에는 목조로 된 주택이 많았지만, 최근에는 서양식</p>
+                <p>주택이 많아지면서 목조 주택은 약 60% 정도이다. 또한,</p>
+                <p>단독 주택의 주차장은 비나 눈을 피하기 위해 지붕을</p>
+                <p>설치한 경우도 많이 볼 수 있다.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 사진 팝업창 -->
+        <div data-name="popup" data-popup="2" style="display: none">
+          <div data-name="popup-header">
+            <div data-name="popup-title">사진 팝업창</div>
+            <button
+              data-name="popup-close"
+              onclick="contentUtil.setPopup()"
+            ></button>
+          </div>
+          <div
+            data-name="popup-body"
+            class="flex items-center justify-center w-full h-full gap-16"
+          >
+            <div
+              class="flex flex-col items-center w-608 h-402"
+              data-name="popup_photo_wrap"
+            >
+              <div class="w-full overflow-hidden h-400 rounded-10">
+                <img
+                  src="./images/3_01_06/popup_photo1.jpg"
+                  alt="단독 주택"
+                  class="w-full h-full"
+                />
+              </div>
+              <div
+                class="flex mt-8 font-bold f-nanum-s h-52 text-40 leading-52 shrink-0"
+              >
+                <div class="flex justify-center">
+                  <img
+                    src="./../common/images/popup_photolabel.svg"
+                    alt=""
+                    class="w-36 h-52 me-6"
+                  />
+                  <span>단독 주택</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 추가 사진 -->
+
+        <div data-name="popup" data-popup="3" style="display: none">
+          <div data-name="popup-header">
+            <div data-name="popup-title">추가 사진</div>
+            <button
+              data-name="popup-close"
+              onclick="contentUtil.setPopup()"
+            ></button>
+          </div>
+          <div
+            data-name="popup-body"
+            class="flex items-center justify-center w-full h-full gap-16"
+          >
+            <div
+              class="flex flex-col items-center w-608 h-402"
+              data-name="popup_photo_wrap"
+            >
+              <div class="w-full overflow-x-hidden overflow-y-auto h-400 pe-4">
+                <img
+                  src="./images/3_01_06/popup_photo.jpg"
+                  alt="1"
+                  class="object-contain min-w-608 rounded-10"
+                  data-name="popup_photo"
+                />
+                <img
+                  style="display: none"
+                  src="./images/3_01_06/popup_photo2.jpg"
+                  alt="2"
+                  class="object-contain min-w-608 rounded-10"
+                  data-name="popup_photo"
+                />
+                <img
+                  style="display: none"
+                  src="./images/3_01_06/popup_photo3.jpg"
+                  alt="3"
+                  class="object-contain min-w-608 rounded-10"
+                  data-name="popup_photo"
+                />
+                <img
+                  style="display: none"
+                  src="./images/3_01_06/popup_photo4.jpg"
+                  alt="4"
+                  class="object-contain min-w-608 rounded-10"
+                  data-name="popup_photo"
+                />
+              </div>
+              <div
+                class="flex mt-8 font-bold f-nanum-s h-52 text-40 leading-52 shrink-0"
+              >
+                <div data-name="popup_photo_text" class="text-blue">
+                  단독 주택
+                </div>
+                <div
+                  data-name="popup_photo_text"
+                  class="text-blue"
+                  style="display: none"
+                >
+                  단독 주택
+                </div>
+                <div
+                  data-name="popup_photo_text"
+                  class="text-blue"
+                  style="display: none"
+                >
+                  단독 주택
+                </div>
+                <div
+                  data-name="popup_photo_text"
+                  class="text-blue"
+                  style="display: none"
+                >
+                  단독 주택
+                </div>
+              </div>
+            </div>
+            <div class="w-266 h-402">
+              <div class="flex flex-wrap w-full gap-10">
+                <button
+                  data-name="btn-popup_photo"
+                  class="w-128 h-72 active"
+                  onclick="contentUtil.setPhotoPopup(1)"
+                >
+                  <img src="./images/3_01_06/popup_btn_photo2.jpg" alt="1" />
+                </button>
+                <button
+                  data-name="btn-popup_photo"
+                  class="w-128 h-72"
+                  onclick="contentUtil.setPhotoPopup(2)"
+                >
+                  <img src="./images/3_01_06/popup_btn_photo3.jpg" alt="2" />
+                </button>
+                <button
+                  data-name="btn-popup_photo"
+                  class="w-128 h-72"
+                  onclick="contentUtil.setPhotoPopup(3)"
+                >
+                  <img src="./images/3_01_06/popup_btn_photo4.jpg" alt="3" />
+                </button>
+                <button
+                  data-name="btn-popup_photo"
+                  class="w-128 h-72"
+                  onclick="contentUtil.setPhotoPopup(4)"
+                >
+                  <img src="./images/3_01_06/popup_btn_photo1.jpg" alt="4" />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript">
+    const page = {
+      isAnswer: false,
+      isVocabulary: false,
+      showAnswer: () => {},
+      hideAnswer: () => {},
+      showVocabulary: () => {},
+    };
+  </script>
+  <script src="./../common/js/tailwind.config.js"></script>
+  <script src="./../common/js/script.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      // contentUtil.setPopup(3);
+    });
+  </script>
+</html>

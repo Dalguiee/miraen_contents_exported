@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>미래엔 일본 문화</title>
+    <script src="./../common/lib/jquery-3.7.1.min.js"></script>
+    <script src="./../common/lib/howler-2.1.3.min.js"></script>
+    <script src="./../common/lib/tailwind.js"></script>
+    <!-- 폰트 -->
+    <link href="./../common/font/suit/suit.css" rel="stylesheet" />
+    <link href="./../common/font/bmjua/bmjua.css" rel="stylesheet" />
+    <link
+      href="./../common/font/nanumsquare/nanumSquare.css"
+      rel="stylesheet"
+    />
+    <link href="./../common/font/notoSansJP/notoSansJP.css" rel="stylesheet" />
+    <link href="./../common/css/tailwind.css" rel="stylesheet" />
+    <link href="./../common/css/fontStyle.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div id="wrap">
+      <!-- contents -->
+      <div class="relative w-full h-full pt-68">
+        <!-- title -->
+        <img
+          src="./../common/images/title_look_culture2.svg"
+          alt="문화 들여다보기2 전통 공연 예술과 스포츠"
+          class="absolute w-764 h-49 top-10"
+        />
+        <!-- header-btn -->
+        <div class="absolute right-0 flex gap-6 top-13" data-name="header-btn">
+          <button
+            style="display: none"
+            data-name="btn-common"
+            onclick="contentUtil.setPopup(2)"
+          >
+            해설 보기
+          </button>
+        </div>
+        <!-- main -->
+        <div class="flex flex-col w-full h-full">
+          <div class="flex flex-col flex-1 w-full leading-52 ps-20">
+            <div class="flex items-center mb-4">
+              <img
+                src="./../common/images/index_pink_2.svg"
+                alt="번호 2"
+                class="w-40 h-40 me-4"
+              />
+              <span class="font-extrabold f-nanum-s text-40">전통 스포츠</span>
+            </div>
+            <div class="flex mb-4">
+              <div data-name="number-2" class="bg-[#C84935]"></div>
+              <span
+                class="text-[#C84935] flex font-extrabold text-40 f-nanum-s"
+              >
+                다양한 전통 무술</span
+              >
+            </div>
+            <!-- ======== page 1 ======== -->
+            <div
+              data-name="page"
+              class="flex flex-col font-bold f-nanum-s text-40"
+            >
+              <div>
+                <p class="flex">
+                  일본에서 시작된 무술로는 유도, 검도, 가라테(<span
+                    data-audio="10_01_25/154-11.mp3"
+                    class="f-noto font-medium"
+                    ><span class="relative"
+                      >空<span class="ruby">から</span></span
+                    ><span class="relative"
+                      >手<span class="ruby">て</span></span
+                    ></span
+                  >) 등이
+                </p>
+                <p>있다.</p>
+              </div>
+            </div>
+            <!-- ======== page 2 ======== -->
+            <div
+              data-name="page"
+              class="flex flex-col font-bold f-nanum-s text-40"
+              style="display: none"
+            >
+              <div>
+                <p class="ps-28">
+                  유도는 ‘부드러움이 강함을 이긴다’라는 정신을 기본으로
+                </p>
+                <p>하는 스포츠이다. 1964년 도쿄 올림픽에서 남자 유도가,</p>
+                <p>1992년 스페인 바르셀로나 올림픽에서</p>
+                <p>여자 유도가 정식 종목으로 채택되어</p>
+                <p>세계적인 스포츠로 자리 잡았다.</p>
+              </div>
+              <!-- img box -->
+              <div
+                class="absolute flex flex-col w-326 h-196 right-20 bottom-32"
+              >
+                <img
+                  src="./images/10_01_25/main_photo1.jpg"
+                  alt="유도"
+                  class="w-full h-full"
+                />
+                <button
+                  data-name="btn-view"
+                  class="absolute bottom-10 right-10"
+                  onclick="contentUtil.setPopup(1); contentUtil.setPhotoPopup(1);"
+                ></button>
+              </div>
+            </div>
+            <!-- ======== page 3 ======== -->
+            <div
+              data-name="page"
+              class="flex flex-col font-bold f-nanum-s text-40"
+              style="display: none"
+            >
+              <div>
+                <p class="ps-28">
+                  검도는 무사들의 검술 훈련 과정에서 시작된 무술로 현대에
+                </p>
+                <p>
+                  와서 스포츠로 자리 잡았다. 경기에서는 하카마를 입고 얼굴과
+                </p>
+                <p>손목, 몸에 보호 장비를 착용하며 죽도를</p>
+                <p>이용하여 두 선수가 겨룬다.</p>
+              </div>
+              <!-- img box -->
+              <div
+                class="absolute flex flex-col w-326 h-196 right-20 bottom-32"
+              >
+                <img
+                  src="./images/10_01_25/main_photo2.jpg"
+                  alt="검도"
+                  class="w-full h-full"
+                />
+                <button
+                  data-name="btn-view"
+                  class="absolute bottom-10 right-10"
+                  onclick="contentUtil.setPopup(1); contentUtil.setPhotoPopup(2);"
+                ></button>
+              </div>
+            </div>
+            <!-- ======== page 4 ======== -->
+            <div
+              data-name="page"
+              class="flex flex-col font-bold f-nanum-s text-40"
+              style="display: none"
+            >
+              <div>
+                <p class="ps-28">
+                  가라테는 무기 없이 손과 발동작을 중심으로 하는 일본의
+                </p>
+                <p>대표적 격투술이다. 중국의 권법이 오키나와에 전해져 재래</p>
+                <p>무술과 융합하여 가라테로 발전하였다.</p>
+              </div>
+              <!-- img box -->
+              <div
+                class="absolute flex flex-col w-326 h-196 right-20 bottom-32"
+              >
+                <img
+                  src="./images/10_01_25/main_photo3.jpg"
+                  alt="가라테"
+                  class="w-full h-full"
+                />
+                <button
+                  data-name="btn-view"
+                  class="absolute bottom-10 right-10"
+                  onclick="contentUtil.setPopup(1); contentUtil.setPhotoPopup(3);"
+                ></button>
+              </div>
+            </div>
+          </div>
+
+          <!-- pagination -->
+          <div
+            class="absolute -translate-x-1/2 bottom-10 left-1/2"
+            data-name="pagination"
+          >
+            <button class="active" data-name="btn-pagination"></button>
+            <button class="" data-name="btn-pagination"></button>
+            <button class="" data-name="btn-pagination"></button>
+            <button class="" data-name="btn-pagination"></button>
+          </div>
+        </div>
+      </div>
+      <!-- popup -->
+      <div id="popup-wrap" style="display: none">
+        <!-- 사진 팝업창 -->
+        <div data-name="popup" data-popup="1" style="display: none">
+          <div data-name="popup-header">
+            <div data-name="popup-title">사진 팝업창</div>
+            <button
+              data-name="popup-close"
+              onclick="contentUtil.setPopup()"
+            ></button>
+          </div>
+          <div
+            data-name="popup-body"
+            class="flex items-center justify-center w-full h-full gap-16"
+          >
+            <div
+              class="flex flex-col items-center w-608 h-402"
+              data-name="popup_photo_wrap"
+            >
+              <div class="w-full overflow-hidden h-400 rounded-10">
+                <img
+                  src="./images/10_01_25/popup_photo1.jpg"
+                  alt="유도"
+                  class="min-w-608 h-full"
+                  data-name="popup_photo"
+                />
+                <img
+                  src="./images/10_01_25/popup_photo2.jpg"
+                  alt="검도"
+                  class="min-w-608 h-full"
+                  data-name="popup_photo"
+                  style="display: none"
+                />
+                <img
+                  src="./images/10_01_25/popup_photo3.jpg"
+                  alt="가라테"
+                  class="min-w-608 h-full"
+                  data-name="popup_photo"
+                  style="display: none"
+                />
+              </div>
+              <div
+                class="flex mt-8 font-bold f-nanum-s h-52 text-40 leading-52 shrink-0"
+              >
+                <div data-name="popup_photo_text">유도</div>
+                <div data-name="popup_photo_text" style="display: none">
+                  검도
+                </div>
+                <div data-name="popup_photo_text" style="display: none">
+                  가라테
+                </div>
+              </div>
+            </div>
+            <div class="w-266 h-402">
+              <div class="flex flex-wrap w-full gap-10">
+                <button
+                  data-name="btn-popup_photo"
+                  class="w-128 h-72 active"
+                  onclick="contentUtil.setPhotoPopup(1)"
+                >
+                  <img
+                    src="./images/10_01_25/popup_btn_photo1.jpg"
+                    alt="유도"
+                  />
+                </button>
+                <button
+                  data-name="btn-popup_photo"
+                  class="w-128 h-72"
+                  onclick="contentUtil.setPhotoPopup(2)"
+                >
+                  <img
+                    src="./images/10_01_25/popup_btn_photo2.jpg"
+                    alt="검도"
+                  />
+                </button>
+                <button
+                  data-name="btn-popup_photo"
+                  class="w-128 h-72"
+                  onclick="contentUtil.setPhotoPopup(3)"
+                >
+                  <img
+                    src="./images/10_01_25/popup_btn_photo3.jpg"
+                    alt="가라테"
+                  />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 해설 보기 -->
+        <div data-name="popup" data-popup="2" style="display: none">
+          <div data-name="popup-header">
+            <div data-name="popup-title">해설 보기</div>
+            <button
+              data-name="popup-close"
+              onclick="contentUtil.setPopup()"
+            ></button>
+          </div>
+          <div data-name="popup-body" class="mt-16 mb-10 ms-26 f-nanum-s me-6">
+            <div class="flex flex-col">
+              <!-- title -->
+              <div class="flex items-center mb-10 h-55">
+                <img
+                  src="./../common/images/popup_titlemark_primary.svg"
+                  alt=""
+                  class="w-35 h-55 me-10"
+                />
+                <div class="flex font-extrabold text-42 text-[#41674B]">
+                  검도의 규칙
+                </div>
+              </div>
+              <div class="font-bold f-nanum-s text-40 leading-52">
+                <p>시합의 제한 시간은 총 5분이며, 보통 3판 2선승제이다.</p>
+                <p>타격할 수 있는 곳은 얼굴의 상부, 손, 몸 등이고 기술의</p>
+                <p>종류와 타격한 곳에 따라 이름이 달라진다.</p>
+                <p>현재 실력의 정도에 따라 초단부터 8단까지 단이 구분되며,</p>
+                <p>범사가 되면 검도 가에서 최고 영예의 대우를 받는다.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript">
+    const page = {
+      isAnswer: false,
+      isVocabulary: false,
+      showAnswer: () => {},
+      hideAnswer: () => {},
+      showVocabulary: () => {},
+    };
+  </script>
+  <script src="./../common/js/tailwind.config.js"></script>
+  <script src="./../common/js/script.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      // contentUtil.setPopup(2);
+    });
+    $(`[data-name="btn-pagination"]`).on("click", function () {
+      if ($(this).index() === 2) {
+        $(`[data-name="btn-common"]`).show();
+      } else {
+        $(`[data-name="btn-common"]`).hide();
+      }
+    });
+  </script>
+</html>

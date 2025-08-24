@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>미래엔 일본 문화</title>
+    <script src="./../common/lib/jquery-3.7.1.min.js"></script>
+    <script src="./../common/lib/howler-2.1.3.min.js"></script>
+    <script src="./../common/lib/tailwind.js"></script>
+    <!-- 폰트 -->
+    <link href="./../common/font/suit/suit.css" rel="stylesheet" />
+    <link href="./../common/font/bmjua/bmjua.css" rel="stylesheet" />
+    <link
+      href="./../common/font/nanumsquare/nanumSquare.css"
+      rel="stylesheet"
+    />
+    <link href="./../common/font/notoSansJP/notoSansJP.css" rel="stylesheet" />
+    <link href="./../common/css/tailwind.css" rel="stylesheet" />
+    <link href="./../common/css/fontStyle.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div id="wrap">
+      <!-- contents -->
+      <div class="relative w-full h-full pt-68">
+        <!-- title -->
+        <img
+          src="./../common/images/title_look_culture3.svg"
+          alt="문화 들여다보기1 주택의 종류와 특징"
+          class="absolute w-605 w-764 h-49 top-10"
+        />
+        <!-- main -->
+        <div class="flex flex-col w-full h-full">
+          <div class="flex flex-col w-full pl-20 overflow-y-auto leading-52">
+            <div class="flex items-center mb-10">
+              <img
+                src="./../common/images/index_pink_3.svg"
+                alt="번호 3"
+                class="w-40 h-40 me-4"
+              />
+              <span class="font-extrabold f-nanum-s text-40">주택 임대</span>
+            </div>
+
+            <div class="pr-5">
+              <div
+                class="w-full mb-10 relative h-440 bg-[url(./images/3_01_17/main_photo1.jpg)] bg-no-repeat bg-cover text-40 font-bold f-nanum-s"
+              >
+                <div class="absolute top-12 left-122">
+                  <div>
+                    <p>일본에서는 집을 빌릴 때 보증인도 필요하다고</p>
+                    <p>하던데요?</p>
+                  </div>
+                </div>
+                <div
+                  data-answer="1"
+                  class="absolute top-164 left-129"
+                  style="display: none"
+                >
+                  <div>
+                    <p>네, 맞아요. 집을 빌리기 위해서 보증인이 필요</p>
+                    <p>합니다. 집을 빌린 사람이 집세를 내지 못했을 때</p>
+                    <p>보증인이 대신 지불해야 하죠. 보증인을 구하지 못한</p>
+                    <p>경우 보증 회사를 이용하기도 하는데, 요즘에는</p>
+                    <p>보증인이 필요 없는 주택도 있습니다.</p>
+                  </div>
+                </div>
+                <button
+                  data-name="btn-common"
+                  class="absolute left-0 min-w-101 top-244"
+                  onclick="contentUtil.showAnswer(1)"
+                >
+                  확인하기
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- popup -->
+      <div id="popup-wrap" style="display: none"></div>
+    </div>
+  </body>
+  <script type="text/javascript">
+    const page = {
+      isAnswer: false,
+      isVocabulary: false,
+      showAnswer: () => {},
+      hideAnswer: () => {},
+      showVocabulary: () => {},
+    };
+  </script>
+  <script src="./../common/js/tailwind.config.js"></script>
+  <script src="./../common/js/script.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {});
+  </script>
+</html>

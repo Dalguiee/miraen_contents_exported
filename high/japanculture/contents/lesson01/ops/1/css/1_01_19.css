@@ -1,0 +1,40 @@
+.content-contents-wrap {
+  padding-top: 13px;
+}
+
+.contents-tit {
+  letter-spacing: -0.05em;
+}
+
+.contents-cont {
+  padding: 30px;
+}
+
+.contents-table .tr .th {
+  width: 266px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contents-table .tr .th .img {
+  width: 226px;
+  display: flex;
+}
+
+.contents-table .tr .td {
+  flex: 1;
+  letter-spacing: -0.065em;
+}
+
+.contents-table,
+.contents-table .tr + .tr,
+.contents-table .tr .th + .td,
+.contents-table .tr .td + .td {
+  border-color: #73adde;
+}
+
+.contents-table .tr .td {
+  padding: 20px 20px;
+}

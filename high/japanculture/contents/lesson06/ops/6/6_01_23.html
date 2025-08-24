@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>미래엔 일본 문화</title>
+    <script src="./../common/lib/jquery-3.7.1.min.js"></script>
+    <script src="./../common/lib/howler-2.1.3.min.js"></script>
+    <script src="./../common/lib/tailwind.js"></script>
+    <!-- 폰트 -->
+    <link href="./../common/font/suit/suit.css" rel="stylesheet" />
+    <link href="./../common/font/bmjua/bmjua.css" rel="stylesheet" />
+    <link
+      href="./../common/font/nanumsquare/nanumSquare.css"
+      rel="stylesheet"
+    />
+    <link href="./../common/font/notoSansJP/notoSansJP.css" rel="stylesheet" />
+    <link href="./../common/css/tailwind.css" rel="stylesheet" />
+    <link href="./../common/css/fontStyle.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div id="wrap">
+      <!-- contents -->
+      <div class="relative w-full h-full pt-60">
+        <!-- title -->
+        <div class="absolute left-0 flex items-center top-7">
+          <img
+            src="./../common/images/title_culture_plus.svg"
+            alt="문화 +"
+            class="w-111 h-44"
+          />
+        </div>
+        <!-- header-btn -->
+        <div class="absolute right-0 flex gap-6 top-13" data-name="header-btn">
+          <button
+            data-name="btn-common"
+            onclick="contentUtil.setPopup(2); contentUtil.setPhotoPopup(1);"
+          >
+            추가 사진
+          </button>
+        </div>
+        <!-- main -->
+        <div
+          class="flex flex-col w-full h-full font-bold leading-52 text-40 f-nanum-s"
+        >
+          <img
+            src="./images/6_01_23/main_label.svg"
+            alt="히나마쓰리에 먹는 음식"
+            class="mb-10 w-406 h-54 ms-20"
+          />
+          <div class="flex flex-col ms-20">
+            <div class="mb-10">
+              <p class="ps-28">
+                대표적인 음식으로는 떡갈나무 잎으로 싼 ‘가시와모치’와
+              </p>
+              <p>대나무 잎으로 싼 찰떡인 ‘지마키’가 있다. 떡갈나무 잎은</p>
+              <p>새순이 돋아야 이전의 잎이 떨어지므로 자손이 끊기지 않고</p>
+              <p>번영한다는 의미를 담고 있어 가시와모치를 먹는다고 한다.</p>
+            </div>
+          </div>
+          <!-- img box -->
+          <div class="relative w-917 h-174 ms-20">
+            <img
+              src="./images/6_01_23/main_img1.jpg"
+              alt=""
+              class="w-full h-full"
+            />
+            <span
+              class="absolute left-0 flex items-center justify-center top-17 w-422 h-72"
+              >가시와모치(<span
+                data-audio="6_01_23/093-04.mp3"
+                class="font-medium f-noto"
+                >かしわもち</span
+              >)</span
+            >
+            <span
+              class="absolute right-0 flex items-center justify-center top-94 w-275 h-72"
+              >지마키(<span
+                data-audio="6_01_23/093-05.mp3"
+                class="font-medium f-noto"
+                >ちまき</span
+              >)</span
+            >
+            <button
+              data-name="btn-view"
+              class="absolute top-0 left-582"
+              onclick="contentUtil.setPopup(1)"
+            ></button>
+          </div>
+        </div>
+      </div>
+      <!-- popup -->
+      <div id="popup-wrap" style="display: none">
+        <!-- 사진 팝업창 -->
+        <div data-name="popup" data-popup="1" style="display: none">
+          <div data-name="popup-header">
+            <div data-name="popup-title">사진 팝업창</div>
+            <button
+              data-name="popup-close"
+              onclick="contentUtil.setPopup()"
+            ></button>
+          </div>
+          <div
+            data-name="popup-body"
+            class="flex items-center justify-center w-full h-full"
+          >
+            <div class="w-730 h-400">
+              <img
+                src="./images/6_01_23/popup_photo1.jpg"
+                alt=""
+                class="object-contain min-w-730 rounded-10"
+              />
+            </div>
+          </div>
+        </div>
+        <!-- 추가 사진 -->
+        <div data-name="popup" data-popup="2" style="display: none">
+          <div data-name="popup-header">
+            <div data-name="popup-title">추가 사진</div>
+            <button
+              data-name="popup-close"
+              onclick="contentUtil.setPopup()"
+            ></button>
+          </div>
+          <div
+            data-name="popup-body"
+            class="flex items-center justify-center w-full h-full gap-16"
+          >
+            <div
+              class="flex flex-col items-center w-608 h-402"
+              data-name="popup_photo_wrap"
+            >
+              <div class="w-full overflow-x-hidden overflow-y-auto pe-4">
+                <img
+                  src="./images/6_01_23/popup_photo2.jpg"
+                  alt=""
+                  class="object-contain min-w-608 rounded-10"
+                  data-name="popup_photo"
+                />
+                <img
+                  src="./images/6_01_23/popup_photo3.jpg"
+                  alt=""
+                  class="object-contain min-w-608 rounded-10"
+                  data-name="popup_photo"
+                  style="display: none"
+                />
+              </div>
+              <div
+                class="flex mt-8 font-bold f-nanum-s text-40 leading-52 shrink-0"
+              >
+                <span data-name="popup_photo_text" class="text-blue"
+                  >가시와모치</span
+                >
+                <span
+                  data-name="popup_photo_text"
+                  class="text-blue"
+                  style="display: none"
+                >
+                  지마키
+                </span>
+              </div>
+            </div>
+            <div class="w-266 h-402">
+              <div class="flex flex-wrap w-full gap-10">
+                <button
+                  data-name="btn-popup_photo"
+                  class="w-128 h-72 active"
+                  onclick="contentUtil.setPhotoPopup(1)"
+                >
+                  <img src="./images/6_01_23/popup_btn_photo2.jpg" alt="" />
+                </button>
+                <button
+                  data-name="btn-popup_photo"
+                  class="w-128 h-72"
+                  onclick="contentUtil.setPhotoPopup(2)"
+                >
+                  <img src="./images/6_01_23/popup_btn_photo3.jpg" alt="" />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript">
+    const page = {
+      isAnswer: false,
+      isVocabulary: false,
+      showAnswer: () => {},
+      hideAnswer: () => {},
+      showVocabulary: () => {},
+    };
+  </script>
+  <script src="./../common/js/tailwind.config.js"></script>
+  <script src="./../common/js/script.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {});
+  </script>
+</html>

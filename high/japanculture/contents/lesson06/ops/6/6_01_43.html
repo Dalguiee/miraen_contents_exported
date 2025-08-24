@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>미래엔 일본 문화</title>
+    <script src="./../common/lib/jquery-3.7.1.min.js"></script>
+    <script src="./../common/lib/howler-2.1.3.min.js"></script>
+    <script src="./../common/lib/tailwind.js"></script>
+    <!-- 폰트 -->
+    <link href="./../common/font/suit/suit.css" rel="stylesheet" />
+    <link href="./../common/font/bmjua/bmjua.css" rel="stylesheet" />
+    <link
+      href="./../common/font/nanumsquare/nanumSquare.css"
+      rel="stylesheet"
+    />
+    <link href="./../common/font/notoSansJP/notoSansJP.css" rel="stylesheet" />
+    <link href="./../common/css/tailwind.css" rel="stylesheet" />
+    <link href="./../common/css/fontStyle.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div id="wrap">
+      <!-- contents -->
+      <div class="relative flex flex-col w-full h-full pt-70">
+        <!-- title -->
+        <div class="absolute left-0 flex top-10">
+          <img
+            src="./images/6_01_43/title_label.svg"
+            alt="문화 톡톡 2"
+            class="w-221 h-54 me-10"
+          />
+          <span class="font-extrabold f-nanum-s text-40 leading-52"
+            >일본의 장인 문화</span
+          >
+        </div>
+        <!-- main -->
+        <div
+          class="flex flex-col flex-1 w-full overflow-y-auto font-bold leading-52 f-nanum-s text-40 ps-20"
+        >
+          <div class="flex items-center mb-4">
+            <img
+              src="./images/6_01_43/index_1.svg"
+              alt="1"
+              class="w-56 h-34 me-4"
+            />
+            <span class="font-extrabold">장인과 장인 정신</span>
+          </div>
+          <!-- ======= page 1 ======= -->
+          <div data-name="page">
+            <p class="ps-28">
+              일본의 산업과 기업 문화 특징 중 하나로 장인의 존재를 들 수
+            </p>
+            <p>있다. 장인은 전통 공예품이나 생활에 관한 것을 만들거나 가공</p>
+            <p>하는 기술을 가지고 있으며, 그것을 직업으로 하는 사람을</p>
+            <p>말한다. 원래는 주로 전통 공예 분야에서 일하는 사람을 장인</p>
+            <p>이라 불렀지만, 현재는 공장의 숙련공이나 특정 분야의 전문가</p>
+            <p>도 장인이라 부른다.</p>
+          </div>
+          <!-- ======= page 2 ======= -->
+          <div data-name="page" style="display: none">
+            <p class="ps-28">
+              일본에서는 왜 장인 문화가 발달했을까? 그것은 에도 시대
+            </p>
+            <p>까지 지방 정부가 기술을 가진 사람들을 직업별로 도시의 특정</p>
+            <p>장소에 살며 일을 하게 하고, 지위와 생활을 보장해 주었기</p>
+            <p>때문이다. 그렇게 해서 기술이 보존되고, 장인에 대한 존경심도</p>
+            <p>형성되었다. 그리고 일본의 산업 발달에 이바지했다는 인식이</p>
+            <p>남아 있어 현재까지도 장인을 높게 평가하고 있다.</p>
+          </div>
+          <!-- ======= page 3 ======= -->
+          <div data-name="page" style="display: none">
+            <p class="ps-28">
+              장인이 열정을 쏟아 만든 제품의 가치나 아름다움, 기술은
+            </p>
+            <p>여전히 인정받고 있으며, 최근에는 기술을 전승할 후계자가</p>
+            <p>부족하여 일본 정부에서도 다양한 대책을 마련하고 있다.</p>
+          </div>
+        </div>
+        <!-- pagination -->
+        <div
+          class="absolute -translate-x-1/2 bottom-10 left-1/2"
+          data-name="pagination"
+        >
+          <button class="active" data-name="btn-pagination"></button>
+          <button class="" data-name="btn-pagination"></button>
+          <button class="" data-name="btn-pagination"></button>
+        </div>
+      </div>
+      <!-- popup -->
+      <div id="popup-wrap" style="display: none"></div>
+    </div>
+  </body>
+  <script type="text/javascript">
+    const page = {
+      isAnswer: true,
+      isVocabulary: false,
+      showAnswer: () => {
+        contentUtil.showAnswer();
+      },
+      hideAnswer: () => {
+        contentUtil.hideAnswer();
+      },
+      showVocabulary: () => {},
+    };
+  </script>
+  <script src="./../common/js/tailwind.config.js"></script>
+  <script src="./../common/js/script.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {});
+  </script>
+</html>

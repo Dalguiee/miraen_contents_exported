@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>미래엔 일본 문화</title>
+    <script src="./../common/lib/jquery-3.7.1.min.js"></script>
+    <script src="./../common/lib/howler-2.1.3.min.js"></script>
+    <script src="./../common/lib/tailwind.js"></script>
+    <!-- 폰트 -->
+    <link href="./../common/font/suit/suit.css" rel="stylesheet" />
+    <link href="./../common/font/bmjua/bmjua.css" rel="stylesheet" />
+    <link
+      href="./../common/font/nanumsquare/nanumSquare.css"
+      rel="stylesheet"
+    />
+    <link href="./../common/font/notoSansJP/notoSansJP.css" rel="stylesheet" />
+    <link href="./../common/css/tailwind.css" rel="stylesheet" />
+    <link href="./../common/css/fontStyle.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div id="wrap">
+      <!-- contents -->
+      <div class="relative w-full h-full pt-60">
+        <!-- title -->
+        <img
+          src="./../common/images/title_digital.svg"
+          alt="디지털 활동"
+          class="absolute h-42 w-261 top-10"
+        />
+
+        <!-- main -->
+        <div class="flex flex-col w-full h-full px-20 leading-52">
+          <div class="mb-10">
+            <div class="font-extrabold text-40 f-nanum-s">
+              <p>일본의 교복 사진을 검색하고 자신이 입고 싶은 교복 사진을</p>
+              <p>찾아 온라인 학습방에 올려 공유해 봅시다.</p>
+            </div>
+          </div>
+          <div
+            class="border-4 w-full h-293 border-[#3589D7] rounded-10 py-10 ps-20 pe-4 mb-8"
+          ></div>
+          <div class="ms-auto">
+            <button
+              data-name="btn-common"
+              onclick="contentUtil.setPopup(1); audioPlay(audio, [`./../common/media/mp3/showAnswer.mp3`]);"
+            >
+              예시 답안
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- popup -->
+      <div id="popup-wrap" style="display: none">
+        <!-- 예시 답안 -->
+        <div data-name="popup" data-popup="1" style="display: none">
+          <div data-name="popup-header">
+            <div data-name="popup-title">예시 답안</div>
+            <button
+              data-name="popup-close"
+              onclick="contentUtil.setPopup()"
+            ></button>
+          </div>
+          <div data-name="popup-body" class="mt-16 mb-10 ms-26 f-nanum-s me-6">
+            <div class="flex flex-col gap-15">
+              <div class="flex gap-15">
+                <img
+                  class="w-290 h-193"
+                  src="./images/5_01_12/popup_photo1.jpg"
+                  alt="일본의 교복1"
+                />
+                <img
+                  class="w-290 h-193"
+                  src="./images/5_01_12/popup_photo2.jpg"
+                  alt="일본의 교복2"
+                />
+                <img
+                  class="w-290 h-193"
+                  src="./images/5_01_12/popup_photo3.jpg"
+                  alt="일본의 교복3"
+                />
+              </div>
+              <div class="flex w-full gap-15">
+                <img
+                  class="w-204 h-306"
+                  src="./images/5_01_12/popup_photo4.jpg"
+                  alt="일본의 교복4"
+                />
+                <img
+                  class="w-459 h-306"
+                  src="./images/5_01_12/popup_photo5.jpg"
+                  alt="일본의 교복5"
+                />
+                <img
+                  class="w-204 h-306"
+                  src="./images/5_01_12/popup_photo6.jpg"
+                  alt="일본의 교복6"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript">
+    const page = {
+      isAnswer: false,
+      isVocabulary: false,
+      showAnswer: () => {},
+      hideAnswer: () => {},
+      showVocabulary: () => {},
+    };
+  </script>
+  <script src="./../common/js/tailwind.config.js"></script>
+  <script src="./../common/js/script.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      // contentUtil.setPopup(1);
+    });
+  </script>
+</html>

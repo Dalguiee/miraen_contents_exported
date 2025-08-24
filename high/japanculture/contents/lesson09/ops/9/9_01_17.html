@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>미래엔 일본 문화</title>
+    <script src="./../common/lib/jquery-3.7.1.min.js"></script>
+    <script src="./../common/lib/howler-2.1.3.min.js"></script>
+    <script src="./../common/lib/tailwind.js"></script>
+    <!-- 폰트 -->
+    <link href="./../common/font/suit/suit.css" rel="stylesheet" />
+    <link href="./../common/font/bmjua/bmjua.css" rel="stylesheet" />
+    <link
+      href="./../common/font/nanumsquare/nanumSquare.css"
+      rel="stylesheet"
+    />
+    <link href="./../common/font/notoSansJP/notoSansJP.css" rel="stylesheet" />
+    <link href="./../common/css/tailwind.css" rel="stylesheet" />
+    <link href="./../common/css/fontStyle.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div id="wrap">
+      <!-- contents -->
+      <div class="relative w-full h-full pt-68">
+        <!-- title -->
+        <img
+          src="./../common/images/title_look_culture2.svg"
+          alt="문화 들여다보기2 문화 콘텐츠"
+          class="absolute w-764 h-49 top-10"
+        />
+        <!-- header-btn -->
+        <div class="absolute right-0 flex gap-6 top-13" data-name="header-btn">
+          <button
+            data-name="btn-common-dark"
+            class="min-w-62"
+            onclick="contentUtil.setPopup(2)"
+          >
+            TIP
+          </button>
+          <button data-name="btn-common" onclick="contentUtil.setPopup(1)">
+            해설 보기
+          </button>
+        </div>
+        <!-- main -->
+        <div class="flex flex-col w-full h-full">
+          <div
+            class="flex flex-col w-full mb-8 h-404 text-40 f-nanum-s leading-52 ps-20"
+          >
+            <div class="flex items-center mb-4">
+              <img
+                src="./../common/images/index_pink_1.svg"
+                alt=""
+                class="w-40 h-40 me-4"
+              />
+              <span class="flex font-extrabold"
+                >만화(<span
+                  data-audio="9_01_17/136-01.mp3"
+                  class="font-bold f-noto"
+                  >まんが</span
+                >)</span
+              >
+            </div>
+            <div class="flex flex-col font-bold">
+              <!-- ======== page 1 ======== -->
+              <div data-name="page" class="flex flex-col">
+                <div>
+                  <p class="ps-28">
+                    초기의 만화는 자유롭게 그리는 그림에 가까웠으나, 점차 구획
+                  </p>
+                  <p>
+                    을 나누어 그리게 되면서 메이지 시대에 1컷 또는 4컷 만화가
+                  </p>
+                  <p>
+                    대중화되었다. 최근 매체의 발달에 힘입어 만화 단행본, 만화
+                  </p>
+                  <p>
+                    잡지뿐 아니라 모바일 기기를 이용한 웹툰도 인기를 얻고 있다.
+                  </p>
+                  <p>
+                    일본에서는 남녀노소 모두가 만화를 즐겨 볼 정도로 독자층이
+                  </p>
+                  <p>넓다.</p>
+                </div>
+              </div>
+              <!-- ======== page 2 ======== -->
+              <div data-name="page" class="flex flex-col" style="display: none">
+                <div>
+                  <p>만화를 읽으면서 자란 세대가 성인이 되어서도 계속 만화를</p>
+                  <p>보면서 성인 독자층으로 자리를 잡게 된 것이다.</p>
+                  <p class="ps-28">
+                    사실적인 묘사를 중시하는 미국 만화와 달리, 일본 만화는
+                  </p>
+                  <p>
+                    대개 등장인물의 감정과 상태를 글로 표현한다. 또한 화려한
+                  </p>
+                  <p>색감의 미국 만화와 다르게 보통의 일본 만화는 흑백으로</p>
+                  <p>그려진다.</p>
+                </div>
+              </div>
+              <!-- ======== page 3 ======== -->
+              <div data-name="page" class="flex flex-col" style="display: none">
+                <div>
+                  <p>
+                    그리고 등장인물은 표정과 눈물, 땀 등을 과장되게 표현하는
+                  </p>
+                  <p>
+                    경우가 많으며, 중요한 장면이나 극적인 모습을 표현할 때 칸의
+                  </p>
+                  <p>경계를 자유롭게 넘나들기도 한다.</p>
+                  <p class="ps-28">
+                    일본에서는 대부분의 책이 세로쓰기로 되어 있어 오른쪽에서
+                  </p>
+                  <p>왼쪽 방향으로 읽는다는 점도 특징적이다.</p>
+                </div>
+              </div>
+              <!-- ======== page 4 ======== -->
+              <div data-name="page" class="flex flex-col" style="display: none">
+                <!-- img box -->
+                <div class="flex mt-6 gap-30 ms-275">
+                  <div class="relative w-210 h-329">
+                    <img
+                      src="./images/9_01_17/main_photo1.jpg"
+                      alt="원피스"
+                      class="w-full h-full rounded-10"
+                    />
+                    <button
+                      data-name="btn-view"
+                      class="absolute bottom-10 right-10"
+                      onclick="contentUtil.setPopup(3); contentUtil.setPhotoPopup(1);"
+                    ></button>
+                  </div>
+                  <div class="relative w-210 h-329">
+                    <img
+                      src="./images/9_01_17/main_photo2.jpg"
+                      alt="슬램덩크"
+                      class="w-full h-full rounded-10"
+                    />
+                    <button
+                      data-name="btn-view"
+                      class="absolute bottom-10 right-10"
+                      onclick="contentUtil.setPopup(3); contentUtil.setPhotoPopup(2);"
+                    ></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- pagination -->
+          <div
+            class="absolute -translate-x-1/2 left-1/2 bottom-10"
+            data-name="pagination"
+          >
+            <button class="active" data-name="btn-pagination"></button>
+            <button class="" data-name="btn-pagination"></button>
+            <button class="" data-name="btn-pagination"></button>
+            <button class="" data-name="btn-pagination"></button>
+          </div>
+        </div>
+      </div>
+      <!-- popup -->
+      <div id="popup-wrap" style="display: none">
+        <!-- 해설 보기 -->
+        <div data-name="popup" data-popup="1" style="display: none">
+          <div data-name="popup-header">
+            <div data-name="popup-title">해설 보기</div>
+            <button
+              data-name="popup-close"
+              onclick="contentUtil.setPopup()"
+            ></button>
+          </div>
+          <div data-name="popup-body" class="mt-16 mb-10 ms-26 f-nanum-s me-6">
+            <div class="flex flex-col">
+              <!-- title -->
+              <div class="flex items-center mb-10 h-55">
+                <img
+                  src="./../common/images/popup_titlemark_primary.svg"
+                  alt=""
+                  class="w-35 h-55 me-10"
+                />
+                <div class="flex font-extrabold text-42 text-[#F25F7C]">
+                  오랜 역사를 자랑하는 일본 만화
+                </div>
+              </div>
+              <!-- text -->
+              <div class="mb-10 font-bold f-nanum-s text-40 leading-52">
+                <p class="flex">
+                  1946년에 연재되기 시작한 ‘사자에 씨(<span
+                    class="font-medium f-noto"
+                    >サザエさん</span
+                  >)’는
+                </p>
+                <p>1969년부터 애니메이션으로도 방영되고 있다.</p>
+                <p class="flex pt-12">
+                  ‘철완 아톰 (<span class="font-medium f-noto"
+                    ><span class="relative"
+                      >鉄<span class="ruby">てつ</span></span
+                    ><span class="relative"
+                      >腕<span class="ruby">わん</span></span
+                    >アトム</span
+                  >, 1952)’, ‘도라에몽(<span class="font-medium f-noto"
+                    >ドラえもん</span
+                  >,
+                </p>
+                <p class="flex">
+                  1969)’, ‘호빵맨(<span class="font-medium f-noto"
+                    >アンパンマン</span
+                  >, 1969)’, ‘짱구는 못말려
+                </p>
+                <p class="flex">
+                  (<span class="font-medium f-noto">クレヨンしんちゃん</span>,
+                  1990)’ 등도 지금까지 대중의
+                </p>
+                <p>사랑을 받고 있다.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- TIP -->
+        <div data-name="popup" data-popup="2" style="display: none">
+          <div data-name="popup-header">
+            <div data-name="popup-title">TIP</div>
+            <button
+              data-name="popup-close"
+              onclick="contentUtil.setPopup()"
+            ></button>
+          </div>
+          <div data-name="popup-body" class="mt-16 mb-10 ms-26 f-nanum-s me-6">
+            <div class="flex flex-col">
+              <!-- text -->
+              <div class="mb-10 font-bold f-nanum-s text-40 leading-52">
+                <p>한국에도 잘 알려진 ‘짱구는 못말려, 명탐정 코난, 원피스’</p>
+                <p>등은 만화로 시작하여 애니메이션으로도 제작되면서</p>
+                <p>꾸준히 인기를 얻은 작품들이다.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 사진 팝업창 -->
+        <div data-name="popup" data-popup="3" style="display: none">
+          <div data-name="popup-header">
+            <div data-name="popup-title">사진 팝업창</div>
+            <button
+              data-name="popup-close"
+              onclick="contentUtil.setPopup()"
+            ></button>
+          </div>
+          <div
+            data-name="popup-body"
+            class="flex items-center justify-center w-full h-full gap-16"
+          >
+            <div
+              class="flex flex-col items-center w-608 h-402"
+              data-name="popup_photo_wrap"
+            >
+              <div class="w-full overflow-x-hidden overflow-y-auto pe-4">
+                <img
+                  src="./images/9_01_17/popup_photo1.jpg"
+                  alt="원피스"
+                  class="object-contain w-full rounded-10"
+                  data-name="popup_photo"
+                />
+                <img
+                  src="./images/9_01_17/popup_photo2.jpg"
+                  alt="슬램덩크"
+                  class="object-contain w-full rounded-10"
+                  data-name="popup_photo"
+                  style="display: none"
+                />
+              </div>
+              <div
+                class="flex mt-8 font-bold f-nanum-s h-52 text-40 leading-52 shrink-0"
+              >
+                <div data-name="popup_photo_text" class="text-blue">
+                  만화 &lt;원피스&gt;
+                </div>
+                <div
+                  data-name="popup_photo_text"
+                  class="text-blue"
+                  style="display: none"
+                >
+                  만화 &lt;슬램 덩크&gt;
+                </div>
+              </div>
+            </div>
+            <div class="w-266 h-402">
+              <div class="flex flex-wrap w-full gap-10">
+                <button
+                  data-name="btn-popup_photo"
+                  class="w-128 h-72 active"
+                  onclick="contentUtil.setPhotoPopup(1)"
+                >
+                  <img
+                    src="./images/9_01_17/popup_btn_photo1.jpg"
+                    alt="원피스"
+                  />
+                </button>
+                <button
+                  data-name="btn-popup_photo"
+                  class="w-128 h-72"
+                  onclick="contentUtil.setPhotoPopup(2)"
+                >
+                  <img
+                    src="./images/9_01_17/popup_btn_photo2.jpg"
+                    alt="슬램덩크"
+                  />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript">
+    const page = {
+      isAnswer: false,
+      isVocabulary: false,
+      showAnswer: () => {},
+      hideAnswer: () => {},
+      showVocabulary: () => {},
+    };
+  </script>
+  <script src="./../common/js/tailwind.config.js"></script>
+  <script src="./../common/js/script.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {});
+
+    $(`[data-name="btn-pagination"]`).on("click", function () {
+      if ($(this).index() === 3) {
+        $(`[data-name="header-btn"]`).hide();
+      } else {
+        $(`[data-name="header-btn"]`).show();
+      }
+    });
+  </script>
+</html>

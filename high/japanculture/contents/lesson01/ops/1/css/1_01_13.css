@@ -1,0 +1,261 @@
+.content-wrap .content-contents-wrap .content-contents {
+  overflow-y: hidden;
+}
+
+.contents {
+  position: relative;
+}
+
+/* 1번째 슬라이드 */
+.tab-content-1 {
+  line-height: 52px;
+  letter-spacing: -0.045em;
+}
+
+.tab-content-1 .arrow-box {
+  background-color: #e3e3e3;
+  border-radius: 10px;
+  color: #5c5553;
+  padding: 10px 15px;
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+  margin-top: 6px;
+  letter-spacing: -0.055em;
+}
+
+.tab-content-1 .arrow-box::before {
+  content: '';
+  width: 83px;
+  height: 41px;
+  background: url('../../common/images/arrow_right_gray.png') no-repeat;
+  background-size: contain;
+  position: absolute;
+  top: 50%;
+  right: -48px;
+  transform: translateY(-50%);
+}
+
+.tab-content-1 .image-pop-preview {
+  position: absolute;
+  bottom: 0;
+  right: 25px;
+  width: 247px;
+  height: 164px;
+}
+
+.tab-content-1 .image-pop-preview .img-container {
+  width: 100%;
+  height: 100%;
+}
+
+.popup-contents .contents-left {
+  width: calc(100% - 420px);
+  line-height: 52px;
+}
+
+.popup-contents .contents-right {
+  width: 386px;
+  margin-left: 34px;
+  margin-top: 7px;
+}
+
+#descPopup .popup-contents .contents-right .image-pop-preview {
+  width: 386px;
+  height: 232px;
+}
+
+/* 2번째 슬라이드 */
+.tab-content-2 {
+  display: flex;
+  flex-direction: column;
+  padding: 17px 32px 0;
+}
+
+.tab-content-2 .txt {
+  border: solid 4px #c8cde4;
+  border-radius: 50px 50px 0 50px;
+  display: inline-block;
+  width: 750px;
+  padding: 1px 40px;
+  position: relative;
+}
+
+.tab-content-2 .txt::before {
+  content: '';
+  width: 30px;
+  height: 4px;
+  background-color: #c8cde4;
+  position: absolute;
+  bottom: 0;
+  transform: rotate(45deg);
+  z-index: 2;
+  right: 90px;
+  bottom: -14px;
+}
+
+.tab-content-2 .txt span {
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+}
+
+.tab-content-2 .txt1 {
+  text-align: center;
+  margin-left: auto;
+  z-index: 1;
+}
+
+.tab-content-2 .txt2 {
+  border-color: #c7d7c9;
+  margin-top: 75px;
+  border-radius: 0 50px 50px 50px;
+  padding: 10px 25px 2px 36px;
+}
+
+.tab-content-2 .txt2::before {
+  background-color: #c7d7c9;
+  bottom: auto;
+  right: auto;
+  left: 113px;
+  top: -14px;
+}
+
+.tab-content-2 .txt .img {
+  position: absolute;
+  background-color: #fff;
+  z-index: 0;
+}
+
+.tab-content-2 .txt1 .img {
+  width: calc(115px + 15px);
+  right: -15px;
+  top: 45px;
+  padding-left: 15px;
+}
+
+.tab-content-2 .txt2 .img {
+  width: calc(113px + 50px);
+  left: -25px;
+  top: -111px;
+  padding-right: 50px;
+}
+
+.contents.type1 .tab-content-2 .ft-36 {
+  line-height: 43.2px;
+}
+
+/* 3번째 슬라이드 */
+.tab-content-3 {
+  height: 314px;
+  margin-top: 6px;
+  line-height: 52px;
+  letter-spacing: -0.06em;
+  position: relative;
+  overflow-y: scroll;
+}
+
+.tab-content-3 > ul > li {
+  padding-left: 47px;
+  position: relative;
+}
+
+.tab-content-3 > ul > li + li {
+  margin-top: 14px;
+}
+
+.tab-content-3 > ul > li .num {
+  width: 39px;
+  padding: 2px 2px 0 0;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  background-color: #55629d;
+  text-align: center;
+  font-size: 30px;
+  line-height: 39px;
+  position: absolute;
+  top: 5px;
+  left: 0;
+  color: #ffffff;
+}
+
+.tab-content-3 > ul > li .cont-left {
+  width: calc(100% - 426px);
+}
+
+.tab-content-3 .cont-right {
+  width: 390px;
+  margin-left: 18px;
+  position: absolute;
+  top: 0;
+  right: 20px;
+}
+
+.tab-content-3 .cont-right .image-pop-preview {
+  width: 390px;
+  height: 260px;
+}
+
+.tab-content-3 .cont-right .image-pop-preview .img-container {
+  width: 100%;
+  height: 100%;
+}
+
+/* 4번째 슬라이드 */
+.tab-content-4 {
+  padding: 0;
+  margin-top: 14px;
+  position: relative;
+}
+
+.tab-content-4 .contents-left {
+  position: absolute;
+  left: -46px;
+  top: 0;
+  width: 360px;
+}
+
+.tab-content-4 .contents-right {
+  padding-left: calc(390px - 46px);
+  padding-top: 35px;
+}
+
+.tab-content-4 .contents-right > ul > li {
+  padding-left: 33px;
+  position: relative;
+  line-height: 52px;
+  letter-spacing: -0.08em;
+}
+
+.tab-content-4 .contents-right > ul > li::before,
+.tab-content-4 .contents-right > ul > li::after {
+  content: '';
+  border: solid 2px #ffc24c;
+  border-radius: 100%;
+  position: absolute;
+  left: 0;
+  top: 26px;
+  transform: translateY(-50%);
+}
+
+.tab-content-4 .contents-right > ul > li::before {
+  width: 15px;
+  height: 15px;
+  left: 4.5px;
+}
+
+.tab-content-4 .contents-right > ul > li::after {
+  width: 25px;
+  height: 25px;
+}
+
+.tab-content-4 .contents-right > ul > li + li {
+  margin-top: 24px;
+}
+
+.content-contents-wrap .content-function {
+  position: absolute;
+  right: 45px;
+  bottom: 73px;
+  top: auto;
+}

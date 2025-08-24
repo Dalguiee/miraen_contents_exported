@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>미래엔 일본 문화</title>
+    <script src="./../common/lib/jquery-3.7.1.min.js"></script>
+    <script src="./../common/lib/howler-2.1.3.min.js"></script>
+    <script src="./../common/lib/tailwind.js"></script>
+    <!-- 폰트 -->
+    <link href="./../common/font/suit/suit.css" rel="stylesheet" />
+    <link href="./../common/font/bmjua/bmjua.css" rel="stylesheet" />
+    <link
+      href="./../common/font/nanumsquare/nanumSquare.css"
+      rel="stylesheet"
+    />
+    <link href="./../common/font/notoSansJP/notoSansJP.css" rel="stylesheet" />
+    <link href="./../common/css/tailwind.css" rel="stylesheet" />
+    <link href="./../common/css/fontStyle.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div id="wrap">
+      <!-- contents -->
+      <div class="relative w-full h-full pt-60">
+        <!-- title -->
+        <div class="absolute left-0 flex items-center top-6">
+          <img
+            src="./../common/images/title_culture_plus.svg"
+            alt="문화 +"
+            class="w-111 h-44 me-10"
+          />
+        </div>
+        <!-- header-btn -->
+        <div class="absolute right-0 flex gap-6 top-13" data-name="header-btn">
+          <button
+            data-name="btn-common"
+            class="min-w-62"
+            onclick="contentUtil.setPopup(2)"
+          >
+            보충 자료
+          </button>
+        </div>
+
+        <div class="mb-10 ml-20 w-264 h-54">
+          <img src="./images/5_01_11/label.svg" alt="" />
+        </div>
+
+        <!-- main -->
+        <div class="flex flex-col w-full h-full">
+          <!-- img box -->
+          <div class="absolute flex flex-col w-126 h-152 right-20 bottom-257">
+            <img
+              src="./images/5_01_11/main_photo1.jpg"
+              alt="일본의 교복1"
+              class="w-full h-full"
+            />
+            <button
+              data-name="btn-view"
+              class="absolute bottom-10 right-10"
+              onclick="contentUtil.setPopup(1); contentUtil.setPhotoPopup(1);"
+            ></button>
+          </div>
+          <div class="absolute flex flex-col w-126 h-182 right-20 bottom-65">
+            <img
+              src="./images/5_01_11/main_photo2.jpg"
+              alt="일본의 교복2"
+              class="w-full h-full"
+            />
+            <button
+              data-name="btn-view"
+              class="absolute bottom-10 right-10"
+              onclick="contentUtil.setPopup(1); contentUtil.setPhotoPopup(2);"
+            ></button>
+          </div>
+          <!-- page1 -->
+          <div data-name="page" class="flex flex-col w-full mb-8 h-404 ps-20">
+            <div class="font-bold leading-52 text-40 f-nanum-s">
+              <p class="ps-28">
+                일본 고등학생들은 대부분 교복을 입는다. 남학생은
+              </p>
+              <p>‘학생복’, 여학생은 ‘세일러복’이 일반적이었지만,</p>
+              <p>요즘은 교복도 다양화되었다. 1980년대 무렵부터</p>
+              <p>남녀 모두 ‘자켓형 교복’이 늘었으며, 특히 최근에는</p>
+              <p>교복과 관련된 교칙을 대폭 완화하거나 학생들이</p>
+              <p>교복을 직접 결정하도록 하는 학교도 있다.</p>
+            </div>
+          </div>
+          <!-- page2 -->
+          <div
+            data-name="page"
+            style="display: none"
+            class="flex flex-col w-full mb-8 font-bold h-404 leading-52 text-40 ps-20 f-nanum-s"
+          >
+            <div>
+              <p>그뿐만 아니라 여학생의 경우 치마와 바지 중 선택</p>
+              <p>할 수 있게 하거나 남녀 공용 교복을 입는 학교도</p>
+              <p>늘고 있어 점점 학생들의 다양성을 존중하는</p>
+              <p>방향으로 변화하고 있다.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- pagination -->
+      <div
+        class="absolute -translate-x-1/2 left-1/2 bottom-10"
+        data-name="pagination"
+      >
+        <button class="active" data-name="btn-pagination"></button>
+        <button class="" data-name="btn-pagination"></button>
+      </div>
+
+      <!-- popup -->
+      <div id="popup-wrap" style="display: none">
+        <!-- 사진 팝업창 -->
+        <div data-name="popup" data-popup="1" style="display: none">
+          <div data-name="popup-header">
+            <div data-name="popup-title">사진 팝업창</div>
+            <button
+              data-name="popup-close"
+              onclick="contentUtil.setPopup()"
+            ></button>
+          </div>
+          <div
+            data-name="popup-body"
+            class="flex items-center justify-center w-full h-full gap-16"
+          >
+            <div
+              class="flex flex-col items-center w-608 h-402"
+              data-name="popup_photo_wrap"
+            >
+              <div
+                class="w-full overflow-x-hidden overflow-y-auto pe-4 rounded-10"
+              >
+                <img
+                  data-name="popup_photo"
+                  src="./images/5_01_11/popup_photo1.jpg"
+                  alt="1"
+                  class="object-contain w-full rounded-10"
+                />
+                <img
+                  data-name="popup_photo"
+                  style="display: none"
+                  src="./images/5_01_11/popup_photo2.jpg"
+                  alt="2"
+                  class="object-contain min-w-608"
+                />
+              </div>
+            </div>
+            <div class="w-266 h-402">
+              <div class="flex w-full gap-10">
+                <button
+                  onclick="contentUtil.setPhotoPopup(1)"
+                  data-name="btn-popup_photo"
+                  class="w-128 h-72 active"
+                >
+                  <img
+                    src="./images/5_01_11/popup_btn_photo2.jpg"
+                    alt="일본의 교복1"
+                  />
+                </button>
+                <button
+                  onclick="contentUtil.setPhotoPopup(2)"
+                  data-name="btn-popup_photo"
+                  class="w-128 h-72"
+                >
+                  <img
+                    src="./images/5_01_11/popup_btn_photo1.jpg"
+                    alt="일본의 교복2"
+                  />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 보충 자료 -->
+        <div data-name="popup" data-popup="2" style="display: none">
+          <div data-name="popup-header">
+            <div data-name="popup-title">보충 자료</div>
+            <button
+              data-name="popup-close"
+              onclick="contentUtil.setPopup()"
+            ></button>
+          </div>
+          <div
+            data-name="popup-body"
+            class="mt-16 mb-10 font-bold ms-26 f-nanum-s me-6 leading-52 text-40"
+          >
+            <div class="flex flex-col">
+              <!-- title -->
+              <div class="flex items-center mb-10 h-55">
+                <img
+                  src="./../common/images/popup_titlemark_primary.svg"
+                  alt=""
+                  class="w-35 h-55 me-10"
+                />
+                <div class="flex">
+                  <div class="font-extrabold text-42 text-[#F25F7C]">
+                    <p>교복 커스텀 문화</p>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <p>일본의 학생들은 학교에서 지정된 교복에 리본, 조끼,</p>
+                <p>가디건 등 자신의 개성에 맞는 교복 아이템을 추가해</p>
+                <p>입기도 한다.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript">
+    const page = {
+      isAnswer: false,
+      isVocabulary: false,
+      showAnswer: () => {},
+      hideAnswer: () => {},
+      showVocabulary: () => {},
+    };
+  </script>
+  <script src="./../common/js/tailwind.config.js"></script>
+  <script src="./../common/js/script.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      // contentUtil.setPopup(1);
+    });
+  </script>
+</html>

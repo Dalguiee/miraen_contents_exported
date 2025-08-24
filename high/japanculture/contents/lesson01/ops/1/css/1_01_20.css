@@ -1,0 +1,46 @@
+.contents.type1 .ft-36 {
+  line-height: 43.2px;
+}
+
+.img-wrap {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 4px;
+}
+
+.img-wrap > li {
+  width: 298px;
+}
+
+.img-wrap > li .img-container {
+  width: 298px;
+  height: 180px;
+}
+
+.img-wrap > li .txt {
+  width: 100%;
+  text-align: center;
+  margin-top: 18px;
+}
+
+.popup-contents {
+  line-height: 52px;
+  letter-spacing: -0.065em;
+}
+
+.popup-contents .img-wrap {
+  margin-top: 25px;
+}
+
+.popup-contents .img-wrap > li {
+  width: 210px;
+}
+
+.popup-contents .img-wrap > li .img-container {
+  width: 210px;
+  height: 118px;
+}
+
+.popup-contents .img-wrap > li .txt {
+  line-height: 45px;
+}

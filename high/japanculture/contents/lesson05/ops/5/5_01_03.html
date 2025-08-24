@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>미래엔 일본 문화</title>
+    <script src="./../common/lib/jquery-3.7.1.min.js"></script>
+    <script src="./../common/lib/howler-2.1.3.min.js"></script>
+    <script src="./../common/lib/tailwind.js"></script>
+    <script src="./../common/lib/libBundle-jc.js"></script>
+    <!-- 폰트 -->
+    <link href="./../common/font/suit/suit.css" rel="stylesheet" />
+    <link href="./../common/font/bmjua/bmjua.css" rel="stylesheet" />
+    <link
+      href="./../common/font/nanumsquare/nanumSquare.css"
+      rel="stylesheet"
+    />
+    <link href="./../common/font/notoSansJP/notoSansJP.css" rel="stylesheet" />
+    <link href="./../common/css/tailwind.css" rel="stylesheet" />
+    <link href="./../common/css/fontStyle.css" rel="stylesheet" />
+    <!-- 영상 라이브러리 -->
+    <link href="./../common/css/libBundle.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div id="wrap">
+      <!-- contents -->
+      <div class="relative w-full h-full pt-60">
+        <!-- title -->
+        <img
+          src="./../common/images/title_open_thoughts.svg"
+          alt="생각 열기"
+          class="absolute w-190 h-44 top-10"
+        />
+        <div class="absolute right-0 top-13">
+          <button data-name="btn-common-dark" onclick="createVideo()">
+            애니메이션
+          </button>
+        </div>
+        <!-- main -->
+        <div class="flex flex-col w-full h-full">
+          <!-- ------------- -->
+          <div class="flex items-center px-20 mb-10 leading-52">
+            <img
+              src="./../common/images/label_diamond_black.svg"
+              alt=""
+              class="w-22 h-52 me-10"
+            />
+            <span class="font-extrabold f-nanum-s text-40"
+              >만화를 보고 물음에 대한 자신의 생각을 말해 봅시다.</span
+            >
+          </div>
+          <!-- ------------- -->
+          <div class="relative flex justify-center mx-auto mb-10 w-fit">
+            <img
+              src="./images/5_01_03/main_photo1.jpg"
+              alt="만화"
+              class="w-623 h-208"
+            />
+            <button
+              class="absolute top-20 right-10"
+              data-name="btn-view"
+              onclick="contentUtil.setPopup(2)"
+            ></button>
+          </div>
+          <!-- ------------- -->
+          <div class="relative mx-auto mb-3 w-960 leading-52">
+            <div class="flex items-center mb-20">
+              <img
+                src="./../common/images/label_q_yellow.svg"
+                alt=""
+                class="w-44 h-44 me-8"
+              />
+              <span class="font-extrabold f-nanum-s text-40"
+                >미오는 왜 동아리 활동을 자주 할까요?</span
+              >
+              <button
+                data-name="btn-common"
+                onclick="contentUtil.setPopup(1); audioPlay(audio, [`./../common/media/mp3/showAnswer.mp3`]);"
+                class="ms-auto"
+              >
+                예시 답안
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- popup -->
+      <div id="popup-wrap" style="display: none">
+        <!-- 예시 답안 -->
+        <div data-name="popup" data-popup="1" style="display: none">
+          <div data-name="popup-header">
+            <div data-name="popup-title">예시 답안</div>
+            <button
+              data-name="popup-close"
+              onclick="contentUtil.setPopup()"
+            ></button>
+          </div>
+          <div
+            data-name="popup-body"
+            class="mt-16 font-bold ms-26 f-nanum-s me-6 leading-52 text-40 text-red"
+          >
+            <div class="flex flex-col gap-10">
+              <div class="flex">
+                <div class="w-12 h-12 mt-20 rounded-full bg-red me-8"></div>
+                <div>
+                  <p>일본에서는 동아리 활동을 수업 전이나 방과 후에 한다.</p>
+                </div>
+              </div>
+              <div class="flex">
+                <div class="w-12 h-12 mt-20 rounded-full bg-red me-8"></div>
+                <div>
+                  <p class="flex">
+                    평일에는 1<span class="font-medium f-noto">～</span>3시간
+                    정도 활동하고, 주말에도 활동하는
+                  </p>
+                  <p>경우가 많다.</p>
+                </div>
+              </div>
+              <div class="flex">
+                <div class="w-12 h-12 mt-20 rounded-full bg-red me-8"></div>
+                <div>
+                  <p>일본의 동아리 활동은 학생들의 자발적인 참여도가 매우</p>
+                  <p>높은 편이다.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 사진 팝업창 -->
+        <div data-name="popup" data-popup="2" style="display: none">
+          <div data-name="popup-header">
+            <div data-name="popup-title">사진 팝업창</div>
+            <button
+              data-name="popup-close"
+              onclick="contentUtil.setPopup()"
+            ></button>
+          </div>
+          <div
+            data-name="popup-body"
+            class="flex items-center justify-center w-full h-full"
+          >
+            <img
+              src="./images/5_01_03/popup_photo1.png"
+              alt="만화"
+              class="w-900 h-405"
+            />
+          </div>
+        </div>
+      </div>
+      <!-- video -->
+      <div id="videoParent" data-name="video-popup"></div>
+    </div>
+  </body>
+  <script type="text/javascript">
+    const page = {
+      isAnswer: false,
+      isVocabulary: false,
+      showAnswer: () => {},
+      hideAnswer: () => {},
+      showVocabulary: () => {},
+    };
+  </script>
+  <script src="./../common/js/tailwind.config.js"></script>
+  <script src="./../common/js/script.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {});
+
+    // 비디오 생성
+    const createVideo = () => {
+      $("#videoParent").show();
+      $("#videoParent").html(`<div
+            id="video-controller-container-1"
+            class="video-controller-containe"
+          ></div>`);
+      var mediaManager = libBundle.MediaManager.getInstance();
+      // 내부자막 X, 외부자막 X
+      var videoController1 = mediaManager.createVideoController({
+        id: "video-controller-1",
+        query: "#video-controller-container-1",
+        // poster: "./media/mp4/4chi_bon_1.png",
+        src: "./media/mp4/5_01_03/jap_H_cul_05.mp4",
+        // volumeVisible: true,
+        // // thumbnail: { startPath: 'media/video/thumbnail/thumbnail_', startIndex: 1000, ext: 'png' },
+        // overlay: true,
+        // // autoplay: true
+        jsonSubtitlePath: "./media/subtitle/5_01_03/jap_H_cul_05.json",
+        volumeSetting: {
+          visible: true,
+          vertical: false,
+        },
+        callback: {},
+      });
+
+      $("#videoParent .btn-close").on("click", function () {
+        removeVideo();
+      });
+    };
+
+    const removeVideo = () => {
+      $(".controller-button.stop").click();
+      $("#videoParent").hide();
+      $("#videoParent").empty();
+    };
+  </script>
+</html>

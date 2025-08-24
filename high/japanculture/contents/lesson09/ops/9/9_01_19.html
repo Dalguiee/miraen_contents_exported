@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>미래엔 일본 문화</title>
+    <script src="./../common/lib/jquery-3.7.1.min.js"></script>
+    <script src="./../common/lib/howler-2.1.3.min.js"></script>
+    <script src="./../common/lib/tailwind.js"></script>
+    <!-- 폰트 -->
+    <link href="./../common/font/suit/suit.css" rel="stylesheet" />
+    <link href="./../common/font/bmjua/bmjua.css" rel="stylesheet" />
+    <link
+      href="./../common/font/nanumsquare/nanumSquare.css"
+      rel="stylesheet"
+    />
+    <link href="./../common/font/notoSansJP/notoSansJP.css" rel="stylesheet" />
+    <link href="./../common/css/tailwind.css" rel="stylesheet" />
+    <link href="./../common/css/fontStyle.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div id="wrap">
+      <!-- contents -->
+      <div class="relative w-full h-full pt-68">
+        <!-- title -->
+        <img
+          src="./../common/images/title_look_culture2.svg"
+          alt="문화 들여다보기2 문화 콘텐츠"
+          class="absolute w-764 h-49 top-10"
+        />
+        <!-- header-btn -->
+        <div class="absolute right-0 flex gap-6 top-13" data-name="header-btn">
+          <button
+            class="min-w-0"
+            data-name="btn-common-dark"
+            onclick="contentUtil.setPopup(3)"
+          >
+            TIP
+          </button>
+          <button data-name="btn-common" onclick="contentUtil.setPopup(2)">
+            보충 자료
+          </button>
+        </div>
+        <!-- main -->
+        <div class="flex flex-col w-full h-full">
+          <div class="flex flex-col flex-1 w-full leading-52 ps-20">
+            <div class="flex items-center mb-4">
+              <img
+                src="./../common/images/index_pink_2.svg"
+                alt="번호 2"
+                class="w-40 h-40 me-4"
+              />
+              <span class="font-extrabold f-nanum-s text-40 flex"
+                >애니메이션(<span data-audio="9_01_19/137-01.mp3" class="f-noto"
+                  >アニメ</span
+                >)</span
+              >
+            </div>
+
+            <!-- ======== page 1 ======== -->
+            <div
+              data-name="page"
+              class="flex flex-col font-bold f-nanum-s text-40"
+            >
+              <div>
+                <p class="ps-28">
+                  1970년대 전후로 일본의 만화와 애니메이션은 대중문화
+                </p>
+                <p>에서 중요한 역할을 하게 된다. 다양한 장르의 애니메이션이</p>
+                <p>제작되고 여러 작품이 대중적인 인기를 얻기 시작하였다.</p>
+                <p>
+                  애니메이션 산업은 경제 성장과 함께 발전하였고 애니메이션을
+                </p>
+                <p>즐기는 대상은 다양한 연령층으로 확대되었다.</p>
+              </div>
+            </div>
+            <!-- ======== page 2 ======== -->
+            <div
+              data-name="page"
+              class="flex flex-col font-bold f-nanum-s text-40"
+              style="display: none"
+            >
+              <div>
+                <p>이후 애니메이션 전문 제작사들과 유명한 감독들의 작품이</p>
+                <p>국제 영화제에서 수상하고 흥행에 성공하는 등 세계적인 주목</p>
+                <p>을 받으면서 일본 애니메이션의 위상이 높아졌다.</p>
+                <p class="ps-28">
+                  일본 애니메이션의 인기 요인으로는 다양한 장르와 캐릭터,
+                </p>
+                <p>독창적인 스토리 설정과 구성, 섬세한 묘사와 질 높은 그림,</p>
+                <p>피아노나 오케스트라를 이용한 웅장한 배경 음악 등을 들 수</p>
+                <p>있다.</p>
+              </div>
+            </div>
+
+            <!-- ======== page 3 ======== -->
+            <div
+              data-name="page"
+              class="flex flex-col font-bold f-nanum-s text-40"
+              style="display: none"
+            >
+              <div>
+                <p class="ps-28">
+                  일본 애니메이션은 복잡한 내용 속 인물의 성장 과정을 그린
+                </p>
+                <p>
+                  작품이 많다. 또한 초인적인 능력을 가진 영웅보다는 감정 이입
+                </p>
+                <p>
+                  이 쉬운 인간미 있는 캐릭터가 많다. 일본 애니메이션은 감독의
+                </p>
+                <p>개성과 세계관이 많이 반영된다는 점도 특징적이다.</p>
+              </div>
+            </div>
+
+            <!-- ======== page 4 ======== -->
+            <div
+              data-name="page"
+              class="flex flex-col font-bold f-nanum-s text-40"
+              style="display: none"
+            >
+              <div class="flex gap-30 mt-6 items-center justify-center">
+                <!-- img box -->
+                <div class="relative w-211">
+                  <img
+                    src="./images/9_01_19/main_photo1.jpg"
+                    alt="에반게리온"
+                    class="object-contain w-full rounded-10 overflow-hidden"
+                  />
+                  <button
+                    data-name="btn-view"
+                    class="absolute bottom-10 right-10"
+                    onclick="contentUtil.setPopup(1); contentUtil.setPhotoPopup(1)"
+                  ></button>
+                </div>
+                <div class="relative w-211">
+                  <img
+                    src="./images/9_01_19/main_photo2.jpg"
+                    alt="스즈메의 문단속"
+                    class="object-contain w-full rounded-10 overflow-hidden"
+                  />
+                  <button
+                    data-name="btn-view"
+                    class="absolute bottom-10 right-10"
+                    onclick="contentUtil.setPopup(1); contentUtil.setPhotoPopup(2)"
+                  ></button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- pagination -->
+          <div
+            class="absolute -translate-x-1/2 bottom-10 left-1/2"
+            data-name="pagination"
+          >
+            <button class="active" data-name="btn-pagination"></button>
+            <button class="" data-name="btn-pagination"></button>
+            <button class="" data-name="btn-pagination"></button>
+            <button class="" data-name="btn-pagination"></button>
+          </div>
+        </div>
+      </div>
+      <!-- popup -->
+      <div id="popup-wrap" style="display: none">
+        <!-- 사진 팝업창 -->
+        <div data-name="popup" data-popup="1" style="display: none">
+          <div data-name="popup-header">
+            <div data-name="popup-title">사진 팝업창</div>
+            <button
+              data-name="popup-close"
+              onclick="contentUtil.setPopup()"
+            ></button>
+          </div>
+          <div
+            data-name="popup-body"
+            class="flex items-center justify-center w-full h-full gap-16"
+          >
+            <div
+              class="flex flex-col items-center w-608 h-402"
+              data-name="popup_photo_wrap"
+            >
+              <div
+                class="pe-4 w-full overflow-x-hidden overflow-y-auto rounded-10"
+              >
+                <img
+                  data-name="popup_photo"
+                  src="./images/9_01_19/popup_photo1.jpg"
+                  alt="에반게리온"
+                  class="object-contain w-full rounded-10"
+                />
+                <img
+                  data-name="popup_photo"
+                  style="display: none"
+                  src="./images/9_01_19/popup_photo2.jpg"
+                  alt="스즈메의 문단속"
+                  class="object-contain w-full rounded-10"
+                />
+              </div>
+              <div class="flex font-bold f-nanum-s text-40 leading-52 shrink-0">
+                <div class="pt-8" data-name="popup_photo_text">
+                  에반게리온 (<span
+                    class="f-noto font-medium"
+                    data-audio="9_01_19/137-02.mp3"
+                    >エヴァンゲリオン</span
+                  >)
+                </div>
+                <div
+                  style="display: none"
+                  class="pt-20"
+                  data-name="popup_photo_text"
+                >
+                  스즈메의 문단속 (<span
+                    data-audio="9_01_19/137-03.mp3"
+                    class="f-noto font-medium"
+                    >すずめの<span
+                      ><span class="relative"
+                        >戸<span class="ruby">と</span></span
+                      ><span class="relative"
+                        >締<span class="ruby">じ</span></span
+                      ></span
+                    >まり</span
+                  >)
+                </div>
+              </div>
+            </div>
+            <div class="w-266 h-402">
+              <div class="flex w-full gap-10">
+                <button
+                  onclick="contentUtil.setPhotoPopup(1)"
+                  data-name="btn-popup_photo"
+                  class="w-128 h-72 active"
+                >
+                  <img
+                    src="./images/9_01_19/popup_btn_photo1.jpg"
+                    alt="에반게리온"
+                  />
+                </button>
+                <button
+                  onclick="contentUtil.setPhotoPopup(2)"
+                  data-name="btn-popup_photo"
+                  class="w-128 h-72"
+                >
+                  <img
+                    src="./images/9_01_19/popup_btn_photo2.jpg"
+                    alt="스즈메의 문단속"
+                  />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 보충 자료 -->
+        <div data-name="popup" data-popup="2" style="display: none">
+          <div data-name="popup-header">
+            <div data-name="popup-title">보충 자료</div>
+            <button
+              data-name="popup-close"
+              onclick="contentUtil.setPopup()"
+            ></button>
+          </div>
+          <div
+            data-name="popup-body"
+            class="flex-1 mt-16 mb-10 ms-26 f-nanum-s-ac me-6"
+          >
+            <div class="flex flex-col">
+              <!-- title -->
+              <div class="flex items-center mb-10 h-55">
+                <img
+                  src="./../common/images/popup_titlemark_primary.svg"
+                  alt=""
+                  class="w-35 h-55 me-10"
+                />
+                <div class="flex font-extrabold text-42 text-[#F25F7C]">
+                  스튜디오 지브리(<span class="f-noto">スタジオ ジブリ</span>)
+                </div>
+              </div>
+              <div class="mb-20">
+                <div class="text-40 leading-52 f-nanum-s font-bold">
+                  <p class="flex">
+                    1985년 미야자키 하야오(<span class="f-noto font-medium"
+                      ><span class="relative"
+                        >宮<span class="ruby">みや</span></span
+                      ><span class="relative"
+                        >崎<span class="ruby tracking-[-0.22em]"
+                          >ざき</span
+                        ></span
+                      ><span class="relative"
+                        >駿<span class="ruby tracking-[-0.22em]"
+                          >はやお</span
+                        ></span
+                      ></span
+                    >) 감독이 창립한 애니
+                  </p>
+                  <p>메이션 영화사이다. 명칭은 ‘사하라 사막에 부는 열풍’</p>
+                  <p>이라는 뜻의 리비아어 ‘ghibli(기블리)’에서 유래했다.</p>
+                  <p>대표 작품으로는 ‘센과 치히로의 행방불명(2001)’, ‘원령</p>
+                  <p>
+                    공주(2003)’, ‘하울의 움직이는 성(2004)’, ‘벼랑 위의 포뇨
+                  </p>
+                  <p>(2008)’, ‘바람이 분다(2013)’, ‘마루 밑 아리에티(2010)’,</p>
+                  <p>‘그대들은 어떻게 살 것인가(2023)’ 등이 있다. 특히 ‘센과</p>
+                  <p>치히로의 행방불명’과 ‘그대들은 어떻게 살 것인가’는 아카</p>
+                  <p>데미 시상식에서 장편 애니메이션 상을 수상하며 작품성을</p>
+                  <p>인정받았다.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- TIP -->
+        <div data-name="popup" data-popup="3" style="display: none">
+          <div data-name="popup-header">
+            <div data-name="popup-title">TIP</div>
+            <button
+              data-name="popup-close"
+              onclick="contentUtil.setPopup()"
+            ></button>
+          </div>
+          <div
+            data-name="popup-body"
+            class="mt-16 mb-10 font-bold ms-26 f-nanum-s me-6 leading-52 text-40 overflow-hidden"
+          >
+            <div class="flex flex-col">
+              <div>
+                <p>일본 애니메이션은 주로 대중에게 인기 있는 만화, 게임,</p>
+                <p>소설, 웹툰, 라이트 노벨 등을 원작으로 한다. ‘라이트 노벨</p>
+                <p class="flex">
+                  (<span
+                    data-audio="9_01_19/137-04.mp3"
+                    class="f-noto font-medium"
+                    >ライトノベル</span
+                  >)’이란 삽화가 많고 오락성이 강한 소설로,
+                </p>
+                <p>일본의 고등학생을 포함한 젊은 층에게 인기가 많다.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript">
+    const page = {
+      isAnswer: false,
+      isVocabulary: false,
+      showAnswer: () => {},
+      hideAnswer: () => {},
+      showVocabulary: () => {},
+    };
+  </script>
+  <script src="./../common/js/tailwind.config.js"></script>
+  <script src="./../common/js/script.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $(`[data-name="btn-pagination"]`).on("click", function () {
+        if ($(this).index() === 3) {
+          $(`[data-name="header-btn"]`).css("display", "none");
+        } else {
+          $(`[data-name="header-btn"]`).css("display", "flex");
+        }
+      });
+    });
+  </script>
+</html>

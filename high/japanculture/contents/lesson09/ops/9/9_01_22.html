@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>미래엔 일본 문화</title>
+    <script src="./../common/lib/jquery-3.7.1.min.js"></script>
+    <script src="./../common/lib/howler-2.1.3.min.js"></script>
+    <script src="./../common/lib/tailwind.js"></script>
+    <!-- 폰트 -->
+    <link href="./../common/font/suit/suit.css" rel="stylesheet" />
+    <link href="./../common/font/bmjua/bmjua.css" rel="stylesheet" />
+    <link
+      href="./../common/font/nanumsquare/nanumSquare.css"
+      rel="stylesheet"
+    />
+    <link href="./../common/font/notoSansJP/notoSansJP.css" rel="stylesheet" />
+    <link href="./../common/css/tailwind.css" rel="stylesheet" />
+    <link href="./../common/css/fontStyle.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div id="wrap">
+      <!-- contents -->
+      <div class="relative w-full h-full pt-68">
+        <!-- title -->
+        <img
+          src="./../common/images/title_look_culture2.svg"
+          alt="문화 들여다보기2 문화 콘텐츠"
+          class="absolute w-764 h-49 top-10"
+        />
+        <!-- header-btn -->
+        <div
+          class="absolute right-0 flex gap-6 top-13"
+          data-name="header-btn"
+        ></div>
+        <!-- main -->
+        <div class="flex flex-col w-full h-full">
+          <div class="flex flex-col flex-1 w-full leading-52 ps-20">
+            <div class="flex items-center mb-4">
+              <img
+                src="./../common/images/index_pink_3.svg"
+                alt="번호 2"
+                class="w-40 h-40 me-4"
+              />
+              <span class="font-extrabold f-nanum-s text-40 flex">게임</span>
+            </div>
+
+            <!-- ======== page 1 ======== -->
+            <div
+              data-name="page"
+              class="flex flex-col font-bold f-nanum-s text-40"
+            >
+              <div>
+                <p class="ps-28">
+                  일본은 높은 세계 시장 점유율을 지닌 게임 강국이다. 일본
+                </p>
+                <p>에서 인기가 있는 게임으로 가정용 콘솔 게임, 오락실 게임,</p>
+                <p>온라인 게임, 모바일 게임 등이 있다.</p>
+                <p class="ps-28">
+                  가정용 콘솔 게임은 전용 기기를 사용하는 가정용 게임을
+                </p>
+                <p>말한다. 가정용 게임의 종류가 많고 사용</p>
+                <p>비율도 높은 점은 일본 게임의 특징 중</p>
+                <p>하나이다.</p>
+              </div>
+              <div class="absolute w-313 bottom-6 right-20">
+                <img src="./images/9_01_22/main_photo1.jpg" alt="" />
+                <button
+                  data-name="btn-view"
+                  class="absolute bottom-10 right-10"
+                  onclick="contentUtil.setPopup(1); "
+                ></button>
+              </div>
+            </div>
+            <!-- ======== page 2 ======== -->
+            <div
+              data-name="page"
+              class="flex flex-col font-bold f-nanum-s text-40"
+              style="display: none"
+            >
+              <div>
+                <p>
+                  오락실 게임은 비디오 화면으로 격투, 사격, 댄스 등을 즐길 수
+                </p>
+                <p>있으며 결과에 따라 경품 등을 받을 수도 있다. 그러나 게임</p>
+                <p>플랫폼이 다양해지면서 오락실의 수가 감소하고 있다. 온라인</p>
+                <p>게임은 스토리가 다양하고 그래픽이 화려한 롤플레잉 게임이</p>
+                <p>
+                  인기가 많다. 또한 모바일 게임은 언제 어디서든지 손쉽게 즐길
+                </p>
+                <p>수 있다는 편의성 때문에 눈에 띄는 성장을 보이고 있다.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- pagination -->
+          <div
+            class="absolute -translate-x-1/2 bottom-10 left-1/2"
+            data-name="pagination"
+          >
+            <button class="active" data-name="btn-pagination"></button>
+            <button class="" data-name="btn-pagination"></button>
+          </div>
+        </div>
+      </div>
+      <!-- popup -->
+      <div id="popup-wrap" style="display: none">
+        <!-- 사진 팝업창 -->
+        <div data-name="popup" data-popup="1" style="display: none">
+          <div data-name="popup-header">
+            <div data-name="popup-title">사진 팝업창</div>
+            <button
+              data-name="popup-close"
+              onclick="contentUtil.setPopup()"
+            ></button>
+          </div>
+          <div
+            data-name="popup-body"
+            class="flex items-center justify-center w-full h-full gap-16"
+          >
+            <div
+              class="flex flex-col items-center w-608 h-402"
+              data-name="popup_photo_wrap"
+            >
+              <div
+                class="pe-4 w-full overflow-x-hidden overflow-y-auto rounded-10"
+              >
+                <img
+                  data-name="popup_photo"
+                  src="./images/9_01_22/popup_photo1.jpg"
+                  alt="에반게리온"
+                  class="object-contain min-w-608 rounded-10"
+                />
+              </div>
+              <div class="flex font-bold f-nanum-s text-40 leading-52 shrink-0">
+                <div class="pt-8" data-name="popup_photo_text">
+                  가정용 콘솔 게임을 즐기는 모습
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript">
+    const page = {
+      isAnswer: false,
+      isVocabulary: false,
+      showAnswer: () => {},
+      hideAnswer: () => {},
+      showVocabulary: () => {},
+    };
+  </script>
+  <script src="./../common/js/tailwind.config.js"></script>
+  <script src="./../common/js/script.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      // contentUtil.setPopup(1);
+    });
+  </script>
+</html>

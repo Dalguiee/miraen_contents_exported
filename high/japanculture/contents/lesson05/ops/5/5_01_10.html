@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>미래엔 일본 문화</title>
+    <script src="./../common/lib/jquery-3.7.1.min.js"></script>
+    <script src="./../common/lib/howler-2.1.3.min.js"></script>
+    <script src="./../common/lib/tailwind.js"></script>
+    <!-- 폰트 -->
+    <link href="./../common/font/suit/suit.css" rel="stylesheet" />
+    <link href="./../common/font/bmjua/bmjua.css" rel="stylesheet" />
+    <link
+      href="./../common/font/nanumsquare/nanumSquare.css"
+      rel="stylesheet"
+    />
+    <link href="./../common/font/notoSansJP/notoSansJP.css" rel="stylesheet" />
+    <link href="./../common/css/tailwind.css" rel="stylesheet" />
+    <link href="./../common/css/fontStyle.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div id="wrap">
+      <!-- contents -->
+      <div class="relative w-full h-full pt-60">
+        <!-- title -->
+        <img
+          src="./../common/images/title_look_culture5.svg"
+          alt="문화 들여다보기1 동아리 활동"
+          class="absolute w-764 h-49 top-10"
+        />
+        <!-- header-btn -->
+        <div class="absolute right-0 flex gap-6 top-13" data-name="header-btn">
+          <button
+            data-name="btn-common"
+            onclick="contentUtil.setPopup(2)"
+            class="absolute top-0 right-0 min-w-64 btn_comment1"
+          >
+            해설 보기
+          </button>
+          <button
+            data-name="btn-common"
+            onclick="contentUtil.setPopup(3)"
+            class="absolute top-0 right-0 hidden min-w-64 btn_comment2"
+          >
+            해설 보기
+          </button>
+          <button
+            data-name="btn-common"
+            onclick="contentUtil.setPopup(4); contentUtil.setPhotoPopup(3);"
+            class="absolute top-0 right-0 hidden min-w-64 btn_photo1"
+          >
+            추가 사진
+          </button>
+        </div>
+
+        <!-- main -->
+        <div class="flex flex-col w-full h-full">
+          <div
+            class="flex flex-col w-full mb-8 h-404 text-40 f-nanum-s leading-52 ps-20"
+          >
+            <div class="flex items-center mt-20 mb-4">
+              <img
+                src="./../common/images/index_pink_1.svg"
+                alt="번호 1"
+                class="w-40 h-40 me-4"
+              />
+
+              <span class="flex font-extrabold f-nanum-s text-40"
+                >동아리 활동(
+                <span data-audio="5_01_10/074-01.mp3" class="font-bold f-noto">
+                  <span class="relative"
+                    >部<span class="font-bold ruby">ぶ</span></span
+                  ><span class="relative"
+                    >活<span class="font-bold ruby">かつ</span>
+                  </span></span
+                >)
+              </span>
+            </div>
+            <div class="flex mb-4">
+              <div data-name="number-3" class="bg-[#C84935]"></div>
+              <span class="text-[#C84935] font-extrabold">전국 대회</span>
+            </div>
+
+            <!-- ======== page 1 ======== -->
+
+            <div data-name="page" class="flex flex-col font-bold">
+              <div class="px-10 w-fit bg-[#FCF0D7] font-extrabold mb-10 flex">
+                전국 고등학교 종합 체육 대회와 전국 고등학교 종합 문화제
+              </div>
+              <div>
+                <p class="ps-28">
+                  고등학교 운동부는 ‘전국 고등학교 종합 체육 대회’를 목표로
+                </p>
+                <p class="flex">
+                  하는 경우가 많은데 이 대회를 통상적으로 ‘인터하이(<span
+                    data-group="1"
+                    data-audio="5_01_10/075-02.mp3"
+                    class="font-medium f-noto"
+                    >インター</span
+                  >
+                </p>
+                <p class="flex">
+                  <span
+                    data-audio="5_01_10/075-02.mp3"
+                    data-group="1"
+                    class="font-medium f-noto"
+                    >ハイ</span
+                  >)’라고 하며, 지역 예선 대회를 통과한 팀끼리 모여 7<span
+                    class="font-medium f-noto"
+                    >～</span
+                  >8월
+                </p>
+                <p class="flex">에 걸쳐 진행된다.</p>
+              </div>
+            </div>
+            <!-- ======== page 2 ======== -->
+            <div
+              data-name="page"
+              class="flex flex-col font-bold"
+              style="display: none"
+            >
+              <div class="px-10 w-fit bg-[#FCF0D7] font-extrabold mb-10 flex">
+                전국 고등학교 종합 체육 대회와 전국 고등학교 종합 문화제
+              </div>
+              <div>
+                <p>문화부도 매년 7월 말에서 8월 초에 개최되는 ‘전국 고등학교</p>
+                <p>
+                  종합 문화제’에서 각 지역 대표 동아리들이 모여 다양한 공연과
+                </p>
+                <p>전시를 한다. 3학년 학생들은 전국 대회가 끝나면 동아리를</p>
+                <p>그만두고 입시 공부에 집중하는 것이 일반적이다.</p>
+              </div>
+            </div>
+
+            <!-- ======== page 3 ======== -->
+            <div
+              data-name="page"
+              class="flex flex-col font-bold"
+              style="display: none"
+            >
+              <div class="px-10 w-fit bg-[#FCF0D7] font-extrabold mb-10 flex">
+                고시엔(<span
+                  data-audio="5_01_10/076-01.mp3"
+                  class="font-bold f-noto"
+                  >こうしえん</span
+                >)
+              </div>
+              <div>
+                <p class="ps-28">
+                  ‘<span
+                    onclick="contentUtil.setPopup(5)"
+                    class="relative cursor-pointer"
+                    >고시엔<button
+                      class="left-[-5px] top-[-14px]"
+                      data-name="btn-explan"
+                    ></button></span
+                  >’으로 불리는 ‘전국 고등학교 야구 선수권 대회’는
+                </p>
+                <p>100년 이상의 역사를 자랑한다. 매년 8월에</p>
+                <p>실시되는데 거의 모든 경기가 텔레비전으로</p>
+                <p>중계될 만큼 인기가 많다.</p>
+              </div>
+              <div
+                class="absolute flex flex-col gap-10 overflow-hidden w-200 right-20 bottom-70 rounded-10"
+              >
+                <img
+                  src="./images/5_01_10/main_photo1.jpg"
+                  alt="고시엔"
+                  class="w-full h-full"
+                />
+                <button
+                  data-name="btn-view"
+                  class="absolute bottom-10 right-10"
+                  onclick="contentUtil.setPopup(1); contentUtil.setPhotoPopup(1);"
+                ></button>
+              </div>
+            </div>
+            <!-- ======== page 4 ======== -->
+            <div
+              data-name="page"
+              class="flex flex-col font-bold"
+              style="display: none"
+            >
+              <div class="px-10 w-fit bg-[#FCF0D7] font-extrabold mb-10 flex">
+                고시엔(<span
+                  data-audio="5_01_10/076-01.mp3"
+                  class="font-bold f-noto"
+                  >こうしえん</span
+                >)
+              </div>
+              <div>
+                <p>모든 경기는 토너먼트 형식으로 진행되며, 지역 예선에서</p>
+                <p>우승한 팀만이 전국 대회에 출전할 수 있다. 야구를 하는</p>
+                <p>고등학생들은 전국 대회 출전을 영광스러운 일로 여긴다. </p>
+              </div>
+            </div>
+
+            <!-- ======== page 5 ======== -->
+            <div
+              data-name="page"
+              class="flex flex-col font-bold"
+              style="display: none"
+            >
+              <div class="px-10 w-fit bg-[#FCF0D7] font-extrabold mb-10 flex">
+                고시엔(<span
+                  data-audio="5_01_10/076-01.mp3"
+                  class="font-bold f-noto"
+                  >こうしえん</span
+                >)
+              </div>
+              <div>
+                <p>그래서 경기에서 지고 돌아가는 선수들은 다시</p>
+                <p>돌아오겠다는 다짐을 하며 구장의 흙을 담아</p>
+                <p>가는 경우가 많다.</p>
+              </div>
+              <div
+                class="absolute flex flex-col gap-10 overflow-hidden w-240 right-20 bottom-105 rounded-10"
+              >
+                <img
+                  src="./images/5_01_10/main_photo2.jpg"
+                  alt="고시엔"
+                  class="w-full h-full"
+                />
+                <button
+                  data-name="btn-view"
+                  class="absolute bottom-10 right-10"
+                  onclick="contentUtil.setPopup(1); contentUtil.setPhotoPopup(2);"
+                ></button>
+              </div>
+            </div>
+          </div>
+
+          <!-- pagination -->
+          <div
+            class="absolute -translate-x-1/2 left-1/2 bottom-10"
+            data-name="pagination"
+          >
+            <button class="active" data-name="btn-pagination"></button>
+            <button class="" data-name="btn-pagination"></button>
+            <button class="" data-name="btn-pagination"></button>
+            <button class="" data-name="btn-pagination"></button>
+            <button class="" data-name="btn-pagination"></button>
+          </div>
+        </div>
+      </div>
+      <!-- popup -->
+      <div id="popup-wrap" style="display: none">
+        <!-- 사진 팝업창 -->
+        <div data-name="popup" data-popup="1" style="display: none">
+          <div data-name="popup-header">
+            <div data-name="popup-title">사진 팝업창</div>
+            <button
+              data-name="popup-close"
+              onclick="contentUtil.setPopup()"
+            ></button>
+          </div>
+          <div
+            data-name="popup-body"
+            class="flex items-center justify-center w-full h-full gap-16"
+          >
+            <div
+              class="flex flex-col items-center w-608 h-402"
+              data-name="popup_photo_wrap"
+            >
+              <div class="w-full overflow-x-hidden overflow-y-auto pe-4">
+                <img
+                  src="./images/5_01_10/popup_photo1.jpg"
+                  alt="관악부"
+                  class="object-contain min-w-608 rounded-10"
+                  data-name="popup_photo"
+                />
+                <img
+                  src="./images/5_01_10/popup_photo2.jpg"
+                  alt="서예부"
+                  class="object-contain min-w-608 rounded-10"
+                  data-name="popup_photo"
+                  style="display: none"
+                />
+              </div>
+              <div
+                class="flex mt-8 font-bold f-nanum-s h-52 text-40 leading-52 shrink-0"
+              >
+                <div data-name="popup_photo_text">고시엔 구장</div>
+                <div data-name="popup_photo_text">
+                  고시엔 구장의 흙을 담아 가는 선수들
+                </div>
+              </div>
+            </div>
+            <div class="w-266 h-402">
+              <div class="flex flex-wrap w-full gap-10">
+                <button
+                  onclick="contentUtil.setPhotoPopup(1)"
+                  data-name="btn-popup_photo"
+                  class="w-128 h-72 active"
+                >
+                  <img
+                    src="./images/5_01_10/popup_btn_photo1.jpg"
+                    alt="관악부"
+                  />
+                </button>
+                <button
+                  onclick="contentUtil.setPhotoPopup(2)"
+                  data-name="btn-popup_photo"
+                  class="w-128 h-72"
+                >
+                  <img
+                    src="./images/5_01_10/popup_btn_photo2.jpg"
+                    alt="서예부"
+                  />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 해설 보기 -->
+        <div data-name="popup" data-popup="2" style="display: none">
+          <div data-name="popup-header">
+            <div data-name="popup-title">해설 보기</div>
+            <button
+              data-name="popup-close"
+              onclick="contentUtil.setPopup()"
+            ></button>
+          </div>
+          <div data-name="popup-body" class="mt-16 mb-10 ms-26 f-nanum-s me-6">
+            <div class="flex flex-col">
+              <div class="flex items-center mb-10 h-55">
+                <img
+                  src="./../common/images/popup_titlemark_primary.svg"
+                  alt=""
+                  class="w-35 h-55 me-10"
+                />
+                <div
+                  class="flex font-extrabold text-42 text-[#F25F7C] items-baseline"
+                >
+                  전국 대회
+                </div>
+              </div>
+              <div>
+                <span class="font-bold f-nanum-s text-40 leading-52">
+                  <p class="flex">
+                    동아리에서 목표로 하는 전국 대회는 보통 7<span
+                      class="font-medium f-noto"
+                      >～</span
+                    >8월에
+                  </p>
+                  <p>개최되기 때문에 학생들은 여름이 다가오면 평소에 비해</p>
+                  <p>동아리 활동에 더욱 집중하는 경향이 있다고 한다.</p>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 해설 보기 -->
+        <div data-name="popup" data-popup="3" style="display: none">
+          <div data-name="popup-header">
+            <div data-name="popup-title">해설 보기</div>
+            <button
+              data-name="popup-close"
+              onclick="contentUtil.setPopup()"
+            ></button>
+          </div>
+          <div data-name="popup-body" class="mt-16 mb-10 ms-26 f-nanum-s me-6">
+            <div class="flex flex-col">
+              <div class="flex items-center mb-10 h-55">
+                <img
+                  src="./../common/images/popup_titlemark_primary.svg"
+                  alt=""
+                  class="w-35 h-55 me-10"
+                />
+                <div
+                  class="flex font-extrabold text-42 text-[#F25F7C] items-baseline"
+                >
+                  고시엔 봄 대회
+                </div>
+              </div>
+              <div class="">
+                <span class="font-bold f-nanum-s text-40 leading-52">
+                  <p>정식 명칭은 ‘선발 고등학교 야구 대회’로 마이니치신문사</p>
+                  <p>와 일본 고등학교 야구 연맹 주최로 개최된다. 각 도도부현</p>
+                  <p>고교 야구 연맹 추천 학교 중에서 추계 지역 대회의 성적과</p>
+                  <p>지역별 균형을 고려해 출전 학교를 선정하기 때문에, 추계</p>
+                  <p>대회 첫 경기에서 진 학교라도 선발될 가능성이 있다.</p>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 추가 사진 -->
+        <div data-name="popup" data-popup="4" style="display: none">
+          <div data-name="popup-header">
+            <div data-name="popup-title">추가 사진</div>
+            <button
+              data-name="popup-close"
+              onclick="contentUtil.setPopup()"
+            ></button>
+          </div>
+          <div
+            data-name="popup-body"
+            class="flex items-center justify-center w-full h-full gap-16"
+          >
+            <div
+              class="flex flex-col items-center w-608 h-402"
+              data-name="popup_photo_wrap"
+            >
+              <div class="w-full overflow-x-hidden overflow-y-auto pe-4">
+                <img
+                  src="./images/5_01_10/popup_photo3.jpg"
+                  alt="고시엔 구장"
+                  class="object-contain min-w-608 rounded-10"
+                  data-name="popup_photo"
+                />
+              </div>
+              <div
+                class="flex mt-8 font-bold f-nanum-s h-52 text-40 leading-52 shrink-0"
+              >
+                <div data-name="popup_photo_text" class="text-blue">
+                  고시엔 구장
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 설명 -->
+        <div
+          data-name="popup"
+          class="blue"
+          data-popup="5"
+          style="display: none"
+        >
+          <div data-name="popup-header">
+            <div data-name="popup-title">설명</div>
+            <button
+              data-name="popup-close"
+              onclick="contentUtil.setPopup()"
+            ></button>
+          </div>
+          <div
+            data-name="popup-body"
+            class="mt-16 overflow-hidden ms-26 f-nanum-s me-6"
+          >
+            <div class="flex flex-col">
+              <!-- title -->
+              <div class="flex items-center mb-10 h-55">
+                <img
+                  src="./../common/images/popup_titlemark_blue.svg"
+                  alt=""
+                  class="w-35 h-55 me-10"
+                />
+                <div class="flex font-extrabold text-42 text-[#1D4A99]">
+                  고시엔
+                </div>
+              </div>
+              <!-- text -->
+              <div class="">
+                <span class="font-bold f-nanum-s text-40 leading-52">
+                  <p>봄과 여름에 두 번 개최하며, 일반적으로 일본 고교 야구</p>
+                  <p>라고 말할 때는 여름에 열리는 대회를 말한다. 여름에</p>
+                  <p>열리는 대회는 지역 예선에 전국의 3,000개가 넘는 팀이</p>
+                  <p>참가할 정도로 규모가 크다.</p>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript">
+    const page = {
+      isAnswer: false,
+      isVocabulary: false,
+      showAnswer: () => {},
+      hideAnswer: () => {},
+      showVocabulary: () => {},
+    };
+  </script>
+  <script src="./../common/js/tailwind.config.js"></script>
+  <script src="./../common/js/script.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      // contentUtil.setPage(3);
+    });
+    $(`[data-name="btn-pagination"]`).on("click", function () {
+      if ($(this).index() < 2 && $(this).index() !== 1) {
+        $(".btn_comment1").show();
+      } else {
+        $(".btn_comment1").hide();
+      }
+
+      if ($(this).index() === 2) {
+        $(".btn_photo1").show();
+        $(".btn_comment2").css("right", "111px");
+      } else {
+        $(".btn_photo1").hide();
+        $(".btn_comment2").css("right", "0");
+      }
+      if ($(this).index() === 2) {
+        $(".btn_comment2").show();
+      } else {
+        $(".btn_comment2").hide();
+      }
+    });
+  </script>
+</html>

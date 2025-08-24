@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>미래엔 일본 문화</title>
+    <script src="./../common/lib/jquery-3.7.1.min.js"></script>
+    <script src="./../common/lib/howler-2.1.3.min.js"></script>
+    <script src="./../common/lib/tailwind.js"></script>
+    <!-- 폰트 -->
+    <link href="./../common/font/suit/suit.css" rel="stylesheet" />
+    <link href="./../common/font/bmjua/bmjua.css" rel="stylesheet" />
+    <link
+      href="./../common/font/nanumsquare/nanumSquare.css"
+      rel="stylesheet"
+    />
+    <link href="./../common/font/notoSansJP/notoSansJP.css" rel="stylesheet" />
+    <link href="./../common/css/tailwind.css" rel="stylesheet" />
+    <link href="./../common/css/fontStyle.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div id="wrap">
+      <!-- contents -->
+      <div class="relative w-full h-full pt-68">
+        <!-- title -->
+        <img
+          src="./../common/images/title_look_culture6.svg"
+          alt="문화 들여다보기2 학교 행사와 교육 제도"
+          class="absolute w-764 h-49 top-10"
+        />
+
+        <!-- main -->
+        <div class="flex flex-col w-full h-full">
+          <div
+            class="flex flex-col flex-1 w-full leading-52 ps-20 text-40 f-nanum-s"
+          >
+            <div class="flex items-center mb-4">
+              <img
+                src="./../common/images/index_pink_1.svg"
+                alt="번호 1"
+                class="w-40 h-40 me-4"
+              />
+              <span class="font-extrabold">학교 행사</span>
+            </div>
+            <div class="flex mb-4">
+              <div data-name="number-2" class="bg-[#C84935]"></div>
+              <span class="text-[#C84935] font-extrabold flex"
+                >학교 축제(
+                <span data-audio="5_01_16/078-01.mp3" class="font-bold f-noto">
+                  <span class="relative"
+                    >文<span class="font-bold ruby">ぶん</span></span
+                  ><span class="relative"
+                    >化<span class="font-bold ruby">か</span></span
+                  ><span class="relative"
+                    >祭<span class="font-bold ruby">さい</span></span
+                  >
+                </span>
+                )
+              </span>
+            </div>
+            <!-- ======== page 1 ======== -->
+            <div
+              data-name="page"
+              class="flex flex-col font-bold f-nanum-s text-40"
+            >
+              <div>
+                <p class="flex ps-28">
+                  학교 축제는 보통 1<span class="font-medium f-noto">～</span
+                  >2일 일정으로 실시한다. 학급 단위
+                </p>
+
+                <p>혹은 동아리 단위로 공연을 기획하거나 교실을 꾸미는 등</p>
+                <p>
+                  다양하게 즐길 수 있다. 그리고 음식을 파는 부스를 열어 판매
+                </p>
+                <p>수익을 올리기도 하는데 야키소바, 핫도그 등 간단한 음식이</p>
+                <p>
+                  인기가 많다. 다만, 음식을 만들어 팔 경우 미리 보건소에 신고
+                </p>
+                <p>해야 한다.</p>
+              </div>
+
+              <!-- img box -->
+              <div class="absolute flex flex-col gap-10 w-157 right-198 top-69">
+                <img
+                  src="./images/5_01_16/main_photo1.jpg"
+                  alt="학교축제"
+                  class="w-full h-full"
+                />
+                <button
+                  data-name="btn-view"
+                  class="absolute bottom-10 right-10"
+                  onclick="contentUtil.setPopup(1); contentUtil.setPhotoPopup(1);"
+                ></button>
+              </div>
+
+              <div class="absolute flex flex-col gap-10 w-157 right-20 top-69">
+                <img
+                  src="./images/5_01_16/main_photo2.jpg"
+                  alt="다양한 부스"
+                  class="w-full h-full"
+                />
+                <button
+                  data-name="btn-view"
+                  class="absolute bottom-10 right-10"
+                  onclick="contentUtil.setPopup(1); contentUtil.setPhotoPopup(2);"
+                ></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- popup -->
+      <div id="popup-wrap" style="display: none">
+        <!-- 사진 팝업창 -->
+        <div data-name="popup" data-popup="1" style="display: none">
+          <div data-name="popup-header">
+            <div data-name="popup-title">사진 팝업창</div>
+            <button
+              data-name="popup-close"
+              onclick="contentUtil.setPopup()"
+            ></button>
+          </div>
+          <div
+            data-name="popup-body"
+            class="flex items-center justify-center w-full h-full gap-16"
+          >
+            <div
+              class="flex flex-col items-center w-608 h-402"
+              data-name="popup_photo_wrap"
+            >
+              <div class="w-full overflow-x-hidden overflow-y-auto pe-4">
+                <img
+                  src="./images/5_01_16/popup_photo1.jpg"
+                  alt="학교축제"
+                  class="object-contain min-w-608 rounded-10"
+                  data-name="popup_photo"
+                />
+                <img
+                  src="./images/5_01_16/popup_photo2.jpg"
+                  alt="다양한 부스"
+                  class="object-contain min-w-608 rounded-10"
+                  data-name="popup_photo"
+                  style="display: none"
+                />
+              </div>
+              <div
+                class="flex mt-8 font-bold f-nanum-s h-52 text-40 leading-52 shrink-0"
+              >
+                <div data-name="popup_photo_text">학교 축제로 꾸며진 모습</div>
+                <div data-name="popup_photo_text" style="display: none">
+                  학교 축제의 다양한 부스 설치 모습
+                </div>
+              </div>
+            </div>
+            <div class="w-266 h-402">
+              <div class="flex flex-wrap w-full gap-10">
+                <button
+                  onclick="contentUtil.setPhotoPopup(1)"
+                  data-name="btn-popup_photo"
+                  class="w-128 h-72 active"
+                >
+                  <img
+                    src="./images/5_01_16/popup_btn_photo1.jpg"
+                    alt="학교축제"
+                  />
+                </button>
+                <button
+                  onclick="contentUtil.setPhotoPopup(2)"
+                  data-name="btn-popup_photo"
+                  class="w-128 h-72"
+                >
+                  <img
+                    src="./images/5_01_16/popup_btn_photo2.jpg"
+                    alt="다양한 부스"
+                  />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript">
+    const page = {
+      isAnswer: false,
+      isVocabulary: false,
+      showAnswer: () => {},
+      hideAnswer: () => {},
+      showVocabulary: () => {},
+    };
+  </script>
+  <script src="./../common/js/tailwind.config.js"></script>
+  <script src="./../common/js/script.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      // contentUtil.setPopup(1);
+    });
+    $(`[data-name="btn-pagination"]`).on("click", function () {
+      if ($(this).index() === 0) {
+        $(".btn-view-change").show();
+      } else {
+        $(".btn-view-change").hide();
+      }
+    });
+  </script>
+</html>

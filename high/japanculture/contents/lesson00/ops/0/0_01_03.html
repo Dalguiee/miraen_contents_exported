@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>미래엔 일본 문화</title>
+    <script src="./../common/lib/jquery-3.7.1.min.js"></script>
+    <script src="./../common/lib/howler-2.1.3.min.js"></script>
+    <script src="./../common/lib/tailwind.js"></script>
+    <!-- 폰트 -->
+    <link href="./../common/font/suit/suit.css" rel="stylesheet" />
+    <link href="./../common/font/bmjua/bmjua.css" rel="stylesheet" />
+    <link
+      href="./../common/font/nanumsquare/nanumSquare.css"
+      rel="stylesheet"
+    />
+    <link href="./../common/font/notoSansJP/notoSansJP.css" rel="stylesheet" />
+    <link href="./../common/css/tailwind.css" rel="stylesheet" />
+    <link href="./../common/css/fontStyle.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div id="wrap">
+      <!-- contents -->
+      <div class="relative w-full h-full pt-56">
+        <!-- header-btn -->
+        <div class="absolute right-0 flex gap-6 top-13" data-name="header-btn">
+          <button
+            data-name="btn-common-dark"
+            class="min-w-62"
+            onclick="contentUtil.setPopup(1)"
+          >
+            TIP
+          </button>
+        </div>
+        <!-- main -->
+        <div
+          class="flex flex-col w-full h-full font-bold leading-52 text-40 f-nanum-s"
+        >
+          <div class="flex mb-10 ps-20">
+            <div
+              class="w-24 h-24 rounded-full border-8 border-[#E77974] mt-14 me-10"
+            ></div>
+            <div class="font-extrabold">한국과 일본을 비교해 봅시다.</div>
+          </div>
+          <!-- ======== page 1 ======== -->
+          <div data-name="page" class="flex flex-col">
+            <!-- table -->
+            <div
+              class="flex flex-col mx-auto mb-10 font-bold w-fit leading-52 text-40 f-nanum-s"
+            >
+              <!-- ========= -->
+              <div class="flex items-stretch">
+                <!-- ------- -->
+                <div
+                  class="w-90 bg-[#818BC2] flex items-center justify-center p-10 rounded-tl-10 border-[#BEC1D6] border-t-3 border-b-1 border-l-3 border-r-1"
+                >
+                  <div class="flex flex-col items-center">
+                    <div>
+                      <p>구분</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- ------- -->
+                <div
+                  class="w-435 bg-white flex flex-col p-10 border-[#BEC1D6] border-t-3 border-b-1 border-r-1"
+                >
+                  <div class="w-full text-center text-[#5C6295]">
+                    <p>한국</p>
+                  </div>
+                </div>
+                <!-- ------- -->
+                <div
+                  class="w-435 bg-white flex flex-col p-10 rounded-tr-10 border-[#BEC1D6] border-t-3 border-b-1 border-r-3"
+                >
+                  <div class="w-full text-center text-[#5C6295]">
+                    <p>일본</p>
+                  </div>
+                </div>
+                <!-- ------- -->
+              </div>
+              <!-- ========= -->
+              <div class="flex items-stretch">
+                <!-- ------- -->
+                <div
+                  class="w-90 bg-[#A6B3D6] flex items-center justify-center p-10 border-[#BEC1D6] border-l-3 border-b-1 border-r-1"
+                >
+                  <div class="flex flex-col items-center">
+                    <div>
+                      <p>면적</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- ------- -->
+                <div
+                  class="w-435 bg-white flex flex-col p-10 border-[#BEC1D6] border-b-1 border-r-1"
+                >
+                  <div class="w-full text-center">
+                    <p>약 10만 km²</p>
+                  </div>
+                </div>
+                <!-- ------- -->
+                <div
+                  class="w-435 bg-white flex flex-col p-10 border-[#BEC1D6] border-b-1 border-r-3"
+                >
+                  <div class="w-full text-center">
+                    <p>약 38만 km²</p>
+                  </div>
+                </div>
+                <!-- ------- -->
+              </div>
+              <!-- ========= -->
+              <div class="flex items-stretch">
+                <!-- ------- -->
+                <div
+                  class="w-90 bg-[#A6B3D6] flex items-center justify-center p-10 border-[#BEC1D6] border-l-3 border-b-3 border-r-1 rounded-bl-10"
+                >
+                  <div class="flex flex-col items-center">
+                    <div>
+                      <p>인구</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- ------- -->
+                <div
+                  class="w-435 bg-white flex flex-col p-10 border-[#BEC1D6] border-b-3 border-r-1"
+                >
+                  <div class="w-full text-center">
+                    <p>약 5천2백만 명</p>
+                    <p>(통계청, 2024년)</p>
+                  </div>
+                </div>
+                <!-- ------- -->
+                <div
+                  class="w-435 bg-white flex flex-col p-10 border-[#BEC1D6] border-b-3 border-r-3 rounded-br-10"
+                >
+                  <div class="w-full text-center">
+                    <p>약 1억 2천4백만 명</p>
+                    <p>(총무성 통계국, 2024년)</p>
+                  </div>
+                </div>
+                <!-- ------- -->
+              </div>
+            </div>
+          </div>
+          <!-- ======== page 2 ======== -->
+          <div data-name="page" class="flex flex-col" style="display: none">
+            <!-- table -->
+            <div
+              class="flex flex-col mx-auto mb-10 font-bold w-fit leading-52 text-40 f-nanum-s"
+            >
+              <!-- ========= -->
+              <div class="flex items-stretch">
+                <!-- ------- -->
+                <div
+                  class="w-90 bg-[#818BC2] flex items-center justify-center p-10 rounded-tl-10 border-[#BEC1D6] border-t-3 border-b-1 border-l-3 border-r-1"
+                >
+                  <div class="flex flex-col items-center">
+                    <div>
+                      <p>구분</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- ------- -->
+                <div
+                  class="w-435 bg-white flex flex-col p-10 border-[#BEC1D6] border-t-3 border-b-1 border-r-1"
+                >
+                  <div class="w-full text-center text-[#5C6295]">
+                    <p>한국</p>
+                  </div>
+                </div>
+                <!-- ------- -->
+                <div
+                  class="w-435 bg-white flex flex-col p-10 rounded-tr-10 border-[#BEC1D6] border-t-3 border-b-1 border-r-3"
+                >
+                  <div class="w-full text-center text-[#5C6295]">
+                    <p>일본</p>
+                  </div>
+                </div>
+                <!-- ------- -->
+              </div>
+              <!-- ========= -->
+              <div class="flex items-stretch">
+                <!-- ------- -->
+                <div
+                  class="w-90 bg-[#A6B3D6] flex items-center justify-center p-10 border-[#BEC1D6] border-l-3 border-b-1 border-r-1"
+                >
+                  <div class="flex flex-col items-center">
+                    <div>
+                      <p>수도</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- ------- -->
+                <div
+                  class="w-435 bg-white flex flex-col items-center justify-center p-10 border-[#BEC1D6] border-b-1 border-r-1"
+                >
+                  <div>
+                    <p>서울</p>
+                  </div>
+                </div>
+                <!-- ------- -->
+                <div
+                  class="w-435 bg-white flex flex-col items-center justify-center p-10 border-[#BEC1D6] border-b-1 border-r-3"
+                >
+                  <div class="flex flex-col">
+                    <p class="flex pt-12">
+                      도쿄(<span
+                        data-audio="0_01_03/008-04.mp3"
+                        class="font-medium f-noto"
+                        ><span class="relative"
+                          >東<span class="ruby">とう</span></span
+                        ><span class="relative"
+                          >京<span class="ruby tracking-[-0.25em]"
+                            >きょう</span
+                          ></span
+                        ></span
+                      >)
+                    </p>
+                  </div>
+                </div>
+                <!-- ------- -->
+              </div>
+              <!-- ========= -->
+              <div class="flex items-stretch">
+                <!-- ------- -->
+                <div
+                  class="w-90 bg-[#A6B3D6] flex items-center justify-center p-10 border-[#BEC1D6] border-l-3 border-b-3 border-r-1 rounded-bl-10"
+                >
+                  <div class="flex flex-col items-center">
+                    <div>
+                      <p>행정</p>
+                      <p>구역</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- ------- -->
+                <div
+                  class="w-435 bg-white flex flex-col justify-center items-center p-10 border-[#BEC1D6] border-b-3 border-r-1"
+                >
+                  <div class="text-center">
+                    <p>특별시, 광역시,</p>
+                    <p>특별자치시, 도, 특별자치도</p>
+                  </div>
+                </div>
+                <!-- ------- -->
+                <div
+                  class="w-435 bg-white flex flex-col justify-center items-center p-10 border-[#BEC1D6] border-b-3 border-r-3 rounded-br-10"
+                >
+                  <div class="text-center">
+                    <p class="flex pt-12">
+                      도(<span
+                        data-audio="0_01_03/008-05.mp3"
+                        class="font-medium f-noto"
+                        ><span class="relative"
+                          >都<span class="ruby">と</span></span
+                        ></span
+                      >), 도(<span
+                        data-audio="0_01_03/008-06.mp3"
+                        class="font-medium f-noto"
+                        ><span class="relative"
+                          >道<span class="ruby">どう</span></span
+                        ></span
+                      >),
+                    </p>
+                    <p class="flex pt-12">
+                      후(<span
+                        data-audio="0_01_03/008-07.mp3"
+                        class="font-medium f-noto"
+                        ><span class="relative"
+                          >府<span class="ruby">ふ</span></span
+                        ></span
+                      >), 겐(<span
+                        data-audio="0_01_03/008-08.mp3"
+                        class="font-medium f-noto"
+                        ><span class="relative"
+                          >県<span class="ruby">けん</span></span
+                        ></span
+                      >)
+                    </p>
+                  </div>
+                </div>
+                <!-- ------- -->
+              </div>
+            </div>
+          </div>
+          <!-- ======== page 3 ======== -->
+          <div data-name="page" class="flex flex-col" style="display: none">
+            <!-- table -->
+            <div
+              class="flex flex-col mx-auto mb-10 font-bold w-fit leading-52 text-40 f-nanum-s"
+            >
+              <!-- ========= -->
+              <div class="flex items-stretch">
+                <!-- ------- -->
+                <div
+                  class="w-90 bg-[#818BC2] flex items-center justify-center p-10 rounded-tl-10 border-[#BEC1D6] border-t-3 border-b-1 border-l-3 border-r-1"
+                >
+                  <div class="flex flex-col items-center">
+                    <div>
+                      <p>구분</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- ------- -->
+                <div
+                  class="w-435 bg-white flex flex-col p-10 border-[#BEC1D6] border-t-3 border-b-1 border-r-1"
+                >
+                  <div class="w-full text-center text-[#5C6295]">
+                    <p>한국</p>
+                  </div>
+                </div>
+                <!-- ------- -->
+                <div
+                  class="w-435 bg-white flex flex-col p-10 rounded-tr-10 border-[#BEC1D6] border-t-3 border-b-1 border-r-3"
+                >
+                  <div class="w-full text-center text-[#5C6295]">
+                    <p>일본</p>
+                  </div>
+                </div>
+                <!-- ------- -->
+              </div>
+              <!-- ========= -->
+              <div class="flex items-stretch">
+                <!-- ------- -->
+                <div
+                  class="w-90 bg-[#A6B3D6] flex items-center justify-center p-10 border-[#BEC1D6] border-l-3 border-b-1 border-r-1"
+                >
+                  <div class="flex flex-col items-center">
+                    <div>
+                      <p>국화</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- ------- -->
+                <div
+                  class="w-435 bg-white flex flex-col items-center justify-center p-10 border-[#BEC1D6] border-b-1 border-r-1"
+                >
+                  <div>
+                    <p>무궁화</p>
+                  </div>
+                </div>
+                <!-- ------- -->
+                <div
+                  class="w-435 bg-white flex flex-col items-center justify-center p-10 border-[#BEC1D6] border-b-1 border-r-3"
+                >
+                  <div>
+                    <p>-</p>
+                  </div>
+                </div>
+                <!-- ------- -->
+              </div>
+              <!-- ========= -->
+              <div class="flex items-stretch">
+                <!-- ------- -->
+                <div
+                  class="w-90 bg-[#A6B3D6] flex items-center justify-center p-10 border-[#BEC1D6] border-l-1 border-b-1 border-r-1"
+                >
+                  <div class="flex flex-col items-center">
+                    <div>
+                      <p>연호</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- ------- -->
+                <div
+                  class="w-435 bg-white flex flex-col justify-center items-center p-10 border-[#BEC1D6] border-b-1 border-r-1"
+                >
+                  <div class="text-center">
+                    <p>-</p>
+                  </div>
+                </div>
+                <!-- ------- -->
+                <div
+                  class="w-435 bg-white flex flex-col justify-center items-center p-10 border-[#BEC1D6] border-b-1 border-r-3"
+                >
+                  <div class="text-center">
+                    <p class="flex pt-12">
+                      레이와(<span
+                        data-audio="0_01_03/008-03.mp3"
+                        class="font-medium f-noto"
+                        ><span class="relative"
+                          >令<span class="ruby">れい</span></span
+                        ><span class="relative"
+                          >和<span class="ruby">わ</span></span
+                        ></span
+                      >)
+                    </p>
+                  </div>
+                </div>
+                <!-- ------- -->
+              </div>
+              <!-- ========= -->
+              <div class="flex items-stretch">
+                <!-- ------- -->
+                <div
+                  class="w-90 bg-[#A6B3D6] flex items-center justify-center p-10 border-[#BEC1D6] border-l-3 border-b-3 border-r-1 rounded-bl-10"
+                >
+                  <div class="flex flex-col items-center">
+                    <div>
+                      <p>화폐</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- ------- -->
+                <div
+                  class="w-435 bg-white flex flex-col justify-center items-center p-10 border-[#BEC1D6] border-b-3 border-r-1"
+                >
+                  <div class="text-center">
+                    <p>원</p>
+                  </div>
+                </div>
+                <!-- ------- -->
+                <div
+                  class="w-435 bg-white flex flex-col justify-center items-center p-10 border-[#BEC1D6] border-b-3 border-r-3 rounded-br-10"
+                >
+                  <div class="text-center">
+                    <p class="flex pt-12">
+                      엔(<span
+                        data-audio="0_01_03/008-09.mp3"
+                        class="font-medium f-noto"
+                        ><span class="relative"
+                          >円<span class="ruby">えん</span></span
+                        ></span
+                      >)
+                    </p>
+                  </div>
+                </div>
+                <!-- ------- -->
+              </div>
+            </div>
+          </div>
+          <!-- pagination -->
+          <div
+            class="absolute -translate-x-1/2 left-1/2 bottom-10"
+            data-name="pagination"
+          >
+            <button class="active" data-name="btn-pagination"></button>
+            <button class="" data-name="btn-pagination"></button>
+            <button class="" data-name="btn-pagination"></button>
+          </div>
+        </div>
+      </div>
+      <!-- popup -->
+      <div id="popup-wrap" style="display: none">
+        <!-- TIP -->
+        <div data-name="popup" data-popup="1" style="display: none">
+          <div data-name="popup-header">
+            <div data-name="popup-title">TIP</div>
+            <button
+              data-name="popup-close"
+              onclick="contentUtil.setPopup()"
+            ></button>
+          </div>
+          <div
+            data-name="popup-body"
+            class="mt-16 mb-10 font-bold ms-26 f-nanum-s me-6 leading-52 text-40"
+          >
+            <div class="flex flex-col">
+              <!-- list -->
+              <div class="flex flex-col gap-10 mb-20">
+                <!-- ------- -->
+                <div class="flex">
+                  <div
+                    class="w-12 h-12 mt-20 rounded-full me-10 bg-[#B44A42]"
+                  ></div>
+                  <div>
+                    <p>일본에서 공식적으로 지정한 국화는 없다.</p>
+                  </div>
+                </div>
+                <!-- ------- -->
+                <div class="flex">
+                  <div
+                    class="w-12 h-12 mt-20 rounded-full me-10 bg-[#B44A42]"
+                  ></div>
+                  <div>
+                    <p>일본은 일상생활에서 연호를 자주 사용한다. 공문서·</p>
+                    <p>연하장 등에는 일반적으로 연호를 사용한다.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="flex flex-col gap-12">
+                <div class="px-10 bg-[#9CC8A0] w-fit">최근 연호</div>
+                <p class="flex pt-12">
+                  <span class="me-10">-</span>쇼와(<span
+                    data-audio="0_01_03/008-01.mp3"
+                    class="font-medium f-noto"
+                    ><span class="relative"
+                      >昭<span class="ruby tracking-[-0.25em]"
+                        >しょう</span
+                      ></span
+                    ><span class="relative"
+                      >和<span class="ruby">わ</span></span
+                    ></span
+                  >, 1926년 12월<span class="font-medium f-noto"
+                    >&nbsp;～&nbsp;</span
+                  >1989년 1월)
+                </p>
+                <p class="flex pt-12">
+                  <span class="me-10">-</span>헤이세이(<span
+                    data-audio="0_01_03/008-02.mp3"
+                    class="font-medium f-noto"
+                    ><span class="relative"
+                      >平<span class="ruby">へい</span></span
+                    ><span class="relative"
+                      >成<span class="ruby">せい</span></span
+                    ></span
+                  >, 1989년 1월<span class="font-medium f-noto"
+                    >&nbsp;～&nbsp;</span
+                  >2019년 4월)
+                </p>
+                <p class="flex pt-12">
+                  <span class="me-10">-</span>레이와(<span
+                    data-audio="0_01_03/008-03.mp3"
+                    class="font-medium f-noto"
+                    ><span class="relative"
+                      >令<span class="ruby">れい</span></span
+                    ><span class="relative"
+                      >和<span class="ruby">わ</span></span
+                    ></span
+                  >, 2019년 5월<span class="font-medium f-noto"
+                    >&nbsp;～&nbsp;</span
+                  >
+                  )
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript">
+    const page = {
+      isAnswer: false,
+      isVocabulary: false,
+      showAnswer: () => {},
+      hideAnswer: () => {},
+      showVocabulary: () => {},
+    };
+  </script>
+  <script src="./../common/js/tailwind.config.js"></script>
+  <script src="./../common/js/script.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {});
+  </script>
+</html>

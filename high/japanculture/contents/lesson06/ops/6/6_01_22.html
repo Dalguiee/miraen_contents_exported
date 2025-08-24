@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>미래엔 일본 문화</title>
+    <script src="./../common/lib/jquery-3.7.1.min.js"></script>
+    <script src="./../common/lib/howler-2.1.3.min.js"></script>
+    <script src="./../common/lib/tailwind.js"></script>
+    <!-- 폰트 -->
+    <link href="./../common/font/suit/suit.css" rel="stylesheet" />
+    <link href="./../common/font/bmjua/bmjua.css" rel="stylesheet" />
+    <link
+      href="./../common/font/nanumsquare/nanumSquare.css"
+      rel="stylesheet"
+    />
+    <link href="./../common/font/notoSansJP/notoSansJP.css" rel="stylesheet" />
+    <link href="./../common/css/tailwind.css" rel="stylesheet" />
+    <link href="./../common/css/fontStyle.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div id="wrap">
+      <!-- contents -->
+      <div class="relative w-full h-full pt-68">
+        <!-- title -->
+        <img
+          src="./../common/images/title_look_culture2.svg"
+          alt="문화 들여다보기2 주요 연중행사 주요 연중행사"
+          class="absolute w-764 h-49 top-10"
+        />
+        <!-- main -->
+        <div class="flex flex-col w-full h-full">
+          <div class="flex flex-col w-full h-full px-20 leading-52">
+            <div class="flex items-center mb-10">
+              <img
+                src="./../common/images/index_pink_1.svg"
+                alt=""
+                class="w-40 h-40 me-4"
+              />
+              <span class="font-extrabold f-nanum-s text-40"
+                >어린이를 위한 행사</span
+              >
+            </div>
+            <div
+              class="w-full relative h-332 bg-[url(./images/6_01_22/main_img1.jpg)] bg-no-repeat bg-cover text-40 font-bold f-nanum-s"
+            >
+              <div class="absolute top-12 left-229">
+                <div>
+                  <p>고이노보리 길이가 100m나 되는 것도</p>
+                  <p>있다는데 사실인가요?</p>
+                </div>
+              </div>
+              <div
+                data-answer="1"
+                class="absolute top-164 left-129"
+                style="display: none"
+              >
+                <div>
+                  <p>네, 사이타마현의 가조시에서 소유하고 있는</p>
+                  <p>고이노보리는 길이가 100m, 무게가 330kg</p>
+                  <p>이나 된다고 합니다.</p>
+                </div>
+              </div>
+              <button
+                data-name="btn-common"
+                class="absolute left-0 min-w-101 top-244"
+                onclick="contentUtil.showAnswer(1)"
+              >
+                확인하기
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- popup -->
+      <div id="popup-wrap" style="display: none"></div>
+    </div>
+  </body>
+  <script type="text/javascript">
+    const page = {
+      isAnswer: false,
+      isVocabulary: false,
+      showAnswer: () => {},
+      hideAnswer: () => {},
+      showVocabulary: () => {},
+    };
+  </script>
+  <script src="./../common/js/tailwind.config.js"></script>
+  <script src="./../common/js/script.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {});
+  </script>
+</html>

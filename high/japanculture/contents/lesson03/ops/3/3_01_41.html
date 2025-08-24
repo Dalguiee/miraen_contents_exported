@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>미래엔 일본 문화</title>
+    <script src="./../common/lib/jquery-3.7.1.min.js"></script>
+    <script src="./../common/lib/howler-2.1.3.min.js"></script>
+    <script src="./../common/lib/tailwind.js"></script>
+    <!-- 폰트 -->
+    <link href="./../common/font/suit/suit.css" rel="stylesheet" />
+    <link href="./../common/font/bmjua/bmjua.css" rel="stylesheet" />
+    <link
+      href="./../common/font/nanumsquare/nanumSquare.css"
+      rel="stylesheet"
+    />
+    <link href="./../common/font/notoSansJP/notoSansJP.css" rel="stylesheet" />
+    <link href="../common/css/tailwind.css" rel="stylesheet" />
+    <link href="./../common/css/fontStyle.css" rel="stylesheet" />
+  </head>
+  <style>
+    .example_bg {
+      background: url("./images/3_01_41/example_bg.svg") no-repeat center;
+      background-size: contain;
+    }
+  </style>
+  <body>
+    <div id="wrap">
+      <!-- contents -->
+      <div class="relative flex flex-col w-full h-full pt-60">
+        <!-- title -->
+        <div class="absolute left-0 flex h-50 top-10">
+          <img
+            src="./../common/images/title_getactive.svg"
+            alt="활동하기"
+            class="w-160 me-10"
+          />
+          <span class="f-bmjua text-36 text-[#6773B1] leading-50"
+            >진로 연계 활동</span
+          >
+        </div>
+
+        <!-- main -->
+        <div class="flex-col flex-1 w-full px-20 leading-52 f-nanum-s text-40">
+          <!-- ======== page 1 ======== -->
+          <div data-name="page" class="flex flex-col w-full">
+            <div class="flex mb-10">
+              <img
+                src="./../common/images/label_flower_blue.svg"
+                alt="label"
+                class="w-30 h-52 me-8"
+              />
+              <div class="font-extrabold">
+                <p>한국과 일본의 쓰레기 분리수거의 차이점을 비교하여</p>
+                <p>발표해 봅시다.</p>
+              </div>
+            </div>
+            <div class="flex mb-10 font-bold">
+              <div data-name="number-1" class="bg-[#6291CC] me-10"></div>
+              <div>
+                <p class="flex">
+                  일본 쓰레기 분리수거 기준에 따라
+                  <img
+                    class="ml-16"
+                    src="./images/3_01_41/label.svg"
+                    alt=""
+                  />의 물건을
+                </p>
+                <p>분류하여 아래의 표를 완성한다.</p>
+                <p class="text-[#636463]">
+                  (※ 쓰레기 분리수거 기준은 지방 자치 단체마다 다르다.)
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- ======== page 2 ======== -->
+          <div
+            data-name="page"
+            class="flex flex-col w-full"
+            style="display: none"
+          >
+            <div class="relative flex mb-10 font-bold me-20">
+              <div class="absolute top-20 left-[-20px] w-57 h-45">
+                <img src="./images/3_01_41/label.svg" alt="" />
+              </div>
+              <div class="flex w-960 h-398 example_bg">
+                <div
+                  class="pl-48 mt-12 mb-10 overflow-scroll overflow-x-hidden bg-scroll me-12"
+                >
+                  <div class="mt-10 w-898 h-600">
+                    <img
+                      src="./images/3_01_41/main_photo1.jpg"
+                      alt="쓰레기분리수거 표"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ======== page 3 ======== -->
+          <div
+            data-name="page"
+            class="flex flex-col w-full"
+            style="display: none"
+          >
+            <div class="absolute ms-auto right-20 bottom-11">
+              <button
+                data-name="btn-common"
+                data-reset="1"
+                onclick="contentUtil.showAnswer(1)"
+              >
+                예시 답안
+              </button>
+              <button
+                data-name="btn-common"
+                data-answer="1"
+                onclick="contentUtil.hideAnswer(1)"
+                style="display: none"
+              >
+                다시 풀기
+              </button>
+            </div>
+
+            <!-- ------------- -->
+            <div class="flex items-stretch w-full font-bold f-nanum-s">
+              <div
+                class="text-white flex items-center justify-center w-207 h-60 bg-[#9EA7C9] shrink-0 rounded-tl-10 border-t-3 border-r-2 border-b-2 border-[#9EA7C9] border-b-[white]"
+              >
+                <span>가연 쓰레기</span>
+              </div>
+              <div
+                class="w-407 h-60 flex items-center justify-start pl-12 border-t-3 border-r-2 border-b-2 border-[#9EA7C9] border-b-[#9EA7C9]"
+              >
+                <span class="flex gap-6">
+                  <p>1.</p>
+                  <p>불에 타는 쓰레기</p>
+                </span>
+              </div>
+              <div
+                class="w-346 h-60 flex items-center justify-start pl-12 rounded-tr-10 border-t-3 border-b-2 border-r-3 border-[#9EA7C9] border-l-[#9EA7C9] border-b-[#9EA7C9]"
+              >
+                <div data-reset="1" class="flex gap-5 text-white">
+                  <div
+                    class="w-47 h-47 bg-[#9BC3A2] rounded-full flex justify-center items-end"
+                  ></div>
+                  <div
+                    class="w-47 h-47 bg-[#EC9644] rounded-full flex justify-center items-end"
+                  >
+                    <span>
+                      <p>g</p>
+                    </span>
+                  </div>
+                  <div
+                    class="w-47 h-47 bg-[#9BC3A2] rounded-full flex justify-center items-end"
+                  ></div>
+                  <div
+                    class="w-47 h-47 bg-[#EC9644] rounded-full flex justify-center items-center"
+                  >
+                    <span>
+                      <p>k</p>
+                    </span>
+                  </div>
+                  <div
+                    class="w-47 h-47 bg-[#9BC3A2] rounded-full flex justify-center items-end"
+                  ></div>
+                  <div
+                    class="w-47 h-47 bg-[#EC9644] rounded-full flex justify-center items-center"
+                  >
+                    <span>
+                      <p>n</p>
+                    </span>
+                  </div>
+                </div>
+                <div
+                  data-answer="1"
+                  class="flex gap-5 text-white"
+                  style="display: none"
+                >
+                  <div
+                    class="w-47 h-47 bg-[#9BC3A2] text-red rounded-full flex justify-center items-end"
+                  >
+                    <span>
+                      <p>a</p>
+                    </span>
+                  </div>
+                  <div
+                    class="w-47 h-47 bg-[#EC9644] rounded-full flex justify-center items-end"
+                  >
+                    <span>
+                      <p>g</p>
+                    </span>
+                  </div>
+                  <div
+                    class="w-47 h-47 bg-[#9BC3A2] text-red rounded-full flex justify-center items-center"
+                  >
+                    <span>
+                      <p>h</p>
+                    </span>
+                  </div>
+                  <div
+                    class="w-47 h-47 bg-[#EC9644] rounded-full flex justify-center items-center"
+                  >
+                    <span>
+                      <p>k</p>
+                    </span>
+                  </div>
+                  <div
+                    class="w-47 h-47 bg-[#9BC3A2] text-red rounded-full flex justify-center items-center"
+                  >
+                    <span>
+                      <p>m</p>
+                    </span>
+                  </div>
+                  <div
+                    class="w-47 h-47 bg-[#EC9644] rounded-full flex justify-center items-center"
+                  >
+                    <span>
+                      <p>n</p>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- ------------------------------ -->
+            <div class="flex items-stretch w-full font-bold f-nanum-s">
+              <div
+                class="text-white flex items-center justify-center w-207 h-60 bg-[#9EA7C9] shrink-0 border-r-2 border-b-2 border-[#9EA7C9] border-b-[white]"
+              >
+                <span>불연 쓰레기</span>
+              </div>
+              <div
+                class="w-407 h-60 flex items-center justify-start pl-12 border-r-2 border-b-2 border-[#9EA7C9] border-b-[#9EA7C9]"
+              >
+                <span class="flex gap-6">
+                  <p>2.</p>
+                  <p>불에 타지 않는 쓰레기</p>
+                </span>
+              </div>
+              <div
+                class="w-346 h-60 flex items-center justify-start pl-12 border-b-2 border-r-3 border-[#9EA7C9] border-l-[#9EA7C9] border-b-[#9EA7C9]"
+              >
+                <div data-reset="1" class="flex gap-5 text-white">
+                  <div
+                    class="w-47 h-47 bg-[#EC9644] rounded-full flex justify-center items-start"
+                  >
+                    <span>
+                      <p>f</p>
+                    </span>
+                  </div>
+                  <div
+                    class="w-47 h-47 bg-[#9BC3A2] rounded-full flex justify-center items-start"
+                  ></div>
+
+                  <div
+                    class="w-47 h-47 bg-[#9BC3A2] rounded-full flex justify-center items-end"
+                  ></div>
+                </div>
+                <div
+                  data-answer="1"
+                  class="flex gap-5 text-white"
+                  style="display: none"
+                >
+                  <div
+                    class="w-47 h-47 bg-[#EC9644] rounded-full flex justify-center items-start"
+                  >
+                    <span>
+                      <p>f</p>
+                    </span>
+                  </div>
+                  <div
+                    class="w-47 h-47 bg-[#9BC3A2] text-red rounded-full flex justify-center items-start"
+                  >
+                    <span>
+                      <p>i</p>
+                    </span>
+                  </div>
+
+                  <div
+                    class="w-47 h-47 bg-[#9BC3A2] text-red rounded-full flex justify-center items-end"
+                  >
+                    <span>
+                      <p>p</p>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- ------------------------------ -->
+            <div class="flex items-stretch w-full font-bold f-nanum-s">
+              <div
+                class="text-white flex items-center justify-center w-207 h-276 bg-[#9EA7C9] shrink-0 border-r-2 border-b-2 rounded-bl-10 border-[#9EA7C9] border-t-[white] border-b-[#9EA7C9]"
+              >
+                <span>자원 쓰레기</span>
+              </div>
+              <div class="flex flex-col">
+                <div class="flex">
+                  <div
+                    class="w-407 h-164 flex items-centㄴer justify-start pl-12 border-r-2 border-b-2 border-[#9EA7C9] border-b-[#9EA7C9]"
+                  >
+                    <div class="flex gap-6">
+                      <p>3.</p>
+                      <div>
+                        <p>플라스틱 마크가 있는</p>
+                        <p>용기, 병, 캔, 페트병,</p>
+                        <p>재활용 종이류</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="w-346 h-164 flex items-center justify-start pl-12 border-b-2 border-r-3 border-[#9EA7C9] border-l-[#9EA7C9] border-b-[#9EA7C9]"
+                  >
+                    <div data-reset="1" class="flex gap-5 text-white">
+                      <div
+                        class="w-47 h-47 bg-[#9BC3A2] rounded-full flex justify-center items-center"
+                      ></div>
+                      <div
+                        class="w-47 h-47 bg-[#9BC3A2] rounded-full flex justify-center items-center"
+                      ></div>
+                      <div
+                        class="w-47 h-47 bg-[#EC9644] rounded-full flex justify-center items-center"
+                      >
+                        <div>
+                          <p>e</p>
+                        </div>
+                      </div>
+                      <div
+                        class="w-47 h-47 bg-[#9BC3A2] rounded-full flex justify-center items-end"
+                      ></div>
+
+                      <div
+                        class="w-47 h-47 bg-[#EC9644] rounded-full flex justify-center items-center"
+                      >
+                        <div>
+                          <p>o</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      data-answer="1"
+                      class="flex gap-5 text-white"
+                      style="display: none"
+                    >
+                      <div
+                        class="w-47 h-47 bg-[#9BC3A2] text-red rounded-full flex justify-center items-center"
+                      >
+                        <div>
+                          <p>b</p>
+                        </div>
+                      </div>
+                      <div
+                        class="w-47 h-47 bg-[#9BC3A2] text-red rounded-full flex justify-center items-center"
+                      >
+                        <div>
+                          <p>d</p>
+                        </div>
+                      </div>
+                      <div
+                        class="w-47 h-47 bg-[#EC9644] rounded-full flex justify-center items-center"
+                      >
+                        <div>
+                          <p>e</p>
+                        </div>
+                      </div>
+                      <div
+                        class="w-47 h-47 bg-[#9BC3A2] text-red rounded-full flex justify-center items-end"
+                      >
+                        <div>
+                          <p>j</p>
+                        </div>
+                      </div>
+
+                      <div
+                        class="w-47 h-47 bg-[#EC9644] rounded-full flex justify-center items-center"
+                      >
+                        <div>
+                          <p>o</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="flex">
+                  <div
+                    class="w-407 h-112 flex items-centㄴer justify-start pl-12 border-r-2 border-b-2 border-[#9EA7C9] border-b-[#9EA7C9]"
+                  >
+                    <div class="flex gap-6">
+                      <p>4.</p>
+                      <div>
+                        <p>형광등, 건전지,</p>
+                        <p>라이터 등 재활용</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="w-346 h-112 flex items-center justify-start pl-12 border-b-2 border-r-3 border-[#9EA7C9] border-l-[#9EA7C9] border-b-[#9EA7C9] rounded-br-10"
+                  >
+                    <div data-reset="1" class="flex gap-5 text-white">
+                      <div
+                        class="w-47 h-47 bg-[#9BC3A2] rounded-full flex justify-center items-center"
+                      ></div>
+
+                      <div
+                        class="w-47 h-47 bg-[#9BC3A2] rounded-full flex justify-center items-center"
+                      ></div>
+                    </div>
+                    <div
+                      data-answer="1"
+                      class="flex gap-5 text-white"
+                      style="display: none"
+                    >
+                      <div
+                        class="w-47 h-47 text-red bg-[#9BC3A2] rounded-full flex justify-center items-center"
+                      >
+                        <p>c</p>
+                      </div>
+
+                      <div
+                        class="w-47 h-47 text-red bg-[#9BC3A2] rounded-full flex justify-center items-center"
+                      >
+                        l
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ======== page 4 ======== -->
+          <div
+            data-name="page"
+            class="flex flex-col w-full"
+            style="display: none"
+          >
+            <div class="flex mb-10">
+              <img
+                src="./../common/images/label_flower_blue.svg"
+                alt="label"
+                class="w-30 h-52 me-8"
+              />
+              <div class="font-extrabold">
+                <p>한국과 일본의 쓰레기 분리수거의 차이점을 비교하여</p>
+                <p>발표해 봅시다.</p>
+              </div>
+            </div>
+            <div class="flex mb-10 font-bold">
+              <div data-name="number-2" class="bg-[#6291CC] me-10"></div>
+              <div>
+                <p>우리나라와 일본의 쓰레기 분리수거 기준을 비교하여</p>
+                <p>모둠별로 발표한다.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- pagination -->
+          <div
+            class="absolute -translate-x-1/2 left-1/2 bottom-10"
+            data-name="pagination"
+          >
+            <button class="active" data-name="btn-pagination"></button>
+            <button class="" data-name="btn-pagination"></button>
+            <button class="" data-name="btn-pagination"></button>
+            <button class="" data-name="btn-pagination"></button>
+          </div>
+        </div>
+      </div>
+
+      <!-- popup -->
+      <div id="popup-wrap" style="display: none"></div>
+    </div>
+  </body>
+  <script type="text/javascript">
+    const page = {
+      isAnswer: false,
+      isVocabulary: false,
+      showAnswer: () => {},
+      hideAnswer: () => {},
+      showVocabulary: () => {},
+    };
+  </script>
+  <script src="./../common/js/tailwind.config.js"></script>
+  <script src="./../common/js/script.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      // contentUtil.setPage(4);
+    });
+  </script>
+</html>

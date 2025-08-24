@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>미래엔 일본 문화</title>
+    <script src="./../common/lib/jquery-3.7.1.min.js"></script>
+    <script src="./../common/lib/howler-2.1.3.min.js"></script>
+    <script src="./../common/lib/tailwind.js"></script>
+    <script src="./../common/lib/libBundle-jc.js"></script>
+    <!-- 폰트 -->
+    <link href="./../common/font/suit/suit.css" rel="stylesheet" />
+    <link href="./../common/font/bmjua/bmjua.css" rel="stylesheet" />
+    <link
+      href="./../common/font/nanumsquare/nanumSquare.css"
+      rel="stylesheet"
+    />
+    <link href="./../common/font/notoSansJP/notoSansJP.css" rel="stylesheet" />
+    <link href="./../common/css/tailwind.css" rel="stylesheet" />
+    <link href="./../common/css/fontStyle.css" rel="stylesheet" />
+    <!-- 영상 라이브러리 -->
+    <link href="./../common/css/libBundle.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div id="wrap">
+      <!-- contents -->
+      <div class="relative w-full h-full pt-60">
+        <!-- title -->
+        <img
+          src="./../common/images/title_open_thoughts.svg"
+          alt="생각 열기"
+          class="absolute w-190 h-44 top-10"
+        />
+        <div class="absolute right-0 top-13">
+          <button data-name="btn-common-dark" onclick="createVideo()">
+            애니메이션
+          </button>
+        </div>
+
+        <!-- main -->
+        <div class="flex flex-col w-full h-full">
+          <!-- ------------- -->
+          <div class="flex items-center px-20 mb-10 leading-52">
+            <img
+              src="./../common/images/label_diamond_black.svg"
+              alt=""
+              class="w-22 h-52 me-10"
+            />
+            <span class="font-extrabold f-nanum-s text-40"
+              >만화를 보고 물음에 대한 자신의 생각을 말해 봅시다.</span
+            >
+          </div>
+          <!-- ------------- -->
+          <div class="relative flex justify-center mx-auto mb-10 w-fit">
+            <img
+              src="./images/3_01_04/main_photo1.jpg"
+              alt="만화"
+              class="w-623 h-208"
+            />
+            <button
+              class="absolute top-0 right-0"
+              data-name="btn-view"
+              onclick="contentUtil.setPopup(2)"
+            ></button>
+          </div>
+          <!-- ------------- -->
+          <div class="relative mx-auto mb-3 w-960 leading-52">
+            <div class="flex items-center mb-20">
+              <img
+                src="./../common/images/label_q_yellow.svg"
+                alt=""
+                class="w-44 h-44 me-8"
+              />
+              <span class="font-extrabold f-nanum-s text-40"
+                >일본은 왜 집 안이 추울까요?</span
+              >
+              <button
+                data-name="btn-common"
+                onclick="contentUtil.setPopup(1);audioPlay(audio, [`./../common/media/mp3/showAnswer.mp3`]);"
+                class="ms-auto"
+              >
+                예시 답안
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- popup -->
+      <div id="popup-wrap" style="display: none">
+        <!-- 사진 팝업창 -->
+        <div data-name="popup" data-popup="2" style="display: none">
+          <div data-name="popup-header">
+            <div data-name="popup-title">사진 팝업창</div>
+            <button
+              data-name="popup-close"
+              onclick="contentUtil.setPopup()"
+            ></button>
+          </div>
+          <div
+            data-name="popup-body"
+            class="flex items-center justify-center w-full h-full"
+          >
+            <img
+              src="./images/3_01_04/popup_photo1.png"
+              alt="만화"
+              class="w-900 h-405"
+            />
+          </div>
+        </div>
+        <!-- 예시 답안 -->
+        <div data-name="popup" data-popup="1" style="display: none">
+          <div data-name="popup-header">
+            <div data-name="popup-title">예시 답안</div>
+            <button
+              data-name="popup-close"
+              onclick="contentUtil.setPopup()"
+            ></button>
+          </div>
+          <div data-name="popup-body" class="mt-16 mb-10 ms-26 f-nanum-s me-6">
+            <!-- list -->
+            <div class="font-bold f-nanum-s text-40 leading-52">
+              <div class="flex mb-10">
+                <div class="w-12 h-12 mt-20 rounded-full bg-red me-10"></div>
+                <div class="text-red">
+                  <p>일본은 우리나라와 달리 바닥재로 다다미를 사용하는</p>
+                  <p>경우가 많아 실내 난방에 취약하다.</p>
+                </div>
+              </div>
+              <div class="flex mb-10">
+                <div class="w-12 h-12 mt-20 rounded-full bg-red me-10"></div>
+                <div class="text-red">
+                  <p>겨울이 되면 전기장판을 깔고 그 위에 고타쓰를 놓고</p>
+                  <p>생활하는 사람들이 많다. 이것은 여름을 기준으로</p>
+
+                  <p>통기성이 높은 주택을 만들어온 결과로 볼 수 있다.</p>
+                </div>
+              </div>
+              <div class="flex mb-10">
+                <div class="w-12 h-12 mt-20 rounded-full bg-red me-10"></div>
+                <div class="text-red">
+                  <p>주택 자체의 단열성이나 기밀성이 낮기 때문에 벽, 바닥,</p>
+                  <p>천장의 단열이 부족하다.</p>
+                </div>
+              </div>
+              <div class="flex mb-10">
+                <div class="w-12 h-12 mt-20 rounded-full bg-red me-10"></div>
+                <div class="text-red">
+                  <p>건물에 틈새가 많아 외부의 냉기가 집 안으로 들어오기</p>
+                  <p>쉽다.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- video -->
+      <div id="videoParent" data-name="video-popup"></div>
+    </div>
+  </body>
+  <script type="text/javascript">
+    const page = {
+      isAnswer: false,
+      isVocabulary: false,
+      showAnswer: () => {},
+      hideAnswer: () => {},
+      showVocabulary: () => {},
+    };
+  </script>
+  <script src="./../common/js/tailwind.config.js"></script>
+  <script src="./../common/js/script.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      // contentUtil.setPopup(1);
+    });
+
+    // 비디오 생성
+    const createVideo = () => {
+      $("#videoParent").show();
+      $("#videoParent").html(`<div
+            id="video-controller-container-1"
+            class="video-controller-containe"
+          ></div>`);
+      var mediaManager = libBundle.MediaManager.getInstance();
+      // 내부자막 X, 외부자막 X
+      var videoController1 = mediaManager.createVideoController({
+        id: "video-controller-1",
+        query: "#video-controller-container-1",
+        // poster: "./media/mp4/4chi_bon_1.png",
+        src: "./media/mp4/3_01_04/jap_H_cul_03.mp4",
+        // volumeVisible: true,
+        // // thumbnail: { startPath: 'media/video/thumbnail/thumbnail_', startIndex: 1000, ext: 'png' },
+        // overlay: true,
+        // // autoplay: true
+        jsonSubtitlePath: "./media/subtitle/3_01_04/jap_H_cul_03.json",
+        volumeSetting: {
+          visible: true,
+          vertical: false,
+        },
+        callback: {},
+      });
+
+      $("#videoParent .btn-close").on("click", function () {
+        removeVideo();
+      });
+    };
+
+    const removeVideo = () => {
+      $(".controller-button.stop").click();
+      $("#videoParent").hide();
+      $("#videoParent").empty();
+    };
+  </script>
+</html>

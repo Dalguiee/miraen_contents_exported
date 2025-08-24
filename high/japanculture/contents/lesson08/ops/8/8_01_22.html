@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>미래엔 일본 문화</title>
+    <script src="./../common/lib/jquery-3.7.1.min.js"></script>
+    <script src="./../common/lib/howler-2.1.3.min.js"></script>
+    <script src="./../common/lib/tailwind.js"></script>
+    <!-- 폰트 -->
+    <link href="./../common/font/suit/suit.css" rel="stylesheet" />
+    <link href="./../common/font/bmjua/bmjua.css" rel="stylesheet" />
+    <link
+      href="./../common/font/nanumsquare/nanumSquare.css"
+      rel="stylesheet"
+    />
+    <link href="./../common/font/notoSansJP/notoSansJP.css" rel="stylesheet" />
+    <link href="./../common/css/tailwind.css" rel="stylesheet" />
+    <link href="./../common/css/fontStyle.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div id="wrap">
+      <!-- contents -->
+      <div class="relative w-full h-full pt-60">
+        <!-- title -->
+        <div class="absolute left-0 flex items-center top-7">
+          <img
+            src="./../common/images/title_culture_plus.svg"
+            alt="문화 +"
+            class="w-111 h-44"
+          />
+        </div>
+        <!-- header-btn -->
+        <div class="absolute right-0 flex gap-6 top-13" data-name="header-btn">
+          <button
+            data-name="btn-common"
+            onclick="contentUtil.setPopup(2); contentUtil.setPhotoPopup(3);"
+          >
+            추가 사진
+          </button>
+        </div>
+        <!-- main -->
+        <div
+          class="flex flex-col w-full h-full font-bold leading-52 text-40 f-nanum-s ps-20"
+        >
+          <div
+            class="w-533 ps-28 flex items-center h-54 bg-[url(./images/8_01_22/label_title.svg)] bg-no-repeat bg-cover mb-10"
+          >
+            <span class="flex font-extrabold"
+              >일본 각지의 ‘에키벤(<span
+                data-audio="8_01_22/122-10.mp3"
+                class="font-bold f-noto"
+                >えきべん</span
+              >)’</span
+            >
+          </div>
+          <!-- ======== page 1 ======== -->
+          <div data-name="page">
+            <p class="ps-28">에키벤은 일본 기차역에서 판매하는</p>
+            <p>도시락으로, 각 지역의 식재료를 사용해</p>
+            <p>지역색을 살려 만든다. 에키벤은 기차</p>
+            <p>여행에 즐거움을 더해 줄 뿐만 아니라 각</p>
+            <p>지역의 향토 음식을 맛볼 수 있는 일본의</p>
+            <p>대표적인 여행 문화 중 하나이다.</p>
+          </div>
+          <!-- ======== page 2 ======== -->
+          <div data-name="page" style="display: none">
+            <div>
+              <p>철도망이 확충되던 초창기인 1880년대</p>
+              <p>무렵 등장해 그 인기가 지금까지도 이어</p>
+              <p>지고 있다. 현재는 에키벤 전문점 또는</p>
+              <p>백화점 등 다양한 장소에서 쉽게 구입할</p>
+              <p>수도 있다.</p>
+            </div>
+            <!-- img box -->
+            <div class="absolute w-456 h-119 right-336 bottom-42">
+              <img
+                src="./images/8_01_22/main_photo2.jpg"
+                alt=""
+                class="w-full h-full rounded-10"
+              />
+              <button
+                data-name="btn-view"
+                class="absolute top-0 right-10"
+                onclick="contentUtil.setPopup(1); contentUtil.setPhotoPopup(2);"
+              ></button>
+            </div>
+          </div>
+          <!-- img box -->
+          <div class="absolute w-306 h-377 right-20 bottom-42">
+            <img
+              src="./images/8_01_22/main_photo1.jpg"
+              alt=""
+              class="w-full h-full rounded-10"
+            />
+            <button
+              data-name="btn-view"
+              class="absolute bottom-10 right-10"
+              onclick="contentUtil.setPopup(1); contentUtil.setPhotoPopup(1);"
+            ></button>
+          </div>
+          <!-- pagination -->
+          <div
+            class="absolute -translate-x-1/2 left-1/2 bottom-10"
+            data-name="pagination"
+          >
+            <button class="active" data-name="btn-pagination"></button>
+            <button class="" data-name="btn-pagination"></button>
+          </div>
+        </div>
+      </div>
+      <!-- popup -->
+      <div id="popup-wrap" style="display: none">
+        <!-- 사진 팝업창 -->
+        <div data-name="popup" data-popup="1" style="display: none">
+          <div data-name="popup-header">
+            <div data-name="popup-title">사진 팝업창</div>
+            <button
+              data-name="popup-close"
+              onclick="contentUtil.setPopup()"
+            ></button>
+          </div>
+          <div
+            data-name="popup-body"
+            class="flex items-center justify-center w-full h-full gap-16"
+          >
+            <div
+              class="flex flex-col items-center w-608 h-402"
+              data-name="popup_photo_wrap"
+            >
+              <div class="w-full overflow-x-hidden overflow-y-auto pe-4">
+                <img
+                  src="./images/8_01_22/popup_photo1.jpg"
+                  alt=""
+                  class="object-contain w-full rounded-10"
+                  data-name="popup_photo"
+                />
+                <img
+                  src="./images/8_01_22/popup_photo5.jpg"
+                  alt=""
+                  class="object-contain min-w-608 rounded-10"
+                  data-name="popup_photo"
+                  style="display: none"
+                />
+              </div>
+              <div
+                class="flex mt-8 font-bold f-nanum-s h-52 text-40 leading-52 shrink-0"
+              >
+                <div data-name="popup_photo_text">일본 각지의 에키벤</div>
+                <div data-name="popup_photo_text" style="display: none">
+                  기차와 에키벤
+                </div>
+              </div>
+            </div>
+            <div class="w-266 h-402">
+              <div class="flex flex-wrap w-full gap-10">
+                <button
+                  data-name="btn-popup_photo"
+                  class="w-128 h-72 active"
+                  onclick="contentUtil.setPhotoPopup(1)"
+                >
+                  <img src="./images/8_01_22/popup_btn_photo1.jpg" alt="" />
+                </button>
+                <button
+                  data-name="btn-popup_photo"
+                  class="w-128 h-72"
+                  onclick="contentUtil.setPhotoPopup(2)"
+                >
+                  <img src="./images/8_01_22/popup_btn_photo5.jpg" alt="" />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 추가 사진 -->
+        <div data-name="popup" data-popup="2" style="display: none">
+          <div data-name="popup-header">
+            <div data-name="popup-title">추가 사진</div>
+            <button
+              data-name="popup-close"
+              onclick="contentUtil.setPopup()"
+            ></button>
+          </div>
+          <div
+            data-name="popup-body"
+            class="flex items-center justify-center w-full h-full gap-16"
+          >
+            <div
+              class="flex flex-col items-center w-608 h-402"
+              data-name="popup_photo_wrap"
+            >
+              <div class="w-full overflow-x-hidden overflow-y-auto pe-4">
+                <img
+                  src="./images/8_01_22/popup_photo2.jpg"
+                  alt=""
+                  class="object-contain w-full rounded-10"
+                  data-name="popup_photo"
+                />
+                <img
+                  src="./images/8_01_22/popup_photo3.jpg"
+                  alt=""
+                  class="object-contain w-full rounded-10"
+                  data-name="popup_photo"
+                  style="display: none"
+                />
+                <img
+                  src="./images/8_01_22/popup_photo4.jpg"
+                  alt=""
+                  class="object-contain min-w-608 rounded-10"
+                  data-name="popup_photo"
+                  style="display: none"
+                />
+              </div>
+              <div
+                class="flex mt-8 font-bold f-nanum-s h-52 text-40 leading-52 shrink-0"
+              >
+                <div data-name="popup_photo_text" class="text-blue">
+                  고베 스키야키 스테이크 에키벤
+                </div>
+                <div
+                  data-name="popup_photo_text"
+                  class="text-blue"
+                  style="display: none"
+                >
+                  도쿄역 장어 에키벤
+                </div>
+                <div
+                  data-name="popup_photo_text"
+                  class="text-blue"
+                  style="display: none"
+                >
+                  아키타 오다테토리메시 에키벤
+                </div>
+              </div>
+            </div>
+            <div class="w-266 h-402">
+              <div class="flex flex-wrap w-full gap-10">
+                <button
+                  data-name="btn-popup_photo"
+                  class="w-128 h-72 active"
+                  onclick="contentUtil.setPhotoPopup(3)"
+                >
+                  <img src="./images/8_01_22/popup_btn_photo2.jpg" alt="" />
+                </button>
+                <button
+                  data-name="btn-popup_photo"
+                  class="w-128 h-72"
+                  onclick="contentUtil.setPhotoPopup(4)"
+                >
+                  <img src="./images/8_01_22/popup_btn_photo3.jpg" alt="" />
+                </button>
+                <button
+                  data-name="btn-popup_photo"
+                  class="w-128 h-72"
+                  onclick="contentUtil.setPhotoPopup(5)"
+                >
+                  <img src="./images/8_01_22/popup_btn_photo4.jpg" alt="" />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript">
+    const page = {
+      isAnswer: false,
+      isVocabulary: false,
+      showAnswer: () => {},
+      hideAnswer: () => {},
+      showVocabulary: () => {},
+    };
+  </script>
+  <script src="./../common/js/tailwind.config.js"></script>
+  <script src="./../common/js/script.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {});
+  </script>
+</html>

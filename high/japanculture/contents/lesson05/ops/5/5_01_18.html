@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>미래엔 일본 문화</title>
+    <script src="./../common/lib/jquery-3.7.1.min.js"></script>
+    <script src="./../common/lib/howler-2.1.3.min.js"></script>
+    <script src="./../common/lib/tailwind.js"></script>
+    <!-- 폰트 -->
+    <link href="./../common/font/suit/suit.css" rel="stylesheet" />
+    <link href="./../common/font/bmjua/bmjua.css" rel="stylesheet" />
+    <link
+      href="./../common/font/nanumsquare/nanumSquare.css"
+      rel="stylesheet"
+    />
+    <link href="./../common/font/notoSansJP/notoSansJP.css" rel="stylesheet" />
+    <link href="./../common/css/tailwind.css" rel="stylesheet" />
+    <link href="./../common/css/fontStyle.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div id="wrap">
+      <!-- contents -->
+      <div class="relative w-full h-full pt-68">
+        <!-- title -->
+        <img
+          src="./../common/images/title_look_culture6.svg"
+          alt="문화 들여다보기2 학교 행사와 교육 제도"
+          class="absolute w-764 h-49 top-10"
+        />
+        <!-- main -->
+        <div class="flex flex-col w-full h-full">
+          <div
+            class="flex flex-col flex-1 w-full leading-52 ps-20 text-40 f-nanum-s"
+          >
+            <div class="flex items-center mb-4">
+              <img
+                src="./../common/images/index_pink_1.svg"
+                alt="번호 1"
+                class="w-40 h-40 me-4"
+              />
+              <span class="font-extrabold">학교 행사</span>
+            </div>
+            <div class="flex mb-4">
+              <div data-name="number-3" class="bg-[#C84935]"></div>
+              <span class="text-[#C84935] font-extrabold">체육 대회 </span>
+            </div>
+            <!-- img box -->
+            <div
+              class="absolute flex flex-col gap-10 overflow-hidden w-190 right-20 top-78 rounded-10"
+            >
+              <img
+                src="./images/5_01_18/main_photo1.jpg"
+                alt="체육 대회1"
+                class="w-full h-full"
+              />
+              <button
+                data-name="btn-view"
+                class="absolute bottom-10 right-10"
+                onclick="contentUtil.setPopup(1); contentUtil.setPhotoPopup(1);"
+              ></button>
+            </div>
+            <div
+              class="absolute flex flex-col gap-10 overflow-hidden w-190 right-20 top-212 rounded-10"
+            >
+              <img
+                src="./images/5_01_18/main_photo2.jpg"
+                alt="체육 대회2"
+                class="w-full h-full"
+              />
+              <button
+                data-name="btn-view"
+                class="absolute bottom-10 right-10"
+                onclick="contentUtil.setPopup(1); contentUtil.setPhotoPopup(2);"
+              ></button>
+            </div>
+            <div
+              class="absolute flex flex-col gap-10 overflow-hidden w-190 right-20 top-346 rounded-10"
+            >
+              <img
+                src="./images/5_01_18/main_photo3.jpg"
+                alt="체육 대회3"
+                class="w-full h-full"
+              />
+              <button
+                data-name="btn-view"
+                class="absolute bottom-10 right-10"
+                onclick="contentUtil.setPopup(1); contentUtil.setPhotoPopup(3);"
+              ></button>
+            </div>
+            <!-- ======== page 1 ======== -->
+            <div
+              data-name="page"
+              class="flex flex-col font-bold f-nanum-s text-40"
+            >
+              <div>
+                <p class="ps-28">체육 대회에서는 축구, 계주, 단체 줄넘기와</p>
+                <p>같은 일반적인 경기는 물론 팀별 응원전이나</p>
+                <p class="flex">
+                  코스프레(<span
+                    data-audio="5_01_18/079-01.mp3"
+                    class="font-medium f-noto"
+                    >コスプレ</span
+                  >) 등 다양한 퍼포먼스를
+                </p>
+                <p>선보이기도 한다.</p>
+              </div>
+            </div>
+            <!-- ======== page 2 ======== -->
+            <div
+              data-name="page"
+              class="flex flex-col font-bold f-nanum-s text-40"
+              style="display: none"
+            >
+              <div>
+                <p>봄이나 가을에 실시하는 경우가 많으며, 체육</p>
+                <p>대회를 준비하는 과정에서부터 마무리 정리까지</p>
+                <p>모두가 단합해야 하기 때문에 연대감과 소속감을</p>
+                <p>키울 수 있는 행사이다.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- pagination -->
+          <div class="mb-10" data-name="pagination">
+            <button class="active" data-name="btn-pagination"></button>
+            <button class="" data-name="btn-pagination"></button>
+          </div>
+        </div>
+      </div>
+      <!-- popup -->
+      <div id="popup-wrap" style="display: none">
+        <!-- 사진 팝업창 -->
+        <div data-name="popup" data-popup="1" style="display: none">
+          <div data-name="popup-header">
+            <div data-name="popup-title">사진 팝업창</div>
+            <button
+              data-name="popup-close"
+              onclick="contentUtil.setPopup()"
+            ></button>
+          </div>
+          <div
+            data-name="popup-body"
+            class="flex items-center justify-center w-full h-full gap-16"
+          >
+            <div
+              class="flex flex-col items-center w-608 h-402"
+              data-name="popup_photo_wrap"
+            >
+              <div class="w-full overflow-x-hidden overflow-y-auto pe-4">
+                <img
+                  src="./images/5_01_18/popup_photo1.jpg"
+                  alt="체육 대회1"
+                  class="object-contain min-w-608 rounded-10"
+                  data-name="popup_photo"
+                />
+                <img
+                  src="./images/5_01_18/popup_photo2.jpg"
+                  alt="체육 대회2"
+                  class="object-contain min-w-608 rounded-10"
+                  data-name="popup_photo"
+                  style="display: none"
+                />
+                <img
+                  src="./images/5_01_18/popup_photo3.jpg"
+                  alt="체육 대회3"
+                  class="object-contain min-w-608 rounded-10"
+                  data-name="popup_photo"
+                  style="display: none"
+                />
+              </div>
+              <div
+                class="flex mt-8 font-bold f-nanum-s h-52 text-40 leading-52 shrink-0"
+              >
+                <div data-name="popup_photo_text">체육 대회의 모습</div>
+                <div data-name="popup_photo_text" style="display: none">
+                  체육 대회의 모습
+                </div>
+                <div data-name="popup_photo_text" style="display: none">
+                  체육 대회의 모습
+                </div>
+              </div>
+            </div>
+            <div class="w-266 h-402">
+              <div class="flex flex-wrap w-full gap-10">
+                <button
+                  onclick="contentUtil.setPhotoPopup(1)"
+                  data-name="btn-popup_photo"
+                  class="w-128 h-72 active"
+                >
+                  <img
+                    src="./images/5_01_18/popup_btn_photo1.jpg"
+                    alt="체육 대회1"
+                  />
+                </button>
+                <button
+                  onclick="contentUtil.setPhotoPopup(2)"
+                  data-name="btn-popup_photo"
+                  class="w-128 h-72"
+                >
+                  <img
+                    src="./images/5_01_18/popup_btn_photo2.jpg"
+                    alt="체육 대회2"
+                  />
+                </button>
+                <button
+                  onclick="contentUtil.setPhotoPopup(3)"
+                  data-name="btn-popup_photo"
+                  class="w-128 h-72"
+                >
+                  <img
+                    src="./images/5_01_18/popup_btn_photo3.jpg"
+                    alt="체육 대회3"
+                  />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript">
+    const page = {
+      isAnswer: false,
+      isVocabulary: false,
+      showAnswer: () => {},
+      hideAnswer: () => {},
+      showVocabulary: () => {},
+    };
+  </script>
+  <script src="./../common/js/tailwind.config.js"></script>
+  <script src="./../common/js/script.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      // contentUtil.setPage(2);
+    });
+  </script>
+</html>

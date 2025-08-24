@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>미래엔 일본 문화</title>
+    <script src="./../common/lib/jquery-3.7.1.min.js"></script>
+    <script src="./../common/lib/howler-2.1.3.min.js"></script>
+    <script src="./../common/lib/tailwind.js"></script>
+    <!-- 폰트 -->
+    <link href="./../common/font/suit/suit.css" rel="stylesheet" />
+    <link href="./../common/font/bmjua/bmjua.css" rel="stylesheet" />
+    <link
+      href="./../common/font/nanumsquare/nanumSquare.css"
+      rel="stylesheet"
+    />
+    <link href="./../common/font/notoSansJP/notoSansJP.css" rel="stylesheet" />
+    <link href="./../common/css/tailwind.css" rel="stylesheet" />
+    <link href="./../common/css/fontStyle.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div id="wrap">
+      <!-- contents -->
+      <div class="relative w-full h-full pt-68">
+        <!-- title -->
+        <img
+          src="./images/1_01_04/title.svg"
+          alt="문화 들여다보기1 주택의 종류와 특징"
+          class="absolute w-605 w-764 h-49 top-10"
+        />
+        <!-- 버튼영역 -->
+        <button
+          data-name="btn-common-dark"
+          onclick="contentUtil.setPopup(1)"
+          class="absolute min-w-64 right-111 top-13 photo_btn"
+        >
+          TIP
+        </button>
+        <button
+          data-name="btn-common"
+          onclick="contentUtil.setPopup(2); contentUtil.setPhotoPopup(1);"
+          class="absolute right-0 top-13"
+        >
+          보충 자료
+        </button>
+        <!-- main -->
+        <div class="flex flex-col w-full h-full">
+          <div
+            class="flex flex-col mb-8 w-763 h-404 leading-52 ps-20 whitespace-nowrap"
+          >
+            <div class="flex items-center mb-4">
+              <img
+                src="./../common/images/index_pink_1.svg"
+                alt="번호 1"
+                class="w-40 h-40 me-4"
+              />
+
+              <span class="font-extrabold f-nanum-s text-40">음식의 특징</span>
+            </div>
+            <div class="flex mb-4 font-bold f-nanum-s text-40">
+              <div data-name="number-1" class="bg-[#C84935]"></div>
+              <span class="text-[#C84935] font-extrabold flex"
+                >쌀, 채소, 생선 중심의 식문화</span
+              >
+            </div>
+
+            <div
+              data-name="page"
+              class="flex flex-col font-bold f-nanum-s text-40"
+            >
+              <div>
+                <p class="flex ps-28">
+                  사면이 바다로 둘러싸인 지형적 특성과 오랫동안 육식이 금지
+                </p>
+              </div>
+              <div>
+                <p>
+                  되었던 역사적 배경으로 쌀, 채소, 생선 중심의 식문화가 형성
+                </p>
+                <p>
+                  되었다. 일본 전통 음식은 다양한 해산물이 주된 단백질 공급원
+                </p>
+                <p>으로 사용되기 때문에 건강식으로도 잘 알려져 있다.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- popup -->
+      <div id="popup-wrap" style="display: none">
+        <!-- TIP -->
+        <div data-name="popup" data-popup="1" style="display: none">
+          <div data-name="popup-header">
+            <div data-name="popup-title">TIP</div>
+            <button
+              data-name="popup-close"
+              onclick="contentUtil.setPopup()"
+            ></button>
+          </div>
+          <div data-name="popup-body" class="mt-16 mb-10 ms-26 f-nanum-s me-6">
+            <!--  popup section 1  -->
+            <div class="flex flex-col mr-14">
+              <!-- title -->
+              <div class="font-bold f-nanum-s text-40 leading-52">
+                <p>일본은 불교의 영향으로 육식이 금지되다 메이지 시대 이후</p>
+                <p>육식이 허용되었다.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 보충 자료 -->
+        <div data-name="popup" data-popup="2" style="display: none">
+          <div data-name="popup-header">
+            <div data-name="popup-title">보충 자료</div>
+            <button
+              data-name="popup-close"
+              onclick="contentUtil.setPopup()"
+            ></button>
+          </div>
+          <div data-name="popup-body" class="mt-16 mb-10 ms-26 f-nanum-s me-6">
+            <!--  popup section 1  -->
+            <div class="relative flex flex-col mr-14">
+              <!-- title -->
+              <div class="flex items-center mb-10 h-55">
+                <img
+                  src="./../common/images/popup_titlemark_primary.svg"
+                  alt=""
+                  class="w-35 h-55 me-10"
+                />
+                <div
+                  class="flex font-extrabold text-42 text-[#F25F7C] items-baseline"
+                >
+                  메이지 시대 이후의 육식 허용
+                </div>
+              </div>
+              <!-- 컨텍스트 -->
+              <div class="flex font-bold ps-28 f-nanum-s text-40 leading-52">
+                <p>일본은 불교를 국교로 삼으면서 육식을 금지했다. 육식</p>
+              </div>
+              <div class="font-bold f-nanum-s text-40 leading-52">
+                <p>허용은 메이지 유신(1868년)의 후속 조치로 1872년에</p>
+                <p>이루어졌다. 문명인이라면 육식을 해야 한다고 장려했지만,</p>
+                <p>1200년간 이어진 육식 금지령 때문에 서민들은 쉽게 받아</p>
+                <p>들이지 못했다. 서민들의 식문화에</p>
+                <p>육식을 정착시킨 대표적인 음식은</p>
+                <p>소고기와 각종 채소를 넣고 끓여</p>
+                <p>먹는 고기 전골인 ‘스키야키’라고</p>
+                <p>할 수 있다.</p>
+              </div>
+              <!-- 이미지 -->
+              <div class="absolute bottom-0 right-0 w-fit">
+                <img
+                  class="object-cover w-354 rounded-[10px]"
+                  src="./images/1_01_04/food_popup_2_img.jpg"
+                  alt="스키야키"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 추가 사진 -->
+
+        <div data-name="popup" data-popup="3" style="display: none">
+          <div data-name="popup-header">
+            <div data-name="popup-title">추가 사진</div>
+            <button
+              data-name="popup-close"
+              onclick="contentUtil.setPopup()"
+            ></button>
+          </div>
+          <div
+            data-name="popup-body"
+            class="flex items-center justify-center w-full h-full gap-16"
+          >
+            <div
+              class="flex flex-col items-center w-608 h-402"
+              data-name="popup_photo_wrap"
+            >
+              <div class="w-full overflow-x-hidden overflow-y-auto h-400 pe-4">
+                <img
+                  src="./images/3_01_06/popup_photo.jpg"
+                  alt="1"
+                  class="object-contain min-w-608 rounded-10"
+                  data-name="popup_photo"
+                />
+                <img
+                  style="display: none"
+                  src="./images/3_01_06/popup_photo2.jpg"
+                  alt="2"
+                  class="object-contain min-w-608 rounded-10"
+                  data-name="popup_photo"
+                />
+                <img
+                  style="display: none"
+                  src="./images/3_01_06/popup_photo3.jpg"
+                  alt="3"
+                  class="object-contain min-w-608 rounded-10"
+                  data-name="popup_photo"
+                />
+                <img
+                  style="display: none"
+                  src="./images/3_01_06/popup_photo4.jpg"
+                  alt="4"
+                  class="object-contain min-w-608 rounded-10"
+                  data-name="popup_photo"
+                />
+              </div>
+              <div
+                class="flex mt-8 font-bold f-nanum-s h-52 text-40 leading-52 shrink-0"
+              >
+                <div data-name="popup_photo_text" class="text-blue">
+                  단독 주택
+                </div>
+                <div
+                  data-name="popup_photo_text"
+                  class="text-blue"
+                  style="display: none"
+                >
+                  단독 주택
+                </div>
+                <div
+                  data-name="popup_photo_text"
+                  class="text-blue"
+                  style="display: none"
+                >
+                  단독 주택
+                </div>
+                <div
+                  data-name="popup_photo_text"
+                  class="text-blue"
+                  style="display: none"
+                >
+                  단독 주택
+                </div>
+              </div>
+            </div>
+            <div class="w-266 h-402">
+              <div class="flex flex-wrap w-full gap-10">
+                <button
+                  data-name="btn-popup_photo"
+                  class="w-128 h-72 active"
+                  onclick="contentUtil.setPhotoPopup(1)"
+                >
+                  <img src="./images/3_01_06/popup_btn_photo2.jpg" alt="1" />
+                </button>
+                <button
+                  data-name="btn-popup_photo"
+                  class="w-128 h-72"
+                  onclick="contentUtil.setPhotoPopup(2)"
+                >
+                  <img src="./images/3_01_06/popup_btn_photo3.jpg" alt="2" />
+                </button>
+                <button
+                  data-name="btn-popup_photo"
+                  class="w-128 h-72"
+                  onclick="contentUtil.setPhotoPopup(3)"
+                >
+                  <img src="./images/3_01_06/popup_btn_photo4.jpg" alt="3" />
+                </button>
+                <button
+                  data-name="btn-popup_photo"
+                  class="w-128 h-72"
+                  onclick="contentUtil.setPhotoPopup(4)"
+                >
+                  <img src="./images/3_01_06/popup_btn_photo1.jpg" alt="4" />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript">
+    const page = {
+      isAnswer: false,
+      isVocabulary: false,
+      showAnswer: () => {},
+      hideAnswer: () => {},
+      showVocabulary: () => {},
+    };
+  </script>
+  <script src="./../common/js/tailwind.config.js"></script>
+  <script src="./../common/js/script.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      // contentUtil.setPopup(3);
+    });
+  </script>
+</html>

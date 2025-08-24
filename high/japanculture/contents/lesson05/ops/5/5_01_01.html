@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>미래엔 일본 문화</title>
+    <script src="./../common/lib/jquery-3.7.1.min.js"></script>
+    <script src="./../common/lib/howler-2.1.3.min.js"></script>
+    <script src="./../common/lib/tailwind.js"></script>
+    <!-- 폰트 -->
+    <link href="./../common/font/suit/suit.css" rel="stylesheet" />
+    <link href="./../common/font/bmjua/bmjua.css" rel="stylesheet" />
+    <link
+      href="./../common/font/nanumsquare/nanumSquare.css"
+      rel="stylesheet"
+    />
+    <link href="./../common/font/notoSansJP/notoSansJP.css" rel="stylesheet" />
+    <link href="./../common/css/tailwind.css" rel="stylesheet" />
+    <link href="./../common/css/fontStyle.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div id="wrap">
+      <!-- contents -->
+      <div class="relative w-full h-full pt-70">
+        <!-- title -->
+        <img
+          src="./../common/images/title_learning_objectives.svg"
+          alt="학습목표"
+          class="absolute w-160 h-52 top-10"
+        />
+        <!-- header-btn -->
+        <div class="absolute right-0 flex gap-6 top-13" data-name="header-btn">
+          <button data-name="btn-common" onclick="contentUtil.setPopup(1)">
+            해설 보기
+          </button>
+        </div>
+        <!-- main -->
+        <div class="flex flex-col w-full h-full">
+          <!-- ---------list--------- -->
+          <div class="flex flex-col w-full gap-4 px-20 font-bold f-nanum-s">
+            <!-- line1 -->
+
+            <div class="flex w-full">
+              <div class="w-12 h-12 mt-20 bg-black rounded-full me-10"></div>
+              <span class="leading-52 text-40"
+                ><span class="text-[#E9474D]">일본의 동아리 활동</span>에 대해
+                설명할 수 있다.</span
+              >
+            </div>
+            <!-- line2 -->
+            <div class="flex w-full">
+              <div class="w-12 h-12 mt-20 bg-black rounded-full me-10"></div>
+              <span class="leading-52 text-40"
+                ><span class="text-[#E9474D]">일본의 학교 행사와 교육 제도</span
+                >를 이해한다.
+              </span>
+            </div>
+            <!-- line3 -->
+            <div class="flex w-full">
+              <div class="w-12 h-12 mt-20 bg-black rounded-full me-10"></div>
+              <div class="leading-52 text-40">
+                <p>한국과 일본의 동아리 활동을 비교하여 설명할 수 있다.</p>
+              </div>
+            </div>
+          </div>
+          <!-- ---------photo--------- -->
+          <div class="relative w-400 h-225 ms-auto me-20 bottom-[-30px]">
+            <img
+              src="./images/5_01_01/main_photo1.jpg"
+              alt="일본 고등학생의 일과"
+              class="w-full h-full overflow-hidden rounded-10"
+            />
+            <button
+              data-name="btn-view"
+              class="absolute bottom-10 right-10"
+              onclick="contentUtil.setPopup(2)"
+            ></button>
+          </div>
+        </div>
+      </div>
+      <!-- popup -->
+      <div id="popup-wrap" style="display: none">
+        <!-- 해설 보기 -->
+        <div data-name="popup" data-popup="1" style="display: none">
+          <div data-name="popup-header">
+            <div data-name="popup-title">해설 보기</div>
+            <button
+              data-name="popup-close"
+              onclick="contentUtil.setPopup()"
+            ></button>
+          </div>
+          <div data-name="popup-body" class="mt-16 mb-10 ms-26 f-nanum-s me-6">
+            <div class="flex flex-col">
+              <!-- title -->
+              <div class="flex items-center mb-10 h-55">
+                <img
+                  src="./../common/images/popup_titlemark_primary.svg"
+                  alt=""
+                  class="w-35 h-55 me-10"
+                />
+                <div class="flex">
+                  <div class="font-extrabold text-42 text-[#F25F7C]">
+                    <p>일본 고등학생의 일과</p>
+                  </div>
+                </div>
+              </div>
+              <!-- text -->
+              <div class="font-bold f-nanum-s text-40 leading-52">
+                <p>일본의 고등학생은 자전거나 전철 등을 이용하여 등교한다.</p>
+                <p class="flex">
+                  보통 아침 8시 30분<span class="font-medium f-noto">～</span
+                  >9시 사이에 수업이 시작되며, 우리
+                </p>
+                <p>나라와 마찬가지로 한 과목당 50분 수업이다. 일반적으로</p>
+                <p class="flex">
+                  1교시 전에 짧은 홈룸(<span class="font-medium f-noto"
+                    >ホームルーム</span
+                  >, 담임 선생님과
+                </p>
+                <p>특정한 시간에 하는 자율적 교육 활동)을 한다. 점심시간</p>
+                <p>에는 도시락을 먹거나 학교 식당 및 매점을 이용하기도</p>
+                <p>한다. 방과 후에는 다양한 동아리 활동이 오후 6시 정도</p>
+                <p>까지 진행된다.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 사진 팝업창 -->
+        <div data-name="popup" data-popup="2" style="display: none">
+          <div data-name="popup-header">
+            <div data-name="popup-title">사진 팝업창</div>
+            <button
+              data-name="popup-close"
+              onclick="contentUtil.setPopup()"
+            ></button>
+          </div>
+          <div
+            data-name="popup-body"
+            class="flex items-center justify-center w-full h-full"
+          >
+            <img
+              src="./images/5_01_01/popup_photo1.jpg"
+              alt="일본 고등학생의 일과"
+              class="w-730 h-400 rounded-10"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript">
+    const page = {
+      isAnswer: false,
+      isVocabulary: false,
+      showAnswer: () => {},
+      hideAnswer: () => {},
+      showVocabulary: () => {},
+    };
+  </script>
+  <script src="./../common/js/tailwind.config.js"></script>
+  <script src="./../common/js/script.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      //   contentUtil.setPopup(2);
+    });
+  </script>
+</html>

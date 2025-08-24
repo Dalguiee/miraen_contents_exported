@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>미래엔 일본 문화</title>
+    <script src="./../common/lib/jquery-3.7.1.min.js"></script>
+    <script src="./../common/lib/howler-2.1.3.min.js"></script>
+    <script src="./../common/lib/tailwind.js"></script>
+    <!-- 폰트 -->
+    <link href="./../common/font/suit/suit.css" rel="stylesheet" />
+    <link href="./../common/font/bmjua/bmjua.css" rel="stylesheet" />
+    <link
+      href="./../common/font/nanumsquare/nanumSquare.css"
+      rel="stylesheet"
+    />
+    <link href="./../common/font/notoSansJP/notoSansJP.css" rel="stylesheet" />
+    <link href="./../common/css/tailwind.css" rel="stylesheet" />
+    <link href="./../common/css/fontStyle.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div id="wrap">
+      <!-- contents -->
+      <div class="relative w-full h-full pt-70">
+        <!-- main -->
+        <div class="flex flex-col w-full h-full">
+          <div
+            class="flex flex-col w-full mb-8 font-bold h-404 leading-52 text-40 ps-20 f-nanum-s"
+          >
+            <!-- ====== page 1 ====== -->
+            <div data-name="page" class="flex flex-col">
+              <!-- title -->
+              <div class="absolute left-0 flex items-center top-6">
+                <img
+                  src="./../common/images/title_culture_plus.svg"
+                  alt="문화 +"
+                  class="w-111 h-44 me-10"
+                />
+                <img class="" src="./images/10_01_21/label.svg" alt="" />
+                <span class="flex font-extrabold absolute top-0 right-16"
+                  >가부키에서 유래한 말</span
+                >
+              </div>
+              <p class="ps-28">
+                가부키에서 유래해 현재까지 일상에서 쓰이는 낱말이 있다.
+              </p>
+              <p class="ps-28 pt-12 flex">
+                ‘니마이메(<span
+                  data-audio="10_01_20/153-01.mp3"
+                  class="f-noto font-medium"
+                  ><span class="relative">二<span class="ruby">に</span></span
+                  ><span class="relative">枚<span class="ruby">まい</span></span
+                  ><span class="relative"
+                    >目<span class="ruby">め</span></span
+                  ></span
+                >)’는 가부키 간판 두 번째 장에 항상 가장
+              </p>
+              <p>잘생긴 배우를 그렸다는 데서 유래해, ‘미남'을 의미한다. ‘주</p>
+              <p class="flex pt-12">
+                하치방(<span
+                  data-audio="10_01_20/153-100.mp3"
+                  class="f-noto font-medium"
+                  ><span class="relative"
+                    >十<span class="ruby tracking-[-0.18em] absolute left-14"
+                      >じゅう</span
+                    ></span
+                  ><span class="relative">八<span class="ruby">はち</span></span
+                  ><span class="relative"
+                    >番<span class="ruby">ばん</span></span
+                  > </span
+                >)’은 유명 가부키 배우 집안의 인기 있는 18가지
+              </p>
+              <p>예능에서 유래한 말로, 현재는 가장 자신 있는 예능, 일, 행동</p>
+              <p>등의 의미로 사용된다. 우리나라에서 ‘가장 즐겨 부르는 노래’</p>
+              <p>라는 뜻으로 사용하는 ‘십팔번’이 이 말에서 유래한 것이다.</p>
+            </div>
+
+            <!-- ====== page 2 ====== -->
+            <div data-name="page" class="flex flex-col" style="display: none">
+              <!-- title -->
+              <div class="absolute left-0 flex items-center top-6">
+                <img
+                  src="./../common/images/title_culture_plus.svg"
+                  alt="문화 +"
+                  class="w-111 h-44 me-10"
+                />
+                <img class="" src="./images/10_01_21/label.svg" alt="" />
+                <span class="flex font-extrabold absolute top-0 right-16"
+                  >구마도리 (<span
+                    data-audio="10_01_21/153-03.mp3"
+                    class="f-noto font-bold"
+                    >くまどり</span
+                  >)</span
+                >
+              </div>
+              <div class="mb-20 w-960">
+                <p class="ps-28">
+                  ‘구마도리’는 가부키의 화장법으로, 배우의 성격을 나타내는
+                </p>
+                <p>4종류의 색이 사용된다. 빨간색은 정의로운 청년, 파란색은</p>
+
+                <p>사악한 존재, 갈색과 흑색은 귀신 혹은 악령을 나타낸다.</p>
+              </div>
+
+              <div class="w-full flex">
+                <!-- img box -->
+                <div class="relative flex flex-col w-960">
+                  <img
+                    src="./images/10_01_21/main_photo1.jpg"
+                    alt="구마도리"
+                    class="w-full h-full"
+                  />
+                  <button
+                    data-name="btn-view"
+                    class="absolute bottom-10 right-10"
+                    onclick="contentUtil.setPopup(1); contentUtil.setPhotoPopup(5)"
+                  ></button>
+                  <button
+                    data-name="btn-view"
+                    class="absolute bottom-34 left-104"
+                    onclick="contentUtil.setPopup(1); contentUtil.setPhotoPopup(1)"
+                  ></button>
+                  <button
+                    data-name="btn-view"
+                    class="absolute bottom-34 left-246"
+                    onclick="contentUtil.setPopup(1); contentUtil.setPhotoPopup(2)"
+                  ></button>
+                  <button
+                    data-name="btn-view"
+                    class="absolute bottom-34 left-396"
+                    onclick="contentUtil.setPopup(1); contentUtil.setPhotoPopup(3)"
+                  ></button>
+                  <button
+                    data-name="btn-view"
+                    class="absolute bottom-34 left-546"
+                    onclick="contentUtil.setPopup(1); contentUtil.setPhotoPopup(4)"
+                  ></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- pagination -->
+        <div
+          data-name="pagination"
+          class="absolute -translate-x-1/2 bottom-10 left-1/2"
+        >
+          <button class="active" data-name="btn-pagination"></button>
+          <button class="" data-name="btn-pagination"></button>
+        </div>
+      </div>
+      <!-- popup -->
+      <div id="popup-wrap" style="display: none">
+        <!-- 사진 팝업창 -->
+        <div data-name="popup" data-popup="1" style="display: none">
+          <div data-name="popup-header">
+            <div data-name="popup-title">사진 팝업창</div>
+            <button
+              data-name="popup-close"
+              onclick="contentUtil.setPopup()"
+            ></button>
+          </div>
+          <div
+            data-name="popup-body"
+            class="flex items-center justify-center w-full h-full gap-16"
+          >
+            <div
+              class="flex flex-col items-center w-608 h-402"
+              data-name="popup_photo_wrap"
+            >
+              <div class="w-full overflow-hidden h-400 rounded-10">
+                <img
+                  src="./images/10_01_21/popup_photo1.jpg"
+                  alt="구마도리"
+                  class="min-w-608 h-full"
+                  data-name="popup_photo"
+                />
+                <img
+                  src="./images/10_01_21/popup_photo2.jpg"
+                  alt="구마도리"
+                  class="min-w-608 h-full"
+                  data-name="popup_photo"
+                  style="display: none"
+                />
+                <img
+                  src="./images/10_01_21/popup_photo3.jpg"
+                  alt="구마도리"
+                  class="min-w-608 h-full"
+                  data-name="popup_photo"
+                  style="display: none"
+                />
+                <img
+                  src="./images/10_01_21/popup_photo4.jpg"
+                  alt="구마도리"
+                  class="min-w-608 h-full"
+                  data-name="popup_photo"
+                  style="display: none"
+                />
+                <img
+                  src="./images/10_01_21/popup_photo5.jpg"
+                  alt="구마도리"
+                  class="min-w-608 h-full"
+                  data-name="popup_photo"
+                  style="display: none"
+                />
+              </div>
+              <div
+                class="flex mt-8 font-bold f-nanum-s h-52 text-40 leading-52 shrink-0"
+              >
+                <div data-name="popup_photo_text">구마도리</div>
+                <div data-name="popup_photo_text" style="display: none">
+                  구마도리
+                </div>
+                <div data-name="popup_photo_text" style="display: none">
+                  구마도리
+                </div>
+                <div data-name="popup_photo_text" style="display: none">
+                  구마도리
+                </div>
+                <div data-name="popup_photo_text" style="display: none">
+                  구마도리
+                </div>
+              </div>
+            </div>
+            <div class="w-266 h-402">
+              <div class="flex flex-wrap w-full gap-10">
+                <button
+                  data-name="btn-popup_photo"
+                  class="w-128 h-72 active"
+                  onclick="contentUtil.setPhotoPopup(1)"
+                >
+                  <img
+                    src="./images/10_01_21/popup_btn_photo1.jpg"
+                    alt="구마도리"
+                  />
+                </button>
+                <button
+                  data-name="btn-popup_photo"
+                  class="w-128 h-72"
+                  onclick="contentUtil.setPhotoPopup(2)"
+                >
+                  <img
+                    src="./images/10_01_21/popup_btn_photo2.jpg"
+                    alt="구마도리"
+                  />
+                </button>
+                <button
+                  data-name="btn-popup_photo"
+                  class="w-128 h-72"
+                  onclick="contentUtil.setPhotoPopup(3)"
+                >
+                  <img
+                    src="./images/10_01_21/popup_btn_photo3.jpg"
+                    alt="구마도리"
+                  />
+                </button>
+                <button
+                  data-name="btn-popup_photo"
+                  class="w-128 h-72"
+                  onclick="contentUtil.setPhotoPopup(4)"
+                >
+                  <img
+                    src="./images/10_01_21/popup_btn_photo4.jpg"
+                    alt="구마도리"
+                  />
+                </button>
+                <button
+                  data-name="btn-popup_photo"
+                  class="w-128 h-72"
+                  onclick="contentUtil.setPhotoPopup(5)"
+                >
+                  <img
+                    src="./images/10_01_21/popup_btn_photo5.jpg"
+                    alt="구마도리"
+                  />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript">
+    const page = {
+      isAnswer: false,
+      isVocabulary: false,
+      showAnswer: () => {},
+      hideAnswer: () => {},
+      showVocabulary: () => {},
+    };
+  </script>
+  <script src="./../common/js/tailwind.config.js"></script>
+  <script src="./../common/js/script.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      // contentUtil.setPage(2);
+    });
+  </script>
+</html>

@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>미래엔 일본 문화</title>
+    <script src="./../common/lib/jquery-3.7.1.min.js"></script>
+    <script src="./../common/lib/howler-2.1.3.min.js"></script>
+    <script src="./../common/lib/tailwind.js"></script>
+    <!-- 폰트 -->
+    <link href="./../common/font/suit/suit.css" rel="stylesheet" />
+    <link href="./../common/font/bmjua/bmjua.css" rel="stylesheet" />
+    <link
+      href="./../common/font/nanumsquare/nanumSquare.css"
+      rel="stylesheet"
+    />
+    <link href="./../common/font/notoSansJP/notoSansJP.css" rel="stylesheet" />
+    <link href="./../common/css/tailwind.css" rel="stylesheet" />
+    <link href="./../common/css/fontStyle.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div id="wrap">
+      <!-- contents -->
+      <div class="relative w-full h-full pt-68">
+        <!-- title -->
+        <img
+          src="./../common/images/title_look_culture2.svg"
+          alt="문화 들여다보기2 전통의상2"
+          class="absolute w-764 h-49 top-10"
+        />
+        <!-- header-btn -->
+        <div class="absolute right-0 flex gap-6 top-13" data-name="header-btn">
+          <button
+            data-name="btn-common"
+            onclick="contentUtil.setPopup(1); contentUtil.setPhotoPopup(1);"
+          >
+            추가 사진
+          </button>
+        </div>
+        <!-- main -->
+        <div class="relative flex flex-col w-full h-full overflow-y-auto">
+          <div class="flex flex-col flex-1 w-full leading-52 ps-20">
+            <div class="flex items-center mb-4">
+              <img
+                src="./../common/images/index_pink_3.svg"
+                alt="번호 3"
+                class="w-40 h-40 me-4"
+              />
+              <span class="font-extrabold f-nanum-s text-40"
+                >전통 의상의 필수품</span
+              >
+            </div>
+            <div class="flex mb-4">
+              <div data-name="number-2" class="bg-[#C84935]"></div>
+              <span class="text-[#C84935] flex font-extrabold text-40 f-nanum-s"
+                >조리(<span
+                  data-audio="2_01_29/036-02.mp3"
+                  class="font-bold f-noto"
+                  >ぞうり</span
+                >)와 게다(<span
+                  data-audio="2_01_29/036-03.mp3"
+                  class="font-bold f-noto"
+                  >げた</span
+                >)</span
+              >
+            </div>
+            <!-- ======== page 1 ======== -->
+            <div
+              data-name="page"
+              class="flex flex-col mb-20 font-bold f-nanum-s text-40"
+            >
+              <div>
+                <p class="ps-28">
+                  전통 복장을 입을 때는 전통 신발인 ‘조리’나 ‘게다’를 신는
+                </p>
+                <p>것이 보통이다. ‘조리’는 밑바닥이 평평하고 가죽이나 합성</p>
+                <p>
+                  피혁 등이 주재료인 반면, ‘게다’는 나무가 주재료이며 밑바닥에
+                </p>
+                <p>나무 굽이 2개 붙어 있는 것이 일반적이다.</p>
+              </div>
+            </div>
+            <!-- ======== page 2 ======== -->
+            <div
+              data-name="page"
+              class="flex flex-col mb-20 font-bold f-nanum-s text-40"
+              style="display: none"
+            >
+              <div>
+                <p class="ps-28">
+                  조리를 신을 때는 조리를 신을 수 있도록 엄지발가락과
+                </p>
+                <p class="flex">
+                  나머지 발가락으로 나뉘어 있는 버선인 ‘다비(<span
+                    data-audio="2_01_29/036-04.mp3"
+                    class="font-medium f-noto"
+                    >たび</span
+                  >)’를 신는
+                </p>
+                <p>경우가 많다. 기본적인 색상은 흰색이지만 편한 자리일 때는</p>
+                <p>색깔이 있는 다비를 신기도 한다.</p>
+              </div>
+            </div>
+            <!-- pagination -->
+            <div
+              class="absolute -translate-x-1/2 bottom-10 left-1/2"
+              data-name="pagination"
+            >
+              <button class="active" data-name="btn-pagination"></button>
+              <button class="" data-name="btn-pagination"></button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- popup -->
+      <div id="popup-wrap" style="display: none">
+        <!-- 추가 사진 -->
+        <div data-name="popup" data-popup="1" style="display: none">
+          <div data-name="popup-header">
+            <div data-name="popup-title">추가 사진</div>
+            <button
+              data-name="popup-close"
+              onclick="contentUtil.setPopup()"
+            ></button>
+          </div>
+          <div
+            data-name="popup-body"
+            class="flex items-center justify-center w-full h-full gap-16"
+          >
+            <div
+              class="flex flex-col items-center w-608 h-402"
+              data-name="popup_photo_wrap"
+            >
+              <div class="w-full overflow-x-hidden overflow-y-auto pe-4">
+                <img
+                  src="./images/2_01_29/popup_photo1.jpg"
+                  alt="남녀 조리"
+                  class="object-contain min-w-608 rounded-10"
+                  data-name="popup_photo"
+                />
+                <img
+                  src="./images/2_01_29/popup_photo2.jpg"
+                  alt="다비를 신은 조리"
+                  class="object-contain min-w-608 rounded-10"
+                  data-name="popup_photo"
+                  style="display: none"
+                />
+                <img
+                  src="./images/2_01_29/popup_photo3.jpg"
+                  alt="흰색 다비"
+                  class="object-contain min-w-608 rounded-10"
+                  data-name="popup_photo"
+                  style="display: none"
+                />
+                <img
+                  src="./images/2_01_29/popup_photo4.jpg"
+                  alt="여성용 게다"
+                  class="object-contain min-w-608 rounded-10"
+                  data-name="popup_photo"
+                  style="display: none"
+                />
+                <img
+                  src="./images/2_01_29/popup_photo5.jpg"
+                  alt="남성용 게다"
+                  class="object-contain w-full rounded-10"
+                  data-name="popup_photo"
+                  style="display: none"
+                />
+              </div>
+              <div
+                class="flex mt-8 font-bold f-nanum-s h-52 text-40 leading-52 shrink-0"
+              >
+                <div data-name="popup_photo_text" class="text-blue">
+                  <span>남녀 조리</span>
+                </div>
+                <div
+                  data-name="popup_photo_text"
+                  class="text-blue"
+                  style="display: none"
+                >
+                  <span>다비를 신은 조리</span>
+                </div>
+                <div
+                  data-name="popup_photo_text"
+                  class="text-blue"
+                  style="display: none"
+                >
+                  <span>흰색 다비</span>
+                </div>
+                <div
+                  data-name="popup_photo_text"
+                  class="text-blue"
+                  style="display: none"
+                >
+                  <span>여성용 게다</span>
+                </div>
+                <div
+                  data-name="popup_photo_text"
+                  class="text-blue"
+                  style="display: none"
+                >
+                  <span>남성용 게다</span>
+                </div>
+              </div>
+            </div>
+            <div class="w-266 h-402">
+              <div class="flex flex-wrap w-full gap-10">
+                <button
+                  data-name="btn-popup_photo"
+                  class="w-128 h-72 active"
+                  onclick="contentUtil.setPhotoPopup(1)"
+                >
+                  <img
+                    src="./images/2_01_29/popup_btn_photo1.jpg"
+                    alt="남녀 조리"
+                  />
+                </button>
+                <button
+                  data-name="btn-popup_photo"
+                  class="w-128 h-72"
+                  onclick="contentUtil.setPhotoPopup(2)"
+                >
+                  <img
+                    src="./images/2_01_29/popup_btn_photo2.jpg"
+                    alt="다비를 신은 조리"
+                  />
+                </button>
+                <button
+                  data-name="btn-popup_photo"
+                  class="w-128 h-72"
+                  onclick="contentUtil.setPhotoPopup(3)"
+                >
+                  <img
+                    src="./images/2_01_29/popup_btn_photo3.jpg"
+                    alt="흰색 다비"
+                  />
+                </button>
+                <button
+                  data-name="btn-popup_photo"
+                  class="w-128 h-72"
+                  onclick="contentUtil.setPhotoPopup(4)"
+                >
+                  <img
+                    src="./images/2_01_29/popup_btn_photo4.jpg"
+                    alt="여성용 게다"
+                  />
+                </button>
+                <button
+                  data-name="btn-popup_photo"
+                  class="w-128 h-72"
+                  onclick="contentUtil.setPhotoPopup(5)"
+                >
+                  <img
+                    src="./images/2_01_29/popup_btn_photo5.jpg"
+                    alt="남성용 게다"
+                  />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript">
+    const page = {
+      isAnswer: false,
+      isVocabulary: false,
+      showAnswer: () => {},
+      hideAnswer: () => {},
+      showVocabulary: () => {},
+    };
+  </script>
+  <script src="./../common/js/tailwind.config.js"></script>
+  <script src="./../common/js/script.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {});
+  </script>
+</html>

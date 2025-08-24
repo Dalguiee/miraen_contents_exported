@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>미래엔 일본 문화</title>
+    <script src="./../common/lib/jquery-3.7.1.min.js"></script>
+    <script src="./../common/lib/howler-2.1.3.min.js"></script>
+    <script src="./../common/lib/tailwind.js"></script>
+    <!-- 폰트 -->
+    <link href="./../common/font/suit/suit.css" rel="stylesheet" />
+    <link href="./../common/font/bmjua/bmjua.css" rel="stylesheet" />
+    <link
+      href="./../common/font/nanumsquare/nanumSquare.css"
+      rel="stylesheet"
+    />
+    <link href="./../common/font/notoSansJP/notoSansJP.css" rel="stylesheet" />
+    <link href="./../common/css/tailwind.css" rel="stylesheet" />
+    <link href="./../common/css/fontStyle.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div id="wrap">
+      <!-- contents -->
+      <div class="relative flex flex-col w-full h-full pt-70">
+        <!-- title -->
+        <div class="absolute left-0 flex h-50 top-10">
+          <img
+            src="./../common/images/title_getactive.svg"
+            alt="활동하기"
+            class="w-160 me-10"
+          />
+          <span class="f-bmjua text-36 text-[#6773B1] leading-50"
+            >진로 연계 활동</span
+          >
+        </div>
+        <!-- header-btn -->
+        <div class="absolute right-0 flex gap-6 top-13" data-name="header-btn">
+          <button
+            data-name="btn-common"
+            onclick="contentUtil.setPopup(1); audioPlay(audio, [`./../common/media/mp3/showAnswer.mp3`]);"
+          >
+            예시 답안
+          </button>
+        </div>
+        <!-- main -->
+        <div
+          class="flex flex-col flex-1 w-full px-20 overflow-y-auto leading-52 f-nanum-s text-40"
+        >
+          <div class="flex mb-10">
+            <img
+              src="./../common/images/label_flower_blue.svg"
+              alt="label"
+              class="w-30 h-52 me-8"
+            />
+            <div class="font-extrabold">
+              <p>나라별 전통 의상의 이름과 특징 등을 조사하여 발표해</p>
+              <p>봅시다.</p>
+            </div>
+          </div>
+          <div
+            class="absolute right-0 top-13"
+            data-name="ex-btn"
+            style="display: none"
+          >
+            <button
+              data-name="btn-common"
+              data-reset="1"
+              onclick="contentUtil.showAnswer(1)"
+            >
+              예시 답안
+            </button>
+            <button
+              data-name="btn-common"
+              data-answer="1"
+              onclick="contentUtil.hideAnswer(1)"
+              style="display: none"
+            >
+              다시 풀기
+            </button>
+          </div>
+          <!-- ======== page 1 ======== -->
+          <div data-name="page" class="flex flex-col flex-1 w-full">
+            <div class="flex flex-col gap-10 font-bold">
+              <!-- 1 -->
+              <div class="flex">
+                <div data-name="number-1" class="bg-[#6291CC] me-10"></div>
+                <div>
+                  <p class="flex">학급 인원에 맞춰 4~5개의 모둠으로 나눈다.</p>
+                </div>
+              </div>
+              <!-- 2 -->
+              <div class="flex">
+                <div data-name="number-2" class="bg-[#6291CC] me-10"></div>
+                <div>
+                  <p>모둠별로 어느 나라의 전통 의상을 조사할지 의논한다.</p>
+                  <p>단, 다른 모둠과 주제가 중복되지 않도록 한다.</p>
+                </div>
+              </div>
+              <!-- 3 -->
+              <div class="flex">
+                <div data-name="number-3" class="bg-[#6291CC] me-10"></div>
+                <div>
+                  <p>모둠별로 정한 나라의 전통 의상에 대해 조사한 후에</p>
+                  <p>자료를 정리하여 발표한다.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ======== page 2 ======== -->
+          <div
+            data-name="page"
+            class="flex flex-col w-full"
+            style="display: none"
+          >
+            <!-- table -->
+            <div
+              class="flex flex-col w-full mb-6 font-bold leading-52 text-40 f-nanum-s"
+            >
+              <!-- th -->
+              <div class="flex w-full">
+                <div
+                  class="flex items-center bg-[#B3CFEA] justify-center rounded-tl-10 py-2 min-w-164 border-r-2 border-t-2 border-l-2 border-[#B3CFEA] border-r-[#9DB9D3]"
+                >
+                  나라명
+                </div>
+                <div
+                  class="flex items-center bg-[#B3CFEA] justify-center min-w-174 py-2 border-[#B3CFEA] border-t-2 border-r-2 border-r-[#9DB9D3]"
+                >
+                  <div class="text-center">
+                    <p>전통 의상</p>
+                    <p>이름</p>
+                  </div>
+                </div>
+                <div
+                  class="flex items-center bg-[#B3CFEA] justify-center rounded-tr-10 border-t-2 border-r-2 py-2 border-[#B3CFEA] min-w-622"
+                >
+                  특징
+                </div>
+              </div>
+              <!-- td -->
+              <div class="flex w-full">
+                <div class="flex items-stretch">
+                  <!-- ------- -->
+                  <div
+                    class="flex items-center justify-center w-164 border-r-2 border-l-2 border-b-2 border-[#B3CFEA] py-2 px-10"
+                  >
+                    <div class="text-center">
+                      <p>스코틀</p>
+                      <p>랜드</p>
+                    </div>
+                  </div>
+                  <!-- ------- -->
+                  <div
+                    class="flex justify-center w-174 border-r-2 border-b-2 border-[#B3CFEA] py-2 px-10 items-stretch"
+                  >
+                    <div class="flex items-center justify-center w-full h-full">
+                      <span>킬트</span>
+                    </div>
+                  </div>
+                  <!-- ------- -->
+                  <div
+                    class="flex items-stretch justify-center py-4 px-10 border-b-2 border-r-2 w-622 border-[#B3CFEA]"
+                  >
+                    <div
+                      class="w-full min-h-92 bg-[#F6FDFF] border-2 border-[#A1D8FF] rounded-8 p-10"
+                    >
+                      <div
+                        data-answer="1"
+                        class="flex text-red leading-52 text-40 text-bold"
+                        style="display: none"
+                      >
+                        <div class="text-32 leading-42">
+                          <p>킬트는 영국 스코틀랜드 고지대 지방과</p>
+                          <p>아일랜드에서 입는 남성용 치마를 말한다.</p>
+                          <p>허리에서 무릎까지 닿는 스커트로서, 앞</p>
+                          <p>중앙부에 조그만 가죽 주머니를 장식으로</p>
+                          <p>달았다. 이를 스포란(sporran)이라고 하며,</p>
+                          <p>이는 옛날에 식량을 넣어 놓고 다니던 것에서</p>
+                          <p>유래하여 현재도 스코틀랜드의 군복으로</p>
+                          <p>채택되어 있다. 그리고 타탄이라 불리는 체크</p>
+                          <p>무늬로 된 천을 사용하는 것이 특징 중</p>
+                          <p>하나이다. 길이는 무릎까지 오는 짧은 것으로</p>
+                          <p>주름이 같은 방향으로 잡혀 있다.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="flex w-full">
+                <div class="flex items-stretch">
+                  <!-- ------- -->
+                  <div
+                    class="flex items-center flex-col justify-center w-164 border-r-2 border-l-2 border-b-2 rounded-bl-10 border-[#B3CFEA] py-2 px-10"
+                  >
+                    <p>러시아</p>
+                  </div>
+                  <!-- ------- -->
+                  <div
+                    class="flex justify-center w-174 border-r-2 border-b-2 items-center border-[#B3CFEA] py-2 px-10"
+                  >
+                    <span>사라판</span>
+                  </div>
+                  <!-- ------- -->
+                  <div
+                    class="flex justify-center items-center py-4 px-10 border-b-2 border-r-2 w-622 border-[#B3CFEA] rounded-br-10"
+                  >
+                    <div
+                      class="w-full min-h-60 bg-[#F6FDFF] border-2 border-[#A1D8FF] rounded-8 p-10"
+                    >
+                      <div
+                        data-answer="1"
+                        class="flex text-red leading-52 text-40 text-bold"
+                        style="display: none"
+                      >
+                        <div class="text-32 leading-42">
+                          <p>사라판은 러시아 여성이 입는 전통 의상 중</p>
+                          <p>하나이다. 소매가 없고 기장이 긴 치마가</p>
+                          <p>가슴 부분까지 이어져 있는 점퍼 스커트 형태의</p>
+                          <p>드레스 옷으로, 안에는 흰 블라우스나 셔츠를</p>
+                          <p>받쳐 입는다. 사라판을 입을 때는 ‘까꼬쉬닉</p>
+                          <p>(Кокошник)’이라고 하는 모자를 함께</p>
+                          <p>착용하는데, 그 중에서 기혼자용 까꼬쉬닉은</p>
+                          <p>머리를 완전히 가린다는 특징이 있다.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- popup -->
+      <div id="popup-wrap" style="display: none">
+        <!-- 예시 답안 -->
+        <div data-name="popup" data-popup="1" style="display: none">
+          <div data-name="popup-header">
+            <div data-name="popup-title">예시 답안</div>
+            <button
+              data-name="popup-close"
+              onclick="contentUtil.setPopup()"
+            ></button>
+          </div>
+          <div
+            data-name="popup-body"
+            class="flex-1 mt-16 mb-10 ms-26 f-nanum-s me-6"
+          >
+            <!-- table -->
+            <div
+              class="flex flex-col w-full mb-6 font-bold leading-42 text-32 f-nanum-s"
+            >
+              <!-- th -->
+              <div class="flex w-full">
+                <div
+                  class="flex items-center bg-[#B3CFEA] justify-center rounded-tl-10 py-10 min-w-123 border-r-1 border-t-1 boder-b-1 border-l-1 border-[#9DB9D3]"
+                >
+                  <span class="text-center">국가</span>
+                </div>
+                <div
+                  class="flex items-center bg-[#B3CFEA] justify-center min-w-139 py-10 border-[#9DB9D3] border-t-1 border-r-1 boder-b-1"
+                >
+                  <span class="text-center">전통 의상</span>
+                </div>
+                <div
+                  class="flex items-center bg-[#B3CFEA] justify-center rounded-tr-10 border-t-1 border-r-1 boder-b-1 py-10 border-[#9DB9D3] min-w-638"
+                >
+                  특징
+                </div>
+              </div>
+              <!-- td -->
+              <div class="flex w-full">
+                <div class="flex items-stretch">
+                  <!-- ------- -->
+                  <div
+                    class="flex items-center justify-center w-123 border-r-1 border-l-1 border-b-1 border-[#C2D3E4] p-10 bg-white"
+                  >
+                    <div
+                      class="flex items-center justify-center w-full h-full p-10 rounded-8"
+                    >
+                      <div class="text-center text-red">
+                        <p>스코틀</p>
+                        <p>랜드</p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- ------- -->
+                  <div
+                    class="flex justify-center w-139 border-r-1 border-b-1 border-[#C2D3E4] p-10 items-stretch bg-white"
+                  >
+                    <div
+                      class="flex items-center justify-center w-full h-full p-10 rounded-8"
+                    >
+                      <span class="text-red">킬트</span>
+                    </div>
+                  </div>
+                  <!-- ------- -->
+                  <div
+                    class="flex items-stretch justify-center p-10 border-b-1 border-r-1 w-638 border-[#C2D3E4] bg-white"
+                  >
+                    <div class="w-full p-10 min-h-92 rounded-8">
+                      <div class="flex text-red leading-52 text-40 text-bold">
+                        <div class="text-32 leading-42">
+                          <p>킬트는 영국 스코틀랜드 고지대 지방과 아일랜드</p>
+                          <p>에서 입는 남성용 치마를 말한다. 허리에서 무릎</p>
+                          <p>까지 닿는 스커트로서, 앞부분 중앙에 스포란</p>
+                          <p>(sporran)이라고 하는 조그만 가죽 주머니를</p>
+                          <p>장식으로 달았다. 이는 옛날에 식량을 넣어 놓고</p>
+                          <p>다니던 것에서 유래하여 현재도 스코틀랜드의</p>
+                          <p>군복으로 채택되어 있다. 그리고 타탄이라</p>
+                          <p>불리는 체크 무늬로 된 천을 사용하는 것이 특징</p>
+                          <p>중 하나이다. 길이는 무릎까지 오는 짧은 것으로</p>
+                          <p>주름이 같은 방향으로 잡혀 있다.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="flex w-full">
+                <div class="flex items-stretch">
+                  <!-- ------- -->
+                  <div
+                    class="flex items-center flex-col justify-center w-123 border-r-1 border-l-1 border-b-1 rounded-bl-10 border-[#C2D3E4] p-10 bg-white"
+                  >
+                    <div
+                      class="flex items-center justify-center w-full h-full p-10 rounded-8"
+                    >
+                      <span class="text-red">러시아</span>
+                    </div>
+                  </div>
+                  <!-- ------- -->
+                  <div
+                    class="flex justify-center w-139 border-r-1 border-b-1 items-center border-[#C2D3E4] p-10 bg-white"
+                  >
+                    <div
+                      class="flex items-center justify-center w-full h-full p-10 rounded-8"
+                    >
+                      <span class="text-red">사라판</span>
+                    </div>
+                  </div>
+                  <!-- ------- -->
+                  <div
+                    class="flex justify-center items-center p-10 border-b-1 border-r-1 w-638 border-[#C2D3E4] rounded-br-10 bg-white"
+                  >
+                    <div class="w-full p-10 min-h-60 rounded-8">
+                      <div class="flex text-red leading-52 text-40 text-bold">
+                        <div class="text-32 leading-42">
+                          <p>사라판은 러시아 여성이 입는 전통 의상 중 하나</p>
+                          <p>이다. 소매가 없고 기장이 긴 치마가 가슴 부분</p>
+                          <p>까지 이어져 있는 점퍼 스커트 형태의 드레스 옷</p>
+                          <p>으로, 안에는 흰 블라우스나 셔츠를 받쳐 입는다.</p>
+                          <p>사라판을 입을 때는 ‘까꼬쉬닉(Кокошник)’</p>
+                          <p>이라고 하는 모자를 함께 착용하는데, 그 중에서</p>
+                          <p>기혼자용 까꼬쉬닉은 머리를 완전히 가린다는</p>
+                          <p>특징이 있다.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript">
+    const page = {
+      isAnswer: false,
+      isVocabulary: false,
+      showAnswer: () => {},
+      hideAnswer: () => {},
+      showVocabulary: () => {},
+    };
+  </script>
+  <script src="./../common/js/tailwind.config.js"></script>
+  <script src="./../common/js/script.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {});
+
+    $(`[data-name="btn-pagination"]`).on("click", function () {
+      if ($(this).index() === 1) {
+        $(`[data-name="ex-btn"]`).show();
+      } else {
+        $(`[data-name="ex-btn"]`).hide();
+      }
+    });
+  </script>
+</html>

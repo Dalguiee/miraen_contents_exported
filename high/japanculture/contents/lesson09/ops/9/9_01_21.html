@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>미래엔 일본 문화</title>
+    <script src="./../common/lib/jquery-3.7.1.min.js"></script>
+    <script src="./../common/lib/howler-2.1.3.min.js"></script>
+    <script src="./../common/lib/tailwind.js"></script>
+    <!-- 폰트 -->
+    <link href="./../common/font/suit/suit.css" rel="stylesheet" />
+    <link href="./../common/font/bmjua/bmjua.css" rel="stylesheet" />
+    <link
+      href="./../common/font/nanumsquare/nanumSquare.css"
+      rel="stylesheet"
+    />
+    <link href="./../common/font/notoSansJP/notoSansJP.css" rel="stylesheet" />
+    <link href="./../common/css/tailwind.css" rel="stylesheet" />
+    <link href="./../common/css/fontStyle.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div id="wrap">
+      <!-- contents -->
+      <div class="relative w-full h-full pt-60">
+        <!-- title -->
+        <div class="absolute left-0 flex items-center gap-20 h-44 top-6">
+          <img
+            src="./../common/images/title_culture_plus.svg"
+            alt="문화 +"
+            class="w-111 h-44"
+          />
+          <div class="mt-6">
+            <img src="./images/9_01_21/main_label1.svg" alt="" />
+          </div>
+        </div>
+        <div class="absolute right-0 flex gap-6 top-13">
+          <button
+            style="display: none"
+            data-name="btn-common"
+            onclick="contentUtil.setPopup(1);"
+          >
+            보충 자료
+          </button>
+        </div>
+        <!-- ======== page 1 ======== -->
+        <div class="w-full h-full" data-name="page">
+          <!-- main -->
+          <div class="flex flex-col w-full h-full">
+            <div
+              class="flex flex-col flex-1 w-full font-bold leading-52 ps-20 text-40 f-nanum-s"
+            >
+              <div class="mt-27">
+                <p class="ps-28 flex">
+                  애니메이션 ‘원령공주(<span
+                    data-audio="9_01_21/137-05.mp3"
+                    class="f-noto font-medium"
+                    >もののけ<span
+                      ><span class="relative"
+                        >姫<span class="ruby">ひめ</span></span
+                      ></span
+                    ></span
+                  >)’에 등장하는 많은 신은
+                </p>
+                <p>
+                  일본의 종교관과 깊은 관련이 있다. 일본의 신토는 모든 만물에
+                </p>
+                <p>
+                  각각의 정령이 깃들어 있다고 믿는 ‘애니미즘’에서 출발하였다.
+                </p>
+                <p>일본인은 예로부터 좋은 신도 인간에게 홀대를 받으면 재앙을</p>
+                <p>내리는 악신으로 변하고, 반대로 악신</p>
+                <p>이라도 대접을 잘 받으면 재앙을 거두고</p>
+                <p>복을 내리는 신으로 바뀐다고 여겼다.</p>
+              </div>
+              <div class="bottom-34 right-20 absolute w-349">
+                <img
+                  src="./images/9_01_21/main_photo1.jpg"
+                  alt="원령공주에 등장하는 사슴신"
+                  class="object-contain w-full"
+                />
+                <button
+                  data-name="btn-view"
+                  class="absolute bottom-10 right-10"
+                  onclick="contentUtil.setPopup(1)"
+                ></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- popup -->
+      <div id="popup-wrap" style="display: none">
+        <!-- 사진 팝업창 -->
+        <div data-name="popup" data-popup="1" style="display: none">
+          <div data-name="popup-header">
+            <div data-name="popup-title">사진 팝업창</div>
+            <button
+              data-name="popup-close"
+              onclick="contentUtil.setPopup()"
+            ></button>
+          </div>
+          <div
+            data-name="popup-body"
+            class="flex flex-col items-center justify-center w-full h-full"
+          >
+            <img
+              src="./images/9_01_21/popup_photo1.jpg"
+              alt="만화"
+              class="w-608 h-342"
+            />
+
+            <div
+              class="flex mt-8 font-bold f-nanum-s h-52 text-40 leading-52 shrink-0"
+            >
+              <div data-name="popup_photo_text">원령공주에 등장하는 사슴신</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript">
+    const page = {
+      isAnswer: false,
+      isVocabulary: false,
+      showAnswer: () => {},
+      hideAnswer: () => {},
+      showVocabulary: () => {},
+    };
+  </script>
+  <script src="./../common/js/tailwind.config.js"></script>
+  <script src="./../common/js/script.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      // contentUtil.setPopup(1);
+    });
+    $(`[data-name="btn-pagination"]`).on("click", function () {
+      if ($(this).index() === 1) {
+        $(`[data-name="btn-common"]`).show();
+      } else {
+        $(`[data-name="btn-common"]`).hide();
+      }
+    });
+  </script>
+</html>

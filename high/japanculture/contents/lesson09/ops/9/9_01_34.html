@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>미래엔 일본 문화</title>
+    <script src="./../common/lib/jquery-3.7.1.min.js"></script>
+    <script src="./../common/lib/howler-2.1.3.min.js"></script>
+    <script src="./../common/lib/tailwind.js"></script>
+    <!-- 폰트 -->
+    <link href="./../common/font/suit/suit.css" rel="stylesheet" />
+    <link href="./../common/font/bmjua/bmjua.css" rel="stylesheet" />
+    <link
+      href="./../common/font/nanumsquare/nanumSquare.css"
+      rel="stylesheet"
+    />
+    <link href="./../common/font/notoSansJP/notoSansJP.css" rel="stylesheet" />
+    <link href="./../common/css/tailwind.css" rel="stylesheet" />
+    <link href="./../common/css/fontStyle.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div id="wrap">
+      <!-- contents -->
+      <div class="relative flex flex-col w-full h-full pt-65">
+        <!-- title -->
+        <div class="absolute left-0 flex h-50 top-10">
+          <img
+            src="./../common/images/title_getactive.svg"
+            alt="활동하기"
+            class="w-160 me-10"
+          />
+          <span class="f-bmjua text-36 text-[#6773B1] leading-50"
+            >진로 연계 활동</span
+          >
+        </div>
+        <!-- header-btn -->
+        <div class="absolute right-0 flex gap-6 top-13" data-name="header-btn">
+          <button data-name="btn-common" onclick="contentUtil.setPopup(1); ">
+            참고 자료
+          </button>
+        </div>
+        <!-- main -->
+        <div
+          class="flex flex-col flex-1 w-full px-20 overflow-y-auto leading-52 f-nanum-s text-40"
+        >
+          <div class="flex mb-10">
+            <img
+              src="./../common/images/label_flower_blue.svg"
+              alt="label"
+              class="w-30 h-52 me-8"
+            />
+            <div class="font-extrabold">
+              <p>일본 영화 리뷰 영상을 만들어 봅시다.</p>
+            </div>
+          </div>
+
+          <!-- ======== page 1 ======== -->
+          <div data-name="page" class="flex flex-col flex-1 w-full">
+            <div class="flex flex-col gap-10 font-bold">
+              <!-- 1 -->
+              <div class="flex">
+                <div data-name="number-1" class="bg-[#5B87B8] me-10"></div>
+
+                <p class="flex">
+                  선호하는 일본 영화 장르별로 3<span class="f-noto font-medium"
+                    >～</span
+                  >4명이 한 모둠이 된다.
+                </p>
+              </div>
+              <!-- 2 -->
+              <div class="flex">
+                <div data-name="number-2" class="bg-[#5B87B8] me-10"></div>
+                <div>
+                  <p class="flex">
+                    리뷰 영상을 제작할 영화를 정하고 등장인물과 줄거리를
+                  </p>
+                  <p>정리한다.</p>
+                </div>
+              </div>
+              <!-- 3 -->
+              <div class="flex">
+                <div data-name="number-3" class="bg-[#5B87B8] me-10"></div>
+                <div>
+                  <p class="flex">
+                    장면 설명과 자막, 대사 등을 적은 스토리보드를 만든다.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- ======== page 2 ======== -->
+          <div
+            style="display: none"
+            data-name="page"
+            class="flex flex-col flex-1 w-full"
+          >
+            <div class="flex flex-col gap-10 font-bold">
+              <!-- 4 -->
+              <div class="flex">
+                <div data-name="number-4" class="bg-[#5B87B8] me-10"></div>
+                <div>
+                  <p>역할을 나누고 디지털 기기와 앱 등을 활용하여 촬영한 후</p>
+                  <p>편집한다.</p>
+                </div>
+              </div>
+              <!-- 5 -->
+              <div class="flex">
+                <div data-name="number-5" class="bg-[#5B87B8] me-10"></div>
+                <div>
+                  <p>제작한 리뷰 영상을</p>
+                  <p>모둠별로 발표하고</p>
+                  <p>함께 시청한다.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Image Box -->
+            <div
+              class="absolute flex flex-col items-end gap-10 bottom-60 right-20"
+            >
+              <div class="relative flex flex-col w-480">
+                <img
+                  src="./images/9_01_34/main_photo1.jpg"
+                  alt="일본 영화 리뷰 영상"
+                  class="w-full h-full"
+                />
+                <button
+                  data-name="btn-view"
+                  class="absolute bottom-10 right-10"
+                  onclick="contentUtil.setPopup(2); "
+                ></button>
+              </div>
+            </div>
+          </div>
+
+          <!-- pagination -->
+          <div
+            class="absolute -translate-x-1/2 left-1/2 bottom-10"
+            data-name="pagination"
+          >
+            <button class="active" data-name="btn-pagination"></button>
+            <button class="" data-name="btn-pagination"></button>
+          </div>
+        </div>
+      </div>
+      <!-- popup -->
+      <div id="popup-wrap" style="display: none">
+        <!-- 참고 자료 -->
+        <div data-name="popup" data-popup="1" style="display: none">
+          <div data-name="popup-header">
+            <div data-name="popup-title">참고 자료</div>
+            <button
+              data-name="popup-close"
+              onclick="contentUtil.setPopup()"
+            ></button>
+          </div>
+          <div
+            data-name="popup-body"
+            class="mt-16 mb-10 font-bold ms-26 f-nanum-s me-6 leading-52 text-40"
+          >
+            <div class="flex flex-col">
+              <!-- title -->
+              <div class="flex items-center mb-10 h-55">
+                <img
+                  src="./../common/images/popup_titlemark_primary.svg"
+                  alt=""
+                  class="w-35 h-55 me-10"
+                />
+                <div class="flex">
+                  <div class="font-extrabold text-42 text-[#F25F7C]">
+                    <p>장르별 일본 영화</p>
+                  </div>
+                </div>
+              </div>
+              <div class="flex flex-col gap-10">
+                <div class="flex">
+                  <div
+                    class="w-12 h-12 mt-20 bg-black rounded-full me-10"
+                  ></div>
+                  <p class="flex">로맨스</p>
+                  <div data-name="colon-black">:</div>
+                  <div>
+                    <p>‘러브레터’, ‘지금 만나러 갑니다’, ‘세상의 중심</p>
+                    <p>에서 사랑을 외치다’ 등</p>
+                  </div>
+                </div>
+                <div class="flex">
+                  <div
+                    class="w-12 h-12 mt-20 bg-black rounded-full me-10"
+                  ></div>
+                  <p class="flex">공포</p>
+                  <div data-name="colon-black">:</div>
+                  <div>
+                    <p>‘데스노트’, ‘스마트폰을 떨어뜨렸을 뿐인데’, ‘주온’,</p>
+                    <p>‘링’ 등</p>
+                  </div>
+                </div>
+                <div class="flex">
+                  <div
+                    class="w-12 h-12 mt-20 bg-black rounded-full me-10"
+                  ></div>
+                  <p class="flex">휴먼</p>
+                  <div data-name="colon-black">:</div>
+                  <div>
+                    <p>‘철도원’, ‘나미야 잡화점의 기적’ 등</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 사진 팝업창 -->
+        <div data-name="popup" data-popup="2" style="display: none">
+          <div data-name="popup-header">
+            <div data-name="popup-title">사진 팝업창</div>
+            <button
+              data-name="popup-close"
+              onclick="contentUtil.setPopup()"
+            ></button>
+          </div>
+          <div
+            data-name="popup-body"
+            class="flex items-center justify-center w-full h-full"
+          >
+            <div
+              class="flex flex-col items-center w-730 h-402"
+              data-name="popup_photo_wrap"
+            >
+              <img
+                src="./images/9_01_34/popup_photo1.jpg"
+                alt="일본 영화 리뷰 영상"
+                class="object-contain w-full rounded-10"
+                data-name="popup_photo"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript">
+    const page = {
+      isAnswer: false,
+      isVocabulary: false,
+      showAnswer: () => {},
+      hideAnswer: () => {},
+      showVocabulary: () => {},
+    };
+  </script>
+  <script src="./../common/js/tailwind.config.js"></script>
+  <script src="./../common/js/script.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      // contentUtil.setPopup(1);
+    });
+
+    // $(`[data-name="btn-pagination"]`).on("click", function () {
+    //   if ($(this).index() === 0) {
+    //     $(`[data-name="btn-common"]`).show();
+    //   } else {
+    //     $(`[data-name="btn-common"]`).hide();
+    //   }
+    // });
+  </script>
+</html>

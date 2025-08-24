@@ -1,0 +1,1640 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>미래엔 일본 문화</title>
+    <script src="./../common/lib/jquery-3.7.1.min.js"></script>
+    <script src="./../common/lib/howler-2.1.3.min.js"></script>
+    <script src="./../common/lib/tailwind.js"></script>
+    <!-- 폰트 -->
+    <link href="./../common/font/suit/suit.css" rel="stylesheet" />
+    <link href="./../common/font/bmjua/bmjua.css" rel="stylesheet" />
+    <link
+      href="./../common/font/nanumsquare/nanumSquare.css"
+      rel="stylesheet"
+    />
+    <link href="./../common/font/notoSansJP/notoSansJP.css" rel="stylesheet" />
+    <link href="./../common/css/tailwind.css" rel="stylesheet" />
+    <link href="./../common/css/fontStyle.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div id="wrap">
+      <!-- contents -->
+      <div class="relative w-full h-full pt-70">
+        <!-- title -->
+        <div class="absolute flex top-4 left-4">
+          <img
+            src="./../common/images/title_learnaboutjapan.svg"
+            alt="일본 알아보기"
+            class="h-56 w-244 me-8"
+          />
+          <div class="flex mt-4 font-bold text-40 leading-52 f-nanum-s">
+            <img
+              src="./../common/images/number_2.svg"
+              alt="1"
+              class="rounded-full w-34 h-34 mt-9 me-6"
+              style="box-shadow: 2px 0 0 #eaa7a4"
+            />
+            <div class="font-extrabold">일본의 지리</div>
+          </div>
+        </div>
+        <!-- header-btn -->
+        <div class="absolute right-0 flex gap-6 top-13" data-name="header-btn">
+          <button data-name="btn-common" onclick="contentUtil.setPopup(1)">
+            보충 자료
+          </button>
+        </div>
+        <!-- main -->
+        <div
+          class="flex flex-col w-full h-full font-bold leading-52 text-40 f-nanum-s"
+        >
+          <!-- ======== page 1 ======== -->
+          <div data-name="page" class="flex flex-col ms-20">
+            <div class="flex mb-4">
+              <img
+                src="./../common/images/index_yellow_2.svg"
+                alt=""
+                class="w-40 mt-5 me-6 h-42"
+              />
+              <div class="font-extrabold">행정 구역</div>
+            </div>
+            <p class="ps-28">
+              일본의 행정 구역은 광역 자치 단체와 기초 자치 단체로
+            </p>
+            <p>나뉜다.</p>
+            <p class="flex pt-12 ps-28">
+              광역 자치 단체는 47개로 1개의 도(<span
+                data-audio="0_01_05/008-05.mp3"
+                class="font-medium f-noto"
+                ><span class="relative"
+                  >都<span class="ruby">と</span></span
+                ></span
+              >), 1개의 도(<span
+                data-audio="0_01_05/008-06.mp3"
+                class="font-medium f-noto"
+                ><span class="relative"
+                  >道<span class="ruby">どう</span></span
+                ></span
+              >),
+            </p>
+            <p class="flex pt-12">
+              2개의 후(<span
+                data-audio="0_01_05/008-07.mp3"
+                class="font-medium f-noto"
+                ><span class="relative"
+                  >府<span class="ruby">ふ</span></span
+                ></span
+              >), 그리고 43개의 겐(<span
+                data-audio="0_01_05/008-08.mp3"
+                class="font-medium f-noto"
+                ><span class="relative"
+                  >県<span class="ruby">けん</span></span
+                ></span
+              >)이 있다. 이를 ‘도도후켄
+            </p>
+            <p class="flex pt-12">
+              (<span data-audio="0_01_05/009-09.mp3" class="font-medium f-noto"
+                ><span class="relative">都<span class="ruby">と</span></span
+                ><span class="relative">道<span class="ruby">どう</span></span
+                ><span class="relative">府<span class="ruby">ふ</span></span
+                ><span class="relative"
+                  >県<span class="ruby">けん</span></span
+                ></span
+              >)’이라고 한다.
+            </p>
+          </div>
+          <!-- ======== page 2 ======== -->
+          <div
+            data-name="page"
+            class="flex flex-col ms-20"
+            style="display: none"
+          >
+            <div class="flex mb-4">
+              <img
+                src="./../common/images/index_yellow_2.svg"
+                alt=""
+                class="w-40 mt-5 me-6 h-42"
+              />
+              <div class="font-extrabold">행정 구역</div>
+            </div>
+            <p class="flex pt-12 ps-28">
+              기초 자치 단체는 규모에 따라 ‘시·초·손(<span
+                data-audio="0_01_05/009-10.mp3"
+                class="font-medium f-noto"
+                ><span class="relative"
+                  >市<span class="ruby">し</span></span
+                ></span
+              >·<span data-audio="0_01_05/009-11.mp3" class="font-medium f-noto"
+                ><span class="relative"
+                  >町<span class="ruby tracking-[-0.25em]">ちょう</span></span
+                ></span
+              >·<span class="font-medium f-noto"
+                ><span data-audio="0_01_05/009-12.mp3" class="relative"
+                  >村<span class="ruby">そん</span></span
+                ></span
+              >)으로 구성
+            </p>
+            <p class="flex pt-12">
+              되고, 도쿄에 23개의 ‘특별구(<span
+                data-audio="0_01_05/009-13.mp3"
+                class="font-medium f-noto"
+                ><span class="relative">特<span class="ruby">とく</span></span
+                ><span class="relative">別<span class="ruby">べつ</span></span
+                ><span class="relative"
+                  >区<span class="ruby">く</span></span
+                ></span
+              >)’가 있다. 이를 포함하여
+            </p>
+            <p class="flex pt-12">
+              ‘시·쿠·초·손(<span class="font-medium f-noto"
+                ><span data-audio="0_01_05/009-10.mp3" class="relative"
+                  >市<span class="ruby">し</span></span
+                ></span
+              >·<span data-audio="0_01_05/009-14.mp3" class="font-medium f-noto"
+                ><span class="relative"
+                  >区<span class="ruby">く</span></span
+                ></span
+              >·<span class="font-medium f-noto"
+                ><span data-audio="0_01_05/009-11.mp3" class="relative"
+                  >町<span class="ruby tracking-[-0.25em]">ちょう</span></span
+                ></span
+              >·<span class="font-medium f-noto"
+                ><span data-audio="0_01_05/009-12.mp3" class="relative"
+                  >村<span class="ruby">そん</span></span
+                ></span
+              >)’이라고 부르기도 한다.
+            </p>
+          </div>
+          <!-- ======== page 3 ======== -->
+          <div
+            data-name="page"
+            class="flex flex-col ms-20"
+            style="display: none"
+          >
+            <div class="flex mb-4">
+              <img
+                src="./../common/images/index_yellow_2.svg"
+                alt=""
+                class="w-40 mt-5 me-6 h-42"
+              />
+              <div class="font-extrabold">행정 구역</div>
+            </div>
+            <p class="flex">
+              ‘시(<span
+                data-audio="0_01_05/009-10.mp3"
+                class="font-medium f-noto"
+                >市</span
+              >)’가 되는 조건은 원칙적으로 인구가 5만 명이 넘어야
+            </p>
+            <p>하고, 인구의 60% 이상이 상공업에 종사하면서 중심 시가지에</p>
+            <p>거주해야 한다. 그러나 일단 ‘시’가 되면 인구가 감소하더라도</p>
+            <p>‘초’나 ‘손’으로 바뀌지 않는다.</p>
+          </div>
+          <!-- ======== page 4 ======== -->
+          <div
+            data-name="page"
+            class="flex flex-col ms-20"
+            style="display: none"
+          >
+            <div
+              class="flex flex-col gap-10 w-960 h-373 bg-[url(./images/0_01_05/main_bg.svg)] bg-no-repeat bg-cover relative"
+            >
+              <div class="flex items-end justify-center w-226 h-74 ms-366">
+                <p data-audio="0_01_05/009-15.mp3" class="flex pt-12">
+                  47<span class="relative bottom-5 font-medium f-noto"
+                    ><span class="relative">都<span class="ruby">と</span></span
+                    ><span class="relative"
+                      >道<span class="ruby">どう</span></span
+                    ><span class="relative">府<span class="ruby">ふ</span></span
+                    ><span class="relative"
+                      >県<span class="ruby">けん</span></span
+                    ></span
+                  >
+                </p>
+              </div>
+              <div class="flex gap-20 mx-auto">
+                <div
+                  class="flex flex-col items-center justify-center w-171 h-210 px-20 py-10"
+                >
+                  <p data-audio="0_01_05/009-16.mp3" class="flex pt-12 mb-10">
+                    1&nbsp;<span class="relative bottom-5 font-medium f-noto">
+                      <span class="relative"
+                        >都<span class="ruby">と</span></span
+                      ></span
+                    >
+                  </p>
+                  <p data-audio="0_01_05/009-17.mp3" class="flex pt-12">
+                    <span class="font-medium f-noto"
+                      ><span class="relative"
+                        >東<span class="ruby">とう</span></span
+                      ><span class="relative"
+                        >京<span class="ruby tracking-[-0.25em]"
+                          >きょう</span
+                        ></span
+                      ><span class="relative"
+                        >都<span class="ruby">と</span></span
+                      ></span
+                    >
+                  </p>
+                  <p>(도쿄토)</p>
+                </div>
+                <div
+                  class="flex flex-col items-center justify-center w-205 h-210 px-20 py-10"
+                >
+                  <p data-audio="0_01_05/009-18.mp3" class="flex pt-12 mb-10">
+                    1&nbsp;<span class="relative bottom-5 font-medium f-noto"
+                      ><span class="relative"
+                        >道<span class="ruby">どう</span></span
+                      ></span
+                    >
+                  </p>
+                  <p class="flex pt-12">
+                    <span
+                      data-audio="0_01_05/009-19.mp3"
+                      class="font-medium f-noto"
+                      ><span class="relative"
+                        >北<span class="ruby">ほっ</span></span
+                      ><span class="relative"
+                        >海<span class="ruby">かい</span></span
+                      ><span class="relative"
+                        >道<span class="ruby">どう</span></span
+                      ></span
+                    >
+                  </p>
+                  <p>(홋카이도)</p>
+                </div>
+                <div class="flex flex-col items-center w-325 h-210 px-20 py-10">
+                  <p data-audio="0_01_05/009-20.mp3" class="flex pt-12 mb-10">
+                    2&nbsp;<span class="relative bottom-5 font-medium f-noto"
+                      ><span class="relative"
+                        >府<span class="ruby">ふ</span></span
+                      ></span
+                    >
+                  </p>
+                  <p class="flex pt-12">
+                    <span
+                      data-audio="0_01_05/009-21.mp3"
+                      class="font-medium f-noto"
+                      ><span class="relative"
+                        >京<span class="ruby tracking-[-0.25em]"
+                          >きょう</span
+                        ></span
+                      ><span class="relative"
+                        >都<span class="ruby">と</span></span
+                      ><span class="relative"
+                        >府<span class="ruby">ふ</span></span
+                      ></span
+                    >·<span
+                      data-audio="0_01_05/009-22.mp3"
+                      class="font-medium f-noto"
+                      ><span class="relative"
+                        >大<span class="ruby">おお</span></span
+                      ><span class="relative"
+                        >阪<span class="ruby">さか</span></span
+                      ><span class="relative"
+                        >府<span class="ruby">ふ</span></span
+                      ></span
+                    >
+                  </p>
+                  <p>(교토후·오사카후)</p>
+                </div>
+                <div
+                  class="flex flex-col items-center justify-center w-139 h-210"
+                >
+                  <p data-audio="0_01_05/009-23.mp3" class="flex pt-12">
+                    43&nbsp;<span class="relative bottom-5 font-medium f-noto"
+                      ><span class="relative"
+                        >県<span class="ruby">けん</span></span
+                      ></span
+                    >
+                  </p>
+                </div>
+              </div>
+              <div class="flex ms-auto me-30">
+                <img
+                  src="./images/0_01_05/main_label2.svg"
+                  alt="클릭해보세요."
+                  class="mt-1 w-124 h-37 me-10"
+                />
+                <div
+                  class="w-12 h-12 mt-13 me-10 bg-[#6168A2] rounded-full"
+                ></div>
+                <button
+                  class="relative font-bold text-30 leading-39 pagination_btn"
+                  onclick="contentUtil.setPage(5)"
+                >
+                  160쪽 일본 행정 구역 지도 참고
+                  <div class="absolute w-full h-2 bg-black bottom-3"></div>
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- ======== page 5 ======== -->
+          <div data-name="page" class="flex flex-col" style="display: none">
+            <img
+              src="./images/0_01_05/main_label.svg"
+              alt=""
+              class="absolute w-170 h-37 top-13 right-0"
+            />
+            <div class="relative w-390 h-444 ms-219">
+              <img
+                src="./images/0_01_05/main_photo1_changed.png"
+                alt=""
+                class="w-full h-full"
+              />
+              <button
+                data-name="btn-view"
+                class="absolute left-351 top-74"
+                onclick="contentUtil.setPopup(2)"
+              ></button>
+            </div>
+
+            <!-- 지도위 클릭 버튼 -->
+            <!-- 홋카이도 -->
+            <div
+              onclick="contentUtil.setPopup(3);"
+              class="absolute z-10 flex gap-4 cursor-pointer left-449 top-101"
+            >
+              <div
+                class="bg-[#DBEFFA] border-[#8DB5CA] border-3 flex justify-center items-center min-w-53 h-33 text-16 font-extrabold leading-21 rounded-10"
+              >
+                <span class="font-extrabold text-16 leading-0"> 클릭</span>
+              </div>
+            </div>
+            <!-- 도호쿠 -->
+            <div
+              onclick="contentUtil.setPopup(4);"
+              class="absolute z-10 flex gap-4 cursor-pointer left-508 top-203"
+            >
+              <div
+                class="bg-[#B4D8EB] border-[#388AB0] border-3 flex justify-center items-center min-w-53 h-33 text-16 font-extrabold leading-21 rounded-10"
+              >
+                <span class="font-extrabold text-16 leading-0"> 클릭</span>
+              </div>
+            </div>
+            <!-- 칸토 -->
+            <div
+              onclick="contentUtil.setPopup(5);"
+              class="absolute z-10 flex gap-4 cursor-pointer left-495 top-358"
+            >
+              <div
+                class="bg-[#CFE8BF] border-[#457426] border-3 flex justify-center items-center min-w-53 h-33 text-16 font-extrabold leading-21 rounded-10"
+              >
+                <span class="font-extrabold text-16 leading-0"> 클릭</span>
+              </div>
+            </div>
+            <!-- 시고쿠 -->
+            <div
+              onclick="contentUtil.setPopup(6);"
+              class="absolute z-10 flex gap-4 cursor-pointer left-288 top-452"
+            >
+              <div
+                class="bg-[#F7D1C1] border-[#A53D0A] border-3 flex justify-center items-center min-w-53 h-33 text-16 font-extrabold leading-21 rounded-10"
+              >
+                <span class="font-extrabold text-16 leading-0"> 클릭</span>
+              </div>
+            </div>
+            <!-- 오키나와 -->
+            <div
+              onclick="contentUtil.setPopup(7);"
+              class="absolute z-10 flex gap-4 cursor-pointer right-376 bottom-67"
+            >
+              <div
+                class="bg-[#E9D1E2] border-[#8A507B] border-3 flex justify-center items-center min-w-53 h-33 text-16 font-extrabold leading-21 rounded-10"
+              >
+                <span class="font-extrabold text-16 leading-0"> 클릭</span>
+              </div>
+            </div>
+            <!-- 큐슈 -->
+            <div
+              onclick="contentUtil.setPopup(8);"
+              class="absolute z-10 flex gap-4 cursor-pointer left-176 bottom-12"
+            >
+              <div
+                class="bg-[#F6C0CA] border-[#EC7F90] border-3 flex justify-center items-center min-w-53 h-33 text-16 font-extrabold leading-21 rounded-10"
+              >
+                <span class="font-extrabold text-16 leading-0"> 클릭</span>
+              </div>
+            </div>
+            <!-- 쥬고쿠 -->
+            <div
+              onclick="contentUtil.setPopup(9);"
+              class="absolute z-10 flex gap-4 cursor-pointer left-217 bottom-105"
+            >
+              <div
+                class="bg-[#F0BD43] border-[#C69109] border-3 flex justify-center items-center min-w-53 h-33 text-16 font-extrabold leading-21 rounded-10"
+              >
+                <span class="font-extrabold text-16 leading-0"> 클릭</span>
+              </div>
+            </div>
+            <!-- 킨키 -->
+            <div
+              onclick="contentUtil.setPopup(10);"
+              class="absolute z-10 flex gap-4 cursor-pointer left-383 bottom-62"
+            >
+              <div
+                class="bg-[#FDF28A] border-[#F0D40C] border-3 flex justify-center items-center min-w-53 h-33 text-16 font-extrabold leading-21 rounded-10"
+              >
+                <span class="font-extrabold text-16 leading-0"> 클릭</span>
+              </div>
+            </div>
+            <!-- 주부 -->
+            <div
+              onclick="contentUtil.setPopup(11);"
+              class="absolute z-10 flex gap-4 cursor-pointer left-369 bottom-195"
+            >
+              <div
+                class="bg-[#D9E880] border-[#7E9907] border-3 flex justify-center items-center min-w-53 h-33 text-16 font-extrabold leading-21 rounded-10"
+              >
+                <span class="font-extrabold text-16 leading-0"> 클릭</span>
+              </div>
+            </div>
+
+            <!-- 양쪽 버튼 -->
+            <div
+              class="absolute flex flex-col items-start gap-16 top-80 left-20"
+            >
+              <!-- ------- -->
+              <button
+                data-audio="0_01_05/160-09.mp3"
+                class="bg-[#9FBF4E] flex items-center justify-center px-8 h-60 font-medium f-noto rounded-4"
+              >
+                <span class="me-10">中部</span>ちゅうぶ
+              </button>
+              <!-- ------- -->
+              <button
+                data-audio="0_01_05/160-27.mp3"
+                class="bg-[#ECD248] flex items-center justify-center px-8 h-60 font-medium f-noto rounded-4"
+              >
+                <span class="me-10">近畿</span>きんき
+              </button>
+              <!-- ------- -->
+              <button
+                data-audio="0_01_05/160-35.mp3"
+                class="bg-[#D2953E] flex items-center justify-center px-8 h-60 font-medium f-noto rounded-4"
+              >
+                <span class="me-10">中国</span
+                ><span class="tracking-[-0.1em]">ちゅうごく</span>
+              </button>
+              <!-- ------- -->
+              <button
+                data-audio="0_01_05/160-46.mp3"
+                class="bg-[#D6949C] flex items-center justify-center px-8 h-60 font-medium f-noto rounded-4"
+              >
+                <span class="me-10">九州</span
+                ><span class="tracking-[-0.15em]">きゅうしゅう</span>
+              </button>
+            </div>
+            <div
+              class="absolute flex flex-col items-end gap-16 top-80 right-20"
+            >
+              <!-- ------- -->
+              <button
+                data-audio="0_01_05/160-01.mp3"
+                class="bg-[#78BCD3] flex items-center justify-center px-8 h-60 font-medium f-noto rounded-4"
+              >
+                <span class="me-10">北海道</span>ほっかいどう
+              </button>
+              <!-- ------- -->
+              <button
+                data-audio="0_01_05/160-02.mp3"
+                class="bg-[#5190B2] flex items-center justify-center px-8 h-60 font-medium f-noto rounded-4"
+              >
+                <span class="me-10">東北</span>とうほく
+              </button>
+              <!-- ------- -->
+              <button
+                data-audio="0_01_05/160-19.mp3"
+                class="bg-[#6EA84D] flex items-center justify-center px-8 h-60 font-medium f-noto rounded-4"
+              >
+                <span class="me-10">関東</span>かんとう
+              </button>
+              <!-- ------- -->
+              <button
+                data-audio="0_01_05/160-41.mp3"
+                class="bg-[#BF4D2E] flex items-center justify-center px-8 h-60 font-medium f-noto rounded-4"
+              >
+                <span class="me-10">四国</span>しこく
+              </button>
+              <!-- ------- -->
+              <button
+                data-audio="0_01_05/160-54.mp3"
+                class="bg-[#956593] flex items-center justify-center px-8 h-60 font-medium f-noto rounded-4"
+              >
+                <span class="me-10">沖縄</span>おきなわ
+              </button>
+            </div>
+          </div>
+          <!-- pagination -->
+          <div
+            class="absolute -translate-x-1/2 left-1/2 bottom-10"
+            data-name="pagination"
+          >
+            <button class="active" data-name="btn-pagination"></button>
+            <button class="" data-name="btn-pagination"></button>
+            <button class="" data-name="btn-pagination"></button>
+            <button class="" data-name="btn-pagination"></button>
+            <button class="" data-name="btn-pagination"></button>
+          </div>
+        </div>
+      </div>
+      <!-- popup -->
+      <div id="popup-wrap" style="display: none">
+        <!-- 보충 자료 -->
+        <div data-name="popup" data-popup="1" style="display: none">
+          <div data-name="popup-header">
+            <div data-name="popup-title">보충 자료</div>
+            <button
+              data-name="popup-close"
+              onclick="contentUtil.setPopup()"
+            ></button>
+          </div>
+          <div data-name="popup-body" class="mt-16 mb-10 ms-26 f-nanum-s me-6">
+            <div class="flex flex-col">
+              <!-- title -->
+              <div class="flex items-center h-55">
+                <img
+                  src="./../common/images/popup_titlemark_primary.svg"
+                  alt=""
+                  class="w-35 h-55 me-10"
+                />
+                <div class="flex font-extrabold text-42 text-[#41674B]">
+                  가나의 한글 표기
+                </div>
+              </div>
+              <!-- text -->
+              <div class="mb-10 font-bold f-nanum-s text-40 leading-52">
+                <p class="flex pt-12">
+                  ‘<span class="font-medium f-noto">
+                    <span class="relative"
+                      >都<span class="ruby">と</span>
+                    </span></span
+                  >’와 ‘<span class="font-medium f-noto">
+                    <span class="relative"
+                      >県<span class="ruby">けん</span></span
+                    > </span
+                  >’을 ‘도’와 ‘겐’으로 읽은 것은 ‘<span
+                    class="font-medium f-noto"
+                    >た</span
+                  >행’과 ‘<span class="font-medium f-noto">か</span>행’ 등은
+                </p>
+                <p>어두에 올 때 ‘ㄷ’과 ‘ㄱ’으로 표기하기 때문이다.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 사진 팝업창 -->
+        <div data-name="popup" data-popup="2" style="display: none">
+          <div data-name="popup-header">
+            <div data-name="popup-title">사진 팝업창</div>
+            <button
+              data-name="popup-close"
+              onclick="contentUtil.setPopup()"
+            ></button>
+          </div>
+          <div
+            data-name="popup-body"
+            class="flex items-center justify-center w-full h-full gap-16"
+          >
+            <div
+              class="flex flex-col items-center w-730 h-400"
+              data-name="popup_photo_wrap"
+            >
+              <div class="w-full overflow-x-hidden overflow-y-auto pe-4">
+                <img
+                  src="./images/0_01_05/popup_photo1.jpg"
+                  alt=""
+                  class="object-contain w-full rounded-10"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 지리 팝업 1 -->
+        <div data-name="popup" data-popup="3" style="display: none">
+          <div data-name="popup-header">
+            <div data-name="popup-title">지리 팝업</div>
+            <button
+              data-name="popup-close"
+              onclick="contentUtil.setPopup()"
+            ></button>
+          </div>
+          <div data-name="popup-body" class="mt-16 mb-10 ms-26 f-nanum-s me-6">
+            <div
+              class="flex items-start gap-20 font-medium f-noto text-40 leading-52"
+            >
+              <!-- list -->
+              <div class="w-462 bg-[#78BCD3] flex flex-col p-20 items-center">
+                <div data-audio="0_01_05/160-01.mp3" class="mb-20">
+                  <span class="me-10">北海道</span><span>ほっかいどう</span>
+                </div>
+                <div class="flex flex-col w-full gap-20 p-10 bg-white">
+                  <div class="flex">
+                    <div
+                      class="w-12 h-12 mt-20 bg-black rounded-full shrink-0 me-10"
+                    ></div>
+                    <div data-audio="0_01_05/160-01.mp3" class="bg-[#AADEF0]">
+                      <span class="me-20">北海道</span><span>ほっかいどう</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- map -->
+              <div class="relative w-420 h-390">
+                <img
+                  src="./images/0_01_05/popup_img1.jpg"
+                  alt=""
+                  class="w-full h-full"
+                />
+                <div
+                  data-audio="0_01_05/160-01.mp3"
+                  class="absolute flex items-center justify-center w-270 h-78 top-170 left-104"
+                >
+                  ほっかいどう
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 지리 팝업 2 -->
+        <div data-name="popup" data-popup="4" style="display: none">
+          <div data-name="popup-header">
+            <div data-name="popup-title">지리 팝업</div>
+            <button
+              data-name="popup-close"
+              onclick="contentUtil.setPopup()"
+            ></button>
+          </div>
+          <div data-name="popup-body" class="mt-16 mb-10 ms-26 f-nanum-s me-6">
+            <div
+              class="flex items-start gap-20 font-medium f-noto text-40 leading-52"
+            >
+              <!-- list -->
+              <div class="w-454 bg-[#5190B2] flex flex-col p-20 items-center">
+                <div data-audio="0_01_05/160-02.mp3" class="mb-20">
+                  <span class="me-10">東北</span><span>とうほく</span>
+                </div>
+                <div class="flex flex-col w-full gap-10">
+                  <!-- ------- -->
+                  <div class="flex p-10 bg-white">
+                    <div
+                      class="w-12 h-12 mt-20 bg-black rounded-full shrink-0 me-10"
+                    ></div>
+                    <div data-audio="0_01_05/160-03.mp3">
+                      <span class="me-20">青森県</span><span>あおもりけん</span>
+                    </div>
+                  </div>
+                  <!-- ------- -->
+                  <div class="flex p-10 bg-white">
+                    <div
+                      class="w-12 h-12 mt-20 bg-black rounded-full shrink-0 me-10"
+                    ></div>
+                    <div data-audio="0_01_05/160-04.mp3">
+                      <span class="me-20">岩手県</span><span>いわてけん</span>
+                    </div>
+                  </div>
+                  <!-- ------- -->
+                  <div class="flex p-10 bg-white">
+                    <div
+                      class="w-12 h-12 mt-20 bg-black rounded-full shrink-0 me-10"
+                    ></div>
+                    <div data-audio="0_01_05/160-05.mp3">
+                      <span class="me-20">宮城県</span><span>みやぎけん</span>
+                    </div>
+                  </div>
+                  <!-- ------- -->
+                  <div class="flex p-10 bg-white">
+                    <div
+                      class="w-12 h-12 mt-20 bg-black rounded-full shrink-0 me-10"
+                    ></div>
+                    <div data-audio="0_01_05/160-06.mp3">
+                      <span class="me-20">秋田県</span><span>あきたけん</span>
+                    </div>
+                  </div>
+                  <!-- ------- -->
+                  <div class="flex p-10 bg-white">
+                    <div
+                      class="w-12 h-12 mt-20 bg-black rounded-full shrink-0 me-10"
+                    ></div>
+                    <div data-audio="0_01_05/160-07.mp3">
+                      <span class="me-20">山形県</span><span>やまがたけん</span>
+                    </div>
+                  </div>
+                  <!-- ------- -->
+                  <div class="flex p-10 bg-white">
+                    <div
+                      class="w-12 h-12 mt-20 bg-black rounded-full shrink-0 me-10"
+                    ></div>
+                    <div data-audio="0_01_05/160-08.mp3">
+                      <span class="me-20">福島県</span><span>ふくしまけん</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- map -->
+              <div class="relative w-420 h-390">
+                <img
+                  src="./images/0_01_05/popup_img2.jpg"
+                  alt=""
+                  class="w-full h-full"
+                />
+                <div
+                  data-audio="0_01_05/160-56.mp3"
+                  class="absolute text-center text-30 w-118 leading-39 left-174 top-55"
+                >
+                  あおもり
+                </div>
+                <div
+                  data-audio="0_01_05/160-59.mp3"
+                  class="absolute text-center text-30 w-89 leading-39 left-146 top-116"
+                >
+                  あきた
+                </div>
+                <div
+                  data-audio="0_01_05/160-57.mp3"
+                  class="absolute text-center text-30 w-89 leading-39 left-233 top-149"
+                >
+                  いわて
+                </div>
+                <div
+                  data-audio="0_01_05/160-60.mp3"
+                  class="absolute text-center text-30 w-89 leading-39 left-79 top-214"
+                >
+                  やまがた
+                </div>
+                <div
+                  data-audio="0_01_05/160-58.mp3"
+                  class="absolute text-center text-30 w-89 leading-39 left-204 top-232"
+                >
+                  みやぎ
+                </div>
+                <div
+                  data-audio="0_01_05/160-61.mp3"
+                  class="absolute text-center text-30 w-89 leading-39 left-131 top-316"
+                >
+                  ふくしま
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 지리 팝업 3 -->
+        <div data-name="popup" data-popup="5" style="display: none">
+          <div data-name="popup-header">
+            <div data-name="popup-title">지리 팝업</div>
+            <button
+              data-name="popup-close"
+              onclick="contentUtil.setPopup()"
+            ></button>
+          </div>
+          <div data-name="popup-body" class="mt-16 mb-10 ms-26 f-nanum-s me-6">
+            <div
+              class="flex items-start gap-20 font-medium f-noto text-40 leading-52"
+            >
+              <!-- list -->
+              <div class="w-493 bg-[#6EA84D] flex flex-col p-20 items-center">
+                <div data-audio="0_01_05/160-19.mp3" class="mb-20">
+                  <span class="me-10">関東</span><span>かんとう</span>
+                </div>
+                <div class="flex flex-col w-full gap-10">
+                  <!-- ------- -->
+                  <div class="flex p-10 bg-white">
+                    <div
+                      class="w-12 h-12 mt-20 bg-black rounded-full shrink-0 me-10"
+                    ></div>
+                    <div data-audio="0_01_05/160-20.mp3">
+                      <span class="me-20">茨城県</span><span>いばらきけん</span>
+                    </div>
+                  </div>
+                  <!-- ------- -->
+                  <div class="flex p-10 bg-white">
+                    <div
+                      class="w-12 h-12 mt-20 bg-black rounded-full shrink-0 me-10"
+                    ></div>
+                    <div data-audio="0_01_05/160-21.mp3">
+                      <span class="me-20">栃木県</span><span>とちぎけん</span>
+                    </div>
+                  </div>
+                  <!-- ------- -->
+                  <div class="flex p-10 bg-white">
+                    <div
+                      class="w-12 h-12 mt-20 bg-black rounded-full shrink-0 me-10"
+                    ></div>
+                    <div data-audio="0_01_05/160-22.mp3">
+                      <span class="me-20">群馬県</span><span>ぐんまけん</span>
+                    </div>
+                  </div>
+                  <!-- ------- -->
+                  <div class="flex p-10 bg-white">
+                    <div
+                      class="w-12 h-12 mt-20 bg-black rounded-full shrink-0 me-10"
+                    ></div>
+                    <div data-audio="0_01_05/160-23.mp3">
+                      <span class="me-20">埼玉県</span><span>さいたまけん</span>
+                    </div>
+                  </div>
+                  <!-- ------- -->
+                  <div class="flex p-10 bg-white">
+                    <div
+                      class="w-12 h-12 mt-20 bg-black rounded-full shrink-0 me-10"
+                    ></div>
+                    <div data-audio="0_01_05/160-24.mp3">
+                      <span class="me-20">千葉県</span><span>ちばけん</span>
+                    </div>
+                  </div>
+                  <!-- ------- -->
+                  <div class="flex p-10 bg-white">
+                    <div
+                      class="w-12 h-12 mt-20 bg-black rounded-full shrink-0 me-10"
+                    ></div>
+                    <div data-audio="0_01_05/160-25.mp3" class="bg-[#8BD364]">
+                      <span class="me-20">東京都</span><span>とうきょうと</span>
+                    </div>
+                  </div>
+                  <!-- ------- -->
+                  <div class="flex p-10 bg-white">
+                    <div
+                      class="w-12 h-12 mt-20 bg-black rounded-full me-10 shrink-0"
+                    ></div>
+                    <div data-audio="0_01_05/160-26.mp3">
+                      <span class="me-20">神奈川県</span
+                      ><span>かながわけん</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- map -->
+              <div class="relative w-370 h-390">
+                <img
+                  src="./images/0_01_05/popup_img3.jpg"
+                  alt=""
+                  class="w-full h-full"
+                />
+                <div
+                  data-audio="0_01_05/160-72.mp3"
+                  class="absolute text-center text-30 w-89 leading-39 left-181 top-67"
+                >
+                  とちぎ
+                </div>
+                <div
+                  data-audio="0_01_05/160-73.mp3"
+                  class="absolute text-center text-30 w-89 leading-39 left-70 top-94"
+                >
+                  ぐんま
+                </div>
+                <div
+                  data-audio="0_01_05/160-71.mp3"
+                  class="absolute text-center text-30 w-118 leading-39 left-241 top-151"
+                >
+                  いばらき
+                </div>
+                <div
+                  data-audio="0_01_05/160-74.mp3"
+                  class="absolute text-center text-30 w-118 leading-39 left-100 top-180"
+                >
+                  さいたま
+                </div>
+                <div
+                  data-audio="0_01_05/160-76.mp3"
+                  class="absolute text-center text-30 w-123 leading-39 left-128 top-228 tracking-[-0.25em]"
+                >
+                  とうきょう
+                </div>
+                <div
+                  data-audio="0_01_05/160-77.mp3"
+                  class="absolute text-center text-30 w-118 leading-39 left-106 top-278"
+                >
+                  かながわ
+                </div>
+                <div
+                  data-audio="0_01_05/160-75.mp3"
+                  class="absolute text-center text-30 w-60 leading-39 left-241 top-288"
+                >
+                  ちば
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 지리 팝업 4 -->
+        <div data-name="popup" data-popup="6" style="display: none">
+          <div data-name="popup-header">
+            <div data-name="popup-title">지리 팝업</div>
+            <button
+              data-name="popup-close"
+              onclick="contentUtil.setPopup()"
+            ></button>
+          </div>
+          <div data-name="popup-body" class="mt-16 mb-10 ms-26 f-nanum-s me-6">
+            <div
+              class="flex items-start gap-20 font-medium f-noto text-40 leading-52"
+            >
+              <!-- list -->
+              <div class="w-453 bg-[#BF4D2E] flex flex-col p-20 items-center">
+                <div data-audio="0_01_05/160-41.mp3" class="mb-20">
+                  <span class="me-10">四国</span><span>しこく</span>
+                </div>
+                <div class="flex flex-col w-full gap-10">
+                  <!-- ------- -->
+                  <div class="flex p-10 bg-white">
+                    <div
+                      class="w-12 h-12 mt-20 bg-black rounded-full shrink-0 me-10"
+                    ></div>
+                    <div data-audio="0_01_05/160-42.mp3">
+                      <span class="me-20">徳島県</span><span>とくしまけん</span>
+                    </div>
+                  </div>
+                  <!-- ------- -->
+                  <div class="flex p-10 bg-white">
+                    <div
+                      class="w-12 h-12 mt-20 bg-black rounded-full shrink-0 me-10"
+                    ></div>
+                    <div data-audio="0_01_05/160-43.mp3">
+                      <span class="me-20">香川県</span><span>かがわけん</span>
+                    </div>
+                  </div>
+                  <!-- ------- -->
+                  <div class="flex p-10 bg-white">
+                    <div
+                      class="w-12 h-12 mt-20 bg-black rounded-full shrink-0 me-10"
+                    ></div>
+                    <div data-audio="0_01_05/160-44.mp3">
+                      <span class="me-20">愛媛県</span><span>えひめけん</span>
+                    </div>
+                  </div>
+                  <!-- ------- -->
+                  <div class="flex p-10 bg-white">
+                    <div
+                      class="w-12 h-12 mt-20 bg-black rounded-full shrink-0 me-10"
+                    ></div>
+                    <div data-audio="0_01_05/160-45.mp3">
+                      <span class="me-20">高知県</span><span>こうちけん</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- map -->
+              <div class="relative w-420 h-390">
+                <img
+                  src="./images/0_01_05/popup_img7.jpg"
+                  alt=""
+                  class="w-full h-full"
+                />
+                <div
+                  data-audio="0_01_05/160-91.mp3"
+                  class="absolute text-center text-30 w-89 leading-39 left-259 top-47"
+                >
+                  かがわ
+                </div>
+                <div
+                  data-audio="0_01_05/160-92.mp3"
+                  class="absolute text-center text-30 w-89 leading-39 left-67 top-136"
+                >
+                  えひめ
+                </div>
+                <div
+                  data-audio="0_01_05/160-90.mp3"
+                  class="absolute text-center text-30 w-117 leading-39 left-282 top-107"
+                >
+                  とくしま
+                </div>
+                <div
+                  data-audio="0_01_05/160-93.mp3"
+                  class="absolute text-center text-30 w-89 leading-39 left-183 top-158"
+                >
+                  こうち
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 지리 팝업 5 -->
+        <div data-name="popup" data-popup="7" style="display: none">
+          <div data-name="popup-header">
+            <div data-name="popup-title">지리 팝업</div>
+            <button
+              data-name="popup-close"
+              onclick="contentUtil.setPopup()"
+            ></button>
+          </div>
+          <div data-name="popup-body" class="mt-16 mb-10 ms-26 f-nanum-s me-6">
+            <div
+              class="flex items-start gap-20 font-medium f-noto text-40 leading-52"
+            >
+              <!-- list -->
+              <div class="w-462 bg-[#956593] flex flex-col p-20 items-center">
+                <div data-audio="0_01_05/160-54.mp3" class="mb-20">
+                  <span class="me-10">沖縄</span><span>おきなわ</span>
+                </div>
+                <div class="flex flex-col w-full gap-10">
+                  <!-- ------- -->
+                  <div class="flex p-10 bg-white">
+                    <div
+                      class="w-12 h-12 mt-20 bg-black rounded-full shrink-0 me-10"
+                    ></div>
+                    <div data-audio="0_01_05/160-55.mp3">
+                      <span class="me-20">沖縄県</span><span>おきなわけん</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- map -->
+              <div class="relative w-380 h-408">
+                <img
+                  src="./images/0_01_05/popup_img9.png"
+                  alt=""
+                  class="w-full h-full"
+                />
+                <div
+                  data-audio="0_01_05/160-54.mp3"
+                  class="absolute text-center text-30 w-118 leading-39 left-131 top-165"
+                >
+                  おきなわ
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 지리 팝업 6 -->
+        <div data-name="popup" data-popup="8" style="display: none">
+          <div data-name="popup-header">
+            <div data-name="popup-title">지리 팝업</div>
+            <button
+              data-name="popup-close"
+              onclick="contentUtil.setPopup()"
+            ></button>
+          </div>
+          <div data-name="popup-body" class="mt-16 mb-10 ms-26 f-nanum-s me-6">
+            <div
+              class="flex items-start gap-20 font-medium f-noto text-40 leading-52"
+            >
+              <!-- list -->
+              <div class="w-493 bg-[#D6949C] flex flex-col p-20 items-center">
+                <div data-audio="0_01_05/160-46.mp3" class="mb-20">
+                  <span class="me-10">九州</span><span>きゅうしゅう</span>
+                </div>
+                <div class="flex flex-col w-full gap-10">
+                  <!-- ------- -->
+                  <div class="flex p-10 bg-white">
+                    <div
+                      class="w-12 h-12 mt-20 bg-black rounded-full shrink-0 me-10"
+                    ></div>
+                    <div data-audio="0_01_05/160-47.mp3">
+                      <span class="me-20">福岡県</span><span>ふくおかけん</span>
+                    </div>
+                  </div>
+                  <!-- ------- -->
+                  <div class="flex p-10 bg-white">
+                    <div
+                      class="w-12 h-12 mt-20 bg-black rounded-full shrink-0 me-10"
+                    ></div>
+                    <div data-audio="0_01_05/160-48.mp3">
+                      <span class="me-20">佐賀県</span><span>さがけん</span>
+                    </div>
+                  </div>
+                  <!-- ------- -->
+                  <div class="flex p-10 bg-white">
+                    <div
+                      class="w-12 h-12 mt-20 bg-black rounded-full shrink-0 me-10"
+                    ></div>
+                    <div data-audio="0_01_05/160-49.mp3">
+                      <span class="me-20">長崎県</span><span>ながさきけん</span>
+                    </div>
+                  </div>
+                  <!-- ------- -->
+                  <div class="flex p-10 bg-white">
+                    <div
+                      class="w-12 h-12 mt-20 bg-black rounded-full shrink-0 me-10"
+                    ></div>
+                    <div data-audio="0_01_05/160-50.mp3">
+                      <span class="me-20">熊本県</span><span>くまもとけん</span>
+                    </div>
+                  </div>
+                  <!-- ------- -->
+                  <div class="flex p-10 bg-white">
+                    <div
+                      class="w-12 h-12 mt-20 bg-black rounded-full shrink-0 me-10"
+                    ></div>
+                    <div data-audio="0_01_05/160-51.mp3">
+                      <span class="me-20">大分県</span><span>おおいたけん</span>
+                    </div>
+                  </div>
+                  <!-- ------- -->
+                  <div class="flex p-10 bg-white">
+                    <div
+                      class="w-12 h-12 mt-20 bg-black rounded-full shrink-0 me-10"
+                    ></div>
+                    <div data-audio="0_01_05/160-52.mp3">
+                      <span class="me-20">宮崎県</span><span>みやざきけん</span>
+                    </div>
+                  </div>
+                  <!-- ------- -->
+                  <div class="flex p-10 bg-white">
+                    <div
+                      class="w-12 h-12 mt-20 bg-black rounded-full shrink-0 me-10"
+                    ></div>
+                    <div data-audio="0_01_05/160-53.mp3">
+                      <span class="me-20">鹿児島県</span
+                      ><span>かごしまけん</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- map -->
+              <div class="relative w-382 h-408">
+                <img
+                  src="./images/0_01_05/popup_img8.jpg"
+                  alt=""
+                  class="w-full h-full"
+                />
+                <div
+                  data-audio="0_01_05/160-94.mp3"
+                  class="absolute text-center text-30 w-118 leading-39 left-110 top-27"
+                >
+                  ふくおか
+                </div>
+                <div
+                  data-audio="0_01_05/160-95.mp3"
+                  class="absolute text-center text-30 w-60 leading-39 left-91 top-70"
+                >
+                  さが
+                </div>
+                <div
+                  data-audio="0_01_05/160-98.mp3"
+                  class="absolute text-center text-30 w-118 leading-39 left-194 top-84"
+                >
+                  おおいた
+                </div>
+                <div
+                  data-audio="0_01_05/160-96.mp3"
+                  class="absolute text-center text-30 w-116 leading-39 left-27 top-141"
+                >
+                  ながさき
+                </div>
+                <div
+                  data-audio="0_01_05/160-97.mp3"
+                  class="absolute text-center text-30 w-116 leading-39 left-143 top-150"
+                >
+                  くまもと
+                </div>
+                <div
+                  data-audio="0_01_05/160-100.mp3"
+                  class="absolute text-center text-30 w-118 leading-39 left-215 top-189"
+                >
+                  みやざき
+                </div>
+                <div
+                  data-audio="0_01_05/160-101.mp3"
+                  class="absolute text-center text-30 w-107 leading-39 left-72 top-266"
+                >
+                  かごしま
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 지리 팝업 7 -->
+        <div data-name="popup" data-popup="9" style="display: none">
+          <div data-name="popup-header">
+            <div data-name="popup-title">지리 팝업</div>
+            <button
+              data-name="popup-close"
+              onclick="contentUtil.setPopup()"
+            ></button>
+          </div>
+          <div data-name="popup-body" class="mt-16 mb-10 ms-26 f-nanum-s me-6">
+            <div
+              class="flex items-start gap-20 font-medium f-noto text-40 leading-52"
+            >
+              <!-- list -->
+              <div class="w-453 bg-[#D2953E] flex flex-col p-20 items-center">
+                <div data-audio="0_01_05/160-35.mp3" class="mb-20">
+                  <span class="me-10">中国</span><span>ちゅうごく</span>
+                </div>
+                <div class="flex flex-col w-full gap-10">
+                  <!-- ------- -->
+                  <div class="flex p-10 bg-white">
+                    <div
+                      class="w-12 h-12 mt-20 bg-black rounded-full shrink-0 me-10"
+                    ></div>
+                    <div data-audio="0_01_05/160-36.mp3">
+                      <span class="me-20">鳥取県</span><span>とっとりけん</span>
+                    </div>
+                  </div>
+                  <!-- ------- -->
+                  <div class="flex p-10 bg-white">
+                    <div
+                      class="w-12 h-12 mt-20 bg-black rounded-full shrink-0 me-10"
+                    ></div>
+                    <div data-audio="0_01_05/160-37.mp3">
+                      <span class="me-20">島根県</span><span>しまねけん</span>
+                    </div>
+                  </div>
+                  <!-- ------- -->
+                  <div class="flex p-10 bg-white">
+                    <div
+                      class="w-12 h-12 mt-20 bg-black rounded-full shrink-0 me-10"
+                    ></div>
+                    <div data-audio="0_01_05/160-38.mp3">
+                      <span class="me-20">岡山県</span><span>おかやまけん</span>
+                    </div>
+                  </div>
+                  <!-- ------- -->
+                  <div class="flex p-10 bg-white">
+                    <div
+                      class="w-12 h-12 mt-20 bg-black rounded-full shrink-0 me-10"
+                    ></div>
+                    <div data-audio="0_01_05/160-39.mp3">
+                      <span class="me-20">広島県</span><span>ひろしまけん</span>
+                    </div>
+                  </div>
+                  <!-- ------- -->
+                  <div class="flex p-10 bg-white">
+                    <div
+                      class="w-12 h-12 mt-20 bg-black rounded-full shrink-0 me-10"
+                    ></div>
+                    <div data-audio="0_01_05/160-40.mp3">
+                      <span class="me-20">山口県</span><span>やまぐちけん</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- map -->
+              <div class="relative w-420 h-390">
+                <img
+                  src="./images/0_01_05/popup_img6.jpg"
+                  alt=""
+                  class="w-full h-full"
+                />
+                <div
+                  data-audio="0_01_05/160-85.mp3"
+                  class="absolute text-center text-30 w-117 leading-39 left-288 top-87"
+                >
+                  とっとり
+                </div>
+                <div
+                  data-audio="0_01_05/160-86.mp3"
+                  class="absolute text-center text-30 w-82 leading-39 left-120 top-151"
+                >
+                  しまね
+                </div>
+                <div
+                  data-audio="0_01_05/160-87.mp3"
+                  class="absolute text-center text-30 w-114 leading-39 left-280 top-162"
+                >
+                  おかやま
+                </div>
+                <div
+                  data-audio="0_01_05/160-88.mp3"
+                  class="absolute text-center text-30 w-116 leading-39 left-169 top-209"
+                >
+                  ひろしま
+                </div>
+                <div
+                  data-audio="0_01_05/160-89.mp3"
+                  class="absolute text-center text-30 w-116 leading-39 left-25 top-261"
+                >
+                  やまぐち
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 지리 팝업 8 -->
+        <div data-name="popup" data-popup="10" style="display: none">
+          <div data-name="popup-header">
+            <div data-name="popup-title">지리 팝업</div>
+            <button
+              data-name="popup-close"
+              onclick="contentUtil.setPopup()"
+            ></button>
+          </div>
+          <div data-name="popup-body" class="mt-16 mb-10 ms-26 f-nanum-s me-6">
+            <div
+              class="flex items-start gap-20 font-medium f-noto text-40 leading-52"
+            >
+              <!-- list -->
+              <div class="w-493 bg-[#ECD248] flex flex-col p-20 items-center">
+                <div data-audio="0_01_05/160-27.mp3" class="mb-20">
+                  <span class="me-10">近畿</span><span>きんき</span>
+                </div>
+                <div class="flex flex-col w-full gap-10">
+                  <!-- ------- -->
+                  <div class="flex bg-white p-10">
+                    <div
+                      class="w-12 h-12 mt-20 bg-black rounded-full shrink-0 me-10"
+                    ></div>
+                    <div data-audio="0_01_05/160-28.mp3">
+                      <span class="me-20">三重県</span><span>みえけん</span>
+                    </div>
+                  </div>
+                  <!-- ------- -->
+                  <div class="flex bg-white p-10">
+                    <div
+                      class="w-12 h-12 mt-20 bg-black rounded-full shrink-0 me-10"
+                    ></div>
+                    <div data-audio="0_01_05/160-29.mp3">
+                      <span class="me-20">滋賀県</span><span>しがけん</span>
+                    </div>
+                  </div>
+                  <!-- ------- -->
+                  <div class="flex bg-white p-10">
+                    <div
+                      class="w-12 h-12 mt-20 bg-black rounded-full shrink-0 me-10"
+                    ></div>
+                    <div data-audio="0_01_05/160-30.mp3" class="bg-[#FCE35D]">
+                      <span class="me-20">京都府</span><span>きょうとふ</span>
+                    </div>
+                  </div>
+                  <!-- ------- -->
+                  <div class="flex bg-white p-10">
+                    <div
+                      class="w-12 h-12 mt-20 bg-black rounded-full shrink-0 me-10"
+                    ></div>
+                    <div data-audio="0_01_05/160-31.mp3" class="bg-[#FCE35D]">
+                      <span class="me-20">大阪府</span><span>おおさかふ</span>
+                    </div>
+                  </div>
+                  <!-- ------- -->
+                  <div class="flex bg-white p-10">
+                    <div
+                      class="w-12 h-12 mt-20 bg-black rounded-full shrink-0 me-10"
+                    ></div>
+                    <div data-audio="0_01_05/160-32.mp3">
+                      <span class="me-20">兵庫県</span><span>ひょうごけん</span>
+                    </div>
+                  </div>
+                  <!-- ------- -->
+                  <div class="flex bg-white p-10">
+                    <div
+                      class="w-12 h-12 mt-20 bg-black rounded-full shrink-0 me-10"
+                    ></div>
+                    <div data-audio="0_01_05/160-33.mp3">
+                      <span class="me-20">奈良県</span><span>ならけん</span>
+                    </div>
+                  </div>
+                  <!-- ------- -->
+                  <div class="flex bg-white p-10">
+                    <div
+                      class="w-12 h-12 mt-20 bg-black rounded-full shrink-0 me-10"
+                    ></div>
+                    <div data-audio="0_01_05/160-34.mp3">
+                      <span class="me-20">和歌山県</span
+                      ><span>わかやまけん</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- map -->
+              <div class="relative w-386 h-390">
+                <img
+                  src="./images/0_01_05/popup_img5.jpg"
+                  alt=""
+                  class="w-full h-full"
+                />
+                <div
+                  data-audio="0_01_05/160-80.mp3"
+                  class="absolute text-center text-30 w-107 leading-39 left-131 top-61"
+                >
+                  きょうと
+                </div>
+                <div
+                  data-audio="0_01_05/160-82.mp3"
+                  class="absolute text-center text-30 w-108 leading-39 left-64 top-114"
+                >
+                  ひょうご
+                </div>
+                <div
+                  data-audio="0_01_05/160-81.mp3"
+                  class="absolute text-center text-30 w-114 leading-39 left-139 top-178"
+                >
+                  おおさか
+                </div>
+                <div
+                  data-audio="0_01_05/160-79.mp3"
+                  class="absolute text-center text-30 w-60 leading-39 left-254 top-92"
+                >
+                  しが
+                </div>
+                <div
+                  data-audio="0_01_05/160-83.mp3"
+                  class="absolute text-center text-30 w-60 leading-39 left-230 top-224"
+                >
+                  なら
+                </div>
+                <div
+                  data-audio="0_01_05/160-78.mp3"
+                  class="absolute text-center text-30 w-60 leading-39 left-306 top-197"
+                >
+                  みえ
+                </div>
+                <div
+                  data-audio="0_01_05/160-84.mp3"
+                  class="absolute text-center text-30 w-116 leading-39 left-147 top-311"
+                >
+                  わかやま
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 지리 팝업 9 -->
+        <div data-name="popup" data-popup="11" style="display: none">
+          <div data-name="popup-header">
+            <div data-name="popup-title">지리 팝업</div>
+            <button
+              data-name="popup-close"
+              onclick="contentUtil.setPopup()"
+            ></button>
+          </div>
+          <div data-name="popup-body" class="mt-16 mb-10 ms-26 f-nanum-s me-6">
+            <div
+              class="flex items-start gap-20 font-medium f-noto text-40 leading-52"
+            >
+              <!-- list -->
+              <div class="w-454 bg-[#9FBF4E] flex flex-col p-20 items-center">
+                <div data-audio="0_01_05/160-09.mp3" class="mb-20">
+                  <span class="me-10">中部</span><span>ちゅうぶ</span>
+                </div>
+                <div class="flex flex-col w-full gap-10">
+                  <!-- ------- -->
+                  <div class="flex p-10 bg-white">
+                    <div
+                      class="w-12 h-12 mt-20 bg-black rounded-full shrink-0 me-10"
+                    ></div>
+                    <div data-audio="0_01_05/160-10.mp3">
+                      <span class="me-20">新潟県</span><span>にいがたけん</span>
+                    </div>
+                  </div>
+                  <!-- ------- -->
+                  <div class="flex p-10 bg-white">
+                    <div
+                      class="w-12 h-12 mt-20 bg-black rounded-full shrink-0 me-10"
+                    ></div>
+                    <div data-audio="0_01_05/160-11.mp3">
+                      <span class="me-20">富山県</span><span>とやまけん</span>
+                    </div>
+                  </div>
+                  <!-- ------- -->
+                  <div class="flex p-10 bg-white">
+                    <div
+                      class="w-12 h-12 mt-20 bg-black rounded-full shrink-0 me-10"
+                    ></div>
+                    <div data-audio="0_01_05/160-12.mp3">
+                      <span class="me-20">石川県</span><span>いしかわけん</span>
+                    </div>
+                  </div>
+                  <!-- ------- -->
+                  <div class="flex p-10 bg-white">
+                    <div
+                      class="w-12 h-12 mt-20 bg-black rounded-full shrink-0 me-10"
+                    ></div>
+                    <div data-audio="0_01_05/160-13.mp3">
+                      <span class="me-20">福井県</span><span>ふくいけん</span>
+                    </div>
+                  </div>
+                  <!-- ------- -->
+                  <div class="flex p-10 bg-white">
+                    <div
+                      class="w-12 h-12 mt-20 bg-black rounded-full shrink-0 me-10"
+                    ></div>
+                    <div data-audio="0_01_05/160-14.mp3">
+                      <span class="me-20">山梨県</span><span>やまなしけん</span>
+                    </div>
+                  </div>
+                  <!-- ------- -->
+                  <div class="flex p-10 bg-white">
+                    <div
+                      class="w-12 h-12 mt-20 bg-black rounded-full shrink-0 me-10"
+                    ></div>
+                    <div data-audio="0_01_05/160-15.mp3">
+                      <span class="me-20">長野県</span><span>ながのけん</span>
+                    </div>
+                  </div>
+                  <!-- ------- -->
+                  <div class="flex p-10 bg-white">
+                    <div
+                      class="w-12 h-12 mt-20 bg-black rounded-full shrink-0 me-10"
+                    ></div>
+                    <div data-audio="0_01_05/160-16.mp3">
+                      <span class="me-20">岐阜県</span><span>ぎふけん</span>
+                    </div>
+                  </div>
+                  <!-- ------- -->
+                  <div class="flex p-10 bg-white">
+                    <div
+                      class="w-12 h-12 mt-20 bg-black rounded-full shrink-0 me-10"
+                    ></div>
+                    <div data-audio="0_01_05/160-17.mp3">
+                      <span class="me-20">静岡県</span><span>しずおかけん</span>
+                    </div>
+                  </div>
+                  <!-- ------- -->
+                  <div class="flex p-10 bg-white">
+                    <div
+                      class="w-12 h-12 mt-20 bg-black rounded-full shrink-0 me-10"
+                    ></div>
+                    <div data-audio="0_01_05/160-18.mp3">
+                      <span class="me-20">愛知県</span><span>あいちけん</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- map -->
+              <div class="relative w-407 h-390">
+                <img
+                  src="./images/0_01_05/popup_img4.jpg"
+                  alt=""
+                  class="w-full h-full"
+                />
+                <div
+                  data-audio="0_01_05/160-62.mp3"
+                  class="absolute text-center text-30 w-118 leading-39 left-235 top-89"
+                >
+                  にいがた
+                </div>
+                <div
+                  data-audio="0_01_05/160-63.mp3"
+                  class="absolute text-center text-30 w-89 leading-39 left-141 top-160 tracking-[-0.2em]"
+                >
+                  とやま
+                </div>
+                <div
+                  data-audio="0_01_05/160-64.mp3"
+                  class="absolute text-center text-30 w-118 leading-39 left-50 top-186 tracking-[-0.12em]"
+                >
+                  いしかわ
+                </div>
+                <div
+                  data-audio="0_01_05/160-67.mp3"
+                  class="absolute text-center text-30 w-89 leading-39 left-212 top-203 tracking-[-0.08em]"
+                >
+                  ながの
+                </div>
+                <div
+                  data-audio="0_01_05/160-65.mp3"
+                  class="absolute text-center text-30 w-89 leading-39 left-46 top-232"
+                >
+                  ふくい
+                </div>
+                <div
+                  data-audio="0_01_05/160-68.mp3"
+                  class="absolute text-center text-30 w-60 leading-39 left-140 top-260"
+                >
+                  ぎふ
+                </div>
+                <div
+                  data-audio="0_01_05/160-66.mp3"
+                  class="absolute text-center text-30 w-104 leading-39 left-249 top-260 tracking-[-0.2em]"
+                >
+                  やまなし
+                </div>
+                <div
+                  data-audio="0_01_05/160-70.mp3"
+                  class="absolute text-center text-30 w-104 leading-39 left-106 top-315 tracking-[-0.12em]"
+                >
+                  あいち
+                </div>
+                <div
+                  data-audio="0_01_05/160-69.mp3"
+                  class="absolute text-center text-30 w-117 leading-39 left-218 top-318 tracking-[-0.05em]"
+                >
+                  しずおか
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript">
+    const page = {
+      isAnswer: false,
+      isVocabulary: false,
+      showAnswer: () => {},
+      hideAnswer: () => {},
+      showVocabulary: () => {},
+    };
+  </script>
+  <script src="./../common/js/tailwind.config.js"></script>
+  <script src="./../common/js/script.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      // contentUtil.setPopup(11);
+
+      $(".pagination_btn").on("click", function () {
+        $(`[data-name="btn-common"]`).hide();
+      });
+      $(`[data-name="btn-pagination"]`).on("click", function () {
+        if ($(this).index() === 4) {
+          $(`[data-name="btn-common"]`).hide();
+        } else {
+          $(`[data-name="btn-common"]`).show();
+        }
+      });
+    });
+  </script>
+</html>

@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>미래엔 일본 문화</title>
+    <script src="./../common/lib/jquery-3.7.1.min.js"></script>
+    <script src="./../common/lib/howler-2.1.3.min.js"></script>
+    <script src="./../common/lib/tailwind.js"></script>
+    <!-- 폰트 -->
+    <link href="./../common/font/suit/suit.css" rel="stylesheet" />
+    <link href="./../common/font/bmjua/bmjua.css" rel="stylesheet" />
+    <link
+      href="./../common/font/nanumsquare/nanumSquare.css"
+      rel="stylesheet"
+    />
+    <link href="./../common/font/notoSansJP/notoSansJP.css" rel="stylesheet" />
+    <link href="../common/css/tailwind.css" rel="stylesheet" />
+    <link href="./../common/css/fontStyle.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div id="wrap">
+      <!-- contents -->
+      <div class="relative flex flex-col w-full h-full pt-60">
+        <!-- title -->
+        <div class="absolute left-0 flex h-50 top-10">
+          <img
+            src="./../common/images/title_getactive.svg"
+            alt="활동하기"
+            class="w-160 me-10"
+          />
+          <span class="f-bmjua text-36 text-[#6773B1] leading-50"
+            >문화 체험 활동</span
+          >
+        </div>
+        <button
+          data-name="btn-common-dark"
+          onclick="contentUtil.setPopup(1)"
+          class="absolute right-111 top-13 min-w-67"
+        >
+          부록
+        </button>
+        <button
+          data-name="btn-common"
+          onclick="contentUtil.setPopup(2); audioPlay(audio, [`./../common/media/mp3/showAnswer.mp3`]);"
+          class="absolute right-0 top-13"
+        >
+          예시 답안
+        </button>
+
+        <!-- main -->
+        <div class="flex-col flex-1 w-full px-20 leading-52 f-nanum-s text-40">
+          <div class="flex mb-10">
+            <img
+              src="./../common/images/label_flower_blue.svg"
+              alt="label"
+              class="w-30 h-52 me-8"
+            />
+            <div class="font-extrabold">
+              <p>일본의 와시쓰를 색칠해 보고 공간별 용도에 대해 말해</p>
+              <p class="flex items-center">
+                봅시다.&nbsp;<span class="leading-42 text-32 text-[#376750]"
+                  >[부록 173쪽]</span
+                >
+              </p>
+            </div>
+          </div>
+          <!-- ======== page 1 ======== -->
+          <div data-name="page" class="flex flex-col w-full">
+            <div class="flex mb-10 font-bold">
+              <div data-name="number-1" class="bg-[#6291CC] me-10"></div>
+              <div>
+                <p class="flex gap-5">
+                  <img src="./images/3_01_40/main_photo1.svg" alt="활동 1" />에
+                  있는 와시쓰를 색칠한다.
+                </p>
+              </div>
+            </div>
+            <div class="flex mb-10 font-bold">
+              <div data-name="number-2" class="bg-[#6291CC] me-10"></div>
+              <div>
+                <p>와시쓰 내부의 명칭을 히라가나로 쓰고, 공간별 용도에</p>
+                <p>대해 친구와 이야기한다.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- popup -->
+      <div id="popup-wrap" style="display: none">
+        <!-- 부록 -->
+        <div data-name="popup" data-popup="1" style="display: none">
+          <div data-name="popup-header">
+            <div data-name="popup-title">부록</div>
+            <button
+              data-name="popup-close"
+              onclick="contentUtil.setPopup()"
+            ></button>
+          </div>
+          <div
+            data-name="popup-body"
+            class="flex items-center justify-center w-full h-full gap-16"
+          >
+            <div
+              class="flex flex-col items-center w-516 h-406"
+              data-name="popup_photo_wrap"
+            >
+              <div class="overflow-hidden w-509 h-400 rounded-10">
+                <img src="./images/3_01_40/popup_photo1.jpg" alt="집안 내부" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 예시 답안 -->
+        <div data-name="popup" data-popup="2" style="display: none">
+          <div data-name="popup-header">
+            <div data-name="popup-title">예시 답안</div>
+            <button
+              data-name="popup-close"
+              onclick="contentUtil.setPopup()"
+            ></button>
+          </div>
+          <div
+            data-name="popup-body"
+            class="flex-1 mt-16 mb-10 ms-26 f-nanum-s me-6"
+          >
+            <div
+              class="relative flex flex-col font-bold text-black text-40 leading-52 f-nanum-s"
+            >
+              <!-- data-audio="048-08.mp3" -->
+              <span class="absolute z-10 font-medium f-noto top-67 left-14"
+                >おしいれ</span
+              >
+              <!-- data-audio="048-02.mp3" -->
+              <span class="absolute z-10 font-medium f-noto top-248 left-30"
+                >たたみ</span
+              >
+              <!-- data-audio="048-05.mp3" -->
+              <span class="absolute z-10 font-medium f-noto top-176 left-727"
+                >しょうじ</span
+              >
+              <!-- data-audio="048-04.mp3" -->
+              <span class="absolute z-10 font-medium f-noto top-62 left-724"
+                >とこのま</span
+              >
+              <div class="flex w-full h-full mb-20 pl-219">
+                <img
+                  class="overflow-hidden w-462 h-363 rounded-10"
+                  src="./images/3_01_40/popup_photo2.jpg"
+                  alt="집안 내부"
+                />
+                <div class="absolute w-183 h-79 top-80 left-530">
+                  <img src="./images/3_01_40/arrow_1.svg" alt="화살표1" />
+                </div>
+                <div class="absolute h-40 left-184 top-90 w-87">
+                  <img src="./images/3_01_40/arrow_2.svg" alt="화살표2" />
+                </div>
+                <div class="absolute h-24 left-649 top-195 w-63">
+                  <img src="./images/3_01_40/arrow_3.svg" alt="화살표3" />
+                </div>
+                <div class="absolute h-32 left-165 top-258 w-220">
+                  <img src="./images/3_01_40/arrow_4.svg" alt="화살표4" />
+                </div>
+
+                <div class="absolute top-57 left-710">
+                  <img src="./images/3_01_40/popup_word3.svg" alt="말풍선1" />
+                </div>
+                <div class="absolute top-171 left-713">
+                  <img src="./images/3_01_40/popup_word2.svg" alt="말풍선2" />
+                </div>
+                <div class="absolute left-0 top-62">
+                  <img src="./images/3_01_40/popup_word1.svg" alt="말풍선3" />
+                </div>
+                <div class="absolute top-243 left-14">
+                  <img src="./images/3_01_40/popup_word4.svg" alt="말풍선4" />
+                </div>
+              </div>
+
+              <!-- 1 -->
+              <div class="font-bold f-nanum-s text-40 leading-52">
+                <div class="flex mb-10">
+                  <div
+                    class="w-12 h-12 mt-20 bg-black rounded-full me-10"
+                  ></div>
+                  <div class="flex leading-52">
+                    <!-- data-audio="048-02.mp3" -->
+                    <p class="flex font-medium f-noto">たたみ</p>
+                    (다다미)
+                  </div>
+                  <span data-name="colon-black">:</span>
+                  <div>
+                    <p>일본의 전통 바닥재로, 다다미를 기준</p>
+                    <p>으로 방의 크기를 말한다.</p>
+                  </div>
+                </div>
+              </div>
+              <!-- 2 -->
+              <div class="font-bold f-nanum-s text-40 leading-52">
+                <div class="flex mb-10">
+                  <div
+                    class="w-12 h-12 mt-20 bg-black rounded-full me-10"
+                  ></div>
+                  <span class="flex">
+                    <!-- data-audio="048-04.mp3" -->
+                    <span class="flex font-medium f-noto">とこのま</span
+                    >(도코노마)
+                  </span>
+                  <span data-name="colon-black">:</span>
+                  <div>
+                    <p>와시쓰에 바닥보다 조금 높게 만든</p>
+                    <p>공간으로, 벽면에 시화나 족자를</p>
+                    <p>걸고 바닥에는 꽃병이나 인형 등을</p>
+                    <p>장식한 곳이다.</p>
+                  </div>
+                </div>
+              </div>
+              <!-- 3 -->
+              <div class="font-bold f-nanum-s text-40 leading-52">
+                <div class="flex mb-10">
+                  <div
+                    class="w-12 h-12 mt-20 bg-black rounded-full me-10"
+                  ></div>
+                  <span class="flex">
+                    <!-- data-audio="048-05.mp3" -->
+                    <span class="flex font-medium f-noto">しょうじ</span>(쇼지)
+                  </span>
+                  <span data-name="colon-black">:</span>
+                  <div>
+                    <p>햇빛이 들어오는 곳에 설치하여 주로</p>
+                    <p>채광 역할을 하는 미닫이 문이다.</p>
+                  </div>
+                </div>
+              </div>
+              <!-- 4 -->
+              <div class="font-bold f-nanum-s text-40 leading-52">
+                <div class="flex mb-10">
+                  <div
+                    class="w-12 h-12 mt-20 bg-black rounded-full me-10"
+                  ></div>
+                  <span class="flex">
+                    <!-- data-audio="048-08.mp3" -->
+                    <span class="flex font-medium f-noto">おいいれ</span
+                    >(오시이레)
+                  </span>
+                  <span data-name="colon-black">:</span>
+                  <div>
+                    <p>붙박이 장으로 이불이나 안 쓰는</p>
+                    <p>살림살이 등이 눈에 뜨지 않게 정리</p>
+                    <p>하고 수납하는 용도로 사용한다.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript">
+    const page = {
+      isAnswer: false,
+      isVocabulary: false,
+      showAnswer: () => {},
+      hideAnswer: () => {},
+      showVocabulary: () => {},
+    };
+  </script>
+  <script src="./../common/js/tailwind.config.js"></script>
+  <script src="./../common/js/script.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      // contentUtil.setPopup(2);
+    });
+  </script>
+</html>

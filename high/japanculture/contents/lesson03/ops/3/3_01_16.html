@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>미래엔 일본 문화</title>
+    <script src="./../common/lib/jquery-3.7.1.min.js"></script>
+    <script src="./../common/lib/howler-2.1.3.min.js"></script>
+    <script src="./../common/lib/tailwind.js"></script>
+    <!-- 폰트 -->
+    <link href="./../common/font/suit/suit.css" rel="stylesheet" />
+    <link href="./../common/font/bmjua/bmjua.css" rel="stylesheet" />
+    <link
+      href="./../common/font/nanumsquare/nanumSquare.css"
+      rel="stylesheet"
+    />
+    <link href="./../common/font/notoSansJP/notoSansJP.css" rel="stylesheet" />
+    <link href="./../common/css/tailwind.css" rel="stylesheet" />
+    <link href="./../common/css/fontStyle.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div id="wrap">
+      <!-- contents -->
+      <div class="relative w-full h-full pt-68">
+        <!-- title -->
+        <img
+          src="./../common/images/title_look_culture3.svg"
+          alt="문화 들여다보기1 주택의 종류와 특징"
+          class="absolute w-605 w-764 h-49 top-10"
+        />
+        <button
+          data-name="btn-common"
+          onclick="contentUtil.setPopup(1)"
+          class="absolute btn_box right-111 top-13"
+        >
+          해설 보기
+        </button>
+        <button
+          data-name="btn-common"
+          onclick="contentUtil.setPopup(2)"
+          class="absolute right-0 btn_box top-13"
+        >
+          보충 자료
+        </button>
+        <!-- main -->
+        <div class="flex flex-col w-full h-full">
+          <div
+            class="flex flex-col w-full mb-8 h-404 f-nanum-s text-40 leading-52 ps-20"
+          >
+            <div class="flex items-center mb-4">
+              <img
+                src="./../common/images/index_pink_3.svg"
+                alt="번호 3"
+                class="w-40 h-40 me-4"
+              />
+              <span class="font-extrabold">주택 임대</span>
+            </div>
+            <div class="flex">
+              <div data-name="number-1" class="bg-[#C84935]"></div>
+              <span class="text-[#C84935] font-extrabold">주택 임대하기</span>
+            </div>
+            <!-- ======== page 1 ======== -->
+            <div data-name="page" class="flex flex-col mt-4 font-bold">
+              <div>
+                <p class="ps-28">
+                  일본은 주택을 임대할 때 전세 제도가 없고 월세만 있다. 또한
+                </p>
+              </div>
+              <p>일본만의 독자적인 관습이 있어 집을 구할 때 초기 비용이 많이</p>
+              <p>드는 편이다.</p>
+            </div>
+            <!-- ======== page 2 ======== -->
+            <div
+              style="display: none"
+              data-name="page"
+              class="flex flex-col mt-4 font-bold"
+            >
+              <div class="px-10 w-fit bg-[#FCF0D7] font-extrabold mb-10 flex">
+                월세(<span
+                  data-audio="3_01_16/047-01.mp3"
+                  class="font-bold f-noto"
+                  >やちん</span
+                >)
+              </div>
+
+              <p class="ps-28">
+                다세대 주택이나 아파트 등을 빌릴 때 집주인에게 내는
+              </p>
+              <p>돈으로, 보통은 1개월 단위로 지불한다. 집을 관리하고</p>
+              <p>유지하는 관리비나 공유 부분을 관리하는 공익비가 월세에</p>
+              <p>포함된 경우도 있으나 대부분은 별도로 지불한다.</p>
+            </div>
+            <!-- ======== page 3 ======== -->
+            <div
+              style="display: none"
+              data-name="page"
+              class="flex flex-col mt-4 font-bold"
+            >
+              <div class="px-10 w-fit bg-[#FCF0D7] font-extrabold mb-10 flex">
+                보증금(<span
+                  data-audio="3_01_16/047-02.mp3"
+                  class="font-bold f-noto"
+                  >しききん</span
+                >)
+              </div>
+              <p class="flex ps-28">
+                집주인에게 지불하는 일종의 담보로 대개 월세의 1<span
+                  class="font-medium f-noto"
+                  >～</span
+                >2개월
+              </p>
+              <p>분 정도를 지불한다. 이사를 나갈 때 청소비나 수선비를 충당</p>
+              <p>하는데 사용되며, 필요한 경비를 제외하고 돌려받는다.</p>
+            </div>
+            <!-- ======== page 4 ======== -->
+            <div
+              style="display: none"
+              data-name="page"
+              class="flex flex-col mt-4 font-bold"
+            >
+              <div class="px-10 w-fit bg-[#FCF0D7] font-extrabold mb-10 flex">
+                사례금(<span
+                  data-audio="3_01_16/047-03.mp3"
+                  class="font-bold f-noto"
+                  >れいきん</span
+                >)
+              </div>
+              <p class="ps-28">
+                집주인에게 집을 빌려준 것에 대한 감사의 표시로 지불하는
+              </p>
+              <p class="flex">
+                것을 말한다. 월세의 1<span class="font-medium f-noto">～</span
+                >2개월분 정도를 내지만 보증금과
+              </p>
+              <p>달리 돌려받지 못한다.</p>
+            </div>
+          </div>
+
+          <!-- pagination -->
+          <div
+            class="absolute -translate-x-1/2 left-1/2 bottom-10"
+            data-name="pagination"
+          >
+            <button class="active" data-name="btn-pagination"></button>
+            <button class="" data-name="btn-pagination"></button>
+            <button class="" data-name="btn-pagination"></button>
+            <button class="" data-name="btn-pagination"></button>
+          </div>
+        </div>
+      </div>
+      <!-- popup -->
+      <div id="popup-wrap" style="display: none">
+        <!-- 해설 보기 -->
+        <div data-name="popup" data-popup="1" style="display: none">
+          <div data-name="popup-header">
+            <div data-name="popup-title">해설 보기</div>
+            <button
+              data-name="popup-close"
+              onclick="contentUtil.setPopup()"
+            ></button>
+          </div>
+          <div data-name="popup-body" class="mt-16 mb-10 ms-26 f-nanum-s me-10">
+            <!--  popup section 1  -->
+            <div class="flex flex-col mr-14">
+              <!-- title -->
+              <div class="flex items-center mb-10 h-55">
+                <img
+                  src="./../common/images/popup_titlemark_primary.svg"
+                  alt=""
+                  class="w-35 h-55 me-10"
+                />
+                <div
+                  class="flex font-extrabold text-42 text-[#F25F7C] items-baseline"
+                >
+                  보증인
+                </div>
+              </div>
+              <div class="font-bold f-nanum-s text-40 leading-52">
+                <p>보증인은 집을 빌린 사람이 임대료를 체납하거나 집을 훼손</p>
+                <p>했을 때 빌린 사람을 대신해서 변제할 의무가 있는 사람</p>
+                <p>이다. 보증인을 구할 수 없을 때는 임대 보증 회사나 신용</p>
+                <p>카드 결제 등으로 대신할 수도 있다.</p>
+              </div>
+
+              <!-- popup section 2 -->
+              <div class="flex flex-col mt-40">
+                <div class="flex items-center mb-10 h-55">
+                  <img
+                    src="./../common/images/popup_titlemark_primary.svg"
+                    alt=""
+                    class="w-35 h-55 me-10"
+                  />
+                  <div
+                    class="flex font-extrabold text-42 text-[#F25F7C] items-baseline"
+                  >
+                    퇴실 시 수리 의무
+                  </div>
+                </div>
+                <div class="font-bold f-nanum-s text-40 leading-52">
+                  <p>일본 집들은 계약이 종료된 후 퇴실 시 수리에 대한 기준이</p>
+                  <p>굉장히 엄격하다. 작은 얼룩이나 간단한 자국도 수선의</p>
+                  <p>의무가 있기 때문에 이때 보증금에서 수선비를 차감한 후</p>
+                  <p>돌려받는 것이 일반적이다.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 보충 자료 -->
+        <div data-name="popup" data-popup="2" style="display: none">
+          <div data-name="popup-header">
+            <div data-name="popup-title">보충 자료</div>
+            <button
+              data-name="popup-close"
+              onclick="contentUtil.setPopup()"
+            ></button>
+          </div>
+          <div data-name="popup-body" class="mt-16 mb-10 ms-26 f-nanum-s me-6">
+            <div class="flex flex-col">
+              <!-- title -->
+              <div class="flex items-center mb-10 h-55">
+                <img
+                  src="./../common/images/popup_titlemark_primary.svg"
+                  alt=""
+                  class="w-35 h-55 me-10"
+                />
+                <div class="flex font-extrabold text-42 text-[#F25F7C]">
+                  <div>
+                    <p>집주인</p>
+                  </div>
+                </div>
+              </div>
+              <!-- text -->
+              <div class="">
+                <div class="font-bold f-nanum-s text-40 leading-52">
+                  <p class="flex">
+                    집주인을 일본어로 ‘
+                    <span class="font-medium f-noto">
+                      <span class="relative"
+                        >大<span class="ruby">おお</span></span
+                      ><span class="relative"
+                        >家<span class="ruby">や</span></span
+                      >
+                    </span>
+                    ’라고 말하며, 보통 집주인은
+                  </p>
+                  <p>다른 곳에 사는 경우가 많다.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript">
+    const page = {
+      isAnswer: false,
+      isVocabulary: false,
+      showAnswer: () => {},
+      hideAnswer: () => {},
+      showVocabulary: () => {},
+    };
+  </script>
+  <script src="./../common/js/tailwind.config.js"></script>
+  <script src="./../common/js/script.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      // contentUtil.setPopup(2);
+    });
+
+    $(`[data-name="btn-pagination"]`).on("click", function () {
+      if ($(this).index() === 0) {
+        $(`[data-name="btn-common"]`).show();
+      } else {
+        $(`[data-name="btn-common"]`).hide();
+      }
+    });
+  </script>
+</html>

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>미래엔 일본 문화</title>
+    <script src="./../common/lib/jquery-3.7.1.min.js"></script>
+    <script src="./../common/lib/howler-2.1.3.min.js"></script>
+    <script src="./../common/lib/tailwind.js"></script>
+    <!-- 폰트 -->
+    <link href="./../common/font/suit/suit.css" rel="stylesheet" />
+    <link href="./../common/font/bmjua/bmjua.css" rel="stylesheet" />
+    <link
+      href="./../common/font/nanumsquare/nanumSquare.css"
+      rel="stylesheet"
+    />
+    <link href="./../common/font/notoSansJP/notoSansJP.css" rel="stylesheet" />
+    <link href="./../common/css/tailwind.css" rel="stylesheet" />
+    <link href="./../common/css/fontStyle.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div id="wrap">
+      <!-- contents -->
+      <div class="relative w-full h-full pt-68">
+        <!-- title -->
+        <img
+          src="./images/1_01_18/title_theme_2.svg"
+          alt="문화 들여다보기1 주택의 종류와 특징"
+          class="absolute w-528 h-49 top-10"
+        />
+        <!-- 버튼영역 -->
+        <!-- 없음 -->
+
+        <!-- main -->
+        <div class="flex flex-col w-full h-full">
+          <div
+            class="flex flex-col w-full mb-8 h-404 leading-52 ps-20 whitespace-nowrap"
+          >
+            <div class="flex items-center mb-4">
+              <img
+                src="./../common/images/index_pink_1.svg"
+                alt="번호 1"
+                class="w-40 h-40 me-4"
+              />
+
+              <span class="font-extrabold f-nanum-s text-40"
+                >인기 있는 일본 음식</span
+              >
+            </div>
+            <div class="flex mb-4 font-bold f-nanum-s text-40">
+              <div data-name="number-2" class="bg-[#C84935]"></div>
+              <span class="text-[#C84935] font-extrabold flex"
+                >덮밥(<span
+                  data-audio="1_01_20/020-06.mp3"
+                  class="font-extrabold f-noto"
+                  >どんぶり</span
+                >)</span
+              >
+            </div>
+
+            <div class="flex justify-end w-full">
+              <div
+                class="mb-24 w-916 relative h-85 bg-[url(./images/1_01_21/main_text_box_1.svg)] bg-no-repeat bg-contain text-40 font-bold f-nanum-s mr-17"
+              >
+                <div
+                  class="absolute top-0 left-0 flex items-center w-full h-full pt-8 pl-19"
+                >
+                  ‘닭고기계란덮밥’은 일본어로 왜 ‘오야코돈’인가요?
+                </div>
+              </div>
+            </div>
+
+            <!-- 정답 말풍선 -->
+            <div
+              class="ml-5 w-960 relative h-183 bg-[url(./images/1_01_21/main_text_box_2.svg)] bg-no-repeat bg-contain text-40 font-bold f-nanum-s"
+            >
+              <div
+                data-answer="1"
+                class="absolute top-0 left-0 flex items-center justify-end w-full h-full pr-114"
+                style="display: none"
+              >
+                <div>
+                  <p class="flex">
+                    ‘오야(<span
+                      data-audio="1_01_21/020-11.mp3"
+                      class="font-medium f-noto"
+                      >おや</span
+                    >)’는 ‘부모’, ‘코(<span
+                      data-audio="1_01_21/020-12.mp3"
+                      class="font-medium f-noto"
+                      >こ</span
+                    >)’는 ‘자식’이라는
+                  </p>
+                  <p>뜻으로, 닭고기와 계란이 한 그릇에 있어 붙여진</p>
+                  <p>이름이에요.</p>
+                </div>
+              </div>
+              <!-- 정답버튼 -->
+              <button
+                data-reset="1"
+                data-name="btn-common"
+                class="absolute left-0 min-w-101 top-93"
+                onclick="contentUtil.showAnswer(1);"
+              >
+                확인하기
+              </button>
+              <!-- 리셋버튼 -->
+              <button
+                data-answer="1"
+                style="display: none"
+                data-name="btn-common"
+                class="absolute left-0 min-w-101 top-93"
+                onclick="contentUtil.hideAnswer(1)"
+              >
+                다시하기
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- popup -->
+      <div id="popup-wrap" style="display: none">
+        <!-- 없음 -->
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript">
+    const page = {
+      isAnswer: false,
+      isVocabulary: false,
+      showAnswer: () => {},
+      hideAnswer: () => {},
+      showVocabulary: () => {},
+    };
+  </script>
+  <script src="./../common/js/tailwind.config.js"></script>
+  <script src="./../common/js/script.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      // contentUtil.setPopup(3);
+      $(document).ready(function () {
+        $(`[data-name="btn-pagination"]`).on("click", function () {
+          console.log($(this).index());
+          if ($(this).index() === 0) {
+            $(".btn-change-view").hide();
+            $(".btn-change-view-1").show();
+          } else if ($(this).index() === 1) {
+            $(".btn-change-view").hide();
+            $(".btn-change-view-2").show();
+          } else if ($(this).index() === 2) {
+            $(".btn-change-view").hide();
+            $(".btn-change-view-4").show();
+            $(".btn-change-view-5").show();
+          } else if ($(this).index() === 3) {
+            $(".btn-change-view").hide();
+            $(".btn-change-view-6").show();
+          } else if ($(this).index() === 4) {
+            $(".btn-change-view").hide();
+            $(".btn-change-view-7").show();
+          }
+        });
+      });
+    });
+  </script>
+</html>

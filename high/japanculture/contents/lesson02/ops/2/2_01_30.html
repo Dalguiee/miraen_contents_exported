@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>미래엔 일본 문화</title>
+    <script src="./../common/lib/jquery-3.7.1.min.js"></script>
+    <script src="./../common/lib/howler-2.1.3.min.js"></script>
+    <script src="./../common/lib/tailwind.js"></script>
+    <!-- 폰트 -->
+    <link href="./../common/font/suit/suit.css" rel="stylesheet" />
+    <link href="./../common/font/bmjua/bmjua.css" rel="stylesheet" />
+    <link
+      href="./../common/font/nanumsquare/nanumSquare.css"
+      rel="stylesheet"
+    />
+    <link href="./../common/font/notoSansJP/notoSansJP.css" rel="stylesheet" />
+    <link href="./../common/css/tailwind.css" rel="stylesheet" />
+    <link href="./../common/css/fontStyle.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div id="wrap">
+      <!-- contents -->
+      <div class="relative w-full h-full pt-70">
+        <!-- ======== page 1 ======== -->
+        <div class="w-full h-full" data-name="page">
+          <!-- title -->
+          <div class="absolute left-0 flex items-center h-50 top-12">
+            <img
+              src="./../common/images/title_culture_plus.svg"
+              alt="문화 +"
+              class="w-111 h-44 me-10"
+            />
+            <span class="f-bmjua text-40 text-[#E96264] leading-44 me-20"
+              >기모노와 유카타 비교</span
+            >
+            <img
+              src="./images/2_01_30/subtitle_kimono.svg"
+              alt="기모노"
+              class="-mt-2 w124 h-54"
+            />
+          </div>
+          <!-- header-btn -->
+          <div
+            class="absolute right-0 flex gap-6 top-13"
+            data-name="header-btn"
+          >
+            <button data-name="btn-common" onclick="contentUtil.setPopup(3)">
+              해설 보기
+            </button>
+          </div>
+          <!-- main -->
+          <div class="flex flex-col w-full h-full">
+            <div
+              class="flex flex-col w-full px-20 mb-8 font-bold h-404 leading-52 text-40 f-nanum-s"
+            >
+              <div class="w-full flex flex-col p-20 rounded-10 bg-[#FDEFF2]">
+                <div class="mb-10">
+                  <p>
+                    격식을 갖춰야 할 자리에서 입는 기모노는 주로 비단 소재로
+                  </p>
+                  <p>되어 있어서 값이 비싸며 입는 방법도 어렵다.</p>
+                </div>
+                <!-- imgbox -->
+                <div class="relative mx-auto w-912">
+                  <img
+                    src="./images/2_01_30/main_img1.png"
+                    alt=""
+                    class="object-contain w-full"
+                  />
+                  <button
+                    data-name="btn-view"
+                    class="absolute bottom-10 left-117"
+                    onclick="contentUtil.setPopup(1); contentUtil.setPhotoPopup(1);"
+                  ></button>
+                  <button
+                    data-name="btn-view"
+                    class="absolute bottom-74 right-473"
+                    onclick="contentUtil.setPopup(1); contentUtil.setPhotoPopup(2);"
+                  ></button>
+                  <button
+                    data-name="btn-view"
+                    class="absolute bottom-74 right-232"
+                    onclick="contentUtil.setPopup(1); contentUtil.setPhotoPopup(3);"
+                  ></button>
+                  <button
+                    data-name="btn-view"
+                    class="absolute bottom-69 right-10"
+                    onclick="contentUtil.setPopup(1); contentUtil.setPhotoPopup(4);"
+                  ></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ======== page 2 ======== -->
+        <div class="w-full h-full" data-name="page" style="display: none">
+          <!-- title -->
+          <div class="absolute left-0 flex items-center h-50 top-12">
+            <img
+              src="./../common/images/title_culture_plus.svg"
+              alt="문화 +"
+              class="w-111 h-44 me-10"
+            />
+            <span class="f-bmjua text-40 text-[#E96264] leading-50 me-20"
+              >기모노와 유카타 비교</span
+            >
+            <img
+              src="./images/2_01_30/subtitle_yukata.svg"
+              alt="유카타"
+              class="-mt-2 w124 h-54"
+            />
+          </div>
+          <button
+            data-name="btn-common"
+            onclick="contentUtil.setPopup(3)"
+            class="absolute right-0 top-13"
+          >
+            해설 보기
+          </button>
+          <!-- main -->
+          <div class="flex flex-col w-full h-full">
+            <div
+              class="flex flex-col w-full px-20 mb-8 font-bold h-404 leading-52 text-40 f-nanum-s"
+            >
+              <div class="w-full flex flex-col p-20 rounded-10 bg-[#FFF6E9]">
+                <span class="mb-10">
+                  <p>여름 축제 때 많이 입는 유카타는 주로 면이나 마 소재로</p>
+                  <p>되어 있어서 값이 저렴하고 입는 방법도 간편하다.</p>
+                </span>
+                <!-- imgbox -->
+                <div class="relative mx-auto w-912">
+                  <img
+                    src="./images/2_01_30/main_img2.png"
+                    alt=""
+                    class="object-contain w-full"
+                  />
+                  <button
+                    data-name="btn-view"
+                    class="absolute bottom-10 left-117"
+                    onclick="contentUtil.setPopup(2); contentUtil.setPhotoPopup(5);"
+                  ></button>
+                  <button
+                    data-name="btn-view"
+                    class="absolute bottom-69 right-10"
+                    onclick="contentUtil.setPopup(2); contentUtil.setPhotoPopup(6);"
+                  ></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- pagination -->
+        <div
+          class="absolute -translate-x-1/2 bottom-10 left-1/2"
+          data-name="pagination"
+        >
+          <button class="active" data-name="btn-pagination"></button>
+          <button class="" data-name="btn-pagination"></button>
+        </div>
+      </div>
+      <!-- popup -->
+      <div id="popup-wrap" style="display: none">
+        <!-- 사진 팝업창 1 -->
+        <div data-name="popup" data-popup="1" style="display: none">
+          <div data-name="popup-header">
+            <div data-name="popup-title">사진 팝업창</div>
+            <button
+              data-name="popup-close"
+              onclick="contentUtil.setPopup()"
+            ></button>
+          </div>
+          <div
+            data-name="popup-body"
+            class="flex items-center justify-center w-full h-full gap-16"
+          >
+            <div
+              class="flex flex-col items-center w-608 h-402"
+              data-name="popup_photo_wrap"
+            >
+              <div class="w-full overflow-x-hidden overflow-y-auto pe-4">
+                <img
+                  src="./images/2_01_30/popup_photo1.jpg"
+                  alt="기모노"
+                  class="object-contain w-full rounded-10"
+                  data-name="popup_photo"
+                />
+                <img
+                  src="./images/2_01_30/popup_photo2.jpg"
+                  alt="기모노 안에 입는 긴 속옷"
+                  class="object-contain min-w-608 rounded-10"
+                  data-name="popup_photo"
+                  style="display: none"
+                />
+                <img
+                  src="./images/2_01_30/popup_photo3.jpg"
+                  alt="다비"
+                  class="object-contain min-w-608 rounded-10"
+                  data-name="popup_photo"
+                  style="display: none"
+                />
+                <img
+                  src="./images/2_01_30/popup_photo4.jpg"
+                  alt="조리"
+                  class="object-contain min-w-608 rounded-10"
+                  data-name="popup_photo"
+                  style="display: none"
+                />
+              </div>
+              <div
+                class="flex mt-8 font-bold f-nanum-s h-52 text-40 leading-52 shrink-0"
+              >
+                <div data-name="popup_photo_text">기모노</div>
+                <div data-name="popup_photo_text" style="display: none">
+                  기모노 안에 입는 긴 속옷
+                </div>
+                <div data-name="popup_photo_text" style="display: none">
+                  다비
+                </div>
+                <div data-name="popup_photo_text" style="display: none">
+                  조리
+                </div>
+              </div>
+            </div>
+            <div class="w-266 h-402">
+              <div class="flex flex-wrap w-full gap-10">
+                <button
+                  data-name="btn-popup_photo"
+                  class="w-128 h-72 active"
+                  onclick="contentUtil.setPhotoPopup(1)"
+                >
+                  <img
+                    src="./images/2_01_30/popup_btn_photo1.jpg"
+                    alt="기모노"
+                  />
+                </button>
+                <button
+                  data-name="btn-popup_photo"
+                  class="w-128 h-72"
+                  onclick="contentUtil.setPhotoPopup(2)"
+                >
+                  <img
+                    src="./images/2_01_30/popup_btn_photo2.jpg"
+                    alt="기모노 안에 입는 긴 속옷"
+                  />
+                </button>
+                <button
+                  data-name="btn-popup_photo"
+                  class="w-128 h-72"
+                  onclick="contentUtil.setPhotoPopup(3)"
+                >
+                  <img src="./images/2_01_30/popup_btn_photo3.jpg" alt="다비" />
+                </button>
+                <button
+                  data-name="btn-popup_photo"
+                  class="w-128 h-72"
+                  onclick="contentUtil.setPhotoPopup(4)"
+                >
+                  <img src="./images/2_01_30/popup_btn_photo4.jpg" alt="조리" />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 사진 팝업창 2 -->
+        <div data-name="popup" data-popup="2" style="display: none">
+          <div data-name="popup-header">
+            <div data-name="popup-title">사진 팝업창</div>
+            <button
+              data-name="popup-close"
+              onclick="contentUtil.setPopup()"
+            ></button>
+          </div>
+          <div
+            data-name="popup-body"
+            class="flex items-center justify-center w-full h-full gap-16"
+          >
+            <div
+              class="flex flex-col items-center w-608 h-402"
+              data-name="popup_photo_wrap"
+            >
+              <div class="w-full overflow-x-hidden overflow-y-auto pe-4">
+                <img
+                  src="./images/2_01_30/popup_photo5.jpg"
+                  alt="유카타"
+                  class="object-contain w-full rounded-10"
+                  data-name="popup_photo"
+                />
+                <img
+                  src="./images/2_01_30/popup_photo6.jpg"
+                  alt="게다"
+                  class="object-contain min-w-608 rounded-10"
+                  data-name="popup_photo"
+                  style="display: none"
+                />
+              </div>
+              <div
+                class="flex mt-8 font-bold f-nanum-s h-52 text-40 leading-52 shrink-0"
+              >
+                <div data-name="popup_photo_text">유카타</div>
+                <div data-name="popup_photo_text" style="display: none">
+                  게다
+                </div>
+              </div>
+            </div>
+            <div class="w-266 h-402">
+              <div class="flex flex-wrap w-full gap-10">
+                <button
+                  data-name="btn-popup_photo"
+                  class="w-128 h-72 active"
+                  onclick="setTimeout(()=>{contentUtil.setPhotoPopup(5)},[0]);"
+                >
+                  <img
+                    src="./images/2_01_30/popup_btn_photo5.jpg"
+                    alt="유카타"
+                  />
+                </button>
+                <button
+                  data-name="btn-popup_photo"
+                  class="w-128 h-72"
+                  onclick="setTimeout(()=>{contentUtil.setPhotoPopup(6)},[0]);"
+                >
+                  <img src="./images/2_01_30/popup_btn_photo6.jpg" alt="게다" />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 해설 보기 -->
+        <div data-name="popup" data-popup="3" style="display: none">
+          <div data-name="popup-header">
+            <div data-name="popup-title">해설 보기</div>
+            <button
+              data-name="popup-close"
+              onclick="contentUtil.setPopup()"
+            ></button>
+          </div>
+          <div data-name="popup-body" class="mt-16 mb-10 f-nanum-s me-6">
+            <div class="flex flex-col">
+              <!-- title -->
+              <div class="flex items-center mb-10 ps-30 h-55">
+                <img
+                  src="./../common/images/popup_titlemark_primary.svg"
+                  alt=""
+                  class="w-35 h-55 me-10"
+                />
+                <div class="flex font-extrabold text-42 text-[#41674B]">
+                  기모노와 유카타 비교
+                </div>
+              </div>
+              <div class="font-bold f-nanum-s text-40 leading-52">
+                <!-- table -->
+                <div class="flex flex-col mx-auto mb-10 w-fit">
+                  <!-- ------------- -->
+                  <div class="flex items-stretch w-fit">
+                    <div
+                      class="flex items-center justify-center h-64 bg-white w-130 shrink-0 rounded-tl-10 border-t-3 border-l-3 border-r-2 border-b-2 border-t-[#A0CDAC] border-l-[#A0CDAC] border-[#B8D7BB]"
+                    >
+                      <span>구분</span>
+                    </div>
+                    <div
+                      class="w-385 h-64 bg-[#F1A3A1] flex items-center justify-center border-t-3 border-r-2 border-b-2 border-[#B8D7BB] border-t-[#A0CDAC]"
+                    >
+                      <span>기모노</span>
+                    </div>
+                    <div
+                      class="w-385 h-64 bg-[#EED68C] flex items-center justify-center rounded-tr-10 border-t-3 border-r-3 border-b-2 border-[#B8D7BB] border-t-[#A0CDAC] border-r-[#A0CDAC]"
+                    >
+                      <span>유카타</span>
+                    </div>
+                  </div>
+                  <!-- ------------- -->
+                  <div class="flex items-stretch w-fit">
+                    <div
+                      class="flex items-center justify-center py-6 bg-white w-130 min-h-116 border-l-3 border-b-2 border-r-2 border-[#B8D7BB] border-l-[#A0CDAC]"
+                    >
+                      <span>소재</span>
+                    </div>
+                    <div
+                      class="flex items-center justify-center py-6 bg-[#FDEFF2] w-385 min-h-116 border-r-2 border-b-2 border-[#B8D7BB]"
+                    >
+                      <div class="text-center">
+                        <p>소재가 두껍고</p>
+                        <p>실크(비단)로</p>
+                        <p>만들어서 비싼 편</p>
+                      </div>
+                    </div>
+                    <div
+                      class="flex items-center justify-center py-6 bg-[#FFF6E9] w-385 min-h-116 border-b-2 border-r-3 border-[#B8D7BB] border-r-[#A0CDAC]"
+                    >
+                      <div class="text-center">
+                        <p>홑겹으로 면이나 마,</p>
+                        <p>폴리에스터로 만들어</p>
+                        <p>저렴한 편</p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- ------------- -->
+                  <div class="flex items-stretch w-fit">
+                    <div
+                      class="flex items-center justify-center py-6 bg-white w-130 min-h-116 border-l-3 border-b-2 border-r-2 border-[#B8D7BB] border-l-[#A0CDAC]"
+                    >
+                      <span>디자인</span>
+                    </div>
+                    <div
+                      class="flex items-center justify-center py-6 bg-[#FDEFF2] w-385 min-h-116 border-r-2 border-b-2 border-[#B8D7BB]"
+                    >
+                      <div class="text-center">
+                        <p>차분하고 고급스러움</p>
+                      </div>
+                    </div>
+                    <div
+                      class="flex items-center justify-center py-6 bg-[#FFF6E9] w-385 min-h-116 border-b-2 border-r-3 border-[#B8D7BB] border-r-[#A0CDAC]"
+                    >
+                      <span>크고 화려한 무늬</span>
+                    </div>
+                  </div>
+                  <!-- ------------- -->
+                  <div class="flex items-stretch w-fit">
+                    <div
+                      class="flex items-center justify-center py-6 bg-white w-130 min-h-116 border-l-3 border-b-2 border-r-2 border-[#B8D7BB] border-l-[#A0CDAC]"
+                    >
+                      <span>소매</span>
+                    </div>
+                    <div
+                      class="flex items-center justify-center py-6 bg-[#FDEFF2] w-385 min-h-116 border-r-2 border-b-2 border-[#B8D7BB]"
+                    >
+                      <div class="text-center">
+                        <p>연령이나 상황에 따라</p>
+                        <p>달라짐</p>
+                      </div>
+                    </div>
+                    <div
+                      class="flex items-center justify-center py-6 bg-[#FFF6E9] w-385 min-h-116 border-b-2 border-r-3 border-[#B8D7BB] border-r-[#A0CDAC]"
+                    >
+                      <span>폭이 50cm 이하</span>
+                    </div>
+                  </div>
+                  <!-- ------------- -->
+                  <div class="flex items-stretch w-fit">
+                    <div
+                      class="flex items-center justify-center py-6 bg-white w-130 min-h-116 border-l-3 border-b-2 border-r-2 border-[#B8D7BB] border-l-[#A0CDAC]"
+                    >
+                      <span>오비</span>
+                    </div>
+                    <div
+                      class="flex items-center justify-center py-6 bg-[#FDEFF2] w-385 min-h-116 border-r-2 border-b-2 border-[#B8D7BB]"
+                    >
+                      <div class="text-center">
+                        <p>격식 있는 오비.</p>
+                        <p>폭이 넓고 길이가 길며,</p>
+                        <p>옷단에 따라 종류나</p>
+                        <p>매는 방법도 다름</p>
+                      </div>
+                    </div>
+                    <div
+                      class="flex items-center justify-center py-6 bg-[#FFF6E9] w-385 min-h-116 border-b-2 border-r-3 border-[#B8D7BB] border-r-[#A0CDAC]"
+                    >
+                      <div class="text-center">
+                        <p>캐주얼한 오비.</p>
+                        <p>폭이 좁고 길이가 짧으며,</p>
+                        <p>오비 매는 방법이</p>
+                        <p>간편하고 종류도 적음</p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- ------------- -->
+                  <div class="flex items-stretch w-fit">
+                    <div
+                      class="flex items-center justify-center py-6 bg-white w-130 min-h-116 border-l-3 border-b-2 border-r-2 border-[#B8D7BB] border-l-[#A0CDAC]"
+                    >
+                      <span>속옷</span>
+                    </div>
+                    <div
+                      class="flex items-center justify-center py-6 bg-[#FDEFF2] w-385 min-h-116 border-r-2 border-b-2 border-[#B8D7BB]"
+                    >
+                      <div class="text-center">
+                        <p>‘나가주반’이라는</p>
+                        <p>긴 속옷을 입음</p>
+                      </div>
+                    </div>
+                    <div
+                      class="flex items-center justify-center py-6 bg-[#FFF6E9] w-385 min-h-116 border-b-2 border-r-3 border-[#B8D7BB] border-r-[#A0CDAC]"
+                    >
+                      <span>긴 속옷을 입지 않음</span>
+                    </div>
+                  </div>
+                  <!-- ------------- -->
+                  <div class="flex items-stretch w-fit">
+                    <div
+                      class="flex items-center justify-center py-6 bg-white w-130 min-h-116 border-l-3 border-b-2 border-r-2 border-[#B8D7BB] border-l-[#A0CDAC]"
+                    >
+                      <span>버선</span>
+                    </div>
+                    <div
+                      class="flex items-center justify-center py-6 bg-[#FDEFF2] w-385 min-h-116 border-r-2 border-b-2 border-[#B8D7BB]"
+                    >
+                      <div class="text-center">
+                        <p>일본식 버선인</p>
+                        <p class="flex">
+                          ‘다비(<span class="font-medium f-noto">たび</span>)’를
+                          신음
+                        </p>
+                      </div>
+                    </div>
+                    <div
+                      class="flex items-center justify-center py-6 bg-[#FFF6E9] w-385 min-h-116 border-b-2 border-r-3 border-[#B8D7BB] border-r-[#A0CDAC]"
+                    >
+                      <span>맨발</span>
+                    </div>
+                  </div>
+                  <!-- ------------- -->
+                  <div class="flex items-stretch w-fit">
+                    <div
+                      class="flex items-center justify-center py-6 bg-white w-130 min-h-116 border-l-3 border-b-2 border-r-2 border-[#B8D7BB] border-l-[#A0CDAC]"
+                    >
+                      <span>신발</span>
+                    </div>
+                    <div
+                      class="flex items-center justify-center py-6 bg-[#FDEFF2] w-385 min-h-116 border-r-2 border-b-2 border-[#B8D7BB]"
+                    >
+                      <span class="flex"
+                        >조리(<span class="font-medium f-noto">ぞうり</span
+                        >)</span
+                      >
+                    </div>
+                    <div
+                      class="flex items-center justify-center py-6 bg-[#FFF6E9] w-385 min-h-116 border-b-2 border-r-3 border-[#B8D7BB] border-r-[#A0CDAC]"
+                    >
+                      <span class="flex"
+                        >게다(<span class="font-medium f-noto">げた</span
+                        >)</span
+                      >
+                    </div>
+                  </div>
+                  <!-- ------------- -->
+                  <div class="flex items-stretch w-fit">
+                    <div
+                      class="flex items-center justify-center py-6 bg-white w-130 min-h-116 border-l-3 border-b-2 border-r-2 border-[#B8D7BB] border-l-[#A0CDAC]"
+                    >
+                      <span>계절</span>
+                    </div>
+                    <div
+                      class="flex items-center justify-center py-6 bg-[#FDEFF2] w-385 min-h-116 border-r-2 border-b-2 border-[#B8D7BB]"
+                    >
+                      <span>주로 가을이나 겨울철</span>
+                    </div>
+                    <div
+                      class="flex items-center justify-center py-6 bg-[#FFF6E9] w-385 min-h-116 border-b-2 border-r-3 border-[#B8D7BB] border-r-[#A0CDAC]"
+                    >
+                      <span>주로 여름철</span>
+                    </div>
+                  </div>
+                  <!-- ------------- -->
+                  <div class="flex items-stretch w-fit">
+                    <div
+                      class="flex items-center justify-center py-6 bg-white w-130 min-h-116 border-l-3 border-b-2 border-r-2 border-[#B8D7BB] border-l-[#A0CDAC]"
+                    >
+                      <span>장소</span>
+                    </div>
+                    <div
+                      class="flex items-center justify-center py-6 bg-[#FDEFF2] w-385 min-h-116 border-r-2 border-b-2 border-[#B8D7BB]"
+                    >
+                      <div class="text-center">
+                        <p>결혼식, 성인식, 설날,</p>
+                        <p>졸업식, 파티 등의</p>
+                        <p>격식을 갖춘 축하 행사</p>
+                      </div>
+                    </div>
+                    <div
+                      class="flex items-center justify-center py-6 bg-[#FFF6E9] w-385 min-h-116 border-b-2 border-r-3 border-[#B8D7BB] border-r-[#A0CDAC]"
+                    >
+                      <div class="text-center">
+                        <p>여름 축제나 불꽃놀이,</p>
+                        <p>온천이나 료칸, 산책</p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- ------------- -->
+                  <div class="flex items-stretch w-fit">
+                    <div
+                      class="flex items-center justify-center py-6 bg-white w-130 min-h-116 border-l-3 border-b-3 border-r-2 border-[#B8D7BB] border-l-[#A0CDAC] border-b-[#A0CDAC] rounded-bl-10"
+                    >
+                      <span>입는 법</span>
+                    </div>
+                    <div
+                      class="flex items-center justify-center py-6 bg-[#FDEFF2] w-385 min-h-116 border-r-2 border-b-3 border-[#B8D7BB] border-b-[#A0CDAC]"
+                    >
+                      <span class="text-center">
+                        <p>혼자서 입기 힘들어</p>
+                        <p>도움을 받음</p>
+                      </span>
+                    </div>
+                    <div
+                      class="flex items-center justify-center py-6 bg-[#FFF6E9] w-385 min-h-116 border-b-3 border-r-3 border-[#B8D7BB] border-r-[#A0CDAC] border-b-[#A0CDAC] rounded-br-10"
+                    >
+                      <div class="text-center">
+                        <p>혼자서 간편하게</p>
+                        <p>입을 수 있음</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript">
+    const page = {
+      isAnswer: false,
+      isVocabulary: false,
+      showAnswer: () => {},
+      hideAnswer: () => {},
+      showVocabulary: () => {},
+    };
+  </script>
+  <script src="./../common/js/tailwind.config.js"></script>
+  <script src="./../common/js/script.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {});
+  </script>
+</html>

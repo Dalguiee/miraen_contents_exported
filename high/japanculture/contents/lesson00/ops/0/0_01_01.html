@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>미래엔 일본 문화</title>
+    <script src="./../common/lib/jquery-3.7.1.min.js"></script>
+    <script src="./../common/lib/howler-2.1.3.min.js"></script>
+    <script src="./../common/lib/tailwind.js"></script>
+    <!-- 폰트 -->
+    <link href="./../common/font/suit/suit.css" rel="stylesheet" />
+    <link href="./../common/font/bmjua/bmjua.css" rel="stylesheet" />
+    <link
+      href="./../common/font/nanumsquare/nanumSquare.css"
+      rel="stylesheet"
+    />
+    <link href="./../common/font/notoSansJP/notoSansJP.css" rel="stylesheet" />
+    <link href="./../common/css/tailwind.css" rel="stylesheet" />
+    <link href="./../common/css/fontStyle.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div id="wrap">
+      <!-- contents -->
+      <div class="relative w-full h-full pt-70">
+        <!-- title -->
+        <img
+          src="./../common/images/title_learnaboutjapan.svg"
+          alt="일본 알아보기"
+          class="absolute h-56 w-244 top-4 left-4"
+        />
+
+        <!-- main -->
+        <div
+          class="flex flex-col w-full h-full font-bold leading-52 text-40 f-nanum-s"
+        >
+          <div class="flex mb-10 ms-20">
+            <img
+              src="./../common/images/number_1.svg"
+              alt="1"
+              class="rounded-full w-34 h-34 mt-9 me-6"
+              style="box-shadow: 2px 0 0 #eaa7a4"
+            />
+            <div class="font-extrabold">
+              '일본' 하면 떠오르는 것에는 무엇이 있을까요?
+            </div>
+          </div>
+          <!-- ======== page 1 ======== -->
+          <div data-name="page" class="flex flex-col">
+            <!-- header-btn -->
+            <div
+              class="absolute right-0 flex gap-6 top-13"
+              data-name="header-btn"
+            >
+              <button data-name="btn-common" onclick="contentUtil.setPopup(1)">
+                해설 보기
+              </button>
+            </div>
+            <!-- img box -->
+            <div class="flex gap-10 mt-20 ms-20">
+              <!-- ------- -->
+              <div class="relative w-184 h-160">
+                <img
+                  src="./images/0_01_01/main_photo1.jpg"
+                  alt=""
+                  class="w-full h-full rounded-10"
+                />
+                <button
+                  data-name="btn-view"
+                  class="absolute right-10 bottom-10"
+                  onclick="contentUtil.setPopup(2); contentUtil.setPhotoPopup(1);"
+                ></button>
+                <img
+                  src="./images/0_01_01/main_label1.svg"
+                  alt="후지산"
+                  class="absolute -translate-x-1/2 translate-y-full left-1/2 w-132 h-60 -bottom-10"
+                />
+              </div>
+              <!-- ------- -->
+              <div class="relative w-184 h-160">
+                <img
+                  src="./images/0_01_01/main_photo2.jpg"
+                  alt=""
+                  class="w-full h-full rounded-10"
+                />
+                <button
+                  data-name="btn-view"
+                  class="absolute right-10 bottom-10"
+                  onclick="contentUtil.setPopup(2); contentUtil.setPhotoPopup(2);"
+                ></button>
+                <img
+                  src="./images/0_01_01/main_label2.svg"
+                  alt="기모노"
+                  class="absolute -translate-x-1/2 translate-y-full left-1/2 w-132 h-60 -bottom-10"
+                />
+              </div>
+              <!-- ------- -->
+              <div class="relative w-184 h-160">
+                <img
+                  src="./images/0_01_01/main_photo3.jpg"
+                  alt=""
+                  class="w-full h-full rounded-10"
+                />
+                <button
+                  data-name="btn-view"
+                  class="absolute right-10 bottom-10"
+                  onclick="contentUtil.setPopup(2); contentUtil.setPhotoPopup(3);"
+                ></button>
+                <img
+                  src="./images/0_01_01/main_label3.svg"
+                  alt="초밥"
+                  class="absolute -translate-x-1/2 translate-y-full left-1/2 w-97 h-60 -bottom-10"
+                />
+              </div>
+              <!-- ------- -->
+              <div class="relative w-184 h-160">
+                <img
+                  src="./images/0_01_01/main_photo4.jpg"
+                  alt=""
+                  class="w-full h-full rounded-10"
+                />
+                <button
+                  data-name="btn-view"
+                  class="absolute right-10 bottom-10"
+                  onclick="contentUtil.setPopup(2); contentUtil.setPhotoPopup(4);"
+                ></button>
+                <img
+                  src="./images/0_01_01/main_label4.svg"
+                  alt="스모"
+                  class="absolute -translate-x-1/2 translate-y-full left-1/2 w-97 h-60 -bottom-10"
+                />
+              </div>
+              <!-- ------- -->
+              <div class="relative w-184 h-160">
+                <img
+                  src="./images/0_01_01/main_photo5.jpg"
+                  alt=""
+                  class="w-full h-full rounded-10"
+                />
+                <button
+                  data-name="btn-view"
+                  class="absolute right-10 bottom-10"
+                  onclick="contentUtil.setPopup(2); contentUtil.setPhotoPopup(5);"
+                ></button>
+                <img
+                  src="./images/0_01_01/main_label5.svg"
+                  alt="지진"
+                  class="absolute -translate-x-1/2 translate-y-full left-1/2 w-97 h-60 -bottom-10"
+                />
+              </div>
+            </div>
+          </div>
+          <!-- ======== page 2 ======== -->
+          <div data-name="page" class="flex flex-col" style="display: none">
+            <div
+              class="ms-20 flex flex-col mb-8 gap-14 relative w-960 h-248 bg-[url(./images/0_01_01/main_bg.svg)] bg-no-repeat bg-cover pt-30 ps-30"
+            >
+              <p class="ps-56">‘일본’ 하면 떠오르는 것을 써 봅시다.</p>
+              <p class="text-red" data-answer="1" style="display: none">
+                만화, 애니메이션, 게임, 다코야키, 오코노미야키, 라면,
+              </p>
+              <p class="text-red" data-answer="1" style="display: none">
+                유카타, 가부키, 마쓰리, 온천, 쓰나미 등
+              </p>
+            </div>
+            <div class="ms-auto me-20">
+              <button
+                data-name="btn-common"
+                data-reset="1"
+                onclick="contentUtil.showAnswer(1)"
+              >
+                예시 답안
+              </button>
+              <button
+                data-name="btn-common"
+                data-answer="1"
+                onclick="contentUtil.hideAnswer(1)"
+                style="display: none"
+              >
+                다시 풀기
+              </button>
+            </div>
+          </div>
+          <!-- pagination -->
+          <div
+            class="absolute -translate-x-1/2 left-1/2 bottom-10"
+            data-name="pagination"
+          >
+            <button class="active" data-name="btn-pagination"></button>
+            <button class="" data-name="btn-pagination"></button>
+          </div>
+        </div>
+      </div>
+      <!-- popup -->
+      <div id="popup-wrap" style="display: none">
+        <!-- 해설 보기 -->
+        <div data-name="popup" data-popup="1" style="display: none">
+          <div data-name="popup-header">
+            <div data-name="popup-title">해설 보기</div>
+            <button
+              data-name="popup-close"
+              onclick="contentUtil.setPopup()"
+            ></button>
+          </div>
+          <div data-name="popup-body" class="mt-16 mb-10 ms-26 f-nanum-s me-6">
+            <div class="flex flex-col">
+              <!-- title -->
+              <div class="flex items-center mb-10 h-55">
+                <img
+                  src="./../common/images/popup_titlemark_primary.svg"
+                  alt=""
+                  class="w-35 h-55 me-10"
+                />
+                <div class="flex font-extrabold text-42 text-[#41674B]">
+                  후지산
+                </div>
+              </div>
+              <!-- text -->
+              <div class="mb-40 font-bold f-nanum-s text-40 leading-52">
+                <p>시즈오카현과 야마니시현에 걸쳐 있는 높이 3,776m의</p>
+                <p class="tracking-[-0.05em]">
+                  일본에서 가장 높은 활화산이다. 현무암으로 이루어진 원뿔
+                </p>
+                <p>모양의 성층화산으로, 일본의 상징이기도 하다. 2013년</p>
+                <p>유네스코 세계 문화유산으로 등재되었다.</p>
+              </div>
+              <!-- title -->
+              <div class="flex items-center mb-10 h-55">
+                <img
+                  src="./../common/images/popup_titlemark_primary.svg"
+                  alt=""
+                  class="w-35 h-55 me-10"
+                />
+                <div class="flex font-extrabold text-42 text-[#41674B]">
+                  기모노
+                </div>
+              </div>
+              <!-- text -->
+              <div class="mb-40 font-bold f-nanum-s text-40 leading-52">
+                <p class="flex">
+                  일본의 전통 의상은 ‘기모노(<span class="font-medium f-noto"
+                    >きもの</span
+                  >)’라고 한다. 설이나
+                </p>
+                <p>성인식, 결혼식 등과 같이 격식을 갖춘 자리에서 입는다.</p>
+                <p class="flex">
+                  허리에 ‘오비(<span class="font-medium f-noto">おび</span
+                  >)’라는 넓은 띠를 매고 일본식 버선에
+                </p>
+                <p class="flex">
+                  ‘조리(<span class="font-medium f-noto">ぞうり</span>)’라는
+                  신발을 신는다. 미혼 여성이 입는
+                </p>
+                <p class="flex">
+                  기모노는 ‘후리소데(<span class="font-medium f-noto"
+                    >ふりそで</span
+                  >)’라고 부른다. ‘후리소데’는
+                </p>
+                <p>소매가 길고 매우 넓으며, 자수나 염색을 이용한 화려한</p>
+                <p>무늬로 장식되어 있다.</p>
+              </div>
+              <!-- title -->
+              <div class="flex items-center mb-10 h-55">
+                <img
+                  src="./../common/images/popup_titlemark_primary.svg"
+                  alt=""
+                  class="w-35 h-55 me-10"
+                />
+                <div class="flex font-extrabold text-42 text-[#41674B]">
+                  초밥
+                </div>
+              </div>
+              <!-- text -->
+              <div class="mb-40 font-bold f-nanum-s text-40 leading-52">
+                <p>초밥은 식초와 설탕으로 간을 한 밥으로 만들며, 만드는</p>
+                <p>방법에 따라 ‘니기리즈시, 오시즈시, 마키즈시, 지라시즈시’</p>
+                <p>등으로 분류한다. 일본에서는 초밥을 손으로 먹기도 한다.</p>
+              </div>
+              <!-- title -->
+              <div class="flex items-center mb-10 h-55">
+                <img
+                  src="./../common/images/popup_titlemark_primary.svg"
+                  alt=""
+                  class="w-35 h-55 me-10"
+                />
+                <div class="flex font-extrabold text-42 text-[#41674B]">
+                  스모
+                </div>
+              </div>
+              <!-- text -->
+              <div class="mb-10 font-bold f-nanum-s text-40 leading-52">
+                <p class="flex">
+                  ‘스모(<span class="font-medium f-noto">すもう</span>)’는
+                  우리나라의 씨름과 비슷한 일본의 전통
+                </p>
+                <p>스포츠로, 프로 스모 경기는 매년 6회, 각 15일간 열린다.</p>
+                <p>스모는 체중 제한이 없는 스포츠로, 상대방을 넘어뜨리거나</p>
+                <p>도효(씨름판) 밖으로 밀쳐내면 승리한다. 씨름과 달리 단판</p>
+                <p>으로 승부가 결정된다.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 사진 팝업창 -->
+        <div data-name="popup" data-popup="2" style="display: none">
+          <div data-name="popup-header">
+            <div data-name="popup-title">사진 팝업창</div>
+            <button
+              data-name="popup-close"
+              onclick="contentUtil.setPopup()"
+            ></button>
+          </div>
+          <div
+            data-name="popup-body"
+            class="flex items-center justify-center w-full h-full gap-16"
+          >
+            <div
+              class="flex flex-col items-center w-608 h-402"
+              data-name="popup_photo_wrap"
+            >
+              <div class="w-full overflow-x-hidden overflow-y-auto pe-4">
+                <img
+                  src="./images/0_01_01/popup_photo1.jpg"
+                  alt=""
+                  class="object-contain min-w-608 rounded-10"
+                  data-name="popup_photo"
+                />
+                <img
+                  src="./images/0_01_01/popup_photo2.jpg"
+                  alt=""
+                  class="object-contain min-w-608 rounded-10"
+                  data-name="popup_photo"
+                  style="display: none"
+                />
+                <img
+                  src="./images/0_01_01/popup_photo3.jpg"
+                  alt=""
+                  class="object-contain min-w-608 rounded-10"
+                  data-name="popup_photo"
+                  style="display: none"
+                />
+                <img
+                  src="./images/0_01_01/popup_photo4.jpg"
+                  alt=""
+                  class="object-contain min-w-608 rounded-10"
+                  data-name="popup_photo"
+                  style="display: none"
+                />
+                <img
+                  src="./images/0_01_01/popup_photo5.jpg"
+                  alt=""
+                  class="object-contain min-w-608 rounded-10"
+                  data-name="popup_photo"
+                  style="display: none"
+                />
+              </div>
+              <div
+                class="flex mt-8 font-bold f-nanum-s text-40 leading-52 shrink-0"
+              >
+                <span data-name="popup_photo_text">후지산</span>
+                <span data-name="popup_photo_text" style="display: none"
+                  >기모노
+                </span>
+                <span data-name="popup_photo_text" style="display: none"
+                  >초밥
+                </span>
+                <span data-name="popup_photo_text" style="display: none"
+                  >스모
+                </span>
+                <span data-name="popup_photo_text" style="display: none"
+                  >지진
+                </span>
+              </div>
+            </div>
+            <div class="w-266 h-402">
+              <div class="flex flex-wrap w-full gap-10">
+                <button
+                  data-name="btn-popup_photo"
+                  class="w-128 h-72 active"
+                  onclick="contentUtil.setPhotoPopup(1)"
+                >
+                  <img src="./images/0_01_01/popup_btn_photo1.jpg" alt="" />
+                </button>
+                <button
+                  data-name="btn-popup_photo"
+                  class="w-128 h-72"
+                  onclick="contentUtil.setPhotoPopup(2)"
+                >
+                  <img src="./images/0_01_01/popup_btn_photo2.jpg" alt="" />
+                </button>
+                <button
+                  data-name="btn-popup_photo"
+                  class="w-128 h-72"
+                  onclick="contentUtil.setPhotoPopup(3)"
+                >
+                  <img src="./images/0_01_01/popup_btn_photo3.jpg" alt="" />
+                </button>
+                <button
+                  data-name="btn-popup_photo"
+                  class="w-128 h-72"
+                  onclick="contentUtil.setPhotoPopup(4)"
+                >
+                  <img src="./images/0_01_01/popup_btn_photo4.jpg" alt="" />
+                </button>
+                <button
+                  data-name="btn-popup_photo"
+                  class="w-128 h-72"
+                  onclick="contentUtil.setPhotoPopup(5)"
+                >
+                  <img src="./images/0_01_01/popup_btn_photo5.jpg" alt="" />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript">
+    const page = {
+      isAnswer: false,
+      isVocabulary: false,
+      showAnswer: () => {},
+      hideAnswer: () => {},
+      showVocabulary: () => {},
+    };
+  </script>
+  <script src="./../common/js/tailwind.config.js"></script>
+  <script src="./../common/js/script.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {});
+  </script>
+</html>

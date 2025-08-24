@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>미래엔 일본 문화</title>
+    <script src="./../common/lib/jquery-3.7.1.min.js"></script>
+    <script src="./../common/lib/howler-2.1.3.min.js"></script>
+    <script src="./../common/lib/tailwind.js"></script>
+    <!-- 폰트 -->
+    <link href="./../common/font/suit/suit.css" rel="stylesheet" />
+    <link href="./../common/font/bmjua/bmjua.css" rel="stylesheet" />
+    <link
+      href="./../common/font/nanumsquare/nanumSquare.css"
+      rel="stylesheet"
+    />
+    <link href="./../common/font/notoSansJP/notoSansJP.css" rel="stylesheet" />
+    <link href="./../common/css/tailwind.css" rel="stylesheet" />
+    <link href="./../common/css/fontStyle.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div id="wrap">
+      <!-- contents -->
+      <div class="relative w-full h-full pt-68">
+        <!-- title -->
+        <img
+          src="./../common/images/title_look_culture2.svg"
+          alt="문화 들여다보기2 주요 연중행사 주요 연중행사"
+          class="absolute w-764 h-49 top-10"
+        />
+        <!-- main -->
+        <div class="flex flex-col w-full h-full">
+          <div class="flex flex-col flex-1 w-full leading-52 ps-20">
+            <div class="flex items-center mb-4">
+              <img
+                src="./../common/images/index_pink_1.svg"
+                alt=""
+                class="w-40 h-40 me-4"
+              />
+              <span class="font-extrabold f-nanum-s text-40"
+                >어린이를 위한 행사</span
+              >
+            </div>
+            <div class="flex mb-4 text-40 f-nanum-s">
+              <div data-name="number-2" class="bg-[#C84935]"></div>
+              <span class="text-[#C84935] font-extrabold flex"
+                >단고노셋쿠(<span
+                  data-audio="6_01_21/093-01.mp3"
+                  class="font-bold f-noto"
+                  >たんごの せっく</span
+                >)</span
+              >
+            </div>
+            <!-- ======= page1 ======= -->
+            <div
+              data-name="page"
+              class="flex flex-col font-bold f-nanum-s text-40"
+            >
+              <!-- header-btn -->
+              <div
+                class="absolute right-0 flex gap-6 top-13"
+                data-name="header-btn"
+              >
+                <button
+                  data-name="btn-common"
+                  onclick="contentUtil.setPopup(3); contentUtil.setPhotoPopup(3);"
+                >
+                  추가 사진
+                </button>
+              </div>
+              <div>
+                <p class="ps-28">
+                  5월 5일에 행하는 ‘단고노셋쿠’는 남자아이들이 튼튼하게
+                </p>
+                <p>성장하고 성공하기를 기원하며 축하하는 날이다.</p>
+                <p>무사나 영웅을 본뜬 ‘무사 인형’을 장식하거나</p>
+                <p class="flex">
+                  ‘고이노보리(<span
+                    data-audio="6_01_21/093-02.mp3"
+                    class="font-medium f-noto"
+                    >こいのぼり</span
+                  >)’를 매달기도 한다.
+                </p>
+              </div>
+              <!-- img box -->
+              <div class="absolute w-250 h-156 right-20 bottom-12">
+                <img
+                  src="./images/6_01_21/main_photo1.jpg"
+                  alt=""
+                  class="w-full h-full rounded-10"
+                />
+                <button
+                  data-name="btn-view"
+                  class="absolute right-10 bottom-10"
+                  onclick="contentUtil.setPopup(2); contentUtil.setPhotoPopup(1);"
+                ></button>
+              </div>
+            </div>
+            <!-- ======= page2 ======= -->
+            <div
+              data-name="page"
+              class="flex flex-col font-bold f-nanum-s text-40"
+              style="display: none"
+            >
+              <!-- header-btn -->
+              <div
+                class="absolute right-0 flex gap-6 top-13"
+                data-name="header-btn"
+              >
+                <button
+                  data-name="btn-common"
+                  onclick="contentUtil.setPopup(1)"
+                >
+                  해설 보기
+                </button>
+                <button
+                  data-name="btn-common"
+                  onclick="contentUtil.setPopup(3); contentUtil.setPhotoPopup(3);"
+                >
+                  추가 사진
+                </button>
+              </div>
+              <div>
+                <p class="flex">
+                  고이노보리를 매다는 것은 잉어(<span
+                    data-audio="6_01_21/093-03.mp3"
+                    class="font-medium f-noto"
+                    >こい</span
+                  >)가 폭포를 거슬러
+                </p>
+                <p>올라가면 용이 된다는 데서 입신출세를 상징하는 의미를</p>
+                <p>지닌다. 이날은 어린이날로, 남녀 구별 없이 어린이의</p>
+                <p>성장과 건강을 기원하는 날이기도 하다.</p>
+              </div>
+              <!-- img box -->
+              <div class="absolute w-250 h-156 right-20 bottom-12">
+                <img
+                  src="./images/6_01_21/main_photo2.jpg"
+                  alt=""
+                  class="w-full h-full rounded-10"
+                />
+                <button
+                  data-name="btn-view"
+                  class="absolute right-10 bottom-10"
+                  onclick="contentUtil.setPopup(2); contentUtil.setPhotoPopup(2);"
+                ></button>
+              </div>
+            </div>
+          </div>
+          <!-- pagination -->
+          <div
+            data-name="pagination"
+            class="absolute -translate-x-1/2 bottom-10 left-1/2"
+          >
+            <button class="active" data-name="btn-pagination"></button>
+            <button class="" data-name="btn-pagination"></button>
+          </div>
+        </div>
+      </div>
+      <!-- popup -->
+      <div id="popup-wrap" style="display: none">
+        <!-- 해설 보기 -->
+        <div data-name="popup" data-popup="1" style="display: none">
+          <div data-name="popup-header">
+            <div data-name="popup-title">해설 보기</div>
+            <button
+              data-name="popup-close"
+              onclick="contentUtil.setPopup()"
+            ></button>
+          </div>
+          <div data-name="popup-body" class="mt-16 mb-10 ms-26 f-nanum-s me-6">
+            <div class="flex flex-col">
+              <!-- title -->
+              <div class="flex items-center mb-10 h-55">
+                <img
+                  src="./../common/images/popup_titlemark_primary.svg"
+                  alt=""
+                  class="w-35 h-55 me-10"
+                />
+                <div class="flex font-extrabold text-42 text-[#41674B]">
+                  고이노보리의 잉어 색깔
+                </div>
+              </div>
+              <!-- text -->
+              <div class="font-bold f-nanum-s text-40 leading-52">
+                <p class="flex">
+                  제일 위쪽에 있는 첫 번째 검은색 잉어는 ‘<span
+                    class="font-medium f-noto"
+                    >まごい</span
+                  >’라고
+                </p>
+                <p class="flex">
+                  하며 ‘아버지’를 나타내고, 두 번째 빨간색 잉어는 ‘<span
+                    class="font-medium f-noto"
+                    >ひごい</span
+                  >’
+                </p>
+                <p>라고 하며 ‘어머니’를 나타낸다. 그리고 파란색 잉어는</p>
+                <p>‘자녀’를 의미하며, 가족 수만큼 달기도 한다. 차남은</p>
+                <p>초록색, 여자아이는 오렌지색이나 보라색 등으로 나타낸다.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 사진 팝업창 -->
+        <div data-name="popup" data-popup="2" style="display: none">
+          <div data-name="popup-header">
+            <div data-name="popup-title">사진 팝업창</div>
+            <button
+              data-name="popup-close"
+              onclick="contentUtil.setPopup()"
+            ></button>
+          </div>
+          <div
+            data-name="popup-body"
+            class="flex items-center justify-center w-full h-full gap-16"
+          >
+            <div
+              class="flex flex-col items-center w-608 h-402"
+              data-name="popup_photo_wrap"
+            >
+              <div class="w-full overflow-x-hidden overflow-y-auto pe-4">
+                <img
+                  src="./images/6_01_21/popup_photo1.jpg"
+                  alt=""
+                  class="object-contain min-w-608 rounded-10"
+                  data-name="popup_photo"
+                />
+                <img
+                  src="./images/6_01_21/popup_photo2.jpg"
+                  alt=""
+                  class="object-contain min-w-608 rounded-10"
+                  data-name="popup_photo"
+                  style="display: none"
+                />
+              </div>
+              <div
+                class="flex mt-8 font-bold f-nanum-s text-40 leading-52 shrink-0"
+              >
+                <span data-name="popup_photo_text">무사 인형</span>
+                <span data-name="popup_photo_text" style="display: none"
+                  >고이노보리
+                </span>
+              </div>
+            </div>
+            <div class="w-266 h-402">
+              <div class="flex flex-wrap w-full gap-10">
+                <button
+                  data-name="btn-popup_photo"
+                  class="w-128 h-72 active"
+                  onclick="contentUtil.setPhotoPopup(1)"
+                >
+                  <img src="./images/6_01_21/popup_btn_photo1.jpg" alt="" />
+                </button>
+                <button
+                  data-name="btn-popup_photo"
+                  class="w-128 h-72"
+                  onclick="contentUtil.setPhotoPopup(2)"
+                >
+                  <img src="./images/6_01_21/popup_btn_photo2.jpg" alt="" />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 추가 사진 -->
+        <div data-name="popup" data-popup="3" style="display: none">
+          <div data-name="popup-header">
+            <div data-name="popup-title">추가 사진</div>
+            <button
+              data-name="popup-close"
+              onclick="contentUtil.setPopup()"
+            ></button>
+          </div>
+          <div
+            data-name="popup-body"
+            class="flex items-center justify-center w-full h-full gap-16"
+          >
+            <div
+              class="flex flex-col items-center w-608 h-402"
+              data-name="popup_photo_wrap"
+            >
+              <div class="w-full overflow-x-hidden overflow-y-auto pe-4">
+                <img
+                  src="./images/6_01_21/popup_photo3.jpg"
+                  alt=""
+                  class="object-contain w-full rounded-10"
+                  data-name="popup_photo"
+                />
+                <img
+                  src="./images/6_01_21/popup_photo4.jpg"
+                  alt=""
+                  class="object-contain w-full rounded-10"
+                  data-name="popup_photo"
+                  style="display: none"
+                />
+              </div>
+              <div
+                class="flex mt-8 font-bold f-nanum-s h-52 text-40 leading-52 shrink-0"
+              >
+                <div data-name="popup_photo_text" class="text-blue">
+                  고이노보리
+                </div>
+                <div
+                  data-name="popup_photo_text"
+                  class="text-blue"
+                  style="display: none"
+                >
+                  투구 장식
+                </div>
+              </div>
+            </div>
+            <div class="w-266 h-402">
+              <div class="flex flex-wrap w-full gap-10">
+                <button
+                  data-name="btn-popup_photo"
+                  class="w-128 h-72 active"
+                  onclick="contentUtil.setPhotoPopup(3)"
+                >
+                  <img src="./images/6_01_21/popup_btn_photo3.jpg" alt="" />
+                </button>
+                <button
+                  data-name="btn-popup_photo"
+                  class="w-128 h-72"
+                  onclick="contentUtil.setPhotoPopup(4)"
+                >
+                  <img src="./images/6_01_21/popup_btn_photo4.jpg" alt="" />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript">
+    const page = {
+      isAnswer: false,
+      isVocabulary: false,
+      showAnswer: () => {},
+      hideAnswer: () => {},
+      showVocabulary: () => {},
+    };
+  </script>
+  <script src="./../common/js/tailwind.config.js"></script>
+  <script src="./../common/js/script.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {});
+
+    $(`[data-name="btn-pagination"]`).on("click", function () {
+      if ($(this).index() === 2) {
+        $(`[data-name="btn-common"]`).eq(1).hide();
+      } else {
+        $(`[data-name="btn-common"]`).eq(1).show();
+      }
+    });
+  </script>
+</html>

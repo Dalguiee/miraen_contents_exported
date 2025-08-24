@@ -1,0 +1,115 @@
+.content-title-wrap {
+  position: absolute;
+  z-index: 10;
+}
+
+.content-wrap .content-title-wrap + .content-contents-wrap {
+  height: 100%;
+}
+
+.content-title {
+  margin-top: 10px;
+}
+
+.content-wrap .content-contents-wrap .content-contents {
+  overflow: visible;
+}
+
+.tab-contents-wrap {
+  flex: 1;
+}
+
+.check-list {
+  margin-top: 20px;
+}
+
+.check-list > li {
+  display: flex;
+  line-height: 48px;
+}
+
+.check-list > li + li {
+  margin-top: 10px;
+}
+
+.check-list > li .num {
+  width: 36px;
+  height: 36px;
+  border-radius: 100%;
+  background-color: #94b894;
+  color: #fff;
+  line-height: 36px;
+  text-align: center;
+  margin-top: 5px;
+  margin-right: 8px;
+  font-size: 29px;
+}
+
+.check-list > li .txt {
+  flex: 1;
+}
+
+.check-list > li .btn-wrap {
+  display: flex;
+}
+
+.check-list > li .btn-wrap .btn-x {
+  margin-left: 4px;
+}
+
+.check-list .answer-box-wrap {
+  margin-left: 30px;
+  width: 278px;
+}
+
+.check-list .answer-box-wrap::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.check-list .answer-box {
+  width: 100%;
+  height: 60px;
+  border: solid 2px #a1d8ff;
+  background-color: #f6fdff;
+  border-radius: 8px;
+  /* font-size: 30px; */
+  font-size: 40px;
+  line-height: 45px;
+  color: var(--answer-red);
+  font-weight: 800;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.check-list .answer-box .ft-noto-jp {
+  font-weight: 700;
+}
+
+.check-list .answer-box.on {
+  border: none;
+  background-color: #f4f4f4;
+}
+
+.check-list .answer-box-wrap .btn-view-answer {
+  float: right;
+  margin-top: 11px;
+}
+
+.popup-contents .check-list {
+  margin-top: 0;
+}
+.popup-contents .check-list > li + li {
+  margin-top: 16px;
+}
+
+.btn-x + .btn-view-answer {
+  margin-left: 6px;
+}
+
+.tab-content-2 .check-list > li + li {
+  margin-top: 26px;
+}

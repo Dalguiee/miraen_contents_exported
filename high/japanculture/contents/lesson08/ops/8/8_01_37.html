@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>미래엔 일본 문화</title>
+    <script src="./../common/lib/jquery-3.7.1.min.js"></script>
+    <script src="./../common/lib/howler-2.1.3.min.js"></script>
+    <script src="./../common/lib/tailwind.js"></script>
+    <!-- 폰트 -->
+    <link href="./../common/font/suit/suit.css" rel="stylesheet" />
+    <link href="./../common/font/bmjua/bmjua.css" rel="stylesheet" />
+    <link
+      href="./../common/font/nanumsquare/nanumSquare.css"
+      rel="stylesheet"
+    />
+    <link href="./../common/font/notoSansJP/notoSansJP.css" rel="stylesheet" />
+    <link href="./../common/css/tailwind.css" rel="stylesheet" />
+    <link href="./../common/css/fontStyle.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div id="wrap">
+      <!-- contents -->
+      <div class="relative flex flex-col w-full h-full pt-70">
+        <!-- title -->
+        <img
+          src="./../common/images/title_check.svg"
+          alt="확인하기"
+          class="absolute left-0 w-163 h-50 top-10"
+        />
+        <!-- header-btn -->
+        <div class="absolute right-0 flex gap-6 top-13" data-name="header-btn">
+          <button data-name="btn-common" onclick="contentUtil.setPopup(1)">
+            해설 보기
+          </button>
+        </div>
+        <!-- main -->
+        <div
+          class="flex flex-col flex-1 w-full overflow-y-auto font-bold leading-52 f-nanum-s text-40"
+        >
+          <div class="flex mb-24">
+            <img
+              src="./images/8_01_37/title_index_1.svg"
+              alt="label"
+              class="w-25 h-52 me-12"
+            />
+            <div class="font-extrabold">
+              <p>사진 속 관광 명소가 있는 지명을 써 봅시다.</p>
+            </div>
+          </div>
+          <!-- content -->
+          <div
+            class="relative w-960 h-365 bg-[url(./images/8_01_37/main_bg1.jpg)] bg-no-repeat bg-cover mx-auto"
+          >
+            <!-- ------- -->
+            <div class="absolute left-0 flex p-8 w-445 h-116 top-15">
+              <!-- img box -->
+              <div class="relative w-180 h-100 me-6">
+                <img
+                  src="./images/8_01_37/main_photo2.jpg"
+                  alt=""
+                  class="w-full h-full rounded-8"
+                />
+                <button
+                  data-name="btn-view"
+                  class="absolute right-10 bottom-10"
+                  onclick="contentUtil.setPopup(2); contentUtil.setPhotoPopup(2);"
+                ></button>
+              </div>
+              <div class="flex items-center flex-1 h-full">
+                <!-- index -->
+                <img
+                  src="./images/8_01_37/main_index_1.svg"
+                  alt="1"
+                  class="h-40 w-52 me-8"
+                />
+                <!-- answer box -->
+                <div
+                  class="flex-1 flex items-end justify-center h-full border-b-3 border-[#B0C75B] relative"
+                >
+                  <div
+                    data-answer="1"
+                    class="text-center text-red"
+                    style="display: none"
+                  >
+                    <p>교토</p>
+                    <p class="flex -mt-12">
+                      (<span
+                        data-audio="8_01_37/119-03.mp3"
+                        class="font-medium f-noto"
+                        >きょうと</span
+                      >)
+                    </p>
+                  </div>
+                  <div
+                    class="absolute -translate-x-1/2 -translate-y-full left-1/2 -top-2"
+                  >
+                    <button
+                      data-reset="1"
+                      data-name="btn-common-light"
+                      onclick="contentUtil.showAnswer(1);"
+                    >
+                      개별 정답
+                    </button>
+                    <button
+                      data-answer="1"
+                      data-name="btn-common-light"
+                      onclick="contentUtil.hideAnswer(1);"
+                      style="display: none"
+                    >
+                      다시 풀기
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- ------- -->
+            <div class="absolute flex p-8 left-553 w-406 h-116 top-85">
+              <!-- img box -->
+              <div class="relative w-180 h-100 me-6">
+                <img
+                  src="./images/8_01_37/main_photo3.jpg"
+                  alt=""
+                  class="w-full h-full rounded-8"
+                />
+                <button
+                  data-name="btn-view"
+                  class="absolute right-10 bottom-10"
+                  onclick="contentUtil.setPopup(2); contentUtil.setPhotoPopup(3);"
+                ></button>
+              </div>
+              <div class="flex items-center flex-1 h-full">
+                <!-- index -->
+                <img
+                  src="./images/8_01_37/main_index_2.svg"
+                  alt="1"
+                  class="h-40 w-52 me-8"
+                />
+                <!-- answer box -->
+                <div
+                  class="flex-1 flex items-end justify-center h-full border-b-3 border-[#B0C75B] relative"
+                >
+                  <div
+                    data-answer="2"
+                    class="text-center text-red"
+                    style="display: none"
+                  >
+                    <p>오타루</p>
+                    <p class="flex -mt-12">
+                      (<span
+                        data-audio="8_01_37/119-07.mp3"
+                        class="font-medium f-noto"
+                        >おたる</span
+                      >)
+                    </p>
+                  </div>
+                  <div
+                    class="absolute -translate-x-1/2 -translate-y-full left-1/2 -top-2"
+                  >
+                    <button
+                      data-reset="2"
+                      data-name="btn-common-light"
+                      onclick="contentUtil.showAnswer(2);"
+                    >
+                      개별 정답
+                    </button>
+                    <button
+                      data-answer="2"
+                      data-name="btn-common-light"
+                      onclick="contentUtil.hideAnswer(2);"
+                      style="display: none"
+                    >
+                      다시 풀기
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- ------- -->
+            <div class="absolute flex p-8 left-477 w-483 h-116 top-249">
+              <!-- img box -->
+              <div class="relative w-180 h-100 me-6">
+                <img
+                  src="./images/8_01_37/main_photo4.jpg"
+                  alt=""
+                  class="w-full h-full rounded-8"
+                />
+                <button
+                  data-name="btn-view"
+                  class="absolute right-10 bottom-10"
+                  onclick="contentUtil.setPopup(2); contentUtil.setPhotoPopup(4);"
+                ></button>
+              </div>
+              <div class="flex items-center flex-1 h-full">
+                <!-- index -->
+                <img
+                  src="./images/8_01_37/main_index_3.svg"
+                  alt="1"
+                  class="h-40 w-52 me-8"
+                />
+                <!-- answer box -->
+                <div
+                  class="flex-1 flex items-end justify-center h-full border-b-3 border-[#B0C75B] relative"
+                >
+                  <div
+                    data-answer="3"
+                    class="text-center text-red"
+                    style="display: none"
+                  >
+                    <p>도쿄</p>
+                    <p class="flex -mt-12">
+                      (<span
+                        data-audio="8_01_37/118-01.mp3"
+                        class="font-medium f-noto"
+                        >とうきょう</span
+                      >)
+                    </p>
+                  </div>
+                  <div
+                    class="absolute -translate-x-1/2 -translate-y-full left-1/2 -top-2"
+                  >
+                    <button
+                      data-reset="3"
+                      data-name="btn-common-light"
+                      onclick="contentUtil.showAnswer(3);"
+                    >
+                      개별 정답
+                    </button>
+                    <button
+                      data-answer="3"
+                      data-name="btn-common-light"
+                      onclick="contentUtil.hideAnswer(3);"
+                      style="display: none"
+                    >
+                      다시 풀기
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- ------- -->
+            <button
+              data-name="btn-view"
+              class="absolute left-279 bottom-37"
+              onclick="contentUtil.setPopup(2); contentUtil.setPhotoPopup(1);"
+            ></button>
+          </div>
+        </div>
+      </div>
+      <!-- popup -->
+      <div id="popup-wrap" style="display: none">
+        <!-- 해설 보기 -->
+        <div data-name="popup" data-popup="1" style="display: none">
+          <div data-name="popup-header">
+            <div data-name="popup-title">해설 보기</div>
+            <button
+              data-name="popup-close"
+              onclick="contentUtil.setPopup()"
+            ></button>
+          </div>
+          <div
+            data-name="popup-body"
+            class="flex-1 mt-16 mb-10 ms-26 f-nanum-s me-6"
+          >
+            <div class="flex flex-col font-bold text-40 leading-52 f-nanum-s">
+              <!-- title -->
+              <div class="flex items-center mb-10 h-55">
+                <img
+                  src="./../common/images/popup_titlemark_primary.svg"
+                  alt=""
+                  class="w-35 h-55 me-10"
+                />
+                <div class="flex font-extrabold text-42 text-[#41674B]">
+                  해설
+                </div>
+              </div>
+              <!-- list -->
+              <div class="flex flex-col gap-10 mb-20">
+                <!-- ------- -->
+                <div class="flex">
+                  <div class="flex justify-center w-52 me-8 tracking-[0.01em]">
+                    (1)
+                  </div>
+                  <div>
+                    <p class="flex">
+                      긴카쿠지(<span class="font-medium f-noto">きんかくじ</span
+                      >)가 있는 곳은 ‘교토(<span class="font-medium f-noto"
+                        >きょうと</span
+                      >)’
+                    </p>
+                    <p>이다.</p>
+                  </div>
+                </div>
+                <!-- ------- -->
+                <div class="flex">
+                  <div class="flex justify-center w-52 me-8 tracking-[0.01em]">
+                    (2)
+                  </div>
+                  <div>
+                    <p class="flex">
+                      오타루 운하가 있는 곳은 ‘오타루(<span
+                        class="font-medium f-noto"
+                        >おたる</span
+                      >)’이다.
+                    </p>
+                  </div>
+                </div>
+                <!-- ------- -->
+                <div class="flex">
+                  <div class="flex justify-center w-52 me-8 tracking-[0.01em]">
+                    (3)
+                  </div>
+                  <div>
+                    <p class="flex">
+                      스카이트리(<span class="font-medium f-noto"
+                        >スカイツリー</span
+                      >)는 ‘도쿄(<span class="font-medium f-noto"
+                        >とうきょう</span
+                      >)’에
+                    </p>
+                    <p>있다.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 사진 팝업창 -->
+        <div data-name="popup" data-popup="2" style="display: none">
+          <div data-name="popup-header">
+            <div data-name="popup-title">사진 팝업창</div>
+            <button
+              data-name="popup-close"
+              onclick="contentUtil.setPopup()"
+            ></button>
+          </div>
+          <div
+            data-name="popup-body"
+            class="flex items-center justify-center w-full h-full gap-16"
+          >
+            <div
+              class="flex flex-col items-center w-608 h-402"
+              data-name="popup_photo_wrap"
+            >
+              <div class="w-full overflow-x-hidden overflow-y-auto h-400 pe-4">
+                <img
+                  src="./images/8_01_37/popup_photo1.jpg"
+                  alt=""
+                  class="object-contain min-w-608 rounded-10"
+                  data-name="popup_photo"
+                />
+                <img
+                  src="./images/8_01_37/popup_photo2.jpg"
+                  alt=""
+                  class="object-contain min-w-608 rounded-10"
+                  data-name="popup_photo"
+                  style="display: none"
+                />
+                <img
+                  src="./images/8_01_37/popup_photo3.jpg"
+                  alt=""
+                  class="object-contain min-w-608 rounded-10"
+                  data-name="popup_photo"
+                  style="display: none"
+                />
+                <img
+                  src="./images/8_01_37/popup_photo4.jpg"
+                  alt=""
+                  class="object-contain min-w-608 rounded-10"
+                  data-name="popup_photo"
+                  style="display: none"
+                />
+              </div>
+            </div>
+            <div class="w-266 h-402">
+              <div class="flex flex-wrap w-full gap-10">
+                <button
+                  data-name="btn-popup_photo"
+                  class="w-128 h-72 active"
+                  onclick="contentUtil.setPhotoPopup(1)"
+                >
+                  <img src="./images/8_01_37/popup_btn_photo1.jpg" alt="" />
+                </button>
+                <button
+                  data-name="btn-popup_photo"
+                  class="w-128 h-72"
+                  onclick="contentUtil.setPhotoPopup(2)"
+                >
+                  <img src="./images/8_01_37/popup_btn_photo2.jpg" alt="" />
+                </button>
+                <button
+                  data-name="btn-popup_photo"
+                  class="w-128 h-72"
+                  onclick="contentUtil.setPhotoPopup(3)"
+                >
+                  <img src="./images/8_01_37/popup_btn_photo3.jpg" alt="" />
+                </button>
+                <button
+                  data-name="btn-popup_photo"
+                  class="w-128 h-72"
+                  onclick="contentUtil.setPhotoPopup(4)"
+                >
+                  <img src="./images/8_01_37/popup_btn_photo4.jpg" alt="" />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ======================임시버튼============================== -->
+      <div class="absolute bottom-0 right-0">
+        <button class="btn-all-answer text-12">정답 보기</button>
+        <button class="btn-all-reset text-12" style="display: none">
+          다시 풀기
+        </button>
+      </div>
+      <!-- ======================================================== -->
+    </div>
+  </body>
+  <script type="text/javascript">
+    const page = {
+      isAnswer: true,
+      isVocabulary: false,
+      showAnswer: () => {
+        contentUtil.showAnswer();
+      },
+      hideAnswer: () => {
+        contentUtil.hideAnswer();
+      },
+      showVocabulary: () => {},
+    };
+  </script>
+  <script src="./../common/js/tailwind.config.js"></script>
+  <script src="./../common/js/script.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {});
+  </script>
+</html>

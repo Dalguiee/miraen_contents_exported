@@ -1,0 +1,872 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>미래엔 일본 문화</title>
+    <script src="./../common/lib/jquery-3.7.1.min.js"></script>
+    <script src="./../common/lib/howler-2.1.3.min.js"></script>
+    <script src="./../common/lib/tailwind.js"></script>
+    <!-- 폰트 -->
+    <link href="./../common/font/suit/suit.css" rel="stylesheet" />
+    <link href="./../common/font/bmjua/bmjua.css" rel="stylesheet" />
+    <link
+      href="./../common/font/nanumsquare/nanumSquare.css"
+      rel="stylesheet"
+    />
+    <link href="./../common/font/notoSansJP/notoSansJP.css" rel="stylesheet" />
+    <link href="./../common/css/tailwind.css" rel="stylesheet" />
+    <link href="./../common/css/fontStyle.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div id="wrap">
+      <!-- contents -->
+      <div class="relative w-full h-full pt-60">
+        <!-- title -->
+        <img
+          src="./../common/images/title_look_culture1.svg"
+          alt="문화 들여다보기1 전통예술"
+          class="absolute w-764 h-49 top-10"
+        />
+        <!-- header-btn -->
+        <div class="absolute right-0 flex gap-6 top-13" data-name="header-btn">
+          <button data-name="btn-common" onclick="contentUtil.setPopup(2)">
+            보충 자료
+          </button>
+          <button
+            data-name="btn-common"
+            onclick="contentUtil.setPopup(3); contentUtil.setPhotoPopup(3)"
+          >
+            추가 사진
+          </button>
+          <button
+            style="display: none"
+            class="min-w-0"
+            data-name="btn-common-dark"
+            onclick="contentUtil.setPopup(4);"
+          >
+            TIP
+          </button>
+        </div>
+        <!-- main -->
+        <div class="flex flex-col w-full h-full mt-10">
+          <div class="flex flex-col mb-8 leading-52 ps-20">
+            <!-- ======== page 1 ======== -->
+            <div
+              data-name="page"
+              class="flex flex-col font-bold f-nanum-s text-40 mt-10"
+            >
+              <div class="flex items-center mb-4">
+                <img
+                  src="./../common/images/index_pink_3.svg"
+                  alt="번호 3"
+                  class="w-40 h-40 me-4"
+                />
+                <span class="font-extrabold f-nanum-s text-40 flex">
+                  다도(<span
+                    data-audio="10_01_08/149-01.mp3"
+                    class="f-noto font-bold"
+                    ><span class="relative"
+                      >茶<span class="ruby font-bold">さ</span></span
+                    ><span class="relative"
+                      >道<span class="ruby font-bold">どう</span></span
+                    ></span
+                  >)
+                </span>
+              </div>
+              <div>
+                <p class="flex ps-28">
+                  다도는 손님과 주인이 정해진 작법에 맞게 차(<span
+                    data-audio="10_01_08/149-02.mp3"
+                    class="f-noto font-medium"
+                    >茶</span
+                  >)를 나누어
+                </p>
+                <p>마시는 전 과정을 함께 즐기는 일본 전통 예술이다. 중국에서</p>
+                <p>
+                  전래된 차 문화가 16세기 ‘센노리큐’에 의해 일본 독자적 형식
+                </p>
+                <p>
+                  으로 완성되었다. 일본의 다도는 정신적 측면을 강조하는데 이
+                </p>
+                <p class="flex pt-12">
+                  정신을 잘 나타내는 말이 ‘이치고이치에(
+                  <span
+                    data-audio="10_01_08/149-03.mp3"
+                    class="f-noto font-medium"
+                    ><span class="relative"
+                      >一<span class="ruby">いち</span></span
+                    ><span class="relative">期<span class="ruby">ご</span></span
+                    ><span class="relative"
+                      >一<span class="ruby">いち</span></span
+                    ><span class="relative"
+                      >会<span class="ruby">え</span></span
+                    ></span
+                  >)’이다.
+                </p>
+              </div>
+            </div>
+            <!-- ======== page 2 ======== -->
+            <div
+              data-name="page"
+              class="flex flex-col font-bold f-nanum-s text-40 w-full mt-10"
+              style="display: none"
+            >
+              <div class="flex items-center mb-4">
+                <img
+                  src="./../common/images/index_pink_3.svg"
+                  alt="번호 3"
+                  class="w-40 h-40 me-4"
+                />
+                <span class="font-extrabold f-nanum-s text-40 flex">
+                  다도(<span
+                    data-audio="10_01_08/149-01.mp3"
+                    class="f-noto font-bold"
+                    ><span class="relative"
+                      >茶<span class="ruby font-bold">さ</span></span
+                    ><span class="relative"
+                      >道<span class="ruby font-bold">どう</span></span
+                    ></span
+                  >)
+                </span>
+              </div>
+              <div class="w-full">
+                <p>‘생애 단 한 번뿐인 만남’이라는 뜻으로, 소소한 다도 모임</p>
+                <p>이라도 서로에게 정성을 다하라는 의미를 담고 있다.</p>
+              </div>
+              <div class="w-960 relative">
+                <img src="./images/10_01_08/main_photo1.jpg" alt="다도" />
+                <button
+                  data-name="btn-view"
+                  class="absolute bottom-37 left-131"
+                  onclick="contentUtil.setPopup(1); contentUtil.setPhotoPopup(1);"
+                ></button>
+                <button
+                  data-name="btn-view"
+                  class="absolute top-10 right-10"
+                  onclick="contentUtil.setPopup(1); contentUtil.setPhotoPopup(2);"
+                ></button>
+              </div>
+            </div>
+
+            <!-- ======== page 3 ======== -->
+            <div
+              data-name="page"
+              class="flex flex-col font-bold f-nanum-s text-40"
+              style="display: none"
+            >
+              <div class="px-20 py-4 bg-[#FEE0A1] rounded-30 w-fit mb-10">
+                <span class="text-[#B1442E] font-extrabold f-nanum-s"
+                  >차를 마시는 방법</span
+                >
+              </div>
+              <div class="flex gap-30 ml-20">
+                <div
+                  class="relative flex flex-col border-[#EE9F69] border-2 rounded-10 w-455 h-321 gap-10"
+                >
+                  <div class="absolute top-17 -left-17">
+                    <img src="./images/10_01_08/number1.svg" alt="number-1" />
+                  </div>
+                  <div class="mt-7 ml-33">
+                    <p>다실에 꾸며진 족자와 꽃</p>
+                    <p>등을 감상한다.</p>
+                  </div>
+                  <div
+                    class="relative flex flex-col w-270 h-187 items-center mx-auto"
+                  >
+                    <img
+                      src="./images/10_01_08/main_photo2.jpg"
+                      alt="차를 마시는 방법"
+                      class="w-full h-full rounded-10"
+                    />
+                    <button
+                      data-name="btn-view"
+                      class="absolute bottom-10 right-10"
+                      onclick="contentUtil.setPopup(5); contentUtil.setPhotoPopup(5);"
+                    ></button>
+                  </div>
+                </div>
+                <div
+                  class="relative flex flex-col border-[#EE9F69] border-2 rounded-10 w-455 h-321 gap-10"
+                >
+                  <div class="absolute top-17 -left-17">
+                    <img src="./images/10_01_08/number2.svg" alt="2" />
+                  </div>
+                  <div class="mt-7 ml-33">
+                    <p>다식 종이에 화과자를</p>
+                    <p>덜어서 먹는다.</p>
+                  </div>
+                  <div
+                    class="relative flex flex-col w-187 h-187 items-center mx-auto"
+                  >
+                    <img
+                      src="./images/10_01_08/main_photo3.jpg"
+                      alt="차를 마시는 방법"
+                      class="w-full h-full rounded-10"
+                    />
+                    <button
+                      data-name="btn-view"
+                      class="absolute bottom-10 right-10"
+                      onclick="contentUtil.setPopup(5); contentUtil.setPhotoPopup(6);"
+                    ></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- ======== page 4 ======== -->
+            <div
+              data-name="page"
+              class="flex flex-col font-bold f-nanum-s text-40"
+              style="display: none"
+            >
+              <div class="px-20 py-4 bg-[#FEE0A1] rounded-30 w-fit mb-10">
+                <span class="text-[#B1442E] font-extrabold f-nanum-s"
+                  >차를 마시는 방법</span
+                >
+              </div>
+              <div class="flex gap-30 ml-20">
+                <div
+                  class="relative flex flex-col border-[#EE9F69] border-2 rounded-10 w-455 h-321 gap-10"
+                >
+                  <div class="absolute top-17 -left-17">
+                    <img src="./images/10_01_08/number3.svg" alt="3" />
+                  </div>
+                  <div class="mt-7 ml-33">
+                    <p>주인에게 예를 표하고 차를</p>
+                    <p>받는다.</p>
+                  </div>
+                  <div
+                    class="relative flex flex-col w-187 h-187 items-center mx-auto"
+                  >
+                    <img
+                      src="./images/10_01_08/main_photo4.jpg"
+                      alt="차를 마시는 방법"
+                      class="w-full h-full rounded-10"
+                    />
+                    <button
+                      data-name="btn-view"
+                      class="absolute bottom-10 right-10"
+                      onclick="contentUtil.setPopup(5); contentUtil.setPhotoPopup(7);"
+                    ></button>
+                  </div>
+                </div>
+                <div
+                  class="relative flex flex-col border-[#EE9F69] border-2 rounded-10 w-455 h-321 gap-10"
+                >
+                  <div class="absolute top-17 -left-17">
+                    <img src="./images/10_01_08/number4.svg" alt="4" />
+                  </div>
+                  <div class="mt-7 ml-33">
+                    <p>왼손에 찻잔을 올리고 시계</p>
+                    <p>방향으로 두 번 돌린다.</p>
+                  </div>
+                  <div
+                    class="relative flex flex-col w-187 h-187 items-center mx-auto"
+                  >
+                    <img
+                      src="./images/10_01_08/main_photo5.jpg"
+                      alt="차를 마시는 방법"
+                      class="w-full h-full rounded-10"
+                    />
+                    <button
+                      data-name="btn-view"
+                      class="absolute bottom-10 right-10"
+                      onclick="contentUtil.setPopup(5); contentUtil.setPhotoPopup(8);"
+                    ></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- ======== page 5 ======== -->
+            <div
+              data-name="page"
+              class="flex flex-col font-bold f-nanum-s text-40"
+              style="display: none"
+            >
+              <div class="px-20 py-4 bg-[#FEE0A1] rounded-30 w-fit mb-10">
+                <span class="text-[#B1442E] font-extrabold f-nanum-s"
+                  >차를 마시는 방법</span
+                >
+              </div>
+              <div class="flex gap-30 ml-20">
+                <div
+                  class="relative flex flex-col border-[#EE9F69] border-2 rounded-10 w-455 h-321 gap-10"
+                >
+                  <div class="absolute top-17 -left-17">
+                    <img src="./images/10_01_08/number5.svg" alt="5" />
+                  </div>
+                  <div class="mt-7 ml-33">
+                    <p>두세 번에 걸쳐 나누어</p>
+                    <p>마신다.</p>
+                  </div>
+                  <div
+                    class="relative flex flex-col w-187 h-187 items-center mx-auto"
+                  >
+                    <img
+                      src="./images/10_01_08/main_photo6.jpg"
+                      alt="차를 마시는 방법"
+                      class="w-full h-full rounded-10"
+                    />
+                    <button
+                      data-name="btn-view"
+                      class="absolute bottom-10 right-10"
+                      onclick="contentUtil.setPopup(5); contentUtil.setPhotoPopup(9);"
+                    ></button>
+                  </div>
+                </div>
+                <div
+                  class="relative flex flex-col border-[#EE9F69] border-2 rounded-10 w-455 h-321 gap-10"
+                >
+                  <div class="absolute top-17 -left-17">
+                    <img src="./images/10_01_08/number6.svg" alt="6" />
+                  </div>
+                  <div class="mt-7 ml-33">
+                    <p>찻그릇에 입이 닿았던 부분</p>
+                    <p>을 손으로 닦는다.</p>
+                  </div>
+                  <div
+                    class="relative flex flex-col w-187 h-187 items-center mx-auto"
+                  >
+                    <img
+                      src="./images/10_01_08/main_photo7.jpg"
+                      alt="차를 마시는 방법"
+                      class="w-full h-full rounded-10"
+                    />
+                    <button
+                      data-name="btn-view"
+                      class="absolute bottom-10 right-10"
+                      onclick="contentUtil.setPopup(5); contentUtil.setPhotoPopup(10);"
+                    ></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- ======== page 6 ======== -->
+            <div
+              data-name="page"
+              class="flex flex-col font-bold f-nanum-s text-40"
+              style="display: none"
+            >
+              <div class="px-20 py-4 bg-[#FEE0A1] rounded-30 w-fit mb-10">
+                <span class="text-[#B1442E] font-extrabold f-nanum-s"
+                  >차를 마시는 방법</span
+                >
+              </div>
+              <div class="flex gap-30 ml-20">
+                <div
+                  class="relative flex flex-col border-[#EE9F69] border-2 rounded-10 w-455 h-321 gap-10"
+                >
+                  <div class="absolute top-17 -left-17">
+                    <img src="./images/10_01_08/number7.svg" alt="7" />
+                  </div>
+                  <div class="mt-7 ml-33">
+                    <p>찻잔을 시계 반대 방향으로</p>
+                    <p>두 번 돌려 처음 찻그릇을</p>
+                    <p>받은 상태로 한 다음 내려</p>
+                    <p>놓는다.</p>
+                  </div>
+                  <div
+                    class="absolute bottom-10 left-167 flex flex-col w-140 h-140 items-center mx-auto"
+                  >
+                    <img
+                      src="./images/10_01_08/main_photo8.jpg"
+                      alt="차를 마시는 방법"
+                      class="w-full h-full rounded-10"
+                    />
+                    <button
+                      data-name="btn-view"
+                      class="absolute bottom-10 right-10"
+                      onclick="contentUtil.setPopup(5); contentUtil.setPhotoPopup(11);"
+                    ></button>
+                  </div>
+                </div>
+                <div
+                  class="relative flex flex-col border-[#EE9F69] border-2 rounded-10 w-455 h-321 gap-62"
+                >
+                  <div class="absolute top-17 -left-17">
+                    <img src="./images/10_01_08/number8.svg" alt="8" />
+                  </div>
+                  <div class="mt-7 ml-33">
+                    <p>찻그릇을 감상한다.</p>
+                  </div>
+                  <div
+                    class="relative flex flex-col w-187 h-187 items-center mx-auto"
+                  >
+                    <img
+                      src="./images/10_01_08/main_photo9.jpg"
+                      alt="차를 마시는 방법"
+                      class="w-full h-full rounded-10"
+                    />
+                    <button
+                      data-name="btn-view"
+                      class="absolute bottom-10 right-10"
+                      onclick="contentUtil.setPopup(5); contentUtil.setPhotoPopup(12);"
+                    ></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- pagination -->
+          <div
+            class="absolute -translate-x-1/2 left-1/2 bottom-10"
+            data-name="pagination"
+          >
+            <button class="active" data-name="btn-pagination"></button>
+            <button class="" data-name="btn-pagination"></button>
+            <button class="" data-name="btn-pagination"></button>
+            <button class="" data-name="btn-pagination"></button>
+            <button class="" data-name="btn-pagination"></button>
+            <button class="" data-name="btn-pagination"></button>
+          </div>
+        </div>
+      </div>
+      <!-- popup -->
+      <div id="popup-wrap" style="display: none">
+        <!-- 사진 팝업창 -->
+        <div data-name="popup" data-popup="1" style="display: none">
+          <div data-name="popup-header">
+            <div data-name="popup-title">사진 팝업창</div>
+            <button
+              data-name="popup-close"
+              onclick="contentUtil.setPopup()"
+            ></button>
+          </div>
+          <div
+            data-name="popup-body"
+            class="flex items-center justify-center w-full h-full gap-16"
+          >
+            <div
+              class="flex flex-col items-center w-608 h-402"
+              data-name="popup_photo_wrap"
+            >
+              <div class="w-full overflow-hidden h-400 rounded-10">
+                <img
+                  src="./images/10_01_08/popup_photo1.jpg"
+                  alt="다도도구"
+                  class="min-w-608 h-full"
+                  data-name="popup_photo"
+                />
+                <img
+                  src="./images/10_01_08/popup_photo2.jpg"
+                  alt="다도도구"
+                  class="min-w-608 h-full"
+                  data-name="popup_photo"
+                  style="display: none"
+                />
+              </div>
+              <div class="flex font-bold f-nanum-s text-40 leading-52 shrink-0">
+                <div data-name="popup_photo_text" class="text-blue"></div>
+                <div
+                  data-name="popup_photo_text"
+                  class="text-blue"
+                  style="display: none"
+                ></div>
+              </div>
+            </div>
+            <div class="w-266 h-402">
+              <div class="flex flex-wrap w-full gap-10">
+                <button
+                  data-name="btn-popup_photo"
+                  class="w-128 h-72 active"
+                  onclick="contentUtil.setPhotoPopup(1)"
+                >
+                  <img
+                    src="./images/10_01_08/popup_btn_photo1.jpg"
+                    alt="다도도구"
+                  />
+                </button>
+                <button
+                  data-name="btn-popup_photo"
+                  class="w-128 h-72"
+                  onclick="contentUtil.setPhotoPopup(2)"
+                >
+                  <img
+                    src="./images/10_01_08/popup_btn_photo2.jpg"
+                    alt="다도도구"
+                  />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 보충 자료 -->
+        <div data-name="popup" data-popup="2" style="display: none">
+          <div data-name="popup-header">
+            <div data-name="popup-title">보충 자료</div>
+            <button
+              data-name="popup-close"
+              onclick="contentUtil.setPopup()"
+            ></button>
+          </div>
+          <div
+            data-name="popup-body"
+            class="mt-16 ms-26 f-nanum-s me-6 relative h-full"
+          >
+            <div class="flex flex-col">
+              <!-- title -->
+              <div class="flex items-center mb-10 h-55">
+                <img
+                  src="./../common/images/popup_titlemark_primary.svg"
+                  alt=""
+                  class="w-35 h-55 me-10"
+                />
+                <div class="flex font-extrabold text-42 text-[#41674B]">
+                  니지리구치(<span class="f-noto font-bold">にじりぐち</span>)
+                </div>
+              </div>
+              <!-- text -->
+              <div class="mb-10 font-bold f-nanum-s text-40 leading-52">
+                <p>다실에 들어갈 때는 몸을 숙여 ‘니지리구치’라고 하는 작은</p>
+                <p>문을 통과해서 들어가는데, 이는 보통 다다미 4장 반 이하</p>
+                <p>의 작은 다실에서 볼 수 있는 모습이다. 몸을 숙여 입장하면</p>
+                <p>서 다도 모임에 참석하는 마음가짐을 겸허하게 하다는 의미</p>
+                <p>를 포함하고 있다. 또한 무사, 상인, 농민의 신분이 정해져</p>
+                <p>있던 시대에 이 니지리구치를 통과해 다실에 들어오면 모두</p>
+                <p>차별 없는 한 사람으로서 다도 모임에 참석한다는 의미를</p>
+                <p>담고 있었다고 한다.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 추가 사진 -->
+        <div data-name="popup" data-popup="3" style="display: none">
+          <div data-name="popup-header">
+            <div data-name="popup-title">추가 사진</div>
+            <button
+              data-name="popup-close"
+              onclick="contentUtil.setPopup()"
+            ></button>
+          </div>
+          <div
+            data-name="popup-body"
+            class="flex items-center justify-center w-full h-full gap-16"
+          >
+            <div
+              class="flex flex-col items-center w-608 h-402"
+              data-name="popup_photo_wrap"
+            >
+              <div class="w-full overflow-hidden h-400 rounded-10">
+                <img
+                  src="./images/10_01_08/popup_photo3.jpg"
+                  alt="다도"
+                  class="min-w-608 h-full"
+                  data-name="popup_photo"
+                />
+                <img
+                  src="./images/10_01_08/popup_photo4.jpg"
+                  alt="다도도구"
+                  class="min-w-608 h-full"
+                  data-name="popup_photo"
+                  style="display: none"
+                />
+              </div>
+              <div
+                class="flex mt-8 font-bold f-nanum-s h-52 text-40 leading-52 shrink-0"
+              >
+                <div data-name="popup_photo_text" class="text-blue">다도</div>
+                <div
+                  data-name="popup_photo_text"
+                  class="text-blue"
+                  style="display: none"
+                >
+                  다도 도구
+                </div>
+              </div>
+            </div>
+            <div class="w-266 h-402">
+              <div class="flex flex-wrap w-full gap-10">
+                <button
+                  data-name="btn-popup_photo"
+                  class="w-128 h-72 active"
+                  onclick="contentUtil.setPhotoPopup(3)"
+                >
+                  <img
+                    src="./images/10_01_08/popup_btn_photo3.jpg"
+                    alt="다도"
+                  />
+                </button>
+                <button
+                  data-name="btn-popup_photo"
+                  class="w-128 h-72"
+                  onclick="contentUtil.setPhotoPopup(4)"
+                >
+                  <img
+                    src="./images/10_01_08/popup_btn_photo4.jpg"
+                    alt="다도도구"
+                  />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- TIP -->
+        <div data-name="popup" data-popup="4" style="display: none">
+          <div data-name="popup-header">
+            <div data-name="popup-title">TIP</div>
+            <button
+              data-name="popup-close"
+              onclick="contentUtil.setPopup()"
+            ></button>
+          </div>
+          <div data-name="popup-body" class="mt-16 mb-10 ms-26 f-nanum-s me-6">
+            <div class="flex flex-col">
+              <!-- text -->
+              <div class="mb-10 font-bold f-nanum-s text-40 leading-52">
+                <p>다도 모임에서는 모두 무릎을 꿇고 앉으며 시계, 반지, 팔찌</p>
+                <p>등 찻그릇에 흠집을 낼 수 있는 액세서리를 하지 않는 것이</p>
+                <p class="flex">
+                  예의이다. 또한 기모노를 입을 때는 다비(<span
+                    class="f-noto font-medium"
+                    data-audio="10_01_08/149-04.mp3"
+                    >たび</span
+                  >)를 신으며
+                </p>
+                <p>그 외의 복장일 경우에는 양말을 흰색으로 갈아 신고 참석</p>
+                <p>한다.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 사진 팝업창 -->
+        <div data-name="popup" data-popup="5" style="display: none">
+          <div data-name="popup-header">
+            <div data-name="popup-title">사진 팝업창</div>
+            <button
+              data-name="popup-close"
+              onclick="contentUtil.setPopup()"
+            ></button>
+          </div>
+          <div
+            data-name="popup-body"
+            class="flex items-center justify-center w-full h-full gap-16"
+          >
+            <div
+              class="flex flex-col items-center w-608 h-402"
+              data-name="popup_photo_wrap"
+            >
+              <div class="w-full overflow-hidden h-400 rounded-10">
+                <div class="relative">
+                  <div class="absolute top-20 left-20">
+                    <img src="./images/10_01_08/number1.svg" alt="1" />
+                  </div>
+                  <img
+                    src="./images/10_01_08/popup_photo5.jpg"
+                    alt="차를 마시는 방법"
+                    class="min-w-608 h-full"
+                    data-name="popup_photo"
+                  />
+                </div>
+                <div class="relative">
+                  <div class="absolute top-20 left-20">
+                    <img src="./images/10_01_08/number2.svg" alt="2" />
+                  </div>
+                  <img
+                    src="./images/10_01_08/popup_photo6.jpg"
+                    alt="차를 마시는 방법"
+                    class="min-w-608 h-full"
+                    data-name="popup_photo"
+                    style="display: none"
+                  />
+                </div>
+                <div class="relative">
+                  <div class="absolute top-20 left-20">
+                    <img src="./images/10_01_08/number3.svg" alt="3" />
+                  </div>
+                  <img
+                    src="./images/10_01_08/popup_photo7.jpg"
+                    alt="차를 마시는 방법"
+                    class="min-w-608 h-full"
+                    data-name="popup_photo"
+                    style="display: none"
+                  />
+                </div>
+                <div class="relative">
+                  <div class="absolute top-20 left-20">
+                    <img src="./images/10_01_08/number4.svg" alt="4" />
+                  </div>
+                  <img
+                    src="./images/10_01_08/popup_photo8.jpg"
+                    alt="차를 마시는 방법"
+                    class="min-w-608 h-full"
+                    data-name="popup_photo"
+                    style="display: none"
+                  />
+                </div>
+                <div class="relative">
+                  <div class="absolute top-20 left-20">
+                    <img src="./images/10_01_08/number5.svg" alt="5" />
+                  </div>
+                  <img
+                    src="./images/10_01_08/popup_photo9.jpg"
+                    alt="차를 마시는 방법"
+                    class="min-w-608 h-full"
+                    data-name="popup_photo"
+                    style="display: none"
+                  />
+                </div>
+                <div class="relative">
+                  <div class="absolute top-20 left-20">
+                    <img src="./images/10_01_08/number6.svg" alt="6" />
+                  </div>
+                  <img
+                    src="./images/10_01_08/popup_photo10.jpg"
+                    alt="차를 마시는 방법"
+                    class="min-w-608 h-full"
+                    data-name="popup_photo"
+                    style="display: none"
+                  />
+                </div>
+                <div class="relative">
+                  <div class="absolute top-20 left-20">
+                    <img src="./images/10_01_08/number7.svg" alt="7" />
+                  </div>
+                  <img
+                    src="./images/10_01_08/popup_photo11.jpg"
+                    alt="차를 마시는 방법"
+                    class="min-w-608 h-full"
+                    data-name="popup_photo"
+                    style="display: none"
+                  />
+                </div>
+                <div class="relative">
+                  <div class="absolute top-20 left-20">
+                    <img src="./images/10_01_08/number8.svg" alt="8" />
+                  </div>
+                  <img
+                    src="./images/10_01_08/popup_photo12.jpg"
+                    alt="차를 마시는 방법"
+                    class="min-w-608 h-full"
+                    data-name="popup_photo"
+                    style="display: none"
+                  />
+                </div>
+              </div>
+              <div class="flex font-bold f-nanum-s text-40 leading-52 shrink-0">
+                <div data-name="popup_photo_text" class="text-blue"></div>
+                <div
+                  data-name="popup_photo_text"
+                  class="text-blue"
+                  style="display: none"
+                ></div>
+              </div>
+            </div>
+            <div class="w-266 h-402">
+              <div class="flex flex-wrap w-full gap-10">
+                <button
+                  data-name="btn-popup_photo"
+                  class="w-128 h-72 active"
+                  onclick="contentUtil.setPhotoPopup(5)"
+                >
+                  <img
+                    src="./images/10_01_08/popup_btn_photo5.jpg"
+                    alt="차를 마시는 방법"
+                  />
+                </button>
+                <button
+                  data-name="btn-popup_photo"
+                  class="w-128 h-72"
+                  onclick="contentUtil.setPhotoPopup(6)"
+                >
+                  <img
+                    src="./images/10_01_08/popup_btn_photo6.jpg"
+                    alt="차를 마시는 방법"
+                  />
+                </button>
+                <button
+                  data-name="btn-popup_photo"
+                  class="w-128 h-72"
+                  onclick="contentUtil.setPhotoPopup(7)"
+                >
+                  <img
+                    src="./images/10_01_08/popup_btn_photo7.jpg"
+                    alt="차를 마시는 방법"
+                  />
+                </button>
+                <button
+                  data-name="btn-popup_photo"
+                  class="w-128 h-72"
+                  onclick="contentUtil.setPhotoPopup(8)"
+                >
+                  <img
+                    src="./images/10_01_08/popup_btn_photo8.jpg"
+                    alt="차를 마시는 방법"
+                  />
+                </button>
+                <button
+                  data-name="btn-popup_photo"
+                  class="w-128 h-72"
+                  onclick="contentUtil.setPhotoPopup(9)"
+                >
+                  <img
+                    src="./images/10_01_08/popup_btn_photo9.jpg"
+                    alt="차를 마시는 방법"
+                  />
+                </button>
+                <button
+                  data-name="btn-popup_photo"
+                  class="w-128 h-72"
+                  onclick="contentUtil.setPhotoPopup(10)"
+                >
+                  <img
+                    src="./images/10_01_08/popup_btn_photo10.jpg"
+                    alt="차를 마시는 방법"
+                  />
+                </button>
+                <button
+                  data-name="btn-popup_photo"
+                  class="w-128 h-72"
+                  onclick="contentUtil.setPhotoPopup(11)"
+                >
+                  <img
+                    src="./images/10_01_08/popup_btn_photo11.jpg"
+                    alt="차를 마시는 방법"
+                  />
+                </button>
+                <button
+                  data-name="btn-popup_photo"
+                  class="w-128 h-72"
+                  onclick="contentUtil.setPhotoPopup(12)"
+                >
+                  <img
+                    src="./images/10_01_08/popup_btn_photo12.jpg"
+                    alt="차를 마시는 방법"
+                  />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript">
+    const page = {
+      isAnswer: false,
+      isVocabulary: false,
+      showAnswer: () => {},
+      hideAnswer: () => {},
+      showVocabulary: () => {},
+    };
+  </script>
+  <script src="./../common/js/tailwind.config.js"></script>
+  <script src="./../common/js/script.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      // contentUtil.setPopup(5);
+    });
+
+    $(`[data-name="btn-pagination"]`).on("click", function () {
+      if ($(this).index() < 2) {
+        $(`[data-name="btn-common"]`).show();
+        $(`[data-name="btn-common-dark"]`).hide();
+      } else {
+        $(`[data-name="btn-common"]`).hide();
+        $(`[data-name="btn-common-dark"]`).show();
+      }
+    });
+  </script>
+</html>

@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>미래엔 일본 문화</title>
+    <script src="./../common/lib/jquery-3.7.1.min.js"></script>
+    <script src="./../common/lib/howler-2.1.3.min.js"></script>
+    <script src="./../common/lib/tailwind.js"></script>
+    <!-- 폰트 -->
+    <link href="./../common/font/suit/suit.css" rel="stylesheet" />
+    <link href="./../common/font/bmjua/bmjua.css" rel="stylesheet" />
+    <link
+      href="./../common/font/nanumsquare/nanumSquare.css"
+      rel="stylesheet"
+    />
+    <link href="./../common/font/notoSansJP/notoSansJP.css" rel="stylesheet" />
+    <link href="./../common/css/tailwind.css" rel="stylesheet" />
+    <link href="./../common/css/fontStyle.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div id="wrap">
+      <!-- contents -->
+      <div class="relative w-full h-full pt-60">
+        <!-- title -->
+        <img
+          src="./../common/images/title_look_culture5.svg"
+          alt="문화 들여다보기1 동아리 활동"
+          class="absolute w-764 h-49 top-10"
+        />
+        <!-- header-btn -->
+        <div class="absolute right-0 flex gap-6 top-13" data-name="header-btn">
+          <!-- <button data-name="btn-common" onclick="contentUtil.setPopup(2)">
+            해설 보기
+          </button> -->
+          <!-- <button
+            data-name="btn-common-dark"
+            onclick="contentUtil.setPopup(2)"
+            class="absolute top-0 right-111 min-w-64"
+          >
+            TIP
+          </button> -->
+        </div>
+
+        <!-- main -->
+        <div class="flex flex-col w-full h-full">
+          <div
+            class="flex flex-col w-full mb-8 h-404 text-40 f-nanum-s leading-52 ps-20"
+          >
+            <div class="flex items-center mt-20 mb-4">
+              <img
+                src="./../common/images/index_pink_1.svg"
+                alt="번호 1"
+                class="w-40 h-40 me-4"
+              />
+              <span class="flex font-extrabold f-nanum-s text-40"
+                >동아리 활동(
+                <span data-audio="5_01_06/074-01.mp3" class="font-bold f-noto">
+                  <span class="relative"
+                    >部<span class="font-bold ruby">ぶ</span></span
+                  ><span class="relative"
+                    >活<span class="font-bold ruby">かつ</span>
+                  </span></span
+                >)
+              </span>
+            </div>
+            <div class="flex mb-4">
+              <div data-name="number-1" class="bg-[#C84935]"></div>
+              <span class="text-[#C84935] font-extrabold">운동부</span>
+            </div>
+
+            <!-- ======== page 1 ======== -->
+            <div data-name="page" class="flex flex-col font-bold">
+              <div>
+                <p class="ps-28">
+                  일본에서는 운동의 교육적 가치를 높이 평가해 동아리 활동을
+                </p>
+                <p>강조해 왔다. 많은 학생이 운동부에 소속되어 있으며 운동부</p>
+                <p>
+                  활동을 통해 체력을 기를 뿐만 아니라 자신의 재능을 발견하고
+                </p>
+                <p>진로를 찾기도 한다.</p>
+              </div>
+            </div>
+            <!-- ======== page 2 ======== -->
+            <div
+              data-name="page"
+              class="flex flex-col font-bold"
+              style="display: none"
+            >
+              <div>
+                <p>
+                  예를 들어 동아리 활동에서 두각을 나타낸 학생들을 위한 대입
+                </p>
+                <p>추천 전형이 있으며, 이 학생들이 프로 선수가 되기도 한다.</p>
+                <p>이는 보통 어릴 때부터 스포츠 특기생을 따로 기르는 방식을</p>
+                <p>채택하고 있는 우리나라와 다른 점이다.</p>
+              </div>
+            </div>
+            <!-- ======== page 3 ======== -->
+            <div
+              data-name="page"
+              class="flex flex-col font-bold"
+              style="display: none"
+            >
+              <div>
+                <p class="ps-28">
+                  일반적으로 방과 후에 동아리 활동을 하는데 부서에 따라
+                </p>
+                <p class="flex">
+                  다르지만 보통 주 3<span class="font-medium f-noto">～</span
+                  >5회 정도 실시하며 학교나 가까운 시설을
+                </p>
+                <p>이용한다. 학생들이 자발적으로 참여하며 담당 교사의 지도하</p>
+                <p>
+                  에 주말이나 수업 시작 전에 아침 일찍 활동하는 경우도 있다.
+                </p>
+              </div>
+            </div>
+            <!-- ======== page 4 ======== -->
+            <div
+              data-name="page"
+              class="flex flex-col font-bold"
+              style="display: none"
+            >
+              <!-- img box -->
+              <div class="flex gap-10 mt-6 right-80 bottom-66">
+                <div class="flex flex-col gap-10">
+                  <div class="relative overflow-hidden w-313 h-180 rounded-10">
+                    <img
+                      src="./images/5_01_06/main_photo1.jpg"
+                      alt="운동부1"
+                      class="w-full h-full"
+                    />
+                    <button
+                      data-name="btn-view"
+                      class="absolute bottom-10 right-10"
+                      onclick="contentUtil.setPopup(1); contentUtil.setPhotoPopup(1);"
+                    ></button>
+                  </div>
+                  <div class="flex justify-center w-full">
+                    <img src="./images/5_01_06/main_text1.svg" alt="" />
+                  </div>
+                </div>
+                <div class="flex flex-col gap-10">
+                  <div class="relative overflow-hidden w-313 h-180 rounded-10">
+                    <img
+                      src="./images/5_01_06/main_photo2.jpg"
+                      alt="운동부2"
+                      class="w-full h-full"
+                    />
+                    <button
+                      data-name="btn-view"
+                      class="absolute bottom-10 right-10"
+                      onclick="contentUtil.setPopup(1); contentUtil.setPhotoPopup(2);"
+                    ></button>
+                  </div>
+                  <div class="flex justify-center w-full">
+                    <img src="./images/5_01_06/main_text2.svg" alt="" />
+                  </div>
+                </div>
+                <div class="flex flex-col gap-10">
+                  <div class="relative overflow-hidden w-313 h-180 rounded-10">
+                    <img
+                      src="./images/5_01_06/main_photo3.jpg"
+                      alt="운동부3"
+                      class="w-full h-full"
+                    />
+                    <button
+                      data-name="btn-view"
+                      class="absolute bottom-10 right-10"
+                      onclick="contentUtil.setPopup(1); contentUtil.setPhotoPopup(3);"
+                    ></button>
+                  </div>
+                  <div class="flex justify-center w-full">
+                    <img src="./images/5_01_06/main_text3.svg" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- ======== page 5 ======== -->
+            <div
+              data-name="page"
+              class="flex flex-col font-bold"
+              style="display: none"
+            >
+              <!-- img box -->
+              <div class="flex gap-10 mt-6 right-80 bottom-66">
+                <div class="flex flex-col gap-10">
+                  <div class="relative overflow-hidden w-313 h-180 rounded-10">
+                    <img
+                      src="./images/5_01_06/main_photo4.jpg"
+                      alt="운동부4"
+                      class="w-full h-full"
+                    />
+                    <button
+                      data-name="btn-view"
+                      class="absolute bottom-10 right-10"
+                      onclick="contentUtil.setPopup(1); contentUtil.setPhotoPopup(4);"
+                    ></button>
+                  </div>
+                  <div class="flex justify-center w-full">
+                    <img src="./images/5_01_06/main_text4.svg" alt="" />
+                  </div>
+                </div>
+                <div class="flex flex-col gap-10">
+                  <div class="relative overflow-hidden w-313 h-180 rounded-10">
+                    <img
+                      src="./images/5_01_06/main_photo5.jpg"
+                      alt="운동부5"
+                      class="w-full h-full"
+                    />
+                    <button
+                      data-name="btn-view"
+                      class="absolute bottom-10 right-10"
+                      onclick="contentUtil.setPopup(1); contentUtil.setPhotoPopup(5);"
+                    ></button>
+                  </div>
+                  <div class="flex justify-center w-full">
+                    <img src="./images/5_01_06/main_text5.svg" alt="" />
+                  </div>
+                </div>
+                <div class="flex flex-col gap-10">
+                  <div class="relative overflow-hidden w-313 h-180 rounded-10">
+                    <img
+                      src="./images/5_01_06/main_photo6.jpg"
+                      alt="운동부6"
+                      class="w-full h-full"
+                    />
+                    <button
+                      data-name="btn-view"
+                      class="absolute bottom-10 right-10"
+                      onclick="contentUtil.setPopup(1); contentUtil.setPhotoPopup(6);"
+                    ></button>
+                  </div>
+                  <div class="flex justify-center w-full">
+                    <img src="./images/5_01_06/main_text6.svg" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- pagination -->
+          <div
+            class="absolute -translate-x-1/2 left-1/2 bottom-10"
+            data-name="pagination"
+          >
+            <button class="active" data-name="btn-pagination"></button>
+            <button class="" data-name="btn-pagination"></button>
+            <button class="" data-name="btn-pagination"></button>
+            <button class="" data-name="btn-pagination"></button>
+            <button class="" data-name="btn-pagination"></button>
+          </div>
+        </div>
+      </div>
+      <!-- popup -->
+      <div id="popup-wrap" style="display: none">
+        <!-- 사진 팝업창 -->
+        <div data-name="popup" data-popup="1" style="display: none">
+          <div data-name="popup-header">
+            <div data-name="popup-title">사진 팝업창</div>
+            <button
+              data-name="popup-close"
+              onclick="contentUtil.setPopup()"
+            ></button>
+          </div>
+          <div
+            data-name="popup-body"
+            class="flex items-center justify-center w-full h-full gap-16"
+          >
+            <div
+              class="flex flex-col items-center w-608 h-402"
+              data-name="popup_photo_wrap"
+            >
+              <div class="w-full overflow-x-hidden overflow-y-auto pe-4">
+                <img
+                  src="./images/5_01_06/popup_photo1.jpg"
+                  alt="야구부"
+                  class="object-contain min-w-608 rounded-10"
+                  data-name="popup_photo"
+                />
+                <img
+                  src="./images/5_01_06/popup_photo2.jpg"
+                  alt="농구부"
+                  class="object-contain min-w-608 rounded-10"
+                  data-name="popup_photo"
+                  style="display: none"
+                />
+                <img
+                  src="./images/5_01_06/popup_photo3.jpg"
+                  alt="검도부"
+                  class="object-contain min-w-608 rounded-10"
+                  data-name="popup_photo"
+                  style="display: none"
+                />
+                <img
+                  src="./images/5_01_06/popup_photo4.jpg"
+                  alt="유도부"
+                  class="object-contain min-w-608 rounded-10"
+                  data-name="popup_photo"
+                  style="display: none"
+                />
+                <img
+                  src="./images/5_01_06/popup_photo5.jpg"
+                  alt="궁도부"
+                  class="object-contain min-w-608 rounded-10"
+                  data-name="popup_photo"
+                  style="display: none"
+                />
+                <img
+                  src="./images/5_01_06/popup_photo6.jpg"
+                  alt="수구부"
+                  class="object-contain min-w-608 rounded-10"
+                  data-name="popup_photo"
+                  style="display: none"
+                />
+              </div>
+              <div
+                class="flex mt-8 font-bold f-nanum-s h-52 text-40 leading-52 shrink-0"
+              >
+                <div data-name="popup_photo_text">야구부</div>
+                <div data-name="popup_photo_text">농구부</div>
+                <div data-name="popup_photo_text">검도부</div>
+                <div data-name="popup_photo_text">유도부</div>
+                <div data-name="popup_photo_text">궁도부</div>
+                <div data-name="popup_photo_text">수구부</div>
+              </div>
+            </div>
+            <div class="w-266 h-402">
+              <div class="flex flex-wrap w-full gap-10">
+                <button
+                  data-name="btn-popup_photo"
+                  class="w-128 h-72 active"
+                  onclick="contentUtil.setPhotoPopup(1)"
+                >
+                  <img
+                    src="./images/5_01_06/popup_btn_photo1.jpg"
+                    alt="야구부"
+                  />
+                </button>
+                <button
+                  data-name="btn-popup_photo"
+                  class="w-128 h-72"
+                  onclick="contentUtil.setPhotoPopup(2)"
+                >
+                  <img
+                    src="./images/5_01_06/popup_btn_photo2.jpg"
+                    alt="농구부"
+                  />
+                </button>
+                <button
+                  data-name="btn-popup_photo"
+                  class="w-128 h-72"
+                  onclick="contentUtil.setPhotoPopup(3)"
+                >
+                  <img
+                    src="./images/5_01_06/popup_btn_photo3.jpg"
+                    alt="검도부"
+                  />
+                </button>
+                <button
+                  data-name="btn-popup_photo"
+                  class="w-128 h-72"
+                  onclick="contentUtil.setPhotoPopup(4)"
+                >
+                  <img
+                    src="./images/5_01_06/popup_btn_photo4.jpg"
+                    alt="유도부"
+                  />
+                </button>
+                <button
+                  data-name="btn-popup_photo"
+                  class="w-128 h-72"
+                  onclick="contentUtil.setPhotoPopup(5)"
+                >
+                  <img
+                    src="./images/5_01_06/popup_btn_photo5.jpg"
+                    alt="궁도부"
+                  />
+                </button>
+                <button
+                  data-name="btn-popup_photo"
+                  class="w-128 h-72"
+                  onclick="contentUtil.setPhotoPopup(6)"
+                >
+                  <img
+                    src="./images/5_01_06/popup_btn_photo6.jpg"
+                    alt="수구부"
+                  />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 해설 보기 -->
+        <div data-name="popup" data-popup="2" style="display: none">
+          <div data-name="popup-header">
+            <div data-name="popup-title">해설 보기</div>
+            <button
+              data-name="popup-close"
+              onclick="contentUtil.setPopup()"
+            ></button>
+          </div>
+          <div
+            data-name="popup-body"
+            class="mt-16 mb-10 font-bold ms-26 f-nanum-s me-6 leading-52 text-40"
+          >
+            <div class="flex flex-col">
+              <!-- title -->
+              <div class="flex items-center mb-10 h-55">
+                <img
+                  src="./../common/images/popup_titlemark_primary.svg"
+                  alt=""
+                  class="w-35 h-55 me-10"
+                />
+                <div class="flex">
+                  <div class="font-extrabold text-42 text-[#F25F7C]">
+                    <p>동아리 활동</p>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <p>일본에서는 많은 학생들이 방과 후에 동아리 활동에 참여</p>
+                <p>하고 있다. 필수는 아니므로 모든 학생이 동아리 활동을 해야</p>
+                <p>하는 의무는 없다. 일반적으로 중학교에서 가입했던 동아리</p>
+                <p>활동을 고등학교에서도 계속하는 학생이 많은 편이다.</p>
+                <p>고등학교마다 전통적으로 유명한 동아리가 있어, 그 동아리</p>
+                <p>에 들어가는 것을 목적으로 고등학교를 고르기도 한다.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript">
+    const page = {
+      isAnswer: false,
+      isVocabulary: false,
+      showAnswer: () => {},
+      hideAnswer: () => {},
+      showVocabulary: () => {},
+    };
+  </script>
+  <script src="./../common/js/tailwind.config.js"></script>
+  <script src="./../common/js/script.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      // contentUtil.setPage(5);
+    });
+  </script>
+</html>

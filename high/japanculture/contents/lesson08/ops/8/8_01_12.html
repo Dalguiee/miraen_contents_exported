@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>미래엔 일본 문화</title>
+    <script src="./../common/lib/jquery-3.7.1.min.js"></script>
+    <script src="./../common/lib/howler-2.1.3.min.js"></script>
+    <script src="./../common/lib/tailwind.js"></script>
+    <!-- 폰트 -->
+    <link href="./../common/font/suit/suit.css" rel="stylesheet" />
+    <link href="./../common/font/bmjua/bmjua.css" rel="stylesheet" />
+    <link
+      href="./../common/font/nanumsquare/nanumSquare.css"
+      rel="stylesheet"
+    />
+    <link href="./../common/font/notoSansJP/notoSansJP.css" rel="stylesheet" />
+    <link href="./../common/css/tailwind.css" rel="stylesheet" />
+    <link href="./../common/css/fontStyle.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div id="wrap">
+      <!-- contents -->
+      <div class="relative w-full h-full pt-68">
+        <!-- title -->
+        <img
+          src="./../common/images/title_look_culture1.svg"
+          alt="문화 들여다보기1 여행"
+          class="absolute w-764 h-49 top-10"
+        />
+        <!-- main -->
+        <div class="flex flex-col w-full h-full">
+          <div
+            class="flex flex-col w-full mb-8 h-404 text-40 f-nanum-s leading-52 ps-20"
+          >
+            <div class="flex items-center mb-4">
+              <img
+                src="./../common/images/index_pink_1.svg"
+                alt=""
+                class="w-40 h-40 me-4"
+              />
+              <span class="font-extrabold">지역별 관광 명소</span>
+            </div>
+            <div class="flex flex-col pt-8 font-bold">
+              <div class="flex mb-4">
+                <div data-name="number-5" class="bg-[#C84935]"></div>
+                <span class="text-[#C84935] font-extrabold flex">
+                  규슈(<span
+                    data-audio="8_01_12/120-01.mp3"
+                    class="font-bold f-noto"
+                    ><span class="relative"
+                      >九州<span class="font-bold ruby tracking-[-0.25em]"
+                        >きゅうしゅう</span
+                      ></span
+                    ></span
+                  >)
+                </span>
+              </div>
+              <!-- ======== page 1 ======== -->
+              <div data-name="page" class="flex flex-col">
+                <!-- header-btn -->
+                <div
+                  class="absolute right-0 flex gap-6 top-13"
+                  data-name="header-btn"
+                >
+                  <button
+                    data-name="btn-common-dark"
+                    class="min-w-62"
+                    onclick="contentUtil.setPopup(1)"
+                  >
+                    TIP
+                  </button>
+                  <button
+                    data-name="btn-common"
+                    onclick="contentUtil.setPopup(2)"
+                  >
+                    해설 보기
+                  </button>
+                </div>
+                <div>
+                  <p class="ps-28">
+                    일본 남쪽에 위치한 규슈의 대표적인 도시로는 후쿠오카와
+                  </p>
+                  <p>나가사키 등이 있다.</p>
+                  <p class="ps-28">
+                    후쿠오카는 규슈에서 가장 큰 도시로, 일본 최초의 개폐식
+                  </p>
+                  <p>돔구장인 ‘후쿠오카 돔’과 ‘후쿠오카 타워’ 등이 유명하다.</p>
+                  <p>근교에는 벳부, 유후인 등의 온천 마을이 있다.</p>
+                </div>
+              </div>
+              <!-- ======== page 2 ======== -->
+              <div data-name="page" class="flex flex-col" style="display: none">
+                <!-- header-btn -->
+                <div
+                  class="absolute right-0 flex gap-6 top-13"
+                  data-name="header-btn"
+                >
+                  <button
+                    data-name="btn-common-dark"
+                    class="min-w-62"
+                    onclick="contentUtil.setPopup(1)"
+                  >
+                    TIP
+                  </button>
+                  <button
+                    data-name="btn-common"
+                    onclick="contentUtil.setPopup(5)"
+                  >
+                    해설 보기
+                  </button>
+                </div>
+                <div>
+                  <p class="ps-28">
+                    나가사키는 에도 시대 당시 유일하게 외국과 교류하며 번성한
+                  </p>
+                  <p>항구 도시로, 아름다운 야경으로 유명하다. 주요 관광지로</p>
+                  <p>네덜란드의 거리 풍경을 재현하여 만든 테마파크 ‘하우스</p>
+                  <p>
+                    텐보스’와 천연 유황 온천으로 유명한 ‘운젠 온천’ 등이 있다.
+                  </p>
+                </div>
+              </div>
+              <!-- ======== page 3 ======== -->
+              <div data-name="page" class="flex flex-col" style="display: none">
+                <!-- header-btn -->
+                <div
+                  class="absolute right-0 flex gap-6 top-13"
+                  data-name="header-btn"
+                >
+                  <button
+                    data-name="btn-common"
+                    onclick="contentUtil.setPopup(4); contentUtil.setPhotoPopup(4);"
+                  >
+                    추가 사진
+                  </button>
+                </div>
+                <div class="flex gap-10 pt-6">
+                  <div class="relative w-313 h-267">
+                    <img
+                      src="./images/8_01_12/main_photo1.jpg"
+                      alt=""
+                      class="w-full h-full rounded-10"
+                    />
+                    <button
+                      data-name="btn-view"
+                      class="absolute right-10 bottom-10"
+                      onclick="contentUtil.setPopup(3); contentUtil.setPhotoPopup(1);"
+                    ></button>
+                  </div>
+                  <div class="relative w-313 h-267">
+                    <img
+                      src="./images/8_01_12/main_photo2.jpg"
+                      alt=""
+                      class="w-full h-full rounded-10"
+                    />
+                    <button
+                      data-name="btn-view"
+                      class="absolute right-10 bottom-10"
+                      onclick="contentUtil.setPopup(3); contentUtil.setPhotoPopup(2);"
+                    ></button>
+                  </div>
+                  <div class="relative w-313 h-267">
+                    <img
+                      src="./images/8_01_12/main_photo3.jpg"
+                      alt=""
+                      class="w-full h-full rounded-10"
+                    />
+                    <button
+                      data-name="btn-view"
+                      class="absolute right-10 bottom-10"
+                      onclick="contentUtil.setPopup(3); contentUtil.setPhotoPopup(3);"
+                    ></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- pagination -->
+          <div
+            class="absolute -translate-x-1/2 left-1/2 bottom-10"
+            data-name="pagination"
+          >
+            <button class="active" data-name="btn-pagination"></button>
+            <button class="" data-name="btn-pagination"></button>
+            <button class="" data-name="btn-pagination"></button>
+          </div>
+        </div>
+      </div>
+      <!-- popup -->
+      <div id="popup-wrap" style="display: none">
+        <!-- TIP -->
+        <div data-name="popup" data-popup="1" style="display: none">
+          <div data-name="popup-header">
+            <div data-name="popup-title">TIP</div>
+            <button
+              data-name="popup-close"
+              onclick="contentUtil.setPopup()"
+            ></button>
+          </div>
+          <div data-name="popup-body" class="mt-16 mb-10 ms-26 f-nanum-s me-6">
+            <div class="flex flex-col">
+              <!-- text -->
+              <div class="font-bold f-nanum-s text-40 leading-52">
+                <p>일본 내에서도 특히 규슈는 화산 활동이 활발하다. 현재</p>
+                <p>분화할 가능성이 있는 활화산으로 분류된 곳만 17곳으로,</p>
+                <p>이 중 가고시마현의 사쿠라지마와 구마모토현의 아소산</p>
+                <p>등이 유명하다.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 해설 보기 -->
+        <div data-name="popup" data-popup="2" style="display: none">
+          <div data-name="popup-header">
+            <div data-name="popup-title">해설 보기</div>
+            <button
+              data-name="popup-close"
+              onclick="contentUtil.setPopup()"
+            ></button>
+          </div>
+          <div data-name="popup-body" class="mt-16 mb-10 ms-26 f-nanum-s me-6">
+            <div class="flex flex-col">
+              <!-- title -->
+              <div class="flex items-center mb-10 h-55">
+                <img
+                  src="./../common/images/popup_titlemark_primary.svg"
+                  alt=""
+                  class="w-35 h-55 me-10"
+                />
+                <div class="flex font-extrabold text-42 text-[#41674B]">
+                  후쿠오카
+                </div>
+              </div>
+              <!-- text -->
+              <div class="mb-40 font-bold f-nanum-s text-40 leading-52">
+                <p>우리나라의 관광객이 오사카, 도쿄에 이어 세 번째로 많이</p>
+                <p>찾는 일본 유수의 관광지이다. 돈코쓰 라면의 본고장으로</p>
+                <p>유명하다. 일본 3대 덴만구 중 하나로 많은 관광객들이</p>
+                <p class="flex pt-12">
+                  찾는 신사인 ‘다자이후 텐만구(<span class="font-medium f-noto"
+                    ><span class="relative">大<span class="ruby">だ</span></span
+                    ><span class="relative"
+                      >宰<span class="ruby">ざい</span></span
+                    ><span class="relative">府<span class="ruby">ふ</span></span
+                    ><span class="relative"
+                      >天<span class="ruby">てん</span></span
+                    ><span class="relative"
+                      >満<span class="ruby">まん</span></span
+                    ><span class="relative"
+                      >宮<span class="ruby">ぐう</span></span
+                    ></span
+                  >)’가 있다.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 사진 팝업창 -->
+        <div data-name="popup" data-popup="3" style="display: none">
+          <div data-name="popup-header">
+            <div data-name="popup-title">사진 팝업창</div>
+            <button
+              data-name="popup-close"
+              onclick="contentUtil.setPopup()"
+            ></button>
+          </div>
+          <div
+            data-name="popup-body"
+            class="flex items-center justify-center w-full h-full gap-16"
+          >
+            <div
+              class="flex flex-col items-center w-608 h-402"
+              data-name="popup_photo_wrap"
+            >
+              <div class="w-full overflow-x-hidden overflow-y-auto pe-4">
+                <img
+                  src="./images/8_01_12/popup_photo1.jpg"
+                  alt=""
+                  class="object-contain min-w-608 rounded-10"
+                  data-name="popup_photo"
+                />
+                <img
+                  src="./images/8_01_12/popup_photo2.jpg"
+                  alt=""
+                  class="object-contain min-w-608 rounded-10"
+                  data-name="popup_photo"
+                  style="display: none"
+                />
+                <img
+                  src="./images/8_01_12/popup_photo3.jpg"
+                  alt=""
+                  class="object-contain min-w-608 rounded-10"
+                  data-name="popup_photo"
+                  style="display: none"
+                />
+              </div>
+              <div
+                class="flex mt-8 font-bold f-nanum-s h-52 text-40 leading-52 shrink-0"
+              >
+                <div data-name="popup_photo_text">
+                  후쿠오카 돔과 후쿠오카 타워
+                </div>
+                <div data-name="popup_photo_text" style="display: none">
+                  하우스텐보스
+                </div>
+                <div data-name="popup_photo_text" style="display: none">
+                  운젠 온천
+                </div>
+              </div>
+            </div>
+            <div class="w-266 h-402">
+              <div class="flex flex-wrap w-full gap-10">
+                <button
+                  data-name="btn-popup_photo"
+                  class="w-128 h-72 active"
+                  onclick="contentUtil.setPhotoPopup(1)"
+                >
+                  <img src="./images/8_01_12/popup_btn_photo1.jpg" alt="" />
+                </button>
+                <button
+                  data-name="btn-popup_photo"
+                  class="w-128 h-72"
+                  onclick="contentUtil.setPhotoPopup(2)"
+                >
+                  <img src="./images/8_01_12/popup_btn_photo2.jpg" alt="" />
+                </button>
+                <button
+                  data-name="btn-popup_photo"
+                  class="w-128 h-72"
+                  onclick="contentUtil.setPhotoPopup(3)"
+                >
+                  <img src="./images/8_01_12/popup_btn_photo3.jpg" alt="" />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 추가 사진 -->
+        <div data-name="popup" data-popup="4" style="display: none">
+          <div data-name="popup-header">
+            <div data-name="popup-title">추가 사진</div>
+            <button
+              data-name="popup-close"
+              onclick="contentUtil.setPopup()"
+            ></button>
+          </div>
+          <div
+            data-name="popup-body"
+            class="flex items-center justify-center w-full h-full gap-16"
+          >
+            <div
+              class="flex flex-col items-center w-608 h-402"
+              data-name="popup_photo_wrap"
+            >
+              <div class="w-full overflow-x-hidden overflow-y-auto pe-4">
+                <img
+                  src="./images/8_01_12/popup_photo4.jpg"
+                  alt=""
+                  class="object-contain min-w-608 rounded-10"
+                  data-name="popup_photo"
+                />
+                <img
+                  src="./images/8_01_12/popup_photo5.jpg"
+                  alt=""
+                  class="object-contain min-w-608 rounded-10"
+                  data-name="popup_photo"
+                  style="display: none"
+                />
+                <img
+                  src="./images/8_01_12/popup_photo6.jpg"
+                  alt=""
+                  class="object-contain min-w-608 rounded-10"
+                  data-name="popup_photo"
+                  style="display: none"
+                />
+                <img
+                  src="./images/8_01_12/popup_photo7.jpg"
+                  alt=""
+                  class="object-contain min-w-608 rounded-10"
+                  data-name="popup_photo"
+                  style="display: none"
+                />
+              </div>
+              <div
+                class="flex mt-8 font-bold f-nanum-s h-52 text-40 leading-52 shrink-0"
+              >
+                <div data-name="popup_photo_text" class="text-blue">
+                  후쿠오카 돔
+                </div>
+                <div
+                  data-name="popup_photo_text"
+                  class="text-blue"
+                  style="display: none"
+                >
+                  후쿠오카 타워
+                </div>
+                <div
+                  data-name="popup_photo_text"
+                  class="text-blue"
+                  style="display: none"
+                >
+                  하우스텐보스
+                </div>
+                <div
+                  data-name="popup_photo_text"
+                  class="text-blue"
+                  style="display: none"
+                >
+                  운젠 온천
+                </div>
+              </div>
+            </div>
+            <div class="w-266 h-402">
+              <div class="flex flex-wrap w-full gap-10">
+                <button
+                  data-name="btn-popup_photo"
+                  class="w-128 h-72 active"
+                  onclick="contentUtil.setPhotoPopup(4)"
+                >
+                  <img src="./images/8_01_12/popup_btn_photo4.jpg" alt="" />
+                </button>
+                <button
+                  data-name="btn-popup_photo"
+                  class="w-128 h-72"
+                  onclick="contentUtil.setPhotoPopup(5)"
+                >
+                  <img src="./images/8_01_12/popup_btn_photo5.jpg" alt="" />
+                </button>
+                <button
+                  data-name="btn-popup_photo"
+                  class="w-128 h-72"
+                  onclick="contentUtil.setPhotoPopup(6)"
+                >
+                  <img src="./images/8_01_12/popup_btn_photo6.jpg" alt="" />
+                </button>
+                <button
+                  data-name="btn-popup_photo"
+                  class="w-128 h-72"
+                  onclick="contentUtil.setPhotoPopup(7)"
+                >
+                  <img src="./images/8_01_12/popup_btn_photo7.jpg" alt="" />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 해설 보기 -->
+        <div data-name="popup" data-popup="5" style="display: none">
+          <div data-name="popup-header">
+            <div data-name="popup-title">해설 보기</div>
+            <button
+              data-name="popup-close"
+              onclick="contentUtil.setPopup()"
+            ></button>
+          </div>
+          <div data-name="popup-body" class="mt-16 mb-10 ms-26 f-nanum-s me-6">
+            <div class="flex flex-col">
+              <!-- title -->
+              <div class="flex items-center mb-10 h-55">
+                <img
+                  src="./../common/images/popup_titlemark_primary.svg"
+                  alt=""
+                  class="w-35 h-55 me-10"
+                />
+                <div class="flex font-extrabold text-42 text-[#41674B]">
+                  하우스텐보스
+                </div>
+              </div>
+              <!-- text -->
+              <div class="mb-40 font-bold f-nanum-s text-40 leading-52">
+                <p>일본 나가사키에 조성된 테마파크로 1992년에 개장했다.</p>
+                <p>명칭은 네덜란드의 왕궁 중 하나인 하우스텐보스 궁전에서</p>
+                <p>유래했다. 스릴 있는 어트랙션보다는 주로 박물관과 여러</p>
+                <p>개의 극장, 클래식 버스, 캐널 크루저(운하를 운항하는 배)</p>
+                <p>등의 어트랙션으로 구성되어 있다.</p>
+              </div>
+              <!-- title -->
+              <div class="flex items-center mb-10 h-55">
+                <img
+                  src="./../common/images/popup_titlemark_primary.svg"
+                  alt=""
+                  class="w-35 h-55 me-10"
+                />
+                <div class="flex font-extrabold text-42 text-[#41674B]">
+                  운젠 온천
+                </div>
+              </div>
+              <!-- text -->
+              <div class="font-bold f-nanum-s text-40 leading-52">
+                <p>운젠 온천은 일본 최초의 국립공원으로 지정된 곳으로,</p>
+                <p>온천수는 독특한 유황 냄새와 강한 산미가 특징이다. 운젠</p>
+                <p>온천 마을의 주요 명소는 ‘운젠 지옥’으로, 고온 가스가 지면</p>
+                <p>에서 뿜어 나오는 모습이 지옥 풍경과 비슷하다. 불교 용어</p>
+                <p class="flex">
+                  에서 유래한 이름을 가진 약 30개 정도의 분기(<span
+                    class="font-medium f-noto"
+                    >噴氣</span
+                  >) 장소
+                </p>
+                <p>로 구성되어 있으며, 특히 유명한 곳으로 다이쿄칸 지옥,</p>
+                <p>세이시치 지옥, 운젠 지옥 발찜질 등이 있다.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript">
+    const page = {
+      isAnswer: false,
+      isVocabulary: false,
+      showAnswer: () => {},
+      hideAnswer: () => {},
+      showVocabulary: () => {},
+    };
+  </script>
+  <script src="./../common/js/tailwind.config.js"></script>
+  <script src="./../common/js/script.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {});
+  </script>
+</html>

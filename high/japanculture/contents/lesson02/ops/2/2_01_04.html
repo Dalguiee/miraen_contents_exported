@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>미래엔 일본 문화</title>
+    <script src="./../common/lib/jquery-3.7.1.min.js"></script>
+    <script src="./../common/lib/howler-2.1.3.min.js"></script>
+    <script src="./../common/lib/tailwind.js"></script>
+    <!-- 폰트 -->
+    <link href="./../common/font/suit/suit.css" rel="stylesheet" />
+    <link href="./../common/font/bmjua/bmjua.css" rel="stylesheet" />
+    <link
+      href="./../common/font/nanumsquare/nanumSquare.css"
+      rel="stylesheet"
+    />
+    <link href="./../common/font/notoSansJP/notoSansJP.css" rel="stylesheet" />
+    <link href="./../common/css/tailwind.css" rel="stylesheet" />
+    <link href="./../common/css/fontStyle.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div id="wrap">
+      <!-- contents -->
+      <div class="relative w-full h-full pt-68">
+        <!-- title -->
+        <img
+          src="./../common/images/title_look_culture1.svg"
+          alt="문화 들여다보기1 전통의상1"
+          class="absolute w-764 h-49 top-10"
+        />
+        <!-- header-btn -->
+        <div class="absolute right-0 flex gap-6 top-13" data-name="header-btn">
+          <button
+            data-name="btn-common-dark"
+            class="min-w-62"
+            onclick="contentUtil.setPopup(3)"
+            style="display: none"
+          >
+            TIP
+          </button>
+        </div>
+        <!-- main -->
+        <div class="flex flex-col w-full h-full">
+          <div class="flex flex-col mb-8 w-763 h-404 leading-52 ps-20">
+            <div class="flex items-center mb-4">
+              <img
+                src="./../common/images/index_pink_1.svg"
+                alt="번호 1"
+                class="w-40 h-40 me-4"
+              />
+              <span class="font-extrabold f-nanum-s text-40"
+                >기모노의 변천</span
+              >
+            </div>
+            <!-- ======== page 1 ======== -->
+            <div
+              data-name="page"
+              class="flex flex-col font-bold f-nanum-s text-40"
+            >
+              <div>
+                <p class="flex mt-8 ps-28">
+                  기모노(<span
+                    data-audio="2_01_04/030-01.mp3"
+                    class="font-medium f-noto"
+                    ><span class="relative">着<span class="ruby">き</span></span
+                    ><span class="relative"
+                      >物<span class="ruby">もの</span></span
+                    ></span
+                  >)는 원래 ‘입다(<span
+                    data-audio="2_01_04/030-02.mp3"
+                    class="font-medium f-noto"
+                    ><span class="relative">着<span class="ruby">き</span></span
+                    >る</span
+                  >)’라는 말과
+                </p>
+                <p class="flex mt-12">
+                  ‘물건(<span
+                    data-audio="2_01_04/030-03.mp3"
+                    class="font-medium f-noto"
+                    ><span class="relative"
+                      >物<span class="ruby">もの</span></span
+                    ></span
+                  >)’이라는 말이 결합하여 ‘옷’을 의미하는
+                </p>
+                <p>일반 명사였다. 그런데 서양의 옷이 들어오면서</p>
+                <p>기모노는 일본의 전통 의상이라는 의미로</p>
+                <p>축소되었다. 서양 옷에 대한 ‘일본 옷’이라는</p>
+                <p class="flex mt-10">
+                  의미에서 ‘와후쿠(<span
+                    data-audio="2_01_04/030-04.mp3"
+                    class="font-medium f-noto"
+                    ><span class="relative">和<span class="ruby">わ</span></span
+                    ><span class="relative"
+                      >服<span class="ruby">ふく</span></span
+                    ></span
+                  >)’라고도 한다.
+                </p>
+              </div>
+            </div>
+            <!-- ======== page 2 ======== -->
+            <div
+              data-name="page"
+              class="flex flex-col font-bold f-nanum-s text-40"
+              style="display: none"
+            >
+              <div>
+                <p>지금과 같은 모양의 기모노는 귀족 문화가 주를</p>
+                <p>
+                  이루는
+                  <span
+                    class="relative cursor-pointer"
+                    onclick="contentUtil.setPopup(2)"
+                    >헤이안 시대<button
+                      data-name="btn-explan"
+                      onclick="contentUtil.setPopup(2)"
+                    ></button></span
+                  >에 이르러 일본식 의복으로
+                </p>
+                <p>정착되었다.</p>
+                <p class="ps-28">
+                  귀족이나 무사만 입던 기모노는
+                  <span
+                    class="relative cursor-pointer"
+                    onclick="contentUtil.setPopup(2)"
+                    >에도 시대<button
+                      data-name="btn-explan"
+                      onclick="contentUtil.setPopup(2)"
+                    ></button></span
+                  >에
+                </p>
+                <p>서민 문화가 발달하면서 서민도 입게 되었다.</p>
+              </div>
+            </div>
+            <!-- ======== page 3 ======== -->
+            <div
+              data-name="page"
+              class="flex flex-col font-bold f-nanum-s text-40"
+              style="display: none"
+            >
+              <div>
+                <p>옷을 입는 방식도 다양해지고, 오비의 형태나 매는</p>
+                <p>방법도 세련되어지면서 지금처럼 오비를 뒤로</p>
+                <p>매게 되었다. 물론 신분에 따라 옷의 소재나 색깔</p>
+                <p>등은 제한되어 서민은 수수한 색을 주로 입었다.</p>
+              </div>
+            </div>
+            <!-- ======== page 4 ======== -->
+            <div
+              data-name="page"
+              class="flex flex-col font-bold f-nanum-s text-40"
+              style="display: none"
+            >
+              <div>
+                <p class="ps-28">
+                  <span
+                    class="relative cursor-pointer"
+                    onclick="contentUtil.setPopup(2)"
+                    >메이지 시대<button
+                      data-name="btn-explan"
+                      onclick="contentUtil.setPopup(2)"
+                    ></button></span
+                  >에 서양 문화가 들어오면서 남성들
+                </p>
+                <p>은 서양식 의복을 입기 시작하였다. 특히 군인</p>
+                <p>이나 관료는 서양식 복장을 해야 한다는 정부</p>
+                <p>방침에 따라 복장이 서양식으로 바뀌기 시작</p>
+                <p>하였으며, 학생들도 기모노 대신 교복을 입는</p>
+                <p>경우가 많아졌다.</p>
+              </div>
+            </div>
+            <!-- ======== page 5 ======== -->
+            <div
+              data-name="page"
+              class="flex flex-col font-bold f-nanum-s text-40"
+              style="display: none"
+            >
+              <div>
+                <p>하지만 여성의 옷차림은 크게 변하지 않았으며,</p>
+                <p>남성도 일상생활에서는 여전히 기모노를 입었다.</p>
+                <p class="ps-28">기모노가 일상복이라는 기능을 잃고 서양식</p>
+                <p>복장이 일상복으로 정착하게 된 것은 제 2차 세계</p>
+                <p>대전 이후의 일이다.</p>
+              </div>
+            </div>
+            <!-- ======== page 6 ======== -->
+            <div
+              data-name="page"
+              class="flex flex-col font-bold f-nanum-s text-40"
+              style="display: none"
+            >
+              <div>
+                <p>전쟁을 거치면서 입기 편하고 활동하기도 편한</p>
+                <p>서양식 복장이 일상복으로 자리 잡게 된 것이다.</p>
+                <p>요즘은 기모노를 입을 기회가 많지 않으며, 설이나</p>
+                <p>결혼식, 성인식 등 특별한 행사가 있을 때에만</p>
+                <p>주로 입는다.</p>
+              </div>
+            </div>
+          </div>
+          <!-- img box -->
+          <div
+            class="absolute flex flex-col items-center gap-20 w-188 h-365 right-20 top-102"
+          >
+            <img
+              src="./images/2_01_04/main_photo1.png"
+              alt="헤이안 시대 기모노"
+              class="w-170 h-179"
+            />
+            <img
+              src="./images/2_01_04/main_photo2.png"
+              alt="에도 시대 기모노"
+              class="w-148 h-166"
+            />
+            <button
+              data-name="btn-view"
+              class="absolute top-130 right-9"
+              onclick="contentUtil.setPopup(1); contentUtil.setPhotoPopup(1);"
+            ></button>
+            <button
+              data-name="btn-view"
+              class="absolute top-316 right-20"
+              onclick="contentUtil.setPopup(1); contentUtil.setPhotoPopup(2);"
+            ></button>
+          </div>
+          <!-- pagination -->
+          <div
+            class="absolute -translate-x-1/2 left-1/2 bottom-10"
+            data-name="pagination"
+          >
+            <button class="active" data-name="btn-pagination"></button>
+            <button class="" data-name="btn-pagination"></button>
+            <button class="" data-name="btn-pagination"></button>
+            <button class="" data-name="btn-pagination"></button>
+            <button class="" data-name="btn-pagination"></button>
+            <button class="" data-name="btn-pagination"></button>
+          </div>
+        </div>
+      </div>
+      <!-- popup -->
+      <div id="popup-wrap" style="display: none">
+        <!-- 사진 팝업창 -->
+        <div data-name="popup" data-popup="1" style="display: none">
+          <div data-name="popup-header">
+            <div data-name="popup-title">사진 팝업창</div>
+            <button
+              data-name="popup-close"
+              onclick="contentUtil.setPopup()"
+            ></button>
+          </div>
+          <div
+            data-name="popup-body"
+            class="flex items-center justify-center w-full h-full gap-16"
+          >
+            <div
+              class="flex flex-col items-center w-608 h-402"
+              data-name="popup_photo_wrap"
+            >
+              <div class="w-full overflow-hidden h-400 rounded-10">
+                <img
+                  src="./images/2_01_04/popup_photo1.jpg"
+                  alt="헤이안 시대 기모노"
+                  class="w-full h-full"
+                  data-name="popup_photo"
+                />
+                <img
+                  src="./images/2_01_04/popup_photo2.jpg"
+                  alt="에도 시대 기모노"
+                  class="w-full h-full"
+                  data-name="popup_photo"
+                  style="display: none"
+                />
+              </div>
+              <div
+                class="flex mt-8 font-bold f-nanum-s h-52 text-40 leading-52 shrink-0"
+              >
+                <div data-name="popup_photo_text">헤이안 시대 기모노</div>
+                <div data-name="popup_photo_text" style="display: none">
+                  에도 시대 기모노
+                </div>
+              </div>
+            </div>
+            <div class="w-266 h-402">
+              <div class="flex flex-wrap w-full gap-10">
+                <button
+                  data-name="btn-popup_photo"
+                  class="w-128 h-72 active"
+                  onclick="contentUtil.setPhotoPopup(1)"
+                >
+                  <img
+                    src="./images/2_01_04/popup_btn_photo1.jpg"
+                    alt="헤이안 시대 기모노"
+                  />
+                </button>
+                <button
+                  data-name="btn-popup_photo"
+                  class="w-128 h-72"
+                  onclick="contentUtil.setPhotoPopup(2)"
+                >
+                  <img
+                    src="./images/2_01_04/popup_btn_photo2.jpg"
+                    alt="에도 시대 기모노"
+                  />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 설명 -->
+        <div
+          data-name="popup"
+          class="blue"
+          data-popup="2"
+          style="display: none"
+        >
+          <div data-name="popup-header">
+            <div data-name="popup-title">설명</div>
+            <button
+              data-name="popup-close"
+              onclick="contentUtil.setPopup()"
+            ></button>
+          </div>
+          <div
+            data-name="popup-body"
+            class="mt-16 overflow-hidden ms-26 f-nanum-s me-6"
+          >
+            <div class="flex flex-col">
+              <!-- title -->
+              <div class="flex items-center mt-12 mb-10 h-55">
+                <img
+                  src="./../common/images/popup_titlemark_blue.svg"
+                  alt=""
+                  class="w-35 h-55 me-10"
+                />
+                <div class="flex font-extrabold text-42 text-[#1D4A99]">
+                  헤이안(<span
+                    data-audio="2_01_04/030-05.mp3"
+                    class="font-semibold f-noto"
+                    ><span class="relative"
+                      >平<span class="font-bold ruby">へい</span></span
+                    ><span class="relative"
+                      >安<span class="font-bold ruby">あん</span></span
+                    ></span
+                  >) 시대
+                </div>
+              </div>
+              <!-- text -->
+              <div class="flex font-bold mb-18 f-nanum-s text-40 leading-52">
+                794년&nbsp;<span class="font-medium f-noto">～</span
+                >&nbsp;1185년
+              </div>
+              <!-- title -->
+              <div class="flex items-center mb-10 h-55">
+                <img
+                  src="./../common/images/popup_titlemark_blue.svg"
+                  alt=""
+                  class="w-35 h-55 me-10"
+                />
+                <div class="flex font-extrabold text-42 text-[#1D4A99]">
+                  에도(<span
+                    data-audio="2_01_04/030-06.mp3"
+                    class="font-semibold f-noto"
+                    ><span class="relative"
+                      >江<span class="font-bold ruby">え</span></span
+                    ><span class="relative"
+                      >戸<span class="font-bold ruby">ど</span></span
+                    ></span
+                  >) 시대
+                </div>
+              </div>
+              <!-- text -->
+              <div class="flex font-bold mb-18 f-nanum-s text-40 leading-52">
+                1603년&nbsp;<span class="font-medium f-noto">～</span
+                >&nbsp;1868년
+              </div>
+              <!-- title -->
+              <div class="flex items-center mb-10 h-55">
+                <img
+                  src="./../common/images/popup_titlemark_blue.svg"
+                  alt=""
+                  class="w-35 h-55 me-10"
+                />
+                <div class="flex font-extrabold text-42 text-[#1D4A99]">
+                  메이지(<span
+                    data-audio="2_01_04/030-07.mp3"
+                    class="font-semibold f-noto"
+                    ><span class="relative"
+                      >明<span class="font-bold ruby">めい</span></span
+                    ><span class="relative"
+                      >治<span class="font-bold ruby">じ</span></span
+                    ></span
+                  >) 시대
+                </div>
+              </div>
+              <!-- text -->
+              <div class="flex font-bold mb-18 f-nanum-s text-40 leading-52">
+                1868년&nbsp;<span class="font-medium f-noto">～</span
+                >&nbsp;1912년
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- tip -->
+        <div data-name="popup" data-popup="3" style="display: none">
+          <div data-name="popup-header">
+            <div data-name="popup-title">TIP</div>
+            <button
+              data-name="popup-close"
+              onclick="contentUtil.setPopup()"
+            ></button>
+          </div>
+          <div
+            data-name="popup-body"
+            class="mt-16 mb-10 font-bold ms-26 f-nanum-s me-6 leading-52 text-40"
+          >
+            <div class="flex flex-col">
+              <div>
+                <p>기모노는 남녀 구별 없이 왼쪽 옷깃이 위로 가도록 입는다.</p>
+                <p>오른쪽 옷깃이 위로 가게 입는 것은 ‘죽은 사람’에게 옷을</p>
+                <p>입힐 때 방향이므로 주의해야 한다.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript">
+    const page = {
+      isAnswer: false,
+      isVocabulary: false,
+      showAnswer: () => {},
+      hideAnswer: () => {},
+      showVocabulary: () => {},
+    };
+  </script>
+  <script src="./../common/js/tailwind.config.js"></script>
+  <script src="./../common/js/script.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {});
+
+    $(`[data-name="btn-pagination"]`).on("click", function () {
+      if ($(this).index() === 3) {
+        $(`[data-name="btn-common-dark"]`).show();
+      } else {
+        $(`[data-name="btn-common-dark"]`).hide();
+      }
+    });
+  </script>
+</html>

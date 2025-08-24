@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>미래엔 일본 문화</title>
+    <script src="./../common/lib/jquery-3.7.1.min.js"></script>
+    <script src="./../common/lib/howler-2.1.3.min.js"></script>
+    <script src="./../common/lib/tailwind.js"></script>
+    <!-- 폰트 -->
+    <link href="./../common/font/suit/suit.css" rel="stylesheet" />
+    <link href="./../common/font/bmjua/bmjua.css" rel="stylesheet" />
+    <link
+      href="./../common/font/nanumsquare/nanumSquare.css"
+      rel="stylesheet"
+    />
+    <link href="./../common/font/notoSansJP/notoSansJP.css" rel="stylesheet" />
+    <link href="./../common/css/tailwind.css" rel="stylesheet" />
+    <link href="./../common/css/fontStyle.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div id="wrap">
+      <!-- contents -->
+      <div class="relative w-full h-full pt-60">
+        <!-- title -->
+        <img
+          src="./../common/images/title_activity.png"
+          alt="활동"
+          class="absolute w-191 h-42 top-8"
+        />
+        <!-- main -->
+        <div class="flex flex-col w-full h-full">
+          <div
+            class="flex flex-col w-full mb-10 text-40 f-nanum-s leading-52 ps-20"
+          >
+            <div class="font-extrabold">
+              <p>오타쿠 문화가 개인과 사회에 미치는 긍정적 혹은 부정적인</p>
+              <p>영향에 대해 말해 봅시다.</p>
+            </div>
+          </div>
+          <div
+            class="border-4 w-960 pt-14 ps-20 pe-4 pb-14 mx-auto h-293 border-[#F57F81] rounded-10 mb-8"
+          >
+            <div class="w-full h-full">
+              <div
+                data-answer="1"
+                class="flex flex-col w-full gap-10 font-bold text-red text-40 f-nanum-s leading-52"
+                style="display: none"
+              >
+                <div class="flex">
+                  <div class="w-12 h-12 mt-20 rounded-full me-10 bg-red"></div>
+                  <div>
+                    <p>일본에서는 제야의 종을 108번(108가지 번뇌) 친다.</p>
+                  </div>
+                </div>
+                <div class="flex">
+                  <div class="w-12 h-12 mt-20 rounded-full me-10 bg-red"></div>
+                  <div>
+                    <p>일본에서는 12월 31일에 ‘도시코시소바’라는 국수를</p>
+                    <p>먹는다.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="mr-20 ms-auto">
+            <button
+              data-name="btn-common"
+              onclick="contentUtil.setPopup(1); audioPlay(audio, [`./../common/media/mp3/showAnswer.mp3`]);"
+            >
+              예시 답안
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- popup -->
+      <div id="popup-wrap" style="display: none">
+        <!-- 예시 답안 -->
+        <div data-name="popup" data-popup="1" style="display: none">
+          <div data-name="popup-header">
+            <div data-name="popup-title">예시 답안</div>
+            <button
+              data-name="popup-close"
+              onclick="contentUtil.setPopup()"
+            ></button>
+          </div>
+          <div
+            data-name="popup-body"
+            class="mt-16 ms-26 f-nanum-s me-6 overflow-hidden"
+          >
+            <!-- list -->
+            <div
+              class="flex flex-col gap-10 font-bold text-40 leading-52 text-red"
+            >
+              <!-- ------- -->
+              <div class="flex">
+                <div
+                  class="w-12 h-12 mt-20 rounded-full bg-red me-10 shrink-0"
+                ></div>
+                <span>긍정적인 영향</span>
+                <span data-name="colon-red" class="shrink-0">:</span>
+                <div>
+                  <p>예술·문화 영역의 창조 활동이 장려되고</p>
+                  <p>다양한 분야의 전문가를 육성할 수 있다.</p>
+                  <p>또한 전통 및 대중문화의 다양성이 문화</p>
+                  <p>발전에 이바지할 수 있다.</p>
+                </div>
+              </div>
+              <!-- ------- -->
+              <div class="flex">
+                <div
+                  class="w-12 h-12 mt-20 rounded-full bg-red me-10 shrink-0"
+                ></div>
+                <span>부정적인 영향</span>
+                <span data-name="colon-red" class="shrink-0">:</span>
+                <div>
+                  <p>오타쿠 문화에 관한 부정적인 인식과</p>
+                  <p>선입견으로 사회적 갈등이 심화될 수</p>
+                  <p>있으며, 오타쿠의 배타적이고 폐쇄적인</p>
+                  <p>태도가 범죄로 이어질 가능성이 있다.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript">
+    const page = {
+      isAnswer: false,
+      isVocabulary: false,
+      showAnswer: () => {},
+      hideAnswer: () => {},
+      showVocabulary: () => {},
+    };
+  </script>
+  <script src="./../common/js/tailwind.config.js"></script>
+  <script src="./../common/js/script.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      // contentUtil.setPopup(1);
+    });
+  </script>
+</html>

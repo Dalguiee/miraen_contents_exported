@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>미래엔 일본 문화</title>
+    <script src="./../common/lib/jquery-3.7.1.min.js"></script>
+    <script src="./../common/lib/howler-2.1.3.min.js"></script>
+    <script src="./../common/lib/tailwind.js"></script>
+    <!-- 폰트 -->
+    <link href="./../common/font/suit/suit.css" rel="stylesheet" />
+    <link href="./../common/font/bmjua/bmjua.css" rel="stylesheet" />
+    <link
+      href="./../common/font/nanumsquare/nanumSquare.css"
+      rel="stylesheet"
+    />
+    <link href="./../common/font/notoSansJP/notoSansJP.css" rel="stylesheet" />
+    <link href="./../common/css/tailwind.css" rel="stylesheet" />
+    <link href="./../common/css/fontStyle.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div id="wrap">
+      <!-- contents -->
+      <div class="relative w-full h-full pt-60">
+        <!-- title -->
+        <img
+          src="./../common/images/title_look_culture4.svg"
+          alt="문화 들여다보기2 주택의 내부구조"
+          class="absolute w-605 h-49 top-10"
+        />
+        <button
+          data-name="btn-common"
+          onclick="contentUtil.setPopup(2)"
+          class="absolute right-111 top-13 min-w-64"
+        >
+          보충 자료
+        </button>
+        <button
+          data-name="btn-common"
+          onclick="contentUtil.setPopup(3); contentUtil.setPhotoPopup(4);"
+          class="absolute right-0 top-13 min-w-64"
+        >
+          추가 사진
+        </button>
+
+        <!-- main -->
+        <div class="relative flex flex-col w-full h-full overflow-y-auto">
+          <div
+            class="flex flex-col flex-1 w-full mt-10 text-40 f-nanum-s leading-52 ps-20"
+          >
+            <div class="flex items-center mb-4">
+              <img
+                src="./../common/images/index_pink_2.svg"
+                alt="번호 2"
+                class="w-40 h-40 me-4"
+              />
+              <span class="font-extrabold f-nanum-s text-40"
+                >재난에 대비한 설비</span
+              >
+            </div>
+            <div class="flex mb-4 h-52">
+              <div data-name="number-1" class="bg-[#C84935]"></div>
+              <span class="text-[#C84935] font-extrabold"
+                >공동 주택의 베란다
+              </span>
+            </div>
+            <!-- img box -->
+
+            <!-- Image 1 -->
+            <div
+              class="absolute flex flex-col gap-10 overflow-hidden w-151 h-86 rounded-10 right-20 top-161"
+            >
+              <img
+                src="./images/3_01_32/main_photo1.jpg"
+                alt="피난사다리"
+                class="w-full h-full"
+              />
+              <button
+                data-name="btn-view"
+                class="absolute bottom-19 right-10"
+                onclick="contentUtil.setPopup(1); contentUtil.setPhotoPopup(3);"
+              ></button>
+            </div>
+
+            <!-- Image 2 -->
+            <div
+              class="absolute flex flex-col gap-10 overflow-hidden w-117 h-155 rounded-10 right-20 top-258"
+            >
+              <img
+                src="./images/3_01_32/main_photo2.jpg"
+                alt="피난사다리"
+                class="w-full h-full"
+              />
+              <button
+                data-name="btn-view"
+                class="absolute bottom-10 right-9"
+                onclick="contentUtil.setPopup(1); contentUtil.setPhotoPopup(2);"
+              ></button>
+            </div>
+            <!-- Image 3 -->
+            <div
+              class="absolute flex flex-col gap-10 overflow-hidden w-117 h-160 rounded-10 right-158 top-254"
+            >
+              <img
+                src="./images/3_01_32/main_photo3.jpg"
+                alt="대피용 칸막이 판"
+                class="w-full h-full"
+              />
+              <button
+                data-name="btn-view"
+                class="absolute bottom-10 right-9"
+                onclick="contentUtil.setPopup(1); contentUtil.setPhotoPopup(1);"
+              ></button>
+            </div>
+            <!-- ======== page 1 ======== -->
+            <div
+              data-name="page"
+              class="flex flex-col mb-20 font-bold f-nanum-s text-40"
+            >
+              <div>
+                <p class="ps-28">공동 주택의 베란다는 거주자가 사용할 수</p>
+
+                <p>있기는 하지만 이웃 주민과 공유하는 공간이다.</p>
+                <p>베란다에는 옆집과 구분 짓는 칸막이 판이</p>
+                <p>있는데, 재난 시에는 이 칸막이 판을 부수고</p>
+                <p>대피할 수 있다.</p>
+              </div>
+            </div>
+
+            <!-- ======== page 2 ======== -->
+            <div
+              data-name="page"
+              class="flex flex-col mb-20 font-bold f-nanum-s text-40"
+              style="display: none"
+            >
+              <div>
+                <p>유사시 대피할 수 있도록 대피용 칸막이 판</p>
+                <p>앞에는 물건을 놓아서는 안 된다. 또한 아파트</p>
+                <p>에는 피난 사다리가 설치되어 있어 현관으로</p>
+                <p>대피할 수 없을 때는 피난 사다리를 이용하여</p>
+                <p>외부로 대피한다.</p>
+              </div>
+            </div>
+            <!-- pagination -->
+            <div
+              class="absolute -translate-x-1/2 left-1/2 bottom-10"
+              data-name="pagination"
+            >
+              <button class="active" data-name="btn-pagination"></button>
+              <button class="" data-name="btn-pagination"></button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- popup -->
+      <div id="popup-wrap" style="display: none">
+        <!-- 사진 팝업창 -->
+        <div data-name="popup" data-popup="1" style="display: none">
+          <div data-name="popup-header">
+            <div data-name="popup-title">사진 팝업창</div>
+            <button
+              data-name="popup-close"
+              onclick="contentUtil.setPopup()"
+            ></button>
+          </div>
+          <div
+            data-name="popup-body"
+            class="flex items-center justify-center w-full h-full gap-16"
+          >
+            <div
+              class="flex flex-col items-center w-608 h-402"
+              data-name="popup_photo_wrap"
+            >
+              <div class="w-full overflow-x-hidden overflow-y-auto pe-4">
+                <img
+                  src="./images/3_01_32/popup_photo3.jpg"
+                  alt="대피용 칸막이 판"
+                  class="object-contain w-full rounded-10"
+                  data-name="popup_photo"
+                />
+                <img
+                  src="./images/3_01_32/popup_photo2.jpg"
+                  alt="피난 사다리"
+                  class="object-contain w-full rounded-10"
+                  data-name="popup_photo"
+                  style="display: none"
+                />
+                <img
+                  src="./images/3_01_32/popup_photo1.jpg"
+                  alt="피난 사다리"
+                  class="object-contain min-w-608 rounded-10"
+                  data-name="popup_photo"
+                  style="display: none"
+                />
+              </div>
+              <div
+                class="flex mt-8 font-bold f-nanum-s h-52 text-40 leading-52 shrink-0"
+              >
+                <div data-name="popup_photo_text">대피용 칸막이 판</div>
+                <div data-name="popup_photo_text">피난 사다리</div>
+                <div data-name="popup_photo_text">피난 사다리</div>
+              </div>
+            </div>
+            <div class="w-266 h-402">
+              <div class="flex flex-wrap w-full gap-10">
+                <button
+                  data-name="btn-popup_photo"
+                  class="w-128 h-72 active"
+                  onclick="contentUtil.setPhotoPopup(1)"
+                >
+                  <img
+                    src="./images/3_01_32/popup_btn_photo3.jpg"
+                    alt="대피용 칸막이 판"
+                  />
+                </button>
+                <button
+                  data-name="btn-popup_photo"
+                  class="w-128 h-72"
+                  onclick="contentUtil.setPhotoPopup(2)"
+                >
+                  <img
+                    src="./images/3_01_32/popup_btn_photo2.jpg"
+                    alt="피난 사다리"
+                  />
+                </button>
+                <button
+                  data-name="btn-popup_photo"
+                  class="w-128 h-72"
+                  onclick="contentUtil.setPhotoPopup(3)"
+                >
+                  <img
+                    src="./images/3_01_32/popup_btn_photo1.jpg"
+                    alt="피난 사다리"
+                  />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 보충 자료 -->
+        <div data-name="popup" data-popup="2" style="display: none">
+          <div data-name="popup-header">
+            <div data-name="popup-title">보충 자료</div>
+            <button
+              data-name="popup-close"
+              onclick="contentUtil.setPopup()"
+            ></button>
+          </div>
+          <div
+            data-name="popup-body"
+            class="mt-16 mb-10 mr-6 ms-26 f-nanum-s me-6"
+          >
+            <!--  popup section 1  -->
+            <div class="flex flex-col mr-2">
+              <!-- title -->
+              <div class="flex items-center mb-10 h-55">
+                <img
+                  src="./../common/images/popup_titlemark_primary.svg"
+                  alt=""
+                  class="w-35 h-55 me-10"
+                />
+                <div
+                  class="flex font-extrabold text-42 text-[#F25F7C] items-baseline"
+                >
+                  비상구 진입구 표시
+                </div>
+              </div>
+
+              <div class="font-bold f-nanum-s text-40 leading-52">
+                <p>일본은 화재나 지진 등의 재해가 많기 때문에 비상용 진입구</p>
+                <p>표시가 반드시 필요하다. 비상용 진입구는 빨간 역삼각형</p>
+                <p>표시로, 비상시 진입구 혹은 소방관 진입구이다. 3층 이상</p>
+                <p>31m 이하의 건물에는 건축기준법상 의무적으로 설치해야</p>
+                <p>하며, 보통 8, 9층 이하의 건물에 설치하고 높은 건물에는</p>
+                <p>설치하지 않아도 된다.</p>
+              </div>
+              <div
+                class="relative flex flex-col mt-10 overflow-hidden w-316 h-200 rounded-10"
+              >
+                <img
+                  src="./images/3_01_32/popup_photo4.jpg"
+                  alt="주택1"
+                  class="w-full h-full"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 추가 사진 -->
+        <div data-name="popup" data-popup="3" style="display: none">
+          <div data-name="popup-header">
+            <div data-name="popup-title">추가 사진</div>
+            <button
+              data-name="popup-close"
+              onclick="contentUtil.setPopup()"
+            ></button>
+          </div>
+          <div
+            data-name="popup-body"
+            class="flex items-center justify-center w-full h-full gap-16"
+          >
+            <div
+              class="flex flex-col items-center w-608 h-402"
+              data-name="popup_photo_wrap"
+            >
+              <div class="w-full overflow-x-hidden overflow-y-auto h-400 pe-4">
+                <img
+                  src="./images/3_01_32/popup_photo7.jpg"
+                  alt="대피용 칸막이"
+                  class="object-contain w-full rounded-10"
+                  data-name="popup_photo"
+                />
+                <img
+                  src="./images/3_01_32/popup_photo5.jpg"
+                  alt="피난 사다리"
+                  class="object-contain w-full rounded-10"
+                  style="display: none"
+                  data-name="popup_photo"
+                />
+                <img
+                  src="./images/3_01_32/popup_photo6.jpg"
+                  alt="피난 사다리"
+                  class="object-contain w-full rounded-10"
+                  data-name="popup_photo"
+                />
+              </div>
+              <div
+                class="flex mt-8 font-bold f-nanum-s h-52 text-40 leading-52 shrink-0"
+              >
+                <div data-name="popup_photo_text" class="text-blue">
+                  대피용 칸막이
+                </div>
+                <div
+                  style="display: none"
+                  data-name="popup_photo_text"
+                  class="text-blue"
+                >
+                  피난 사다리
+                </div>
+                <div
+                  style="display: none"
+                  data-name="popup_photo_text"
+                  class="text-blue"
+                >
+                  피난 사다리
+                </div>
+              </div>
+            </div>
+            <div class="w-266 h-402">
+              <div class="flex flex-wrap w-full gap-10">
+                <button
+                  data-name="btn-popup_photo"
+                  class="w-128 h-72 active"
+                  onclick="contentUtil.setPhotoPopup(4)"
+                >
+                  <img
+                    src="./images/3_01_32/popup_btn_photo4.jpg"
+                    alt="대피용 칸막이"
+                  />
+                </button>
+                <button
+                  data-name="btn-popup_photo"
+                  class="w-128 h-72"
+                  onclick="contentUtil.setPhotoPopup(5)"
+                >
+                  <img
+                    src="./images/3_01_32/popup_btn_photo5.jpg"
+                    alt="피난 사다리"
+                  />
+                </button>
+                <button
+                  data-name="btn-popup_photo"
+                  class="w-128 h-72"
+                  onclick="contentUtil.setPhotoPopup(6)"
+                >
+                  <img
+                    src="./images/3_01_32/popup_btn_photo6.jpg"
+                    alt="피난 사다리"
+                  />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript">
+    const page = {
+      isAnswer: false,
+      isVocabulary: false,
+      showAnswer: () => {},
+      hideAnswer: () => {},
+      showVocabulary: () => {},
+    };
+  </script>
+  <script src="./../common/js/tailwind.config.js"></script>
+  <script src="./../common/js/script.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      // contentUtil.setPopup(2);
+    });
+  </script>
+</html>

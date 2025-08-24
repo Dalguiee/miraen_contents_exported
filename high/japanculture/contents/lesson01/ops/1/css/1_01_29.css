@@ -1,0 +1,75 @@
+.content-wrap .content-contents-wrap .content-contents {
+  overflow: visible;
+}
+
+.contents {
+  position: relative;
+}
+
+.tab-cont-tit .title {
+  height: 86px;
+  line-height: 52px;
+  background-position: center left;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 3px;
+  position: relative;
+  left: -2px;
+}
+
+.tab-cont-cont {
+  line-height: 52px;
+  letter-spacing: -0.055em;
+}
+
+.tab-cont-cont .image-pop-preview {
+  width: 231px;
+  height: 165px;
+  margin-left: 15px;
+}
+
+/* 1번째 슬라이드 */
+.tab-content-1 .tab-cont-tit .title {
+  width: 377px;
+  background-image: url('../images/1_01_29/title2.png');
+}
+
+/* 2번째 슬라이드 */
+.tab-content-2 .tab-cont-tit .title {
+  width: 377px;
+  background-image: url('../images/1_01_29/title2.png');
+}
+
+/* 3번째 슬라이드 */
+.tab-content-3 .tab-cont-tit .title {
+  width: 397px;
+  background-image: url('../images/1_01_29/title3.png');
+}
+
+.popup-contents {
+  letter-spacing: -0.055em;
+  line-height: 52px;
+}
+
+.popup-contents .img-wrap {
+  margin-top: 10px;
+}
+
+.popup-contents .img-wrap > li + li {
+  margin-left: 70px;
+}
+
+.popup-contents .image-pop-preview {
+  width: 380px;
+  height: 200px;
+}
+
+.popup-contents .img-wrap .txt {
+  width: 100%;
+  text-align: center;
+  line-height: 48px;
+  margin-top: 10px;
+}

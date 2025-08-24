@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>미래엔 일본 문화</title>
+    <script src="./../common/lib/jquery-3.7.1.min.js"></script>
+    <script src="./../common/lib/howler-2.1.3.min.js"></script>
+    <script src="./../common/lib/tailwind.js"></script>
+    <!-- 폰트 -->
+    <link href="./../common/font/suit/suit.css" rel="stylesheet" />
+    <link href="./../common/font/bmjua/bmjua.css" rel="stylesheet" />
+    <link
+      href="./../common/font/nanumsquare/nanumSquare.css"
+      rel="stylesheet"
+    />
+    <link href="./../common/font/notoSansJP/notoSansJP.css" rel="stylesheet" />
+    <link href="./../common/css/tailwind.css" rel="stylesheet" />
+    <link href="./../common/css/fontStyle.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div id="wrap">
+      <!-- contents -->
+      <div class="relative w-full h-full pt-60">
+        <!-- title -->
+        <img
+          src="./../common/images/title_look_culture1.svg"
+          alt="문화 들여다보기1 전통예술"
+          class="absolute w-764 h-49 top-10"
+        />
+        <!-- header-btn -->
+        <div class="absolute right-0 flex gap-6 top-13" data-name="header-btn">
+          <button data-name="btn-common" onclick="contentUtil.setPopup(2)">
+            보충 자료
+          </button>
+        </div>
+        <!-- main -->
+        <div class="flex flex-col w-full h-full mt-10">
+          <div class="flex flex-col mb-8 leading-52 ps-20">
+            <div class="flex items-center mb-4">
+              <img
+                src="./../common/images/index_pink_4.svg"
+                alt="번호 2"
+                class="w-40 h-40 me-4"
+              />
+              <span class="font-extrabold f-nanum-s text-40 flex relative z-10">
+                우키요에(<span
+                  data-audio="10_01_10/150-01.mp3"
+                  class="f-noto font-bold"
+                  >うきよえ</span
+                >)
+              </span>
+            </div>
+            <!-- ======== page 1 ======== -->
+            <div
+              data-name="page"
+              class="flex flex-col font-bold f-nanum-s text-40"
+            >
+              <div>
+                <p class="ps-28">
+                  ‘우키요에’는 에도 시대에 유행하던 풍속화로 대부분 판화이다.
+                </p>
+                <p>
+                  당시 중국 회화의 영향 아래에 있던 수묵화는 비현실적인 풍경
+                </p>
+                <p>등 이상적인 세계를 소재로 한 것이 많았던 반면, 우키요에는</p>
+                <p>그 시대 사람들의 생활 모습을 생생하게 그려 낸 것이 특징</p>
+                <p>
+                  이다. 실제 풍경이나 당시 유행한 가부키 극장가나 배우, 스모
+                </p>
+                <p>선수 등을 소재로 한 작품들이 다수 남아 있다.</p>
+              </div>
+            </div>
+            <!-- ======== page 2 ======== -->
+            <div
+              data-name="page"
+              class="flex flex-col font-bold f-nanum-s text-40 w-full"
+              style="display: none"
+            >
+              <div class="w-full">
+                <p>우키요에는 대부분 생활과 유흥 등에 관한 정보 제공을 위해</p>
+                <p>
+                  제작한 것으로, 쉽게 쓰고 버리는 현재의 잡지나 전단지와 같은
+                </p>
+                <p>
+                  용도였다. 그래서 수출하는 도자기가 깨지지 않도록 싸는 포장지
+                </p>
+                <p>로도 사용되어 유럽으로 건너가게 되었다.</p>
+                <p class="ps-28">
+                  개항 이후에는 본격적으로 유럽에 소개되어 당시 활동하던
+                </p>
+                <p>인상주의 화가들에게 큰 영향을 주었다.</p>
+              </div>
+            </div>
+
+            <!-- ======== page 3 ======== -->
+            <div
+              data-name="page"
+              class="flex flex-col font-bold f-nanum-s text-40 w-full"
+              style="display: none"
+            >
+              <div class="w-full">
+                <p>
+                  그중 한 사람이 고흐로 ‘탕기 영감의 초상’이라는 작품의 배경에
+                </p>
+                <p>우키요에를 그려 넣기도 하였다. 이와 같이 19세기 중후반</p>
+                <p>유럽에서 유행한 일본풍 사조를 ‘자포니즘(Japonism)’이라고</p>
+                <p>한다. 이국에 대한 단순한 호기심에 그치지 않고 일본 양식을</p>
+                <p>적극적으로 받아들여 새로운 사조를 형성한 점에서 높게 평가</p>
+                <p>받는다.</p>
+              </div>
+            </div>
+            <!-- ======== page 4 ======== -->
+            <div
+              data-name="page"
+              class="flex flex-col font-bold f-nanum-s text-40 w-full"
+              style="display: none"
+            >
+              <div class="w-full flex items-center justify-center">
+                <!-- Image Box -->
+                <div class="absolute bottom-6">
+                  <div class="relative flex flex-col w-846 h-439 items-center">
+                    <img
+                      src="./images/10_01_10/main_photo1.png"
+                      alt="우키요에"
+                      class="w-full h-full rounded-10"
+                    />
+                    <button
+                      data-name="btn-view"
+                      class="absolute bottom-10 right-10"
+                      onclick="contentUtil.setPopup(1); contentUtil.setPhotoPopup(4);"
+                    ></button>
+                    <button
+                      data-name="btn-view"
+                      class="absolute bottom-64 right-190"
+                      onclick="contentUtil.setPopup(1); contentUtil.setPhotoPopup(1);"
+                    ></button>
+                    <button
+                      data-name="btn-view"
+                      class="absolute bottom-64 right-482"
+                      onclick="contentUtil.setPopup(1); contentUtil.setPhotoPopup(3);"
+                    ></button>
+                    <button
+                      data-name="btn-view"
+                      class="absolute bottom-119 right-672"
+                      onclick="contentUtil.setPopup(1); contentUtil.setPhotoPopup(2);"
+                    ></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- pagination -->
+          <div
+            class="absolute -translate-x-1/2 left-1/2 bottom-10"
+            data-name="pagination"
+          >
+            <button class="active" data-name="btn-pagination"></button>
+            <button class="" data-name="btn-pagination"></button>
+            <button class="" data-name="btn-pagination"></button>
+            <button class="" data-name="btn-pagination"></button>
+          </div>
+        </div>
+      </div>
+      <!-- popup -->
+      <div id="popup-wrap" style="display: none">
+        <!-- 보충 자료 -->
+        <div data-name="popup" data-popup="2" style="display: none">
+          <div data-name="popup-header">
+            <div data-name="popup-title">보충 자료</div>
+            <button
+              data-name="popup-close"
+              onclick="contentUtil.setPopup()"
+            ></button>
+          </div>
+          <div
+            data-name="popup-body"
+            class="mt-16 ms-26 f-nanum-s me-6 relative h-full"
+          >
+            <div class="flex flex-col">
+              <!-- title -->
+              <div class="flex items-center mb-10 h-55">
+                <img
+                  src="./../common/images/popup_titlemark_primary.svg"
+                  alt=""
+                  class="w-35 h-55 me-10"
+                />
+                <div class="flex font-extrabold text-42 text-[#41674B]">
+                  우키요에와 니시키에
+                </div>
+              </div>
+              <!-- text -->
+              <div class="mb-10 font-bold f-nanum-s text-40 leading-52">
+                <p>우키요에의 형식으로는 육필화(회화와 비슷하게 종이나</p>
+                <p>비단 등에 그리는 그림)와 판화가 있다. 에도 시대 당시</p>
+                <p>유행하던 대중 서적에 실리는 삽화로 판화 형식이 발전하게</p>
+                <p>되는데, 이것이 독립하여 우키요에의 주류가 된다. 초반에</p>
+                <p>는 흑백 판화로 시작하였으나 여러 유파를 거치면서 점점</p>
+                <p>색채가 풍부한 다색 판화로 발전했다. 특히 여러 색판을</p>
+                <p>수없이 겹쳐 찍는 판화의 형식으로까지 발전하는데, 이를</p>
+                <p class="flex pt-12">
+                  ‘니시키에(<span class="f-noto font-medium"
+                    ><span class="relative"
+                      >錦<span class="ruby tracking-[-0.25em]"
+                        >にしき</span
+                      ></span
+                    ><span class="relative"
+                      >絵<span class="ruby">え</span></span
+                    ></span
+                  >)’라고 한다.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 사진 팝업창 -->
+        <div data-name="popup" data-popup="1" style="display: none">
+          <div data-name="popup-header">
+            <div data-name="popup-title">사진 팝업창</div>
+            <button
+              data-name="popup-close"
+              onclick="contentUtil.setPopup()"
+            ></button>
+          </div>
+          <div
+            data-name="popup-body"
+            class="flex items-center justify-center w-full h-full gap-16"
+          >
+            <div
+              class="flex flex-col items-center w-608 h-402"
+              data-name="popup_photo_wrap"
+            >
+              <div class="w-full overflow-x-hidden overflow-y-auto pe-4">
+                <img
+                  src="./images/10_01_10/popup_photo1.jpg"
+                  alt="고흐의 ‘탕기 영감의 초상’"
+                  class="object-contain w-full rounded-10"
+                  data-name="popup_photo"
+                />
+                <img
+                  src="./images/10_01_10/popup_photo2.jpg"
+                  alt="후지 36경 사가미강"
+                  class="object-contain w-full rounded-10"
+                  data-name="popup_photo"
+                  style="display: none"
+                />
+                <img
+                  src="./images/10_01_10/popup_photo3.jpg"
+                  alt="삼포옥의 다카오"
+                  class="object-contain w-full rounded-10"
+                  data-name="popup_photo"
+                  style="display: none"
+                />
+                <img
+                  src="./images/10_01_10/popup_photo4.jpg"
+                  alt="운룡포를 입은 기녀"
+                  class="object-contain w-full rounded-10"
+                  data-name="popup_photo"
+                  style="display: none"
+                />
+              </div>
+              <div
+                class="flex mt-8 font-bold f-nanum-s h-52 text-40 leading-52 shrink-0"
+              >
+                <div data-name="popup_photo_text">
+                  고흐의 ‘탕기 영감의 초상’
+                </div>
+                <div data-name="popup_photo_text" style="display: none">
+                  후지 36경 사가미강
+                </div>
+                <div data-name="popup_photo_text" style="display: none">
+                  삼포옥의 다카오
+                </div>
+                <div data-name="popup_photo_text" style="display: none">
+                  운룡포를 입은 기녀
+                </div>
+              </div>
+            </div>
+            <div class="w-266 h-402">
+              <div class="flex flex-wrap w-full gap-10">
+                <button
+                  data-name="btn-popup_photo"
+                  class="w-128 h-72 active"
+                  onclick="contentUtil.setPhotoPopup(1)"
+                >
+                  <img
+                    src="./images/10_01_10/popup_btn_photo1.jpg"
+                    alt="고흐의 ‘탕기 영감의 초상’"
+                  />
+                </button>
+                <button
+                  data-name="btn-popup_photo"
+                  class="w-128 h-72"
+                  onclick="contentUtil.setPhotoPopup(2)"
+                >
+                  <img
+                    src="./images/10_01_10/popup_btn_photo2.jpg"
+                    alt="후지 36경 사가미강"
+                  />
+                </button>
+                <button
+                  data-name="btn-popup_photo"
+                  class="w-128 h-72"
+                  onclick="contentUtil.setPhotoPopup(3)"
+                >
+                  <img
+                    src="./images/10_01_10/popup_btn_photo3.jpg"
+                    alt="삼포옥의 다카오"
+                  />
+                </button>
+                <button
+                  data-name="btn-popup_photo"
+                  class="w-128 h-72"
+                  onclick="contentUtil.setPhotoPopup(4)"
+                >
+                  <img
+                    src="./images/10_01_10/popup_btn_photo4.jpg"
+                    alt="운룡포를 입은 기녀"
+                  />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript">
+    const page = {
+      isAnswer: false,
+      isVocabulary: false,
+      showAnswer: () => {},
+      hideAnswer: () => {},
+      showVocabulary: () => {},
+    };
+  </script>
+  <script src="./../common/js/tailwind.config.js"></script>
+  <script src="./../common/js/script.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      // contentUtil.setPopup(2);
+    });
+
+    $(`[data-name="btn-pagination"]`).on("click", function () {
+      if ($(this).index() === 3) {
+        $(`[data-name="btn-common-dark"]`).show();
+      } else {
+        $(`[data-name="btn-common-dark"]`).hide();
+      }
+    });
+  </script>
+</html>

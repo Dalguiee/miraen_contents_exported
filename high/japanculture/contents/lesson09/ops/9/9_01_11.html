@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>미래엔 일본 문화</title>
+    <script src="./../common/lib/jquery-3.7.1.min.js"></script>
+    <script src="./../common/lib/howler-2.1.3.min.js"></script>
+    <script src="./../common/lib/tailwind.js"></script>
+    <!-- 폰트 -->
+    <link href="./../common/font/suit/suit.css" rel="stylesheet" />
+    <link href="./../common/font/bmjua/bmjua.css" rel="stylesheet" />
+    <link
+      href="./../common/font/nanumsquare/nanumSquare.css"
+      rel="stylesheet"
+    />
+    <link href="./../common/font/notoSansJP/notoSansJP.css" rel="stylesheet" />
+    <link href="./../common/css/tailwind.css" rel="stylesheet" />
+    <link href="./../common/css/fontStyle.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div id="wrap">
+      <!-- contents -->
+      <div class="relative w-full h-full pt-60">
+        <!-- title -->
+        <div class="absolute left-0 flex items-center top-7">
+          <img
+            src="./../common/images/title_culture_plus.svg"
+            alt="문화 +"
+            class="w-111 h-44"
+          />
+        </div>
+        <!-- header-btn -->
+        <div class="absolute right-0 flex gap-6 top-13" data-name="header-btn">
+          <button data-name="btn-common" onclick="contentUtil.setPopup(1)">
+            해설 보기
+          </button>
+        </div>
+        <!-- main -->
+        <div
+          class="flex flex-col w-full h-full font-bold leading-52 text-40 f-nanum-s ps-20"
+        >
+          <div
+            class="w-400 ps-28 flex items-center h-54 bg-[url(./images/9_01_11/label_title.svg)] bg-no-repeat bg-cover mb-10"
+          >
+            <span class="flex font-extrabold"
+              >유루캬라(<span
+                data-audio="9_01_11/134-03.mp3"
+                class="font-bold f-noto"
+                >ゆるキャラ</span
+              >)</span
+            >
+          </div>
+          <!-- ======== page 1 ======== -->
+          <div data-name="page">
+            <p class="flex ps-28">
+              ‘유루캬라’는 ‘<span
+                data-audio="9_01_11/134-04.mp3"
+                class="font-medium f-noto"
+                >ゆるい</span
+              >(느슨하다)’와 ‘<span
+                class="font-medium f-noto"
+                data-audio="9_01_11/134-05.mp3"
+                >キャラクター</span
+              >(캐릭터)’
+            </p>
+            <p>의 합성어로, 지역을 홍보하기 위해 만들어진 마스코트를</p>
+            <p>가리킨다. 각종 행사나 캠페인에서 지역 특산품이나</p>
+            <p>관광 상품을 소개하는 용도로 만들어졌으며,</p>
+            <p>기업이나 다른 지역과 협업 상품을 만들</p>
+            <p>거나 인기투표 행사를 여는 등 활동 반경을</p>
+            <p>넓히고 있다.</p>
+          </div>
+          <!-- ======== page 2 ======== -->
+          <div data-name="page" style="display: none">
+            <p class="flex ps-28">
+              유루캬라를 본 느낌을 ‘징그럽지만 귀엽다(<span
+                data-audio="9_01_11/134-06.mp3"
+                class="font-medium f-noto"
+                >キモかわ</span
+              >),
+            </p>
+            <p class="flex">
+              못생겼지만 귀엽다(<span
+                data-audio="9_01_11/134-07.mp3"
+                class="font-medium f-noto"
+                >ブサかわ</span
+              >), 촌스럽지만 귀엽다
+            </p>
+            <p class="flex">
+              (<span data-audio="9_01_11/134-08.mp3" class="font-medium f-noto"
+                >ダサかわ</span
+              >)’ 등과 같이 표현하기도 하는데, 이러한
+            </p>
+            <p>표현은 유루캬라의 ‘빈틈 있고 부족해</p>
+            <p>보여서 귀엽다’라는 이미지를 나타낸다.</p>
+          </div>
+          <!-- img box -->
+          <div class="absolute w-289 h-336 right-20 bottom-9">
+            <img
+              src="./images/9_01_11/main_photo1.png"
+              alt="유루캬라"
+              class="w-full h-full"
+            />
+            <button
+              data-name="btn-view"
+              class="absolute bottom-203 right-10"
+              onclick="contentUtil.setPopup(2); contentUtil.setPhotoPopup(1);"
+            ></button>
+            <button
+              data-name="btn-view"
+              class="absolute bottom-10 right-10"
+              onclick="contentUtil.setPopup(2); contentUtil.setPhotoPopup(2);"
+            ></button>
+          </div>
+          <!-- pagination -->
+          <div
+            class="absolute -translate-x-1/2 left-1/2 bottom-10"
+            data-name="pagination"
+          >
+            <button class="active" data-name="btn-pagination"></button>
+            <button class="" data-name="btn-pagination"></button>
+          </div>
+        </div>
+      </div>
+      <!-- popup -->
+      <div id="popup-wrap" style="display: none">
+        <!-- 해설 보기 -->
+        <div data-name="popup" data-popup="1" style="display: none">
+          <div data-name="popup-header">
+            <div data-name="popup-title">해설 보기</div>
+            <button
+              data-name="popup-close"
+              onclick="contentUtil.setPopup()"
+            ></button>
+          </div>
+          <div data-name="popup-body" class="mt-16 mb-10 ms-26 f-nanum-s me-6">
+            <div class="flex flex-col">
+              <!-- title -->
+              <div class="flex items-center mb-10 h-55">
+                <img
+                  src="./../common/images/popup_titlemark_primary.svg"
+                  alt=""
+                  class="w-35 h-55 me-10"
+                />
+                <div class="flex font-extrabold text-42 text-[#F25F7C]">
+                  유루캬라(<span class="font-bold f-noto">ゆるキャラ</span>)
+                </div>
+              </div>
+              <!-- text -->
+              <div class="mb-10 font-bold f-nanum-s text-40 leading-52">
+                <p class="flex">
+                  1980년대 유명한 만화가인 ‘미우라 쥰(<span
+                    class="font-medium f-noto"
+                    ><span class="relative">三<span class="ruby">み</span></span
+                    ><span class="relative"
+                      >浦<span class="ruby">うら</span></span
+                    ><span class="relative"
+                      >純<span class="ruby tracking-[-0.25em]"
+                        >じゅん</span
+                      ></span
+                    ></span
+                  >)’이 처음
+                </p>
+                <p>쓰기 시작한 용어이다. 그는 유루캬라로 인정받기 위해서는</p>
+                <p class="flex">
+                  향토애(<span class="font-medium f-noto">愛</span>)에 관한
+                  메시지를 담아야 하고, 사랑스러움과
+                </p>
+                <p>엉성함을 갖춰야 한다는 조건을 붙였다. 그래서 대부분의</p>
+                <p>유루캬라는 지역의 관광지나 대표 농산물 등을 상징하는</p>
+                <p>경우가 많다. 매년 11월에 전국 각 지역의 유루캬라를 홍보</p>
+                <p>하는 행사인 ‘유루버스(유루캬라 그랑프리)’가 열리기도</p>
+                <p>한다.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 사진 팝업창 -->
+        <div data-name="popup" data-popup="2" style="display: none">
+          <div data-name="popup-header">
+            <div data-name="popup-title">사진 팝업창</div>
+            <button
+              data-name="popup-close"
+              onclick="contentUtil.setPopup()"
+            ></button>
+          </div>
+          <div
+            data-name="popup-body"
+            class="flex items-center justify-center w-full h-full gap-16"
+          >
+            <div
+              class="flex flex-col items-center w-608 h-402"
+              data-name="popup_photo_wrap"
+            >
+              <div class="w-full overflow-x-hidden overflow-y-auto pe-4">
+                <img
+                  src="./images/9_01_11/popup_photo1.jpg"
+                  alt="구마모토현의 구마몬"
+                  class="object-contain min-w-608 rounded-10"
+                  data-name="popup_photo"
+                />
+                <img
+                  src="./images/9_01_11/popup_photo2.jpg"
+                  alt="유루캬라 인기투표 행사"
+                  class="object-contain min-w-608 rounded-10"
+                  data-name="popup_photo"
+                  style="display: none"
+                />
+              </div>
+              <div
+                class="flex mt-8 font-bold f-nanum-s h-52 text-40 leading-52 shrink-0"
+              >
+                <div data-name="popup_photo_text">구마모토현의 구마몬</div>
+                <div data-name="popup_photo_text" style="display: none">
+                  유루캬라 인기투표 행사
+                </div>
+              </div>
+            </div>
+            <div class="w-266 h-402">
+              <div class="flex flex-wrap w-full gap-10">
+                <button
+                  data-name="btn-popup_photo"
+                  class="w-128 h-72 active"
+                  onclick="contentUtil.setPhotoPopup(1)"
+                >
+                  <img
+                    src="./images/9_01_11/popup_btn_photo1.jpg"
+                    alt="구마모토현의 구마몬"
+                  />
+                </button>
+                <button
+                  data-name="btn-popup_photo"
+                  class="w-128 h-72"
+                  onclick="contentUtil.setPhotoPopup(2)"
+                >
+                  <img
+                    src="./images/9_01_11/popup_btn_photo2.jpg"
+                    alt="유루캬라 인기투표 행사"
+                  />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript">
+    const page = {
+      isAnswer: false,
+      isVocabulary: false,
+      showAnswer: () => {},
+      hideAnswer: () => {},
+      showVocabulary: () => {},
+    };
+  </script>
+  <script src="./../common/js/tailwind.config.js"></script>
+  <script src="./../common/js/script.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {});
+  </script>
+</html>

@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>미래엔 일본 문화</title>
+    <script src="./../common/lib/jquery-3.7.1.min.js"></script>
+    <script src="./../common/lib/howler-2.1.3.min.js"></script>
+    <script src="./../common/lib/tailwind.js"></script>
+    <!-- 폰트 -->
+    <link href="./../common/font/suit/suit.css" rel="stylesheet" />
+    <link href="./../common/font/bmjua/bmjua.css" rel="stylesheet" />
+    <link
+      href="./../common/font/nanumsquare/nanumSquare.css"
+      rel="stylesheet"
+    />
+    <link href="./../common/font/notoSansJP/notoSansJP.css" rel="stylesheet" />
+    <link href="./../common/css/tailwind.css" rel="stylesheet" />
+    <link href="./../common/css/fontStyle.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div id="wrap">
+      <!-- contents -->
+      <div class="relative w-full h-full pt-60">
+        <!-- title -->
+        <img
+          src="./../common/images/title_look_culture4.svg"
+          alt="문화 들여다보기2 행운 기원"
+          class="absolute w-540 h-49 top-10"
+        />
+        <!-- header-btn -->
+        <div class="absolute right-0 flex gap-6 top-13" data-name="header-btn">
+          <button data-name="btn-common" onclick="contentUtil.setPopup(2);">
+            보충 자료
+          </button>
+        </div>
+
+        <!-- main -->
+        <div class="flex flex-col w-full h-full">
+          <div
+            class="flex flex-col w-full mb-8 h-404 text-40 f-nanum-s leading-52 ps-20"
+          >
+            <div class="flex items-center mt-10 mb-4">
+              <img
+                src="./../common/images/index_pink_1.svg"
+                alt="번호 1"
+                class="w-40 h-40 me-4"
+              />
+              <span class="font-extrabold f-nanum-s text-40 flex"
+                >신사나 절에서 살 수 있는 것
+              </span>
+            </div>
+            <div class="flex mb-4">
+              <div data-name="number-3" class="bg-[#C84935]"></div>
+              <span class="text-[#C84935] font-extrabold flex"
+                >오미쿠지(<span
+                  data-audio="7_01_22/108-03.mp3"
+                  class="f-noto font-bold"
+                  >おみくじ</span
+                >)</span
+              >
+            </div>
+
+            <!-- ======== page 1 ======== -->
+            <div data-name="page" class="flex flex-col font-bold">
+              <p class="ps-28 flex">
+                신사나 절에 참배한 후 길흉(<span class="f-noto font-medium"
+                  >吉凶</span
+                >)을 점칠 때 뽑는 제비이다.
+              </p>
+              <p>
+                뽑은 제비에는 대길, 길, 중길, 소길, 흉 등의 점괘와 그에 따른
+              </p>
+              <p class="flex">
+                건강, 학문, 연애, 사업 등의 내용이 적혀 있다. 대개 길(<span
+                  class="f-noto font-medium"
+                  >吉</span
+                >)이
+              </p>
+              <p class="flex">
+                나오면 가지고 나오고 흉(<span class="f-noto font-medium"
+                  >凶</span
+                >)이 나오면 지정된 곳에 묶어 놓고
+              </p>
+              <p>나오는데, 최근에는 길흉에 관계없이 각자 원하는 대로 하기도</p>
+              <p>한다.</p>
+            </div>
+
+            <!-- ======== page 2 ======== -->
+            <div
+              style="display: none"
+              data-name="page"
+              class="flex flex-col font-bold items-center"
+            >
+              <!-- img box -->
+              <div class="flex gap-30 mt-6">
+                <div class="relative overflow-hidden w-310 h-270 rounded-10">
+                  <img
+                    src="./images/7_01_22/main_photo1.jpg"
+                    alt="오미쿠지"
+                    class="w-full h-full"
+                  />
+                  <button
+                    data-name="btn-view"
+                    class="absolute bottom-10 right-10"
+                    onclick="contentUtil.setPopup(1); contentUtil.setPhotoPopup(1);"
+                  ></button>
+                </div>
+                <div class="relative overflow-hidden w-310 h-270 rounded-10">
+                  <img
+                    src="./images/7_01_22/main_photo2.jpg"
+                    alt="오미쿠지"
+                    class="w-full h-full"
+                  />
+                  <button
+                    data-name="btn-view"
+                    class="absolute bottom-10 right-10"
+                    onclick="contentUtil.setPopup(1); contentUtil.setPhotoPopup(2);"
+                  ></button>
+                </div>
+                <div class="relative overflow-hidden w-180 h-270 rounded-10">
+                  <img
+                    src="./images/7_01_22/main_photo3.jpg"
+                    alt="오미쿠지"
+                    class="w-full h-full"
+                  />
+                  <button
+                    data-name="btn-view"
+                    class="absolute bottom-10 right-10"
+                    onclick="contentUtil.setPopup(1); contentUtil.setPhotoPopup(3);"
+                  ></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- pagination -->
+        <div
+          class="absolute -translate-x-1/2 left-1/2 bottom-10"
+          data-name="pagination"
+        >
+          <button class="active" data-name="btn-pagination"></button>
+          <button class="" data-name="btn-pagination"></button>
+        </div>
+      </div>
+      <!-- popup -->
+      <div id="popup-wrap" style="display: none">
+        <!-- 사진 팝업창 -->
+        <div data-name="popup" data-popup="1" style="display: none">
+          <div data-name="popup-header">
+            <div data-name="popup-title">사진 팝업창</div>
+            <button
+              data-name="popup-close"
+              onclick="contentUtil.setPopup()"
+            ></button>
+          </div>
+          <div
+            data-name="popup-body"
+            class="flex items-center justify-center w-full h-full gap-16"
+          >
+            <div
+              class="flex flex-col items-center w-608 h-402"
+              data-name="popup_photo_wrap"
+            >
+              <div class="w-full overflow-x-hidden overflow-y-auto pe-4 h-342">
+                <img
+                  src="./images/7_01_22/popup_photo1.jpg"
+                  alt="오미쿠지"
+                  class="object-contain min-w-608 rounded-10"
+                  data-name="popup_photo"
+                />
+                <img
+                  src="./images/7_01_22/popup_photo2.jpg"
+                  alt="오미쿠지"
+                  class="object-contain min-w-608 rounded-10"
+                  data-name="popup_photo"
+                  style="display: none"
+                />
+                <img
+                  src="./images/7_01_22/popup_photo3.jpg"
+                  alt="오미쿠지"
+                  class="object-contain w-full rounded-10"
+                  data-name="popup_photo"
+                  style="display: none"
+                />
+              </div>
+              <div
+                class="flex mt-8 font-bold f-nanum-s h-52 text-40 leading-52 shrink-0"
+              >
+                <div data-name="popup_photo_text">오미쿠지</div>
+                <div style="display: none" data-name="popup_photo_text">
+                  오미쿠지
+                </div>
+                <div style="display: none" data-name="popup_photo_text">
+                  오미쿠지
+                </div>
+              </div>
+            </div>
+            <div class="w-266 h-402">
+              <div class="flex flex-wrap w-full gap-10">
+                <button
+                  data-name="btn-popup_photo"
+                  class="w-128 h-72 active"
+                  onclick="contentUtil.setPhotoPopup(1)"
+                >
+                  <img
+                    src="./images/7_01_22/popup_btn_photo1.jpg"
+                    alt="오미쿠지"
+                  />
+                </button>
+                <button
+                  data-name="btn-popup_photo"
+                  class="w-128 h-72"
+                  onclick="contentUtil.setPhotoPopup(2)"
+                >
+                  <img
+                    src="./images/7_01_22/popup_btn_photo2.jpg"
+                    alt="오미쿠지"
+                  />
+                </button>
+                <button
+                  data-name="btn-popup_photo"
+                  class="w-128 h-72"
+                  onclick="contentUtil.setPhotoPopup(3)"
+                >
+                  <img
+                    src="./images/7_01_22/popup_btn_photo3.jpg"
+                    alt="오미쿠지"
+                  />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 보충 자료 -->
+        <div data-name="popup" data-popup="2" style="display: none">
+          <div data-name="popup-header">
+            <div data-name="popup-title">보충 자료</div>
+            <button
+              data-name="popup-close"
+              onclick="contentUtil.setPopup()"
+            ></button>
+          </div>
+          <div
+            data-name="popup-body"
+            class="relative mt-16 mb-10 font-bold ms-26 f-nanum-s me-6 leading-52 text-40 h-full"
+          >
+            <div class="flex flex-col">
+              <!-- title -->
+              <div class="flex items-center mb-10 h-55">
+                <img
+                  src="./../common/images/popup_titlemark_primary.svg"
+                  alt=""
+                  class="w-35 h-55 me-10"
+                />
+                <div class="font-extrabold text-42 text-[#F25F7C] flex">
+                  특이한 오미쿠지
+                </div>
+              </div>
+              <div>
+                <p class="flex">
+                  학문의 신인 ‘스가와라 미치자네(
+                  <span class="f-noto font-medium">
+                    <span class="relative"
+                      >菅<span class="ruby">すが</span></span
+                    ><span class="relative"
+                      >原<span class="ruby">わら</span></span
+                    ><span class="relative"
+                      >道<span class="ruby">みち</span></span
+                    ><span class="relative"
+                      >真<span class="ruby">ざね</span></span
+                    >
+                  </span>
+                  )’를 모시고
+                </p>
+                <p class="flex pt-12">
+                  있는 후쿠오카현의 ‘다자이후 덴만구(
+                  <span class="f-noto font-medium"
+                    ><span class="relative">大<span class="ruby">だ</span></span
+                    ><span class="relative"
+                      >宰<span class="ruby">ざい</span></span
+                    ><span class="relative">府<span class="ruby">ふ</span></span
+                    ><span class="relative"
+                      >天<span class="ruby">てん</span></span
+                    ><span class="relative"
+                      >満<span class="ruby">まん</span></span
+                    ><span class="relative"
+                      >宮<span class="ruby">ぐう</span></span
+                    >
+                  </span>
+                  )’는
+                </p>
+                <p>오랜 역사를 자랑하는 곳인데, 특이한 오미쿠지로도 유명</p>
+                <p>하다. 이곳의 오미쿠지는 일반적인 흰색의 오미쿠지와 달리</p>
+                <p>여러 색을 사용한다. 또한 납작하게</p>
+                <p>접힌 일반적인 오미쿠지와 달리,</p>
+                <p>신을 섬기는 새가 그려진 나무통</p>
+                <p>안에 들어 있는 오미쿠지도 있다.</p>
+              </div>
+              <div
+                class="absolute w-340 h-210 rounded-10 overflow-hidden top-299 right-14"
+              >
+                <img class="" src="./images/7_01_22/popup_photo4.jpg" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript">
+    const page = {
+      isAnswer: false,
+      isVocabulary: false,
+      showAnswer: () => {},
+      hideAnswer: () => {},
+      showVocabulary: () => {},
+    };
+  </script>
+  <script src="./../common/js/tailwind.config.js"></script>
+  <script src="./../common/js/script.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      // contentUtil.setPopup(2);
+    });
+    // $(`[data-name="btn-pagination"]`).on("click", function () {
+    //   if ($(this).index() === 1) {
+    //     $(".btn-change-view").hide();
+    //   } else {
+    //     $(".btn-change-view").show();
+    //   }
+    // });
+  </script>
+</html>

@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>미래엔 일본 문화</title>
+    <script src="./../common/lib/jquery-3.7.1.min.js"></script>
+    <script src="./../common/lib/howler-2.1.3.min.js"></script>
+    <script src="./../common/lib/tailwind.js"></script>
+    <!-- 폰트 -->
+    <link href="./../common/font/suit/suit.css" rel="stylesheet" />
+    <link href="./../common/font/bmjua/bmjua.css" rel="stylesheet" />
+    <link
+      href="./../common/font/nanumsquare/nanumSquare.css"
+      rel="stylesheet"
+    />
+    <link href="./../common/font/notoSansJP/notoSansJP.css" rel="stylesheet" />
+    <link href="./../common/css/tailwind.css" rel="stylesheet" />
+    <link href="./../common/css/fontStyle.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div id="wrap">
+      <!-- contents -->
+      <div class="relative flex flex-col w-full h-full pt-70">
+        <!-- title -->
+        <div class="absolute left-0 flex top-10">
+          <img
+            src="./images/6_01_44/title_label.svg"
+            alt="문화 톡톡 2"
+            class="w-221 h-54 me-10"
+          />
+          <span class="font-extrabold f-nanum-s text-40 leading-52"
+            >일본의 장인 문화</span
+          >
+        </div>
+        <!-- header-btn -->
+        <div class="absolute right-0 flex gap-6 top-13" data-name="header-btn">
+          <button data-name="btn-common" onclick="contentUtil.setPopup(2)">
+            해설 보기
+          </button>
+        </div>
+        <!-- main -->
+        <div
+          class="flex flex-col flex-1 w-full overflow-y-auto font-bold leading-52 f-nanum-s text-40 ps-20"
+        >
+          <div class="flex items-center mb-10">
+            <img
+              src="./images/6_01_44/index_2.svg"
+              alt="2"
+              class="w-56 h-34 me-4"
+            />
+            <span class="font-extrabold">일본의 전통 장인들</span>
+          </div>
+          <!-- ======= page 1 ======= -->
+          <div data-name="page" class="flex flex-col gap-20">
+            <!-- ------- -->
+            <div class="flex items-center gap-20">
+              <div class="relative w-243 h-160">
+                <img
+                  src="./images/6_01_44/main_photo1.jpg"
+                  alt=""
+                  class="w-full h-full rounded-10"
+                />
+                <button
+                  data-name="btn-view"
+                  class="absolute bottom-10 right-10"
+                  onclick="contentUtil.setPopup(1); contentUtil.setPhotoPopup(1);"
+                ></button>
+              </div>
+              <div class="flex">
+                <img
+                  src="./../common/images/popup_photolabel.svg"
+                  alt=""
+                  class="me-10 w-36 h-52"
+                />
+                <div>
+                  <p>나무만으로 신사나 절의 건축물을 만들고,</p>
+                  <p>국보와 문화재 복원도 담당하는 장인</p>
+                </div>
+              </div>
+            </div>
+            <!-- ------- -->
+            <div class="flex items-center gap-20">
+              <div class="relative w-243 h-160">
+                <img
+                  src="./images/6_01_44/main_photo2.jpg"
+                  alt=""
+                  class="w-full h-full rounded-10"
+                />
+                <button
+                  data-name="btn-view"
+                  class="absolute bottom-10 right-10"
+                  onclick="contentUtil.setPopup(1); contentUtil.setPhotoPopup(2);"
+                ></button>
+              </div>
+              <div class="flex">
+                <img
+                  src="./../common/images/popup_photolabel.svg"
+                  alt=""
+                  class="me-10 w-36 h-52"
+                />
+                <div>
+                  <p>화약을 사용하여 불꽃을 만들고, 행사장의</p>
+                  <p>시설을 만들거나 발사하는 장인</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ======= page 2 ======= -->
+          <div
+            data-name="page"
+            class="flex flex-col gap-20"
+            style="display: none"
+          >
+            <!-- ------- -->
+            <div class="flex items-center gap-20">
+              <div class="relative w-243 h-160">
+                <img
+                  src="./images/6_01_44/main_photo3.jpg"
+                  alt=""
+                  class="w-full h-full rounded-10"
+                />
+                <button
+                  data-name="btn-view"
+                  class="absolute bottom-10 right-10"
+                  onclick="contentUtil.setPopup(1); contentUtil.setPhotoPopup(3);"
+                ></button>
+              </div>
+              <div class="flex">
+                <img
+                  src="./../common/images/popup_photolabel.svg"
+                  alt=""
+                  class="me-10 w-36 h-52"
+                />
+                <div>
+                  <p>종이, 천, 풀을 사용하여 전통 가옥의</p>
+                  <p>후스마, 족자 등을 만드는 장인</p>
+                </div>
+              </div>
+            </div>
+            <!-- ------- -->
+            <div class="flex items-center gap-20">
+              <div class="relative w-243 h-160">
+                <img
+                  src="./images/6_01_44/main_photo4.jpg"
+                  alt=""
+                  class="w-full h-full rounded-10"
+                />
+                <button
+                  data-name="btn-view"
+                  class="absolute bottom-10 right-10"
+                  onclick="contentUtil.setPopup(1); contentUtil.setPhotoPopup(4);"
+                ></button>
+              </div>
+              <div class="flex">
+                <img
+                  src="./../common/images/popup_photolabel.svg"
+                  alt=""
+                  class="me-10 w-36 h-52"
+                />
+                <div>
+                  <p>일본 전통 바닥재인 다다미를 만드는 장인</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ======= page 3 ======= -->
+          <div
+            data-name="page"
+            class="flex flex-col gap-20"
+            style="display: none"
+          >
+            <!-- ------- -->
+            <div class="flex items-center gap-20">
+              <div class="relative w-243 h-160">
+                <img
+                  src="./images/6_01_44/main_photo5.jpg"
+                  alt=""
+                  class="w-full h-full rounded-10"
+                />
+                <button
+                  data-name="btn-view"
+                  class="absolute bottom-10 right-10"
+                  onclick="contentUtil.setPopup(1); contentUtil.setPhotoPopup(5);"
+                ></button>
+              </div>
+              <div class="flex">
+                <img
+                  src="./../common/images/popup_photolabel.svg"
+                  alt=""
+                  class="me-10 w-36 h-52"
+                />
+                <div>
+                  <p>식물을 원료로 한 종이(와시)를 한 장씩</p>
+                  <p>수작업으로 떠서 만드는 장인</p>
+                </div>
+              </div>
+            </div>
+            <!-- ------- -->
+            <div class="flex items-center gap-20">
+              <div class="relative w-243 h-160">
+                <img
+                  src="./images/6_01_44/main_photo6.jpg"
+                  alt=""
+                  class="w-full h-full rounded-10"
+                />
+                <button
+                  data-name="btn-view"
+                  class="absolute bottom-10 right-10"
+                  onclick="contentUtil.setPopup(1); contentUtil.setPhotoPopup(6);"
+                ></button>
+              </div>
+              <div class="flex">
+                <img
+                  src="./../common/images/popup_photolabel.svg"
+                  alt=""
+                  class="me-10 w-36 h-52"
+                />
+                <div>
+                  <p>교토에서 생산되는 고급 견직물로,</p>
+                  <p>기모노의 원단으로 사용되는 ‘니시진’을</p>
+                  <p>짜는 장인</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- pagination -->
+        <div
+          class="absolute -translate-x-1/2 bottom-10 left-1/2"
+          data-name="pagination"
+        >
+          <button class="active" data-name="btn-pagination"></button>
+          <button class="" data-name="btn-pagination"></button>
+          <button class="" data-name="btn-pagination"></button>
+        </div>
+      </div>
+      <!-- popup -->
+      <div id="popup-wrap" style="display: none">
+        <!-- 사진 팝업창 -->
+        <div data-name="popup" data-popup="1" style="display: none">
+          <div data-name="popup-header">
+            <div data-name="popup-title">사진 팝업창</div>
+            <button
+              data-name="popup-close"
+              onclick="contentUtil.setPopup()"
+            ></button>
+          </div>
+          <div
+            data-name="popup-body"
+            class="flex items-center justify-center w-full h-full gap-16"
+          >
+            <div
+              class="flex flex-col items-center w-608 h-402"
+              data-name="popup_photo_wrap"
+            >
+              <div class="w-full overflow-x-hidden overflow-y-auto h-400 pe-4">
+                <img
+                  src="./images/6_01_44/popup_photo1.jpg"
+                  alt="1"
+                  class="object-contain min-w-608 rounded-10"
+                  data-name="popup_photo"
+                />
+                <img
+                  src="./images/6_01_44/popup_photo2.jpg"
+                  alt="2"
+                  class="object-contain min-w-608 rounded-10"
+                  data-name="popup_photo"
+                  style="display: none"
+                />
+                <img
+                  src="./images/6_01_44/popup_photo3.jpg"
+                  alt="2"
+                  class="object-contain min-w-608 rounded-10"
+                  data-name="popup_photo"
+                  style="display: none"
+                />
+                <img
+                  src="./images/6_01_44/popup_photo4.jpg"
+                  alt="2"
+                  class="object-contain min-w-608 rounded-10"
+                  data-name="popup_photo"
+                  style="display: none"
+                />
+                <img
+                  src="./images/6_01_44/popup_photo5.jpg"
+                  alt="2"
+                  class="object-contain min-w-608 rounded-10"
+                  data-name="popup_photo"
+                  style="display: none"
+                />
+                <img
+                  src="./images/6_01_44/popup_photo6.jpg"
+                  alt="2"
+                  class="object-contain min-w-608 rounded-10"
+                  data-name="popup_photo"
+                  style="display: none"
+                />
+              </div>
+            </div>
+            <div class="w-266 h-402">
+              <div class="flex flex-wrap w-full gap-10">
+                <button
+                  data-name="btn-popup_photo"
+                  class="w-128 h-72 active"
+                  onclick="contentUtil.setPhotoPopup(1)"
+                >
+                  <img src="./images/6_01_44/popup_btn_photo1.jpg" alt="" />
+                </button>
+                <button
+                  data-name="btn-popup_photo"
+                  class="w-128 h-72"
+                  onclick="contentUtil.setPhotoPopup(2)"
+                >
+                  <img src="./images/6_01_44/popup_btn_photo2.jpg" alt="" />
+                </button>
+                <button
+                  data-name="btn-popup_photo"
+                  class="w-128 h-72"
+                  onclick="contentUtil.setPhotoPopup(3)"
+                >
+                  <img src="./images/6_01_44/popup_btn_photo3.jpg" alt="" />
+                </button>
+                <button
+                  data-name="btn-popup_photo"
+                  class="w-128 h-72"
+                  onclick="contentUtil.setPhotoPopup(4)"
+                >
+                  <img src="./images/6_01_44/popup_btn_photo4.jpg" alt="" />
+                </button>
+                <button
+                  data-name="btn-popup_photo"
+                  class="w-128 h-72"
+                  onclick="contentUtil.setPhotoPopup(5)"
+                >
+                  <img src="./images/6_01_44/popup_btn_photo5.jpg" alt="" />
+                </button>
+                <button
+                  data-name="btn-popup_photo"
+                  class="w-128 h-72"
+                  onclick="contentUtil.setPhotoPopup(6)"
+                >
+                  <img src="./images/6_01_44/popup_btn_photo6.jpg" alt="" />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 해설 보기 -->
+        <div data-name="popup" data-popup="2" style="display: none">
+          <div data-name="popup-header">
+            <div data-name="popup-title">해설 보기</div>
+            <button
+              data-name="popup-close"
+              onclick="contentUtil.setPopup()"
+            ></button>
+          </div>
+          <div
+            data-name="popup-body"
+            class="flex-1 mt-16 mb-10 ms-26 f-nanum-s me-6"
+          >
+            <div class="flex flex-col font-bold text-40 leading-52 f-nanum-s">
+              <!-- title -->
+              <div class="flex items-center mb-10 h-55">
+                <img
+                  src="./../common/images/popup_titlemark_primary.svg"
+                  alt=""
+                  class="w-35 h-55 me-10"
+                />
+                <div class="flex font-extrabold text-42 text-[#41674B]">
+                  일본 전통 장인들의 명칭
+                </div>
+              </div>
+              <!-- list -->
+              <div class="flex flex-col gap-20 pt-6 mb-10">
+                <!-- ------- -->
+                <div class="flex">
+                  <div
+                    class="w-12 h-12 mt-20 bg-black rounded-full me-10"
+                  ></div>
+                  <span class="font-medium f-noto"
+                    ><span class="relative"
+                      >西<span class="ruby">にし </span></span
+                    ><span class="relative"
+                      >陣<span class="ruby">じん</span></span
+                    ><span class="relative"
+                      >織<span class="ruby">おり</span></span
+                    ><span class="relative"
+                      >職<span class="ruby tracking-[-0.25em]"
+                        >しょく</span
+                      ></span
+                    ><span class="relative"
+                      >人<span class="ruby ms-6">にん</span></span
+                    ></span
+                  >
+                  <span data-name="colon-black">:</span>
+                  <div>
+                    <p>니시진오리 장인. 직조 공예품 장인</p>
+                  </div>
+                </div>
+                <!-- ------- -->
+                <div class="flex">
+                  <div
+                    class="w-12 h-12 mt-20 bg-black rounded-full me-10"
+                  ></div>
+                  <span class="font-medium f-noto"
+                    ><span class="relative"
+                      >畳<span
+                        class="ruby tracking-[-0.15em] translate-x-[calc(-50%_-_9px)] -translate-y-10"
+                        >たたみ</span
+                      ></span
+                    ><span class="relative"
+                      >職<span class="ruby tracking-[-0.25em]"
+                        >しょく</span
+                      ></span
+                    ><span class="relative"
+                      >人<span class="ruby ms-6">にん</span></span
+                    ></span
+                  >
+                  <span data-name="colon-black">:</span>
+                  <div>
+                    <p>다다미 장인</p>
+                  </div>
+                </div>
+                <!-- ------- -->
+                <div class="flex">
+                  <div
+                    class="w-12 h-12 mt-20 bg-black rounded-full me-10"
+                  ></div>
+                  <span class="font-medium f-noto">
+                    <span class="relative"
+                      >表<span class="ruby tracking-[-0.25em]"
+                        >ひょう</span
+                      ></span
+                    ><span class="relative">具<span class="ruby">ぐ</span></span
+                    ><span class="relative"
+                      >師<span class="ruby">し</span></span
+                    >
+                  </span>
+                  <span data-name="colon-black">:</span>
+                  <div>
+                    <p>표구사</p>
+                  </div>
+                </div>
+                <!-- ------- -->
+                <div class="flex">
+                  <div
+                    class="w-12 h-12 mt-20 bg-black rounded-full me-10"
+                  ></div>
+                  <span class="font-medium f-noto">
+                    <span class="relative"
+                      >宮<span class="ruby">みや</span></span
+                    ><span class="relative"
+                      >大<span class="ruby">だい</span></span
+                    ><span class="relative"
+                      >工<span class="ruby">く</span></span
+                    >
+                  </span>
+                  <span data-name="colon-black">:</span>
+                  <div>
+                    <p>미야다이쿠. 예전 건축물 수선 장인</p>
+                  </div>
+                </div>
+                <!-- ------- -->
+                <div class="flex">
+                  <div
+                    class="w-12 h-12 mt-20 bg-black rounded-full me-10"
+                  ></div>
+                  <span class="font-medium f-noto">
+                    <span class="relative"
+                      >花<span class="ruby">はな</span></span
+                    ><span class="relative">火<span class="ruby">び</span></span
+                    ><span class="relative"
+                      >師<span class="ruby">し</span></span
+                    >
+                  </span>
+                  <span data-name="colon-black">:</span>
+                  <div>
+                    <p>하나비시. 불꽃놀이 장인</p>
+                  </div>
+                </div>
+                <!-- ------- -->
+                <div class="flex">
+                  <div
+                    class="w-12 h-12 mt-20 bg-black rounded-full me-10"
+                  ></div>
+                  <span class="font-medium f-noto"
+                    ><span class="relative">手<span class="ruby">て</span></span
+                    >すき<span class="relative"
+                      >和<span class="ruby">わ</span></span
+                    ><span class="relative">紙<span class="ruby">し</span></span
+                    ><span class="relative"
+                      >職<span class="ruby tracking-[-0.25em]"
+                        >しょく</span
+                      ></span
+                    ><span class="relative"
+                      >人<span class="ruby ms-6">にん</span></span
+                    ></span
+                  >
+                  <span data-name="colon-black">:</span>
+                  <div>
+                    <p>데스키와시 장인. 손으로 뜨는 와시</p>
+                    <p>장인</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript">
+    const page = {
+      isAnswer: true,
+      isVocabulary: false,
+      showAnswer: () => {
+        contentUtil.showAnswer();
+      },
+      hideAnswer: () => {
+        contentUtil.hideAnswer();
+      },
+      showVocabulary: () => {},
+    };
+  </script>
+  <script src="./../common/js/tailwind.config.js"></script>
+  <script src="./../common/js/script.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {});
+  </script>
+</html>

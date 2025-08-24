@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>미래엔 일본 문화</title>
+    <script src="./../common/lib/jquery-3.7.1.min.js"></script>
+    <script src="./../common/lib/howler-2.1.3.min.js"></script>
+    <script src="./../common/lib/tailwind.js"></script>
+    <!-- 폰트 -->
+    <link href="./../common/font/suit/suit.css" rel="stylesheet" />
+    <link href="./../common/font/bmjua/bmjua.css" rel="stylesheet" />
+    <link
+      href="./../common/font/nanumsquare/nanumSquare.css"
+      rel="stylesheet"
+    />
+    <link href="./../common/font/notoSansJP/notoSansJP.css" rel="stylesheet" />
+    <link href="./../common/css/tailwind.css" rel="stylesheet" />
+    <link href="./../common/css/fontStyle.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div id="wrap">
+      <!-- contents -->
+      <div class="relative w-full h-full pt-60">
+        <!-- title -->
+        <img
+          src="./../common/images/title_digital.svg"
+          alt="디지털 활동"
+          class="absolute h-42 w-261 top-10"
+        />
+        <!-- main -->
+        <div
+          class="flex flex-col w-full h-full px-20 leading-52 f-nanum-s font-bold text-40"
+        >
+          <div class="mb-10 font-extrabold">
+            <p>유명한 ‘하이쿠’ 작품을 검색해 보고 흥미로운 하이쿠를 온라인</p>
+            <p>학습방에 공유해 봅시다.</p>
+          </div>
+          <div
+            class="border-4 w-full pt-14 ps-20 pe-4 pb-14 h-266 border-[#3589D7] rounded-10 mb-8 text-red"
+          >
+            <div style="display: none" data-answer="1" class="w-full h-full">
+              <div class="flex flex-col gap-10 pt-10">
+                <div>
+                  <div class="flex">
+                    <div
+                      class="w-12 h-12 mt-20 bg-red rounded-full me-10"
+                    ></div>
+                    <div class="flex flex-col">
+                      <p class="flex">
+                        <span class="f-noto font-medium">
+                          やれ
+                          <span
+                            ><span class="relative"
+                              >打<span class="ruby">う</span></span
+                            ></span
+                          >つな はえが
+                          <span
+                            ><span class="relative"
+                              >手<span class="ruby">て</span></span
+                            ></span
+                          >を すり あしを する
+                        </span>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="ml-22">
+                    <p>어 치지 마라 파리가 손을 빌고 다리를 비는데</p>
+                  </div>
+                </div>
+                <div>
+                  <div class="flex">
+                    <div
+                      class="w-12 h-12 mt-20 bg-red rounded-full me-10"
+                    ></div>
+                    <div class="flex flex-col">
+                      <p class="flex">
+                        <span class="f-noto font-medium">
+                          はるさめや みを すりよせて ひとつ かさ
+                        </span>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="ml-22">
+                    <p>봄비 내리네 몸을 바짝 붙여서 우산 하나</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="ms-auto">
+            <button
+              data-name="btn-common"
+              data-reset="1"
+              onclick="contentUtil.showAnswer(1); audioPlay(audio, [`./../common/media/mp3/showAnswer.mp3`]);"
+            >
+              예시 답안
+            </button>
+            <button
+              style="display: none"
+              data-answer="1"
+              data-name="btn-common"
+              onclick="contentUtil.hideAnswer(1);"
+            >
+              다시 풀기
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- popup -->
+      <div id="popup-wrap" style="display: none">
+        <!-- 예시 답안 -->
+        <div data-name="popup" data-popup="1" style="display: none">
+          <div data-name="popup-header">
+            <div data-name="popup-title">예시 답안</div>
+            <button
+              data-name="popup-close"
+              onclick="contentUtil.setPopup()"
+            ></button>
+          </div>
+          <div
+            data-name="popup-body"
+            class="mt-16 mb-10 ms-26 f-nanum-s font-bold me-6 leading-52 text-red text-40"
+          >
+            <div class="flex flex-col mt-18 gap-10">
+              <div>
+                <div class="flex">
+                  <div class="w-12 h-12 mt-20 bg-red rounded-full me-10"></div>
+                  <div class="flex flex-col">
+                    <p class="flex">
+                      <span class="f-noto font-medium">
+                        やれ
+                        <span
+                          ><span class="relative"
+                            >打<span class="ruby">う</span></span
+                          ></span
+                        >つな はえが
+                        <span
+                          ><span class="relative"
+                            >手<span class="ruby">て</span></span
+                          ></span
+                        >を すり あしを する
+                      </span>
+                    </p>
+                  </div>
+                </div>
+                <div class="ml-22">
+                  <p>어 치지 마라 파리가 손을 빌고 다리를 비는데</p>
+                </div>
+              </div>
+              <div>
+                <div class="flex">
+                  <div class="w-12 h-12 mt-20 bg-red rounded-full me-10"></div>
+                  <div class="flex flex-col">
+                    <p class="flex">
+                      <span class="f-noto font-medium">
+                        はるさめや みを すりよせて ひとつ かさ
+                      </span>
+                    </p>
+                  </div>
+                </div>
+                <div class="ml-22">
+                  <p>봄비 내리네 몸을 바짝 붙여서 우산 하나</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript">
+    const page = {
+      isAnswer: false,
+      isVocabulary: false,
+      showAnswer: () => {},
+      hideAnswer: () => {},
+      showVocabulary: () => {},
+    };
+  </script>
+  <script src="./../common/js/tailwind.config.js"></script>
+  <script src="./../common/js/script.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      // contentUtil.setPopup(1);
+    });
+  </script>
+</html>

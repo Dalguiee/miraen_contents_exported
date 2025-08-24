@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>미래엔 일본 문화</title>
+    <script src="./../common/lib/jquery-3.7.1.min.js"></script>
+    <script src="./../common/lib/howler-2.1.3.min.js"></script>
+    <script src="./../common/lib/tailwind.js"></script>
+    <!-- 폰트 -->
+    <link href="./../common/font/suit/suit.css" rel="stylesheet" />
+    <link href="./../common/font/bmjua/bmjua.css" rel="stylesheet" />
+    <link
+      href="./../common/font/nanumsquare/nanumSquare.css"
+      rel="stylesheet"
+    />
+    <link href="./../common/font/notoSansJP/notoSansJP.css" rel="stylesheet" />
+    <link href="./../common/css/tailwind.css" rel="stylesheet" />
+    <link href="./../common/css/fontStyle.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div id="wrap">
+      <!-- contents -->
+      <div class="relative w-full h-full pt-68">
+        <!-- title -->
+        <img
+          src="./../common/images/title_look_culture2.svg"
+          alt="문화 들여다보기2 전통 공연 예술과 스포츠"
+          class="absolute w-764 h-49 top-10"
+        />
+        <!-- header-btn -->
+        <div class="absolute right-0 flex gap-6 top-13" data-name="header-btn">
+          <button
+            class="min-w-0"
+            data-name="btn-common-dark"
+            onclick="contentUtil.setPopup(1);"
+          >
+            TIP
+          </button>
+          <button data-name="btn-common" onclick="contentUtil.setPopup(3)">
+            해설 보기
+          </button>
+        </div>
+        <!-- main -->
+        <div class="flex flex-col w-full h-full">
+          <div class="flex flex-col flex-1 w-full leading-52 ps-20">
+            <div class="flex items-center mb-4">
+              <img
+                src="./../common/images/index_pink_1.svg"
+                alt="번호 1"
+                class="w-40 h-40 me-4"
+              />
+              <span class="font-extrabold f-nanum-s text-40"
+                >전통 공연 예술</span
+              >
+            </div>
+            <div class="flex mb-4 pt-12">
+              <div data-name="number-1" class="bg-[#C84935]"></div>
+              <span class="text-[#C84935] flex font-extrabold text-40 f-nanum-s"
+                >노(
+                <span data-audio="10_01_17/152-01.mp3" class="f-noto font-bold">
+                  <span class="relative">能<span class="ruby">のう</span></span>
+                </span>
+                )</span
+              >
+            </div>
+            <!-- ======== page 1 ======== -->
+            <div
+              data-name="page"
+              class="flex flex-col font-bold f-nanum-s text-40"
+            >
+              <div>
+                <p class="ps-28">
+                  ‘노’는 일본에서 가장 오래된 연극 양식으로, ‘노멘'이라는
+                </p>
+                <p>가면을 쓴 배우가 소나무 한 그루가 장식된 무대 위에서 느린</p>
+                <p>노래와 반주에 맞추어 춤추는 가면</p>
+                <p>무도극이다.</p>
+              </div>
+
+              <!-- img box -->
+              <div class="absolute flex w-333 right-20 bottom-20">
+                <img
+                  src="./images/10_01_17/main_photo1.jpg"
+                  alt="노의 무대"
+                  class="object-contain w-full"
+                />
+                <button
+                  data-name="btn-view"
+                  class="absolute bottom-10 right-10"
+                  onclick="contentUtil.setPopup(2); contentUtil.setPhotoPopup(1)"
+                ></button>
+              </div>
+            </div>
+            <!-- ======== page 2 ======== -->
+            <div
+              data-name="page"
+              class="flex flex-col font-bold f-nanum-s text-40"
+              style="display: none"
+            >
+              <div>
+                <p>노멘을 쓴 주인공이 신, 유령, 귀신 등 영적 존재로 등장해</p>
+                <p>인간의 원한, 생사와 관련된 비극적인 소재의 극을 이어</p>
+                <p>나간다. 또한 ‘노’와 ‘노’ 사이에</p>
+                <p>하는 희극적인 막간 연극으로</p>
+                <p class="flex">
+                  ‘교겐(<span
+                    data-audio="10_01_17/152-02.mp3"
+                    class="f-noto font-medium"
+                    >きょうげん</span
+                  >)’이 있다.
+                </p>
+              </div>
+              <!-- img box -->
+              <div class="absolute flex w-482 right-20 bottom-82">
+                <img
+                  src="./images/10_01_17/main_photo2.jpg"
+                  alt="다양한 노멘"
+                  class="object-contain w-full"
+                />
+                <button
+                  data-name="btn-view"
+                  class="absolute bottom-10 right-251"
+                  onclick="contentUtil.setPopup(2); contentUtil.setPhotoPopup(2)"
+                ></button>
+                <button
+                  data-name="btn-view"
+                  class="absolute bottom-10 right-10"
+                  onclick="contentUtil.setPopup(2); contentUtil.setPhotoPopup(3)"
+                ></button>
+              </div>
+            </div>
+          </div>
+
+          <!-- pagination -->
+          <div
+            class="absolute -translate-x-1/2 bottom-10 left-1/2"
+            data-name="pagination"
+          >
+            <button class="active" data-name="btn-pagination"></button>
+            <button class="" data-name="btn-pagination"></button>
+          </div>
+        </div>
+      </div>
+      <!-- popup -->
+      <div id="popup-wrap" style="display: none">
+        <!-- TIP -->
+        <div data-name="popup" data-popup="1" style="display: none">
+          <div data-name="popup-header">
+            <div data-name="popup-title">TIP</div>
+            <button
+              data-name="popup-close"
+              onclick="contentUtil.setPopup()"
+            ></button>
+          </div>
+          <div data-name="popup-body" class="mt-16 mb-10 ms-26 f-nanum-s me-6">
+            <div class="flex flex-col">
+              <!-- text -->
+              <div class="mb-10 font-bold f-nanum-s text-40 leading-52">
+                <p>일본에는 ‘노멘과 같은 얼굴’이라는 말이 있다. 이는 가면을</p>
+                <p>쓰는 무용극 ‘노’가 배우의 표정을 볼 수 없다는 점에서 유래</p>
+                <p>한 것으로, ‘표정이 없어 무엇을 생각하는지 모르는 사람’을</p>
+                <p>뜻한다.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 사진 팝업창 -->
+        <div data-name="popup" data-popup="2" style="display: none">
+          <div data-name="popup-header">
+            <div data-name="popup-title">사진 팝업창</div>
+            <button
+              data-name="popup-close"
+              onclick="contentUtil.setPopup()"
+            ></button>
+          </div>
+          <div
+            data-name="popup-body"
+            class="flex items-center justify-center w-full h-full gap-16"
+          >
+            <div
+              class="flex flex-col items-center w-608 h-402"
+              data-name="popup_photo_wrap"
+            >
+              <div class="w-full overflow-x-hidden overflow-y-auto pe-4">
+                <img
+                  src="./images/10_01_17/popup_photo1.jpg"
+                  alt="노의 무대"
+                  class="object-contain min-w-608 rounded-10"
+                  data-name="popup_photo"
+                />
+                <img
+                  style="display: none"
+                  src="./images/10_01_17/popup_photo2.jpg"
+                  alt="다양한 노멘"
+                  class="object-contain min-w-608 rounded-10"
+                  data-name="popup_photo"
+                />
+                <img
+                  style="display: none"
+                  src="./images/10_01_17/popup_photo3.jpg"
+                  alt="다양한 노멘"
+                  class="object-contain min-w-608 rounded-10"
+                  data-name="popup_photo"
+                />
+              </div>
+              <div
+                class="flex mt-8 font-bold f-nanum-s h-52 text-40 leading-52 shrink-0"
+              >
+                <div data-name="popup_photo_text">노의 무대</div>
+                <div
+                  class="mt-12 h-52"
+                  style="display: none"
+                  data-name="popup_photo_text"
+                >
+                  <p class="flex">
+                    다양한 노멘 (
+                    <span
+                      data-audio="10_01_17/152-03.mp3"
+                      class="f-noto font-medium"
+                    >
+                      <span class="relative"
+                        >能<span class="ruby">のう</span></span
+                      ><span class="relative"
+                        >面<span class="ruby">めん</span></span
+                      > </span
+                    >)
+                  </p>
+                </div>
+                <div
+                  class="mt-12 h-52"
+                  style="display: none"
+                  data-name="popup_photo_text"
+                >
+                  <p class="flex">
+                    다양한 노멘 (
+                    <span
+                      data-audio="10_01_17/152-03.mp3"
+                      class="f-noto font-medium"
+                    >
+                      <span class="relative"
+                        >能<span class="ruby">のう</span></span
+                      ><span class="relative"
+                        >面<span class="ruby">めん</span></span
+                      > </span
+                    >)
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="w-266 h-402">
+              <div class="flex flex-wrap w-full gap-10">
+                <button
+                  data-name="btn-popup_photo"
+                  class="w-128 h-72 active"
+                  onclick="contentUtil.setPhotoPopup(1)"
+                >
+                  <img
+                    src="./images/10_01_17/popup_btn_photo1.jpg"
+                    alt="노의 무대"
+                  />
+                </button>
+                <button
+                  data-name="btn-popup_photo"
+                  class="w-128 h-72"
+                  onclick="contentUtil.setPhotoPopup(2)"
+                >
+                  <img
+                    src="./images/10_01_17/popup_btn_photo2.jpg"
+                    alt="다양한 노멘"
+                  />
+                </button>
+                <button
+                  data-name="btn-popup_photo"
+                  class="w-128 h-72"
+                  onclick="contentUtil.setPhotoPopup(3)"
+                >
+                  <img
+                    src="./images/10_01_17/popup_btn_photo3.jpg"
+                    alt="다양한 노멘"
+                  />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 해설 보기 -->
+        <div data-name="popup" data-popup="3" style="display: none">
+          <div data-name="popup-header">
+            <div data-name="popup-title">해설 보기</div>
+            <button
+              data-name="popup-close"
+              onclick="contentUtil.setPopup()"
+            ></button>
+          </div>
+          <div
+            data-name="popup-body"
+            class="mt-16 ms-26 f-nanum-s me-6 relative h-full"
+          >
+            <div class="flex flex-col mb-10">
+              <!-- title -->
+              <div class="flex items-center h-55 mb-10">
+                <img
+                  src="./../common/images/popup_titlemark_primary.svg"
+                  alt=""
+                  class="w-35 h-55 me-10"
+                />
+                <div class="flex font-extrabold text-42 text-[#41674B]">
+                  노의 구성
+                </div>
+              </div>
+              <!-- text -->
+              <div
+                class="mb-20 font-bold f-nanum-s text-40 leading-52 flex flex-col gap-10"
+              >
+                <div>
+                  <p class="flex">
+                    고반다테(<span class="f-noto font-medium"
+                      ><span class="relative"
+                        >五<span class="ruby">ご</span></span
+                      ><span class="relative"
+                        >番<span class="ruby">ばん</span></span
+                      ><span class="relative"
+                        >立<span class="ruby">だ</span></span
+                      >て</span
+                    >)라는 구성에 따라 차례로 상연된다.
+                  </p>
+                  <p></p>
+                </div>
+
+                <div class="flex w-full">
+                  <div
+                    class="w-12 h-12 mt-20 bg-black rounded-full me-10"
+                  ></div>
+                  <div class="flex">
+                    <p>첫 번째 노</p>
+                    <div data-name="colon-black">:</div>
+                    <div class="flex flex-col">
+                      <p>내용은 신의 영접이나 신령이 축복을 주는 것</p>
+                      <p>으로, 주인공은 주로 신이나 정령으로 나타</p>
+                      <p>난다.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="flex w-full">
+                  <div
+                    class="w-12 h-12 mt-20 bg-black rounded-full me-10"
+                  ></div>
+                  <div class="flex">
+                    <p>두 번째 노</p>
+                    <div data-name="colon-black">:</div>
+                    <div class="flex flex-col">
+                      <p>생전에 지은 죄로 사후에 수라도에 떨어진</p>
+                      <p>무사의 고통을 그린 것으로, 주로 헤이케모노</p>
+                      <p class="flex pt-12">
+                        가타리(
+                        <span class="f-noto font-medium"
+                          ><span class="relative"
+                            >平<span class="ruby">へい</span></span
+                          ><span class="relative"
+                            >家<span class="ruby">け</span></span
+                          ><span class="relative"
+                            >物<span class="ruby tracking-[-0.1em]"
+                              >もの</span
+                            ></span
+                          ><span class="relative"
+                            >語<span
+                              class="ruby absolute left-22 tracking-[-0.23em]"
+                              >がたり</span
+                            ></span
+                          ></span
+                        >
+                        )에서 취한 경우가 많다.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="flex w-full">
+                  <div
+                    class="w-12 h-12 mt-20 bg-black rounded-full me-10"
+                  ></div>
+                  <div class="flex">
+                    <p>세 번째 노</p>
+                    <div data-name="colon-black">:</div>
+                    <div class="flex flex-col">
+                      <p>주로 젊고 아름다운 여성을 주인공으로 하며,</p>
+                      <p>가무 중심의 우아한 장면을 전개해 나간다.</p>
+                      <p>그날의 공연에서 중심적인 위치를 차지한다.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="flex w-full">
+                  <div
+                    class="w-12 h-12 mt-20 bg-black rounded-full me-10"
+                  ></div>
+                  <div class="flex">
+                    <p>네 번째 노</p>
+                    <div data-name="colon-black">:</div>
+                    <div class="flex flex-col">
+                      <p>첫 번째와 두 번째에 속하지 않는 여러 잡다한</p>
+                      <p>종류를 포함한 것으로, 사랑이나 질투, 복수</p>
+                      <p>등 인간적인 감정이 많이 나타난다.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="flex w-full">
+                  <div
+                    class="w-12 h-12 mt-20 bg-black rounded-full me-10"
+                  ></div>
+                  <div class="flex">
+                    <p>다섯 번째 노</p>
+                    <div data-name="colon-black">:</div>
+                    <div class="flex flex-col">
+                      <p>하루 중 맨 마지막에 상연하는 것으로 템포</p>
+                      <p>가 빠르며, 귀신 같은 초현실적인 존재가</p>
+                      <p>주인공으로 등장한다.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- title -->
+              <div class="flex items-center mb-10 h-55">
+                <img
+                  src="./../common/images/popup_titlemark_primary.svg"
+                  alt=""
+                  class="w-35 h-55 me-10"
+                />
+                <div class="flex font-extrabold text-42 text-[#41674B]">
+                  교겐(<span class="f-noto font-bold">きょうげん</span>)
+                </div>
+              </div>
+              <!-- text -->
+              <div
+                class="mb-10 font-bold f-nanum-s text-40 leading-52 flex flex-col"
+              >
+                <p>하루에 상연하는 5종목의 노와 노 사이에 공연하는 순수한</p>
+                <p>대사극으로, 가볍고 즐거운 일상적인 세계를 묘사하여 풍자</p>
+                <p>와 웃음을 선사하는 일본의 전통 연극을 말한다.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript">
+    const page = {
+      isAnswer: false,
+      isVocabulary: false,
+      showAnswer: () => {},
+      hideAnswer: () => {},
+      showVocabulary: () => {},
+    };
+  </script>
+  <script src="./../common/js/tailwind.config.js"></script>
+  <script src="./../common/js/script.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      // contentUtil.setPopup(3);
+    });
+  </script>
+</html>

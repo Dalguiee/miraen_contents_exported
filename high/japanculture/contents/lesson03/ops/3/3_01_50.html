@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>미래엔 일본 문화</title>
+    <script src="./../common/lib/jquery-3.7.1.min.js"></script>
+    <script src="./../common/lib/howler-2.1.3.min.js"></script>
+    <script src="./../common/lib/tailwind.js"></script>
+    <!-- 폰트 -->
+    <link href="./../common/font/suit/suit.css" rel="stylesheet" />
+    <link href="./../common/font/bmjua/bmjua.css" rel="stylesheet" />
+    <link
+      href="./../common/font/nanumsquare/nanumSquare.css"
+      rel="stylesheet"
+    />
+    <link href="./../common/font/notoSansJP/notoSansJP.css" rel="stylesheet" />
+    <link href="./../common/css/tailwind.css" rel="stylesheet" />
+    <link href="./../common/css/fontStyle.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div id="wrap">
+      <!-- contents -->
+      <div class="relative w-full h-full pt-60">
+        <!-- title -->
+        <img
+          src="./images/3_01_48/Label_tit.svg"
+          alt="활동"
+          class="absolute w-72 h-52 top-8"
+        />
+        <!-- main -->
+        <div class="flex flex-col w-full h-full px-20 leading-52">
+          <div
+            class="flex flex-col w-full text-40 f-nanum-s mb-10 font-extrabold"
+          >
+            <p>재난 대비용 가방의 내용물을 더 조사하여 우리 가정에 비치할</p>
+            <p>재난 대비 용품 리스트를 작성해 봅시다.</p>
+          </div>
+
+          <!-- Answer Box -->
+          <div
+            class="border-4 w-full mb-6 h-293 border-[#F57F81] rounded-10 mx-auto pe-6 pl-16 pb-10 pt-16 items-center"
+          >
+            <div
+              data-answer="1"
+              style="display: none"
+              class="f-nanum-s font-bold text-40 text-red overflow-y-auto w-full h-full"
+            >
+              <div class="font-bold f-nanum-s text-40 leading-52">
+                <div class="flex mb-10">
+                  <div class="w-12 h-12 mt-20 bg-red rounded-full me-10"></div>
+                  <div class="flex">
+                    의약품 <span data-name="colon-red">:</span> 구급 세트, 복용
+                    중인 약, 소독액 등
+                  </div>
+                </div>
+                <div class="flex mb-10">
+                  <div class="w-12 h-12 mt-20 bg-red rounded-full me-10"></div>
+                  <div class="flex">
+                    식품 <span data-name="colon-red">:</span>건빵, 물, 통조림
+                    등(비조리 식품)
+                  </div>
+                </div>
+                <div class="flex mb-10">
+                  <div class="w-12 h-12 mt-20 bg-red rounded-full me-10"></div>
+                  <div class="flex">
+                    위생용품 <span data-name="colon-red">:</span>휴대용 화장실,
+                    화장지, 칫솔, 비누 등
+                  </div>
+                </div>
+                <div class="flex mb-10">
+                  <div class="w-12 h-12 mt-20 bg-red rounded-full me-10"></div>
+                  <div class="flex">
+                    의류 <span data-name="colon-red">:</span>방한용 의류, 속옷,
+                    목장갑, 수건, 담요 등
+                  </div>
+                </div>
+                <div class="flex">
+                  <div class="w-12 h-12 mt-20 bg-red rounded-full me-10"></div>
+                  <div class="flex">
+                    기타 <span data-name="colon-red">:</span>현금, 라디오,
+                    배터리, 촛불, 손전등 등
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="ms-auto">
+            <button
+              data-name="btn-common"
+              data-reset="1"
+              onclick="contentUtil.showAnswer(1)"
+            >
+              예시 답안
+            </button>
+            <button
+              data-name="btn-common"
+              data-answer="1"
+              onclick="contentUtil.hideAnswer(1)"
+              style="display: none"
+            >
+              다시 풀기
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- popup -->
+      <div id="popup-wrap" style="display: none"></div>
+    </div>
+  </body>
+  <script type="text/javascript">
+    const page = {
+      isAnswer: false,
+      isVocabulary: false,
+      showAnswer: () => {},
+      hideAnswer: () => {},
+      showVocabulary: () => {},
+    };
+  </script>
+  <script src="./../common/js/tailwind.config.js"></script>
+  <script src="./../common/js/script.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      // contentUtil.showAnswer();
+    });
+  </script>
+</html>

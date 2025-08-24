@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>미래엔 일본 문화</title>
+    <script src="./../common/lib/jquery-3.7.1.min.js"></script>
+    <script src="./../common/lib/howler-2.1.3.min.js"></script>
+    <script src="./../common/lib/tailwind.js"></script>
+    <!-- 폰트 -->
+    <link href="./../common/font/suit/suit.css" rel="stylesheet" />
+    <link href="./../common/font/bmjua/bmjua.css" rel="stylesheet" />
+    <link
+      href="./../common/font/nanumsquare/nanumSquare.css"
+      rel="stylesheet"
+    />
+    <link href="./../common/font/notoSansJP/notoSansJP.css" rel="stylesheet" />
+    <link href="./../common/css/tailwind.css" rel="stylesheet" />
+    <link href="./../common/css/fontStyle.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div id="wrap">
+      <!-- contents -->
+      <div class="relative w-full h-full pt-60">
+        <!-- title -->
+        <img
+          src="./../common/images/title_digital.svg"
+          alt="디지털 활동"
+          class="absolute h-42 w-261 top-10"
+        />
+        <!-- main -->
+        <div class="flex flex-col w-full h-full px-20 leading-52">
+          <div class="mb-10 font-extrabold text-40 f-nanum-s">
+            <p>우리나라 전통 스포츠에는 어떤 것이 있는지 검색하여 조사</p>
+            <p>하고 발표해 봅시다.</p>
+          </div>
+          <div
+            class="border-4 w-full pt-14 ps-20 pe-4 pb-14 h-293 border-[#3589D7] rounded-10 mb-8"
+          >
+            <div class="w-full h-full"></div>
+          </div>
+          <div class="ms-auto">
+            <button
+              data-name="btn-common"
+              data-reset="1"
+              onclick="contentUtil.setPopup(1); audioPlay(audio, [`./../common/media/mp3/showAnswer.mp3`]);"
+            >
+              예시 답안
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- popup -->
+      <div id="popup-wrap" style="display: none">
+        <!-- 예시 답안 -->
+        <div data-name="popup" data-popup="1" style="display: none">
+          <div data-name="popup-header">
+            <div data-name="popup-title">예시 답안</div>
+            <button
+              data-name="popup-close"
+              onclick="contentUtil.setPopup()"
+            ></button>
+          </div>
+          <div data-name="popup-body" class="mt-16 mb-10 ms-26 f-nanum-s me-6">
+            <div class="flex flex-col">
+              <!-- table -->
+              <div
+                class="flex flex-col font-bold w-fit leading-52 text-40 f-nanum-s"
+              >
+                <!-- ========= -->
+                <div class="flex items-stretch">
+                  <!-- ------- -->
+                  <div
+                    class="w-124 bg-[#B3CFEA] flex items-center justify-center p-10 rounded-tl-10 border-[#CEDCE9] border-t-3 border-l-3 border-1"
+                  >
+                    <div class="flex flex-col items-center">
+                      <p class="text-red">씨름</p>
+                    </div>
+                  </div>
+                  <div
+                    class="bg-white w-776 flex flex-col rounded-tr-10 border-[#CEDCE9] border-t-3 border-b-1 border-r-3"
+                  >
+                    <div
+                      class="text-red w-full px-10 py-7 flex flex-col gap-10"
+                    >
+                      <div class="flex">
+                        <div
+                          class="w-12 h-12 mt-20 bg-red rounded-full me-10"
+                        ></div>
+                        <div class="flex flex-col">
+                          <p>우리나라 고유의 격투기로, 고구려 벽화에서 그</p>
+                          <p>기원을 찾을 수 있다. 두 사람이 샅바를 잡고 힘</p>
+                          <p>과 기술을 써서 상대방을 넘어뜨리는 경기이다.</p>
+                        </div>
+                      </div>
+                      <div class="flex">
+                        <div
+                          class="w-12 h-12 mt-20 bg-red rounded-full me-10"
+                        ></div>
+                        <div class="flex flex-col">
+                          <p>현재는 설, 단오에 전국 단위의 씨름 대회가</p>
+                          <p>열리고 있으며, 지상파 방송을 통해 중계된다.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- ------- -->
+                </div>
+                <!-- ========= -->
+                <div class="flex items-stretch">
+                  <!-- ------- -->
+                  <div
+                    class="w-124 bg-[#B3CFEA] flex items-center justify-center p-10 border-[#CEDCE9] border-r-1 border-l-3 border-b-3 rounded-bl-10"
+                  >
+                    <div class="flex flex-col items-center">
+                      <p class="text-red">태권도</p>
+                    </div>
+                  </div>
+                  <div
+                    class="bg-white w-776 flex flex-col border-[#CEDCE9] border-b-3 border-r-3 rounded-br-10"
+                  >
+                    <div
+                      class="text-red w-full px-10 py-7 flex flex-col gap-10"
+                    >
+                      <div class="flex">
+                        <div
+                          class="w-12 h-12 mt-20 bg-red rounded-full me-10"
+                        ></div>
+                        <div class="flex flex-col">
+                          <p>무기 없이 손과 발을 이용해 공격하고 방어하는</p>
+                          <p>무술로, 특히 발차기 기술을 특징으로 한다.</p>
+                        </div>
+                      </div>
+                      <div class="flex">
+                        <div
+                          class="w-12 h-12 mt-20 bg-red rounded-full me-10"
+                        ></div>
+                        <div class="flex flex-col">
+                          <p>1988년 서울 올림픽 때 시범 종목이었다가,</p>
+                          <p>2000년 시드니 올림픽 때부터 정식 종목으로</p>
+                          <p>채택되었다.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript">
+    const page = {
+      isAnswer: false,
+      isVocabulary: false,
+      showAnswer: () => {},
+      hideAnswer: () => {},
+      showVocabulary: () => {},
+    };
+  </script>
+  <script src="./../common/js/tailwind.config.js"></script>
+  <script src="./../common/js/script.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      // contentUtil.setPopup(1);
+    });
+  </script>
+</html>

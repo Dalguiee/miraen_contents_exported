@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>미래엔 일본 문화</title>
+    <script src="./../common/lib/jquery-3.7.1.min.js"></script>
+    <script src="./../common/lib/howler-2.1.3.min.js"></script>
+    <script src="./../common/lib/tailwind.js"></script>
+    <!-- 폰트 -->
+    <link href="./../common/font/suit/suit.css" rel="stylesheet" />
+    <link href="./../common/font/bmjua/bmjua.css" rel="stylesheet" />
+    <link
+      href="./../common/font/nanumsquare/nanumSquare.css"
+      rel="stylesheet"
+    />
+    <link href="./../common/font/notoSansJP/notoSansJP.css" rel="stylesheet" />
+    <link href="./../common/css/tailwind.css" rel="stylesheet" />
+    <link href="./../common/css/fontStyle.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div id="wrap">
+      <!-- contents -->
+      <div class="relative w-full h-full pt-70">
+        <!-- title -->
+        <img
+          src="./../common/images/title_learning_objectives.svg"
+          alt="학습목표"
+          class="absolute w-160 h-52 top-10"
+        />
+        <!-- header-btn -->
+        <div class="absolute right-0 flex gap-6 top-13" data-name="header-btn">
+          <button data-name="btn-common" onclick="contentUtil.setPopup(2)">
+            해설 보기
+          </button>
+        </div>
+        <!-- main -->
+        <div class="flex flex-col w-full h-full">
+          <!-- ---------list--------- -->
+          <div class="flex flex-col w-full gap-4 px-20 font-bold f-nanum-s">
+            <!-- line1 -->
+            <div class="flex w-full">
+              <div class="w-12 h-12 mt-20 bg-black rounded-full me-10"></div>
+              <span class="leading-52 text-40"
+                ><span class="text-[#226D43]">일본의 전통 예술</span>에 대해
+                말할 수 있다.</span
+              >
+            </div>
+            <!-- line2 -->
+            <div class="flex w-full">
+              <div class="w-12 h-12 mt-20 bg-black rounded-full me-10"></div>
+              <span class="leading-52 text-40 tracking-[-0.03em]"
+                ><span class="text-[#226D43]"
+                  >일본의 전통 공연 예술과 전통 스포츠</span
+                >에 대해 설명할 수 있다.
+              </span>
+            </div>
+            <!-- line3 -->
+            <div class="flex w-full">
+              <div class="w-12 h-12 mt-20 bg-black rounded-full me-10"></div>
+              <span class="leading-52 text-40"
+                >한국과 일본의 전통문화를 비교하여 설명할 수 있다.</span
+              >
+            </div>
+          </div>
+          <!-- ---------photo--------- -->
+          <div class="relative mt-28 w-400 h-225 ms-auto me-20">
+            <img
+              src="./images/10_01_01/main_photo1.jpg"
+              alt="노"
+              class="w-full h-full"
+            />
+            <button
+              data-name="btn-view"
+              class="absolute bottom-10 right-10"
+              onclick="contentUtil.setPopup(3)"
+            ></button>
+          </div>
+        </div>
+      </div>
+      <!-- popup -->
+      <div id="popup-wrap" style="display: none">
+        <!-- 해설 보기 -->
+        <div data-name="popup" data-popup="2" style="display: none">
+          <div data-name="popup-header">
+            <div data-name="popup-title">해설 보기</div>
+            <button
+              data-name="popup-close"
+              onclick="contentUtil.setPopup()"
+            ></button>
+          </div>
+          <div data-name="popup-body" class="pt-32 mb-10 ms-26 f-nanum-s me-6">
+            <div class="flex flex-col">
+              <!-- title -->
+              <div class="flex items-center mb-10 h-55">
+                <img
+                  src="./../common/images/popup_titlemark_primary.svg"
+                  alt=""
+                  class="w-35 h-55 me-10"
+                />
+                <div class="flex font-extrabold text-42 text-[#41674B]">
+                  노(
+                  <span class="f-noto font-bold"
+                    ><span class="relative"
+                      >能<span class="ruby">のう</span></span
+                    ></span
+                  >)
+                </div>
+              </div>
+              <div class="font-bold f-nanum-s text-40 leading-52">
+                <p>‘노’는 일본의 대표적인 가면극이다. 원래는 종교적인 의식</p>
+                <p class="flex">
+                  으로 실시되었으며, 무로마치 시대(1336<span
+                    class="f-noto font-medium"
+                    >～</span
+                  >1573년)에
+                </p>
+                <p class="flex pt-12">
+                  간아미(<span class="f-noto font-medium">
+                    <span class="relative"
+                      >観<span class="ruby">かん</span></span
+                    ><span class="relative">阿<span class="ruby">あ</span></span
+                    ><span class="relative"
+                      >弥<span class="ruby">み</span></span
+                    ></span
+                  >)와 제아미(<span class="f-noto font-medium">
+                    <span class="relative">世<span class="ruby">ぜ</span></span
+                    ><span class="relative">阿<span class="ruby">あ</span></span
+                    ><span class="relative"
+                      >弥<span class="ruby">み</span></span
+                    ></span
+                  >)에 의해 완성되었다.
+                </p>
+                <p>신과 인간을 연결하는 내용이 많은 것이 특징이며, 대사가</p>
+                <p class="flex">
+                  고어(<span class="f-noto font-medium">古語</span>)로 되어
+                  있어서 일본인들도 어려워하는 내용이
+                </p>
+                <p>많다. 2008년 유네스코 세계 무형유산으로 등재되었다.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 사진 팝업창 -->
+        <div data-name="popup" data-popup="3" style="display: none">
+          <div data-name="popup-header">
+            <div data-name="popup-title">사진 팝업창</div>
+            <button
+              data-name="popup-close"
+              onclick="contentUtil.setPopup()"
+            ></button>
+          </div>
+          <div
+            data-name="popup-body"
+            class="flex items-center justify-center w-full h-full"
+          >
+            <img
+              src="./images/10_01_01/popup_photo1.jpg"
+              alt="노"
+              class="w-730 h-400"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript">
+    const page = {
+      isAnswer: false,
+      isVocabulary: false,
+      showAnswer: () => {},
+      hideAnswer: () => {},
+      showVocabulary: () => {},
+    };
+  </script>
+  <script src="./../common/js/tailwind.config.js"></script>
+  <script src="./../common/js/script.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      // contentUtil.setPopup(2);
+    });
+  </script>
+</html>

@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>미래엔 일본 문화</title>
+    <script src="./../common/lib/jquery-3.7.1.min.js"></script>
+    <script src="./../common/lib/howler-2.1.3.min.js"></script>
+    <script src="./../common/lib/tailwind.js"></script>
+    <!-- 폰트 -->
+    <link href="./../common/font/suit/suit.css" rel="stylesheet" />
+    <link href="./../common/font/bmjua/bmjua.css" rel="stylesheet" />
+    <link
+      href="./../common/font/nanumsquare/nanumSquare.css"
+      rel="stylesheet"
+    />
+    <link href="./../common/font/notoSansJP/notoSansJP.css" rel="stylesheet" />
+    <link href="./../common/css/tailwind.css" rel="stylesheet" />
+    <link href="./../common/css/fontStyle.css" rel="stylesheet" />
+    <link href="./../common/css/rolePlayer.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div id="wrap">
+      <!-- contents -->
+      <div class="relative flex flex-col w-full h-full pt-70">
+        <!-- title -->
+        <img
+          src="./../common/images/title_check.svg"
+          alt="확인하기"
+          class="absolute left-0 w-163 h-50 top-10"
+        />
+        <!-- header-btn -->
+        <div class="absolute right-0 flex gap-6 top-13" data-name="header-btn">
+          <button
+            data-exreset="1"
+            data-name="btn-common"
+            onclick="contentUtil.showExplan(1)"
+          >
+            해석 보기
+          </button>
+          <button
+            data-explan="1"
+            data-name="btn-common"
+            onclick="contentUtil.hideExplan(1)"
+            style="display: none"
+          >
+            해석 감추기
+          </button>
+          <button data-name="btn-common" onclick="contentUtil.setPopup(1)">
+            해설 보기
+          </button>
+        </div>
+        <!-- 음원 플레이어 -->
+        <div data-name="rolePlayer" class="absolute right-0 z-50 top-134">
+          <div class="rolePlayer">
+            <div class="rolePlayer_player">
+              <div class="rolePlayer_box">
+                <button class="rolePlayer_play-btn play"></button>
+                <button class="rolePlayer_stop-btn"></button>
+                <div class="rolePlayer_duration">
+                  <input
+                    type="range"
+                    class="rolePlayer_duration_range"
+                    min="0"
+                    max="100"
+                    value="0"
+                    step="1"
+                  />
+                  <div class="rolePlayer_duration_range-ui">
+                    <div
+                      class="rolePlayer_duration_range-ui_bar"
+                      style="width: 0"
+                    ></div>
+                  </div>
+                  <span class="rolePlayer_duration_text seek">00:00</span>
+                  <span class="rolePlayer_duration_text duration">00:00</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          data-reset="1"
+          class="absolute right-0 z-50 top-134 w-212 h-38 bg-white/50"
+        ></div>
+
+        <!-- main -->
+        <div
+          class="flex flex-col flex-1 w-full overflow-y-auto font-bold leading-52 f-nanum-s text-40"
+        >
+          <div class="flex mb-58">
+            <img
+              src="./images/8_01_40/title_index_4.svg"
+              alt="label"
+              class="w-25 h-52 me-12"
+            />
+            <div class="font-extrabold">
+              <p>밑줄 친 부분의 우리말을 일본어로 바꿔 써 봅시다.</p>
+            </div>
+          </div>
+          <!-- answer box -->
+          <div class="flex items-end mx-auto">
+            <div class="relative w-280 h-248 me-30">
+              <img
+                src="./images/8_01_40/main_img1.jpg"
+                alt=""
+                class="w-full h-full"
+              />
+              <button
+                data-name="btn-view"
+                class="absolute right-10 bottom-10"
+                onclick="contentUtil.setPopup(2)"
+              ></button>
+            </div>
+
+            <div
+              class="flex flex-col gap-20 justify-center w-451 py-26 px-36 border-4 border-[#F3F7D9] rounded-20"
+            >
+              <div class="flex items-center">
+                <div class="font-extrabold me-16">A</div>
+                <div
+                  class="h-56 border-b-4 w-294 flex justify-center border-[#B0C75B] me-2"
+                >
+                  <span
+                    data-answer="1"
+                    data-audio="8_01_40/129-01.mp3"
+                    class="font-medium f-noto text-red"
+                    style="display: none"
+                    >すみません</span
+                  >
+                </div>
+                <div class="font-medium f-noto">。</div>
+              </div>
+              <div class="flex">
+                <div class="font-extrabold me-16">B</div>
+                <div>
+                  <p class="font-medium f-noto">
+                    <span data-audio="8_01_40/129-02.mp3">はい。</span>
+                  </p>
+                  <p
+                    data-explan="1"
+                    class="mt-8 text-blue"
+                    style="display: none"
+                  >
+                    네.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- popup -->
+      <div id="popup-wrap" style="display: none">
+        <!-- 해설 보기 -->
+        <div data-name="popup" data-popup="1" style="display: none">
+          <div data-name="popup-header">
+            <div data-name="popup-title">해설 보기</div>
+            <button
+              data-name="popup-close"
+              onclick="contentUtil.setPopup()"
+            ></button>
+          </div>
+          <div
+            data-name="popup-body"
+            class="flex-1 mt-16 mb-10 ms-26 f-nanum-s me-6"
+          >
+            <div class="flex flex-col font-bold text-40 leading-52 f-nanum-s">
+              <!-- title -->
+              <div class="flex items-center mb-10 h-55">
+                <img
+                  src="./../common/images/popup_titlemark_primary.svg"
+                  alt=""
+                  class="w-35 h-55 me-10"
+                />
+                <div class="flex font-extrabold text-42 text-[#41674B]">
+                  해설
+                </div>
+              </div>
+              <!-- text -->
+              <div>
+                <p class="flex">
+                  가게에서 점원을 부를 때 ‘<span class="font-medium f-noto"
+                    >すみません</span
+                  >’을 쓸 수 있다.
+                </p>
+                <p class="flex">
+                  ‘<span class="font-medium f-noto">すみません</span>’은
+                  이외에도 사과할 때, 고마울 때, 모르는
+                </p>
+                <p>사람에게 말을 걸 때 등 다양한 상황에서 사용할 수 있다.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 사진 팝업창 -->
+        <div data-name="popup" data-popup="2" style="display: none">
+          <div data-name="popup-header">
+            <div data-name="popup-title">사진 팝업창</div>
+            <button
+              data-name="popup-close"
+              onclick="contentUtil.setPopup()"
+            ></button>
+          </div>
+          <div
+            data-name="popup-body"
+            class="flex items-center justify-center w-full h-full"
+          >
+            <img
+              src="./images/8_01_40/popup_photo1.jpg"
+              alt=""
+              class="w-730 h-400 rounded-10"
+            />
+          </div>
+        </div>
+      </div>
+      <!-- ======================임시버튼============================== -->
+      <div class="absolute bottom-0 right-0">
+        <button class="btn-all-answer text-12">정답 보기</button>
+        <button class="btn-all-reset text-12" style="display: none">
+          다시 풀기
+        </button>
+      </div>
+      <!-- ======================================================== -->
+    </div>
+  </body>
+  <script type="text/javascript">
+    const page = {
+      isAnswer: true,
+      isVocabulary: false,
+      showAnswer: () => {
+        contentUtil.showAnswer();
+        setRoleStop();
+      },
+      hideAnswer: () => {
+        contentUtil.hideAnswer();
+        setRoleStop();
+      },
+      showVocabulary: () => {},
+    };
+
+    //역할 연습 음원
+    // audio : 재생할 전체음원
+    // data
+    // start : 시작 시간
+    // end : 끝 시간
+    // value : 해당되는 data-audio
+    // role : 해당되는 역할
+    // scroll : 해당 시간대 위치할 스크롤
+    // page : 해당 시간대 위치할 페이지
+    const rolePlayerAudio = [
+      {
+        audio: "8_01_40/129-03.mp3",
+        data: [
+          {
+            start: 0,
+            end: 1.8,
+            value: "8_01_40/129-01.mp3",
+          },
+          {
+            start: 1.8,
+            end: 2.8,
+            value: "8_01_40/129-02.mp3",
+          },
+        ],
+      },
+    ];
+  </script>
+  <script src="./../common/js/tailwind.config.js"></script>
+  <script src="./../common/js/script.js"></script>
+  <script src="../common/js/rolePlayerJc.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {});
+  </script>
+</html>

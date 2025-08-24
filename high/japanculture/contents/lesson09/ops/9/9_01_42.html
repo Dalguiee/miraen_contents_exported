@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>미래엔 일본 문화</title>
+    <script src="./../common/lib/jquery-3.7.1.min.js"></script>
+    <script src="./../common/lib/howler-2.1.3.min.js"></script>
+    <script src="./../common/lib/tailwind.js"></script>
+    <!-- 폰트 -->
+    <link href="./../common/font/suit/suit.css" rel="stylesheet" />
+    <link href="./../common/font/bmjua/bmjua.css" rel="stylesheet" />
+    <link
+      href="./../common/font/nanumsquare/nanumSquare.css"
+      rel="stylesheet"
+    />
+    <link href="./../common/font/notoSansJP/notoSansJP.css" rel="stylesheet" />
+    <link href="./../common/css/tailwind.css" rel="stylesheet" />
+    <link href="./../common/css/fontStyle.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div id="wrap">
+      <!-- contents -->
+      <div class="relative w-full h-full pt-74">
+        <!-- title -->
+        <img
+          src="./images/9_01_40/title_culture.svg"
+          alt="일본인의 종교관"
+          class="absolute w-482 h-54 top-10"
+        />
+
+        <!-- main -->
+        <div class="relative flex flex-col w-full h-full overflow-y-auto">
+          <div
+            class="flex flex-col flex-1 w-full text-40 f-nanum-s leading-52 ps-20"
+          >
+            <div class="flex gap-10">
+              <img src="./images/9_01_42/title_label.svg" alt="" />
+              <span class="font-extrabold"> 신사와 절을 비교해 봅시다. </span>
+            </div>
+            <!-- ======== page 1 ======== -->
+            <div
+              data-name="page"
+              class="flex flex-col mb-20 font-bold f-nanum-s text-40"
+            >
+              <div class="flex relative mb-10">
+                <!-- Table -->
+                <!-- ------------- -->
+                <div
+                  class="absolute bottom-247 right-106 bg-[#A3C4E7] rounded-full px-20 py-4"
+                >
+                  신사
+                </div>
+                <div class="absolute bottom-20 right-40 w-240">
+                  <img src="./images/9_01_42/main_photo1.jpg" alt="신사" />
+                  <button
+                    data-name="btn-view"
+                    class="absolute bottom-10 right-10"
+                    onclick="contentUtil.setPopup(1); contentUtil.setPhotoPopup(1)"
+                  ></button>
+                </div>
+
+                <div class="flex items-stretch">
+                  <div
+                    class="w-89 h-280 bg-[#A3C4E7] flex items-center justify-center rounded-tl-10 rounded-bl-10"
+                  >
+                    <span>특징</span>
+                  </div>
+                </div>
+
+                <!-- ------------- -->
+                <div class="flex items-stretch">
+                  <div
+                    class="w-871 h-280 bg-[#ffffff] border-[#A3C4E7] flex flex-col py-7 pl-20 border-t-3 border-r-3 border-b-3 rounded-tr-10 rounded-br-10"
+                  >
+                    <div class="flex">
+                      <div
+                        class="w-12 h-12 mt-20 bg-black rounded-full me-10"
+                      ></div>
+                      <p class="flex">
+                        신주(<span
+                          data-audio="9_01_42/145-01.mp3"
+                          class="f-noto font-medium"
+                          >神主</span
+                        >)와 무녀가 있다.
+                      </p>
+                    </div>
+                    <div class="flex">
+                      <div
+                        class="w-12 h-12 mt-20 bg-black rounded-full me-10"
+                      ></div>
+                      <p>도리이가 있다.</p>
+                    </div>
+                    <div class="flex">
+                      <div
+                        class="w-12 h-12 mt-20 bg-black rounded-full me-10"
+                      ></div>
+                      <p>도리이 방향은 정해져 있지 않다.</p>
+                    </div>
+                    <div class="flex">
+                      <div
+                        class="w-12 h-12 mt-20 bg-black rounded-full me-10"
+                      ></div>
+                      <div>
+                        <p>산속에 있는 경우가 많으며, 전국적</p>
+                        <p>으로 흩어져 있다. (약 85,000개)</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="w-full text-end pr-20 text-30 text-[#70726F]">
+                (※ 신사나 절에 따라 다를 수 있다.)
+              </div>
+            </div>
+
+            <!-- ======== page 2 ======== -->
+            <div
+              data-name="page"
+              class="flex flex-col mb-20 font-bold f-nanum-s text-40"
+              style="display: none"
+            >
+              <div class="flex relative mb-10">
+                <!-- Table -->
+                <!-- ------------- -->
+                <div
+                  class="absolute bottom-247 right-106 bg-[#A3C4E7] rounded-full px-20 py-4"
+                >
+                  신사
+                </div>
+                <div class="absolute bottom-20 right-67 w-187">
+                  <img src="./images/9_01_42/main_photo2.jpg" alt="참배할 때" />
+                  <button
+                    data-name="btn-view"
+                    class="absolute bottom-10 right-10"
+                    onclick="contentUtil.setPopup(1); contentUtil.setPhotoPopup(2)"
+                  ></button>
+                </div>
+
+                <div class="flex items-stretch">
+                  <div
+                    class="w-168 h-280 bg-[#A3C4E7] flex items-center justify-center rounded-tl-10 rounded-bl-10"
+                  >
+                    <span>참배할 때</span>
+                  </div>
+                </div>
+
+                <!-- ------------- -->
+                <div class="flex items-stretch">
+                  <div
+                    class="w-792 h-280 bg-[#ffffff] border-[#A3C4E7] flex flex-col gap-10 py-49 pl-20 border-t-3 border-r-3 border-b-3 rounded-tr-10 rounded-br-10"
+                  >
+                    <div class="flex">
+                      <div
+                        data-name="number-1"
+                        class="bg-[#6D95BF] me-10"
+                      ></div>
+                      <p class="flex">방울을 울린다.</p>
+                    </div>
+                    <div class="flex">
+                      <div
+                        data-name="number-2"
+                        class="bg-[#6D95BF] me-10"
+                      ></div>
+                      <p class="flex">새전을 던진다.</p>
+                    </div>
+                    <div class="flex">
+                      <div
+                        data-name="number-3"
+                        class="bg-[#6D95BF] me-10"
+                      ></div>
+                      <p class="flex">박수를 친다.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="w-full text-end pr-20 text-30 text-[#70726F]">
+                (※ 신사나 절에 따라 다를 수 있다.)
+              </div>
+            </div>
+
+            <!-- ======== page 3 ======== -->
+            <div
+              data-name="page"
+              class="flex flex-col mb-20 font-bold f-nanum-s text-40"
+              style="display: none"
+            >
+              <div class="flex relative mb-10">
+                <!-- Table -->
+                <!-- ------------- -->
+                <div
+                  class="absolute bottom-247 right-106 bg-[#FDC98E] rounded-full px-37 py-4"
+                >
+                  절
+                </div>
+                <div class="absolute bottom-20 right-40 w-240">
+                  <img src="./images/9_01_42/main_photo3.jpg" alt="절" />
+                  <button
+                    data-name="btn-view"
+                    class="absolute bottom-10 right-10"
+                    onclick="contentUtil.setPopup(1); contentUtil.setPhotoPopup(3)"
+                  ></button>
+                </div>
+
+                <div class="flex items-stretch">
+                  <div
+                    class="w-89 h-280 bg-[#FDC98E] flex items-center justify-center rounded-tl-10 rounded-bl-10"
+                  >
+                    <span>특징</span>
+                  </div>
+                </div>
+
+                <!-- ------------- -->
+                <div class="flex items-stretch">
+                  <div
+                    class="w-871 h-280 bg-[#ffffff] border-[#FDC98E] flex flex-col py-7 pl-20 border-t-3 border-r-3 border-b-3 rounded-tr-10 rounded-br-10"
+                  >
+                    <div class="flex">
+                      <div
+                        class="w-12 h-12 mt-20 bg-black rounded-full me-10"
+                      ></div>
+                      <p class="flex">승려가 있다.</p>
+                    </div>
+                    <div class="flex">
+                      <div
+                        class="w-12 h-12 mt-20 bg-black rounded-full me-10"
+                      ></div>
+                      <p>불상이 있다.</p>
+                    </div>
+                    <div class="flex">
+                      <div
+                        class="w-12 h-12 mt-20 bg-black rounded-full me-10"
+                      ></div>
+                      <p>절의 문은 남쪽에 있다.</p>
+                    </div>
+                    <div class="flex">
+                      <div
+                        class="w-12 h-12 mt-20 bg-black rounded-full me-10"
+                      ></div>
+                      <div>
+                        <p>주로 사람이 많은 곳에 있다.</p>
+                        <p>(약 76,000개)</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="w-full text-end pr-20 text-30 text-[#70726F]">
+                (※ 신사나 절에 따라 다를 수 있다.)
+              </div>
+            </div>
+
+            <!-- ======== page 4 ======== -->
+            <div
+              data-name="page"
+              class="flex flex-col mb-20 font-bold f-nanum-s text-40"
+              style="display: none"
+            >
+              <div class="flex relative mb-10">
+                <!-- Table -->
+                <!-- ------------- -->
+                <div
+                  class="absolute bottom-247 right-106 bg-[#FDC98E] rounded-full px-37 py-4"
+                >
+                  절
+                </div>
+                <div class="absolute bottom-20 right-67 w-187">
+                  <img src="./images/9_01_42/main_photo4.jpg" alt="참배할 때" />
+                  <button
+                    data-name="btn-view"
+                    class="absolute bottom-10 right-10"
+                    onclick="contentUtil.setPopup(1); contentUtil.setPhotoPopup(4)"
+                  ></button>
+                </div>
+
+                <div class="flex items-stretch">
+                  <div
+                    class="w-168 h-280 bg-[#FDC98E] flex items-center justify-center rounded-tl-10 rounded-bl-10"
+                  >
+                    <span>참배할 때</span>
+                  </div>
+                </div>
+
+                <!-- ------------- -->
+                <div class="flex items-stretch">
+                  <div
+                    class="w-792 h-280 bg-[#ffffff] border-[#FDC98E] flex flex-col gap-10 py-49 pl-20 border-t-3 border-r-3 border-b-3 rounded-tr-10 rounded-br-10"
+                  >
+                    <div class="flex">
+                      <div
+                        data-name="number-1"
+                        class="bg-[#F19022] me-10"
+                      ></div>
+                      <p class="flex">종을 친다.</p>
+                    </div>
+                    <div class="flex">
+                      <div
+                        data-name="number-2"
+                        class="bg-[#F19022] me-10"
+                      ></div>
+                      <p class="flex">향을 피운다.</p>
+                    </div>
+                    <div class="flex">
+                      <div
+                        data-name="number-3"
+                        class="bg-[#F19022] me-10"
+                      ></div>
+                      <p class="flex">합장한다.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="w-full text-end pr-20 text-30 text-[#70726F]">
+                (※ 신사나 절에 따라 다를 수 있다.)
+              </div>
+            </div>
+
+            <!-- pagination -->
+            <div
+              class="absolute -translate-x-1/2 left-1/2 bottom-10"
+              data-name="pagination"
+            >
+              <button class="active" data-name="btn-pagination"></button>
+              <button class="" data-name="btn-pagination"></button>
+              <button class="" data-name="btn-pagination"></button>
+              <button class="" data-name="btn-pagination"></button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- popup -->
+      <div id="popup-wrap" style="display: none">
+        <!-- 사진 팝업창 -->
+        <div data-name="popup" data-popup="1" style="display: none">
+          <div data-name="popup-header">
+            <div data-name="popup-title">사진 팝업창</div>
+            <button
+              data-name="popup-close"
+              onclick="contentUtil.setPopup()"
+            ></button>
+          </div>
+          <div
+            data-name="popup-body"
+            class="flex items-center justify-center w-full h-full gap-16"
+          >
+            <div
+              class="flex flex-col items-center w-608 h-402"
+              data-name="popup_photo_wrap"
+            >
+              <div class="w-full overflow-x-hidden overflow-y-auto h-400 pe-4">
+                <img
+                  src="./images/9_01_42/popup_photo1.jpg"
+                  alt="신사"
+                  class="object-contain min-w-608 rounded-10"
+                  data-name="popup_photo"
+                />
+                <img
+                  src="./images/9_01_42/popup_photo2.jpg"
+                  alt="참배할 때"
+                  class="object-contain min-w-608 rounded-10"
+                  data-name="popup_photo"
+                  style="display: none"
+                />
+                <img
+                  src="./images/9_01_42/popup_photo3.jpg"
+                  alt="절"
+                  class="object-contain min-w-608 rounded-10"
+                  data-name="popup_photo"
+                  style="display: none"
+                />
+                <img
+                  src="./images/9_01_42/popup_photo4.jpg"
+                  alt="참배할 때"
+                  class="object-contain min-w-608 rounded-10"
+                  data-name="popup_photo"
+                  style="display: none"
+                />
+              </div>
+              <div
+                class="flex mt-8 font-bold f-nanum-s h-52 text-40 leading-52 shrink-0"
+              >
+                <div data-name="popup_photo_text">신사</div>
+                <div data-name="popup_photo_text">참배</div>
+                <div data-name="popup_photo_text">절</div>
+                <div data-name="popup_photo_text">참배</div>
+              </div>
+            </div>
+            <div class="w-266 h-402">
+              <div class="flex flex-wrap w-full gap-10">
+                <button
+                  data-name="btn-popup_photo"
+                  class="w-128 h-72 active"
+                  onclick="contentUtil.setPhotoPopup(1)"
+                >
+                  <img src="./images/9_01_42/popup_btn_photo1.jpg" alt="신사" />
+                </button>
+                <button
+                  data-name="btn-popup_photo"
+                  class="w-128 h-72"
+                  onclick="contentUtil.setPhotoPopup(2)"
+                >
+                  <img
+                    src="./images/9_01_42/popup_btn_photo2.jpg"
+                    alt="참배할 때"
+                  />
+                </button>
+                <button
+                  data-name="btn-popup_photo"
+                  class="w-128 h-72"
+                  onclick="contentUtil.setPhotoPopup(3)"
+                >
+                  <img src="./images/9_01_42/popup_btn_photo3.jpg" alt="절" />
+                </button>
+                <button
+                  data-name="btn-popup_photo"
+                  class="w-128 h-72"
+                  onclick="contentUtil.setPhotoPopup(4)"
+                >
+                  <img
+                    src="./images/9_01_42/popup_btn_photo4.jpg"
+                    alt="참배할 때"
+                  />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript">
+    const page = {
+      isAnswer: false,
+      isVocabulary: false,
+      showAnswer: () => {},
+      hideAnswer: () => {},
+      showVocabulary: () => {},
+    };
+  </script>
+  <script src="./../common/js/tailwind.config.js"></script>
+  <script src="./../common/js/script.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      // contentUtil.setPage(4);
+    });
+
+    // $(`[data-name="btn-pagination"]`).on("click", function () {
+    //   if ($(this).index() === 0) {
+    //     $(`[data-name="btn-common"]`).show();
+    //   } else {
+    //     $(`[data-name="btn-common"]`).hide();
+    //   }
+    // });
+  </script>
+</html>

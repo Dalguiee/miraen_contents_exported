@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>미래엔 일본 문화</title>
+    <script src="./../common/lib/jquery-3.7.1.min.js"></script>
+    <script src="./../common/lib/howler-2.1.3.min.js"></script>
+    <script src="./../common/lib/tailwind.js"></script>
+    <!-- 폰트 -->
+    <link href="./../common/font/suit/suit.css" rel="stylesheet" />
+    <link href="./../common/font/bmjua/bmjua.css" rel="stylesheet" />
+    <link
+      href="./../common/font/nanumsquare/nanumSquare.css"
+      rel="stylesheet"
+    />
+    <link href="./../common/font/notoSansJP/notoSansJP.css" rel="stylesheet" />
+    <link href="./../common/css/tailwind.css" rel="stylesheet" />
+    <link href="./../common/css/fontStyle.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div id="wrap">
+      <!-- contents -->
+      <div class="relative w-full h-full pt-68">
+        <!-- title -->
+        <img
+          src="./../common/images/title_look_culture1.svg"
+          alt="문화 들여다보기1 연말연시와 공휴일"
+          class="absolute w-764 h-49 top-10"
+        />
+        <!-- header-btn -->
+        <div class="absolute right-0 flex gap-6 top-13" data-name="header-btn">
+          <button data-name="btn-common" onclick="contentUtil.setPopup(1)">
+            해설 보기
+          </button>
+          <button
+            data-name="btn-common"
+            onclick="contentUtil.setPopup(3); contentUtil.setPhotoPopup(2);"
+          >
+            추가 사진
+          </button>
+        </div>
+        <!-- main -->
+        <div class="flex flex-col w-full h-full">
+          <div class="flex flex-col mb-8 w-763 h-404 leading-52 ps-20">
+            <div class="flex items-center pt-8 mb-4">
+              <img
+                src="./../common/images/index_pink_2.svg"
+                alt="번호 2"
+                class="w-40 h-40 me-4"
+              />
+              <span class="flex font-extrabold f-nanum-s text-40"
+                >설날(<span
+                  data-audio="6_01_11/089-01.mp3"
+                  class="font-bold f-noto"
+                  >お<span class="relative"
+                    >正<span
+                      class="font-bold ruby tracking-[-0.25em] translate-x-[calc(-50%_-_4px)] -translate-y-10"
+                      >しょう</span
+                    ></span
+                  ><span class="relative"
+                    >月<span
+                      class="font-bold ruby translate-x-[calc(-50%_+_4px)] -translate-y-10"
+                      >がつ</span
+                    ></span
+                  ></span
+                >)</span
+              >
+            </div>
+            <div class="flex mb-4 text-40 f-nanum-s">
+              <div data-name="number-3" class="bg-[#C84935]"></div>
+              <span class="text-[#C84935] font-extrabold">설 음식</span>
+            </div>
+            <!-- ======== page 1 ======== -->
+            <div
+              data-name="page"
+              class="flex flex-col font-bold f-nanum-s text-40"
+            >
+              <div>
+                <p class="ps-28">
+                  새해에 먹는 음식으로는 ‘오세치 요리’와 일본식 떡국인
+                </p>
+                <p>‘오조니’가 대표적이다. 그리고 1월 7일 아침에는 가족의</p>
+                <p>건강을 기원하고, 7가지 봄철 햇나물로 만든 죽인</p>
+                <p class="flex">
+                  ‘나나쿠사가유(<span
+                    data-audio="6_01_11/090-01.mp3"
+                    class="font-medium f-noto"
+                    >ななくさがゆ</span
+                  >)’를 먹는다.
+                </p>
+              </div>
+            </div>
+            <!-- ======== page 2 ======== -->
+            <div
+              data-name="page"
+              class="flex flex-col font-bold f-nanum-s text-40"
+              style="display: none"
+            >
+              <div>
+                <p class="ps-28">
+                  오세치 요리는 복을 겹겹이 쌓는다는 의미로 찬합에 담는다.
+                </p>
+                <p>새해에는 요리를 하지 않아도 되도록 연말에 준비하여 대개</p>
+                <p>새해 3일 동안 먹는데, 요즘은 백화점이나 호텔, 레스토랑</p>
+                <p>등에서 사서 먹는 사람들도 많다.</p>
+              </div>
+            </div>
+            <!-- ======== page 3 ======== -->
+            <div
+              data-name="page"
+              class="flex flex-col font-bold f-nanum-s text-40"
+              style="display: none"
+            >
+              <!-- list -->
+              <div class="flex flex-col gap-10 mt-20 ms-40">
+                <!-- ----- -->
+                <div class="flex">
+                  <div data-name="number-1" class="bg-[#4D598E]"></div>
+                  <span>새우</span>
+                  <span data-name="colon-black">:</span>
+                  <span>장수</span>
+                </div>
+                <!-- ----- -->
+                <div class="flex">
+                  <div data-name="number-2" class="bg-[#4D598E]"></div>
+                  <span>멸치조림</span>
+                  <span data-name="colon-black">:</span>
+                  <span>풍작</span>
+                </div>
+                <!-- ----- -->
+                <div class="flex">
+                  <div data-name="number-3" class="bg-[#4D598E]"></div>
+                  <span>긴톤</span>
+                  <span data-name="colon-black">:</span>
+                  <span>금전운</span>
+                </div>
+                <!-- ----- -->
+                <div class="flex">
+                  <div data-name="number-4" class="bg-[#4D598E]"></div>
+                  <span>검은콩</span>
+                  <span data-name="colon-black">:</span>
+                  <span>건강, 근면</span>
+                </div>
+              </div>
+              <!-- img box -->
+              <div class="absolute w-473 h-314 right-20 bottom-70">
+                <img
+                  src="./images/6_01_11/main_photo1.jpg"
+                  alt=""
+                  class="w-full h-full"
+                />
+                <button
+                  data-name="btn-view"
+                  class="absolute bottom-10 right-10"
+                  onclick="contentUtil.setPopup(2); contentUtil.setPhotoPopup(1);"
+                ></button>
+              </div>
+            </div>
+            <!-- ======== page 4 ======== -->
+            <div
+              data-name="page"
+              class="flex flex-col font-bold f-nanum-s text-40"
+              style="display: none"
+            >
+              <!-- list -->
+              <div class="flex flex-col gap-10 mt-20 ms-40">
+                <!-- ----- -->
+                <div class="flex">
+                  <div data-name="number-5" class="bg-[#4D598E]"></div>
+                  <span>홍백 어묵</span>
+                  <span data-name="colon-black">:</span>
+                  <span>축하</span>
+                </div>
+                <!-- ----- -->
+                <div class="flex">
+                  <div data-name="number-6" class="bg-[#4D598E]"></div>
+                  <span>청어알</span>
+                  <span data-name="colon-black">:</span>
+                  <span>자손 번영</span>
+                </div>
+                <!-- ----- -->
+                <div class="flex">
+                  <img
+                    src="./images/6_01_11/index_7.svg"
+                    alt="7"
+                    class="mr-6 w-34 h-34 mt-9"
+                  />
+                  <span>다시마</span>
+                  <span data-name="colon-black">:</span>
+                  <span>좋은 운</span>
+                </div>
+              </div>
+              <!-- img box -->
+              <div class="absolute w-473 h-314 right-20 bottom-70">
+                <img
+                  src="./images/6_01_11/main_photo2.jpg"
+                  alt=""
+                  class="w-full h-full"
+                />
+                <button
+                  data-name="btn-view"
+                  class="absolute bottom-10 right-10"
+                  onclick="contentUtil.setPopup(2); contentUtil.setPhotoPopup(1);"
+                ></button>
+              </div>
+            </div>
+          </div>
+
+          <!-- pagination -->
+          <div
+            class="absolute -translate-x-1/2 left-1/2 bottom-10"
+            data-name="pagination"
+          >
+            <button class="active" data-name="btn-pagination"></button>
+            <button class="" data-name="btn-pagination"></button>
+            <button class="" data-name="btn-pagination"></button>
+            <button class="" data-name="btn-pagination"></button>
+          </div>
+        </div>
+      </div>
+      <!-- popup -->
+      <div id="popup-wrap" style="display: none">
+        <!-- 해설 보기 -->
+        <div data-name="popup" data-popup="1" style="display: none">
+          <div data-name="popup-header">
+            <div data-name="popup-title">해설 보기</div>
+            <button
+              data-name="popup-close"
+              onclick="contentUtil.setPopup()"
+            ></button>
+          </div>
+          <div data-name="popup-body" class="mt-16 mb-10 ms-26 f-nanum-s me-6">
+            <div class="flex flex-col">
+              <!-- title -->
+              <div class="flex items-center mb-10 h-55">
+                <img
+                  src="./../common/images/popup_titlemark_primary.svg"
+                  alt=""
+                  class="w-35 h-55 me-10"
+                />
+                <div class="flex font-extrabold text-42 text-[#41674B]">
+                  나나쿠사가유(<span class="font-bold f-noto">ななくさがゆ</span
+                  >)
+                </div>
+              </div>
+              <!-- text -->
+              <div class="font-bold f-nanum-s text-40 leading-52">
+                <p>일본의 명절(매년 1월 7일) 아침에 먹는 요리이다.</p>
+                <p>일곱 가지 봄철 햇나물인 ‘미나리, 냉이, 떡쑥, 별꽃,</p>
+                <p>광대나물, 순무, 무’를 넣어 만든 죽을 말한다.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 사진 팝업창 -->
+        <div data-name="popup" data-popup="2" style="display: none">
+          <div data-name="popup-header">
+            <div data-name="popup-title">사진 팝업창</div>
+            <button
+              data-name="popup-close"
+              onclick="contentUtil.setPopup()"
+            ></button>
+          </div>
+          <div
+            data-name="popup-body"
+            class="flex items-center justify-center w-full h-full gap-16"
+          >
+            <div
+              class="flex flex-col items-center w-608 h-402"
+              data-name="popup_photo_wrap"
+            >
+              <div class="w-full overflow-x-hidden overflow-y-auto pe-4">
+                <img
+                  data-name="popup_photo"
+                  src="./images/6_01_11/popup_photo1.jpg"
+                  alt=""
+                  class="object-contain min-w-608 rounded-10"
+                />
+              </div>
+              <div
+                class="flex mt-8 font-bold f-nanum-s h-52 text-40 leading-52 shrink-0"
+              >
+                <span data-name="popup_photo_text" class="pt-12"
+                  >오세치 요리(<span
+                    data-audio="6_01_11/090-03.mp3"
+                    class="font-medium f-noto tracking-[-0.15em]"
+                    >おせち<span class="relative"
+                      >料<span class="ruby">りょう</span></span
+                    ><span class="relative"
+                      >理<span class="ruby">り</span></span
+                    ></span
+                  >)의 재료와 의미</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 추가 사진 -->
+        <div data-name="popup" data-popup="3" style="display: none">
+          <div data-name="popup-header">
+            <div data-name="popup-title">추가 사진</div>
+            <button
+              data-name="popup-close"
+              onclick="contentUtil.setPopup()"
+            ></button>
+          </div>
+          <div
+            data-name="popup-body"
+            class="flex items-center justify-center w-full h-full gap-16"
+          >
+            <div
+              class="flex flex-col items-center w-608 h-402"
+              data-name="popup_photo_wrap"
+            >
+              <div class="w-full overflow-x-hidden overflow-y-auto pe-4">
+                <img
+                  src="./images/6_01_11/popup_photo2.jpg"
+                  alt=""
+                  class="object-contain min-w-608 rounded-10"
+                  data-name="popup_photo"
+                />
+                <img
+                  src="./images/6_01_11/popup_photo3.jpg"
+                  alt=""
+                  class="object-contain min-w-608 rounded-10"
+                  data-name="popup_photo"
+                  style="display: none"
+                />
+                <img
+                  src="./images/6_01_11/popup_photo4.jpg"
+                  alt=""
+                  class="object-contain min-w-608 rounded-10"
+                  data-name="popup_photo"
+                  style="display: none"
+                />
+                <img
+                  src="./images/6_01_11/popup_photo5.jpg"
+                  alt=""
+                  class="object-contain min-w-608 rounded-10"
+                  data-name="popup_photo"
+                  style="display: none"
+                />
+              </div>
+              <div
+                class="flex mt-8 font-bold f-nanum-s h-52 text-40 leading-52 shrink-0"
+              >
+                <div data-name="popup_photo_text" class="text-blue">
+                  오세치 요리
+                </div>
+                <div
+                  data-name="popup_photo_text"
+                  class="text-blue"
+                  style="display: none"
+                >
+                  오세치 요리
+                </div>
+                <div
+                  data-name="popup_photo_text"
+                  class="text-blue"
+                  style="display: none"
+                >
+                  나나쿠사가유
+                </div>
+                <div
+                  data-name="popup_photo_text"
+                  class="text-blue"
+                  style="display: none"
+                >
+                  나나쿠사가유 7가지 재료
+                </div>
+              </div>
+              <button data-name="btn-popup_photo" class="hidden"></button>
+            </div>
+            <div class="w-266 h-402">
+              <div class="flex flex-wrap w-full gap-10">
+                <button
+                  data-name="btn-popup_photo"
+                  class="w-128 h-72 active"
+                  onclick="contentUtil.setPhotoPopup(2)"
+                >
+                  <img src="./images/6_01_11/popup_btn_photo2.jpg" alt="" />
+                </button>
+                <button
+                  data-name="btn-popup_photo"
+                  class="w-128 h-72"
+                  onclick="contentUtil.setPhotoPopup(3)"
+                >
+                  <img src="./images/6_01_11/popup_btn_photo3.jpg" alt="" />
+                </button>
+                <button
+                  data-name="btn-popup_photo"
+                  class="w-128 h-72"
+                  onclick="contentUtil.setPhotoPopup(4)"
+                >
+                  <img src="./images/6_01_11/popup_btn_photo4.jpg" alt="" />
+                </button>
+                <button
+                  data-name="btn-popup_photo"
+                  class="w-128 h-72"
+                  onclick="contentUtil.setPhotoPopup(5)"
+                >
+                  <img src="./images/6_01_11/popup_btn_photo5.jpg" alt="" />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript">
+    const page = {
+      isAnswer: false,
+      isVocabulary: false,
+      showAnswer: () => {},
+      hideAnswer: () => {},
+      showVocabulary: () => {},
+    };
+  </script>
+  <script src="./../common/js/tailwind.config.js"></script>
+  <script src="./../common/js/script.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {});
+  </script>
+</html>

@@ -1,0 +1,870 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>미래엔 일본 문화</title>
+    <script src="./../common/lib/jquery-3.7.1.min.js"></script>
+    <script src="./../common/lib/howler-2.1.3.min.js"></script>
+    <script src="./../common/lib/tailwind.js"></script>
+    <!-- 폰트 -->
+    <link href="./../common/font/suit/suit.css" rel="stylesheet" />
+    <link href="./../common/font/bmjua/bmjua.css" rel="stylesheet" />
+    <link
+      href="./../common/font/nanumsquare/nanumSquare.css"
+      rel="stylesheet"
+    />
+    <link href="./../common/font/notoSansJP/notoSansJP.css" rel="stylesheet" />
+    <link href="./../common/css/tailwind.css" rel="stylesheet" />
+    <link href="./../common/css/fontStyle.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div id="wrap">
+      <!-- contents -->
+      <div class="relative flex flex-col w-full h-full pt-70">
+        <!-- title -->
+        <div class="absolute left-0 flex top-10">
+          <img
+            src="./../common/images/title_getactive.svg"
+            alt="활동하기"
+            class="w-160 h-50 me-10"
+          />
+          <span class="f-bmjua text-36 text-[#6773B1] leading-50"
+            >진로 연계 활동</span
+          >
+        </div>
+
+        <!-- main -->
+        <div
+          data-name="main"
+          class="flex flex-col flex-1 w-full px-20 overflow-y-auto font-bold leading-52 f-nanum-s text-40"
+        >
+          <!-- ======= page 1 ======= -->
+          <div data-name="page" class="flex flex-1">
+            <img
+              src="./../common/images/label_flower_blue.svg"
+              alt="label"
+              class="w-30 h-52 me-8"
+            />
+            <div class="font-extrabold">
+              <p>일본은 성씨가 많은 것으로 알려져 있습니다. 일본인의</p>
+              <p>성씨와 한국인의 성씨 상위 10위를 조사하여 써 봅시다.</p>
+              <p>그리고 조사한 자료를 바탕으로 한국과 일본 성씨의 특징을</p>
+              <p>정리해 봅시다.</p>
+            </div>
+          </div>
+          <!-- ======= page 2 ======= -->
+          <div data-name="page" class="" style="display: none">
+            <!-- header-btn -->
+            <div
+              class="absolute right-0 flex gap-6 top-13"
+              data-name="header-btn"
+            >
+              <button
+                data-reset="1"
+                data-name="btn-common"
+                onclick="contentUtil.showAnswer(1)"
+              >
+                예시 답안
+              </button>
+              <button
+                data-answer="1"
+                data-name="btn-common"
+                onclick="contentUtil.hideAnswer(1)"
+                style="display: none"
+              >
+                다시 풀기
+              </button>
+            </div>
+            <!-- table -->
+            <div class="flex flex-col mx-auto mb-20 w-fit">
+              <!-- th -->
+              <div class="flex items-stretch">
+                <!-- ----- -->
+                <div
+                  class="flex items-center justify-center w-90 bg-[#9EA7C9] border-e-1 border-white rounded-tl-10"
+                >
+                  <span>순위</span>
+                </div>
+                <!-- ----- -->
+                <div class="flex flex-col">
+                  <div
+                    class="flex items-center justify-center w-408 h-72 bg-[#9EA7C9] border-white border-e-1 border-b-1"
+                  >
+                    일본 성씨
+                  </div>
+                  <div class="flex w-408">
+                    <div
+                      class="flex items-center justify-center w-240 h-72 bg-[#9EA7C9] border-white border-e-1"
+                    >
+                      <span>성씨</span>
+                    </div>
+                    <div
+                      class="flex items-center justify-center w-168 h-72 bg-[#9EA7C9] border-white border-e-1"
+                    >
+                      <span>비율</span>
+                    </div>
+                  </div>
+                </div>
+                <!-- ----- -->
+                <div class="flex flex-col">
+                  <div
+                    class="flex items-center justify-center w-408 h-72 bg-[#9EA7C9] border-b-1 rounded-tr-10 border-white"
+                  >
+                    한국 성씨
+                  </div>
+                  <div class="flex w-408">
+                    <div
+                      class="flex items-center justify-center w-240 h-72 bg-[#9EA7C9] border-white border-e-1"
+                    >
+                      <span>성씨</span>
+                    </div>
+                    <div
+                      class="flex items-center justify-center w-168 h-72 bg-[#9EA7C9]"
+                    >
+                      <span>비율</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- td -->
+              <div class="flex flex-col">
+                <!-- -------- 1 ------- -->
+                <div class="flex items-stretch border-[#9d9bd3] border-b-1">
+                  <!-- ----- -->
+                  <div
+                    class="flex items-center justify-center w-90 border-[#9d9bd3] border-s-1 border-e-1"
+                  >
+                    <span>1</span>
+                  </div>
+                  <!-- ----- -->
+                  <div class="p-10 w-240 border-[#9d9bd3] border-e-1">
+                    <div
+                      class="flex items-center justify-center w-full h-52 bg-[#F6FDFF] rounded-8"
+                    >
+                      <span
+                        data-answer="1"
+                        class="font-medium text-red f-noto"
+                        style="display: none"
+                        >さとう</span
+                      >
+                    </div>
+                  </div>
+                  <!-- ----- -->
+                  <div class="p-10 w-168 border-[#9d9bd3] border-e-1">
+                    <div
+                      class="flex items-center justify-center w-full h-52 bg-[#F6FDFF] rounded-8"
+                    >
+                      <span
+                        data-answer="1"
+                        class="text-red"
+                        style="display: none"
+                        >1.5%</span
+                      >
+                    </div>
+                  </div>
+                  <!-- ----- -->
+                  <div class="p-10 w-240 border-[#9d9bd3] border-e-1">
+                    <div
+                      class="flex items-center justify-center w-full h-52 bg-[#F6FDFF] rounded-8"
+                    >
+                      <span
+                        data-answer="1"
+                        class="text-red"
+                        style="display: none"
+                        >김</span
+                      >
+                    </div>
+                  </div>
+                  <!-- ----- -->
+                  <div class="p-10 w-168 border-[#9d9bd3] border-e-1">
+                    <div
+                      class="flex items-center justify-center w-full h-52 bg-[#F6FDFF] rounded-8"
+                    >
+                      <span
+                        data-answer="1"
+                        class="text-red"
+                        style="display: none"
+                        >21.5%</span
+                      >
+                    </div>
+                  </div>
+                </div>
+                <!-- -------- 2 ------- -->
+                <div class="flex items-stretch border-[#9d9bd3] border-b-1">
+                  <!-- ----- -->
+                  <div
+                    class="flex items-center justify-center w-90 border-[#9d9bd3] border-s-1 border-e-1"
+                  >
+                    <span>2</span>
+                  </div>
+                  <!-- ----- -->
+                  <div class="p-10 w-240 border-[#9d9bd3] border-e-1">
+                    <div
+                      class="flex items-center justify-center w-full h-52 bg-[#F6FDFF] rounded-8"
+                    >
+                      <span
+                        data-answer="1"
+                        class="font-medium text-red f-noto"
+                        style="display: none"
+                        >すずき</span
+                      >
+                    </div>
+                  </div>
+                  <!-- ----- -->
+                  <div class="p-10 w-168 border-[#9d9bd3] border-e-1">
+                    <div
+                      class="flex items-center justify-center w-full h-52 bg-[#F6FDFF] rounded-8"
+                    >
+                      <span
+                        data-answer="1"
+                        class="text-red"
+                        style="display: none"
+                        >1.4%</span
+                      >
+                    </div>
+                  </div>
+                  <!-- ----- -->
+                  <div class="p-10 w-240 border-[#9d9bd3] border-e-1">
+                    <div
+                      class="flex items-center justify-center w-full h-52 bg-[#F6FDFF] rounded-8"
+                    >
+                      <span
+                        data-answer="1"
+                        class="text-red"
+                        style="display: none"
+                        >이</span
+                      >
+                    </div>
+                  </div>
+                  <!-- ----- -->
+                  <div class="p-10 w-168 border-[#9d9bd3] border-e-1">
+                    <div
+                      class="flex items-center justify-center w-full h-52 bg-[#F6FDFF] rounded-8"
+                    >
+                      <span
+                        data-answer="1"
+                        class="text-red"
+                        style="display: none"
+                        >14.7%</span
+                      >
+                    </div>
+                  </div>
+                </div>
+                <!-- -------- 3 ------- -->
+                <div class="flex items-stretch border-[#9d9bd3] border-b-1">
+                  <!-- ----- -->
+                  <div
+                    class="flex items-center justify-center w-90 border-[#9d9bd3] border-s-1 border-e-1"
+                  >
+                    <span>3</span>
+                  </div>
+                  <!-- ----- -->
+                  <div class="p-10 w-240 border-[#9d9bd3] border-e-1">
+                    <div
+                      class="flex items-center justify-center w-full h-52 bg-[#F6FDFF] rounded-8"
+                    >
+                      <span
+                        data-answer="1"
+                        class="font-medium text-red f-noto"
+                        style="display: none"
+                        >たかはし</span
+                      >
+                    </div>
+                  </div>
+                  <!-- ----- -->
+                  <div class="p-10 w-168 border-[#9d9bd3] border-e-1">
+                    <div
+                      class="flex items-center justify-center w-full h-52 bg-[#F6FDFF] rounded-8"
+                    >
+                      <span
+                        data-answer="1"
+                        class="text-red"
+                        style="display: none"
+                        >1.1%</span
+                      >
+                    </div>
+                  </div>
+                  <!-- ----- -->
+                  <div class="p-10 w-240 border-[#9d9bd3] border-e-1">
+                    <div
+                      class="flex items-center justify-center w-full h-52 bg-[#F6FDFF] rounded-8"
+                    >
+                      <span
+                        data-answer="1"
+                        class="text-red"
+                        style="display: none"
+                        >박</span
+                      >
+                    </div>
+                  </div>
+                  <!-- ----- -->
+                  <div class="p-10 w-168 border-[#9d9bd3] border-e-1">
+                    <div
+                      class="flex items-center justify-center w-full h-52 bg-[#F6FDFF] rounded-8"
+                    >
+                      <span
+                        data-answer="1"
+                        class="text-red"
+                        style="display: none"
+                        >8.4%</span
+                      >
+                    </div>
+                  </div>
+                </div>
+                <!-- -------- 4 ------- -->
+                <div class="flex items-stretch border-[#9d9bd3] border-b-1">
+                  <!-- ----- -->
+                  <div
+                    class="flex items-center justify-center w-90 border-[#9d9bd3] border-s-1 border-e-1"
+                  >
+                    <span>4</span>
+                  </div>
+                  <!-- ----- -->
+                  <div class="p-10 w-240 border-[#9d9bd3] border-e-1">
+                    <div
+                      class="flex items-center justify-center w-full h-52 bg-[#F6FDFF] rounded-8"
+                    >
+                      <span
+                        data-answer="1"
+                        class="font-medium text-red f-noto"
+                        style="display: none"
+                        >たなか</span
+                      >
+                    </div>
+                  </div>
+                  <!-- ----- -->
+                  <div class="p-10 w-168 border-[#9d9bd3] border-e-1">
+                    <div
+                      class="flex items-center justify-center w-full h-52 bg-[#F6FDFF] rounded-8"
+                    >
+                      <span
+                        data-answer="1"
+                        class="text-red"
+                        style="display: none"
+                        >1.0%</span
+                      >
+                    </div>
+                  </div>
+                  <!-- ----- -->
+                  <div class="p-10 w-240 border-[#9d9bd3] border-e-1">
+                    <div
+                      class="flex items-center justify-center w-full h-52 bg-[#F6FDFF] rounded-8"
+                    >
+                      <span
+                        data-answer="1"
+                        class="text-red"
+                        style="display: none"
+                        >최</span
+                      >
+                    </div>
+                  </div>
+                  <!-- ----- -->
+                  <div class="p-10 w-168 border-[#9d9bd3] border-e-1">
+                    <div
+                      class="flex items-center justify-center w-full h-52 bg-[#F6FDFF] rounded-8"
+                    >
+                      <span
+                        data-answer="1"
+                        class="text-red"
+                        style="display: none"
+                        >4.7%</span
+                      >
+                    </div>
+                  </div>
+                </div>
+                <!-- -------- 5 ------- -->
+                <div class="flex items-stretch border-[#9d9bd3] border-b-1">
+                  <!-- ----- -->
+                  <div
+                    class="flex items-center justify-center w-90 border-[#9d9bd3] border-s-1 border-e-1"
+                  >
+                    <span>5</span>
+                  </div>
+                  <!-- ----- -->
+                  <div class="p-10 w-240 border-[#9d9bd3] border-e-1">
+                    <div
+                      class="flex items-center justify-center w-full h-52 bg-[#F6FDFF] rounded-8"
+                    >
+                      <span
+                        data-answer="1"
+                        class="font-medium text-red f-noto"
+                        style="display: none"
+                        >いとう</span
+                      >
+                    </div>
+                  </div>
+                  <!-- ----- -->
+                  <div class="p-10 w-168 border-[#9d9bd3] border-e-1">
+                    <div
+                      class="flex items-center justify-center w-full h-52 bg-[#F6FDFF] rounded-8"
+                    >
+                      <span
+                        data-answer="1"
+                        class="text-red"
+                        style="display: none"
+                        >0.8%</span
+                      >
+                    </div>
+                  </div>
+                  <!-- ----- -->
+                  <div class="p-10 w-240 border-[#9d9bd3] border-e-1">
+                    <div
+                      class="flex items-center justify-center w-full h-52 bg-[#F6FDFF] rounded-8"
+                    >
+                      <span
+                        data-answer="1"
+                        class="text-red"
+                        style="display: none"
+                        >정</span
+                      >
+                    </div>
+                  </div>
+                  <!-- ----- -->
+                  <div class="p-10 w-168 border-[#9d9bd3] border-e-1">
+                    <div
+                      class="flex items-center justify-center w-full h-52 bg-[#F6FDFF] rounded-8"
+                    >
+                      <span
+                        data-answer="1"
+                        class="text-red"
+                        style="display: none"
+                        >4.3%</span
+                      >
+                    </div>
+                  </div>
+                </div>
+                <!-- -------- 6 ------- -->
+                <div class="flex items-stretch border-[#9d9bd3] border-b-1">
+                  <!-- ----- -->
+                  <div
+                    class="flex items-center justify-center w-90 border-[#9d9bd3] border-s-1 border-e-1"
+                  >
+                    <span>6</span>
+                  </div>
+                  <!-- ----- -->
+                  <div class="p-10 w-240 border-[#9d9bd3] border-e-1">
+                    <div
+                      class="flex items-center justify-center w-full h-52 bg-[#F6FDFF] rounded-8"
+                    >
+                      <span
+                        data-answer="1"
+                        class="font-medium text-red f-noto"
+                        style="display: none"
+                        >わたなべ</span
+                      >
+                    </div>
+                  </div>
+                  <!-- ----- -->
+                  <div class="p-10 w-168 border-[#9d9bd3] border-e-1">
+                    <div
+                      class="flex items-center justify-center w-full h-52 bg-[#F6FDFF] rounded-8"
+                    >
+                      <span
+                        data-answer="1"
+                        class="text-red"
+                        style="display: none"
+                        >0.8%</span
+                      >
+                    </div>
+                  </div>
+                  <!-- ----- -->
+                  <div class="p-10 w-240 border-[#9d9bd3] border-e-1">
+                    <div
+                      class="flex items-center justify-center w-full h-52 bg-[#F6FDFF] rounded-8"
+                    >
+                      <span
+                        data-answer="1"
+                        class="text-red"
+                        style="display: none"
+                        >강</span
+                      >
+                    </div>
+                  </div>
+                  <!-- ----- -->
+                  <div class="p-10 w-168 border-[#9d9bd3] border-e-1">
+                    <div
+                      class="flex items-center justify-center w-full h-52 bg-[#F6FDFF] rounded-8"
+                    >
+                      <span
+                        data-answer="1"
+                        class="text-red"
+                        style="display: none"
+                        >2.4%</span
+                      >
+                    </div>
+                  </div>
+                </div>
+                <!-- -------- 7 ------- -->
+                <div class="flex items-stretch border-[#9d9bd3] border-b-1">
+                  <!-- ----- -->
+                  <div
+                    class="flex items-center justify-center w-90 border-[#9d9bd3] border-s-1 border-e-1"
+                  >
+                    <span>7</span>
+                  </div>
+                  <!-- ----- -->
+                  <div class="p-10 w-240 border-[#9d9bd3] border-e-1">
+                    <div
+                      class="flex items-center justify-center w-full h-52 bg-[#F6FDFF] rounded-8"
+                    >
+                      <span
+                        data-answer="1"
+                        class="font-medium text-red f-noto"
+                        style="display: none"
+                        >やまもと</span
+                      >
+                    </div>
+                  </div>
+                  <!-- ----- -->
+                  <div class="p-10 w-168 border-[#9d9bd3] border-e-1">
+                    <div
+                      class="flex items-center justify-center w-full h-52 bg-[#F6FDFF] rounded-8"
+                    >
+                      <span
+                        data-answer="1"
+                        class="text-red"
+                        style="display: none"
+                        >0.8%</span
+                      >
+                    </div>
+                  </div>
+                  <!-- ----- -->
+                  <div class="p-10 w-240 border-[#9d9bd3] border-e-1">
+                    <div
+                      class="flex items-center justify-center w-full h-52 bg-[#F6FDFF] rounded-8"
+                    >
+                      <span
+                        data-answer="1"
+                        class="text-red"
+                        style="display: none"
+                        >조</span
+                      >
+                    </div>
+                  </div>
+                  <!-- ----- -->
+                  <div class="p-10 w-168 border-[#9d9bd3] border-e-1">
+                    <div
+                      class="flex items-center justify-center w-full h-52 bg-[#F6FDFF] rounded-8"
+                    >
+                      <span
+                        data-answer="1"
+                        class="text-red"
+                        style="display: none"
+                        >2.1%</span
+                      >
+                    </div>
+                  </div>
+                </div>
+                <!-- -------- 8 ------- -->
+                <div class="flex items-stretch border-[#9d9bd3] border-b-1">
+                  <!-- ----- -->
+                  <div
+                    class="flex items-center justify-center w-90 border-[#9d9bd3] border-s-1 border-e-1"
+                  >
+                    <span>8</span>
+                  </div>
+                  <!-- ----- -->
+                  <div class="p-10 w-240 border-[#9d9bd3] border-e-1">
+                    <div
+                      class="flex items-center justify-center w-full h-52 bg-[#F6FDFF] rounded-8"
+                    >
+                      <span
+                        data-answer="1"
+                        class="font-medium text-red f-noto"
+                        style="display: none"
+                        >なかむら</span
+                      >
+                    </div>
+                  </div>
+                  <!-- ----- -->
+                  <div class="p-10 w-168 border-[#9d9bd3] border-e-1">
+                    <div
+                      class="flex items-center justify-center w-full h-52 bg-[#F6FDFF] rounded-8"
+                    >
+                      <span
+                        data-answer="1"
+                        class="text-red"
+                        style="display: none"
+                        >0.8%</span
+                      >
+                    </div>
+                  </div>
+                  <!-- ----- -->
+                  <div class="p-10 w-240 border-[#9d9bd3] border-e-1">
+                    <div
+                      class="flex items-center justify-center w-full h-52 bg-[#F6FDFF] rounded-8"
+                    >
+                      <span
+                        data-answer="1"
+                        class="text-red"
+                        style="display: none"
+                        >윤</span
+                      >
+                    </div>
+                  </div>
+                  <!-- ----- -->
+                  <div class="p-10 w-168 border-[#9d9bd3] border-e-1">
+                    <div
+                      class="flex items-center justify-center w-full h-52 bg-[#F6FDFF] rounded-8"
+                    >
+                      <span
+                        data-answer="1"
+                        class="text-red"
+                        style="display: none"
+                        >2.1%</span
+                      >
+                    </div>
+                  </div>
+                </div>
+                <!-- -------- 9 ------- -->
+                <div class="flex items-stretch border-[#9d9bd3] border-b-1">
+                  <!-- ----- -->
+                  <div
+                    class="flex items-center justify-center w-90 border-[#9d9bd3] border-s-1 border-e-1"
+                  >
+                    <span>9</span>
+                  </div>
+                  <!-- ----- -->
+                  <div class="p-10 w-240 border-[#9d9bd3] border-e-1">
+                    <div
+                      class="flex items-center justify-center w-full h-52 bg-[#F6FDFF] rounded-8"
+                    >
+                      <span
+                        data-answer="1"
+                        class="font-medium text-red f-noto"
+                        style="display: none"
+                        >こばやし</span
+                      >
+                    </div>
+                  </div>
+                  <!-- ----- -->
+                  <div class="p-10 w-168 border-[#9d9bd3] border-e-1">
+                    <div
+                      class="flex items-center justify-center w-full h-52 bg-[#F6FDFF] rounded-8"
+                    >
+                      <span
+                        data-answer="1"
+                        class="text-red"
+                        style="display: none"
+                        >0.8%</span
+                      >
+                    </div>
+                  </div>
+                  <!-- ----- -->
+                  <div class="p-10 w-240 border-[#9d9bd3] border-e-1">
+                    <div
+                      class="flex items-center justify-center w-full h-52 bg-[#F6FDFF] rounded-8"
+                    >
+                      <span
+                        data-answer="1"
+                        class="text-red"
+                        style="display: none"
+                        >장</span
+                      >
+                    </div>
+                  </div>
+                  <!-- ----- -->
+                  <div class="p-10 w-168 border-[#9d9bd3] border-e-1">
+                    <div
+                      class="flex items-center justify-center w-full h-52 bg-[#F6FDFF] rounded-8"
+                    >
+                      <span
+                        data-answer="1"
+                        class="text-red"
+                        style="display: none"
+                        >2.0%</span
+                      >
+                    </div>
+                  </div>
+                </div>
+                <!-- -------- 10 ------- -->
+                <div class="flex items-stretch">
+                  <!-- ----- -->
+                  <div
+                    class="flex items-center justify-center w-90 border-[#9d9bd3] border-b-1 border-s-1 border-e-1 rounded-bl-10"
+                  >
+                    <span>10</span>
+                  </div>
+                  <!-- ----- -->
+                  <div
+                    class="p-10 w-240 border-[#9d9bd3] border-b-1 border-e-1"
+                  >
+                    <div
+                      class="flex items-center justify-center w-full h-52 bg-[#F6FDFF] rounded-8"
+                    >
+                      <span
+                        data-answer="1"
+                        class="font-medium text-red f-noto"
+                        style="display: none"
+                        >かとう</span
+                      >
+                    </div>
+                  </div>
+                  <!-- ----- -->
+                  <div
+                    class="p-10 w-168 border-[#9d9bd3] border-b-1 border-e-1"
+                  >
+                    <div
+                      class="flex items-center justify-center w-full h-52 bg-[#F6FDFF] rounded-8"
+                    >
+                      <span
+                        data-answer="1"
+                        class="text-red"
+                        style="display: none"
+                        >0.7%</span
+                      >
+                    </div>
+                  </div>
+                  <!-- ----- -->
+                  <div
+                    class="p-10 w-240 border-[#9d9bd3] border-b-1 border-e-1"
+                  >
+                    <div
+                      class="flex items-center justify-center w-full h-52 bg-[#F6FDFF] rounded-8"
+                    >
+                      <span
+                        data-answer="1"
+                        class="text-red"
+                        style="display: none"
+                        >임</span
+                      >
+                    </div>
+                  </div>
+                  <!-- ----- -->
+                  <div
+                    class="p-10 w-168 border-[#9d9bd3] border-e-1 border-b-1 rounded-br-10"
+                  >
+                    <div
+                      class="flex items-center justify-center w-full h-52 bg-[#F6FDFF] rounded-8"
+                    >
+                      <span
+                        data-answer="1"
+                        class="text-red"
+                        style="display: none"
+                        >1.7%</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ======= page 3 ======= -->
+          <div data-name="page" class="flex-1" style="display: none">
+            <!-- header-btn -->
+            <div
+              class="absolute right-0 flex gap-6 top-13"
+              data-name="header-btn"
+            >
+              <button
+                data-reset="2"
+                data-name="btn-common"
+                onclick="contentUtil.showAnswer(2)"
+              >
+                예시 답안
+              </button>
+              <button
+                data-answer="2"
+                data-name="btn-common"
+                onclick="contentUtil.hideAnswer(2)"
+                style="display: none"
+              >
+                다시 풀기
+              </button>
+            </div>
+            <div
+              class="w-960 flex flex-col min-h-394 bg-[url(./images/4_01_34/main_img1.svg)] bg-no-repeat bg-cover rounded-6 ps-20 pt-10"
+              style="box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 12px 0px"
+            >
+              <span class="mb-10">일본 성씨의 특징</span>
+              <div data-answer="2" class="text-red" style="display: none">
+                <p>한국인의 성씨가 약 300개인 것에 비해 일본인의 성씨는</p>
+                <p class="flex">
+                  약 10만<span class="font-medium f-noto">～</span>30만 개
+                  정도라고 한다. 일본인의 성씨는 한자
+                </p>
+                <p>한 글자부터 다섯 글자까지 매우 다양한데, 두 글자로 된</p>
+                <p>성씨가 가장 많다. 또한 일본에서의 성씨는 조상의 혈통 뿐만</p>
+                <p>아니라 소유하거나 거주하는 토지 또는 직업을 나타내기도</p>
+                <p>한다.</p>
+              </div>
+            </div>
+          </div>
+          <!-- ======= page 4 ======= -->
+          <div data-name="page" class="flex-1" style="display: none">
+            <!-- header-btn -->
+            <div
+              class="absolute right-0 flex gap-6 top-13"
+              data-name="header-btn"
+            >
+              <button
+                data-reset="3"
+                data-name="btn-common"
+                onclick="contentUtil.showAnswer(3)"
+              >
+                예시 답안
+              </button>
+              <button
+                data-answer="3"
+                data-name="btn-common"
+                onclick="contentUtil.hideAnswer(3)"
+                style="display: none"
+              >
+                다시 풀기
+              </button>
+            </div>
+            <div
+              class="w-960 flex flex-col min-h-394 bg-[url(./images/4_01_34/main_img2.svg)] bg-no-repeat bg-cover rounded-6 ps-20 pt-10"
+              style="box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 12px 0px"
+            >
+              <span class="mb-10">한국 성씨의 특징</span>
+              <div data-answer="3" class="text-red" style="display: none">
+                <p>한국의 성씨는 전통적으로 혈연 중심의 귀속 의식과 성씨</p>
+                <p>의식이 뿌리 깊은 편이다. 호적에 반드시 본관이 들어가므로</p>
+                <p>부계 혈통을 밝히고 작명 시 항렬을 따르는 경우도 많다.</p>
+                <p>
+                  한국 성씨는 대부분 한 음절로 이루어져 있으나, ‘남궁, 제갈,
+                </p>
+                <p>사공’ 등 두 음절로 된 복성도 있다.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- pagination -->
+          <div class="mb-10" data-name="pagination">
+            <button class="active" data-name="btn-pagination"></button>
+            <button class="" data-name="btn-pagination"></button>
+            <button class="" data-name="btn-pagination"></button>
+            <button class="" data-name="btn-pagination"></button>
+          </div>
+        </div>
+      </div>
+      <!-- popup -->
+      <div id="popup-wrap" style="display: none"></div>
+    </div>
+  </body>
+  <script type="text/javascript">
+    const page = {
+      isAnswer: false,
+      isVocabulary: false,
+      showAnswer: () => {},
+      hideAnswer: () => {},
+      showVocabulary: () => {},
+    };
+  </script>
+  <script src="./../common/js/tailwind.config.js"></script>
+  <script src="./../common/js/script.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {});
+
+    $(`[data-name="btn-pagination"]`).on("click", function () {
+      if ($(this).index() === 2 || $(this).index() === 3) {
+        $(`[data-name="main"]`).removeClass("overflow-y-auto");
+      } else {
+        $(`[data-name="main"]`).addClass("overflow-y-auto");
+      }
+    });
+  </script>
+</html>

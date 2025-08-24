@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>미래엔 일본 문화</title>
+    <script src="./../common/lib/jquery-3.7.1.min.js"></script>
+    <script src="./../common/lib/howler-2.1.3.min.js"></script>
+    <script src="./../common/lib/tailwind.js"></script>
+    <!-- 폰트 -->
+    <link href="./../common/font/suit/suit.css" rel="stylesheet" />
+    <link href="./../common/font/bmjua/bmjua.css" rel="stylesheet" />
+    <link
+      href="./../common/font/nanumsquare/nanumSquare.css"
+      rel="stylesheet"
+    />
+    <link href="./../common/font/notoSansJP/notoSansJP.css" rel="stylesheet" />
+    <link href="./../common/css/tailwind.css" rel="stylesheet" />
+    <link href="./../common/css/fontStyle.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div id="wrap">
+      <!-- contents -->
+      <div class="relative flex flex-col w-full h-full pt-65">
+        <!-- title -->
+        <div class="absolute left-0 flex h-50 top-10">
+          <img
+            src="./../common/images/title_getactive.svg"
+            alt="활동하기"
+            class="w-160 me-10"
+          />
+          <span class="f-bmjua text-36 text-[#6773B1] leading-50"
+            >진로 연계 활동</span
+          >
+        </div>
+        <!-- header-btn -->
+        <div class="absolute right-0 flex gap-6 top-13" data-name="header-btn">
+          <button
+            data-name="btn-common"
+            onclick="contentUtil.setPopup(1); audioPlay(audio, [`./../common/media/mp3/showAnswer.mp3`]);"
+          >
+            예시 답안
+          </button>
+        </div>
+        <!-- main -->
+        <div
+          class="flex flex-col flex-1 w-full px-20 overflow-y-auto leading-52 f-nanum-s text-40"
+        >
+          <div class="flex mb-10">
+            <img
+              src="./../common/images/label_flower_blue.svg"
+              alt="label"
+              class="w-30 h-52 me-8"
+            />
+            <div class="font-extrabold">
+              <p>한국과 일본의 스포츠 선수 양성 방식에 대해 ‘PMI 토론’을</p>
+              <p>해 봅시다.</p>
+            </div>
+          </div>
+          <div
+            class="absolute right-0 top-13"
+            data-name="ex-btn"
+            style="display: none"
+          >
+            <button
+              data-name="btn-common"
+              data-reset="1"
+              onclick="contentUtil.showAnswer(1)"
+            >
+              예시 답안
+            </button>
+            <button
+              data-name="btn-common"
+              data-answer="1"
+              onclick="contentUtil.hideAnswer(1)"
+              style="display: none"
+            >
+              다시 풀기
+            </button>
+          </div>
+          <!-- ======== page 1 ======== -->
+          <div data-name="page" class="flex flex-col flex-1 w-full">
+            <div class="flex flex-col gap-10 font-bold">
+              <!-- 1 -->
+              <div class="flex">
+                <div data-name="number-1" class="bg-[#5B87B8] me-10"></div>
+                <div class="text-36">
+                  <p>
+                    일본에서는 학교 동아리 활동을 통해 프로 스포츠 선수가 양성
+                  </p>
+                  <p>
+                    되기도 하지만, 한국은 어릴 때부터 재능 있는 일부 선수를
+                    선발해
+                  </p>
+                  <p>
+                    전문적이고 체계적인 교육을 하는 경우가 많다. 두 방식의 장점
+                  </p>
+                  <p>
+                    (Plus), 단점(Minus), 흥미로운 점(Interesting)을 생각해 보고
+                  </p>
+                  <p>각각 의견을 정리한 후에 모둠 내에서 의견을 나누어 보자.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- ======== page 2 ======== -->
+          <div
+            style="display: none"
+            data-name="page"
+            class="flex flex-col flex-1 w-full"
+          >
+            <div class="flex flex-col gap-10 font-bold">
+              <!-- 2 -->
+              <div class="flex">
+                <div data-name="number-2" class="bg-[#5B87B8] me-10"></div>
+                <div class="text-36">
+                  <p>모둠에서 나온 의견을 정리해 발표한다.</p>
+                </div>
+              </div>
+              <!-- 3 -->
+              <div class="flex">
+                <div data-name="number-3" class="bg-[#5B87B8] me-10"></div>
+                <div class="text-36">
+                  <p>
+                    두 방식의 장점을 아우를 수 있는 개선점을 각자 생각해 보고
+                  </p>
+                  <p>글로 정리한다.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- pagination -->
+          <div
+            class="absolute -translate-x-1/2 left-1/2 bottom-10"
+            data-name="pagination"
+          >
+            <button class="active" data-name="btn-pagination"></button>
+            <button class="" data-name="btn-pagination"></button>
+          </div>
+        </div>
+      </div>
+      <!-- popup -->
+      <div id="popup-wrap" style="display: none">
+        <!-- 예시 답안 -->
+        <div data-name="popup" data-popup="1" style="display: none">
+          <div data-name="popup-header">
+            <div data-name="popup-title">예시 답안</div>
+            <button
+              data-name="popup-close"
+              onclick="contentUtil.setPopup()"
+            ></button>
+          </div>
+          <div
+            data-name="popup-body"
+            class="flex-1 mt-16 mb-10 ms-26 f-nanum-s me-6"
+          >
+            <!-- table -->
+            <div
+              class="flex flex-col w-full mb-6 font-bold leading-47 text-36 f-nanum-s"
+            >
+              <!-- th -->
+              <div class="flex w-full">
+                <div
+                  class="flex items-center bg-[#9EA7C9] justify-center rounded-t-10 py-[34px] h-114 border-r-1 border-white min-w-213"
+                ></div>
+                <div
+                  class="flex flex-col items-center bg-[#9EA7C9] justify-center rounded-t-10 py-[34px] h-114 border-r-1 border-white min-w-229"
+                >
+                  <p><span class="text-red">P</span>lus</p>
+                  <p>(장점)</p>
+                </div>
+                <div
+                  class="flex flex-col items-center bg-[#9EA7C9] justify-center rounded-t-10 py-[34px] h-114 border-r-1 border-white min-w-229"
+                >
+                  <p><span class="text-red">M</span>inus</p>
+                  <p>(단점)</p>
+                </div>
+                <div
+                  class="flex items-center flex-col bg-[#9EA7C9] justify-center rounded-t-10 py-[34px] h-114 min-w-229"
+                >
+                  <div class="flex flex-col items-center">
+                    <p><span class="text-red">I</span>nteresting</p>
+                    <p>(흥미로운 점)</p>
+                  </div>
+                </div>
+              </div>
+              <!-- td -->
+              <div class="flex w-full">
+                <div class="flex items-stretch">
+                  <!-- ------- -->
+                  <div
+                    class="flex items-center flex-col justify-center w-213 h-463 border-b-1 border-[#9EA7C9] bg-white"
+                  >
+                    <div
+                      class="flex items-center justify-center w-full h-full border-l-1 border-r-1 border-[#9EA7C9]"
+                    >
+                      <div class="text-center">
+                        <p>생활 체육 중심</p>
+                        <p>스포츠 선수</p>
+                        <p>양성 방식</p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- ------- -->
+                  <div
+                    class="flex items-center flex-col justify-center w-229 h-463 border-b-1 border-r-1 border-[#9EA7C9] bg-white"
+                  >
+                    <div
+                      class="flex items-center justify-center min-w-229 min-h-161"
+                    >
+                      <div class="py-10 text-center">
+                        <p>일상생활과</p>
+                        <p>운동을 병행할</p>
+                        <p>수 있다.</p>
+                      </div>
+                    </div>
+                    <div
+                      class="flex items-center justify-center w-full h-full border-t-1 border-[#9EA7C9]"
+                    >
+                      <div class="text-center text-red">
+                        <p>진로를 변경할</p>
+                        <p>경우는 다양한</p>
+                        <p>선택지가</p>
+                        <p>있을 수 있다.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- ------- -->
+                  <div
+                    class="flex items-center flex-col justify-center w-229 h-463 border-b-1 border-r-1 border-[#9EA7C9] bg-white"
+                  >
+                    <div
+                      class="flex items-center justify-center min-w-229 min-h-161 border-[#9EA7C9]"
+                    >
+                      <div class="text-center">
+                        <p>운동 능력</p>
+                        <p>향상 속도가</p>
+                        <p>느리다.</p>
+                      </div>
+                    </div>
+                    <div
+                      class="flex items-center justify-center w-full h-full border-t-1 border-[#9EA7C9]"
+                    >
+                      <div class="text-center text-red">
+                        <p>체계적으로</p>
+                        <p>훈련을 받을 수</p>
+                        <p>있는 가능성이</p>
+                        <p>낮다.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- ------- -->
+                  <div
+                    class="flex items-center flex-col justify-center w-229 h-463 border-r-1 border-b-1 border-[#9EA7C9] bg-white"
+                  >
+                    <div
+                      class="flex items-center justify-center min-w-229 min-h-161"
+                    >
+                      <span class="text-center text-red"> </span>
+                    </div>
+                    <div
+                      class="flex items-center justify-center w-full h-full border-t-1 border-[#9EA7C9]"
+                    >
+                      <div class="text-center text-red">
+                        <p>이 체제 속에서</p>
+                        <p>우수 선수를</p>
+                        <p>발굴해 엘리트</p>
+                        <p>교육으로 전환</p>
+                        <p>하는 체제의 변</p>
+                        <p>경 가능 여부 등</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- td -->
+              <div class="flex w-full">
+                <div class="flex items-stretch">
+                  <!-- ------- -->
+                  <div
+                    class="flex items-center flex-col justify-center w-213 h-604 border-l-1 border-b-1 rounded-bl-10 border-[#9EA7C9] bg-white"
+                  >
+                    <div
+                      class="flex items-center justify-center w-full h-full border-r-1 border-[#9EA7C9]"
+                    >
+                      <div class="text-center">
+                        <p>스포츠</p>
+                        <p>엘리트</p>
+                        <p>교육 방식</p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- ------- -->
+                  <div
+                    class="flex items-center flex-col justify-center w-229 h-604 border-b-1 border-r-1 border-[#9EA7C9] bg-white"
+                  >
+                    <div
+                      class="flex items-center justify-center min-w-229 min-h-208"
+                    >
+                      <div class="py-10 text-center">
+                        <p>우수한 성적을</p>
+                        <p>거둘 가능성이</p>
+                        <p>높다.</p>
+                      </div>
+                    </div>
+                    <div
+                      class="flex items-center justify-center w-full h-full border-t-1 border-[#9EA7C9]"
+                    >
+                      <div class="text-center text-red">
+                        <p>진로를 변경할</p>
+                        <p>경우는 스포츠</p>
+                        <p>외의 다른 부분</p>
+                        <p>에 관한 대비가</p>
+                        <p>어렵다.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- ------- -->
+                  <div
+                    class="flex items-center flex-col justify-center w-229 h-604 border-b-1 border-r-1 border-[#9EA7C9] bg-white"
+                  >
+                    <div
+                      class="flex items-center justify-center min-w-229 min-h-208 border-[#9EA7C9]"
+                    >
+                      <div class="text-center">
+                        <p>다른 교과목을</p>
+                        <p>등한시할</p>
+                        <p>가능성이</p>
+                        <p>있다.</p>
+                      </div>
+                    </div>
+                    <div
+                      class="flex items-center justify-center w-full h-full border-t-1 border-[#9EA7C9]"
+                    >
+                      <div class="text-center text-red">
+                        <p>선수 발굴</p>
+                        <p>기준의 신뢰성</p>
+                        <p>및 타당성에</p>
+                        <p>대한 검증</p>
+                        <p>문제가</p>
+                        <p>있을 수 있다.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- ------- -->
+                  <div
+                    class="flex items-center flex-col justify-center w-229 h-604 border-r-1 rounded-br-10 border-b-1 border-[#9EA7C9] bg-white"
+                  >
+                    <div
+                      class="flex items-center justify-center min-w-229 min-h-208"
+                    >
+                      <span class="text-center text-red"> </span>
+                    </div>
+                    <div
+                      class="flex items-center justify-center w-full h-full border-t-1 border-[#9EA7C9]"
+                    >
+                      <div class="text-center text-red">
+                        <p>체계적인</p>
+                        <p>훈련을 위한</p>
+                        <p>지도자 선발</p>
+                        <p>여부, 재능 있는</p>
+                        <p>선수 발굴을</p>
+                        <p>위한 효율적인</p>
+                        <p>시스템의 구축</p>
+                        <p>여부 등</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript">
+    const page = {
+      isAnswer: false,
+      isVocabulary: false,
+      showAnswer: () => {},
+      hideAnswer: () => {},
+      showVocabulary: () => {},
+    };
+  </script>
+  <script src="./../common/js/tailwind.config.js"></script>
+  <script src="./../common/js/script.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      // contentUtil.setPopup(1);
+    });
+
+    $(`[data-name="btn-pagination"]`).on("click", function () {
+      if ($(this).index() === 0) {
+        $(`[data-name="btn-common"]`).show();
+      } else {
+        $(`[data-name="btn-common"]`).hide();
+      }
+    });
+  </script>
+</html>
